@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   getAllOpportunities,
   getOpportunityBySlug,
-  getRelatedOpportunities,
 } from "@/lib/data";
 import {
   formatDate,
@@ -13,10 +12,12 @@ import {
   formatMarketCap,
   formatVolume,
 } from "@/lib/format";
+import { getTierLabel } from "@/lib/format";
 import type { Opportunity } from "@/lib/types";
-import TierBadge from "@/components/TierBadge";
-import OpportunityCard from "@/components/OpportunityCard";
-import { PremiumSection } from "@/components/OpportunityDetail";
+import { SIGNAL_KEYS, SIGNAL_LABELS } from "@/lib/types";
+import SignalRadar from "@/components/SignalRadar";
+import PaywallBlur from "@/components/PaywallBlur";
+import CitationSection from "@/components/CitationSection";
 
 interface PageProps {
   readonly params: Promise<{ slug: string }>;
@@ -45,31 +46,40 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
     return <NotFoundFallback />;
   }
 
-  const related = getRelatedOpportunities(opportunity);
-
   return (
-    <div className="px-4 py-12 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-5xl">
-        <DetailHeader opportunity={opportunity} />
-        <FreeTierSection opportunity={opportunity} />
-        <MarketDataSection opportunity={opportunity} />
-        <PremiumSection opportunity={opportunity} />
-        {related.length > 0 && <RelatedSection related={related} />}
+    <div className="mx-auto max-w-6xl px-6 py-20">
+      <Breadcrumb opportunity={opportunity} />
+      <NameBlock opportunity={opportunity} />
+      <div className="mt-4 max-w-3xl text-xl leading-relaxed text-text-secondary">
+        {opportunity.one_liner}
       </div>
+      <div className="divider mt-8" />
+      <StatsGrid opportunity={opportunity} />
+      <CompositeScoreBlock score={opportunity.composite_score} />
+      <RadarSection opportunity={opportunity} />
+      <p className="mt-8 text-xs text-text-tertiary">
+        Last updated: {formatDate(opportunity.updated_at)}
+      </p>
+      <div className="divider mt-8" />
+      <PremiumContent opportunity={opportunity} />
+      <div className="divider mt-8" />
+      <CitationSection citations={opportunity.citations} />
     </div>
   );
 }
 
 function NotFoundFallback() {
   return (
-    <div className="px-4 py-24 text-center sm:px-6">
-      <h1 className="font-display text-2xl">Opportunity Not Found</h1>
+    <div className="mx-auto max-w-6xl px-6 py-20 text-center">
+      <h1 className="text-2xl font-semibold tracking-tighter text-text-primary">
+        Opportunity Not Found
+      </h1>
       <p className="mt-2 text-text-secondary">
         This opportunity does not exist or has been removed.
       </p>
       <Link
         href="/opportunities"
-        className="mt-4 inline-block text-sm text-amber hover:underline"
+        className="mt-4 inline-block text-sm text-text-secondary hover:text-text-primary"
       >
         Browse all opportunities
       </Link>
@@ -77,97 +87,165 @@ function NotFoundFallback() {
   );
 }
 
-function DetailHeader({ opportunity }: { readonly opportunity: Opportunity }) {
+function Breadcrumb({ opportunity }: { readonly opportunity: Opportunity }) {
   return (
-    <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-      <div>
-        <Link href="/opportunities" className="text-sm text-text-tertiary hover:text-text-secondary">
-          &larr; All Opportunities
-        </Link>
-        <h1 className="mt-2 text-3xl font-semibold text-text-primary tracking-tight sm:text-4xl">
+    <nav className="font-mono text-xs text-text-tertiary">
+      <Link href="/opportunities" className="hover:text-text-secondary">
+        Opportunities
+      </Link>
+      {" / "}
+      <span>{opportunity.category}</span>
+      {" / "}
+      <span className="text-text-secondary">{opportunity.name}</span>
+    </nav>
+  );
+}
+
+function NameBlock({ opportunity }: { readonly opportunity: Opportunity }) {
+  return (
+    <div className="mt-8">
+      <div className="flex items-baseline gap-3">
+        <h1 className="text-4xl font-semibold tracking-tighter text-text-primary md:text-5xl">
           {opportunity.name}
         </h1>
-        <div className="mt-2 flex flex-wrap items-center gap-3">
-          {opportunity.ticker && (
-            <span className="font-mono text-sm text-text-tertiary">{opportunity.ticker}</span>
-          )}
-          <TierBadge tier={opportunity.tier} />
-          <span className="text-xs text-text-tertiary">
-            {getAssetClassLabel(opportunity.asset_class)}
+        {opportunity.ticker && (
+          <span className="font-mono text-xl text-text-tertiary">
+            {opportunity.ticker}
           </span>
-          <span className="text-xs text-text-tertiary">
-            {opportunity.category}
-          </span>
-        </div>
+        )}
       </div>
-      <div className="text-right">
-        <div className={`font-mono text-4xl font-semibold ${getDetailScoreColor(opportunity.composite_score)}`}>
-          {formatScore(opportunity.composite_score)}
-        </div>
-        <div className="text-xs text-text-tertiary uppercase tracking-widest font-mono mt-1">
-          Composite Score
-        </div>
-        <div className="mt-1 text-xs text-text-tertiary">
-          Updated {formatDate(opportunity.updated_at)}
-        </div>
+      <div className="mt-3 flex flex-wrap gap-3">
+        <span className="font-mono text-xs text-text-secondary">
+          {getTierLabel(opportunity.tier)}
+        </span>
+        <span className="rounded-full bg-bg-card px-3 py-1 text-xs text-text-tertiary">
+          {opportunity.category}
+        </span>
+        <span className="rounded-full bg-bg-card px-3 py-1 text-xs text-text-tertiary">
+          {getAssetClassLabel(opportunity.asset_class)}
+        </span>
       </div>
     </div>
   );
 }
 
-function getDetailScoreColor(score: number): string {
-  if (score >= 75) return "text-score-high";
-  if (score >= 55) return "text-score-mid";
-  return "text-score-low";
-}
-
-function FreeTierSection({ opportunity }: { readonly opportunity: Opportunity }) {
-  return (
-    <div className="mt-8 bg-bg-card border border-border rounded-2xl p-6">
-      <p className="text-lg leading-relaxed text-text-primary">
-        {opportunity.one_liner}
-      </p>
-    </div>
-  );
-}
-
-function MarketDataSection({ opportunity }: { readonly opportunity: Opportunity }) {
+function StatsGrid({ opportunity }: { readonly opportunity: Opportunity }) {
   if (opportunity.current_price_usd === null) return null;
 
   return (
-    <div className="mt-8 bg-bg-card border border-border rounded-2xl p-6">
-      <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
-        <MarketDataItem label="Current Price" value={formatPrice(opportunity.current_price_usd)} />
-        <MarketDataItem label="Market Cap" value={formatMarketCap(opportunity.market_cap_usd)} />
-        <MarketDataItem label="24h Volume" value={formatVolume(opportunity.volume_24h_usd)} />
-        <MarketDataItem label="Last Updated" value={formatDate(opportunity.updated_at)} />
+    <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4">
+      <StatItem label="Price" value={formatPrice(opportunity.current_price_usd)} />
+      <StatItem label="Market Cap" value={formatMarketCap(opportunity.market_cap_usd)} />
+      <StatItem label="Volume 24h" value={formatVolume(opportunity.volume_24h_usd)} />
+      <StatItem label="Updated" value={formatDate(opportunity.updated_at)} />
+    </div>
+  );
+}
+
+function StatItem({ label, value }: { readonly label: string; readonly value: string }) {
+  return (
+    <div>
+      <div className="font-mono text-xs uppercase tracking-widest text-text-tertiary">
+        {label}
+      </div>
+      <div className="mt-1 font-mono text-2xl font-semibold text-text-primary">
+        {value}
       </div>
     </div>
   );
 }
 
-function MarketDataItem({ label, value }: { readonly label: string; readonly value: string }) {
+function CompositeScoreBlock({ score }: { readonly score: number }) {
   return (
-    <div>
-      <div className="text-xs text-text-tertiary uppercase tracking-widest font-mono">{label}</div>
-      <div className="mt-1 text-2xl font-mono font-semibold text-text-primary">{value}</div>
+    <div className="mt-8 text-center">
+      <div className={`font-mono text-7xl font-semibold tracking-tight ${getScoreColor(score)}`}>
+        {formatScore(score)}
+      </div>
+      <div className="mt-2 text-xs uppercase tracking-widest text-text-tertiary">
+        Pattern match score
+      </div>
+      <div className="text-sm text-text-tertiary">out of 100</div>
     </div>
   );
 }
 
-function RelatedSection({
-  related,
-}: {
-  readonly related: readonly Opportunity[];
-}) {
+function RadarSection({ opportunity }: { readonly opportunity: Opportunity }) {
   return (
-    <div className="mt-12">
-      <h2 className="font-display text-2xl">Related Opportunities</h2>
-      <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {related.map((opp) => (
-          <OpportunityCard key={opp.slug} opportunity={opp} />
+    <div className="mt-8">
+      <div className="mx-auto max-w-md">
+        <SignalRadar signals={opportunity.signals} />
+      </div>
+      <div className="mx-auto mt-6 grid max-w-md grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-4">
+        {SIGNAL_KEYS.map((key) => (
+          <div key={key}>
+            <div className="text-xs text-text-tertiary">{SIGNAL_LABELS[key]}</div>
+            <div className="font-mono text-sm text-text-secondary">
+              {opportunity.signals[key]}
+            </div>
+          </div>
         ))}
       </div>
     </div>
   );
+}
+
+function PremiumContent({ opportunity }: { readonly opportunity: Opportunity }) {
+  return (
+    <PaywallBlur>
+      <PremiumThesis thesis={opportunity.thesis} />
+      <PremiumCatalysts catalysts={opportunity.catalysts} />
+      <PremiumRisks risks={opportunity.risks} />
+    </PaywallBlur>
+  );
+}
+
+function PremiumThesis({ thesis }: { readonly thesis: string }) {
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Thesis</h2>
+      <p className="mt-3 leading-relaxed text-text-secondary">{thesis}</p>
+    </section>
+  );
+}
+
+function PremiumCatalysts({ catalysts }: { readonly catalysts: readonly string[] }) {
+  if (!Array.isArray(catalysts) || catalysts.length === 0) return null;
+
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Catalysts</h2>
+      <ul className="mt-3 space-y-2">
+        {catalysts.map((c, i) => (
+          <li key={i} className="flex items-start gap-2 text-sm text-text-secondary">
+            <span className="mt-0.5 text-text-tertiary">+</span>
+            <span>{c}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function PremiumRisks({ risks }: { readonly risks: readonly string[] }) {
+  if (!Array.isArray(risks) || risks.length === 0) return null;
+
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Risks</h2>
+      <ul className="mt-3 space-y-2">
+        {risks.map((r, i) => (
+          <li key={i} className="flex items-start gap-2 text-sm text-text-secondary">
+            <span className="mt-0.5 text-text-tertiary">-</span>
+            <span>{r}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function getScoreColor(score: number): string {
+  if (score >= 75) return "text-score-high";
+  if (score >= 55) return "text-score-mid";
+  return "text-score-low";
 }

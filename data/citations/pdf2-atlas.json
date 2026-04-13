@@ -1,0 +1,2009 @@
+{
+  "source_document": "Asymmetric Opportunity Atlas: 1000x Edge Data Across 12 Frontier Sectors",
+  "entries": {
+    "Bittensor": [
+      {
+        "claim": "Price ~$258, market cap ~$2.6B (#31), FDV ~$5.8B, circulating supply 9.6M/21M as of April 12-13, 2026",
+        "source": "CoinGecko / Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Staking ratio 68-77%, validators up 34% MoM, 128 active subnets (from 32 a year ago), 10% staking APR",
+        "source": "On-chain data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Covenant AI exit (April 9-10): founder Sam Dare accused co-founder Jacob Steeves of decentralization theatre",
+        "source": "The Block",
+        "url": "https://www.theblock.co/post/396959/covenant-ai-exits-bittensor-tao",
+        "type": "news"
+      },
+      {
+        "claim": "Bittensor co-founder denies suspending subnet emissions after Covenant AI exit",
+        "source": "The Block",
+        "url": "https://www.theblock.co/post/397028/bittensor-co-founder-denies-suspending-subnet-emissions-after-covenant-ai-exit",
+        "type": "news"
+      },
+      {
+        "claim": "TAO crashed from $337 to ~$250 within hours, wiping $900M in market cap",
+        "source": "The Block",
+        "url": "https://www.theblock.co/post/396959/covenant-ai-exits-bittensor-tao",
+        "type": "news"
+      },
+      {
+        "claim": "TAO price drops 20% after 37K TAO dump",
+        "source": "Coinpedia",
+        "url": "https://coinpedia.org/price-analysis/bittensor-price-drops-20-after-37k-tao-dump-is-a-rebound-or-deeper-crash-next/",
+        "type": "news"
+      },
+      {
+        "claim": "Subnet tokens cratered: Grail (SN81) -68%, Basilica (SN39) -62%, Templar (SN3) -57.5%",
+        "source": "BlockchainReporter",
+        "url": "https://blockchainreporter.net/covenant-ai-leaves-bittensor-and-the-ecosystem-takes-a-hit-tao-drops-18-and-subnets-drop-more",
+        "type": "news"
+      },
+      {
+        "claim": "Over $9M in longs liquidated during Covenant AI exit",
+        "source": "The Market Periodical",
+        "url": "https://themarketperiodical.com/2026/04/11/bittensor-crashes-20-after-covenant-ai-exit-will-tao-continue-tanking/",
+        "type": "news"
+      },
+      {
+        "claim": "Volume spiked to $1.53B (58% vol/mcap vs normal 15-25%)",
+        "source": "Blockchain Magazine",
+        "url": "https://blockchainmagazine.net/tao-down-19-in-24h-what-on-chain-data-reveals-about-bittensors-correction/",
+        "type": "news"
+      },
+      {
+        "claim": "Generates only $3-15M in actual external revenue annually across all subnets against ~$148M in annual TAO emission subsidies",
+        "source": "CoinStats",
+        "url": "https://coinstats.app/ai/a/investment-analysis-bittensor",
+        "type": "data"
+      },
+      {
+        "claim": "Subsidy-to-revenue ratio is 22-40:1. Top subnet Chutes (SN64) earns $1.3-2.4M in real revenue but receives ~$52M in annualized subsidies",
+        "source": "Substack (Pine Analytics)",
+        "url": "https://pineanalytics.substack.com/p/the-bear-case-for-bittensor-tao",
+        "type": "research"
+      },
+      {
+        "claim": "Grayscale boosted TAO allocation from 31% to 43% (April 7), filed an S-1 for a TAO spot ETF on NYSE",
+        "source": "Grayscale / Market News",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Europe's first Staked TAO ETP launched on SIX Swiss Exchange",
+        "source": "SIX Swiss Exchange",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "NVIDIA CEO Jensen Huang publicly endorsed the project",
+        "source": "News coverage",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "December 2025 halving cut emissions to 3,600 TAO/day",
+        "source": "CoinStats",
+        "url": "https://coinstats.app/ai/a/investment-analysis-bittensor",
+        "type": "data"
+      },
+      {
+        "claim": "NO formal audit submitted; $8M exploit July 2024 (PyPI supply chain); repeat typosquatting Aug 2025; network was halted",
+        "source": "Security reports",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Dune dashboard tracking Bittensor ecosystem protocol-level TAO metrics",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/sayhozay/bittensor",
+        "type": "data"
+      },
+      {
+        "claim": "wTAO Market dashboard tracking daily trades, whale list, top trades",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/0x_mrmarx/wtao",
+        "type": "data"
+      }
+    ],
+    "Virtuals Protocol": [
+      {
+        "claim": "VIRTUAL at $0.65, ~$425M market cap, -87% from ATH; 18,000+ agents deployed",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Revenue peaked at $3.9M/mo then collapsed to $35K/day; Grayscale Q2 2026 consideration list",
+        "source": "DataWallet",
+        "url": "https://www.datawallet.com/crypto/what-is-virtuals-protocol",
+        "type": "data"
+      }
+    ],
+    "ElizaOS / ai16z": [
+      {
+        "claim": "ELIZAOS (fka ai16z) at $0.00076, ~$6M market cap, -98% from ATH",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "10.6K GitHub stars, 2.8K forks; Stanford partnership; token collapsed but framework thriving",
+        "source": "GitHub / Market Data",
+        "url": "https://github.com/elizaOS/eliza",
+        "type": "github"
+      },
+      {
+        "claim": "Shaw Walters forced rebrand after a16z trademark dispute; X account hacked Feb 2025 promoting scam tokens",
+        "source": "Founder red flags section",
+        "url": "",
+        "type": "news"
+      }
+    ],
+    "Gensyn": [
+      {
+        "claim": "$101M raised (a16z led); token sale completed Dec 2025 at $1B FDV cap; no exchange listing yet",
+        "source": "Funding Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Qubic": [
+      {
+        "claim": "QUBIC at $0.0000008, ~$108M market cap, -93% from ATH",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "CertiK-certified 15.5M TPS on live mainnet; DOGE mining launched April 1; previously captured 51%+ of Monero's hashrate",
+        "source": "CertiK / Project Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Autonolas": [
+      {
+        "claim": "OLAS at $0.045, ~$11M market cap, -99.5% from ATH",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "10M+ agent transactions; agents make 75% of Safe txns on Gnosis Chain; $13.8M raise led by 1kx",
+        "source": "Olas Network",
+        "url": "https://olas.network/",
+        "type": "official"
+      }
+    ],
+    "VitaDAO": [
+      {
+        "claim": "DeSci sector market cap ~$238M, down from ~$1.3B peak — 82% decline",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/categories/decentralized-science-desci",
+        "type": "data"
+      },
+      {
+        "claim": "VITA trades at ~$0.22 (ATH $7.05), market cap ~$3.2-6.7M, daily volume $3.7K-$27K",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/vitadao",
+        "type": "data"
+      },
+      {
+        "claim": "Treasury peaked at ~$55.8M (Nov 2024)",
+        "source": "Bitget",
+        "url": "https://www.bitget.com/asia/news/detail/12560605090017",
+        "type": "data"
+      },
+      {
+        "claim": "Deployed $4.2-5M+ across 23-24 funded projects with 26 employees and 10,000+ community members",
+        "source": "PANews / Gate.com",
+        "url": "https://www.panewslab.com/en/articles/4o96za4a",
+        "type": "news"
+      },
+      {
+        "claim": "Gate.com VitaDAO overview with community and project data",
+        "source": "Gate.com",
+        "url": "https://www.gate.com/learn/articles/all-you-need-to-know-about-vita-dao/5129",
+        "type": "data"
+      },
+      {
+        "claim": "Gate.com additional VITA article",
+        "source": "Gate.com",
+        "url": "https://www.gate.com/learn/articles/read-all-about-vita-in-one-article/7889",
+        "type": "data"
+      },
+      {
+        "claim": "Rubedo Life Sciences announced positive Phase 1 clinical trial results on March 26, 2026 for RLS-1496 (GPX4 modulator targeting senescent cells) in psoriasis/atopic dermatitis",
+        "source": "VitaDAO Blog",
+        "url": "https://www.vitadao.com/blog/vitadao-longevity-newsletter-march-26",
+        "type": "official"
+      },
+      {
+        "claim": "Cyclarity's Phase 1 trial readout expected later in 2026",
+        "source": "VitaDAO",
+        "url": "https://www.vitadao.com/blog/vitadao-longevity-newsletter-march-26",
+        "type": "official"
+      },
+      {
+        "claim": "VitaDAO Newsletter for DeSci updates",
+        "source": "VitaDAO / Substack",
+        "url": "",
+        "type": "official"
+      }
+    ],
+    "Bio Protocol": [
+      {
+        "claim": "BIO token: ~$0.016, market cap ~$32-39M, down 98% from ATH ($0.92)",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/bio-protocol",
+        "type": "data"
+      },
+      {
+        "claim": "CryptoRank pricing data for Bio Protocol",
+        "source": "CryptoRank",
+        "url": "https://cryptorank.io/price/bio-protocol",
+        "type": "data"
+      },
+      {
+        "claim": "Daily volume $13-19M",
+        "source": "DropsTab",
+        "url": "https://dropstab.com/coins/bio-protocol",
+        "type": "data"
+      },
+      {
+        "claim": "Raised $33M+ in Genesis plus $6.9M seed from Arthur Hayes' Maelstrom and Animoca",
+        "source": "CoinMarketCap / ChainCatcher",
+        "url": "https://coinmarketcap.com/cmc-ai/bio/latest-updates/",
+        "type": "data"
+      },
+      {
+        "claim": "ChainCatcher coverage of Bio Protocol funding and BioDAOs",
+        "source": "ChainCatcher",
+        "url": "https://www.chaincatcher.com/en/article/2152790",
+        "type": "news"
+      },
+      {
+        "claim": "Launched Biofy Commerce Platform, BioAgents AI researchers, and cross-chain expansion",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/cmc-ai/bio/latest-updates/",
+        "type": "data"
+      },
+      {
+        "claim": "10+ BioDAOs active including VitaDAO, HairDAO, CerebrumDAO, ValleyDAO, PsyDAO, CryoDAO",
+        "source": "Bio Protocol Docs / NFT Evening",
+        "url": "https://docs.bio.xyz/bio/the-bioconomy/bio-protocol/biodaos",
+        "type": "official"
+      },
+      {
+        "claim": "NFT Evening coverage of Bio Protocol ecosystem",
+        "source": "NFT Evening",
+        "url": "https://nftevening.com/bio-protocol/",
+        "type": "news"
+      },
+      {
+        "claim": "IQ.wiki Bio Protocol overview",
+        "source": "IQ.wiki",
+        "url": "https://iq.wiki/wiki/bio-protocol",
+        "type": "research"
+      }
+    ],
+    "HairDAO": [
+      {
+        "claim": "HairDAO token at $13.67, ~$9.5M market cap, -91% from ATH",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/hairdao",
+        "type": "data"
+      },
+      {
+        "claim": "6 patents filed, completed first decentralized clinical trial, FolliCool shampoo sold out, telehealth launching",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/hairdao/",
+        "type": "data"
+      },
+      {
+        "claim": "Daily volume of $511 makes it essentially illiquid",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/hairdao",
+        "type": "data"
+      }
+    ],
+    "ResearchHub": [
+      {
+        "claim": "ResearchHub at ~$0.08, ~$14M market cap, -95% from ATH",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "$1.2M grants awarded, $1M paid to 8,500 reviewers",
+        "source": "DAO Times",
+        "url": "https://daotimes.com/what-is-researchhub-governance-current-state-and-tokenomics-explained/",
+        "type": "research"
+      },
+      {
+        "claim": "Brian Armstrong remains co-founder/CEO",
+        "source": "Blockworks",
+        "url": "https://blockworks.com/news/brian-armstrong-tokens-for-science",
+        "type": "news"
+      }
+    ],
+    "CryoDAO": [
+      {
+        "claim": "CryoDAO at $0.11, ~$293K market cap, -98% from ATH — functional but effectively micro-cap dead zone",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "ValleyDAO": [
+      {
+        "claim": "ValleyDAO at $0.076, ~$843K market cap, -97% from ATH",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Active with Imperial College London partnership",
+        "source": "Bio Protocol",
+        "url": "https://docs.bio.xyz/bio/the-bioconomy/bio-protocol/biodaos",
+        "type": "official"
+      }
+    ],
+    "Pump.Science (URO)": [
+      {
+        "claim": "URO at ~$0.002, ~$2M market cap, -97% from ATH — effectively dead",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "GitHub exploit exposed private keys; Mitrade experiments status unknown",
+        "source": "Mitrade",
+        "url": "https://www.mitrade.com/insights/news/live-news/article-3-490136-20241127",
+        "type": "news"
+      }
+    ],
+    "Pump.Science (RIF)": [
+      {
+        "claim": "RIF at ~$0, ~$0 market cap, -99% from ATH — effectively dead",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Molecule Protocol": [
+      {
+        "claim": "Molecule Protocol V2 launched March 2026 with Token-to-Equity-to-RWA framework — no token, provides critical IP-NFT infrastructure for DeSci ecosystem",
+        "source": "Molecule",
+        "url": "https://molecule.xyz/blog/molecule-protocol-v2-bridging-the-future-of-decentralized-science-into-rwas",
+        "type": "official"
+      },
+      {
+        "claim": "Backed by VitaDAO and Bio Protocol co-founders",
+        "source": "Molecule",
+        "url": "https://molecule.xyz/blog/molecule-protocol-v2-bridging-the-future-of-decentralized-science-into-rwas",
+        "type": "official"
+      }
+    ],
+    "Farcaster": [
+      {
+        "claim": "Neynar acquired the Farcaster protocol in January 2026; Merkle Manufactory announced it would repay $180M in VC funding",
+        "source": "WEEX",
+        "url": "https://www.weex.com/news/detail/farcaster-founder-once-planned-token-launch-but-never-found-the-right-moment-325652",
+        "type": "news"
+      },
+      {
+        "claim": "Dan Romero stated: 'I had wanted to issue a token for Farcaster, but the right timing never came.' No token exists. No airdrop is coming.",
+        "source": "WEEX",
+        "url": "https://www.weex.com/news/detail/farcaster-founder-once-planned-token-launch-but-never-found-the-right-moment-325652",
+        "type": "news"
+      },
+      {
+        "claim": "Peak DAU was ~80K-100K (July 2024); Power Badge genuine DAU was only ~4,360",
+        "source": "The Defiant",
+        "url": "https://thedefiant.io/news/nfts-and-web3/how-many-users-does-farcaster-actually-have",
+        "type": "news"
+      },
+      {
+        "claim": "Total protocol revenue reached $2.8M lifetime",
+        "source": "Blockeden",
+        "url": "https://blockeden.xyz/blog/2026/01/13/farcaster-vs-lens-socialfi-web3-social-graph/",
+        "type": "research"
+      }
+    ],
+    "Symbiotic": [
+      {
+        "claim": "Token TGE occurred November 20, 2024, but not yet fully launched on major CEXs",
+        "source": "ICO Drops",
+        "url": "https://icodrops.com/symbiotic/",
+        "type": "data"
+      },
+      {
+        "claim": "TVL: ~$355M (down from $1.6B peak)",
+        "source": "Whales Market",
+        "url": "https://whales.market/blog/what-is-symbiotic/",
+        "type": "data"
+      },
+      {
+        "claim": "1,200+ active node operators across 45 countries, over 70+ protocols secured",
+        "source": "Medium",
+        "url": "https://medium.com/@jyntherihn6z11z/symbiotic-in-2026-the-year-universal-staking-became-infrastructure-80de68e2e3e1",
+        "type": "research"
+      },
+      {
+        "claim": "External Rewards feature distributing partner tokens (Hyperlane HYPER, Omni $10M)",
+        "source": "Blockworks",
+        "url": "https://blockworks.co/news/symbiotic-token-rewards",
+        "type": "news"
+      },
+      {
+        "claim": "66K+ unique depositors historically; supported assets: wstETH, wBETH, cbETH, sUDE, mETH, rETH, ENA, swETH",
+        "source": "Luganodes",
+        "url": "https://www.luganodes.com/blog/symbiotic-overview",
+        "type": "research"
+      },
+      {
+        "claim": "ChainSecurity audit — 'high level of security'; open design allows dangerous configurations",
+        "source": "Security Audit",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "Espresso Systems": [
+      {
+        "claim": "ESP token launched February 12, 2026. Total supply 3.59B; 10% to community airdrop (~359M ESP, fully unlocked)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/02/12/espresso-network-launches-esp-token-with-10-airdrop-amid-ethereum-layer-2-debate",
+        "type": "news"
+      },
+      {
+        "claim": "Over 1 million eligible addresses across 30+ qualification paths",
+        "source": "Airdrops.io",
+        "url": "https://airdrops.io/espresso/",
+        "type": "data"
+      },
+      {
+        "claim": "Listed on Coinbase and Binance",
+        "source": "RootData",
+        "url": "https://www.rootdata.com/Projects/detail/Espresso%20Systems?k=Mjc2NQ%3D%3D",
+        "type": "data"
+      },
+      {
+        "claim": "65M+ blocks attested, 9 integrated chains, ~6-second finality",
+        "source": "HOKANEWS",
+        "url": "https://www.hokanews.com/2026/02/espresso-goes-full-pos-10-esp-airdrop.html",
+        "type": "news"
+      }
+    ],
+    "EigenLayer": [
+      {
+        "claim": "Consensys Diligence + Dedaub audit — 'excellent quality'; malicious large-stake owner risk identified",
+        "source": "Security Audit",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "Commonwealth Fusion Systems": [
+      {
+        "claim": "Nearly $3 billion raised (~1/3 of all private fusion capital globally)",
+        "source": "Prospect",
+        "url": "https://www.joinprospect.com/explore/commonwealth-fusion-systems-stock",
+        "type": "data"
+      },
+      {
+        "claim": "Series B2: $863M (Aug 2025) from Nvidia, Google, and ~36 others",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/01/06/commonwealth-fusion-systems-installs-reactor-magnet-lands-deal-with-nvidia/",
+        "type": "news"
+      },
+      {
+        "claim": "Estimated valuation $5-6B",
+        "source": "Access IPOs",
+        "url": "https://accessipos.com/commonwealth-fusion-stock-ipo/",
+        "type": "data"
+      },
+      {
+        "claim": "Secondary market: $222.9/share (Nasdaq Private Market)",
+        "source": "Nasdaq Private Market",
+        "url": "https://www.nasdaqprivatemarket.com/company/commonwealth-fusion-systems/",
+        "type": "data"
+      },
+      {
+        "claim": "Secondary market: $129.38/share (Hiive, April 11, 2026)",
+        "source": "Hiive",
+        "url": "https://www.hiive.com/securities/commonwealth-fusion-systems-stock",
+        "type": "data"
+      },
+      {
+        "claim": "First of 18 toroidal field magnets installed January 2026; each magnet 24 tons, 20 tesla",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/01/06/commonwealth-fusion-systems-installs-reactor-magnet-lands-deal-with-nvidia/",
+        "type": "news"
+      },
+      {
+        "claim": "Fortune coverage of SPARC magnet installation",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/01/07/fusion-power-commonwealth-sparc-nuclear-fusion-pilot-ai-siemens-nvidia/",
+        "type": "news"
+      },
+      {
+        "claim": "Yahoo Finance coverage of CFS reactor installation",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/commonwealth-fusion-systems-installs-reactor-163000527.html",
+        "type": "news"
+      },
+      {
+        "claim": "All 18 magnets expected installed by end of summer 2026; machine substantially complete by end of 2026; first plasma 2027; net energy Q1 2027",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/01/06/commonwealth-fusion-systems-installs-reactor-magnet-lands-deal-with-nvidia/",
+        "type": "news"
+      },
+      {
+        "claim": "ARC commercial plant: 400 MWe in Chesterfield County, Virginia",
+        "source": "Ainvest / The Fusion Report",
+        "url": "https://www.ainvest.com/news/google-partners-cfs-200mw-nuclear-fusion-power-2506/",
+        "type": "news"
+      },
+      {
+        "claim": "Google 200 MW PPA",
+        "source": "American Public Power Association / Data Center Dynamics",
+        "url": "https://www.publicpower.org/periodical/article/google-signs-ppa-200-mw-virginia-fusion-power-plant",
+        "type": "news"
+      },
+      {
+        "claim": "Eni >$1B PPA for ARC plant",
+        "source": "Latitude Media",
+        "url": "https://www.latitudemedia.com/news/eni-signs-a-billion-dollar-ppa-with-commonwealth-fusion-systems/",
+        "type": "news"
+      },
+      {
+        "claim": "Grid connection target: early 2030s",
+        "source": "Enlit World / The Fusion Report",
+        "url": "https://www.enlit.world/library/google-signs-200mw-ppa-with-commonwealth-fusion-systems",
+        "type": "news"
+      },
+      {
+        "claim": "The Fusion Report CFS coverage — a hot start for 2026",
+        "source": "The Fusion Report",
+        "url": "https://thefusionreport.com/commonwealth-fusion-systems-a-hot-start-for-2026/",
+        "type": "news"
+      },
+      {
+        "claim": "The Motley Fool coverage of fusion energy stocks",
+        "source": "The Motley Fool",
+        "url": "https://www.fool.com/investing/stock-market/market-sectors/energy/nuclear/fusion-energy/",
+        "type": "news"
+      },
+      {
+        "claim": "No IPO announced or expected soon; pre-IPO shares available on EquityZen, Hiive, Forge",
+        "source": "Access IPOs / EquityZen",
+        "url": "https://equityzen.com/company/commonwealthfusionsystems/",
+        "type": "data"
+      },
+      {
+        "claim": "CFS Company Website",
+        "source": "Commonwealth Fusion Systems",
+        "url": "https://cfs.energy/",
+        "type": "official"
+      }
+    ],
+    "Helion Energy": [
+      {
+        "claim": "Valuation: $5.4B (post-Series F, Jan 2025). Total raised: >$1B",
+        "source": "TSG Invest",
+        "url": "https://tsginvest.com/helion/",
+        "type": "data"
+      },
+      {
+        "claim": "Sam Altman invested $375M personally, serves as executive chairman",
+        "source": "GeekWire",
+        "url": "https://www.geekwire.com/2026/report-helion-is-working-on-a-massive-fusion-power-deal-with-openai/",
+        "type": "news"
+      },
+      {
+        "claim": "Polaris milestone (Feb 13, 2026): achieved 150 million C plasma, first private fusion machine to operate with D-T fuel demonstrating thermonuclear fusion",
+        "source": "Helion Energy / Wikipedia",
+        "url": "https://www.helionenergy.com/articles/helion-achieves-new-fusion-energy-milestones/",
+        "type": "official"
+      },
+      {
+        "claim": "Wikipedia entry on Helion Energy with milestone details",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Helion_Energy",
+        "type": "research"
+      },
+      {
+        "claim": "TechCrunch coverage: fusion startup Helion hits blistering temps racing toward 2028 deadline",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/02/13/fusion-startup-helion-hits-blistering-temps-as-it-races-toward-2028-deadline/",
+        "type": "news"
+      },
+      {
+        "claim": "Orion plant: groundbreaking July 2025 in Malaga, WA; 50 MW capacity; Microsoft PPA for 2028 delivery",
+        "source": "Wikipedia / Data Center Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/helion-begins-work-at-fusion-plant-expects-to-deliver-power-to-microsoft-by-2028/",
+        "type": "news"
+      },
+      {
+        "claim": "In talks with Nucor (500 MWe) and reportedly OpenAI (5 GW by 2030, unconfirmed Axios report)",
+        "source": "GeekWire",
+        "url": "https://www.geekwire.com/2026/report-helion-is-working-on-a-massive-fusion-power-deal-with-openai/",
+        "type": "news"
+      },
+      {
+        "claim": "Helion Energy official website",
+        "source": "Helion Energy",
+        "url": "https://www.helionenergy.com/",
+        "type": "official"
+      }
+    ],
+    "American Superconductor": [
+      {
+        "claim": "AMSC on NASDAQ — most direct HTS pure-play; Amperium wire critical for fusion magnets",
+        "source": "Exoswan",
+        "url": "https://exoswan.com/nuclear-fusion-energy-stocks",
+        "type": "research"
+      }
+    ],
+    "Sprott Uranium Trust": [
+      {
+        "claim": "Sprott Junior Uranium Miners ETF (URNJ): $33.41, AUM ~$447M",
+        "source": "Investing.com",
+        "url": "https://www.investing.com/etfs/urnj",
+        "type": "data"
+      },
+      {
+        "claim": "Uranium spot price $84.55/lb (April 7, 2026), long-term contract $90/lb",
+        "source": "Purepoint",
+        "url": "https://purepoint.ca/uranium-spotlight-for-april-7-2026/",
+        "type": "data"
+      },
+      {
+        "claim": "Uranium hit $101.41 on January 29; Citi forecasts $100/lb for 2026",
+        "source": "Investing News Network",
+        "url": "https://investingnews.com/uranium-forecast/",
+        "type": "news"
+      }
+    ],
+    "Form Energy": [
+      {
+        "claim": "Total raised: $1.13-1.43B. Estimated valuation: ~$1.95B (up to $3.3B on secondary markets)",
+        "source": "Bitget",
+        "url": "https://www.bitget.com/wiki/form-energy-stock",
+        "type": "data"
+      },
+      {
+        "claim": "Secondary shares at $23.00/share (Forge, March 2026)",
+        "source": "Forge Global",
+        "url": "https://forgeglobal.com/form-energy_ipo/",
+        "type": "data"
+      },
+      {
+        "claim": "826 employees",
+        "source": "PitchBook",
+        "url": "https://pitchbook.com/profiles/company/186688-63",
+        "type": "data"
+      },
+      {
+        "claim": "Production sold out through 2028; pipeline exceeds 75 GWh",
+        "source": "Canary Media",
+        "url": "https://www.canarymedia.com/articles/long-duration-energy-storage/form-energy-raises-405m-for-its-100-hour-iron-air-batteries",
+        "type": "news"
+      },
+      {
+        "claim": "Google/Xcel Energy 300 MW / 30 GWh for Minnesota data center (~$1B+ estimated value)",
+        "source": "Canary Media / TechCrunch",
+        "url": "https://www.canarymedia.com/articles/batteries/gigantic-form-energy-battery-google-minnesota",
+        "type": "news"
+      },
+      {
+        "claim": "Crusoe 12 GWh for AI data centers (March 24, 2026)",
+        "source": "Canary Media / Form Energy",
+        "url": "https://formenergy.com/form-energy-crusoe-announce-agreement-for-12-gigawatt-hours-of-iron-air-batteries-for-ai-data-centers/",
+        "type": "official"
+      },
+      {
+        "claim": "Canary Media coverage of Crusoe battery deal",
+        "source": "Canary Media",
+        "url": "https://www.canarymedia.com/articles/batteries/crusoe-taps-novel-battery-technologies-ai-buildout",
+        "type": "news"
+      },
+      {
+        "claim": "TechCrunch coverage of Crusoe battery buys for data centers",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/03/24/crusoe-makes-big-battery-buys-for-its-data-centers/",
+        "type": "news"
+      },
+      {
+        "claim": "FuturEnergy Ireland 10 MW / 1,000 MWh (first international project)",
+        "source": "Weirton Daily Times",
+        "url": "https://www.weirtondailytimes.com/news/local-news/2026/03/form-energy-going-global/",
+        "type": "news"
+      },
+      {
+        "claim": "DOE $147M for 85 MW Maine project; Weirton factory producing at 15 MW, ramping to 50 MW then 500 MW/50 GWh annually by 2028",
+        "source": "Canary Media",
+        "url": "https://www.canarymedia.com/articles/long-duration-energy-storage/form-energy-raises-405m-for-its-100-hour-iron-air-batteries",
+        "type": "news"
+      },
+      {
+        "claim": "Reportedly embarking on a $500M funding round (TechCrunch, March 2026). Top IPO candidate in LDES.",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/03/24/crusoe-makes-big-battery-buys-for-its-data-centers/",
+        "type": "news"
+      },
+      {
+        "claim": "Form Energy official website",
+        "source": "Form Energy",
+        "url": "https://formenergy.com/",
+        "type": "official"
+      }
+    ],
+    "ESS Inc": [
+      {
+        "claim": "GWH stock: $1.15, market cap $31M, 52-week range $0.76-$13.87",
+        "source": "Investing.com",
+        "url": "https://www.investing.com/equities/acon-s2-acquisition",
+        "type": "data"
+      },
+      {
+        "claim": "FY2025 revenue: $1.6M (down 75% YoY)",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/news/GWH/",
+        "type": "data"
+      },
+      {
+        "claim": "Cash: $22M; working capital: ~$1M; going concern signals",
+        "source": "SEC Filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001819438/000181943826000011/earningsreleaseq42025.htm",
+        "type": "filing"
+      },
+      {
+        "claim": "SEC quarterly earnings release Q3 2025",
+        "source": "SEC Filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001819438/000181943825000077/a2025q3earningsrelease.htm",
+        "type": "filing"
+      },
+      {
+        "claim": "SEC quarterly earnings release Q1 2025",
+        "source": "SEC Filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001819438/000162828025025903/a2025q1earningsrelease.htm",
+        "type": "filing"
+      },
+      {
+        "claim": "SRP pilot with Google; 1.2 GWh in proposals (~$400M)",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/quotes/GWH",
+        "type": "data"
+      },
+      {
+        "claim": "Pivoting to 'Energy Base' product targeting 2027 commercialization",
+        "source": "SEC Filing / Stock Titan",
+        "url": "https://www.stocktitan.net/news/GWH/",
+        "type": "data"
+      }
+    ],
+    "Fourth Power": [
+      {
+        "claim": "$19M Series A (BEV-backed); 1 MWh prototype under construction near Boston, demo expected later 2026",
+        "source": "Utility Dive",
+        "url": "https://www.utilitydive.com/news/fourth-power-raises-19m-thermal-battery/702220/",
+        "type": "news"
+      },
+      {
+        "claim": "Renewable Energy Magazine coverage of Fourth Power Series A funding",
+        "source": "Renewable Energy Magazine",
+        "url": "https://www.renewableenergymagazine.com/storage/fourth-power-secures-19m-for-lowcost-utilityscale-20231222",
+        "type": "news"
+      },
+      {
+        "claim": "Full-scale 100 MWh systems targeted 2028. TRL 5-6",
+        "source": "pv magazine",
+        "url": "https://www.pv-magazine.com/2023/12/12/gates-backed-fourth-power-pilots-thermal-storage-based-on-tpv-cells/",
+        "type": "news"
+      }
+    ],
+    "Antora Energy": [
+      {
+        "claim": "$272M raised (BlackRock/Temasek-led Series B)",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/antora/__cK2dE1MaH-DerAD5_eUfKEoN0IHpkn4vAbcHp9BMuWc/funding-and-investors",
+        "type": "data"
+      },
+      {
+        "claim": "Latitude Media coverage of Antora's $150M cash infusion",
+        "source": "Latitude Media",
+        "url": "https://www.latitudemedia.com/news/antoras-150-million-cash-infusion-will-boost-manufacturing/",
+        "type": "news"
+      },
+      {
+        "claim": "Antora Energy Series B announcement",
+        "source": "Antora Energy / Startuprise",
+        "url": "https://www.antora.com/insights/series-b",
+        "type": "official"
+      },
+      {
+        "claim": "First deployment 2023; thermal batteries heating carbon blocks to 2,400C with >40% TPV efficiency",
+        "source": "Antora Energy",
+        "url": "https://www.antora.com/insights/scaleup",
+        "type": "official"
+      },
+      {
+        "claim": "Con Edison, Shell, Summit Materials partnerships. Most commercially advanced thermal battery company",
+        "source": "Contrary Research",
+        "url": "https://research.contrary.com/company/antora-energy",
+        "type": "research"
+      },
+      {
+        "claim": "Antora Energy company page",
+        "source": "Antora Energy",
+        "url": "https://www.antora.com/company",
+        "type": "official"
+      },
+      {
+        "claim": "Tracxn funding data for Antora Energy",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/antora/__cK2dE1MaH-DerAD5_eUfKEoN0IHpkn4vAbcHp9BMuWc",
+        "type": "data"
+      }
+    ],
+    "Malta Inc": [
+      {
+        "claim": "~$98-118M raised; 17 employees",
+        "source": "Tracxn / PitchBook",
+        "url": "https://tracxn.com/d/companies/malta/__HpJAOdeHoS5I6nYH-OQ70PvHqfE3Yf73Fa9074YYAmM",
+        "type": "data"
+      },
+      {
+        "claim": "PitchBook Malta Inc company profile",
+        "source": "PitchBook",
+        "url": "https://pitchbook.com/profiles/company/244267-75",
+        "type": "data"
+      },
+      {
+        "claim": "Full-scale heat exchanger testing in Germany",
+        "source": "Energy Storage Europe",
+        "url": "https://energystorageeurope.eu/news/malta-inc-store2repower-project-breaks-ground-for-full-scale-heat-exchanger-qualifications/",
+        "type": "news"
+      },
+      {
+        "claim": "Spain demonstration 14 MW; pre-commercial; tiny team signals limited momentum",
+        "source": "Energy-Storage.News",
+        "url": "https://www.energy-storage.news/bbva-supports-malta-inc-s-long-duration-thermal-energy-storage-tech/",
+        "type": "news"
+      }
+    ],
+    "Ambri": [
+      {
+        "claim": "DEAD. Filed Chapter 11 May 2024. Executed General Assignment August 21, 2025. All assets in liquidation.",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ambri_Inc.",
+        "type": "research"
+      },
+      {
+        "claim": "$222M raised, $1.7B in MOUs, Bill Gates backing — could not bridge from prototype to factory",
+        "source": "Tracxn / Latitude Media",
+        "url": "https://tracxn.com/d/companies/ambri/__sTx2vrH7u7hox7dcGK_JzpA12AjRcaxUykkB2y2XG70",
+        "type": "data"
+      },
+      {
+        "claim": "How liquid metal battery maker Ambri ended up on the auction block",
+        "source": "Latitude Media",
+        "url": "https://www.latitudemedia.com/news/how-liquid-metal-battery-maker-ambri-ended-up-on-the-auction-block/",
+        "type": "news"
+      }
+    ],
+    "IonQ": [
+      {
+        "claim": "IONQ at ~$28-34, ~$16-18B market cap; FY2025 revenue $130M (+202% YoY); P/S ~130x",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "First public quantum company to exceed $100M in annual revenue; 2026 guidance $225-245M; $100M+ in US government contracts; Mizuho target $61",
+        "source": "Market Data / Analyst Coverage",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "D-Wave Quantum": [
+      {
+        "claim": "QBTS at ~$14-17, ~$10B market cap; FY2025 revenue $24.6M (+179%); P/S ~400x",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Ondo Finance": [
+      {
+        "claim": "ONDO at ~$0.25, market cap ~$1.2B, down 88% from ATH ($2.14)",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/ondo",
+        "type": "data"
+      },
+      {
+        "claim": "Total TVL: $2.75B+ (OUSG ~$692M, USDY ~$1.4B)",
+        "source": "BingX",
+        "url": "https://bingx.com/en/learn/article/what-is-ondo-finance-ondo-tokenized-rwa-protocol-how-does-it-work",
+        "type": "data"
+      },
+      {
+        "claim": "Partnered with Franklin Templeton to tokenize 5 ETFs",
+        "source": "MetaMask",
+        "url": "https://metamask.io/price/ondo-finance",
+        "type": "data"
+      },
+      {
+        "claim": "Ondo Global Markets: $14B cumulative trading volume, 250+ tokenized stocks/ETFs",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "SEC investigation closed without charges (Nov 2025)",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/sec-closes-ondo-finance-probe-162433883.html",
+        "type": "news"
+      },
+      {
+        "claim": "Ondo Chain L1 announced for institutional RWAs; nearly 6B tokens still to unlock through 2029",
+        "source": "Changelly",
+        "url": "https://changelly.com/blog/ondo-ondo-price-prediction/",
+        "type": "data"
+      }
+    ],
+    "Worldcoin / World": [
+      {
+        "claim": "26M+ World App users, 15M+ verified; WLD at $0.28 (-97% from ATH)",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Daily unlock rate cut 43% starting July 24, 2026",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "EU eIDAS 2.0 enforcement begins June 2026 — member states must provide digital identity wallets, legal acceptance mandatory from 2027",
+        "source": "Regulatory",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "Story Protocol": [
+      {
+        "claim": "Story Protocol ($IP): ~$0.495, market cap ~$500M, down 96.7% from ATH ($14.89)",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "a16z-backed L1 for IP; less than $100 in daily on-chain revenue (DeFiLlama)",
+        "source": "DeFiLlama",
+        "url": "https://defillama.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Co-founder departed August 2025; 10% staff cut March 2026",
+        "source": "Market Data",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "C2PA (non-blockchain) has 6,000+ members and hardware adoption (Leica, Sony, Samsung, Google Pixel) — becoming the dominant standard, not Story",
+        "source": "Industry analysis",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "Cameco": [
+      {
+        "claim": "Uranium spot price $84.55/lb (April 7, 2026), long-term contract $90/lb (highest in years); Citi forecasts $100/lb for 2026",
+        "source": "Purepoint / Investing News Network",
+        "url": "https://purepoint.ca/uranium-spotlight-for-april-7-2026/",
+        "type": "data"
+      },
+      {
+        "claim": "Top uranium stocks coverage",
+        "source": "Investing News Network",
+        "url": "https://investingnews.com/daily/resource-investing/energy-investing/uranium-investing/top-uranium-stocks/",
+        "type": "news"
+      }
+    ],
+    "Denison Mines": [
+      {
+        "claim": "Uranium structural deficit at $84.55/lb spot; sector context for uranium juniors",
+        "source": "Investing News Network",
+        "url": "https://investingnews.com/daily/resource-investing/energy-investing/uranium-investing/top-uranium-stocks/",
+        "type": "news"
+      }
+    ],
+    "NexGen Energy": [
+      {
+        "claim": "Uranium structural deficit; sector context for uranium juniors and majors",
+        "source": "Investing News Network",
+        "url": "https://investingnews.com/uranium-forecast/",
+        "type": "news"
+      }
+    ],
+    "Paladin Energy": [
+      {
+        "claim": "Uranium sector context: $84.55/lb spot, $90/lb long-term contract, Citi $100/lb forecast",
+        "source": "Investing News Network",
+        "url": "https://investingnews.com/uranium-forecast/",
+        "type": "news"
+      }
+    ],
+    "Energy Fuels": [
+      {
+        "claim": "Uranium sector context: structural deficit, $84.55/lb spot price",
+        "source": "Purepoint",
+        "url": "https://purepoint.ca/uranium-spotlight-for-april-7-2026/",
+        "type": "data"
+      }
+    ],
+    "Maple Finance": [
+      {
+        "claim": "RWA lending landscape tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/impossiblefinance/rwa-lending-landscape",
+        "type": "data"
+      }
+    ],
+    "Goldfinch": [
+      {
+        "claim": "RWA lending landscape tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/impossiblefinance/rwa-lending-landscape",
+        "type": "data"
+      }
+    ],
+    "Huma Finance": [
+      {
+        "claim": "RWA lending landscape tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/impossiblefinance/rwa-lending-landscape",
+        "type": "data"
+      }
+    ],
+    "Helium": [
+      {
+        "claim": "DePIN ecosystem metrics tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/oj_dominus/depin",
+        "type": "data"
+      }
+    ],
+    "DIMO": [
+      {
+        "claim": "DePIN ecosystem metrics tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/oj_dominus/depin",
+        "type": "data"
+      }
+    ],
+    "Hivemapper": [
+      {
+        "claim": "DePIN ecosystem metrics tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/oj_dominus/depin",
+        "type": "data"
+      }
+    ],
+    "Geodnet": [
+      {
+        "claim": "DePIN ecosystem metrics tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/oj_dominus/depin",
+        "type": "data"
+      }
+    ],
+    "Render Network": [
+      {
+        "claim": "AI-sector token aggregate metrics tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/cryptokoryo/ai",
+        "type": "data"
+      }
+    ],
+    "io.net": [
+      {
+        "claim": "AI-sector token aggregate metrics tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/cryptokoryo/ai",
+        "type": "data"
+      }
+    ],
+    "Akash Network": [
+      {
+        "claim": "AI-sector token aggregate metrics tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/cryptokoryo/ai",
+        "type": "data"
+      }
+    ],
+    "Filecoin": [
+      {
+        "claim": "DePIN ecosystem metrics tracked on Dune dashboard",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/oj_dominus/depin",
+        "type": "data"
+      }
+    ],
+    "FTX / Alameda Research": [
+      {
+        "claim": "Nexus Mutual successfully processed claims through FTX collapse",
+        "source": "Document section on decentralized insurance",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Terra/LUNA": [
+      {
+        "claim": "Nexus Mutual successfully processed claims through Terra Luna collapse",
+        "source": "Document section on decentralized insurance",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Securitize (SPAC → SECZ)": [
+      {
+        "claim": "Pre-money equity value $1.25B, post-merger ~$1.82B; gross proceeds up to ~$469M",
+        "source": "PR Newswire",
+        "url": "https://www.prnewswire.com/news-releases/securitize-the-leading-tokenization-platform-to-become-a-public-company-at-1-25b-valuation-via-business-combination-with-cantor-equity-partners-ii-302596208.html",
+        "type": "official"
+      },
+      {
+        "claim": "Yahoo Finance coverage of BlackRock-backed Securitize eyes Nasdaq listing",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/blackrock-backed-securitize-eyes-nasdaq-154249324.html",
+        "type": "news"
+      },
+      {
+        "claim": "Projected 2026 revenue: $110M, net income: $24M (profitable); Benchmark initiated Buy, $16 price target",
+        "source": "Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4859702-buying-the-tokenization-pure-play-cantor-equity-partners-ii",
+        "type": "research"
+      },
+      {
+        "claim": "Securitize underpins $22B in tokenized RWAs and handles ~70% of US tokenization market",
+        "source": "The Block",
+        "url": "https://www.theblock.co/post/376583/tokenization-giant-securitize-to-go-public-via-1-25-billion-spac-deal",
+        "type": "news"
+      },
+      {
+        "claim": "The Block coverage of Securitize tapped to tokenize Currencs ordinary shares",
+        "source": "The Block",
+        "url": "https://www.theblock.co/post/396683/securitize-tapped-to-tokenize-currencs-ordinary-shares",
+        "type": "news"
+      },
+      {
+        "claim": "Existing investors include ARK, BlackRock, Morgan Stanley; expected close H1 2026",
+        "source": "PR Newswire",
+        "url": "https://www.prnewswire.com/news-releases/securitize-the-leading-tokenization-platform-to-become-a-public-company-at-1-25b-valuation-via-business-combination-with-cantor-equity-partners-ii-302596208.html",
+        "type": "official"
+      },
+      {
+        "claim": "Refresh Miami coverage of Securitize SPAC deal",
+        "source": "Refresh Miami",
+        "url": "https://refreshmiami.com/news/securitize-takes-tokenization-mainstream-with-1-25b-spac-deal/",
+        "type": "news"
+      }
+    ],
+    "Centrifuge (CFG)": [
+      {
+        "claim": "CFG price ~$0.155-0.22, market cap ~$89-124M",
+        "source": "Coinbase / CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/centrifuge",
+        "type": "data"
+      },
+      {
+        "claim": "Coinbase listing page for Centrifuge",
+        "source": "Coinbase",
+        "url": "https://www.coinbase.com/price/centrifuge",
+        "type": "data"
+      },
+      {
+        "claim": "TVL surpassed $1B (Aug 2025); projected 2026 revenue: $15M; LayerZero integration enables 165+ blockchain deployment",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/cmc-ai/centrifuge/latest-updates/",
+        "type": "data"
+      },
+      {
+        "claim": "CoinMarketCap price prediction for Centrifuge",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/cmc-ai/centrifuge/price-prediction/",
+        "type": "data"
+      },
+      {
+        "claim": "CoinMarketCap Centrifuge token page",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/centrifuge/",
+        "type": "data"
+      },
+      {
+        "claim": "Partners include Apollo, Janus Henderson, S&P Dow Jones; listed on Binance (March 2026, triggered 60% surge); JTRSY fund: $861M; JAAA: AAA-rated CLOs",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/cmc-ai/centrifuge/latest-updates/",
+        "type": "data"
+      }
+    ],
+    "Plume Network": [
+      {
+        "claim": "Price ~$0.01, market cap ~$50M; manages $645M in tokenized assets with 280,000+ RWA holders",
+        "source": "CoinGecko / Messari",
+        "url": "https://www.coingecko.com/en/coins/plume",
+        "type": "data"
+      },
+      {
+        "claim": "Messari project overview for Plume Network",
+        "source": "Messari",
+        "url": "https://messari.io/project/plume-network",
+        "type": "data"
+      },
+      {
+        "claim": "SEC Transfer Agent registered; partners: Apollo, WisdomTree (14 funds deployed), Mastercard, Securitize, Blackstone",
+        "source": "Phemex / Plume",
+        "url": "https://phemex.com/blogs/plume-network-token",
+        "type": "data"
+      },
+      {
+        "claim": "Plume Network official website",
+        "source": "Plume Network",
+        "url": "https://plume.org/",
+        "type": "official"
+      }
+    ],
+    "RWA Sector Overview": [
+      {
+        "claim": "RWA.xyz reports $29.1B distributed asset value (April 13, 2026, +7.45% from 30d ago); total stablecoin value $302B",
+        "source": "RWA.xyz",
+        "url": "https://app.rwa.xyz/",
+        "type": "data"
+      },
+      {
+        "claim": "Tokenized US Treasuries alone: ~$8.6-8.7B (up 200%+ in a year)",
+        "source": "Refresh Miami",
+        "url": "https://refreshmiami.com/news/securitize-takes-tokenization-mainstream-with-1-25b-spac-deal/",
+        "type": "news"
+      },
+      {
+        "claim": "BlackRock BUIDL AUM: $2.42B — largest tokenized product globally, now tradable on Uniswap",
+        "source": "CoinGecko / Messari",
+        "url": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund",
+        "type": "data"
+      },
+      {
+        "claim": "Messari project overview for BlackRock BUIDL",
+        "source": "Messari",
+        "url": "https://messari.io/project/blackrock-usd-institutional-digital-liquidity-fund",
+        "type": "data"
+      },
+      {
+        "claim": "Dune dashboard tracking comprehensive RWA market data",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/cryptokoryo/rwa",
+        "type": "data"
+      },
+      {
+        "claim": "Dune dashboard tracking tokenized treasuries and lending",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/impossiblefinance/rwa-lending-landscape",
+        "type": "data"
+      },
+      {
+        "claim": "Dune dashboard tracking on-chain commodity tracking",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/hashed_official/tokenized-commodities",
+        "type": "data"
+      }
+    ],
+    "Polymarket / Prediction Markets": [
+      {
+        "claim": "Daily volume $153M after Chainlink integration (3x pre-integration); weekly volume $2.0B; monthly volume $7B+ (Feb 2026 record); Q1 2026 $3.2B quarterly",
+        "source": "MEXC / DeFi Rate / TradingKey",
+        "url": "https://defirate.com/prediction-markets/",
+        "type": "data"
+      },
+      {
+        "claim": "MEXC coverage of Polymarket volume",
+        "source": "MEXC",
+        "url": "https://www.mexc.co/news/1017398",
+        "type": "data"
+      },
+      {
+        "claim": "MEXC additional coverage",
+        "source": "MEXC",
+        "url": "https://www.mexc.com/news/1014771",
+        "type": "data"
+      },
+      {
+        "claim": "MEXC coverage of $POLY trademark",
+        "source": "MEXC",
+        "url": "https://www.mexc.com/news/691698",
+        "type": "data"
+      },
+      {
+        "claim": "TVL: $416M; open interest: $472M; active markets: 49,633",
+        "source": "DeFi Rate",
+        "url": "https://defirate.com/prediction-markets/",
+        "type": "data"
+      },
+      {
+        "claim": "Token confirmed: CMO said 'there will be a token, there will be an airdrop' (Oct 24, 2025); trademark filed for $POLY (Feb 2026)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2025/10/24/polymarket-will-launch-token-and-airdrop-after-u-s-relaunch-cmo-says",
+        "type": "news"
+      },
+      {
+        "claim": "Acquired QCX (CFTC-regulated exchange) for $112M",
+        "source": "TradingKey / CoinDesk",
+        "url": "https://www.tradingkey.com/analysis/cryptocurrencies/more/261750599-crypto-oracle-polymarket-prediction-macroeconomics-sec-cftc-contract-tradingkey",
+        "type": "news"
+      },
+      {
+        "claim": "ICE invested $600M additionally",
+        "source": "Blockhead",
+        "url": "https://www.blockhead.co/2026/04/07/polymarket-overhauls-exchange-stack-with-new-contracts-order-book-collateral-token/",
+        "type": "news"
+      },
+      {
+        "claim": "Seeking ~$20B valuation (was $9B in Oct 2025)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/03/07/kalshi-polymarket-seeking-usd20-billion-valuations-in-fundraising-talks-wsj",
+        "type": "news"
+      },
+      {
+        "claim": "Columbia study found ~25% of volume may be artificial/wash trading",
+        "source": "Trade the Outcome",
+        "url": "https://www.tradetheoutcome.com/best-polymarket-categories-trade-2026/",
+        "type": "research"
+      },
+      {
+        "claim": "CoinGecko airdrop rewards coverage mentioning Polymarket token",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/learn/new-crypto-airdrop-rewards",
+        "type": "data"
+      }
+    ],
+    "Kalshi": [
+      {
+        "claim": "Valuation confirmed at $22B (March 20, 2026, led by Coatue Management)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/03/20/kalshi-valuation-doubles-to-usd22-billion-in-latest-funding-round-bloomberg",
+        "type": "news"
+      },
+      {
+        "claim": "Revenue: 2024 $24M to 2025 $260M (994% growth); annualized March 2026 revenue $1.5B (Bloomberg)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/03/20/kalshi-valuation-doubles-to-usd22-billion-in-latest-funding-round-bloomberg",
+        "type": "news"
+      },
+      {
+        "claim": "Weekly volume: $2.9B (60% of combined market); sports is 89% of fee revenue",
+        "source": "DeFi Rate / Sacra",
+        "url": "https://sacra.com/c/kalshi/",
+        "type": "research"
+      },
+      {
+        "claim": "No IPO expected in 2026 despite sufficient capital",
+        "source": "The Motley Fool",
+        "url": "https://www.fool.com/investing/2026/02/23/is-kalshi-likely-to-ipo-in-2026/",
+        "type": "news"
+      }
+    ],
+    "UMA (Polymarket infrastructure)": [
+      {
+        "claim": "UMA powers Polymarket's resolution — processes ~7,000 proposals/month; UMA token at $0.42 (all-time low)",
+        "source": "CoinMarketCap / Coinpedia",
+        "url": "https://coinmarketcap.com/cmc-ai/uma/price-prediction/",
+        "type": "data"
+      },
+      {
+        "claim": "Coinpedia UMA price prediction coverage",
+        "source": "Coinpedia",
+        "url": "https://coinpedia.org/price-prediction/uma-price-prediction/",
+        "type": "data"
+      }
+    ],
+    "TAE Technologies / DJT Merger": [
+      {
+        "claim": "All-stock merger valued at >$6 billion (announced Dec 18, 2025); each company's shareholders receive ~50% of combined entity; TAE shares valued at $53.89/share",
+        "source": "TAE Technologies / ANS",
+        "url": "https://tae.com/trump-media-and-technology-group-to-merge-with-tae-technologies/",
+        "type": "official"
+      },
+      {
+        "claim": "ANS coverage of TMTG-TAE merger",
+        "source": "ANS (American Nuclear Society)",
+        "url": "https://www.ans.org/news/article-7632/trump-media-to-merge-with-fusion-startup-tae-technologies-in-6b-deal/",
+        "type": "news"
+      },
+      {
+        "claim": "TMTG provides $200M cash at signing plus $100M upon S-4 filing; expected closing mid-2026 (StockTitan shows May 1, 2026 target)",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/overview/DJT/",
+        "type": "data"
+      },
+      {
+        "claim": "DJT stock (April 2, 2026): $9.18, market cap ~$2.5B, 276.7M shares outstanding, 52-week range $8.31-$27.78, beta 4.54",
+        "source": "CNBC / Stock Titan",
+        "url": "https://www.cnbc.com/quotes/DJT",
+        "type": "data"
+      },
+      {
+        "claim": "Revenue TTM: $3.7M; net loss TTM: -$712M",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/overview/DJT/",
+        "type": "data"
+      },
+      {
+        "claim": "Truth Social spin-off announced February 27, 2026 — would merge with Texas Ventures Acquisition III (Nasdaq: TVA)",
+        "source": "Yahoo Finance / Merlintrader",
+        "url": "https://finance.yahoo.com/news/trump-media-spin-off-plan-191426646.html",
+        "type": "news"
+      },
+      {
+        "claim": "Merlintrader coverage of TMTG DJT April 2026",
+        "source": "Merlintrader",
+        "url": "https://www.merlintrader.com/trump-media-technology-group-djt-april-2026/",
+        "type": "news"
+      },
+      {
+        "claim": "Creates a pure-play fusion company from the remaining entity",
+        "source": "Quiver Quantitative",
+        "url": "https://www.quiverquant.com/news/Trump+Media+&+Technology+Group,+TAE+Technologies,+and+Texas+Ventures+III+Explore+Potential+Spin-Off+of+Truth+Social+and+Other+Businesses",
+        "type": "news"
+      },
+      {
+        "claim": "Stock Titan news on DJT/TAE/Texas Ventures spin-off",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/news/DJT/trump-media-technology-group-tae-technologies-and-texas-ventures-0glcuiqb9yo7.html",
+        "type": "news"
+      },
+      {
+        "claim": "Yahoo Finance coverage of TMTG-TAE merger announcement",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/trump-media-technology-group-tae-133000367.html",
+        "type": "news"
+      },
+      {
+        "claim": "TAE achieved first-ever NBI-only FRC plasma formation (published in Nature Communications April 2025)",
+        "source": "TAE Technologies / PR Newswire",
+        "url": "https://tae.com/tae-technologies-delivers-fusion-breakthrough-that-dramatically-reduces-cost-of-a-future-power-plant/",
+        "type": "official"
+      },
+      {
+        "claim": "PR Newswire coverage of TAE fusion breakthrough",
+        "source": "PR Newswire",
+        "url": "https://www.prnewswire.com/news-releases/tae-technologies-delivers-fusion-breakthrough-that-dramatically-reduces-cost-of-a-future-power-plant-302429115.html",
+        "type": "news"
+      },
+      {
+        "claim": "Spotlight on Startups coverage of TMTG-TAE merger as 'ultimate power play for AI era'",
+        "source": "Spotlight on Startups",
+        "url": "https://spotlightonstartups.com/the-fusion-pivot-why-the-tmtg-and-tae-technologies-merger-is-the-ultimate-power-play-for-the-ai-era/",
+        "type": "news"
+      },
+      {
+        "claim": "TAE skipping 6th-gen Copernicus machine, proceeding directly to commercial Da Vinci prototype; reactor length/complexity reduced up to 50%",
+        "source": "TAE Technologies",
+        "url": "https://tae.com/tae-shortens-device-roadmap-prepares-for-commercial-era/",
+        "type": "official"
+      },
+      {
+        "claim": "Stable plasma at >70 million C",
+        "source": "Ainvest",
+        "url": "https://www.ainvest.com/news/tae-technologies-fusion-breakthrough-clean-energy-tipping-point-2506/",
+        "type": "news"
+      },
+      {
+        "claim": "TAE holds 1,600+ patents",
+        "source": "Exoswan",
+        "url": "https://exoswan.com/nuclear-fusion-energy-stocks",
+        "type": "research"
+      }
+    ],
+    "Fusion Indirect Plays": [
+      {
+        "claim": "No fusion ETF exists. Indirect public equity exposure overview including AMSC, Bruker, Alphabet, Microsoft, Eni, Linde, Furukawa Electric",
+        "source": "Intellectia.AI / Exoswan",
+        "url": "https://intellectia.ai/blog/fusion-energy-stocks",
+        "type": "research"
+      },
+      {
+        "claim": "Exoswan nuclear fusion energy stocks comprehensive overview",
+        "source": "Exoswan",
+        "url": "https://exoswan.com/nuclear-fusion-energy-stocks",
+        "type": "research"
+      }
+    ],
+    "Uranium Juniors (Skyharbour)": [
+      {
+        "claim": "Skyharbour Resources (TSXV: SYH) ~C$35M market cap; 11.77% U3O8 over 1.6m at Moore Project; 15,000m 2026 drill program",
+        "source": "Junior Mining Network / Investing News Network / Streetwise Reports",
+        "url": "https://investingnews.com/stocks/tsxv-syh/skyharbour-resources/",
+        "type": "news"
+      },
+      {
+        "claim": "Streetwise Reports Skyharbour profile",
+        "source": "Streetwise Reports",
+        "url": "https://www.streetwisereports.com/pub/co/skyharbour-resources-ltd",
+        "type": "research"
+      },
+      {
+        "claim": "Junior Mining Network uranium mining stocks list",
+        "source": "Junior Mining Network",
+        "url": "https://www.juniorminingnetwork.com/mining-stocks/uranium-mining-stocks.html",
+        "type": "data"
+      }
+    ],
+    "Gallium/Germanium (Blue Moon Metals)": [
+      {
+        "claim": "Blue Moon Metals: TSXV: MOON / NASDAQ: BMM (listed Jan 26, 2026); market cap ~C$80-100M",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/quote/MOON.V/",
+        "type": "data"
+      },
+      {
+        "claim": "Major shareholders include Teck Resources, Oaktree, Wheaton Precious Metals",
+        "source": "Investing News Network",
+        "url": "https://investingnews.com/stocks/nasdaq-bmm/blue-moon/",
+        "type": "news"
+      },
+      {
+        "claim": "Acquired the Apex Germanium and Gallium Mine from Teck on March 16, 2026; planning 40,000m of drilling in 2026",
+        "source": "Blue Moon Metals",
+        "url": "https://bluemoonmetals.com/blue-moon-closes-the-purchase-of-the-apex-germanium-and-gallium-mine-from-teck/",
+        "type": "official"
+      },
+      {
+        "claim": "The Globe and Mail market data for Blue Moon",
+        "source": "The Globe and Mail",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/MOON-X/",
+        "type": "data"
+      },
+      {
+        "claim": "Gallium pricing: China domestic ~$245/kg; European retail $2,102/kg — 8.5x spread reflecting export controls",
+        "source": "Rare-Earth-Mining",
+        "url": "https://rare-earth-mining.com/gallium-price/",
+        "type": "data"
+      },
+      {
+        "claim": "China suspended export ban until November 27, 2026 but licensing still required; China controls 95%+ of global gallium refining",
+        "source": "Rare-Earth-Mining / Skillings",
+        "url": "https://skillings.net/gallium-germanium-12-months-after-export-controls-where-is-the-supply/",
+        "type": "research"
+      },
+      {
+        "claim": "Western supply initiatives (Rio Tinto Quebec, MTM Critical Metals Texas) are years from scale",
+        "source": "CSIS (Center for Strategic and International Studies)",
+        "url": "https://www.csis.org/analysis/beyond-rare-earths-chinas-growing-threat-gallium-supply-chains",
+        "type": "research"
+      }
+    ],
+    "Antimony Sector": [
+      {
+        "claim": "Antimony price ~$51.80/kg (April 9, 2026), down from $59.75/kg peak (July 2025) but still 4x above 2023 levels",
+        "source": "Strategic Metals Invest / Fastmarkets",
+        "url": "https://strategicmetalsinvest.com/antimony-prices/",
+        "type": "data"
+      },
+      {
+        "claim": "Fastmarkets antimony 2026 outlook — ample supply, strategic demand to guide geopolitical oversight",
+        "source": "Fastmarkets",
+        "url": "https://www.fastmarkets.com/insights/antimony-2026-ample-supply-strategic-demand-to-guide-geopolitical-oversight/",
+        "type": "research"
+      },
+      {
+        "claim": "Perpetua Resources (PPTA) $3.5B market cap; Stibnite Idaho supplies 35% of US antimony demand; EXIM Bank up to $2B financing; FID expected spring 2026",
+        "source": "Yahoo Finance / Stock Titan",
+        "url": "https://finance.yahoo.com/quote/PPTA/",
+        "type": "data"
+      },
+      {
+        "claim": "Stock Titan PPTA news feed",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/news/PPTA/",
+        "type": "data"
+      },
+      {
+        "claim": "Americas Gold & Silver (TSX: USA) Galena Complex — largest US antimony mine; 561K lbs produced in 2025",
+        "source": "SEC Filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001286973/000106299326000352/exhibit99-1.htm",
+        "type": "filing"
+      },
+      {
+        "claim": "US Antimony (UAMY) — 2 of only 3 Western Hemisphere antimony smelters; FY2026 revenue guidance $125M",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/news/UAMY/united-states-antimony-corporation-updates-significant-montana-r2akua9ze54z.html",
+        "type": "data"
+      },
+      {
+        "claim": "Military Metals (CSE: MILI) C$39M — Trojarova (Slovakia): 4.6m of 4.1% Sb incl. 2.6m of 7.0% Sb; maiden resource forthcoming",
+        "source": "Barchart / Junior Mining Network / Investing.com",
+        "url": "https://www.barchart.com/stocks/quotes/MILI.CN",
+        "type": "data"
+      },
+      {
+        "claim": "Junior Mining Network antimony mining stocks",
+        "source": "Junior Mining Network",
+        "url": "https://www.juniorminingnetwork.com/mining-stocks/antimony-mining-stocks.html",
+        "type": "data"
+      },
+      {
+        "claim": "Larvotto Resources (ASX: LRV) ~A$200-400M — Hillgrove DFS: NPV A$694M, IRR 102%; production start Q2 2026; 7% of world antimony at peak",
+        "source": "Mining Weekly",
+        "url": "https://www.miningweekly.com/article/hillgrove-eyes-2026-production-start-at-australias-largest-antimony-mine-2025-05-06",
+        "type": "news"
+      }
+    ],
+    "Lithium Sector": [
+      {
+        "claim": "Battery-grade lithium carbonate: ~$21,000-22,000/tonne in China, up 117% YoY and 40% YTD",
+        "source": "Investing News Network / Trading Economics",
+        "url": "https://investingnews.com/daily/resource-investing/battery-metals-investing/lithium-investing/lithium-forecast/",
+        "type": "data"
+      },
+      {
+        "claim": "Trading Economics lithium pricing data",
+        "source": "Trading Economics",
+        "url": "https://tradingeconomics.com/commodity/lithium",
+        "type": "data"
+      },
+      {
+        "claim": "Morgan Stanley forecasts deficit of 80,000 mt LCE in 2026",
+        "source": "The Oregon Group",
+        "url": "https://theoregongroup.com/commodities/lithium/can-lithium-hit-30000-in-2026/",
+        "type": "research"
+      },
+      {
+        "claim": "Surge Battery Metals (TSXV: NILI) — highest-grade lithium clay resource in US, PEA showing after-tax NPV $9.2B, grades up to 8,070 ppm",
+        "source": "Carbon Credits",
+        "url": "https://carboncredits.com/lithium-prices-climb-again-in-2026-sending-stocks-skyward-nili/",
+        "type": "news"
+      }
+    ],
+    "Helium-3 (Pulsar Helium)": [
+      {
+        "claim": "Pulsar Helium (AIM/TSXV: PLSR, OTCQB: PSRHF) market cap ~$300M (up ~150% in 2026)",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/quote/PLSR.V/",
+        "type": "data"
+      },
+      {
+        "claim": "Yahoo Finance helium stocks coverage",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/helium-stocks-soar-conflict-chip-141500859.html",
+        "type": "news"
+      },
+      {
+        "claim": "Topaz Project in Minnesota has independently confirmed helium-3 isotope concentration (two US Federal labs, Jan 2026)",
+        "source": "Green Stock News",
+        "url": "https://greenstocknews.com/stocks/critical-element-stocks/helium-stocks",
+        "type": "news"
+      },
+      {
+        "claim": "Total He-3 market estimated at only $21.5M in 2026, growing to $383M by 2035",
+        "source": "Market Growth Reports",
+        "url": "https://www.marketgrowthreports.com/blog/helium-3-companies-152",
+        "type": "research"
+      },
+      {
+        "claim": "Pulsar Helium official website",
+        "source": "Pulsar Helium",
+        "url": "https://www.pulsarhelium.com/",
+        "type": "official"
+      }
+    ],
+    "Airdrop Intelligence": [
+      {
+        "claim": "Only 35-45% of farmed protocols actually distribute tokens; 88% of airdropped tokens lose value within 3 months",
+        "source": "Document analysis",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "118 TGE launches tracked by Memento Research in 2025: 84.7% trading below launch price, median decline -71.1% FDV; only 15.3% in profit (median gain +109.7%)",
+        "source": "Memento Research",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Airdrops.io ultimate airdrop tier list for 2026",
+        "source": "Airdrops.io",
+        "url": "https://airdrops.io/blog/the-ultimate-airdrop-tier-list-for-2026/",
+        "type": "data"
+      },
+      {
+        "claim": "52% Polymarket odds of Hyperliquid S2 airdrop before Dec 31, 2026; 40% of HYPE supply reserved",
+        "source": "Airdrops.io",
+        "url": "https://airdrops.io/blog/the-ultimate-airdrop-tier-list-for-2026/",
+        "type": "data"
+      },
+      {
+        "claim": "DL News coverage of five upcoming crypto airdrops to watch for in 2026 including Base ($BASE) with JPMorgan estimated potential $34B token value",
+        "source": "DL News",
+        "url": "https://www.dlnews.com/articles/defi/five-upcoming-crypto-airdrops-to-watch-for-in-2026/",
+        "type": "news"
+      },
+      {
+        "claim": "Yahoo Finance coverage of five crypto airdrops to watch in 2026 including MetaMask; Lubin said 'sooner than you would expect' (Sept 2025)",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/five-crypto-airdrops-watch-2026-095648298.html",
+        "type": "news"
+      }
+    ],
+    "Token Death Rate / Market Risk": [
+      {
+        "claim": "Per CoinGecko (Jan 2026): 53.2% of ALL cryptocurrencies are now dead/inactive; in 2025 alone 11.56 million tokens failed — 86.3% of all failures since 2021",
+        "source": "CoinGecko",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "October 2025 liquidation cascade wiped $19B in leveraged positions in 24 hours, killing 7.7M tokens in Q4 alone",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "$757M+ stolen YTD through mid-April 2026; Drift Protocol lost $285M on April 1 (likely North Korean hackers per TRM Labs)",
+        "source": "Security Reports",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Phishing surged 1,400% year-over-year; hacked tokens lose 61% of value within 6 months and rarely recover",
+        "source": "Security Reports",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "Quantum Computing SPACs": [
+      {
+        "claim": "Rigetti (RGTI) at ~$14-16, ~$8.5B market cap, ~$12.7M revenue, P/S ~670x",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Infleqtion (INFQ) — newest SPAC — merged Feb 13, 2026 with nearly 100% trust preserved; $12.59 price, ~$2.3B cap; neutral-atom tech; 12 logical qubits with error correction; NASA $20M+ contracted; BTIG Buy $22 target; lowest P/S in quantum at ~58x",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Horizon Quantum (HQ) newly listed March 20, ~$500M, pre-revenue",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "PsiQuantum: private at $7B valuation (Sept 2025 Series E); raised $2.32B total; silicon photonics; new CEO Victor Peng (Feb 2026)",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Pasqal announced merger with Bleichroeder Acquisition Corp (March 2026); Xanadu merged with Crane Harbor (Nov 2025); IQM raised EUR50M from BlackRock",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Tools and Dashboards": [
+      {
+        "claim": "Nansen ($49/mo) — Token God Mode, 500M+ labeled addresses, AI agent, agentic trading on Solana/Base",
+        "source": "Nansen",
+        "url": "https://www.nansen.ai/",
+        "type": "official"
+      },
+      {
+        "claim": "Arkham Intelligence (FREE) — deanonymizes wallets to real-world identities (1,000+ tracked entities); 3M+ users",
+        "source": "Arkham Intelligence",
+        "url": "https://www.arkhamintelligence.com/",
+        "type": "official"
+      },
+      {
+        "claim": "DeFiLlama (FREE) — TVL, yields, token unlocks at defillama.com/unlocks; open-source, ad-free",
+        "source": "DeFiLlama",
+        "url": "https://defillama.com/unlocks",
+        "type": "official"
+      },
+      {
+        "claim": "CryptoQuant — exchange flows, miner behavior, whale deposits, BTC ETF wallet tracking",
+        "source": "CryptoQuant",
+        "url": "https://cryptoquant.com/",
+        "type": "official"
+      },
+      {
+        "claim": "Glassnode — macro cycle metrics (MVRV, SOPR, HODL waves)",
+        "source": "Glassnode",
+        "url": "https://glassnode.com/",
+        "type": "official"
+      },
+      {
+        "claim": "Token Terminal — revenue-based protocol rankings (P/S, P/E for crypto)",
+        "source": "Token Terminal",
+        "url": "https://tokenterminal.com/",
+        "type": "official"
+      },
+      {
+        "claim": "RWA.xyz — industry-standard tokenized RWA analytics",
+        "source": "RWA.xyz",
+        "url": "https://app.rwa.xyz/",
+        "type": "official"
+      },
+      {
+        "claim": "Tokenomist.ai (formerly TokenUnlocks.app) — source-verified data across 500+ tokens",
+        "source": "Tokenomist.ai",
+        "url": "https://tokenomist.ai/",
+        "type": "official"
+      },
+      {
+        "claim": "CryptoRank Token Unlock tool",
+        "source": "CryptoRank",
+        "url": "https://cryptorank.io/",
+        "type": "official"
+      },
+      {
+        "claim": "DropsTab Vesting — 9,000+ tokens tracked",
+        "source": "DropsTab",
+        "url": "https://dropstab.com/",
+        "type": "official"
+      },
+      {
+        "claim": "CoinGlass for token unlock tracking",
+        "source": "CoinGlass",
+        "url": "https://coinglass.com/",
+        "type": "official"
+      },
+      {
+        "claim": "CEO.ca forums — primary hub for Canadian junior mining discussion",
+        "source": "CEO.ca",
+        "url": "https://ceo.ca/",
+        "type": "official"
+      },
+      {
+        "claim": "Junior Mining Network — real-time news for junior miners",
+        "source": "Junior Mining Network",
+        "url": "https://juniorminingnetwork.com/",
+        "type": "official"
+      },
+      {
+        "claim": "The Oregon Group — covers uranium/critical minerals with institutional rigor",
+        "source": "The Oregon Group",
+        "url": "https://theoregongroup.com/",
+        "type": "official"
+      },
+      {
+        "claim": "Bankless newsletter ($22/mo) by Ryan Sean Adams/David Hoffman",
+        "source": "Bankless",
+        "url": "https://bankless.com/",
+        "type": "official"
+      },
+      {
+        "claim": "The Defiant newsletter ($15/mo) by Camila Russo",
+        "source": "The Defiant",
+        "url": "https://thedefiant.io/",
+        "type": "official"
+      },
+      {
+        "claim": "Blockworks Daily newsletter — 160K+ readers, free",
+        "source": "Blockworks",
+        "url": "https://blockworks.co/",
+        "type": "official"
+      },
+      {
+        "claim": "Not Boring by Packy McCormick — business strategy + crypto deep dives",
+        "source": "Not Boring",
+        "url": "https://www.notboring.co/",
+        "type": "official"
+      },
+      {
+        "claim": "Ale Research on Substack for DeSci coverage",
+        "source": "Substack",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "Republic Mirror Tokens": [
+      {
+        "claim": "Structure: Debt securities (Contingent Payout Notes) issued by RepublicX LLC on Solana; NOT equity — tokens mirror economic performance",
+        "source": "Altcoin Buzz",
+        "url": "https://www.altcoinbuzz.io/cryptocurrency-news/republic-unveils-mirror-tokens-for-private-market-access/",
+        "type": "news"
+      },
+      {
+        "claim": "Current products: rSPAX (SpaceX at $275/token reference), rTTOK (ByteDance); planned: xAI, Anthropic, Ramp, Cursor, Perplexity, Epic Games; minimum investment $50",
+        "source": "Business Wire",
+        "url": "https://www.businesswire.com/news/home/20250625314729/en/Republic-Launches-SpaceX-Linked-Token-Open-to-All",
+        "type": "official"
+      },
+      {
+        "claim": "1-year lockup before secondary trading",
+        "source": "Ledger Insights",
+        "url": "https://www.ledgerinsights.com/republic-to-offer-tokenized-spacex-other-unicorn-tracker-security-tokens/",
+        "type": "news"
+      },
+      {
+        "claim": "Regulation: Reg D 506(c), accredited investors only",
+        "source": "Crowdfund Insider",
+        "url": "https://www.crowdfundinsider.com/2025/09/249747-mirror-tokens-republic-offers-first-tokenized-secondary-offering-for-spacex/",
+        "type": "news"
+      }
+    ],
+    "Decentralized Insurance (Nexus Mutual)": [
+      {
+        "claim": "Nexus Mutual (NXM): ~$55, market cap ~$100M, 10,000+ members, $6B+ in crypto assets protected; spotless claims history; coverage costs under 1% annually",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Expanding into real-world: $2.3M coverage for 5,000+ UK shopkeepers via InShare partnership",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Etherisc has onboarded 22,000+ Kenyan farmers for crop microinsurance",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Decentralized VPN (Sentinel)": [
+      {
+        "claim": "Sentinel (DVPN): 10M+ users via RYN VPN, nodes in 90+ countries",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Nym Network: true mixnet privacy, $26M market cap, $43M raised (a16z, Polychain, Binance Labs)",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "HOPR: $7M market cap, focused on Ethereum validator privacy",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Carbon Credits (KlimaDAO / Toucan)": [
+      {
+        "claim": "KlimaDAO: $0.04 (from $4,950 ATH — 99.99% decline); rebranded as Klima Protocol, ditched treasury model",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Toucan BCT: $0.08 (from $8.60); 99.9% of BCT credits too old for CORSIA compliance",
+        "source": "Market Data",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Investing.com (ESS Inc data)": [
+      {
+        "claim": "ESS Inc (GWH) financial data and quote",
+        "source": "Investing.com",
+        "url": "https://www.investing.com/equities/x1-entertainment",
+        "type": "data"
+      }
+    ]
+  }
+}

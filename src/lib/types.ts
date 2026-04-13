@@ -19,11 +19,15 @@ export type AssetClass =
 /** Tier ranking: 1 = highest conviction, 3 = speculative. */
 export type Tier = 1 | 2 | 3;
 
+/** Classification of citation origin. */
+export type CitationType = "official" | "news" | "data" | "research" | "filing" | "github";
+
 /** Citation reference for opportunity claims. */
 export interface Citation {
   readonly claim: string;
   readonly source: string;
   readonly url: string;
+  readonly type?: CitationType;
 }
 
 /** Core opportunity data model. */

@@ -1,0 +1,1457 @@
+{
+  "source_document": "The 1000x Opportunity Map for 2026 and Beyond",
+  "entries": {
+    "Bittensor": [
+      {
+        "claim": "Market cap of $2.5-3.1B with 128 active subnets expanding to 256 in 2026",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/bittensor/",
+        "type": "data"
+      },
+      {
+        "claim": "Decentralized market for machine intelligence where miners compete to produce AI outputs",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/bittensor/",
+        "type": "data"
+      },
+      {
+        "claim": "First halving occurred December 14, 2025, cutting emissions from 7,200 to 3,600 TAO/day",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/bittensor/",
+        "type": "data"
+      },
+      {
+        "claim": "Investment data and analysis on Bittensor",
+        "source": "Ainvest",
+        "url": "https://www.ainvest.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Subnet tokens like templar (SN3, $137M), Chutes (SN64, $132M, 9.1T tokens, $5.5M annualized revenue), Targon (SN4, $10.5M Series A)",
+        "source": "The Defiant",
+        "url": "https://thedefiant.io/",
+        "type": "news"
+      },
+      {
+        "claim": "Covenant-72B, a 72B parameter language model trained collaboratively across 70+ contributors, competitive with Meta Llama 2 70B",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Grayscale filed for a spot Bittensor ETF",
+        "source": "KuCoin",
+        "url": "https://www.kucoin.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Covenant AI exit on April 10, 2026 triggered 20%+ price crash, governance fragility exposed",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/bittensor/",
+        "type": "data"
+      },
+      {
+        "claim": "Bittensor official project and community",
+        "source": "OpenTensor (X/Twitter)",
+        "url": "https://twitter.com/opentensor",
+        "type": "official"
+      },
+      {
+        "claim": "AI x Crypto sector combined market cap ~$22.6B crashed 55-90% from highs",
+        "source": "Spoted Crypto",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Buy TAO on Binance or Coinbase",
+        "source": "Binance",
+        "url": "https://www.binance.com/",
+        "type": "data"
+      },
+      {
+        "claim": "VitaDAO $VITA down ~97% from ATH",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/vitadao/",
+        "type": "data"
+      }
+    ],
+    "Gensyn": [
+      {
+        "claim": "Backed by a16z with $101M raised, focuses on verifiable decentralized ML training",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/gensyn",
+        "type": "data"
+      },
+      {
+        "claim": "Token sale completed December 2025, claiming underway through April 2026",
+        "source": "DropsTab",
+        "url": "https://dropstab.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Gensyn official website",
+        "source": "Gensyn",
+        "url": "https://www.gensyn.ai/",
+        "type": "official"
+      }
+    ],
+    "Akash Network": [
+      {
+        "claim": "Offers H100 GPUs at $1.33/hour versus AWS at $3.93/hour",
+        "source": "Akash Network",
+        "url": "https://akash.network/",
+        "type": "official"
+      },
+      {
+        "claim": "New leases up 28% quarter-over-quarter with zero-inflation token model",
+        "source": "Messari",
+        "url": "https://messari.io/project/akash-network",
+        "type": "research"
+      }
+    ],
+    "Render Network": [
+      {
+        "claim": "Processes ~20,000 frames daily with partnerships across Nvidia Omniverse, Runway, and Stability AI",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/render",
+        "type": "data"
+      },
+      {
+        "claim": "Generating real revenue with DeFi-Summer-like foundation of genuine utility",
+        "source": "ChainPlay",
+        "url": "https://chainplay.gg/",
+        "type": "data"
+      }
+    ],
+    "EZKL": [
+      {
+        "claim": "Open-source ZK-ML library, no token yet, one of three leaders in verifiable AI",
+        "source": "Imperii Partners",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Zero-knowledge proofs applied to machine learning for AI inference verification",
+        "source": "BingX",
+        "url": "https://bingx.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Essential for AI agent trust, regulatory compliance (EU AI Act), and DeFi risk models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/",
+        "type": "research"
+      },
+      {
+        "claim": "ZK-ML technology overview and applications",
+        "source": "Solulab",
+        "url": "https://www.solulab.com/",
+        "type": "research"
+      },
+      {
+        "claim": "ZK-ML technology overview and applications",
+        "source": "ICME",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Estimated market of 90 billion ZK proofs needed by 2030, worth ~$10B",
+        "source": "Spectral Capital",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "EZKL GitHub repository",
+        "source": "GitHub",
+        "url": "https://github.com/zkonduit/ezkl",
+        "type": "github"
+      }
+    ],
+    "Modulus Labs": [
+      {
+        "claim": "$6.3M raised from Variant, no token yet, one of three ZK-ML leaders",
+        "source": "Imperii Partners",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "Giza": [
+      {
+        "claim": "Building on StarkNet, no token yet, one of three ZK-ML leaders",
+        "source": "Imperii Partners",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Giza official website",
+        "source": "Giza",
+        "url": "https://www.gizatech.xyz/",
+        "type": "official"
+      }
+    ],
+    "Virtuals Protocol": [
+      {
+        "claim": "Deployed 18,000+ agents generating $470M+ in cumulative Agentic GDP, trades ~87% below ATH",
+        "source": "Crypto.com",
+        "url": "https://crypto.com/",
+        "type": "data"
+      },
+      {
+        "claim": "ERC-4337 for account abstraction, Virtuals for agent deployment",
+        "source": "Company reference",
+        "url": "https://www.virtuals.io/",
+        "type": "official"
+      }
+    ],
+    "ElizaOS / ai16z": [
+      {
+        "claim": "ai16z (AI16Z) on Solana built the ElizaOS framework",
+        "source": "99Bitcoins",
+        "url": "https://99bitcoins.com/",
+        "type": "news"
+      },
+      {
+        "claim": "#2 trending GitHub repo in January 2025 with 2,800 forks",
+        "source": "Bankless",
+        "url": "https://www.bankless.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Planning a dedicated L1 blockchain for AI agents",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/",
+        "type": "news"
+      },
+      {
+        "claim": "ElizaOS GitHub repository",
+        "source": "GitHub",
+        "url": "https://github.com/elizaOS/eliza",
+        "type": "github"
+      },
+      {
+        "claim": "ElizaOS creator Shaw on Twitter",
+        "source": "X/Twitter (@shawmakesmagic)",
+        "url": "https://twitter.com/shawmakesmagic",
+        "type": "official"
+      }
+    ],
+    "Autonolas": [
+      {
+        "claim": "Olas (OLAS) is the infrastructure layer with agents running across 9 blockchains",
+        "source": "CryptoNews.com",
+        "url": "https://cryptonews.com/",
+        "type": "news"
+      },
+      {
+        "claim": "All AI agent tokens trade at 70-90% below ATH",
+        "source": "OpenAIToolsHub",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Bio Protocol": [
+      {
+        "claim": "Y Combinator for on-chain science, listed on Binance at ~$304M peak market cap",
+        "source": "Bitget",
+        "url": "https://www.bitget.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Listed on Binance",
+        "source": "NFT Evening",
+        "url": "https://nftevening.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Funding 100+ projects with $50M via AI agents",
+        "source": "XYZ123",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "DeSci sector market cap of ~$238M",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/categories/desci",
+        "type": "data"
+      },
+      {
+        "claim": "Bio Protocol official website",
+        "source": "Bio Protocol",
+        "url": "https://www.bio.xyz/",
+        "type": "official"
+      }
+    ],
+    "VitaDAO": [
+      {
+        "claim": "$10M+ deployed, Pfizer Ventures backing, partnerships with Chugai, spinout biotechs projecting $40-50M run rates",
+        "source": "XYZ123",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Pfizer Ventures backing",
+        "source": "Bio (reference)",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "VitaDAO partnerships and community information",
+        "source": "PANews",
+        "url": "https://www.panewslab.com/",
+        "type": "news"
+      },
+      {
+        "claim": "VITA-FAST token sale was 1,700% oversubscribed",
+        "source": "VitaDAO (Substack/official)",
+        "url": "https://vitadao.com/",
+        "type": "official"
+      },
+      {
+        "claim": "VitaDAO down ~97% from ATH with $55M treasury",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/vitadao/",
+        "type": "data"
+      },
+      {
+        "claim": "VitaDAO $55M treasury",
+        "source": "PANews",
+        "url": "https://www.panewslab.com/",
+        "type": "news"
+      },
+      {
+        "claim": "NIH success rates dropping from 26% to 19% for early-stage investigators creates demand for alternative science funding",
+        "source": "Substack",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "VitaDAO Twitter/community",
+        "source": "X/Twitter (@vita_dao)",
+        "url": "https://twitter.com/vita_dao",
+        "type": "official"
+      }
+    ],
+    "Molecule Protocol": [
+      {
+        "claim": "Pre-token with proven product-market fit, pioneered IP-NFT standard for biopharma intellectual property",
+        "source": "Molecule",
+        "url": "https://www.molecule.to/",
+        "type": "official"
+      },
+      {
+        "claim": "$14M raised, watch for token launch",
+        "source": "Molecule",
+        "url": "https://www.molecule.to/",
+        "type": "official"
+      },
+      {
+        "claim": "Molecule DAO Twitter",
+        "source": "X/Twitter (@molecule_dao)",
+        "url": "https://twitter.com/molecule_dao",
+        "type": "official"
+      }
+    ],
+    "ResearchHub": [
+      {
+        "claim": "Founded by Coinbase co-founder Brian Armstrong, 'Reddit for science' at very low market cap on Uniswap and Gate.io",
+        "source": "California Management Review (partial reference)",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "ResearchHub official website",
+        "source": "ResearchHub",
+        "url": "https://www.researchhub.com/",
+        "type": "official"
+      }
+    ],
+    "AminoChain": [
+      {
+        "claim": "a16z-backed decentralized biobanking, pre-token",
+        "source": "Bitget",
+        "url": "https://www.bitget.com/",
+        "type": "data"
+      }
+    ],
+    "CryoDAO": [
+      {
+        "claim": "$20M+ treasury, cryopreservation focus",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/",
+        "type": "data"
+      }
+    ],
+    "Pump.Science (RIF)": [
+      {
+        "claim": "Gamified longevity tokens ($RIF)",
+        "source": "KuCoin",
+        "url": "https://www.kucoin.com/",
+        "type": "data"
+      }
+    ],
+    "Pump.Science (URO)": [
+      {
+        "claim": "Gamified longevity tokens ($URO)",
+        "source": "KuCoin",
+        "url": "https://www.kucoin.com/",
+        "type": "data"
+      }
+    ],
+    "Helium": [
+      {
+        "claim": "Established DePIN player alongside Filecoin and Render",
+        "source": "Document reference",
+        "url": "https://www.helium.com/",
+        "type": "official"
+      }
+    ],
+    "Filecoin": [
+      {
+        "claim": "Established DePIN player alongside Helium and Render",
+        "source": "Document reference",
+        "url": "https://filecoin.io/",
+        "type": "official"
+      }
+    ],
+    "Grass Network": [
+      {
+        "claim": "Scaled from 200K to 8.5M monthly active users in a year, pays users for unused internet bandwidth used as AI training data",
+        "source": "BingX",
+        "url": "https://bingx.com/",
+        "type": "data"
+      },
+      {
+        "claim": "~20 paying AI lab clients and a $10M bridge round from Polychain Capital",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/grass/",
+        "type": "data"
+      }
+    ],
+    "Acurast": [
+      {
+        "claim": "Repurposes idle smartphones as compute nodes with zero upfront cost, earning $45-80/month per device — most inclusive DePIN for emerging markets",
+        "source": "Titan Network",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Acurast official website",
+        "source": "Acurast",
+        "url": "https://acurast.com/",
+        "type": "official"
+      }
+    ],
+    "DAWN": [
+      {
+        "claim": "Building trustless last-mile wireless with Proof-of-Bandwidth consensus at gigabit speeds 70% cheaper than traditional telecom",
+        "source": "Titan Network",
+        "url": "",
+        "type": "news"
+      }
+    ],
+    "Hivemapper": [
+      {
+        "claim": "Creating a decentralized Google Maps alternative via dashcam 'Bee' devices",
+        "source": "Document reference",
+        "url": "https://hivemapper.com/",
+        "type": "official"
+      }
+    ],
+    "Symbiotic": [
+      {
+        "claim": "Backed by Paradigm and Lido co-founders, attracted $200M deposits within a day of launch",
+        "source": "Document reference",
+        "url": "https://app.symbiotic.fi/",
+        "type": "official"
+      }
+    ],
+    "Karak Network": [
+      {
+        "claim": "Raised $50M at $1B valuation from Coinbase, Mubadala Abu Dhabi sovereign wealth fund, and Pantera",
+        "source": "Unchained",
+        "url": "https://unchainedcrypto.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Only restaking protocol accepting multi-chain, multi-asset collateral",
+        "source": "Blockworks",
+        "url": "https://blockworks.co/",
+        "type": "news"
+      }
+    ],
+    "Espresso Systems": [
+      {
+        "claim": "Building the shared sequencer layer that every L2 needs, no token yet",
+        "source": "Document reference",
+        "url": "https://www.espressosys.com/",
+        "type": "official"
+      }
+    ],
+    "EigenLayer": [
+      {
+        "claim": "EIGEN token down 91% from highs with $18-19.7B TVL",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/",
+        "type": "news"
+      }
+    ],
+    "Anoma": [
+      {
+        "claim": "Token ($XAN) launched late 2025 after raising $57.75M",
+        "source": "Medium",
+        "url": "https://medium.com/",
+        "type": "news"
+      },
+      {
+        "claim": "First generalized intent-centric architecture with ZK privacy and cross-chain atomic transactions",
+        "source": "Anoma",
+        "url": "https://anoma.net/",
+        "type": "official"
+      },
+      {
+        "claim": "Anoma overview and architecture",
+        "source": "Eco",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Still at devnet stage",
+        "source": "Gate DEX",
+        "url": "https://www.gate.io/",
+        "type": "data"
+      },
+      {
+        "claim": "Still at devnet stage despite token launch",
+        "source": "Medium",
+        "url": "https://medium.com/",
+        "type": "news"
+      }
+    ],
+    "dappOS": [
+      {
+        "claim": "Backed by Binance Labs, Polychain, and Sequoia, live product with novel 'intent assets' that earn yield while functioning as native tokens",
+        "source": "Crypto.com",
+        "url": "https://crypto.com/",
+        "type": "data"
+      }
+    ],
+    "CoW Protocol": [
+      {
+        "claim": "$COW is already operational with 30% monthly retention",
+        "source": "Medium",
+        "url": "https://medium.com/",
+        "type": "news"
+      }
+    ],
+    "Qubic": [
+      {
+        "claim": "Most authentic Proof-of-Useful-Work implementation, miners train AI neural networks instead of random hashing",
+        "source": "BlockchainReporter",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Certified 15.5M TPS record from CertiK",
+        "source": "GlobeNewswire",
+        "url": "https://www.globenewswire.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Feeless transactions and merge-mining Monero at over 10% of Monero's global hashrate",
+        "source": "GlobeNewswire",
+        "url": "https://www.globenewswire.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Qubic official website",
+        "source": "Qubic",
+        "url": "https://qubic.org/",
+        "type": "official"
+      }
+    ],
+    "Commonwealth Fusion Systems": [
+      {
+        "claim": "$863M Series B2 raised",
+        "source": "POWER Magazine",
+        "url": "https://www.powermag.com/",
+        "type": "news"
+      },
+      {
+        "claim": "SPARC magnet ring completion summer 2026, first plasma 2027",
+        "source": "Exoswan",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Google 200MW power purchase agreement",
+        "source": "The Motley Fool",
+        "url": "https://www.fool.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Pre-IPO shares may be accessible through Forge Global or EquityZen",
+        "source": "Value The Markets",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Commonwealth Fusion Systems official website",
+        "source": "CFS",
+        "url": "https://cfs.energy/",
+        "type": "official"
+      }
+    ],
+    "Helion Energy": [
+      {
+        "claim": "$1.03B raised",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Microsoft power deal, backed by Sam Altman and BlackRock",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Nucor invested $35M directly in Helion for a 500MW fusion plant at its steel mill",
+        "source": "The Motley Fool",
+        "url": "https://www.fool.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Helion Energy official website",
+        "source": "Helion Energy",
+        "url": "https://www.helionenergy.com/",
+        "type": "official"
+      }
+    ],
+    "Sprott Uranium Trust": [
+      {
+        "claim": "Uranium spot price surged back above $100/lb in early 2026",
+        "source": "Sprott ETFs",
+        "url": "https://sprott.com/investment-strategies/physical-commodity-funds/uranium/",
+        "type": "data"
+      },
+      {
+        "claim": "Supply deficit widening, demand expected to double by 2040 with SMR and reactor buildouts in China and India",
+        "source": "Sprott ETFs",
+        "url": "https://sprott.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Sprott Junior Uranium Miners ETF (URNJ) for diversified exposure",
+        "source": "Sprott",
+        "url": "https://sprott.com/investment-strategies/etfs/sprott-junior-uranium-miners-etf/",
+        "type": "data"
+      }
+    ],
+    "Denison Mines": [
+      {
+        "claim": "Denison Mines $18M strategic agreement with Skyharbour Resources",
+        "source": "The Globe and Mail",
+        "url": "https://www.theglobeandmail.com/",
+        "type": "news"
+      }
+    ],
+    "Energy Fuels": [
+      {
+        "claim": "Energy Fuels (NYSE: UUUU) is one of the few non-Chinese rare earth processors in the Western hemisphere with uranium exposure",
+        "source": "Document reference",
+        "url": "https://finance.yahoo.com/quote/UUUU/",
+        "type": "data"
+      }
+    ],
+    "D-Wave Quantum": [
+      {
+        "claim": "Quantum computing funding doubled to $4.2B in 2025, with 30 quasi-unicorns at $7.9B+ combined valuations",
+        "source": "Document reference (sector-wide)",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "IonQ": [
+      {
+        "claim": "Quantum computing sector transitioning from pure R&D to commercial products",
+        "source": "Document reference (sector-wide)",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "QuEra Computing": [
+      {
+        "claim": "Referenced in context of neutral-atom quantum computing approaches (Infleqtion merger with Churchill Capital Corp X at $1.8B, Q-Factor $24M seed targeting 1M+ qubits via neutral atoms)",
+        "source": "SiliconANGLE",
+        "url": "https://siliconangle.com/",
+        "type": "news"
+      }
+    ],
+    "Siren Biotechnology": [
+      {
+        "claim": "Live on Wefunder at $60M pre-money valuation with $250 minimum investment, developing AAV immuno-gene therapy for cancer",
+        "source": "Kingscrowd",
+        "url": "https://kingscrowd.com/",
+        "type": "research"
+      },
+      {
+        "claim": "Backed by Founders Fund, Lux Capital, and Merck",
+        "source": "Kingscrowd",
+        "url": "https://kingscrowd.com/",
+        "type": "research"
+      },
+      {
+        "claim": "IND filing planned for late 2025 with first-in-human trials targeting Q2 2026",
+        "source": "Kingscrowd",
+        "url": "https://kingscrowd.com/",
+        "type": "research"
+      },
+      {
+        "claim": "Siren Biotechnology on Wefunder",
+        "source": "Wefunder",
+        "url": "https://wefunder.com/sirenbio",
+        "type": "official"
+      }
+    ],
+    "Junevity": [
+      {
+        "claim": "Raised expanded $20M seed for AI-driven aging platform with first-in-human trials in H2 2026",
+        "source": "Labiotech.eu",
+        "url": "https://www.labiotech.eu/",
+        "type": "news"
+      }
+    ],
+    "Circulate Health": [
+      {
+        "claim": "Raised $12M seed from Khosla Ventures for therapeutic plasma exchange",
+        "source": "Crunchbase News",
+        "url": "https://news.crunchbase.com/",
+        "type": "news"
+      }
+    ],
+    "BCI Sector Macro": [
+      {
+        "claim": "BCI funding tripled to $867M in 2025",
+        "source": "CB Insights",
+        "url": "https://www.cbinsights.com/",
+        "type": "research"
+      }
+    ],
+    "Synchron": [
+      {
+        "claim": "Endovascular BCI, FDA-authorized trials, backed by Gates Foundation and Bezos Expeditions",
+        "source": "Document reference",
+        "url": "https://synchron.com/",
+        "type": "official"
+      },
+      {
+        "claim": "Pre-IPO shares accessible via secondary markets through Forge Global or EquityZen",
+        "source": "Document reference",
+        "url": "https://forgeglobal.com/",
+        "type": "data"
+      }
+    ],
+    "Paradromics": [
+      {
+        "claim": "Record-breaking 200+ bps data rates",
+        "source": "Paradromics",
+        "url": "https://paradromics.com/",
+        "type": "official"
+      }
+    ],
+    "EnergyX": [
+      {
+        "claim": "Live on DealMaker at invest.energyx.com at $9.50/share with ~$1.92B valuation, developing direct lithium extraction technology",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Agreements with 4 of top 10 lithium producers and 100,000+ acres of Chilean lithium deposits",
+        "source": "Kingscrowd",
+        "url": "https://kingscrowd.com/",
+        "type": "research"
+      },
+      {
+        "claim": "Minimum investment is $1,000",
+        "source": "Access IPOs",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "EnergyX investment page",
+        "source": "EnergyX (DealMaker)",
+        "url": "https://invest.energyx.com",
+        "type": "official"
+      }
+    ],
+    "ESS Inc": [
+      {
+        "claim": "NYSE: GWH, builds iron flow batteries with 22-hour storage and zero degradation over 25 years, backed by Honeywell",
+        "source": "Energystartups",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "ESS Inc on Yahoo Finance",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/quote/GWH/",
+        "type": "data"
+      }
+    ],
+    "Form Energy": [
+      {
+        "claim": "Private, $925M+ raised, developing iron-air batteries for 100+ hour grid storage at projected costs below $20/kWh",
+        "source": "Energystartups",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Projected cost below $20/kWh",
+        "source": "SolarTech",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Form Energy official website",
+        "source": "Form Energy",
+        "url": "https://formenergy.com/",
+        "type": "official"
+      }
+    ],
+    "Fourth Power": [
+      {
+        "claim": "$39M Series A backed by Breakthrough Energy Ventures and Munich Re, MIT/Georgia Tech spinout building molten carbon thermal storage",
+        "source": "Energy-Storage.News",
+        "url": "https://www.energy-storage.news/",
+        "type": "news"
+      },
+      {
+        "claim": "Targeting deployment costs below lithium-ion by 2028",
+        "source": "Energy-Storage.News",
+        "url": "https://www.energy-storage.news/",
+        "type": "news"
+      }
+    ],
+    "Ondo Finance": [
+      {
+        "claim": "Launched Ondo Global Markets in September 2025, becoming largest tokenized stock platform within 48 hours",
+        "source": "DL News",
+        "url": "https://www.dlnews.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Ondo Finance official website",
+        "source": "Ondo Finance",
+        "url": "https://ondo.finance/",
+        "type": "official"
+      }
+    ],
+    "Time.fun": [
+      {
+        "claim": "Migrated from Base to Solana, allows creators to tokenize their time into tradable 'Minutes'",
+        "source": "Gate Learn",
+        "url": "https://www.gate.io/learn/",
+        "type": "news"
+      },
+      {
+        "claim": "Backed by Brevan Howard Digital and Coinbase Ventures with $3M raised, TIME token at ~$96M market cap",
+        "source": "Document reference",
+        "url": "https://time.fun/",
+        "type": "official"
+      }
+    ],
+    "Opulous": [
+      {
+        "claim": "$OPUL on Algorand is lowest market cap liquid token (~$0.06-0.18) with live product offering DeFi loans backed by music royalties",
+        "source": "Flagship",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "Opulous price and market data",
+        "source": "Bitcoin Wisdom",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Bolero": [
+      {
+        "claim": "On Polygon, offers broadest IP approach (master recordings, not just streaming)",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/",
+        "type": "news"
+      }
+    ],
+    "Royal.io": [
+      {
+        "claim": "$7.5M total trading volume and $156K in royalties paid out, with new products in development",
+        "source": "Idea Usher",
+        "url": "",
+        "type": "news"
+      }
+    ],
+    "Zora Attention Markets": [
+      {
+        "claim": "Zora launched Attention Markets on Solana in February 2026, users trade tokens tied to viral memes, hashtags, and cultural trends",
+        "source": "BingX",
+        "url": "https://bingx.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Zora official website",
+        "source": "Zora",
+        "url": "https://zora.co/",
+        "type": "official"
+      }
+    ],
+    "Farcaster": [
+      {
+        "claim": "Decentralized social protocol with 40-60K DAU, pre-token despite raising $180M",
+        "source": "Medium",
+        "url": "https://medium.com/",
+        "type": "news"
+      },
+      {
+        "claim": "40-60K DAU",
+        "source": "Margex",
+        "url": "https://margex.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Pre-token despite raising $180M — most likely candidate for major airdrop in social category",
+        "source": "Blockeden",
+        "url": "",
+        "type": "news"
+      },
+      {
+        "claim": "$DEGEN community token provides immediate exposure to ecosystem",
+        "source": "Dune",
+        "url": "https://dune.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Closest equivalent to early BitcoinTalk — crypto-native social protocol where builders discuss what they're creating",
+        "source": "Document reference",
+        "url": "https://warpcast.com/",
+        "type": "official"
+      }
+    ],
+    "Agronomics": [
+      {
+        "claim": "LSE: ANIC — Only pure-play public cultivated meat investment vehicle",
+        "source": "CoinCodex",
+        "url": "https://coincodex.com/",
+        "type": "data"
+      },
+      {
+        "claim": "Agronomics official listing",
+        "source": "London Stock Exchange",
+        "url": "https://www.londonstockexchange.com/stock/ANIC/agronomics-limited",
+        "type": "data"
+      }
+    ],
+    "AI Agent Infrastructure (ERC-4337 / x402)": [
+      {
+        "claim": "ERC-4337 for account abstraction, x402 for agent micropayments — infrastructure for autonomous AI agents with crypto wallets",
+        "source": "Document reference",
+        "url": "",
+        "type": "official"
+      },
+      {
+        "claim": "Gartner projects the autonomous agent economy at $30T by 2030",
+        "source": "Gartner",
+        "url": "https://www.gartner.com/",
+        "type": "research"
+      }
+    ],
+    "Allora Network": [
+      {
+        "claim": "Referenced in the broader AI x Crypto sector context",
+        "source": "",
+        "url": "https://allora.network/",
+        "type": "official"
+      }
+    ],
+    "Worldcoin / World": [
+      {
+        "claim": "Referenced in prediction market and attention market context",
+        "source": "",
+        "url": "https://worldcoin.org/",
+        "type": "official"
+      }
+    ],
+    "Neuralink": [
+      {
+        "claim": "Referenced as comparison — Synchron and Paradromics described as 'most compelling non-Neuralink plays'",
+        "source": "Document reference",
+        "url": "https://neuralink.com/",
+        "type": "official"
+      }
+    ],
+    "Cameco": [
+      {
+        "claim": "Referenced in broader uranium macro thesis context — spot price above $100/lb, supply deficit widening",
+        "source": "Sprott ETFs",
+        "url": "https://finance.yahoo.com/quote/CCJ/",
+        "type": "data"
+      }
+    ],
+    "NexGen Energy": [
+      {
+        "claim": "Referenced in context of junior uranium miners and TSXV explorers",
+        "source": "Investing News Network",
+        "url": "https://investingnews.com/",
+        "type": "news"
+      }
+    ],
+    "Paladin Energy": [
+      {
+        "claim": "Referenced in context of uranium sector and supply deficit",
+        "source": "",
+        "url": "https://finance.yahoo.com/quote/PALAF/",
+        "type": "data"
+      }
+    ],
+    "Ginkgo Bioworks": [
+      {
+        "claim": "Referenced in broader synthetic biology context",
+        "source": "",
+        "url": "https://www.ginkgobioworks.com/",
+        "type": "official"
+      }
+    ],
+    "Lightmatter": [
+      {
+        "claim": "Referenced in broader deep tech/quantum computing context",
+        "source": "",
+        "url": "https://lightmatter.co/",
+        "type": "official"
+      }
+    ],
+    "io.net": [
+      {
+        "claim": "Referenced in decentralized compute marketplace context alongside Akash, Render, Gensyn",
+        "source": "",
+        "url": "https://io.net/",
+        "type": "official"
+      }
+    ]
+  },
+  "general_sources": [
+    {
+      "name": "KuCoin",
+      "url": "https://www.kucoin.com/",
+      "context": "AI x Crypto comparison to DeFi Summer, VC investment stats",
+      "type": "data"
+    },
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/",
+      "context": "Market cap data, DeSci sector cap ~$238M, Render data",
+      "type": "data"
+    },
+    {
+      "name": "Crypto.com",
+      "url": "https://crypto.com/",
+      "context": "AI x Crypto comparison, Virtuals Protocol data, dappOS backing",
+      "type": "data"
+    },
+    {
+      "name": "CoinMarketCap",
+      "url": "https://coinmarketcap.com/",
+      "context": "Bittensor data, halving date, Grass Network data, VitaDAO ATH comparison",
+      "type": "data"
+    },
+    {
+      "name": "Messari",
+      "url": "https://messari.io/",
+      "context": "Akash Network quarterly data, research platform ($29.99/month), Crypto Theses report",
+      "type": "research"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/",
+      "context": "Bittensor Covenant-72B, ElizaOS L1 plans, EigenLayer 91% drawdown, Kalshi valuation",
+      "type": "news"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/",
+      "context": "Prediction markets $44B combined 2025 volume, Republic Mirror Tokens",
+      "type": "news"
+    },
+    {
+      "name": "Bloomberg",
+      "url": "https://www.bloomberg.com/",
+      "context": "Kalshi 89% U.S. prediction market volume",
+      "type": "news"
+    },
+    {
+      "name": "Fortune",
+      "url": "https://fortune.com/",
+      "context": "Kalshi $22B valuation after April 2026 Paradigm-led round",
+      "type": "news"
+    },
+    {
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/",
+      "context": "Securitize SPAC at $1.25B pre-money valuation, Cadiz analyst target $10-15/share",
+      "type": "news"
+    },
+    {
+      "name": "DL News",
+      "url": "https://www.dlnews.com/",
+      "context": "Securitize 'Stocks on Securitize' Q1 2026, Ondo Global Markets launch",
+      "type": "news"
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/",
+      "context": "Helion Energy $1.03B raised, Pacific Fusion $900M Series A, EnergyX",
+      "type": "news"
+    },
+    {
+      "name": "BingX",
+      "url": "https://bingx.com/",
+      "context": "DePIN market cap ~$19.2B, 423 projects, Grass Network, Zora, ZK-ML, DePINscan",
+      "type": "data"
+    },
+    {
+      "name": "World Economic Forum / VALR",
+      "url": "",
+      "context": "DePIN projected to reach $3.5T by 2028",
+      "type": "research"
+    },
+    {
+      "name": "Investing News Network",
+      "url": "https://investingnews.com/",
+      "context": "Junior uranium explorer details — Aero Energy, Western Uranium & Vanadium",
+      "type": "news"
+    },
+    {
+      "name": "The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/",
+      "context": "Skyharbour Resources and Denison Mines $18M strategic agreement",
+      "type": "news"
+    },
+    {
+      "name": "Canadianminingreport",
+      "url": "",
+      "context": "Junior uranium TSXV/ASX explorers offering maximum leverage",
+      "type": "news"
+    },
+    {
+      "name": "Skillings",
+      "url": "",
+      "context": "Gallium and germanium supply shock — China controls 98% gallium, 60% germanium; prices surged 150%+",
+      "type": "news"
+    },
+    {
+      "name": "Smenet",
+      "url": "",
+      "context": "China gallium/germanium export ban suspensions expiring November 2026",
+      "type": "news"
+    },
+    {
+      "name": "Fastmarkets",
+      "url": "https://www.fastmarkets.com/",
+      "context": "Blue Moon Metals acquired Apex high-grade gallium-germanium mine in Utah from Teck Resources",
+      "type": "news"
+    },
+    {
+      "name": "Exoswan",
+      "url": "",
+      "context": "TAE Technologies / DJT merger details, Commonwealth Fusion SPARC timeline",
+      "type": "news"
+    },
+    {
+      "name": "POWER Magazine",
+      "url": "https://www.powermag.com/",
+      "context": "Commonwealth Fusion Systems $863M Series B2",
+      "type": "news"
+    },
+    {
+      "name": "The Motley Fool",
+      "url": "https://www.fool.com/",
+      "context": "CFS Google 200MW PPA, Nucor $35M investment in Helion",
+      "type": "news"
+    },
+    {
+      "name": "SiliconANGLE",
+      "url": "https://siliconangle.com/",
+      "context": "Q-Factor $24M seed from NFX, Intel Capital, TPY Capital for quantum computing",
+      "type": "news"
+    },
+    {
+      "name": "SpinQ",
+      "url": "",
+      "context": "Rigetti Computing (RGTI) +5,700% trailing year performance",
+      "type": "data"
+    },
+    {
+      "name": "Quixquantum",
+      "url": "https://www.quixquantum.com/",
+      "context": "QuiX Quantum Dutch photonic quantum, €15M Series A",
+      "type": "official"
+    },
+    {
+      "name": "Kingscrowd",
+      "url": "https://kingscrowd.com/",
+      "context": "Siren Biotechnology details, EnergyX details",
+      "type": "research"
+    },
+    {
+      "name": "Labiotech.eu",
+      "url": "https://www.labiotech.eu/",
+      "context": "Junevity $20M seed for AI-driven aging platform",
+      "type": "news"
+    },
+    {
+      "name": "Crunchbase News",
+      "url": "https://news.crunchbase.com/",
+      "context": "Circulate Health $12M seed from Khosla Ventures",
+      "type": "news"
+    },
+    {
+      "name": "CB Insights",
+      "url": "https://www.cbinsights.com/",
+      "context": "BCI funding tripled to $867M in 2025",
+      "type": "research"
+    },
+    {
+      "name": "Ledger Insights",
+      "url": "https://www.ledgerinsights.com/",
+      "context": "Securitize powers BlackRock's $2.9B BUIDL fund",
+      "type": "news"
+    },
+    {
+      "name": "Blocklr",
+      "url": "",
+      "context": "RWA grown to $12-18.4B on-chain, Centrifuge $1.1B+ active loans",
+      "type": "data"
+    },
+    {
+      "name": "Matrixdock",
+      "url": "",
+      "context": "RWA 208-224% increase from $5B at start of 2025",
+      "type": "data"
+    },
+    {
+      "name": "ARK Invest",
+      "url": "https://ark-invest.com/",
+      "context": "Robinhood event trading generates ~$300M annual recurring revenue",
+      "type": "research"
+    },
+    {
+      "name": "Delphi Digital",
+      "url": "https://delphidigital.io/",
+      "context": "Research platform ($199/month for Pro), Alpha Feed surfaces narratives",
+      "type": "research"
+    },
+    {
+      "name": "Nansen",
+      "url": "https://nansen.ai/",
+      "context": "500M+ labeled wallets tracking smart money flows",
+      "type": "data"
+    },
+    {
+      "name": "Arkham Intelligence",
+      "url": "https://www.arkhamintelligence.com/",
+      "context": "Tracks entity movements and institutional wallets",
+      "type": "data"
+    },
+    {
+      "name": "DEXScreener",
+      "url": "https://dexscreener.com/",
+      "context": "Real-time visibility into new token launches and liquidity",
+      "type": "data"
+    },
+    {
+      "name": "Dune Analytics",
+      "url": "https://dune.com/",
+      "context": "Custom queries across 100+ chains",
+      "type": "data"
+    },
+    {
+      "name": "Kaito AI",
+      "url": "https://kaito.ai/",
+      "context": "Tracks mindshare and narrative momentum across Crypto Twitter",
+      "type": "data"
+    },
+    {
+      "name": "Ethresear.ch",
+      "url": "https://ethresear.ch/",
+      "context": "Ethereum protocol-level innovations first discussed here",
+      "type": "research"
+    },
+    {
+      "name": "Forge Global",
+      "url": "https://forgeglobal.com/",
+      "context": "Pre-IPO shares for CFS, Synchron, PsiQuantum",
+      "type": "data"
+    },
+    {
+      "name": "EquityZen",
+      "url": "https://equityzen.com/",
+      "context": "Pre-IPO shares for CFS, Synchron, PsiQuantum",
+      "type": "data"
+    },
+    {
+      "name": "99Bitcoins",
+      "url": "https://99bitcoins.com/",
+      "context": "ElizaOS/ai16z details, Landshare RWA tokenization",
+      "type": "news"
+    },
+    {
+      "name": "Energy-Storage.News",
+      "url": "https://www.energy-storage.news/",
+      "context": "Fourth Power $39M Series A details",
+      "type": "news"
+    },
+    {
+      "name": "Substack (various)",
+      "url": "",
+      "context": "VitaDAO details, NIH success rates, Robinhood analysis, prediction markets",
+      "type": "research"
+    },
+    {
+      "name": "Dypto Crypto",
+      "url": "",
+      "context": "r/cryptocurrency has 9M+ members",
+      "type": "data"
+    },
+    {
+      "name": "Alchemy",
+      "url": "https://www.alchemy.com/",
+      "context": "Developer DAO and BuidlGuidl builder communities",
+      "type": "official"
+    },
+    {
+      "name": "Whop",
+      "url": "https://whop.com/",
+      "context": "Milk Road Ground Zero by Grunge (data-driven calls)",
+      "type": "data"
+    }
+  ],
+  "research_and_information_platforms": [
+    {
+      "name": "Delphi Digital",
+      "url": "https://delphidigital.io/",
+      "context": "$199/month Pro, deep-dive reports and Alpha Feed"
+    },
+    {
+      "name": "Messari",
+      "url": "https://messari.io/",
+      "context": "$29.99/month, fundraising trackers, Crypto Theses report"
+    },
+    {
+      "name": "0xResearch (Blockworks)",
+      "url": "https://blockworks.co/",
+      "context": "Free daily newsletter for protocol design and tokenomics"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/",
+      "context": "DeFi Alpha Letter covering yield farming and airdrops"
+    },
+    {
+      "name": "Nansen",
+      "url": "https://nansen.ai/",
+      "context": "500M+ labeled wallets, smart money tracking"
+    },
+    {
+      "name": "Arkham Intelligence",
+      "url": "https://www.arkhamintelligence.com/",
+      "context": "Entity movements and institutional wallet tracking"
+    },
+    {
+      "name": "DEXScreener",
+      "url": "https://dexscreener.com/",
+      "context": "Real-time new token launches and liquidity"
+    },
+    {
+      "name": "Dune Analytics",
+      "url": "https://dune.com/",
+      "context": "Custom queries across 100+ chains"
+    },
+    {
+      "name": "DePINscan",
+      "url": "https://depinscan.io/",
+      "context": "Tracks 423+ DePIN projects with device counts and network activity"
+    },
+    {
+      "name": "Kaito AI",
+      "url": "https://kaito.ai/",
+      "context": "Mindshare and narrative momentum tracking"
+    }
+  ],
+  "social_and_community_sources": [
+    {
+      "name": "r/UraniumSqueeze",
+      "url": "https://www.reddit.com/r/UraniumSqueeze/",
+      "context": "Junior uranium thesis community"
+    },
+    {
+      "name": "r/ethfinance",
+      "url": "https://www.reddit.com/r/ethfinance/",
+      "context": "Highest quality Ethereum discussion"
+    },
+    {
+      "name": "r/DeSci",
+      "url": "https://www.reddit.com/r/DeSci/",
+      "context": "Decentralized science community"
+    },
+    {
+      "name": "r/singularity",
+      "url": "https://www.reddit.com/r/singularity/",
+      "context": "AI/AGI crossover"
+    },
+    {
+      "name": "r/biotech",
+      "url": "https://www.reddit.com/r/biotech/",
+      "context": "DeSci crossover"
+    },
+    {
+      "name": "r/CryptoMoonShots",
+      "url": "https://www.reddit.com/r/CryptoMoonShots/",
+      "context": "High-risk micro-cap finds before exchange listings"
+    },
+    {
+      "name": "Farcaster / Warpcast",
+      "url": "https://warpcast.com/",
+      "context": "Closest equivalent to early BitcoinTalk"
+    },
+    {
+      "name": "Uranium Insider newsletter",
+      "url": "https://uraniuminsider.com/",
+      "context": "Uranium sector analysis"
+    }
+  ],
+  "twitter_accounts": [
+    {"handle": "@opentensor", "context": "Bittensor official"},
+    {"handle": "@shawmakesmagic", "context": "ElizaOS creator"},
+    {"handle": "@S4mmyEth", "context": "AI agents"},
+    {"handle": "@sandraaleow", "context": "AI agents"},
+    {"handle": "@CookieFun", "context": "AI agents"},
+    {"handle": "@molecule_dao", "context": "DeSci / Molecule Protocol"},
+    {"handle": "@vita_dao", "context": "DeSci / VitaDAO"},
+    {"handle": "@bio_xyz", "context": "DeSci / Bio Protocol"},
+    {"handle": "@ZachXBT", "context": "On-chain detective work"},
+    {"handle": "@ArthurHayes", "context": "Macro"},
+    {"handle": "@APompliano", "context": "Macro"},
+    {"handle": "@Delphi_Digital", "context": "Research"},
+    {"handle": "@MessariCrypto", "context": "Research"},
+    {"handle": "@VitalikButerin", "context": "Protocol-level insights"},
+    {"handle": "@_kaitoai", "context": "Protocol-level insights"},
+    {"handle": "@essential_bldrs", "context": "Essential intent resolution middleware"}
+  ],
+  "podcasts_referenced": [
+    {"name": "Bankless", "context": "Top crypto podcast for DeFi, AI, and ecosystem coverage (Ryan Sean Adams & David Hoffman)"},
+    {"name": "Unchained", "context": "Laura Shin interviews with important builders"},
+    {"name": "Fully Diluted (Messari)", "context": "Deep dives on AI x crypto, DePIN, L1/L2 dynamics"},
+    {"name": "a16z Bio podcast", "context": "Deep tech / biotech"},
+    {"name": "Longevity.Technology newsletter", "context": "Longevity sector"},
+    {"name": "The Quantum Insider", "context": "Quantum computing"}
+  ]
+}

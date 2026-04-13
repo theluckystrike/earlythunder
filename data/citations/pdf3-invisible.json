@@ -1,0 +1,1361 @@
+{
+  "source_document": "The Invisible Layer: 47 Asymmetric Opportunities the Mainstream Hasn't Found Yet",
+  "entries": {
+    "Cortical Labs": [
+      {
+        "claim": "Cortical Labs launched CL1, the world's first commercial biological computer, in March 2025",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cortical_Labs",
+        "type": "research"
+      },
+      {
+        "claim": "CL1 unveiled at MWC Barcelona",
+        "source": "Data Center Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/australian-startup-cortical-labs-unveils-biological-data-center-prototype/",
+        "type": "news"
+      },
+      {
+        "claim": "CL1 priced at $35,000/unit, each contains 200,000 living human neurons on a CMOS chip",
+        "source": "BiopharmaTrend",
+        "url": "https://www.biopharmatrend.com/news/cortical-labs-introduces-biological-computer-built-on-human-brain-cells-1156/",
+        "type": "news"
+      },
+      {
+        "claim": "Neurons survive up to six months",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cortical_Labs",
+        "type": "research"
+      },
+      {
+        "claim": "Partnership with Singapore's DayOne Data Centers to deploy 120 CL1 units in Melbourne and up to 1,000 units in Singapore",
+        "source": "Data Center Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/australian-startup-cortical-labs-unveils-biological-data-center-prototype/",
+        "type": "news"
+      },
+      {
+        "claim": "Raised ~$11.6M, backed by Horizons Ventures (Li Ka-shing), In-Q-Tel (CIA), and Blackbird Ventures",
+        "source": "Data Center Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/australian-startup-cortical-labs-unveils-biological-data-center-prototype/",
+        "type": "news"
+      },
+      {
+        "claim": "Funding details including Fortune and Data Center Dynamics sources",
+        "source": "Fortune",
+        "url": "https://fortune.com/2020/03/30/startup-human-neurons-computer-chips/",
+        "type": "news"
+      },
+      {
+        "claim": "March 2026 round brought in Tom Oxley (founder of Synchron) and Gobi Partners",
+        "source": "Cortical Labs",
+        "url": "https://corticallabs.com/",
+        "type": "official"
+      },
+      {
+        "claim": "Cortical Cloud wetware-as-a-service platform is now operational",
+        "source": "STAT News",
+        "url": "https://www.statnews.com/2025/11/17/brain-organoid-pioneers-fear-backlash-over-biocomputing/",
+        "type": "news"
+      },
+      {
+        "claim": "Cortical Labs company website",
+        "source": "Cortical Labs Official",
+        "url": "https://corticallabs.com/",
+        "type": "official"
+      }
+    ],
+    "FinalSpark": [
+      {
+        "claim": "FinalSpark runs the world's first online neuroplatform — 16 brain organoids with ~160,000 neurons",
+        "source": "Tech Journal",
+        "url": "https://www.techjournal.uk/p/finalspark-explores-living-neurons",
+        "type": "news"
+      },
+      {
+        "claim": "~160,000 neurons",
+        "source": "The Small Business Cybersecurity Guy",
+        "url": "https://thesmallbusinesscybersecurityguy.co.uk/blog/finalspark-neuroplatform-living-neurons-biocomputing-deep-dive-2025/",
+        "type": "news"
+      },
+      {
+        "claim": "Accessible remotely via Python API",
+        "source": "ZoomInfo",
+        "url": "https://www.zoominfo.com/c/finalspark/454818874",
+        "type": "data"
+      },
+      {
+        "claim": "Can reliably store 1 bit of information per organoid",
+        "source": "BioAlps",
+        "url": "https://bioalps.org/finalsparks-neuroplatform-the-era-of-organic-computing-has-begun/",
+        "type": "news"
+      },
+      {
+        "claim": "Self-funded (~CHF 1M from founders' prior exit) and seeking CHF 50M",
+        "source": "Tech Journal",
+        "url": "https://www.techjournal.uk/p/finalspark-explores-living-neurons",
+        "type": "news"
+      },
+      {
+        "claim": "Ten universities have access including Michigan, Exeter, and Free University of Berlin",
+        "source": "Tech Journal",
+        "url": "https://www.techjournal.uk/p/finalspark-explores-living-neurons",
+        "type": "news"
+      },
+      {
+        "claim": "It's FOSS coverage of FinalSpark",
+        "source": "It's FOSS",
+        "url": "https://itsfoss.com/news/finalspark/",
+        "type": "news"
+      },
+      {
+        "claim": "Neurons consume less power than a handheld calculator",
+        "source": "FinalSpark",
+        "url": "https://finalspark.com/",
+        "type": "official"
+      },
+      {
+        "claim": "FinalSpark company website",
+        "source": "FinalSpark Official",
+        "url": "https://finalspark.com/",
+        "type": "official"
+      }
+    ],
+    "Koniku": [
+      {
+        "claim": "Builds smell cyborgs fusing biological neurons with silicon — 128 active neurons detecting volatile organic compounds",
+        "source": "ZoomInfo",
+        "url": "https://www.zoominfo.com/c/koniku-inc/370036101",
+        "type": "data"
+      },
+      {
+        "claim": "Smell cyborg detecting volatile organic compounds",
+        "source": "Medium / Innovate4Health",
+        "url": "https://medium.com/innovate4health/bio-is-tech-reimagining-disease-detection-through-konikus-innovative-odor-surveillance-system-8816422ca04a",
+        "type": "news"
+      },
+      {
+        "claim": "$8M Airbus contract for aviation threat detection deployed at SFO, though scientific skepticism is significant",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Koniku",
+        "type": "research"
+      },
+      {
+        "claim": "Koniku company profile",
+        "source": "ZoomInfo",
+        "url": "https://www.zoominfo.com/c/koniku-inc/370036101",
+        "type": "data"
+      }
+    ],
+    "BrainChip": [
+      {
+        "claim": "Only publicly traded pure-play neuromorphic chip company, trading at AUD 0.145 (down 94% from 2022 high of AUD 2.34)",
+        "source": "WalletInvestor",
+        "url": "https://walletinvestor.com/asx-stock-forecast/brn-stock-prediction",
+        "type": "data"
+      },
+      {
+        "claim": "BrainChip historical chart showing 2022 high of AUD 2.34",
+        "source": "TradingView",
+        "url": "https://www.tradingview.com/symbols/ASX-BRN/",
+        "type": "data"
+      },
+      {
+        "claim": "Effectively zero revenue ($398K in 2024)",
+        "source": "StockAnalysis",
+        "url": "https://stockanalysis.com/quote/asx/BRN/",
+        "type": "data"
+      },
+      {
+        "claim": "AKD1500 production ramp in 2026 and Akida Pulsar mass-market neuromorphic MCU",
+        "source": "Quick Market Pitch",
+        "url": "https://quickmarketpitch.com/blogs/news/neuromorphic-computing-news",
+        "type": "news"
+      }
+    ],
+    "Bolt Threads": [
+      {
+        "claim": "Bolt Threads is dead (website reads 'no longer operating')",
+        "source": "Bolt Threads",
+        "url": "https://boltthreads.com/",
+        "type": "official"
+      }
+    ],
+    "Amyris": [
+      {
+        "claim": "Amyris filed Chapter 11 (August 2023, $1.15B debt, equity wiped)",
+        "source": "ElevenFlo",
+        "url": "https://elevenflo.com/blog/amyris-1-15b-debt-cut-in-b2b-reorganization",
+        "type": "news"
+      },
+      {
+        "claim": "Amyris bankruptcy details",
+        "source": "ACS C&EN",
+        "url": "https://cen.acs.org/business/biobased-chemicals/Amyris-declares-bankruptcy/101/i27",
+        "type": "news"
+      }
+    ],
+    "Zymergen": [
+      {
+        "claim": "Zymergen was acquired then liquidated",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/zymergen/__R0HNWhfHfd4Np_RGuRlDYq9gB_4_S1D-8SvsSAgGS28",
+        "type": "data"
+      }
+    ],
+    "Solugen": [
+      {
+        "claim": "Raised $643M at a $2B valuation, with a $213M DOE loan guarantee for a Minnesota biomanufacturing plant",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/solugen/__SzdOA4a72qUVyvjw96cyxOyOdH6zz7lkfWNK2rB7zMc",
+        "type": "data"
+      },
+      {
+        "claim": "Raised additional $50M in March 2026 for Canadian nitrogen fertilizer scaling",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/solugen/__SzdOA4a72qUVyvjw96cyxOyOdH6zz7lkfWNK2rB7zMc",
+        "type": "data"
+      },
+      {
+        "claim": "Investors include Founders Fund, Baillie Gifford, GIC, Temasek, and BlackRock",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/solugen/__SzdOA4a72qUVyvjw96cyxOyOdH6zz7lkfWNK2rB7zMc/funding-and-investors",
+        "type": "data"
+      }
+    ],
+    "Pivot Bio": [
+      {
+        "claim": "Validated nitrogen-fixing microbes across 15 million acres in 34 states",
+        "source": "Pivot Bio",
+        "url": "https://www.pivotbio.com/press-releases/pivot-bio-delivers-record-performance-for-farmers-in-2024",
+        "type": "official"
+      },
+      {
+        "claim": "Raised $618M",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/pivot-bio/__O3RcMtq-TtjZ9akQlO5leDf4XDLw85DgHMUdwB770dE",
+        "type": "data"
+      },
+      {
+        "claim": "Paid farmers over $13M through its N-OVATOR program",
+        "source": "SynBioBeta",
+        "url": "https://www.synbiobeta.com/read/pivot-bio-partners-with-the-soil-and-water-outcomes-fund-to-enhance-sustainable-farming-practices",
+        "type": "news"
+      },
+      {
+        "claim": "Pivot Bio company website",
+        "source": "Pivot Bio Official",
+        "url": "https://www.pivotbio.com/press-releases/pivot-bio-partners-with-soil-and-water-outcomes-fund",
+        "type": "official"
+      }
+    ],
+    "Galy": [
+      {
+        "claim": "Closed a $33M Series B led by Breakthrough Energy Ventures with a $50M, 10-year offtake agreement with Suzuran Medical",
+        "source": "Green Queen",
+        "url": "https://www.greenqueen.com.hk/lab-grown-cotton-galy-33m-series-b-funding-bill-gates-hm-inditex/",
+        "type": "news"
+      },
+      {
+        "claim": "Sam Altman and Tim Draper on the cap table",
+        "source": "eTextile Communications",
+        "url": "https://www.etextilecommunications.com/news/galy-raises-33m-to-advance-lab-grown-cotton-product-to-scale/article_03d7de98-76f5-11ef-8441-ef4114ad254f.html",
+        "type": "news"
+      }
+    ],
+    "Ginkgo Bioworks": [
+      {
+        "claim": "~$6.80–9.71, ~$421–552M market cap. Revenue declining ($170M in FY2025, down 25%) but pivoting to autonomous labs with a $47M government contract",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/sec-filings/DNA/8-k-ginkgo-bioworks-holdings-inc-reports-material-event-985e03cd4c0a.html",
+        "type": "filing"
+      },
+      {
+        "claim": "Analyst consensus is bearish (1 Buy, 3 Sell)",
+        "source": "Ticker Nerd",
+        "url": "https://tickernerd.com/stock/dna-forecast/",
+        "type": "data"
+      }
+    ],
+    "Twist Bioscience": [
+      {
+        "claim": "~$50, ~$3B market cap. Revenue of $392M growing 17% YoY, approaching EBITDA breakeven",
+        "source": "PitchBook",
+        "url": "https://pitchbook.com/profiles/company/57963-79",
+        "type": "data"
+      },
+      {
+        "claim": "Revenue of $392M growing 17% YoY, approaching EBITDA breakeven",
+        "source": "Trefis",
+        "url": "https://www.trefis.com/data/companies/TWST",
+        "type": "data"
+      },
+      {
+        "claim": "Spun off Atlas Data Storage with $155M in seed financing for DNA data storage — Twist retains a minority stake",
+        "source": "Blocks and Files",
+        "url": "https://blocksandfiles.com/2025/05/06/dna-storage-gets-a-new-twist-with-atlas-data-storage/",
+        "type": "news"
+      }
+    ],
+    "Atlas Data Storage": [
+      {
+        "claim": "Atlas Data Storage (Twist Bioscience spinoff) launched with $155M seed financing — the most well-funded DNA storage company ever",
+        "source": "Blocks and Files",
+        "url": "https://blocksandfiles.com/2025/05/06/dna-storage-gets-a-new-twist-with-atlas-data-storage/",
+        "type": "news"
+      }
+    ],
+    "Agronomics": [
+      {
+        "claim": "Agronomics Ltd (LSE: ANIC) — a listed fund holding shares in GALY and other cellular agriculture companies. Simplest retail exposure to lab-grown materials",
+        "source": "Document reference (no specific URL cited)",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "ValleyDAO": [
+      {
+        "claim": "ValleyDAO ($GROW), ~$8M market cap, funds projects at the intersection of synthetic biology and climate",
+        "source": "SynBioBeta",
+        "url": "https://www.synbiobeta.com/read/decentralized-platforms-upending-how-synthetic-biology-is-done",
+        "type": "news"
+      },
+      {
+        "claim": "The most directly relevant DeSci token for non-therapeutic synbio investing",
+        "source": "ChainCatcher",
+        "url": "https://www.chaincatcher.com/en/article/2152557",
+        "type": "news"
+      }
+    ],
+    "Starcloud": [
+      {
+        "claim": "Became the fastest unicorn in YC history — 17 months from the program to a $1.1B valuation after a $170M Series A led by Benchmark and EQT Ventures (March 2026)",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Starcloud",
+        "type": "research"
+      },
+      {
+        "claim": "Launched the first H100 GPU to space (Starcloud-1, November 2025), trained an LLM in orbit",
+        "source": "Y Combinator",
+        "url": "https://www.ycombinator.com/companies/industry/aviation-and-space",
+        "type": "official"
+      },
+      {
+        "claim": "Partnered with Crusoe for the first public cloud platform in space",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Starcloud",
+        "type": "research"
+      },
+      {
+        "claim": "FCC proposal for up to 88,000 satellites filed in February 2026",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Starcloud",
+        "type": "research"
+      },
+      {
+        "claim": "Announced Bitcoin mining in space",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Starcloud",
+        "type": "research"
+      },
+      {
+        "claim": "Total funding: ~$204M",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Starcloud",
+        "type": "research"
+      }
+    ],
+    "Varda Space Industries": [
+      {
+        "claim": "Returned five capsules to Earth, more than any other in-space manufacturer",
+        "source": "PR Newswire",
+        "url": "https://www.prnewswire.com/news-releases/varda-announces-187-million-in-series-c-funding-to-make-medicines-in-space-302502096.html",
+        "type": "news"
+      },
+      {
+        "claim": "Series C raised $187M (July 2025) from Founders Fund, Peter Thiel, and Khosla Ventures",
+        "source": "PR Newswire",
+        "url": "https://www.prnewswire.com/news-releases/varda-announces-187-million-in-series-c-funding-to-make-medicines-in-space-302502096.html",
+        "type": "news"
+      },
+      {
+        "claim": "Top Startups listing with Khosla Ventures",
+        "source": "Top Startups",
+        "url": "https://topstartups.io/?investors=Khosla+Ventures",
+        "type": "data"
+      },
+      {
+        "claim": "Total funding approaches $578M",
+        "source": "PitchBook",
+        "url": "https://pitchbook.com/profiles/company/454881-61",
+        "type": "data"
+      },
+      {
+        "claim": "Hold an FAA Part 450 license valid through 2029",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Varda_Space_Industries",
+        "type": "research"
+      }
+    ],
+    "Redwire": [
+      {
+        "claim": "~$9.29, ~$1.78B market cap, $335M revenue. Solar arrays, ISS hardware, drone acquisition. Analyst consensus: Strong Buy, PT $13",
+        "source": "Document reference (no specific URL cited for Redwire)",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Astroscale": [
+      {
+        "claim": "~¥500, ~$450M market cap, $29M revenue. Only public orbital debris removal company. Below IPO price",
+        "source": "Document reference (no specific URL cited for Astroscale)",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "ispace": [
+      {
+        "claim": "~¥500, ~$450M market cap, ¥4.7B revenue. Closest to lunar hardware. Two crash landings — high risk",
+        "source": "Document reference (no specific URL cited for ispace)",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Spacecoin": [
+      {
+        "claim": "DePIN LEO nanosatellite constellation for decentralized internet. CTC-0 launched December 2024; CTC-1 (three satellites) launched November 2025",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/01/24/spacecoin-launches-space-token-just-days-after-partnering-with-trump-family-linked-defi-project",
+        "type": "news"
+      },
+      {
+        "claim": "~$22M market cap. Partnership with World Liberty Financial and NATO DIANA",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/01/24/spacecoin-launches-space-token-just-days-after-partnering-with-trump-family-linked-defi-project",
+        "type": "news"
+      },
+      {
+        "claim": "Targets $1–2/month internet for emerging markets. ~10% of 21B token supply circulating",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/spacecoin-org/",
+        "type": "data"
+      },
+      {
+        "claim": "Bitget listing details",
+        "source": "Bitget",
+        "url": "https://www.bitget.com/news/detail/12560605203249",
+        "type": "data"
+      }
+    ],
+    "Unconventional AI": [
+      {
+        "claim": "Raised a $475M seed round at $4.5B valuation (December 2025) — one of the largest seed rounds in history",
+        "source": "Entrepreneur Loop",
+        "url": "https://entrepreneurloop.com/unconventional-ai-funding-475m-seed-round-neuromorphic-computing/",
+        "type": "news"
+      },
+      {
+        "claim": "Unconventional AI seed round details",
+        "source": "Data Center Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/neuromorphic-compute-startup-unconventional-ai-raises-475m-in-seed-funding/",
+        "type": "news"
+      },
+      {
+        "claim": "Founded by Naveen Rao (sold MosaicML to Databricks for $1.3B, sold Nervana to Intel for $400M+). Backed by a16z, Lightspeed, Sequoia, Lux Capital, and Jeff Bezos",
+        "source": "Entrepreneur Loop",
+        "url": "https://entrepreneurloop.com/unconventional-ai-funding-475m-seed-round-neuromorphic-computing/",
+        "type": "news"
+      },
+      {
+        "claim": "Targeting 1,000x energy efficiency through brain-inspired analog computing. First chips expected to tape out 2026",
+        "source": "Aibase",
+        "url": "https://news.aibase.com/news/23544",
+        "type": "news"
+      }
+    ],
+    "Lightmatter": [
+      {
+        "claim": "Raised $850M at a $4.4B valuation, with a $400M Series D (October 2024) led by T. Rowe Price with Fidelity and GV",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/lightmatter/__UzjACTIII619AffSL1FYPgASKG7oNo0LdOcRvQnFRl8",
+        "type": "data"
+      },
+      {
+        "claim": "Lightmatter Series D details, valuation quadrupled to $4.4B",
+        "source": "Data Center Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/photonic-computing-company-lightmatter-achieves-44bn-valuation-from-400m-series-d-funding-round/",
+        "type": "news"
+      },
+      {
+        "claim": "CEO stated this is 'probably our last private round' — IPO likely imminent",
+        "source": "Crunchbase News",
+        "url": "https://news.crunchbase.com/ai/photonic-startup-lightmatter-venture-round-unicorn/",
+        "type": "news"
+      },
+      {
+        "claim": "Passage photonic interconnect delivers 32–64 Tbps",
+        "source": "Business Wire",
+        "url": "https://www.businesswire.com/news/home/20241016498931/en/Lightmatter-Raises-$400M-Series-D-Quadruples-Valuation-to-$4.4B-as-Photonics-Leader-for-Next-Gen-AI-Data-Centers",
+        "type": "official"
+      },
+      {
+        "claim": "Deployed with 'every major data center company from Microsoft to Amazon to xAI and OpenAI'",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2024/10/16/lightmatters-400m-d-round-has-ai-hyperscalers-hyped-for-photonic-datacenters/",
+        "type": "news"
+      },
+      {
+        "claim": "Lightmatter's S-1 filing is the most important single signal to watch — when the $4.4B photonic computing company files for IPO",
+        "source": "Document analysis",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Mythic AI": [
+      {
+        "claim": "Came back from the dead — ran out of cash November 2022",
+        "source": "The Register",
+        "url": "https://www.theregister.com/2022/11/09/mythic_analog_ai_chips/",
+        "type": "news"
+      },
+      {
+        "claim": "Restructured and raised a $125M oversubscribed round (December 2025) led by DCVC with NEA, SoftBank KR, and Honda",
+        "source": "Mythic AI",
+        "url": "https://mythic.ai/whats-new/mythic-to-challenge-ais-gpu-pantheon-with-100x-energy-advantage-and-oversubscribed-125m-raise/",
+        "type": "official"
+      },
+      {
+        "claim": "Analog processing units claim 750x more tokens per second per watt than NVIDIA GPUs for LLMs",
+        "source": "Quantum Zeitgeist",
+        "url": "https://quantumzeitgeist.com/mythic-ai-computing-ai-efficiency/",
+        "type": "news"
+      },
+      {
+        "claim": "Honda is co-developing a 100x efficient chip for next-gen vehicles",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/mythic/___HugfljyIqoOJvLII0zqoFDuKwGfTqyTXisKLmy6ZBc",
+        "type": "data"
+      }
+    ],
+    "Marvell Technology (Celestial AI)": [
+      {
+        "claim": "Celestial AI was acquired by Marvell (NASDAQ: MRVL) for up to $5.5B (December 2025). Revenue projected to ramp late 2028, billion-dollar run rate by 2029",
+        "source": "Optics.org",
+        "url": "https://optics.org/news/16/11/47",
+        "type": "news"
+      },
+      {
+        "claim": "Marvell is now the best public photonics exposure",
+        "source": "Document reference",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Rain AI": [
+      {
+        "claim": "Despite Sam Altman's backing, their $150M Series B collapsed in Q1 2025. The company is reportedly exploring a sale. OpenAI, NVIDIA, and Microsoft are reportedly interested in acqui-hiring",
+        "source": "Document reference (no specific URL cited)",
+        "url": "",
+        "type": "news"
+      }
+    ],
+    "Biomemory": [
+      {
+        "claim": "Biomemory (Paris) acquired Catalog Technologies (March 2026), creating the largest combined DNA storage IP portfolio",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/biomemory-acquires-assets-catalog-boosting-151400884.html",
+        "type": "news"
+      },
+      {
+        "claim": "Biomemory acquisition of Catalog",
+        "source": "TechRadar",
+        "url": "https://www.techradar.com/pro/we-intend-to-launch-our-first-end-to-end-commercial-dna-data-storage-solutions-before-the-end-of-2026-biomemory-outlines-its-dna-storage-roadmap-after-catalog-deal",
+        "type": "news"
+      },
+      {
+        "claim": "Biomemory acquires assets of Catalog",
+        "source": "PR Newswire",
+        "url": "https://www.prnewswire.com/news-releases/biomemory-acquires-the-assets-of-catalog-boosting-its-ambitions-in-dna-data-storage-and-computing-302705489.html",
+        "type": "news"
+      }
+    ],
+    "Celo": [
+      {
+        "claim": "~$0.07–0.09, down 99.2% from ATH ($10.66). #1 Layer 2 by daily active users (840K DAU), #1 transport layer for USDT by weekly active users (surpassing Tron), 11M MiniPay wallets via Opera browser integration",
+        "source": "BitcoinEthereumNews.com",
+        "url": "https://bitcoinethereumnews.com/tech/celo-celo-price-prediction-2026-2027-and-2030-how-high-will-celo-go/",
+        "type": "news"
+      },
+      {
+        "claim": "$65B+ stablecoin volume since L2 migration. Protocol revenue grew 365% in 2025",
+        "source": "BitcoinEthereumNews.com",
+        "url": "https://bitcoinethereumnews.com/tech/celo-celo-price-prediction-2026-2027-and-2030-how-high-will-celo-go/",
+        "type": "news"
+      },
+      {
+        "claim": "Community vote on buyback-and-burn of 50%+ of protocol profits is underway",
+        "source": "Coinpedia",
+        "url": "https://coinpedia.org/price-prediction/celo-price-prediction/",
+        "type": "news"
+      }
+    ],
+    "HAQQ / Islamic Coin": [
+      {
+        "claim": "~$0.02, down 96% from ATH. The first purpose-built Shariah-compliant Layer 1",
+        "source": "Gate.com",
+        "url": "https://www.gate.com/price/islamic-coin-islm",
+        "type": "data"
+      },
+      {
+        "claim": "Islamic finance market exceeds $5.4 trillion",
+        "source": "RebelFi Blog",
+        "url": "https://rebelfi.io/blog/the-complete-guide-to-sharia-compliant-stablecoin-yield-halal-crypto-returns",
+        "type": "research"
+      },
+      {
+        "claim": "1.8 billion Muslims seeking compliant products and almost zero mature crypto offerings",
+        "source": "MEXC",
+        "url": "https://blog.mexc.com/news/is-crypto-halal-2026-islamic-finance-guide-bitcoin-ethereum-defi-rulings/",
+        "type": "news"
+      },
+      {
+        "claim": "HAQQ raised $193M in private sales",
+        "source": "Republic",
+        "url": "https://republic.com/islamic-coin",
+        "type": "official"
+      },
+      {
+        "claim": "Has a fatwa issued, Indonesian pre-approval, and a Shariah Oracle validating every transaction",
+        "source": "BitcoinEthereumNews.com",
+        "url": "https://bitcoinethereumnews.com/tech/best-islamic-finance-defi-projects-11-riba-free-alternatives/",
+        "type": "news"
+      },
+      {
+        "claim": "10% of all new ISLM goes to an Evergreen DAO for Muslim community projects",
+        "source": "Traders Union",
+        "url": "https://tradersunion.com/islamic-investing/is-crypto-halal-or-haram/halal-cryptocurrencies/",
+        "type": "data"
+      },
+      {
+        "claim": "Islamic Coin on CoinMarketCap",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/islamic-coin/",
+        "type": "data"
+      }
+    ],
+    "Huma Finance": [
+      {
+        "claim": "~$0.025, ~$64M market cap. Q4 2025 delivered $1.1B in originations (+24.4% QoQ) and $2.2B transaction volume",
+        "source": "Messari",
+        "url": "https://messari.io/report/state-of-huma-finance-q4-2025",
+        "type": "research"
+      },
+      {
+        "claim": "Partnerships with Tala ($50M tokenized lending for underbanked)",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/cmc-ai/huma-finance/latest-updates/",
+        "type": "data"
+      },
+      {
+        "claim": "Geoswift (Amazon seller settlements), and Circle CPN (29 institutions, expanding to 185 corridors)",
+        "source": "Messari",
+        "url": "https://messari.io/report/state-of-huma-finance-q3-2025",
+        "type": "research"
+      },
+      {
+        "claim": "Huma Finance project page",
+        "source": "Messari",
+        "url": "https://messari.io/project/huma-finance",
+        "type": "research"
+      }
+    ],
+    "DIMO": [
+      {
+        "claim": "~$0.013, down 98% from ATH. 184,183 active connected vehicles streaming verified data for insurance, maintenance, and DeFi auto loans. Available on Coinbase",
+        "source": "DePINscan",
+        "url": "https://depinscan.io/projects/dimo",
+        "type": "data"
+      }
+    ],
+    "Arkreen": [
+      {
+        "claim": "~$0.0003, $1.7–2.9M market cap. 300,000+ distributed solar energy data nodes connected globally, 140 GWh of green energy tokenized",
+        "source": "Arkreen",
+        "url": "https://www.arkreen.com/blog/power-yield-update-first-live-node-revealed-a-300-kw-power-station-in-thailand/",
+        "type": "official"
+      },
+      {
+        "claim": "Extremely illiquid — $97/day DEX volume. Available on Uniswap V3 (Polygon) and MEXC",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/arkreen-token",
+        "type": "data"
+      }
+    ],
+    "Silencio": [
+      {
+        "claim": "~$0.00005, $700K–1.3M market cap. 1.1 million users contributing noise data",
+        "source": "PANews",
+        "url": "https://www.panewslab.com/en/articles/4dfdbcf3-2df6-4467-a4a7-fabc330d3da8",
+        "type": "news"
+      },
+      {
+        "claim": "41 billion datapoints collected",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/silencio/",
+        "type": "data"
+      },
+      {
+        "claim": "Uses include urban planning and real estate analytics",
+        "source": "CoinCodex",
+        "url": "https://coincodex.com/crypto/silencio/",
+        "type": "data"
+      }
+    ],
+    "eGenesis": [
+      {
+        "claim": "Received FDA IND clearance for Phase I/II/III study of EG-EN2784 (September 2025). Patient Tim Andrews received a pig kidney in January 2025 and has surpassed seven months post-transplant",
+        "source": "PubMed Central",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12727543/",
+        "type": "research"
+      },
+      {
+        "claim": "EGEN-2784 pig has 69 gene edits: 3 xeno-antigen knockouts, 7 human transgene insertions, 59 PERV inactivations. Total funding: $454–481M from Lux Capital, ARCH Ventures, Khosla Ventures, Leaps by Bayer, DaVita",
+        "source": "PubMed Central",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12727543/",
+        "type": "research"
+      }
+    ],
+    "United Therapeutics": [
+      {
+        "claim": "~$13B+ market cap, profitable from its pulmonary hypertension drug franchise. Revivicor subsidiary produces 10-gene-edited pigs",
+        "source": "Document reference",
+        "url": "https://www.unither.com",
+        "type": "official"
+      },
+      {
+        "claim": "FDA cleared the IND for its UKidney EXPAND clinical trial (February 2025), with the first transplant performed November 2025",
+        "source": "Document reference",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Building a $100M organ production facility. Seven organ programs total. Best risk-adjusted frontier play in the entire report — a profitable company with existing revenue where xenotransplantation represents massive free optionality",
+        "source": "Document reference",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Life Biosciences": [
+      {
+        "claim": "Received the first-ever FDA IND clearance for a cellular rejuvenation therapy (January 2026). ER-100 delivers three reprogramming transcription factors via intravitreal injection for optic neuropathies",
+        "source": "Life Biosciences",
+        "url": "https://www.lifebiosciences.com/life-biosciences-announces-fda-clearance-of-ind-application-for-er-100-in-optic-neuropathies/",
+        "type": "official"
+      },
+      {
+        "claim": "Clinical Trials Arena coverage of FDA approval",
+        "source": "Clinical Trials Arena",
+        "url": "https://www.clinicaltrialsarena.com/news/life-bio-fda-approval-trial/",
+        "type": "news"
+      },
+      {
+        "claim": "Clarivate coverage of longevity biopharma potential",
+        "source": "Clarivate",
+        "url": "https://clarivate.com/life-sciences-healthcare/blog/why-longevity-might-be-biopharmas-next-big-thing/",
+        "type": "research"
+      },
+      {
+        "claim": "Just closed $80M in financing (April 8, 2026). Co-founded by David Sinclair",
+        "source": "Life Biosciences",
+        "url": "https://www.lifebiosciences.com/author/maggie-farrand/",
+        "type": "official"
+      }
+    ],
+    "American Superconductor": [
+      {
+        "claim": "~$29–34, ~$1.5B market cap, profitable and growing. Revenue running at ~$280M/year with 20%+ growth and margins above 30%",
+        "source": "StockAnalysis",
+        "url": "https://stockanalysis.com/stocks/amsc/",
+        "type": "data"
+      }
+    ],
+    "VEIR": [
+      {
+        "claim": "Privately held, $117M raised, backed by Microsoft's Climate Innovation Fund. Demonstrated 3MW superconducting cable delivery for data centers in November 2025, with commercial launch targeted 2027",
+        "source": "TechBuzz",
+        "url": "https://www.techbuzz.ai/articles/microsoft-backed-veir-targets-data-centers-with-superconductors",
+        "type": "news"
+      },
+      {
+        "claim": "AMSC supplies HTS wire for this ecosystem",
+        "source": "StockAnalysis",
+        "url": "https://stockanalysis.com/stocks/amsc/",
+        "type": "data"
+      }
+    ],
+    "Evolv Technology": [
+      {
+        "claim": "Metamaterial-based security screening deployed in stadiums and hospitals. FY2025 revenue $145.9M (+40% YoY) with first-ever GAAP net income of $10.9M in Q4",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/news/EVLV/",
+        "type": "data"
+      },
+      {
+        "claim": "2026 guidance: $172–178M revenue. Analyst PT: $10",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/sec-filings/EVLV/8-k-evolv-technologies-holdings-inc-reports-material-event-2c7d876d10b4.html",
+        "type": "filing"
+      }
+    ],
+    "Perovskite Solar (Oxford PV / First Solar proxy)": [
+      {
+        "claim": "Oxford PV shipped the world's first commercial perovskite-silicon tandem modules in September 2024",
+        "source": "PV Tech",
+        "url": "https://www.pv-tech.org/oxford-pv-ships-first-commercial-perovskite-tandem-modules/",
+        "type": "news"
+      },
+      {
+        "claim": "Licensed patents to First Solar (NASDAQ: FSLR) in February 2026",
+        "source": "pv magazine",
+        "url": "https://www.pv-magazine.com/2026/02/25/first-solar-announces-licensing-agreement-with-oxford-pv-alleges-new-topcon-patent-infringements/",
+        "type": "news"
+      },
+      {
+        "claim": "Oxford PV and Trinasolar announce a landmark perovskite PV patent licensing agreement",
+        "source": "Oxford PV",
+        "url": "https://www.oxfordpv.com/press-releases/oxford-pv-and-trinasolar-announce-a-landmark-perovskite-pv-patent-licensing-agreement",
+        "type": "official"
+      },
+      {
+        "claim": "Hanwha Qcells achieved 28.6% tandem cell efficiency using mass-production processes, with commercial production planned 2026",
+        "source": "Exoswan",
+        "url": "https://exoswan.com/perovskite-stocks",
+        "type": "news"
+      },
+      {
+        "claim": "Caelux shipped 'Active Glass' that converts existing silicon panels to tandem performance — potentially the fastest route to adoption",
+        "source": "Undecided",
+        "url": "https://undecidedmf.com/how-solar-changed-in-2025-and-whats-next/",
+        "type": "news"
+      }
+    ],
+    "Meta Materials (MMATQ)": [
+      {
+        "claim": "Effectively bankrupt, market cap ~$700",
+        "source": "Public.com",
+        "url": "https://public.com/stocks/mmatq",
+        "type": "data"
+      },
+      {
+        "claim": "Meta Materials stock chart",
+        "source": "TradingView",
+        "url": "https://www.tradingview.com/symbols/OTC-MMATQ/",
+        "type": "data"
+      }
+    ],
+    "Unusual Machines": [
+      {
+        "claim": "Manufactures NDAA-compliant drone components — flight controllers, ESCs, motors, cameras, and FPV goggles (Fat Shark brand)",
+        "source": "Zacks",
+        "url": "https://www.zacks.com/stock/news/2895696/top-drone-tech-stocks-to-keep-an-eye-on-for-strong-returns",
+        "type": "data"
+      },
+      {
+        "claim": "FY2025 revenue: $11.2M (+101% YoY). Q4 alone was $4.9M (+133% sequentially). $103M cash with zero debt",
+        "source": "Zacks",
+        "url": "https://www.zacks.com/stock/news/2895696/top-drone-tech-stocks-to-keep-an-eye-on-for-strong-returns",
+        "type": "data"
+      },
+      {
+        "claim": "Pentagon's Drone Dominance program represents a $90M component opportunity in 2026 and $250M in 2027. Company describes itself as 'supply-constrained, demand exceeds supply through 2027'",
+        "source": "Zacks",
+        "url": "https://www.zacks.com/stock/news/2895696/top-drone-tech-stocks-to-keep-an-eye-on-for-strong-returns",
+        "type": "data"
+      },
+      {
+        "claim": "Yahoo Finance drone stock listing",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/top-drone-tech-stocks-add-154500131.html",
+        "type": "data"
+      }
+    ],
+    "Ouster": [
+      {
+        "claim": "LiDAR sensors for drones, robotics, and autonomous systems. Revenue $169.4M (+52.5% YoY) with 12 consecutive quarters of product revenue growth",
+        "source": "Ouster Investor Relations",
+        "url": "https://investors.ouster.com/investor-relations",
+        "type": "official"
+      },
+      {
+        "claim": "Revenue $169.4M (+52.5% YoY)",
+        "source": "StockAnalysis",
+        "url": "https://stockanalysis.com/stocks/oust/",
+        "type": "data"
+      },
+      {
+        "claim": "Acquired StereoLabs (AI vision cameras) in February 2026",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/02/09/lidar-maker-ouster-buys-vision-company-stereolabs-as-sensor-consolidation-continues/",
+        "type": "news"
+      },
+      {
+        "claim": "Analyst consensus: Strong Buy, average target $39.25 (101% upside from ~$21)",
+        "source": "StockAnalysis",
+        "url": "https://stockanalysis.com/stocks/oust/",
+        "type": "data"
+      }
+    ],
+    "Terra Industries": [
+      {
+        "claim": "Formerly Terrahaptix, Abuja, Nigeria. Building Africa's biggest drone factory — 15,000 sq ft, 30,000 drones/year capacity",
+        "source": "CNN",
+        "url": "https://www.cnn.com/world/africa/terra-industries-drones-africa-spc",
+        "type": "news"
+      },
+      {
+        "claim": "Raised $34M in January 2026 from 8VC and Lux Capital",
+        "source": "Semafor",
+        "url": "https://www.semafor.com/article/03/02/2026/the-drone-making-startup-with-big-dreams-of-securing-nigeria",
+        "type": "news"
+      }
+    ],
+    "Geodnet": [
+      {
+        "claim": "Most legitimate DePIN drone infrastructure play. Decentralized network of 20,000+ GNSS reference stations in 148 countries providing centimeter-level positioning data",
+        "source": "PANews",
+        "url": "https://www.panewslab.com/en/articles/4dfdbcf3-2df6-4467-a4a7-fabc330d3da8",
+        "type": "news"
+      },
+      {
+        "claim": "80% of revenue funds token buyback-and-burn. ~$58M market cap",
+        "source": "GEODNET",
+        "url": "https://geodnet.com/",
+        "type": "official"
+      }
+    ],
+    "Niagen Bioscience (ChromaDex)": [
+      {
+        "claim": "Only profitable public longevity company. FY2025: $129.4M net sales (+30% YoY), $17.4M net income (+103% YoY), 64.3% gross margin, $64.8M cash",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/overview/CDXC/",
+        "type": "data"
+      },
+      {
+        "claim": "Products: Tru Niagen (NR supplement) and Niagen IV (pharmaceutical-grade NAD+ therapy at 1,200+ clinics)",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/news/CDXC/chroma-dex-to-present-at-the-37th-annual-roth-6egw1duo7fnl.html",
+        "type": "data"
+      },
+      {
+        "claim": "ChromaDex investor relations",
+        "source": "ChromaDex Investors",
+        "url": "https://investors.chromadex.com/overview/default.aspx",
+        "type": "official"
+      }
+    ],
+    "Rejuvenate Bio": [
+      {
+        "claim": "George Church's gene therapy company — has an active Wefunder campaign (Reg CF, ~$100 minimum, $59.4M valuation). Delivers longevity genes (FGF21, sTGFbR, a-Klotho) via gene therapy",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/rejuvenate-bio/__aTQ002tR6V0Gw3z7MBwoydY5JbEvqsPe2bt_25J0ks0",
+        "type": "data"
+      },
+      {
+        "claim": "Employee count dropped 67% to ~2 employees from 2023 to 2024. Extremely high risk",
+        "source": "Tracxn",
+        "url": "https://tracxn.com/d/companies/rejuvenate-bio/__aTQ002tR6V0Gw3z7MBwoydY5JbEvqsPe2bt_25J0ks0",
+        "type": "data"
+      }
+    ],
+    "Loyal": [
+      {
+        "claim": "Closest to FDA approval of any longevity drug for any species. Two of three required FDA sections accepted for LOY-002 (senior dog lifespan extension)",
+        "source": "MedPath",
+        "url": "https://trial.medpath.com/news/2f8678523bbbad73/fda-backed-anti-aging-drug-for-dogs-targets-2026-launch-following-efficacy-approval",
+        "type": "news"
+      },
+      {
+        "claim": "Loyal FDA acceptance for LOY-002",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/loyal-receives-fda-acceptance-safety-140000887.html",
+        "type": "news"
+      },
+      {
+        "claim": "STAY study: 1,300 dogs across 70 clinics, the largest veterinary trial in history. $150M+ raised from Valor, Khosla, and Collaborative Fund. Market launch potentially 2026",
+        "source": "MedPath",
+        "url": "https://trial.medpath.com/news/2f8678523bbbad73/fda-backed-anti-aging-drug-for-dogs-targets-2026-launch-following-efficacy-approval",
+        "type": "news"
+      }
+    ],
+    "Blueprint (Bryan Johnson)": [
+      {
+        "claim": "Bryan Johnson's Blueprint raised $60M from celebrity angels (Kim Kardashian, Naval Ravikant, Alex Hormozi, Winklevoss twins)",
+        "source": "Fitt Insider",
+        "url": "https://insider.fitt.co/bryan-johnsons-blueprint-raises-60m/",
+        "type": "news"
+      },
+      {
+        "claim": "Johnson's personal Epstein correspondence revelations (February 2026) add reputational risk",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bryan_Johnson",
+        "type": "research"
+      }
+    ],
+    "Cyclic Materials": [
+      {
+        "claim": "Raised $162M including a $75M Series C led by T. Rowe Price (January 2026). Named MIT Tech Review Top 10 Climate Tech",
+        "source": "Cyclic Materials",
+        "url": "https://cyclicmaterials.earth/resources/cyclic-materials-secures-usd-75m-series-c-funding-to-fast-track-local-and-resilient-rare-earths-supply-at-global-scale",
+        "type": "official"
+      },
+      {
+        "claim": "Three facilities operational or under construction across Canada and the US, with VACUUMSCHMELZE's exclusive 10-year recycling partnership",
+        "source": "Cyclic Materials",
+        "url": "https://cyclicmaterials.earth/resources/cyclic-materials-to-expand-u-s-rare-earth-recycling-footprint-with-new-south-carolina-campus",
+        "type": "official"
+      }
+    ],
+    "MP Materials": [
+      {
+        "claim": "~$50, ~$9B market cap — America's only fully integrated mine-to-magnet rare earth producer. $400M DoD investment (15% equity stake), $1.25B '10X' magnet campus announced February 2026, 100% of output committed to Pentagon",
+        "source": "Document reference",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "USA Rare Earth": [
+      {
+        "claim": "Offers earlier-stage exposure with a $3.1B government capital package",
+        "source": "MINING.COM",
+        "url": "https://www.mining.com/usa-rare-earth-brings-forward-commercial-production-plans-by-two-years/",
+        "type": "news"
+      }
+    ],
+    "Copenhagen Atomics": [
+      {
+        "claim": "Most advanced Western thorium molten salt reactor developer. Two full-size non-fission prototypes built, critical experiment at Paul Scherrer Institute planned 2026–27 — the first European thorium MSR critical experiment ever. Commercial reactors targeted early 2030s. Private, €25M+ raised",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Copenhagen_Atomics",
+        "type": "research"
+      }
+    ],
+    "Energy Recovery": [
+      {
+        "claim": "~$11, desalination pure play at a 52-week low after abandoning its CO2 business and missing guidance. Secular tailwind of global water scarcity makes this a beaten-down value play",
+        "source": "Document reference",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Enapter": [
+      {
+        "claim": "Enapter AG (Frankfurt: H2O) — the only public pure-play AEM electrolyzer company. Anion Exchange Membrane technology uses no iridium, platinum, or titanium — a massive cost advantage. German micro-cap",
+        "source": "Document reference",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "LanzaTech": [
+      {
+        "claim": "The only public pure-play carbon recycling company. LanzaJet Freedom Pines Fuels plant (Soperton, GA) began operating November 2025 — the world's first commercial-scale ethanol-to-jet sustainable aviation fuel plant",
+        "source": "SEC Filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/1843724/000162828026022503/ex991lnzapressrelease_4q25.htm",
+        "type": "filing"
+      },
+      {
+        "claim": "Q4 2025 licensing revenue: $16.7M (vs. $1.1M in Q4 2024). LanzaJet's separate entity was valued at $650M",
+        "source": "SEC Filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/1843724/000162828026022503/ex991lnzapressrelease_4q25.htm",
+        "type": "filing"
+      }
+    ],
+    "Twelve": [
+      {
+        "claim": "Raised $728M to build its first AirPlant converting CO2 + water + renewable electricity into sustainable aviation fuel and chemicals",
+        "source": "ESG News",
+        "url": "https://esgnews.com/amazons-climate-pledge-fund-backs-twelves-83m-expansion-to-scale-co%E2%82%82-transformation/",
+        "type": "news"
+      },
+      {
+        "claim": "Backed by Amazon's Climate Pledge Fund, United Airlines Ventures, and Mitsui. First plant under construction in Moses Lake, Washington",
+        "source": "Twelve",
+        "url": "https://www.twelve.co/technology",
+        "type": "official"
+      }
+    ],
+    "Stardust Solutions": [
+      {
+        "claim": "Raised the largest-ever geoengineering round — $75M Series A (October 2025) led by Lowercarbon Capital (Chris Sacca). US-Israeli company plans stratospheric aerosol injection using proprietary reflective particles (not sulfur dioxide)",
+        "source": "Geoengineering Monitor",
+        "url": "https://www.geoengineeringmonitor.org/geoengineering-the-stratosphere",
+        "type": "research"
+      },
+      {
+        "claim": "Geoengineering Monitor PDF reference",
+        "source": "Geoengineering Monitor",
+        "url": "https://www.geoengineeringmonitor.org/geoengineering-the-stratosphere?print=pdf",
+        "type": "research"
+      },
+      {
+        "claim": "Outdoor experiments planned from April 2026",
+        "source": "SRM360",
+        "url": "https://srm360.org/news-reaction/for-profit-startup-secures-60-million/",
+        "type": "news"
+      },
+      {
+        "claim": "Extreme ethical and regulatory risk — banned in Mexico, multiple US states proposing bans",
+        "source": "CFACT",
+        "url": "https://www.cfact.org/2026/01/15/blocking-the-sun-the-folly-of-solar-geoengineering/",
+        "type": "news"
+      }
+    ],
+    "Nectome": [
+      {
+        "claim": "Brain uploading remains science fiction. Nectome is largely dormant with 4 employees and ~$120K in funding",
+        "source": "PitchBook",
+        "url": "https://pitchbook.com/profiles/company/184875-31",
+        "type": "data"
+      },
+      {
+        "claim": "Nectome dormancy coverage",
+        "source": "Newsweek",
+        "url": "https://www.newsweek.com/startup-wants-preserve-your-brain-and-upload-your-mind-computer-product-thats-844622",
+        "type": "news"
+      }
+    ],
+    "Substrate (Founders Fund)": [
+      {
+        "claim": "X-ray lithography challenging ASML's monopoly, $100M at $1B valuation — in Founders Fund's 2025–26 portfolio",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Founders_Fund",
+        "type": "research"
+      }
+    ],
+    "General Matter": [
+      {
+        "claim": "HALEU nuclear fuel production, led by a former Founders Fund partner — in Founders Fund's 2025–26 portfolio",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Founders_Fund",
+        "type": "research"
+      }
+    ],
+    "Rhoda AI": [
+      {
+        "claim": "$450M Series A for robotic intelligence — in Founders Fund's 2025–26 portfolio",
+        "source": "Crescendo AI",
+        "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups",
+        "type": "news"
+      }
+    ],
+    "Halter": [
+      {
+        "claim": "$220M Series E for AI cattle management — Thiel personally oversaw the round",
+        "source": "Crescendo AI",
+        "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups",
+        "type": "news"
+      }
+    ],
+    "Synchron": [
+      {
+        "claim": "Tom Oxley (founder of Synchron) participated in Cortical Labs' March 2026 round",
+        "source": "Document reference",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Pocket (YC W2026)": [
+      {
+        "claim": "$27M ARR at seed stage — Y Combinator W2026 standout",
+        "source": "The VC Corner",
+        "url": "https://www.thevccorner.com/p/yc-w26-batch-complete-company-database",
+        "type": "news"
+      }
+    ],
+    "Voltair (YC W2026)": [
+      {
+        "claim": "Self-charging drones that perch on power lines — Y Combinator W2026 standout",
+        "source": "Y Combinator",
+        "url": "https://www.ycombinator.com/companies/voltair",
+        "type": "official"
+      },
+      {
+        "claim": "Voltair self-charging drones coverage",
+        "source": "WebProNews",
+        "url": "https://www.webpronews.com/voltairs-self-charging-drones-perch-on-power-lines-for-endless-grid-monitoring/",
+        "type": "news"
+      }
+    ],
+    "Asimov (YC W2026)": [
+      {
+        "claim": "5,000+ contributor motion dataset for training robots — Y Combinator W2026 standout",
+        "source": "The VC Corner",
+        "url": "https://www.thevccorner.com/p/yc-w26-batch-complete-company-database",
+        "type": "news"
+      }
+    ],
+    "Human Archive (YC W2026)": [
+      {
+        "claim": "Archiving the physical world for embodied AI — Y Combinator W2026 standout",
+        "source": "The VC Corner",
+        "url": "https://www.thevccorner.com/p/yc-w26-batch-complete-company-database",
+        "type": "news"
+      }
+    ],
+    "Altos Labs": [
+      {
+        "claim": "Forge Global alerts for Altos Labs pre-IPO shares — mentioned as monitoring recommendation",
+        "source": "Document reference",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "Aspen Aerogels (avoid)": [
+      {
+        "claim": "Revenue collapsed 40%, stock at ~$3, massive impairment charges — listed as avoid",
+        "source": "Stock Titan",
+        "url": "https://www.stocktitan.net/news/ASPN/",
+        "type": "data"
+      },
+      {
+        "claim": "Aspen Aerogels SEC 10-K filing",
+        "source": "SEC Filing",
+        "url": "https://www.stocktitan.net/sec-filings/ASPN/10-k-aspen-aerogels-inc-files-annual-report-ec9289b63d05.html",
+        "type": "filing"
+      },
+      {
+        "claim": "Aspen Aerogels SEC filing on impairment",
+        "source": "SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001145986/000117184326001072/exh_991.htm",
+        "type": "filing"
+      }
+    ],
+    "NSF Biocomputing Programs": [
+      {
+        "claim": "NSF has deployed $14M across seven university programs for biocomputing",
+        "source": "NSF",
+        "url": "https://www.nsf.gov/news/news_summ.jsp?cntn_id=310250&org=ENG&from=home",
+        "type": "research"
+      },
+      {
+        "claim": "DARPA is funding organoid computing",
+        "source": "Web and IT News",
+        "url": "https://www.webanditnews.com/2026/03/15/biological-data-centers-startups-are-building-computers-powered-by-human-brain-cells/",
+        "type": "news"
+      },
+      {
+        "claim": "Biological computing's energy advantage covered by WebProNews and Fortune",
+        "source": "WebProNews",
+        "url": "https://www.webpronews.com/biological-data-centers-startups-are-building-computers-powered-by-human-brain-cells/",
+        "type": "news"
+      }
+    ],
+    "DePIN Ecosystem (General)": [
+      {
+        "claim": "DePINscan: 440 projects, 40.9M devices tracked",
+        "source": "DePINscan",
+        "url": "https://depinscan.io/",
+        "type": "data"
+      },
+      {
+        "claim": "BingX DePIN overview",
+        "source": "BingX",
+        "url": "https://bingx.com/en/learn/article/what-are-the-top-depin-crypto-projects",
+        "type": "data"
+      },
+      {
+        "claim": "2025 DePIN annual review — from concept validation to scaling breakthrough",
+        "source": "Futu News",
+        "url": "https://news.futunn.com/en/post/66811088/2025-depin-annual-review-from-concept-validation-to-scaling-breakthrough",
+        "type": "news"
+      }
+    ],
+    "DARPA Programs (General)": [
+      {
+        "claim": "Altermagnetism for Devices — entirely new physics for computing, no commercial players exist yet",
+        "source": "The Debrief",
+        "url": "https://thedebrief.org/darpa-is-exploring-physics-strangest-new-frontier-to-develop-the-next-generation-of-defense-technology/",
+        "type": "research"
+      },
+      {
+        "claim": "ARPA-H's AIR program — autonomous surgical robotics; Sentante already has FDA breakthrough designation",
+        "source": "ARPA-H",
+        "url": "https://arpa-h.gov/news-and-events/arpa-h-launches-new-robotic-surgery-program-transform-surgical-care-nationwide",
+        "type": "official"
+      },
+      {
+        "claim": "ARPA-H AIR program details",
+        "source": "ARPA-H",
+        "url": "https://origin.arpa-h.gov/explore-funding/programs/air",
+        "type": "official"
+      },
+      {
+        "claim": "Biostasis — chemical biology to slow biological systems without cold-chain",
+        "source": "DARPA",
+        "url": "https://www.darpa.mil/research/programs/biostasis",
+        "type": "official"
+      },
+      {
+        "claim": "DARPA Programs page for monitoring",
+        "source": "DARPA",
+        "url": "https://www.darpa.mil/research/programs",
+        "type": "official"
+      },
+      {
+        "claim": "ARPA-H explore funding page",
+        "source": "ARPA-H",
+        "url": "https://arpa-h.gov/explore-funding/open-funding-opportunities",
+        "type": "official"
+      },
+      {
+        "claim": "ARPA-E eXCHANGE for monitoring",
+        "source": "ARPA-E",
+        "url": "https://arpa-e-foa.energy.gov/",
+        "type": "official"
+      }
+    ],
+    "Patent Intelligence (General)": [
+      {
+        "claim": "Fastest-growing patent cluster globally: 'Operating or servicing of cells' (electrolysis/green hydrogen) — #1 for the second consecutive year, growing +23%. LG Energy Solution jumped 22 positions in patent rankings",
+        "source": "Digital Science / IFI CLAIMS",
+        "url": "https://www.digital-science.com/blog/2026/01/ifi-claims-2025-patent-rankings/",
+        "type": "research"
+      }
+    ],
+    "Monitoring Resources (General)": [
+      {
+        "claim": "Tracxn, PitchBook, and Crunchbase alerts for private company developments",
+        "source": "Document recommendation",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "EquityZen and Forge Global for pre-IPO share availability",
+        "source": "Document recommendation",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Wefunder/Republic/StartEngine for crowdfunding campaigns",
+        "source": "Boring Business Nerd",
+        "url": "https://www.boringbusinessnerd.com/post/wefunder-review",
+        "type": "news"
+      },
+      {
+        "claim": "Y Combinator company directory filtered by latest batch",
+        "source": "Y Combinator",
+        "url": "https://www.ycombinator.com/companies/industry/aviation-and-space",
+        "type": "official"
+      },
+      {
+        "claim": "Longevity monitoring via longevity.technology/news and ClinicalTrials.gov",
+        "source": "Document recommendation",
+        "url": "https://longevity.technology/news",
+        "type": "data"
+      },
+      {
+        "claim": "Shield AI at $5.3B valuation — combat-validated AI pilot, 130+ Ukraine sorties",
+        "source": "Exoswan",
+        "url": "https://exoswan.com/military-drone-stocks/",
+        "type": "news"
+      }
+    ]
+  }
+}

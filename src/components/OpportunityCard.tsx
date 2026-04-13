@@ -49,9 +49,20 @@ function CardHeader({ opportunity }: { readonly opportunity: Opportunity }) {
 }
 
 function CardFooter({ opportunity }: { readonly opportunity: Opportunity }) {
+  const citationCount = Array.isArray(opportunity.citations)
+    ? opportunity.citations.length
+    : 0;
+
   return (
-    <div className="mt-4 pt-4 border-t border-border flex justify-between">
-      <span className="text-xs text-text-tertiary">{opportunity.category}</span>
+    <div className="mt-4 pt-4 border-t border-border flex justify-between items-center">
+      <div className="flex items-center gap-3">
+        <span className="text-xs text-text-tertiary">{opportunity.category}</span>
+        {citationCount > 0 && (
+          <span className="text-xs text-text-tertiary font-mono">
+            {citationCount} {citationCount === 1 ? "source" : "sources"}
+          </span>
+        )}
+      </div>
       <TierBadge tier={opportunity.tier} />
     </div>
   );
