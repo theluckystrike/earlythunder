@@ -3,6 +3,7 @@
 import type { AssetClass, Tier } from "@/lib/types";
 
 export interface FilterState {
+  readonly search: string;
   readonly assetClass: AssetClass | "all";
   readonly tier: Tier | "all";
   readonly sortBy: "composite_score" | "name" | "tier";
@@ -24,13 +25,6 @@ const ASSET_CLASS_OPTIONS: readonly {
   { value: "private_markets", label: "Private Markets" },
 ];
 
-const TIER_OPTIONS: readonly { value: Tier | "all"; label: string }[] = [
-  { value: "all", label: "All Tiers" },
-  { value: 1, label: "Tier 1" },
-  { value: 2, label: "Tier 2" },
-  { value: 3, label: "Tier 3" },
-];
-
 const SORT_OPTIONS: readonly {
   value: "composite_score" | "name" | "tier";
   label: string;
@@ -40,95 +34,131 @@ const SORT_OPTIONS: readonly {
   { value: "tier", label: "Tier" },
 ];
 
+const TIERS: readonly Tier[] = [1, 2, 3];
+
 /** Filter and sort controls for opportunity explorer. */
 export default function FilterBar({ filters, onFilterChange }: FilterBarProps) {
   if (!filters || typeof onFilterChange !== "function") return null;
 
+  const hasActiveFilters =
+    filters.search.length > 0 ||
+    filters.assetClass !== "all" ||
+    filters.tier !== "all";
+
   return (
-    <div className="flex flex-wrap items-center gap-3 rounded-xl border border-border bg-card p-4">
-      <SelectFilter
-        label="Asset Class"
-        value={String(filters.assetClass)}
-        options={ASSET_CLASS_OPTIONS.map((o) => ({
-          value: String(o.value),
-          label: o.label,
-        }))}
-        onChange={(val) =>
-          onFilterChange({ ...filters, assetClass: val as AssetClass | "all" })
-        }
-      />
-      <SelectFilter
-        label="Tier"
-        value={String(filters.tier)}
-        options={TIER_OPTIONS.map((o) => ({
-          value: String(o.value),
-          label: o.label,
-        }))}
-        onChange={(val) =>
-          onFilterChange({
-            ...filters,
-            tier: val === "all" ? "all" : (Number(val) as Tier),
-          })
-        }
-      />
-      <SelectFilter
-        label="Sort By"
-        value={filters.sortBy}
-        options={SORT_OPTIONS.map((o) => ({
-          value: o.value,
-          label: o.label,
-        }))}
-        onChange={(val) =>
-          onFilterChange({
-            ...filters,
-            sortBy: val as "composite_score" | "name" | "tier",
-          })
-        }
-      />
-      <button
-        type="button"
-        onClick={() =>
-          onFilterChange({
-            ...filters,
-            sortOrder: filters.sortOrder === "asc" ? "desc" : "asc",
-          })
-        }
-        className="rounded-lg border border-border bg-surface px-3 py-2 text-xs text-text-secondary transition-colors hover:border-amber hover:text-text-primary"
-        aria-label={`Sort ${filters.sortOrder === "asc" ? "descending" : "ascending"}`}
-      >
-        {filters.sortOrder === "asc" ? "ASC" : "DESC"}
-      </button>
+    <div className="flex flex-wrap items-center gap-3">
+      <SearchInput filters={filters} onFilterChange={onFilterChange} />
+      <CategorySelect filters={filters} onFilterChange={onFilterChange} />
+      <TierToggle filters={filters} onFilterChange={onFilterChange} />
+      <SortSelect filters={filters} onFilterChange={onFilterChange} />
+      {hasActiveFilters && (
+        <ClearButton filters={filters} onFilterChange={onFilterChange} />
+      )}
     </div>
   );
 }
 
-function SelectFilter({
-  label,
-  value,
-  options,
-  onChange,
-}: {
-  readonly label: string;
-  readonly value: string;
-  readonly options: readonly { value: string; label: string }[];
-  readonly onChange: (value: string) => void;
-}) {
-  if (!Array.isArray(options) || options.length === 0) return null;
-
+function SearchInput({
+  filters,
+  onFilterChange,
+}: FilterBarProps) {
   return (
-    <label className="flex items-center gap-2">
-      <span className="text-xs text-text-secondary">{label}:</span>
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="rounded-lg border border-border bg-surface px-3 py-2 text-xs text-text-primary focus:border-amber focus:outline-none"
-      >
-        {options.map((opt) => (
-          <option key={opt.value} value={opt.value}>
-            {opt.label}
-          </option>
-        ))}
-      </select>
-    </label>
+    <input
+      type="text"
+      value={filters.search}
+      onChange={(e) => onFilterChange({ ...filters, search: e.target.value })}
+      placeholder="Search..."
+      className="bg-bg-card border border-border rounded-lg px-4 py-2.5 text-sm text-text-primary placeholder:text-text-tertiary focus:border-border-hover focus:outline-none w-64"
+    />
+  );
+}
+
+function CategorySelect({ filters, onFilterChange }: FilterBarProps) {
+  return (
+    <select
+      value={String(filters.assetClass)}
+      onChange={(e) =>
+        onFilterChange({
+          ...filters,
+          assetClass: e.target.value as AssetClass | "all",
+        })
+      }
+      className="bg-bg-card border border-border rounded-lg px-4 py-2.5 text-sm text-text-primary focus:border-border-hover focus:outline-none"
+    >
+      {ASSET_CLASS_OPTIONS.map((o) => (
+        <option key={o.value} value={o.value}>
+          {o.label}
+        </option>
+      ))}
+    </select>
+  );
+}
+
+function TierToggle({ filters, onFilterChange }: FilterBarProps) {
+  return (
+    <div className="flex items-center gap-1">
+      {TIERS.map((t) => {
+        const isActive = filters.tier === t;
+        return (
+          <button
+            key={t}
+            type="button"
+            onClick={() =>
+              onFilterChange({
+                ...filters,
+                tier: isActive ? "all" : t,
+              })
+            }
+            className={`px-3 py-1.5 text-xs font-mono rounded-md transition-colors ${
+              isActive
+                ? "bg-text-primary text-black"
+                : "text-text-tertiary hover:text-text-secondary"
+            }`}
+          >
+            T{t}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function SortSelect({ filters, onFilterChange }: FilterBarProps) {
+  return (
+    <select
+      value={filters.sortBy}
+      onChange={(e) =>
+        onFilterChange({
+          ...filters,
+          sortBy: e.target.value as "composite_score" | "name" | "tier",
+        })
+      }
+      className="bg-bg-card border border-border rounded-lg px-4 py-2.5 text-sm text-text-primary focus:border-border-hover focus:outline-none"
+    >
+      {SORT_OPTIONS.map((o) => (
+        <option key={o.value} value={o.value}>
+          {o.label}
+        </option>
+      ))}
+    </select>
+  );
+}
+
+function ClearButton({ filters, onFilterChange }: FilterBarProps) {
+  return (
+    <button
+      type="button"
+      onClick={() =>
+        onFilterChange({
+          ...filters,
+          search: "",
+          assetClass: "all",
+          tier: "all",
+        })
+      }
+      className="text-text-tertiary hover:text-text-primary text-xs transition-colors"
+    >
+      Clear
+    </button>
   );
 }

@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { fontVariables } from "@/lib/fonts";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Early Thunder — Hear the Storm Before Anyone Else",
+    default: "Early Thunder",
     template: "%s | Early Thunder",
   },
-  description:
-    "Automated intelligence tracking pre-mainstream asymmetric investment opportunities across digital assets, public equities, and private markets.",
+  description: "Pre-mainstream opportunity intelligence.",
   keywords: [
     "investment intelligence",
     "asymmetric opportunities",
@@ -26,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fontVariables} h-full antialiased`}>
-      <body className="flex min-h-full flex-col bg-base text-text-primary">
+    <html lang="en" className="h-full">
+      <body className="flex min-h-full flex-col bg-black text-text-primary font-sans">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

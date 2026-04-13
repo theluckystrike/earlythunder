@@ -1,8 +1,6 @@
 import Link from "next/link";
 import type { Opportunity } from "@/lib/types";
-import { getAssetClassLabel } from "@/lib/format";
 import TierBadge from "./TierBadge";
-import ScoreBar from "./ScoreBar";
 
 interface OpportunityCardProps {
   readonly opportunity: Opportunity;
@@ -14,60 +12,53 @@ export default function OpportunityCard({ opportunity }: OpportunityCardProps) {
     return null;
   }
 
+  const tierBorderClass = opportunity.tier === 1 ? "border-t border-t-[#444]" : "";
+
   return (
     <Link
       href={`/opportunities/${opportunity.slug}`}
-      className="group flex flex-col rounded-xl border border-border bg-card p-5 transition-all hover:border-amber/30 hover:shadow-lg hover:shadow-amber/5"
+      className={`block bg-bg-card rounded-2xl border border-border p-6 hover:border-border-hover transition-colors duration-200 cursor-pointer ${tierBorderClass}`}
     >
       <CardHeader opportunity={opportunity} />
-      <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-text-secondary">
+      <div className="mt-1">
+        {opportunity.ticker && (
+          <span className="font-mono text-sm text-text-tertiary">
+            {opportunity.ticker}
+          </span>
+        )}
+      </div>
+      <p className="mt-3 text-sm text-text-secondary leading-relaxed line-clamp-2">
         {opportunity.one_liner}
       </p>
-      <div className="mt-4">
-        <ScoreBar score={opportunity.composite_score} />
-      </div>
       <CardFooter opportunity={opportunity} />
     </Link>
   );
 }
 
-function CardHeader({
-  opportunity,
-}: {
-  readonly opportunity: Opportunity;
-}) {
+function CardHeader({ opportunity }: { readonly opportunity: Opportunity }) {
   return (
-    <div className="flex items-start justify-between">
-      <div className="min-w-0 flex-1">
-        <h3 className="truncate font-display text-lg text-text-primary group-hover:text-amber">
-          {opportunity.name}
-        </h3>
-        {opportunity.ticker && (
-          <span className="font-mono text-xs text-text-secondary">
-            {opportunity.ticker}
-          </span>
-        )}
-      </div>
+    <div className="flex justify-between items-start">
+      <h3 className="text-base font-semibold text-text-primary tracking-tight">
+        {opportunity.name}
+      </h3>
+      <span className={`font-mono text-2xl font-semibold ${getScoreColor(opportunity.composite_score)}`}>
+        {Math.round(opportunity.composite_score)}
+      </span>
+    </div>
+  );
+}
+
+function CardFooter({ opportunity }: { readonly opportunity: Opportunity }) {
+  return (
+    <div className="mt-4 pt-4 border-t border-border flex justify-between">
+      <span className="text-xs text-text-tertiary">{opportunity.category}</span>
       <TierBadge tier={opportunity.tier} />
     </div>
   );
 }
 
-function CardFooter({
-  opportunity,
-}: {
-  readonly opportunity: Opportunity;
-}) {
-  if (!opportunity.category && !opportunity.asset_class) return null;
-
-  return (
-    <div className="mt-4 flex items-center gap-2 border-t border-border pt-3">
-      <span className="rounded-md bg-surface px-2 py-1 text-xs text-text-secondary">
-        {getAssetClassLabel(opportunity.asset_class)}
-      </span>
-      <span className="rounded-md bg-surface px-2 py-1 text-xs text-text-secondary">
-        {opportunity.category}
-      </span>
-    </div>
-  );
+function getScoreColor(score: number): string {
+  if (score >= 75) return "text-score-high";
+  if (score >= 55) return "text-score-mid";
+  return "text-score-low";
 }

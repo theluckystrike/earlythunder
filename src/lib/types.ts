@@ -19,6 +19,13 @@ export type AssetClass =
 /** Tier ranking: 1 = highest conviction, 3 = speculative. */
 export type Tier = 1 | 2 | 3;
 
+/** Citation reference for opportunity claims. */
+export interface Citation {
+  readonly claim: string;
+  readonly source: string;
+  readonly url: string;
+}
+
 /** Core opportunity data model. */
 export interface Opportunity {
   readonly slug: string;
@@ -36,6 +43,7 @@ export interface Opportunity {
   readonly related_slugs: readonly string[];
   readonly updated_at: string;
   readonly is_graveyard: boolean;
+  readonly citations: readonly Citation[];
   readonly current_price_usd: number | null;
   readonly market_cap_usd: number | null;
   readonly volume_24h_usd: number | null;

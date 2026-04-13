@@ -10,10 +10,9 @@ export function formatScore(score: number): string {
 /** Get the color class for a score value. */
 export function getScoreColor(score: number): string {
   if (typeof score !== "number" || isNaN(score)) return "text-text-secondary";
-  if (score >= 80) return "text-success";
-  if (score >= 60) return "text-amber";
-  if (score >= 40) return "text-warning";
-  return "text-danger";
+  if (score >= 70) return "text-score-high";
+  if (score >= 40) return "text-score-mid";
+  return "text-score-low";
 }
 
 /** Get the background color class for a tier badge. */

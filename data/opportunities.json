@@ -48,19 +48,19 @@
     "ticker": "$CCJ",
     "category": "Nuclear / Uranium",
     "asset_class": "public_equities",
-    "tier": 1,
-    "composite_score": 81.8,
+    "tier": 2,
+    "composite_score": 66.0,
     "one_liner": "World's largest uranium miner with 49% stake in Westinghouse reactor technology.",
     "thesis": "Cameco sits at the nexus of every structural tailwind in the nuclear energy sector. It operates Cigar Lake, the world's highest-grade uranium mine, and owns 49% of Westinghouse, the leading reactor technology provider. This dual exposure to both fuel supply and reactor deployment creates a vertically integrated position that no other public company can match. The new $80B+ U.S. government partnership for reactor deployment adds government-backed demand visibility.\n\nThe structural uranium supply deficit is the core thesis: 204M lbs of annual demand against only 173M lbs of production creates a persistent shortfall that must be resolved through higher prices. Goldman Sachs projects spot uranium reaching $91/lb by end of 2026. AI-driven electricity demand adds a secular demand growth layer that was not part of any uranium thesis five years ago. Microsoft, Google, and Amazon are all actively pursuing nuclear power for data centers, creating a new demand vector that could sustain uranium prices for decades.\n\nCameco's weakness is that it is already a large-cap name (~$28B market cap) widely covered by institutional analysts, with limited 'hard to buy' edge. The stock's analyst target of $121 represents approximately 120% upside from the ~$55 level, but this is a well-known thesis rather than a contrarian discovery. The risk is primarily macro: if nuclear sentiment reverses due to an accident or policy shift, the entire sector would suffer regardless of fundamentals.",
     "signals": {
-      "toy_phase": 60,
-      "working_code": 95,
+      "toy_phase": 15,
+      "working_code": 90,
       "community": 70,
-      "dev_activity": 90,
-      "smart_money": 92,
-      "narrative": 90,
-      "hard_to_buy": 30,
-      "catalyst": 90
+      "dev_activity": 80,
+      "smart_money": 85,
+      "narrative": 60,
+      "hard_to_buy": 10,
+      "catalyst": 70
     },
     "catalysts": [
       "$80B+ U.S. government partnership for reactor deployment",
@@ -147,19 +147,19 @@
     "ticker": "EIGEN",
     "category": "Restaking",
     "asset_class": "digital_assets",
-    "tier": 1,
-    "composite_score": 80.0,
+    "tier": 2,
+    "composite_score": 68.3,
     "one_liner": "Restaking protocol securing 280+ services with $19.7B in staked ETH, building the verifiable cloud for modular Ethereum.",
     "thesis": "EigenLayer is the clear restaking category leader with $19.7B TVL, 4.6M ETH committed, and 280+ Actively Validated Services (AVS) projects building on top. The protocol has expanded beyond pure restaking into a comprehensive 'Verifiable Cloud' vision encompassing AI inference (EigenAI), compute (EigenCompute), and data availability (EigenDA).\n\nEigenAI went mainnet in late 2025, and EigenCompute launched January 2026. The EigenDA throughput improvements and EigenVerify mainnet launch scheduled for 2026 are near-term catalysts. The protocol's position as foundational infrastructure for the modular Ethereum stack gives it extraordinary network effects.\n\nThe primary risk is that restaking is no longer a contrarian thesis -- it's mainstream, which reduces the toy-phase dismissal edge. Slashing risk across AVS projects is untested at scale. Competition from Symbiotic (multi-asset restaking) and Babylon (Bitcoin restaking) is intensifying.\n\nAt ~$3B market cap for a protocol securing $19.7B in assets, EIGEN appears undervalued relative to its infrastructure importance. The transition from speculative TVL to genuine revenue from AVS fees will be the key value driver in 2026.",
     "signals": {
-      "toy_phase": 50,
-      "working_code": 95,
-      "community": 75,
-      "dev_activity": 90,
-      "smart_money": 90,
-      "narrative": 85,
-      "hard_to_buy": 40,
-      "catalyst": 85
+      "toy_phase": 55,
+      "working_code": 85,
+      "community": 50,
+      "dev_activity": 75,
+      "smart_money": 85,
+      "narrative": 40,
+      "hard_to_buy": 30,
+      "catalyst": 70
     },
     "catalysts": [
       "EigenVerify mainnet launch expected 2026",
@@ -190,19 +190,19 @@
     "ticker": "NXE",
     "category": "Nuclear / Uranium",
     "asset_class": "public_equities",
-    "tier": 1,
-    "composite_score": 80.0,
+    "tier": 3,
+    "composite_score": 64.5,
     "one_liner": "Advancing the world's highest-grade undeveloped uranium deposit at under $10/lb production cost, with final federal approval imminent.",
     "thesis": "NexGen's Rook I project is designed to produce 30M lbs/year at under $10/lb cost -- in a market where spot uranium is $80-100/lb. That margin profile is extraordinary. The February 2026 CNSC Part 2 Commission Hearing is the FINAL step before federal regulatory approval, making this the single highest-impact catalyst in the uranium mining sector.\n\nIf approved, NexGen transitions from a permitting-stage company to a construction-stage company overnight, triggering a fundamental re-rating. The deposit grade (average 3.09% U3O8 in the Arrow deposit) is 10-100x higher than most global deposits, which translates to lower environmental impact and dramatically lower operating costs.\n\nThe structural uranium supply deficit (1.9B lb cumulative deficit projected 2025-2045 per Sprott) means every new high-quality deposit is strategically important. NexGen's Saskatchewan location provides political stability and proximity to existing infrastructure.\n\nWeakness: first production isn't until ~2029, creating a multi-year gap between approval and cash flow. Construction execution risk is real. At ~$5B market cap, significant upside is already priced in, though the production economics justify a much higher valuation at full scale.",
     "signals": {
-      "toy_phase": 55,
+      "toy_phase": 25,
       "working_code": 80,
-      "community": 72,
-      "dev_activity": 88,
-      "smart_money": 93,
-      "narrative": 85,
-      "hard_to_buy": 50,
-      "catalyst": 98
+      "community": 60,
+      "dev_activity": 75,
+      "smart_money": 85,
+      "narrative": 55,
+      "hard_to_buy": 15,
+      "catalyst": 75
     },
     "catalysts": [
       "CNSC Part 2 Commission Hearing -- final federal regulatory approval step",
@@ -320,19 +320,19 @@
     "ticker": "IONQ",
     "category": "Quantum Computing",
     "asset_class": "public_equities",
-    "tier": 1,
-    "composite_score": 80.0,
+    "tier": 3,
+    "composite_score": 60.8,
     "one_liner": "First quantum computing company to surpass $100M annual revenue, deploying 256-qubit trapped-ion systems in 2026.",
     "thesis": "IonQ crossed the $100M annual revenue milestone in FY2025 ($130M, +202% YoY) -- a first for any quantum computing company. The company guides $225-$245M for 2026 with a $370M backlog, demonstrating genuine commercial traction. The 256-qubit sixth-generation system planned for 2026 is a major technical catalyst.\n\nThe trapped-ion approach offers fundamental advantages: high fidelity, all-to-all qubit connectivity, and room-temperature operation. IonQ is part of DARPA's Quantum Benchmarking Initiative, validating the technology's strategic importance. Government and defense contracts provide a stable revenue base while commercial applications scale.\n\nThe quantum computing market is projected to reach $65B by 2030, and IonQ's revenue leadership and trapped-ion moat position it to capture significant share. The company's partnership with major cloud providers (AWS, Azure, Google Cloud) ensures distribution.\n\nWeakness: still unprofitable, quantum computing's practical utility remains limited for most applications, and the stock trades at a premium ~$8B valuation. Competition from Google, IBM, and startups like QuEra is intense. A broader quantum winter or technical setback could crush the valuation.",
     "signals": {
-      "toy_phase": 55,
-      "working_code": 90,
-      "community": 66,
-      "dev_activity": 90,
-      "smart_money": 92,
-      "narrative": 82,
-      "hard_to_buy": 30,
-      "catalyst": 95
+      "toy_phase": 20,
+      "working_code": 75,
+      "community": 65,
+      "dev_activity": 70,
+      "smart_money": 80,
+      "narrative": 70,
+      "hard_to_buy": 10,
+      "catalyst": 65
     },
     "catalysts": [
       "256-qubit sixth-generation system deployment in 2026",
@@ -418,7 +418,7 @@
     "asset_class": "public_equities",
     "tier": 1,
     "composite_score": 76.0,
-    "one_liner": "A profitable $13B+ company with existing drug revenue where xenotransplantation via its Revivicor subsidiary represents massive free optionality — the best risk-adjusted frontier play in the report.",
+    "one_liner": "Profitable $13B biotech where xenotransplantation via its Revivicor subsidiary represents massive free optionality on frontier organ manufacturing.",
     "thesis": "United Therapeutics (NASDAQ: UTHR) has a ~$13B+ market cap and is profitable from its pulmonary hypertension drug franchise. Its Revivicor subsidiary produces 10-gene-edited pigs. FDA cleared the IND for its UKidney EXPAND clinical trial (February 2025), with the first transplant performed November 2025. Building a $100M organ production facility. Seven organ programs total.\n\nThe source report describes this as 'the best risk-adjusted frontier play in the entire report' — and the logic is compelling. UTHR is a profitable company with existing revenue where the xenotransplantation division represents pure optionality. If pig organs work at scale, the addressable market (100,000+ Americans on waitlists, 17 dying daily) could dwarf the current pulmonary hypertension franchise. If they don't work, you still own a profitable drug company.\n\nThe $100M organ production facility under construction signals serious commitment to scale. Seven organ programs (not just kidneys) multiply the optionality. The FDA IND clearance for UKidney EXPAND puts this in formal clinical trials.\n\nThis is the rare frontier opportunity where downside is protected by existing profitability and upside is potentially transformative. At $13B market cap, a successful xeno program could easily double or triple the company's value.",
     "signals": {
       "toy_phase": 35,
@@ -659,7 +659,7 @@
     "asset_class": "public_equities",
     "tier": 1,
     "composite_score": 75.1,
-    "one_liner": "LiDAR sensing platform with 52.5% YoY revenue growth, 12 consecutive quarters of product revenue growth, and analyst Strong Buy consensus at $39.25 target.",
+    "one_liner": "LiDAR sensing platform with 52.5% YoY revenue growth and 12 consecutive quarters of product revenue increases.",
     "thesis": "Ouster is building the physical AI sensing platform for drones, robotics, and autonomous systems. Revenue hit $169.4M (+52.5% YoY) with 12 consecutive quarters of product revenue growth — a remarkable consistency streak. The February 2026 acquisition of StereoLabs (AI vision cameras) adds computer vision capabilities to the core LiDAR offering.\n\nAnalyst consensus is Strong Buy with an average target of $39.25, representing ~101% upside from ~$21. The company is transitioning from a pure LiDAR sensor company to a full-stack perception platform, which significantly expands the addressable market beyond traditional LiDAR applications.\n\nThe drone and robotics megatrend provides multiple growth vectors: autonomous delivery, warehouse robotics, defense UAVs, and smart infrastructure. Ouster's digital LiDAR architecture (vs. analog competitors) enables software-defined improvements over time.\n\nKey risks include that Ouster is still unprofitable, originated as a SPAC (which carries stigma), and faces intense competition from Velodyne (now Ouster's own legacy), Luminar, Hesai, and others. The LiDAR industry has a history of overpromising and underdelivering on adoption timelines.",
     "signals": {
       "toy_phase": 55,
@@ -1124,7 +1124,7 @@
     "asset_class": "digital_assets",
     "tier": 2,
     "composite_score": 72.5,
-    "one_liner": "a16z-backed decentralized ML training network with $101M raised and token sale completed at $1B FDV, targeting the verifiable compute layer that centralized AI cannot provide.",
+    "one_liner": "a16z-backed decentralized ML training network with $101M raised, targeting the verifiable compute layer for AI.",
     "thesis": "Gensyn represents the highest-conviction early-stage play in decentralized compute because it targets ML training rather than just inference. While Akash and Render focus on GPU rental and rendering respectively, Gensyn's verifiable training protocol allows distributed contributors to collaboratively train models with cryptographic guarantees of correctness. This is the missing infrastructure piece that could make decentralized AI competitive with centralized labs.\n\nThe $101M raise led by a16z places Gensyn in the top tier of smart money backing in the entire AI x Crypto sector. The token sale completed in December 2025 at a $1B FDV cap, with claiming underway through April 2026. Critically, mainnet is not yet live and the token has no exchange listing — meaning this is genuinely early despite the substantial capital raised. The Asymmetric Opportunity Atlas notes Gensyn is 'the highest-conviction early-stage play' in decentralized compute.\n\nThe risk profile is substantial: execution risk from mainnet not being live, liquidity risk from no exchange listing, and the $1B FDV cap may limit near-term upside compared to projects launching at lower valuations. However, the combination of top-tier VC backing, a technically differentiated approach (verifiable training vs. commoditized inference), and the fact that 40 cents of every VC dollar invested in crypto in 2025 went to AI-integrated projects suggests the structural demand for this category is real and growing.\n\nThe key question is whether Gensyn can ship a working mainnet that demonstrates verifiable training at scale before the market window closes. If it does, the first-mover advantage in verifiable ML training could create a defensible moat. The 1000x Opportunity Map explicitly compares Gensyn to the infrastructure layer equivalent of Uniswap and Aave before DeFi Summer.",
     "signals": {
       "toy_phase": 85,
@@ -1178,7 +1178,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 72.5,
-    "one_liner": "FDA IND cleared for pig-to-human kidney transplants — patient Tim Andrews has surpassed seven months post-transplant, dialysis-free, with 69-gene-edited organs.",
+    "one_liner": "FDA IND cleared for pig-to-human kidney transplants; patient Tim Andrews surpassed seven months post-transplant, dialysis-free.",
     "thesis": "eGenesis (Cambridge, MA) received FDA IND clearance for its Phase I/II/III study of EGEN-2784 (September 2025). Patient Tim Andrews received a pig kidney in January 2025 and has surpassed seven months post-transplant — the longest-living pig organ recipient, dialysis-free. Patient Bill Stewart received a kidney in June 2025 and completed a two-hour bike ride.\n\nThe EGEN-2784 pig has 69 gene edits: 3 xeno-antigen knockouts, 7 human transgene insertions, 59 PERV inactivations. Total funding: $454-481M from Lux Capital, ARCH Ventures, Khosla Ventures, Leaps by Bayer, DaVita, and 32+ institutions. Available on EquityZen/Forge for accredited investors.\n\nThis is one of the most medically significant frontier technologies in this report. 100,000+ Americans are on the organ transplant waitlist, and 17 die daily waiting. If pig-to-human transplantation achieves FDA approval, the addressable market is enormous and the human impact is transformative.\n\nThe FDA IND clearance is a critical regulatory milestone — this is now in formal clinical trials, not just compassionate use. The seven-month survival of Tim Andrews without dialysis is the strongest clinical signal in xenotransplantation history.",
     "signals": {
       "toy_phase": 45,
@@ -1276,7 +1276,7 @@
     "slug": "energy-fuels",
     "name": "Energy Fuels",
     "ticker": "UUUU",
-    "category": "Critical Minerals",
+    "category": "Geopolitical / Critical Materials",
     "asset_class": "public_equities",
     "tier": 2,
     "composite_score": 72.2,
@@ -1454,7 +1454,7 @@
     "asset_class": "digital_assets",
     "tier": 2,
     "composite_score": 69.8,
-    "one_liner": "L1 blockchain pivoting to AI cloud and chain abstraction with 1M TPS testing, 100M users via Brave Private Chat integration, and confidential AI computing on the 2026 roadmap.",
+    "one_liner": "L1 blockchain pivoting to AI cloud and chain abstraction with 1M TPS testing and 100M users via Brave Private Chat.",
     "thesis": "NEAR Protocol represents an established L1 blockchain making a strategic pivot to AI infrastructure. Unlike purpose-built AI x Crypto projects, NEAR brings an existing ecosystem, developer tooling, and user base to the AI convergence. The seed opportunities analysis documents 1M TPS in testing and AI Cloud plus Private Chat reaching 100M users through the Brave browser integration — metrics that dwarf most AI-native crypto projects.\n\nThe 2026 roadmap doubles down on Intents (cross-chain execution) and confidential AI computing. The Shade Agents and Proof of Response systems represent genuine technical innovation in verifiable AI on-chain. The chain abstraction pivot is identified in the seed opportunities analysis as 'genuine differentiation' — allowing NEAR to serve as an interoperability layer across chains rather than competing for single-chain dominance.\n\nThe weakness is that NEAR is already well-known and easily accessible on major exchanges (low 'hard to buy' score), and the AI narrative is shared with many chains attempting similar pivots. At approximately $3.5B market cap, NEAR offers less pure asymmetry than smaller-cap AI x Crypto plays. The market has not yet rewarded the AI pivot with a significant premium.\n\nThe thesis is that NEAR's existing infrastructure, developer ecosystem, and user base provide a distribution advantage for AI features that purpose-built projects cannot match. If the AI Cloud and confidential computing features achieve product-market fit, NEAR's installed base could drive adoption faster than greenfield competitors. The risk is that AI-washing — adding 'AI' to existing L1 narratives without genuine technical differentiation — dilutes the sector's credibility.",
     "signals": {
       "toy_phase": 50,
@@ -1904,7 +1904,7 @@
     "asset_class": "public_equities",
     "tier": 2,
     "composite_score": 67.8,
-    "one_liner": "America's only fully integrated mine-to-magnet rare earth producer with $400M DoD investment and $1.25B magnet campus, but trades at 1,430x forward P/E.",
+    "one_liner": "America's only integrated mine-to-magnet rare earth producer with $400M DoD investment and $1.25B magnet campus.",
     "thesis": "MP Materials is the most direct public play on American rare earth independence. It is the only fully integrated mine-to-magnet rare earth producer in the US, operating the Mountain Pass mine in California. The DoD invested $400M for a 15% equity stake, and the company announced a $1.25B '10X' magnet campus in February 2026 with 100% of output committed to the Pentagon.\n\nThe geopolitical thesis is simple and powerful: China controls ~60% of rare earth mining and ~90% of processing. Any supply disruption — whether from trade war, Taiwan conflict, or embargo — would cripple Western defense and EV manufacturing. MP Materials is the primary hedge against this scenario.\n\nHowever, the valuation is extreme. At ~$50 and ~$9B market cap, MP trades at approximately 1,430x forward P/E. The stock prices in the geopolitical premium and then some. The magnet campus won't generate meaningful revenue until 2027-2028 at the earliest, creating a long gap between current valuation and revenue realization.\n\nUSA Rare Earth (NASDAQ: USAR) offers earlier-stage exposure with a $3.1B government capital package but at a much smaller scale and higher risk profile.",
     "signals": {
       "toy_phase": 45,
@@ -2205,7 +2205,7 @@
     "asset_class": "public_equities",
     "tier": 2,
     "composite_score": 66.0,
-    "one_liner": "Perovskite-silicon tandem solar hit commercialization inflection — Oxford PV shipped first modules, licensed to First Solar and Trinasolar, Hanwha hit 28.6% efficiency.",
+    "one_liner": "Perovskite-silicon tandem solar hit commercialization: Oxford PV shipped first modules, Hanwha hit 28.6% efficiency.",
     "thesis": "Perovskite solar technology hit its commercialization inflection in 2024-2026. Oxford PV shipped the world's first commercial perovskite-silicon tandem modules in September 2024, then licensed patents to First Solar (NASDAQ: FSLR) in February 2026 and Trinasolar (exclusive China license). Hanwha Qcells achieved 28.6% tandem cell efficiency using mass-production processes, with commercial production planned for 2026.\n\nFirst Solar is the best public proxy for perovskite exposure. As the largest U.S. solar manufacturer with the Oxford PV license, it will likely be the first Western company to mass-produce perovskite-silicon tandems. The efficiency gain from tandems (28-30%+ vs 22-24% for pure silicon) represents a step-function improvement that could reshape the solar industry's cost curve.\n\nCaelux offers a potentially faster route to market with its 'Active Glass' product that converts existing silicon panels to tandem performance — no new factories needed. This is a private company but worth monitoring for a future investment route.\n\nRisks center on perovskite durability (degradation over 25+ year module lifetimes remains unproven at scale), Chinese manufacturing dominance in solar, and the fact that First Solar is already a large-cap with the perovskite thesis partially priced in.",
     "signals": {
       "toy_phase": 55,
@@ -2473,7 +2473,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 64.5,
-    "one_liner": "Raised a $475M seed round at $4.5B valuation — one of the largest seeds in history — targeting 1,000x energy efficiency through brain-inspired analog computing.",
+    "one_liner": "Raised $475M seed at $4.5B valuation targeting 1,000x energy efficiency through brain-inspired analog computing.",
     "thesis": "Unconventional AI raised a $475M seed round at $4.5B valuation (December 2025) — one of the largest seed rounds in history. Founded by Naveen Rao, who sold MosaicML to Databricks for $1.3B and sold Nervana to Intel for $400M+. Backed by a16z, Lightspeed, Sequoia, Lux Capital, and Jeff Bezos.\n\nThe company is targeting 1,000x energy efficiency through brain-inspired analog computing, with first chips expected to tape out in 2026. The founder's track record — two successful exits in the AI chip space — is the primary reason investors deployed $475M at seed stage.\n\nThe investor roster is effectively a hall of fame: a16z, Lightspeed, Sequoia, Lux Capital, and Jeff Bezos personally. This level of backing at seed stage is extraordinarily rare and signals deep conviction in both the founder and the market opportunity.\n\nPrivate company with no path to retail access in the near term. The $4.5B seed valuation means the next round will need to show significant technical progress to justify a markup. Watch for the tape-out announcement in 2026 as a key milestone.",
     "signals": {
       "toy_phase": 85,
@@ -2526,7 +2526,7 @@
     "asset_class": "public_equities",
     "tier": 2,
     "composite_score": 64.4,
-    "one_liner": "Only public pure-play carbon recycling company, with world's first commercial SAF plant operational and Q4 licensing revenue jumping from $1.1M to $16.7M YoY.",
+    "one_liner": "Only public pure-play carbon recycling company with world's first commercial SAF plant and Q4 licensing revenue up 15x YoY.",
     "thesis": "LanzaTech is the only publicly traded pure-play carbon recycling company. Its LanzaJet Freedom Pines Fuels plant (Soperton, GA) began operating in November 2025 — the world's first commercial-scale ethanol-to-jet sustainable aviation fuel (SAF) plant. This is a genuine first: a plant that converts industrial waste gases into jet fuel at commercial scale.\n\nThe financial inflection is visible in Q4 2025 licensing revenue: $16.7M versus $1.1M in Q4 2024, a 15x year-over-year jump. LanzaJet (a separate entity in which LanzaTech holds a stake) was valued at $650M. The licensing model means LanzaTech can scale revenue without proportional capital expenditure — a critical advantage for a capital-intensive industry.\n\nThe SAF market is projected to reach $37B by 2030, driven by aviation decarbonization mandates in the EU (RefuelEU) and growing voluntary commitments from airlines. LanzaTech's gas fermentation technology platform can also produce ethanol, chemicals, and other products from industrial waste gases, providing revenue diversification.\n\nKey risks: LanzaTech is a small-cap with volatile trading, the SAF market depends on regulatory mandates that could change, and scaling gas fermentation to meet global SAF demand requires massive capital investment in new plants. The company remains unprofitable.",
     "signals": {
       "toy_phase": 55,
@@ -2626,7 +2626,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 64.2,
-    "one_liner": "Wefunder equity crowdfunding at $60M pre-money valuation developing AAV immuno-gene therapy for cancer, backed by Founders Fund, Lux Capital, and Merck.",
+    "one_liner": "Equity crowdfunding at $60M pre-money developing AAV immuno-gene therapy for cancer, backed by Founders Fund and Lux Capital.",
     "thesis": "Siren Biotechnology represents a rare intersection of DeSci accessibility and institutional biotech credibility. The company is live on Wefunder with a $60M pre-money valuation and a $250 minimum investment, developing AAV (adeno-associated virus) immuno-gene therapy for cancer. The backing from Founders Fund, Lux Capital, and Merck provides tier-1 venture and strategic pharma validation that few DeSci-adjacent companies can claim.\n\nThe clinical timeline is aggressive: IND filing was planned for late 2025 with first-in-human trials targeting Q2 2026. AAV gene therapy is a proven modality — Zolgensma (Novartis) and Luxturna (Spark Therapeutics) are approved AAV therapies, demonstrating regulatory feasibility. Siren's focus on cancer immuno-gene therapy addresses the largest oncology market, where even niche indications can support multi-billion dollar valuations.\n\nThe Wefunder equity crowdfunding mechanism is significant for the DeSci thesis: it demonstrates that retail investors can access biotech venture deals that were previously restricted to institutional VCs. At $250 minimum, the barrier to entry is orders of magnitude lower than traditional biotech angel investing. This is the 'democratization of science funding' that DeSci promises, executed through regulated equity rather than tokens.\n\nKey risk: pre-clinical and early-clinical biotech has historically high failure rates (>90% of drug candidates fail to reach approval). The $60M pre-money valuation assumes significant future value creation from clinical milestones that have not yet occurred. Equity crowdfunding also carries illiquidity risk — there is no secondary market for Wefunder shares, and returns depend on a future IPO or acquisition event.",
     "signals": {
       "toy_phase": 55,
@@ -2827,11 +2827,11 @@
   {
     "name": "Huma Finance",
     "ticker": "$HUMA",
-    "category": "PayFi",
+    "category": "RWA Tokenization",
     "asset_class": "digital_assets",
     "tier": 2,
     "composite_score": 64.0,
-    "one_liner": "The first PayFi network delivering $1.1B in quarterly originations with partnerships across Tala, Geoswift, and Circle CPN — the real-world finance bridge crypto has promised.",
+    "one_liner": "First PayFi network with $1.1B quarterly originations and partnerships with Tala, Geoswift, and Circle CPN.",
     "thesis": "Huma Finance (HUMA) trades at ~$0.025 with a ~$64M market cap. The first PayFi network: Q4 2025 delivered $1.1B in originations (+24.4% QoQ) and $2.2B transaction volume. This is genuine commercial traction in a sector where most protocols have near-zero real usage.\n\nPartnerships with Tala ($50M tokenized lending for underbanked populations), Geoswift (Amazon seller settlements), and Circle CPN (29 institutions, expanding to 185 corridors) provide diverse real-world integration points. Tala alone serves millions of underbanked borrowers in emerging markets.\n\nThe key question is token value accrual — $1.1B in quarterly originations is impressive, but how much of that economic activity flows to HUMA token holders? At $64M market cap with $4.4B+ annualized origination volume, the price-to-origination ratio is extremely low if value accrual mechanisms are effective.\n\nAvailable on Bitget, KuCoin, MEXC. The PayFi thesis is that tokenized lending and settlement infrastructure will capture a meaningful share of the $10T+ global payments and trade finance market.",
     "signals": {
       "toy_phase": 40,
@@ -3068,7 +3068,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 62.8,
-    "one_liner": "Received the first-ever FDA IND clearance for a cellular rejuvenation therapy — ER-100 delivers three reprogramming transcription factors for optic neuropathies.",
+    "one_liner": "Received the first-ever FDA IND clearance for a cellular rejuvenation therapy targeting optic neuropathies.",
     "thesis": "Life Biosciences received the first-ever FDA IND clearance for a cellular rejuvenation therapy (January 2026). ER-100 delivers three reprogramming transcription factors via intravitreal injection for optic neuropathies. Phase 1 trial initiated Q1 2026. Just closed $80M in financing (April 8, 2026). Co-founded by David Sinclair.\n\nThis is a historically significant regulatory milestone — the first time the FDA has cleared an IND for cellular rejuvenation. While the initial application is narrow (optic neuropathies), the platform technology (reprogramming transcription factors) has much broader implications for aging and age-related disease.\n\nDavid Sinclair's involvement as co-founder adds both credibility and controversy — he is the most prominent longevity researcher but also attracts scientific skepticism. The $80M April 2026 financing provides fresh runway for the Phase 1 trial.\n\nThe xenotransplantation categorization is approximate — Life Biosciences is more precisely in the cellular reprogramming/rejuvenation space. The company bridges longevity research and clinical development, with the FDA IND clearance representing the critical transition from research to regulated medicine.",
     "signals": {
       "toy_phase": 60,
@@ -3272,7 +3272,7 @@
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 62.0,
-    "one_liner": "Open-source AI agent framework with 10.6K GitHub stars and 2,800 forks that trended #2 globally, now planning an L1 blockchain — but token collapsed 98% while the framework thrives.",
+    "one_liner": "Open-source AI agent framework with 10.6K GitHub stars that trended #2 globally; token collapsed 98% while framework thrives.",
     "thesis": "ElizaOS (formerly ai16z) presents a fascinating divergence between framework adoption and token value. The open-source TypeScript framework hit #2 trending on GitHub in January 2025 with 10,600 stars and 2,800 forks, a Stanford partnership, and genuine developer adoption for building autonomous AI agents on Solana. The framework is one of the most forked AI agent repositories in the crypto ecosystem. Yet the token (ELIZAOS, fka AI16Z) collapsed 98% from its ATH, trading at approximately $0.00076 with a ~$6M market cap.\n\nThe Asymmetric Opportunity Atlas captures this paradox: '10.6K GitHub stars, 2.8K forks; Stanford partnership; token collapsed but framework thriving.' The 1000x Opportunity Map notes the DAO manages $25M+ in assets and that the planned L1 blockchain for AI agents 'could be transformative but is unconfirmed.' The forced rebrand from ai16z after a trademark dispute with Andreessen Horowitz adds governance complexity.\n\nFounder risk is significant. The Asymmetric Opportunity Atlas documents that Shaw Walters' X account was hacked in February 2025 promoting scam tokens, he publicly admitted 'the financial pressure is significant' with minimal token holdings, and the community repeatedly calls him a 'scammer' (which he denies). These red flags are material for any investment thesis.\n\nThe bull case rests on the framework's genuine utility creating eventual token value capture — particularly if the L1 blockchain launches. At $6M market cap for a framework with 10.6K GitHub stars and Stanford backing, the token is either a deep-value play on AI agent infrastructure or a governance-compromised asset heading to zero. The 98% drawdown means position sizing should reflect the binary outcome profile.",
     "signals": {
       "toy_phase": 75,
@@ -3313,7 +3313,7 @@
     ],
     "updated_at": "2026-04-13T00:00:00Z",
     "is_graveyard": false,
-    "slug": "elizaos",
+    "slug": "elizaos-token",
     "related_slugs": [],
     "current_price_usd": 0.00074669,
     "market_cap_usd": 5592422.98805169,
@@ -3326,7 +3326,7 @@
     "asset_class": "digital_assets",
     "tier": 2,
     "composite_score": 61.8,
-    "one_liner": "The first purpose-built Shariah-compliant Layer 1 targeting a $5.4 trillion Islamic finance market with 1.8 billion Muslims and almost zero mature crypto offerings.",
+    "one_liner": "First purpose-built Shariah-compliant Layer 1 targeting the $5.4 trillion Islamic finance market with 1.8 billion Muslims.",
     "thesis": "HAQQ / Islamic Coin (ISLM) trades at ~$0.02, down 96% from ATH. The first purpose-built Shariah-compliant Layer 1, targeting the Islamic finance market which exceeds $5.4 trillion with 1.8 billion Muslims seeking compliant financial products and almost zero mature crypto offerings.\n\nHAQQ raised $193M in private sales, has a fatwa issued (religious ruling confirming compliance), Indonesian pre-approval, and a Shariah Oracle validating every transaction. 10% of all new ISLM goes to an Evergreen DAO for Muslim community projects — a built-in mechanism for community benefit that aligns with Islamic finance principles.\n\nThe TAM is enormous: $5.4 trillion in Islamic finance with minimal crypto penetration. If HAQQ captures even a fraction of Islamic DeFi, the current ~$0.02 price looks dramatically undervalued. The religious compliance angle creates a natural moat — non-compliant chains cannot serve this market.\n\nAvailable on KuCoin, Gate.io, MEXC. The key risk is scholarly disagreement about whether cryptocurrency itself is permissible under Islamic law — a negative fatwa from a major authority could undermine the entire thesis.",
     "signals": {
       "toy_phase": 50,
@@ -3379,7 +3379,7 @@
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 61.0,
-    "one_liner": "Proof-of-Useful-Work L1 converting mining energy into AI neural network training with CertiK-certified 15.5M TPS and DOGE merge-mining launched April 2026.",
+    "one_liner": "Proof-of-Useful-Work L1 converting mining energy into AI training with CertiK-certified 15.5M TPS and DOGE merge-mining.",
     "thesis": "Qubic is the most technically differentiated project in the AI x Crypto space, replacing wasteful proof-of-work hashing with actual AI neural network training. The CertiK-certified 15.5M TPS on live mainnet makes it the fastest blockchain by a significant margin, with feeless transactions and a deflationary burn mechanism. The Asymmetric Opportunity Atlas places it at approximately $0.0000008, ~$108M market cap, down 93% from ATH.\n\nThe DOGE merge-mining integration launched April 1, 2026 is a significant catalyst. The 1000x Opportunity Map notes Qubic 'previously captured 51%+ of Monero's hashrate,' demonstrating that miners find the Proof-of-Useful-Work approach economically compelling. The innovation is that 100% of compute goes toward AI training rather than random hashing, while miners still earn block rewards. Two academic papers targeting major AI conferences in 2026 add credibility to the technical claims.\n\nThe seed opportunities analysis scores Qubic as 'highly dismissed by mainstream crypto (useful proof of work is impossible), which scores well on the toy-phase signal.' This matches the historical pattern where the most technically innovative projects are the most widely dismissed. The Solana bridge planned for July 2026 could dramatically improve accessibility and trading volume.\n\nThe risks are material: small team, no significant institutional backing (low smart money signal), and the Aigarth AGI ambitions by 2027 'feel over-ambitious' per the seed opportunities analysis. At $108M market cap, Qubic is priced somewhere between 'interesting experiment' and 'potential breakthrough' — reflecting genuine uncertainty about whether Proof-of-Useful-Work can scale beyond niche mining communities to mainstream adoption.",
     "signals": {
       "toy_phase": 78,
@@ -3482,7 +3482,7 @@
     "asset_class": "public_equities",
     "tier": 2,
     "composite_score": 61.0,
-    "one_liner": "Acquired Celestial AI for up to $5.5B — now the best public photonics exposure with revenue projected to ramp late 2028, billion-dollar run rate by 2029.",
+    "one_liner": "Acquired Celestial AI for up to $5.5B, providing the best public photonics exposure with revenue ramp expected late 2028.",
     "thesis": "Celestial AI was acquired by Marvell (NASDAQ: MRVL) for up to $5.5B (December 2025). Revenue from the Celestial AI photonic technology is projected to ramp late 2028, with a billion-dollar run rate targeted by 2029. Marvell is now described as 'the best public photonics exposure.'\n\nMarvell is a large-cap semiconductor company (~$60B+ market cap), so the Celestial AI acquisition represents optionality rather than a pure-play bet. The $5.5B acquisition price signals Marvell's conviction in photonic computing's future. For investors who want public market exposure to the photonic computing thesis, Marvell is now the primary vehicle.\n\nThe revenue ramp timeline — late 2028 to billion-dollar run rate by 2029 — means this is a patient bet. The photonic interconnect technology is complementary to Marvell's existing data center networking business, creating natural cross-selling opportunities.\n\nAs a large-cap, Marvell offers lower risk than pure-play photonic companies but also lower leverage to the photonics thesis specifically. This is the conservative way to play the photonic computing transition.",
     "signals": {
       "toy_phase": 35,
@@ -4184,7 +4184,7 @@
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 58.3,
-    "one_liner": "AI agent launchpad with 18,000+ deployed agents and $470M cumulative agentic GDP, trading 87% below ATH amid a revenue collapse from $3.9M/month to $35K/day.",
+    "one_liner": "AI agent launchpad with 18,000+ deployed agents and $470M cumulative GDP, trading 87% below ATH amid revenue collapse.",
     "thesis": "Virtuals Protocol represents the purest play on the autonomous AI agent economy — a platform where users can deploy, tokenize, and interact with AI agents on Base and Arbitrum. The numbers are striking in both directions: 18,000+ agents deployed generating $470M+ in cumulative 'Agentic GDP,' yet the token trades at approximately $0.65 (~$425M market cap), down 87% from its all-time high. The Asymmetric Opportunity Atlas lists Virtuals on Grayscale's Q2 2026 consideration list.\n\nThe cautionary data point is the revenue collapse. The Asymmetric Opportunity Atlas documents that Virtuals' revenue 'peaked at $3.9M/mo then collapsed to $35K/day.' This 97% revenue decline raises serious questions about the sustainability of AI agent economics. The seed opportunities analysis notes that 'the AI agent hype cycle may have passed for this project' and that 'revenue generation from agents remains unproven at scale.'\n\nDespite the bearish signals, the contrarian case is that Virtuals at $425M market cap with 18,000+ agents and Grayscale attention represents the kind of 'blood in the streets' entry point that preceded previous crypto recoveries. The Arbitrum integration in March 2026 shows continued development. The 1000x Opportunity Map places it in the 'autonomous AI agent economy' category that it calls 'the purest toy phase opportunity' in 2026.\n\nThe risk-reward is binary: if the AI agent economy is real, Virtuals as the leading launchpad could see massive revaluation from current beaten-down levels. If agent economics prove unsustainable (as the revenue collapse suggests), the token could continue its decline toward zero. The Asymmetric Opportunity Atlas's inclusion of Virtuals on Grayscale's consideration list provides a potential institutional catalyst, but this is speculative.",
     "signals": {
       "toy_phase": 72,
@@ -4284,7 +4284,7 @@
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 58.0,
-    "one_liner": "Multi-chain AI agent infrastructure with 10M+ agent transactions across 9 blockchains, comprising 75% of Safe transactions on Gnosis Chain, yet trading at a devastated $11M market cap.",
+    "one_liner": "Multi-chain AI agent infrastructure with 10M+ transactions across 9 blockchains, comprising 75% of Safe transactions on Gnosis.",
     "thesis": "Autonolas/Olas represents potentially the most extreme valuation dislocation in the AI x Crypto sector. The Asymmetric Opportunity Atlas reports OLAS at approximately $0.045, ~$11M market cap, down 99.5% from ATH. Yet the on-chain data tells a different story: 10M+ agent transactions, agents making 75% of Safe transactions on Gnosis Chain, and a $13.8M raise led by 1kx — a top-tier crypto infrastructure fund. The market cap is literally below the amount raised.\n\nThe 1000x Opportunity Map describes Olas as 'the infrastructure layer' for autonomous AI agents running across 9 blockchains. The multi-chain deployment gives Olas broader reach than ElizaOS (Solana-focused) or Virtuals (Base/Arbitrum). The Asymmetric Opportunity Atlas's key insight is direct: 'OLAS at $11M market cap with 10M+ agent transactions and 75% of Gnosis Chain Safe activity represents a potential deep-value play if agent adoption accelerates.'\n\nThe risk is equally clear: the entire AI agent sector has experienced catastrophic valuation compression, with every token except TAO trading 87-99.5% below ATH. OLAS at -99.5% is the worst performer in the sector. The question is whether this reflects terminal decline or maximum fear in a sector with genuine underlying usage. The 75% of Gnosis Chain Safe transactions statistic is remarkable if accurate — it means autonomous agents are already the dominant users of the most established smart contract wallet infrastructure.\n\nAt $11M market cap, OLAS is priced as if the AI agent economy has zero future value. If even modest recovery occurs in the sector, the asymmetry from current levels is extreme. But the -99.5% drawdown also means the market has been consistently wrong about OLAS for an extended period, which should temper any conviction about imminent reversal.",
     "signals": {
       "toy_phase": 70,
@@ -4492,7 +4492,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 57.2,
-    "one_liner": "Most advanced Western thorium molten salt reactor developer with two full-size prototypes and first European thorium MSR critical experiment planned 2026-27.",
+    "one_liner": "Most advanced Western thorium molten salt reactor developer with two full-size prototypes and critical experiment planned 2026-27.",
     "thesis": "Copenhagen Atomics is the most advanced Western developer of thorium molten salt reactors (MSRs). The company has built two full-size non-fission prototypes and is planning a critical experiment at Paul Scherrer Institute in 2026-2027 — the first European thorium MSR critical experiment ever. Commercial reactors are targeted for the early 2030s.\n\nThorium MSRs represent a fundamentally different nuclear paradigm: thorium is 3-4x more abundant than uranium, MSRs operate at atmospheric pressure (eliminating meltdown risk), and the waste profile is dramatically better than conventional fission. If the technology works at scale, it could unlock safe, abundant nuclear energy without the waste and proliferation concerns of uranium-based systems.\n\nThe company has raised over 25M EUR, with shares traded secondarily. The critical experiment at Paul Scherrer Institute is the single most important near-term catalyst — a successful result would validate the core physics and could trigger a major fundraising round.\n\nRisks are substantial: nuclear regulatory timelines are measured in decades, thorium MSR materials science (corrosion resistance for molten salt containment) is unsolved at commercial scale, and the company is competing against a global fission industry that has no interest in paradigm shifts.",
     "signals": {
       "toy_phase": 70,
@@ -4538,7 +4538,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 57.0,
-    "one_liner": "Came back from the dead after running out of cash in 2022, raised an oversubscribed $125M round claiming 750x more tokens/second/watt than NVIDIA GPUs.",
+    "one_liner": "Revived after 2022 cash crisis with oversubscribed $125M round, claiming 750x more tokens/second/watt than NVIDIA GPUs.",
     "thesis": "Mythic AI came back from the dead. After running out of cash in November 2022, they restructured and raised a $125M oversubscribed round (December 2025) led by DCVC with NEA, SoftBank KR, and Honda. Their analog processing units claim 750x more tokens per second per watt than NVIDIA GPUs for LLMs.\n\nHonda is co-developing a 100x efficient chip for next-gen vehicles, providing both a strategic partner and a clear commercial application. The automotive use case — efficient edge AI processing for autonomous vehicles — is a massive market that values power efficiency over raw performance.\n\nThe restructuring and near-death experience is both a risk and a signal. The fact that DCVC, NEA, SoftBank, and Honda deployed $125M into a company that previously ran out of cash suggests the technology has genuine merit. Oversubscription means demand exceeded the round size.\n\nHowever, the near-death experience means the cap table may be complex, existing investors may have been diluted or wiped out, and institutional memory may have been lost. The 750x efficiency claim is extraordinary and needs independent validation.",
     "signals": {
       "toy_phase": 70,
@@ -4741,7 +4741,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 56.5,
-    "one_liner": "Lab-grown cotton company with a $33M Series B led by Breakthrough Energy Ventures, $50M 10-year offtake from Suzuran Medical, and Sam Altman on the cap table.",
+    "one_liner": "Lab-grown cotton company with $33M Series B led by Breakthrough Energy Ventures, $50M offtake from Suzuran Medical.",
     "thesis": "Galy (lab-grown cotton) closed a $33M Series B led by Breakthrough Energy Ventures and has a $50M, 10-year offtake agreement with Suzuran Medical. Sam Altman and Tim Draper are on the cap table. The company is developing cellular agriculture for cotton — growing cotton fibers in bioreactors rather than in fields.\n\nThe cotton market is massive (~$50B annually) and environmentally destructive — cotton farming uses enormous amounts of water and pesticides. Lab-grown cotton could fundamentally disrupt this supply chain if it can achieve cost parity. The $50M offtake agreement with Suzuran Medical provides revenue visibility and commercial validation.\n\nThe investor roster is impressive — Breakthrough Energy Ventures (Bill Gates), Sam Altman, and Tim Draper all have track records of backing transformative technology. The $33M Series B provides runway for the next development phase.\n\nRetail access is available through Agronomics Ltd (LSE: ANIC), a listed fund holding shares in Galy and other cellular agriculture companies. This is the simplest retail exposure to lab-grown materials.",
     "signals": {
       "toy_phase": 75,
@@ -4882,7 +4882,7 @@
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 56.0,
-    "one_liner": "ERC-4337 account abstraction and x402 micropayment protocols provide the invisible plumbing enabling AI agents to autonomously hold wallets, sign transactions, and make payments.",
+    "one_liner": "ERC-4337 and x402 protocols enabling AI agents to autonomously hold wallets, sign transactions, and make payments.",
     "thesis": "The autonomous AI agent economy requires two foundational primitives that currently exist but lack direct investment vehicles: ERC-4337 (account abstraction enabling AI agents to hold and operate crypto wallets without human key management) and x402 (a micropayment protocol enabling agent-to-agent economic transactions). The 1000x Opportunity Map explicitly names both as critical infrastructure: 'ERC-4337 for account abstraction, x402 for agent micropayments.'\n\nGartner projects the autonomous agent economy at $30T by 2030. For this projection to materialize, AI agents need the ability to autonomously hold funds, sign transactions, pay for services, and interact with smart contracts — all without human intervention for each transaction. ERC-4337, which went live on Ethereum mainnet, provides the account abstraction layer. The x402 protocol enables HTTP-native micropayments, allowing AI agents to pay per API call, per inference, per data query.\n\nThe investment challenge is that these are protocol standards, not individual tokens. Indirect exposure comes through projects building on top of them: Virtuals Protocol (agent deployment), Autonolas (multi-chain agent infrastructure), and potentially future projects specifically tokenizing the account abstraction or micropayment layers. Safe (formerly Gnosis Safe) is the dominant smart contract wallet and primary beneficiary of ERC-4337 adoption — OLAS agents already make 75% of Safe transactions on Gnosis Chain.\n\nThis entry exists to document the structural thesis rather than a specific trade. The AI agent infrastructure stack is the 'picks and shovels' play of the AI x Crypto convergence. While individual agent platforms may rise and fall, the underlying infrastructure for autonomous agent economics will be essential regardless of which specific platforms win.",
     "signals": {
       "toy_phase": 80,
@@ -5384,7 +5384,7 @@
     "asset_class": "digital_assets",
     "tier": 2,
     "composite_score": 54.8,
-    "one_liner": "DePIN LEO nanosatellite constellation for decentralized internet — listed on Binance and Kraken, $22M cap, but only ~10% of 21B token supply circulating.",
+    "one_liner": "DePIN LEO nanosatellite constellation for decentralized internet listed on Binance and Kraken at $22M market cap.",
     "thesis": "Spacecoin (SPACE) is a DePIN LEO nanosatellite constellation for decentralized internet. CTC-0 launched December 2024; CTC-1 (three satellites) launched November 2025. Listed on Binance and Kraken with a ~$22M market cap. Partnership with World Liberty Financial and NATO DIANA. Targets $1-2/month internet for emerging markets.\n\nThe concept is ambitious — a decentralized satellite internet network that could serve the ~3 billion people without reliable connectivity. The Binance and Kraken listings provide liquidity, and the NATO DIANA partnership adds institutional credibility.\n\nHowever, the extreme risk is in the tokenomics: only ~10% of the 21B token supply is circulating. This means massive future dilution as the remaining 90% of tokens are released. Additionally, building a satellite constellation to compete with Starlink's 6,000+ satellites is an enormous capital and engineering challenge.\n\nThis is one of the highest-risk entries in the entire report. The satellite launches prove the team can execute on hardware, but the path from 4 nanosatellites to a commercially viable constellation serving millions is extraordinarily long.",
     "signals": {
       "toy_phase": 75,
@@ -5529,7 +5529,7 @@
     "asset_class": "digital_assets",
     "tier": 2,
     "composite_score": 54.0,
-    "one_liner": "300,000+ distributed solar energy data nodes with 140 GWh tokenized and a live 300kW Thailand solar farm — but effectively zero liquidity at $97/day DEX volume.",
+    "one_liner": "300,000+ distributed solar energy data nodes with 140 GWh tokenized and a live 300kW Thailand solar farm.",
     "thesis": "Arkreen (AKRE) trades at ~$0.0003 with a $1.7-2.9M market cap. The network has 300,000+ distributed solar energy data nodes connected globally, 140 GWh of green energy tokenized, and the first live 300kW commercial solar installation in Thailand with on-chain metering.\n\nThe traction numbers are impressive for the market cap: 300K+ nodes and 140 GWh of real energy data is genuine physical infrastructure. The Thailand commercial installation demonstrates the transition from data aggregation to actual energy production, which is a significant milestone.\n\nHowever, liquidity is essentially zero — $97/day DEX volume means any meaningful position is impossible to build or exit without massive slippage. Available on Uniswap V3 (Polygon) and MEXC, but the MEXC volume is also minimal.\n\nThis is an 'extremely illiquid' watch-list opportunity. The physical traction is real, but the token market infrastructure is too thin for any serious capital deployment. Watch for exchange listings, volume increases, or strategic partnerships that could provide liquidity.",
     "signals": {
       "toy_phase": 55,
@@ -5812,7 +5812,7 @@
     "asset_class": "public_equities",
     "tier": 2,
     "composite_score": 51.2,
-    "one_liner": "The only publicly traded pure-play neuromorphic chip company, trading 94% below its 2022 high with effectively zero revenue — a binary bet on the AKD1500 ramp.",
+    "one_liner": "Only publicly traded pure-play neuromorphic chip company, trading 94% below 2022 high with a binary bet on AKD1500 ramp.",
     "thesis": "BrainChip (ASX: BRN / OTCQX: BRCHF) is the only publicly traded pure-play neuromorphic chip company. It trades at AUD 0.145, down 94% from its 2022 high of AUD 2.34, with effectively zero revenue ($398K in 2024). The bull case rests entirely on the AKD1500 production ramp in 2026 and the Akida Pulsar mass-market neuromorphic MCU.\n\nThe bear case is strong: 13 years of promises with no meaningful revenue. At sub-$400K in annual revenue, BrainChip is barely a going concern from a commercial perspective. However, it provides the only liquid retail access to the neuromorphic computing thesis, which gives it a scarcity premium.\n\nAs the closest public proxy for biological computing (Cortical Labs, FinalSpark, and Koniku are all private), BrainChip captures speculative interest from investors who believe brain-inspired computing will become necessary as AI power demands scale. The company needs the AKD1500 to generate real revenue or it risks becoming another zero-revenue deep tech story.\n\nThis is a binary bet — either the 2026 production ramp delivers meaningful revenue, or the multi-year decline continues.",
     "signals": {
       "toy_phase": 65,
@@ -6015,7 +6015,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 50.8,
-    "one_liner": "Decentralized AI inference network building self-improving ML models through economic incentives, operating in the same competitive landscape as Bittensor subnets.",
+    "one_liner": "Decentralized AI inference network building self-improving ML models through economic incentives, competing with Bittensor subnets.",
     "thesis": "Allora Network is building a decentralized AI inference network where models improve through economic competition — conceptually similar to Bittensor but with a different architectural approach. The network uses a topic-based system where workers submit inferences and reputers evaluate quality, with economic rewards flowing to the most accurate participants. This creates a self-improving system where model quality increases as more capital is staked.\n\nAllora appears in the broader AI x Crypto landscape referenced across the research documents but receives less specific coverage than the major players (Bittensor, Gensyn, Akash, Render). The project has raised venture funding but specific amounts are not detailed in the source documents. The competitive positioning against Bittensor's 128 subnets and established ecosystem is the primary challenge — Allora must demonstrate superior inference quality or lower costs to attract users from the incumbent.\n\nThe absence of a live token and limited coverage in the research documents mean this entry carries higher uncertainty than the scored alternatives. The project is included because it represents an additional data point in the decentralized AI inference category, which the research identifies as the strongest pattern match to DeFi Summer 2020. If the category thesis plays out, multiple winners may emerge from different architectural approaches.\n\nThe risk profile is dominated by execution uncertainty and competitive pressure. Bittensor has first-mover advantage with 128 active subnets, Grayscale ETF filings, and institutional attention. For Allora to capture meaningful value, it needs to ship a differentiated product that demonstrates clear advantages over the established competition — a high bar in a sector already experiencing severe valuation compression.",
     "signals": {
       "toy_phase": 70,
@@ -6117,7 +6117,7 @@
     "asset_class": "private_markets",
     "tier": 3,
     "composite_score": 50.5,
-    "one_liner": "Largest-ever geoengineering round ($75M Series A from Lowercarbon Capital) for stratospheric aerosol injection, with extreme ethical and regulatory risk.",
+    "one_liner": "Largest geoengineering round ($75M Series A) for stratospheric aerosol injection, with extreme ethical and regulatory risk.",
     "thesis": "Stardust Solutions raised the largest-ever geoengineering round — a $75M Series A led by Lowercarbon Capital (Chris Sacca) in October 2025. The US-Israeli company plans stratospheric aerosol injection using proprietary reflective particles (not sulfur dioxide, which has known ozone-depletion risks). Outdoor experiments are planned from April 2026.\n\nThe thesis is binary and extreme: if climate change accelerates faster than emissions reduction, solar radiation management (SRM) may become politically necessary regardless of ethical objections. Stardust is positioning to be the leading commercial provider of a technology that governments may eventually mandate. The $75M from Chris Sacca's Lowercarbon Capital provides credibility in the climate-tech investment community.\n\nHowever, the ethical and regulatory risks are unprecedented. Geoengineering is banned in Mexico, multiple US states are proposing bans, and the scientific community is deeply divided on whether stratospheric aerosol injection should be pursued at all. Termination shock (the rapid warming that occurs if injection stops) creates a commitment trap. International governance frameworks do not exist.\n\nThis is the most controversial entry in the entire report. It is included because the capital deployment is real and the smart-money signal (Sacca) is strong, but the ethical and regulatory risks make this unsuitable for most investors.",
     "signals": {
       "toy_phase": 75,
@@ -6981,7 +6981,7 @@
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 30.5,
-    "one_liner": "a16z-backed L1 for IP tokenization at $500M market cap, but generating less than $100 daily on-chain revenue while C2PA captures the content provenance market.",
+    "one_liner": "a16z-backed L1 for IP tokenization at $500M cap, generating less than $100 daily on-chain revenue.",
     "thesis": "Story Protocol launched as an ambitious a16z-backed Layer 1 blockchain purpose-built for intellectual property management and tokenization. The $IP token trades at approximately $0.495 with a market cap of ~$500M, representing a catastrophic 96.7% decline from its all-time high of $14.89. Despite the prestigious backing, the protocol has failed to generate meaningful on-chain activity, with DeFiLlama reporting less than $100 in daily on-chain revenue — an extraordinarily low figure for a $500M market cap asset.\n\nThe fundamental problem facing Story Protocol is competitive displacement by C2PA (Coalition for Content Provenance and Authenticity), a non-blockchain standard that has achieved 6,000+ members and hardware-level adoption from Leica, Sony, Samsung, and Google Pixel cameras. C2PA is becoming the dominant standard for content provenance without requiring blockchain infrastructure, directly undermining Story Protocol's core value proposition. When the non-crypto solution is winning adoption at this pace, the on-chain alternative faces an uphill battle.\n\nInternal challenges compound the external competitive threat. A co-founder departed in August 2025, and the company executed a 10% staff reduction in March 2026. These signals typically indicate either strategic pivoting or distress, neither of which supports the bull case for a protocol that needs aggressive growth to justify its valuation. The token unlock was delayed to August 2026, which could create additional selling pressure when it occurs.\n\nThe only remaining bull case is that on-chain IP tokenization provides capabilities (programmable royalties, permissionless licensing, global settlement) that C2PA cannot. If the creative economy evolves to require these features, Story Protocol's early infrastructure could become valuable. But the current metrics suggest the market has voted against this thesis, at least for now.",
     "signals": {
       "toy_phase": 30,
@@ -7129,21 +7129,21 @@
   {
     "name": "Rain AI",
     "ticker": null,
-    "category": "Neuromorphic / Photonic Computing",
+    "category": "AI x Crypto",
     "asset_class": "private_markets",
     "tier": 3,
-    "composite_score": 26.2,
+    "composite_score": 40.5,
     "one_liner": "In distress despite Sam Altman's backing — $150M Series B collapsed in Q1 2025, reportedly exploring a sale to OpenAI, NVIDIA, or Microsoft.",
     "thesis": "Rain AI is in distress. Despite Sam Altman's backing, their $150M Series B collapsed in Q1 2025. The company is reportedly exploring a sale. OpenAI, NVIDIA, and Microsoft are reportedly interested in acqui-hiring.\n\nRain AI was developing neuromorphic processing chips inspired by the brain's architecture. The collapse of the $150M Series B is a severe signal — when a company with Sam Altman's backing cannot close a raise, the technology or business fundamentals have likely been found wanting by sophisticated investors.\n\nThe acqui-hire interest from OpenAI, NVIDIA, and Microsoft suggests the talent and IP have value even if the standalone company does not. An acquisition could provide some return to existing investors, but likely at a steep discount to previous valuations.\n\nThis is effectively a distressed asset. Included as a graveyard entry given the collapsed fundraise and sale exploration. The neuromorphic chip space is being won by companies with better execution (Unconventional AI, Lightmatter) while Rain AI struggled to deliver.",
     "signals": {
-      "toy_phase": 60,
-      "working_code": 20,
-      "community": 10,
-      "dev_activity": 15,
-      "smart_money": 15,
-      "narrative": 30,
-      "hard_to_buy": 95,
-      "catalyst": 10
+      "toy_phase": 55,
+      "working_code": 30,
+      "community": 20,
+      "dev_activity": 25,
+      "smart_money": 40,
+      "narrative": 45,
+      "hard_to_buy": 90,
+      "catalyst": 35
     },
     "catalysts": [
       "Potential acqui-hire by OpenAI, NVIDIA, or Microsoft could provide some return",
@@ -7168,7 +7168,7 @@
       }
     ],
     "updated_at": "2026-04-13T00:00:00Z",
-    "is_graveyard": true,
+    "is_graveyard": false,
     "slug": "rain-ai",
     "current_price_usd": null,
     "market_cap_usd": null,
@@ -7224,67 +7224,23 @@
     "volume_24h_usd": null
   },
   {
-    "name": "Aspen Aerogels",
-    "ticker": "$ASPN",
-    "category": "Materials Science",
-    "asset_class": "public_equities",
-    "tier": 3,
-    "composite_score": 18.2,
-    "one_liner": "Revenue collapsed 40%, stock at ~$3 with massive impairment charges — aerogel insulation company in severe distress.",
-    "thesis": "Aspen Aerogels has seen revenue collapse 40% with the stock trading at approximately $3 and massive impairment charges. The company produces aerogel-based insulation primarily for the energy and EV battery markets.\n\nThe revenue collapse suggests either a structural demand shift away from their products or a loss of key customers. The massive impairment charges indicate that management has acknowledged the book value of assets significantly exceeds their recoverable value — a severe negative signal.\n\nWhile aerogel technology has genuine thermal insulation advantages, Aspen Aerogels' financial trajectory suggests the company may not survive to capitalize on them. The stock is included as a graveyard entry to warn against catching this falling knife.\n\nA potential bull case would require a dramatic customer recovery, restructuring, or acquisition by a larger materials company. However, the current financial trajectory does not support investment at any price.",
-    "signals": {
-      "toy_phase": 15,
-      "working_code": 30,
-      "community": 15,
-      "dev_activity": 20,
-      "smart_money": 10,
-      "narrative": 20,
-      "hard_to_buy": 15,
-      "catalyst": 15
-    },
-    "catalysts": [
-      "Aerogel technology has genuine thermal insulation advantages if demand recovers",
-      "Potential acquisition target for larger materials companies at distressed prices",
-      "EV battery thermal management market could grow if company survives"
-    ],
-    "risks": [
-      "Revenue collapsed 40% — structural demand shift or customer loss",
-      "Massive impairment charges signal management acknowledging asset deterioration",
-      "Stock at ~$3 with potential for continued decline toward delisting"
-    ],
-    "related_slugs": [],
-    "citations": [
-      {
-        "claim": "Revenue collapsed 40%, stock at ~$3, massive impairment charges",
-        "source": "Invisible Layer Report",
-        "url": ""
-      }
-    ],
-    "updated_at": "2026-04-13T00:00:00Z",
-    "is_graveyard": true,
-    "slug": "aspen-aerogels",
-    "current_price_usd": 3.0,
-    "market_cap_usd": null,
-    "volume_24h_usd": null
-  },
-  {
     "name": "Nectome",
     "ticker": null,
     "category": "Longevity / BCI",
     "asset_class": "private_markets",
     "tier": 3,
-    "composite_score": 7.8,
+    "composite_score": 23.8,
     "one_liner": "Brain preservation startup largely dormant with 4 employees and ~$120K in funding — brain uploading remains science fiction.",
     "thesis": "Nectome is a brain preservation startup that aimed to develop technology for preserving brain connectomes for eventual digital reconstruction ('brain uploading'). The company is largely dormant with only 4 employees and approximately $120K in remaining funding.\n\nBrain uploading remains firmly in the realm of science fiction. The fundamental challenges — mapping 86 billion neurons with 100+ trillion synaptic connections, understanding how memories are encoded, and recreating consciousness digitally — are each individually decades away from solution, let alone in combination.\n\nNectome's trajectory from Y Combinator-backed startup to near-dormancy illustrates the gap between compelling science fiction narratives and investable technology. There are no credible investable plays in brain uploading.\n\nThis is a graveyard entry. Do not invest.",
     "signals": {
-      "toy_phase": 15,
-      "working_code": 5,
-      "community": 10,
-      "dev_activity": 5,
-      "smart_money": 5,
-      "narrative": 15,
-      "hard_to_buy": 10,
-      "catalyst": 5
+      "toy_phase": 20,
+      "working_code": 15,
+      "community": 15,
+      "dev_activity": 10,
+      "smart_money": 15,
+      "narrative": 30,
+      "hard_to_buy": 90,
+      "catalyst": 15
     },
     "catalysts": [
       "None — company is largely dormant",
@@ -7305,7 +7261,7 @@
       }
     ],
     "updated_at": "2026-04-13T00:00:00Z",
-    "is_graveyard": true,
+    "is_graveyard": false,
     "slug": "nectome",
     "current_price_usd": null,
     "market_cap_usd": null,
@@ -7361,7 +7317,7 @@
     "category": "Synthetic Biology",
     "asset_class": "private_markets",
     "tier": 3,
-    "composite_score": 5.5,
+    "composite_score": 11.0,
     "one_liner": "Dead — website reads 'no longer operating.' Part of the synbio graveyard that destroyed over $1.1B in investor capital.",
     "thesis": "Bolt Threads is dead. The website reads 'no longer operating.' Along with Amyris and Zymergen, Bolt Threads represents the synbio graveyard — companies that raised hundreds of millions on the promise of bio-materials but failed to achieve commercial scale.\n\nThe failure of Bolt Threads (spider silk materials), Amyris (bio-based chemicals, Chapter 11 with $1.15B debt), and Zymergen (acquired then liquidated) killed at least $1.1B in investor capital and created deep skepticism about the entire bio-materials thesis.\n\nThese failures serve as a cautionary tale for the sector and an important reference point when evaluating the surviving synbio companies like Solugen, Pivot Bio, and Galy. The survivors are stronger for having survived the shakeout, but investors must remain vigilant about similar patterns.\n\nNo investable action — equity wiped. Included for completeness as a graveyard entry.",
     "signals": {
@@ -7409,7 +7365,7 @@
     "category": "Synthetic Biology",
     "asset_class": "private_markets",
     "tier": 3,
-    "composite_score": 5.5,
+    "composite_score": 11.0,
     "one_liner": "Filed Chapter 11 in August 2023 with $1.15B in debt — equity wiped. The largest single failure in the synbio graveyard.",
     "thesis": "Amyris filed Chapter 11 in August 2023 with $1.15B in debt. Equity was wiped. The company attempted to build a bio-based chemicals and consumer products platform but failed to achieve profitability despite raising enormous amounts of capital.\n\nAmyris was the largest single failure in the synthetic biology graveyard, alongside Bolt Threads (dead) and Zymergen (acquired then liquidated). Together, these three companies killed at least $1.1B in investor capital and created deep skepticism about the entire bio-materials thesis.\n\nThe Amyris failure demonstrates the core risk in synbio: the science can work in the lab but the economics of scaling biological production to compete with petroleum-derived chemicals are brutally difficult. The company had real technology but could not bridge the gap between lab-scale and commercial-scale production economics.\n\nNo investable action — equity wiped in Chapter 11. Included as a graveyard entry for sector context.",
     "signals": {
@@ -7457,7 +7413,7 @@
     "category": "Synthetic Biology",
     "asset_class": "private_markets",
     "tier": 3,
-    "composite_score": 5.5,
+    "composite_score": 11.0,
     "one_liner": "Acquired then liquidated — part of the synbio graveyard that destroyed over $1.1B in investor capital.",
     "thesis": "Zymergen was acquired then liquidated. Along with Bolt Threads and Amyris, it represents the synbio graveyard — companies that raised hundreds of millions on the promise of bio-materials and computational biology but failed to deliver commercial products at scale.\n\nZymergen IPO'd in 2021 at a $3B+ valuation, then crashed within months after revealing its flagship product was not commercially viable. Ginkgo Bioworks eventually acquired the remnants, but the value was largely destroyed. The Zymergen failure was particularly damaging because it occurred after a high-profile IPO, eroding public market trust in synbio companies.\n\nThe combined failures of Zymergen, Amyris, and Bolt Threads killed at least $1.1B in investor capital and created the deep sector skepticism that now ironically benefits the survivors by suppressing their valuations.\n\nNo investable action — equity destroyed through acquisition and liquidation.",
     "signals": {
@@ -7503,7 +7459,7 @@
     "slug": "terra-luna",
     "name": "Terra/LUNA",
     "ticker": "LUNA",
-    "category": "Graveyard",
+    "category": "Algorithmic Stablecoin",
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 0.0,
@@ -7544,7 +7500,7 @@
     "slug": "ftx-alameda",
     "name": "FTX / Alameda Research",
     "ticker": "FTT",
-    "category": "Graveyard",
+    "category": "Centralized Exchange",
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 0.0,

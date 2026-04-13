@@ -15,7 +15,6 @@ import {
 } from "@/lib/format";
 import type { Opportunity } from "@/lib/types";
 import TierBadge from "@/components/TierBadge";
-import ScoreBar from "@/components/ScoreBar";
 import OpportunityCard from "@/components/OpportunityCard";
 import { PremiumSection } from "@/components/OpportunityDetail";
 
@@ -82,31 +81,33 @@ function DetailHeader({ opportunity }: { readonly opportunity: Opportunity }) {
   return (
     <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
       <div>
-        <Link href="/opportunities" className="text-sm text-text-secondary hover:text-amber">
+        <Link href="/opportunities" className="text-sm text-text-tertiary hover:text-text-secondary">
           &larr; All Opportunities
         </Link>
-        <h1 className="mt-2 font-display text-3xl sm:text-4xl">
+        <h1 className="mt-2 text-3xl font-semibold text-text-primary tracking-tight sm:text-4xl">
           {opportunity.name}
         </h1>
         <div className="mt-2 flex flex-wrap items-center gap-3">
           {opportunity.ticker && (
-            <span className="font-mono text-sm text-text-secondary">{opportunity.ticker}</span>
+            <span className="font-mono text-sm text-text-tertiary">{opportunity.ticker}</span>
           )}
           <TierBadge tier={opportunity.tier} />
-          <span className="rounded-md bg-surface px-2 py-1 text-xs text-text-secondary">
+          <span className="text-xs text-text-tertiary">
             {getAssetClassLabel(opportunity.asset_class)}
           </span>
-          <span className="rounded-md bg-surface px-2 py-1 text-xs text-text-secondary">
+          <span className="text-xs text-text-tertiary">
             {opportunity.category}
           </span>
         </div>
       </div>
       <div className="text-right">
-        <div className="font-mono text-4xl font-bold text-amber">
+        <div className={`font-mono text-4xl font-semibold ${getDetailScoreColor(opportunity.composite_score)}`}>
           {formatScore(opportunity.composite_score)}
         </div>
-        <div className="text-xs text-text-secondary">Composite Score</div>
-        <div className="mt-1 text-xs text-text-secondary">
+        <div className="text-xs text-text-tertiary uppercase tracking-widest font-mono mt-1">
+          Composite Score
+        </div>
+        <div className="mt-1 text-xs text-text-tertiary">
           Updated {formatDate(opportunity.updated_at)}
         </div>
       </div>
@@ -114,15 +115,18 @@ function DetailHeader({ opportunity }: { readonly opportunity: Opportunity }) {
   );
 }
 
+function getDetailScoreColor(score: number): string {
+  if (score >= 75) return "text-score-high";
+  if (score >= 55) return "text-score-mid";
+  return "text-score-low";
+}
+
 function FreeTierSection({ opportunity }: { readonly opportunity: Opportunity }) {
   return (
-    <div className="mt-8 rounded-xl border border-border bg-card p-6">
+    <div className="mt-8 bg-bg-card border border-border rounded-2xl p-6">
       <p className="text-lg leading-relaxed text-text-primary">
         {opportunity.one_liner}
       </p>
-      <div className="mt-6">
-        <ScoreBar score={opportunity.composite_score} />
-      </div>
     </div>
   );
 }
@@ -131,9 +135,8 @@ function MarketDataSection({ opportunity }: { readonly opportunity: Opportunity 
   if (opportunity.current_price_usd === null) return null;
 
   return (
-    <div className="mt-8 rounded-xl border border-border bg-card p-6">
-      <h2 className="font-display text-xl">Market Data</h2>
-      <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
+    <div className="mt-8 bg-bg-card border border-border rounded-2xl p-6">
+      <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
         <MarketDataItem label="Current Price" value={formatPrice(opportunity.current_price_usd)} />
         <MarketDataItem label="Market Cap" value={formatMarketCap(opportunity.market_cap_usd)} />
         <MarketDataItem label="24h Volume" value={formatVolume(opportunity.volume_24h_usd)} />
@@ -146,8 +149,8 @@ function MarketDataSection({ opportunity }: { readonly opportunity: Opportunity 
 function MarketDataItem({ label, value }: { readonly label: string; readonly value: string }) {
   return (
     <div>
-      <div className="text-xs text-text-secondary">{label}</div>
-      <div className="mt-1 font-mono text-sm font-medium text-text-primary">{value}</div>
+      <div className="text-xs text-text-tertiary uppercase tracking-widest font-mono">{label}</div>
+      <div className="mt-1 text-2xl font-mono font-semibold text-text-primary">{value}</div>
     </div>
   );
 }

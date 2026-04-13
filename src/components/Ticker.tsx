@@ -1,5 +1,5 @@
 import type { Opportunity } from "@/lib/types";
-import { formatScore, getScoreColor } from "@/lib/format";
+import { formatScore } from "@/lib/format";
 
 interface TickerProps {
   readonly opportunities: readonly Opportunity[];
@@ -7,6 +7,13 @@ interface TickerProps {
 
 const MIN_ITEMS = 1;
 const MAX_ITEMS = 50;
+
+function getTickerScoreColor(score: number): string {
+  if (typeof score !== "number" || isNaN(score)) return "text-text-tertiary";
+  if (score >= 70) return "text-score-high/50";
+  if (score >= 40) return "text-score-mid/50";
+  return "text-score-low/50";
+}
 
 /** Horizontal scrolling marquee of opportunity names and scores. */
 export default function Ticker({ opportunities }: TickerProps) {
@@ -17,8 +24,8 @@ export default function Ticker({ opportunities }: TickerProps) {
   const items = opportunities.slice(0, MAX_ITEMS);
 
   return (
-    <div className="overflow-hidden border-b border-border bg-surface/50">
-      <div className="flex animate-ticker whitespace-nowrap py-2">
+    <div className="h-7 overflow-hidden border-b border-bg-card bg-black">
+      <div className="flex h-full animate-ticker items-center whitespace-nowrap">
         <TickerItems items={items} />
         <TickerItems items={items} />
       </div>
@@ -49,19 +56,19 @@ function TickerItem({
     return null;
   }
 
-  const scoreColor = getScoreColor(opportunity.composite_score);
+  const scoreColor = getTickerScoreColor(opportunity.composite_score);
   const ticker = opportunity.ticker;
 
   return (
-    <span className="flex items-center gap-2 font-mono text-xs">
-      <span className="text-text-primary">{opportunity.name}</span>
+    <span className="flex items-center gap-2 font-mono text-[11px]">
+      <span className="text-text-tertiary">{opportunity.name}</span>
       {ticker && (
-        <span className="text-text-secondary">{ticker}</span>
+        <span className="text-text-tertiary">{ticker}</span>
       )}
       <span className={`font-semibold ${scoreColor}`}>
         {formatScore(opportunity.composite_score)}
       </span>
-      <span className="text-border-light">/</span>
+      <span className="text-text-tertiary">/</span>
     </span>
   );
 }

@@ -32,32 +32,32 @@ export default async function BlogPostPage({ params }: PageProps) {
   }
 
   return (
-    <article className="px-4 py-12 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl">
-        <BackLink />
-        <PostHeader
-          title={post.title}
-          date={post.published_at}
-          author={post.author}
-          tags={post.tags}
-        />
-        <PostContent content={post.content} />
-        <PostFooter />
-      </div>
+    <article className="mx-auto max-w-3xl px-6 py-20">
+      <BackLink />
+      <PostHeader
+        title={post.title}
+        date={post.published_at}
+        author={post.author}
+        tags={post.tags}
+      />
+      <PostContent content={post.content} />
+      <PostFooter />
     </article>
   );
 }
 
 function NotFoundFallback() {
   return (
-    <div className="px-4 py-24 text-center sm:px-6">
-      <h1 className="font-display text-2xl">Post Not Found</h1>
+    <div className="mx-auto max-w-3xl px-6 py-20 text-center">
+      <h1 className="text-2xl font-semibold tracking-tighter text-text-primary">
+        Post Not Found
+      </h1>
       <p className="mt-2 text-text-secondary">
         This blog post does not exist or has been removed.
       </p>
       <Link
         href="/blog"
-        className="mt-4 inline-block text-sm text-amber hover:underline"
+        className="mt-4 inline-block text-sm text-text-secondary hover:text-text-primary"
       >
         Back to blog
       </Link>
@@ -69,9 +69,9 @@ function BackLink() {
   return (
     <Link
       href="/blog"
-      className="text-sm text-text-secondary hover:text-amber"
+      className="text-xs font-mono text-text-tertiary hover:text-text-secondary"
     >
-      &larr; All Posts
+      Blog
     </Link>
   );
 }
@@ -90,13 +90,13 @@ function PostHeader({
   if (typeof title !== "string" || title.length === 0) return null;
 
   return (
-    <header className="mt-4 border-b border-border pb-8">
-      <h1 className="font-display text-3xl leading-tight sm:text-4xl">
+    <header className="mt-6">
+      <h1 className="text-4xl font-semibold tracking-tighter leading-tight text-text-primary">
         {title}
       </h1>
-      <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-text-secondary">
+      <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-text-tertiary">
         <span>{author}</span>
-        <span className="text-border-light">|</span>
+        <span className="text-border">|</span>
         <time>{formatDate(date)}</time>
       </div>
       {Array.isArray(tags) && tags.length > 0 && (
@@ -104,13 +104,14 @@ function PostHeader({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-md bg-surface px-2 py-1 text-xs text-text-secondary"
+              className="rounded-full bg-bg-card px-3 py-1 text-xs text-text-tertiary"
             >
               {tag}
             </span>
           ))}
         </div>
       )}
+      <div className="divider mt-8" />
     </header>
   );
 }
@@ -121,7 +122,7 @@ function PostContent({ content }: { readonly content: string }) {
   const paragraphs = content.split("\n\n").slice(0, 100);
 
   return (
-    <div className="prose-custom mt-8 space-y-6">
+    <div className="mt-8 space-y-6">
       {paragraphs.map((para, i) => (
         <p key={i} className="text-base leading-relaxed text-text-secondary">
           {para}
@@ -133,13 +134,13 @@ function PostContent({ content }: { readonly content: string }) {
 
 function PostFooter() {
   return (
-    <div className="mt-12 border-t border-border pt-8 text-center">
-      <p className="text-sm text-text-secondary">
+    <div className="mt-16 border-t border-border pt-8 text-center">
+      <p className="text-sm text-text-tertiary">
         Want more Early Thunder research?
       </p>
       <Link
         href="/pricing"
-        className="mt-3 inline-block rounded-lg bg-amber px-6 py-3 text-sm font-semibold text-base transition-colors hover:bg-amber-hover"
+        className="mt-4 inline-block rounded-full bg-text-primary px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
       >
         Get Premium Access
       </Link>

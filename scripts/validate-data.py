@@ -15,7 +15,7 @@ from typing import Any
 # --- Named Constants ---
 DATA_DIR: str = str(Path(__file__).resolve().parent.parent / "data")
 OPPORTUNITIES_FILE: str = str(Path(DATA_DIR) / "opportunities.json")
-MAX_OPPORTUNITIES: int = 50
+MAX_OPPORTUNITIES: int = 200
 MIN_SCORE: int = 0
 MAX_SCORE: int = 100
 VALID_ASSET_CLASSES: tuple[str, ...] = (

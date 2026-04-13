@@ -5,7 +5,7 @@ import { useState } from "react";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const WORKER_ENDPOINT = "https://api.earlythunder.com/subscribe";
 
-/** Email capture form that posts to Cloudflare Worker endpoint. */
+/** Inline email capture form. Rounded pill style. */
 export default function EmailCapture() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -45,7 +45,7 @@ export default function EmailCapture() {
 
   return (
     <div className="mx-auto w-full max-w-md">
-      <form onSubmit={handleSubmit} className="flex gap-2">
+      <form onSubmit={handleSubmit} className="inline-flex w-full">
         <input
           type="email"
           value={email}
@@ -55,13 +55,13 @@ export default function EmailCapture() {
           }}
           placeholder="Enter your email"
           required
-          className="flex-1 rounded-lg border border-border bg-surface px-4 py-3 text-sm text-text-primary placeholder:text-text-secondary focus:border-amber focus:outline-none focus:ring-1 focus:ring-amber"
+          className="bg-bg-card border border-border rounded-full px-6 py-3 text-text-primary placeholder:text-text-tertiary text-sm flex-1 focus:border-border-hover focus:outline-none"
           aria-label="Email address"
         />
         <button
           type="submit"
           disabled={status === "loading"}
-          className="rounded-lg bg-amber px-6 py-3 text-sm font-semibold text-base transition-colors hover:bg-amber-hover disabled:opacity-50"
+          className="bg-text-primary text-black text-sm font-medium px-6 py-3 rounded-full ml-3 hover:opacity-90 transition whitespace-nowrap disabled:opacity-50"
         >
           {status === "loading" ? "..." : "Subscribe"}
         </button>
@@ -80,7 +80,7 @@ function StatusMessage({
 }) {
   if (status === "idle" || message.length === 0) return null;
 
-  const colorClass = status === "success" ? "text-success" : "text-danger";
+  const colorClass = status === "success" ? "text-score-high" : "text-score-low";
 
   return (
     <p className={`mt-2 text-center text-sm ${colorClass}`}>

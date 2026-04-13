@@ -3,18 +3,20 @@ import { SIGNAL_KEYS, SIGNAL_LABELS } from "@/lib/types";
 
 interface SignalRadarProps {
   readonly signals: Signals;
+  readonly compositeScore?: number;
   readonly size?: number;
 }
 
 const TOTAL_SIGNALS = 8;
 const DEFAULT_SIZE = 300;
-const CENTER_OFFSET = 150;
+const CENTER = 150;
 const RADIUS = 120;
 const LABEL_RADIUS = 140;
 
-/** SVG radar/spider chart visualizing 8 signal scores. */
+/** Monochromatic SVG radar chart. White outline on near-black. */
 export default function SignalRadar({
   signals,
+  compositeScore,
   size = DEFAULT_SIZE,
 }: SignalRadarProps) {
   if (!signals || typeof signals !== "object") {
@@ -37,8 +39,10 @@ export default function SignalRadar({
         <GridRings levels={gridLevels} />
         <GridAxes />
         <DataPolygon points={points} />
-        <DataPoints points={points} signals={signals} />
-        <SignalLabels signals={signals} />
+        <SignalLabelsGroup signals={signals} />
+        {typeof compositeScore === "number" && (
+          <CenterScore score={compositeScore} />
+        )}
       </svg>
     </div>
   );
@@ -51,24 +55,20 @@ function computePolygonPoints(
     const angle = (Math.PI * 2 * i) / TOTAL_SIGNALS - Math.PI / 2;
     const value = Math.max(0, Math.min(100, signals[key] ?? 0)) / 100;
     return {
-      x: CENTER_OFFSET + Math.cos(angle) * RADIUS * value,
-      y: CENTER_OFFSET + Math.sin(angle) * RADIUS * value,
+      x: CENTER + Math.cos(angle) * RADIUS * value,
+      y: CENTER + Math.sin(angle) * RADIUS * value,
     };
   });
 }
 
-function GridRings({
-  levels,
-}: {
-  readonly levels: readonly number[];
-}) {
+function GridRings({ levels }: { readonly levels: readonly number[] }) {
   return (
     <g>
       {levels.map((level) => {
         const ringPoints = Array.from({ length: TOTAL_SIGNALS }, (_, i) => {
           const angle = (Math.PI * 2 * i) / TOTAL_SIGNALS - Math.PI / 2;
-          const x = CENTER_OFFSET + Math.cos(angle) * RADIUS * level;
-          const y = CENTER_OFFSET + Math.sin(angle) * RADIUS * level;
+          const x = CENTER + Math.cos(angle) * RADIUS * level;
+          const y = CENTER + Math.sin(angle) * RADIUS * level;
           return `${x},${y}`;
         }).join(" ");
         return (
@@ -76,8 +76,8 @@ function GridRings({
             key={level}
             points={ringPoints}
             fill="none"
-            stroke="#1E293B"
-            strokeWidth="1"
+            stroke="#222222"
+            strokeWidth="0.5"
           />
         );
       })}
@@ -90,17 +90,17 @@ function GridAxes() {
     <g>
       {SIGNAL_KEYS.map((_, i) => {
         const angle = (Math.PI * 2 * i) / TOTAL_SIGNALS - Math.PI / 2;
-        const x2 = CENTER_OFFSET + Math.cos(angle) * RADIUS;
-        const y2 = CENTER_OFFSET + Math.sin(angle) * RADIUS;
+        const x2 = CENTER + Math.cos(angle) * RADIUS;
+        const y2 = CENTER + Math.sin(angle) * RADIUS;
         return (
           <line
             key={i}
-            x1={CENTER_OFFSET}
-            y1={CENTER_OFFSET}
+            x1={CENTER}
+            y1={CENTER}
             x2={x2}
             y2={y2}
-            stroke="#1E293B"
-            strokeWidth="1"
+            stroke="#222222"
+            strokeWidth="0.5"
           />
         );
       })}
@@ -118,55 +118,23 @@ function DataPolygon({
   return (
     <polygon
       points={polygonStr}
-      fill="rgba(245, 166, 35, 0.15)"
-      stroke="#F5A623"
-      strokeWidth="2"
+      fill="rgba(255,255,255,0.05)"
+      stroke="#F5F5F7"
+      strokeWidth="1"
     />
   );
 }
 
-function DataPoints({
-  points,
-  signals,
-}: {
-  readonly points: readonly { x: number; y: number }[];
-  readonly signals: Signals;
-}) {
-  return (
-    <g>
-      {points.map((point, i) => {
-        const key = SIGNAL_KEYS[i];
-        if (!key) return null;
-        const value = signals[key] ?? 0;
-        return (
-          <circle
-            key={key}
-            cx={point.x}
-            cy={point.y}
-            r={value >= 80 ? 4 : 3}
-            fill={value >= 80 ? "#22C55E" : "#F5A623"}
-            stroke="#0B0F1A"
-            strokeWidth="1"
-          />
-        );
-      })}
-    </g>
-  );
-}
-
-function SignalLabels({
-  signals,
-}: {
-  readonly signals: Signals;
-}) {
+function SignalLabelsGroup({ signals }: { readonly signals: Signals }) {
   return (
     <g>
       {SIGNAL_KEYS.map((key, i) => {
         const angle = (Math.PI * 2 * i) / TOTAL_SIGNALS - Math.PI / 2;
-        const x = CENTER_OFFSET + Math.cos(angle) * LABEL_RADIUS;
-        const y = CENTER_OFFSET + Math.sin(angle) * LABEL_RADIUS;
+        const x = CENTER + Math.cos(angle) * LABEL_RADIUS;
+        const y = CENTER + Math.sin(angle) * LABEL_RADIUS;
         const value = signals[key] ?? 0;
-        const anchor = x < CENTER_OFFSET - 10 ? "end" : x > CENTER_OFFSET + 10 ? "start" : "middle";
+        const anchor =
+          x < CENTER - 10 ? "end" : x > CENTER + 10 ? "start" : "middle";
 
         return (
           <text
@@ -175,12 +143,31 @@ function SignalLabels({
             y={y}
             textAnchor={anchor}
             dominantBaseline="central"
-            className="fill-text-secondary text-[8px]"
+            fill="#48484A"
+            fontFamily="monospace"
+            fontSize="10"
           >
             {SIGNAL_LABELS[key]} ({value})
           </text>
         );
       })}
     </g>
+  );
+}
+
+function CenterScore({ score }: { readonly score: number }) {
+  return (
+    <text
+      x={CENTER}
+      y={CENTER}
+      textAnchor="middle"
+      dominantBaseline="central"
+      fill="#F5F5F7"
+      fontFamily="monospace"
+      fontSize="18"
+      fontWeight="600"
+    >
+      {Math.round(score)}
+    </text>
   );
 }
