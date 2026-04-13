@@ -1,0 +1,2 @@
+/opportunities/* /opportunities/:splat 200
+/blog/* /blog/:splat 200

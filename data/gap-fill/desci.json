@@ -1,0 +1,634 @@
+[
+  {
+    "name": "Bio Protocol",
+    "ticker": "$BIO",
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 65.2,
+    "one_liner": "Y Combinator for on-chain science funding 100+ biotech projects via AI agents with Binance listing and $33M+ raised in Genesis.",
+    "thesis": "Bio Protocol is the ecosystem coordination layer for decentralized science, functioning as a launchpad and funding mechanism for BioDAOs. The platform raised $33M+ in its Genesis round plus a $6.9M seed from Arthur Hayes' Maelstrom and Animoca Brands. It has been listed on Binance, reaching a peak market cap of ~$304M before crashing 98% from its ATH of $0.92 to ~$0.016, with daily volume of $13-19M remaining high relative to its $32-39M market cap.\n\nThe protocol has launched 10+ active BioDAOs including VitaDAO, HairDAO, CerebrumDAO, ValleyDAO, PsyDAO, and CryoDAO. Recent product launches include the Biofy Commerce Platform (described as 'Shopify for science-backed products'), BioAgents AI researchers, and cross-chain expansion. The April 2026 update introduced AI Scientist Swarms and Virtual Biotech Labs, with 174M+ BIO staked indicating holder conviction.\n\nThe structural thesis rests on the DeSci sector's total market cap of ~$238M being microscopic relative to the $1.5T global pharmaceutical IP market. NIH success rates for early-stage investigators have dropped from 26% to 19%, creating genuine demand for alternative research funding mechanisms. Bio Protocol's role as the ecosystem aggregator means it captures value from every successful BioDAO launch.\n\nKey risk: the connection between BIO token value and actual research outcomes is indirect, and most funded BioDAOs remain pre-revenue. The 98% drawdown from ATH suggests the market has severely repriced expectations.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 70,
+      "community": 70,
+      "dev_activity": 60,
+      "smart_money": 68,
+      "narrative": 70,
+      "hard_to_buy": 50,
+      "catalyst": 62
+    },
+    "catalysts": [
+      "BioAgents AI researcher platform driving automated drug discovery and funded $50M via AI agents",
+      "Biofy Commerce Platform enabling consumer product revenue for BioDAOs",
+      "Cross-chain expansion broadening liquidity and accessibility beyond Ethereum"
+    ],
+    "risks": [
+      "98% decline from ATH ($0.92 to $0.016) may signal structural token value capture failure",
+      "BioDAO success is not directly tied to BIO token price appreciation — indirect value capture model",
+      "DeSci sector total market cap of ~$238M means limited liquidity and high concentration risk"
+    ],
+    "citations": [
+      {
+        "claim": "BIO token at ~$0.016, market cap ~$32-39M, down 98% from ATH of $0.92",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Raised $33M+ in Genesis plus $6.9M seed from Maelstrom and Animoca",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "10+ BioDAOs active including VitaDAO, HairDAO, CerebrumDAO, ValleyDAO, PsyDAO, CryoDAO",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "DeSci sector market cap ~$238M, down from ~$1.3B peak (82% decline)",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "174M+ BIO staked indicating holder conviction",
+        "source": "seed-opportunities.md",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "VitaDAO",
+    "ticker": "$VITA",
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 73.6,
+    "one_liner": "Flagship longevity research DAO with Pfizer Ventures backing, Phase 1 clinical success at Rubedo, and a $3-6M market cap trading 97% below ATH.",
+    "thesis": "VitaDAO is the most established decentralized science organization, with a treasury that peaked at ~$55.8M (November 2024) and $4.2-5M+ deployed across 23-24 funded research projects. The DAO has 26 employees and 10,000+ community members. Pfizer Ventures is a backer, alongside partnerships with Chugai. The VITA-FAST governance token sale was 1,700% oversubscribed, demonstrating extraordinary demand for participation in DeSci governance.\n\nThe most significant development is Rubedo Life Sciences (a VitaDAO portfolio company) announcing positive Phase 1 clinical trial results on March 26, 2026 for RLS-1496, a GPX4 modulator targeting senescent cells in psoriasis and atopic dermatitis. The drug met primary safety and tolerability endpoints, with Phase 2 planned. Cyclarity's Phase 1 trial readout is expected later in 2026. These represent genuine clinical milestones — events that in traditional biotech would support $50-200M valuations.\n\nYet VITA trades at ~$0.22 (ATH $7.05), market cap ~$3.2-6.7M, with daily volume a mere $3.7K-$27K. This extreme illiquidity means any catalyst — a Binance listing, Phase 2 data, or institutional interest — creates massive upside potential. The ZK-proof integration planned for late 2026 targeting GDPR/HIPAA compliance could unlock institutional adoption of the platform.\n\nThe structural thesis is compelling: NIH success rates have dropped from 26% to 19% for early-stage investigators, creating genuine demand for alternative science funding. VitaDAO's funding timelines have been slashed from 12 months to under 30 days, offering researchers a dramatically faster path to capital.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 80,
+      "community": 85,
+      "dev_activity": 65,
+      "smart_money": 72,
+      "narrative": 80,
+      "hard_to_buy": 65,
+      "catalyst": 72
+    },
+    "catalysts": [
+      "Rubedo Life Sciences Phase 2 clinical trial for RLS-1496 (GPX4 modulator) following positive Phase 1 results",
+      "Cyclarity Phase 1 trial readout expected later in 2026",
+      "ZK-proof integration for GDPR/HIPAA compliance in late 2026 enabling institutional participation"
+    ],
+    "risks": [
+      "Daily trading volume of $3.7K-$27K means extreme illiquidity — position sizing must account for inability to exit",
+      "Treasury value has likely collapsed alongside 97% VITA price decline from peak $55.8M",
+      "Clinical trial failure in Phase 2 would devastate sentiment in an already-tiny market cap token"
+    ],
+    "citations": [
+      {
+        "claim": "VITA at ~$0.22, ATH $7.05, market cap ~$3.2-6.7M, daily volume $3.7K-$27K",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Treasury peaked at ~$55.8M (Nov 2024), deployed $4.2-5M+ across 23-24 projects, 26 employees, 10,000+ community",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Rubedo Life Sciences positive Phase 1 results March 26, 2026 for RLS-1496 GPX4 modulator",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "VITA-FAST token sale 1,700% oversubscribed",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Pfizer Ventures backing, Chugai partnership, spinout biotechs projecting $40-50M run rates",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Molecule Protocol",
+    "ticker": null,
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 59.2,
+    "one_liner": "Pre-token infrastructure layer that pioneered the IP-NFT standard for biopharma intellectual property, with $14M raised and V2 launched March 2026.",
+    "thesis": "Molecule Protocol is the critical infrastructure provider for the entire DeSci ecosystem, having pioneered the IP-NFT (Intellectual Property Non-Fungible Token) standard that enables tokenization of biopharma intellectual property. The protocol raised $14M and remains pre-token, making it a high-asymmetry positioning opportunity for those who can participate in the ecosystem ahead of a potential token launch.\n\nMolecule V2 launched in March 2026 with a 'Token-to-Equity-to-RWA' framework — a significant evolution that bridges the gap between on-chain token ownership and real-world equity/IP rights. This framework is backed by VitaDAO and Bio Protocol co-founders, ensuring deep integration with the broader DeSci ecosystem. The platform has allocated ~$2M to research DAOs to date.\n\nThe strategic position is compelling: Molecule sits at the foundation layer of DeSci, with every BioDAO, every IP-NFT, and every tokenized research project depending on its infrastructure. This is analogous to Uniswap's position in DeFi — the protocol layer that captures value from all activity above it. The integration with Bio Protocol and ResearchHub creates a flywheel: peer review on ResearchHub validates research, which gets funded via Molecule's IP-NFTs, which launches through Bio Protocol.\n\nKey limitation: there is no public token, IP-NFTs face legal uncertainty around enforceability across jurisdictions, and participation requires engaging through the Bio Protocol ecosystem. The timing of any token launch remains uncertain.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 60,
+      "community": 55,
+      "dev_activity": 50,
+      "smart_money": 60,
+      "narrative": 75,
+      "hard_to_buy": 70,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "V2 launch with Token-to-Equity-to-RWA framework creating real-world legal bridge for tokenized IP (March 2026)",
+      "Potential token launch would unlock liquidity and incentivize ecosystem growth",
+      "Growing IP-NFT adoption across BioDAOs expanding platform network effects"
+    ],
+    "risks": [
+      "No public token — investment requires indirect participation through Bio Protocol ecosystem",
+      "IP-NFT legal enforceability remains untested across major jurisdictions",
+      "Small TVL (~$30M ecosystem) and limited adoption outside crypto-native DeSci community"
+    ],
+    "citations": [
+      {
+        "claim": "Molecule Protocol V2 launched March 2026 with Token-to-Equity-to-RWA framework",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "$14M raised, pre-token, pioneered IP-NFT standard",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "~$2M allocated to research DAOs to date, ~$30M ecosystem TVL",
+        "source": "seed-opportunities.md",
+        "url": ""
+      },
+      {
+        "claim": "Backed by VitaDAO and Bio Protocol co-founders",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "ResearchHub",
+    "ticker": "$RSC",
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 56.8,
+    "one_liner": "Coinbase co-founder Brian Armstrong's 'Reddit for science' rewarding peer review with tokens at a ~$14M market cap.",
+    "thesis": "ResearchHub is an open science platform that tokenizes academic peer review and publishing, founded by Coinbase co-founder Brian Armstrong who remains as co-founder and CEO. The platform has awarded $1.2M in grants and paid $1M to 8,500 reviewers, creating a functional incentive layer for scientific contribution. RSC trades at ~$0.08 with a market cap of ~$14M, down 95% from ATH.\n\nThe Armstrong connection provides an unusual credibility anchor in the DeSci space — this is a Coinbase founder actively building infrastructure for decentralized science. The platform functions as a 'Reddit for science' where researchers earn RSC tokens for peer reviewing papers, publishing research, and contributing to scientific discourse. This creates a direct incentive mechanism that traditional academic publishing lacks.\n\nThe integration with Bio Protocol's BioAgents creates a feedback loop: peer review on ResearchHub validates research quality, which informs funding decisions through Molecule's IP-NFTs and Bio Protocol's launchpad. This positions RSC as a utility token within a growing DeSci ecosystem rather than a standalone product.\n\nKey weakness: the user base remains small, developer activity has not surged as expected, and it remains unclear whether token incentives alone can disrupt the deeply entrenched academic publishing industry dominated by Elsevier, Springer Nature, and Wiley. The token is available on Uniswap and Gate.io but with very limited liquidity.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 60,
+      "community": 60,
+      "dev_activity": 45,
+      "smart_money": 55,
+      "narrative": 75,
+      "hard_to_buy": 55,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Integration with Bio Protocol BioAgents creating automated research validation pipeline",
+      "Brian Armstrong's continued involvement could drive Coinbase ecosystem integration",
+      "NIH funding crisis (success rates dropping 26% to 19%) increasing demand for alternative science funding"
+    ],
+    "risks": [
+      "Very early stage with small user base — unclear if token incentives can disrupt academic publishing",
+      "Down 95% from ATH with limited daily volume, indicating weak market demand",
+      "No major near-term catalysts identified beyond organic ecosystem growth"
+    ],
+    "citations": [
+      {
+        "claim": "RSC at ~$0.08, market cap ~$14M, down 95% from ATH",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "$1.2M grants awarded, $1M paid to 8,500 reviewers, Brian Armstrong co-founder/CEO",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Founded by Coinbase co-founder, very low mcap on Uniswap and Gate.io",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "NIH success rates dropping from 26% to 19% for early-stage investigators",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "AminoChain",
+    "ticker": null,
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 55.0,
+    "one_liner": "a16z-backed decentralized biobanking protocol enabling patients to own and monetize their biological data, pre-token.",
+    "thesis": "AminoChain is building a decentralized biobanking infrastructure that enables patients to maintain ownership and control over their biological samples and data. Backed by a16z, it represents a fundamentally new approach to biospecimen management that could disrupt the $3B+ biobanking industry where patients currently have no ownership rights over their donated tissues.\n\nThe protocol addresses a genuine market failure: the global biobanking market is growing at ~8% CAGR, yet researchers face sample access bottlenecks while patients receive no compensation for specimens that generate enormous value. AminoChain's blockchain-based consent and provenance tracking could resolve both problems simultaneously — giving researchers faster access to verified samples while compensating donors.\n\nAs a pre-token project with a16z backing, AminoChain represents an early-stage positioning opportunity. The a16z imprimatur brings both funding and network effects — access to the firm's extensive crypto and biotech portfolio companies. However, the project is early enough that specific metrics on sample volumes, institutional partnerships, and regulatory status remain limited.\n\nThe primary risk is regulatory complexity: biological samples are subject to HIPAA, GDPR, and country-specific bioethics regulations that may not easily accommodate decentralized ownership models. The path from concept to operational biobank with real institutional customers is long and uncertain.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 40,
+      "community": 40,
+      "dev_activity": 45,
+      "smart_money": 75,
+      "narrative": 70,
+      "hard_to_buy": 85,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "Potential token launch event creating liquidity and incentivizing biobank network growth",
+      "a16z portfolio network effects connecting AminoChain to biotech and crypto ecosystems",
+      "Growing regulatory pressure on traditional biobanks could accelerate decentralized alternatives"
+    ],
+    "risks": [
+      "Pre-token with limited public metrics — high execution risk and uncertain timeline",
+      "Biological sample regulation (HIPAA, GDPR, bioethics) creates complex legal hurdles for decentralized models",
+      "Biobanking industry is slow-moving with entrenched incumbents resistant to blockchain adoption"
+    ],
+    "citations": [
+      {
+        "claim": "a16z-backed decentralized biobanking, pre-token",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "CryoDAO",
+    "ticker": null,
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 39.2,
+    "one_liner": "Cryopreservation-focused BioDAO within the Bio Protocol ecosystem, now trading at ~$293K market cap in the micro-cap dead zone.",
+    "thesis": "CryoDAO is a BioDAO within the Bio Protocol ecosystem focused on cryopreservation research — the science of preserving biological tissue at ultra-low temperatures. Originally reported to have a $20M+ treasury, the token has crashed 98% from ATH, leaving it at ~$0.11 with a market cap of approximately $293K.\n\nCryopreservation is a legitimate field of scientific research with applications in organ transplantation, fertility preservation, and theoretical whole-body preservation. The DAO model allows community funding of research that traditional institutions may not prioritize due to the field's association with fringe cryonics movements. This is exactly the kind of 'dismissed as a toy' research area that DeSci is designed to fund.\n\nHowever, the current state is dire. A $293K market cap places CryoDAO firmly in the micro-cap dead zone where liquidity is effectively zero, price discovery is absent, and any single trade can move the price dramatically. The gap between the reported $20M+ treasury and the current $293K market cap suggests either the treasury was denominated in tokens that have collapsed, or the market simply does not value the DAO's assets.\n\nThis is included for completeness as a Bio Protocol ecosystem component, but the investment case is extremely weak at current levels. Recovery would require either a significant cryopreservation research breakthrough funded by the DAO, or a broader DeSci sector revival lifting all boats.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 30,
+      "community": 30,
+      "dev_activity": 25,
+      "smart_money": 30,
+      "narrative": 60,
+      "hard_to_buy": 80,
+      "catalyst": 25
+    },
+    "catalysts": [
+      "Broader DeSci sector revival could lift all BioDAO tokens including CryoDAO",
+      "Cryopreservation research breakthrough funded by the DAO could reignite interest",
+      "Bio Protocol ecosystem growth driving discovery of niche BioDAOs"
+    ],
+    "risks": [
+      "Market cap of ~$293K means effectively zero liquidity and no meaningful price discovery",
+      "98% decline from ATH suggests potential permanent capital destruction",
+      "Cryopreservation research is niche with long timelines and uncertain commercial applications"
+    ],
+    "citations": [
+      {
+        "claim": "CryoDAO at $0.11, ~$293K market cap, down 98% from ATH",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "CryoDAO listed among active BioDAOs within Bio Protocol ecosystem",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "CryoDAO $20M+ treasury, cryopreservation focus",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Pump.Science (RIF)",
+    "ticker": "$RIF",
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 25.2,
+    "one_liner": "Gamified longevity token that suffered a GitHub compromise exposing private keys, now effectively dead at 99% below ATH.",
+    "thesis": "Pump.Science attempted to gamify longevity research by creating tradeable tokens tied to specific compounds being tested for lifespan extension. The $RIF token was one of two companion tokens (alongside $URO) that represented community interest in specific research outcomes. The concept was novel — turning scientific experiments into speculative markets where token prices would reflect community conviction about compound efficacy.\n\nThe project suffered a catastrophic GitHub compromise that exposed private keys, fundamentally undermining trust in the platform's security. RIF trades at effectively $0, down 99%+ from ATH, with experiment status unknown following the security incident. This represents a cautionary tale about the intersection of DeFi security and science funding.\n\nThe gamification model itself was innovative and attracted attention in the DeSci space, but the execution failure was severe. Security incidents in DeSci carry outsized reputational damage because the sector depends on trust — researchers and patients need to believe their data, funds, and IP are safe. A private key exposure is the worst possible failure mode.\n\nIncluded for completeness and as a risk case study. The investment case is functionally zero at current levels. Any recovery would require a complete platform rebuild with audited security, which has not been announced.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 10,
+      "community": 20,
+      "dev_activity": 10,
+      "smart_money": 10,
+      "narrative": 55,
+      "hard_to_buy": 70,
+      "catalyst": 10
+    },
+    "catalysts": [
+      "Platform rebuild with audited security could restore some confidence (not announced)",
+      "Broader DeSci narrative revival could draw attention to gamified research models",
+      "Concept validation — the gamification model was innovative even if execution failed"
+    ],
+    "risks": [
+      "GitHub exploit exposed private keys — fundamental security compromise",
+      "Token effectively at $0 with 99%+ decline, likely irrecoverable",
+      "Experiment status unknown following security incident — research outcomes may never be reported"
+    ],
+    "citations": [
+      {
+        "claim": "Pump.Science RIF at ~$0, down 99% from ATH, GitHub exploit exposed private keys",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Gamified longevity tokens ($RIF, $URO) with experiments status unknown",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true
+  },
+  {
+    "name": "Pump.Science (URO)",
+    "ticker": "$URO",
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 27.0,
+    "one_liner": "Companion gamified longevity token to $RIF within the Pump.Science ecosystem, trading at ~$0.002 after the platform's security compromise.",
+    "thesis": "URO is the companion token to RIF within the Pump.Science gamified longevity platform. Like RIF, it represents community interest in a specific compound being tested for lifespan extension effects. URO trades at ~$0.002, down 97% from ATH, with a market cap of approximately $2M — slightly more liquid than the effectively dead RIF token.\n\nThe Pump.Science platform's GitHub compromise that exposed private keys equally affects URO's credibility and viability. While URO maintains marginally more market cap than RIF ($2M vs. effectively $0), both tokens share the same fundamental security breach that undermined platform trust.\n\nThe slight price premium of URO over RIF may reflect residual speculative interest or a perception that the underlying compound represented by URO has more scientific merit. However, without clarity on experiment status following the security incident, this differential is likely noise rather than signal.\n\nLike RIF, URO is included for completeness in the DeSci landscape mapping. The investment case is extremely weak, and any position should be sized for total loss. The broader lesson is that DeSci projects require the same rigorous security standards as DeFi protocols — the 'science' branding does not excuse poor operational security.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 15,
+      "community": 20,
+      "dev_activity": 10,
+      "smart_money": 10,
+      "narrative": 55,
+      "hard_to_buy": 70,
+      "catalyst": 15
+    },
+    "catalysts": [
+      "Platform rebuild with audited security could restore some confidence (not announced)",
+      "URO retains ~$2M market cap suggesting some residual community interest",
+      "Broader DeSci narrative revival could draw attention to surviving tokens"
+    ],
+    "risks": [
+      "Same GitHub exploit that compromised RIF equally affects URO's credibility",
+      "97% decline from ATH with negligible liquidity",
+      "Experiment status unknown — scientific thesis behind URO may never be validated"
+    ],
+    "citations": [
+      {
+        "claim": "URO at ~$0.002, ~$2M market cap, down 97% from ATH",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Pump.Science gamified longevity tokens, experiments status unknown",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true
+  },
+  {
+    "name": "HairDAO",
+    "ticker": "$HAIR",
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 66.5,
+    "one_liner": "BioDAO for hair loss research with 6 patents filed, a completed clinical trial, and a consumer product at a $9.5M market cap.",
+    "thesis": "HairDAO is arguably the most undervalued DeSci project on a pure fundamentals basis. At a $9.5M market cap, it has achieved milestones that would command $50-200M valuations in traditional biotech: 6 patents filed, a completed decentralized clinical trial, the FolliCool shampoo product that sold out, and a telehealth service launching. HAIR trades at $13.67, down 91% from ATH, with daily volume of just $511.\n\nThe project demonstrates that DeSci can produce real-world outcomes — not just token speculation, but actual IP (patents), validated science (clinical trial), and consumer products (FolliCool). The hair loss market is estimated at $13B+ globally and growing, providing a massive TAM for a BioDAO that has already proven it can execute on research, IP generation, and commercialization.\n\nThe extreme illiquidity ($511 daily volume) is both the biggest risk and the biggest opportunity. Any meaningful capital inflow — a Binance listing, institutional interest, viral social media attention — would have an outsized impact on price given the tiny float. Conversely, the illiquidity means existing holders cannot exit without extreme slippage.\n\nHairDAO operates within the Bio Protocol ecosystem, benefiting from cross-pollination with VitaDAO, Molecule, and other BioDAOs. The telehealth launch represents a new revenue stream that could provide token holders with real yield, moving HairDAO from a pure speculative play to a revenue-generating entity.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 75,
+      "community": 65,
+      "dev_activity": 55,
+      "smart_money": 55,
+      "narrative": 80,
+      "hard_to_buy": 85,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "Telehealth service launch creating direct consumer revenue stream",
+      "6 patents filed providing defensible IP portfolio with licensing potential",
+      "Potential exchange listing would dramatically improve liquidity from current $511 daily volume"
+    ],
+    "risks": [
+      "Daily volume of $511 means effectively zero liquidity — cannot exit position without extreme slippage",
+      "91% decline from ATH with micro-cap status makes it vulnerable to further devaluation",
+      "Hair loss research is competitive with well-funded pharma incumbents (Merck, J&J)"
+    ],
+    "citations": [
+      {
+        "claim": "HairDAO at $13.67, ~$9.5M market cap, down 91% from ATH, daily volume $511",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "6 patents filed, completed first decentralized clinical trial, FolliCool shampoo sold out, telehealth launching",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Arguably the most undervalued DeSci project on fundamentals basis",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "ValleyDAO",
+    "ticker": "$GROW",
+    "category": "DeSci",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 41.5,
+    "one_liner": "Synthetic biology BioDAO with Imperial College London partnership, trading at $843K market cap after a 97% decline.",
+    "thesis": "ValleyDAO is a BioDAO within the Bio Protocol ecosystem focused on synthetic biology — the engineering of biological systems for useful purposes including sustainable materials, biofuels, and novel therapeutics. The DAO has established a partnership with Imperial College London, one of the world's leading research universities, lending institutional credibility to its scientific mission.\n\nGROW trades at $0.076, down 97% from ATH, with a market cap of approximately $843K. Like CryoDAO, this places ValleyDAO in the micro-cap dead zone where liquidity is negligible and price discovery is unreliable. The Imperial College partnership is a genuine differentiator — access to world-class synthetic biology research infrastructure and talent is valuable, even if the market currently assigns almost no value to it.\n\nSynthetic biology is one of the fastest-growing fields in the life sciences, with the global market projected to reach $65B+ by 2030. The potential for DeSci to fund and accelerate synthetic biology research is compelling in theory — traditional funding for SynBio startups is heavily concentrated in the US and UK, leaving many researchers in emerging markets without access to capital.\n\nHowever, the practical reality is challenging. At $843K market cap, ValleyDAO lacks the resources to fund meaningful synthetic biology research programs, which typically require millions in lab equipment, reagents, and researcher compensation. Recovery requires either a massive DeSci sector revival or a specific breakthrough from the Imperial College partnership.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 35,
+      "community": 35,
+      "dev_activity": 30,
+      "smart_money": 35,
+      "narrative": 65,
+      "hard_to_buy": 75,
+      "catalyst": 30
+    },
+    "catalysts": [
+      "Imperial College London partnership could yield publishable synthetic biology research",
+      "Synthetic biology sector growth ($65B+ by 2030) raising awareness of DeSci funding models",
+      "Bio Protocol ecosystem revival lifting all constituent BioDAOs"
+    ],
+    "risks": [
+      "Market cap of ~$843K means negligible liquidity and no ability to fund meaningful research programs",
+      "97% decline from ATH suggests potential permanent capital destruction",
+      "Synthetic biology research requires expensive lab infrastructure that a micro-cap DAO cannot fund"
+    ],
+    "citations": [
+      {
+        "claim": "ValleyDAO at $0.076, ~$843K market cap, down 97% from ATH",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Active with Imperial College London partnership",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Synthetic biology BioDAO within Bio Protocol ecosystem",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Siren Biotechnology",
+    "ticker": null,
+    "category": "DeSci",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 64.2,
+    "one_liner": "Wefunder equity crowdfunding at $60M pre-money valuation developing AAV immuno-gene therapy for cancer, backed by Founders Fund, Lux Capital, and Merck.",
+    "thesis": "Siren Biotechnology represents a rare intersection of DeSci accessibility and institutional biotech credibility. The company is live on Wefunder with a $60M pre-money valuation and a $250 minimum investment, developing AAV (adeno-associated virus) immuno-gene therapy for cancer. The backing from Founders Fund, Lux Capital, and Merck provides tier-1 venture and strategic pharma validation that few DeSci-adjacent companies can claim.\n\nThe clinical timeline is aggressive: IND filing was planned for late 2025 with first-in-human trials targeting Q2 2026. AAV gene therapy is a proven modality — Zolgensma (Novartis) and Luxturna (Spark Therapeutics) are approved AAV therapies, demonstrating regulatory feasibility. Siren's focus on cancer immuno-gene therapy addresses the largest oncology market, where even niche indications can support multi-billion dollar valuations.\n\nThe Wefunder equity crowdfunding mechanism is significant for the DeSci thesis: it demonstrates that retail investors can access biotech venture deals that were previously restricted to institutional VCs. At $250 minimum, the barrier to entry is orders of magnitude lower than traditional biotech angel investing. This is the 'democratization of science funding' that DeSci promises, executed through regulated equity rather than tokens.\n\nKey risk: pre-clinical and early-clinical biotech has historically high failure rates (>90% of drug candidates fail to reach approval). The $60M pre-money valuation assumes significant future value creation from clinical milestones that have not yet occurred. Equity crowdfunding also carries illiquidity risk — there is no secondary market for Wefunder shares, and returns depend on a future IPO or acquisition event.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 55,
+      "community": 50,
+      "dev_activity": 60,
+      "smart_money": 85,
+      "narrative": 75,
+      "hard_to_buy": 80,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "First-in-human clinical trial targeting Q2 2026 — imminent clinical data catalyst",
+      "Merck strategic backing could lead to partnership, licensing, or acquisition",
+      "Successful IND filing validates regulatory pathway for AAV immuno-gene therapy approach"
+    ],
+    "risks": [
+      ">90% failure rate for pre-clinical/early-clinical biotech drug candidates",
+      "Wefunder equity has no secondary market — returns depend entirely on future IPO or acquisition",
+      "AAV manufacturing complexity and high COGS could limit commercial viability even if efficacy is proven"
+    ],
+    "citations": [
+      {
+        "claim": "Siren Biotechnology live on Wefunder at $60M pre-money, $250 minimum, AAV immuno-gene therapy for cancer",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Backed by Founders Fund, Lux Capital, and Merck",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "IND filing planned late 2025, first-in-human trials targeting Q2 2026",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Junevity",
+    "ticker": null,
+    "category": "DeSci",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 61.0,
+    "one_liner": "AI-driven aging platform with expanded $20M seed round and first-in-human trials planned for H2 2026.",
+    "thesis": "Junevity is a private longevity biotech company that has raised an expanded $20M seed round to develop an AI-driven platform targeting the biology of aging. The company represents the convergence of two powerful trends: artificial intelligence applied to drug discovery, and the growing institutional interest in longevity science.\n\nThe first-in-human trials planned for H2 2026 represent a critical near-term catalyst. If successful, Junevity would join an extremely small cohort of longevity-focused companies with clinical data, potentially attracting significant follow-on funding and partnership interest from pharma companies increasingly exploring aging biology.\n\nThe AI-driven approach is strategically significant: computational biology and AI drug discovery have attracted tens of billions in funding (Recursion, Insilico Medicine, Isomorphic Labs), and Junevity's application of these tools to aging biology positions it at the intersection of two well-funded megatrends. The seed round size ($20M) is substantial for a longevity startup, suggesting strong investor conviction.\n\nAs a private company, Junevity is accessible only to accredited investors or through secondary market platforms. The longevity space is scientifically complex with no approved 'anti-aging' drugs, meaning regulatory pathways are uncertain. The field has attracted significant hype and some criticized companies (e.g., Altos Labs' $3B raise generated debate about scientific validity), creating a challenging signal-to-noise environment.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 50,
+      "community": 40,
+      "dev_activity": 60,
+      "smart_money": 70,
+      "narrative": 75,
+      "hard_to_buy": 85,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "First-in-human trials planned H2 2026 — clinical data is the ultimate de-risking event",
+      "AI-driven drug discovery platform could attract pharma partnership or licensing deals",
+      "Growing institutional interest in longevity science increasing sector-wide valuations"
+    ],
+    "risks": [
+      "No approved 'anti-aging' drugs exist — regulatory pathway is uncharted and uncertain",
+      "Private company accessible only to accredited investors with no secondary liquidity",
+      "Longevity science has high hype-to-substance ratio with many companies failing to deliver clinical results"
+    ],
+    "citations": [
+      {
+        "claim": "Junevity raised expanded $20M seed for AI-driven aging platform",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "First-in-human trials planned H2 2026",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Circulate Health",
+    "ticker": null,
+    "category": "DeSci",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 54.5,
+    "one_liner": "Khosla Ventures-backed startup with $12M seed developing therapeutic plasma exchange technology.",
+    "thesis": "Circulate Health raised a $12M seed round from Khosla Ventures to develop therapeutic plasma exchange (TPE) technology. Plasma exchange involves removing a patient's blood plasma and replacing it with donor plasma or albumin solution, and has shown promising results in age-related conditions based on seminal research from Stanford and UC Berkeley demonstrating that young blood plasma can rejuvenate aged tissues.\n\nKhosla Ventures' backing is significant — the firm has a strong track record in health-tech investments and its founder Vinod Khosla has been publicly bullish on longevity science. The $12M seed is appropriately sized for a medical device/therapeutic procedure company at this stage, providing runway for clinical development and regulatory preparation.\n\nTherapeutic plasma exchange is already FDA-approved for certain conditions (autoimmune disorders, neurological conditions), which provides a regulatory framework that pure longevity interventions lack. Circulate Health could potentially pursue indications where TPE is already established while building evidence for age-related applications — a 'Trojan horse' strategy that de-risks the regulatory pathway.\n\nThe company is early-stage with limited public information beyond the seed round details. As a private company, access is restricted to accredited investors. The key question is whether Circulate Health can demonstrate clinical efficacy in age-related indications beyond the existing TPE evidence base, and whether the economics of plasma exchange can scale to a consumer longevity market.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 45,
+      "community": 30,
+      "dev_activity": 50,
+      "smart_money": 72,
+      "narrative": 70,
+      "hard_to_buy": 85,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Khosla Ventures network could drive strategic partnerships with hospital systems and health-tech companies",
+      "FDA-approved TPE for existing indications provides regulatory precedent for expanded applications",
+      "Stanford/UC Berkeley young blood plasma research creating scientific validation for the approach"
+    ],
+    "risks": [
+      "Very early stage with limited public information beyond seed round disclosure",
+      "Therapeutic plasma exchange requires clinical infrastructure that is expensive to scale",
+      "Longevity applications of TPE are unproven beyond animal models and small-scale human studies"
+    ],
+    "citations": [
+      {
+        "claim": "Circulate Health raised $12M seed from Khosla Ventures for therapeutic plasma exchange",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  }
+]

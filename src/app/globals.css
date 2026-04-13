@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Base colors */
+  --color-base: #0B0F1A;
+  --color-surface: #141927;
+  --color-card: #1A2035;
+
+  /* Brand colors */
+  --color-amber: #F5A623;
+  --color-amber-hover: #D4900E;
+  --color-data-blue: #3B82F6;
+
+  /* Text colors */
+  --color-text-primary: #E2E8F0;
+  --color-text-secondary: #94A3B8;
+
+  /* Status colors */
+  --color-success: #22C55E;
+  --color-warning: #EAB308;
+  --color-danger: #EF4444;
+
+  /* Border */
+  --color-border: #1E293B;
+  --color-border-light: #334155;
+
+  /* Font families */
+  --font-display: var(--font-instrument-serif);
+  --font-body: var(--font-dm-sans);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+/* Base document styles */
+html {
+  background-color: #0B0F1A;
+  color: #E2E8F0;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  background-color: var(--color-base);
+  color: var(--color-text-primary);
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Ticker animation */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  animation: ticker-scroll 30s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}

@@ -1,0 +1,137 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import {
+  getAllOpportunities,
+  getOpportunityBySlug,
+  getRelatedOpportunities,
+} from "@/lib/data";
+import { formatDate, getAssetClassLabel, formatScore } from "@/lib/format";
+import type { Opportunity } from "@/lib/types";
+import TierBadge from "@/components/TierBadge";
+import ScoreBar from "@/components/ScoreBar";
+import OpportunityCard from "@/components/OpportunityCard";
+import { PremiumSection } from "@/components/OpportunityDetail";
+
+interface PageProps {
+  readonly params: Promise<{ slug: string }>;
+}
+
+export function generateStaticParams(): { slug: string }[] {
+  const opportunities = getAllOpportunities();
+  return opportunities.map((opp) => ({ slug: opp.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const opp = getOpportunityBySlug(slug);
+  if (!opp) return { title: "Not Found" };
+  return {
+    title: `${opp.name} Analysis`,
+    description: opp.one_liner,
+  };
+}
+
+export default async function OpportunityDetailPage({ params }: PageProps) {
+  const { slug } = await params;
+  const opportunity = getOpportunityBySlug(slug);
+
+  if (!opportunity) {
+    return <NotFoundFallback />;
+  }
+
+  const related = getRelatedOpportunities(opportunity);
+
+  return (
+    <div className="px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl">
+        <DetailHeader opportunity={opportunity} />
+        <FreeTierSection opportunity={opportunity} />
+        <PremiumSection opportunity={opportunity} />
+        {related.length > 0 && <RelatedSection related={related} />}
+      </div>
+    </div>
+  );
+}
+
+function NotFoundFallback() {
+  return (
+    <div className="px-4 py-24 text-center sm:px-6">
+      <h1 className="font-display text-2xl">Opportunity Not Found</h1>
+      <p className="mt-2 text-text-secondary">
+        This opportunity does not exist or has been removed.
+      </p>
+      <Link
+        href="/opportunities"
+        className="mt-4 inline-block text-sm text-amber hover:underline"
+      >
+        Browse all opportunities
+      </Link>
+    </div>
+  );
+}
+
+function DetailHeader({ opportunity }: { readonly opportunity: Opportunity }) {
+  return (
+    <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+      <div>
+        <Link href="/opportunities" className="text-sm text-text-secondary hover:text-amber">
+          &larr; All Opportunities
+        </Link>
+        <h1 className="mt-2 font-display text-3xl sm:text-4xl">
+          {opportunity.name}
+        </h1>
+        <div className="mt-2 flex flex-wrap items-center gap-3">
+          {opportunity.ticker && (
+            <span className="font-mono text-sm text-text-secondary">{opportunity.ticker}</span>
+          )}
+          <TierBadge tier={opportunity.tier} />
+          <span className="rounded-md bg-surface px-2 py-1 text-xs text-text-secondary">
+            {getAssetClassLabel(opportunity.asset_class)}
+          </span>
+          <span className="rounded-md bg-surface px-2 py-1 text-xs text-text-secondary">
+            {opportunity.category}
+          </span>
+        </div>
+      </div>
+      <div className="text-right">
+        <div className="font-mono text-4xl font-bold text-amber">
+          {formatScore(opportunity.composite_score)}
+        </div>
+        <div className="text-xs text-text-secondary">Composite Score</div>
+        <div className="mt-1 text-xs text-text-secondary">
+          Updated {formatDate(opportunity.updated_at)}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FreeTierSection({ opportunity }: { readonly opportunity: Opportunity }) {
+  return (
+    <div className="mt-8 rounded-xl border border-border bg-card p-6">
+      <p className="text-lg leading-relaxed text-text-primary">
+        {opportunity.one_liner}
+      </p>
+      <div className="mt-6">
+        <ScoreBar score={opportunity.composite_score} />
+      </div>
+    </div>
+  );
+}
+
+function RelatedSection({
+  related,
+}: {
+  readonly related: readonly Opportunity[];
+}) {
+  return (
+    <div className="mt-12">
+      <h2 className="font-display text-2xl">Related Opportunities</h2>
+      <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {related.map((opp) => (
+          <OpportunityCard key={opp.slug} opportunity={opp} />
+        ))}
+      </div>
+    </div>
+  );
+}

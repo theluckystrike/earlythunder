@@ -1,0 +1,221 @@
+[
+  {
+    "name": "Symbiotic",
+    "ticker": null,
+    "category": "Restaking",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 68.0,
+    "one_liner": "Paradigm + Lido founders restaking protocol that attracted $200M deposits on day one and secured 70+ protocols across 45 countries.",
+    "thesis": "Symbiotic represents the strongest challenger to EigenLayer in the restaking narrative, differentiated by its permissionless and modular architecture. Backed by Paradigm and co-founded by Lido founders, the protocol attracted $200M in deposits within its first day of launch, demonstrating extraordinary demand for restaking infrastructure beyond EigenLayer's dominant position. As of April 2026, TVL stands at approximately $355M (down from a $1.6B peak), with over 1,200 active node operators across 45 countries and 70+ protocols secured.\n\nThe token TGE occurred on November 20, 2024, but the token has not yet achieved major CEX listings, creating a friction-based moat that early participants can exploit. The protocol supports a wide array of collateral types including wstETH, wBETH, cbETH, sUDE, mETH, rETH, ENA, and swETH, giving it broader asset coverage than competitors. The External Rewards feature is distributing partner tokens (Hyperlane HYPER, Omni's $10M allocation), creating additional yield incentives.\n\nWith 66,000+ unique depositors historically and a points program still active via Mellow Protocol vaults, Symbiotic occupies the second-mover advantage position in restaking. The ChainSecurity audit returned a 'high level of security' rating, though auditors noted that the open design allows potentially dangerous configurations. The key risk is that TVL has declined 78% from peak, suggesting either rotation to other protocols or broader market disengagement from restaking as a category.\n\nThe bull case rests on restaking becoming a foundational infrastructure layer for crypto-economic security, with Symbiotic capturing meaningful share from EigenLayer due to its more permissionless design. If the broader restaking market recovers to its $19B+ peak (EigenLayer alone held $18-19.7B), Symbiotic's share at current TVL ratios implies significant upside.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 80,
+      "community": 55,
+      "dev_activity": 65,
+      "smart_money": 85,
+      "narrative": 75,
+      "hard_to_buy": 60,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "Major CEX listing would unlock retail access and potentially trigger TVL recovery",
+      "External Rewards program distributing partner tokens (Hyperlane, Omni) drives depositor incentives",
+      "Restaking narrative revival as EigenLayer EIGEN trades 91% below ATH creating deep-value entry across the sector"
+    ],
+    "risks": [
+      "TVL declined 78% from $1.6B peak to $355M, suggesting waning depositor conviction",
+      "Open design architecture allows potentially dangerous configurations per ChainSecurity audit",
+      "EigenLayer dominance at $18-19.7B TVL may limit Symbiotic's ability to attract meaningful restaking share"
+    ],
+    "citations": [
+      {"claim": "$200M deposits within a day of launch, backed by Paradigm and Lido founders", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "TVL ~$355M, 1,200+ node operators, 70+ protocols secured, 66K+ depositors", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "ChainSecurity audit: 'high level of security' with open design risk caveat", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "Token TGE November 20, 2024; not yet on major CEXs", "source": "Asymmetric Opportunity Atlas", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Karak Network",
+    "ticker": null,
+    "category": "Restaking",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 62.3,
+    "one_liner": "Multi-chain restaking protocol backed by Coinbase, Mubadala sovereign wealth, and Pantera at a $1B valuation.",
+    "thesis": "Karak Network is the only restaking protocol accepting multi-chain, multi-asset collateral, differentiating it fundamentally from both EigenLayer (Ethereum-centric) and Symbiotic (multi-asset but primarily Ethereum ecosystem). The protocol raised $50M at a $1 billion valuation from a remarkable investor syndicate that includes Coinbase Ventures, Mubadala (Abu Dhabi sovereign wealth fund), and Pantera Capital. The sovereign wealth fund participation is particularly notable as it signals institutional legitimacy beyond typical crypto VC rounds.\n\nThe multi-chain collateral approach addresses a genuine market gap. As crypto ecosystems fragment across Ethereum, Solana, Cosmos, and various L2s, the ability to restake assets from any chain into a unified security model has significant architectural advantages. This positions Karak as a potential 'restaking aggregator' rather than a chain-specific solution, which could become increasingly valuable as cross-chain activity grows.\n\nThe $1B valuation for a pre-token protocol is both a signal of smart money conviction and a risk factor. If the token launches at or above this FDV, early participants may find limited upside compared to protocols that launched at lower valuations. However, the quality of the investor base and the unique multi-chain positioning suggest that Karak could capture a meaningful niche in the restaking landscape that neither EigenLayer nor Symbiotic currently serve.\n\nKey uncertainties include the timing of token launch, the actual demand for multi-chain restaking versus single-chain solutions, and whether the sovereign wealth fund backing translates into enterprise adoption or remains a passive investment. The protocol is still early-stage with limited public TVL data, making fundamental analysis difficult.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 55,
+      "community": 40,
+      "dev_activity": 60,
+      "smart_money": 90,
+      "narrative": 70,
+      "hard_to_buy": 80,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "Token generation event would unlock liquidity and CEX listings for early depositors",
+      "Multi-chain collateral support positions Karak uniquely as cross-chain activity grows",
+      "Sovereign wealth fund backing (Mubadala) could drive enterprise and institutional adoption"
+    ],
+    "risks": [
+      "$1B valuation for a pre-token protocol may limit upside if token launches at or above this FDV",
+      "Limited public TVL and usage data makes fundamental analysis difficult",
+      "Multi-chain restaking demand is unproven — single-chain solutions may be sufficient for most use cases"
+    ],
+    "citations": [
+      {"claim": "$50M raised at $1B valuation from Coinbase, Mubadala, and Pantera", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "Only restaking protocol accepting multi-chain, multi-asset collateral", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Espresso Systems",
+    "ticker": "$ESP",
+    "category": "Restaking",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 65.0,
+    "one_liner": "Shared sequencer layer for L2s that launched ESP token with a 10% community airdrop across 1M+ eligible addresses.",
+    "thesis": "Espresso Systems addresses one of the most critical infrastructure problems in the modular blockchain stack: shared sequencing. Every Layer 2 rollup needs a sequencer, and Espresso's shared sequencer model enables cross-L2 composability and decentralized ordering that individual rollup sequencers cannot provide. The ESP token launched on February 12, 2026, with a total supply of 3.59 billion tokens and a 10% community airdrop (~359 million ESP, fully unlocked) distributed across over 1 million eligible addresses via 30+ qualification paths.\n\nThe protocol has achieved significant technical milestones: 65 million+ blocks attested, 9 integrated chains, and approximately 6-second finality. The rapid listing on both Coinbase and Binance immediately post-launch indicates strong exchange confidence in the project's legitimacy and market demand. This dual-listing at launch is rare and typically reserved for projects with substantial institutional backing and technical credibility.\n\nThe shared sequencer thesis is compelling because it solves the 'island problem' in the L2 ecosystem. As more rollups launch, the fragmentation of liquidity and composability across isolated sequencers becomes an increasingly acute pain point. Espresso's position as the shared sequencer layer makes it a potential 'picks and shovels' play on the entire L2 ecosystem rather than a bet on any single rollup.\n\nThe primary risk is that the airdrop has already occurred, meaning the easiest alpha has been captured. The token's post-launch price action will determine whether this represents a sell-the-news event or the beginning of a longer adoption curve as more L2s integrate Espresso's sequencer. The 9 integrated chains represent early traction but the shared sequencer market remains competitive with alternatives like Astria and Radius.",
+    "signals": {
+      "toy_phase": 45,
+      "working_code": 80,
+      "community": 55,
+      "dev_activity": 70,
+      "smart_money": 70,
+      "narrative": 75,
+      "hard_to_buy": 30,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "9 integrated chains with 65M+ blocks attested — growing network effects as more L2s adopt shared sequencing",
+      "Coinbase and Binance dual listing at launch signals strong institutional endorsement",
+      "L2 fragmentation problem worsening creates structural demand for shared sequencer solutions"
+    ],
+    "risks": [
+      "Airdrop already completed — easiest alpha has been captured, potential sell-the-news dynamic",
+      "Shared sequencer market is competitive with alternatives like Astria and Radius",
+      "Token launched recently (Feb 2026) — unclear if post-launch price discovery has stabilized"
+    ],
+    "citations": [
+      {"claim": "ESP token launched February 12, 2026; total supply 3.59B; 10% community airdrop (~359M ESP, fully unlocked)", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "1M+ eligible addresses, 30+ qualification paths, listed on Coinbase and Binance", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "65M+ blocks attested, 9 integrated chains, ~6-second finality", "source": "Asymmetric Opportunity Atlas", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Anoma",
+    "ticker": "$XAN",
+    "category": "Restaking",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 56.3,
+    "one_liner": "Intent-centric architecture with $57.75M raised and ZK privacy, still at devnet stage despite late-2025 token launch.",
+    "thesis": "Anoma represents the most ambitious attempt to build a generalized intent-centric blockchain architecture. Unlike existing blockchains where users specify 'how' a transaction should execute (which contract to call, which parameters to set), Anoma allows users to express 'what' they want — the desired end state — and the protocol finds the optimal execution path. This paradigm shift, combined with built-in ZK privacy and cross-chain atomic transactions, positions Anoma at the frontier of blockchain design.\n\nThe $XAN token launched in late 2025 after the project raised $57.75 million across multiple rounds. Despite the token being live, the protocol itself remains at devnet stage, creating an unusual dynamic where market participants are pricing a vision rather than a working product. This gap between token availability and protocol maturity is both the opportunity and the primary risk: if Anoma delivers on its intent-centric architecture, the current devnet-stage pricing could represent a massive discount to a fully functional protocol's value.\n\nThe intent-centric design philosophy is gaining traction across the crypto ecosystem. Projects like dappOS, CoW Protocol, and Essential are all building intent-based systems, validating the thesis that users want simpler interactions with blockchains. Anoma's advantage is that it is building the most generalized version of this concept — a full L1 rather than an application-layer solution. However, this ambition also introduces execution risk, as the technical complexity of a generalized intent machine is substantially higher than application-specific intent solutions.\n\nAt devnet stage with a live token, the risk/reward profile is asymmetric in both directions. Success means capturing value from an entirely new paradigm of blockchain interaction. Failure means a token without a functioning protocol, which historically leads to severe value destruction. The $57.75M in funding provides runway, but the gap between vision and execution remains wide.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 30,
+      "community": 45,
+      "dev_activity": 65,
+      "smart_money": 75,
+      "narrative": 80,
+      "hard_to_buy": 55,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Devnet to testnet to mainnet progression — each milestone de-risks the intent-centric architecture thesis",
+      "Growing intent-based narrative across crypto ecosystem (dappOS, CoW, Essential) validates Anoma's design philosophy",
+      "ZK privacy + cross-chain atomic transactions offer unique feature combination not available elsewhere"
+    ],
+    "risks": [
+      "Still at devnet stage despite token launch — protocol is not production-ready",
+      "Generalized intent-centric architecture is technically extremely ambitious and may face indefinite delays",
+      "Token live without working protocol creates adverse selection — traders may dump before product ships"
+    ],
+    "citations": [
+      {"claim": "$57.75M raised; token ($XAN) launched late 2025; still at devnet stage", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "First generalized intent-centric architecture with ZK privacy and cross-chain atomic transactions", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "dappOS",
+    "ticker": null,
+    "category": "Restaking",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 63.3,
+    "one_liner": "Binance Labs + Polychain + Sequoia-backed intent execution layer with novel 'intent assets' that earn yield while functioning as native tokens.",
+    "thesis": "dappOS is building an intent execution network that simplifies blockchain interactions by abstracting away the complexity of cross-chain operations, gas management, and optimal execution routing. What distinguishes dappOS from other intent-based protocols is its novel 'intent assets' concept — assets that simultaneously earn yield while functioning as native tokens for transactions. This dual-utility design solves the longstanding DeFi problem of having to choose between yield generation and liquidity availability.\n\nThe investor syndicate is exceptionally strong: Binance Labs, Polychain Capital, and Sequoia China represent a combination of the largest crypto exchange's venture arm, one of crypto's most successful funds, and one of the most prestigious traditional VC firms. This three-pronged backing provides distribution (Binance), crypto-native credibility (Polychain), and mainstream legitimacy (Sequoia). The live product with intent assets already functioning demonstrates execution capability beyond whitepaper-stage projects.\n\nThe intent narrative is gaining momentum across crypto as the sector recognizes that user experience remains the primary barrier to mainstream adoption. Instead of requiring users to understand gas tokens, bridge protocols, and DEX routing, intent-based systems let users express desired outcomes and rely on the protocol to execute optimally. dappOS's position as a Binance Labs portfolio company gives it potential distribution advantages if Binance integrates intent-based features into its platform.\n\nThe primary risks center on token timing and competitive dynamics. Without a live token, the investment thesis depends on a future TGE that may or may not deliver favorable terms to early participants. The intent execution space is becoming increasingly crowded, and it remains unclear whether intent infrastructure will accrue value at the protocol layer or be commoditized by application-layer solutions.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 65,
+      "community": 40,
+      "dev_activity": 60,
+      "smart_money": 90,
+      "narrative": 75,
+      "hard_to_buy": 70,
+      "catalyst": 55
+    },
+    "catalysts": [
+      "Token generation event would unlock direct investment exposure for early adopters",
+      "Binance Labs backing creates potential for Binance platform integration and distribution",
+      "Intent assets concept gaining traction as DeFi users seek yield without sacrificing liquidity"
+    ],
+    "risks": [
+      "No live token — investment currently limited to ecosystem participation and airdrop farming",
+      "Intent execution space is becoming crowded with competitors (Anoma, CoW, Essential)",
+      "Sequoia China involvement introduces geopolitical risk given US-China tensions in crypto"
+    ],
+    "citations": [
+      {"claim": "Backed by Binance Labs, Polychain, and Sequoia; live product with 'intent assets' that earn yield while functioning as native tokens", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "Intent-based architectures transforming blockchain interaction", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "CoW Protocol",
+    "ticker": "$COW",
+    "category": "Restaking",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 62.5,
+    "one_liner": "Operational intent-based DEX aggregator with 30% monthly user retention and batch auction mechanism that protects against MEV.",
+    "thesis": "CoW Protocol (formerly CoW Swap) is the most commercially mature intent-based protocol in the crypto ecosystem. Unlike speculative intent-layer projects, CoW Protocol is already operational with a proven 30% monthly user retention rate — an extraordinary metric in DeFi where most protocols see single-digit monthly retention. The protocol's batch auction mechanism aggregates trades and finds optimal execution paths while protecting users from MEV (Maximal Extractable Value) extraction, which costs Ethereum users an estimated $600M+ annually.\n\nThe protocol represents the 'intent-based' thesis in its most proven form. Users submit trade intents rather than direct swap instructions, and 'solvers' compete to find the best execution including Coincidence of Wants (CoW) — matching offsetting orders directly without touching an AMM. This peer-to-peer matching reduces slippage, eliminates sandwich attacks, and often achieves better-than-market prices. The $COW token is live and tradeable, providing immediate exposure to the intent narrative without the pre-token speculation risk.\n\nCoW Protocol's position as an already-operational intent-based system with strong retention gives it a significant head start over newer entrants like Anoma, dappOS, and Essential. While those projects aim to build more generalized intent infrastructure, CoW has demonstrated that intent-based design works in production and can achieve product-market fit. The key question is whether CoW's application-specific approach (focused on DEX aggregation) or the generalized L1 approach (Anoma) will ultimately capture more value.\n\nRisks include the relatively niche positioning within DeFi trading (rather than broader blockchain interaction), competition from 1inch and other DEX aggregators adopting intent-like features, and the dependence on Ethereum ecosystem activity. The token is live and liquid, reducing binary pre-token risk but also limiting the magnitude of potential upside compared to pre-token alternatives.",
+    "signals": {
+      "toy_phase": 40,
+      "working_code": 85,
+      "community": 55,
+      "dev_activity": 65,
+      "smart_money": 60,
+      "narrative": 75,
+      "hard_to_buy": 35,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "30% monthly retention validates intent-based UX — growing user base creates compounding network effects",
+      "MEV protection narrative strengthening as Ethereum MEV extraction exceeds $600M+ annually",
+      "Intent-based architecture gaining mainstream crypto recognition — CoW is the operational proof point"
+    ],
+    "risks": [
+      "Niche positioning in DEX aggregation may limit TAM compared to generalized intent protocols",
+      "Competition from 1inch and other DEX aggregators adopting intent-like features",
+      "Token already live and liquid — limits magnitude of upside compared to pre-token alternatives"
+    ],
+    "citations": [
+      {"claim": "30% monthly retention, already operational", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "Intent-based architecture with batch auction mechanism protecting against MEV", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  }
+]

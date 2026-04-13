@@ -1,0 +1,398 @@
+[
+  {
+    "name": "Synchron",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 2,
+    "composite_score": 66.0,
+    "one_liner": "FDA-authorized endovascular BCI that avoids open brain surgery, backed by Gates Foundation and Bezos Expeditions.",
+    "thesis": "Synchron has developed an endovascular brain-computer interface (BCI) — a device implanted via blood vessels rather than through open brain surgery. This approach dramatically reduces the risk profile compared to competitors like Neuralink that require invasive craniotomy. The company has received FDA authorization for clinical trials in the United States and has already implanted devices in human patients, generating real clinical data on safety and efficacy.\n\nThe investor base is exceptionally strong: Gates Foundation and Bezos Expeditions, representing two of the world's most prominent technology and healthcare investors. Synchron is accessible to accredited investors via secondary markets through platforms like Forge Global and EquityZen. The BCI sector as a whole saw funding triple to $867M in 2025, indicating accelerating institutional interest in neural interface technology.\n\nThe endovascular approach is Synchron's key differentiator. While it may offer lower bandwidth than direct cortical implants (Neuralink, Paradromics), the dramatically improved safety profile — no brain surgery required — positions it for broader clinical adoption and potentially faster regulatory approvals. The primary risks are the nascent BCI market with uncertain commercial timelines, competition from Neuralink's higher-profile and better-funded program, and the inherent illiquidity of private company shares.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 70,
+      "community": 30,
+      "dev_activity": 50,
+      "smart_money": 85,
+      "narrative": 80,
+      "hard_to_buy": 90,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "FDA-authorized clinical trials ongoing with human patients implanted and generating real clinical data",
+      "BCI sector funding tripled to $867M in 2025, indicating accelerating institutional momentum",
+      "Endovascular approach avoids open brain surgery — differentiated safety profile enables broader clinical adoption"
+    ],
+    "risks": [
+      "Private company with limited liquidity — accredited investors only via Forge Global/EquityZen secondary markets",
+      "BCI market still nascent with uncertain commercial timelines and regulatory hurdles",
+      "Neuralink competition with significantly more funding, visibility, and potentially higher bandwidth"
+    ],
+    "citations": [
+      {
+        "claim": "Endovascular BCI, FDA-authorized trials, backed by Gates Foundation and Bezos Expeditions",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "BCI funding tripled to $867M in 2025",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Pre-IPO shares available on Forge Global, EquityZen for accredited investors",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Paradromics",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 45.2,
+    "one_liner": "Record-breaking 200+ bits-per-second BCI data rate achiever, accessible only to accredited investors on secondary markets.",
+    "thesis": "Paradromics has achieved a record-breaking data rate of 200+ bits per second (bps) for brain-computer interface communications, establishing a technical milestone that no other BCI company has matched. This high-bandwidth approach targets the most data-intensive BCI applications, including full communication restoration for paralyzed patients and eventually more ambitious human-computer interaction paradigms.\n\nThe company operates in the rapidly growing BCI sector where total funding tripled to $867M in 2025. Paradromics represents the highest-bandwidth approach among BCI companies, technically differentiated from Synchron's lower-bandwidth but less invasive endovascular approach and positioned alongside Neuralink's direct cortical implant strategy. Access is limited to accredited investors via secondary markets.\n\nThe primary challenge is that Paradromics has significantly less public information available compared to Synchron and Neuralink. No specific funding amounts or named backers appear in the source documents, which limits the ability to assess financial runway and institutional validation. The company is very early stage with no FDA-authorized clinical trials mentioned, and the BCI market faces fundamental questions about commercial viability and regulatory timelines. This is a high-conviction technology bet with limited visibility into execution progress.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 55,
+      "community": 10,
+      "dev_activity": 35,
+      "smart_money": 30,
+      "narrative": 60,
+      "hard_to_buy": 95,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "Record-breaking 200+ bps data rate achieved — establishes technical leadership in high-bandwidth BCI",
+      "BCI sector funding tripled to $867M in 2025, expanding the investable ecosystem",
+      "Potential FDA clinical trial authorization would be a major catalyst for valuation re-rating"
+    ],
+    "risks": [
+      "Very early stage with limited public information — no named backers or funding amounts in source documents",
+      "Private company with no public investment mechanism — accredited investors only via secondary markets",
+      "Intense competition from better-funded Neuralink and FDA-authorized Synchron"
+    ],
+    "citations": [
+      {
+        "claim": "Record-breaking 200+ bps data rates",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "BCI funding tripled to $867M in 2025",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Most compelling non-Neuralink play alongside Synchron, accessible via secondary markets for accredited investors",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Neuralink",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 59.2,
+    "one_liner": "Elon Musk's direct cortical BCI company — the sector's most visible player and competitive context reference for BCI investing.",
+    "thesis": "Neuralink is the most prominent brain-computer interface company globally, founded by Elon Musk. The company has developed a direct cortical implant that is surgically placed in the brain using a custom-designed robotic insertion system. Neuralink has received FDA authorization and has implanted devices in human patients, generating significant media attention and public awareness for the entire BCI sector.\n\nNeuralink serves primarily as a competitive context reference for BCI investing. Its high profile and Musk association have accelerated mainstream awareness of neural interfaces, which benefits the entire sector including Synchron and Paradromics. The company's invasive surgical approach offers potentially higher bandwidth than Synchron's endovascular method but carries greater surgical risk. Neuralink's valuation is expected to be in the multi-billion dollar range given Musk's involvement and the company's brand recognition.\n\nFor investors, Neuralink represents a challenging opportunity. The company is private with no public investment mechanism available to most investors. The regulatory and ethical scrutiny of invasive brain implants is intense. While Musk's involvement provides unparalleled visibility, it also creates key-person risk and potential distraction given his numerous other ventures. The source documents reference Neuralink primarily as competitive context rather than as a direct investment recommendation.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 65,
+      "community": 60,
+      "dev_activity": 50,
+      "smart_money": 70,
+      "narrative": 80,
+      "hard_to_buy": 95,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "FDA-authorized with human patients implanted — generating real clinical data",
+      "Elon Musk's involvement drives unmatched media coverage and public awareness for BCI sector",
+      "Potential future funding rounds or IPO could create public market access"
+    ],
+    "risks": [
+      "Private company with no public investment mechanism available to most investors",
+      "Regulatory and ethical scrutiny of invasive direct cortical brain implants",
+      "Key-person risk — Elon Musk's attention divided across Tesla, SpaceX, xAI, and other ventures"
+    ],
+    "citations": [
+      {
+        "claim": "Referenced as competitive context for BCI sector; most well-known BCI company",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "BCI sector context: Synchron and Paradromics described as 'most compelling non-Neuralink plays'",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "BCI Sector Macro",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 64.0,
+    "one_liner": "BCI sector funding tripled to $867M in 2025, signaling institutional validation of neural interface technology as an investable category.",
+    "thesis": "The brain-computer interface sector experienced a step-change in institutional interest in 2025, with total funding tripling to $867M. This represents a shift from BCI being viewed as a science fiction concept to an investable technology category with multiple companies approaching clinical validation. The three most prominent players — Neuralink (direct cortical, Musk-backed), Synchron (endovascular, Gates/Bezos-backed), and Paradromics (high-bandwidth, 200+ bps record) — represent distinct technical approaches, creating a portfolio of bets across the solution space.\n\nThe sector's investability is constrained by the private nature of all major players. Synchron and Neuralink may have secondary market shares available on platforms like Forge Global and EquityZen for accredited investors, but liquidity is extremely limited. No public equity or digital asset provides pure BCI exposure. The sector is best positioned as a thematic allocation within a broader frontier technology portfolio.\n\nKey macro catalysts include expanding FDA pathways for BCI devices, growing evidence from clinical trials demonstrating safety and efficacy, and increasing public acceptance of neural interface technology. The $867M funding figure in 2025 alone suggests institutional capital sees a path to commercial returns, even though the timeline to widespread adoption remains uncertain. Risks include regulatory setbacks, ethical backlash against brain implants, and the possibility that non-invasive approaches (EEG-based) may prove sufficient for many use cases.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 60,
+      "community": 40,
+      "dev_activity": 55,
+      "smart_money": 75,
+      "narrative": 85,
+      "hard_to_buy": 80,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "BCI funding tripled to $867M in 2025 — institutional capital entering at scale",
+      "Multiple FDA-authorized clinical trials generating safety and efficacy data",
+      "Three distinct technical approaches (endovascular, cortical, high-bandwidth) de-risk the sector as a whole"
+    ],
+    "risks": [
+      "All major BCI companies are private — no pure public market exposure available",
+      "Regulatory and ethical scrutiny could slow clinical timelines or impose restrictive conditions",
+      "Non-invasive approaches (EEG-based BCI) may prove sufficient for many use cases, limiting addressable market for invasive devices"
+    ],
+    "citations": [
+      {
+        "claim": "BCI funding tripled to $867M in 2025",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Synchron (endovascular, Gates/Bezos), Paradromics (200+ bps record), Neuralink (competitive context)",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Siren Biotechnology",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 53.0,
+    "one_liner": "Cancer gene therapy accessible on Wefunder at $250 minimum, backed by Founders Fund, Lux Capital, and Merck, with human trials targeting Q2 2026.",
+    "thesis": "Siren Biotechnology is developing AAV immuno-gene therapy for cancer, backed by an impressive set of institutional investors including Founders Fund, Lux Capital, and Merck. The company is currently live on Wefunder with a $60M pre-money valuation and a remarkably low $250 minimum investment, making it one of the most accessible deep biotech plays for retail investors. The IND filing was planned for late 2025, with first-in-human trials targeting Q2 2026.\n\nThe investment thesis combines the massive TAM of cancer therapeutics with the accessibility of equity crowdfunding. Founders Fund and Lux Capital are among the most respected deep-tech VCs, and Merck's involvement signals pharmaceutical industry validation of the technology platform. AAV (adeno-associated virus) gene therapy has shown promise across multiple therapeutic areas, and Siren's immuno-gene approach targets cancer specifically.\n\nRisks are substantial for any pre-clinical biotech investment. Gene therapies have historically high failure rates in clinical trials, and the path from IND filing to commercial product can take 5-10+ years. Equity crowdfunding investments are illiquid with long hold periods and no secondary market. The $60M pre-money valuation, while modest by biotech standards, is still a significant bet on unproven technology. Investors should size this as a binary outcome position.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 30,
+      "community": 40,
+      "dev_activity": 35,
+      "smart_money": 80,
+      "narrative": 75,
+      "hard_to_buy": 50,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "First-in-human clinical trials targeting Q2 2026 — near-term binary catalyst",
+      "IND filing planned for late 2025, opening FDA regulatory pathway",
+      "Founders Fund, Lux Capital, and Merck backing validates technology platform for institutional follow-on"
+    ],
+    "risks": [
+      "Pre-clinical biotech with high failure rate — gene therapies face significant clinical hurdles",
+      "Equity crowdfunding illiquidity — long hold period with no secondary market",
+      "Path from IND filing to commercial product typically takes 5-10+ years"
+    ],
+    "citations": [
+      {
+        "claim": "Live on Wefunder at $60M pre-money valuation, $250 minimum, AAV immuno-gene therapy for cancer",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Backed by Founders Fund, Lux Capital, and Merck; IND filing late 2025, first-in-human trials Q2 2026",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Junevity",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 44.0,
+    "one_liner": "AI-driven aging platform with expanded $20M seed round and first-in-human trials planned for H2 2026.",
+    "thesis": "Junevity is developing an AI-driven aging platform that uses machine learning to identify and target the mechanisms of biological aging. The company raised an expanded $20M seed round, indicating strong initial investor interest and likely positive early scientific results that justified expanding beyond the original raise. First-in-human trials are planned for H2 2026, which represents a near-term clinical catalyst.\n\nThe longevity sector is attracting increasing attention from both institutional investors and the broader public, driven by breakthroughs in understanding the biology of aging and the growing political and cultural interest in healthspan extension. Junevity's AI-driven approach differentiates it from traditional pharmaceutical drug discovery by potentially accelerating the identification of aging targets and therapeutic candidates.\n\nHowever, Junevity is a seed-stage company with no clinical data yet and no public investment mechanism available. The AI-driven drug discovery space is highly competitive, with far larger and better-funded players (Insilico Medicine, Recursion Pharmaceuticals, etc.) pursuing similar approaches. No specific backers are named in the source documents, which limits the ability to assess the quality of the investor base beyond the $20M seed figure. This is a high-risk, early-stage longevity bet with limited visibility.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 25,
+      "community": 25,
+      "dev_activity": 30,
+      "smart_money": 40,
+      "narrative": 65,
+      "hard_to_buy": 95,
+      "catalyst": 55
+    },
+    "catalysts": [
+      "First-in-human trials planned for H2 2026 — relatively near-term clinical catalyst",
+      "Expanded $20M seed round suggests positive early scientific results",
+      "Growing institutional interest in longevity sector creates favorable fundraising environment"
+    ],
+    "risks": [
+      "Pre-clinical stage with no clinical data yet — high failure rate for novel aging therapeutics",
+      "No public investment mechanism available — private company accessible only to institutional/accredited investors",
+      "Competitive AI-driven drug discovery space with larger players (Insilico, Recursion) better funded"
+    ],
+    "citations": [
+      {
+        "claim": "Raised expanded $20M seed for AI-driven aging platform with first-in-human trials in H2 2026",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Circulate Health",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 38.8,
+    "one_liner": "Therapeutic plasma exchange for longevity with $12M seed from Khosla Ventures, based on parabiosis research.",
+    "thesis": "Circulate Health is developing therapeutic plasma exchange technology for longevity applications, backed by a $12M seed round from Khosla Ventures. The company's approach is grounded in parabiosis research — scientific studies showing that exchanging blood plasma between young and old organisms can reverse markers of biological aging. This has been one of the most intriguing findings in aging research, replicated across multiple labs.\n\nKhosla Ventures is a tier-1 VC firm with deep expertise in healthcare and deep tech, lending credibility to the scientific thesis. Therapeutic plasma exchange itself is an established medical procedure (used for autoimmune conditions), but its application to longevity is novel and clinically unproven. If Circulate Health can demonstrate that plasma exchange meaningfully impacts biological age markers in human trials, the implications would be enormous for the multi-trillion-dollar healthcare market.\n\nThe risks are proportionally severe. This is a seed-stage company with no clinical data, no announced trial timeline, and no public investment mechanism. Therapeutic plasma exchange for longevity is considered fringe by mainstream medicine, and regulatory pathways for longevity claims are unclear. The $12M seed round provides limited runway for the extensive clinical work needed. This is a moonshot investment accessible only to institutional or accredited investors in future rounds.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 15,
+      "community": 20,
+      "dev_activity": 20,
+      "smart_money": 65,
+      "narrative": 55,
+      "hard_to_buy": 95,
+      "catalyst": 20
+    },
+    "catalysts": [
+      "Khosla Ventures backing validates the therapeutic plasma exchange thesis for longevity",
+      "Parabiosis research continues to show positive results in preclinical studies, strengthening scientific foundation",
+      "Future clinical trial initiation would be a major catalyst for valuation and follow-on funding"
+    ],
+    "risks": [
+      "Very early seed-stage company with no clinical data and no announced trial timeline",
+      "Therapeutic plasma exchange for longevity is clinically unproven and considered fringe by mainstream medicine",
+      "No public investment mechanism — private company accessible only to institutional or accredited investors"
+    ],
+    "citations": [
+      {
+        "claim": "Raised $12M seed from Khosla Ventures for therapeutic plasma exchange",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Altos Labs",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 60.8,
+    "one_liner": "$3B-funded cellular rejuvenation startup with Nobel Prize-winning science, approaching clinical trials for aging reversal.",
+    "thesis": "Altos Labs is the most heavily funded longevity startup in history, having raised approximately $3 billion to pursue cellular rejuvenation — the biological reprogramming of cells to a younger state. The company was founded with backing from Yuri Milner and Jeff Bezos among others, and has recruited Nobel Prize-winning scientists including Shinya Yamanaka (the pioneer of induced pluripotent stem cells). The scientific thesis is based on Yamanaka factors — transcription factors that can reprogram adult cells to an embryonic-like state.\n\nAltos Labs represents the highest-conviction institutional bet on longevity science. The $3B funding gives it an enormous runway to pursue the multi-year clinical development timelines that longevity therapeutics require. The company is approaching clinical trials, which would represent a major milestone in the transition from laboratory science to human applications. The Nobel Prize pedigree of the scientific team is unmatched in the sector.\n\nDespite the impressive funding and scientific credentials, Altos Labs remains a private company with no public investment mechanism. The $3B valuation sets a high bar for returns even in a success scenario. Cellular reprogramming carries risks of uncontrolled cell growth (cancer), and the path from reprogramming cells in a dish to safely rejuvenating cells in living humans is long and uncertain. The company appeared in the seed-opportunities database as a Tier 2 Frontier Biotech entry with a score of 69.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 45,
+      "community": 35,
+      "dev_activity": 60,
+      "smart_money": 95,
+      "narrative": 75,
+      "hard_to_buy": 95,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Approaching clinical trials for cellular rejuvenation — transition from lab to human testing",
+      "$3B funding provides massive runway for multi-year clinical development",
+      "Nobel Prize-winning scientific team (Shinya Yamanaka) lends unmatched credibility"
+    ],
+    "risks": [
+      "Private company with no public investment mechanism — $3B valuation sets high bar for returns",
+      "Cellular reprogramming carries cancer risk from uncontrolled cell growth",
+      "Path from reprogramming cells in vitro to safely rejuvenating cells in humans is long and unproven"
+    ],
+    "citations": [
+      {
+        "claim": "Altos Labs, $3B-funded cellular rejuvenation startup approaching clinical trials for aging",
+        "source": "Seed Opportunities Database (Entry #46, Frontier Biotech, Tier 2, Score 69)",
+        "url": ""
+      },
+      {
+        "claim": "Longevity investing accessible through DeSci tokens and equity crowdfunding; Altos Labs referenced as major longevity company",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Loyal",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 2,
+    "composite_score": 67.2,
+    "one_liner": "First FDA-tracked longevity drug for dogs (LOY-001), expected launch 2026, with estimated $500M-$1B private valuation.",
+    "thesis": "Loyal is developing LOY-001, which is on track to become the first FDA-authorized longevity drug — initially for dogs. The FDA regulatory pathway for animal longevity drugs is significantly shorter than for human therapeutics, making Loyal potentially the first company to bring a commercially available longevity product to market. The expected launch in 2026 represents a near-term catalyst that could validate the entire longevity investment thesis.\n\nThe company has an estimated private valuation of $500M-$1B, reflecting both the novelty of the longevity drug category and the near-term commercial potential. The dog longevity market may seem niche, but American pet owners spent over $37B on veterinary care in 2023, and a drug that extends healthy lifespan in dogs would tap into extraordinary emotional and economic demand. More importantly, success in dogs provides a proof-of-concept for the broader longevity thesis that could accelerate human longevity drug development.\n\nLoyal appeared in the seed-opportunities database as a Tier 2 Frontier Biotech entry with a score of 68 and a computed weighted score of 78.8. The FDA approval pathway is the key catalyst — approval would make Loyal the world's first authorized longevity therapeutic of any kind. Risks include regulatory delay or rejection, the challenge of demonstrating longevity benefits in clinical trials (which inherently require long follow-up periods), and the private company illiquidity.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 75,
+      "community": 50,
+      "dev_activity": 55,
+      "smart_money": 70,
+      "narrative": 80,
+      "hard_to_buy": 85,
+      "catalyst": 80
+    },
+    "catalysts": [
+      "LOY-001 FDA approval expected 2026 — would be the first authorized longevity drug globally",
+      "Dog longevity market taps $37B+ US veterinary care spending with extraordinary owner demand",
+      "Success in dogs provides proof-of-concept for human longevity drug development pipeline"
+    ],
+    "risks": [
+      "FDA regulatory delay or rejection could significantly impact timeline and valuation",
+      "Demonstrating longevity benefits in clinical trials inherently requires long follow-up periods",
+      "Private company with estimated $500M-$1B valuation — limited liquidity for investors"
+    ],
+    "citations": [
+      {
+        "claim": "First FDA-tracked longevity drug for dogs, LOY-001 expected launch 2026, private valuation $500M-$1B",
+        "source": "Seed Opportunities Database (Entry #47, Frontier Biotech, Tier 2, Score 68)",
+        "url": ""
+      },
+      {
+        "claim": "Loyal FDA approval listed as key watchlist catalyst event",
+        "source": "Seed Opportunities Database (Next Steps section)",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  }
+]

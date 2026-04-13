@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "introducing-early-thunder",
+    "title": "Introducing Early Thunder: Hear the Storm Before Anyone Else",
+    "excerpt": "Why we built an intelligence platform focused on pre-mainstream asymmetric opportunities, and how our 8-Signal Pattern Filter works.",
+    "content": "The best investments share a common trait: they were obvious in hindsight but invisible to most in real-time. Early Thunder exists to surface these opportunities before they hit mainstream radar.\n\nOur 8-Signal Pattern Filter analyzes opportunities across eight critical dimensions, from the toy phase indicator that identifies transformative technologies still dismissed by incumbents, to our smart money tracking that monitors where sophisticated capital is flowing before the crowd follows.\n\nWe cover three asset classes — digital assets, public equities, and private markets — because asymmetric opportunities do not respect traditional category boundaries. A defense technology startup and a DeFi protocol may share more structural similarities than two companies in the same sector.\n\nEvery opportunity receives a composite score from 0-100 and a tier ranking from 1 (highest conviction) to 3 (speculative). We also maintain an Opportunity Graveyard — a transparent record of opportunities that fell below our threshold, with analysis of what went wrong.\n\nThis is intelligence, not advice. We surface the signals. You make the decisions.",
+    "published_at": "2026-04-10T00:00:00Z",
+    "author": "Early Thunder Research",
+    "tags": ["announcement", "methodology"]
+  },
+  {
+    "slug": "8-signal-pattern-filter-explained",
+    "title": "The 8-Signal Pattern Filter: A Deep Dive",
+    "excerpt": "Understanding how we score opportunities across eight dimensions to identify asymmetric setups before the crowd.",
+    "content": "Every opportunity that enters the Early Thunder radar passes through our 8-Signal Pattern Filter. Each signal is scored from 0-100, and the composite score represents a weighted aggregation that accounts for signal interactions.\n\nSignal 1: Toy Phase — Is this technology or asset still in its 'toy' phase, dismissed by incumbents? High scores indicate the opportunity is still early enough to offer asymmetric upside. Think: the internet in 1995, smartphones in 2007, or crypto in 2015.\n\nSignal 2: Working Code — Does the project have functional, deployed technology? Vaporware scores low. Battle-tested production systems score high. We verify this through GitHub analysis, on-chain data, and product testing.\n\nSignal 3: Community — Is there an organic, growing community of users and advocates? We measure genuine engagement, not bot-inflated metrics.\n\nSignal 4: Dev Activity — How active is development? We track commit frequency, contributor diversity, and code quality metrics.\n\nSignal 5: Smart Money — Where is sophisticated capital flowing? We track venture funding, whale wallets, and institutional filings.\n\nSignal 6: Narrative — Is there a compelling, easily communicable story? The best investments have narratives that can spread virally.\n\nSignal 7: Hard to Buy — Is the asset difficult to acquire? Friction creates opportunity. If everyone can easily buy it, the asymmetry is gone.\n\nSignal 8: Catalyst — Are there identifiable near-term catalysts? Catalysts convert latent value into realized returns.",
+    "published_at": "2026-04-12T00:00:00Z",
+    "author": "Early Thunder Research",
+    "tags": ["methodology", "education"]
+  }
+]

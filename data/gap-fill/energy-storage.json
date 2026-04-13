@@ -1,0 +1,325 @@
+[
+  {
+    "name": "EnergyX",
+    "ticker": null,
+    "category": "Energy Storage",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 46.8,
+    "one_liner": "Direct lithium extraction via equity crowdfunding at $9.50/share with agreements covering 4 of the top 10 global lithium producers.",
+    "thesis": "EnergyX is developing proprietary direct lithium extraction (DLE) technology that could dramatically improve the economics of lithium production for the EV battery supply chain. The company has secured agreements with 4 of the top 10 lithium producers globally and controls over 100,000 acres of Chilean lithium deposits, positioning it at the center of the lithium supply bottleneck that constrains EV manufacturing scale-up.\n\nThe company is currently live on DealMaker (invest.energyx.com) at $9.50/share with an implied valuation of approximately $1.92 billion and a $1,000 minimum investment. This equity crowdfunding structure makes it one of the few deep-tech energy plays accessible to non-accredited investors. Battery-grade lithium carbonate has recovered to $21,000-22,000/tonne in China, up 117% year-over-year, and Morgan Stanley forecasts a deficit of 80,000 mt LCE in 2026, which strengthens the demand side of the thesis.\n\nThe primary risk is that DLE technology remains unproven at commercial scale, and the company is pre-revenue with a long commercialization timeline. Equity crowdfunding investments carry severe illiquidity — there is no secondary market for these shares. The $1.92B valuation for a pre-revenue company requires significant execution on technology scale-up and commercial partnerships to justify.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 40,
+      "community": 45,
+      "dev_activity": 35,
+      "smart_money": 40,
+      "narrative": 75,
+      "hard_to_buy": 70,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Agreements with 4 of the top 10 global lithium producers moving toward deployment",
+      "100,000+ acres of Chilean lithium deposits under development",
+      "Lithium market deficit of 80,000 mt LCE forecast for 2026 by Morgan Stanley, with prices up 117% YoY"
+    ],
+    "risks": [
+      "Pre-revenue deep tech with long commercialization timeline — DLE unproven at scale",
+      "Equity crowdfunding illiquidity — no secondary market for shares",
+      "Lithium price volatility could undermine the business case if prices retrace"
+    ],
+    "citations": [
+      {
+        "claim": "EnergyX live on DealMaker at $9.50/share, ~$1.92B valuation, $1000 minimum",
+        "source": "1000x Opportunity Map",
+        "url": "invest.energyx.com"
+      },
+      {
+        "claim": "Agreements with 4 of top 10 lithium producers, 100,000+ acres Chilean deposits",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Lithium carbonate ~$21,000-22,000/tonne, up 117% YoY, Morgan Stanley deficit forecast 80,000 mt LCE",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "ESS Inc",
+    "ticker": "$GWH",
+    "category": "Energy Storage",
+    "asset_class": "public_equities",
+    "tier": 3,
+    "composite_score": 40.5,
+    "one_liner": "Iron flow battery maker in survival mode at $31M market cap with 22-hour storage, zero degradation over 25 years, and Honeywell backing.",
+    "thesis": "ESS Inc builds iron flow batteries — a long-duration energy storage technology that offers 22-hour storage capability with zero degradation over 25 years, differentiating it sharply from lithium-ion alternatives that degrade significantly over their lifespan. The technology uses earth-abundant iron, salt, and water as its active materials, making it both low-cost and environmentally benign at end-of-life.\n\nHowever, the company is in survival mode. The stock trades at $1.15 with a market cap of just $31M, down from a 52-week high of $13.87. FY2025 revenue was a mere $1.6M, down 75% year-over-year. Cash stands at $22M with working capital of approximately $1M, triggering going concern signals. The company is pivoting to its \"Energy Base\" product targeting 2027 commercialization. On the positive side, ESS has an SRP pilot with Google, 1.2 GWh in proposals worth approximately $400M, and strategic backing from Honeywell.\n\nThis is a high-risk turnaround play. The iron flow battery technology is genuinely differentiated, but the company must survive long enough to reach commercialization. The extreme valuation compression from $13.87 to $1.15 creates potential asymmetric upside if the Energy Base pivot succeeds, but the going concern risk is real and near-term.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 50,
+      "community": 20,
+      "dev_activity": 30,
+      "smart_money": 35,
+      "narrative": 65,
+      "hard_to_buy": 10,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "SRP pilot with Google demonstrating commercial viability of iron flow technology",
+      "Energy Base product pivot targeting 2027 commercialization",
+      "1.2 GWh in proposals representing approximately $400M in potential revenue pipeline"
+    ],
+    "risks": [
+      "Going concern signals — cash $22M, working capital ~$1M, revenue down 75% YoY to $1.6M",
+      "Extreme stock price volatility — 52-week range $0.76 to $13.87",
+      "Energy Base product not commercialized until 2027 — must survive 12+ months on limited cash"
+    ],
+    "citations": [
+      {
+        "claim": "Stock $1.15, market cap $31M, FY2025 revenue $1.6M (down 75% YoY), cash $22M, working capital ~$1M",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "22-hour storage, zero degradation 25 years, Honeywell backing",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "SRP pilot with Google, 1.2 GWh in proposals (~$400M), Energy Base targeting 2027",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Form Energy",
+    "ticker": null,
+    "category": "Energy Storage",
+    "asset_class": "private_markets",
+    "tier": 2,
+    "composite_score": 76.2,
+    "one_liner": "Clear LDES leader with iron-air batteries for 100+ hour storage, $1.13-1.43B raised, 75 GWh pipeline, and production sold out through 2028.",
+    "thesis": "Form Energy has established itself as the undisputed leader in long-duration energy storage (LDES) with its iron-air battery technology capable of 100+ hour grid storage at a projected cost below $20/kWh. The company has raised $1.13-1.43B in total funding, employs 826 people, and has an estimated valuation of $1.95B (up to $3.3B on secondary markets). Secondary shares trade at $23.00/share on Forge as of March 2026. The pipeline exceeds 75 GWh, and production is sold out through 2028.\n\nThe deal pipeline is extraordinary for a private company. Key contracts include Google/Xcel Energy for 300 MW / 30 GWh for a Minnesota data center (estimated $1B+ value), Crusoe for 12 GWh for AI data centers (March 24, 2026), FuturEnergy Ireland for 10 MW / 1,000 MWh (first international project), and a DOE grant of $147M for an 85 MW Maine project. The Weirton, WV factory is currently producing at 15 MW capacity, ramping to 50 MW, with a target of 500 MW / 50 GWh annually by 2028.\n\nForm Energy is reportedly pursuing a $500M funding round (per TechCrunch, March 2026) and is widely considered the top IPO candidate in the LDES sector. The primary risks are the private-market illiquidity, the fact that iron-air technology is still scaling from 15 MW to 500 MW production, and that the valuation is based on pipeline rather than revenue. However, the combination of blue-chip partners (Google, Crusoe, DOE), massive pipeline, and potential IPO make this arguably the strongest risk-reward profile in energy storage.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 85,
+      "community": 30,
+      "dev_activity": 75,
+      "smart_money": 90,
+      "narrative": 85,
+      "hard_to_buy": 80,
+      "catalyst": 85
+    },
+    "catalysts": [
+      "Google/Xcel Energy 300 MW / 30 GWh Minnesota data center deal valued at ~$1B+",
+      "Crusoe 12 GWh AI data center deal signed March 2026",
+      "$500M funding round reportedly underway (TechCrunch, March 2026) with potential IPO"
+    ],
+    "risks": [
+      "Private company with limited liquidity — secondary market shares at $23/share on Forge for accredited investors only",
+      "Iron-air battery technology still scaling from 15 MW to 500 MW production capacity",
+      "Valuation based on pipeline not revenue — projected sub-$20/kWh costs not yet proven at scale"
+    ],
+    "citations": [
+      {
+        "claim": "Total raised $1.13-1.43B, valuation ~$1.95B (up to $3.3B secondary), 826 employees, sold out through 2028",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Google/Xcel 300MW/30GWh, Crusoe 12GWh, FuturEnergy Ireland, DOE $147M, Weirton factory ramping to 500MW/50GWh by 2028",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "$925M+ raised, 100+ hour storage, $20/kWh target, top IPO candidate",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Fourth Power",
+    "ticker": null,
+    "category": "Energy Storage",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 49.2,
+    "one_liner": "MIT/Georgia Tech spinout building molten carbon thermal storage backed by Breakthrough Energy Ventures and Munich Re.",
+    "thesis": "Fourth Power is an MIT and Georgia Tech spinout developing a novel molten carbon thermal energy storage system. The company has raised between $19M (per Asymmetric Opportunity Atlas) and $39M (per 1000x Opportunity Map) in Series A funding, backed by Breakthrough Energy Ventures (BEV, Bill Gates' climate fund) and Munich Re, one of the world's largest reinsurers. The technology stores energy by heating materials to extreme temperatures, targeting deployment costs below lithium-ion by 2028.\n\nThe company is currently at TRL 5-6, with a 1 MWh prototype under construction near Boston and a demonstration expected later in 2026. Full-scale 100 MWh systems are targeted for 2028. The backing from BEV and Munich Re is notable — BEV has a strong track record of identifying breakthrough clean energy technologies, and Munich Re's involvement suggests the technology has passed rigorous risk assessment by a major insurer.\n\nThe primary risk is the early-stage nature of the technology. At TRL 5-6, Fourth Power is still in the prototype phase with no commercial revenue and a long timeline to deployment. There is no public investment mechanism available, making this accessible only to institutional or accredited investors in future rounds. The energy storage space has a high failure rate — as Ambri's Chapter 11 bankruptcy demonstrates, the gap between promising prototypes and viable factories can be fatal.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 35,
+      "community": 15,
+      "dev_activity": 30,
+      "smart_money": 70,
+      "narrative": 60,
+      "hard_to_buy": 95,
+      "catalyst": 55
+    },
+    "catalysts": [
+      "1 MWh prototype demonstration near Boston expected later in 2026",
+      "Full-scale 100 MWh systems targeted for deployment in 2028",
+      "BEV and Munich Re backing validates technology and de-risks future funding rounds"
+    ],
+    "risks": [
+      "TRL 5-6 — still prototype stage with no commercial deployment or revenue",
+      "No public investment mechanism available — inaccessible to most investors",
+      "Long timeline to commercial deployment (2028+); Ambri's failure shows the valley of death is real"
+    ],
+    "citations": [
+      {
+        "claim": "$19M Series A (BEV-backed), 1 MWh prototype under construction near Boston, TRL 5-6, full-scale 100 MWh targeted 2028",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "$39M Series A, BEV + Munich Re, MIT/Georgia Tech spinout, molten carbon thermal",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Malta Inc",
+    "ticker": null,
+    "category": "Energy Storage",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 29.2,
+    "one_liner": "Google X-origin pumped heat energy storage with Siemens partnership, but only 17 employees signal limited momentum.",
+    "thesis": "Malta Inc originated from Google X (Alphabet's moonshot lab) and is developing pumped heat energy storage (PHES) technology. The company has raised approximately $98-118M in funding and secured a partnership with Siemens. The 1000x Opportunity Map references a $50M Series B round. The technology converts electricity into thermal energy stored in molten salt and cold liquid, then reconverts it back to electricity when needed, offering potential for grid-scale storage.\n\nThe company has a full-scale heat exchanger testing program underway in Germany and a 14 MW demonstration plant in Spain. However, the most concerning data point is the team size: only 17 employees. For a company that has raised nearly $100M+, this tiny team signals limited momentum and raises questions about capital efficiency and the pace of technical development.\n\nMalta is pre-commercial with no clear path to market despite its Google X pedigree and Siemens partnership. The energy storage sector is intensely competitive, with Form Energy, Antora, and others moving faster toward commercialization with larger teams and more robust pipelines. The lack of named backers beyond the Google X origin and Siemens is a yellow flag. This is a watch-list entry rather than a near-term investment opportunity.",
+    "signals": {
+      "toy_phase": 40,
+      "working_code": 30,
+      "community": 5,
+      "dev_activity": 15,
+      "smart_money": 30,
+      "narrative": 45,
+      "hard_to_buy": 95,
+      "catalyst": 20
+    },
+    "catalysts": [
+      "Full-scale heat exchanger testing in Germany progressing toward validation",
+      "14 MW demonstration plant in Spain generating operational data",
+      "Siemens partnership provides engineering and commercial credibility"
+    ],
+    "risks": [
+      "Only 17 employees despite ~$98-118M raised — signals limited momentum and poor capital efficiency",
+      "Pre-commercial with no clear timeline to market or revenue generation",
+      "No public investment mechanism; severely outpaced by competitors like Form Energy and Antora"
+    ],
+    "citations": [
+      {
+        "claim": "~$98-118M raised, 17 employees, full-scale heat exchanger testing in Germany, Spain demonstration 14 MW",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Pumped heat energy storage, Google X origin, Siemens partnership, $50M Series B",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Antora Energy",
+    "ticker": null,
+    "category": "Energy Storage",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 62.2,
+    "one_liner": "Most commercially advanced thermal battery company with $272M raised from BlackRock and Temasek, deploying 2,400C carbon block storage.",
+    "thesis": "Antora Energy is described as the most commercially advanced thermal battery company, having raised $272M with a BlackRock and Temasek-led Series B. The technology heats carbon blocks to 2,400 degrees Celsius and achieves greater than 40% thermophotovoltaic (TPV) efficiency for converting stored heat back to electricity. First deployment occurred in 2023, making Antora the furthest along in commercialization among thermal storage startups.\n\nThe company has secured partnerships with Con Edison (New York's largest utility), Shell, and Summit Materials, indicating broad industrial demand for its thermal storage solution. The 1000x Opportunity Map lists the total raise as $150M Series B, while the Asymmetric Opportunity Atlas provides the more current figure of $272M raised. The higher figure suggests Antora has continued to attract significant capital, with BlackRock and Temasek as lead investors representing the highest-tier institutional backing available.\n\nThe primary investment thesis is that Antora addresses industrial heat — a massive market that accounts for approximately 20% of global energy use and is extremely difficult to decarbonize. The thermal battery approach is technically simpler than electrochemical storage and uses abundant materials. Risks include the nascent thermal battery market where commercial adoption timelines remain uncertain, competition from other thermal approaches (Fourth Power, Malta), and the fact that Antora remains a private company with no public investment mechanism.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 75,
+      "community": 15,
+      "dev_activity": 55,
+      "smart_money": 90,
+      "narrative": 70,
+      "hard_to_buy": 95,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "Expanding commercial deployments following first deployment in 2023",
+      "Con Edison, Shell, and Summit Materials partnerships scaling across industrial sectors",
+      "BlackRock and Temasek-led $272M raise validates technology for institutional capital"
+    ],
+    "risks": [
+      "Private company with no public investment mechanism available to most investors",
+      "Thermal battery market still nascent — commercial adoption timelines uncertain",
+      "Competition from other thermal storage approaches (Fourth Power, Malta) and electrochemical alternatives"
+    ],
+    "citations": [
+      {
+        "claim": "$272M raised (BlackRock/Temasek-led Series B), first deployment 2023, 2,400C carbon blocks, >40% TPV efficiency",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "Con Edison, Shell, Summit Materials partnerships; most commercially advanced thermal battery company",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      },
+      {
+        "claim": "$150M Series B, thermal storage, industrial heat",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Ambri",
+    "ticker": null,
+    "category": "Energy Storage",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 0.0,
+    "one_liner": "DEAD — Filed Chapter 11 May 2024, all assets in liquidation despite $222M raised and Bill Gates backing. A cautionary tale for energy storage.",
+    "thesis": "Ambri developed liquid metal battery technology for grid-scale energy storage, raising $222M in venture funding with backing from Bill Gates among other notable investors. The company had secured $1.7B in memoranda of understanding (MOUs), suggesting strong potential market demand for its technology. The liquid metal battery approach promised long-duration storage with minimal degradation.\n\nDespite these promising indicators, Ambri filed for Chapter 11 bankruptcy in May 2024 and executed a General Assignment on August 21, 2025. All assets are now in liquidation. The company could not bridge the critical gap from prototype to factory — the so-called \"valley of death\" that has claimed numerous energy storage startups. This failure occurred despite substantial funding, high-profile backers, and a large commercial pipeline.\n\nAmbri serves as the definitive cautionary tale for the energy storage sector. It demonstrates that strong technology, prominent backers, and large pipelines are insufficient without the ability to execute the transition from R&D to manufacturing at scale. Investors in the sector should study Ambri's failure when evaluating similar pre-commercial energy storage companies.",
+    "signals": {
+      "toy_phase": 0,
+      "working_code": 0,
+      "community": 0,
+      "dev_activity": 0,
+      "smart_money": 0,
+      "narrative": 0,
+      "hard_to_buy": 0,
+      "catalyst": 0
+    },
+    "catalysts": [
+      "None — company is defunct and all assets are in liquidation",
+      "Included as graveyard entry and cautionary reference for energy storage sector",
+      "Relevant as risk comparison for evaluating other pre-commercial storage companies"
+    ],
+    "risks": [
+      "DEAD — Filed Chapter 11 May 2024, General Assignment August 21, 2025, all assets in liquidation",
+      "Could not bridge from prototype to factory despite $222M raised and $1.7B in MOUs",
+      "Bill Gates backing and strong pipeline were insufficient to prevent failure"
+    ],
+    "citations": [
+      {
+        "claim": "Filed Chapter 11 May 2024, General Assignment August 21, 2025, all assets in liquidation, $222M raised, $1.7B in MOUs, Bill Gates backing",
+        "source": "Asymmetric Opportunity Atlas",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true
+  }
+]

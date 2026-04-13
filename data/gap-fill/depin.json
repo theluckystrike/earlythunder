@@ -1,0 +1,271 @@
+[
+  {
+    "name": "Grass Network",
+    "ticker": "$GRASS",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 72.3,
+    "one_liner": "Unused internet bandwidth marketplace for AI training data that scaled from 200K to 8.5M MAU in one year with ~20 paying AI lab clients.",
+    "thesis": "Grass Network represents the purest convergence of DePIN and AI — users share unused internet bandwidth that is aggregated and sold as training data to AI laboratories. The growth metrics are extraordinary: monthly active users scaled from 200K to 8.5M in approximately one year, representing 42.5x growth that few crypto projects have achieved at any point in history.\n\nThe revenue model is real and verifiable: approximately 20 AI lab clients are paying for bandwidth-sourced training data, and Polychain Capital led a $10M bridge round. This is not a speculative narrative — it is a functioning marketplace with paying enterprise customers at meaningful scale. The demand side is driven by AI labs' insatiable need for diverse, real-world web data to train large language models, and Grass provides this at lower cost than traditional web scraping services.\n\nWithin the broader DePIN landscape of 423 projects and $19.2B combined market cap, Grass stands out for its zero-hardware-cost model. Unlike Helium (hotspots), Hivemapper (dashcams), or other DePIN protocols that require physical device purchases, Grass only requires installing a browser extension. This dramatically lowers the barrier to participation and explains the explosive user growth — a user in any country with an internet connection can contribute and earn.\n\nThe World Economic Forum projects DePIN to reach $3.5T by 2028 across 41.8M connected devices. Grass's pure software model means it can scale faster than hardware-dependent DePINs, though it also faces lower switching costs — users can easily stop sharing bandwidth if incentives decrease.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 80,
+      "community": 85,
+      "dev_activity": 65,
+      "smart_money": 72,
+      "narrative": 80,
+      "hard_to_buy": 60,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "Enterprise AI lab client expansion beyond ~20 current paying customers",
+      "Token launch or expanded staking mechanics creating additional demand for GRASS",
+      "AI training data demand accelerating as LLM development intensifies globally"
+    ],
+    "risks": [
+      "Bandwidth sharing for AI training faces potential regulatory scrutiny around data provenance and consent",
+      "Low switching costs — users can easily migrate to competing bandwidth-sharing platforms",
+      "AI labs may develop alternative data sourcing methods that bypass decentralized bandwidth networks"
+    ],
+    "citations": [
+      {
+        "claim": "Grass scaled from 200K to 8.5M MAU, ~20 paying AI lab clients, $10M Polychain bridge",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "DePIN combined mcap ~$19.2B, 423 projects, 41.8M devices, WEF $3.5T by 2028",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Acurast",
+    "ticker": "$ACU",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 55.5,
+    "one_liner": "Smartphones repurposed as decentralized compute nodes earning $45-80/month per device with zero upfront hardware cost.",
+    "thesis": "Acurast represents the most inclusive DePIN model for emerging markets by repurposing idle smartphones as compute nodes. The economics are compelling: each device earns $45-80/month with zero upfront cost, compared to Helium's $250-500 hotspot investment or Hivemapper's $300+ dashcam. In emerging markets where monthly incomes may be $200-500, earning $45-80/month from an idle phone is a transformative income supplement.\n\nThe technical approach converts smartphones' already-powerful processors (modern phones have compute capabilities exceeding desktop computers from a decade ago) into nodes for a decentralized compute network. This taps into an enormous unused resource — there are billions of smartphones globally, most of which sit idle 90%+ of the time. The potential network scale dwarfs hardware-dependent DePINs.\n\nWithin the DePIN sector of 423 projects and $19.2B combined market cap, Acurast occupies the compute subcategory alongside larger competitors like Akash Network ($800M market cap) and io.net (~$200M). Acurast's smartphone-native approach differentiates it from GPU-focused competitors, though the compute capabilities of smartphones are limited compared to dedicated GPU clusters.\n\nThe key question is whether smartphone-grade compute is sufficient for the workloads that enterprises need. AI inference, data processing, and lightweight compute tasks can run on mobile processors, but training and heavy computation cannot. The addressable market may be limited to edge computing, content delivery, and light inference tasks.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 55,
+      "community": 50,
+      "dev_activity": 50,
+      "smart_money": 50,
+      "narrative": 75,
+      "hard_to_buy": 70,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Emerging market adoption where $45-80/month per device represents meaningful income",
+      "Smartphone compute becoming sufficient for edge AI inference workloads",
+      "DePIN sector growth drawing investor attention to differentiated hardware-free models"
+    ],
+    "risks": [
+      "Smartphone compute is limited — cannot compete with GPU clusters for AI training or heavy workloads",
+      "Battery drain and data usage on personal phones could reduce long-term node operator retention",
+      "Small market cap and limited exchange listings create liquidity risk"
+    ],
+    "citations": [
+      {
+        "claim": "Acurast repurposes idle smartphones as compute nodes, $45-80/month per device, zero upfront cost",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Most inclusive DePIN for emerging markets",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "DAWN",
+    "ticker": null,
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 52.5,
+    "one_liner": "Trustless last-mile wireless network with Proof-of-Bandwidth consensus delivering gigabit speeds at 70% lower cost than traditional telecom.",
+    "thesis": "DAWN is building a trustless last-mile wireless infrastructure network using a novel Proof-of-Bandwidth consensus mechanism. The value proposition is stark: gigabit-speed internet at 70% lower cost than traditional telecom providers. Last-mile connectivity is the most expensive and least competitive segment of the telecom stack, making it a compelling target for DePIN disruption.\n\nThe Proof-of-Bandwidth consensus is technically innovative — rather than proving compute work or storage capacity, DAWN nodes prove actual bandwidth delivery. This creates a verifiable quality-of-service guarantee that differentiates it from Helium's IoT/5G approach and other wireless DePINs that focus on coverage rather than throughput.\n\nThe DePIN sector context is favorable: 423 active projects with $19.2B combined market cap and 41.8M devices demonstrate growing infrastructure. The World Economic Forum's $3.5T projection by 2028 specifically highlights connectivity as a key growth area. DAWN's gigabit-speed target positions it for the bandwidth-intensive applications driving demand: video streaming, cloud gaming, remote work, and AI model deployment at the edge.\n\nAs a pre-token project, DAWN is not yet investable through public markets. The wireless DePIN subcategory has proven viable through Helium's network of nearly 1M hotspots, but last-mile broadband is significantly more complex than IoT connectivity. Regulatory requirements for wireless spectrum, local permitting, and interference management create barriers that pure software DePINs do not face.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 40,
+      "community": 40,
+      "dev_activity": 50,
+      "smart_money": 50,
+      "narrative": 80,
+      "hard_to_buy": 85,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "Token launch event creating liquidity and incentivizing network operator onboarding",
+      "Successful gigabit-speed demonstrations in pilot markets proving technical viability",
+      "Telecom cost pressure driving consumer demand for 70%-cheaper alternatives"
+    ],
+    "risks": [
+      "Pre-token with limited public metrics — high execution risk and uncertain timeline",
+      "Last-mile wireless requires spectrum access, local permitting, and hardware deployment at scale",
+      "Competing with well-capitalized telecom incumbents with established infrastructure and customer relationships"
+    ],
+    "citations": [
+      {
+        "claim": "DAWN building trustless last-mile wireless with Proof-of-Bandwidth, gigabit speeds 70% cheaper",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Hivemapper",
+    "ticker": "$HONEY",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 72.0,
+    "one_liner": "Decentralized Google Maps alternative via dashcam devices with Volkswagen's autonomous driving division as a paying customer.",
+    "thesis": "Hivemapper is building a decentralized mapping network where contributors earn HONEY tokens for collecting street-level imagery using dashcam 'Bee' devices. The project has achieved what many DePINs aspire to but few accomplish: a major enterprise customer. Volkswagen's ADMT (Autonomous Driving and Mobility Technologies) division is using Hivemapper maps for its 2026 driverless fleet, providing powerful validation of data quality and commercial viability.\n\nThe economic model has evolved significantly: $32M in funding (through Bee Maps), a shift to a $19/month subscription model that dramatically lowers barriers to entry, and a 75% burn-and-mint mechanism on data purchases that creates genuine deflationary pressure on HONEY supply. The burn-and-mint model aligns token value with actual data consumption — as more enterprises buy map data, more HONEY is burned.\n\nAt approximately $120M market cap, Hivemapper is valued at a fraction of the $3.2B+ TAM for HD mapping and autonomous vehicle navigation data. The autonomous vehicle industry alone is projected to require continuous, up-to-date map data at a scale that centralized mapping companies (Google, HERE Technologies, TomTom) may struggle to maintain cost-effectively. Hivemapper's decentralized contributor network can theoretically update maps faster and cheaper than traditional fleet-based approaches.\n\nThe HONEY token is not widely available on major centralized exchanges, which creates both a 'hard to buy' moat and a liquidity risk. The mapping industry is dominated by well-funded incumbents, and Hivemapper must continuously prove that crowdsourced dashcam data meets the precision requirements of autonomous driving applications.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 80,
+      "community": 65,
+      "dev_activity": 60,
+      "smart_money": 75,
+      "narrative": 85,
+      "hard_to_buy": 70,
+      "catalyst": 78
+    },
+    "catalysts": [
+      "Volkswagen ADMT adoption of Hivemapper maps for 2026 driverless fleet validates enterprise demand",
+      "$19/month subscription model dramatically expanding contributor network beyond dashcam purchasers",
+      "75% burn-and-mint on data purchases creating sustained deflationary pressure as enterprise usage grows"
+    ],
+    "risks": [
+      "Autonomous driving mapping requires extreme precision — crowdsourced data may not consistently meet standards",
+      "Google Maps, HERE Technologies, and TomTom have decades of data and institutional relationships",
+      "HONEY limited exchange availability creates liquidity risk for larger position sizes"
+    ],
+    "citations": [
+      {
+        "claim": "Hivemapper creating decentralized Google Maps via dashcam Bee devices",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "Volkswagen ADMT using Hivemapper maps for 2026 driverless fleet, $32M funding, $19/month subscription model, 75% burn-and-mint",
+        "source": "seed-opportunities.md",
+        "url": ""
+      },
+      {
+        "claim": "~$120M market cap, not widely available on major exchanges",
+        "source": "seed-opportunities.md",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Helium",
+    "ticker": "$HNT",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 72.5,
+    "one_liner": "The most proven DePIN network with nearly 1M hotspots in 192 countries and DC burns increasing 196.6% quarter-over-quarter.",
+    "thesis": "Helium is the reference standard for DePIN — a people-built wireless network with nearly 1 million hotspots deployed across 192 countries. While it has been operating longer than most DePIN projects (launched 2019), recent metrics show accelerating adoption: data credit burns increased 196.6% quarter-over-quarter, with Mobile driving 99.6% of burns. This demonstrates that the network is generating real economic activity, not just speculative token farming.\n\nThe mid-2026 HNT utility migration is a structural catalyst that consolidates all network fees into HNT and Data Credits, strengthening tokenomics by creating clearer demand for the native token. Helium Plus expansion enables Wi-Fi monetization without requiring new hardware purchases, lowering the barrier to entry and potentially onboarding millions of existing Wi-Fi router owners.\n\nAt ~$1.1B market cap, Helium is the largest established DePIN by network scale. The $50M grant initiative targeting high-traffic urban deployment shows continued investment in network expansion. Within the DePIN sector's $19.2B combined market cap and 423 projects, Helium's scale advantage (nearly 1M hotspots vs. thousands for most competitors) creates a network effect that is difficult to replicate.\n\nThe risk profile is lower than most DePIN projects but not zero: Helium has navigated multiple pivots (from IoT to 5G/Mobile), faced controversies about hotspot profitability, and operates in a competitive wireless market. The 'hard to buy' score is low because HNT is listed on major exchanges, which means the easy accessibility reduces the potential for a 'discovery premium' as the sector gains attention.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 90,
+      "community": 80,
+      "dev_activity": 65,
+      "smart_money": 70,
+      "narrative": 90,
+      "hard_to_buy": 35,
+      "catalyst": 78
+    },
+    "catalysts": [
+      "Mid-2026 HNT utility migration consolidating all fees into HNT/Data Credits",
+      "Helium Plus Wi-Fi monetization expanding network without new hardware requirements",
+      "$50M grant initiative targeting high-traffic urban deployment areas"
+    ],
+    "risks": [
+      "Already well-known and accessible — limited 'discovery premium' remaining",
+      "Hotspot profitability has been questioned — many operators report declining returns",
+      "Competing with established telecom operators and newer DePIN wireless projects"
+    ],
+    "citations": [
+      {
+        "claim": "Nearly 1M hotspots in 192 countries, DC burns increased 196.6% QoQ, Mobile driving 99.6% of burns",
+        "source": "seed-opportunities.md",
+        "url": ""
+      },
+      {
+        "claim": "~$1.1B market cap, $50M grant initiative for urban deployment",
+        "source": "seed-opportunities.md",
+        "url": ""
+      },
+      {
+        "claim": "Helium as established DePIN reference, DePIN combined mcap ~$19.2B, 423 projects, 41.8M devices",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Filecoin",
+    "ticker": "$FIL",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 67.5,
+    "one_liner": "The largest decentralized storage network with 25+ EiB of storage capacity and growing enterprise adoption as an AWS/GCP alternative.",
+    "thesis": "Filecoin is the foundational DePIN for decentralized storage, operating the largest decentralized storage network with over 25 exbibytes (EiB) of raw storage capacity contributed by thousands of storage providers globally. The network stores data for enterprise clients, academic institutions, and Web3 projects, generating real protocol revenue through storage deal fees and retrieval payments.\n\nAs one of the earliest and most established DePIN protocols (launched October 2020), Filecoin serves as a reference point for the entire sector. The protocol has evolved from pure storage to a broader compute platform through Filecoin Virtual Machine (FVM), enabling smart contracts and DeFi applications on top of the storage layer. This expansion from storage-only to a general-purpose decentralized cloud increases the addressable market significantly.\n\nWithin the DePIN sector's $19.2B combined market cap, Filecoin's FIL token remains one of the largest by market capitalization. The secular trend toward data sovereignty, combined with growing enterprise distrust of centralized cloud providers (post-AWS outages, data breaches, and regulatory concerns), provides a structural demand driver. The EU Data Governance Act and similar regulations creating data residency requirements are particularly favorable for decentralized storage solutions.\n\nThe primary risk is that Filecoin has been available and well-known for years without achieving the explosive growth that newer DePINs like Grass have shown. The token is down significantly from its ATH, and the storage market remains dominated by AWS S3, Google Cloud Storage, and Azure Blob Storage. Enterprise adoption of decentralized storage requires overcoming significant trust, performance, and integration barriers.",
+    "signals": {
+      "toy_phase": 45,
+      "working_code": 90,
+      "community": 75,
+      "dev_activity": 70,
+      "smart_money": 65,
+      "narrative": 80,
+      "hard_to_buy": 25,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "Filecoin Virtual Machine enabling DeFi and compute applications on the storage layer",
+      "EU Data Governance Act and data residency regulations driving demand for decentralized storage",
+      "Growing enterprise adoption as organizations diversify away from centralized cloud dependence"
+    ],
+    "risks": [
+      "Already well-known and widely available — minimal discovery premium or 'hard to buy' advantage",
+      "Centralized cloud providers (AWS, GCP, Azure) continue to dominate with superior performance and integration",
+      "Token significantly below ATH suggesting market has repriced the decentralized storage thesis downward"
+    ],
+    "citations": [
+      {
+        "claim": "Filecoin as established DePIN reference",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      },
+      {
+        "claim": "DePIN combined mcap ~$19.2B, 423 projects, 41.8M devices, WEF $3.5T by 2028",
+        "source": "1000x Opportunity Map",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  }
+]

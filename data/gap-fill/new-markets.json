@@ -1,0 +1,293 @@
+[
+  {
+    "name": "Time.fun",
+    "ticker": "$TIME",
+    "category": "New Market Structures",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 55.3,
+    "one_liner": "Brevan Howard + Coinbase Ventures-backed platform where creators tokenize their time into tradable minutes on Solana.",
+    "thesis": "Time.fun introduces a novel crypto primitive: the tokenization of human time. Creators can mint their time as tradeable 'Minutes' on Solana, allowing fans and speculators to buy, sell, and redeem access to creators' availability. The concept migrated from Base to Solana to take advantage of Solana's lower fees and faster transactions, and the $TIME token currently sits at approximately $96M market cap with $3M raised from Brevan Howard Digital and Coinbase Ventures.\n\nThe investor quality is notable for a project at this stage. Brevan Howard Digital is one of the most sophisticated institutional crypto investors, and Coinbase Ventures provides both credibility and potential distribution through the Coinbase ecosystem. The $3M raise is modest, suggesting the team is focused on product-market fit rather than fundraising theater. The migration from Base to Solana demonstrates willingness to make pragmatic technical decisions.\n\nThe TAM argument is compelling in theory: every professional sells their time, and the global market for professional services exceeds $5 trillion annually. If even a fraction of time-based transactions moved to tokenized markets, the opportunity is enormous. However, the current reality is that time.fun's user base is limited to crypto-native influencers and creators, which severely constrains near-term growth. The model remains unproven beyond its crypto-native audience.\n\nThe fundamental question is whether time tokenization is a genuine paradigm shift in how attention and expertise are valued, or a crypto-native novelty that never achieves mainstream adoption. The 'toy phase' signal is strong — the concept sounds absurd to traditional markets — which historically has been a positive indicator for paradigm-shifting technologies. But many 'toy phase' projects never graduate beyond that phase.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 60,
+      "community": 30,
+      "dev_activity": 40,
+      "smart_money": 70,
+      "narrative": 80,
+      "hard_to_buy": 50,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "Expansion beyond crypto-native influencers to mainstream professionals would dramatically expand TAM",
+      "Solana ecosystem growth and potential CEX listings could drive token discovery",
+      "Integration with scheduling/calendar platforms could bridge crypto-native tool to mainstream use"
+    ],
+    "risks": [
+      "Model unproven beyond crypto-native audience — may never achieve mainstream adoption",
+      "~$96M market cap may already price in speculative premium for an early-stage concept",
+      "Time tokenization faces regulatory uncertainty around whether 'Minutes' constitute securities"
+    ],
+    "citations": [
+      {"claim": "$3M raised from Brevan Howard Digital and Coinbase Ventures; ~$96M market cap", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "Migrated from Base to Solana; creators tokenize time into tradable Minutes", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Opulous",
+    "ticker": "$OPUL",
+    "category": "New Market Structures",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 42.3,
+    "one_liner": "Lowest market cap liquid music royalty token offering DeFi loans backed by music royalties on Algorand.",
+    "thesis": "Opulous occupies a unique niche at the intersection of music industry IP and DeFi. The protocol offers loans backed by music royalties, creating a novel financial primitive that connects the $30 billion+ annual global music industry to on-chain capital markets. The $OPUL token trades in the $0.06-0.18 range, making it the lowest market cap liquid token in the music royalty tokenization category — a sector where the gap between total addressable market and current tokenized assets is 600-3,000x.\n\nThe live product with functioning royalty-backed loans demonstrates genuine product-market fit at small scale. Unlike many DeFi protocols that rely on token emissions for yield, Opulous generates real economic activity by connecting music IP holders with capital providers. This creates a more sustainable economic model than pure speculation, though the absolute scale remains tiny relative to both the music industry and the broader DeFi ecosystem.\n\nThe Algorand ecosystem positioning is both a differentiator and a limitation. Algorand provides low fees and fast finality suitable for royalty micropayments, but the chain's limited DeFi activity and smaller developer community restrict Opulous's ability to integrate with broader DeFi infrastructure. Cross-chain expansion or integration with larger ecosystems would significantly improve the protocol's addressable market.\n\nThe core risk is that music royalty tokenization may remain a niche forever. The music industry is notoriously slow to adopt new technologies, and the legal complexity of royalty ownership across jurisdictions creates significant regulatory overhead. Without a breakout use case or major label partnership, Opulous risks staying permanently small.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 65,
+      "community": 25,
+      "dev_activity": 30,
+      "smart_money": 20,
+      "narrative": 70,
+      "hard_to_buy": 60,
+      "catalyst": 30
+    },
+    "catalysts": [
+      "Music industry generates $30B+ annually vs ~$10-50M tokenized — 600-3,000x gap if market develops",
+      "Major label or distributor partnership would validate royalty tokenization model",
+      "Cross-chain expansion beyond Algorand to Ethereum or Solana would increase DeFi composability"
+    ],
+    "risks": [
+      "Tiny market cap with low liquidity — potential for severe price impact on any significant trade",
+      "Algorand ecosystem has limited DeFi activity, constraining composability and integration",
+      "Music industry adoption of tokenization is unproven at scale — legal and regulatory complexity is high"
+    ],
+    "citations": [
+      {"claim": "Lowest market cap liquid token ($0.06-0.18) with DeFi loans backed by music royalties on Algorand", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "Global music industry generates $30B+ annually; tokenized music royalties total ~$10-50M", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Bolero",
+    "ticker": null,
+    "category": "New Market Structures",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 33.3,
+    "one_liner": "Broadest IP approach to music tokenization on Polygon, covering master recordings rather than just streaming royalties.",
+    "thesis": "Bolero differentiates itself in the music tokenization space by taking the broadest possible approach to intellectual property. While competitors like Royal.io focus on streaming royalties and Opulous on royalty-backed DeFi loans, Bolero tokenizes master recordings themselves on Polygon. This gives token holders exposure to the full economic value of a recording — including sync licensing, physical sales, and streaming — rather than a single revenue stream.\n\nThe master recording approach is more ambitious but also more complex. Master recordings are the most valuable music IP assets, historically controlled by major labels and rarely made available to retail investors. By tokenizing masters rather than derivative rights, Bolero attempts to democratize access to the most coveted tier of music industry assets. The Polygon blockchain provides low transaction costs suitable for fractional ownership of these assets.\n\nHowever, the project remains pre-token with limited public data on traction, team size, or specific partnerships. The music tokenization sector as a whole has failed to achieve mainstream adoption despite several years of experimentation by multiple platforms. The total tokenized music royalty market remains somewhere between $10-50M — a rounding error in the $30B+ annual music industry.\n\nThe investment thesis depends entirely on the sector achieving escape velocity. If music tokenization becomes a standard way for artists to raise capital and fans to invest in music, Bolero's master recording approach positions it at the highest-value segment. But this is a long-term bet with significant execution uncertainty and no near-term catalysts visible.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 45,
+      "community": 15,
+      "dev_activity": 20,
+      "smart_money": 10,
+      "narrative": 60,
+      "hard_to_buy": 80,
+      "catalyst": 20
+    },
+    "catalysts": [
+      "Token launch would create direct investment exposure and price discovery",
+      "Major artist partnership tokenizing master recordings would validate the model",
+      "Music industry IP monetization trends shifting toward direct-to-fan models"
+    ],
+    "risks": [
+      "Pre-token with minimal public data — team size, traction, and partnerships largely unknown",
+      "Music tokenization sector has failed to achieve mainstream adoption despite years of experimentation",
+      "Master recording tokenization faces complex legal requirements across jurisdictions"
+    ],
+    "citations": [
+      {"claim": "Broadest IP approach on Polygon covering master recordings, not just streaming", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "Music tokenization total market ~$10-50M vs $30B+ annual music industry", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Royal.io",
+    "ticker": null,
+    "category": "New Market Structures",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 41.0,
+    "one_liner": "Music royalty trading platform with $7.5M total volume and $156K in actual royalties paid out to token holders.",
+    "thesis": "Royal.io stands out in the music royalty tokenization space for one critical reason: it has actually paid royalties to token holders. With $156K in royalties distributed and $7.5M in total trading volume, Royal.io has demonstrated the complete lifecycle of music royalty tokenization — from initial offering to secondary trading to actual royalty distribution. This end-to-end execution is rare in a sector full of promises but short on delivery.\n\nThe platform allows users to purchase fractional ownership of music royalties, creating a new asset class that provides exposure to the economics of individual songs or catalogs. The $7.5M in cumulative trading volume indicates genuine market demand, though the absolute scale remains small. New products are reportedly in development, which could expand the platform's capabilities and attract a broader user base.\n\nThe lack of a token is both a risk and an opportunity. Without a native token, there is no direct way to invest in Royal.io's platform growth — users can only buy individual song royalty tokens. However, a future token launch or equity raise could provide broader exposure to the platform's success. The company's focus on building a real product rather than launching a speculative token is arguably a positive signal in a sector plagued by vaporware.\n\nThe primary limitation is scale. $7.5M in total trading volume and $156K in royalties paid are meaningful proofs of concept but tiny relative to the opportunity. Music royalty tokenization needs a breakout moment — perhaps a major label partnership or a viral artist drop — to transition from niche experiment to mainstream financial product.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 70,
+      "community": 20,
+      "dev_activity": 30,
+      "smart_money": 15,
+      "narrative": 65,
+      "hard_to_buy": 75,
+      "catalyst": 25
+    },
+    "catalysts": [
+      "New products in development could expand platform capabilities and user base",
+      "Potential token launch would create direct platform-level investment exposure",
+      "Major artist or label partnership would provide mainstream validation and volume growth"
+    ],
+    "risks": [
+      "No native token — limited direct investment mechanism for platform growth",
+      "Very small total trading volume ($7.5M cumulative) — market is nascent",
+      "Music royalty legal complexity and jurisdiction-specific regulations create scaling barriers"
+    ],
+    "citations": [
+      {"claim": "$7.5M total trading volume and $156K in royalties paid out", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "New products in development", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Zora Attention Markets",
+    "ticker": "$ZORA",
+    "category": "New Market Structures",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 51.0,
+    "one_liner": "Attention Markets launched February 2026 on Solana where users trade tokens tied to viral memes, hashtags, and cultural trends.",
+    "thesis": "Zora's Attention Markets represent perhaps the most experimental new market structure in crypto: the ability to trade tokens tied to cultural phenomena — viral memes, hashtags, and trending topics. Launched on Solana in February 2026, this product extends Zora's evolution from an NFT platform into a broader attention economy protocol. The $ZORA token provides the earliest-stage pure exposure to the attention market thesis.\n\nThe concept sits squarely in the 'toy phase' — trading tokens tied to memes and cultural trends sounds absurd to most serious investors. This is precisely the signal that historical pattern analysis suggests is most bullish for paradigm-shifting opportunities. Every previous crypto explosion (Bitcoin, NFTs, DeFi) was initially dismissed as trivially stupid before becoming enormously valuable. Whether attention markets follow this path or remain a novelty is the central question.\n\nZora has built credibility through its NFT-era infrastructure and creator community, which provides a foundation of users who understand digital cultural assets. The Solana launch provides low-cost, high-speed transactions suitable for the rapid trading that attention markets require. The attention economy thesis is backed by the reality that human attention is increasingly the scarcest and most valuable resource in the digital economy.\n\nThe risks are substantial. Attention markets are inherently speculative and may face regulatory scrutiny as a form of event or prediction trading. The lack of specific backer data for the attention markets product (as opposed to Zora's broader NFT business) suggests this is an experimental extension rather than a heavily capitalized new venture. The February 2026 launch means the product is only months old with no established track record.",
+    "signals": {
+      "toy_phase": 85,
+      "working_code": 55,
+      "community": 35,
+      "dev_activity": 40,
+      "smart_money": 30,
+      "narrative": 75,
+      "hard_to_buy": 55,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "Attention economy thesis gaining traction as cultural capital becomes quantifiable on-chain",
+      "Solana ecosystem growth and meme culture creating natural user acquisition funnel",
+      "Zora's existing NFT creator community provides initial adoption base for attention market products"
+    ],
+    "risks": [
+      "Highly speculative attention economy model with no proven sustainable business model",
+      "Regulatory risk — trading tokens tied to cultural trends may face securities or gambling classification",
+      "Product launched February 2026 — only months of track record with no established performance data"
+    ],
+    "citations": [
+      {"claim": "Zora launched Attention Markets on Solana in February 2026; $ZORA is earliest-stage pure attention market play", "source": "1000x Opportunity Map", "url": ""},
+      {"claim": "Users trade tokens tied to viral memes, hashtags, and cultural trends", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Farcaster",
+    "ticker": null,
+    "category": "New Market Structures",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 43.5,
+    "one_liner": "Decentralized social protocol acquired by Neynar for $180M refund — no official token coming, but $DEGEN community token provides ecosystem exposure.",
+    "thesis": "Farcaster was one of the most anticipated airdrop opportunities in crypto, having raised $180M in VC funding and built a decentralized social protocol with 40-60K daily active users. However, in January 2026, Neynar acquired the Farcaster protocol, and Merkle Manufactory announced it would repay the $180M in VC funding. Dan Romero stated explicitly: 'I had wanted to issue a token for Farcaster, but the right timing never came.' No official token exists and no airdrop is coming.\n\nThis fundamental shift in the Farcaster narrative changes the investment thesis entirely. The protocol's genuine Power Badge daily active users were only approximately 4,360, far below the headline 40-60K DAU figures. Lifetime protocol revenue reached $2.8M — meaningful for a decentralized social protocol but modest in absolute terms. The Neynar acquisition suggests the founders concluded that the protocol's value was better captured through a corporate acquisition than through tokenization.\n\nThe $DEGEN community token, created organically by the Farcaster community rather than the protocol team, provides the only token-based exposure to the Farcaster ecosystem. However, $DEGEN is community-created and has no official backing from the protocol or Neynar. Its value is entirely dependent on the continued engagement of the Farcaster community, which faces headwinds from the loss of token-incentive expectations.\n\nFarcaster remains a technically impressive decentralized social protocol, but the investment thesis has been fundamentally damaged by the acquisition and token cancellation. The builder community on Warpcast retains value as an information source and networking tool, but the financial upside that drove much of the user acquisition is gone.",
+    "signals": {
+      "toy_phase": 40,
+      "working_code": 70,
+      "community": 65,
+      "dev_activity": 50,
+      "smart_money": 20,
+      "narrative": 55,
+      "hard_to_buy": 45,
+      "catalyst": 10
+    },
+    "catalysts": [
+      "Neynar could potentially launch a Neynar-specific token, though no indication this is planned",
+      "$DEGEN community token could see renewed interest if Farcaster user engagement stabilizes",
+      "Decentralized social protocol thesis could be validated by competing projects, lifting ecosystem sentiment"
+    ],
+    "risks": [
+      "No official Farcaster token — airdrop thesis is dead after Neynar acquisition and $180M VC refund",
+      "Genuine Power Badge DAU was only ~4,360 vs headline 40-60K DAU — engagement may be overstated",
+      "$DEGEN is community-created with no protocol backing — value is entirely speculative and community-dependent"
+    ],
+    "citations": [
+      {"claim": "Neynar acquired Farcaster January 2026; Merkle Manufactory repaying $180M VC; Dan Romero confirmed no token", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "40-60K DAU headline but Power Badge genuine DAU only ~4,360; $2.8M lifetime protocol revenue", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "$DEGEN community token provides ecosystem exposure; pre-token despite $180M raised", "source": "1000x Opportunity Map", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Worldcoin / World",
+    "ticker": "$WLD",
+    "category": "New Market Structures",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 64.3,
+    "one_liner": "Biometric identity protocol with 26M+ World App users and 15M+ verified, facing -97% drawdown but with EU eIDAS 2.0 catalyst in June 2026.",
+    "thesis": "Worldcoin (rebranded to World) has achieved remarkable user adoption despite intense controversy: 26M+ World App users with 15M+ biometrically verified through Orb scanning. The WLD token trades at approximately $0.28, down 97% from its all-time high, creating a severely beaten-down entry point for a protocol with genuine mass adoption metrics. The user count is not speculative — it represents real people who have scanned their irises to receive a World ID.\n\nThe most significant near-term catalyst is the EU eIDAS 2.0 enforcement beginning June 2026, which requires all EU member states to provide digital identity wallets. Legal acceptance of digital identity becomes mandatory from 2027. This regulatory mandate creates structural demand for digital identity infrastructure, and World's existing 26M+ user base and biometric verification system positions it as a potential solution provider. Whether World can capitalize on this regulatory tailwind or faces its own regulatory challenges in the EU remains uncertain.\n\nA second major catalyst is the 43% reduction in daily token unlock rate starting July 24, 2026. The persistent supply pressure from token unlocks has been a significant headwind for WLD price action. The unlock rate cut directly addresses the most cited bear case — dilution — and could serve as a technical catalyst for price recovery if demand remains stable.\n\nThe risks are substantial. WLD has experienced a 97% drawdown, and continued unlocks through 2029+ create persistent selling pressure even at the reduced rate. Privacy concerns around biometric data collection have led to regulatory bans in multiple jurisdictions. The project's association with Sam Altman (co-founder) creates both brand recognition and concentration risk. The fundamental question is whether 'proof of personhood' becomes essential infrastructure in the AI age or remains a controversial experiment.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 85,
+      "community": 40,
+      "dev_activity": 60,
+      "smart_money": 65,
+      "narrative": 70,
+      "hard_to_buy": 15,
+      "catalyst": 85
+    },
+    "catalysts": [
+      "EU eIDAS 2.0 enforcement begins June 2026 — member states must provide digital identity wallets",
+      "Daily token unlock rate cut 43% starting July 24, 2026 reduces supply pressure",
+      "26M+ users provides massive distribution advantage if proof-of-personhood becomes standard"
+    ],
+    "risks": [
+      "Down 97% from ATH with continued token unlocks creating persistent selling pressure through 2029+",
+      "Biometric data collection faces regulatory bans in multiple jurisdictions and privacy backlash",
+      "Sam Altman co-founder association creates concentration risk and potential conflict of interest with OpenAI priorities"
+    ],
+    "citations": [
+      {"claim": "26M+ World App users, 15M+ verified; WLD at $0.28 (-97% from ATH)", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "Daily unlock rate cut 43% starting July 24, 2026", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "EU eIDAS 2.0 enforcement begins June 2026; legal acceptance mandatory from 2027", "source": "Asymmetric Opportunity Atlas", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Story Protocol",
+    "ticker": "$IP",
+    "category": "New Market Structures",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 30.5,
+    "one_liner": "a16z-backed L1 for IP tokenization at $500M market cap, but generating less than $100 daily on-chain revenue while C2PA captures the content provenance market.",
+    "thesis": "Story Protocol launched as an ambitious a16z-backed Layer 1 blockchain purpose-built for intellectual property management and tokenization. The $IP token trades at approximately $0.495 with a market cap of ~$500M, representing a catastrophic 96.7% decline from its all-time high of $14.89. Despite the prestigious backing, the protocol has failed to generate meaningful on-chain activity, with DeFiLlama reporting less than $100 in daily on-chain revenue — an extraordinarily low figure for a $500M market cap asset.\n\nThe fundamental problem facing Story Protocol is competitive displacement by C2PA (Coalition for Content Provenance and Authenticity), a non-blockchain standard that has achieved 6,000+ members and hardware-level adoption from Leica, Sony, Samsung, and Google Pixel cameras. C2PA is becoming the dominant standard for content provenance without requiring blockchain infrastructure, directly undermining Story Protocol's core value proposition. When the non-crypto solution is winning adoption at this pace, the on-chain alternative faces an uphill battle.\n\nInternal challenges compound the external competitive threat. A co-founder departed in August 2025, and the company executed a 10% staff reduction in March 2026. These signals typically indicate either strategic pivoting or distress, neither of which supports the bull case for a protocol that needs aggressive growth to justify its valuation. The token unlock was delayed to August 2026, which could create additional selling pressure when it occurs.\n\nThe only remaining bull case is that on-chain IP tokenization provides capabilities (programmable royalties, permissionless licensing, global settlement) that C2PA cannot. If the creative economy evolves to require these features, Story Protocol's early infrastructure could become valuable. But the current metrics suggest the market has voted against this thesis, at least for now.",
+    "signals": {
+      "toy_phase": 30,
+      "working_code": 35,
+      "community": 25,
+      "dev_activity": 20,
+      "smart_money": 50,
+      "narrative": 55,
+      "hard_to_buy": 20,
+      "catalyst": 15
+    },
+    "catalysts": [
+      "Token unlock delayed to August 2026 — could create short-term volatility and potential entry points",
+      "On-chain IP licensing provides programmable capabilities C2PA cannot match if creative economy demands it",
+      "a16z backing provides potential for strategic pivots and continued funding if thesis evolves"
+    ],
+    "risks": [
+      "Less than $100 daily on-chain revenue despite $500M market cap — near-zero product-market fit",
+      "C2PA (non-blockchain) has 6,000+ members with hardware adoption from Leica, Sony, Samsung, Google — becoming dominant standard",
+      "Co-founder departure (Aug 2025) and 10% staff cut (Mar 2026) signal organizational distress"
+    ],
+    "citations": [
+      {"claim": "$IP at ~$0.495, market cap ~$500M, down 96.7% from ATH ($14.89); less than $100 daily on-chain revenue", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "C2PA has 6,000+ members with hardware adoption from Leica, Sony, Samsung, Google Pixel", "source": "Asymmetric Opportunity Atlas", "url": ""},
+      {"claim": "Co-founder departed August 2025; 10% staff cut March 2026; token unlock delayed to August 2026", "source": "Asymmetric Opportunity Atlas", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  }
+]

@@ -1,0 +1,853 @@
+[
+  {
+    "name": "NEAR Protocol",
+    "ticker": "$NEAR",
+    "category": "AI x Crypto",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 69.8,
+    "one_liner": "L1 blockchain pivoting to AI cloud, chain abstraction, and verifiable inference.",
+    "thesis": "NEAR Protocol has made a decisive strategic pivot from being a general-purpose Layer 1 blockchain to positioning itself as the AI Cloud for Web3. The technical milestones are impressive: 1M TPS achieved in testing, and the AI Cloud + Private Chat product reached 100M users through a Brave browser integration. These are not theoretical benchmarks but real-world deployment metrics that demonstrate NEAR's infrastructure can handle enterprise-scale AI workloads.\n\nThe 2026 roadmap centers on two critical innovations: Intents (cross-chain execution without bridging) and confidential AI computing. The Intents architecture is a genuine differentiator that could make NEAR the default execution layer for multi-chain AI operations. Shade Agents and Proof of Response are novel primitives that enable verifiable AI interactions on-chain, addressing the critical trust problem in decentralized AI.\n\nHowever, NEAR's primary weakness is that it is already well-known and widely accessible on major exchanges, which reduces the 'hard to buy' contrarian edge. The AI narrative is shared with numerous other chains (Solana, Ethereum, etc.), so NEAR must demonstrate that its AI-specific tooling creates meaningful differentiation. The chain abstraction thesis is sound, but execution against well-funded competitors remains the key risk.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 85,
+      "community": 70,
+      "dev_activity": 75,
+      "smart_money": 72,
+      "narrative": 65,
+      "hard_to_buy": 35,
+      "catalyst": 75
+    },
+    "catalysts": [
+      "AI Cloud + Intents architecture rollout enabling cross-chain AI execution",
+      "Brave browser integration driving 100M user reach for Private Chat",
+      "Confidential AI computing launch enabling enterprise-grade privacy"
+    ],
+    "risks": [
+      "Already well-known with low hard-to-buy edge, limiting contrarian upside",
+      "AI narrative shared with many competing L1/L2 chains diluting differentiation",
+      "Chain abstraction execution risk against better-funded competitors like Ethereum L2s"
+    ],
+    "citations": [
+      {"claim": "1M TPS achieved in testing", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "AI Cloud + Private Chat reached 100M users via Brave", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $3.5B", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Ritual",
+    "ticker": null,
+    "category": "AI x Crypto",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 67.4,
+    "one_liner": "Infrastructure enabling any smart contract to call verifiable AI models on-chain.",
+    "thesis": "Ritual occupies one of the most critical niches in the AI x Crypto intersection: verifiable AI inference for smart contracts. Through its Infernet product, any EVM-compatible smart contract can call AI models and receive cryptographically verifiable outputs. This is not a theoretical capability -- Infernet is already live across multiple EVM chains, demonstrating real working code in production environments.\n\nThe $25M Series A from top-tier venture capital firms validates strong smart money conviction. Ritual Chain testnet is invite-only, indicating a controlled, methodical rollout rather than a premature launch. The high 'hard to buy' score (85) is notable: there is no public token yet, meaning the only way to gain exposure is through the testnet or private investment rounds. This creates a genuine adoption moat and positions early participants favorably for a potential token launch.\n\nThe primary risk is that the mainnet timeline remains unclear, and competitors in the ZKML space (EZKL, Giza) are building parallel solutions. If Ritual's token launches in 2026, it becomes one of the highest-impact catalysts in the AI x Crypto sector. The verifiable AI inference primitive could become as essential to DeFi as oracles are today, making this an infrastructure-layer bet with outsized upside if the timing aligns.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 60,
+      "community": 55,
+      "dev_activity": 68,
+      "smart_money": 80,
+      "narrative": 80,
+      "hard_to_buy": 85,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "Potential token launch in 2026 as highest-impact catalyst",
+      "Ritual Chain mainnet deployment from current invite-only testnet",
+      "Growing Infernet adoption across EVM chains for verifiable AI inference"
+    ],
+    "risks": [
+      "Mainnet timeline unclear with no confirmed launch date",
+      "Competition from EZKL and Giza building parallel ZKML solutions",
+      "Pre-token stage means no public market liquidity and high entry barriers"
+    ],
+    "citations": [
+      {"claim": "$25M Series A from top-tier VCs", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Infernet live across EVM chains", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Ritual Chain testnet is invite-only", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "DIMO",
+    "ticker": "$DIMO",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 63.8,
+    "one_liner": "Vehicle data platform connecting 425K+ cars across 50+ automakers.",
+    "thesis": "DIMO has built one of the most tangible DePIN use cases: a decentralized vehicle data platform that connects over 425,000 cars from 50+ automakers. Unlike many DePIN projects that remain theoretical, DIMO has real hardware deployed in vehicles, real data flowing, and 300+ third-party applications built on top of the data layer. Japan expansion and Revolut listing demonstrate international growth ambition beyond the typical crypto-native audience.\n\nThe forward-looking technology roadmap includes ZK-proof integration for vehicle data privacy, which addresses a critical enterprise concern. If automakers and insurance companies can access aggregated vehicle data without exposing individual driver information, the value proposition expands dramatically beyond the current crypto user base.\n\nHowever, the November 2025 bridge exploit that resulted in a $30M loss significantly damaged trust and represents a material setback. The recovery trajectory from this exploit is uncertain, and the question of whether active vehicle connections can be maintained above 250K post-exploit remains unanswered. Smart contract security risk is now a primary concern for the project. The market cap of approximately $80M reflects this uncertainty, but also creates potential value if the team successfully rebuilds trust and resumes growth.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 75,
+      "community": 60,
+      "dev_activity": 60,
+      "smart_money": 65,
+      "narrative": 80,
+      "hard_to_buy": 55,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "ZK-proof integration for GDPR/HIPAA-compliant vehicle data privacy",
+      "Japan market expansion broadening international adoption",
+      "Recovery trajectory from bridge exploit rebuilding institutional confidence"
+    ],
+    "risks": [
+      "November 2025 bridge exploit caused $30M loss, severely damaging trust",
+      "Uncertain whether active vehicle connections remain above 250K post-exploit",
+      "Smart contract security now a primary concern requiring costly remediation"
+    ],
+    "citations": [
+      {"claim": "425K+ connected vehicles across 50+ automakers", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "November 2025 bridge exploit resulted in $30M loss", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $80M", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Geodnet",
+    "ticker": "$GEOD",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 69.7,
+    "one_liner": "Decentralized RTK positioning network for centimeter-level GPS accuracy.",
+    "thesis": "Geodnet addresses a massive real-world infrastructure gap: precision GPS positioning. The Real-Time Kinematic (RTK) positioning market is valued at $3.4B and serves critical industries including autonomous vehicles, precision agriculture, construction, and land surveying. Geodnet's decentralized network of base stations provides centimeter-level accuracy, dramatically improving on standard GPS which is only accurate to several meters.\n\nThe most significant validation came from VanEck, which published a bullish thesis on Geodnet -- extremely rare institutional attention for a sub-$200M DePIN project. This institutional endorsement, combined with a tokenomics model where 80% of data revenue goes to buyback-and-burn, creates strong deflationary pressure as adoption grows. With 16,500+ token holders and growing multi-continent deployment, the network effect is building.\n\nThe 'hard to buy' score of 75 is notable: GEOD is not widely available on major exchanges, creating a genuine accumulation opportunity before broader accessibility. The key risk is that Geodnet remains relatively unknown with a small community, and competing centralized RTK services from established companies like Trimble and u-blox have deeper enterprise relationships. However, the combination of DePIN economics, institutional attention, and a clearly defined multi-billion-dollar TAM makes this one of the more compelling risk-reward profiles in the DePIN category.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 75,
+      "community": 60,
+      "dev_activity": 55,
+      "smart_money": 78,
+      "narrative": 85,
+      "hard_to_buy": 75,
+      "catalyst": 68
+    },
+    "catalysts": [
+      "VanEck published bullish institutional thesis on Geodnet",
+      "80% of data revenue directed to buyback-and-burn creating deflation",
+      "Autonomous vehicle and precision agriculture adoption expanding TAM"
+    ],
+    "risks": [
+      "Relatively unknown with small community limiting network effects",
+      "Competition from established centralized RTK providers like Trimble",
+      "Limited exchange availability creates liquidity risk for larger positions"
+    ],
+    "citations": [
+      {"claim": "VanEck published bullish thesis on Geodnet", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "$3.4B RTK market TAM", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "16,500+ token holders with multi-continent deployment", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "io.net",
+    "ticker": "$IO",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 60.3,
+    "one_liner": "Decentralized GPU cloud on Solana aggregating idle compute for AI workloads.",
+    "thesis": "io.net has established itself as a Solana-native decentralized GPU cloud, aggregating idle compute resources from 130+ countries to serve AI inference and training workloads at costs approximately 70% lower than AWS and GCP. The $20M+ in compute leases since June 2025 demonstrates genuine market demand, not just speculative token activity.\n\nThe Q2 2026 launch of the dynamic IDE token model represents a significant tokenomics innovation: emissions will be directly tied to actual GPU utilization rather than fixed schedules. This creates a self-regulating economic model where token inflation only occurs when the network is actively serving compute demand. If executed well, this could address one of the core criticisms of DePIN projects -- unsustainable emission subsidies.\n\nHowever, io.net operates in an increasingly crowded field. It competes directly with Render Network and Akash Network for the same decentralized compute market, and the market has not yet clearly differentiated winners among these three. The tokenomics redesign, while promising, introduces execution risk during the transition. At a $200M market cap, io.net is priced for the possibility that multiple decentralized compute platforms can coexist, but if the market consolidates around one or two winners, latecomers may struggle.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 65,
+      "community": 50,
+      "dev_activity": 55,
+      "smart_money": 65,
+      "narrative": 80,
+      "hard_to_buy": 45,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "Dynamic IDE token model launch Q2 2026 tying emissions to GPU utilization",
+      "$20M+ in compute leases demonstrating real demand growth",
+      "Network spanning 130+ countries with 70% cost savings vs centralized cloud"
+    ],
+    "risks": [
+      "Direct competition with Render and Akash for decentralized compute market",
+      "Tokenomics redesign introduces transition execution risk",
+      "Market has not differentiated winners among competing GPU cloud protocols"
+    ],
+    "citations": [
+      {"claim": "$20M+ in compute leases since June", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Network spans 130+ countries with 70% cost savings vs AWS/GCP", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $200M", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Aztec Network",
+    "ticker": null,
+    "category": "ZK/Privacy",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 74.0,
+    "one_liner": "Privacy-first L2 zkRollup on Ethereum with encrypted smart contract execution.",
+    "thesis": "Aztec Network is building what can be described as 'encrypted Ethereum' -- a Layer 2 zkRollup that enables private smart contracts where amounts, identities, and contract states are all hidden. This is not incremental privacy improvement but a fundamental architectural shift: the ability to execute fully confidential DeFi transactions, private voting, and shielded token transfers on Ethereum's security layer.\n\nThe project has attracted $119M+ in funding with backing from Vitalik Buterin himself, lending extraordinary credibility. Mainnet Alpha is scheduled for H1 2026, making it the highest-impact catalyst in the entire ZK privacy sector. Noir, Aztec's custom programming language for writing private smart contracts, has growing developer adoption and represents a genuine moat -- developers who learn Noir become embedded in the Aztec ecosystem.\n\nThe 'hard to buy' score of 85 is one of the highest in the seed list: there is no public token, meaning exposure requires either venture participation or waiting for a token launch. The March 2026 v5 release addressing a critical proving system vulnerability demonstrates active security management but also underscores that the technology is still maturing. Privacy protocols face persistent regulatory headwinds globally, and Aztec must navigate the tension between enabling legitimate financial privacy and potential misuse.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 70,
+      "community": 70,
+      "dev_activity": 75,
+      "smart_money": 82,
+      "narrative": 85,
+      "hard_to_buy": 85,
+      "catalyst": 80
+    },
+    "catalysts": [
+      "Mainnet Alpha launch scheduled H1 2026 -- highest-impact ZK privacy catalyst",
+      "Noir programming language gaining developer adoption creating ecosystem moat",
+      "v5 release (July 2026) addressing critical proving system vulnerability"
+    ],
+    "risks": [
+      "Privacy protocols face persistent global regulatory headwinds",
+      "March 2026 vulnerability discovery raises concerns about technology maturity",
+      "No public token means exposure is limited to venture or waiting for TGE"
+    ],
+    "citations": [
+      {"claim": "$119M+ raised with Vitalik backing", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Mainnet Alpha scheduled for H1 2026", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "v5 release addressing critical proving system vulnerability", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Aleo",
+    "ticker": "$ALEO",
+    "category": "ZK/Privacy",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 59.0,
+    "one_liner": "Privacy-by-default L1 blockchain using zero-knowledge proofs for all transactions.",
+    "thesis": "Aleo represents the fully privacy-native Layer 1 approach: unlike privacy features bolted onto existing chains, every Aleo transaction uses zkSNARK proofs by default. The mainnet launched in September 2024 with 350+ pre-deployed applications, and the underlying cryptographic technology is proven and sound.\n\nHowever, the post-launch trajectory has been disappointing relative to the massive $228M raised during the development phase. Developer activity has not surged as anticipated, and the ecosystem growth has been underwhelming compared to the capital deployed. The privacy L1 thesis faces structural headwinds: regulators globally are increasing scrutiny on privacy-preserving protocols, and the tension between compliance requirements and default privacy remains unresolved.\n\nAt approximately $300M market cap, Aleo is priced for significant uncertainty. The token is accessible on major exchanges (low 'hard to buy' score of 45), which removes one potential contrarian edge. No major near-term catalysts have been identified beyond continued ecosystem development. The investment thesis here is primarily a bet on the long-term necessity of programmable privacy infrastructure, with the understanding that timing is uncertain and competition from Aztec, Penumbra, and Namada creates fragmentation risk in an already small market.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 70,
+      "community": 60,
+      "dev_activity": 55,
+      "smart_money": 60,
+      "narrative": 75,
+      "hard_to_buy": 45,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "350+ pre-deployed applications creating baseline ecosystem density",
+      "Continued zkSNARK technology maturation improving performance",
+      "Potential regulatory clarity on privacy-preserving compliant transactions"
+    ],
+    "risks": [
+      "Post-launch adoption underwhelming relative to $228M raised",
+      "Privacy L1s face increasing global regulatory scrutiny",
+      "Developer activity has not surged as expected, growth stalling"
+    ],
+    "citations": [
+      {"claim": "Mainnet launched September 2024 with 350+ pre-deployed applications", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "$228M raised during development phase", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $300M", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Mina Protocol",
+    "ticker": "$MINA",
+    "category": "ZK/Privacy",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 58.0,
+    "one_liner": "22KB constant-size blockchain enabling ZK-powered privacy apps on any device.",
+    "thesis": "Mina Protocol's core innovation is elegant: a blockchain that maintains a constant 22KB size regardless of transaction history, enabling full node verification on any device including mobile phones. This addresses a genuine centralization concern in crypto -- most users cannot run full nodes for Bitcoin (500GB+) or Ethereum (1TB+), creating trust dependencies on infrastructure providers.\n\nThe Mesa hard fork represents a meaningful near-term catalyst, reducing slot times and expanding on-chain state limits. The Zeko Boom Testnet demonstrated 100x faster slot times and processed 500K transactions, validating the technical scalability roadmap. The ETH-Mina bridge via Aligned Layer opens cross-chain liquidity, potentially connecting Mina's ZK capabilities to Ethereum's deep DeFi ecosystem.\n\nDespite these technical achievements, Mina has been building for years with limited ecosystem growth. The '22KB blockchain' narrative is compelling and easy to understand, but it has not translated into mass adoption or significant developer migration. zkApps remain a niche use case, and the broader market has not rewarded Mina's technical elegance with proportional adoption. At approximately $350M market cap, the project is valued for its potential but faces the risk of permanent niche status if the zkApp ecosystem does not achieve critical mass.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 65,
+      "community": 60,
+      "dev_activity": 55,
+      "smart_money": 50,
+      "narrative": 80,
+      "hard_to_buy": 40,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "Mesa hard fork reducing slot times and expanding on-chain state limits",
+      "ETH-Mina bridge via Aligned Layer opening cross-chain DeFi liquidity",
+      "Zeko Boom Testnet validated 100x faster slot times and 500K transactions"
+    ],
+    "risks": [
+      "Years of development with limited ecosystem growth and adoption",
+      "zkApps remain niche with no breakout application driving usage",
+      "22KB narrative elegant but has not translated to mass developer adoption"
+    ],
+    "citations": [
+      {"claim": "Constant 22KB blockchain size enabling any-device full node verification", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Zeko Boom Testnet demonstrated 100x faster slot times and 500K transactions", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $350M", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Penumbra",
+    "ticker": null,
+    "category": "ZK/Privacy",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 55.0,
+    "one_liner": "Private shielded DEX and encrypted DeFi hub for the Cosmos ecosystem.",
+    "thesis": "Penumbra fills a clear gap in the Cosmos/IBC ecosystem: shielded transactions and private token swaps. While Cosmos has developed a rich ecosystem of interconnected chains via IBC, privacy has remained a notable weakness. Penumbra's shielded pool enables users to transact without exposing amounts or counterparty information, creating a privacy layer for the entire IBC-connected universe.\n\nProjections suggest $50M in shielded assets by 2026, which would represent meaningful adoption for a privacy-focused protocol. The ZK technology underpinning Penumbra is sound and complements Namada's approach, potentially creating a comprehensive privacy layer for the Cosmos ecosystem. The combination of a shielded DEX with encrypted DeFi primitives (staking, delegation) goes beyond simple transaction privacy.\n\nHowever, Penumbra faces significant constraints. It is limited to the Cosmos ecosystem, which is smaller than Ethereum or Solana in terms of liquidity and user count. The community remains small, trading venues are limited (contributing to a higher 'hard to buy' score), and privacy tokens face increasing regulatory pressure globally. At an estimated $50M market cap with limited publicly available data, this is a high-uncertainty, high-conviction play on the thesis that privacy will become a non-negotiable feature of DeFi infrastructure.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 55,
+      "community": 55,
+      "dev_activity": 45,
+      "smart_money": 50,
+      "narrative": 70,
+      "hard_to_buy": 70,
+      "catalyst": 55
+    },
+    "catalysts": [
+      "Projected $50M in shielded assets by 2026 demonstrating adoption",
+      "Shielded DEX and encrypted DeFi primitives launching on Cosmos/IBC",
+      "Complementary positioning with Namada creating comprehensive privacy layer"
+    ],
+    "risks": [
+      "Limited to Cosmos ecosystem which has smaller liquidity than Ethereum/Solana",
+      "Privacy tokens face increasing global regulatory scrutiny and delisting pressure",
+      "Small community and limited trading venues creating liquidity constraints"
+    ],
+    "citations": [
+      {"claim": "Predictions suggest $50M shielded by 2026", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Estimated market cap approximately $50M", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "ZK technology complements Namada for Cosmos privacy", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Namada",
+    "ticker": "$NAM",
+    "category": "ZK/Privacy",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 57.2,
+    "one_liner": "Multi-asset shielded pool providing cross-chain privacy for any token.",
+    "thesis": "Namada introduces a genuinely novel primitive: the Multi-Asset Shielded Pool (MASP), which provides asset-agnostic privacy that works with any compatible token. Unlike single-asset privacy solutions (Zcash for ZEC, Monero for XMR), Namada can shield ETH, stablecoins, NFTs, or any IBC-compatible asset within the same privacy set. This dramatically improves privacy guarantees because a larger, more diverse anonymity set is harder to de-anonymize through chain analysis.\n\nThe 'shielded multichain' thesis is compelling and differentiated from every other privacy solution in the market. If privacy becomes a standard feature of DeFi rather than a niche, Namada's approach of providing a universal privacy layer across chains could become critical infrastructure. Mainnet has launched, demonstrating that the MASP technology works in production.\n\nPost-mainnet adoption has been slow, however, and the IBC/Cosmos ecosystem is smaller than Ethereum's. Privacy features face the same regulatory headwinds as all privacy protocols, and there are no major near-term catalysts identified beyond organic ecosystem growth. At approximately $100M market cap, Namada is valued as a potential option on the future of cross-chain privacy, but the timing remains uncertain and the path to widespread adoption is unclear.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 60,
+      "community": 55,
+      "dev_activity": 50,
+      "smart_money": 55,
+      "narrative": 75,
+      "hard_to_buy": 60,
+      "catalyst": 55
+    },
+    "catalysts": [
+      "Multi-Asset Shielded Pool (MASP) enabling asset-agnostic privacy for any token",
+      "Mainnet live and operational demonstrating production-ready technology",
+      "IBC ecosystem growth expanding the number of shieldable assets"
+    ],
+    "risks": [
+      "Post-mainnet adoption slow with limited user growth",
+      "IBC/Cosmos ecosystem smaller than Ethereum limiting potential user base",
+      "Privacy protocols face persistent regulatory headwinds globally"
+    ],
+    "citations": [
+      {"claim": "Multi-Asset Shielded Pool (MASP) is a unique asset-agnostic privacy primitive", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Mainnet launched and operational", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $100M", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Babylon",
+    "ticker": "$BABY",
+    "category": "Restaking",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 77.5,
+    "one_liner": "Native Bitcoin staking protocol securing PoS chains without bridges or wrapping.",
+    "thesis": "Babylon represents one of the most powerful narratives in crypto: productive yield for Bitcoin without requiring bridges, wrapping, or trust assumptions. With $4.8B in BTC staked -- 10x the next largest competitor -- Babylon has achieved dominant market share in Bitcoin staking with a protocol that allows BTC holders to secure Proof-of-Stake chains natively. The BABY token launched in January 2026, creating the first liquid way to express a view on Bitcoin restaking economics.\n\nThe Bitcoin restaking thesis could be as transformative for Bitcoin as ETH restaking (via EigenLayer) was for Ethereum. Bitcoin holders collectively control over $1T in capital that is largely unproductive. If even a small fraction seeks yield through Babylon, the protocol's TVL could grow by orders of magnitude. Liquid staking derivatives from protocols like Lombard are already building on top of Babylon, creating a composable DeFi ecosystem around staked BTC.\n\nThe risks are real: Bitcoin maximalists may philosophically resist the concept of Bitcoin staking, viewing it as antithetical to Bitcoin's core design. The BABY token is still in price discovery following its January 2026 launch, meaning volatility is expected. Additionally, the security model of using BTC to secure external chains introduces novel attack vectors that have not been stress-tested at scale. However, the combination of dominant market position, $4.8B TVL, and the simplest possible narrative ('make your Bitcoin earn yield') creates a compelling Tier 1 opportunity.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 85,
+      "community": 80,
+      "dev_activity": 75,
+      "smart_money": 85,
+      "narrative": 90,
+      "hard_to_buy": 60,
+      "catalyst": 75
+    },
+    "catalysts": [
+      "BABY token launched January 2026 enabling liquid Bitcoin staking exposure",
+      "$4.8B BTC staked representing 10x dominance over nearest competitor",
+      "Liquid staking derivative ecosystem (Lombard etc.) building composable BTC DeFi"
+    ],
+    "risks": [
+      "Bitcoin maximalists may philosophically resist BTC staking concept",
+      "BABY token still in price discovery with expected high volatility",
+      "Novel security model of BTC securing external chains not yet stress-tested at scale"
+    ],
+    "citations": [
+      {"claim": "$4.8B in BTC staked, 10x the next competitor", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "BABY token launched January 2026", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $500M", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Maple Finance",
+    "ticker": "$MPL",
+    "category": "RWA/Tokenization",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 59.2,
+    "one_liner": "Institutional DeFi lending with traditional underwriting and $780M active loans.",
+    "thesis": "Maple Finance represents the intersection of DeFi capital efficiency with traditional risk management. After a severe crisis in 2022 when borrower defaults (including Alameda Research and Orthogonal Trading) threatened the protocol's survival, Maple has successfully pivoted to institutional-grade credit products. The $780M in active loans as of early 2026 demonstrates that the market has regained sufficient confidence to deploy significant capital through the protocol.\n\nThe combination of on-chain transparency with off-chain underwriting creates a differentiated lending model: borrowers undergo traditional credit analysis while lenders benefit from blockchain-native settlement, transparency, and programmability. This hybrid approach may prove more durable than purely algorithmic lending protocols that have repeatedly failed during credit cycles.\n\nHowever, Maple's past default history weighs heavily on its reputation and is reflected in its relatively low community engagement score. The lending model carries inherent credit risk -- in a downturn, defaults could resurface. No major catalysts have been identified beyond continued portfolio growth. At approximately $150M market cap, Maple is valued for steady execution rather than breakthrough innovation, making it a yield-oriented play rather than a high-growth speculation.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 75,
+      "community": 45,
+      "dev_activity": 50,
+      "smart_money": 65,
+      "narrative": 70,
+      "hard_to_buy": 50,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "$780M in active loans demonstrating successful post-crisis recovery",
+      "Institutional-grade credit products attracting TradFi capital",
+      "Hybrid DeFi/TradFi underwriting model proving more durable than pure algorithmic lending"
+    ],
+    "risks": [
+      "Past default history (Alameda, Orthogonal Trading) weighs on reputation",
+      "Inherent credit risk in lending model could resurface during downturns",
+      "Lower community engagement than peers limits organic growth potential"
+    ],
+    "citations": [
+      {"claim": "$780M in active loans", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Successful pivot from 2022 bad-debt crisis", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $150M", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Goldfinch",
+    "ticker": "$GFI",
+    "category": "RWA/Tokenization",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 58.7,
+    "one_liner": "DeFi protocol funding emerging market fintech lenders with 10-17% yields.",
+    "thesis": "Goldfinch occupies a unique position in DeFi: real-world credit origination for emerging market fintech lenders, offering yields of 10-17% to on-chain capital providers. With $340M+ in outstanding loans, the protocol has demonstrated that decentralized credit markets can serve geographies and borrowers that traditional finance has underserved. This is one of the clearest 'DeFi does what TradFi cannot' narratives in the market.\n\nThe extraordinary catalyst is the partnership with Apollo and KKR to tokenize $1T in private credit assets. If even a fraction of this materializes through Goldfinch infrastructure, it would represent a dramatic re-rating for a protocol with a current market cap of approximately $60M. The institutional validation from two of the world's largest alternative asset managers lending their names to the effort is significant.\n\nThe risks are equally significant: emerging market lending carries substantial default risk, and Goldfinch has experienced loan defaults in the past. The GFI token has limited utility beyond governance, creating a disconnect between protocol activity and token value accrual. Developer activity is lower than peers, and the community is smaller. This is fundamentally a bet on the Apollo/KKR partnership materializing into real capital flows -- if it does, GFI is dramatically undervalued; if it does not, the current trajectory suggests limited upside.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 65,
+      "community": 50,
+      "dev_activity": 45,
+      "smart_money": 68,
+      "narrative": 75,
+      "hard_to_buy": 50,
+      "catalyst": 62
+    },
+    "catalysts": [
+      "Apollo and KKR partnership to tokenize $1T in private credit assets",
+      "$340M+ in outstanding loans generating 10-17% real yields",
+      "Emerging market fintech lending addressing underserved geographies"
+    ],
+    "risks": [
+      "Emerging market lending carries substantial default risk with past defaults occurred",
+      "GFI token limited to governance with indirect value accrual",
+      "Lower developer activity and smaller community than RWA peers"
+    ],
+    "citations": [
+      {"claim": "Apollo and KKR partnerships to tokenize $1T in private credit assets", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "$340M+ in outstanding loans to emerging market fintechs", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $60M", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Cameco",
+    "ticker": "$CCJ",
+    "category": "Nuclear/Uranium",
+    "asset_class": "public_equities",
+    "tier": 1,
+    "composite_score": 81.8,
+    "one_liner": "World's largest uranium miner with 49% stake in Westinghouse reactor technology.",
+    "thesis": "Cameco sits at the nexus of every structural tailwind in the nuclear energy sector. It operates Cigar Lake, the world's highest-grade uranium mine, and owns 49% of Westinghouse, the leading reactor technology provider. This dual exposure to both fuel supply and reactor deployment creates a vertically integrated position that no other public company can match. The new $80B+ U.S. government partnership for reactor deployment adds government-backed demand visibility.\n\nThe structural uranium supply deficit is the core thesis: 204M lbs of annual demand against only 173M lbs of production creates a persistent shortfall that must be resolved through higher prices. Goldman Sachs projects spot uranium reaching $91/lb by end of 2026. AI-driven electricity demand adds a secular demand growth layer that was not part of any uranium thesis five years ago. Microsoft, Google, and Amazon are all actively pursuing nuclear power for data centers, creating a new demand vector that could sustain uranium prices for decades.\n\nCameco's weakness is that it is already a large-cap name (~$28B market cap) widely covered by institutional analysts, with limited 'hard to buy' edge. The stock's analyst target of $121 represents approximately 120% upside from the ~$55 level, but this is a well-known thesis rather than a contrarian discovery. The risk is primarily macro: if nuclear sentiment reverses due to an accident or policy shift, the entire sector would suffer regardless of fundamentals.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 95,
+      "community": 70,
+      "dev_activity": 90,
+      "smart_money": 92,
+      "narrative": 90,
+      "hard_to_buy": 30,
+      "catalyst": 90
+    },
+    "catalysts": [
+      "$80B+ U.S. government partnership for reactor deployment",
+      "Goldman Sachs projects $91/lb spot uranium by end of 2026",
+      "AI data center electricity demand creating new secular uranium demand vector"
+    ],
+    "risks": [
+      "Already a large-cap name ($28B) with well-known thesis limiting contrarian edge",
+      "Nuclear sentiment could reverse due to safety incident or policy shift",
+      "Macro risk if energy demand projections for AI data centers do not materialize"
+    ],
+    "citations": [
+      {"claim": "Cigar Lake (highest-grade uranium mine) and 49% Westinghouse ownership", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Structural deficit: 204M lbs demand vs 173M lbs production", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Goldman Sachs projects $91/lb spot by end of 2026", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "NexGen Energy",
+    "ticker": "$NXE",
+    "category": "Nuclear/Uranium",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 77.7,
+    "one_liner": "Advancing highest-grade undeveloped uranium deposit at under $10/lb cost.",
+    "thesis": "NexGen Energy's Rook I project is potentially the most economically significant undeveloped uranium deposit in the world. Designed to produce 30M lbs/year at an all-in sustaining cost under $10/lb in a market where spot uranium trades at $80-100/lb, the economics are extraordinary. If approved and constructed, Rook I alone would represent approximately 17% of current global uranium production.\n\nThe February 2026 CNSC (Canadian Nuclear Safety Commission) Part 2 Commission Hearing is the FINAL step before federal regulatory approval. This is the single highest-impact binary catalyst in the entire uranium mining sector. If approved, NexGen transitions from a permitting-stage company to a construction-stage company, which typically triggers a significant re-rating as the development risk premium compresses. The market cap of approximately $5B already prices in significant expectation of approval, but the post-approval construction phase could drive further upside.\n\nThe key risk is permitting: despite strong fundamentals and community support, regulatory approval is never guaranteed. First production is not expected until approximately 2029, meaning investors must be patient through the construction phase. Environmental opposition, construction cost overruns, and uranium price volatility during the 3+ year build period are all material risks. However, the combination of world-class deposit economics and a near-term regulatory catalyst makes NexGen the highest-conviction development-stage uranium play available.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 80,
+      "community": 65,
+      "dev_activity": 88,
+      "smart_money": 85,
+      "narrative": 85,
+      "hard_to_buy": 50,
+      "catalyst": 95
+    },
+    "catalysts": [
+      "CNSC Part 2 Commission Hearing -- final step before federal regulatory approval",
+      "Rook I designed for 30M lbs/year at under $10/lb vs $80-100/lb spot price",
+      "Transition from permitting to construction triggers development risk re-rating"
+    ],
+    "risks": [
+      "Permitting risk remains until CNSC approval is officially granted",
+      "First production not expected until approximately 2029 requiring patience",
+      "Construction cost overruns and uranium price volatility during multi-year build"
+    ],
+    "citations": [
+      {"claim": "Rook I designed for 30M lbs/year at under $10/lb cost", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "CNSC Part 2 Commission Hearing is final step before approval", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $5B", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Denison Mines",
+    "ticker": "$DNN",
+    "category": "Nuclear/Uranium",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 72.8,
+    "one_liner": "Canada's first ISR uranium mine approved, construction starting 2026.",
+    "thesis": "Denison Mines achieved a critical milestone when the CNSC approved the Wheeler River project in February 2026, with construction beginning in March 2026. This makes Wheeler River the first new large-scale uranium mine approved in Canada since Cigar Lake, a significant event for the Canadian mining industry. The in-situ recovery (ISR) method has lower environmental impact and capital costs compared to conventional mining, which accelerated the regulatory approval process.\n\nThe project is designed to produce 6M lbs/year average over a 10-year mine life. The transition from permitting to active construction represents a major de-risking event that should compress the development risk premium in the stock price. First production is expected mid-2028, which is earlier than NexGen's Rook I project, giving Denison a potential first-mover advantage in delivering new Canadian uranium supply to the market.\n\nThe primary risk is that ISR technology at Wheeler River is relatively novel for Canadian geological conditions. While ISR is well-proven in Kazakhstan and the United States (in different geological formations), its application to the Athabasca Basin represents a technical frontier. If ISR performance underperforms expectations, remediation could be costly and time-consuming. At approximately $2B market cap, Denison is priced as a construction-stage miner with a clear path to production.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 80,
+      "community": 55,
+      "dev_activity": 82,
+      "smart_money": 78,
+      "narrative": 80,
+      "hard_to_buy": 45,
+      "catalyst": 90
+    },
+    "catalysts": [
+      "CNSC approval received February 2026, construction began March 2026",
+      "First new large-scale Canadian uranium mine since Cigar Lake",
+      "First production expected mid-2028, earlier than NexGen's Rook I"
+    ],
+    "risks": [
+      "ISR technology relatively novel for Canadian Athabasca Basin geology",
+      "Construction execution risk over multi-year build period",
+      "Uranium price volatility during construction could affect project economics"
+    ],
+    "citations": [
+      {"claim": "CNSC approval received February 2026, construction begins March 2026", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "6M lbs/year average over 10-year mine life", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $2B", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Paladin Energy",
+    "ticker": "$PDN",
+    "category": "Nuclear/Uranium",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 66.3,
+    "one_liner": "Uranium producer expanding through acquisitions and restarted mines.",
+    "thesis": "Paladin Energy is pursuing an aggressive acquisition-led growth strategy, highlighted by the $789M Fission Uranium takeover that adds the Patterson Lake South project (which has an approved Environmental Impact Statement). This acquisition positions Paladin with both a producing asset (Langer Heinrich mine in Namibia) and a development-stage project in Canada's Athabasca Basin, creating a diversified production pipeline.\n\nThe Langer Heinrich mine restart demonstrates that Paladin can execute on bringing uranium production online. The Fission acquisition adds optionality on a high-grade Canadian deposit while the broader uranium sector benefits from structural supply deficits. The combination of current production plus development pipeline is a compelling risk-reward profile for uranium sector exposure.\n\nHowever, Paladin's primary listing is on the Australian Securities Exchange (ASX), making it less accessible to U.S. retail investors (contributing to a moderate 'hard to buy' score). Integration risk from the Fission acquisition is a near-term concern, and the company must manage two significant projects simultaneously across different continents. The stock's lower profile in North American markets compared to Cameco or NexGen means it may not benefit as quickly from uranium sector enthusiasm, but this also creates a potential value gap.",
+    "signals": {
+      "toy_phase": 45,
+      "working_code": 75,
+      "community": 50,
+      "dev_activity": 72,
+      "smart_money": 78,
+      "narrative": 70,
+      "hard_to_buy": 55,
+      "catalyst": 72
+    },
+    "catalysts": [
+      "$789M Fission Uranium takeover adding Patterson Lake South project",
+      "Langer Heinrich mine in Namibia restarted and producing uranium",
+      "Dual-hemisphere production pipeline providing geographic diversification"
+    ],
+    "risks": [
+      "Primarily Australian-listed, less accessible to U.S. retail investors",
+      "Integration risk from managing two major projects across continents simultaneously",
+      "Lower North American profile limiting benefit from uranium sector enthusiasm"
+    ],
+    "citations": [
+      {"claim": "$789M Fission Uranium takeover adding Patterson Lake South project", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Langer Heinrich mine in Namibia producing uranium", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $3B", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "NuScale Power",
+    "ticker": "$SMR",
+    "category": "Nuclear/Uranium",
+    "asset_class": "public_equities",
+    "tier": 3,
+    "composite_score": 59.2,
+    "one_liner": "First NRC-certified small modular reactor design, partnering for 6GW U.S. deployment.",
+    "thesis": "NuScale Power holds a unique regulatory moat: it is the only company with a Nuclear Regulatory Commission (NRC) certified small modular reactor (SMR) design. In an industry where regulatory approval can take a decade and cost hundreds of millions, this certification is an extraordinarily valuable asset. The ENTRA1 partnership targets 6GW of capacity across 6 plants (72 modules), representing the largest new nuclear program in the United States in decades.\n\nThe company's $1.3B in available liquidity provides sufficient runway to reach deployment milestones. The stock's 80% decline from its peak creates potential value if execution improves, as the NRC certification and ENTRA1 partnership provide a real foundation for recovery. The growing demand for clean, reliable baseload power from AI data centers adds a secular demand tailwind.\n\nHowever, the risks are substantial. No operational SMR plants exist anywhere in the U.S., and NuScale's annual revenue is only $31.5M, making this fundamentally a pre-revenue technology company. First deployment is not expected until the early 2030s, requiring years of patient capital. The previous CFPP project cancellation in Idaho raised serious questions about cost competitiveness. At approximately $2.5B market cap for a pre-revenue company with deployment years away, NuScale trades primarily on narrative and optionality rather than fundamentals.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 50,
+      "community": 60,
+      "dev_activity": 60,
+      "smart_money": 65,
+      "narrative": 80,
+      "hard_to_buy": 35,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "Only NRC-certified SMR design providing unique regulatory moat",
+      "ENTRA1 partnership targeting 6GW across 6 plants (72 modules)",
+      "AI data center demand creating new secular need for clean baseload power"
+    ],
+    "risks": [
+      "No operational SMR plants in the U.S., technology unproven at commercial scale",
+      "Revenue only $31.5M, first deployment not until early 2030s",
+      "Previous CFPP project cancellation raised questions about cost competitiveness"
+    ],
+    "citations": [
+      {"claim": "Only NRC-certified SMR design", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "ENTRA1 partnership targets 6GW across 6 plants (72 modules)", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Stock down 80% from peak, market cap approximately $2.5B", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Sprott Uranium Trust",
+    "ticker": "$SRUUF",
+    "category": "Nuclear/Uranium",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 75.3,
+    "one_liner": "Physical uranium trust providing direct exposure to uranium spot price.",
+    "thesis": "Sprott Uranium Trust offers the simplest possible expression of the uranium thesis: direct physical exposure to uranium spot price without mining execution risk. The trust physically holds uranium (U3O8), and its market value tracks the spot price of uranium. This makes it the purest play on the structural supply deficit narrative, where 1.9B lbs of cumulative deficit is projected from 2025-2045.\n\nThe trust mechanism itself is reflexively bullish: as investors buy units, Sprott purchases physical uranium from the spot market, directly tightening supply. This feedback loop means that investment demand can itself be a catalyst for higher uranium prices. Goldman Sachs targets $91/lb by end of 2026, and the trust benefits linearly from any price increase. The narrative is the simplest in the nuclear/uranium category: 'buy and hold physical uranium.'\n\nAt approximately $7B market cap, Sprott Uranium Trust is already a significant player. The primary risks are that the premium/discount to NAV can be volatile (sometimes trading at significant premiums or discounts to the underlying uranium value), and physical uranium has no operational leverage -- unlike miners, the trust does not benefit from operating leverage when prices rise above production costs. For investors who want clean uranium price exposure without company-specific risk, Sprott is the default choice.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 90,
+      "community": 65,
+      "dev_activity": 80,
+      "smart_money": 82,
+      "narrative": 95,
+      "hard_to_buy": 45,
+      "catalyst": 80
+    },
+    "catalysts": [
+      "Goldman Sachs targets $91/lb uranium spot price by end of 2026",
+      "1.9B lb cumulative uranium supply deficit projected 2025-2045",
+      "Trust mechanism reflexively tightens spot supply as investment inflows grow"
+    ],
+    "risks": [
+      "Premium/discount to NAV can be volatile creating entry/exit timing risk",
+      "No operational leverage unlike miners that benefit from cost margin expansion",
+      "Physical uranium storage has carrying costs that reduce long-term returns"
+    ],
+    "citations": [
+      {"claim": "1.9B lb cumulative deficit projected 2025-2045", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Goldman Sachs targets $91/lb by end of 2026", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Market cap approximately $7B", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Zap Energy",
+    "ticker": null,
+    "category": "Fusion Energy",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 64.0,
+    "one_liner": "Z-pinch fusion achieving 10,000x atmospheric pressure at low cost.",
+    "thesis": "Zap Energy takes a fundamentally different approach to fusion than the tokamak designs pursued by Commonwealth Fusion Systems or the field-reversed configuration used by TAE Technologies. The Z-pinch method uses powerful magnetic fields to compress plasma, achieving fusion conditions without the massive superconducting magnets or billion-dollar facilities that other approaches require. In November 2025, Zap achieved 10,000x atmospheric pressure, validating the core physics of their approach.\n\nThe company has raised $327M and was named TIME's #16 GreenTech Company and the top-ranked fusion company, indicating mainstream media recognition. A key advantage is experimental iteration speed: Zap can fire one shot every five seconds, compared to hours or days for tokamak experiments. This rapid cycle time enables faster learning and optimization, potentially compressing the development timeline.\n\nHowever, Zap Energy is a private company with no public investment path, contributing to its high 'hard to buy' score of 90. The Z-pinch approach has historically been difficult to stabilize for sustained fusion conditions, and there is no clear commercialization timeline. Compared to Helion (which has a PPA with Microsoft) and CFS (with a SPARC prototype on track for 2027), Zap is earlier stage. This is a high-uncertainty bet on a potentially faster and cheaper path to fusion, but one that requires patient capital and tolerance for technical risk.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 60,
+      "community": 50,
+      "dev_activity": 65,
+      "smart_money": 70,
+      "narrative": 70,
+      "hard_to_buy": 90,
+      "catalyst": 55
+    },
+    "catalysts": [
+      "November 2025 record of 10,000x atmospheric pressure validating physics",
+      "Rapid experimental iteration (one shot every five seconds) accelerating learning",
+      "TIME #16 GreenTech Company and top-ranked fusion company recognition"
+    ],
+    "risks": [
+      "Private company with no public investment path",
+      "Z-pinch historically difficult to stabilize for sustained fusion conditions",
+      "Earlier stage than Helion and CFS with no clear commercialization timeline"
+    ],
+    "citations": [
+      {"claim": "$327M raised, TIME #16 GreenTech Company", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "November 2025 record of 10,000x atmospheric pressure", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Rapid experimental cycles: one shot every five seconds", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "QuEra Computing",
+    "ticker": null,
+    "category": "Quantum Computing",
+    "asset_class": "private_markets",
+    "tier": 2,
+    "composite_score": 71.8,
+    "one_liner": "Neutral-atom quantum startup backed by Google and SoftBank with $230M raised.",
+    "thesis": "QuEra Computing's neutral-atom approach to quantum computing has produced a breakthrough result: a 3,000-qubit array running continuously for over 2 hours, and a 96 logical qubit fault-tolerant demonstration. These are not theoretical projections but demonstrated capabilities that position QuEra as a leading contender in the race to practical quantum computing. Neutral atoms offer a natural advantage for scalability: atoms are identical by nature, eliminating the fabrication variability that plagues superconducting and trapped-ion approaches.\n\nThe backer list reads like a who's who of technology investment: Google Quantum AI, SoftBank (via its Vision Fund), and NVIDIA (through NVentures) have collectively contributed to $230M+ in funding. QuEra has already delivered a functioning quantum machine to Japan's AIST (National Institute of Advanced Industrial Science and Technology) and plans global availability in 2026. Third-generation systems are planned for 2026-2027, suggesting rapid capability advancement.\n\nThe primary constraint is that QuEra is a private company with no public equity available, resulting in the highest 'hard to buy' score (90) among quantum computing entries. Neutral atoms are competing with trapped ions (IonQ), superconductors (IBM, Google), and photonic (Xanadu, PsiQuantum) approaches, and the winner-take-all dynamics of quantum computing platforms create binary risk. Commercial applications remain years away for all quantum approaches.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 70,
+      "community": 55,
+      "dev_activity": 72,
+      "smart_money": 88,
+      "narrative": 70,
+      "hard_to_buy": 90,
+      "catalyst": 75
+    },
+    "catalysts": [
+      "3,000-qubit array running continuously for 2+ hours -- scalability breakthrough",
+      "Global machine availability planned for 2026 with Japan AIST delivery completed",
+      "Third-generation systems planned for 2026-2027 with rapid capability advancement"
+    ],
+    "risks": [
+      "Private company with no public equity available",
+      "Competing quantum modalities (trapped-ion, superconducting, photonic) create platform risk",
+      "Commercial quantum applications remain years away across all approaches"
+    ],
+    "citations": [
+      {"claim": "3,000-qubit array running for 2+ hours, 96 logical qubit fault-tolerant demo", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Backed by Google Quantum AI, SoftBank, NVIDIA (NVentures)", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "$230M+ raised, machine delivered to Japan AIST", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Altos Labs",
+    "ticker": null,
+    "category": "Frontier Biotech",
+    "asset_class": "private_markets",
+    "tier": 2,
+    "composite_score": 69.0,
+    "one_liner": "$3B-funded cellular rejuvenation startup approaching clinical trials for aging.",
+    "thesis": "Altos Labs represents the most heavily capitalized bet on cellular reprogramming to reverse aging-related diseases. With $3B raised from Jeff Bezos and Yuri Milner -- the largest longevity biotech funding round in history -- Altos has assembled a team that includes multiple Nobel Prize-winning scientists. The scientific thesis is that partial cellular reprogramming using Yamanaka factors can rejuvenate aged cells without turning them cancerous, potentially addressing the root cause of aging rather than individual diseases.\n\nRumors of human clinical trials starting in 2026 targeting neurodegenerative and immune disorders represent the most significant near-term catalyst. If Altos announces positive clinical trial data, the project immediately becomes Tier 1. The $5B+ estimated valuation reflects the enormous TAM of aging-related diseases, which collectively represent the largest healthcare burden globally.\n\nHowever, Altos is a private company with no public investment path, resulting in the highest possible 'hard to buy' score (95). Clinical trial outcomes in novel cellular reprogramming are binary and highly uncertain -- the technology could prove transformative or encounter fundamental biological barriers. The gap between laboratory rejuvenation of cells and safe, effective human therapy is vast. For retail investors, this is essentially uninvestable directly, but monitoring Altos' progress provides signal on the broader longevity biotech thesis that affects investable names like VitaDAO.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 60,
+      "community": 55,
+      "dev_activity": 70,
+      "smart_money": 95,
+      "narrative": 80,
+      "hard_to_buy": 95,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "Rumored human clinical trials starting 2026 for neurodegeneration and immune disorders",
+      "$3B raised from Bezos and Milner -- largest longevity biotech round ever",
+      "Multiple Nobel Prize-winning scientists on team validating scientific credibility"
+    ],
+    "risks": [
+      "Private company with no public investment path for retail investors",
+      "Clinical trial outcomes binary and highly uncertain for novel cellular reprogramming",
+      "Gap between lab cell rejuvenation and safe human therapy remains vast"
+    ],
+    "citations": [
+      {"claim": "$3B raised from Jeff Bezos and Yuri Milner", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Rumored human clinical trials starting 2026", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Estimated valuation $5B+ with multiple Nobel Prize-winning scientists", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  },
+  {
+    "name": "Loyal",
+    "ticker": null,
+    "category": "Frontier Biotech",
+    "asset_class": "private_markets",
+    "tier": 2,
+    "composite_score": 75.3,
+    "one_liner": "First FDA-tracked longevity drug for dogs, LOY-001 expected launch 2026.",
+    "thesis": "Loyal is one of the purest 'toy phase to mainstream' plays in the entire opportunity set. The premise -- 'a pill to make dogs live longer' -- sounds absurd on first hearing, which is precisely why it scores the highest 'toy phase dismissal' (75) among biotech entries. But the FDA has granted Reasonable Expectation of Effectiveness for both LOY-001 (for large dogs) and LOY-002 (for all dogs), validating the underlying science. The mechanism of action (IGF-1 reduction) is well-characterized biology, not speculative.\n\nThe anticipated 2026 launch, subject to FDA manufacturing and safety approval, would make Loyal the first company to bring an FDA-approved longevity drug to market -- for any species. The $100B+ pet care TAM provides immediate commercial viability, and the dog longevity thesis serves as a gateway to human longevity applications. If a drug demonstrably extends healthy lifespan in dogs, the scientific and commercial implications for human aging research are profound.\n\nLoyal is a private company with an estimated $500M-$1B valuation, making direct investment challenging for retail investors (high 'hard to buy' score of 85). FDA approval is not guaranteed despite the Reasonable Expectation of Effectiveness designation, and the veterinary market is smaller than human pharmaceuticals. However, the combination of toy-phase dismissal, real regulatory progress, massive TAM, and near-term catalyst makes Loyal arguably the most unique risk-reward profile in the biotech section.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 75,
+      "community": 70,
+      "dev_activity": 72,
+      "smart_money": 70,
+      "narrative": 90,
+      "hard_to_buy": 85,
+      "catalyst": 80
+    },
+    "catalysts": [
+      "LOY-001 anticipated launch 2026 subject to FDA manufacturing/safety approval",
+      "FDA granted Reasonable Expectation of Effectiveness for both LOY-001 and LOY-002",
+      "Gateway to human longevity applications if dog lifespan extension is demonstrated"
+    ],
+    "risks": [
+      "Private company not directly investable by retail investors",
+      "FDA approval not guaranteed despite Reasonable Expectation of Effectiveness",
+      "Veterinary market smaller than human pharmaceuticals limiting near-term revenue scale"
+    ],
+    "citations": [
+      {"claim": "FDA granted Reasonable Expectation of Effectiveness for LOY-001 and LOY-002", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Anticipated launch 2026 subject to FDA approval", "source": "seed-opportunities.md", "url": ""},
+      {"claim": "Estimated valuation $500M-$1B, $100B+ pet care TAM", "source": "seed-opportunities.md", "url": ""}
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false
+  }
+]

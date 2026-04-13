@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0B0F1A"/>
+  <rect x="0" y="0" width="1200" height="4" fill="#F5A623"/>
+  <rect x="0" y="626" width="1200" height="4" fill="#F5A623"/>
+  <!-- Lightning bolt icon -->
+  <path d="M580 180 L540 320 L575 320 L555 450 L640 290 L605 290 L625 180 Z" fill="#F5A623" opacity="0.9"/>
+  <!-- Brand name -->
+  <text x="600" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="700" fill="#F5A623" text-anchor="middle" letter-spacing="2">Early Thunder</text>
+  <!-- Tagline -->
+  <text x="600" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#8B93A7" text-anchor="middle" letter-spacing="1">Hear the storm before anyone else</text>
+  <!-- Accent line -->
+  <rect x="450" y="420" width="300" height="1" fill="#F5A623" opacity="0.4"/>
+  <!-- Descriptor -->
+  <text x="600" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#5A6178" text-anchor="middle">Pre-mainstream asymmetric opportunity intelligence</text>
+</svg>
