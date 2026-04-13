@@ -46,8 +46,14 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
     return <NotFoundFallback />;
   }
 
+  const jsonLd = buildJsonLd(opportunity);
+
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb opportunity={opportunity} />
       <NameBlock opportunity={opportunity} />
       <div className="mt-4 max-w-3xl text-xl leading-relaxed text-text-secondary">
@@ -248,4 +254,43 @@ function getScoreColor(score: number): string {
   if (score >= 75) return "text-score-high";
   if (score >= 55) return "text-score-mid";
   return "text-score-low";
+}
+
+function buildJsonLd(opp: Opportunity): Record<string, unknown> {
+  const citations = opp.citations
+    .filter((c) => c.url && c.url.length > 0)
+    .slice(0, 20)
+    .map((c) => ({
+      "@type": "CreativeWork",
+      name: c.source,
+      description: c.claim,
+      url: c.url,
+    }));
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "AnalysisNewsArticle",
+    headline: `${opp.name} — Opportunity Analysis`,
+    description: opp.one_liner,
+    url: `https://earlythunder.com/opportunities/${opp.slug}`,
+    dateModified: opp.updated_at,
+    publisher: {
+      "@type": "Organization",
+      name: "Early Thunder",
+      url: "https://earlythunder.com",
+    },
+    about: {
+      "@type": "Thing",
+      name: opp.name,
+      description: opp.one_liner,
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: opp.composite_score,
+      bestRating: 100,
+      worstRating: 0,
+      ratingCount: 8,
+    },
+    citation: citations,
+  };
 }

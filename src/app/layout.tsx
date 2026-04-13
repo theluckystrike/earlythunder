@@ -48,6 +48,28 @@ export default function RootLayout({
           data-domain="earlythunder.com"
           src="https://plausible.io/js/script.js"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Early Thunder",
+              url: "https://earlythunder.com",
+              description: "Pre-mainstream opportunity intelligence. Track asymmetric opportunities across crypto, deep tech, and emerging markets.",
+              publisher: {
+                "@type": "Organization",
+                name: "AUTOM8 LLC",
+                url: "https://earlythunder.com",
+              },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://earlythunder.com/opportunities?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
       </head>
       <body className="flex min-h-full flex-col bg-black text-text-primary font-sans">
         <Header />
