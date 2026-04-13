@@ -4,11 +4,12 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://earlythunder.com"),
   title: {
     default: "Early Thunder",
     template: "%s | Early Thunder",
   },
-  description: "Pre-mainstream opportunity intelligence.",
+  description: "Pre-mainstream opportunity intelligence. Track asymmetric opportunities across crypto, deep tech, and emerging markets.",
   keywords: [
     "investment intelligence",
     "asymmetric opportunities",
@@ -16,6 +17,22 @@ export const metadata: Metadata = {
     "crypto research",
     "alternative investments",
   ],
+  openGraph: {
+    type: "website",
+    siteName: "Early Thunder",
+    title: "Early Thunder",
+    description: "Hear the storm before anyone else. Pre-mainstream opportunity intelligence.",
+    url: "https://earlythunder.com",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Early Thunder",
+    description: "Pre-mainstream opportunity intelligence.",
+  },
+  alternates: {
+    canonical: "https://earlythunder.com",
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +42,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      <head>
+        <script
+          defer
+          data-domain="earlythunder.com"
+          src="https://plausible.io/js/script.js"
+        />
+      </head>
       <body className="flex min-h-full flex-col bg-black text-text-primary font-sans">
         <Header />
         <main className="flex-1">{children}</main>
