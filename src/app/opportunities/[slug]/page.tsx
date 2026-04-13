@@ -5,7 +5,14 @@ import {
   getOpportunityBySlug,
   getRelatedOpportunities,
 } from "@/lib/data";
-import { formatDate, getAssetClassLabel, formatScore } from "@/lib/format";
+import {
+  formatDate,
+  getAssetClassLabel,
+  formatScore,
+  formatPrice,
+  formatMarketCap,
+  formatVolume,
+} from "@/lib/format";
 import type { Opportunity } from "@/lib/types";
 import TierBadge from "@/components/TierBadge";
 import ScoreBar from "@/components/ScoreBar";
@@ -46,6 +53,7 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
       <div className="mx-auto max-w-5xl">
         <DetailHeader opportunity={opportunity} />
         <FreeTierSection opportunity={opportunity} />
+        <MarketDataSection opportunity={opportunity} />
         <PremiumSection opportunity={opportunity} />
         {related.length > 0 && <RelatedSection related={related} />}
       </div>
@@ -115,6 +123,31 @@ function FreeTierSection({ opportunity }: { readonly opportunity: Opportunity })
       <div className="mt-6">
         <ScoreBar score={opportunity.composite_score} />
       </div>
+    </div>
+  );
+}
+
+function MarketDataSection({ opportunity }: { readonly opportunity: Opportunity }) {
+  if (opportunity.current_price_usd === null) return null;
+
+  return (
+    <div className="mt-8 rounded-xl border border-border bg-card p-6">
+      <h2 className="font-display text-xl">Market Data</h2>
+      <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <MarketDataItem label="Current Price" value={formatPrice(opportunity.current_price_usd)} />
+        <MarketDataItem label="Market Cap" value={formatMarketCap(opportunity.market_cap_usd)} />
+        <MarketDataItem label="24h Volume" value={formatVolume(opportunity.volume_24h_usd)} />
+        <MarketDataItem label="Last Updated" value={formatDate(opportunity.updated_at)} />
+      </div>
+    </div>
+  );
+}
+
+function MarketDataItem({ label, value }: { readonly label: string; readonly value: string }) {
+  return (
+    <div>
+      <div className="text-xs text-text-secondary">{label}</div>
+      <div className="mt-1 font-mono text-sm font-medium text-text-primary">{value}</div>
     </div>
   );
 }

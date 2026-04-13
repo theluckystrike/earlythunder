@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { Opportunity } from "@/lib/types";
-import { getAssetClassLabel } from "@/lib/format";
+import { getAssetClassLabel, formatPrice, formatMarketCap, formatVolume } from "@/lib/format";
 import TierBadge from "./TierBadge";
 import ScoreBar from "./ScoreBar";
 import FilterBar, { type FilterState } from "./FilterBar";
@@ -29,6 +29,11 @@ export default function OpportunityTable({
   const safeOpportunities = Array.isArray(opportunities) ? opportunities : [];
   const filtered = useFilteredOpportunities(safeOpportunities, filters);
 
+  const hasMarketData = useMemo(
+    () => safeOpportunities.some((opp) => opp.current_price_usd !== null),
+    [safeOpportunities],
+  );
+
   if (safeOpportunities.length === 0) return null;
 
   return (
@@ -37,10 +42,10 @@ export default function OpportunityTable({
       <ResultCount count={filtered.length} total={safeOpportunities.length} />
       <div className="overflow-x-auto rounded-xl border border-border">
         <table className="w-full text-left text-sm">
-          <TableHead />
+          <TableHead showMarketData={hasMarketData} />
           <tbody className="divide-y divide-border">
             {filtered.map((opp) => (
-              <TableRow key={opp.slug} opportunity={opp} />
+              <TableRow key={opp.slug} opportunity={opp} showMarketData={hasMarketData} />
             ))}
           </tbody>
         </table>
@@ -96,7 +101,7 @@ function ResultCount({
   );
 }
 
-function TableHead() {
+function TableHead({ showMarketData }: { readonly showMarketData: boolean }) {
   return (
     <thead>
       <tr className="border-b border-border bg-surface/50 text-xs uppercase tracking-wider text-text-secondary">
@@ -105,6 +110,13 @@ function TableHead() {
         <th className="px-4 py-3 font-medium">Class</th>
         <th className="px-4 py-3 font-medium">Tier</th>
         <th className="min-w-[180px] px-4 py-3 font-medium">Score</th>
+        {showMarketData && (
+          <>
+            <th className="px-4 py-3 font-medium text-right">Price</th>
+            <th className="px-4 py-3 font-medium text-right">Mkt Cap</th>
+            <th className="px-4 py-3 font-medium text-right">Vol 24h</th>
+          </>
+        )}
       </tr>
     </thead>
   );
@@ -112,8 +124,10 @@ function TableHead() {
 
 function TableRow({
   opportunity,
+  showMarketData,
 }: {
   readonly opportunity: Opportunity;
+  readonly showMarketData: boolean;
 }) {
   if (!opportunity || typeof opportunity.slug !== "string") return null;
 
@@ -144,6 +158,19 @@ function TableRow({
       <td className="px-4 py-3">
         <ScoreBar score={opportunity.composite_score} />
       </td>
+      {showMarketData && (
+        <>
+          <td className="px-4 py-3 text-right font-mono text-xs text-text-secondary">
+            {formatPrice(opportunity.current_price_usd)}
+          </td>
+          <td className="px-4 py-3 text-right font-mono text-xs text-text-secondary">
+            {formatMarketCap(opportunity.market_cap_usd)}
+          </td>
+          <td className="px-4 py-3 text-right font-mono text-xs text-text-secondary">
+            {formatVolume(opportunity.volume_24h_usd)}
+          </td>
+        </>
+      )}
     </tr>
   );
 }

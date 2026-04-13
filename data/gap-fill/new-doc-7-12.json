@@ -1,0 +1,1417 @@
+[
+  {
+    "name": "American Superconductor",
+    "ticker": "$AMSC",
+    "category": "Materials Science",
+    "asset_class": "public_equities",
+    "tier": 1,
+    "composite_score": 75.0,
+    "one_liner": "Profitable HTS wire supplier powering the AI data center superconducting cable ecosystem, with 20%+ revenue growth and margins above 30%.",
+    "thesis": "American Superconductor is the rare materials-science company that is already profitable and growing. Revenue is running at ~$280M/year with 20%+ growth and margins above 30%. At ~$1.5B market cap, it trades at a reasonable multiple for a company at the nexus of two secular megatrends: grid modernization and AI data center power delivery.\n\nThe key catalyst is VEIR, a privately held company backed by Microsoft's Climate Innovation Fund that demonstrated 3MW superconducting cable delivery for data centers in November 2025, with commercial launch targeted for 2027. AMSC supplies the high-temperature superconducting (HTS) wire for this ecosystem. As AI data centers face increasingly desperate power delivery challenges, superconducting cables offer a step-function improvement in power density.\n\nAMSC also benefits from the broader grid infrastructure buildout \u2014 its ECS (Electrical Control Systems) and wind turbine electrical systems provide revenue diversification. The company is positioned as a picks-and-shovels play on multiple electrification megatrends.\n\nThe primary risk is government budget cuts affecting grid modernization programs, and the VEIR commercial launch slipping past 2027 would delay the highest-upside catalyst. Competition from other HTS wire suppliers (primarily Asian) is a secondary concern.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 90,
+      "community": 60,
+      "dev_activity": 80,
+      "smart_money": 78,
+      "narrative": 80,
+      "hard_to_buy": 35,
+      "catalyst": 89
+    },
+    "catalysts": [
+      "VEIR superconducting cable commercial launch targeted 2027 \u2014 AMSC supplies HTS wire",
+      "Revenue growing 20%+ YoY with margins above 30%, already profitable",
+      "AI data center power delivery bottleneck creating urgent demand for superconducting solutions"
+    ],
+    "risks": [
+      "Government budget cuts could slow grid modernization programs",
+      "VEIR commercial launch could slip past 2027, delaying highest-upside catalyst",
+      "Competition from Asian HTS wire suppliers on price"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "~$29-34, ~$1.5B market cap, ~$280M/year revenue, 20%+ growth, margins above 30%",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "american-superconductor",
+    "current_price_usd": 31.5,
+    "market_cap_usd": 1500000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Evolv Technology",
+    "ticker": "$EVLV",
+    "category": "Materials Science",
+    "asset_class": "public_equities",
+    "tier": 1,
+    "composite_score": 75.2,
+    "one_liner": "Metamaterial-based security screening deployed in stadiums and hospitals, with first-ever GAAP profitability and 40% YoY revenue growth.",
+    "thesis": "Evolv Technology has crossed the profitability threshold that separates speculative growth stories from real businesses. FY2025 revenue hit $145.9M (+40% YoY) with first-ever GAAP net income of $10.9M in Q4. The company guides $172-178M revenue for 2026, implying continued 18-22% growth on a now-profitable base. Analyst price target is $10.\n\nThe product is a metamaterial-based weapons detection system that replaces traditional metal detectors in stadiums, hospitals, schools, and public venues. The technology uses millimeter-wave sensors with AI software to detect threats while allowing normal items to pass through \u2014 dramatically improving throughput versus legacy security checkpoints.\n\nThe secular tailwind is straightforward: mass casualty events continue driving security spending, and Evolv's touchless screening is the only scalable alternative to metal detectors. The installed base creates recurring SaaS-like revenue through subscription licensing.\n\nRisks include false positive/negative controversies that have generated negative press, customer concentration in large venues, and the possibility that competing technologies (AI-powered camera systems) could obsolete hardware-based screening.",
+    "signals": {
+      "toy_phase": 58,
+      "working_code": 92,
+      "community": 58,
+      "dev_activity": 80,
+      "smart_money": 78,
+      "narrative": 78,
+      "hard_to_buy": 40,
+      "catalyst": 85
+    },
+    "catalysts": [
+      "First-ever GAAP net income ($10.9M in Q4 FY2025) proves business model",
+      "2026 revenue guidance of $172-178M implies continued double-digit growth",
+      "Analyst price target of $10 suggests significant upside from current levels"
+    ],
+    "risks": [
+      "False positive/negative controversies generating negative press coverage",
+      "Customer concentration in large venue operators",
+      "AI-powered camera systems could obsolete hardware-based screening"
+    ],
+    "related_slugs": [
+      "american-superconductor"
+    ],
+    "citations": [
+      {
+        "claim": "FY2025 revenue $145.9M (+40% YoY), Q4 GAAP net income $10.9M, 2026 guidance $172-178M",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "evolv-technology",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Perovskite Solar (Oxford PV / First Solar proxy)",
+    "ticker": "$FSLR",
+    "category": "Materials Science",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 66.0,
+    "one_liner": "Perovskite-silicon tandem solar hit commercialization inflection \u2014 Oxford PV shipped first modules, licensed to First Solar and Trinasolar, Hanwha hit 28.6% efficiency.",
+    "thesis": "Perovskite solar technology hit its commercialization inflection in 2024-2026. Oxford PV shipped the world's first commercial perovskite-silicon tandem modules in September 2024, then licensed patents to First Solar (NASDAQ: FSLR) in February 2026 and Trinasolar (exclusive China license). Hanwha Qcells achieved 28.6% tandem cell efficiency using mass-production processes, with commercial production planned for 2026.\n\nFirst Solar is the best public proxy for perovskite exposure. As the largest U.S. solar manufacturer with the Oxford PV license, it will likely be the first Western company to mass-produce perovskite-silicon tandems. The efficiency gain from tandems (28-30%+ vs 22-24% for pure silicon) represents a step-function improvement that could reshape the solar industry's cost curve.\n\nCaelux offers a potentially faster route to market with its 'Active Glass' product that converts existing silicon panels to tandem performance \u2014 no new factories needed. This is a private company but worth monitoring for a future investment route.\n\nRisks center on perovskite durability (degradation over 25+ year module lifetimes remains unproven at scale), Chinese manufacturing dominance in solar, and the fact that First Solar is already a large-cap with the perovskite thesis partially priced in.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 75,
+      "community": 50,
+      "dev_activity": 70,
+      "smart_money": 72,
+      "narrative": 75,
+      "hard_to_buy": 45,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "Oxford PV licensing to First Solar and Trinasolar validates commercial viability",
+      "Hanwha Qcells 28.6% efficiency using mass-production processes, commercial production 2026",
+      "Caelux 'Active Glass' offering retrofit tandem performance without new factories"
+    ],
+    "risks": [
+      "Perovskite durability over 25+ year module lifetimes unproven at scale",
+      "Chinese manufacturing dominance could commoditize tandem technology quickly",
+      "First Solar already large-cap with perovskite thesis partially priced in"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "Oxford PV shipped first commercial perovskite-silicon tandem modules Sept 2024, licensed to First Solar Feb 2026",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "perovskite-solar",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Unusual Machines",
+    "ticker": "$UMAC",
+    "category": "Autonomous Drones",
+    "asset_class": "public_equities",
+    "tier": 1,
+    "composite_score": 75.8,
+    "one_liner": "NDAA-compliant drone component manufacturer with $103M cash, 101% YoY revenue growth, and supply-constrained through 2027 on Pentagon demand.",
+    "thesis": "Unusual Machines is a picks-and-shovels play on the Pentagon's Drone Dominance program. The company manufactures NDAA-compliant drone components \u2014 flight controllers, ESCs, motors, cameras, and FPV goggles (Fat Shark brand). FY2025 revenue hit $11.2M (+101% YoY), with Q4 alone at $4.9M (+133% sequentially). They hold $103M cash with zero debt at ~$230M market cap \u2014 nearly 45% of market cap is cash.\n\nThe demand pipeline is extraordinary. The Pentagon's Drone Dominance program represents a $90M component opportunity in 2026 and $250M in 2027. The company explicitly states it is 'supply-constrained, demand exceeds supply through 2027,' which is the strongest possible demand signal.\n\nThe NDAA compliance requirement creates a regulatory moat. Chinese drone components (DJI, etc.) are increasingly restricted for defense applications, and UMAC is one of the few domestic alternatives at scale. This is a rare case where government procurement rules create a durable competitive advantage.\n\nKey risks are single-customer concentration (Pentagon dependence), the potential for larger defense primes to enter the component market, and the fact that the stock has already run significantly from its lows. The cash cushion provides significant downside protection.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 85,
+      "community": 65,
+      "dev_activity": 75,
+      "smart_money": 80,
+      "narrative": 82,
+      "hard_to_buy": 50,
+      "catalyst": 90
+    },
+    "catalysts": [
+      "Pentagon Drone Dominance program: $90M component opportunity in 2026, $250M in 2027",
+      "Supply-constrained through 2027 \u2014 demand exceeds supply",
+      "$103M cash with zero debt provides massive downside protection at ~$230M cap"
+    ],
+    "risks": [
+      "Single-customer concentration on Pentagon/DoD procurement",
+      "Larger defense primes (L3Harris, Northrop) could enter the component market",
+      "Stock has already run significantly from lows, near-term pullback risk"
+    ],
+    "related_slugs": [
+      "ouster"
+    ],
+    "citations": [
+      {
+        "claim": "FY2025 revenue $11.2M (+101% YoY), Q4 $4.9M (+133% seq), $103M cash, ~$230M cap",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "unusual-machines",
+    "current_price_usd": null,
+    "market_cap_usd": 230000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Ouster",
+    "ticker": "$OUST",
+    "category": "Autonomous Drones",
+    "asset_class": "public_equities",
+    "tier": 1,
+    "composite_score": 75.1,
+    "one_liner": "LiDAR sensing platform with 52.5% YoY revenue growth, 12 consecutive quarters of product revenue growth, and analyst Strong Buy consensus at $39.25 target.",
+    "thesis": "Ouster is building the physical AI sensing platform for drones, robotics, and autonomous systems. Revenue hit $169.4M (+52.5% YoY) with 12 consecutive quarters of product revenue growth \u2014 a remarkable consistency streak. The February 2026 acquisition of StereoLabs (AI vision cameras) adds computer vision capabilities to the core LiDAR offering.\n\nAnalyst consensus is Strong Buy with an average target of $39.25, representing ~101% upside from ~$21. The company is transitioning from a pure LiDAR sensor company to a full-stack perception platform, which significantly expands the addressable market beyond traditional LiDAR applications.\n\nThe drone and robotics megatrend provides multiple growth vectors: autonomous delivery, warehouse robotics, defense UAVs, and smart infrastructure. Ouster's digital LiDAR architecture (vs. analog competitors) enables software-defined improvements over time.\n\nKey risks include that Ouster is still unprofitable, originated as a SPAC (which carries stigma), and faces intense competition from Velodyne (now Ouster's own legacy), Luminar, Hesai, and others. The LiDAR industry has a history of overpromising and underdelivering on adoption timelines.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 88,
+      "community": 60,
+      "dev_activity": 82,
+      "smart_money": 78,
+      "narrative": 80,
+      "hard_to_buy": 35,
+      "catalyst": 90
+    },
+    "catalysts": [
+      "Analyst Strong Buy consensus with $39.25 average target (101% upside from ~$21)",
+      "StereoLabs acquisition expands from LiDAR to full-stack perception platform",
+      "12 consecutive quarters of product revenue growth \u2014 remarkable consistency"
+    ],
+    "risks": [
+      "Still unprofitable with SPAC origin stigma",
+      "Intense LiDAR competition from Luminar, Hesai, and others",
+      "LiDAR industry has a history of overpromising on adoption timelines"
+    ],
+    "related_slugs": [
+      "unusual-machines"
+    ],
+    "citations": [
+      {
+        "claim": "Revenue $169.4M (+52.5% YoY), analyst target $39.25, acquired StereoLabs Feb 2026",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "ouster",
+    "current_price_usd": 21.0,
+    "market_cap_usd": 1300000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Terra Industries",
+    "ticker": null,
+    "category": "Autonomous Drones",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 56.8,
+    "one_liner": "Building Africa's biggest drone factory \u2014 15,000 sq ft, 30,000 drones/year capacity \u2014 backed by 8VC and Lux Capital with $34M raised.",
+    "thesis": "Terra Industries (formerly Terrahaptix, based in Abuja, Nigeria) is building Africa's largest drone factory with 15,000 sq ft and 30,000 drones/year capacity. The company raised $34M in January 2026 from 8VC and Lux Capital \u2014 serious backers who validate the thesis that drone manufacturing must be geographically diversified beyond China.\n\nThe Africa angle is compelling: the continent's infrastructure gaps (delivery, agriculture, surveillance) create massive demand for low-cost drones, and local manufacturing avoids import tariffs and supply chain vulnerabilities. Terra is positioned as the first mover in African drone manufacturing at scale.\n\nHowever, this is a private company with no public investment route, operating in a challenging regulatory and infrastructure environment. The jump from $34M Series A to actual production at scale involves significant execution risk. Manufacturing quality control, supply chain reliability, and local regulatory frameworks are all unknowns.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 55,
+      "community": 40,
+      "dev_activity": 50,
+      "smart_money": 72,
+      "narrative": 60,
+      "hard_to_buy": 80,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "$34M raised from 8VC and Lux Capital in January 2026",
+      "First-mover in large-scale African drone manufacturing",
+      "Infrastructure gaps across Africa create massive demand for local drone supply"
+    ],
+    "risks": [
+      "Private company with no public investment route",
+      "Manufacturing at scale in Nigeria presents infrastructure and regulatory challenges",
+      "30,000 drones/year capacity target unproven \u2014 execution risk is high"
+    ],
+    "related_slugs": [
+      "unusual-machines",
+      "ouster"
+    ],
+    "citations": [
+      {
+        "claim": "Abuja-based, 15,000 sq ft factory, 30,000 drones/year, $34M from 8VC and Lux Capital Jan 2026",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "terra-industries",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Niagen Bioscience (ChromaDex)",
+    "ticker": "$NAGE",
+    "category": "Longevity / BCI",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 69.0,
+    "one_liner": "The only profitable public longevity company, with $129.4M net sales (+30% YoY), $17.4M net income, and NAD+ therapy deployed at 1,200+ clinics.",
+    "thesis": "Niagen Bioscience (formerly ChromaDex, NASDAQ: NAGE) is the only profitable public longevity company \u2014 a distinction that matters enormously in a sector full of speculative pre-revenue plays. FY2025 delivered $129.4M net sales (+30% YoY), $17.4M net income (+103% YoY), 64.3% gross margin, and $64.8M cash on the balance sheet.\n\nThe product portfolio spans consumer supplements (Tru Niagen, a nicotinamide riboside supplement) and pharmaceutical-grade NAD+ therapy (Niagen IV) deployed at 1,200+ clinics. The NAD+ pathway is one of the most validated mechanisms in longevity science, with extensive peer-reviewed research supporting its role in cellular repair and energy metabolism.\n\nThe clinic deployment of Niagen IV represents a high-margin distribution channel that is difficult to replicate. Each clinic is a recurring revenue source with direct patient relationships. The transition from supplement company to clinical NAD+ therapy provider significantly expands the addressable market and margin profile.\n\nKey risks include that the longevity supplement market faces intense competition from generic NR/NMN suppliers, regulatory scrutiny of health claims, and the possibility that NAD+ therapy ultimately proves to be a marginal health benefit rather than a transformative longevity intervention.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 85,
+      "community": 65,
+      "dev_activity": 65,
+      "smart_money": 65,
+      "narrative": 78,
+      "hard_to_buy": 45,
+      "catalyst": 72
+    },
+    "catalysts": [
+      "FY2025 net income of $17.4M (+103% YoY) proves sustainable profitability",
+      "Niagen IV deployed at 1,200+ clinics \u2014 high-margin recurring revenue channel",
+      "NAD+ pathway is one of the most validated longevity mechanisms in peer-reviewed literature"
+    ],
+    "risks": [
+      "Intense competition from generic NR/NMN supplement suppliers",
+      "Regulatory scrutiny of longevity health claims could constrain marketing",
+      "NAD+ therapy may prove marginal rather than transformative for longevity outcomes"
+    ],
+    "related_slugs": [
+      "loyal",
+      "vitadao"
+    ],
+    "citations": [
+      {
+        "claim": "FY2025: $129.4M net sales (+30% YoY), $17.4M net income (+103% YoY), 64.3% gross margin, $64.8M cash",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "niagen-bioscience",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Rejuvenate Bio",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 46.8,
+    "one_liner": "George Church's gene therapy longevity company with active Wefunder campaign at $59.4M valuation, but employee count dropped 67% to ~2 people.",
+    "thesis": "Rejuvenate Bio is George Church's gene therapy company targeting aging through delivery of longevity genes (FGF21, sTGFbR, alpha-Klotho) via gene therapy vectors. The company has an active Wefunder campaign (Reg CF, ~$100 minimum) at a $59.4M valuation, making it one of the few longevity companies accessible to non-accredited investors.\n\nThe science is compelling: Church is one of the world's foremost geneticists, and the target genes have strong preclinical evidence for lifespan extension in animal models. The gene therapy approach \u2014 delivering multiple longevity factors simultaneously \u2014 is fundamentally different from supplement-based approaches and could deliver step-function improvements in healthspan.\n\nHowever, the red flags are significant. Employee count dropped 67% from 2023 to 2024, leaving approximately 2 employees. This is a company in survival mode, not growth mode. The $59.4M valuation on a Wefunder campaign with minimal staff suggests the brand name (George Church) is doing most of the heavy lifting. Extremely high risk \u2014 this is a binary bet on whether the company can raise enough to continue operations and advance to meaningful preclinical milestones.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 40,
+      "community": 50,
+      "dev_activity": 25,
+      "smart_money": 55,
+      "narrative": 70,
+      "hard_to_buy": 50,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "Active Wefunder campaign accessible at ~$100 minimum investment",
+      "George Church's reputation provides scientific credibility and fundraising ability",
+      "Gene therapy approach could deliver step-function longevity improvements vs supplements"
+    ],
+    "risks": [
+      "Employee count dropped 67% to ~2 people \u2014 company in survival mode",
+      "Reg CF crowdfunding at $59.4M valuation with minimal operational capacity",
+      "Gene therapy delivery and safety hurdles remain unsolved for longevity applications"
+    ],
+    "related_slugs": [
+      "niagen-bioscience",
+      "loyal",
+      "vitadao"
+    ],
+    "citations": [
+      {
+        "claim": "Active Wefunder campaign, $59.4M valuation, ~$100 minimum, employee count dropped 67% to ~2",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "rejuvenate-bio",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Blueprint (Bryan Johnson)",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 55.5,
+    "one_liner": "Bryan Johnson's longevity brand raised $60M from celebrity angels but has no token, no public stock, and carries significant reputational risk.",
+    "thesis": "Blueprint is Bryan Johnson's personal longevity protocol turned consumer brand. The company raised $60M from celebrity angels including Kim Kardashian, Naval Ravikant, Alex Hormozi, and the Winklevoss twins. Johnson's extreme personal anti-aging protocol has generated massive media attention, making Blueprint one of the most recognizable longevity brands globally.\n\nThe bull case is that Johnson is building the 'Apple of longevity' \u2014 a premium brand that could command extraordinary margins in the $4.2T wellness market. The celebrity investor roster provides distribution and cultural relevance that pure biotech companies lack.\n\nHowever, there is no token, no public stock, and no crowdfunding campaign \u2014 making Blueprint uninvestable for most people. More critically, Johnson's personal Epstein correspondence revelations (February 2026) add significant reputational risk. The brand is inseparable from Johnson's personal image, which creates key-man risk that few consumer brands face.\n\nThis is a watch-list entry rather than an actionable investment. If Blueprint eventually IPOs or offers equity crowdfunding, the reputational risk premium would need to be carefully assessed against the brand's cultural momentum.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 60,
+      "community": 70,
+      "dev_activity": 45,
+      "smart_money": 65,
+      "narrative": 75,
+      "hard_to_buy": 70,
+      "catalyst": 30
+    },
+    "catalysts": [
+      "$60M raised from celebrity angels (Kardashian, Naval, Hormozi, Winklevoss)",
+      "One of the most recognizable longevity brands globally via media attention",
+      "Premium positioning in $4.2T wellness market"
+    ],
+    "risks": [
+      "No token, no public stock, no crowdfunding \u2014 currently uninvestable",
+      "Bryan Johnson Epstein correspondence revelations (Feb 2026) create reputational risk",
+      "Brand inseparable from Johnson's personal image \u2014 extreme key-man risk"
+    ],
+    "related_slugs": [
+      "niagen-bioscience",
+      "loyal"
+    ],
+    "citations": [
+      {
+        "claim": "$60M from celebrity angels, no public investment route, Epstein correspondence revelations Feb 2026",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "blueprint-longevity",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Cyclic Materials",
+    "ticker": null,
+    "category": "Geopolitical / Critical Materials",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 59.0,
+    "one_liner": "Rare earth recycling leader with $162M raised, T. Rowe Price-led Series C, MIT Tech Review Top 10 Climate Tech, and potential IPO 2027-2028.",
+    "thesis": "Cyclic Materials is the most investable rare earth recycling play. The Toronto-based company raised $162M including a $75M Series C led by T. Rowe Price in January 2026. Named MIT Technology Review Top 10 Climate Tech, the company has three facilities operational or under construction across Canada and the US.\n\nThe strategic moat is the exclusive 10-year recycling partnership with VACUUMSCHMELZE, one of the world's largest magnetic materials companies. This offtake agreement provides revenue visibility that most recycling startups lack. Rare earth recycling is the most actionable geopolitical sector \u2014 it directly addresses Western dependence on Chinese rare earth processing without the 10-15 year timeline of opening new mines.\n\nCyclic Materials is private, but the T. Rowe Price lead on the Series C signals potential IPO in 2027-2028. Pre-IPO shares may become available on secondary markets (EquityZen, Forge) as the company approaches public listing. The rare earth recycling thesis is increasingly validated by government policy (DOE grants, CHIPS Act-adjacent funding).\n\nRisks include that recycling economics are untested at commercial scale, the Chinese rare earth processing monopoly could respond with price dumping, and private market illiquidity until an IPO.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 60,
+      "community": 40,
+      "dev_activity": 55,
+      "smart_money": 77,
+      "narrative": 70,
+      "hard_to_buy": 80,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "$75M Series C led by T. Rowe Price in January 2026 signals IPO trajectory",
+      "Exclusive 10-year VACUUMSCHMELZE recycling partnership provides revenue visibility",
+      "MIT Tech Review Top 10 Climate Tech \u2014 growing institutional recognition"
+    ],
+    "risks": [
+      "Private company \u2014 illiquid until potential IPO in 2027-2028",
+      "Recycling economics untested at full commercial scale",
+      "Chinese rare earth processors could respond with price dumping to undercut recyclers"
+    ],
+    "related_slugs": [
+      "mp-materials",
+      "usa-rare-earth"
+    ],
+    "citations": [
+      {
+        "claim": "$162M raised, $75M Series C led by T. Rowe Price Jan 2026, three facilities, VACUUMSCHMELZE 10-year partnership",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "cyclic-materials",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "MP Materials",
+    "ticker": "$MP",
+    "category": "Geopolitical / Critical Materials",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 67.8,
+    "one_liner": "America's only fully integrated mine-to-magnet rare earth producer with $400M DoD investment and $1.25B magnet campus, but trades at 1,430x forward P/E.",
+    "thesis": "MP Materials is the most direct public play on American rare earth independence. It is the only fully integrated mine-to-magnet rare earth producer in the US, operating the Mountain Pass mine in California. The DoD invested $400M for a 15% equity stake, and the company announced a $1.25B '10X' magnet campus in February 2026 with 100% of output committed to the Pentagon.\n\nThe geopolitical thesis is simple and powerful: China controls ~60% of rare earth mining and ~90% of processing. Any supply disruption \u2014 whether from trade war, Taiwan conflict, or embargo \u2014 would cripple Western defense and EV manufacturing. MP Materials is the primary hedge against this scenario.\n\nHowever, the valuation is extreme. At ~$50 and ~$9B market cap, MP trades at approximately 1,430x forward P/E. The stock prices in the geopolitical premium and then some. The magnet campus won't generate meaningful revenue until 2027-2028 at the earliest, creating a long gap between current valuation and revenue realization.\n\nUSA Rare Earth (NASDAQ: USAR) offers earlier-stage exposure with a $3.1B government capital package but at a much smaller scale and higher risk profile.",
+    "signals": {
+      "toy_phase": 45,
+      "working_code": 80,
+      "community": 55,
+      "dev_activity": 72,
+      "smart_money": 85,
+      "narrative": 85,
+      "hard_to_buy": 30,
+      "catalyst": 68
+    },
+    "catalysts": [
+      "$1.25B '10X' magnet campus announced Feb 2026 with 100% Pentagon offtake",
+      "$400M DoD investment with 15% equity stake validates strategic importance",
+      "Only fully integrated mine-to-magnet rare earth producer in the US"
+    ],
+    "risks": [
+      "Extreme valuation at ~1,430x forward P/E \u2014 geopolitical premium fully priced",
+      "Magnet campus revenue not expected until 2027-2028 at earliest",
+      "Chinese rare earth price manipulation could undercut domestic production economics"
+    ],
+    "related_slugs": [
+      "cyclic-materials",
+      "usa-rare-earth"
+    ],
+    "citations": [
+      {
+        "claim": "~$50, ~$9B cap, $400M DoD investment (15% equity), $1.25B '10X' magnet campus, 1,430x forward P/E",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "mp-materials",
+    "current_price_usd": 50.0,
+    "market_cap_usd": 9000000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "USA Rare Earth",
+    "ticker": "$USAR",
+    "category": "Geopolitical / Critical Materials",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 60.0,
+    "one_liner": "Earlier-stage rare earth play with $3.1B government capital package, offering higher-risk higher-reward exposure vs MP Materials.",
+    "thesis": "USA Rare Earth (NASDAQ: USAR) is an earlier-stage play on the American rare earth independence thesis. The company has secured a $3.1B government capital package, signaling significant federal backing for domestic rare earth development.\n\nWhile MP Materials is the established leader, USAR offers a higher-risk, higher-reward profile for investors who believe the rare earth independence thesis will require multiple domestic producers to meet demand. The government capital package provides a funding runway that most junior miners lack.\n\nThe investment case depends heavily on execution \u2014 transitioning from government-backed development stage to actual production. The rare earth processing chain (mining, separation, oxide production, metal making, magnet manufacturing) is technically demanding, and few Western companies have mastered the full chain.\n\nRisks include that the company is much earlier-stage than MP Materials, government funding programs are subject to political winds, and the rare earth market is structurally challenging for high-cost Western producers competing against Chinese scale.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 55,
+      "community": 45,
+      "dev_activity": 60,
+      "smart_money": 72,
+      "narrative": 80,
+      "hard_to_buy": 40,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "$3.1B government capital package provides massive funding runway",
+      "Federal rare earth independence policy creating structural demand for domestic producers",
+      "Higher-beta alternative to MP Materials for rare earth exposure"
+    ],
+    "risks": [
+      "Much earlier-stage than MP Materials \u2014 production timeline uncertain",
+      "Government funding programs subject to political winds and budget changes",
+      "Rare earth processing chain technically demanding \u2014 few Western companies have mastered it"
+    ],
+    "related_slugs": [
+      "mp-materials",
+      "cyclic-materials"
+    ],
+    "citations": [
+      {
+        "claim": "$3.1B government capital package",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "usa-rare-earth",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Copenhagen Atomics",
+    "ticker": null,
+    "category": "Geopolitical / Critical Materials",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 57.2,
+    "one_liner": "Most advanced Western thorium molten salt reactor developer with two full-size prototypes and first European thorium MSR critical experiment planned 2026-27.",
+    "thesis": "Copenhagen Atomics is the most advanced Western developer of thorium molten salt reactors (MSRs). The company has built two full-size non-fission prototypes and is planning a critical experiment at Paul Scherrer Institute in 2026-2027 \u2014 the first European thorium MSR critical experiment ever. Commercial reactors are targeted for the early 2030s.\n\nThorium MSRs represent a fundamentally different nuclear paradigm: thorium is 3-4x more abundant than uranium, MSRs operate at atmospheric pressure (eliminating meltdown risk), and the waste profile is dramatically better than conventional fission. If the technology works at scale, it could unlock safe, abundant nuclear energy without the waste and proliferation concerns of uranium-based systems.\n\nThe company has raised over 25M EUR, with shares traded secondarily. The critical experiment at Paul Scherrer Institute is the single most important near-term catalyst \u2014 a successful result would validate the core physics and could trigger a major fundraising round.\n\nRisks are substantial: nuclear regulatory timelines are measured in decades, thorium MSR materials science (corrosion resistance for molten salt containment) is unsolved at commercial scale, and the company is competing against a global fission industry that has no interest in paradigm shifts.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 55,
+      "community": 45,
+      "dev_activity": 55,
+      "smart_money": 50,
+      "narrative": 65,
+      "hard_to_buy": 80,
+      "catalyst": 55
+    },
+    "catalysts": [
+      "Critical experiment at Paul Scherrer Institute planned 2026-2027 \u2014 first European thorium MSR test",
+      "Two full-size non-fission prototypes already built",
+      "Thorium MSRs address nuclear waste, safety, and proliferation concerns simultaneously"
+    ],
+    "risks": [
+      "Nuclear regulatory timelines measured in decades \u2014 commercial reactors not until early 2030s",
+      "Molten salt corrosion resistance at commercial scale is an unsolved materials science problem",
+      "Private company with limited liquidity \u2014 shares only traded secondarily"
+    ],
+    "related_slugs": [
+      "nuscale-power"
+    ],
+    "citations": [
+      {
+        "claim": "Two full-size non-fission prototypes, critical experiment at Paul Scherrer Institute 2026-27, \u20ac25M+ raised",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "copenhagen-atomics",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Energy Recovery",
+    "ticker": "$ERII",
+    "category": "Geopolitical / Critical Materials",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 60.0,
+    "one_liner": "Desalination pure play at a 52-week low after abandoning CO2 business, but secular water scarcity tailwind makes this a beaten-down value play.",
+    "thesis": "Energy Recovery is a desalination infrastructure company trading at a 52-week low (~$11) after abandoning its CO2 business and missing guidance. The stock decline has created a potential value opportunity in essential infrastructure.\n\nThe secular tailwind is global water scarcity. Desalination capacity is growing at 5-8% annually as freshwater sources deplete and populations grow. Energy Recovery's pressure exchanger technology reduces desalination energy costs by up to 60%, making it a critical component in essentially every large-scale reverse osmosis desalination plant globally. The company holds ~95% market share in energy recovery devices for seawater desalination.\n\nThe abandonment of the CO2 business, while a near-term negative (showing failed diversification), actually simplifies the investment thesis: this is now a pure play on desalination infrastructure growth. At the current depressed valuation, the market is penalizing the company for the diversification failure while potentially undervaluing the core desalination franchise.\n\nRisks include that the stock may be cheap for a reason (structural margin pressure, competition from Chinese manufacturers), the missed guidance suggests potential demand softness, and the desalination market grows steadily rather than explosively.",
+    "signals": {
+      "toy_phase": 45,
+      "working_code": 85,
+      "community": 40,
+      "dev_activity": 60,
+      "smart_money": 55,
+      "narrative": 70,
+      "hard_to_buy": 35,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "Trading at 52-week low creates value entry point for contrarian investors",
+      "Global desalination capacity growing 5-8% annually \u2014 essential infrastructure",
+      "Abandonment of CO2 business simplifies story to pure desalination play"
+    ],
+    "risks": [
+      "Missed guidance suggests potential demand softness in core business",
+      "Competition from Chinese desalination equipment manufacturers on price",
+      "Desalination market grows steadily rather than explosively \u2014 limited upside catalyst"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "~$11, desalination pure play at 52-week low after abandoning CO2 business and missing guidance",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "energy-recovery",
+    "current_price_usd": 11.0,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Enapter",
+    "ticker": null,
+    "category": "Geopolitical / Critical Materials",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 60.1,
+    "one_liner": "Only public pure-play AEM electrolyzer company using no iridium, platinum, or titanium \u2014 a massive cost advantage over PEM electrolysis.",
+    "thesis": "Enapter AG (Frankfurt: H2O) is the only publicly traded pure-play Anion Exchange Membrane (AEM) electrolyzer company. AEM technology uses no iridium, platinum, or titanium \u2014 precious metals that make PEM electrolysis expensive and supply-constrained. This materials advantage could prove decisive as green hydrogen scales from pilot to industrial deployment.\n\nThe green hydrogen market is projected to grow from ~$4B to $30-50B by 2030, driven by industrial decarbonization, energy storage, and transportation. Electrolyzers are the critical hardware for green hydrogen production, and the electrolyzer market is currently dominated by alkaline (cheap but slow) and PEM (fast but expensive) technologies. AEM offers a potential middle path: lower cost than PEM with better response time than alkaline.\n\nEnapter is a German micro-cap trading on the Frankfurt exchange (H2O.F), which limits liquidity and accessibility for non-European investors. The primary risk is that AEM technology is unproven at industrial scale \u2014 what works in the lab may face durability, efficiency, or manufacturing challenges at megawatt-scale deployment.\n\nThe fastest-growing patent cluster globally is 'operating or servicing of cells' (electrolysis/green hydrogen) \u2014 growing +23% for the second consecutive year \u2014 which provides a strong secular tailwind for Enapter's core technology.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 60,
+      "community": 45,
+      "dev_activity": 65,
+      "smart_money": 55,
+      "narrative": 72,
+      "hard_to_buy": 65,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "AEM technology eliminates need for iridium, platinum, titanium \u2014 massive cost advantage",
+      "Green hydrogen electrolysis is fastest-growing patent cluster globally (+23% YoY)",
+      "Only public pure-play AEM electrolyzer \u2014 unique category exposure"
+    ],
+    "risks": [
+      "AEM technology unproven at industrial scale \u2014 durability and efficiency unknowns",
+      "German micro-cap on Frankfurt exchange \u2014 limited liquidity and accessibility",
+      "Green hydrogen market growth depends on policy support and carbon pricing"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "Only public pure-play AEM electrolyzer, no iridium/platinum/titanium, German micro-cap, Frankfurt: H2O",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "enapter",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "LanzaTech",
+    "ticker": "$LNZA",
+    "category": "Carbon / Climate Tech",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 64.4,
+    "one_liner": "Only public pure-play carbon recycling company, with world's first commercial SAF plant operational and Q4 licensing revenue jumping from $1.1M to $16.7M YoY.",
+    "thesis": "LanzaTech is the only publicly traded pure-play carbon recycling company. Its LanzaJet Freedom Pines Fuels plant (Soperton, GA) began operating in November 2025 \u2014 the world's first commercial-scale ethanol-to-jet sustainable aviation fuel (SAF) plant. This is a genuine first: a plant that converts industrial waste gases into jet fuel at commercial scale.\n\nThe financial inflection is visible in Q4 2025 licensing revenue: $16.7M versus $1.1M in Q4 2024, a 15x year-over-year jump. LanzaJet (a separate entity in which LanzaTech holds a stake) was valued at $650M. The licensing model means LanzaTech can scale revenue without proportional capital expenditure \u2014 a critical advantage for a capital-intensive industry.\n\nThe SAF market is projected to reach $37B by 2030, driven by aviation decarbonization mandates in the EU (RefuelEU) and growing voluntary commitments from airlines. LanzaTech's gas fermentation technology platform can also produce ethanol, chemicals, and other products from industrial waste gases, providing revenue diversification.\n\nKey risks: LanzaTech is a small-cap with volatile trading, the SAF market depends on regulatory mandates that could change, and scaling gas fermentation to meet global SAF demand requires massive capital investment in new plants. The company remains unprofitable.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 75,
+      "community": 45,
+      "dev_activity": 65,
+      "smart_money": 68,
+      "narrative": 72,
+      "hard_to_buy": 45,
+      "catalyst": 72
+    },
+    "catalysts": [
+      "World's first commercial SAF plant operational since Nov 2025",
+      "Q4 2025 licensing revenue $16.7M vs $1.1M Q4 2024 \u2014 15x YoY jump",
+      "SAF market projected to reach $37B by 2030 on aviation decarbonization mandates"
+    ],
+    "risks": [
+      "Small-cap with volatile trading and still unprofitable",
+      "SAF market depends on regulatory mandates (RefuelEU) that could change",
+      "Scaling gas fermentation globally requires massive capital investment"
+    ],
+    "related_slugs": [
+      "twelve-carbon"
+    ],
+    "citations": [
+      {
+        "claim": "LanzaJet Freedom Pines operational Nov 2025, Q4 licensing $16.7M vs $1.1M YoY, LanzaJet valued at $650M",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "lanzatech",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Twelve",
+    "ticker": null,
+    "category": "Carbon / Climate Tech",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 58.2,
+    "one_liner": "CO2-to-fuel company with $728M raised, first AirPlant under construction, backed by Amazon Climate Pledge Fund, United Airlines, and Mitsui.",
+    "thesis": "Twelve (formerly Opus 12) has raised $728M to build its first AirPlant \u2014 a facility that converts CO2, water, and renewable electricity into sustainable aviation fuel and chemicals. The plant is under construction in Moses Lake, Washington. Backers include Amazon's Climate Pledge Fund, United Airlines Ventures, and Mitsui.\n\nThe technology is electrochemical CO2 reduction \u2014 using electricity to split CO2 and recombine it with hydrogen into hydrocarbon fuels. If the economics work at scale, this is essentially synthetic fossil fuel production using atmospheric carbon, creating a closed carbon loop. The approach is complementary to LanzaTech's gas fermentation method.\n\nTwelve is a strong IPO candidate given the $728M raised and blue-chip investor base. The Moses Lake plant will be the first commercial-scale proof point, expected to demonstrate whether the technology can achieve cost-competitive SAF production.\n\nRisks include that direct air capture plus electrochemical conversion is extremely energy-intensive, the economics may not close without carbon credits or mandates, and the company is still private with no public investment route. The SAF market, while growing, remains dependent on regulatory support.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 55,
+      "community": 40,
+      "dev_activity": 55,
+      "smart_money": 80,
+      "narrative": 65,
+      "hard_to_buy": 80,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "First AirPlant under construction in Moses Lake, WA \u2014 commercial-scale proof point",
+      "$728M raised from Amazon Climate Pledge, United Airlines, Mitsui \u2014 strong IPO candidate",
+      "Electrochemical CO2-to-fuel creates closed carbon loop if economics work"
+    ],
+    "risks": [
+      "Electrochemical CO2 conversion is extremely energy-intensive \u2014 economics uncertain at scale",
+      "Private company with no public investment route",
+      "SAF economics depend on carbon credits and regulatory mandates that could change"
+    ],
+    "related_slugs": [
+      "lanzatech"
+    ],
+    "citations": [
+      {
+        "claim": "$728M raised, first AirPlant under construction Moses Lake WA, backed by Amazon Climate Pledge, United Airlines, Mitsui",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "twelve-carbon",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Stardust Solutions",
+    "ticker": null,
+    "category": "Carbon / Climate Tech",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 50.5,
+    "one_liner": "Largest-ever geoengineering round ($75M Series A from Lowercarbon Capital) for stratospheric aerosol injection, with extreme ethical and regulatory risk.",
+    "thesis": "Stardust Solutions raised the largest-ever geoengineering round \u2014 a $75M Series A led by Lowercarbon Capital (Chris Sacca) in October 2025. The US-Israeli company plans stratospheric aerosol injection using proprietary reflective particles (not sulfur dioxide, which has known ozone-depletion risks). Outdoor experiments are planned from April 2026.\n\nThe thesis is binary and extreme: if climate change accelerates faster than emissions reduction, solar radiation management (SRM) may become politically necessary regardless of ethical objections. Stardust is positioning to be the leading commercial provider of a technology that governments may eventually mandate. The $75M from Chris Sacca's Lowercarbon Capital provides credibility in the climate-tech investment community.\n\nHowever, the ethical and regulatory risks are unprecedented. Geoengineering is banned in Mexico, multiple US states are proposing bans, and the scientific community is deeply divided on whether stratospheric aerosol injection should be pursued at all. Termination shock (the rapid warming that occurs if injection stops) creates a commitment trap. International governance frameworks do not exist.\n\nThis is the most controversial entry in the entire report. It is included because the capital deployment is real and the smart-money signal (Sacca) is strong, but the ethical and regulatory risks make this unsuitable for most investors.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 35,
+      "community": 30,
+      "dev_activity": 45,
+      "smart_money": 70,
+      "narrative": 55,
+      "hard_to_buy": 80,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "$75M Series A from Lowercarbon Capital (Chris Sacca) \u2014 largest geoengineering round ever",
+      "Outdoor experiments planned from April 2026 \u2014 first real-world data",
+      "If climate emergency accelerates, SRM may become politically necessary"
+    ],
+    "risks": [
+      "Banned in Mexico, multiple US states proposing bans \u2014 extreme regulatory risk",
+      "Scientific community deeply divided on stratospheric aerosol injection safety",
+      "Termination shock creates irreversible commitment trap if injection ever stops"
+    ],
+    "related_slugs": [
+      "lanzatech",
+      "twelve-carbon"
+    ],
+    "citations": [
+      {
+        "claim": "$75M Series A led by Lowercarbon Capital Oct 2025, stratospheric aerosol injection, outdoor experiments from April 2026",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "stardust-solutions",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Substrate (Founders Fund)",
+    "ticker": null,
+    "category": "Venture Signal",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 55.5,
+    "one_liner": "X-ray lithography startup challenging ASML's monopoly, valued at $1B with $100M raised and backed by Founders Fund.",
+    "thesis": "Substrate is developing X-ray lithography as an alternative to ASML's EUV lithography monopoly. The company raised $100M at a $1B valuation with backing from Founders Fund \u2014 one of Peter Thiel's highest-conviction frontier bets for 2025-2026.\n\nASML's monopoly on EUV lithography equipment is one of the most critical single points of failure in the global semiconductor supply chain. A single company in the Netherlands controls the production of machines that cost $380M+ each and are essential for manufacturing advanced chips. Any viable alternative would have enormous strategic and commercial value.\n\nX-ray lithography has been researched for decades but never commercialized due to technical challenges (mask proximity, alignment precision, source intensity). Substrate presumably believes it has solved or can solve these issues \u2014 the $100M raise and Founders Fund backing suggest genuine technical progress.\n\nHowever, this is an extremely long-shot bet. ASML has spent decades and tens of billions perfecting EUV, and semiconductor lithography is one of the most technically demanding manufacturing processes ever created. The company is private with no public investment route, and the technology is pre-commercial.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 40,
+      "community": 30,
+      "dev_activity": 50,
+      "smart_money": 82,
+      "narrative": 60,
+      "hard_to_buy": 90,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "$100M raised at $1B valuation with Founders Fund backing",
+      "Challenging ASML's EUV monopoly \u2014 one of the most critical supply chain bottlenecks",
+      "X-ray lithography could leapfrog EUV for next-generation chip manufacturing"
+    ],
+    "risks": [
+      "ASML has decades and tens of billions of dollars head start in lithography",
+      "X-ray lithography has been researched for decades without commercialization",
+      "Private company with no public investment route \u2014 pre-commercial technology"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "X-ray lithography, $100M at $1B valuation, Founders Fund backed",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "substrate-litho",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "General Matter",
+    "ticker": null,
+    "category": "Venture Signal",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 53.0,
+    "one_liner": "HALEU nuclear fuel production company led by a former Founders Fund partner, addressing the critical fuel bottleneck for advanced reactors.",
+    "thesis": "General Matter is focused on HALEU (High-Assay Low-Enriched Uranium) fuel production, led by a former Founders Fund partner. HALEU is the fuel required by virtually all advanced nuclear reactor designs (SMRs, molten salt reactors, etc.), yet the only commercial source is currently Russia's TENEX \u2014 a massive geopolitical vulnerability.\n\nThe US has allocated $700M+ through the DOE to develop domestic HALEU supply, but production capacity remains woefully inadequate. Every advanced reactor company (NuScale, Kairos, X-energy, TerraPower) needs HALEU, creating guaranteed demand from a well-funded customer base.\n\nThe Founders Fund connection and former partner leadership signal deep conviction in the nuclear fuel thesis. This is a picks-and-shovels play on the advanced nuclear buildout \u2014 regardless of which reactor design wins, they all need HALEU.\n\nRisks include that HALEU production requires NRC licensing and enrichment infrastructure that takes years to build, competition from Centrus Energy (which has the only operating US HALEU facility), and the nuclear fuel market is heavily regulated with long procurement cycles.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 45,
+      "community": 30,
+      "dev_activity": 50,
+      "smart_money": 75,
+      "narrative": 60,
+      "hard_to_buy": 85,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "HALEU is required by all advanced reactor designs \u2014 guaranteed demand from well-funded customers",
+      "Former Founders Fund partner leadership provides smart-money validation",
+      "$700M+ DOE allocation for domestic HALEU supply development"
+    ],
+    "risks": [
+      "HALEU production requires NRC licensing and years of infrastructure buildout",
+      "Competition from Centrus Energy (only operating US HALEU facility)",
+      "Nuclear fuel market heavily regulated with long procurement cycles"
+    ],
+    "related_slugs": [
+      "copenhagen-atomics",
+      "nuscale-power"
+    ],
+    "citations": [
+      {
+        "claim": "HALEU nuclear fuel production, led by former Founders Fund partner",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "general-matter",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Rhoda AI",
+    "ticker": null,
+    "category": "Venture Signal",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 52.2,
+    "one_liner": "Robotic intelligence company with a $450M Series A from Founders Fund, building the AI layer for physical-world robotics.",
+    "thesis": "Rhoda AI raised a $450M Series A for robotic intelligence \u2014 one of the largest early-stage rounds in the AI robotics space. Founders Fund's backing signals conviction that the next frontier after digital AI is physical-world AI (embodied intelligence for robotics).\n\nThe thesis is that the AI models powering chatbots and image generation will eventually need to understand and manipulate the physical world. Rhoda AI is building the intelligence layer for this transition, which could be as transformative as the shift from mainframe to personal computing.\n\nThe $450M Series A at the early stage is unusual and suggests either exceptional technical talent, a significant technical breakthrough, or both. Founders Fund's 2025-2026 portfolio is focused on frontier hardware and physical-world technology, and Rhoda AI fits this pattern.\n\nRisks include that robotics AI is a brutally competitive field (Google DeepMind, Tesla Optimus, Figure AI, 1X), the company is private and pre-revenue, and the $450M raise creates high expectations that may be difficult to meet. Physical-world AI faces challenges that digital AI has avoided: real-time operation, safety certification, and hardware reliability.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 40,
+      "community": 30,
+      "dev_activity": 50,
+      "smart_money": 80,
+      "narrative": 60,
+      "hard_to_buy": 90,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "$450M Series A from Founders Fund \u2014 one of the largest early-stage robotics AI rounds",
+      "Physical-world AI is the next frontier after digital AI models",
+      "Founders Fund 2025-26 portfolio concentrated on frontier hardware and physical-world tech"
+    ],
+    "risks": [
+      "Brutally competitive field \u2014 Google DeepMind, Tesla Optimus, Figure AI, 1X all competing",
+      "Private and pre-revenue with $450M raise creating extremely high expectations",
+      "Physical-world AI faces safety, real-time operation, and hardware reliability challenges"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "$450M Series A for robotic intelligence, Founders Fund backed",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "rhoda-ai",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Halter",
+    "ticker": null,
+    "category": "Venture Signal",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 57.0,
+    "one_liner": "AI cattle management company with $220M Series E personally overseen by Peter Thiel \u2014 applying precision tech to the $1.4T global cattle industry.",
+    "thesis": "Halter raised a $220M Series E for AI cattle management, with Peter Thiel personally overseeing the round. The company uses GPS-enabled collars with AI to manage cattle herds \u2014 virtual fencing, health monitoring, and grazing optimization. The technology replaces physical fences and manual herding with software-defined pasture management.\n\nThe global cattle industry exceeds $1.4T, yet remains one of the least technologically penetrated sectors. Halter's approach is classic Founders Fund: applying frontier technology to a massive, overlooked market. The $220M Series E suggests the company has demonstrated product-market fit and is scaling rapidly.\n\nThiel's personal involvement is the strongest smart-money signal possible. He does not personally oversee funding rounds casually \u2014 this suggests he sees Halter as a potential category-defining company in agri-tech.\n\nRisks include that agriculture technology adoption is notoriously slow, farmer willingness to pay for technology varies dramatically by region and herd size, and the company is private with no public investment route. The competitive moat (GPS collars + AI) may not be defensible against well-funded agricultural incumbents like John Deere entering the space.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 60,
+      "community": 35,
+      "dev_activity": 50,
+      "smart_money": 82,
+      "narrative": 50,
+      "hard_to_buy": 85,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "$220M Series E with Peter Thiel personally overseeing the round",
+      "AI cattle management in $1.4T global cattle industry \u2014 massive underserved TAM",
+      "Virtual fencing and AI health monitoring replacing physical infrastructure"
+    ],
+    "risks": [
+      "Agriculture technology adoption is notoriously slow across geographies",
+      "Competitive moat may not be defensible against agricultural incumbents (John Deere)",
+      "Private company with no public investment route"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "$220M Series E for AI cattle management, Thiel personally oversaw the round",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "halter-agritech",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Pocket (YC W2026)",
+    "ticker": null,
+    "category": "Venture Signal",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 56.5,
+    "one_liner": "YC W2026 standout with $27M ARR at seed stage \u2014 the strongest revenue signal of any company in the latest batch.",
+    "thesis": "Pocket is a standout from Y Combinator's W2026 batch, reportedly achieving $27M ARR at the seed stage. This is an extraordinary revenue number for a seed-stage company \u2014 most YC companies have zero to low-single-digit millions in ARR at this stage.\n\nThe $27M ARR at seed suggests either an extremely strong product-market fit or a business model that generates revenue rapidly (marketplace, fintech, or infrastructure). YC's selection of Pocket as a standout implies the accelerator sees potential for a breakout trajectory.\n\nYC's track record of identifying category-defining companies (Airbnb, Stripe, Coinbase, DoorDash) at the seed stage is unmatched. Companies highlighted from recent YC batches have historically attracted significant follow-on funding within 6-12 months of Demo Day.\n\nRisks include that seed-stage companies have extremely high failure rates regardless of early revenue, the specifics of Pocket's business are not widely disclosed (reducing thesis confidence), and the company is private with no public investment route. The $27M ARR number, if accurate, may also attract intense competition.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 65,
+      "community": 35,
+      "dev_activity": 50,
+      "smart_money": 72,
+      "narrative": 50,
+      "hard_to_buy": 85,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "$27M ARR at seed stage \u2014 strongest revenue signal in YC W2026 batch",
+      "YC backing with accelerator's unmatched track record of identifying breakout companies",
+      "Likely to attract significant Series A follow-on funding within 6-12 months"
+    ],
+    "risks": [
+      "Seed-stage company with extremely high base-rate failure risk",
+      "Limited public information on business model and product specifics",
+      "Private with no public investment route \u2014 inaccessible to most investors"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "YC W2026 standout, $27M ARR at seed stage",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "pocket-yc",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Voltair (YC W2026)",
+    "ticker": null,
+    "category": "Venture Signal",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 51.2,
+    "one_liner": "YC W2026 standout building self-charging drones that perch on power lines \u2014 solving the range limitation that constraints all drone operations.",
+    "thesis": "Voltair is a YC W2026 standout developing self-charging drones that perch on power lines to recharge. This addresses the single biggest constraint in drone operations: limited flight time (typically 20-40 minutes for commercial drones). If drones can autonomously land on power lines and recharge, the operational range becomes essentially unlimited.\n\nThe concept is elegant in its simplicity: existing power line infrastructure becomes a universal drone charging network at zero additional cost. This could enable persistent drone operations for infrastructure inspection, delivery, surveillance, and agriculture without dedicated charging infrastructure.\n\nThe intersection of autonomous drones and energy harvesting is a natural YC bet \u2014 combining hardware innovation with a clear path to recurring revenue (drone-as-a-service for utility inspection, etc.).\n\nRisks are significant: perching on live power lines presents enormous safety and regulatory challenges, utility companies may resist unauthorized use of their infrastructure, and the technology must work reliably in all weather conditions. This is an early-stage, high-concept company with significant technical hurdles remaining.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 40,
+      "community": 30,
+      "dev_activity": 45,
+      "smart_money": 65,
+      "narrative": 60,
+      "hard_to_buy": 85,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "YC W2026 backing \u2014 accelerator validation of self-charging drone concept",
+      "Solving range limitation (20-40 min flight time) that constrains all drone operations",
+      "Power line infrastructure as universal drone charging network at zero additional cost"
+    ],
+    "risks": [
+      "Perching on live power lines presents enormous safety and regulatory challenges",
+      "Utility companies may resist unauthorized use of their infrastructure",
+      "Early-stage with significant technical hurdles \u2014 all-weather reliability unproven"
+    ],
+    "related_slugs": [
+      "unusual-machines",
+      "ouster",
+      "terra-industries"
+    ],
+    "citations": [
+      {
+        "claim": "YC W2026 standout, self-charging drones that perch on power lines",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "voltair-yc",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Asimov (YC W2026)",
+    "ticker": null,
+    "category": "Venture Signal",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 52.8,
+    "one_liner": "YC W2026 standout with 5,000+ contributor motion dataset for training robots \u2014 building the ImageNet of physical movement.",
+    "thesis": "Asimov is a YC W2026 standout building a 5,000+ contributor motion dataset for training robots. The concept is to create the 'ImageNet of physical movement' \u2014 a foundational dataset that robotic AI systems can train on to learn manipulation, locomotion, and interaction with the physical world.\n\nImageNet's creation in 2009 was the catalyst that enabled the deep learning revolution in computer vision. If Asimov can build a comparably comprehensive and standardized dataset for physical motion, it could play a similar catalytic role in embodied AI. The dataset approach is capital-efficient (data collection vs. hardware R&D) and creates network effects (more contributors = better dataset = more users = more contributors).\n\nThe 5,000+ contributors suggest a crowdsourced approach, which could scale faster than internal data collection efforts at robotics companies. This is relevant as companies like Tesla (Optimus), Figure AI, and Google DeepMind all need motion training data.\n\nRisks include that data quality control across 5,000+ contributors is extremely challenging, the robotics AI market may standardize on proprietary datasets from companies like Google, and seed-stage companies face high base-rate failure. The company is private with no public investment route.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 45,
+      "community": 45,
+      "dev_activity": 45,
+      "smart_money": 65,
+      "narrative": 55,
+      "hard_to_buy": 85,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "5,000+ contributor motion dataset \u2014 building the 'ImageNet of physical movement'",
+      "YC W2026 backing validates the foundational dataset approach for robotics",
+      "All major robotics companies need motion training data \u2014 potential universal customer base"
+    ],
+    "risks": [
+      "Data quality control across 5,000+ contributors is extremely challenging",
+      "Robotics AI may standardize on proprietary datasets from Google, Tesla, etc.",
+      "Seed-stage with high base-rate failure risk and no public investment route"
+    ],
+    "related_slugs": [
+      "rhoda-ai"
+    ],
+    "citations": [
+      {
+        "claim": "YC W2026 standout, 5,000+ contributor motion dataset for training robots",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "asimov-yc",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Human Archive (YC W2026)",
+    "ticker": null,
+    "category": "Venture Signal",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 47.8,
+    "one_liner": "YC W2026 standout archiving the physical world for embodied AI \u2014 creating the spatial data layer for robot navigation and interaction.",
+    "thesis": "Human Archive is a YC W2026 standout focused on archiving the physical world for embodied AI. The concept is creating a comprehensive spatial data layer that robots and AI agents can use to navigate and interact with real-world environments.\n\nAs embodied AI moves from labs to deployment (warehouses, homes, cities), AI systems need detailed maps and models of physical spaces. Human Archive is building this data infrastructure layer \u2014 analogous to how Google Maps created the spatial data layer for mobile applications.\n\nThe timing aligns with the broader embodied AI wave: Tesla Optimus, Figure AI, 1X, and others are all approaching commercial deployment, creating demand for spatial data that doesn't currently exist at scale.\n\nRisks are typical of very early-stage ventures: the concept is compelling but execution is unproven, the market for spatial data for robotics may take years to develop, and competing approaches (real-time SLAM, simulation-based training) may reduce the need for pre-built spatial archives. Private with no public investment route.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 35,
+      "community": 30,
+      "dev_activity": 40,
+      "smart_money": 65,
+      "narrative": 55,
+      "hard_to_buy": 85,
+      "catalyst": 30
+    },
+    "catalysts": [
+      "YC W2026 backing \u2014 accelerator validation of spatial data for embodied AI",
+      "Embodied AI companies approaching commercial deployment creating data demand",
+      "Building the 'Google Maps of physical spaces' for robot navigation"
+    ],
+    "risks": [
+      "Very early-stage \u2014 concept compelling but execution unproven",
+      "Market for spatial robotics data may take years to develop meaningful revenue",
+      "Competing approaches (real-time SLAM, simulation) may reduce need for pre-built archives"
+    ],
+    "related_slugs": [
+      "asimov-yc",
+      "rhoda-ai"
+    ],
+    "citations": [
+      {
+        "claim": "YC W2026 standout, archiving the physical world for embodied AI",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "human-archive-yc",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "VEIR",
+    "ticker": null,
+    "category": "Materials Science",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 57.5,
+    "one_liner": "Superconducting cable company backed by Microsoft's Climate Innovation Fund with $117M raised, demonstrated 3MW delivery for data centers.",
+    "thesis": "VEIR is a privately held superconducting cable company that has raised $117M, backed by Microsoft's Climate Innovation Fund. In November 2025, VEIR demonstrated 3MW superconducting cable delivery for data centers, with commercial launch targeted for 2027.\n\nSuperconducting cables can deliver 5-10x the power of conventional copper cables in the same conduit size, with essentially zero resistive losses. For AI data centers facing power delivery bottlenecks, superconducting cables offer a step-function improvement that could unlock higher power densities without building new substations.\n\nVEIR is the commercial application layer for AMSC's HTS wire technology. The relationship is synergistic: AMSC supplies the wire, VEIR builds the cables, and data centers buy the infrastructure. Microsoft's backing suggests the technology is being validated for Azure data center deployment.\n\nRisks include that superconducting cables require cryogenic cooling infrastructure (liquid nitrogen), increasing system complexity and maintenance costs. Commercial launch targeted for 2027 means 1-2 years before revenue, and the company is private with no public investment route. AMSC provides the best proxy exposure.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 55,
+      "community": 30,
+      "dev_activity": 55,
+      "smart_money": 75,
+      "narrative": 65,
+      "hard_to_buy": 85,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "3MW superconducting cable delivery demonstrated Nov 2025 \u2014 commercial launch 2027",
+      "Microsoft Climate Innovation Fund backing signals Azure data center validation",
+      "$117M raised for a technology that solves AI data center power delivery bottleneck"
+    ],
+    "risks": [
+      "Superconducting cables require cryogenic cooling infrastructure \u2014 added complexity and cost",
+      "Commercial launch not until 2027 \u2014 1-2 years before meaningful revenue",
+      "Private company with no public investment route \u2014 AMSC is best proxy"
+    ],
+    "related_slugs": [
+      "american-superconductor"
+    ],
+    "citations": [
+      {
+        "claim": "$117M raised, backed by Microsoft Climate Innovation Fund, 3MW demo Nov 2025, commercial launch 2027",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "veir",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Meta Materials (MMATQ)",
+    "ticker": "$MMATQ",
+    "category": "Materials Science",
+    "asset_class": "public_equities",
+    "tier": 3,
+    "composite_score": 7.0,
+    "one_liner": "Effectively bankrupt metamaterials company with ~$700 market cap \u2014 a cautionary tale of materials science hype cycles.",
+    "thesis": "Meta Materials Inc. is effectively bankrupt with a market cap of approximately $700. The company was once touted as a revolutionary metamaterials play, but has failed to generate meaningful revenue or commercialize its technology. The stock has been delisted from major exchanges and trades on OTC markets under the MMATQ ticker.\n\nThis is included as a graveyard entry to provide a cautionary reference point for materials science investors. The company's trajectory from hype to near-zero is a reminder that 'revolutionary materials' claims must be backed by revenue, contracts, and commercial deployment \u2014 not just patents and press releases.\n\nThere is no credible bull case for recovery. The company lacks the cash, talent, and commercial relationships needed to rebuild. Avoid completely.",
+    "signals": {
+      "toy_phase": 10,
+      "working_code": 5,
+      "community": 10,
+      "dev_activity": 5,
+      "smart_money": 5,
+      "narrative": 10,
+      "hard_to_buy": 15,
+      "catalyst": 5
+    },
+    "catalysts": [
+      "None \u2014 effectively bankrupt",
+      "Potential acquisition of IP assets at distressed prices by a viable company",
+      "Metamaterials patent portfolio may have some residual value"
+    ],
+    "risks": [
+      "Effectively bankrupt with ~$700 market cap",
+      "No revenue, no commercial products, no viable path to recovery",
+      "Delisted from major exchanges \u2014 extreme illiquidity"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "Effectively bankrupt, market cap ~$700",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true,
+    "slug": "meta-materials",
+    "current_price_usd": null,
+    "market_cap_usd": 700,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Aspen Aerogels",
+    "ticker": "$ASPN",
+    "category": "Materials Science",
+    "asset_class": "public_equities",
+    "tier": 3,
+    "composite_score": 18.2,
+    "one_liner": "Revenue collapsed 40%, stock at ~$3 with massive impairment charges \u2014 aerogel insulation company in severe distress.",
+    "thesis": "Aspen Aerogels has seen revenue collapse 40% with the stock trading at approximately $3 and massive impairment charges. The company produces aerogel-based insulation primarily for the energy and EV battery markets.\n\nThe revenue collapse suggests either a structural demand shift away from their products or a loss of key customers. The massive impairment charges indicate that management has acknowledged the book value of assets significantly exceeds their recoverable value \u2014 a severe negative signal.\n\nWhile aerogel technology has genuine thermal insulation advantages, Aspen Aerogels' financial trajectory suggests the company may not survive to capitalize on them. The stock is included as a graveyard entry to warn against catching this falling knife.\n\nA potential bull case would require a dramatic customer recovery, restructuring, or acquisition by a larger materials company. However, the current financial trajectory does not support investment at any price.",
+    "signals": {
+      "toy_phase": 15,
+      "working_code": 30,
+      "community": 15,
+      "dev_activity": 20,
+      "smart_money": 10,
+      "narrative": 20,
+      "hard_to_buy": 15,
+      "catalyst": 15
+    },
+    "catalysts": [
+      "Aerogel technology has genuine thermal insulation advantages if demand recovers",
+      "Potential acquisition target for larger materials companies at distressed prices",
+      "EV battery thermal management market could grow if company survives"
+    ],
+    "risks": [
+      "Revenue collapsed 40% \u2014 structural demand shift or customer loss",
+      "Massive impairment charges signal management acknowledging asset deterioration",
+      "Stock at ~$3 with potential for continued decline toward delisting"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "Revenue collapsed 40%, stock at ~$3, massive impairment charges",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true,
+    "slug": "aspen-aerogels",
+    "current_price_usd": 3.0,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Nectome",
+    "ticker": null,
+    "category": "Longevity / BCI",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 7.8,
+    "one_liner": "Brain preservation startup largely dormant with 4 employees and ~$120K in funding \u2014 brain uploading remains science fiction.",
+    "thesis": "Nectome is a brain preservation startup that aimed to develop technology for preserving brain connectomes for eventual digital reconstruction ('brain uploading'). The company is largely dormant with only 4 employees and approximately $120K in remaining funding.\n\nBrain uploading remains firmly in the realm of science fiction. The fundamental challenges \u2014 mapping 86 billion neurons with 100+ trillion synaptic connections, understanding how memories are encoded, and recreating consciousness digitally \u2014 are each individually decades away from solution, let alone in combination.\n\nNectome's trajectory from Y Combinator-backed startup to near-dormancy illustrates the gap between compelling science fiction narratives and investable technology. There are no credible investable plays in brain uploading.\n\nThis is a graveyard entry. Do not invest.",
+    "signals": {
+      "toy_phase": 15,
+      "working_code": 5,
+      "community": 10,
+      "dev_activity": 5,
+      "smart_money": 5,
+      "narrative": 15,
+      "hard_to_buy": 10,
+      "catalyst": 5
+    },
+    "catalysts": [
+      "None \u2014 company is largely dormant",
+      "Brain preservation science could advance through academic research",
+      "Potential acquisition of IP by a larger neurotech company"
+    ],
+    "risks": [
+      "Only 4 employees and ~$120K in funding \u2014 effectively dead",
+      "Brain uploading is science fiction with no viable path to commercialization",
+      "No investment route even if technology somehow advances"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "Largely dormant, 4 employees, ~$120K funding, brain uploading remains science fiction",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true,
+    "slug": "nectome",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Rain AI",
+    "ticker": null,
+    "category": "Materials Science",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 13.8,
+    "one_liner": "Sam Altman-backed neuromorphic chip company whose $150M Series B collapsed, now reportedly exploring a sale to OpenAI, NVIDIA, or Microsoft.",
+    "thesis": "Rain AI is a neuromorphic chip company that had significant backing from Sam Altman. Despite the high-profile support, the company's $150M Series B collapsed in Q1 2025, signaling a severe loss of investor confidence in the company's technology or business model.\n\nThe company is reportedly exploring a sale, with OpenAI, NVIDIA, and Microsoft cited as potential acqui-hire candidates. This suggests the talent and IP may have value even if the standalone company does not.\n\nRain AI's trajectory is a cautionary tale about neuromorphic computing: even with Sam Altman's backing and a compelling narrative, the gap between brain-inspired chip design and commercially viable silicon is enormous. Analog computing faces challenges in yield, precision, and software compatibility that are fundamentally harder to solve than digital computing's power efficiency problems.\n\nThis is a graveyard entry. The company may survive as an acquisition, but standalone investment is inadvisable.",
+    "signals": {
+      "toy_phase": 20,
+      "working_code": 15,
+      "community": 10,
+      "dev_activity": 10,
+      "smart_money": 15,
+      "narrative": 15,
+      "hard_to_buy": 15,
+      "catalyst": 10
+    },
+    "catalysts": [
+      "Potential acqui-hire by OpenAI, NVIDIA, or Microsoft could salvage some value",
+      "Neuromorphic chip IP and talent may have acquisition value",
+      "Sam Altman connection could facilitate a soft landing"
+    ],
+    "risks": [
+      "$150M Series B collapsed in Q1 2025 \u2014 severe investor confidence loss",
+      "Exploring sale signals inability to continue as standalone company",
+      "Neuromorphic computing commercially unproven despite decades of research"
+    ],
+    "related_slugs": [],
+    "citations": [
+      {
+        "claim": "$150M Series B collapsed Q1 2025, exploring sale, OpenAI/NVIDIA/Microsoft reportedly interested",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true,
+    "slug": "rain-ai",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  }
+]

@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "fetched_at": "2026-04-13T15:10:07.385949Z",
+    "total_tickers": 28,
+    "successful": 28,
+    "failed": 0,
+    "failed_tickers": [],
+    "source_library": "yfinance"
+  },
+  "equities": {
+    "CCJ": {
+      "name": "Cameco Corporation",
+      "current_price": 115.35,
+      "currency": "USD",
+      "market_cap": 50238730240,
+      "volume_24h": 643649,
+      "exchange": "NYQ",
+      "source": "dataset"
+    },
+    "NXE": {
+      "name": "Nexgen Energy Ltd.",
+      "current_price": 11.5,
+      "currency": "USD",
+      "market_cap": 7602299904,
+      "volume_24h": 855524,
+      "exchange": "NYQ",
+      "source": "dataset"
+    },
+    "IONQ": {
+      "name": "IonQ, Inc.",
+      "current_price": 28.83,
+      "currency": "USD",
+      "market_cap": 10600037376,
+      "volume_24h": 5546109,
+      "exchange": "NYQ",
+      "source": "dataset"
+    },
+    "SRUUF": {
+      "name": "Sprott Physical Uranium Trust",
+      "current_price": 20.34,
+      "currency": "USD",
+      "market_cap": 5763845120,
+      "volume_24h": 17383,
+      "exchange": "OQX",
+      "source": "dataset"
+    },
+    "DNN": {
+      "name": "Denison Mines Corp",
+      "current_price": 3.6315,
+      "currency": "USD",
+      "market_cap": 3282933760,
+      "volume_24h": 5560356,
+      "exchange": "ASE",
+      "source": "dataset"
+    },
+    "UUUU": {
+      "name": "Energy Fuels Inc",
+      "current_price": 18.47,
+      "currency": "USD",
+      "market_cap": 4462462464,
+      "volume_24h": 2596726,
+      "exchange": "ASE",
+      "source": "dataset"
+    },
+    "PDN.AX": {
+      "name": "PALADIN FPO [PDN]",
+      "current_price": 12.42,
+      "currency": "AUD",
+      "market_cap": 5581031936,
+      "volume_24h": 1734693,
+      "exchange": "ASX",
+      "source": "dataset",
+      "currency_note": "Price in AUD, not USD"
+    },
+    "QBTS": {
+      "name": "D-Wave Quantum Inc.",
+      "current_price": 14.365,
+      "currency": "USD",
+      "market_cap": 5313809920,
+      "volume_24h": 5355166,
+      "exchange": "NYQ",
+      "source": "dataset"
+    },
+    "SMR": {
+      "name": "NuScale Power Corporation",
+      "current_price": 9.285,
+      "currency": "USD",
+      "market_cap": 2958230016,
+      "volume_24h": 7013526,
+      "exchange": "NYQ",
+      "source": "dataset"
+    },
+    "GWH": {
+      "name": "ESS Tech, Inc.",
+      "current_price": 1.1399,
+      "currency": "USD",
+      "market_cap": 34935188,
+      "volume_24h": 118971,
+      "exchange": "NYQ",
+      "source": "dataset"
+    },
+    "BRN.AX": {
+      "name": "BRAINCHIP FPO [BRN]",
+      "current_price": 0.14,
+      "currency": "AUD",
+      "market_cap": 332142688,
+      "volume_24h": 3017403,
+      "exchange": "ASX",
+      "source": "research_doc",
+      "currency_note": "Price in AUD, not USD"
+    },
+    "DNA": {
+      "name": "Ginkgo Bioworks Holdings, Inc.",
+      "current_price": 6.37,
+      "currency": "USD",
+      "market_cap": 394458112,
+      "volume_24h": 305845,
+      "exchange": "NYQ",
+      "source": "research_doc"
+    },
+    "TWST": {
+      "name": "Twist Bioscience Corporation",
+      "current_price": 48.365,
+      "currency": "USD",
+      "market_cap": 2965340672,
+      "volume_24h": 192359,
+      "exchange": "NMS",
+      "source": "research_doc"
+    },
+    "ANIC.L": {
+      "name": "AGRONOMICS LIMITED  ORD 0.0001P",
+      "current_price": 6.51,
+      "currency": "GBp",
+      "market_cap": 68783048,
+      "volume_24h": 773839,
+      "exchange": "LSE",
+      "source": "research_doc",
+      "currency_note": "Price in GBP (pence), not USD"
+    },
+    "RDW": {
+      "name": "Redwire Corporation",
+      "current_price": 9.645,
+      "currency": "USD",
+      "market_cap": 1851606784,
+      "volume_24h": 4615281,
+      "exchange": "NYQ",
+      "source": "research_doc"
+    },
+    "UTHR": {
+      "name": "United Therapeutics Corporation",
+      "current_price": 576.79,
+      "currency": "USD",
+      "market_cap": 25279371264,
+      "volume_24h": 91729,
+      "exchange": "NMS",
+      "source": "research_doc"
+    },
+    "AMSC": {
+      "name": "American Superconductor Corpora",
+      "current_price": 37.15,
+      "currency": "USD",
+      "market_cap": 1768796416,
+      "volume_24h": 223074,
+      "exchange": "NMS",
+      "source": "research_doc"
+    },
+    "EVLV": {
+      "name": "Evolv Technologies Holdings, In",
+      "current_price": 6.105,
+      "currency": "USD",
+      "market_cap": 1094936192,
+      "volume_24h": 401892,
+      "exchange": "NCM",
+      "source": "research_doc"
+    },
+    "FSLR": {
+      "name": "First Solar, Inc.",
+      "current_price": 202.225,
+      "currency": "USD",
+      "market_cap": 21729230848,
+      "volume_24h": 503216,
+      "exchange": "NMS",
+      "source": "research_doc"
+    },
+    "UMAC": {
+      "name": "Unusual Machines, Inc.",
+      "current_price": 13.68,
+      "currency": "USD",
+      "market_cap": 653731840,
+      "volume_24h": 1285820,
+      "exchange": "ASE",
+      "source": "research_doc"
+    },
+    "OUST": {
+      "name": "Ouster, Inc.",
+      "current_price": 21.23,
+      "currency": "USD",
+      "market_cap": 1333328768,
+      "volume_24h": 401129,
+      "exchange": "NMS",
+      "source": "research_doc"
+    },
+    "NAGE": {
+      "name": "Niagen Bioscience, Inc.",
+      "current_price": 4.49,
+      "currency": "USD",
+      "market_cap": 359561376,
+      "volume_24h": 69224,
+      "exchange": "NCM",
+      "source": "research_doc"
+    },
+    "MP": {
+      "name": "MP Materials Corp.",
+      "current_price": 55.695,
+      "currency": "USD",
+      "market_cap": 9895188480,
+      "volume_24h": 1505572,
+      "exchange": "NYQ",
+      "source": "research_doc"
+    },
+    "USAR": {
+      "name": "USA Rare Earth, Inc.",
+      "current_price": 16.35,
+      "currency": "USD",
+      "market_cap": 3563910656,
+      "volume_24h": 4494470,
+      "exchange": "NGM",
+      "source": "research_doc"
+    },
+    "ERII": {
+      "name": "Energy Recovery, Inc.",
+      "current_price": 11.165,
+      "currency": "USD",
+      "market_cap": 591433472,
+      "volume_24h": 118008,
+      "exchange": "NMS",
+      "source": "research_doc"
+    },
+    "H2O.F": {
+      "name": "Enapter AG                    I",
+      "current_price": 1.21,
+      "currency": "EUR",
+      "market_cap": 38807028,
+      "volume_24h": 169,
+      "exchange": "FRA",
+      "source": "research_doc",
+      "currency_note": "Price in EUR, not USD"
+    },
+    "LNZA": {
+      "name": "LanzaTech Global, Inc.",
+      "current_price": 30.6,
+      "currency": "USD",
+      "market_cap": 308728384,
+      "volume_24h": 9176,
+      "exchange": "NCM",
+      "source": "research_doc"
+    },
+    "MRVL": {
+      "name": "Marvell Technology, Inc.",
+      "current_price": 131.095,
+      "currency": "USD",
+      "market_cap": 114637103104,
+      "volume_24h": 15474682,
+      "exchange": "NMS",
+      "source": "research_doc"
+    }
+  }
+}

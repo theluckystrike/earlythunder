@@ -7,17 +7,30 @@ function isValidScore(score: number): boolean {
   return typeof score === "number" && score >= 0 && score <= 100;
 }
 
+/** Coerce a nullable number field: returns the number if valid, else null. */
+function toNullableNumber(value: unknown): number | null {
+  if (typeof value === "number" && !isNaN(value)) return value;
+  return null;
+}
+
 /** Validate an opportunity object has required fields and valid scores. */
 function isValidOpportunity(item: unknown): item is Opportunity {
   if (typeof item !== "object" || item === null) return false;
   const opp = item as Record<string, unknown>;
-  return (
-    typeof opp.slug === "string" &&
-    opp.slug.length > 0 &&
-    typeof opp.name === "string" &&
-    typeof opp.composite_score === "number" &&
-    isValidScore(opp.composite_score)
-  );
+  if (
+    typeof opp.slug !== "string" ||
+    opp.slug.length === 0 ||
+    typeof opp.name !== "string" ||
+    typeof opp.composite_score !== "number" ||
+    !isValidScore(opp.composite_score)
+  ) {
+    return false;
+  }
+  // Default nullable market data fields if missing
+  opp.current_price_usd = toNullableNumber(opp.current_price_usd);
+  opp.market_cap_usd = toNullableNumber(opp.market_cap_usd);
+  opp.volume_24h_usd = toNullableNumber(opp.volume_24h_usd);
+  return true;
 }
 
 const MAX_OPPORTUNITIES = 500;

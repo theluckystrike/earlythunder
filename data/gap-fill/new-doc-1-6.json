@@ -1,0 +1,1736 @@
+[
+  {
+    "name": "Cortical Labs",
+    "ticker": null,
+    "category": "Biological Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 60.0,
+    "one_liner": "Launched CL1, the world's first commercial biological computer with 200,000 living human neurons on a CMOS chip, priced at $35,000/unit.",
+    "thesis": "Cortical Labs (Melbourne/Singapore) launched CL1, the world's first commercial biological computer, in March 2025 at MWC Barcelona. Priced at $35,000/unit, each CL1 contains 200,000 living human neurons on a CMOS chip with an internal life-support system. Neurons survive up to six months. The company demonstrated neurons playing DOOM in February 2026 and signed a partnership with Singapore's DayOne Data Centers to deploy 120 CL1 units in Melbourne and up to 1,000 units in Singapore.\n\nCortical Labs has raised ~$11.6M, backed by Horizons Ventures (Li Ka-shing), In-Q-Tel (CIA), and Blackbird Ventures. The March 2026 round brought in Tom Oxley (founder of Synchron) and Gobi Partners. A 'Cortical Cloud' wetware-as-a-service platform is now operational.\n\nBiological computing's energy advantage is real \u2014 neurons consume less power than a handheld calculator. If AI's power demands continue scaling, biological computing becomes not futuristic but necessary. NSF has deployed $14M across seven university programs, and DARPA is funding organoid computing. This is the vacuum-tube era of biocomputing \u2014 whoever solves scalability from 200K to billions of neurons creates an entirely new computing paradigm.\n\nNo retail access currently available. The company is private with no equity crowdfunding campaigns. Watch for crowdfunding or eventual IPO.",
+    "signals": {
+      "toy_phase": 80,
+      "working_code": 60,
+      "community": 30,
+      "dev_activity": 55,
+      "smart_money": 70,
+      "narrative": 75,
+      "hard_to_buy": 90,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "DayOne Data Centers partnership to deploy up to 1,000 CL1 units in Singapore",
+      "Cortical Cloud wetware-as-a-service platform now operational",
+      "NSF $14M funding and DARPA backing for organoid computing research"
+    ],
+    "risks": [
+      "Neurons survive only up to six months, requiring ongoing biological maintenance",
+      "Scalability from 200K to billions of neurons is an unsolved problem",
+      "No retail access \u2014 entirely private with no crowdfunding campaigns"
+    ],
+    "related_slugs": [
+      "brainchip",
+      "finalspark",
+      "koniku"
+    ],
+    "citations": [
+      {
+        "claim": "CL1 contains 200,000 living human neurons, priced at $35,000/unit, launched March 2025",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Raised ~$11.6M backed by Horizons Ventures, In-Q-Tel, Blackbird Ventures",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "cortical-labs",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "FinalSpark",
+    "ticker": null,
+    "category": "Biological Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 46.2,
+    "one_liner": "Runs the world's first online neuroplatform \u2014 16 brain organoids with ~160,000 neurons accessible remotely via Python API.",
+    "thesis": "FinalSpark (Switzerland) runs the world's first online neuroplatform \u2014 16 brain organoids with approximately 160,000 neurons accessible remotely via Python API. They can reliably store 1 bit of information per organoid. The company is self-funded (~CHF 1M from founders' prior exit) and seeking CHF 50M for next-stage development.\n\nTen universities have access including Michigan, Exeter, and Free University of Berlin. The academic validation provides credibility, but the technology is extremely early-stage \u2014 storing 1 bit per organoid is a proof of concept, not a product.\n\nFinalSpark sits in the same biological computing paradigm as Cortical Labs but at an earlier stage and with significantly less funding. The energy advantage of biological computing is real \u2014 neurons consume less power than a handheld calculator \u2014 but the path from 160K neurons to commercial-scale computing is long and uncertain.\n\nNo retail access. Self-funded with minimal external capital. Watch for the CHF 50M raise as a validation event.",
+    "signals": {
+      "toy_phase": 85,
+      "working_code": 40,
+      "community": 25,
+      "dev_activity": 45,
+      "smart_money": 20,
+      "narrative": 65,
+      "hard_to_buy": 95,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "Seeking CHF 50M for next-stage development \u2014 a successful raise would validate the approach",
+      "Ten universities including Michigan and Exeter actively using the neuroplatform",
+      "Broader NSF and DARPA interest in organoid computing expanding the field"
+    ],
+    "risks": [
+      "Self-funded with only ~CHF 1M \u2014 extremely limited runway",
+      "Technology stores only 1 bit per organoid, far from commercially useful",
+      "No institutional backers yet \u2014 seeking CHF 50M but no confirmed investors"
+    ],
+    "related_slugs": [
+      "cortical-labs",
+      "koniku",
+      "brainchip"
+    ],
+    "citations": [
+      {
+        "claim": "16 brain organoids with ~160,000 neurons accessible via Python API, 1 bit storage per organoid",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Self-funded ~CHF 1M from founders' prior exit, seeking CHF 50M",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "finalspark",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Koniku",
+    "ticker": null,
+    "category": "Biological Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 44.2,
+    "one_liner": "Builds 'smell cyborgs' fusing 128 biological neurons with silicon for volatile organic compound detection, with an $8M Airbus contract at SFO.",
+    "thesis": "Koniku (San Rafael, CA) builds 'smell cyborgs' fusing biological neurons with silicon \u2014 128 active neurons detecting volatile organic compounds. They claim an $8M Airbus contract for aviation threat detection deployed at SFO, though scientific skepticism is significant and employee count has declined.\n\nThe use case is compelling \u2014 biological neurons as sensors for threat detection in airports and security settings \u2014 but the company has struggled with execution. The decline in employee count is a red flag, suggesting either funding difficulties or a pivot.\n\nKoniku represents a niche application of biological computing focused on biosensing rather than general computation. If the Airbus deployment proves successful at scale, it could validate the neuron-on-silicon approach for defense and security applications.\n\nNo retail access. Private company with limited public information about current funding status.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 45,
+      "community": 15,
+      "dev_activity": 30,
+      "smart_money": 40,
+      "narrative": 55,
+      "hard_to_buy": 95,
+      "catalyst": 35
+    },
+    "catalysts": [
+      "Claimed $8M Airbus contract for aviation threat detection at SFO",
+      "Biological neuron sensing approach could extend to defense and bioterrorism detection",
+      "Growing broader interest in biological computing from DARPA and NSF"
+    ],
+    "risks": [
+      "Significant scientific skepticism about the technology's actual capabilities",
+      "Employee count has declined \u2014 potential execution or funding issues",
+      "Only 128 neurons \u2014 extremely small scale with unclear path to commercial viability"
+    ],
+    "related_slugs": [
+      "cortical-labs",
+      "finalspark",
+      "brainchip"
+    ],
+    "citations": [
+      {
+        "claim": "128 active neurons detecting volatile organic compounds, $8M Airbus contract at SFO",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Scientific skepticism significant, employee count declining",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "koniku",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "BrainChip",
+    "ticker": "$BRN",
+    "category": "Biological Computing",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 51.2,
+    "one_liner": "The only publicly traded pure-play neuromorphic chip company, trading 94% below its 2022 high with effectively zero revenue \u2014 a binary bet on the AKD1500 ramp.",
+    "thesis": "BrainChip (ASX: BRN / OTCQX: BRCHF) is the only publicly traded pure-play neuromorphic chip company. It trades at AUD 0.145, down 94% from its 2022 high of AUD 2.34, with effectively zero revenue ($398K in 2024). The bull case rests entirely on the AKD1500 production ramp in 2026 and the Akida Pulsar mass-market neuromorphic MCU.\n\nThe bear case is strong: 13 years of promises with no meaningful revenue. At sub-$400K in annual revenue, BrainChip is barely a going concern from a commercial perspective. However, it provides the only liquid retail access to the neuromorphic computing thesis, which gives it a scarcity premium.\n\nAs the closest public proxy for biological computing (Cortical Labs, FinalSpark, and Koniku are all private), BrainChip captures speculative interest from investors who believe brain-inspired computing will become necessary as AI power demands scale. The company needs the AKD1500 to generate real revenue or it risks becoming another zero-revenue deep tech story.\n\nThis is a binary bet \u2014 either the 2026 production ramp delivers meaningful revenue, or the multi-year decline continues.",
+    "signals": {
+      "toy_phase": 65,
+      "working_code": 45,
+      "community": 55,
+      "dev_activity": 50,
+      "smart_money": 35,
+      "narrative": 65,
+      "hard_to_buy": 40,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "AKD1500 neuromorphic chip production ramp scheduled for 2026",
+      "Akida Pulsar mass-market neuromorphic MCU targeting broader adoption",
+      "Only liquid public proxy for the biological/neuromorphic computing thesis"
+    ],
+    "risks": [
+      "13 years of promises with effectively zero revenue ($398K in 2024)",
+      "94% decline from 2022 highs suggests sustained loss of investor confidence",
+      "Binary outcome \u2014 AKD1500 must deliver or the stock likely trends to zero"
+    ],
+    "related_slugs": [
+      "cortical-labs",
+      "unconventional-ai",
+      "lightmatter"
+    ],
+    "citations": [
+      {
+        "claim": "ASX: BRN, AUD 0.145, down 94% from AUD 2.34 high, $398K revenue in 2024",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Bull case: AKD1500 production ramp 2026, Akida Pulsar mass-market MCU",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "brainchip",
+    "current_price_usd": 0.09,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Solugen",
+    "ticker": null,
+    "category": "Synthetic Biology",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 68.2,
+    "one_liner": "Raised $643M at a $2B valuation with a $213M DOE loan guarantee, backed by Founders Fund, Baillie Gifford, GIC, Temasek, and BlackRock.",
+    "thesis": "Solugen (Houston) has raised $643M at a $2B valuation, with a $213M DOE loan guarantee for a Minnesota biomanufacturing plant and raised an additional $50M in March 2026 for Canadian nitrogen fertilizer scaling. The investor roster is elite: Founders Fund, Baillie Gifford, GIC, Temasek, and BlackRock.\n\nSolugen is one of the survivors of the brutal synthetic biology shakeout that killed Bolt Threads, Amyris, and Zymergen. The survivors are stronger for it \u2014 they've proven they can navigate the 'valley of death' that destroyed over $1.1B in investor capital across the sector. Solugen's bio-chemical platform uses enzymes to convert plant sugars into specialty chemicals, replacing petroleum-derived processes.\n\nThe DOE loan guarantee de-risks the manufacturing scale-up significantly \u2014 government backing at this level is a strong validation signal. The March 2026 $50M raise for Canadian nitrogen fertilizer scaling shows continued growth momentum. With $643M raised, this is well past the 'can they raise' question and into the 'can they execute at scale' phase.\n\nPrivate company \u2014 watch for IPO candidacy as revenue scales. The $2B valuation implies the next round or public listing would need to show significant revenue growth.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 75,
+      "community": 40,
+      "dev_activity": 70,
+      "smart_money": 95,
+      "narrative": 60,
+      "hard_to_buy": 85,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "$213M DOE loan guarantee for Minnesota biomanufacturing plant",
+      "$50M raise in March 2026 for Canadian nitrogen fertilizer scaling",
+      "IPO candidacy as revenue scales \u2014 $2B valuation with elite investor roster"
+    ],
+    "risks": [
+      "Synbio sector has destroyed $1.1B+ in investor capital \u2014 Bolt Threads, Amyris, Zymergen all failed",
+      "No retail access \u2014 private markets only, likely at $2B+ valuation",
+      "Bio-chemical manufacturing scale-up historically difficult, even with government backing"
+    ],
+    "related_slugs": [
+      "ginkgo-bioworks",
+      "twist-bioscience",
+      "pivot-bio"
+    ],
+    "citations": [
+      {
+        "claim": "Raised $643M at $2B valuation, $213M DOE loan guarantee, backed by Founders Fund, Baillie Gifford, GIC, Temasek, BlackRock",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Additional $50M in March 2026 for Canadian nitrogen fertilizer scaling",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "solugen",
+    "current_price_usd": null,
+    "market_cap_usd": 2000000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Pivot Bio",
+    "ticker": null,
+    "category": "Synthetic Biology",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 64.0,
+    "one_liner": "Validated nitrogen-fixing microbes across 15 million acres in 34 states, raised $618M, and paid farmers over $13M through its N-OVATOR program.",
+    "thesis": "Pivot Bio has validated its nitrogen-fixing microbes across 15 million acres in 34 states, raised $618M, and paid farmers over $13M through its N-OVATOR program. The company replaces synthetic nitrogen fertilizer with engineered microbes that fix nitrogen directly at the root \u2014 a massive market with enormous environmental implications.\n\n15 million acres of real deployment is extraordinary traction for an agbiotech company. The $618M in funding provides substantial runway, and the N-OVATOR farmer payment program creates a direct incentive loop that accelerates adoption. This is real technology with real farmers using it at real scale.\n\nThe synthetic biology sector graveyard (Bolt Threads, Amyris, Zymergen) creates justified skepticism, but Pivot Bio's agricultural application is fundamentally different from consumer bio-materials \u2014 it addresses a massive recurring chemical input market with clear unit economics. Nitrogen fertilizer is a ~$50B+ annual global market.\n\nPrivate company \u2014 not yet available to retail investors. The $618M raised and 15M acre deployment suggest the company is approaching the scale needed for an IPO.",
+    "signals": {
+      "toy_phase": 40,
+      "working_code": 80,
+      "community": 50,
+      "dev_activity": 65,
+      "smart_money": 85,
+      "narrative": 55,
+      "hard_to_buy": 85,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "15 million acres validated across 34 states \u2014 massive real-world traction",
+      "N-OVATOR program paying farmers $13M+ creates powerful adoption incentive",
+      "Nitrogen fertilizer replacement addresses a $50B+ annual global market"
+    ],
+    "risks": [
+      "Synbio sector sentiment deeply damaged by Bolt Threads, Amyris, Zymergen failures",
+      "Private company with no retail access \u2014 $618M raised implies high entry valuation",
+      "Agricultural biotech adoption cycles are slow \u2014 farmer switching is conservative"
+    ],
+    "related_slugs": [
+      "solugen",
+      "ginkgo-bioworks",
+      "galy"
+    ],
+    "citations": [
+      {
+        "claim": "Validated across 15 million acres in 34 states, raised $618M, $13M paid to farmers via N-OVATOR",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "pivot-bio",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Galy",
+    "ticker": null,
+    "category": "Synthetic Biology",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 56.5,
+    "one_liner": "Lab-grown cotton company with a $33M Series B led by Breakthrough Energy Ventures, $50M 10-year offtake from Suzuran Medical, and Sam Altman on the cap table.",
+    "thesis": "Galy (lab-grown cotton) closed a $33M Series B led by Breakthrough Energy Ventures and has a $50M, 10-year offtake agreement with Suzuran Medical. Sam Altman and Tim Draper are on the cap table. The company is developing cellular agriculture for cotton \u2014 growing cotton fibers in bioreactors rather than in fields.\n\nThe cotton market is massive (~$50B annually) and environmentally destructive \u2014 cotton farming uses enormous amounts of water and pesticides. Lab-grown cotton could fundamentally disrupt this supply chain if it can achieve cost parity. The $50M offtake agreement with Suzuran Medical provides revenue visibility and commercial validation.\n\nThe investor roster is impressive \u2014 Breakthrough Energy Ventures (Bill Gates), Sam Altman, and Tim Draper all have track records of backing transformative technology. The $33M Series B provides runway for the next development phase.\n\nRetail access is available through Agronomics Ltd (LSE: ANIC), a listed fund holding shares in Galy and other cellular agriculture companies. This is the simplest retail exposure to lab-grown materials.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 45,
+      "community": 30,
+      "dev_activity": 50,
+      "smart_money": 80,
+      "narrative": 60,
+      "hard_to_buy": 80,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "$50M 10-year offtake agreement with Suzuran Medical provides revenue visibility",
+      "Breakthrough Energy Ventures lead investor with Sam Altman and Tim Draper on cap table",
+      "Indirect retail exposure available through Agronomics Ltd (LSE: ANIC)"
+    ],
+    "risks": [
+      "Lab-grown cotton has not yet achieved cost parity with field-grown cotton",
+      "Cellular agriculture for materials has a poor track record \u2014 Bolt Threads failed",
+      "Small Series B ($33M) may be insufficient for manufacturing scale-up"
+    ],
+    "related_slugs": [
+      "agronomics",
+      "solugen",
+      "pivot-bio"
+    ],
+    "citations": [
+      {
+        "claim": "$33M Series B led by Breakthrough Energy Ventures, $50M 10-year offtake with Suzuran Medical, Sam Altman and Tim Draper investors",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "galy",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Ginkgo Bioworks",
+    "ticker": "$DNA",
+    "category": "Synthetic Biology",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 51.0,
+    "one_liner": "The synbio platform company pivoting to autonomous labs, trading at ~$6.80-9.71 with $421-552M market cap, burning $125-150M/year with $423M cash.",
+    "thesis": "Ginkgo Bioworks (NYSE: DNA) trades at ~$6.80-9.71, with a ~$421-552M market cap. Revenue is declining \u2014 $170M in FY2025, down 25% \u2014 but the company is pivoting to autonomous labs with a $47M government contract. It is burning $125-150M/year with $423M cash remaining, implying roughly 3 years of runway at current burn.\n\nAnalyst consensus is bearish: 1 Buy vs. 3 Sell recommendations. This is a contrarian bet on the platform model surviving the current synbio downturn. Ginkgo's 'cell programming' platform approach is differentiated \u2014 it doesn't make products itself but engineers organisms for partners \u2014 but the declining revenue suggests the platform hasn't achieved product-market fit at scale.\n\nThe $47M government contract and pivot to autonomous labs represent potential catalysts, but the declining topline and negative sentiment make this high-risk. At $421-552M market cap with $423M cash, the market is essentially valuing the operating business near zero.\n\nThis is a contrarian deep value play on the synbio sector recovering and Ginkgo's platform model surviving.",
+    "signals": {
+      "toy_phase": 45,
+      "working_code": 65,
+      "community": 45,
+      "dev_activity": 55,
+      "smart_money": 40,
+      "narrative": 50,
+      "hard_to_buy": 20,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "$47M government contract for autonomous lab development",
+      "Market cap near cash value \u2014 essentially getting the business for free",
+      "Platform model could benefit from sector recovery if synbio sentiment improves"
+    ],
+    "risks": [
+      "Revenue declining 25% YoY ($170M FY2025) \u2014 negative growth trajectory",
+      "Burning $125-150M/year with $423M cash \u2014 3 years of runway at current burn",
+      "Analyst consensus bearish: 1 Buy, 3 Sell recommendations"
+    ],
+    "related_slugs": [
+      "twist-bioscience",
+      "solugen",
+      "galy"
+    ],
+    "citations": [
+      {
+        "claim": "NYSE: DNA, ~$6.80-9.71, ~$421-552M cap, revenue $170M down 25%, burning $125-150M/year, $423M cash",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Pivoting to autonomous labs with $47M government contract, analyst consensus 1 Buy / 3 Sell",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "ginkgo-bioworks",
+    "current_price_usd": 8.25,
+    "market_cap_usd": 487000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Twist Bioscience",
+    "ticker": "$TWST",
+    "category": "Synthetic Biology",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 64.5,
+    "one_liner": "Revenue of $392M growing 17% YoY, approaching EBITDA breakeven, with the Atlas Data Storage spinoff funded at $155M for DNA data storage.",
+    "thesis": "Twist Bioscience (NASDAQ: TWST) trades at ~$50, with a ~$3B market cap. Revenue of $392M is growing 17% YoY and the company is approaching EBITDA breakeven \u2014 a significant milestone for a biotech company that has been in growth mode. Twist is a synthetic biology tools company, providing DNA synthesis and sequencing to researchers and industry.\n\nThe most interesting catalyst is the Atlas Data Storage spinoff \u2014 Twist spun off its DNA data storage division with $155M in seed financing, the most well-funded DNA storage company ever. Twist retains a minority stake, creating embedded optionality. DNA data storage addresses a massive eventual market as global data creation outpaces storage capacity growth.\n\n$392M in revenue with 17% growth and approaching breakeven represents genuine commercial traction \u2014 this is not a pre-revenue bet. The synbio tools business is more defensive than the product companies that failed (Bolt Threads, Amyris), as Twist sells picks and shovels to the sector.\n\nAt $3B market cap, Twist is a mid-cap biotech with real revenue, real growth, and a free call option on DNA data storage through its Atlas stake.",
+    "signals": {
+      "toy_phase": 30,
+      "working_code": 85,
+      "community": 60,
+      "dev_activity": 75,
+      "smart_money": 70,
+      "narrative": 60,
+      "hard_to_buy": 20,
+      "catalyst": 75
+    },
+    "catalysts": [
+      "Atlas Data Storage spinoff with $155M seed financing \u2014 Twist retains minority stake",
+      "Approaching EBITDA breakeven on $392M revenue growing 17% YoY",
+      "Picks-and-shovels position in synbio \u2014 benefits from sector growth regardless of which companies win"
+    ],
+    "risks": [
+      "At $3B market cap, limited 'undiscovered' upside compared to smaller opportunities",
+      "DNA data storage (Atlas) is still pre-commercial \u2014 may take years to generate revenue",
+      "Synbio sector sentiment remains depressed after multiple high-profile failures"
+    ],
+    "related_slugs": [
+      "ginkgo-bioworks",
+      "atlas-data-storage",
+      "solugen"
+    ],
+    "citations": [
+      {
+        "claim": "NASDAQ: TWST, ~$50, ~$3B cap, revenue $392M growing 17% YoY, approaching EBITDA breakeven",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Spun off Atlas Data Storage with $155M seed financing, Twist retains minority stake",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "twist-bioscience",
+    "current_price_usd": 50.0,
+    "market_cap_usd": 3000000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Agronomics",
+    "ticker": "$ANIC",
+    "category": "Synthetic Biology",
+    "asset_class": "public_equities",
+    "tier": 3,
+    "composite_score": 43.8,
+    "one_liner": "A listed fund on the LSE holding shares in Galy and other cellular agriculture companies \u2014 the simplest retail exposure to lab-grown materials.",
+    "thesis": "Agronomics Ltd (LSE: ANIC) is a listed fund holding shares in Galy and other cellular agriculture companies. It provides the simplest retail exposure to the lab-grown materials thesis \u2014 investors can buy a single stock and get diversified exposure to a basket of private cellular agriculture companies.\n\nThe fund structure means Agronomics rises and falls with the sector. Its key holding in Galy (lab-grown cotton, $33M Series B led by Breakthrough Energy Ventures) is the anchor position, but the fund likely holds other cellular agriculture positions that provide diversification.\n\nThe synbio sector's brutal Darwinian selection process \u2014 Bolt Threads dead, Amyris bankrupt, Zymergen liquidated \u2014 creates both the risk and the opportunity. The survivors are stronger, and Agronomics provides a way to bet on the survivor portfolio without picking individual winners.\n\nListed on the London Stock Exchange, making it accessible to most global retail investors. However, as a small-cap UK-listed fund, liquidity may be limited.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 40,
+      "community": 35,
+      "dev_activity": 35,
+      "smart_money": 45,
+      "narrative": 50,
+      "hard_to_buy": 55,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "Portfolio company Galy raised $33M Series B with $50M Suzuran Medical offtake",
+      "Simplest retail access to lab-grown materials sector via a single stock",
+      "Sector survivor bias \u2014 remaining portfolio companies strengthened by weaker competitors dying"
+    ],
+    "risks": [
+      "Fund NAV dependent on private company valuations that may be inflated",
+      "Lab-grown materials sector has destroyed over $1.1B in investor capital",
+      "Small-cap UK-listed fund with potentially limited liquidity"
+    ],
+    "related_slugs": [
+      "galy",
+      "twist-bioscience",
+      "ginkgo-bioworks"
+    ],
+    "citations": [
+      {
+        "claim": "LSE: ANIC, listed fund holding Galy and other cellular agriculture companies",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "agronomics",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Bolt Threads",
+    "ticker": null,
+    "category": "Synthetic Biology",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 5.5,
+    "one_liner": "Dead \u2014 website reads 'no longer operating.' Part of the synbio graveyard that destroyed over $1.1B in investor capital.",
+    "thesis": "Bolt Threads is dead. The website reads 'no longer operating.' Along with Amyris and Zymergen, Bolt Threads represents the synbio graveyard \u2014 companies that raised hundreds of millions on the promise of bio-materials but failed to achieve commercial scale.\n\nThe failure of Bolt Threads (spider silk materials), Amyris (bio-based chemicals, Chapter 11 with $1.15B debt), and Zymergen (acquired then liquidated) killed at least $1.1B in investor capital and created deep skepticism about the entire bio-materials thesis.\n\nThese failures serve as a cautionary tale for the sector and an important reference point when evaluating the surviving synbio companies like Solugen, Pivot Bio, and Galy. The survivors are stronger for having survived the shakeout, but investors must remain vigilant about similar patterns.\n\nNo investable action \u2014 equity wiped. Included for completeness as a graveyard entry.",
+    "signals": {
+      "toy_phase": 0,
+      "working_code": 0,
+      "community": 0,
+      "dev_activity": 0,
+      "smart_money": 0,
+      "narrative": 10,
+      "hard_to_buy": 100,
+      "catalyst": 0
+    },
+    "catalysts": [
+      "None \u2014 company is no longer operating",
+      "Serves as a reference point for synbio sector risk assessment",
+      "Validates thesis that survivor companies are stronger after shakeout"
+    ],
+    "risks": [
+      "Company is dead \u2014 equity wiped",
+      "Website reads 'no longer operating'",
+      "Part of $1.1B+ in destroyed investor capital across the synbio graveyard"
+    ],
+    "related_slugs": [
+      "amyris",
+      "zymergen",
+      "solugen"
+    ],
+    "citations": [
+      {
+        "claim": "Website reads 'no longer operating'",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true,
+    "slug": "bolt-threads",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Amyris",
+    "ticker": null,
+    "category": "Synthetic Biology",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 5.5,
+    "one_liner": "Filed Chapter 11 in August 2023 with $1.15B in debt \u2014 equity wiped. The largest single failure in the synbio graveyard.",
+    "thesis": "Amyris filed Chapter 11 in August 2023 with $1.15B in debt. Equity was wiped. The company attempted to build a bio-based chemicals and consumer products platform but failed to achieve profitability despite raising enormous amounts of capital.\n\nAmyris was the largest single failure in the synthetic biology graveyard, alongside Bolt Threads (dead) and Zymergen (acquired then liquidated). Together, these three companies killed at least $1.1B in investor capital and created deep skepticism about the entire bio-materials thesis.\n\nThe Amyris failure demonstrates the core risk in synbio: the science can work in the lab but the economics of scaling biological production to compete with petroleum-derived chemicals are brutally difficult. The company had real technology but could not bridge the gap between lab-scale and commercial-scale production economics.\n\nNo investable action \u2014 equity wiped in Chapter 11. Included as a graveyard entry for sector context.",
+    "signals": {
+      "toy_phase": 0,
+      "working_code": 0,
+      "community": 0,
+      "dev_activity": 0,
+      "smart_money": 0,
+      "narrative": 10,
+      "hard_to_buy": 100,
+      "catalyst": 0
+    },
+    "catalysts": [
+      "None \u2014 company filed Chapter 11, equity wiped",
+      "Bankruptcy proceedings may yield some IP value for acquirers",
+      "Validates thesis that survivor companies are stronger post-shakeout"
+    ],
+    "risks": [
+      "Chapter 11 filed August 2023 with $1.15B debt \u2014 equity wiped",
+      "No recovery expected for equity holders",
+      "Largest single failure in the synbio sector"
+    ],
+    "related_slugs": [
+      "bolt-threads",
+      "zymergen",
+      "ginkgo-bioworks"
+    ],
+    "citations": [
+      {
+        "claim": "Filed Chapter 11 August 2023, $1.15B debt, equity wiped",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true,
+    "slug": "amyris",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Zymergen",
+    "ticker": null,
+    "category": "Synthetic Biology",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 5.5,
+    "one_liner": "Acquired then liquidated \u2014 part of the synbio graveyard that destroyed over $1.1B in investor capital.",
+    "thesis": "Zymergen was acquired then liquidated. Along with Bolt Threads and Amyris, it represents the synbio graveyard \u2014 companies that raised hundreds of millions on the promise of bio-materials and computational biology but failed to deliver commercial products at scale.\n\nZymergen IPO'd in 2021 at a $3B+ valuation, then crashed within months after revealing its flagship product was not commercially viable. Ginkgo Bioworks eventually acquired the remnants, but the value was largely destroyed. The Zymergen failure was particularly damaging because it occurred after a high-profile IPO, eroding public market trust in synbio companies.\n\nThe combined failures of Zymergen, Amyris, and Bolt Threads killed at least $1.1B in investor capital and created the deep sector skepticism that now ironically benefits the survivors by suppressing their valuations.\n\nNo investable action \u2014 equity destroyed through acquisition and liquidation.",
+    "signals": {
+      "toy_phase": 0,
+      "working_code": 0,
+      "community": 0,
+      "dev_activity": 0,
+      "smart_money": 0,
+      "narrative": 10,
+      "hard_to_buy": 100,
+      "catalyst": 0
+    },
+    "catalysts": [
+      "None \u2014 company acquired then liquidated",
+      "IP may have residual value within Ginkgo Bioworks post-acquisition",
+      "Validates thesis that survivor companies benefit from reduced competition"
+    ],
+    "risks": [
+      "Company fully liquidated \u2014 no recovery possible",
+      "Equity destroyed post-IPO, damaging public market trust in synbio",
+      "Part of $1.1B+ in destroyed investor capital"
+    ],
+    "related_slugs": [
+      "bolt-threads",
+      "amyris",
+      "ginkgo-bioworks"
+    ],
+    "citations": [
+      {
+        "claim": "Acquired then liquidated, part of synbio graveyard",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true,
+    "slug": "zymergen",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Starcloud",
+    "ticker": null,
+    "category": "Space Technology",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 67.8,
+    "one_liner": "Fastest unicorn in YC history \u2014 17 months to $1.1B valuation, launched the first H100 GPU to space, trained an LLM in orbit.",
+    "thesis": "Starcloud (formerly Lumen Orbit) became the fastest unicorn in YC history \u2014 17 months from the program to a $1.1B valuation after a $170M Series A led by Benchmark and EQT Ventures (March 2026). They launched the first H100 GPU to space (Starcloud-1, November 2025), trained an LLM in orbit, and partnered with Crusoe for the first public cloud platform in space.\n\nAn FCC proposal for up to 88,000 satellites was filed in February 2026. They also announced Bitcoin mining in space. Total funding: ~$204M. The thesis is that space-based data centers avoid the power constraints and land acquisition challenges of terrestrial data centers, with free cooling from the space environment.\n\nThe investor roster \u2014 Benchmark and EQT Ventures leading \u2014 provides validation. The H100 in space demonstration is a genuine technical milestone that few predicted would happen this quickly. The partnership with Crusoe for commercial cloud services suggests a path to revenue.\n\nPrivate, but watch for an IPO. The $1.1B valuation and high-profile backers suggest an eventual public listing, potentially 2027+.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 65,
+      "community": 45,
+      "dev_activity": 70,
+      "smart_money": 90,
+      "narrative": 80,
+      "hard_to_buy": 85,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "FCC proposal for up to 88,000 satellites filed February 2026",
+      "Partnership with Crusoe for first public cloud platform in space",
+      "IPO likely 2027+ \u2014 fastest YC unicorn history draws institutional attention"
+    ],
+    "risks": [
+      "Space-based data centers face enormous technical challenges at scale",
+      "88,000 satellite constellation is orders of magnitude beyond current deployment",
+      "Private at $1.1B valuation \u2014 retail investors cannot currently access"
+    ],
+    "related_slugs": [
+      "varda-space",
+      "redwire",
+      "spacecoin"
+    ],
+    "citations": [
+      {
+        "claim": "Fastest YC unicorn, 17 months to $1.1B valuation, $170M Series A led by Benchmark and EQT Ventures",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Launched first H100 GPU to space (Starcloud-1, Nov 2025), FCC proposal for 88,000 satellites",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "starcloud",
+    "current_price_usd": null,
+    "market_cap_usd": 1100000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Varda Space Industries",
+    "ticker": null,
+    "category": "Space Technology",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 65.0,
+    "one_liner": "Returned five capsules to Earth \u2014 more than any other in-space manufacturer \u2014 with $578M total funding from Founders Fund and Khosla Ventures.",
+    "thesis": "Varda Space Industries has returned five capsules to Earth, more than any other in-space manufacturer. Series C raised $187M (July 2025) from Founders Fund, Peter Thiel, and Khosla Ventures. Total funding approaches $578M. They hold an FAA Part 450 license valid through 2029.\n\nRevenue comes from DoD hypersonic reentry testing contracts. Varda's approach is to manufacture products in microgravity (pharmaceuticals, fiber optics) and return them to Earth. The five successful reentries demonstrate genuine operational capability in the most difficult part of the space manufacturing value chain.\n\nThe investor roster \u2014 Founders Fund, Peter Thiel, Khosla Ventures \u2014 is among the strongest in the space sector. $578M total funding provides substantial runway. The FAA Part 450 license is a significant regulatory moat.\n\nStill private. The company's operational track record and DoD revenue suggest it could be an IPO candidate once commercial manufacturing revenue scales. Watch for a pre-IPO round or S-1 filing.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 75,
+      "community": 35,
+      "dev_activity": 70,
+      "smart_money": 90,
+      "narrative": 65,
+      "hard_to_buy": 85,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Five successful capsule reentries \u2014 most of any in-space manufacturer",
+      "FAA Part 450 license valid through 2029 provides regulatory moat",
+      "DoD hypersonic reentry testing contracts generating revenue"
+    ],
+    "risks": [
+      "In-space manufacturing is unproven at commercial scale \u2014 unit economics unclear",
+      "Private at $578M total funding \u2014 likely at a high valuation for new investors",
+      "Space manufacturing faces enormous technical risks with each launch/reentry cycle"
+    ],
+    "related_slugs": [
+      "starcloud",
+      "redwire",
+      "spacecoin"
+    ],
+    "citations": [
+      {
+        "claim": "Five capsules returned to Earth, Series C $187M, total funding ~$578M, Founders Fund, Peter Thiel, Khosla Ventures",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "FAA Part 450 license through 2029, DoD hypersonic reentry testing revenue",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "varda-space",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Redwire",
+    "ticker": "$RDW",
+    "category": "Space Technology",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 62.8,
+    "one_liner": "Solar arrays, ISS hardware, drone acquisition \u2014 $335M revenue with analyst consensus Strong Buy and a $13 price target.",
+    "thesis": "Redwire (NYSE: RDW) trades at ~$9.29 with a ~$1.78B market cap. Revenue is $335M, making it one of the few space companies with substantial commercial revenue. Analyst consensus is Strong Buy with a $13 price target, implying ~40% upside.\n\nRedwire provides space infrastructure including solar arrays, ISS hardware, and has expanded through acquisitions including drone-related capabilities. The company is positioned as a picks-and-shovels play on the growing space economy \u2014 providing the hardware and manufacturing capabilities that space stations, satellites, and other orbital assets need.\n\n$335M in revenue provides a solid commercial foundation. The analyst consensus (Strong Buy) and price target ($13) suggest the market sees meaningful near-term upside. The company's diverse customer base (NASA, DoD, commercial) provides revenue diversification.\n\nAt $1.78B market cap, Redwire is a mid-cap space company with real revenue and positive analyst sentiment \u2014 a lower-risk way to gain space sector exposure compared to private companies.",
+    "signals": {
+      "toy_phase": 30,
+      "working_code": 85,
+      "community": 55,
+      "dev_activity": 70,
+      "smart_money": 65,
+      "narrative": 65,
+      "hard_to_buy": 20,
+      "catalyst": 75
+    },
+    "catalysts": [
+      "Analyst consensus Strong Buy with $13 price target (40%+ upside from ~$9.29)",
+      "ISS and orbital infrastructure demand growing as space economy expands",
+      "Drone acquisition diversifies revenue streams beyond pure space hardware"
+    ],
+    "risks": [
+      "Space hardware margins can be thin with long development cycles",
+      "$1.78B market cap limits 'undiscovered' upside \u2014 already well-covered",
+      "Dependent on NASA and DoD budgets which face potential cuts"
+    ],
+    "related_slugs": [
+      "starcloud",
+      "varda-space",
+      "astroscale"
+    ],
+    "citations": [
+      {
+        "claim": "NYSE: RDW, ~$9.29, ~$1.78B cap, $335M revenue, analyst consensus Strong Buy, PT $13",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "redwire",
+    "current_price_usd": 9.29,
+    "market_cap_usd": 1780000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Astroscale",
+    "ticker": "186A",
+    "category": "Space Technology",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 59.0,
+    "one_liner": "The only public orbital debris removal company, trading below IPO price at ~$450M market cap with $29M revenue.",
+    "thesis": "Astroscale (TSE: 186A) trades at ~500 yen with a ~$450M market cap and $29M in revenue. It is the only public company focused on orbital debris removal \u2014 a market that is becoming increasingly critical as LEO congestion grows from mega-constellations like Starlink.\n\nThe company is trading below its IPO price, suggesting post-IPO disillusionment. However, orbital debris removal is a growing necessity \u2014 the Kessler syndrome risk (cascading debris collisions making orbits unusable) makes this a 'when, not if' market. Government contracts and insurance requirements for satellite operators will drive demand.\n\n$29M in revenue is early-stage for a public company, but demonstrates initial commercial traction. The Tokyo Stock Exchange listing makes this accessible to global investors through Japanese brokerage accounts or ADR markets.\n\nAs the only public pure-play on orbital debris removal, Astroscale has a scarcity premium. The bear case is that $29M revenue at a $450M cap is expensive for an early-stage space company, and the debris removal market may take longer to materialize than bulls expect.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 65,
+      "community": 45,
+      "dev_activity": 65,
+      "smart_money": 55,
+      "narrative": 70,
+      "hard_to_buy": 55,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "Only public company in orbital debris removal \u2014 monopoly positioning on a growing problem",
+      "LEO congestion from mega-constellations makes debris removal increasingly urgent",
+      "Potential government mandates for satellite deorbiting could create forced demand"
+    ],
+    "risks": [
+      "Trading below IPO price \u2014 post-IPO sentiment is negative",
+      "$29M revenue at $450M market cap implies expensive valuation for current traction",
+      "Debris removal market timeline uncertain \u2014 may take years to reach commercial scale"
+    ],
+    "related_slugs": [
+      "redwire",
+      "ispace",
+      "starcloud"
+    ],
+    "citations": [
+      {
+        "claim": "TSE: 186A, ~500 yen, ~$450M cap, $29M revenue, only public orbital debris removal company, below IPO price",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "astroscale",
+    "current_price_usd": null,
+    "market_cap_usd": 450000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "ispace",
+    "ticker": "9348",
+    "category": "Space Technology",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 54.0,
+    "one_liner": "Closest to lunar hardware deployment of any public company, but two crash landings make this a high-risk bet on the third attempt.",
+    "thesis": "ispace (TSE: 9348) trades at ~500 yen with a ~$450M market cap and 4.7B yen in revenue. The company is the closest to operational lunar hardware of any publicly traded company, focusing on lunar landers and rovers for commercial and government customers.\n\nThe critical risk: two crash landings. The first mission (M1) crashed on the Moon's surface in April 2023, and the second mission also experienced issues. These failures demonstrate both the difficulty of lunar landing and the execution risk inherent in the company. However, each failure provides engineering data that improves subsequent attempts.\n\nThe lunar economy thesis is compelling \u2014 NASA's Artemis program, commercial lunar payload services (CLPS), and growing interest in lunar resources create a demand backdrop. ispace's Japanese origin also positions it for JAXA contracts and Asian space market participation.\n\nAt $450M market cap with real revenue but a track record of mission failures, this is a high-risk bet that the engineering team can convert accumulated learning into a successful mission. A successful third landing would dramatically re-rate the stock.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 55,
+      "community": 45,
+      "dev_activity": 60,
+      "smart_money": 50,
+      "narrative": 60,
+      "hard_to_buy": 50,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Next lunar mission could dramatically re-rate stock if landing succeeds",
+      "NASA Artemis program and CLPS contracts expanding lunar economy",
+      "Japanese positioning provides access to JAXA and Asian space market"
+    ],
+    "risks": [
+      "Two crash landings demonstrate significant execution risk",
+      "$450M market cap is expensive for a company with failed missions",
+      "Lunar landing remains extremely difficult \u2014 next failure could be terminal for sentiment"
+    ],
+    "related_slugs": [
+      "astroscale",
+      "redwire",
+      "starcloud"
+    ],
+    "citations": [
+      {
+        "claim": "TSE: 9348, ~500 yen, ~$450M cap, 4.7B yen revenue, two crash landings, closest to lunar hardware",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "ispace",
+    "current_price_usd": null,
+    "market_cap_usd": 450000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Spacecoin",
+    "ticker": "$SPACE",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 54.8,
+    "one_liner": "DePIN LEO nanosatellite constellation for decentralized internet \u2014 listed on Binance and Kraken, $22M cap, but only ~10% of 21B token supply circulating.",
+    "thesis": "Spacecoin (SPACE) is a DePIN LEO nanosatellite constellation for decentralized internet. CTC-0 launched December 2024; CTC-1 (three satellites) launched November 2025. Listed on Binance and Kraken with a ~$22M market cap. Partnership with World Liberty Financial and NATO DIANA. Targets $1-2/month internet for emerging markets.\n\nThe concept is ambitious \u2014 a decentralized satellite internet network that could serve the ~3 billion people without reliable connectivity. The Binance and Kraken listings provide liquidity, and the NATO DIANA partnership adds institutional credibility.\n\nHowever, the extreme risk is in the tokenomics: only ~10% of the 21B token supply is circulating. This means massive future dilution as the remaining 90% of tokens are released. Additionally, building a satellite constellation to compete with Starlink's 6,000+ satellites is an enormous capital and engineering challenge.\n\nThis is one of the highest-risk entries in the entire report. The satellite launches prove the team can execute on hardware, but the path from 4 nanosatellites to a commercially viable constellation serving millions is extraordinarily long.",
+    "signals": {
+      "toy_phase": 75,
+      "working_code": 55,
+      "community": 50,
+      "dev_activity": 55,
+      "smart_money": 45,
+      "narrative": 70,
+      "hard_to_buy": 30,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Binance and Kraken listings provide major exchange liquidity",
+      "NATO DIANA and World Liberty Financial partnerships add institutional credibility",
+      "Targets $1-2/month internet for emerging markets \u2014 massive TAM if achievable"
+    ],
+    "risks": [
+      "Only ~10% of 21B token supply circulating \u2014 extreme future dilution risk",
+      "4 nanosatellites vs Starlink's 6,000+ \u2014 orders of magnitude behind competition",
+      "Satellite internet constellation requires billions in capital to reach commercial scale"
+    ],
+    "related_slugs": [
+      "starcloud",
+      "redwire",
+      "geodnet"
+    ],
+    "citations": [
+      {
+        "claim": "CTC-0 launched Dec 2024, CTC-1 (3 satellites) Nov 2025, Binance and Kraken listed, ~$22M cap, NATO DIANA partner",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Only ~10% of 21B token supply circulating, extreme risk",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "spacecoin",
+    "current_price_usd": null,
+    "market_cap_usd": 22000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Unconventional AI",
+    "ticker": null,
+    "category": "Neuromorphic / Photonic Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 64.5,
+    "one_liner": "Raised a $475M seed round at $4.5B valuation \u2014 one of the largest seeds in history \u2014 targeting 1,000x energy efficiency through brain-inspired analog computing.",
+    "thesis": "Unconventional AI raised a $475M seed round at $4.5B valuation (December 2025) \u2014 one of the largest seed rounds in history. Founded by Naveen Rao, who sold MosaicML to Databricks for $1.3B and sold Nervana to Intel for $400M+. Backed by a16z, Lightspeed, Sequoia, Lux Capital, and Jeff Bezos.\n\nThe company is targeting 1,000x energy efficiency through brain-inspired analog computing, with first chips expected to tape out in 2026. The founder's track record \u2014 two successful exits in the AI chip space \u2014 is the primary reason investors deployed $475M at seed stage.\n\nThe investor roster is effectively a hall of fame: a16z, Lightspeed, Sequoia, Lux Capital, and Jeff Bezos personally. This level of backing at seed stage is extraordinarily rare and signals deep conviction in both the founder and the market opportunity.\n\nPrivate company with no path to retail access in the near term. The $4.5B seed valuation means the next round will need to show significant technical progress to justify a markup. Watch for the tape-out announcement in 2026 as a key milestone.",
+    "signals": {
+      "toy_phase": 85,
+      "working_code": 40,
+      "community": 30,
+      "dev_activity": 60,
+      "smart_money": 100,
+      "narrative": 75,
+      "hard_to_buy": 95,
+      "catalyst": 55
+    },
+    "catalysts": [
+      "First chip tape-out expected 2026 \u2014 key technical validation milestone",
+      "Founder's track record: sold MosaicML for $1.3B and Nervana for $400M+",
+      "Backed by a16z, Lightspeed, Sequoia, Lux Capital, and Jeff Bezos at $4.5B seed valuation"
+    ],
+    "risks": [
+      "Pre-product company valued at $4.5B \u2014 enormous expectations baked in",
+      "Brain-inspired analog computing is unproven at commercial scale",
+      "No retail access \u2014 private markets only at an extremely high valuation"
+    ],
+    "related_slugs": [
+      "lightmatter",
+      "mythic-ai",
+      "brainchip"
+    ],
+    "citations": [
+      {
+        "claim": "$475M seed at $4.5B valuation, Dec 2025, Naveen Rao founder, backed by a16z, Lightspeed, Sequoia, Lux Capital, Jeff Bezos",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Targeting 1,000x energy efficiency, first chips tape-out 2026",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "unconventional-ai",
+    "current_price_usd": null,
+    "market_cap_usd": 4500000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Lightmatter",
+    "ticker": null,
+    "category": "Neuromorphic / Photonic Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 74.5,
+    "one_liner": "Raised $850M at $4.4B valuation, photonic interconnect deployed with Microsoft, Amazon, xAI, and OpenAI \u2014 CEO hinted IPO imminent.",
+    "thesis": "Lightmatter has raised $850M at a $4.4B valuation, with a $400M Series D (October 2024) led by T. Rowe Price with Fidelity and GV. CEO stated this is 'probably our last private round' \u2014 IPO likely imminent. Their Passage photonic interconnect delivers 32-64 Tbps and is deployed with 'every major data center company from Microsoft to Amazon to xAI and OpenAI.'\n\nThe deployment across all major AI data center operators is the strongest commercial validation signal possible. If Microsoft, Amazon, xAI, and OpenAI are all using Passage interconnects, the technology has been validated at the highest performance requirements in the industry. This is not theoretical \u2014 it's deployed.\n\nThe investor roster \u2014 T. Rowe Price, Fidelity, GV \u2014 includes the kind of late-stage crossover investors who typically invest in the round before an IPO. The CEO's statement about 'probably our last private round' makes the IPO thesis explicit.\n\nThe Lightmatter IPO is described in the source report as 'the most important single signal to watch' \u2014 when the S-1 is filed, it marks the moment photonic computing transitions from frontier curiosity to investable megatrend. Position before, not after.",
+    "signals": {
+      "toy_phase": 35,
+      "working_code": 90,
+      "community": 50,
+      "dev_activity": 80,
+      "smart_money": 95,
+      "narrative": 75,
+      "hard_to_buy": 85,
+      "catalyst": 80
+    },
+    "catalysts": [
+      "CEO stated 'probably our last private round' \u2014 IPO filing likely imminent",
+      "Passage photonic interconnect deployed with Microsoft, Amazon, xAI, and OpenAI",
+      "T. Rowe Price and Fidelity as lead investors signal institutional IPO readiness"
+    ],
+    "risks": [
+      "Private at $4.4B valuation \u2014 IPO pricing could be at a premium over current levels",
+      "Photonic computing is a nascent market \u2014 adoption timeline may be slower than expected",
+      "Competition from Marvell/Celestial AI acquisition could reduce market share"
+    ],
+    "related_slugs": [
+      "unconventional-ai",
+      "marvell-celestial-ai",
+      "mythic-ai"
+    ],
+    "citations": [
+      {
+        "claim": "$850M raised, $4.4B valuation, $400M Series D led by T. Rowe Price with Fidelity and GV",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Passage photonic interconnect 32-64 Tbps deployed with Microsoft, Amazon, xAI, OpenAI. CEO: 'probably our last private round'",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "lightmatter",
+    "current_price_usd": null,
+    "market_cap_usd": 4400000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Mythic AI",
+    "ticker": null,
+    "category": "Neuromorphic / Photonic Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 57.0,
+    "one_liner": "Came back from the dead after running out of cash in 2022, raised an oversubscribed $125M round claiming 750x more tokens/second/watt than NVIDIA GPUs.",
+    "thesis": "Mythic AI came back from the dead. After running out of cash in November 2022, they restructured and raised a $125M oversubscribed round (December 2025) led by DCVC with NEA, SoftBank KR, and Honda. Their analog processing units claim 750x more tokens per second per watt than NVIDIA GPUs for LLMs.\n\nHonda is co-developing a 100x efficient chip for next-gen vehicles, providing both a strategic partner and a clear commercial application. The automotive use case \u2014 efficient edge AI processing for autonomous vehicles \u2014 is a massive market that values power efficiency over raw performance.\n\nThe restructuring and near-death experience is both a risk and a signal. The fact that DCVC, NEA, SoftBank, and Honda deployed $125M into a company that previously ran out of cash suggests the technology has genuine merit. Oversubscription means demand exceeded the round size.\n\nHowever, the near-death experience means the cap table may be complex, existing investors may have been diluted or wiped out, and institutional memory may have been lost. The 750x efficiency claim is extraordinary and needs independent validation.",
+    "signals": {
+      "toy_phase": 70,
+      "working_code": 55,
+      "community": 25,
+      "dev_activity": 50,
+      "smart_money": 70,
+      "narrative": 65,
+      "hard_to_buy": 85,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "Honda co-developing 100x efficient chip for next-gen vehicles",
+      "$125M oversubscribed round led by DCVC with NEA, SoftBank KR validates resurrection",
+      "750x tokens/second/watt claim vs NVIDIA GPUs could be transformative if validated"
+    ],
+    "risks": [
+      "Previously ran out of cash in November 2022 \u2014 execution track record is poor",
+      "750x efficiency claim is extraordinary and needs independent validation",
+      "Cap table complexity from restructuring may create governance issues"
+    ],
+    "related_slugs": [
+      "unconventional-ai",
+      "lightmatter",
+      "brainchip"
+    ],
+    "citations": [
+      {
+        "claim": "Ran out of cash Nov 2022, restructured, raised $125M oversubscribed Dec 2025, led by DCVC with NEA, SoftBank KR, Honda",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Claim 750x tokens/second/watt vs NVIDIA GPUs, Honda co-developing 100x efficient chip",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "mythic-ai",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Marvell Technology (Celestial AI)",
+    "ticker": "$MRVL",
+    "category": "Neuromorphic / Photonic Computing",
+    "asset_class": "public_equities",
+    "tier": 2,
+    "composite_score": 61.0,
+    "one_liner": "Acquired Celestial AI for up to $5.5B \u2014 now the best public photonics exposure with revenue projected to ramp late 2028, billion-dollar run rate by 2029.",
+    "thesis": "Celestial AI was acquired by Marvell (NASDAQ: MRVL) for up to $5.5B (December 2025). Revenue from the Celestial AI photonic technology is projected to ramp late 2028, with a billion-dollar run rate targeted by 2029. Marvell is now described as 'the best public photonics exposure.'\n\nMarvell is a large-cap semiconductor company (~$60B+ market cap), so the Celestial AI acquisition represents optionality rather than a pure-play bet. The $5.5B acquisition price signals Marvell's conviction in photonic computing's future. For investors who want public market exposure to the photonic computing thesis, Marvell is now the primary vehicle.\n\nThe revenue ramp timeline \u2014 late 2028 to billion-dollar run rate by 2029 \u2014 means this is a patient bet. The photonic interconnect technology is complementary to Marvell's existing data center networking business, creating natural cross-selling opportunities.\n\nAs a large-cap, Marvell offers lower risk than pure-play photonic companies but also lower leverage to the photonics thesis specifically. This is the conservative way to play the photonic computing transition.",
+    "signals": {
+      "toy_phase": 35,
+      "working_code": 75,
+      "community": 60,
+      "dev_activity": 70,
+      "smart_money": 70,
+      "narrative": 65,
+      "hard_to_buy": 15,
+      "catalyst": 65
+    },
+    "catalysts": [
+      "Celestial AI revenue ramp projected late 2028 \u2014 billion-dollar run rate by 2029",
+      "Best public photonics exposure following $5.5B acquisition",
+      "Cross-selling with Marvell's existing data center networking business"
+    ],
+    "risks": [
+      "Large-cap company (~$60B+) means photonics is a small part of overall business",
+      "Revenue ramp not until late 2028 \u2014 requires patience",
+      "Integration of $5.5B acquisition carries execution risk"
+    ],
+    "related_slugs": [
+      "lightmatter",
+      "unconventional-ai",
+      "twist-bioscience"
+    ],
+    "citations": [
+      {
+        "claim": "Acquired Celestial AI for up to $5.5B (Dec 2025), revenue ramp late 2028, billion-dollar run rate by 2029",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Marvell is now the best public photonics exposure",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "marvell-celestial-ai",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Rain AI",
+    "ticker": null,
+    "category": "Neuromorphic / Photonic Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 26.2,
+    "one_liner": "In distress despite Sam Altman's backing \u2014 $150M Series B collapsed in Q1 2025, reportedly exploring a sale to OpenAI, NVIDIA, or Microsoft.",
+    "thesis": "Rain AI is in distress. Despite Sam Altman's backing, their $150M Series B collapsed in Q1 2025. The company is reportedly exploring a sale. OpenAI, NVIDIA, and Microsoft are reportedly interested in acqui-hiring.\n\nRain AI was developing neuromorphic processing chips inspired by the brain's architecture. The collapse of the $150M Series B is a severe signal \u2014 when a company with Sam Altman's backing cannot close a raise, the technology or business fundamentals have likely been found wanting by sophisticated investors.\n\nThe acqui-hire interest from OpenAI, NVIDIA, and Microsoft suggests the talent and IP have value even if the standalone company does not. An acquisition could provide some return to existing investors, but likely at a steep discount to previous valuations.\n\nThis is effectively a distressed asset. Included as a graveyard entry given the collapsed fundraise and sale exploration. The neuromorphic chip space is being won by companies with better execution (Unconventional AI, Lightmatter) while Rain AI struggled to deliver.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 20,
+      "community": 10,
+      "dev_activity": 15,
+      "smart_money": 15,
+      "narrative": 30,
+      "hard_to_buy": 95,
+      "catalyst": 10
+    },
+    "catalysts": [
+      "Potential acqui-hire by OpenAI, NVIDIA, or Microsoft could provide some return",
+      "Neuromorphic chip IP may have strategic value to larger acquirers",
+      "Sam Altman connection could facilitate OpenAI acquisition"
+    ],
+    "risks": [
+      "$150M Series B collapsed in Q1 2025 \u2014 company cannot raise capital",
+      "Reportedly exploring a sale \u2014 standalone company appears non-viable",
+      "Competitors Unconventional AI and Lightmatter have far more funding and momentum"
+    ],
+    "related_slugs": [
+      "unconventional-ai",
+      "lightmatter",
+      "mythic-ai"
+    ],
+    "citations": [
+      {
+        "claim": "$150M Series B collapsed Q1 2025, exploring a sale, OpenAI/NVIDIA/Microsoft interested in acqui-hiring",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": true,
+    "slug": "rain-ai",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Atlas Data Storage",
+    "ticker": null,
+    "category": "Neuromorphic / Photonic Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 55.5,
+    "one_liner": "Twist Bioscience spinoff launched with $155M seed \u2014 the most well-funded DNA storage company ever, with indirect exposure via TWST.",
+    "thesis": "Atlas Data Storage is a Twist Bioscience spinoff launched with $155M in seed financing \u2014 the most well-funded DNA storage company ever. Twist retains a minority stake, providing indirect public market exposure through TWST.\n\nDNA data storage addresses a fundamental long-term problem: global data creation is outpacing storage capacity growth, and DNA can theoretically store exabytes of data in a sugar-cube-sized volume for thousands of years. The $155M seed is the largest ever for a DNA storage company, suggesting serious investor conviction in the timeline.\n\nThe DNA storage sector is consolidating \u2014 Biomemory (Paris) acquired Catalog Technologies (March 2026), creating the largest combined DNA storage IP portfolio. Atlas and Biomemory are the two leaders in a nascent market.\n\nNo direct retail access \u2014 Atlas is private. Indirect exposure available through Twist Bioscience (NASDAQ: TWST), which retains a minority stake. The DNA storage thesis is long-term (5-10+ years to commercial scale) but the $155M seed suggests the timeline may be accelerating.",
+    "signals": {
+      "toy_phase": 80,
+      "working_code": 40,
+      "community": 25,
+      "dev_activity": 50,
+      "smart_money": 75,
+      "narrative": 60,
+      "hard_to_buy": 90,
+      "catalyst": 45
+    },
+    "catalysts": [
+      "$155M seed financing \u2014 largest ever for a DNA storage company",
+      "Indirect public market exposure through Twist Bioscience (TWST) minority stake",
+      "DNA storage sector consolidating \u2014 Biomemory acquired Catalog Technologies March 2026"
+    ],
+    "risks": [
+      "DNA data storage is pre-commercial \u2014 5-10+ years to meaningful revenue",
+      "Read/write speeds for DNA storage are orders of magnitude slower than silicon",
+      "No direct retail access \u2014 private company accessible only through TWST stake"
+    ],
+    "related_slugs": [
+      "twist-bioscience",
+      "biomemory",
+      "lightmatter"
+    ],
+    "citations": [
+      {
+        "claim": "Twist Bioscience spinoff, $155M seed financing, most well-funded DNA storage company ever",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Biomemory acquired Catalog Technologies March 2026, consolidating DNA storage sector",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "atlas-data-storage",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Biomemory",
+    "ticker": null,
+    "category": "Neuromorphic / Photonic Computing",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 47.2,
+    "one_liner": "Paris-based DNA storage company that acquired Catalog Technologies in March 2026, creating the largest combined DNA storage IP portfolio.",
+    "thesis": "Biomemory (Paris) acquired Catalog Technologies (March 2026), creating the largest combined DNA storage IP portfolio. The acquisition consolidates the DNA storage sector, positioning Biomemory alongside Atlas Data Storage (Twist spinoff) as one of two leading players.\n\nDNA data storage is a frontier technology that addresses the long-term mismatch between exponential data creation and linear storage capacity growth. DNA can theoretically store exabytes per gram and last thousands of years. The Catalog Technologies acquisition brings additional IP and engineering talent.\n\nHowever, Biomemory is significantly less well-funded than Atlas Data Storage ($155M seed). The Paris base may also limit access to Silicon Valley talent and capital networks. DNA storage remains pre-commercial with a 5-10+ year timeline to meaningful revenue.\n\nNo retail access. Private company with limited public information about funding status. The Catalog acquisition is a consolidation signal that suggests the sector is maturing from pure research to early commercialization efforts.",
+    "signals": {
+      "toy_phase": 80,
+      "working_code": 35,
+      "community": 20,
+      "dev_activity": 45,
+      "smart_money": 40,
+      "narrative": 55,
+      "hard_to_buy": 95,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "Acquired Catalog Technologies March 2026 \u2014 largest combined DNA storage IP portfolio",
+      "DNA storage sector consolidation suggests movement toward commercialization",
+      "Long-term thesis on data storage capacity gap supports eventual market opportunity"
+    ],
+    "risks": [
+      "Significantly less funded than competitor Atlas Data Storage ($155M seed)",
+      "DNA data storage is 5-10+ years from commercial viability",
+      "No retail access \u2014 private, Paris-based, limited funding transparency"
+    ],
+    "related_slugs": [
+      "atlas-data-storage",
+      "twist-bioscience",
+      "lightmatter"
+    ],
+    "citations": [
+      {
+        "claim": "Acquired Catalog Technologies March 2026, creating largest combined DNA storage IP portfolio",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "biomemory",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Celo",
+    "ticker": "$CELO",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 75.0,
+    "one_liner": "The #1 Layer 2 by daily active users (840K DAU) with 11M MiniPay wallets, trading 99.2% below ATH \u2014 the most extreme usage-price disconnect in crypto.",
+    "thesis": "Celo (CELO) trades at ~$0.07-0.09, down 99.2% from its all-time high of $10.66. Yet it is the #1 Layer 2 by daily active users (840K DAU), the #1 transport layer for USDT by weekly active users (surpassing Tron), and has 11M MiniPay wallets via Opera browser integration. $65B+ stablecoin volume since L2 migration. Protocol revenue grew 365% in 2025.\n\nA community vote on buyback-and-burn of 50%+ of protocol profits is underway \u2014 if approved, this creates a direct value accrual mechanism that addresses the key bear case (value accrual broken by design). Available on Coinbase, Binance, and all major exchanges.\n\nThe usage-price disconnect is the core thesis: 840K daily active users and $65B+ in stablecoin volume suggest massive real-world adoption, yet the token trades at 99% below its peak. Historically, this kind of usage-price divergence precedes explosive re-ratings when the market finally recognizes the fundamental traction.\n\nThe kill risk is that value accrual may be structurally broken \u2014 high usage doesn't necessarily translate to token value. The buyback-and-burn vote is the key catalyst that could resolve this disconnect. If approved and implemented, it creates a direct mechanism for protocol revenue to flow to token holders.",
+    "signals": {
+      "toy_phase": 25,
+      "working_code": 95,
+      "community": 90,
+      "dev_activity": 85,
+      "smart_money": 75,
+      "narrative": 85,
+      "hard_to_buy": 15,
+      "catalyst": 95
+    },
+    "catalysts": [
+      "Community vote on buyback-and-burn of 50%+ of protocol profits underway",
+      "840K DAU and #1 L2 by daily active users \u2014 massive traction signal",
+      "Protocol revenue grew 365% in 2025 \u2014 accelerating monetization"
+    ],
+    "risks": [
+      "Value accrual may be structurally broken \u2014 usage doesn't guarantee token value",
+      "99.2% decline from ATH may reflect fundamental token economics issues, not just market cycle",
+      "L2 competition intensifying \u2014 other chains also pursuing stablecoin and payments use cases"
+    ],
+    "related_slugs": [
+      "haqq-islamic-coin",
+      "huma-finance",
+      "spacecoin"
+    ],
+    "citations": [
+      {
+        "claim": "~$0.07-0.09, 99.2% below ATH ($10.66), 840K DAU, 11M MiniPay wallets, $65B+ stablecoin volume, 365% revenue growth",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Community vote on buyback-and-burn of 50%+ protocol profits underway",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "celo",
+    "current_price_usd": 0.08,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "HAQQ / Islamic Coin",
+    "ticker": "$ISLM",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 61.8,
+    "one_liner": "The first purpose-built Shariah-compliant Layer 1 targeting a $5.4 trillion Islamic finance market with 1.8 billion Muslims and almost zero mature crypto offerings.",
+    "thesis": "HAQQ / Islamic Coin (ISLM) trades at ~$0.02, down 96% from ATH. The first purpose-built Shariah-compliant Layer 1, targeting the Islamic finance market which exceeds $5.4 trillion with 1.8 billion Muslims seeking compliant financial products and almost zero mature crypto offerings.\n\nHAQQ raised $193M in private sales, has a fatwa issued (religious ruling confirming compliance), Indonesian pre-approval, and a Shariah Oracle validating every transaction. 10% of all new ISLM goes to an Evergreen DAO for Muslim community projects \u2014 a built-in mechanism for community benefit that aligns with Islamic finance principles.\n\nThe TAM is enormous: $5.4 trillion in Islamic finance with minimal crypto penetration. If HAQQ captures even a fraction of Islamic DeFi, the current ~$0.02 price looks dramatically undervalued. The religious compliance angle creates a natural moat \u2014 non-compliant chains cannot serve this market.\n\nAvailable on KuCoin, Gate.io, MEXC. The key risk is scholarly disagreement about whether cryptocurrency itself is permissible under Islamic law \u2014 a negative fatwa from a major authority could undermine the entire thesis.",
+    "signals": {
+      "toy_phase": 50,
+      "working_code": 65,
+      "community": 65,
+      "dev_activity": 55,
+      "smart_money": 65,
+      "narrative": 80,
+      "hard_to_buy": 45,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "Indonesian pre-approval opens the world's largest Muslim-majority market (270M people)",
+      "Shariah Oracle validating every transaction creates compliance moat vs generic chains",
+      "10% of new ISLM to Evergreen DAO \u2014 built-in community development mechanism"
+    ],
+    "risks": [
+      "Scholarly disagreement on whether cryptocurrency is Shariah-compliant could undermine thesis",
+      "96% decline from ATH suggests market has not validated the concept",
+      "KuCoin, Gate.io, MEXC listings \u2014 no Tier 1 exchange (Coinbase/Binance) listing yet"
+    ],
+    "related_slugs": [
+      "celo",
+      "huma-finance",
+      "spacecoin"
+    ],
+    "citations": [
+      {
+        "claim": "~$0.02, 96% below ATH, first Shariah-compliant L1, $5.4T TAM, $193M raised, fatwa issued, Indonesian pre-approval",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Shariah Oracle validates every transaction, 10% of new ISLM to Evergreen DAO",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "haqq-islamic-coin",
+    "current_price_usd": 0.02,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Huma Finance",
+    "ticker": "$HUMA",
+    "category": "PayFi",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 64.0,
+    "one_liner": "The first PayFi network delivering $1.1B in quarterly originations with partnerships across Tala, Geoswift, and Circle CPN \u2014 the real-world finance bridge crypto has promised.",
+    "thesis": "Huma Finance (HUMA) trades at ~$0.025 with a ~$64M market cap. The first PayFi network: Q4 2025 delivered $1.1B in originations (+24.4% QoQ) and $2.2B transaction volume. This is genuine commercial traction in a sector where most protocols have near-zero real usage.\n\nPartnerships with Tala ($50M tokenized lending for underbanked populations), Geoswift (Amazon seller settlements), and Circle CPN (29 institutions, expanding to 185 corridors) provide diverse real-world integration points. Tala alone serves millions of underbanked borrowers in emerging markets.\n\nThe key question is token value accrual \u2014 $1.1B in quarterly originations is impressive, but how much of that economic activity flows to HUMA token holders? At $64M market cap with $4.4B+ annualized origination volume, the price-to-origination ratio is extremely low if value accrual mechanisms are effective.\n\nAvailable on Bitget, KuCoin, MEXC. The PayFi thesis is that tokenized lending and settlement infrastructure will capture a meaningful share of the $10T+ global payments and trade finance market.",
+    "signals": {
+      "toy_phase": 40,
+      "working_code": 80,
+      "community": 60,
+      "dev_activity": 65,
+      "smart_money": 65,
+      "narrative": 75,
+      "hard_to_buy": 45,
+      "catalyst": 70
+    },
+    "catalysts": [
+      "$1.1B quarterly originations growing 24.4% QoQ \u2014 accelerating commercial traction",
+      "Circle CPN partnership expanding from 29 to 185 corridors \u2014 massive distribution expansion",
+      "Tala partnership tokenizing $50M in lending for underbanked populations"
+    ],
+    "risks": [
+      "Token value accrual unclear \u2014 $1.1B originations may not translate to HUMA token value",
+      "PayFi is a new category with unproven long-term economics",
+      "Bitget, KuCoin, MEXC listings \u2014 no Tier 1 exchange (Coinbase/Binance) yet"
+    ],
+    "related_slugs": [
+      "celo",
+      "haqq-islamic-coin",
+      "spacecoin"
+    ],
+    "citations": [
+      {
+        "claim": "~$0.025, ~$64M cap, Q4 2025 $1.1B originations +24.4% QoQ, $2.2B transaction volume",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Partnerships: Tala ($50M tokenized lending), Geoswift (Amazon settlements), Circle CPN (29 institutions, 185 corridors)",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "huma-finance",
+    "current_price_usd": 0.025,
+    "market_cap_usd": 64000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Arkreen",
+    "ticker": "$AKRE",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 54.0,
+    "one_liner": "300,000+ distributed solar energy data nodes with 140 GWh tokenized and a live 300kW Thailand solar farm \u2014 but effectively zero liquidity at $97/day DEX volume.",
+    "thesis": "Arkreen (AKRE) trades at ~$0.0003 with a $1.7-2.9M market cap. The network has 300,000+ distributed solar energy data nodes connected globally, 140 GWh of green energy tokenized, and the first live 300kW commercial solar installation in Thailand with on-chain metering.\n\nThe traction numbers are impressive for the market cap: 300K+ nodes and 140 GWh of real energy data is genuine physical infrastructure. The Thailand commercial installation demonstrates the transition from data aggregation to actual energy production, which is a significant milestone.\n\nHowever, liquidity is essentially zero \u2014 $97/day DEX volume means any meaningful position is impossible to build or exit without massive slippage. Available on Uniswap V3 (Polygon) and MEXC, but the MEXC volume is also minimal.\n\nThis is an 'extremely illiquid' watch-list opportunity. The physical traction is real, but the token market infrastructure is too thin for any serious capital deployment. Watch for exchange listings, volume increases, or strategic partnerships that could provide liquidity.",
+    "signals": {
+      "toy_phase": 55,
+      "working_code": 65,
+      "community": 55,
+      "dev_activity": 50,
+      "smart_money": 30,
+      "narrative": 65,
+      "hard_to_buy": 90,
+      "catalyst": 50
+    },
+    "catalysts": [
+      "300K+ solar data nodes \u2014 genuine physical infrastructure traction",
+      "First live 300kW commercial solar installation in Thailand with on-chain metering",
+      "140 GWh of green energy tokenized \u2014 real environmental asset backing"
+    ],
+    "risks": [
+      "Effectively zero liquidity \u2014 $97/day DEX volume makes position building/exit impossible",
+      "$1.7-2.9M market cap \u2014 micro-cap with existential funding risk",
+      "Only available on Uniswap V3 (Polygon) and MEXC \u2014 no major exchange listing"
+    ],
+    "related_slugs": [
+      "silencio",
+      "celo",
+      "geodnet"
+    ],
+    "citations": [
+      {
+        "claim": "~$0.0003, $1.7-2.9M cap, 300K+ solar nodes, 140 GWh tokenized, live 300kW Thailand farm, $97/day DEX volume",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "arkreen",
+    "current_price_usd": 0.0003,
+    "market_cap_usd": 2300000,
+    "volume_24h_usd": 97
+  },
+  {
+    "name": "Silencio",
+    "ticker": "$SLC",
+    "category": "DePIN",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 50.8,
+    "one_liner": "1.1 million users contributing noise data with 41 billion datapoints \u2014 the world's largest crowd-sourced noise map at a $700K-1.3M market cap.",
+    "thesis": "Silencio (SLC) trades at ~$0.00005 with a $700K-1.3M market cap. The network has 1.1 million users contributing noise data, with 41 billion datapoints collected. Use cases include urban planning and real estate analytics.\n\nThe user traction is remarkable for the market cap: 1.1 million contributors and 41 billion datapoints represent a genuine data network with real-world utility. Noise pollution data is valuable for city planners, real estate developers, and environmental regulators.\n\nHowever, the market cap of $700K-1.3M is essentially a micro-nano-cap, raising serious questions about sustainability. Available on MEXC and Gate.io, but liquidity is likely minimal at this valuation. The token may be too small for any meaningful institutional interest.\n\nThis is a watch-list entry. The user engagement is genuinely impressive, but the token market infrastructure and valuation suggest the project either needs significantly more capitalization or may struggle to survive as a standalone token economy. The data itself may be more valuable than the token.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 60,
+      "community": 65,
+      "dev_activity": 45,
+      "smart_money": 25,
+      "narrative": 60,
+      "hard_to_buy": 75,
+      "catalyst": 40
+    },
+    "catalysts": [
+      "1.1 million active users \u2014 genuine network effect for noise data collection",
+      "41 billion datapoints create a unique dataset for urban planning and real estate",
+      "MEXC and Gate.io listings provide some exchange access"
+    ],
+    "risks": [
+      "$700K-1.3M market cap \u2014 nano-cap with existential sustainability risk",
+      "Noise data monetization model unproven at scale",
+      "Token may be too small for institutional interest or meaningful liquidity"
+    ],
+    "related_slugs": [
+      "arkreen",
+      "geodnet",
+      "celo"
+    ],
+    "citations": [
+      {
+        "claim": "~$0.00005, $700K-1.3M cap, 1.1M users, 41B datapoints, MEXC and Gate.io listed",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "silencio",
+    "current_price_usd": 5e-05,
+    "market_cap_usd": 1000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "eGenesis",
+    "ticker": null,
+    "category": "Xenotransplantation",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 72.5,
+    "one_liner": "FDA IND cleared for pig-to-human kidney transplants \u2014 patient Tim Andrews has surpassed seven months post-transplant, dialysis-free, with 69-gene-edited organs.",
+    "thesis": "eGenesis (Cambridge, MA) received FDA IND clearance for its Phase I/II/III study of EGEN-2784 (September 2025). Patient Tim Andrews received a pig kidney in January 2025 and has surpassed seven months post-transplant \u2014 the longest-living pig organ recipient, dialysis-free. Patient Bill Stewart received a kidney in June 2025 and completed a two-hour bike ride.\n\nThe EGEN-2784 pig has 69 gene edits: 3 xeno-antigen knockouts, 7 human transgene insertions, 59 PERV inactivations. Total funding: $454-481M from Lux Capital, ARCH Ventures, Khosla Ventures, Leaps by Bayer, DaVita, and 32+ institutions. Available on EquityZen/Forge for accredited investors.\n\nThis is one of the most medically significant frontier technologies in this report. 100,000+ Americans are on the organ transplant waitlist, and 17 die daily waiting. If pig-to-human transplantation achieves FDA approval, the addressable market is enormous and the human impact is transformative.\n\nThe FDA IND clearance is a critical regulatory milestone \u2014 this is now in formal clinical trials, not just compassionate use. The seven-month survival of Tim Andrews without dialysis is the strongest clinical signal in xenotransplantation history.",
+    "signals": {
+      "toy_phase": 45,
+      "working_code": 80,
+      "community": 55,
+      "dev_activity": 75,
+      "smart_money": 90,
+      "narrative": 85,
+      "hard_to_buy": 80,
+      "catalyst": 75
+    },
+    "catalysts": [
+      "FDA IND cleared for Phase I/II/III study of EGEN-2784 \u2014 in formal clinical trials",
+      "Tim Andrews surpassed 7 months post-transplant dialysis-free \u2014 longest pig organ recipient",
+      "$454-481M funding from Lux Capital, ARCH, Khosla, Leaps by Bayer, DaVita"
+    ],
+    "risks": [
+      "Organ rejection at scale remains the fundamental biological risk",
+      "Regulatory path beyond IND clearance is long \u2014 full FDA approval could take years",
+      "Private company \u2014 accredited investor access only via EquityZen/Forge"
+    ],
+    "related_slugs": [
+      "united-therapeutics",
+      "life-biosciences"
+    ],
+    "citations": [
+      {
+        "claim": "FDA IND cleared Sept 2025, patient Tim Andrews 7+ months post-transplant, 69 gene edits, $454-481M funding",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Backed by Lux Capital, ARCH Ventures, Khosla Ventures, Leaps by Bayer, DaVita, 32+ institutions",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "egenesis",
+    "current_price_usd": null,
+    "market_cap_usd": 332000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "United Therapeutics",
+    "ticker": "$UTHR",
+    "category": "Xenotransplantation",
+    "asset_class": "public_equities",
+    "tier": 1,
+    "composite_score": 76.0,
+    "one_liner": "A profitable $13B+ company with existing drug revenue where xenotransplantation via its Revivicor subsidiary represents massive free optionality \u2014 the best risk-adjusted frontier play in the report.",
+    "thesis": "United Therapeutics (NASDAQ: UTHR) has a ~$13B+ market cap and is profitable from its pulmonary hypertension drug franchise. Its Revivicor subsidiary produces 10-gene-edited pigs. FDA cleared the IND for its UKidney EXPAND clinical trial (February 2025), with the first transplant performed November 2025. Building a $100M organ production facility. Seven organ programs total.\n\nThe source report describes this as 'the best risk-adjusted frontier play in the entire report' \u2014 and the logic is compelling. UTHR is a profitable company with existing revenue where the xenotransplantation division represents pure optionality. If pig organs work at scale, the addressable market (100,000+ Americans on waitlists, 17 dying daily) could dwarf the current pulmonary hypertension franchise. If they don't work, you still own a profitable drug company.\n\nThe $100M organ production facility under construction signals serious commitment to scale. Seven organ programs (not just kidneys) multiply the optionality. The FDA IND clearance for UKidney EXPAND puts this in formal clinical trials.\n\nThis is the rare frontier opportunity where downside is protected by existing profitability and upside is potentially transformative. At $13B market cap, a successful xeno program could easily double or triple the company's value.",
+    "signals": {
+      "toy_phase": 35,
+      "working_code": 95,
+      "community": 70,
+      "dev_activity": 85,
+      "smart_money": 85,
+      "narrative": 85,
+      "hard_to_buy": 15,
+      "catalyst": 95
+    },
+    "catalysts": [
+      "FDA IND cleared for UKidney EXPAND trial, first transplant Nov 2025",
+      "$100M organ production facility under construction \u2014 scaling commitment",
+      "Seven organ programs provide diversified optionality beyond kidneys"
+    ],
+    "risks": [
+      "Organ rejection at scale could invalidate the entire xenotransplantation thesis",
+      "Regulatory approval timeline extends years beyond initial trials",
+      "Ethical and religious objections to pig organ transplants could limit adoption"
+    ],
+    "related_slugs": [
+      "egenesis",
+      "life-biosciences"
+    ],
+    "citations": [
+      {
+        "claim": "NASDAQ: UTHR, ~$13B+ cap, profitable, Revivicor 10-gene-edited pigs, FDA IND cleared UKidney EXPAND Feb 2025, first transplant Nov 2025",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "$100M organ production facility, 7 organ programs, 'best risk-adjusted frontier play in the entire report'",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "united-therapeutics",
+    "current_price_usd": null,
+    "market_cap_usd": 13000000000,
+    "volume_24h_usd": null
+  },
+  {
+    "name": "Life Biosciences",
+    "ticker": null,
+    "category": "Xenotransplantation",
+    "asset_class": "private_markets",
+    "tier": 3,
+    "composite_score": 62.8,
+    "one_liner": "Received the first-ever FDA IND clearance for a cellular rejuvenation therapy \u2014 ER-100 delivers three reprogramming transcription factors for optic neuropathies.",
+    "thesis": "Life Biosciences received the first-ever FDA IND clearance for a cellular rejuvenation therapy (January 2026). ER-100 delivers three reprogramming transcription factors via intravitreal injection for optic neuropathies. Phase 1 trial initiated Q1 2026. Just closed $80M in financing (April 8, 2026). Co-founded by David Sinclair.\n\nThis is a historically significant regulatory milestone \u2014 the first time the FDA has cleared an IND for cellular rejuvenation. While the initial application is narrow (optic neuropathies), the platform technology (reprogramming transcription factors) has much broader implications for aging and age-related disease.\n\nDavid Sinclair's involvement as co-founder adds both credibility and controversy \u2014 he is the most prominent longevity researcher but also attracts scientific skepticism. The $80M April 2026 financing provides fresh runway for the Phase 1 trial.\n\nThe xenotransplantation categorization is approximate \u2014 Life Biosciences is more precisely in the cellular reprogramming/rejuvenation space. The company bridges longevity research and clinical development, with the FDA IND clearance representing the critical transition from research to regulated medicine.",
+    "signals": {
+      "toy_phase": 60,
+      "working_code": 60,
+      "community": 45,
+      "dev_activity": 65,
+      "smart_money": 70,
+      "narrative": 75,
+      "hard_to_buy": 85,
+      "catalyst": 60
+    },
+    "catalysts": [
+      "First-ever FDA IND clearance for cellular rejuvenation therapy (January 2026)",
+      "$80M financing closed April 8, 2026 \u2014 fresh runway for Phase 1 trial",
+      "Platform technology could extend beyond optic neuropathies to broader aging applications"
+    ],
+    "risks": [
+      "Phase 1 trial \u2014 earliest stage of clinical development with uncertain outcomes",
+      "David Sinclair's controversial reputation may attract scientific skepticism",
+      "Cellular reprogramming in humans is unproven \u2014 safety profile unknown"
+    ],
+    "related_slugs": [
+      "egenesis",
+      "united-therapeutics"
+    ],
+    "citations": [
+      {
+        "claim": "First-ever FDA IND clearance for cellular rejuvenation therapy Jan 2026, ER-100, Phase 1 Q1 2026, $80M financing April 2026",
+        "source": "Invisible Layer Report",
+        "url": ""
+      },
+      {
+        "claim": "Co-founded by David Sinclair, three reprogramming transcription factors via intravitreal injection",
+        "source": "Invisible Layer Report",
+        "url": ""
+      }
+    ],
+    "updated_at": "2026-04-13T00:00:00Z",
+    "is_graveyard": false,
+    "slug": "life-biosciences",
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null
+  }
+]

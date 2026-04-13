@@ -46,6 +46,33 @@ export function getAssetClassLabel(assetClass: AssetClass): string {
   return labels[assetClass] ?? "Unknown";
 }
 
+/** Format a USD price for display. Handles sub-dollar and large values. */
+export function formatPrice(price: number | null): string {
+  if (price === null || typeof price !== "number" || isNaN(price)) return "—";
+  if (price < 0.01) return `$${price.toPrecision(4)}`;
+  if (price < 1) return `$${price.toFixed(4)}`;
+  if (price < 1000) return `$${price.toFixed(2)}`;
+  return `$${price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
+/** Format a market cap value for display (e.g. $1.2B, $340.5M). */
+export function formatMarketCap(cap: number | null): string {
+  if (cap === null || typeof cap !== "number" || isNaN(cap)) return "—";
+  if (cap >= 1_000_000_000) return `$${(cap / 1_000_000_000).toFixed(1)}B`;
+  if (cap >= 1_000_000) return `$${(cap / 1_000_000).toFixed(1)}M`;
+  if (cap >= 1_000) return `$${(cap / 1_000).toFixed(1)}K`;
+  return `$${cap.toFixed(0)}`;
+}
+
+/** Format a 24h volume value for display (e.g. $45.2M). */
+export function formatVolume(vol: number | null): string {
+  if (vol === null || typeof vol !== "number" || isNaN(vol)) return "—";
+  if (vol >= 1_000_000_000) return `$${(vol / 1_000_000_000).toFixed(1)}B`;
+  if (vol >= 1_000_000) return `$${(vol / 1_000_000).toFixed(1)}M`;
+  if (vol >= 1_000) return `$${(vol / 1_000).toFixed(1)}K`;
+  return `$${vol.toFixed(0)}`;
+}
+
 /** Format a date string for display. */
 export function formatDate(dateStr: string): string {
   if (typeof dateStr !== "string" || dateStr.length === 0) return "—";

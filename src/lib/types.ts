@@ -36,6 +36,9 @@ export interface Opportunity {
   readonly related_slugs: readonly string[];
   readonly updated_at: string;
   readonly is_graveyard: boolean;
+  readonly current_price_usd: number | null;
+  readonly market_cap_usd: number | null;
+  readonly volume_24h_usd: number | null;
 }
 
 /** Blog post data model. */

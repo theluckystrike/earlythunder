@@ -1,0 +1,231 @@
+{
+  "_metadata": {
+    "source": "CoinGecko Free API",
+    "fetched_at": "2026-04-13T15:13:19Z",
+    "total_assets": 43,
+    "successful": 38,
+    "failed": 5
+  },
+  "prices": {
+    "gensyn": {
+      "current_price_usd": null,
+      "market_cap_usd": null,
+      "volume_24h_usd": null,
+      "note": "Pre-token or not listed on CoinGecko"
+    },
+    "anoma": {
+      "current_price_usd": null,
+      "market_cap_usd": null,
+      "volume_24h_usd": null,
+      "note": "Pre-token or not listed on CoinGecko"
+    },
+    "bittensor": {
+      "current_price_usd": 259.91,
+      "market_cap_usd": 2496471225.6405725,
+      "volume_24h_usd": 224225226.0945306
+    },
+    "eigenlayer": {
+      "current_price_usd": 0.155646,
+      "market_cap_usd": 107600115.52682547,
+      "volume_24h_usd": 14128971.365058968
+    },
+    "babylon": {
+      "current_price_usd": 0.01401794,
+      "market_cap_usd": 52185619.12258452,
+      "volume_24h_usd": 10791018.901993774
+    },
+    "ondo-finance": {
+      "current_price_usd": 0.25221,
+      "market_cap_usd": 1230612597.2232673,
+      "volume_24h_usd": 66171238.680882804
+    },
+    "render-network": {
+      "current_price_usd": 1.9,
+      "market_cap_usd": 988840723.5946004,
+      "volume_24h_usd": 71221420.37802368
+    },
+    "vitadao": {
+      "current_price_usd": 0.208566,
+      "market_cap_usd": 5415551.746441142,
+      "volume_24h_usd": 3541.0718487608624
+    },
+    "akash-network": {
+      "current_price_usd": 0.454382,
+      "market_cap_usd": 119453214.3303325,
+      "volume_24h_usd": 5781255.335944212
+    },
+    "helium": {
+      "current_price_usd": 1.035,
+      "market_cap_usd": 190750636.97484142,
+      "volume_24h_usd": 3419988.234985685
+    },
+    "grass-network": {
+      "current_price_usd": 0.333679,
+      "market_cap_usd": 188391991.09763208,
+      "volume_24h_usd": 11009119.933200372
+    },
+    "hivemapper": {
+      "current_price_usd": 0.00180334,
+      "market_cap_usd": 10352944.608030297,
+      "volume_24h_usd": 365864.86370548926
+    },
+    "near-protocol-ai-pivot": {
+      "current_price_usd": 1.39,
+      "market_cap_usd": 1798966758.2591996,
+      "volume_24h_usd": 217584829.12384918
+    },
+    "near-protocol": {
+      "current_price_usd": 1.39,
+      "market_cap_usd": 1798966758.2591996,
+      "volume_24h_usd": 217584829.12384918
+    },
+    "geodnet": {
+      "current_price_usd": 0.133637,
+      "market_cap_usd": 57139544.47271642,
+      "volume_24h_usd": 249597.25938138377
+    },
+    "elizaos": {
+      "current_price_usd": 0.00074669,
+      "market_cap_usd": 5592422.98805169,
+      "volume_24h_usd": 539329.7257192973
+    },
+    "filecoin": {
+      "current_price_usd": 0.872071,
+      "market_cap_usd": 673675598.3635558,
+      "volume_24h_usd": 70918420.07635492
+    },
+    "hairdao": {
+      "current_price_usd": 12.76,
+      "market_cap_usd": 8904127.014240071,
+      "volume_24h_usd": 260.02319611647494
+    },
+    "bio-protocol": {
+      "current_price_usd": 0.01794224,
+      "market_cap_usd": 31753211.523941845,
+      "volume_24h_usd": 15685545.082113938
+    },
+    "espresso-systems": {
+      "current_price_usd": 0.075293,
+      "market_cap_usd": 39301177.97899953,
+      "volume_24h_usd": 3412367.7083928795
+    },
+    "worldcoin-world": {
+      "current_price_usd": 0.298007,
+      "market_cap_usd": 975204703.2439324,
+      "volume_24h_usd": 143759717.8240546
+    },
+    "dimo": {
+      "current_price_usd": 0.0123234,
+      "market_cap_usd": 6152612.301424279,
+      "volume_24h_usd": 30023.115916652776
+    },
+    "cow-protocol": {
+      "current_price_usd": 0.214404,
+      "market_cap_usd": 118700200.53894679,
+      "volume_24h_usd": 4582783.124323801
+    },
+    "qubic": {
+      "current_price_usd": 7.4899e-07,
+      "market_cap_usd": 102431438.04679662,
+      "volume_24h_usd": 2373857.5488285855
+    },
+    "io-net": {
+      "current_price_usd": 0.099889,
+      "market_cap_usd": 31714302.67850408,
+      "volume_24h_usd": 5934334.398869934
+    },
+    "maple-finance": {
+      "current_price_usd": 0.232833,
+      "market_cap_usd": 270273897.7612637,
+      "volume_24h_usd": 6864236.1168207675
+    },
+    "aleo": {
+      "current_price_usd": 0.04764167,
+      "market_cap_usd": 49122523.34358387,
+      "volume_24h_usd": 1425852.327165346
+    },
+    "goldfinch": {
+      "current_price_usd": 0.119142,
+      "market_cap_usd": 11146754.787844282,
+      "volume_24h_usd": 143480.6825867611
+    },
+    "virtuals-protocol": {
+      "current_price_usd": 0.671765,
+      "market_cap_usd": 440927314.1604259,
+      "volume_24h_usd": 47621697.814325996
+    },
+    "autonolas": {
+      "current_price_usd": 0.04385978,
+      "market_cap_usd": 10376920.877377683,
+      "volume_24h_usd": 174508.1613505114
+    },
+    "mina-protocol": {
+      "current_price_usd": 0.056378,
+      "market_cap_usd": 72354173.33191766,
+      "volume_24h_usd": 4756379.510347905
+    },
+    "namada": {
+      "current_price_usd": 0.00071253,
+      "market_cap_usd": 710752.9830656513,
+      "volume_24h_usd": 30.593895470239392
+    },
+    "researchhub": {
+      "current_price_usd": 0.061033,
+      "market_cap_usd": 13147700.892490905,
+      "volume_24h_usd": 432573.19809365424
+    },
+    "acurast": {
+      "current_price_usd": 0.087522,
+      "market_cap_usd": 21171400.579511054,
+      "volume_24h_usd": 6869201.807476791
+    },
+    "time-fun": {
+      "current_price_usd": null,
+      "market_cap_usd": null,
+      "volume_24h_usd": null,
+      "note": "Not found on CoinGecko"
+    },
+    "zora-attention-markets": {
+      "current_price_usd": 0.01382148,
+      "market_cap_usd": 61874184.81259699,
+      "volume_24h_usd": 5851246.7901630225
+    },
+    "opulous": {
+      "current_price_usd": 0.00074229,
+      "market_cap_usd": 363924.4224597674,
+      "volume_24h_usd": 114764.85036998121
+    },
+    "valleydao": {
+      "current_price_usd": 0.080646,
+      "market_cap_usd": 899943.0889082954,
+      "volume_24h_usd": 360.7534752335701
+    },
+    "story-protocol": {
+      "current_price_usd": 0.478434,
+      "market_cap_usd": 169325678.82647097,
+      "volume_24h_usd": 36220533.4279269
+    },
+    "pump-science-uro": {
+      "current_price_usd": null,
+      "market_cap_usd": null,
+      "volume_24h_usd": null,
+      "note": "Not found on CoinGecko (Pump.Science experimental token)"
+    },
+    "pump-science-rif": {
+      "current_price_usd": null,
+      "market_cap_usd": null,
+      "volume_24h_usd": null,
+      "note": "Not found on CoinGecko (Pump.Science experimental token)"
+    },
+    "terra-luna": {
+      "current_price_usd": 0.054673,
+      "market_cap_usd": 38842405.617354035,
+      "volume_24h_usd": 5189538.61893789
+    },
+    "ftx-alameda": {
+      "current_price_usd": 0.286935,
+      "market_cap_usd": 0.0,
+      "volume_24h_usd": 3060649.1674312437
+    }
+  }
+}
