@@ -226,7 +226,7 @@ function YourRightsSection() {
       <SectionHeading number="07" title="Your Rights" />
       <p className="mt-4 leading-relaxed text-text-secondary">
         Depending on your jurisdiction, you may have the following rights
-        regarding your personal information:
+        regarding your personal information.
       </p>
       <ul className="mt-4 space-y-2">
         <ListItem>
@@ -363,7 +363,7 @@ function CaliforniaSection() {
       <SectionHeading number="13" title="California Residents (CCPA)" />
       <p className="mt-4 leading-relaxed text-text-secondary">
         If you are a California resident, the California Consumer Privacy Act
-        (CCPA) provides you with additional rights:
+        (CCPA) provides you with additional rights.
       </p>
       <ul className="mt-4 space-y-2">
         <ListItem>
