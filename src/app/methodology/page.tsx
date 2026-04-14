@@ -24,8 +24,10 @@ function PageHeader() {
         Methodology
       </h1>
       <p className="mt-6 max-w-3xl text-xl leading-relaxed text-text-secondary">
-        Early Thunder uses a systematic 8-Signal Pattern Filter to identify
-        asymmetric opportunities before they reach mainstream awareness. Every
+        Early Thunder uses a systematic 8-Signal Pattern Filter combining six
+        quality signals with two asymmetry signals to identify opportunities
+        before they reach mainstream awareness. Quality measures whether it is
+        real. Asymmetry measures whether it is still early enough. Every
         opportunity is scored, tiered, and continuously monitored.
       </p>
     </div>
@@ -71,6 +73,6 @@ function SignalSection({
 }
 
 function getSignalWeight(index: number): string {
-  const weights = ["15%", "15%", "10%", "10%", "15%", "10%", "10%", "15%"];
+  const weights = ["20%", "15%", "10%", "10%", "15%", "5%", "15%", "10%"];
   return weights[index] ?? "12.5%";
 }

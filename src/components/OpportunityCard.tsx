@@ -30,6 +30,7 @@ export default function OpportunityCard({ opportunity }: OpportunityCardProps) {
       <p className="mt-3 text-sm text-text-secondary leading-relaxed line-clamp-2">
         {opportunity.one_liner}
       </p>
+      <CardDataRow opportunity={opportunity} />
       <CardFooter opportunity={opportunity} />
     </Link>
   );
@@ -64,6 +65,22 @@ function CardFooter({ opportunity }: { readonly opportunity: Opportunity }) {
         )}
       </div>
       <TierBadge tier={opportunity.tier} />
+    </div>
+  );
+}
+
+function CardDataRow({ opportunity }: { readonly opportunity: Opportunity }) {
+  const parts: string[] = [];
+  if (opportunity.fdv) parts.push(`FDV ${opportunity.fdv}`);
+  if (opportunity.circulating_pct) parts.push(`${opportunity.circulating_pct} circ`);
+  if (opportunity.github_stars) parts.push(`${opportunity.github_stars} stars`);
+  if (opportunity.tvl) parts.push(`TVL ${opportunity.tvl}`);
+
+  if (parts.length === 0) return null;
+
+  return (
+    <div className="mt-2 font-mono text-[10px] text-text-tertiary truncate">
+      {parts.join(" \u00b7 ")}
     </div>
   );
 }

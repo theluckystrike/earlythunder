@@ -7,22 +7,10 @@ export interface SignalDetailData {
 
 export const SIGNAL_DETAILS: readonly SignalDetailData[] = [
   {
-    key: "toy_phase",
-    description:
-      "Measures whether the technology or asset is still in its early, 'toy' phase, dismissed by incumbents but harboring transformative potential. High scores indicate maximum asymmetry windows where the crowd has not yet recognized the opportunity.",
-    example: "The internet in 1995, smartphones in 2007, Bitcoin in 2012.",
-  },
-  {
     key: "working_code",
     description:
       "Evaluates whether the project has functional, deployed technology. Verified through GitHub analysis, on-chain data, and direct product testing. Vaporware scores low. Battle-tested production systems score high.",
     example: "A protocol with $1B+ TVL and 12 months of uptime scores 90+.",
-  },
-  {
-    key: "community",
-    description:
-      "Assesses organic community growth through genuine engagement metrics, not bot-inflated numbers. Tracks developer forums, social sentiment, and user retention patterns.",
-    example: "Active GitHub discussions, organic social growth, and user-created content.",
   },
   {
     key: "dev_activity",
@@ -37,21 +25,33 @@ export const SIGNAL_DETAILS: readonly SignalDetailData[] = [
     example: "Multiple Tier 1 VCs investing in consecutive rounds with increasing valuations.",
   },
   {
-    key: "narrative",
+    key: "community",
     description:
-      "Evaluates whether there is a compelling, easily communicable story. The best investments have narratives that spread virally and create self-reinforcing adoption loops.",
-    example: "'Digital gold' for Bitcoin, 'world computer' for Ethereum.",
-  },
-  {
-    key: "hard_to_buy",
-    description:
-      "Measures acquisition friction. If everyone can easily buy an asset, the asymmetry is usually gone. High friction creates opportunity for the diligent investor willing to put in the effort.",
-    example: "Private market access only, complex on-chain interactions required, or geographic restrictions.",
+      "Assesses organic community growth through genuine engagement metrics, not bot-inflated numbers. Tracks developer forums, social sentiment, and user retention patterns.",
+    example: "Active GitHub discussions, organic social growth, and user-created content.",
   },
   {
     key: "catalyst",
     description:
       "Identifies specific near-term events that can convert latent value into realized returns. Catalysts include product launches, regulatory decisions, partnerships, and market structure changes.",
     example: "Upcoming mainnet launch, pending regulatory approval, or scheduled token unlock.",
+  },
+  {
+    key: "narrative",
+    description:
+      "Evaluates whether there is a compelling, easily communicable story. The best investments have narratives that spread virally and create self-reinforcing adoption loops.",
+    example: "'Digital gold' for Bitcoin, 'world computer' for Ethereum.",
+  },
+  {
+    key: "valuation_gap",
+    description:
+      "Measures how cheap the asset is relative to the total addressable market it targets. A $5M project attacking a $500B market has extreme asymmetry. A $50B company in the same market does not. Calculated from market capitalization, fully diluted valuation, and comparable sector valuations.",
+    example: "A $10M DeFi protocol targeting the $500B remittance market scores 85+. A $50B incumbent in the same space scores below 10.",
+  },
+  {
+    key: "obscurity",
+    description:
+      "Measures how few people know about this opportunity. Tracks Google Trends volume, social media mentions, exchange listing count, and mainstream media coverage. The highest scores go to opportunities that sophisticated investors actively dismiss or have never heard of. When your Uber driver mentions it, the asymmetry is gone.",
+    example: "A project known only in niche Discord communities with zero mainstream coverage scores 90+. A CNBC regular discussion topic scores below 20.",
   },
 ] as const;
