@@ -9,11 +9,12 @@ const FOOTER_LINKS = {
   ],
   Resources: [
     { href: "/blog", label: "Blog" },
-    { href: "/methodology", label: "How It Works" },
+    { href: "/how-it-works", label: "How It Works" },
   ],
   Legal: [
-    { href: "/pricing", label: "Terms of Service" },
-    { href: "/pricing", label: "Privacy Policy" },
+    { href: "/terms", label: "Terms of Service" },
+    { href: "/privacy", label: "Privacy Policy" },
+    { href: "/disclaimer", label: "Disclaimer" },
   ],
 } as const;
 
@@ -41,22 +42,29 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Disclaimer */}
-        <div className="mt-10 border-t border-border/50 pt-8">
-          <p className="text-xs leading-relaxed text-text-tertiary">
-            Disclaimer: Early Thunder provides research and analysis for
-            informational purposes only. Nothing on this site constitutes
-            financial advice, investment recommendations, or an offer to buy or
-            sell any securities. Past performance does not guarantee future
-            results. Always conduct your own research and consult a qualified
-            financial advisor before making investment decisions.
-          </p>
-        </div>
-
         {/* Bottom bar */}
         <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 sm:flex-row">
           <p className="text-xs text-text-tertiary">
             &copy; 2026 AUTOM8 LLC. All rights reserved.
+          </p>
+        </div>
+
+        {/* Disclaimer callout */}
+        <div className="mt-6 border-t border-border pt-6">
+          <p className="mx-auto max-w-2xl text-center text-xs leading-relaxed text-text-tertiary">
+            Early Thunder provides research and analysis for informational
+            purposes only. Nothing on this site constitutes financial advice,
+            investment recommendations, or an offer to buy or sell securities.
+            Pattern match scores reflect our analytical methodology, not
+            investment ratings. Past patterns do not predict future results.
+          </p>
+          <p className="mt-2 text-center">
+            <Link
+              href="/disclaimer"
+              className="text-xs text-text-secondary underline hover:text-text-primary"
+            >
+              Read full disclaimer &rarr;
+            </Link>
           </p>
         </div>
       </div>

@@ -20,9 +20,13 @@ export const STATIC_PAGES = [
   '/',
   '/opportunities',
   '/methodology',
+  '/how-it-works',
   '/graveyard',
   '/pricing',
   '/blog',
+  '/terms',
+  '/privacy',
+  '/disclaimer',
 ] as const;
 
 /** Sitemap priority map by page path */
@@ -30,9 +34,13 @@ export const PRIORITY_MAP: Readonly<Record<string, number>> = {
   '/': 1.0,
   '/opportunities': 0.9,
   '/methodology': 0.5,
+  '/how-it-works': 0.6,
   '/graveyard': 0.5,
   '/pricing': 0.5,
   '/blog': 0.7,
+  '/terms': 0.3,
+  '/privacy': 0.3,
+  '/disclaimer': 0.3,
 } as const;
 
 export const OPPORTUNITY_PRIORITY = 0.8 as const;

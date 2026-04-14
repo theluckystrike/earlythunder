@@ -36,7 +36,7 @@ function OverlayCTA() {
         href="/pricing"
         className="bg-text-primary text-black text-sm font-medium px-5 py-2 rounded-full mt-4 hover:opacity-90 transition"
       >
-        Unlock Access
+        Unlock Research
       </Link>
     </div>
   );

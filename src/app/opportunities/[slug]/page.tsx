@@ -13,7 +13,7 @@ import {
   formatVolume,
 } from "@/lib/format";
 import { getTierLabel } from "@/lib/format";
-import type { Opportunity } from "@/lib/types";
+import type { Opportunity, AssetClass } from "@/lib/types";
 import { SIGNAL_KEYS, SIGNAL_LABELS } from "@/lib/types";
 import SignalRadar from "@/components/SignalRadar";
 import PaywallBlur from "@/components/PaywallBlur";
@@ -55,6 +55,11 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Breadcrumb opportunity={opportunity} />
+      <div className="mb-8 rounded-xl border border-border bg-bg-card px-4 py-3 text-xs text-text-tertiary">
+        <span className="font-medium text-text-secondary">Notice:</span>{" "}
+        This is research and analysis, not investment advice. Pattern match scores are not investment ratings.{" "}
+        <a href="/disclaimer" className="text-text-secondary underline hover:text-text-primary">Full disclaimer</a>
+      </div>
       <NameBlock opportunity={opportunity} />
       <div className="mt-4 max-w-3xl text-xl leading-relaxed text-text-secondary">
         {opportunity.one_liner}
@@ -70,6 +75,11 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
       <PremiumContent opportunity={opportunity} />
       <div className="divider mt-8" />
       <CitationSection citations={opportunity.citations} />
+      <RiskDisclosure
+        name={opportunity.name}
+        ticker={opportunity.ticker}
+        asset_class={opportunity.asset_class}
+      />
     </div>
   );
 }
@@ -254,6 +264,40 @@ function getScoreColor(score: number): string {
   if (score >= 75) return "text-score-high";
   if (score >= 55) return "text-score-mid";
   return "text-score-low";
+}
+
+const RISK_TEXT: Readonly<Record<AssetClass, string>> = {
+  digital_assets:
+    "Digital assets are highly volatile and may lose 100% of their value.",
+  public_equities:
+    "Stock prices can decline significantly, including to zero.",
+  private_markets:
+    "Private market investments are illiquid and carry extreme risk.",
+};
+
+function RiskDisclosure({
+  name,
+  ticker,
+  asset_class,
+}: {
+  readonly name: string;
+  readonly ticker: string | null;
+  readonly asset_class: AssetClass;
+}) {
+  const label = ticker ? `${name} (${ticker})` : name;
+
+  return (
+    <div className="mt-12 max-w-2xl border-t border-border pt-8 text-xs text-text-tertiary">
+      <h3 className="mb-2 font-medium text-text-secondary">
+        Risk Disclosure
+      </h3>
+      <p>
+        <strong>{label}:</strong> {RISK_TEXT[asset_class]} Past patterns do
+        not predict future results. Always do your own research and consult a
+        qualified advisor before investing.
+      </p>
+    </div>
+  );
 }
 
 function buildJsonLd(opp: Opportunity): Record<string, unknown> {
