@@ -205,75 +205,337 @@
     "ticker": "BABY",
     "category": "Restaking",
     "asset_class": "digital_assets",
-    "tier": 1,
-    "composite_score": 80.3,
-    "one_liner": "Native Bitcoin staking protocol securing PoS chains without bridges or wrapping, with $4.8B in BTC staked.",
-    "thesis": "Babylon unlocks productive yield for Bitcoin. The simplest and most powerful narrative in crypto right now. With $4.8B in BTC staked (10x the next competitor) and no bridges or wrapping required, Babylon has achieved product-market fit for BTC restaking. The BABY token launched January 2026 and is still in price discovery.\n\nThe Bitcoin restaking thesis could be as transformative as ETH restaking was for Ethereum. Liquid staking derivatives (Lombard, Solv, etc.) are expanding the ecosystem rapidly, using Bitcoin's scripting capabilities for native staking without trust assumptions. Is a genuine innovation that BTC maximalists can appreciate.\n\nThe competitive landscape favors Babylon. They have a 10x lead over competitors in BTC staked, first-mover advantage in the category, and growing institutional recognition. The emergence of a Bitcoin DeFi ecosystem built on Babylon's security layer could unlock trillions in dormant BTC capital.\n\nWeakness. BTC maximalists may still resist the concept of staking, the BABY token is newly launched and volatile, and the relationship between BABY token value and protocol usage is still being established. Slashing risk on Bitcoin is a novel concept that needs battle-testing.",
+    "tier": 2,
+    "composite_score": 65.5,
+    "one_liner": "Bitcoin-native restaking protocol with $3.6B TVL, zero external revenue, 92% token decline from ATH, and a genuinely novel cryptographic architecture (EOTS) that remains unproven at the business model level.",
+    "thesis": "Babylon's investment case is structurally compromised but not dead. The protocol's cryptographic innovation is real. Extractable One-Time Signatures enable Bitcoin staking without bridges, wrapping, or custodians, verified through peer review at IEEE S&P 2023. David Tse's Shannon Award and National Academy of Engineering credentials provide rare academic legitimacy in crypto. $103M+ from Paradigm, a16z, and Polychain provides a floor.\n\nThe bear case is severe. Zero external revenue after 12 months of mainnet. The only chain secured by Babylon's Bitcoin staking is its own Genesis chain, a circular arrangement where BTC is staked to secure Babylon, which issues BABY tokens to incentivize more BTC staking. The $4.8B TVL headline is outdated. Current TVL sits at $3.6B after 14,929 BTC ($1.26B) was unstaked by four wallet addresses within one week of the BABY airdrop. One single address controlled $1.1B of that exit.\n\nPhase 1 staking was functionally points farming theater. Billions in BTC sat on Bitcoin's base layer doing nothing except qualifying wallets for token rewards. No PoS chain was actually being secured. Most TVL flows through intermediaries (Lombard, Solv, PumpBTC) rather than direct retail stakers, and these intermediaries are protocol-agnostic with zero switching costs.\n\nTokenomics create structural sell pressure. 66%+ of supply controlled by insiders/foundation. 8% annual inflation with unlimited total supply. BTC stakers earn BABY (not BTC) and face 33% slashing risk with no insurance. The 612.5M token cliff unlock hit April 10, 2026, representing a 22% increase to circulating supply from VCs sitting at roughly 50% loss versus their entry price.\n\nThe fundamental demand-side question is devastating. Why would a PoS chain pay for Bitcoin security? Established chains already have massive native validator sets. The realistic targets are small new chains, but these have the least ability to pay meaningful rewards. EigenLayer is far ahead with 40+ live AVSs, $75M+ annualized revenue, and 1,900+ operators including Google Cloud and Coinbase Cloud.\n\nThe thesis lives or dies on Phase 3 BSN adoption. If external chains begin paying for Bitcoin security in meaningful volume by H2 2026, the bear case breaks. Until then, this is a speculative bet on unproven product-market fit in a category where even the market leader is struggling.",
     "signals": {
-      "working_code": 88,
-      "community": 80,
-      "dev_activity": 78,
-      "smart_money": 85,
-      "narrative": 90,
-      "catalyst": 85,
+      "working_code": 75,
+      "dev_activity": 70,
+      "smart_money": 80,
+      "community": 55,
+      "catalyst": 60,
+      "narrative": 75,
       "valuation_gap": 72,
-      "obscurity": 65
+      "obscurity": 30
     },
     "catalysts": [
-      "BABY token launched January 2026. Still in price discovery phase",
-      "Liquid staking derivatives ecosystem expanding rapidly",
-      "Bitcoin DeFi ecosystem building on Babylon security layer",
-      "Institutional interest in productive BTC yield growing"
+      "Phase 3 multi-staking to external BSNs. The feature that makes the entire business model work. Targeted Q4 2025 but delayed into 2026+",
+      "Osmosis BSN integration passed governance vote at 96.57%. First external chain commitment",
+      "Sui announced as BSN partner (April 2025). Major L1 validation if it goes live",
+      "a16z invested $15M in January 2026 after the 92% crash, specifically for BTCVault development. Bought at depressed prices with product-specific mandate",
+      "$500K Immunefi bug bounty program active. Signals commitment to security",
+      "Pipeline of BSN commitments from BOB, Manta Network, and Corn",
+      "Bitcoin DeFi narrative recovery. If the restaking category rebounds, Babylon benefits as the BTC-native play"
     ],
     "risks": [
-      "BTC maximalist resistance to staking concept",
-      "BABY token newly launched with volatile price discovery",
-      "Slashing risk on Bitcoin is a novel untested concept",
-      "Competition from alternative BTC yield solutions"
+      "Zero external revenue and zero live customer chains. The only BSN is Babylon's own Genesis chain after 12 months of mainnet",
+      "$1.26B in mercenary capital fled within 7 days of airdrop. 14,929 BTC unstaked by 4 wallets, one holding $1.1B",
+      "612.5M token cliff unlock hit April 10, 2026. A 22% increase to circulating supply from underwater VCs at roughly 50% loss vs entry price",
+      "FDV ($154M) below total VC funding ($103-111M). Market values the protocol at less than its venture capital inputs",
+      "66%+ of token supply controlled by insiders/foundation. No DAO governance, no guaranteed community distribution schedule",
+      "Token down 92% from ATH with 8% annual inflation and unlimited supply. Structural sell pressure from BTC stakers dumping BABY rewards",
+      "Phase 3 delayed beyond Q4 2025 target. No clear timeline for revenue-generating feature",
+      "7 critical findings in Genesis Chain audit including cryptographic key recovery vulnerability and BLS vote extension bug",
+      "No CEO and part-time founder. David Tse remains full-time at Stanford. Fisher Yu based in Sydney, not at HQ",
+      "Opaque multi-entity BVI corporate structure. At least 4 legal entities, entity renaming without announcement",
+      "Covenant Committee creates centralization risk. Permissioned multi-sig contradicts trustless marketing",
+      "BTC stakers earn BABY (not BTC) and face 33% slashing risk with no insurance. Misaligned incentives for Bitcoin maximalist target market"
     ],
     "related_slugs": [
       "eigenlayer",
       "ondo-finance"
     ],
-    "updated_at": "2026-04-13T00:00:00Z",
+    "updated_at": "2026-04-14T12:00:00Z",
     "is_graveyard": false,
     "citations": [
       {
-        "claim": "Babylon official website",
-        "source": "canonical",
+        "claim": "Babylon official website and protocol documentation",
+        "source": "Babylon Labs",
         "url": "https://babylonlabs.io",
         "type": "official"
       },
       {
-        "claim": "Babylon market data",
-        "source": "canonical",
+        "claim": "Babylon market data and token metrics",
+        "source": "CoinGecko",
         "url": "https://www.coingecko.com/en/coins/babylon",
         "type": "data"
+      },
+      {
+        "claim": "TVL tracking at $3.6B with historical data",
+        "source": "DeFiLlama",
+        "url": "https://defillama.com/protocol/babylon",
+        "type": "data"
+      },
+      {
+        "claim": "14,929 BTC ($1.26B) unstaked by 4 whale addresses within one week of airdrop",
+        "source": "BeInCrypto / Lookonchain",
+        "url": "https://beincrypto.com/babylon-protocol-tvl-drops-btc-unstaked/",
+        "type": "news"
+      },
+      {
+        "claim": "PumpBTC flagged for using unbacked assets to artificially inflate TVL metrics",
+        "source": "DeFiLlama",
+        "url": "https://defillama.com/protocol/pumpbtc",
+        "type": "data"
+      },
+      {
+        "claim": "Osmosis governance vote passed at 96.57% to integrate Babylon BSN",
+        "source": "Osmosis Governance",
+        "url": "https://www.mintscan.io/osmosis/proposals",
+        "type": "official"
+      },
+      {
+        "claim": "David Tse IEEE Shannon Award and Stanford professorship",
+        "source": "Stanford Engineering",
+        "url": "https://profiles.stanford.edu/david-tse",
+        "type": "research"
+      },
+      {
+        "claim": "Zellic Genesis Chain audit found 7 critical issues including nonce reuse vulnerability",
+        "source": "Zellic",
+        "url": "https://www.zellic.io/",
+        "type": "research"
+      },
+      {
+        "claim": "$103M+ total venture funding from Paradigm ($70M), a16z, Polychain, Binance Labs",
+        "source": "Crunchbase / PitchBook",
+        "url": "https://www.crunchbase.com/organization/babylon-chain",
+        "type": "data"
+      },
+      {
+        "claim": "a16z invested $15M in January 2026 post-crash for BTCVault development",
+        "source": "a16z crypto",
+        "url": "https://a16zcrypto.com/",
+        "type": "news"
+      },
+      {
+        "claim": "EigenLayer comparison. 40+ live AVSs, $75M+ revenue, 1,900+ operators, $15-18B TVL",
+        "source": "DeFiLlama / EigenLayer",
+        "url": "https://defillama.com/protocol/eigenlayer",
+        "type": "data"
+      },
+      {
+        "claim": "Core/CoreDAO live since January 2023 with zero-slashing BTC staking",
+        "source": "Core DAO",
+        "url": "https://coredao.org/",
+        "type": "official"
+      },
+      {
+        "claim": "BABY token 92% decline from ATH of $0.1728 to $0.014",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/babylon",
+        "type": "data"
+      },
+      {
+        "claim": "612.5M BABY cliff unlock scheduled April 10, 2026. 22% supply increase",
+        "source": "Tokenomist",
+        "url": "https://tokenomist.ai/",
+        "type": "data"
+      },
+      {
+        "claim": "David Tse Fortune profile confirming no CEO and part-time involvement",
+        "source": "Fortune",
+        "url": "https://fortune.com/",
+        "type": "news"
+      },
+      {
+        "claim": "Extractable One-Time Signatures (EOTS) peer-reviewed at IEEE S&P 2023",
+        "source": "IEEE",
+        "url": "https://ieeexplore.ieee.org/",
+        "type": "research"
+      },
+      {
+        "claim": "Sui announced as BSN partner, April 2025",
+        "source": "Babylon Labs Blog",
+        "url": "https://babylonlabs.io/blog",
+        "type": "official"
+      },
+      {
+        "claim": "BabylonChain Inc. quietly renamed to Byzantine Research Inc.",
+        "source": "LinkedIn / Delaware records",
+        "url": "https://www.linkedin.com/in/david-tse-3963b/",
+        "type": "research"
+      },
+      {
+        "claim": "$500K Immunefi bug bounty program",
+        "source": "Immunefi",
+        "url": "https://immunefi.com/",
+        "type": "official"
+      },
+      {
+        "claim": "March 2026 SEC/CFTC joint guidance on staking classification",
+        "source": "SEC/CFTC",
+        "url": "https://www.sec.gov/",
+        "type": "filing"
       }
     ],
     "current_price_usd": 0.01401794,
     "market_cap_usd": 52185619.12258452,
     "volume_24h_usd": 10791018.901993774,
     "citation_types": {
-      "official": 1,
-      "data": 1
+      "official": 5,
+      "data": 6,
+      "news": 3,
+      "research": 4,
+      "filing": 1,
+      "github": 0
     },
     "valuation_gap_score": 72,
-    "obscurity_score": 65,
-    "on_chain": null,
-    "insider_activity": null,
-    "team": null,
-    "tokenomics": null,
-    "competitive": null,
-    "fdv": null,
-    "circulating_pct": null,
-    "tvl": null,
-    "fees_30d": null,
-    "holders": null,
+    "obscurity_score": 30,
+    "on_chain": {
+      "tvl": "$3.6B",
+      "tvl_change_30d": "Volatile. Dropped 32% in Apr 2025",
+      "daily_active_addresses": "Not available (Cosmos chain)",
+      "fees_30d": "$0 (external)",
+      "revenue_30d": "$0",
+      "holder_count": "Not available",
+      "top_10_holders_pct": "Extreme concentration via intermediaries",
+      "whale_accumulation": "$1.26B unstaked by 4 whales post-airdrop",
+      "sources": [
+        {
+          "metric": "TVL",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/babylon",
+          "date": "2026-04-14"
+        },
+        {
+          "metric": "Capital flight",
+          "source": "BeInCrypto / Lookonchain",
+          "url": "https://beincrypto.com/babylon-protocol-tvl-drops-btc-unstaked/",
+          "date": "2025-04-17"
+        }
+      ]
+    },
+    "insider_activity": {
+      "recent_buys": [
+        {
+          "who": "a16z",
+          "amount": "$15M investment",
+          "date": "January 2026",
+          "source": "a16z blog",
+          "url": "https://a16zcrypto.com/"
+        }
+      ],
+      "recent_sells": [
+        {
+          "who": "4 whale addresses",
+          "amount": "14,929 BTC ($1.26B)",
+          "date": "April 2025",
+          "source": "Lookonchain",
+          "url": "https://beincrypto.com/babylon-protocol-tvl-drops-btc-unstaked/"
+        }
+      ],
+      "token_unlocks_next_90d": "612.5M BABY tokens (22% of supply) unlocked April 10, 2026",
+      "vesting_schedule": "1-year cliff from April 10, 2025 launch. Linear vesting after cliff for team (15%), investors (30.5%), advisors (3.5%)",
+      "insider_sentiment": "distributing"
+    },
+    "team": {
+      "key_members": [
+        {
+          "name": "David Tse",
+          "role": "Co-founder, Research Lead",
+          "background": "Stanford Professor, IEEE Shannon Award, National Academy of Engineering, 77,000+ citations",
+          "notable": "World-class academic credentials but remains full-time at Stanford. Not a CEO."
+        },
+        {
+          "name": "Fisher Yu",
+          "role": "Co-founder, CTO",
+          "background": "PhD Australian National University, ex-Dolby Laboratories",
+          "notable": "First ground-up crypto protocol. Based in Sydney, not at Palo Alto HQ. Previously worked with unnamed 'famous ICO blockchain projects' in 2017-2018."
+        }
+      ],
+      "team_size": "4 (PitchBook) / 40+ (Fortune) / 80 (Tracxn). Contradictory reports.",
+      "anon_team": false,
+      "team_track_record": "Academic research pedigree. No prior successful protocol launches. BabylonChain Inc. quietly renamed to Byzantine Research Inc. without public announcement.",
+      "advisors": []
+    },
+    "tokenomics": {
+      "total_supply": "Unlimited (no max cap)",
+      "circulating_supply": "~27-35% of genesis supply",
+      "circulating_pct": "~27-35%",
+      "inflation_rate": "8% annual (governance proposal to reduce to 5.5% passed Sep 2025)",
+      "burn_mechanism": "None",
+      "staking_yield": "~1% APR in BABY tokens (not BTC)",
+      "fdv": "$154-195M",
+      "mcap_to_fdv_ratio": "~0.27-0.35",
+      "next_unlock_date": "April 10, 2026 (just occurred)",
+      "next_unlock_amount": "612.5M BABY tokens",
+      "treasury_size": "Not disclosed",
+      "treasury_runway": "Not disclosed"
+    },
+    "competitive": {
+      "competitors": [
+        {
+          "name": "EigenLayer",
+          "ticker": "EIGEN",
+          "mcap": "$113-128M",
+          "comparison": "Far ahead with 40+ live AVSs, $75M+ revenue, 1,900+ operators, $15-18B TVL. Also down 96% from ATH."
+        },
+        {
+          "name": "Core/CoreDAO",
+          "ticker": "CORE",
+          "mcap": "~$500M",
+          "comparison": "Live since January 2023 with BTC staking that carries ZERO slashing risk. Significant competitive advantage for risk-averse BTC holders."
+        },
+        {
+          "name": "Symbiotic",
+          "ticker": null,
+          "mcap": "Private",
+          "comparison": "Backed by Lido co-founders. Competing for restaking market share. Multi-asset restaking approach."
+        }
+      ],
+      "moat": "Self-custodial BTC staking via Taproot scripts (EOTS). Novel cryptography, peer-reviewed. But Core offers zero-slashing alternative.",
+      "market_size": "$1.7T in idle Bitcoin capital with no native yield mechanism",
+      "current_penetration": "$3.6B TVL of $1.7T total BTC. Roughly 0.2% penetration."
+    },
+    "fdv": "$154-195M",
+    "circulating_pct": "27-35%",
+    "tvl": "$3.6B",
+    "fees_30d": "$0",
+    "holders": "Not available",
     "github_stars": null,
     "github_contributors": null,
     "last_github_commit": null,
-    "google_trends_interest": null
+    "google_trends_interest": null,
+    "free_access": true,
+    "verdict": "HOLD. The thesis is not dead but is on life support. Zero revenue, zero live external customers, 92% price decline, mercenary TVL, and imminent VC unlock pressure. The thesis lives or dies on Phase 3 BSN adoption. If external chains begin paying for Bitcoin security in meaningful volume by H2 2026, the bear case breaks.",
+    "red_flags": [
+      "Zero external revenue and zero live customer chains after 12 months of mainnet",
+      "$1.26B in mercenary capital fled within 7 days of airdrop. 14,929 BTC unstaked by 4 wallets, one holding $1.1B",
+      "612.5M token cliff unlock hit April 10, 2026. 22% increase to circulating supply from underwater VCs",
+      "FDV (~$154M) below total VC funding (~$103-111M). Market values protocol at less than its venture inputs",
+      "66%+ of token supply controlled by insiders/foundation with no DAO governance",
+      "Token down 92% from ATH with 8% annual inflation and unlimited supply",
+      "Phase 3 (multi-staking to external BSNs) delayed beyond Q4 2025 target with no clear timeline",
+      "7 critical findings in Genesis Chain audit including cryptographic key recovery vulnerability",
+      "No CEO and part-time founder involvement. David Tse remains full-time at Stanford",
+      "Opaque multi-entity BVI corporate structure with at least 4 legal entities",
+      "Covenant Committee creates centralization risk contradicting trustless marketing",
+      "BTC stakers earn BABY (not BTC) and face 33% slashing risk with no insurance"
+    ],
+    "conviction_signals": [
+      "Genuinely novel cryptographic innovation. EOTS enables Bitcoin staking without bridges, wrapping, or custodians. Peer-reviewed at IEEE S&P 2023",
+      "World-class academic founder. David Tse's Shannon Award, NAE election, and 77,000+ citations provide rare legitimacy",
+      "$103M+ from top-tier VCs. Paradigm ($70M lead), a16z ($15M in Jan 2026 post-crash), Polychain, Binance Labs",
+      "Self-custodial BTC staking addresses a real market need. $1.7T in idle Bitcoin capital",
+      "Real BTC locked on-chain. TVL is verifiable, not synthetic. ~$3.6B in actual Bitcoin UTXOs",
+      "1-year insider lockup with no staking of locked tokens. Better protection than most launches",
+      "Pipeline of credible BSN commitments. Osmosis (96.57% governance vote), Sui, BOB",
+      "Active development. 6+ audits, ongoing releases through v4.x, $500K Immunefi bug bounty",
+      "Entire restaking narrative may recover. EigenLayer also down 96%. If the category rebounds, Babylon benefits"
+    ],
+    "edge_data": [
+      "PumpBTC, a major Babylon staking intermediary, was flagged by DeFiLlama for using unbacked assets to artificially inflate TVL. Some portion of reported TVL may be doubly or triply counted through liquid staking derivative chains.",
+      "The original US entity (BabylonChain Inc.) was quietly renamed to Byzantine Research Inc. without any public announcement. David Tse's LinkedIn confirms this.",
+      "a16z invested $15M in January 2026 AFTER the 92% price crash, specifically for BTCVault development. This is the single strongest conviction signal in the entire analysis.",
+      "Locked insider tokens CAN be staked after Year 1 (post-April 2026), and staking rewards from locked tokens may be liquid. This creates a backdoor for insiders to extract value before tokens fully vest.",
+      "Core/CoreDAO has been live since January 2023 with Bitcoin staking that carries ZERO slashing risk. For Babylon's thesis to work, BTC holders must accept 33% slashing risk for roughly 1% APR in a depreciating token."
+    ],
+    "thesis_changers": {
+      "bull_breaks_if": "Phase 3 fails to launch by Q4 2026 with at least 3 paying BSN customers. OR if the April 2026 cliff unlock triggers sustained selling below ATL of $0.01072. OR if Lombard/Solv redirect BTC to competing platforms. OR if EigenLayer demonstrates that even with 40 live AVSs and $75M+ revenue, restaking cannot support viable token prices.",
+      "bear_breaks_if": "3+ external BSNs go live and begin generating measurable fee revenue (even $1M+ annualized would be thesis-changing). OR if Babylon captures >5% of Bitcoin supply in staking. OR if a major institutional player (sovereign wealth, corporate treasury) stakes BTC through Babylon. OR if Bitcoin dominance cycle drives renewed interest in BTC-native yield products."
+    }
   },
   {
     "name": "Form Energy",

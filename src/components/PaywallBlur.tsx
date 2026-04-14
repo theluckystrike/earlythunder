@@ -2,12 +2,17 @@ import Link from "next/link";
 
 interface PaywallBlurProps {
   readonly children: React.ReactNode;
+  readonly bypass?: boolean;
 }
 
 /** Wraps content in a blur overlay with an upgrade CTA. */
-export default function PaywallBlur({ children }: PaywallBlurProps) {
+export default function PaywallBlur({ children, bypass = false }: PaywallBlurProps) {
   if (!children) {
     return null;
+  }
+
+  if (bypass) {
+    return <>{children}</>;
   }
 
   return (

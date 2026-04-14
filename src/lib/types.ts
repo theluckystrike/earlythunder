@@ -152,6 +152,17 @@ export interface Opportunity {
   readonly github_contributors?: string | null;
   readonly last_github_commit?: string | null;
   readonly google_trends_interest?: string | null;
+
+  // Analysis and verdict (populated for deep-dive opportunities)
+  readonly free_access?: boolean;
+  readonly verdict?: string | null;
+  readonly red_flags?: readonly string[] | null;
+  readonly conviction_signals?: readonly string[] | null;
+  readonly edge_data?: readonly string[] | null;
+  readonly thesis_changers?: {
+    readonly bull_breaks_if: string;
+    readonly bear_breaks_if: string;
+  } | null;
 }
 
 /** Blog post data model. */

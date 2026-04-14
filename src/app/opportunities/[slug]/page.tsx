@@ -81,6 +81,19 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
       <PremiumContent opportunity={opportunity} />
       <div className="divider mt-8" />
       <CitationSection citations={opportunity.citations} />
+      {opportunity.verdict && <VerdictSection verdict={opportunity.verdict} />}
+      {opportunity.red_flags && opportunity.red_flags.length > 0 && (
+        <RedFlagsSection flags={opportunity.red_flags} />
+      )}
+      {opportunity.conviction_signals && opportunity.conviction_signals.length > 0 && (
+        <ConvictionSignalsSection signals={opportunity.conviction_signals} />
+      )}
+      {opportunity.edge_data && opportunity.edge_data.length > 0 && (
+        <EdgeDataSection items={opportunity.edge_data} />
+      )}
+      {opportunity.thesis_changers && (
+        <ThesisChangersSection changers={opportunity.thesis_changers} />
+      )}
       <RiskDisclosure
         name={opportunity.name}
         ticker={opportunity.ticker}
@@ -506,7 +519,7 @@ function CompetitiveSection({ data }: { readonly data: CompetitivePosition }) {
 
 function PremiumContent({ opportunity }: { readonly opportunity: Opportunity }) {
   return (
-    <PaywallBlur>
+    <PaywallBlur bypass={opportunity.free_access === true}>
       <PremiumThesis thesis={opportunity.thesis} />
       <PremiumCatalysts catalysts={opportunity.catalysts} />
       <PremiumRisks risks={opportunity.risks} />
@@ -596,6 +609,83 @@ function RiskDisclosure({
         qualified advisor before investing.
       </p>
     </div>
+  );
+}
+
+function VerdictSection({ verdict }: { readonly verdict: string }) {
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Verdict</h2>
+      <div className="mt-4 rounded-xl border border-border bg-bg-card p-6">
+        <p className="leading-relaxed text-text-secondary">{verdict}</p>
+      </div>
+    </section>
+  );
+}
+
+function RedFlagsSection({ flags }: { readonly flags: readonly string[] }) {
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Red Flags</h2>
+      <div className="mt-4 space-y-3">
+        {flags.map((flag, i) => (
+          <div key={i} className="flex items-start gap-3 rounded-xl border border-score-low/20 bg-score-low/5 p-4">
+            <span className="mt-0.5 font-mono text-sm font-semibold text-score-low">{String(i + 1).padStart(2, "0")}</span>
+            <p className="text-sm leading-relaxed text-text-secondary">{flag}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ConvictionSignalsSection({ signals }: { readonly signals: readonly string[] }) {
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Conviction Signals</h2>
+      <div className="mt-4 space-y-3">
+        {signals.map((signal, i) => (
+          <div key={i} className="flex items-start gap-3 rounded-xl border border-score-high/20 bg-score-high/5 p-4">
+            <span className="mt-0.5 font-mono text-sm font-semibold text-score-high">{String(i + 1).padStart(2, "0")}</span>
+            <p className="text-sm leading-relaxed text-text-secondary">{signal}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function EdgeDataSection({ items }: { readonly items: readonly string[] }) {
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Edge Data</h2>
+      <p className="mt-1 text-xs text-text-tertiary">Information most analysts miss</p>
+      <div className="mt-4 space-y-3">
+        {items.map((item, i) => (
+          <div key={i} className="rounded-xl border border-border bg-bg-card p-4">
+            <p className="text-sm leading-relaxed text-text-secondary">{item}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ThesisChangersSection({ changers }: { readonly changers: { readonly bull_breaks_if: string; readonly bear_breaks_if: string } }) {
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">What Would Change the Thesis</h2>
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
+        <div className="rounded-xl border border-score-low/20 bg-score-low/5 p-5">
+          <h3 className="font-mono text-xs uppercase tracking-widest text-score-low">Bull case breaks if</h3>
+          <p className="mt-3 text-sm leading-relaxed text-text-secondary">{changers.bull_breaks_if}</p>
+        </div>
+        <div className="rounded-xl border border-score-high/20 bg-score-high/5 p-5">
+          <h3 className="font-mono text-xs uppercase tracking-widest text-score-high">Bear case breaks if</h3>
+          <p className="mt-3 text-sm leading-relaxed text-text-secondary">{changers.bear_breaks_if}</p>
+        </div>
+      </div>
+    </section>
   );
 }
 
