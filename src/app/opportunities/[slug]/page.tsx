@@ -56,7 +56,7 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
       />
       <Breadcrumb opportunity={opportunity} />
       <div className="mb-8 rounded-xl border border-border bg-bg-card px-4 py-3 text-xs text-text-tertiary">
-        <span className="font-medium text-text-secondary">Notice:</span>{" "}
+        <span className="font-medium text-text-secondary">Notice.</span>{" "}
         This is research and analysis, not investment advice. Pattern match scores are not investment ratings.{" "}
         <a href="/disclaimer" className="text-text-secondary underline hover:text-text-primary">Full disclaimer</a>
       </div>
@@ -69,7 +69,7 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
       <CompositeScoreBlock score={opportunity.composite_score} />
       <RadarSection opportunity={opportunity} />
       <p className="mt-8 text-xs text-text-tertiary">
-        Last updated: {formatDate(opportunity.updated_at)}
+        Last updated {formatDate(opportunity.updated_at)}
       </p>
       <div className="divider mt-8" />
       <PremiumContent opportunity={opportunity} />
@@ -268,7 +268,7 @@ function getScoreColor(score: number): string {
 
 const RISK_TEXT: Readonly<Record<AssetClass, string>> = {
   digital_assets:
-    "Digital assets are highly volatile and may lose 100% of their value.",
+    "Digital assets are highly volatile and can lose 100% of their value.",
   public_equities:
     "Stock prices can decline significantly, including to zero.",
   private_markets:
@@ -292,7 +292,7 @@ function RiskDisclosure({
         Risk Disclosure
       </h3>
       <p>
-        <strong>{label}:</strong> {RISK_TEXT[asset_class]} Past patterns do
+        <strong>{label}.</strong> {RISK_TEXT[asset_class]} Past patterns do
         not predict future results. Always do your own research and consult a
         qualified advisor before investing.
       </p>
@@ -314,7 +314,7 @@ function buildJsonLd(opp: Opportunity): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
     "@type": "AnalysisNewsArticle",
-    headline: `${opp.name} — Opportunity Analysis`,
+    headline: `${opp.name} Opportunity Analysis`,
     description: opp.one_liner,
     url: `https://earlythunder.com/opportunities/${opp.slug}`,
     dateModified: opp.updated_at,

@@ -7,7 +7,7 @@ import type { BlogPost } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Research notes, methodology updates, and analysis from the Early Thunder team.",
+    "Research notes, methodology updates, and analysis from Early Thunder.",
 };
 
 export default function BlogPage() {

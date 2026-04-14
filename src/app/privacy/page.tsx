@@ -35,7 +35,7 @@ function PageHeader() {
         Privacy Policy
       </h1>
       <p className="mt-4 text-sm text-text-tertiary">
-        Last updated: April 14, 2026
+        Last updated April 14, 2026
       </p>
     </div>
   );
@@ -46,10 +46,11 @@ function OverviewSection() {
     <section className="mt-12">
       <SectionHeading number="01" title="Overview" />
       <p className="mt-4 leading-relaxed text-text-secondary">
-        AUTOM8 LLC (&ldquo;Early Thunder&rdquo;, &ldquo;we&rdquo;,
-        &ldquo;us&rdquo;, &ldquo;our&rdquo;) operates earlythunder.com (the
-        &ldquo;Service&rdquo;). This Privacy Policy describes how we collect,
-        use, and share information when you access or use the Service.
+        AUTOM8 LLC (&ldquo;Early Thunder&rdquo;, &ldquo;the
+        Company&rdquo;) operates earlythunder.com (the
+        &ldquo;Service&rdquo;). This Privacy Policy describes how Early
+        Thunder collects, uses, and shares information when you access or
+        use the Service.
       </p>
       <p className="mt-3 leading-relaxed text-text-secondary">
         By using the Service, you agree to the collection and use of
@@ -62,7 +63,7 @@ function OverviewSection() {
 function InformationCollectedSection() {
   return (
     <section className="mt-12">
-      <SectionHeading number="02" title="Information We Collect" />
+      <SectionHeading number="02" title="Information Collected" />
       <InformationYouProvide />
       <AutomaticallyCollected />
       <ThirdPartyCollected />
@@ -81,8 +82,8 @@ function InformationYouProvide() {
           Email address when you sign up or subscribe
         </ListItem>
         <ListItem>
-          Payment information processed via Stripe — we do not store credit
-          card numbers on our servers
+          Payment information processed via Stripe. Early Thunder does not
+          store credit card numbers on its servers
         </ListItem>
         <ListItem>Account credentials used to access the Service</ListItem>
       </ul>
@@ -129,7 +130,7 @@ function ThirdPartyCollected() {
 function HowWeUseSection() {
   return (
     <section className="mt-12">
-      <SectionHeading number="03" title="How We Use Your Information" />
+      <SectionHeading number="03" title="How Your Information Is Used" />
       <ul className="mt-4 space-y-2">
         <ListItem>Provide and maintain the Service</ListItem>
         <ListItem>Send the Weekly Brief and service communications</ListItem>
@@ -140,11 +141,11 @@ function HowWeUseSection() {
       </ul>
       <div className="mt-6 rounded-xl border border-border bg-bg-card p-5">
         <p className="text-sm font-medium text-text-primary">
-          We do NOT sell your personal information.
+          Early Thunder does NOT sell your personal information.
         </p>
         <p className="mt-2 text-sm text-text-secondary">
-          We do not share your email address with third parties for marketing
-          purposes.
+          Early Thunder does not share your email address with third
+          parties for marketing purposes.
         </p>
       </div>
     </section>
@@ -157,19 +158,19 @@ function CookiesSection() {
       <SectionHeading number="04" title="Cookies and Tracking" />
       <ul className="mt-4 space-y-2">
         <ListItem>
-          <strong className="text-text-primary">Essential cookies</strong> —
-          required for core functionality such as authentication and session
+          <strong className="text-text-primary">Essential cookies.</strong>{" "}
+          Required for core functionality such as authentication and session
           management
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Analytics cookies</strong> —
+          <strong className="text-text-primary">Analytics cookies.</strong>{" "}
           Plausible Analytics, a privacy-friendly analytics platform that does
           not use personal identifiers
         </ListItem>
       </ul>
       <p className="mt-4 leading-relaxed text-text-secondary">
-        We do not use advertising cookies, retargeting pixels, or third-party
-        tracking scripts for marketing purposes.
+        Early Thunder does not use advertising cookies, retargeting pixels,
+        or third-party tracking scripts for marketing purposes.
       </p>
     </section>
   );
@@ -192,7 +193,7 @@ function DataRetentionSection() {
           financial regulations
         </ListItem>
         <ListItem>
-          Analytics data is aggregated and anonymized — it cannot be traced
+          Analytics data is aggregated and anonymized. It cannot be traced
           back to individual users
         </ListItem>
       </ul>
@@ -205,14 +206,15 @@ function DataSecuritySection() {
     <section className="mt-12">
       <SectionHeading number="06" title="Data Security" />
       <p className="mt-4 leading-relaxed text-text-secondary">
-        We implement reasonable administrative, technical, and physical
-        security measures to protect your information. All data transmitted
-        between your browser and our servers is encrypted using TLS/SSL.
+        Early Thunder implements reasonable administrative, technical, and
+        physical security measures to protect your information. All data
+        transmitted between your browser and the servers is encrypted
+        using TLS/SSL.
       </p>
       <p className="mt-3 leading-relaxed text-text-secondary">
-        No method of electronic transmission or storage is 100% secure. While
-        we strive to protect your personal information, we cannot guarantee
-        its absolute security.
+        No method of electronic transmission or storage is 100% secure.
+        While Early Thunder strives to protect your personal information,
+        absolute security cannot be guaranteed.
       </p>
     </section>
   );
@@ -228,28 +230,28 @@ function YourRightsSection() {
       </p>
       <ul className="mt-4 space-y-2">
         <ListItem>
-          <strong className="text-text-primary">Access</strong> — request a
-          copy of the data we hold about you
+          <strong className="text-text-primary">Access.</strong> Request a
+          copy of the data Early Thunder holds about you
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Correction</strong> — request
+          <strong className="text-text-primary">Correction.</strong> Request
           correction of inaccurate information
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Deletion</strong> — request
-          that we delete your personal data
+          <strong className="text-text-primary">Deletion.</strong> Request
+          that Early Thunder delete your personal data
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Portability</strong> — receive
+          <strong className="text-text-primary">Portability.</strong> Receive
           your data in a structured, machine-readable format
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Opt-out</strong> — unsubscribe
+          <strong className="text-text-primary">Opt-out.</strong> Unsubscribe
           from marketing communications at any time
         </ListItem>
       </ul>
       <p className="mt-4 leading-relaxed text-text-secondary">
-        To exercise any of these rights, contact us at{" "}
+        To exercise any of these rights, contact Early Thunder at{" "}
         <a
           href="mailto:privacy@earlythunder.com"
           className="text-text-primary underline underline-offset-4"
@@ -272,9 +274,10 @@ function InternationalSection() {
         to, stored, and processed in the United States or other jurisdictions.
       </p>
       <p className="mt-3 leading-relaxed text-text-secondary">
-        For users in the EU/EEA, our legal basis for processing your personal
-        information includes legitimate interest in operating and improving
-        the Service, and your consent where required by applicable law.
+        For users in the EU/EEA, the legal basis for processing your
+        personal information includes legitimate interest in operating and
+        improving the Service, and your consent where required by
+        applicable law.
       </p>
     </section>
   );
@@ -285,10 +288,11 @@ function ChildrenSection() {
     <section className="mt-12">
       <SectionHeading number="09" title="Children" />
       <p className="mt-4 leading-relaxed text-text-secondary">
-        The Service is not directed to individuals under 18 years of age. We
-        do not knowingly collect personal information from children. If we
-        become aware that we have collected data from a child, we will take
-        steps to delete that information promptly.
+        The Service is not directed to individuals under 18 years of age.
+        Early Thunder does not knowingly collect personal information from
+        children. If the Company becomes aware that it has collected data
+        from a child, steps will be taken to delete that information
+        promptly.
       </p>
     </section>
   );
@@ -299,24 +303,24 @@ function ThirdPartySection() {
     <section className="mt-12">
       <SectionHeading number="10" title="Third-Party Services" />
       <p className="mt-4 leading-relaxed text-text-secondary">
-        We use the following third-party services to operate the Service. Each
-        has its own privacy policy governing their use of your data:
+        The following third-party services are used to operate the Service.
+        Each has its own privacy policy governing use of your data.
       </p>
       <ul className="mt-4 space-y-2">
         <ListItem>
-          <strong className="text-text-primary">Cloudflare</strong> — hosting,
+          <strong className="text-text-primary">Cloudflare.</strong> Hosting,
           CDN, and DDoS protection
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Stripe</strong> — payment
+          <strong className="text-text-primary">Stripe.</strong> Payment
           processing
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Resend</strong> — transactional
+          <strong className="text-text-primary">Resend.</strong> Transactional
           email delivery
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">GitHub</strong> — continuous
+          <strong className="text-text-primary">GitHub.</strong> Continuous
           integration and deployment
         </ListItem>
       </ul>
@@ -329,10 +333,11 @@ function ChangesSection() {
     <section className="mt-12">
       <SectionHeading number="11" title="Changes to This Policy" />
       <p className="mt-4 leading-relaxed text-text-secondary">
-        We may update this Privacy Policy from time to time. Material changes
-        will be posted on this page with an updated &ldquo;Last
-        updated&rdquo; date. Your continued use of the Service after changes
-        are posted constitutes acceptance of the revised policy.
+        Early Thunder may update this Privacy Policy from time to time.
+        Material changes will be posted on this page with an updated
+        &ldquo;Last updated&rdquo; date. Your continued use of the Service
+        after changes are posted constitutes acceptance of the revised
+        policy.
       </p>
     </section>
   );
@@ -344,8 +349,9 @@ function DoNotTrackSection() {
       <SectionHeading number="12" title="Do Not Track" />
       <p className="mt-4 leading-relaxed text-text-secondary">
         The Service does not respond to Do Not Track (DNT) browser signals.
-        However, we use Plausible Analytics, which is privacy-friendly by
-        design and does not track individual users across websites.
+        However, Early Thunder uses Plausible Analytics, which is
+        privacy-friendly by design and does not track individual users
+        across websites.
       </p>
     </section>
   );
@@ -361,20 +367,22 @@ function CaliforniaSection() {
       </p>
       <ul className="mt-4 space-y-2">
         <ListItem>
-          <strong className="text-text-primary">Right to know</strong> — what
-          personal information we collect, use, and disclose
+          <strong className="text-text-primary">Right to know.</strong> What
+          personal information Early Thunder collects, uses, and discloses
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Right to delete</strong> —
-          request deletion of your personal information
+          <strong className="text-text-primary">Right to delete.</strong>{" "}
+          Request deletion of your personal information
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Right to opt out</strong> — of
-          the sale of personal information (we do not sell your data)
+          <strong className="text-text-primary">Right to opt out.</strong> Of
+          the sale of personal information (Early Thunder does not sell
+          your data)
         </ListItem>
         <ListItem>
-          <strong className="text-text-primary">Non-discrimination</strong> —
-          we will not discriminate against you for exercising your CCPA rights
+          <strong className="text-text-primary">Non-discrimination.</strong>{" "}
+          Early Thunder will not discriminate against you for exercising
+          your CCPA rights
         </ListItem>
       </ul>
     </section>
@@ -386,12 +394,11 @@ function ContactSection() {
     <section className="mt-12 pb-12">
       <SectionHeading number="14" title="Contact" />
       <p className="mt-4 leading-relaxed text-text-secondary">
-        If you have questions about this Privacy Policy or wish to exercise
-        your rights, contact us:
+        For questions about this Privacy Policy or to exercise your rights,
+        please reach out.
       </p>
       <div className="mt-4 rounded-xl border border-border bg-bg-card p-5">
         <p className="text-sm text-text-secondary">
-          <strong className="text-text-primary">Email:</strong>{" "}
           <a
             href="mailto:privacy@earlythunder.com"
             className="text-text-primary underline underline-offset-4"
@@ -400,7 +407,7 @@ function ContactSection() {
           </a>
         </p>
         <p className="mt-2 text-sm text-text-secondary">
-          <strong className="text-text-primary">Entity:</strong> AUTOM8 LLC
+          AUTOM8 LLC
         </p>
       </div>
     </section>

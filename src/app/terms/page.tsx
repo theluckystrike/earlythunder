@@ -36,7 +36,7 @@ function PageHeader() {
         Terms of Service
       </h1>
       <p className="mt-2 text-sm text-text-tertiary">
-        Last updated: April 14, 2026
+        Last updated April 14, 2026
       </p>
     </div>
   );
@@ -51,20 +51,21 @@ function AcceptanceOfTerms() {
       <div className="space-y-4 text-sm leading-relaxed text-text-secondary">
         <p>
           By accessing or using earlythunder.com (&quot;the Site&quot;,
-          &quot;the Service&quot;), operated by AUTOM8 LLC (&quot;we&quot;,
-          &quot;us&quot;, &quot;the Company&quot;), you acknowledge that you
-          have read, understood, and agree to be bound by these Terms of
-          Service and all applicable laws and regulations.
+          &quot;the Service&quot;), operated by AUTOM8 LLC (&quot;the
+          Company&quot;), you acknowledge that you have read, understood,
+          and agree to be bound by these Terms of Service and all
+          applicable laws and regulations.
         </p>
         <p>
           If you do not agree to these Terms of Service, you must not access
           or use the Site.
         </p>
         <p>
-          We reserve the right to modify these Terms of Service at any time
-          without prior notice. Changes become effective immediately upon
-          posting. Your continued use of the Site following any modifications
-          constitutes your acceptance of the revised terms.
+          AUTOM8 LLC reserves the right to modify these Terms of Service
+          at any time without prior notice. Changes become effective
+          immediately upon posting. Your continued use of the Site
+          following any modifications constitutes your acceptance of the
+          revised terms.
         </p>
       </div>
     </section>
@@ -84,11 +85,11 @@ function DescriptionOfService() {
           public equities, and private markets.
         </p>
         <p>
-          We use a proprietary 8-Signal Pattern Filter methodology to
-          evaluate opportunities. Our scores are pattern match indicators
-          based on historical signal analysis. They are not investment
-          ratings, not buy/sell recommendations, and not personalized
-          financial advice.
+          The platform uses a proprietary 8-Signal Pattern Filter
+          methodology to evaluate opportunities. Scores are pattern match
+          indicators based on historical signal analysis. They are not
+          investment ratings, not buy/sell recommendations, and not
+          personalized financial advice.
         </p>
         <p>
           The Service includes free publicly accessible information and
@@ -138,10 +139,10 @@ function NotInvestmentAdvice() {
           making any investment decisions.
         </p>
         <p>
-          We do not endorse, recommend, or vouch for the legitimacy, safety,
-          or suitability of any opportunity, project, token, security, or
-          asset tracked on this Site. Inclusion on this Site does not
-          constitute an endorsement.
+          Early Thunder does not endorse, recommend, or vouch for the
+          legitimacy, safety, or suitability of any opportunity, project,
+          token, security, or asset tracked on this Site. Inclusion on
+          this Site does not constitute an endorsement.
         </p>
       </div>
     </section>
@@ -157,14 +158,15 @@ function NoFiduciaryRelationship() {
       <div className="space-y-4 text-sm leading-relaxed text-text-secondary">
         <p>
           Your use of the Service does not create an advisory, fiduciary, or
-          professional services relationship between you and AUTOM8 LLC. We
-          owe you no duty of care, duty of loyalty, or any other fiduciary
-          duty whatsoever.
+          professional services relationship between you and AUTOM8 LLC.
+          AUTOM8 LLC owes you no duty of care, duty of loyalty, or any
+          other fiduciary duty whatsoever.
         </p>
         <p>
-          We are under no obligation to update, correct, or remove any
-          information previously published on the Site, nor to notify you of
-          any changes to opportunities, scores, or analyses.
+          The Company is under no obligation to update, correct, or
+          remove any information previously published on the Site, nor to
+          notify you of any changes to opportunities, scores, or
+          analyses.
         </p>
       </div>
     </section>
@@ -211,22 +213,22 @@ function AccuracyOfInformation() {
       </h2>
       <div className="space-y-4 text-sm leading-relaxed text-text-secondary">
         <p>
-          While we make reasonable efforts to provide accurate and timely
-          information, we make no warranties or representations regarding the
-          accuracy, completeness, timeliness, or reliability of any
-          information on the Site.
+          While Early Thunder makes reasonable efforts to provide accurate
+          and timely information, no warranties or representations are
+          made regarding the accuracy, completeness, timeliness, or
+          reliability of any information on the Site.
         </p>
         <p>
           Market data, pricing information, and project details sourced from
           third-party providers may be delayed, inaccurate, or incomplete.
-          Signal scores represent subjective assessments based on our
-          proprietary methodology and should not be interpreted as objective
-          facts.
+          Signal scores represent subjective assessments based on the
+          proprietary methodology and should not be interpreted as
+          objective facts.
         </p>
         <p>
-          Errors, omissions, and inaccuracies may occur. We expressly
-          disclaim any liability for losses or damages arising from reliance
-          on information published on the Site.
+          Errors, omissions, and inaccuracies may occur. AUTOM8 LLC
+          expressly disclaims any liability for losses or damages arising
+          from reliance on information published on the Site.
         </p>
       </div>
     </section>
@@ -274,18 +276,19 @@ function UserAccountsAndSubscriptions() {
           Certain features of the Service require account registration. You
           are responsible for maintaining the confidentiality of your account
           credentials and for all activity that occurs under your account.
-          You agree to notify us immediately of any unauthorized use.
+          You agree to notify AUTOM8 LLC immediately of any unauthorized
+          use.
         </p>
         <p>
           Subscription fees are billed in advance on a recurring basis. All
           fees are non-refundable except as required by applicable law or as
-          explicitly stated in our refund policy.
+          explicitly stated in the refund policy.
         </p>
         <p>
-          We reserve the right to modify subscription pricing with at least
-          30 days prior notice. We may suspend or terminate your account at
-          our sole discretion for any violation of these Terms, with or
-          without notice.
+          AUTOM8 LLC reserves the right to modify subscription pricing
+          with at least 30 days prior notice. The Company may suspend or
+          terminate your account at its sole discretion for any violation
+          of these Terms, with or without notice.
         </p>
       </div>
     </section>
@@ -299,7 +302,7 @@ function ProhibitedUses() {
         9. Prohibited Uses
       </h2>
       <div className="space-y-4 text-sm leading-relaxed text-text-secondary">
-        <p>You agree not to use the Site to:</p>
+        <p>You agree not to use the Site to</p>
         <ul className="list-none space-y-2 pl-0">
           {PROHIBITED_USES.map((use) => (
             <li key={use} className="flex items-start gap-2">
@@ -333,7 +336,7 @@ function ThirdPartyLinks() {
         <p>
           The Site may contain links to third-party websites, applications,
           or resources. These links are provided for your convenience only.
-          We have no control over the content, privacy policies, or
+          AUTOM8 LLC has no control over the content, privacy policies, or
           practices of any third-party sites or services.
         </p>
         <p>
@@ -366,8 +369,8 @@ function LimitationOfLiability() {
         </div>
         <p>
           This includes, without limitation, damages for loss of profits,
-          goodwill, data, or other intangible losses, even if we have been
-          advised of the possibility of such damages.
+          goodwill, data, or other intangible losses, even if AUTOM8 LLC
+          has been advised of the possibility of such damages.
         </p>
         <p>
           This limitation applies to damages arising from errors, omissions,
@@ -375,11 +378,11 @@ function LimitationOfLiability() {
           unauthorized access, or any other cause.
         </p>
         <p className="font-medium text-text-primary">
-          In no event shall our total aggregate liability to you for all
-          claims arising out of or relating to the use of the Site exceed
-          the greater of (a) the total fees paid by you to AUTOM8 LLC in the
-          twelve (12) months preceding the claim, or (b) one hundred United
-          States dollars (US $100.00).
+          In no event shall the total aggregate liability of AUTOM8 LLC
+          to you for all claims arising out of or relating to the use of
+          the Site exceed the greater of (a) the total fees paid by you
+          to AUTOM8 LLC in the twelve (12) months preceding the claim, or
+          (b) one hundred United States dollars (US $100.00).
         </p>
       </div>
     </section>
@@ -398,7 +401,7 @@ function Indemnification() {
           officers, directors, employees, agents, and affiliates from and
           against any and all claims, liabilities, damages, losses, costs,
           and expenses (including reasonable attorneys&apos; fees) arising
-          out of or in any way connected with:
+          out of or in any way connected with
         </p>
         <ul className="list-none space-y-2 pl-0">
           <li className="flex items-start gap-2">
@@ -456,7 +459,8 @@ function GoverningLaw() {
         </h3>
         <p>
           You agree that any arbitration or proceeding shall be limited to
-          the dispute between us and you individually. To the fullest extent
+          the dispute between AUTOM8 LLC and you individually. To the
+          fullest extent
           permitted by law, you waive the right to participate in a class
           action lawsuit or class-wide arbitration against AUTOM8 LLC.
         </p>
@@ -500,12 +504,11 @@ function Contact() {
       <div className="space-y-4 text-sm leading-relaxed text-text-secondary">
         <p>
           If you have any questions about these Terms of Service, please
-          contact us:
+          reach out.
         </p>
         <div className="rounded-xl border border-border bg-bg-card p-6">
           <p className="text-text-primary">AUTOM8 LLC</p>
           <p className="mt-2">
-            Email:{" "}
             <a
               href="mailto:legal@earlythunder.com"
               className="text-text-primary underline underline-offset-4 transition-colors hover:text-text-secondary"

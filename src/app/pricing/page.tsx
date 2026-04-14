@@ -105,7 +105,7 @@ function BuilderCard() {
         href="#waitlist"
         className="mt-8 block rounded-full border border-border py-3 text-center text-sm font-medium text-text-primary transition-colors hover:border-border-hover"
       >
-        Contact Us
+        Get in touch
       </Link>
     </div>
   );

@@ -2,7 +2,7 @@ import type { Tier, AssetClass } from "./types";
 
 /** Format a composite score (0-100) as a display string. */
 export function formatScore(score: number): string {
-  if (typeof score !== "number" || isNaN(score)) return "—";
+  if (typeof score !== "number" || isNaN(score)) return "-";
   const clamped = Math.max(0, Math.min(100, Math.round(score)));
   return String(clamped);
 }
@@ -47,7 +47,7 @@ export function getAssetClassLabel(assetClass: AssetClass): string {
 
 /** Format a USD price for display. Handles sub-dollar and large values. */
 export function formatPrice(price: number | null): string {
-  if (price === null || typeof price !== "number" || isNaN(price)) return "—";
+  if (price === null || typeof price !== "number" || isNaN(price)) return "-";
   if (price < 0.01) return `$${price.toPrecision(4)}`;
   if (price < 1) return `$${price.toFixed(4)}`;
   if (price < 1000) return `$${price.toFixed(2)}`;
@@ -56,7 +56,7 @@ export function formatPrice(price: number | null): string {
 
 /** Format a market cap value for display (e.g. $1.2B, $340.5M). */
 export function formatMarketCap(cap: number | null): string {
-  if (cap === null || typeof cap !== "number" || isNaN(cap)) return "—";
+  if (cap === null || typeof cap !== "number" || isNaN(cap)) return "-";
   if (cap >= 1_000_000_000) return `$${(cap / 1_000_000_000).toFixed(1)}B`;
   if (cap >= 1_000_000) return `$${(cap / 1_000_000).toFixed(1)}M`;
   if (cap >= 1_000) return `$${(cap / 1_000).toFixed(1)}K`;
@@ -65,7 +65,7 @@ export function formatMarketCap(cap: number | null): string {
 
 /** Format a 24h volume value for display (e.g. $45.2M). */
 export function formatVolume(vol: number | null): string {
-  if (vol === null || typeof vol !== "number" || isNaN(vol)) return "—";
+  if (vol === null || typeof vol !== "number" || isNaN(vol)) return "-";
   if (vol >= 1_000_000_000) return `$${(vol / 1_000_000_000).toFixed(1)}B`;
   if (vol >= 1_000_000) return `$${(vol / 1_000_000).toFixed(1)}M`;
   if (vol >= 1_000) return `$${(vol / 1_000).toFixed(1)}K`;
@@ -74,9 +74,9 @@ export function formatVolume(vol: number | null): string {
 
 /** Format a date string for display. */
 export function formatDate(dateStr: string): string {
-  if (typeof dateStr !== "string" || dateStr.length === 0) return "—";
+  if (typeof dateStr !== "string" || dateStr.length === 0) return "-";
   const date = new Date(dateStr);
-  if (isNaN(date.getTime())) return "—";
+  if (isNaN(date.getTime())) return "-";
   return date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",

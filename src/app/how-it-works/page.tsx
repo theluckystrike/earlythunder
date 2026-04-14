@@ -39,19 +39,19 @@ function PipelineSection() {
         <PipelineStep
           number="01"
           title="Scout"
-          description="Every week, our automated pipeline scans 50+ sources: on-chain data, GitHub trending repos, arXiv preprints, SEC filings, VC funding rounds, Reddit, and crypto-native platforms. We look for signals that match patterns historically seen before major breakouts."
+          description="Every week, the automated pipeline scans 50+ sources including on-chain data, GitHub trending repos, arXiv preprints, SEC filings, VC funding rounds, Reddit, and crypto-native platforms. Looks for signals matching patterns historically seen before major breakouts."
         />
         <PipelineStep
           number="02"
           title="Score"
-          description="Each opportunity is evaluated against our 8-Signal Pattern Filter — the same eight characteristics shared by Bitcoin at $0.001, Ethereum at $0.30, and DeFi protocols before Summer 2020. Every signal is scored 0-100 and weighted to produce a composite pattern match score."
+          description="Each opportunity is evaluated against the 8-Signal Pattern Filter. The same eight characteristics shared by Bitcoin at $0.001, Ethereum at $0.30, and DeFi protocols before Summer 2020. Every signal is scored 0-100 and weighted to produce a composite pattern match score."
           linkHref="/methodology"
           linkLabel="Read the methodology"
         />
         <PipelineStep
           number="03"
           title="Track"
-          description="Opportunities enter the database with their initial score and tier classification. Scores update weekly as new data emerges. When catalysts fire or fundamentals deteriorate, scores change. When projects fail, they move to the Graveyard with a post-mortem."
+          description="Opportunities enter the database with an initial score and tier classification. Scores update weekly as new data emerges. When catalysts fire or fundamentals deteriorate, scores change. When projects fail, they move to the Graveyard with a post-mortem."
         />
       </div>
     </section>
@@ -94,7 +94,7 @@ function AssetClassSection() {
   return (
     <section className="mt-20">
       <h2 className="text-2xl font-semibold tracking-tighter text-text-primary">
-        What we track
+        What Early Thunder tracks
       </h2>
       <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
         <AssetClassCard
@@ -132,10 +132,10 @@ function AssetClassCard({
 }
 
 const DISCLAIMER_STATEMENTS = [
-  "We are not financial advisors.",
-  "We do not recommend buying or selling any asset.",
-  "We include the bear case for every opportunity.",
-  "When projects fail, we publish post-mortems.",
+  "Early Thunder is not a financial advisor.",
+  "The platform does not recommend buying or selling any asset.",
+  "Every opportunity includes the bear case.",
+  "When projects fail, post-mortems get published.",
 ] as const;
 
 function DisclaimerSection() {
@@ -143,7 +143,7 @@ function DisclaimerSection() {
     <section className="mt-20">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-2xl font-semibold tracking-tighter text-text-primary">
-          What we are not
+          What Early Thunder is not
         </h2>
         <div className="mt-8 space-y-0">
           {DISCLAIMER_STATEMENTS.map((statement, index) => (

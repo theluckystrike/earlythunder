@@ -24,7 +24,7 @@ export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: `%s | ${SITE_NAME}`,
-    default: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    default: `${SITE_NAME} | ${SITE_TAGLINE}`,
   },
   description: SITE_DESCRIPTION,
   keywords: [...DEFAULT_KEYWORDS],
@@ -36,20 +36,20 @@ export const rootMetadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    title: `${SITE_NAME} | ${SITE_TAGLINE}`,
     description: SITE_DESCRIPTION,
     images: [
       {
         url: OG_IMAGE_URL,
         width: OG_IMAGE_WIDTH,
         height: OG_IMAGE_HEIGHT,
-        alt: `${SITE_NAME} — ${SITE_TAGLINE}`,
+        alt: `${SITE_NAME} | ${SITE_TAGLINE}`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    title: `${SITE_NAME} | ${SITE_TAGLINE}`,
     description: SITE_DESCRIPTION,
     images: [OG_IMAGE_URL],
     creator: TWITTER_HANDLE,
@@ -73,10 +73,10 @@ export const rootMetadata: Metadata = {
 /** Metadata for the opportunities listing page. */
 export const opportunitiesPageMetadata: Metadata = {
   title: "Opportunities",
-  description: "Explore pre-mainstream asymmetric opportunities scored by our 8-Signal Pattern Filter across crypto, deep tech, and emerging markets.",
+  description: "Explore pre-mainstream asymmetric opportunities scored by the 8-Signal Pattern Filter across crypto, deep tech, and emerging markets.",
   openGraph: {
     title: `Opportunities | ${SITE_NAME}`,
-    description: "Explore pre-mainstream asymmetric opportunities scored by our 8-Signal Pattern Filter.",
+    description: "Explore pre-mainstream asymmetric opportunities scored by the 8-Signal Pattern Filter.",
     url: `${SITE_URL}/opportunities`,
   },
   alternates: { canonical: `${SITE_URL}/opportunities` },
@@ -85,11 +85,11 @@ export const opportunitiesPageMetadata: Metadata = {
 export const methodologyPageMetadata: Metadata = {
   title: "Methodology",
   description:
-    "How our 8-Signal Pattern Filter evaluates opportunities across eight dimensions to identify asymmetric setups before the crowd.",
+    "How the 8-Signal Pattern Filter evaluates opportunities across eight dimensions to identify asymmetric setups before the crowd.",
   openGraph: {
     title: `Methodology | ${SITE_NAME}`,
     description:
-      "The 8-Signal Pattern Filter: how we score and rank pre-mainstream opportunities.",
+      "The 8-Signal Pattern Filter. How Early Thunder scores and ranks pre-mainstream opportunities.",
     url: `${SITE_URL}/methodology`,
   },
   alternates: { canonical: `${SITE_URL}/methodology` },
@@ -99,11 +99,11 @@ export const methodologyPageMetadata: Metadata = {
 export const graveyardPageMetadata: Metadata = {
   title: "Opportunity Graveyard",
   description:
-    "Transparent record of failed theses and invalidated opportunities with full post-mortems. We learn from every miss.",
+    "Transparent record of failed theses and invalidated opportunities with full post-mortems. Every miss contains a lesson.",
   openGraph: {
     title: `Opportunity Graveyard | ${SITE_NAME}`,
     description:
-      "Every dead thesis contains a lesson. See our transparent record of what went wrong and why.",
+      "Every dead thesis contains a lesson. A transparent record of what went wrong and why.",
     url: `${SITE_URL}/graveyard`,
   },
   alternates: { canonical: `${SITE_URL}/graveyard` },
@@ -127,7 +127,7 @@ export const pricingPageMetadata: Metadata = {
 export const blogPageMetadata: Metadata = {
   title: "Blog",
   description:
-    "Research notes, market analysis, and deep dives into asymmetric opportunities from the Early Thunder research team.",
+    "Research notes, market analysis, and deep dives into asymmetric opportunities from Early Thunder.",
   openGraph: {
     title: `Blog | ${SITE_NAME}`,
     description:

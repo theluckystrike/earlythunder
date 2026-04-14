@@ -9,19 +9,19 @@ export const SIGNAL_DETAILS: readonly SignalDetailData[] = [
   {
     key: "toy_phase",
     description:
-      "Measures whether the technology or asset is still in its early, 'toy' phase — dismissed by incumbents but harboring transformative potential. High scores indicate maximum asymmetry windows where the crowd has not yet recognized the opportunity.",
+      "Measures whether the technology or asset is still in its early, 'toy' phase, dismissed by incumbents but harboring transformative potential. High scores indicate maximum asymmetry windows where the crowd has not yet recognized the opportunity.",
     example: "The internet in 1995, smartphones in 2007, Bitcoin in 2012.",
   },
   {
     key: "working_code",
     description:
-      "Evaluates whether the project has functional, deployed technology. We verify through GitHub analysis, on-chain data, and direct product testing. Vaporware scores low; battle-tested production systems score high.",
+      "Evaluates whether the project has functional, deployed technology. Verified through GitHub analysis, on-chain data, and direct product testing. Vaporware scores low. Battle-tested production systems score high.",
     example: "A protocol with $1B+ TVL and 12 months of uptime scores 90+.",
   },
   {
     key: "community",
     description:
-      "Assesses organic community growth through genuine engagement metrics, not bot-inflated numbers. We track developer forums, social sentiment, and user retention patterns.",
+      "Assesses organic community growth through genuine engagement metrics, not bot-inflated numbers. Tracks developer forums, social sentiment, and user retention patterns.",
     example: "Active GitHub discussions, organic social growth, and user-created content.",
   },
   {
@@ -33,7 +33,7 @@ export const SIGNAL_DETAILS: readonly SignalDetailData[] = [
   {
     key: "smart_money",
     description:
-      "Monitors where sophisticated capital is flowing before the crowd follows. We track venture funding rounds, whale wallet movements, and institutional filing data.",
+      "Monitors where sophisticated capital is flowing before the crowd follows. Tracks venture funding rounds, whale wallet movements, and institutional filing data.",
     example: "Multiple Tier 1 VCs investing in consecutive rounds with increasing valuations.",
   },
   {

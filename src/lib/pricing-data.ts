@@ -38,11 +38,11 @@ export const MATRIX_ROWS = [
 export const FAQ_ITEMS = [
   {
     q: "Is this financial advice?",
-    a: "No. Early Thunder provides research and analysis for informational purposes only. We surface signals — you make the investment decisions. Always do your own research and consult a financial advisor.",
+    a: "No. Early Thunder provides research and analysis for informational purposes only. The platform surfaces signals. You make the investment decisions. Always do your own research and consult a financial advisor.",
   },
   {
     q: "How often are opportunities updated?",
-    a: "Our automated pipeline monitors signals continuously. Opportunity scores and analyses are updated at least weekly, with major signal changes triggering immediate re-evaluation.",
+    a: "The automated pipeline monitors signals continuously. Opportunity scores and analyses are updated at least weekly, with major signal changes triggering immediate re-evaluation.",
   },
   {
     q: "Can I cancel anytime?",
@@ -50,6 +50,6 @@ export const FAQ_ITEMS = [
   },
   {
     q: "What asset classes do you cover?",
-    a: "We cover three asset classes: digital assets (crypto, tokens, protocols), public equities (stocks, ETFs), and private markets (pre-IPO, venture-backed companies).",
+    a: "Early Thunder covers three asset classes. Digital assets (crypto, tokens, protocols), public equities (stocks, ETFs), and private markets (pre-IPO, venture-backed companies).",
   },
 ] as const;

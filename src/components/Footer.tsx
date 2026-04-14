@@ -55,7 +55,7 @@ export default function Footer() {
             Early Thunder provides research and analysis for informational
             purposes only. Nothing on this site constitutes financial advice,
             investment recommendations, or an offer to buy or sell securities.
-            Pattern match scores reflect our analytical methodology, not
+            Pattern match scores reflect the analytical methodology, not
             investment ratings. Past patterns do not predict future results.
           </p>
           <p className="mt-2 text-center">

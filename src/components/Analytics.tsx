@@ -4,7 +4,7 @@
  * Supports Cloudflare Web Analytics or Plausible.
  *
  * Usage:
- *   <Analytics /> — in app/layout.tsx body
+ *   <Analytics /> in app/layout.tsx body
  *
  * Configure via environment variable:
  *   NEXT_PUBLIC_ANALYTICS_ID=your-analytics-id

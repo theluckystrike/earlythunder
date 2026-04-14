@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: "Early Thunder",
     template: "%s | Early Thunder",
   },
-  description: "Pre-mainstream opportunity intelligence. Track asymmetric opportunities across crypto, deep tech, and emerging markets.",
+  description: "Pre-mainstream opportunity intelligence. Tracks asymmetric opportunities across crypto, deep tech, and emerging markets.",
   keywords: [
     "investment intelligence",
     "asymmetric opportunities",
@@ -56,7 +56,7 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "Early Thunder",
               url: "https://earlythunder.com",
-              description: "Pre-mainstream opportunity intelligence. Track asymmetric opportunities across crypto, deep tech, and emerging markets.",
+              description: "Pre-mainstream opportunity intelligence. Tracks asymmetric opportunities across crypto, deep tech, and emerging markets.",
               publisher: {
                 "@type": "Organization",
                 name: "AUTOM8 LLC",

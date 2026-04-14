@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const SIGNALS = [
-  { name: "Toy Phase", description: "Still dismissed by incumbents — maximum asymmetry window." },
-  { name: "Working Code", description: "Deployed, functional technology — not vaporware." },
+  { name: "Toy Phase", description: "Still dismissed by incumbents. Maximum asymmetry window." },
+  { name: "Working Code", description: "Deployed, functional technology. Not vaporware." },
   { name: "Community", description: "Organic growth of genuine users and advocates." },
   { name: "Dev Activity", description: "Active development with contributor diversity." },
   { name: "Smart Money", description: "Sophisticated capital flowing before the crowd." },

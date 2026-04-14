@@ -8,7 +8,7 @@ export const SITE_NAME = 'Early Thunder' as const;
 export const SITE_TAGLINE = 'Hear the storm before anyone else' as const;
 
 export const SITE_DESCRIPTION =
-  'Track pre-mainstream asymmetric opportunities across crypto, deep tech, and emerging markets. 8-signal pattern filter scores what others miss.' as const;
+  'Tracks pre-mainstream asymmetric opportunities across crypto, deep tech, and emerging markets. 8-signal pattern filter scores what others miss.' as const;
 
 export const OG_IMAGE_PATH = '/og-default.svg' as const;
 export const OG_IMAGE_WIDTH = 1200 as const;

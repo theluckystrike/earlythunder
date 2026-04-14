@@ -7,7 +7,7 @@ import type { Opportunity } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Graveyard",
   description:
-    "Opportunities that fell below our threshold. Transparent tracking of what failed and why.",
+    "Opportunities that fell below threshold. Transparent tracking of what failed and why.",
 };
 
 export default function GraveyardPage() {
@@ -43,9 +43,9 @@ function TransparencyCallout() {
   return (
     <div className="mt-8 rounded-2xl border border-border bg-bg-card p-6">
       <p className="text-sm leading-relaxed text-text-secondary">
-        Transparency is core to our methodology. When an opportunity falls
-        below our scoring threshold, we move it here with full context on
-        what went wrong. This record helps refine our signals.
+        Transparency is core to the methodology. When an opportunity falls
+        below the scoring threshold, it moves here with full context on
+        what went wrong. This record helps refine the signals.
       </p>
     </div>
   );

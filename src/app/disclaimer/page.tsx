@@ -34,7 +34,7 @@ function PageHeader() {
         Disclaimer &amp; Risk Disclosure
       </h1>
       <p className="mt-2 text-sm text-text-tertiary">
-        Last updated: April 14, 2026
+        Last updated April 14, 2026
       </p>
     </div>
   );
@@ -44,9 +44,9 @@ function ImportantBanner() {
   return (
     <div className="mt-10 mb-12 rounded-2xl border border-border bg-bg-card p-6">
       <p className="text-sm text-text-secondary">
-        <span className="font-semibold text-text-primary">Important:</span>{" "}
-        Please read this page carefully before using Early Thunder. By using
-        our Site, you acknowledge that you have read and understood these
+        <span className="font-semibold text-text-primary">Important.</span>{" "}
+        Read this page carefully before using Early Thunder. By using the
+        Site, you acknowledge that you have read and understood these
         disclaimers.
       </p>
     </div>
@@ -73,14 +73,14 @@ function GeneralDisclaimer() {
         </p>
         <p>
           Pattern match scores presented on this Site are analytical tools
-          derived from our proprietary methodology. They are NOT investment
+          derived from the proprietary methodology. They are NOT investment
           ratings, buy/sell recommendations, or endorsements of any kind.
         </p>
         <p>
           The term &quot;OPPORTUNITY&quot; as used throughout this Site refers
-          solely to assets we track and analyze. It does NOT constitute a
-          recommendation, endorsement, or solicitation to buy, sell, or hold
-          any asset.
+          solely to assets Early Thunder tracks and analyzes. It does NOT
+          constitute a recommendation, endorsement, or solicitation to
+          buy, sell, or hold any asset.
         </p>
       </div>
     </section>
@@ -95,7 +95,7 @@ function NoGuaranteeOfAccuracy() {
       </h2>
       <div className="space-y-4 text-sm leading-relaxed text-text-secondary">
         <p>
-          We make no warranties or representations regarding the accuracy,
+          No warranties or representations are made regarding the accuracy,
           completeness, timeliness, or reliability of any information published
           on this Site. All information is provided on an &quot;as is&quot; and
           &quot;as available&quot; basis without warranties of any kind, either
@@ -107,13 +107,14 @@ function NoGuaranteeOfAccuracy() {
           incomplete at any time.
         </p>
         <p>
-          Signal scores represent subjective assessments based on our
+          Signal scores represent subjective assessments based on the
           proprietary methodology. Reasonable analysts applying similar
           frameworks may arrive at materially different conclusions.
         </p>
         <p>
-          We are not responsible for any errors, omissions, or inaccuracies in
-          the information provided, regardless of the cause.
+          AUTOM8 LLC is not responsible for any errors, omissions, or
+          inaccuracies in the information provided, regardless of the
+          cause.
         </p>
       </div>
     </section>
@@ -166,7 +167,7 @@ function DigitalAssetRisk() {
       <p>
         Digital assets (cryptocurrencies, tokens, NFTs) are highly volatile
         and may be partially or entirely unregulated in your jurisdiction.
-        Risks specific to digital assets include but are not limited to:
+        Risks specific to digital assets include but are not limited to
       </p>
       <ul className="list-none space-y-2 pl-0">
         {DIGITAL_ASSET_RISKS.map((risk) => (
@@ -201,7 +202,7 @@ function PublicEquitiesRisk() {
       </h3>
       <p>
         Publicly traded stocks can decline in value to zero. Additional risks
-        include:
+        include
       </p>
       <ul className="list-none space-y-2 pl-0">
         {PUBLIC_EQUITY_RISKS.map((risk) => (
@@ -228,7 +229,7 @@ function PrivateMarketsRisk() {
         3d. Private Markets
       </h3>
       <p>
-        Private market investments carry unique and significant risks:
+        Private market investments carry unique and significant risks.
       </p>
       <ul className="list-none space-y-2 pl-0">
         {PRIVATE_MARKET_RISKS.map((risk) => (
@@ -257,7 +258,7 @@ function PredictionMarketsRisk() {
         3e. Prediction Markets
       </h3>
       <p>
-        Prediction markets involve unique risks including:
+        Prediction markets involve unique risks including
       </p>
       <ul className="list-none space-y-2 pl-0">
         {PREDICTION_MARKET_RISKS.map((risk) => (
@@ -346,8 +347,9 @@ function ThirdPartyContent() {
           responsibility for any third-party content, products, or services.
         </p>
         <p>
-          We have not audited the security, compliance, or operational
-          integrity of any linked platform, exchange, or service.
+          AUTOM8 LLC has not audited the security, compliance, or
+          operational integrity of any linked platform, exchange, or
+          service.
         </p>
         <p className="font-medium text-text-primary">
           If a linked exchange is hacked, a linked project is compromised or
@@ -398,7 +400,7 @@ function IndemnificationAndLiability() {
         <div className="rounded-xl border border-border bg-bg-card p-6">
           <p className="font-semibold text-text-primary">
             TO THE MAXIMUM EXTENT PERMITTED BY LAW, AUTOM8 LLC SHALL NOT BE
-            LIABLE FOR ANY LOSSES, DAMAGES, OR CLAIMS ARISING FROM:
+            LIABLE FOR ANY LOSSES, DAMAGES, OR CLAIMS ARISING FROM
           </p>
           <ul className="mt-4 list-none space-y-2 pl-0">
             {LIABILITY_EXCLUSIONS.map((item) => (
@@ -461,7 +463,7 @@ function AcknowledgmentBlock() {
       </h2>
       <div className="rounded-xl border border-border bg-bg-card p-6">
         <p className="mb-4 text-sm font-bold text-text-primary">
-          BY USING EARLYTHUNDER.COM, YOU ACKNOWLEDGE AND AGREE THAT:
+          BY USING EARLYTHUNDER.COM, YOU ACKNOWLEDGE AND AGREE THAT
         </p>
         <ul className="list-none space-y-3 pl-0">
           {ACKNOWLEDGMENTS.map((item) => (
@@ -497,13 +499,12 @@ function Contact() {
       </h2>
       <div className="space-y-4 text-sm leading-relaxed text-text-secondary">
         <p>
-          For questions regarding this Disclaimer and Risk Disclosure, please
-          contact us:
+          For questions regarding this Disclaimer and Risk Disclosure,
+          please reach out.
         </p>
         <div className="rounded-xl border border-border bg-bg-card p-6">
           <p className="text-text-primary">AUTOM8 LLC</p>
           <p className="mt-2">
-            Email:{" "}
             <a
               href="mailto:legal@earlythunder.com"
               className="text-text-primary underline underline-offset-4 transition-colors hover:text-text-secondary"

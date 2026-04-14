@@ -5,7 +5,7 @@ import { SIGNAL_DETAILS, type SignalDetailData } from "@/lib/signal-details";
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "How the Early Thunder 8-Signal Pattern Filter works — scoring, signals, and analysis methodology.",
+    "How the Early Thunder 8-Signal Pattern Filter works. Scoring, signals, and analysis methodology.",
 };
 
 export default function MethodologyPage() {
@@ -61,7 +61,7 @@ function SignalSection({
         {label}
       </h2>
       <span className="font-mono text-sm text-text-tertiary">
-        Weight: {weight}
+        {weight} weight
       </span>
       <p className="mt-4 max-w-3xl leading-relaxed text-text-secondary">
         {signal.description}
