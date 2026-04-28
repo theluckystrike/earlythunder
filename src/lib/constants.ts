@@ -16,6 +16,8 @@ export const OG_IMAGE_HEIGHT = 630 as const;
 
 export const TWITTER_HANDLE = '@earlythunder' as const;
 
+export const DISCORD_URL = 'https://discord.gg/QeHxTFbqmC' as const;
+
 export const STATIC_PAGES = [
   '/',
   '/opportunities',

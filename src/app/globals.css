@@ -1,32 +1,49 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg: #000000;
-  --color-bg-subtle: #0A0A0A;
-  --color-bg-card: #111111;
-  --color-bg-elevated: #1A1A1A;
-  --color-border: #222222;
-  --color-border-hover: #333333;
-  --color-text-primary: #F5F5F7;
-  --color-text-secondary: #86868B;
-  --color-text-tertiary: #48484A;
-  --color-score-high: #34C759;
-  --color-score-mid: #FF9F0A;
-  --color-score-low: #FF453A;
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
-  --font-mono: "SF Mono", "JetBrains Mono", "Fira Code", monospace;
+  /* Ink palette — deep navy-blacks */
+  --color-bg: oklch(0.145 0.012 250);
+  --color-bg-subtle: oklch(0.155 0.012 250);
+  --color-bg-card: oklch(0.185 0.012 250);
+  --color-bg-elevated: oklch(0.225 0.012 250);
 
-  /* Legacy aliases — keeps existing pages building while they migrate */
-  --color-base: #000000;
-  --color-surface: #0A0A0A;
-  --color-card: #111111;
-  --color-amber: #FF9F0A;
-  --color-amber-hover: #E08F09;
+  /* Borders */
+  --color-border: oklch(0.35 0.01 250 / 0.48);
+  --color-border-hover: oklch(0.35 0.01 250 / 0.6);
+  --color-line-2: oklch(0.35 0.01 250 / 0.2);
+
+  /* Text */
+  --color-text-primary: oklch(0.965 0.008 80);
+  --color-text-secondary: oklch(0.64 0.012 250);
+  --color-text-tertiary: oklch(0.48 0.012 250);
+
+  /* Accent — gold bolt */
+  --color-bolt: oklch(0.86 0.16 88);
+  --color-bolt-2: oklch(0.92 0.12 88);
+
+  /* Status */
+  --color-score-high: oklch(0.78 0.14 150);
+  --color-score-mid: oklch(0.86 0.16 88);
+  --color-score-low: oklch(0.66 0.18 28);
+  --color-pos: oklch(0.78 0.14 150);
+  --color-neg: oklch(0.66 0.18 28);
+
+  /* Legacy aliases for backward compat */
+  --color-base: oklch(0.145 0.012 250);
+  --color-surface: oklch(0.155 0.012 250);
+  --color-card: oklch(0.185 0.012 250);
+  --color-amber: oklch(0.86 0.16 88);
+  --color-amber-hover: oklch(0.92 0.12 88);
+  --color-success: oklch(0.78 0.14 150);
+  --color-warning: oklch(0.86 0.16 88);
+  --color-danger: oklch(0.66 0.18 28);
+  --color-border-light: oklch(0.35 0.01 250 / 0.6);
   --color-data-blue: #3B82F6;
-  --color-success: #34C759;
-  --color-warning: #FF9F0A;
-  --color-danger: #FF453A;
-  --color-border-light: #333333;
+
+  /* Fonts */
+  --font-serif: 'Fraunces', 'Times New Roman', Georgia, serif;
+  --font-sans: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
 }
 
 html {
@@ -34,43 +51,92 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-feature-settings: 'ss01', 'ss02', 'cv11';
 }
 
 body {
-  background: #000000;
-  color: #F5F5F7;
+  background: oklch(0.145 0.012 250);
+  color: oklch(0.965 0.008 80);
   font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
 }
 
 ::selection {
-  background: rgba(245, 245, 247, 0.15);
-  color: #fff;
+  background: oklch(0.86 0.16 88);
+  color: oklch(0.145 0.012 250);
 }
 
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #444; }
+::-webkit-scrollbar-thumb { background: oklch(0.35 0.01 250 / 0.48); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: oklch(0.35 0.01 250 / 0.6); }
 
 .divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #222, transparent);
+  background: oklch(0.35 0.01 250 / 0.2);
+}
+
+/* Section label pattern */
+.section-label {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: oklch(0.64 0.012 250);
+  margin-bottom: 24px;
+}
+
+.section-label .num {
+  color: oklch(0.86 0.16 88);
 }
 
 /* Ticker animation */
 @keyframes ticker-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
-
 .animate-ticker {
-  animation: ticker-scroll 30s linear infinite;
+  animation: ticker-scroll 50s linear infinite;
 }
-
 .animate-ticker:hover {
   animation-play-state: paused;
+}
+
+/* Pill buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border: 1px solid oklch(0.35 0.01 250 / 0.48);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 450;
+  letter-spacing: -0.005em;
+  color: oklch(0.965 0.008 80);
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.18s;
+  text-decoration: none;
+}
+.btn:hover {
+  background: color-mix(in oklab, oklch(0.965 0.008 80) 8%, transparent);
+  border-color: color-mix(in oklab, oklch(0.965 0.008 80) 50%, oklch(0.35 0.01 250 / 0.48));
+}
+.btn-bolt {
+  background: oklch(0.86 0.16 88);
+  color: oklch(0.145 0.012 250);
+  border-color: oklch(0.86 0.16 88);
+  font-weight: 500;
+}
+.btn-bolt:hover {
+  background: oklch(0.92 0.12 88);
+  border-color: oklch(0.92 0.12 88);
 }
