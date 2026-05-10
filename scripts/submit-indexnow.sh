@@ -143,8 +143,11 @@ collect_all_urls() {
     return 1
   fi
 
-  # Read into global array — bounded by MAX_URLS
-  mapfile -t ALL_URLS <<< "$deduped"
+  # Read into global array — bounded by MAX_URLS (bash 3 compatible)
+  ALL_URLS=()
+  while IFS= read -r line; do
+    [ -n "$line" ] && ALL_URLS+=("$line")
+  done <<< "$deduped"
   local url_count="${#ALL_URLS[@]}"
 
   # Assertion: URL count must be positive and within bounds
