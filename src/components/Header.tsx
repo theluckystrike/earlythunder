@@ -111,15 +111,13 @@ export default function Header() {
 
 function DesktopNav() {
   return (
-    <nav className="nav__links">
+    <ul className="nav__links">
       {PRIMARY_NAV.map((item) => (
-        <NavLink
-          key={item.href}
-          item={item}
-          className="nav__link"
-        />
+        <li key={item.href}>
+          <NavLink item={item} className="nav__link" />
+        </li>
       ))}
-    </nav>
+    </ul>
   );
 }
 
@@ -132,7 +130,7 @@ function CtaGroup() {
         Sign in
       </Link>
       <a href="/intelligence/" className="primary-btn">
-        Open Terminal &rarr;
+        Open Terminal {"\u2192"}
       </a>
     </div>
   );
@@ -170,7 +168,7 @@ function MobileNav({ onClose }: { readonly onClose: () => void }) {
           onClick={onClose}
           className="primary-btn nav__mobile-cta"
         >
-          Open Terminal &rarr;
+          Open Terminal {"\u2192"}
         </a>
       </nav>
     </div>

@@ -28,14 +28,14 @@ function SignalCell({ signal }: { readonly signal: Signal }) {
   return (
     <div className="signal">
       <div className="signal__top">
-        <span className="signal__n">{signal.n}</span>
-        <span className="signal__weight">12.5%</span>
+        <span className="signal__n mono">{signal.n}</span>
+        <span className="signal__weight mono">12.5%</span>
       </div>
-      <h3 className="signal__name">{signal.name}</h3>
-      <p className="signal__desc">{signal.desc}</p>
-      <div className="signal__source">
+      <div className="signal__name">{signal.name}</div>
+      <div className="signal__desc t-sec">{signal.desc}</div>
+      <div className="signal__source mono">
         <span className="signal__source-label">SOURCE</span>
-        <span className="signal__source-text">{signal.source}</span>
+        {signal.source}
       </div>
     </div>
   );

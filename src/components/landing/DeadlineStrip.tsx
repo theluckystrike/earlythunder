@@ -63,7 +63,7 @@ function DeadlineCard({
         <span className={statusClass(d.status, d.urgency)}>{d.status}</span>
       </div>
       <div className="deadline__bot">
-        <span className="deadline__days">{daysLeft ?? "—"}</span>
+        <span className="deadline__days mono">{daysLeft ?? "—"}</span>
         <span className="deadline__label">days left</span>
         <span className="deadline__date">{dateLabel}</span>
       </div>
@@ -85,7 +85,7 @@ export default function DeadlineStrip({ deadlines }: DeadlinesGridProps) {
   if (visible.length === 0) return null;
 
   return (
-    <section className="deadlines">
+    <section className="section">
       <div className="section__head">
         <div>
           <div className="section__eyebrow mono">04 &mdash; DEADLINE TRACKER</div>
@@ -97,7 +97,7 @@ export default function DeadlineStrip({ deadlines }: DeadlinesGridProps) {
         </div>
         <a className="ghost-btn" href="/deadlines/">Track all deadlines <span className="arr">&rarr;</span></a>
       </div>
-      <div className="deadlines__grid">
+      <div className="deadlines">
         {visible.map((d) => (
           <DeadlineCard key={`${d.protocol}-${d.event}`} d={d} />
         ))}
