@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 import { getActiveOpportunities } from "@/lib/data";
 import OpportunityTable from "@/components/OpportunityTable";
+import JsonLd from "@/components/JsonLd";
+import { getItemListSchema, getBreadcrumbListSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Opportunities",
   description:
     "Browse and filter all tracked opportunities across digital assets, public equities, and private markets.",
 };
+
+const OPPORTUNITIES_BREADCRUMBS = [
+  { name: "Home", path: "/" },
+  { name: "Opportunities", path: "/opportunities" },
+] as const;
 
 export default function OpportunitiesPage() {
   const opportunities = getActiveOpportunities();
@@ -19,10 +26,13 @@ export default function OpportunitiesPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
+      <JsonLd data={getItemListSchema(opportunities)} />
+      <JsonLd data={getBreadcrumbListSchema(OPPORTUNITIES_BREADCRUMBS)} />
       <PageHeader count={opportunities.length} categoryCount={categories.size} />
       <div className="mt-8">
         <OpportunityTable opportunities={opportunities} />
       </div>
+      <RelatedToolsSection />
     </div>
   );
 }
@@ -53,5 +63,44 @@ function EmptyFallback() {
         No opportunities available. Check back soon.
       </p>
     </div>
+  );
+}
+
+function RelatedToolsSection() {
+  return (
+    <section className="mt-16 border-t border-border pt-8">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
+        Related Tools
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a
+          href="/intelligence/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Intelligence Dashboard
+          <span className="block mt-1 font-normal text-text-secondary">
+            Live market signals and threat detection
+          </span>
+        </a>
+        <a
+          href="/earnings/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Earnings Scanner
+          <span className="block mt-1 font-normal text-text-secondary">
+            Upcoming earnings and catalyst calendar
+          </span>
+        </a>
+        <a
+          href="/deadlines/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Deadline Tracker
+          <span className="block mt-1 font-normal text-text-secondary">
+            Time-sensitive dates and regulatory events
+          </span>
+        </a>
+      </div>
+    </section>
   );
 }

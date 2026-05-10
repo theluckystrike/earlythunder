@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getGraveyardOpportunities } from "@/lib/data";
 import { formatDate, getAssetClassLabel } from "@/lib/format";
 import type { Opportunity } from "@/lib/types";
+import JsonLd from "@/components/JsonLd";
+import { getGraveyardListSchema, getBreadcrumbListSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Graveyard",
@@ -10,11 +12,18 @@ export const metadata: Metadata = {
     "Opportunities that fell below threshold. Transparent tracking of what failed and why.",
 };
 
+const GRAVEYARD_BREADCRUMBS = [
+  { name: "Home", path: "/" },
+  { name: "Graveyard", path: "/graveyard" },
+] as const;
+
 export default function GraveyardPage() {
   const graveyard = getGraveyardOpportunities();
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
+      <JsonLd data={getGraveyardListSchema(graveyard)} />
+      <JsonLd data={getBreadcrumbListSchema(GRAVEYARD_BREADCRUMBS)} />
       <PageHeader count={graveyard.length} />
       <TransparencyCallout />
       {graveyard.length > 0 ? (
@@ -22,6 +31,7 @@ export default function GraveyardPage() {
       ) : (
         <EmptyState />
       )}
+      <ExploreMoreSection />
     </div>
   );
 }
@@ -129,6 +139,39 @@ function GraveyardRow({
         {formatDate(opportunity.updated_at)}
       </td>
     </tr>
+  );
+}
+
+function ExploreMoreSection() {
+  return (
+    <section className="mt-16 border-t border-border pt-8">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-secondary mb-4">
+        Learn From Our Research
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a
+          href="/research/"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Research Library</span>
+          <span className="text-xs text-text-secondary mt-1 block">Deep-dive analyses and market reports</span>
+        </a>
+        <a
+          href="/intelligence/"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Intelligence Dashboard</span>
+          <span className="text-xs text-text-secondary mt-1 block">Live convergence signals</span>
+        </a>
+        <Link
+          href="/methodology"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Methodology</span>
+          <span className="text-xs text-text-secondary mt-1 block">How failures refine the scoring model</span>
+        </Link>
+      </div>
+    </section>
   );
 }
 

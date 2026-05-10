@@ -17,6 +17,10 @@ import type { Opportunity, AssetClass, OnChainMetrics, InsiderActivity, TeamProf
 import { SIGNAL_KEYS, SIGNAL_LABELS } from "@/lib/types";
 import SignalRadar from "@/components/SignalRadar";
 import CitationSection from "@/components/CitationSection";
+import {
+  getOpportunitySchema,
+  getBreadcrumbListSchema,
+} from "@/lib/structured-data";
 
 interface PageProps {
   readonly params: Promise<{ slug: string }>;
@@ -45,14 +49,17 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
     return <NotFoundFallback />;
   }
 
-  const jsonLd = buildJsonLd(opportunity);
+  const jsonLdSchemas = buildAllJsonLd(opportunity);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {jsonLdSchemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <Breadcrumb opportunity={opportunity} />
       <div className="mb-8 rounded-xl border border-border bg-bg-card px-4 py-3 text-xs text-text-tertiary">
         <span className="font-medium text-text-secondary">Notice.</span>{" "}
@@ -688,10 +695,24 @@ function ThesisChangersSection({ changers }: { readonly changers: { readonly bul
   );
 }
 
-function buildJsonLd(opp: Opportunity): Record<string, unknown> {
+/** Maximum citations to include in JSON-LD to prevent unbounded output. */
+const MAX_CITATIONS = 20;
+
+/**
+ * Build the AnalysisNewsArticle JSON-LD schema for an opportunity.
+ * Includes citations, aggregate rating, and publisher info.
+ */
+function buildArticleJsonLd(opp: Opportunity): Record<string, unknown> {
+  if (!opp || typeof opp.slug !== "string") {
+    throw new Error("Valid Opportunity is required for article JSON-LD.");
+  }
+  if (typeof opp.name !== "string" || opp.name.length === 0) {
+    throw new Error("Opportunity name is required for article JSON-LD.");
+  }
+
   const citations = opp.citations
     .filter((c) => c.url && c.url.length > 0)
-    .slice(0, 20)
+    .slice(0, MAX_CITATIONS)
     .map((c) => ({
       "@type": "CreativeWork",
       name: c.source,
@@ -725,4 +746,46 @@ function buildJsonLd(opp: Opportunity): Record<string, unknown> {
     },
     citation: citations,
   };
+}
+
+/**
+ * Build the BreadcrumbList JSON-LD for an opportunity detail page.
+ * Path: Home > Opportunities > [Opportunity Name]
+ */
+function buildOpportunityBreadcrumbs(
+  opp: Opportunity,
+): Record<string, unknown> {
+  if (!opp || typeof opp.slug !== "string") {
+    throw new Error("Valid Opportunity is required for breadcrumb JSON-LD.");
+  }
+  if (typeof opp.name !== "string" || opp.name.length === 0) {
+    throw new Error("Opportunity name is required for breadcrumb JSON-LD.");
+  }
+
+  return getBreadcrumbListSchema([
+    { name: "Home", path: "/" },
+    { name: "Opportunities", path: "/opportunities" },
+    { name: opp.name, path: `/opportunities/${opp.slug}` },
+  ]);
+}
+
+/**
+ * Assemble all JSON-LD schemas for an opportunity detail page.
+ * Returns: [AnalysisNewsArticle, Product, BreadcrumbList]
+ */
+function buildAllJsonLd(
+  opp: Opportunity,
+): readonly Record<string, unknown>[] {
+  if (!opp || typeof opp.slug !== "string") {
+    throw new Error("Valid Opportunity is required for JSON-LD assembly.");
+  }
+  if (typeof opp.name !== "string" || opp.name.length === 0) {
+    throw new Error("Opportunity name is required for JSON-LD assembly.");
+  }
+
+  return [
+    buildArticleJsonLd(opp),
+    getOpportunitySchema(opp),
+    buildOpportunityBreadcrumbs(opp),
+  ];
 }

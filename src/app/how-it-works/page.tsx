@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import { getHowToSchema, getBreadcrumbListSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "How It Works",
@@ -7,14 +9,37 @@ export const metadata: Metadata = {
     "How Early Thunder identifies and scores pre-mainstream asymmetric opportunities.",
 };
 
+const HOW_IT_WORKS_BREADCRUMBS = [
+  { name: "Home", path: "/" },
+  { name: "How It Works", path: "/how-it-works" },
+] as const;
+
+const HOW_IT_WORKS_STEPS = [
+  {
+    name: "Scout",
+    text: "Every week, the automated pipeline scans 50+ sources including on-chain data, GitHub trending repos, arXiv preprints, SEC filings, VC funding rounds, Reddit, and crypto-native platforms. Looks for signals matching patterns historically seen before major breakouts.",
+  },
+  {
+    name: "Score",
+    text: "Each opportunity is evaluated against the 8-Signal Pattern Filter — the same eight characteristics shared by Bitcoin at $0.001, Ethereum at $0.30, and DeFi protocols before Summer 2020. Every signal is scored 0-100 and weighted to produce a composite pattern match score.",
+  },
+  {
+    name: "Track",
+    text: "Opportunities enter the database with an initial score and tier classification. Scores update weekly as new data emerges. When catalysts fire or fundamentals deteriorate, scores change. When projects fail, they move to the Graveyard with a post-mortem.",
+  },
+] as const;
+
 export default function HowItWorksPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
+      <JsonLd data={getHowToSchema(HOW_IT_WORKS_STEPS)} />
+      <JsonLd data={getBreadcrumbListSchema(HOW_IT_WORKS_BREADCRUMBS)} />
       <PageHeader />
       <PipelineSection />
       <AssetClassSection />
       <DisclaimerSection />
       <CtaSection />
+      <SeeItInActionSection />
     </div>
   );
 }
@@ -193,6 +218,39 @@ function CtaSection() {
         >
           Read methodology
         </Link>
+      </div>
+    </section>
+  );
+}
+
+function SeeItInActionSection() {
+  return (
+    <section className="mt-16 border-t border-border pt-8">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-secondary mb-4">
+        See It in Action
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a
+          href="/intelligence/"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Intelligence Dashboard</span>
+          <span className="text-xs text-text-secondary mt-1 block">Live convergence signals</span>
+        </a>
+        <a
+          href="/earnings/"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Earnings Scanner</span>
+          <span className="text-xs text-text-secondary mt-1 block">Upcoming earnings catalysts</span>
+        </a>
+        <a
+          href="/deadlines/"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Deadline Tracker</span>
+          <span className="text-xs text-text-secondary mt-1 block">Key dates and regulatory milestones</span>
+        </a>
       </div>
     </section>
   );

@@ -15,5 +15,58 @@ const Dashboard1000x = dynamic(
 );
 
 export default function DiscoveriesPage() {
-  return <Dashboard1000x />;
+  return (
+    <div>
+      <Dashboard1000x />
+      <RelatedToolsSection />
+    </div>
+  );
+}
+
+function RelatedToolsSection() {
+  return (
+    <section className="mx-auto max-w-6xl px-6 pb-20 pt-8 border-t border-border mt-16">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
+        Also Explore
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <a
+          href="/intelligence/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Intelligence Dashboard
+          <span className="block mt-1 font-normal text-text-secondary">
+            Live market signals and threat detection
+          </span>
+        </a>
+        <a
+          href="/earnings/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Earnings Scanner
+          <span className="block mt-1 font-normal text-text-secondary">
+            Upcoming earnings catalysts
+          </span>
+        </a>
+        <a
+          href="/deadlines/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Deadline Tracker
+          <span className="block mt-1 font-normal text-text-secondary">
+            Key dates and regulatory milestones
+          </span>
+        </a>
+        <a
+          href="/research/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Research Library
+          <span className="block mt-1 font-normal text-text-secondary">
+            Deep-dive analysis and data reports
+          </span>
+        </a>
+      </div>
+    </section>
+  );
 }

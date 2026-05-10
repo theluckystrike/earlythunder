@@ -25,6 +25,7 @@ export default function PerformancePage() {
       <PipelineStats />
       <MethodologySection />
       <CtaSection />
+      <ExploreMoreSection />
     </div>
   );
 }
@@ -465,6 +466,41 @@ function CtaSection() {
         >
           Full methodology
         </Link>
+      </div>
+    </section>
+  );
+}
+
+/* ---------- Explore More ---------- */
+
+function ExploreMoreSection() {
+  return (
+    <section className="mt-16 border-t border-border pt-8">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-secondary mb-4">
+        Explore More
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <Link
+          href="/methodology"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Methodology</span>
+          <span className="text-xs text-text-secondary mt-1 block">Full scoring framework and signal weights</span>
+        </Link>
+        <a
+          href="/intelligence/"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Intelligence Dashboard</span>
+          <span className="text-xs text-text-secondary mt-1 block">Live convergence signals</span>
+        </a>
+        <a
+          href="/research/"
+          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+        >
+          <span className="text-sm font-semibold text-text-primary">Research Library</span>
+          <span className="text-xs text-text-secondary mt-1 block">Deep-dive analyses and market reports</span>
+        </a>
       </div>
     </section>
   );

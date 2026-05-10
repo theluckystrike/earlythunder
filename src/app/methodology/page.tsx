@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SIGNAL_KEYS, SIGNAL_LABELS } from "@/lib/types";
+import { SIGNAL_LABELS } from "@/lib/types";
 import { SIGNAL_DETAILS, type SignalDetailData } from "@/lib/signal-details";
 
 export const metadata: Metadata = {
@@ -13,6 +13,7 @@ export default function MethodologyPage() {
     <div className="mx-auto max-w-6xl px-6 py-20">
       <PageHeader />
       <SignalList />
+      <SeeItInActionSection />
     </div>
   );
 }
@@ -75,4 +76,43 @@ function SignalSection({
 function getSignalWeight(index: number): string {
   const weights = ["20%", "15%", "10%", "10%", "15%", "5%", "15%", "10%"];
   return weights[index] ?? "12.5%";
+}
+
+function SeeItInActionSection() {
+  return (
+    <section className="mt-20 border-t border-border pt-8">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
+        See It in Action
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a
+          href="/intelligence/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Intelligence Dashboard
+          <span className="block mt-1 font-normal text-text-secondary">
+            Watch the 8-signal filter score live opportunities
+          </span>
+        </a>
+        <a
+          href="/deadlines/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Deadline Tracker
+          <span className="block mt-1 font-normal text-text-secondary">
+            Time-sensitive catalysts and regulatory dates
+          </span>
+        </a>
+        <a
+          href="/earnings/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Earnings Scanner
+          <span className="block mt-1 font-normal text-text-secondary">
+            Upcoming earnings across tracked equities
+          </span>
+        </a>
+      </div>
+    </section>
+  );
 }

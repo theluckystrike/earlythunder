@@ -297,6 +297,122 @@ export function getItemListSchema(
 }
 
 /**
+ * JSON-LD ItemList schema for the blog listing page.
+ * Renders blog posts as a structured list for rich results.
+ */
+export function getBlogListSchema(
+  posts: readonly BlogPost[],
+): Record<string, unknown> {
+  if (!Array.isArray(posts)) {
+    throw new Error("Posts array is required for blog list schema.");
+  }
+  if (posts.length === 0) {
+    throw new Error("At least one post is required for blog list schema.");
+  }
+
+  const bounded = posts.slice(0, MAX_LIST_ITEMS);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${SITE_NAME} Blog`,
+    description:
+      "Research notes, methodology updates, and analysis from Early Thunder.",
+    numberOfItems: bounded.length,
+    url: `${SITE_URL}/blog`,
+    itemListElement: bounded.map((post, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: post.title,
+      url: `${SITE_URL}/blog/${post.slug}`,
+    })),
+  };
+}
+
+/**
+ * JSON-LD ItemList schema for the graveyard page.
+ * Lists failed/eliminated opportunities for transparency.
+ */
+export function getGraveyardListSchema(
+  opportunities: readonly Opportunity[],
+): Record<string, unknown> {
+  if (!Array.isArray(opportunities)) {
+    throw new Error("Opportunities array is required for graveyard list schema.");
+  }
+  if (opportunities.length === 0) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: `${SITE_NAME} Graveyard — Failed Opportunities`,
+      description:
+        "Transparent record of opportunities that fell below threshold, with full context on what went wrong.",
+      numberOfItems: 0,
+      url: `${SITE_URL}/graveyard`,
+      itemListElement: [],
+    };
+  }
+
+  const bounded = opportunities.slice(0, MAX_LIST_ITEMS);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${SITE_NAME} Graveyard — Failed Opportunities`,
+    description:
+      "Transparent record of opportunities that fell below threshold, with full context on what went wrong.",
+    numberOfItems: bounded.length,
+    url: `${SITE_URL}/graveyard`,
+    itemListElement: bounded.map((opp, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: opp.ticker ? `${opp.name} (${opp.ticker})` : opp.name,
+      url: `${SITE_URL}/opportunities/${opp.slug}`,
+      description: opp.one_liner,
+    })),
+  };
+}
+
+/** Step definition for the HowTo schema. */
+interface HowToStep {
+  readonly name: string;
+  readonly text: string;
+}
+
+/**
+ * JSON-LD HowTo schema for the how-it-works page.
+ * Describes the Scout -> Score -> Track pipeline as structured steps.
+ */
+export function getHowToSchema(
+  steps: readonly HowToStep[],
+): Record<string, unknown> {
+  if (!Array.isArray(steps)) {
+    throw new Error("Steps array is required for HowTo schema.");
+  }
+  if (steps.length === 0) {
+    throw new Error("At least one step is required for HowTo schema.");
+  }
+
+  const bounded = steps.slice(0, MAX_LIST_ITEMS);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How ${SITE_NAME} Identifies Asymmetric Opportunities`,
+    description:
+      "From signal detection to scored opportunity: how the autonomous intelligence pipeline scouts, scores, and tracks pre-mainstream opportunities.",
+    url: `${SITE_URL}/how-it-works`,
+    totalTime: "P7D",
+    step: bounded.map((s, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: s.name,
+      text: s.text,
+      url: `${SITE_URL}/how-it-works#step-${index + 1}`,
+    })),
+  };
+}
+
+/**
  * JSON-LD BreadcrumbList schema for hierarchical navigation.
  * Generates breadcrumb trail from path segments.
  */

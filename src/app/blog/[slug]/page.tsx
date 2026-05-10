@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/data";
 import { formatDate } from "@/lib/format";
+import { getArticleSchema, getBreadcrumbListSchema } from "@/lib/structured-data";
 
 interface PageProps {
   readonly params: Promise<{ slug: string }>;
@@ -31,8 +32,23 @@ export default async function BlogPostPage({ params }: PageProps) {
     return <NotFoundFallback />;
   }
 
+  const articleSchema = getArticleSchema(post);
+  const breadcrumbSchema = getBreadcrumbListSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ]);
+
   return (
     <article className="mx-auto max-w-3xl px-6 py-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <BackLink />
       <PostHeader
         title={post.title}

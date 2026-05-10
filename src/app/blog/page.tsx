@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllBlogPosts } from "@/lib/data";
 import { formatDate } from "@/lib/format";
 import type { BlogPost } from "@/lib/types";
+import { getBlogListSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -12,15 +13,23 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const posts = getAllBlogPosts();
+  const blogListSchema = posts.length > 0 ? getBlogListSchema(posts) : null;
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
+      {blogListSchema !== null && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListSchema) }}
+        />
+      )}
       <PageHeader count={posts.length} />
       {posts.length > 0 ? (
         <PostGrid posts={posts} />
       ) : (
         <EmptyState />
       )}
+      <RelatedResourcesSection />
     </div>
   );
 }
@@ -101,5 +110,35 @@ function EmptyState() {
         No blog posts published yet. Check back soon.
       </p>
     </div>
+  );
+}
+
+function RelatedResourcesSection() {
+  return (
+    <section className="mt-16 border-t border-border pt-8">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
+        Also Explore
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a
+          href="/research/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Research Library
+          <span className="block mt-1 font-normal text-text-secondary">
+            Deep-dive analysis and data reports
+          </span>
+        </a>
+        <a
+          href="/intelligence/"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+        >
+          Intelligence Dashboard
+          <span className="block mt-1 font-normal text-text-secondary">
+            Live market signals and threat detection
+          </span>
+        </a>
+      </div>
+    </section>
   );
 }

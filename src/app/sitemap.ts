@@ -16,7 +16,7 @@ const DEFAULT_PRIORITY = 0.5;
 const MAX_ENTRIES = 50000;
 
 /** Pages that update daily (interactive dashboards, live data). */
-const DAILY_PAGES = new Set(["/", "/intelligence", "/opportunities", "/discoveries"]);
+const DAILY_PAGES = new Set(["/", "/intelligence", "/deadlines", "/earnings", "/opportunities", "/discoveries"]);
 
 /** Returns the appropriate changeFrequency for a static page path. */
 function getChangeFrequency(
