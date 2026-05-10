@@ -1,28 +1,54 @@
 import Link from "next/link";
 
-/** Apple-style hero with massive typography and generous whitespace. */
-export default function HeroSection() {
+/* ─── Live data constants (will become API-driven) ─── */
+
+const LIVE_PULSE_DATA = [
+  { label: "MARKET REGIME", value: "RISK_OFF", color: "bg-teal-400" },
+  { label: "NEXT DEADLINE", value: "Limitless \u00b7 15d", color: "bg-amber-400" },
+  { label: "TOP YIELD", value: "2,077% \u00b7 BabySwap", color: "bg-green-400" },
+] as const;
+
+/* ─── Types ─── */
+
+interface PulseItem {
+  readonly label: string;
+  readonly value: string;
+  readonly color: string;
+}
+
+interface LivePulseStripProps {
+  readonly items: readonly PulseItem[];
+}
+
+/* ─── LivePulseStrip ─── */
+
+/** Bloomberg-style data ticker showing live pipeline intelligence. */
+function LivePulseStrip({ items }: LivePulseStripProps) {
+  if (!items || items.length === 0) return null;
+  if (typeof items[0].label !== "string") return null;
+
   return (
-    <section className="min-h-[85vh] flex flex-col justify-center max-w-6xl mx-auto px-6">
-      <h1 className="text-5xl md:text-7xl lg:text-[80px] font-semibold tracking-tighter leading-[1.05]">
-        <span className="text-text-primary">Follow the money</span>
-        <br />
-        <span className="text-text-secondary">that cannot lie.</span>
-      </h1>
-      <p className="text-xl md:text-2xl text-text-secondary font-normal mt-8 max-w-2xl leading-relaxed">
-        4 live intelligence tools scanning 154+ protocols for convergence
-        signals, earnings yield, and deadline catalysts &mdash; updated daily,
-        entirely free.
-      </p>
-      <HeroButtons />
-      <ToolBadgeStrip />
-    </section>
+    <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs text-text-secondary">
+      {items.map((item, idx) => (
+        <span key={item.label} className="flex items-center gap-x-2">
+          {idx > 0 && (
+            <span className="text-border-primary mr-2 hidden sm:inline">|</span>
+          )}
+          <span className={`inline-block h-2 w-2 rounded-full ${item.color}`} />
+          <span className="uppercase tracking-wide">{item.label}:</span>
+          <span className="text-text-primary font-semibold">{item.value}</span>
+        </span>
+      ))}
+    </div>
   );
 }
 
+/* ─── HeroButtons ─── */
+
+/** Primary and secondary CTAs for the hero section. */
 function HeroButtons() {
   return (
-    <div className="flex gap-4 mt-10">
+    <div className="flex flex-wrap gap-4 mt-10">
       <a
         href="/intelligence/"
         className="bg-text-primary text-black font-medium px-7 py-3 rounded-full text-base hover:opacity-90 transition"
@@ -33,33 +59,25 @@ function HeroButtons() {
         href="/opportunities"
         className="text-text-secondary hover:text-text-primary font-medium text-base transition flex items-center"
       >
-        Browse 172 Opportunities
+        Scan 172 Opportunities
       </Link>
     </div>
   );
 }
 
-/** Badge data for each live tool. */
-const TOOL_BADGES = [
-  { label: "Convergence Signals", href: "/intelligence/" },
-  { label: "Earnings Scanner", href: "/earnings/" },
-  { label: "Deadline Tracker", href: "/deadlines/" },
-  { label: "13 Research Briefs", href: "/research/" },
-] as const;
+/* ─── HeroSection (main export) ─── */
 
-/** Horizontal strip of small pill badges linking to each tool page. */
-function ToolBadgeStrip() {
+/** Data-dense hero with live pipeline intelligence pulse strip. */
+export default function HeroSection() {
   return (
-    <div className="flex flex-wrap gap-2 mt-6">
-      {TOOL_BADGES.map((badge) => (
-        <a
-          key={badge.href}
-          href={badge.href}
-          className="inline-flex items-center font-mono text-xs border border-border-primary text-text-secondary rounded-full px-3 py-1 hover:border-accent hover:text-text-primary transition"
-        >
-          {badge.label}
-        </a>
-      ))}
-    </div>
+    <section className="min-h-[75vh] flex flex-col justify-center max-w-6xl mx-auto px-6">
+      <h1 className="text-5xl md:text-7xl lg:text-[80px] font-semibold tracking-tighter leading-[1.05]">
+        <span className="text-text-primary">Follow the money</span>
+        <br />
+        <span className="text-text-secondary">that cannot lie.</span>
+      </h1>
+      <LivePulseStrip items={LIVE_PULSE_DATA} />
+      <HeroButtons />
+    </section>
   );
 }

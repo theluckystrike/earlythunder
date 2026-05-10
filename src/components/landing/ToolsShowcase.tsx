@@ -1,46 +1,55 @@
-import Link from "next/link";
+interface ToolsShowcaseProps {
+  readonly topYield: { name: string; symbol: string; yield_pct: number };
+  readonly nearestDeadline: { protocol: string; end_date: string | null; urgency: string };
+  readonly topScore: { name: string; score: number };
+  readonly totalOpportunities: number;
+}
 
 interface ToolCard {
   readonly title: string;
-  readonly stats: string;
-  readonly description: string;
+  readonly liveData: string;
+  readonly subtitle: string;
   readonly href: string;
   readonly accent: string;
 }
 
-const TOOLS: readonly ToolCard[] = [
-  {
-    title: "Convergence Signals",
-    stats: "58 events detected across 154+ protocols",
-    description: "Live market regime, smart money flows, stablecoin heatmap, and research library.",
-    href: "/intelligence/",
-    accent: "#00d4aa",
-  },
-  {
-    title: "Earnings Yield Scanner",
-    stats: "131 protocols scanned \u00b7 24 Hyperliquid-grade",
-    description: "Sortable DeFi yield table. Filter by tier, sort by yield, revenue, TVL.",
-    href: "/earnings/",
-    accent: "#34C759",
-  },
-  {
-    title: "Deadline Tracker",
-    stats: "24 active deadlines \u00b7 Live countdowns",
-    description: "Airdrop snapshots, token launches, farming windows. Color-coded urgency.",
-    href: "/deadlines/",
-    accent: "#FF9F0A",
-  },
-  {
-    title: "Research Library",
-    stats: "13 deep-dive analyses \u00b7 8,000+ words",
-    description: "Original research on exploits, tokenless protocols, convergence opportunities.",
-    href: "/research/",
-    accent: "#3b82f6",
-  },
-] as const;
+function buildCards(props: ToolsShowcaseProps): readonly ToolCard[] {
+  return [
+    {
+      title: "Convergence Signals",
+      liveData: `${props.topScore.name} scored ${props.topScore.score}`,
+      subtitle: "58 convergence events · 154+ protocols",
+      href: "/intelligence/",
+      accent: "#00d4aa",
+    },
+    {
+      title: "Earnings Yield Scanner",
+      liveData: `${props.topYield.symbol} · ${props.topYield.yield_pct}% yield`,
+      subtitle: "24 Hyperliquid-grade protocols found",
+      href: "/earnings/",
+      accent: "#34C759",
+    },
+    {
+      title: "Deadline Tracker",
+      liveData: `${props.nearestDeadline.protocol} · ${props.nearestDeadline.urgency}`,
+      subtitle: "23 active countdowns",
+      href: "/deadlines/",
+      accent: "#FF9F0A",
+    },
+    {
+      title: "Research Library",
+      liveData: "13 deep-dive analyses",
+      subtitle: "Original research · 8,000+ words",
+      href: "/research/",
+      accent: "#3b82f6",
+    },
+  ] as const;
+}
 
-/** Live intelligence tools showcase -- 2x2 grid of tool preview cards. */
-export default function ToolsShowcase() {
+/** Live intelligence tools showcase -- 2x2 grid with real data previews. */
+export default function ToolsShowcase(props: ToolsShowcaseProps) {
+  const cards = buildCards(props);
+
   return (
     <section className="py-20 max-w-6xl mx-auto px-6">
       <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-text-primary">
@@ -50,8 +59,8 @@ export default function ToolsShowcase() {
         Interactive data terminals. Updated daily from our autonomous pipeline.
       </p>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
-        {TOOLS.map((tool) => (
-          <ToolPreviewCard key={tool.href} tool={tool} />
+        {cards.map((card) => (
+          <ToolPreviewCard key={card.href} tool={card} />
         ))}
       </div>
     </section>
@@ -60,7 +69,7 @@ export default function ToolsShowcase() {
 
 function ToolPreviewCard({ tool }: { readonly tool: ToolCard }) {
   return (
-    <Link
+    <a
       href={tool.href}
       className="group bg-bg-card rounded-2xl border border-border hover:border-border-hover transition-all duration-200 overflow-hidden block"
     >
@@ -70,15 +79,15 @@ function ToolPreviewCard({ tool }: { readonly tool: ToolCard }) {
           {tool.title}
         </h3>
         <p className="font-mono text-sm mt-3" style={{ color: tool.accent }}>
-          {tool.stats}
+          {tool.liveData}
         </p>
-        <p className="text-text-secondary text-sm mt-3 leading-relaxed">
-          {tool.description}
+        <p className="text-text-secondary text-sm mt-2 leading-relaxed">
+          {tool.subtitle}
         </p>
         <span className="text-text-secondary group-hover:text-text-primary text-sm transition mt-5 inline-block">
           Explore &rarr;
         </span>
       </div>
-    </Link>
+    </a>
   );
 }

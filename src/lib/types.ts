@@ -199,3 +199,28 @@ export const SIGNAL_KEYS: readonly (keyof Signals)[] = [
   "valuation_gap",
   "obscurity",
 ] as const;
+
+/** Deadline from the autonomous pipeline tracker. */
+export interface Deadline {
+  readonly id: string;
+  readonly protocol: string;
+  readonly event: string;
+  readonly status: string;
+  readonly end_date?: string | null;
+  readonly estimated_end?: string | null;
+  readonly urgency: string;
+  readonly url: string;
+}
+
+/** Earnings protocol from the yield scanner. */
+export interface EarningsProtocol {
+  readonly rank: number;
+  readonly name: string;
+  readonly symbol: string;
+  readonly category: string;
+  readonly chains: readonly string[];
+  readonly earnings_yield_pct: number;
+  readonly annualized_revenue: number;
+  readonly mcap: number;
+  readonly tier: string;
+}
