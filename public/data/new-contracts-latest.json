@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-05-07T14:15:00Z",
+  "pipeline_version": "0.1.0",
+  "contracts": [
+    {
+      "contract_address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU",
+      "chain": "Solana",
+      "deployer_history_score": 9.5,
+      "verification_status": "verified",
+      "deepseek_sophistication_score": 9.7,
+      "category": "DeFi",
+      "name": "NeuralSwap Router",
+      "deployed_at": "2026-05-04T08:00:00Z",
+      "is_sample": true
+    },
+    {
+      "contract_address": "0x3a7d8eF9c12B4f0eA1d2C3b4E5f6A7B8c9D0e1F2",
+      "chain": "Base",
+      "deployer_history_score": 8.2,
+      "verification_status": "verified",
+      "deepseek_sophistication_score": 8.8,
+      "category": "DePIN",
+      "name": "OmniSense Registry",
+      "deployed_at": "2026-05-02T12:00:00Z",
+      "is_sample": true
+    },
+    {
+      "contract_address": "0xA1b2C3d4E5f6A7B8c9D0e1F2a3B4c5D6e7F8a9B0",
+      "chain": "Ethereum",
+      "deployer_history_score": 7.0,
+      "verification_status": "pending",
+      "deepseek_sophistication_score": 7.4,
+      "category": "RWA",
+      "name": "VaultLayer Collateral Manager",
+      "deployed_at": "2026-04-27T16:00:00Z",
+      "is_sample": true
+    },
+    {
+      "contract_address": "0xF1e2D3c4B5a6F7e8D9c0B1a2F3e4D5c6B7a8F9e0",
+      "chain": "Arbitrum",
+      "deployer_history_score": 4.5,
+      "verification_status": "verified",
+      "deepseek_sophistication_score": 5.2,
+      "category": "AI",
+      "name": "PixelMind Generator",
+      "deployed_at": "2026-04-18T10:00:00Z",
+      "is_sample": true
+    },
+    {
+      "contract_address": "9yMwSPk3Ltg5CW27d07MXJSDpbF5jBkheTqA83TZRuJo",
+      "chain": "Solana",
+      "deployer_history_score": 9.8,
+      "verification_status": "verified",
+      "deepseek_sophistication_score": 9.9,
+      "category": "Infrastructure",
+      "name": "ChainRelay Verifier",
+      "deployed_at": "2026-05-06T20:00:00Z",
+      "is_sample": true
+    },
+    {
+      "contract_address": "0xB2c3D4e5F6a7B8c9D0e1F2a3B4c5D6e7F8a9B0c1",
+      "chain": "Ethereum",
+      "deployer_history_score": 6.1,
+      "verification_status": "unverified",
+      "deepseek_sophistication_score": 6.5,
+      "category": "DeFi",
+      "name": "YieldNest Aggregator",
+      "deployed_at": "2026-05-01T14:30:00Z",
+      "is_sample": true
+    },
+    {
+      "contract_address": "0xC3d4E5f6A7b8C9d0E1f2A3b4C5d6E7f8A9b0C1d2",
+      "chain": "Base",
+      "deployer_history_score": 3.2,
+      "verification_status": "verified",
+      "deepseek_sophistication_score": 3.8,
+      "category": "AI",
+      "name": "ChatDegen Bot",
+      "deployed_at": "2026-04-22T06:00:00Z",
+      "is_sample": true
+    },
+    {
+      "contract_address": "0xD4e5F6a7B8c9D0e1F2a3B4c5D6e7F8a9B0c1D2e3",
+      "chain": "Arbitrum",
+      "deployer_history_score": 8.7,
+      "verification_status": "verified",
+      "deepseek_sophistication_score": 8.9,
+      "category": "Infrastructure",
+      "name": "MeshOracle Price Feed",
+      "deployed_at": "2026-05-05T18:00:00Z",
+      "is_sample": true
+    }
+  ]
+}

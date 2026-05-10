@@ -1,0 +1,60 @@
+============================================================
+  MERGE REPORT
+============================================================
+  Total entries: 91
+  Duplicates removed: 25
+  Graveyard entries: 5
+  Validation warnings: 0
+
+  --- Sources ---
+    a2-seed (existing): 30
+    ai-crypto: 14
+    depin: 6
+    desci: 13
+    energy-storage: 7
+    longevity-bci: 9
+    new-markets: 8
+    restaking: 6
+    seed-unique: 23
+
+  --- Tiers ---
+    Tier 1: 8
+    Tier 2: 28
+    Tier 3: 55
+
+  --- Asset Classes ---
+    digital_assets: 57
+    private_markets: 24
+    public_equities: 10
+
+  --- Categories ---
+    AI x Crypto: 17
+    DeSci: 13
+    DePIN: 9
+    Restaking: 8
+    New Market Structures: 8
+    Energy Storage: 7
+    Nuclear/Uranium: 6
+    ZK/Privacy: 5
+    Longevity / BCI: 4
+    Fusion Energy: 3
+    Quantum Computing: 3
+    RWA Tokenization: 2
+    Longevity: 2
+    Critical Minerals: 1
+    RWA/Tokenization: 1
+    Algorithmic Stablecoins: 1
+    Centralized Exchange: 1
+
+  --- Top 10 by Score ---
+     82.0  T1  Bittensor
+     81.8  T1  Cameco
+     80.2  T1  Helion Energy
+     80.0  T1  EigenLayer
+     80.0  T1  NexGen Energy
+     80.0  T1  Babylon
+     80.0  T1  Ondo Finance
+     80.0  T1  IonQ
+     76.2  T2  Form Energy
+     75.3  T2  Sprott Uranium Trust
+============================================================

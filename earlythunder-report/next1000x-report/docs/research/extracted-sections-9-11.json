@@ -1,0 +1,2173 @@
+[
+  {
+    "name": "EnergyX",
+    "ticker": null,
+    "category": "Energy_Storage",
+    "subcategory": "Direct Lithium Extraction",
+    "status": "equity_crowdfunding",
+    "tier_suggestion": "2",
+    "one_liner": "Direct lithium extraction via equity crowdfunding at $9.50/share",
+    "quantitative_data": {
+      "price": {
+        "value": "$9.50/share",
+        "date": "April 2026",
+        "source": "DealMaker"
+      },
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": {
+        "value": "~$1.92B",
+        "date": "April 2026",
+        "source": "1000x Opportunity Map"
+      },
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "equity_crowdfunding",
+        "platform": "DealMaker",
+        "pair_or_url": "invest.energyx.com"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Agreements with 4 of top 10 lithium producers",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "100,000+ acres of Chilean lithium deposits development",
+        "est_date": null,
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Pre-revenue deep tech with long commercialization timeline",
+        "severity": "high"
+      },
+      {
+        "risk": "Lithium price volatility impacts business case",
+        "severity": "medium"
+      },
+      {
+        "risk": "Equity crowdfunding illiquidity \u2014 no secondary market",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 55,
+        "evidence": "DLE is a known concept but EnergyX's approach is still unproven at scale; not widely dismissed but not widely known either"
+      },
+      "working_code": {
+        "score_suggestion": 40,
+        "evidence": "Technology in development, agreements with lithium producers suggest functional prototypes but no commercial deployment mentioned"
+      },
+      "ideological_community": {
+        "score_suggestion": 45,
+        "evidence": "Retail crowdfunding base of investors; no evidence of strong ideological community"
+      },
+      "developer_activity": {
+        "score_suggestion": 35,
+        "evidence": "No developer metrics provided; hardware/chemical process company"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 40,
+        "evidence": "No named institutional backers mentioned; crowdfunding suggests retail-driven"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 75,
+        "evidence": "Clear narrative: direct lithium extraction for the EV battery supply chain"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 70,
+        "evidence": "Only available via DealMaker equity crowdfunding at $1,000 minimum; accredited/non-accredited"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 50,
+        "evidence": "Agreements with major lithium producers but no specific near-term catalyst dates"
+      }
+    },
+    "composite_score": 47,
+    "community_links": {
+      "twitter": null,
+      "website": "invest.energyx.com"
+    }
+  },
+  {
+    "name": "ESS Inc",
+    "ticker": "GWH",
+    "category": "Energy_Storage",
+    "subcategory": "Iron Flow Batteries",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "Iron flow batteries in survival mode at $31M market cap",
+    "quantitative_data": {
+      "price": {
+        "value": "$1.15",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "$31M",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": "$13.87",
+        "date": null,
+        "source": "Asymmetric Opportunity Atlas (52-week high)"
+      },
+      "drawdown_from_ath": {
+        "value": "-91.7% from 52-week high",
+        "source": "Calculated from $13.87 to $1.15"
+      },
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": {
+        "value": "$31M",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "$1.6M",
+        "period": "FY2025",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "public_equity",
+        "platform": "NYSE",
+        "pair_or_url": "NYSE: GWH"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Honeywell",
+        "amount": null,
+        "round": "Strategic backer"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "SRP pilot with Google",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "Energy Base product pivot targeting 2027 commercialization",
+        "est_date": "2027",
+        "impact": "high"
+      },
+      {
+        "event": "1.2 GWh in proposals (~$400M pipeline)",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Going concern signals \u2014 cash $22M, working capital ~$1M",
+        "severity": "critical"
+      },
+      {
+        "risk": "Revenue down 75% YoY (FY2025 $1.6M)",
+        "severity": "critical"
+      },
+      {
+        "risk": "High-risk turnaround play",
+        "severity": "high"
+      },
+      {
+        "risk": "52-week range shows extreme volatility ($0.76-$13.87)",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 60,
+        "evidence": "Iron flow batteries dismissed by many as inferior to lithium-ion; 22-hour storage and zero degradation over 25 years is genuine technical differentiation"
+      },
+      "working_code": {
+        "score_suggestion": 50,
+        "evidence": "Has deployed products, SRP pilot with Google, 22-hour storage with zero degradation demonstrated; but revenue only $1.6M"
+      },
+      "ideological_community": {
+        "score_suggestion": 20,
+        "evidence": "No evidence of strong community; public equity with retail shareholders"
+      },
+      "developer_activity": {
+        "score_suggestion": 30,
+        "evidence": "Hardware company; no developer metrics; pivoting to new Energy Base product"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 35,
+        "evidence": "Honeywell backing mentioned in 1000x Opportunity Map; Google SRP pilot partner"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 65,
+        "evidence": "Clear narrative: iron flow batteries with 22-hour storage, zero degradation, for grid-scale energy storage"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 10,
+        "evidence": "Publicly traded on NYSE, easy to buy"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 40,
+        "evidence": "Energy Base product not until 2027; SRP pilot ongoing but no timeline for scale"
+      }
+    },
+    "composite_score": 40,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Form Energy",
+    "ticker": null,
+    "category": "Energy_Storage",
+    "subcategory": "Iron-Air Batteries / Long Duration Energy Storage",
+    "status": "pre_token",
+    "tier_suggestion": "1",
+    "one_liner": "Clear LDES leader with 75 GWh pipeline sold out through 2028",
+    "quantitative_data": {
+      "price": {
+        "value": "$23.00/share (secondary)",
+        "date": "March 2026",
+        "source": "Forge via Asymmetric Opportunity Atlas"
+      },
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "$1.13-1.43B",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "valuation": {
+        "value": "~$1.95B (up to $3.3B on secondary markets)",
+        "date": "March 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "pre_ipo",
+        "platform": "Forge Global",
+        "pair_or_url": "Secondary shares at $23.00/share"
+      },
+      {
+        "type": "pre_ipo",
+        "platform": "Secondary Markets",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Google",
+        "amount": null,
+        "round": "Strategic partner (300 MW / 30 GWh deal)"
+      },
+      {
+        "name": "Xcel Energy",
+        "amount": null,
+        "round": "Strategic partner (300 MW / 30 GWh deal)"
+      },
+      {
+        "name": "Crusoe",
+        "amount": null,
+        "round": "12 GWh deal (March 24, 2026)"
+      },
+      {
+        "name": "DOE",
+        "amount": "$147M",
+        "round": "Government grant for 85 MW Maine project"
+      },
+      {
+        "name": "FuturEnergy Ireland",
+        "amount": null,
+        "round": "10 MW / 1,000 MWh (first international project)"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Google/Xcel Energy 300 MW / 30 GWh Minnesota data center deal (~$1B+ value)",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "Crusoe 12 GWh AI data center deal",
+        "est_date": "March 2026",
+        "impact": "high"
+      },
+      {
+        "event": "Weirton factory ramp to 500 MW / 50 GWh annual capacity",
+        "est_date": "2028",
+        "impact": "high"
+      },
+      {
+        "event": "$500M funding round (TechCrunch report)",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Potential IPO \u2014 top LDES IPO candidate",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "DOE $147M grant for 85 MW Maine project",
+        "est_date": null,
+        "impact": "medium"
+      },
+      {
+        "event": "FuturEnergy Ireland 10 MW first international project",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Private company \u2014 limited liquidity, secondary market pricing may be inflated",
+        "severity": "medium"
+      },
+      {
+        "risk": "Iron-air battery technology still scaling from 15 MW to 500 MW production",
+        "severity": "medium"
+      },
+      {
+        "risk": "No revenue figures disclosed \u2014 valuation based on pipeline not revenue",
+        "severity": "medium"
+      },
+      {
+        "risk": "Projected costs below $20/kWh not yet proven at scale",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 70,
+        "evidence": "100-hour iron-air batteries were dismissed as impractical; now Google, Xcel, Crusoe, DOE all signed major deals"
+      },
+      "working_code": {
+        "score_suggestion": 85,
+        "evidence": "Weirton factory producing at 15 MW, ramping to 50 MW; production sold out through 2028; 826 employees; real product shipping"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "No public token community; private company with institutional backers"
+      },
+      "developer_activity": {
+        "score_suggestion": 75,
+        "evidence": "826 employees; Weirton factory operational; pipeline exceeds 75 GWh; active engineering and manufacturing"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 90,
+        "evidence": "Google, Xcel Energy, Crusoe, DOE $147M, reportedly raising $500M round; $1.13-1.43B already raised"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 85,
+        "evidence": "Iron-air batteries for 100+ hour grid storage at sub-$20/kWh \u2014 extremely clear narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 80,
+        "evidence": "Private company; secondary market shares at $23/share on Forge; accredited investors only"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 85,
+        "evidence": "$500M funding round reportedly underway; potential IPO; factory ramping; sold out through 2028"
+      }
+    },
+    "composite_score": 76,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Fourth Power",
+    "ticker": null,
+    "category": "Energy_Storage",
+    "subcategory": "Molten Carbon Thermal Storage",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "MIT spinout molten thermal storage with BEV backing, demo 2026",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "$19M Series A (Atlas says $19M) / $39M Series A (1000x Map says $39M)",
+        "source": "Both documents (discrepancy)"
+      },
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [],
+    "key_backers": [
+      {
+        "name": "Breakthrough Energy Ventures (BEV)",
+        "amount": null,
+        "round": "Series A"
+      },
+      {
+        "name": "Munich Re",
+        "amount": null,
+        "round": "Series A (per 1000x Map)"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "1 MWh prototype demo near Boston",
+        "est_date": "Later 2026",
+        "impact": "high"
+      },
+      {
+        "event": "Full-scale 100 MWh systems deployment",
+        "est_date": "2028",
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "TRL 5-6 \u2014 still prototype stage, not commercially proven",
+        "severity": "high"
+      },
+      {
+        "risk": "No public investment mechanism available",
+        "severity": "high"
+      },
+      {
+        "risk": "Long timeline to commercial deployment (2028+)",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 65,
+        "evidence": "Molten carbon thermal storage at extreme temperatures is novel and dismissed by those favoring lithium-ion; MIT/Georgia Tech spinout adds credibility"
+      },
+      "working_code": {
+        "score_suggestion": 35,
+        "evidence": "1 MWh prototype under construction, TRL 5-6; not yet demonstrated"
+      },
+      "ideological_community": {
+        "score_suggestion": 15,
+        "evidence": "No public community; early-stage private company"
+      },
+      "developer_activity": {
+        "score_suggestion": 30,
+        "evidence": "Small team building prototype; MIT/Georgia Tech academic foundation"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 70,
+        "evidence": "Breakthrough Energy Ventures (Bill Gates) and Munich Re backing"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 60,
+        "evidence": "Molten carbon thermal storage targeting costs below lithium-ion by 2028"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 95,
+        "evidence": "Private company, no public investment mechanism mentioned"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 55,
+        "evidence": "1 MWh demo expected later 2026; full-scale 2028"
+      }
+    },
+    "composite_score": 49,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Antora Energy",
+    "ticker": null,
+    "category": "Energy_Storage",
+    "subcategory": "Thermal Batteries",
+    "status": "pre_product",
+    "tier_suggestion": "2",
+    "one_liner": "Most commercially advanced thermal battery company, 2400C carbon blocks",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "$272M",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [],
+    "key_backers": [
+      {
+        "name": "BlackRock",
+        "amount": null,
+        "round": "Series B (led)"
+      },
+      {
+        "name": "Temasek",
+        "amount": null,
+        "round": "Series B (led)"
+      },
+      {
+        "name": "Con Edison",
+        "amount": null,
+        "round": "Partnership"
+      },
+      {
+        "name": "Shell",
+        "amount": null,
+        "round": "Partnership"
+      },
+      {
+        "name": "Summit Materials",
+        "amount": null,
+        "round": "Partnership"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Expanding commercial deployments (first deployment was 2023)",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "Con Edison, Shell, Summit Materials partnerships scaling",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Private company \u2014 no public investment mechanism",
+        "severity": "high"
+      },
+      {
+        "risk": "Thermal battery market still nascent, market adoption uncertain",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from other thermal storage approaches",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 60,
+        "evidence": "Thermal batteries heating carbon blocks to 2400C dismissed as niche; described as most commercially advanced thermal battery company"
+      },
+      "working_code": {
+        "score_suggestion": 75,
+        "evidence": "First deployment in 2023; >40% TPV efficiency achieved; commercial partnerships with Con Edison, Shell, Summit Materials"
+      },
+      "ideological_community": {
+        "score_suggestion": 15,
+        "evidence": "No public community; private company"
+      },
+      "developer_activity": {
+        "score_suggestion": 55,
+        "evidence": "$272M raised suggests significant team and engineering activity; commercial deployments active"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 90,
+        "evidence": "BlackRock and Temasek led Series B; Con Edison, Shell partnerships; $272M raised"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 70,
+        "evidence": "Thermal batteries storing energy in carbon blocks at 2400C with >40% efficiency \u2014 clear industrial energy storage narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 95,
+        "evidence": "Private company, no public investment mechanism mentioned"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 45,
+        "evidence": "Already deployed since 2023 but no specific near-term milestone dates mentioned"
+      }
+    },
+    "composite_score": 62,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Malta Inc",
+    "ticker": null,
+    "category": "Energy_Storage",
+    "subcategory": "Pumped Heat Energy Storage",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "Pre-commercial heat storage with tiny team and limited momentum",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "~$98-118M",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Full-scale heat exchanger testing in Germany",
+        "est_date": null,
+        "impact": "medium"
+      },
+      {
+        "event": "Spain demonstration 14 MW",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Only 17 employees \u2014 tiny team signals limited momentum",
+        "severity": "critical"
+      },
+      {
+        "risk": "Pre-commercial with no clear path to market",
+        "severity": "high"
+      },
+      {
+        "risk": "No public investment mechanism",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 40,
+        "evidence": "Pumped heat energy storage is a real concept but Malta's small team and slow progress reduce dismissal signal value"
+      },
+      "working_code": {
+        "score_suggestion": 30,
+        "evidence": "Spain 14 MW demonstration and Germany heat exchanger testing, but pre-commercial and only 17 employees"
+      },
+      "ideological_community": {
+        "score_suggestion": 5,
+        "evidence": "No public community; 17-person company"
+      },
+      "developer_activity": {
+        "score_suggestion": 15,
+        "evidence": "Only 17 employees; limited momentum explicitly noted in source"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 30,
+        "evidence": "$98-118M raised but no named backers; small team despite funding suggests capital inefficiency"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 45,
+        "evidence": "Pumped heat energy storage for grid scale \u2014 clear but not compelling given execution gaps"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 95,
+        "evidence": "Private company, no public investment mechanism"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 20,
+        "evidence": "No specific near-term catalyst dates; demos ongoing but no commercialization timeline"
+      }
+    },
+    "composite_score": 29,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Ambri",
+    "ticker": null,
+    "category": "Energy_Storage",
+    "subcategory": "Liquid Metal Batteries \u2014 GRAVEYARD",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "DEAD \u2014 Chapter 11, all assets in liquidation despite $222M raised",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "$222M",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "valuation": {
+        "value": "$0 (liquidation)",
+        "date": "August 2025",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [],
+    "key_backers": [
+      {
+        "name": "Bill Gates",
+        "amount": null,
+        "round": "Early backer"
+      }
+    ],
+    "catalysts": [],
+    "risks": [
+      {
+        "risk": "DEAD \u2014 Filed Chapter 11 May 2024, General Assignment August 21, 2025, all assets in liquidation",
+        "severity": "critical"
+      },
+      {
+        "risk": "Could not bridge from prototype to factory despite $222M raised and $1.7B in MOUs",
+        "severity": "critical"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 0,
+        "evidence": "Company is dead; no longer relevant"
+      },
+      "working_code": {
+        "score_suggestion": 0,
+        "evidence": "Failed to commercialize; could not bridge prototype to factory"
+      },
+      "ideological_community": {
+        "score_suggestion": 0,
+        "evidence": "No community; company liquidated"
+      },
+      "developer_activity": {
+        "score_suggestion": 0,
+        "evidence": "Company defunct"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 0,
+        "evidence": "Bill Gates backed but company still failed; cautionary tale"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 0,
+        "evidence": "N/A \u2014 company dead"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 0,
+        "evidence": "N/A \u2014 cannot buy; liquidated"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 0,
+        "evidence": "N/A \u2014 no future catalysts"
+      }
+    },
+    "composite_score": 0,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Synchron",
+    "ticker": null,
+    "category": "Longevity_BCI",
+    "subcategory": "Brain-Computer Interface",
+    "status": "pre_product",
+    "tier_suggestion": "2",
+    "one_liner": "FDA-authorized endovascular BCI backed by Gates and Bezos",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "pre_ipo",
+        "platform": "Forge Global / EquityZen",
+        "pair_or_url": "Secondary markets for accredited investors"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Gates Foundation",
+        "amount": null,
+        "round": null
+      },
+      {
+        "name": "Bezos Expeditions",
+        "amount": null,
+        "round": null
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "FDA-authorized clinical trials ongoing",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "BCI funding tripled to $867M in 2025 \u2014 sector momentum",
+        "est_date": null,
+        "impact": "medium"
+      },
+      {
+        "event": "Endovascular approach avoids open brain surgery \u2014 differentiated safety profile",
+        "est_date": null,
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Private company \u2014 limited liquidity; accredited investors only via secondary markets",
+        "severity": "high"
+      },
+      {
+        "risk": "BCI market still nascent; regulatory and clinical hurdles remain",
+        "severity": "high"
+      },
+      {
+        "risk": "Neuralink competition with more funding and visibility",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 75,
+        "evidence": "BCI widely dismissed by mainstream as sci-fi; endovascular approach specifically dismissed as inferior to direct implants like Neuralink"
+      },
+      "working_code": {
+        "score_suggestion": 70,
+        "evidence": "FDA-authorized trials underway; endovascular BCI implanted in patients; real clinical data being generated"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "BCI community is passionate but small; no token community"
+      },
+      "developer_activity": {
+        "score_suggestion": 50,
+        "evidence": "Clinical trials active; BCI funding tripled to $867M in 2025 sector-wide"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 85,
+        "evidence": "Gates Foundation and Bezos Expeditions \u2014 two of the world's most prominent investors"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 80,
+        "evidence": "Endovascular BCI that doesn't require open brain surgery \u2014 extremely clear and compelling narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 90,
+        "evidence": "Private company; only accessible via Forge Global/EquityZen secondary markets for accredited investors"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 60,
+        "evidence": "FDA-authorized trials ongoing but no specific readout dates mentioned"
+      }
+    },
+    "composite_score": 66,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Paradromics",
+    "ticker": null,
+    "category": "Longevity_BCI",
+    "subcategory": "Brain-Computer Interface",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "Record-breaking 200+ bps BCI data rates, accredited investor access",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "pre_ipo",
+        "platform": "Secondary markets",
+        "pair_or_url": "Accredited investors only"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Record-breaking 200+ bps data rates achieved",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "BCI sector funding tripled to $867M in 2025",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Very early stage with limited public information",
+        "severity": "high"
+      },
+      {
+        "risk": "Private company \u2014 no public investment mechanism for most investors",
+        "severity": "high"
+      },
+      {
+        "risk": "Neuralink and Synchron competition",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 70,
+        "evidence": "BCI widely dismissed; Paradromics' high data rate approach is technically differentiated but little known"
+      },
+      "working_code": {
+        "score_suggestion": 55,
+        "evidence": "Achieved record-breaking 200+ bps data rates \u2014 real technical milestone"
+      },
+      "ideological_community": {
+        "score_suggestion": 10,
+        "evidence": "No evidence of public community"
+      },
+      "developer_activity": {
+        "score_suggestion": 35,
+        "evidence": "Technical achievement mentioned but no team size or development metrics provided"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 30,
+        "evidence": "Funding mentioned but no specific backers named in either document"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 60,
+        "evidence": "High-bandwidth BCI with 200+ bps \u2014 clear technical narrative but less consumer-facing than Synchron/Neuralink"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 95,
+        "evidence": "Private company; very limited access; accredited investors only via secondary markets"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 35,
+        "evidence": "No specific near-term catalyst dates mentioned"
+      }
+    },
+    "composite_score": 45,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Neuralink",
+    "ticker": null,
+    "category": "Longevity_BCI",
+    "subcategory": "Brain-Computer Interface",
+    "status": "pre_product",
+    "tier_suggestion": "2",
+    "one_liner": "Elon Musk's BCI company \u2014 context reference for BCI sector",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [],
+    "key_backers": [
+      {
+        "name": "Elon Musk",
+        "amount": null,
+        "round": "Founder"
+      }
+    ],
+    "catalysts": [],
+    "risks": [
+      {
+        "risk": "Private company \u2014 no public investment mechanism",
+        "severity": "high"
+      },
+      {
+        "risk": "Regulatory and ethical scrutiny of invasive brain implants",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 50,
+        "evidence": "Referenced as sector context only; the most well-known BCI company, reducing toy-phase signal"
+      },
+      "working_code": {
+        "score_suggestion": 65,
+        "evidence": "Has implanted devices in human patients; FDA-authorized; but referenced only as context in documents"
+      },
+      "ideological_community": {
+        "score_suggestion": 60,
+        "evidence": "Large following due to Elon Musk association"
+      },
+      "developer_activity": {
+        "score_suggestion": 50,
+        "evidence": "Active clinical program but no specific metrics in these documents"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 70,
+        "evidence": "Elon Musk founded; significant VC backing (not detailed in documents)"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 80,
+        "evidence": "Brain-computer interface by Elon Musk \u2014 maximum narrative clarity"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 95,
+        "evidence": "Private company; no public investment mechanism available"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 40,
+        "evidence": "No specific catalysts mentioned in these documents"
+      }
+    },
+    "composite_score": 59,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Siren Biotechnology",
+    "ticker": null,
+    "category": "Longevity_BCI",
+    "subcategory": "Cancer Gene Therapy / Longevity",
+    "status": "equity_crowdfunding",
+    "tier_suggestion": "2",
+    "one_liner": "Cancer gene therapy on Wefunder at $250 min, Founders Fund backed",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": {
+        "value": "$60M pre-money",
+        "date": null,
+        "source": "1000x Opportunity Map"
+      },
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "equity_crowdfunding",
+        "platform": "Wefunder",
+        "pair_or_url": "Wefunder \u2014 $250 minimum investment"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Founders Fund",
+        "amount": null,
+        "round": null
+      },
+      {
+        "name": "Lux Capital",
+        "amount": null,
+        "round": null
+      },
+      {
+        "name": "Merck",
+        "amount": null,
+        "round": null
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "IND filing planned",
+        "est_date": "Late 2025",
+        "impact": "high"
+      },
+      {
+        "event": "First-in-human trials",
+        "est_date": "Q2 2026",
+        "impact": "high"
+      },
+      {
+        "event": "AAV immuno-gene therapy for cancer development",
+        "est_date": null,
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Pre-clinical / early-stage biotech \u2014 high failure rate for gene therapies",
+        "severity": "high"
+      },
+      {
+        "risk": "Equity crowdfunding illiquidity \u2014 long hold period",
+        "severity": "high"
+      },
+      {
+        "risk": "Regulatory risk for novel gene therapy approach",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 60,
+        "evidence": "Gene therapy for cancer via crowdfunding dismissed by traditional biotech investors; AAV immuno-gene therapy is cutting-edge"
+      },
+      "working_code": {
+        "score_suggestion": 30,
+        "evidence": "IND filing planned for late 2025; first-in-human trials targeting Q2 2026; still pre-clinical"
+      },
+      "ideological_community": {
+        "score_suggestion": 40,
+        "evidence": "Crowdfunding investor base on Wefunder suggests community engagement; longevity/cancer therapy generates passion"
+      },
+      "developer_activity": {
+        "score_suggestion": 35,
+        "evidence": "Moving toward IND filing and human trials; limited public detail on team size"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 80,
+        "evidence": "Founders Fund, Lux Capital, and Merck \u2014 three highly respected institutional backers"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 75,
+        "evidence": "Cancer gene therapy accessible to retail investors at $250 minimum \u2014 strong narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 50,
+        "evidence": "Available on Wefunder with $250 minimum \u2014 accessible but equity crowdfunding has liquidity constraints"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 70,
+        "evidence": "IND filing late 2025, first-in-human trials Q2 2026 \u2014 near-term clinical catalysts"
+      }
+    },
+    "composite_score": 53,
+    "community_links": {
+      "twitter": null,
+      "website": "Wefunder listing"
+    }
+  },
+  {
+    "name": "Junevity",
+    "ticker": null,
+    "category": "Longevity_BCI",
+    "subcategory": "AI Aging Platform",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "AI-driven aging platform with $20M seed, trials H2 2026",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "$20M seed (expanded)",
+        "source": "1000x Opportunity Map"
+      },
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "First-in-human trials",
+        "est_date": "H2 2026",
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Pre-clinical stage with no clinical data yet",
+        "severity": "high"
+      },
+      {
+        "risk": "No public investment mechanism available",
+        "severity": "high"
+      },
+      {
+        "risk": "AI-driven drug discovery is competitive and unproven at scale",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 65,
+        "evidence": "AI-driven aging platform dismissed by traditional pharma as overhyped; longevity science broadly dismissed"
+      },
+      "working_code": {
+        "score_suggestion": 25,
+        "evidence": "AI platform exists but no clinical results yet; first-in-human trials not until H2 2026"
+      },
+      "ideological_community": {
+        "score_suggestion": 25,
+        "evidence": "Longevity community is passionate but no specific Junevity community evidence"
+      },
+      "developer_activity": {
+        "score_suggestion": 30,
+        "evidence": "$20M seed suggests active development; AI platform being built"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 40,
+        "evidence": "$20M expanded seed round but no specific backers named in documents"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 65,
+        "evidence": "AI-powered aging reversal platform \u2014 clear and compelling narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 95,
+        "evidence": "Private company; no public investment mechanism mentioned"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 55,
+        "evidence": "First-in-human trials in H2 2026 \u2014 relatively near-term catalyst"
+      }
+    },
+    "composite_score": 44,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Circulate Health",
+    "ticker": null,
+    "category": "Longevity_BCI",
+    "subcategory": "Therapeutic Plasma Exchange",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "Therapeutic plasma exchange with $12M seed from Khosla Ventures",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "$12M seed",
+        "source": "1000x Opportunity Map"
+      },
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [],
+    "key_backers": [
+      {
+        "name": "Khosla Ventures",
+        "amount": null,
+        "round": "Seed"
+      }
+    ],
+    "catalysts": [],
+    "risks": [
+      {
+        "risk": "Very early stage \u2014 seed round company with no clinical data",
+        "severity": "high"
+      },
+      {
+        "risk": "No public investment mechanism",
+        "severity": "high"
+      },
+      {
+        "risk": "Therapeutic plasma exchange is clinically unproven for longevity applications",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 70,
+        "evidence": "Therapeutic plasma exchange for longevity widely dismissed by mainstream medicine; parabiosis research considered fringe"
+      },
+      "working_code": {
+        "score_suggestion": 15,
+        "evidence": "Seed stage; no clinical data or product deployment mentioned"
+      },
+      "ideological_community": {
+        "score_suggestion": 20,
+        "evidence": "Longevity community interest but no specific Circulate community"
+      },
+      "developer_activity": {
+        "score_suggestion": 20,
+        "evidence": "Seed stage company; limited development metrics available"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 65,
+        "evidence": "Khosla Ventures is a tier-1 VC firm in healthcare/deep tech"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 55,
+        "evidence": "Therapeutic plasma exchange for aging \u2014 intriguing but requires explanation"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 95,
+        "evidence": "Private seed-stage company; no public investment mechanism"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 20,
+        "evidence": "No specific near-term catalyst dates mentioned"
+      }
+    },
+    "composite_score": 39,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Agronomics",
+    "ticker": "ANIC",
+    "category": "Longevity_BCI",
+    "subcategory": "Cultivated Meat Investment Vehicle",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "Only pure-play public cultivated meat investment vehicle on LSE",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "public_equity",
+        "platform": "LSE",
+        "pair_or_url": "LSE: ANIC"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Regulatory approvals for cultivated meat expanding globally",
+        "est_date": null,
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Cultivated meat sector faces significant regulatory and consumer acceptance hurdles",
+        "severity": "high"
+      },
+      {
+        "risk": "Investment vehicle structure \u2014 dependent on portfolio company performance",
+        "severity": "medium"
+      },
+      {
+        "risk": "Limited information in source documents \u2014 minimal quantitative data available",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 75,
+        "evidence": "Cultivated meat actively dismissed by mainstream as 'lab meat'; strong toy-phase signal"
+      },
+      "working_code": {
+        "score_suggestion": 30,
+        "evidence": "Investment vehicle holding cultivated meat companies; portfolio companies at various stages"
+      },
+      "ideological_community": {
+        "score_suggestion": 50,
+        "evidence": "Strong ideological community around alternative proteins and animal welfare"
+      },
+      "developer_activity": {
+        "score_suggestion": 20,
+        "evidence": "Investment vehicle, not a technology company; limited development metrics"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 25,
+        "evidence": "No specific smart money backers mentioned in documents"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 70,
+        "evidence": "Only pure-play public cultivated meat investment vehicle \u2014 very clear niche narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 30,
+        "evidence": "Publicly traded on LSE; accessible but not on major US exchanges"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 30,
+        "evidence": "No specific near-term catalysts mentioned; cultivated meat regulatory timeline unclear"
+      }
+    },
+    "composite_score": 38,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "EigenLayer",
+    "ticker": "EIGEN",
+    "category": "Restaking_Modular",
+    "subcategory": "Restaking Protocol",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Restaking pioneer with $18-19.7B TVL, down 91% from ATH",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": {
+        "value": "-91%",
+        "source": "Both documents"
+      },
+      "tvl": {
+        "value": "$18-19.7B",
+        "date": "April 2026",
+        "source": "Both documents"
+      },
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Major exchanges",
+        "pair_or_url": "EIGEN"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Restaking thesis recovery if crypto market rebounds",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "Growing AVS ecosystem building on EigenLayer",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "-91% from ATH \u2014 severe value destruction",
+        "severity": "high"
+      },
+      {
+        "risk": "Malicious large-stake owner risk (per Consensys Diligence + Dedaub audit)",
+        "severity": "high"
+      },
+      {
+        "risk": "Competition from Symbiotic and Karak Network",
+        "severity": "medium"
+      },
+      {
+        "risk": "Restaking narrative may not recover in this cycle",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 40,
+        "evidence": "Restaking was a hot narrative that has cooled significantly; -91% from ATH shows market dismissal, but it was mainstream before"
+      },
+      "working_code": {
+        "score_suggestion": 85,
+        "evidence": "$18-19.7B in TVL; audited by Consensys Diligence and Dedaub with 'excellent quality'; production protocol with real deposits"
+      },
+      "ideological_community": {
+        "score_suggestion": 55,
+        "evidence": "Strong DeFi/Ethereum community backing; restaking ecosystem has passionate builders"
+      },
+      "developer_activity": {
+        "score_suggestion": 70,
+        "evidence": "Active AVS ecosystem; multiple protocols building on EigenLayer; audited and maintained"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 60,
+        "evidence": "No specific recent smart money entry mentioned, but $18B+ TVL implies significant institutional participation"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 65,
+        "evidence": "Restaking Ethereum security for other protocols \u2014 clear but requires crypto knowledge"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 10,
+        "evidence": "Token live on major exchanges; easy to buy"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 40,
+        "evidence": "No specific near-term catalysts mentioned; contrarian bet on restaking thesis recovery"
+      }
+    },
+    "composite_score": 58,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Symbiotic",
+    "ticker": null,
+    "category": "Restaking_Modular",
+    "subcategory": "Restaking Protocol",
+    "status": "pre_token",
+    "tier_suggestion": "1",
+    "one_liner": "Paradigm-backed restaking with 1200+ operators, token TGE Nov 2024",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": {
+        "value": "$355M (down from $1.6B peak)",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "airdrop_farming",
+        "platform": "app.symbiotic.fi",
+        "pair_or_url": "Deposit assets via Mellow Protocol vaults"
+      },
+      {
+        "type": "staking",
+        "platform": "Symbiotic",
+        "pair_or_url": "Supported: wstETH, wBETH, cbETH, sUDE, mETH, rETH, ENA, swETH"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Paradigm",
+        "amount": null,
+        "round": "Backer"
+      },
+      {
+        "name": "Lido co-founders",
+        "amount": null,
+        "round": "Backer"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Token TGE occurred November 20, 2024 but not fully launched on major CEXs",
+        "est_date": "November 2024 (occurred)",
+        "impact": "high"
+      },
+      {
+        "event": "External Rewards feature distributing partner tokens (Hyperlane HYPER, Omni $10M)",
+        "est_date": null,
+        "impact": "medium"
+      },
+      {
+        "event": "Major CEX listings pending",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "Points program active via Mellow Protocol vaults",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "TVL dropped from $1.6B to $355M \u2014 significant capital flight",
+        "severity": "high"
+      },
+      {
+        "risk": "ChainSecurity audit noted open design allows dangerous configurations",
+        "severity": "medium"
+      },
+      {
+        "risk": "Token not yet on major CEXs \u2014 liquidity risk",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from EigenLayer ($18B+ TVL) and Karak Network",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 50,
+        "evidence": "Restaking is an established concept; Symbiotic differentiates with multi-asset support but faces 'EigenLayer clone' dismissal"
+      },
+      "working_code": {
+        "score_suggestion": 75,
+        "evidence": "1,200+ active node operators across 45 countries; 70+ protocols secured; 66K+ unique depositors; ChainSecurity audited"
+      },
+      "ideological_community": {
+        "score_suggestion": 55,
+        "evidence": "Paradigm and Lido co-founder backing creates institutional community; 66K+ depositors; points farming community active"
+      },
+      "developer_activity": {
+        "score_suggestion": 65,
+        "evidence": "70+ protocols integrated; 1,200+ operators; External Rewards feature shipping; active development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 80,
+        "evidence": "Paradigm and Lido co-founders backing; attracted $200M deposits within a day of launch (per 1000x Map)"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 55,
+        "evidence": "Multi-asset restaking protocol \u2014 clear to DeFi insiders but niche"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 65,
+        "evidence": "Token TGE occurred but not on major CEXs; farming via Mellow Protocol vaults requires DeFi knowledge"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 60,
+        "evidence": "Major CEX listings pending; External Rewards distributing; points program active"
+      }
+    },
+    "composite_score": 65,
+    "community_links": {
+      "twitter": null,
+      "website": "app.symbiotic.fi"
+    }
+  },
+  {
+    "name": "Karak Network",
+    "ticker": null,
+    "category": "Restaking_Modular",
+    "subcategory": "Multi-Chain Restaking",
+    "status": "pre_token",
+    "tier_suggestion": "2",
+    "one_liner": "Multi-chain restaking at $1B valuation with sovereign wealth backing",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "$50M",
+        "source": "1000x Opportunity Map"
+      },
+      "valuation": {
+        "value": "$1B",
+        "date": null,
+        "source": "1000x Opportunity Map"
+      },
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "airdrop_farming",
+        "platform": "Karak Network",
+        "pair_or_url": "Multi-chain, multi-asset collateral deposits"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Mubadala (Abu Dhabi sovereign wealth fund)",
+        "amount": null,
+        "round": "$50M raise"
+      },
+      {
+        "name": "Coinbase Ventures",
+        "amount": null,
+        "round": "$50M raise"
+      },
+      {
+        "name": "Pantera Capital",
+        "amount": null,
+        "round": "$50M raise"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Potential token launch \u2014 pre-token with farming opportunities",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "Only restaking protocol accepting multi-chain, multi-asset collateral \u2014 unique positioning",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Pre-token \u2014 no guarantee of token launch or airdrop",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from EigenLayer ($18B+ TVL) and Symbiotic",
+        "severity": "high"
+      },
+      {
+        "risk": "$1B valuation at pre-token stage may limit upside",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 45,
+        "evidence": "Multi-chain restaking is novel but faces 'another EigenLayer clone' dismissal"
+      },
+      "working_code": {
+        "score_suggestion": 50,
+        "evidence": "Live product accepting multi-chain, multi-asset collateral; but no TVL figures provided suggesting early traction"
+      },
+      "ideological_community": {
+        "score_suggestion": 35,
+        "evidence": "No strong community evidence; institutional-focused with sovereign wealth backing"
+      },
+      "developer_activity": {
+        "score_suggestion": 45,
+        "evidence": "Multi-chain support implies active development; no specific developer metrics provided"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 90,
+        "evidence": "Mubadala sovereign wealth fund, Coinbase Ventures, and Pantera Capital \u2014 exceptional institutional backing at $1B valuation"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 55,
+        "evidence": "Multi-chain restaking protocol \u2014 clear to crypto insiders"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 75,
+        "evidence": "Pre-token; requires farming via multi-chain deposits; not yet purchasable"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 50,
+        "evidence": "No specific token launch date; but pre-token status implies eventual launch"
+      }
+    },
+    "composite_score": 54,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Espresso Systems",
+    "ticker": "ESP",
+    "category": "Restaking_Modular",
+    "subcategory": "Shared Sequencer Layer",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Shared sequencer with 65M+ blocks, Coinbase/Binance listed, airdropped",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Coinbase",
+        "pair_or_url": "ESP"
+      },
+      {
+        "type": "token_purchase",
+        "platform": "Binance",
+        "pair_or_url": "ESP"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "9 integrated chains expanding",
+        "est_date": null,
+        "impact": "medium"
+      },
+      {
+        "event": "~6-second finality for L2s \u2014 critical infrastructure adoption",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "10% community airdrop already distributed \u2014 early farming opportunity gone",
+        "severity": "medium"
+      },
+      {
+        "risk": "Shared sequencer adoption dependent on L2 ecosystem growth",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from other shared sequencer solutions",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 35,
+        "evidence": "Shared sequencers are a known concept in crypto; ESP already listed on major exchanges, reducing dismissal signal"
+      },
+      "working_code": {
+        "score_suggestion": 80,
+        "evidence": "65M+ blocks attested; 9 integrated chains; ~6-second finality; live production infrastructure"
+      },
+      "ideological_community": {
+        "score_suggestion": 40,
+        "evidence": "1M+ eligible airdrop addresses across 30+ qualification paths; community exists but post-airdrop engagement unclear"
+      },
+      "developer_activity": {
+        "score_suggestion": 65,
+        "evidence": "9 chains integrated; 65M+ blocks processed; active and growing infrastructure"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 50,
+        "evidence": "Listed on Coinbase and Binance; no specific VC backers named but major exchange listings imply institutional support"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 55,
+        "evidence": "Shared sequencer for L2s \u2014 clear to L2/rollup ecosystem participants"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 10,
+        "evidence": "Listed on Coinbase and Binance \u2014 very easy to buy"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 35,
+        "evidence": "Airdrop already happened; no specific upcoming catalysts mentioned"
+      }
+    },
+    "composite_score": 51,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Anoma",
+    "ticker": "XAN",
+    "category": "Intent_Architecture",
+    "subcategory": "Intent-Centric Architecture",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "First generalized intent-centric architecture with ZK privacy, devnet stage",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": {
+        "value": "$57.75M",
+        "source": "1000x Opportunity Map"
+      },
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Exchanges (unspecified)",
+        "pair_or_url": "XAN"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Token launched late 2025 \u2014 still very early post-launch",
+        "est_date": "Late 2025 (occurred)",
+        "impact": "high"
+      },
+      {
+        "event": "Devnet to testnet to mainnet progression",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "Cross-chain atomic transactions with ZK privacy \u2014 potential paradigm shift in UX",
+        "est_date": null,
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Still at devnet stage despite token launch \u2014 execution risk",
+        "severity": "high"
+      },
+      {
+        "risk": "Intent-centric architecture is novel and unproven at scale",
+        "severity": "high"
+      },
+      {
+        "risk": "Token launched before mainnet \u2014 potential for value destruction if development stalls",
+        "severity": "medium"
+      },
+      {
+        "risk": "$57.75M raised creates dilution pressure from potential VC unlocks",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 80,
+        "evidence": "Intent-centric architecture where users express 'what' not 'how' \u2014 genuinely novel paradigm that most people cannot conceptualize; dismissed as academic vapor"
+      },
+      "working_code": {
+        "score_suggestion": 30,
+        "evidence": "Still at devnet stage; token launched but mainnet not live; genuinely early despite token launch"
+      },
+      "ideological_community": {
+        "score_suggestion": 55,
+        "evidence": "Intent-centric thesis has passionate advocates; cross-chain atomic transactions with ZK privacy appeals to cypherpunk ethos"
+      },
+      "developer_activity": {
+        "score_suggestion": 45,
+        "evidence": "Active development at devnet stage; $57.75M in funding suggests active team; but no developer count or GitHub metrics provided"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 60,
+        "evidence": "$57.75M raised \u2014 significant funding but specific backers not named in documents"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 70,
+        "evidence": "Users express intent, protocol handles execution \u2014 clean narrative. Cross-chain atomic transactions with ZK privacy"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 40,
+        "evidence": "Token launched late 2025; available on exchanges but may have limited liquidity given early stage"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 50,
+        "evidence": "Devnet stage with testnet/mainnet milestones ahead; token already live creating engagement"
+      }
+    },
+    "composite_score": 52,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "dappOS",
+    "ticker": null,
+    "category": "Intent_Architecture",
+    "subcategory": "Intent-Based Infrastructure",
+    "status": "pre_token",
+    "tier_suggestion": "2",
+    "one_liner": "Binance/Polychain/Sequoia-backed intent assets earning yield natively",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "airdrop_farming",
+        "platform": "dappOS",
+        "pair_or_url": "Use live product with intent assets"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Binance Labs",
+        "amount": null,
+        "round": null
+      },
+      {
+        "name": "Polychain Capital",
+        "amount": null,
+        "round": null
+      },
+      {
+        "name": "Sequoia",
+        "amount": null,
+        "round": null
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Potential token launch \u2014 backed by tier-1 VCs pre-token",
+        "est_date": null,
+        "impact": "high"
+      },
+      {
+        "event": "Intent assets that earn yield while functioning as native tokens \u2014 novel DeFi primitive",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Pre-token \u2014 no guarantee of token launch or airdrop",
+        "severity": "medium"
+      },
+      {
+        "risk": "Intent-based architecture is unproven at scale",
+        "severity": "medium"
+      },
+      {
+        "risk": "Smart contract risk with novel intent asset mechanics",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 60,
+        "evidence": "Intent assets earning yield while functioning as tokens dismissed as gimmick; novel DeFi primitive"
+      },
+      "working_code": {
+        "score_suggestion": 55,
+        "evidence": "Live product with intent assets that earn yield \u2014 functional protocol per 1000x Opportunity Map"
+      },
+      "ideological_community": {
+        "score_suggestion": 35,
+        "evidence": "No specific community metrics provided; likely building airdrop farming community"
+      },
+      "developer_activity": {
+        "score_suggestion": 45,
+        "evidence": "Live product implies active development; no developer metrics provided"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 90,
+        "evidence": "Binance Labs, Polychain Capital, and Sequoia \u2014 three of the most elite crypto/tech VCs"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 60,
+        "evidence": "Intent assets that earn yield while usable as native tokens \u2014 novel but requires explanation"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 70,
+        "evidence": "Pre-token; requires using the protocol directly to farm potential airdrop"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 50,
+        "evidence": "No specific token launch date; pre-token with top-tier backing suggests eventual launch"
+      }
+    },
+    "composite_score": 58,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "CoW Protocol",
+    "ticker": "COW",
+    "category": "Intent_Architecture",
+    "subcategory": "Intent-Based DEX / Batch Auctions",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Operational intent-based DEX with 30% monthly user retention",
+    "quantitative_data": {
+      "price": null,
+      "market_cap": null,
+      "ath": null,
+      "drawdown_from_ath": null,
+      "tvl": null,
+      "funding_raised": null,
+      "valuation": null,
+      "revenue_or_volume": null
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "DEX/CEX",
+        "pair_or_url": "COW"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Intent-based architecture gaining mainstream DeFi adoption",
+        "est_date": null,
+        "impact": "medium"
+      },
+      {
+        "event": "30% monthly retention demonstrates product-market fit",
+        "est_date": null,
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Competition from other DEX aggregators and intent protocols",
+        "severity": "medium"
+      },
+      {
+        "risk": "Limited quantitative data provided in source documents",
+        "severity": "low"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 35,
+        "evidence": "CoW Protocol is operational and known in DeFi; batch auction model was dismissed early but has proven functional"
+      },
+      "working_code": {
+        "score_suggestion": 80,
+        "evidence": "Already operational with 30% monthly retention \u2014 production protocol with real users"
+      },
+      "ideological_community": {
+        "score_suggestion": 45,
+        "evidence": "MEV protection ethos resonates with DeFi community; batch auctions protect users from front-running"
+      },
+      "developer_activity": {
+        "score_suggestion": 55,
+        "evidence": "Operational protocol with ongoing development; no specific developer metrics provided"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 30,
+        "evidence": "No specific smart money backers mentioned in documents"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 65,
+        "evidence": "Intent-based trading that protects users from MEV \u2014 clear DeFi narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 15,
+        "evidence": "Token live and tradeable on exchanges"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 30,
+        "evidence": "No specific upcoming catalysts mentioned; operational and growing organically"
+      }
+    },
+    "composite_score": 47,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  }
+]

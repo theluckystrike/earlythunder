@@ -1,0 +1,1573 @@
+[
+  {
+    "name": "TAE Technologies / Trump Media (TMTG) Merger",
+    "ticker": "DJT",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Direct",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "First publicly traded pure-play fusion stock via merger",
+    "quantitative_data": {
+      "price": {"value": "$9.18", "date": "2026-04-02", "source": "Atlas"},
+      "market_cap": {"value": "~$2.5B", "date": "2026-04-02", "source": "Atlas"},
+      "ath": {"value": "$27.78", "date": null, "source": "Atlas 52-week high"},
+      "drawdown_from_ath": {"value": "-67% from 52-week high", "source": "Atlas"},
+      "funding_raised": {"value": "$200M cash at signing + $100M upon S-4 filing", "source": "Atlas"},
+      "valuation": {"value": ">$6B combined entity", "date": "2025-12-18", "source": "Atlas"},
+      "revenue_or_volume": {"value": "$3.7M TTM revenue; -$712M net loss TTM", "period": "TTM", "source": "Atlas"}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "DJT"}
+    ],
+    "key_backers": [
+      {"name": "Google", "amount": null, "round": "TAE backer"},
+      {"name": "Chevron", "amount": null, "round": "TAE backer"},
+      {"name": "Goldman Sachs", "amount": null, "round": "TAE backer"}
+    ],
+    "technical_milestones": [
+      {"milestone": "First-ever NBI-only FRC plasma formation (published Nature Communications)", "date": "2025-04", "status": "completed"},
+      {"milestone": "Skipped 6th-gen Copernicus machine, proceeding directly to Da Vinci prototype", "date": "2025-04", "status": "completed"},
+      {"milestone": "Stable plasma at >70 million degrees C", "date": "2025-04", "status": "completed"},
+      {"milestone": "Reactor length/complexity reduced up to 50%", "date": "2025-04", "status": "completed"},
+      {"milestone": "Truth Social spin-off into SpinCo via TVA merger announced", "date": "2026-02-27", "status": "announced"},
+      {"milestone": "Begin constructing 50 MWe utility-scale plant", "date": "2026", "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "Merger expected closing mid-2026 (StockTitan target May 1, 2026)", "est_date": "2026-05", "impact": "high"},
+      {"event": "Truth Social spin-off creates pure-play fusion entity", "est_date": "2026", "impact": "high"},
+      {"event": "S-4 filing triggers $100M additional cash", "est_date": "2026", "impact": "medium"},
+      {"event": "Da Vinci commercial prototype construction", "est_date": "2026", "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Net energy gain NOT yet demonstrated", "severity": "critical"},
+      {"risk": "Trump-brand political entanglement and uncertainty", "severity": "high"},
+      {"risk": "TTM net loss of -$712M", "severity": "high"},
+      {"risk": "Beta of 4.54 — extreme volatility", "severity": "high"},
+      {"risk": "~50% dilution to existing DJT holders from all-stock merger", "severity": "high"},
+      {"risk": "No definitive agreement yet on Truth Social spin-off", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 60, "evidence": "Fusion widely dismissed as 'always 30 years away'; political brand adds extra dismissal from serious investors"},
+      "working_code": {"score_suggestion": 55, "evidence": "Nature Communications publication of NBI-only FRC plasma; skipped entire reactor generation; 70M+ degrees C plasma; 1,600+ patents"},
+      "ideological_community": {"score_suggestion": 30, "evidence": "Fusion community exists but DJT stock attracts meme-stock/political traders, not ideological fusion believers"},
+      "developer_activity": {"score_suggestion": 50, "evidence": "1,600+ patents; Nature Communications publication; Da Vinci prototype design advancement"},
+      "smart_money_entry": {"score_suggestion": 65, "evidence": "Google, Chevron, Goldman Sachs as TAE backers; $6B deal valuation"},
+      "narrative_clarity": {"score_suggestion": 75, "evidence": "First publicly traded pure-play fusion stock — clear one-sentence narrative"},
+      "hard_to_buy": {"score_suggestion": 10, "evidence": "Publicly traded on NASDAQ as DJT — very easy to buy"},
+      "catalyst_proximity": {"score_suggestion": 85, "evidence": "Merger closing mid-2026 (May target); Truth Social spin-off creating pure-play; immediate event-driven setup"}
+    },
+    "composite_score": 55.5,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Commonwealth Fusion Systems",
+    "ticker": null,
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Direct",
+    "status": "pre_ipo",
+    "tier_suggestion": "2",
+    "one_liner": "SPARC tokamak approaching first plasma 2027 with $3B raised",
+    "quantitative_data": {
+      "price": {"value": "$129.38-$222.90/share on secondary", "date": "2026-04-11", "source": "Atlas (Hiive/Nasdaq Private Market)"},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": "~$3B total (~1/3 of all private fusion capital globally); Series B2 $863M Aug 2025", "source": "Atlas + Map"},
+      "valuation": {"value": "$5-6B estimated", "date": "2025-08", "source": "Atlas"},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "pre_ipo", "platform": "EquityZen", "pair_or_url": "equityzen.com"},
+      {"type": "pre_ipo", "platform": "Hiive", "pair_or_url": "hiive.com — $129.38/share as of April 11, 2026"},
+      {"type": "pre_ipo", "platform": "Forge Global", "pair_or_url": "forgeglobal.com"},
+      {"type": "pre_ipo", "platform": "Nasdaq Private Market", "pair_or_url": "$222.90/share"}
+    ],
+    "key_backers": [
+      {"name": "Nvidia", "amount": null, "round": "Series B2"},
+      {"name": "Google", "amount": null, "round": "Series B2 + investor since 2021"},
+      {"name": "Eni", "amount": "$50M+", "round": "investor + >$1B PPA"},
+      {"name": "~36 others", "amount": null, "round": "Series B2"}
+    ],
+    "technical_milestones": [
+      {"milestone": "First of 18 toroidal field magnets installed (24 tons, 20 tesla each)", "date": "2026-01", "status": "completed"},
+      {"milestone": "All 18 magnets installed", "date": "2026 end of summer", "status": "upcoming"},
+      {"milestone": "SPARC machine substantially complete", "date": "2026 end of year", "status": "upcoming"},
+      {"milestone": "First plasma", "date": "2027", "status": "upcoming"},
+      {"milestone": "Net energy demonstration Q>1 (expected Q~11)", "date": "2027-Q1", "status": "upcoming"},
+      {"milestone": "ARC commercial plant 400 MWe in Chesterfield County, Virginia", "date": "early 2030s", "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "All 18 SPARC magnets installed by end of summer 2026", "est_date": "2026-09", "impact": "high"},
+      {"event": "SPARC machine substantially complete end of 2026", "est_date": "2026-12", "impact": "high"},
+      {"event": "First plasma 2027", "est_date": "2027", "impact": "high"},
+      {"event": "Net energy Q~11 demonstration Q1 2027", "est_date": "2027-Q1", "impact": "high"},
+      {"event": "Google 200 MW PPA fulfillment", "est_date": "early 2030s", "impact": "medium"},
+      {"event": "Eni >$1B PPA for ARC plant", "est_date": "early 2030s", "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "No IPO announced or expected soon — illiquid investment", "severity": "high"},
+      {"risk": "Wide secondary market price spread ($129-$223) signals uncertainty", "severity": "medium"},
+      {"risk": "Net energy not yet demonstrated", "severity": "high"},
+      {"risk": "ARC commercial plant not until early 2030s", "severity": "medium"},
+      {"risk": "Accredited investor requirement for pre-IPO access", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "Fusion still widely dismissed; but CFS is the 'institutional darling' reducing dismissal factor"},
+      "working_code": {"score_suggestion": 70, "evidence": "First magnet installed Jan 2026; 18 magnets on schedule; SPARC physically under construction"},
+      "ideological_community": {"score_suggestion": 40, "evidence": "Strong institutional following but not grassroots ideological community"},
+      "developer_activity": {"score_suggestion": 75, "evidence": "~$3B raised; active construction; 18 magnets being installed on schedule; multiple PPAs signed"},
+      "smart_money_entry": {"score_suggestion": 90, "evidence": "Nvidia, Google, Eni investing; $863M Series B2; ~1/3 of all private fusion capital globally"},
+      "narrative_clarity": {"score_suggestion": 70, "evidence": "Clean energy from fusion — clear narrative; SPARC approaching first plasma is tangible"},
+      "hard_to_buy": {"score_suggestion": 80, "evidence": "Pre-IPO only via EquityZen, Hiive, Forge — accredited investors only; no public listing"},
+      "catalyst_proximity": {"score_suggestion": 80, "evidence": "Magnets completing summer 2026; machine complete end 2026; first plasma 2027 — near-term milestones"}
+    },
+    "composite_score": 72.0,
+    "community_links": {"twitter": null, "website": "cfs.energy"}
+  },
+  {
+    "name": "Helion Energy",
+    "ticker": null,
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Direct",
+    "status": "pre_ipo",
+    "tier_suggestion": "2",
+    "one_liner": "Altman-backed fusion with first D-T fuel milestone achieved",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": ">$1B total (Series F Jan 2025)", "source": "Atlas + Map"},
+      "valuation": {"value": "$5.4B post-Series F", "date": "2025-01", "source": "Atlas"},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "pre_ipo", "platform": "Secondary markets (Forge/EquityZen)", "pair_or_url": null}
+    ],
+    "key_backers": [
+      {"name": "Sam Altman", "amount": "$375M personal investment", "round": "Executive Chairman"},
+      {"name": "BlackRock", "amount": null, "round": "investor"},
+      {"name": "Microsoft", "amount": null, "round": "50 MW PPA"}
+    ],
+    "technical_milestones": [
+      {"milestone": "Achieved 150 million degrees C plasma (Polaris)", "date": "2026-02-13", "status": "completed"},
+      {"milestone": "First private fusion machine to operate with D-T fuel demonstrating thermonuclear fusion", "date": "2026-02-13", "status": "completed"},
+      {"milestone": "Orion plant groundbreaking in Malaga, WA", "date": "2025-07", "status": "completed"},
+      {"milestone": "Target 200M degrees C plasma", "date": null, "status": "upcoming"},
+      {"milestone": "Orion plant 50 MW capacity — Microsoft PPA for 2028 delivery", "date": "2028", "status": "upcoming"},
+      {"milestone": "Net electricity demonstration (originally targeted 2024 — not yet achieved)", "date": null, "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "Microsoft PPA delivery target for 50 MW Orion plant", "est_date": "2028", "impact": "high"},
+      {"event": "Nucor 500 MWe plant discussions", "est_date": null, "impact": "high"},
+      {"event": "Reported OpenAI 5 GW by 2030 discussions (unconfirmed Axios)", "est_date": "2030", "impact": "high"},
+      {"event": "200M degrees C plasma target achievement", "est_date": null, "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Net electricity NOT yet demonstrated (originally targeted 2024)", "severity": "critical"},
+      {"risk": "Private company — limited access for non-accredited investors", "severity": "high"},
+      {"risk": "Aggressive timeline may continue slipping", "severity": "high"},
+      {"risk": "Key-person risk with Sam Altman as executive chairman", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 50, "evidence": "Fusion dismissed broadly; Helion's missed 2024 net electricity target adds skepticism"},
+      "working_code": {"score_suggestion": 65, "evidence": "150M degrees C plasma achieved Feb 2026; first private machine with D-T fuel; Orion plant under construction"},
+      "ideological_community": {"score_suggestion": 35, "evidence": "No grassroots community; institutional/tech following via Altman/Microsoft connections"},
+      "developer_activity": {"score_suggestion": 60, "evidence": "Polaris milestone Feb 2026; Orion plant groundbreaking July 2025; active construction"},
+      "smart_money_entry": {"score_suggestion": 85, "evidence": "Sam Altman $375M personal; BlackRock; Microsoft PPA (world's first commercial fusion PPA)"},
+      "narrative_clarity": {"score_suggestion": 65, "evidence": "Altman-backed fusion with Microsoft deal — strong narrative but missed deadline weakens it"},
+      "hard_to_buy": {"score_suggestion": 85, "evidence": "Private; secondary market access only for accredited investors"},
+      "catalyst_proximity": {"score_suggestion": 50, "evidence": "Microsoft PPA target is 2028; near-term milestones less defined than CFS"}
+    },
+    "composite_score": 62.5,
+    "community_links": {"twitter": null, "website": "helionenergy.com"}
+  },
+  {
+    "name": "Pacific Fusion",
+    "ticker": null,
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Direct",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "Inertial confinement fusion with record $900M Series A",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": "$900M Series A", "source": "Map"},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "pre_ipo", "platform": "Private — likely requires institutional/accredited access", "pair_or_url": null}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Inertial confinement fusion approach", "date": null, "status": "announced"}
+    ],
+    "catalysts": [],
+    "risks": [
+      {"risk": "Very early stage — pre-product", "severity": "critical"},
+      {"risk": "Inertial confinement is less proven commercially than magnetic confinement", "severity": "high"},
+      {"risk": "No public access mechanism", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "Fusion broadly dismissed; inertial confinement even more niche"},
+      "working_code": {"score_suggestion": 20, "evidence": "No specific technical milestones reported in documents"},
+      "ideological_community": {"score_suggestion": 15, "evidence": "No community data in documents"},
+      "developer_activity": {"score_suggestion": 25, "evidence": "Massive $900M raise implies significant team/activity but no specifics"},
+      "smart_money_entry": {"score_suggestion": 60, "evidence": "$900M Series A is largest fusion Series A — implies major institutional backing"},
+      "narrative_clarity": {"score_suggestion": 40, "evidence": "Inertial confinement fusion — clear but niche narrative"},
+      "hard_to_buy": {"score_suggestion": 95, "evidence": "Fully private, no secondary market mentions"},
+      "catalyst_proximity": {"score_suggestion": 20, "evidence": "No near-term catalysts identified in documents"}
+    },
+    "composite_score": 37.75,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Nucor Corporation",
+    "ticker": "NUE",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Adjacent",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "Steel giant with direct $35M Helion fusion investment",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NYSE", "pair_or_url": "NUE"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Invested $35M directly in Helion Energy", "date": null, "status": "completed"},
+      {"milestone": "500 MW fusion plant planned at Nucor steel mill", "date": null, "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "Helion Orion plant completion and 500 MW plant for Nucor", "est_date": null, "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Fusion exposure is tiny relative to overall Nucor business", "severity": "medium"},
+      {"risk": "Dependent on Helion achieving commercial fusion", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 20, "evidence": "Nucor is a well-known steel company — not dismissed, but fusion angle is overlooked"},
+      "working_code": {"score_suggestion": 15, "evidence": "Nucor itself has no fusion technology; dependent on Helion"},
+      "ideological_community": {"score_suggestion": 10, "evidence": "No fusion-specific community around Nucor"},
+      "developer_activity": {"score_suggestion": 10, "evidence": "Fusion activity is Helion's, not Nucor's"},
+      "smart_money_entry": {"score_suggestion": 40, "evidence": "$35M direct investment in Helion shows institutional conviction in fusion"},
+      "narrative_clarity": {"score_suggestion": 35, "evidence": "Industrial company pivoting to fusion-powered steel — interesting but complex narrative"},
+      "hard_to_buy": {"score_suggestion": 5, "evidence": "Major NYSE-listed company, trivial to buy"},
+      "catalyst_proximity": {"score_suggestion": 25, "evidence": "500 MW plant timeline undefined; dependent on Helion milestones"}
+    },
+    "composite_score": 20.0,
+    "community_links": {"twitter": null, "website": "nucor.com"}
+  },
+  {
+    "name": "AMSC (American Superconductor)",
+    "ticker": "AMSC",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Adjacent",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "Most direct HTS pure-play for fusion magnet wire",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "AMSC"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Amperium wire critical for fusion magnets — most direct HTS pure-play", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "SPARC and other fusion magnet programs driving HTS demand", "est_date": "2026-2027", "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Revenue not solely fusion-dependent — diluted exposure", "severity": "low"},
+      {"risk": "Fusion timeline delays reduce near-term demand catalyst", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 30, "evidence": "Superconductor wire is niche but not dismissed — fusion angle underappreciated"},
+      "working_code": {"score_suggestion": 70, "evidence": "Amperium wire is a real, shipping product critical for fusion magnets"},
+      "ideological_community": {"score_suggestion": 10, "evidence": "Industrial company, no ideological community"},
+      "developer_activity": {"score_suggestion": 45, "evidence": "Active HTS wire production; Amperium product line"},
+      "smart_money_entry": {"score_suggestion": 30, "evidence": "No specific fusion-related smart money data in documents"},
+      "narrative_clarity": {"score_suggestion": 50, "evidence": "Picks-and-shovels play for fusion — clear secondary narrative"},
+      "hard_to_buy": {"score_suggestion": 5, "evidence": "Public NASDAQ stock"},
+      "catalyst_proximity": {"score_suggestion": 40, "evidence": "CFS SPARC magnet installation ongoing through 2026; demand driver"}
+    },
+    "composite_score": 37.75,
+    "community_links": {"twitter": null, "website": "amsc.com"}
+  },
+  {
+    "name": "Bruker Corporation",
+    "ticker": "BRKR",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Adjacent",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "REBCO HTS conductors and magnet systems via BEST division",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "BRKR"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "REBCO HTS conductors + magnet systems via BEST division", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Fusion magnet demand growth from CFS SPARC and others", "est_date": "2026-2027", "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Fusion is small fraction of overall Bruker revenue", "severity": "low"},
+      {"risk": "BEST division contribution not broken out publicly", "severity": "low"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 25, "evidence": "Bruker is diversified scientific instruments company; fusion angle overlooked"},
+      "working_code": {"score_suggestion": 65, "evidence": "REBCO HTS conductors are shipping products used in fusion R&D"},
+      "ideological_community": {"score_suggestion": 5, "evidence": "No community — institutional scientific instruments company"},
+      "developer_activity": {"score_suggestion": 40, "evidence": "Active BEST division producing HTS conductors"},
+      "smart_money_entry": {"score_suggestion": 20, "evidence": "No fusion-specific smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 40, "evidence": "Fusion picks-and-shovels via REBCO magnets"},
+      "hard_to_buy": {"score_suggestion": 5, "evidence": "Public NASDAQ stock"},
+      "catalyst_proximity": {"score_suggestion": 35, "evidence": "CFS magnet installation drives near-term demand"}
+    },
+    "composite_score": 33.0,
+    "community_links": {"twitter": null, "website": "bruker.com"}
+  },
+  {
+    "name": "Alphabet Inc.",
+    "ticker": "GOOG",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Adjacent",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "CFS investor since 2021 with 200 MW PPA signed",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "GOOG"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Invested in CFS since 2021", "date": "2021", "status": "completed"},
+      {"milestone": "200 MW PPA with CFS ARC plant", "date": null, "status": "announced"},
+      {"milestone": "10+ year TAE Technologies partnership", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "CFS SPARC first plasma validates Google's fusion bet", "est_date": "2027", "impact": "low"}
+    ],
+    "risks": [
+      {"risk": "Fusion exposure is immaterial to overall Alphabet value", "severity": "low"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 15, "evidence": "Google is a mega-cap; fusion is a footnote in its portfolio"},
+      "working_code": {"score_suggestion": 10, "evidence": "Google is a buyer/investor, not a fusion developer"},
+      "ideological_community": {"score_suggestion": 5, "evidence": "No fusion community around Google"},
+      "developer_activity": {"score_suggestion": 10, "evidence": "Investment/partnership activity, not direct R&D"},
+      "smart_money_entry": {"score_suggestion": 50, "evidence": "Google itself IS the smart money — investing in CFS and TAE validates fusion thesis"},
+      "narrative_clarity": {"score_suggestion": 20, "evidence": "Fusion is one of hundreds of Google bets"},
+      "hard_to_buy": {"score_suggestion": 5, "evidence": "Most liquid stock in the world"},
+      "catalyst_proximity": {"score_suggestion": 15, "evidence": "No near-term Google-specific fusion catalyst"}
+    },
+    "composite_score": 16.0,
+    "community_links": {"twitter": null, "website": "abc.xyz"}
+  },
+  {
+    "name": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Adjacent",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "World's first commercial fusion PPA with Helion Energy",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "MSFT"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "50 MW Helion PPA — world's first commercial fusion PPA", "date": null, "status": "announced"}
+    ],
+    "catalysts": [
+      {"event": "Helion Orion plant 2028 delivery target for Microsoft PPA", "est_date": "2028", "impact": "low"}
+    ],
+    "risks": [
+      {"risk": "Fusion PPA is immaterial to overall Microsoft value", "severity": "low"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 15, "evidence": "Microsoft is mega-cap; fusion PPA is a headline, not a material bet"},
+      "working_code": {"score_suggestion": 10, "evidence": "Microsoft is a buyer, not developer of fusion"},
+      "ideological_community": {"score_suggestion": 5, "evidence": "No fusion community around Microsoft"},
+      "developer_activity": {"score_suggestion": 5, "evidence": "PPA only — no direct fusion development"},
+      "smart_money_entry": {"score_suggestion": 45, "evidence": "Microsoft signing world's first commercial fusion PPA validates the commercial thesis"},
+      "narrative_clarity": {"score_suggestion": 25, "evidence": "First commercial fusion PPA is notable but tiny for MSFT"},
+      "hard_to_buy": {"score_suggestion": 5, "evidence": "Most liquid stock in the world"},
+      "catalyst_proximity": {"score_suggestion": 15, "evidence": "2028 PPA delivery date is distant"}
+    },
+    "composite_score": 14.75,
+    "community_links": {"twitter": null, "website": "microsoft.com"}
+  },
+  {
+    "name": "Eni S.p.A.",
+    "ticker": "E",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Adjacent",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "CFS investor with $50M+ invested and >$1B PPA",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NYSE", "pair_or_url": "E"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "$50M+ invested in CFS", "date": null, "status": "completed"},
+      {"milestone": ">$1B PPA for CFS ARC plant", "date": null, "status": "announced"}
+    ],
+    "catalysts": [
+      {"event": "CFS ARC plant completion triggers >$1B PPA", "est_date": "early 2030s", "impact": "low"}
+    ],
+    "risks": [
+      {"risk": "Fusion exposure immaterial to overall Eni energy portfolio", "severity": "low"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 15, "evidence": "Major oil company; fusion is a diversification footnote"},
+      "working_code": {"score_suggestion": 10, "evidence": "Investor/buyer only"},
+      "ideological_community": {"score_suggestion": 5, "evidence": "No fusion community around Eni"},
+      "developer_activity": {"score_suggestion": 5, "evidence": "PPA and investment only"},
+      "smart_money_entry": {"score_suggestion": 40, "evidence": "$50M+ CFS investment and >$1B PPA shows serious energy-sector conviction"},
+      "narrative_clarity": {"score_suggestion": 20, "evidence": "Oil major pivoting to fusion is interesting but distant"},
+      "hard_to_buy": {"score_suggestion": 5, "evidence": "NYSE-listed ADR"},
+      "catalyst_proximity": {"score_suggestion": 10, "evidence": "ARC plant early 2030s"}
+    },
+    "composite_score": 14.0,
+    "community_links": {"twitter": null, "website": "eni.com"}
+  },
+  {
+    "name": "Linde plc",
+    "ticker": "LIN",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Adjacent",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "Turnkey cryogenic infrastructure for fusion magnet cooling",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NYSE", "pair_or_url": "LIN"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Turnkey cryogenic infrastructure for superconducting magnet cooling", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Fusion reactor builds driving cryogenic infrastructure demand", "est_date": "2026-2030", "impact": "low"}
+    ],
+    "risks": [
+      {"risk": "Fusion cryogenics is tiny fraction of Linde's industrial gas business", "severity": "low"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 10, "evidence": "Linde is a well-known industrial gas company; fusion angle is a footnote"},
+      "working_code": {"score_suggestion": 60, "evidence": "Cryogenic infrastructure is mature, shipping product — applied to fusion cooling"},
+      "ideological_community": {"score_suggestion": 5, "evidence": "No community"},
+      "developer_activity": {"score_suggestion": 10, "evidence": "Existing industrial capability applied to fusion"},
+      "smart_money_entry": {"score_suggestion": 15, "evidence": "No fusion-specific investment signals"},
+      "narrative_clarity": {"score_suggestion": 20, "evidence": "Indirect fusion exposure via cryogenics"},
+      "hard_to_buy": {"score_suggestion": 5, "evidence": "Major NYSE stock"},
+      "catalyst_proximity": {"score_suggestion": 15, "evidence": "No specific near-term fusion-driven catalyst"}
+    },
+    "composite_score": 19.75,
+    "community_links": {"twitter": null, "website": "linde.com"}
+  },
+  {
+    "name": "Furukawa Electric",
+    "ticker": "5801",
+    "category": "Fusion_Energy",
+    "subcategory": "Fusion_Adjacent",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "World-leading REBCO tape producer via SuperPower subsidiary",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TYO (Tokyo Stock Exchange)", "pair_or_url": "5801"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "World-leading REBCO tape producer via SuperPower Inc. subsidiary", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Fusion magnet programs driving REBCO tape demand", "est_date": "2026-2030", "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Tokyo-listed — harder for US investors to access", "severity": "medium"},
+      {"risk": "REBCO tape is one division within large conglomerate", "severity": "low"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 20, "evidence": "Japanese industrial conglomerate; fusion tape angle very niche"},
+      "working_code": {"score_suggestion": 70, "evidence": "World-leading REBCO tape production is a real, shipping product critical for fusion"},
+      "ideological_community": {"score_suggestion": 5, "evidence": "No community"},
+      "developer_activity": {"score_suggestion": 40, "evidence": "Active REBCO production via SuperPower Inc."},
+      "smart_money_entry": {"score_suggestion": 15, "evidence": "No fusion-specific smart money signals"},
+      "narrative_clarity": {"score_suggestion": 35, "evidence": "Key supplier of critical fusion magnet material"},
+      "hard_to_buy": {"score_suggestion": 30, "evidence": "Tokyo Stock Exchange — requires international brokerage access"},
+      "catalyst_proximity": {"score_suggestion": 30, "evidence": "CFS SPARC magnet installation drives near-term demand"}
+    },
+    "composite_score": 33.25,
+    "community_links": {"twitter": null, "website": "furukawa.co.jp"}
+  },
+  {
+    "name": "Skyharbour Resources",
+    "ticker": "SYH",
+    "category": "Critical_Minerals",
+    "subcategory": "Uranium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "High-grade Athabasca uranium with 11.77% U3O8 drill results",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "~C$35M", "date": "2026-04", "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": "SYH"}
+    ],
+    "key_backers": [
+      {"name": "Denison Mines", "amount": "$18M strategic agreement", "round": "strategic"}
+    ],
+    "technical_milestones": [
+      {"milestone": "11.77% U3O8 over 1.6m at Moore Project", "date": null, "status": "completed"},
+      {"milestone": "15,000m 2026 drill program", "date": "2026", "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "15,000m drill program results in 2026", "est_date": "2026", "impact": "high"},
+      {"event": "Uranium spot price push toward Citi $100/lb forecast", "est_date": "2026", "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Junior explorer — no production revenue", "severity": "high"},
+      {"risk": "Uranium price volatility", "severity": "medium"},
+      {"risk": "TSXV micro-cap liquidity risk", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "Junior uranium miners dismissed by mainstream; TSXV micro-caps overlooked"},
+      "working_code": {"score_suggestion": 50, "evidence": "11.77% U3O8 over 1.6m is genuinely high-grade drill result; Moore Project is real"},
+      "ideological_community": {"score_suggestion": 55, "evidence": "Active r/UraniumSqueeze community; uranium bull thesis has ideological following"},
+      "developer_activity": {"score_suggestion": 50, "evidence": "15,000m drill program planned for 2026; active exploration"},
+      "smart_money_entry": {"score_suggestion": 60, "evidence": "Denison Mines $18M strategic agreement validates the asset"},
+      "narrative_clarity": {"score_suggestion": 65, "evidence": "High-grade Athabasca uranium in structural deficit — clear narrative"},
+      "hard_to_buy": {"score_suggestion": 60, "evidence": "TSXV-listed; requires access to Canadian exchanges (Interactive Brokers/Questrade)"},
+      "catalyst_proximity": {"score_suggestion": 70, "evidence": "2026 drill results imminent; uranium price catalysts active"}
+    },
+    "composite_score": 56.75,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "F3 Uranium",
+    "ticker": "FUU",
+    "category": "Critical_Minerals",
+    "subcategory": "Uranium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "JR Zone discovery with 12.23% U3O8 high-grade domain",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "Small cap", "date": null, "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": "FUU"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "JR Zone: 12.23% U3O8 in high-grade domain of 10.8M lbs", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Continued drilling expanding JR Zone resource", "est_date": "2026", "impact": "high"},
+      {"event": "Uranium spot price recovery toward $100/lb", "est_date": "2026", "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Junior explorer — no production revenue", "severity": "high"},
+      {"risk": "Small cap with limited liquidity", "severity": "high"},
+      {"risk": "Uranium price dependency", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "Junior uranium miners broadly dismissed; TSXV micro-cap overlooked"},
+      "working_code": {"score_suggestion": 55, "evidence": "12.23% U3O8 in 10.8M lb resource is strong drill result"},
+      "ideological_community": {"score_suggestion": 55, "evidence": "r/UraniumSqueeze community following; uranium bull thesis"},
+      "developer_activity": {"score_suggestion": 45, "evidence": "JR Zone discovery completed; further drilling expected"},
+      "smart_money_entry": {"score_suggestion": 30, "evidence": "No specific smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 65, "evidence": "High-grade uranium discovery in Athabasca Basin during structural deficit"},
+      "hard_to_buy": {"score_suggestion": 60, "evidence": "TSXV small cap — requires Canadian exchange access"},
+      "catalyst_proximity": {"score_suggestion": 60, "evidence": "Uranium price catalysts active; drilling expected"}
+    },
+    "composite_score": 51.5,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "North Shore Uranium",
+    "ticker": "NSU",
+    "category": "Critical_Minerals",
+    "subcategory": "Uranium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "YTD gain 637.5% in 2025 with 11.4M lbs historical resource",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "C$22M", "date": null, "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": "NSU"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "11.4M lbs historical resource", "date": null, "status": "completed"},
+      {"milestone": "YTD gain 637.5% in 2025", "date": "2025", "status": "completed"},
+      {"milestone": "Drilling planned H1 2026", "date": "2026-H1", "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "H1 2026 drill program results", "est_date": "2026-H1", "impact": "high"},
+      {"event": "Uranium price catalysts", "est_date": "2026", "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Already up 637.5% — potential retracement risk", "severity": "high"},
+      {"risk": "Historical resource needs modern confirmation", "severity": "medium"},
+      {"risk": "C$22M micro-cap liquidity risk", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 50, "evidence": "Junior uranium micro-cap on TSXV — dismissed by mainstream"},
+      "working_code": {"score_suggestion": 40, "evidence": "11.4M lbs historical resource exists but needs modern drilling to confirm"},
+      "ideological_community": {"score_suggestion": 55, "evidence": "Uranium community following; massive YTD gains signal retail attention"},
+      "developer_activity": {"score_suggestion": 40, "evidence": "H1 2026 drill program planned"},
+      "smart_money_entry": {"score_suggestion": 25, "evidence": "No specific smart money signals; 637.5% gain may be retail-driven"},
+      "narrative_clarity": {"score_suggestion": 60, "evidence": "Uranium junior with historical resource and drilling catalyst"},
+      "hard_to_buy": {"score_suggestion": 65, "evidence": "TSXV micro-cap C$22M — very limited liquidity"},
+      "catalyst_proximity": {"score_suggestion": 65, "evidence": "H1 2026 drill program imminent"}
+    },
+    "composite_score": 47.0,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Standard Uranium",
+    "ticker": "STND",
+    "category": "Critical_Minerals",
+    "subcategory": "Uranium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Corvo target with grab samples up to 8.1% U3O8",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "Small cap", "date": null, "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": "STND"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Corvo target grab samples up to 8.1% U3O8", "date": null, "status": "completed"},
+      {"milestone": "Inaugural drill program winter 2026", "date": "2026 winter", "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "Inaugural Corvo drill program results winter 2026", "est_date": "2026-Q1", "impact": "high"},
+      {"event": "Uranium price environment", "est_date": "2026", "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Pre-drill explorer — highest risk stage", "severity": "critical"},
+      {"risk": "Grab samples are surface only — drill results may disappoint", "severity": "high"},
+      {"risk": "Micro-cap liquidity risk", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 60, "evidence": "Pre-drill TSXV micro-cap — maximum dismissal level"},
+      "working_code": {"score_suggestion": 30, "evidence": "Only grab samples so far — no drill-confirmed resource"},
+      "ideological_community": {"score_suggestion": 50, "evidence": "Part of uranium community thesis"},
+      "developer_activity": {"score_suggestion": 35, "evidence": "Inaugural drill program planned — early stage"},
+      "smart_money_entry": {"score_suggestion": 20, "evidence": "No smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 55, "evidence": "High-grade uranium grab samples with first drill upcoming"},
+      "hard_to_buy": {"score_suggestion": 70, "evidence": "TSXV micro-cap with likely very low liquidity"},
+      "catalyst_proximity": {"score_suggestion": 70, "evidence": "Inaugural drill winter 2026 — imminent binary catalyst"}
+    },
+    "composite_score": 44.25,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Aero Energy",
+    "ticker": "AERO",
+    "category": "Critical_Minerals",
+    "subcategory": "Uranium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Becoming Manhattan Uranium Discovery in Athabasca Basin",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "C$13.25M", "date": null, "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": "AERO"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Merging with two companies to form Manhattan Uranium Discovery", "date": null, "status": "announced"},
+      {"milestone": "Athabasca Basin properties", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Merger completion forming Manhattan Uranium Discovery", "est_date": "2026", "impact": "high"},
+      {"event": "Drill results from Athabasca Basin properties", "est_date": "2026", "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "C$13.25M market cap — extremely small and illiquid", "severity": "critical"},
+      {"risk": "Merger execution risk", "severity": "high"},
+      {"risk": "Early-stage explorer with no resource defined", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 65, "evidence": "C$13.25M micro-cap on TSXV — maximum dismissal; most investors have never heard of it"},
+      "working_code": {"score_suggestion": 25, "evidence": "Athabasca Basin properties but no specific drill results mentioned"},
+      "ideological_community": {"score_suggestion": 50, "evidence": "Part of uranium community thesis on r/UraniumSqueeze"},
+      "developer_activity": {"score_suggestion": 30, "evidence": "Merger activity creating larger entity"},
+      "smart_money_entry": {"score_suggestion": 20, "evidence": "No smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 55, "evidence": "Manhattan Uranium Discovery branding in Athabasca Basin"},
+      "hard_to_buy": {"score_suggestion": 75, "evidence": "C$13.25M TSXV micro-cap — extremely illiquid"},
+      "catalyst_proximity": {"score_suggestion": 60, "evidence": "Merger expected 2026; creates new combined entity catalyst"}
+    },
+    "composite_score": 42.25,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Western Uranium & Vanadium",
+    "ticker": null,
+    "category": "Critical_Minerals",
+    "subcategory": "Uranium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "TSX/CSE uranium junior with CEO actively buying shares",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "~C$49M", "date": null, "source": "Map"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSX/CSE", "pair_or_url": null}
+    ],
+    "key_backers": [],
+    "technical_milestones": [],
+    "catalysts": [
+      {"event": "CEO insider buying signals confidence", "est_date": null, "impact": "medium"},
+      {"event": "Uranium price catalysts", "est_date": "2026", "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Junior miner with limited production details in documents", "severity": "high"},
+      {"risk": "C$49M market cap — limited liquidity", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 50, "evidence": "Junior uranium on TSX/CSE — dismissed by mainstream"},
+      "working_code": {"score_suggestion": 30, "evidence": "No specific drill results or resource data in documents"},
+      "ideological_community": {"score_suggestion": 50, "evidence": "Part of uranium community thesis"},
+      "developer_activity": {"score_suggestion": 25, "evidence": "Limited development data in documents"},
+      "smart_money_entry": {"score_suggestion": 40, "evidence": "CEO buying own shares — insider confidence signal"},
+      "narrative_clarity": {"score_suggestion": 50, "evidence": "Uranium + vanadium dual commodity exposure"},
+      "hard_to_buy": {"score_suggestion": 55, "evidence": "TSX/CSE listed — requires Canadian exchange access"},
+      "catalyst_proximity": {"score_suggestion": 45, "evidence": "Uranium price environment is active catalyst"}
+    },
+    "composite_score": 39.25,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "District Metals",
+    "ticker": null,
+    "category": "Critical_Minerals",
+    "subcategory": "Uranium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "World's largest undeveloped uranium resource in Sweden with polymetallic upside",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": null}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Holds world's largest undeveloped uranium resource in Sweden", "date": null, "status": "completed"},
+      {"milestone": "Polymetallic upside beyond uranium", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Development of Sweden uranium resource", "est_date": null, "impact": "high"},
+      {"event": "Uranium price catalysts", "est_date": "2026", "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Sweden has historically had uranium mining restrictions", "severity": "high"},
+      {"risk": "Undeveloped resource — long timeline to production", "severity": "high"},
+      {"risk": "TSXV micro-cap liquidity risk", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "TSXV micro-cap with Swedish uranium asset — very niche"},
+      "working_code": {"score_suggestion": 35, "evidence": "World's largest undeveloped uranium resource is significant but undeveloped"},
+      "ideological_community": {"score_suggestion": 45, "evidence": "Part of uranium community thesis"},
+      "developer_activity": {"score_suggestion": 30, "evidence": "Limited development details in documents"},
+      "smart_money_entry": {"score_suggestion": 25, "evidence": "No specific smart money signals"},
+      "narrative_clarity": {"score_suggestion": 60, "evidence": "World's largest undeveloped uranium resource — powerful narrative"},
+      "hard_to_buy": {"score_suggestion": 65, "evidence": "TSXV micro-cap; Swedish jurisdiction adds complexity"},
+      "catalyst_proximity": {"score_suggestion": 40, "evidence": "No specific near-term catalyst beyond uranium price"}
+    },
+    "composite_score": 40.5,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Sprott Junior Uranium Miners ETF",
+    "ticker": "URNJ",
+    "category": "Critical_Minerals",
+    "subcategory": "Uranium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Diversified junior uranium ETF at $33.41 with $447M AUM",
+    "quantitative_data": {
+      "price": {"value": "$33.41", "date": "2026-04", "source": "Atlas"},
+      "market_cap": {"value": "AUM ~$447M", "date": "2026-04", "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NYSE Arca / US exchanges", "pair_or_url": "URNJ"}
+    ],
+    "key_backers": [
+      {"name": "Sprott", "amount": null, "round": "ETF sponsor"}
+    ],
+    "technical_milestones": [],
+    "catalysts": [
+      {"event": "Uranium spot price toward Citi $100/lb forecast", "est_date": "2026", "impact": "high"},
+      {"event": "Structural uranium supply deficit widening", "est_date": "2026-2040", "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Junior miners have high failure rates", "severity": "high"},
+      {"risk": "Uranium price volatility", "severity": "medium"},
+      {"risk": "ETF diversification limits individual upside", "severity": "low"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 40, "evidence": "Uranium is gaining mainstream attention; ETF reduces 'toy' perception"},
+      "working_code": {"score_suggestion": 40, "evidence": "ETF of juniors — portfolio of real exploration/development companies"},
+      "ideological_community": {"score_suggestion": 55, "evidence": "Strong uranium community on r/UraniumSqueeze; Uranium Insider newsletter"},
+      "developer_activity": {"score_suggestion": 35, "evidence": "Underlying companies have various drill programs"},
+      "smart_money_entry": {"score_suggestion": 50, "evidence": "Sprott is respected mining fund; $447M AUM shows institutional interest"},
+      "narrative_clarity": {"score_suggestion": 70, "evidence": "Easy one-sentence: diversified junior uranium exposure during structural deficit"},
+      "hard_to_buy": {"score_suggestion": 10, "evidence": "US-listed ETF — very easy to buy"},
+      "catalyst_proximity": {"score_suggestion": 65, "evidence": "Uranium at $84.55 with Citi $100 target; active price catalysts"}
+    },
+    "composite_score": 45.75,
+    "community_links": {"twitter": null, "website": "sprottetfs.com"}
+  },
+  {
+    "name": "Blue Moon Metals",
+    "ticker": "BMM",
+    "category": "Critical_Minerals",
+    "subcategory": "Gallium_Germanium",
+    "status": "public_equity",
+    "tier_suggestion": "1",
+    "one_liner": "Western gallium-germanium mine with Teck/Oaktree/Wheaton backing",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "~C$80-100M", "date": "2026-04", "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": "US$140M project finance secured (Nussir copper)", "source": "Atlas"},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "BMM"},
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": "MOON"}
+    ],
+    "key_backers": [
+      {"name": "Teck Resources", "amount": null, "round": "Major shareholder; sold Apex mine to BMM"},
+      {"name": "Oaktree", "amount": null, "round": "Major shareholder"},
+      {"name": "Wheaton Precious Metals", "amount": null, "round": "Major shareholder"}
+    ],
+    "technical_milestones": [
+      {"milestone": "NASDAQ listing (BMM)", "date": "2026-01-26", "status": "completed"},
+      {"milestone": "Acquired Apex Germanium and Gallium Mine from Teck", "date": "2026-03-16", "status": "completed"},
+      {"milestone": "40,000m drilling program planned for 2026", "date": "2026", "status": "upcoming"},
+      {"milestone": "Nussir copper project (Norway) with US$140M project finance secured", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "40,000m drill program results in 2026", "est_date": "2026", "impact": "high"},
+      {"event": "China gallium export ban suspension expires Nov 27, 2026", "est_date": "2026-11-27", "impact": "high"},
+      {"event": "Gallium pricing spread 8.5x between China ($245/kg) and Europe ($2,102/kg)", "est_date": null, "impact": "high"},
+      {"event": "Western supply initiatives years from scale — BMM is early mover", "est_date": null, "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Explorer/developer — not yet producing", "severity": "high"},
+      {"risk": "China could flood market to undercut Western supply development", "severity": "medium"},
+      {"risk": "Gallium/germanium markets are small and volatile", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 60, "evidence": "Gallium/germanium mining is extremely niche; most investors unaware of supply crisis"},
+      "working_code": {"score_suggestion": 50, "evidence": "Apex mine acquired from Teck (real asset); Nussir has $140M project finance; NASDAQ listed"},
+      "ideological_community": {"score_suggestion": 35, "evidence": "Critical minerals community growing but smaller than uranium"},
+      "developer_activity": {"score_suggestion": 55, "evidence": "40,000m drill program planned; Apex acquisition completed; dual-listed"},
+      "smart_money_entry": {"score_suggestion": 75, "evidence": "Teck Resources, Oaktree, Wheaton Precious Metals as major shareholders — exceptional backing for a junior"},
+      "narrative_clarity": {"score_suggestion": 80, "evidence": "Only Western gallium-germanium mine during China export controls — extremely clear narrative"},
+      "hard_to_buy": {"score_suggestion": 30, "evidence": "NASDAQ listed since Jan 2026 — accessible but still small cap"},
+      "catalyst_proximity": {"score_suggestion": 80, "evidence": "China ban suspension expires Nov 2026; 8.5x pricing spread; 40,000m drill program"}
+    },
+    "composite_score": 58.75,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Rio Tinto Gallium Project",
+    "ticker": "RIO",
+    "category": "Critical_Minerals",
+    "subcategory": "Gallium_Germanium",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "Targeting 5% of global gallium supply from Quebec by 2027",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NYSE/LSE/ASX", "pair_or_url": "RIO"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Quebec R&D project targeting 5% of global gallium supply", "date": "by 2027", "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "Quebec gallium production reaching 5% of global supply", "est_date": "2027", "impact": "low"}
+    ],
+    "risks": [
+      {"risk": "Gallium is immaterial to overall Rio Tinto", "severity": "low"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 10, "evidence": "Rio Tinto is a global mining giant — not dismissed"},
+      "working_code": {"score_suggestion": 20, "evidence": "R&D stage project — not yet producing"},
+      "ideological_community": {"score_suggestion": 5, "evidence": "No community around Rio Tinto's gallium specifically"},
+      "developer_activity": {"score_suggestion": 15, "evidence": "R&D project in Quebec"},
+      "smart_money_entry": {"score_suggestion": 20, "evidence": "Rio Tinto itself is the smart money commitment"},
+      "narrative_clarity": {"score_suggestion": 30, "evidence": "Western gallium supply diversification"},
+      "hard_to_buy": {"score_suggestion": 5, "evidence": "Major multi-listed global company"},
+      "catalyst_proximity": {"score_suggestion": 25, "evidence": "2027 target for 5% supply — still distant"}
+    },
+    "composite_score": 16.5,
+    "community_links": {"twitter": null, "website": "riotinto.com"}
+  },
+  {
+    "name": "Perpetua Resources",
+    "ticker": "PPTA",
+    "category": "Critical_Minerals",
+    "subcategory": "Antimony",
+    "status": "public_equity",
+    "tier_suggestion": "1",
+    "one_liner": "Stibnite mine supplies 35% of US antimony with $2B EXIM financing",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "$3.5B", "date": "2026-04", "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": "EXIM Bank up to $2B financing", "source": "Atlas"},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NASDAQ/TSX", "pair_or_url": "PPTA"}
+    ],
+    "key_backers": [
+      {"name": "US EXIM Bank", "amount": "Up to $2B", "round": "Financing"}
+    ],
+    "technical_milestones": [
+      {"milestone": "Stibnite, Idaho project — supplies 35% of US antimony demand", "date": null, "status": "completed"},
+      {"milestone": "FID (Final Investment Decision) expected spring 2026", "date": "2026 spring", "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "FID expected spring 2026", "est_date": "2026 spring", "impact": "high"},
+      {"event": "EXIM Bank $2B financing approval/drawdown", "est_date": "2026", "impact": "high"},
+      {"event": "Antimony price 4x above 2023 levels sustaining economics", "est_date": null, "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Environmental/permitting challenges for Idaho mine", "severity": "high"},
+      {"risk": "At $3.5B market cap, some upside may be priced in", "severity": "medium"},
+      {"risk": "Antimony price could decline if China resumes exports", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 30, "evidence": "At $3.5B market cap, no longer dismissed — but antimony as a category is still overlooked"},
+      "working_code": {"score_suggestion": 60, "evidence": "Stibnite project is real, permitted, with EXIM backing; 35% of US antimony supply"},
+      "ideological_community": {"score_suggestion": 30, "evidence": "Defense/critical minerals community growing; strategic mineral narrative"},
+      "developer_activity": {"score_suggestion": 55, "evidence": "FID expected spring 2026; EXIM financing progressing"},
+      "smart_money_entry": {"score_suggestion": 70, "evidence": "US EXIM Bank $2B financing — government-level strategic commitment"},
+      "narrative_clarity": {"score_suggestion": 80, "evidence": "Only significant US antimony source with government backing — crystal clear narrative"},
+      "hard_to_buy": {"score_suggestion": 10, "evidence": "NASDAQ/TSX dual-listed — easy to buy"},
+      "catalyst_proximity": {"score_suggestion": 80, "evidence": "FID spring 2026 is imminent; EXIM financing advancing"}
+    },
+    "composite_score": 55.0,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Americas Gold & Silver",
+    "ticker": "USA",
+    "category": "Critical_Minerals",
+    "subcategory": "Antimony",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Galena Complex is largest US antimony mine producing now",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "Mid-cap", "date": null, "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": "561K lbs antimony produced in 2025", "period": "FY2025", "source": "Atlas"}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSX", "pair_or_url": "USA"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Galena Complex — largest US antimony mine", "date": null, "status": "completed"},
+      {"milestone": "561K lbs produced in 2025", "date": "2025", "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Continued antimony production ramp-up", "est_date": "2026", "impact": "medium"},
+      {"event": "Antimony price sustaining at ~$51.80/kg (4x 2023 levels)", "est_date": null, "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Mid-cap reduces asymmetric upside potential", "severity": "medium"},
+      {"risk": "Antimony price could decline if China resumes exports", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 35, "evidence": "Antimony mining is niche but Americas Gold & Silver is known in mining circles"},
+      "working_code": {"score_suggestion": 70, "evidence": "Actually producing — 561K lbs in 2025; largest US antimony mine"},
+      "ideological_community": {"score_suggestion": 25, "evidence": "Mining community following but not deeply ideological"},
+      "developer_activity": {"score_suggestion": 50, "evidence": "Active production; Galena Complex operating"},
+      "smart_money_entry": {"score_suggestion": 35, "evidence": "No specific smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 65, "evidence": "Largest producing US antimony mine during supply crisis"},
+      "hard_to_buy": {"score_suggestion": 20, "evidence": "TSX listed — accessible via Canadian exchanges"},
+      "catalyst_proximity": {"score_suggestion": 55, "evidence": "Already producing into elevated antimony prices"}
+    },
+    "composite_score": 46.75,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "US Antimony Corporation",
+    "ticker": "UAMY",
+    "category": "Critical_Minerals",
+    "subcategory": "Antimony",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Two of three Western antimony smelters with $125M revenue guidance",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "~$200-400M", "date": null, "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": "FY2026 revenue guidance $125M", "period": "FY2026 guidance", "source": "Atlas"}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NYSE American", "pair_or_url": "UAMY"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Operates 2 of only 3 Western Hemisphere antimony smelters", "date": null, "status": "completed"},
+      {"milestone": "FY2026 revenue guidance $125M", "date": "2026", "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "FY2026 revenue guidance $125M execution", "est_date": "2026", "impact": "high"},
+      {"event": "Strategic importance as Western antimony processor", "est_date": null, "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "At $200-400M market cap, less asymmetric upside", "severity": "medium"},
+      {"risk": "Antimony price dependency", "severity": "medium"},
+      {"risk": "Smelter operations can have environmental/regulatory challenges", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 35, "evidence": "Antimony smelting is extremely niche but UAMY has gained attention"},
+      "working_code": {"score_suggestion": 75, "evidence": "Operating 2 of 3 Western Hemisphere smelters — real infrastructure producing revenue"},
+      "ideological_community": {"score_suggestion": 25, "evidence": "Mining community following; strategic minerals thesis"},
+      "developer_activity": {"score_suggestion": 50, "evidence": "$125M revenue guidance shows significant operational activity"},
+      "smart_money_entry": {"score_suggestion": 30, "evidence": "No specific smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 70, "evidence": "Two of three Western antimony smelters — strategic chokepoint narrative"},
+      "hard_to_buy": {"score_suggestion": 10, "evidence": "NYSE American listed — easy to buy"},
+      "catalyst_proximity": {"score_suggestion": 60, "evidence": "FY2026 revenue execution underway; antimony prices elevated"}
+    },
+    "composite_score": 48.75,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Military Metals Corp",
+    "ticker": "MILI",
+    "category": "Critical_Minerals",
+    "subcategory": "Antimony",
+    "status": "public_equity",
+    "tier_suggestion": "1",
+    "one_liner": "Highest-asymmetry antimony play with European high-grade drill results",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "C$39M", "date": "2026-04", "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "CSE", "pair_or_url": "MILI"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Trojarova (Slovakia): 4.6m of 4.1% Sb including 2.6m of 7.0% Sb", "date": null, "status": "completed"},
+      {"milestone": "Maiden resource estimate forthcoming", "date": null, "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "Maiden resource estimate publication", "est_date": "2026", "impact": "high"},
+      {"event": "European antimony supply security narrative", "est_date": null, "impact": "high"},
+      {"event": "Antimony price sustaining at ~$51.80/kg (4x 2023)", "est_date": null, "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "C$39M micro-cap with very limited liquidity", "severity": "high"},
+      {"risk": "Pre-resource explorer — binary outcome risk", "severity": "critical"},
+      {"risk": "Slovakia jurisdiction adds geopolitical complexity", "severity": "medium"},
+      {"risk": "CSE listing limits institutional access", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 70, "evidence": "C$39M CSE micro-cap antimony explorer in Slovakia — maximum dismissal; Atlas calls it 'highest-asymmetry name'"},
+      "working_code": {"score_suggestion": 45, "evidence": "4.6m of 4.1% Sb drill results including 2.6m of 7.0% Sb — real high-grade results"},
+      "ideological_community": {"score_suggestion": 30, "evidence": "Part of critical minerals/defense community thesis"},
+      "developer_activity": {"score_suggestion": 40, "evidence": "Active drilling with maiden resource forthcoming"},
+      "smart_money_entry": {"score_suggestion": 25, "evidence": "No specific smart money signals; very early stage"},
+      "narrative_clarity": {"score_suggestion": 75, "evidence": "European antimony supply security with high-grade results — clear and timely narrative"},
+      "hard_to_buy": {"score_suggestion": 75, "evidence": "CSE micro-cap C$39M — very limited liquidity; hard to access"},
+      "catalyst_proximity": {"score_suggestion": 75, "evidence": "Maiden resource estimate imminent; antimony prices at 4x 2023 levels"}
+    },
+    "composite_score": 49.75,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Larvotto Resources",
+    "ticker": "LRV",
+    "category": "Critical_Minerals",
+    "subcategory": "Antimony",
+    "status": "public_equity",
+    "tier_suggestion": "1",
+    "one_liner": "Hillgrove DFS shows NPV A$694M and IRR 102% production Q2 2026",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "~A$200-400M", "date": null, "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": "7% of world antimony at peak production", "period": "at peak", "source": "Atlas"}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "ASX", "pair_or_url": "LRV"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Hillgrove DFS complete: NPV A$694M, IRR 102%", "date": null, "status": "completed"},
+      {"milestone": "Production start Q2 2026", "date": "2026-Q2", "status": "upcoming"},
+      {"milestone": "7% of world antimony supply at peak production", "date": null, "status": "upcoming"}
+    ],
+    "catalysts": [
+      {"event": "Production start Q2 2026", "est_date": "2026-Q2", "impact": "high"},
+      {"event": "Revenue generation from antimony sales", "est_date": "2026-H2", "impact": "high"},
+      {"event": "Scaling to 7% of world antimony supply", "est_date": null, "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Construction/ramp-up execution risk", "severity": "high"},
+      {"risk": "Antimony price could decline from current 4x levels", "severity": "medium"},
+      {"risk": "ASX-listed — requires Australian exchange access", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 45, "evidence": "ASX antimony miner approaching production — less dismissed than pure explorers"},
+      "working_code": {"score_suggestion": 70, "evidence": "DFS complete with NPV A$694M and IRR 102% — extremely strong economics; production imminent Q2 2026"},
+      "ideological_community": {"score_suggestion": 30, "evidence": "Part of critical minerals community"},
+      "developer_activity": {"score_suggestion": 65, "evidence": "DFS complete; production starting Q2 2026; 7% of world supply at peak"},
+      "smart_money_entry": {"score_suggestion": 35, "evidence": "No specific smart money signals; strong DFS economics should attract capital"},
+      "narrative_clarity": {"score_suggestion": 75, "evidence": "Near-production antimony mine with 102% IRR during supply crisis — powerful narrative"},
+      "hard_to_buy": {"score_suggestion": 40, "evidence": "ASX listed — accessible but requires Australian exchange access"},
+      "catalyst_proximity": {"score_suggestion": 85, "evidence": "Production start Q2 2026 is imminent — most proximate catalyst in antimony space"}
+    },
+    "composite_score": 57.25,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Appia Rare Earths & Uranium",
+    "ticker": "API",
+    "category": "Critical_Minerals",
+    "subcategory": "Rare_Earths",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Brazil rare earths with 300m at 2.55% TREO drill results",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "CSE", "pair_or_url": "API"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Drilled 300m at 2.55% TREO including 1.7m at 14.27% TREO in Brazil", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Further drilling results from Brazil project", "est_date": "2026", "impact": "high"},
+      {"event": "Rare earth supply diversification from China (60% mining, 90% processing)", "est_date": null, "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Junior explorer — no production revenue", "severity": "high"},
+      {"risk": "Brazil jurisdiction adds complexity", "severity": "medium"},
+      {"risk": "Rare earth processing infrastructure outside China is limited", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "CSE-listed rare earth junior — very niche and overlooked"},
+      "working_code": {"score_suggestion": 40, "evidence": "300m at 2.55% TREO with high-grade intercepts is legitimate drilling data"},
+      "ideological_community": {"score_suggestion": 30, "evidence": "Critical minerals community but rare earths less organized than uranium"},
+      "developer_activity": {"score_suggestion": 35, "evidence": "Active drilling in Brazil with results"},
+      "smart_money_entry": {"score_suggestion": 20, "evidence": "No smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 55, "evidence": "Non-Chinese rare earth source — clear supply-security narrative"},
+      "hard_to_buy": {"score_suggestion": 60, "evidence": "CSE micro-cap — limited liquidity"},
+      "catalyst_proximity": {"score_suggestion": 45, "evidence": "Further drill results expected but no specific timeline"}
+    },
+    "composite_score": 39.25,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Critical Metals Corp",
+    "ticker": null,
+    "category": "Critical_Minerals",
+    "subcategory": "Rare_Earths",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Tanbreez asset in Greenland with 27.0% heavy rare earth content",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": null}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Tanbreez asset in Greenland with 27.0% heavy REEs", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Development of Tanbreez heavy rare earth asset", "est_date": null, "impact": "high"},
+      {"event": "Heavy REE supply diversification from China", "est_date": null, "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Greenland jurisdiction — remote and challenging logistics", "severity": "high"},
+      {"risk": "Heavy REE processing outside China is extremely limited", "severity": "high"},
+      {"risk": "Pre-production explorer", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "TSXV rare earth junior with Greenland asset — very niche"},
+      "working_code": {"score_suggestion": 35, "evidence": "27.0% heavy REEs is significant composition but asset is undeveloped"},
+      "ideological_community": {"score_suggestion": 25, "evidence": "Part of critical minerals community"},
+      "developer_activity": {"score_suggestion": 25, "evidence": "Limited development details in documents"},
+      "smart_money_entry": {"score_suggestion": 20, "evidence": "No smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 55, "evidence": "Heavy rare earth source outside China — strategic narrative"},
+      "hard_to_buy": {"score_suggestion": 60, "evidence": "TSXV micro-cap with limited liquidity"},
+      "catalyst_proximity": {"score_suggestion": 30, "evidence": "No specific near-term catalysts identified"}
+    },
+    "composite_score": 34.75,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Energy Fuels Inc.",
+    "ticker": "UUUU",
+    "category": "Critical_Minerals",
+    "subcategory": "Rare_Earths",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "One of few non-Chinese Western rare earth processors plus uranium",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "NYSE American", "pair_or_url": "UUUU"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "One of few non-Chinese rare earth processors in Western hemisphere", "date": null, "status": "completed"},
+      {"milestone": "Dual uranium + rare earth exposure", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Rare earth processing scale-up", "est_date": null, "impact": "high"},
+      {"event": "Uranium price catalysts ($84.55/lb spot)", "est_date": "2026", "impact": "high"},
+      {"event": "Western rare earth processing demand growth", "est_date": null, "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Dual commodity exposure adds complexity", "severity": "low"},
+      {"risk": "Rare earth processing is capital-intensive to scale", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 35, "evidence": "NYSE-listed with growing recognition; not dismissed but rare earth processing angle underappreciated"},
+      "working_code": {"score_suggestion": 65, "evidence": "Actually processing rare earths — one of very few Western players; also producing uranium"},
+      "ideological_community": {"score_suggestion": 45, "evidence": "Both uranium and rare earth communities; r/UraniumSqueeze following"},
+      "developer_activity": {"score_suggestion": 50, "evidence": "Active processing operations; dual commodity production"},
+      "smart_money_entry": {"score_suggestion": 35, "evidence": "No specific smart money signals but institutional awareness growing"},
+      "narrative_clarity": {"score_suggestion": 70, "evidence": "Western rare earth processor + uranium producer — strong dual narrative"},
+      "hard_to_buy": {"score_suggestion": 10, "evidence": "NYSE American listed — easy to buy"},
+      "catalyst_proximity": {"score_suggestion": 55, "evidence": "Uranium price and rare earth supply chain catalysts both active"}
+    },
+    "composite_score": 46.5,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Surge Battery Metals",
+    "ticker": "NILI",
+    "category": "Critical_Minerals",
+    "subcategory": "Lithium",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Highest-grade US lithium clay with PEA showing $9.2B NPV",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "TSXV", "pair_or_url": "NILI"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Highest-grade lithium clay resource in US", "date": null, "status": "completed"},
+      {"milestone": "PEA showing after-tax NPV $9.2B", "date": null, "status": "completed"},
+      {"milestone": "Grades up to 8,070 ppm", "date": null, "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "Lithium carbonate price recovery (now ~$21,000-22,000/tonne, up 117% YoY, 40% YTD)", "est_date": "2026", "impact": "high"},
+      {"event": "Morgan Stanley forecasts 80,000 mt LCE deficit in 2026", "est_date": "2026", "impact": "high"},
+      {"event": "PFS/DFS advancement", "est_date": null, "impact": "high"}
+    ],
+    "risks": [
+      {"risk": "Lithium clay extraction technology is less proven than brine/hard rock", "severity": "high"},
+      {"risk": "PEA-stage — many years from production", "severity": "high"},
+      {"risk": "TSXV micro-cap liquidity risk", "severity": "high"},
+      {"risk": "$9.2B NPV vs tiny market cap suggests market skepticism about feasibility", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 60, "evidence": "TSXV lithium clay junior — dismissed as unfeasible by many; lithium clay extraction skepticism"},
+      "working_code": {"score_suggestion": 35, "evidence": "PEA with $9.2B NPV but lithium clay extraction at scale is unproven"},
+      "ideological_community": {"score_suggestion": 35, "evidence": "Lithium/EV community following but less organized than uranium"},
+      "developer_activity": {"score_suggestion": 30, "evidence": "PEA completed; further studies needed"},
+      "smart_money_entry": {"score_suggestion": 20, "evidence": "No smart money signals in documents"},
+      "narrative_clarity": {"score_suggestion": 60, "evidence": "Highest-grade US lithium clay with massive NPV during deficit — clear if speculative"},
+      "hard_to_buy": {"score_suggestion": 60, "evidence": "TSXV micro-cap — limited liquidity"},
+      "catalyst_proximity": {"score_suggestion": 50, "evidence": "Lithium price recovery underway (117% YoY); Morgan Stanley deficit forecast"}
+    },
+    "composite_score": 39.75,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "name": "Pulsar Helium",
+    "ticker": "PLSR",
+    "category": "Critical_Minerals",
+    "subcategory": "Helium3",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Only publicly traded company with confirmed terrestrial He-3 source",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "~$300M", "date": "2026-04", "source": "Atlas"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "valuation": {"value": null, "date": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "public_equity", "platform": "AIM/TSXV", "pair_or_url": "PLSR"},
+      {"type": "public_equity", "platform": "OTCQB", "pair_or_url": "PSRHF"}
+    ],
+    "key_backers": [],
+    "technical_milestones": [
+      {"milestone": "Independently confirmed helium-3 isotope concentration by two US Federal labs", "date": "2026-01", "status": "completed"},
+      {"milestone": "Topaz Project in Minnesota", "date": null, "status": "completed"},
+      {"milestone": "Stock up ~150% in 2026", "date": "2026", "status": "completed"}
+    ],
+    "catalysts": [
+      {"event": "He-3 market growth from $21.5M (2026) to $383M (2035)", "est_date": "2026-2035", "impact": "high"},
+      {"event": "Only publicly traded company with confirmed terrestrial He-3 — monopoly position", "est_date": null, "impact": "high"},
+      {"event": "Fusion energy development increasing He-3 demand", "est_date": "2027+", "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Total He-3 market is only $21.5M in 2026 — tiny addressable market today", "severity": "high"},
+      {"risk": "At ~$300M market cap, trading at 14x current total market size", "severity": "critical"},
+      {"risk": "He-3 commercial demand growth depends on quantum computing and fusion timelines", "severity": "high"},
+      {"risk": "Already up 150% in 2026 — retracement risk", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 65, "evidence": "Helium-3 mining sounds absurd to most investors — very much in 'toy phase' perception"},
+      "working_code": {"score_suggestion": 55, "evidence": "Two US Federal labs independently confirmed He-3 concentration — real scientific validation"},
+      "ideological_community": {"score_suggestion": 25, "evidence": "Very niche following; fusion/quantum computing communities tangentially interested"},
+      "developer_activity": {"score_suggestion": 40, "evidence": "Topaz Project active; lab confirmations completed Jan 2026"},
+      "smart_money_entry": {"score_suggestion": 30, "evidence": "No specific smart money signals; 150% gain may attract attention"},
+      "narrative_clarity": {"score_suggestion": 80, "evidence": "Only publicly traded terrestrial He-3 source — unique monopoly narrative"},
+      "hard_to_buy": {"score_suggestion": 45, "evidence": "AIM/TSXV/OTCQB — accessible but requires specific exchange access"},
+      "catalyst_proximity": {"score_suggestion": 40, "evidence": "He-3 market growth is long-term (2035 target); near-term catalysts less defined"}
+    },
+    "composite_score": 47.5,
+    "community_links": {"twitter": null, "website": null}
+  },
+  {
+    "_metadata": {
+      "extraction_date": "2026-04-13",
+      "source_documents": [
+        "Asymmetric Opportunity Atlas (compass_artifact_wf-897c427d)",
+        "1000x Opportunity Map (compass_artifact_wf-926f59bf)"
+      ],
+      "sections_extracted": ["Section 4: Fusion Energy", "Section 5: Critical Minerals"],
+      "total_opportunities": 30,
+      "fusion_energy_count": 12,
+      "critical_minerals_count": 18,
+      "composite_score_weights": {
+        "toy_phase_dismissal": 0.15,
+        "working_code": 0.20,
+        "ideological_community": 0.10,
+        "developer_activity": 0.15,
+        "smart_money_entry": 0.15,
+        "narrative_clarity": 0.05,
+        "hard_to_buy": 0.05,
+        "catalyst_proximity": 0.15
+      },
+      "market_data_snapshot": {
+        "uranium_spot": "$84.55/lb (April 7, 2026)",
+        "uranium_ath": "$101.41 (January 29, 2026)",
+        "uranium_lt_contract": "$90/lb",
+        "antimony_price": "~$51.80/kg (April 9, 2026)",
+        "antimony_peak": "$59.75/kg (July 2025)",
+        "antimony_vs_2023": "4x above 2023 levels",
+        "gallium_china_domestic": "~$245/kg",
+        "gallium_europe_retail": "$2,102/kg",
+        "gallium_spread": "8.5x",
+        "china_gallium_ban_suspension_expires": "November 27, 2026",
+        "lithium_carbonate_china": "~$21,000-22,000/tonne",
+        "lithium_yoy_change": "+117%",
+        "lithium_ytd_change": "+40%",
+        "helium3_market_2026": "$21.5M",
+        "helium3_market_2035": "$383M"
+      }
+    }
+  }
+]

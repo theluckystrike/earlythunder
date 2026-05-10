@@ -1,0 +1,3777 @@
+[
+  {
+    "name": "IonQ",
+    "ticker": "IONQ",
+    "category": "Quantum_Computing",
+    "subcategory": "Trapped Ion",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "First public quantum company exceeding $100M annual revenue",
+    "quantitative_data": {
+      "price": {
+        "value": "$28-34",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "$16-18B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "$16-18B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "$130M FY2025 (+202% YoY); 2026 guidance $225-245M",
+        "period": "FY2025 / FY2026 guidance",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "public_equity",
+        "platform": "NYSE",
+        "pair_or_url": "IONQ"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "US Government (contracts)",
+        "amount": "$100M+",
+        "round": "government contracts"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "2026 revenue guidance $225-245M delivery",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Mizuho price target $61",
+        "est_date": "2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "P/S ratio ~130x \u2014 extreme valuation",
+        "severity": "high"
+      },
+      {
+        "risk": "Quantum computing still early-stage commercially",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 30,
+        "evidence": "Quantum computing still broadly dismissed by mainstream investors, but IonQ has crossed $100M revenue threshold reducing dismissal"
+      },
+      "working_code": {
+        "score_suggestion": 85,
+        "evidence": "First public quantum company to exceed $100M in annual revenue; has commercial traction with government contracts"
+      },
+      "ideological_community": {
+        "score_suggestion": 35,
+        "evidence": "No strong ideological community data mentioned in documents"
+      },
+      "developer_activity": {
+        "score_suggestion": 65,
+        "evidence": "Implied by $130M revenue and 202% YoY growth; government contracts indicate active development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 60,
+        "evidence": "Mizuho coverage with $61 target; $100M+ US government contracts"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 80,
+        "evidence": "Clearest commercial traction in quantum computing sector"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 10,
+        "evidence": "Publicly traded on NYSE, easy to buy"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 65,
+        "evidence": "2026 guidance $225-245M represents near-term revenue catalyst"
+      }
+    },
+    "composite_score": 58.0,
+    "community_links": {
+      "twitter": null,
+      "website": "https://ionq.com"
+    }
+  },
+  {
+    "name": "D-Wave Quantum",
+    "ticker": "QBTS",
+    "category": "Quantum_Computing",
+    "subcategory": "Quantum Annealing",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Quantum annealing pioneer with $24.6M revenue, 179% growth",
+    "quantitative_data": {
+      "price": {
+        "value": "$14-17",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "~$10B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "~$10B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "$24.6M (+179% YoY)",
+        "period": "FY2025",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "public_equity",
+        "platform": "NYSE",
+        "pair_or_url": "QBTS"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Continued revenue growth trajectory",
+        "est_date": "2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "P/S ratio ~400x \u2014 extremely expensive relative to revenue",
+        "severity": "critical"
+      },
+      {
+        "risk": "Quantum annealing may be less versatile than gate-based approaches",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 35,
+        "evidence": "Quantum annealing approach sometimes dismissed vs gate-based quantum; sector broadly dismissed"
+      },
+      "working_code": {
+        "score_suggestion": 65,
+        "evidence": "$24.6M revenue indicates working commercial product with 179% YoY growth"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "No specific community data in documents"
+      },
+      "developer_activity": {
+        "score_suggestion": 55,
+        "evidence": "Revenue growth of 179% implies active development and customer adoption"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 40,
+        "evidence": "No specific smart money entries mentioned beyond being publicly traded"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 60,
+        "evidence": "Quantum computing narrative is clear; D-Wave is an established name in the space"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 10,
+        "evidence": "Publicly traded on NYSE"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 40,
+        "evidence": "No specific near-term catalysts mentioned"
+      }
+    },
+    "composite_score": 45.0,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.dwavesys.com"
+    }
+  },
+  {
+    "name": "Rigetti Computing",
+    "ticker": "RGTI",
+    "category": "Quantum_Computing",
+    "subcategory": "Superconducting",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Superconducting quantum play with +5700% trailing year return",
+    "quantitative_data": {
+      "price": {
+        "value": "$14-16",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "~$8.5B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "~$8.5B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "~$12.7M",
+        "period": "FY2025",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "public_equity",
+        "platform": "NASDAQ",
+        "pair_or_url": "RGTI"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "+5700% trailing year performance demonstrates momentum",
+        "est_date": "trailing",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "P/S ratio ~670x \u2014 most expensive quantum stock by revenue multiple",
+        "severity": "critical"
+      },
+      {
+        "risk": "Revenue of only $12.7M suggests very early commercial stage",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 40,
+        "evidence": "Quantum computing broadly dismissed; Rigetti less well-known than IonQ"
+      },
+      "working_code": {
+        "score_suggestion": 50,
+        "evidence": "$12.7M revenue shows some commercial traction but very early stage"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "No specific community data in documents"
+      },
+      "developer_activity": {
+        "score_suggestion": 50,
+        "evidence": "Revenue exists but is smallest among public quantum companies"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 45,
+        "evidence": "+5700% trailing year return suggests significant speculative interest"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 60,
+        "evidence": "Quantum computing narrative is clear; Rigetti known as pure-play"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 10,
+        "evidence": "Publicly traded on NASDAQ"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 35,
+        "evidence": "No specific near-term catalysts mentioned beyond sector momentum"
+      }
+    },
+    "composite_score": 42.0,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.rigetti.com"
+    }
+  },
+  {
+    "name": "Infleqtion",
+    "ticker": "INFQ",
+    "category": "Quantum_Computing",
+    "subcategory": "Neutral Atom",
+    "status": "SPAC",
+    "tier_suggestion": "1",
+    "one_liner": "Lowest P/S quantum SPAC with NASA contract and error correction",
+    "quantitative_data": {
+      "price": {
+        "value": "$12.59",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "~$2.3B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "$1.8B (merger valuation per 1000x Opportunity Map); $2.3B market cap",
+        "date": "April 2026",
+        "source": "Both documents"
+      },
+      "revenue_or_volume": {
+        "value": "~$29M FY2025; 2026 guidance $40M",
+        "period": "FY2025 / FY2026 guidance",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "SPAC",
+        "platform": "NASDAQ",
+        "pair_or_url": "INFQ (merged with Churchill Capital Corp X, Feb 13 2026)"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Churchill Capital Corp X",
+        "amount": "nearly 100% trust preserved",
+        "round": "SPAC merger"
+      },
+      {
+        "name": "NASA",
+        "amount": "$20M+",
+        "round": "government contract"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "BTIG Buy rating with $22 price target (75% upside from $12.59)",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Achieved 12 logical qubits with error correction (surpassed 2026 target early)",
+        "est_date": "achieved",
+        "impact": "high"
+      },
+      {
+        "event": "2026 revenue guidance $40M delivery",
+        "est_date": "2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "SPAC mergers historically underperform; post-merger selling pressure",
+        "severity": "medium"
+      },
+      {
+        "risk": "Quantum computing still pre-mass-commercialization",
+        "severity": "medium"
+      },
+      {
+        "risk": "P/S ~58x still elevated by traditional standards",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 55,
+        "evidence": "Neutral-atom quantum computing dismissed by many; SPAC structure adds skepticism; sector broadly seen as hype"
+      },
+      "working_code": {
+        "score_suggestion": 75,
+        "evidence": "Achieved 12 logical qubits with error correction surpassing 2026 target; $29M revenue; NASA $20M+ contract"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "No specific community data mentioned"
+      },
+      "developer_activity": {
+        "score_suggestion": 70,
+        "evidence": "Surpassed 2026 error correction target early; revenue growing to $40M guidance; active government contracts"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 70,
+        "evidence": "Nearly 100% SPAC trust preserved (exceptionally rare); NASA contract; BTIG Buy/$22 target"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 75,
+        "evidence": "Lowest P/S in quantum at ~58x; clear value proposition as best-value quantum play"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 15,
+        "evidence": "Newly listed SPAC, publicly tradeable but less well-known"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 80,
+        "evidence": "BTIG $22 target provides 75% upside catalyst; already surpassed error correction milestones; revenue guidance delivery in 2026"
+      }
+    },
+    "composite_score": 63.75,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.infleqtion.com"
+    }
+  },
+  {
+    "name": "Horizon Quantum Computing",
+    "ticker": "HQ",
+    "category": "Quantum_Computing",
+    "subcategory": "Quantum Software",
+    "status": "public_equity",
+    "tier_suggestion": "3",
+    "one_liner": "Newly listed quantum software company, pre-revenue, March 2026",
+    "quantitative_data": {
+      "price": {
+        "value": "Newly listed March 20, 2026",
+        "date": "March 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "~$500M",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "~$1B (merger valuation per 1000x Opportunity Map); ~$500M market cap",
+        "date": "March-April 2026",
+        "source": "Both documents"
+      },
+      "revenue_or_volume": {
+        "value": "Pre-revenue",
+        "period": null,
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "SPAC",
+        "platform": "NYSE",
+        "pair_or_url": "HQ (formerly DMYY via dMY Squared merger)"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "dMY Squared (DMYY)",
+        "amount": null,
+        "round": "SPAC merger"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "First revenue generation",
+        "est_date": "unknown",
+        "impact": "high"
+      },
+      {
+        "event": "Post-listing awareness and analyst coverage initiation",
+        "est_date": "2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Pre-revenue with $500M market cap \u2014 pure speculation",
+        "severity": "critical"
+      },
+      {
+        "risk": "SPAC structure \u2014 historically poor post-merger performance",
+        "severity": "high"
+      },
+      {
+        "risk": "Quantum software market nascent",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 60,
+        "evidence": "Quantum software even more dismissed than quantum hardware; newly listed with no revenue"
+      },
+      "working_code": {
+        "score_suggestion": 25,
+        "evidence": "Pre-revenue; no specific product milestones mentioned in documents"
+      },
+      "ideological_community": {
+        "score_suggestion": 20,
+        "evidence": "No community data mentioned"
+      },
+      "developer_activity": {
+        "score_suggestion": 30,
+        "evidence": "No specific developer metrics mentioned; newly public"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 35,
+        "evidence": "dMY Squared SPAC sponsor; no other specific backers mentioned"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 50,
+        "evidence": "Quantum computing narrative clear but company-specific story thin"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 20,
+        "evidence": "Newly listed, less liquid and less known than established quantum names"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 30,
+        "evidence": "No specific catalysts mentioned beyond being newly listed"
+      }
+    },
+    "composite_score": 33.75,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.horizonquantum.com"
+    }
+  },
+  {
+    "name": "PsiQuantum",
+    "ticker": null,
+    "category": "Quantum_Computing",
+    "subcategory": "Silicon Photonics",
+    "status": "pre_token",
+    "tier_suggestion": "2",
+    "one_liner": "$7B valuation photonic quantum company building utility-scale sites",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": "$2.32B total",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "valuation": {
+        "value": "$7B",
+        "date": "September 2025 Series E",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "pre_ipo",
+        "platform": "Forge Global, EquityZen (accredited investors)",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Series E investors",
+        "amount": "$2.32B total raised",
+        "round": "Series E (Sept 2025)"
+      },
+      {
+        "name": "Victor Peng (former AMD President)",
+        "amount": null,
+        "round": "New CEO (Feb 2026)"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Brisbane and Chicago utility-scale site construction",
+        "est_date": "2026+",
+        "impact": "high"
+      },
+      {
+        "event": "IPO (timeline unknown)",
+        "est_date": "unknown",
+        "impact": "high"
+      },
+      {
+        "event": "New CEO Victor Peng (former AMD President) appointed Feb 2026",
+        "est_date": "Feb 2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "$7B valuation for pre-revenue company \u2014 very high expectations",
+        "severity": "high"
+      },
+      {
+        "risk": "Silicon photonics approach is unproven at scale for quantum computing",
+        "severity": "high"
+      },
+      {
+        "risk": "IPO timeline unknown; liquidity risk for pre-IPO investors",
+        "severity": "high"
+      },
+      {
+        "risk": "Accessible only to accredited investors via secondary markets",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 45,
+        "evidence": "Photonic quantum approach often dismissed vs superconducting or trapped ion; not yet proven commercially"
+      },
+      "working_code": {
+        "score_suggestion": 40,
+        "evidence": "Breaking ground on utility-scale sites but no commercial product or revenue mentioned"
+      },
+      "ideological_community": {
+        "score_suggestion": 25,
+        "evidence": "No community data in documents"
+      },
+      "developer_activity": {
+        "score_suggestion": 55,
+        "evidence": "$2.32B raised and utility-scale construction implies significant engineering activity"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 80,
+        "evidence": "$2.32B total raised at $7B valuation; new CEO is former AMD President Victor Peng"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 65,
+        "evidence": "Silicon photonics approach is differentiated; utility-scale ambition is clear"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 80,
+        "evidence": "Private company; only accessible via Forge Global/EquityZen for accredited investors"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 50,
+        "evidence": "Construction underway but IPO timeline unknown; no near-term public liquidity event"
+      }
+    },
+    "composite_score": 52.25,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.psiquantum.com"
+    }
+  },
+  {
+    "name": "Q-Factor",
+    "ticker": null,
+    "category": "Quantum_Computing",
+    "subcategory": "Neutral Atom",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "Seed-stage neutral atom quantum targeting 1M+ qubits",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": "$24M seed",
+        "source": "1000x Opportunity Map"
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "pre_ipo",
+        "platform": "Private (seed stage)",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "NFX",
+        "amount": null,
+        "round": "Seed (April 2026)"
+      },
+      {
+        "name": "Intel Capital",
+        "amount": null,
+        "round": "Seed (April 2026)"
+      },
+      {
+        "name": "TPY Capital",
+        "amount": null,
+        "round": "Seed (April 2026)"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Targeting 1M+ qubits via neutral atoms",
+        "est_date": "unknown",
+        "impact": "high"
+      },
+      {
+        "event": "Progression from seed to product development",
+        "est_date": "2026-2027",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Seed stage \u2014 extremely early; may never reach product",
+        "severity": "critical"
+      },
+      {
+        "risk": "1M+ qubit target is extraordinarily ambitious",
+        "severity": "high"
+      },
+      {
+        "risk": "No revenue, no product, no public access",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 70,
+        "evidence": "Seed-stage quantum startup; most people would dismiss as impossibly early"
+      },
+      "working_code": {
+        "score_suggestion": 10,
+        "evidence": "No product mentioned; just raised seed funding in April 2026"
+      },
+      "ideological_community": {
+        "score_suggestion": 15,
+        "evidence": "No community data"
+      },
+      "developer_activity": {
+        "score_suggestion": 25,
+        "evidence": "Just raised seed; development presumably beginning"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 65,
+        "evidence": "NFX, Intel Capital, and TPY Capital at seed stage indicates strong institutional confidence"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 55,
+        "evidence": "1M+ qubit target is ambitious and clear; neutral atom approach gaining traction"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 95,
+        "evidence": "Private seed-stage company; inaccessible to most investors"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 15,
+        "evidence": "Very early stage; no near-term catalysts beyond continued development"
+      }
+    },
+    "composite_score": 37.25,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "QuiX Quantum",
+    "ticker": null,
+    "category": "Quantum_Computing",
+    "subcategory": "Photonic Quantum",
+    "status": "pre_product",
+    "tier_suggestion": "3",
+    "one_liner": "Dutch photonic quantum processor company, Series A stage",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": "\u20ac15M Series A",
+        "source": "1000x Opportunity Map"
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "pre_ipo",
+        "platform": "Private (Series A)",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Series A investors",
+        "amount": "\u20ac15M",
+        "round": "Series A"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Photonic quantum processor development milestones",
+        "est_date": "unknown",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Early-stage private company; photonic approach unproven at scale",
+        "severity": "high"
+      },
+      {
+        "risk": "No public access for investment",
+        "severity": "high"
+      },
+      {
+        "risk": "Small funding relative to competitors like PsiQuantum",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 65,
+        "evidence": "Photonic quantum computing dismissed by many; Dutch startup relatively unknown"
+      },
+      "working_code": {
+        "score_suggestion": 30,
+        "evidence": "Described as cutting-edge photonic approaches but no specific product milestones in documents"
+      },
+      "ideological_community": {
+        "score_suggestion": 15,
+        "evidence": "No community data"
+      },
+      "developer_activity": {
+        "score_suggestion": 35,
+        "evidence": "Series A funding suggests active development; photonic technology is cutting edge"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 40,
+        "evidence": "\u20ac15M Series A; no specific high-profile backers named"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 45,
+        "evidence": "Photonic quantum is a differentiated approach but less proven than alternatives"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 90,
+        "evidence": "Private Dutch company; very difficult to access for most investors"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 20,
+        "evidence": "No specific near-term catalysts mentioned"
+      }
+    },
+    "composite_score": 38.25,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.quixquantum.com"
+    }
+  },
+  {
+    "name": "Pasqal",
+    "ticker": null,
+    "category": "Quantum_Computing",
+    "subcategory": "Neutral Atom",
+    "status": "SPAC",
+    "tier_suggestion": "2",
+    "one_liner": "French neutral-atom quantum company merging via Bleichroeder SPAC",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "SPAC",
+        "platform": "Bleichroeder Acquisition Corp",
+        "pair_or_url": "Merger announced March 2026"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Bleichroeder Acquisition Corp",
+        "amount": null,
+        "round": "SPAC merger (announced March 2026)"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "SPAC merger completion with Bleichroeder Acquisition Corp",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Public listing providing liquidity and visibility",
+        "est_date": "2026",
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "SPAC merger may not complete; redemption risk",
+        "severity": "high"
+      },
+      {
+        "risk": "No financial data provided in documents",
+        "severity": "medium"
+      },
+      {
+        "risk": "Post-SPAC performance historically poor",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 50,
+        "evidence": "Neutral-atom quantum companies less well-known; SPAC route adds skepticism"
+      },
+      "working_code": {
+        "score_suggestion": 45,
+        "evidence": "Pasqal is an established neutral-atom quantum company but no specific metrics provided"
+      },
+      "ideological_community": {
+        "score_suggestion": 25,
+        "evidence": "No community data mentioned"
+      },
+      "developer_activity": {
+        "score_suggestion": 45,
+        "evidence": "Established quantum company but no specific developer metrics in documents"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 45,
+        "evidence": "SPAC merger announced; Pasqal is a known entity in quantum computing"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 55,
+        "evidence": "Neutral-atom approach gaining traction; Pasqal well-regarded in quantum community"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 60,
+        "evidence": "Pre-merger SPAC; will become publicly traded once merger closes"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 70,
+        "evidence": "SPAC merger announced March 2026; completion expected 2026"
+      }
+    },
+    "composite_score": 48.75,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.pasqal.com"
+    }
+  },
+  {
+    "name": "Xanadu",
+    "ticker": null,
+    "category": "Quantum_Computing",
+    "subcategory": "Photonic Quantum",
+    "status": "SPAC",
+    "tier_suggestion": "3",
+    "one_liner": "Photonic quantum company merged with Crane Harbor Nov 2025",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "SPAC",
+        "platform": "Crane Harbor merger",
+        "pair_or_url": "Merged November 2025"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Crane Harbor",
+        "amount": null,
+        "round": "SPAC merger (Nov 2025)"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Post-merger public trading and commercial development",
+        "est_date": "2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "No financial data provided; photonic approach unproven commercially",
+        "severity": "high"
+      },
+      {
+        "risk": "Post-SPAC performance risk",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 55,
+        "evidence": "Photonic quantum computing widely dismissed; Xanadu less known than hardware-focused peers"
+      },
+      "working_code": {
+        "score_suggestion": 40,
+        "evidence": "Known for PennyLane open-source software and Borealis photonic processor, but no metrics in documents"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "PennyLane has open-source community but no data in documents"
+      },
+      "developer_activity": {
+        "score_suggestion": 40,
+        "evidence": "Active quantum software development implied but not detailed"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 35,
+        "evidence": "Crane Harbor SPAC merger completed; no other specific backers mentioned"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 45,
+        "evidence": "Photonic quantum plus open-source software is a clear but niche narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 30,
+        "evidence": "Should be publicly traded post-merger completion Nov 2025"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 30,
+        "evidence": "Merger already completed; no specific upcoming catalysts mentioned"
+      }
+    },
+    "composite_score": 38.75,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.xanadu.ai"
+    }
+  },
+  {
+    "name": "IQM Quantum Computers",
+    "ticker": null,
+    "category": "Quantum_Computing",
+    "subcategory": "Superconducting",
+    "status": "pre_token",
+    "tier_suggestion": "3",
+    "one_liner": "European superconducting quantum firm, BlackRock-backed, planning dual listing",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": "\u20ac50M from BlackRock (recent round)",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "pre_ipo",
+        "platform": "Private; planned dual listing",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "BlackRock",
+        "amount": "\u20ac50M",
+        "round": "recent investment"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Planned dual listing (IPO)",
+        "est_date": "unknown",
+        "impact": "high"
+      },
+      {
+        "event": "European quantum computing market growth",
+        "est_date": "2026+",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "No financial details provided; IPO timeline unknown",
+        "severity": "high"
+      },
+      {
+        "risk": "European quantum market smaller than US/China",
+        "severity": "medium"
+      },
+      {
+        "risk": "Currently inaccessible to retail investors",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 50,
+        "evidence": "European quantum computing less visible than US counterparts; often overlooked"
+      },
+      "working_code": {
+        "score_suggestion": 40,
+        "evidence": "Established company with superconducting quantum computers but no specific metrics"
+      },
+      "ideological_community": {
+        "score_suggestion": 20,
+        "evidence": "No community data"
+      },
+      "developer_activity": {
+        "score_suggestion": 40,
+        "evidence": "Active company with BlackRock investment implies meaningful development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 75,
+        "evidence": "\u20ac50M from BlackRock is a significant institutional signal"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 50,
+        "evidence": "European quantum champion narrative; dual listing story"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 85,
+        "evidence": "Private company; dual listing planned but no timeline"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 40,
+        "evidence": "Dual listing planned but no specific date provided"
+      }
+    },
+    "composite_score": 47.5,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.meetiqm.com"
+    }
+  },
+  {
+    "name": "Polymarket",
+    "ticker": "POLY",
+    "category": "Prediction_Markets",
+    "subcategory": "Decentralized Prediction Platform",
+    "status": "pre_token",
+    "tier_suggestion": "1",
+    "one_liner": "Dominant crypto prediction market, $POLY token and airdrop confirmed",
+    "quantitative_data": {
+      "price": {
+        "value": "Pre-token",
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": "$416M",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "funding_raised": {
+        "value": "$600M from ICE; $112M QCX acquisition",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "valuation": {
+        "value": "Seeking ~$20B (was $9B in Oct 2025)",
+        "date": "2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "$153M daily volume; $2.0B weekly; $7B+ monthly (Feb 2026 record); $3.2B Q1 2026; 49,633 active markets; open interest $472M",
+        "period": "Various through Q1 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "airdrop_farming",
+        "platform": "Polymarket",
+        "pair_or_url": "https://polymarket.com \u2014 active use positions for potential $POLY airdrop"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "ICE (Intercontinental Exchange)",
+        "amount": "$600M",
+        "round": "investment"
+      },
+      {
+        "name": "QCX acquisition",
+        "amount": "$112M",
+        "round": "acquisition of CFTC-regulated exchange"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "$POLY token launch and airdrop (CMO confirmed Oct 2025; trademark filed Feb 2026)",
+        "est_date": "2026 (post-US relaunch)",
+        "impact": "high"
+      },
+      {
+        "event": "US relaunch via CFTC-regulated QCX infrastructure",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Chainlink integration tripled daily volume to $153M",
+        "est_date": "completed",
+        "impact": "high"
+      },
+      {
+        "event": "Valuation growth from $9B to targeting $20B",
+        "est_date": "2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "~25% of volume may be artificial/wash trading (Columbia study)",
+        "severity": "high"
+      },
+      {
+        "risk": "Senator Schiff proposed bill to ban casino-like prediction contracts",
+        "severity": "high"
+      },
+      {
+        "risk": "Token launch timing contingent on US relaunch \u2014 may be delayed",
+        "severity": "medium"
+      },
+      {
+        "risk": "Regulatory risk from CFTC and state regulators",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 60,
+        "evidence": "Prediction markets broadly dismissed as gambling; Senator Schiff proposed ban on casino-like contracts"
+      },
+      "working_code": {
+        "score_suggestion": 95,
+        "evidence": "$153M daily volume, $7B+ monthly, 49,633 active markets, $416M TVL, $472M open interest \u2014 dominant working product"
+      },
+      "ideological_community": {
+        "score_suggestion": 75,
+        "evidence": "Strong crypto-native community; prediction market ideology of information efficiency; active daily user base"
+      },
+      "developer_activity": {
+        "score_suggestion": 70,
+        "evidence": "Chainlink integration, QCX acquisition, trademark filing, active platform development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 90,
+        "evidence": "ICE $600M investment; $112M QCX acquisition; seeking $20B valuation; institutional backing"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 85,
+        "evidence": "Information markets that make truth tradeable \u2014 clear one-sentence narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 75,
+        "evidence": "Token not yet launched; requires active platform use for potential airdrop positioning"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 90,
+        "evidence": "Token confirmed, trademark filed, US relaunch pending \u2014 all catalysts in 2026 timeline"
+      }
+    },
+    "composite_score": 81.0,
+    "community_links": {
+      "twitter": "https://twitter.com/Polymarket",
+      "website": "https://polymarket.com"
+    }
+  },
+  {
+    "name": "Kalshi",
+    "ticker": null,
+    "category": "Prediction_Markets",
+    "subcategory": "Regulated Prediction Exchange",
+    "status": "pre_token",
+    "tier_suggestion": "1",
+    "one_liner": "$22B valuation prediction exchange with $1.5B annualized revenue",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "$22B",
+        "date": "March 20, 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "2024: $24M; 2025: $260M (994% growth); Annualized March 2026: $1.5B; Weekly volume $2.9B (60% of combined market); Sports 89% of fee revenue",
+        "period": "2024-2026",
+        "source": "Both documents"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "pre_ipo",
+        "platform": "Private",
+        "pair_or_url": "No IPO expected in 2026"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Coatue Management",
+        "amount": null,
+        "round": "Led $22B valuation round (March 2026)"
+      },
+      {
+        "name": "Paradigm",
+        "amount": null,
+        "round": "Mentioned in 1000x Opportunity Map as Paradigm-led"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Revenue trajectory: $24M \u2192 $260M \u2192 $1.5B annualized \u2014 explosive growth",
+        "est_date": "ongoing",
+        "impact": "high"
+      },
+      {
+        "event": "Eventual IPO (not expected 2026)",
+        "est_date": "2027+",
+        "impact": "high"
+      },
+      {
+        "event": "Sports betting expansion (89% of fee revenue)",
+        "est_date": "ongoing",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "$22B valuation may be overvalued if sports betting volume normalizes",
+        "severity": "high"
+      },
+      {
+        "risk": "No IPO expected in 2026; liquidity risk for any investors",
+        "severity": "medium"
+      },
+      {
+        "risk": "Regulatory risk \u2014 prediction markets face legislative scrutiny",
+        "severity": "high"
+      },
+      {
+        "risk": "89% sports concentration \u2014 not diversified across event types",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 40,
+        "evidence": "Prediction markets gaining mainstream acceptance but still dismissed by some as gambling; $22B valuation suggests growing legitimacy"
+      },
+      "working_code": {
+        "score_suggestion": 95,
+        "evidence": "$1.5B annualized revenue, 994% growth, $2.9B weekly volume, CFTC-regulated exchange \u2014 proven product"
+      },
+      "ideological_community": {
+        "score_suggestion": 50,
+        "evidence": "Growing user base especially in sports; less ideological than crypto prediction markets"
+      },
+      "developer_activity": {
+        "score_suggestion": 60,
+        "evidence": "Rapid revenue growth implies active product development; CFTC compliance work"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 90,
+        "evidence": "Coatue Management led $22B valuation round; Paradigm involvement; institutional credibility"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 80,
+        "evidence": "Regulated prediction exchange with explosive revenue growth \u2014 simple, powerful narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 90,
+        "evidence": "Private company, no IPO expected in 2026; inaccessible to most investors"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 55,
+        "evidence": "Revenue growth is ongoing catalyst but no IPO or liquidity event expected in 2026"
+      }
+    },
+    "composite_score": 69.25,
+    "community_links": {
+      "twitter": "https://twitter.com/Kalshi",
+      "website": "https://kalshi.com"
+    }
+  },
+  {
+    "name": "UMA Protocol",
+    "ticker": "UMA",
+    "category": "Prediction_Markets",
+    "subcategory": "Oracle / Resolution Infrastructure",
+    "status": "token_live",
+    "tier_suggestion": "1",
+    "one_liner": "Powers Polymarket resolution, trading at all-time low $0.42",
+    "quantitative_data": {
+      "price": {
+        "value": "$0.42",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": "At all-time low",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": "Processes ~7,000 proposals/month for Polymarket",
+        "period": "monthly",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "DEX/CEX",
+        "pair_or_url": "UMA"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Polymarket $POLY token launch could increase attention on UMA as critical infrastructure",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Growth of prediction market volume increases UMA resolution demand",
+        "est_date": "ongoing",
+        "impact": "medium"
+      },
+      {
+        "event": "Trading at all-time low creates maximum asymmetric entry",
+        "est_date": "current",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "At all-time low \u2014 could indicate structural token value capture problem",
+        "severity": "high"
+      },
+      {
+        "risk": "Polymarket could replace UMA with alternative oracle/resolution mechanism",
+        "severity": "high"
+      },
+      {
+        "risk": "Low visibility and trading volume at current levels",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 70,
+        "evidence": "Oracle/resolution infrastructure is deeply dismissed; trading at ATL shows maximum market dismissal"
+      },
+      "working_code": {
+        "score_suggestion": 80,
+        "evidence": "Processes ~7,000 proposals/month; powers Polymarket resolution \u2014 critical working infrastructure"
+      },
+      "ideological_community": {
+        "score_suggestion": 40,
+        "evidence": "Oracle infrastructure has less community passion than user-facing platforms"
+      },
+      "developer_activity": {
+        "score_suggestion": 55,
+        "evidence": "Active with 7,000 monthly proposals but no specific dev metric data"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 30,
+        "evidence": "At all-time low; no specific smart money entry mentioned \u2014 contrarian signal"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 70,
+        "evidence": "Powers the dominant prediction market's truth resolution \u2014 clear infrastructure narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 25,
+        "evidence": "Token is live and tradeable on exchanges"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 75,
+        "evidence": "Polymarket token launch in 2026 is a direct catalyst for UMA as infrastructure layer"
+      }
+    },
+    "composite_score": 59.25,
+    "community_links": {
+      "twitter": "https://twitter.com/UMAprotocol",
+      "website": "https://uma.xyz"
+    }
+  },
+  {
+    "name": "Chainlink",
+    "ticker": "LINK",
+    "category": "Prediction_Markets",
+    "subcategory": "Oracle / Cross-Chain Infrastructure",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Dominant oracle with $18B/month CCIP volume, JPMorgan partnerships",
+    "quantitative_data": {
+      "price": {
+        "value": "~$8.90",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "$6.5B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "$6.5B market cap",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "$18B/month CCIP volume",
+        "period": "monthly",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Major exchanges (Binance, Coinbase, etc.)",
+        "pair_or_url": "LINK/USD, LINK/USDT"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Bitwise (LINK ETF)",
+        "amount": null,
+        "round": "ETF launched on NYSE Arca"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Bitwise LINK ETF launched on NYSE Arca",
+        "est_date": "completed",
+        "impact": "high"
+      },
+      {
+        "event": "Partnerships with JPMorgan, UBS, SWIFT for cross-chain settlement",
+        "est_date": "ongoing",
+        "impact": "high"
+      },
+      {
+        "event": "Polymarket integration tripled daily volume",
+        "est_date": "completed",
+        "impact": "medium"
+      },
+      {
+        "event": "$18B/month CCIP volume growth trajectory",
+        "est_date": "ongoing",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Token value capture remains debated \u2014 high volume doesn't always translate to token value",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from other oracle solutions and cross-chain protocols",
+        "severity": "medium"
+      },
+      {
+        "risk": "Crypto market downturn could compress LINK price further",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 20,
+        "evidence": "Chainlink is well-established and widely respected; no longer in toy phase"
+      },
+      "working_code": {
+        "score_suggestion": 95,
+        "evidence": "$18B/month CCIP volume; powers Polymarket fast crypto markets; partnerships with JPMorgan, UBS, SWIFT"
+      },
+      "ideological_community": {
+        "score_suggestion": 65,
+        "evidence": "LINK Marines are a well-known crypto community; strong holder base"
+      },
+      "developer_activity": {
+        "score_suggestion": 75,
+        "evidence": "CCIP development, Polymarket integration, institutional partnerships all indicate active development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 75,
+        "evidence": "Bitwise LINK ETF on NYSE Arca; JPMorgan, UBS, SWIFT partnerships"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 80,
+        "evidence": "The oracle that connects blockchains to the real world \u2014 very clear narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 5,
+        "evidence": "Available on all major exchanges; Bitwise ETF provides TradFi access"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 60,
+        "evidence": "CCIP volume growth and institutional partnerships ongoing; ETF already launched"
+      }
+    },
+    "composite_score": 64.25,
+    "community_links": {
+      "twitter": "https://twitter.com/chainlink",
+      "website": "https://chain.link"
+    }
+  },
+  {
+    "name": "Drift BET",
+    "ticker": "BET",
+    "category": "Prediction_Markets",
+    "subcategory": "Solana-based Prediction Market",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Solana prediction market on Drift Protocol's $25B+ volume",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": "Built on Drift Protocol's $25B+ cumulative derivatives volume",
+        "period": "cumulative",
+        "source": "1000x Opportunity Map"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Solana DEX / Drift Protocol",
+        "pair_or_url": "BET"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Drift Protocol",
+        "amount": null,
+        "round": "parent protocol"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Users earn yield while holding event positions \u2014 unique value proposition",
+        "est_date": "ongoing",
+        "impact": "medium"
+      },
+      {
+        "event": "Growth of Solana ecosystem and prediction market adoption",
+        "est_date": "2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Drift Protocol lost $285M in April 2026 exploit (likely North Korean hackers)",
+        "severity": "critical"
+      },
+      {
+        "risk": "Competition from Polymarket and Kalshi",
+        "severity": "high"
+      },
+      {
+        "risk": "No specific market cap or revenue data available",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 55,
+        "evidence": "Prediction markets on Solana still emerging; smaller than Polymarket/Kalshi"
+      },
+      "working_code": {
+        "score_suggestion": 60,
+        "evidence": "Built on Drift Protocol's $25B+ cumulative volume; yield-bearing positions functionality"
+      },
+      "ideological_community": {
+        "score_suggestion": 40,
+        "evidence": "Part of Solana DeFi community but no specific community data"
+      },
+      "developer_activity": {
+        "score_suggestion": 50,
+        "evidence": "Active development on Drift Protocol infrastructure"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 35,
+        "evidence": "Drift Protocol is established but no specific BET backers mentioned"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 65,
+        "evidence": "Prediction markets + yield earning while betting \u2014 differentiated narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 45,
+        "evidence": "Available on Solana DEXs; requires Solana wallet and familiarity"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 40,
+        "evidence": "No specific upcoming catalysts mentioned beyond sector growth"
+      }
+    },
+    "composite_score": 48.5,
+    "community_links": {
+      "twitter": null,
+      "website": "https://www.drift.trade"
+    }
+  },
+  {
+    "name": "Myriad Markets",
+    "ticker": null,
+    "category": "Prediction_Markets",
+    "subcategory": "Prediction Infrastructure Layer",
+    "status": "pre_token",
+    "tier_suggestion": "3",
+    "one_liner": "Infrastructure layer enabling shared liquidity across prediction frontends",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": "$40M+ cumulative volume",
+        "period": "cumulative",
+        "source": "1000x Opportunity Map"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "airdrop_farming",
+        "platform": "Myriad Markets",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Potential token launch as infrastructure layer matures",
+        "est_date": "unknown",
+        "impact": "high"
+      },
+      {
+        "event": "Shared liquidity model could attract multiple frontends",
+        "est_date": "ongoing",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Pre-token with relatively small volume ($40M cumulative)",
+        "severity": "high"
+      },
+      {
+        "risk": "Competition from established prediction market platforms",
+        "severity": "medium"
+      },
+      {
+        "risk": "No specific funding or backing data available",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 65,
+        "evidence": "Infrastructure layer for prediction markets is deeply niche and dismissed"
+      },
+      "working_code": {
+        "score_suggestion": 50,
+        "evidence": "$40M+ cumulative volume shows working product; multiple frontends sharing liquidity"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "No community data mentioned"
+      },
+      "developer_activity": {
+        "score_suggestion": 40,
+        "evidence": "Active product with $40M volume but no developer metrics"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 20,
+        "evidence": "No funding or backer data provided"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 55,
+        "evidence": "Shared liquidity infrastructure for prediction markets \u2014 clear but niche"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 80,
+        "evidence": "Pre-token; can only farm/use the platform for potential future airdrop"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 35,
+        "evidence": "No specific catalysts or token launch timeline mentioned"
+      }
+    },
+    "composite_score": 43.75,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Opinion Trade",
+    "ticker": null,
+    "category": "Prediction_Markets",
+    "subcategory": "BNB Chain Prediction Market",
+    "status": "token_live",
+    "tier_suggestion": "3",
+    "one_liner": "$3.1B cumulative volume on BNB Chain within weeks of launch",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": "$3.1B cumulative volume within weeks of October 2025 launch",
+        "period": "cumulative since Oct 2025",
+        "source": "1000x Opportunity Map"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "BNB Chain",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Rapid volume growth trajectory ($3.1B in weeks)",
+        "est_date": "ongoing",
+        "impact": "medium"
+      },
+      {
+        "event": "BNB Chain ecosystem growth",
+        "est_date": "ongoing",
+        "impact": "low"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Volume could be inflated/wash trading (common on BNB Chain)",
+        "severity": "high"
+      },
+      {
+        "risk": "No funding, backer, or market cap data available",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from larger prediction market platforms",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 50,
+        "evidence": "BNB Chain prediction market is less respected than Polygon-based Polymarket"
+      },
+      "working_code": {
+        "score_suggestion": 55,
+        "evidence": "$3.1B cumulative volume within weeks shows working product with traction"
+      },
+      "ideological_community": {
+        "score_suggestion": 25,
+        "evidence": "No community data mentioned"
+      },
+      "developer_activity": {
+        "score_suggestion": 35,
+        "evidence": "Rapid launch and volume growth but no developer data"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 15,
+        "evidence": "No backers or funding mentioned"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 45,
+        "evidence": "Prediction market on BNB Chain \u2014 simple but not differentiated"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 40,
+        "evidence": "Available on BNB Chain; requires BSC wallet"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 30,
+        "evidence": "No specific upcoming catalysts mentioned"
+      }
+    },
+    "composite_score": 37.25,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Robinhood",
+    "ticker": "HOOD",
+    "category": "Prediction_Markets",
+    "subcategory": "Public Equity Proxy",
+    "status": "public_equity",
+    "tier_suggestion": "2",
+    "one_liner": "Prediction market proxy with ~$300M ARR from event trading",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": "~$300M annual recurring revenue from event trading (per ARK Invest estimate)",
+        "period": "annual",
+        "source": "1000x Opportunity Map"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "public_equity",
+        "platform": "NASDAQ",
+        "pair_or_url": "HOOD"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Prediction market sector growth increases event trading revenue",
+        "est_date": "ongoing",
+        "impact": "medium"
+      },
+      {
+        "event": "ARK Invest coverage as prediction market proxy",
+        "est_date": "ongoing",
+        "impact": "low"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Event trading is a small portion of overall Robinhood revenue",
+        "severity": "medium"
+      },
+      {
+        "risk": "Regulatory risk to prediction market features",
+        "severity": "medium"
+      },
+      {
+        "risk": "Not a pure-play prediction market investment",
+        "severity": "low"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 15,
+        "evidence": "Robinhood is a well-known public company; event trading feature is mainstream"
+      },
+      "working_code": {
+        "score_suggestion": 85,
+        "evidence": "~$300M ARR from event trading; fully operational public company"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "Robinhood has retail trader community but not prediction-market-specific ideology"
+      },
+      "developer_activity": {
+        "score_suggestion": 55,
+        "evidence": "Major public company with active product development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 50,
+        "evidence": "ARK Invest identifies as prediction market proxy"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 55,
+        "evidence": "Simplest public market access to prediction market growth \u2014 but impure play"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 5,
+        "evidence": "Publicly traded on NASDAQ; extremely easy to buy"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 40,
+        "evidence": "Prediction market growth is ongoing but no specific HOOD-specific catalyst"
+      }
+    },
+    "composite_score": 47.0,
+    "community_links": {
+      "twitter": "https://twitter.com/RobinhoodApp",
+      "website": "https://robinhood.com"
+    }
+  },
+  {
+    "name": "Securitize SPAC",
+    "ticker": "SECZ",
+    "category": "RWA_Tokenization",
+    "subcategory": "Tokenization Infrastructure / SPAC",
+    "status": "SPAC",
+    "tier_suggestion": "1",
+    "one_liner": "First pure-play tokenization company, ~70% US market, profitable",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": "Post-merger ~$1.82B",
+        "date": "2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": "Underpins $22B in tokenized RWAs",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "funding_raised": {
+        "value": "Gross proceeds up to ~$469M from SPAC",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "valuation": {
+        "value": "$1.25B pre-money; ~$1.82B post-merger",
+        "date": "2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "Projected 2026 revenue $110M; net income $24M (profitable)",
+        "period": "FY2026 projected",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "SPAC",
+        "platform": "NASDAQ",
+        "pair_or_url": "CEPT (pre-merger) \u2192 SECZ (post-merger); expected close H1 2026"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "ARK Invest",
+        "amount": null,
+        "round": "existing investor"
+      },
+      {
+        "name": "BlackRock",
+        "amount": null,
+        "round": "existing investor"
+      },
+      {
+        "name": "Morgan Stanley",
+        "amount": null,
+        "round": "existing investor"
+      },
+      {
+        "name": "Benchmark",
+        "amount": null,
+        "round": "Buy rating, $16 price target"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "SPAC merger close (CEPT \u2192 SECZ)",
+        "est_date": "H1 2026",
+        "impact": "high"
+      },
+      {
+        "event": "Benchmark Buy rating with $16 price target",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Projected profitability: $110M revenue, $24M net income in 2026",
+        "est_date": "FY2026",
+        "impact": "high"
+      },
+      {
+        "event": "~70% US tokenization market share provides dominance",
+        "est_date": "current",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "SPAC merger may face redemptions or delays",
+        "severity": "medium"
+      },
+      {
+        "risk": "Tokenization market growth may slow if crypto sentiment worsens",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from traditional financial infrastructure providers",
+        "severity": "medium"
+      },
+      {
+        "risk": "Regulatory changes could impact tokenization market",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 45,
+        "evidence": "RWA tokenization still dismissed by TradFi as unnecessary; viewed as crypto hype by many"
+      },
+      "working_code": {
+        "score_suggestion": 90,
+        "evidence": "Underpins $22B in tokenized RWAs; ~70% US market; $110M projected revenue; BlackRock BUIDL powered by Securitize"
+      },
+      "ideological_community": {
+        "score_suggestion": 40,
+        "evidence": "Institutional focus rather than ideological community; RWA thesis has believers"
+      },
+      "developer_activity": {
+        "score_suggestion": 70,
+        "evidence": "Launching Stocks on Securitize; ongoing platform development; handles major institutional clients"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 90,
+        "evidence": "ARK, BlackRock, Morgan Stanley as existing investors; Benchmark Buy/$16 target"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 85,
+        "evidence": "First pure-play public tokenization company \u2014 extremely clear narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 30,
+        "evidence": "Pre-merger SPAC tradeable under CEPT; will be SECZ post-merger"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 85,
+        "evidence": "H1 2026 merger close; $16 price target; profitability projected for 2026"
+      }
+    },
+    "composite_score": 71.25,
+    "community_links": {
+      "twitter": null,
+      "website": "https://securitize.io"
+    }
+  },
+  {
+    "name": "Republic Mirror Tokens",
+    "ticker": null,
+    "category": "RWA_Tokenization",
+    "subcategory": "Tokenized Private Company Exposure",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Tokenized SpaceX/ByteDance exposure via Reg D debt securities on Solana",
+    "quantitative_data": {
+      "price": {
+        "value": "rSPAX at $275/token reference (SpaceX)",
+        "date": "2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Republic / Solana",
+        "pair_or_url": "rSPAX (SpaceX), rTTOK (ByteDance); $50 minimum; Reg D 506(c), accredited investors only"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "RepublicX LLC",
+        "amount": null,
+        "round": "issuer"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Planned expansion: xAI, Anthropic, Ramp, Cursor, Perplexity, Epic Games tokens",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Secondary trading begins after 1-year lockup",
+        "est_date": "2026-2027",
+        "impact": "medium"
+      },
+      {
+        "event": "SpaceX or ByteDance IPO would trigger payout",
+        "est_date": "unknown",
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "NOT equity \u2014 debt securities (Contingent Payout Notes) that mirror economic performance",
+        "severity": "high"
+      },
+      {
+        "risk": "Payout only triggered by qualifying event (IPO, acquisition) \u2014 may never happen",
+        "severity": "high"
+      },
+      {
+        "risk": "1-year lockup before secondary trading",
+        "severity": "medium"
+      },
+      {
+        "risk": "Accredited investors only \u2014 limited accessibility",
+        "severity": "medium"
+      },
+      {
+        "risk": "Counterparty risk with RepublicX LLC",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 55,
+        "evidence": "Tokenized private company shares dismissed as unnecessary complexity over traditional secondary markets"
+      },
+      "working_code": {
+        "score_suggestion": 65,
+        "evidence": "Live products: rSPAX (SpaceX) and rTTOK (ByteDance) on Solana; $50 minimum investment"
+      },
+      "ideological_community": {
+        "score_suggestion": 35,
+        "evidence": "Republic has a retail investor community but not strongly ideological"
+      },
+      "developer_activity": {
+        "score_suggestion": 50,
+        "evidence": "Expanding product line to xAI, Anthropic, etc.; active development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 40,
+        "evidence": "Republic is an established platform but no specific major backer data for mirror tokens"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 75,
+        "evidence": "Own a piece of SpaceX/Anthropic for $50 \u2014 extremely clear retail narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 55,
+        "evidence": "Accredited investors only; Reg D 506(c); 1-year lockup"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 50,
+        "evidence": "Expansion to xAI, Anthropic planned; but IPO trigger events are uncertain"
+      }
+    },
+    "composite_score": 52.25,
+    "community_links": {
+      "twitter": null,
+      "website": "https://republic.com"
+    }
+  },
+  {
+    "name": "Ondo Finance",
+    "ticker": "ONDO",
+    "category": "RWA_Tokenization",
+    "subcategory": "Tokenized Securities Platform",
+    "status": "token_live",
+    "tier_suggestion": "1",
+    "one_liner": "Leading tokenized treasury platform, $2.75B TVL, Ondo Chain L1",
+    "quantitative_data": {
+      "price": {
+        "value": "~$0.25",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "~$1.2B",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": "$2.14",
+        "date": null,
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "drawdown_from_ath": {
+        "value": "-88%",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "tvl": {
+        "value": "$2.75B+ (OUSG ~$692M, USDY ~$1.4B)",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "$1.2B market cap",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "Ondo Global Markets: $14B cumulative trading volume; 250+ tokenized stocks/ETFs",
+        "period": "cumulative",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Major exchanges (Binance, Coinbase)",
+        "pair_or_url": "ONDO/USD, ONDO/USDT"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Franklin Templeton",
+        "amount": null,
+        "round": "partnership (tokenize 5 ETFs)"
+      },
+      {
+        "name": "SEC investigation",
+        "amount": null,
+        "round": "closed without charges Nov 2025"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Ondo Chain L1 announced for institutional RWAs",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "Franklin Templeton partnership to tokenize 5 ETFs",
+        "est_date": "2026",
+        "impact": "high"
+      },
+      {
+        "event": "SEC investigation closed without charges (Nov 2025) \u2014 regulatory clarity",
+        "est_date": "completed",
+        "impact": "medium"
+      },
+      {
+        "event": "-88% from ATH creates maximum asymmetric entry if fundamentals hold",
+        "est_date": "current",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Nearly 6B tokens still to unlock through 2029 \u2014 massive dilution risk",
+        "severity": "critical"
+      },
+      {
+        "risk": "-88% from ATH may reflect structural problems, not just market conditions",
+        "severity": "high"
+      },
+      {
+        "risk": "Token value capture from $14B trading volume is unclear",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from Securitize, BlackRock BUIDL, and TradFi incumbents",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 35,
+        "evidence": "Tokenized treasuries gaining institutional acceptance; Ondo is well-known in RWA space"
+      },
+      "working_code": {
+        "score_suggestion": 90,
+        "evidence": "$2.75B TVL, $14B cumulative trading volume, 250+ tokenized stocks/ETFs, OUSG/USDY products live"
+      },
+      "ideological_community": {
+        "score_suggestion": 55,
+        "evidence": "RWA tokenization has true believers; Ondo has active community despite -88% drawdown"
+      },
+      "developer_activity": {
+        "score_suggestion": 75,
+        "evidence": "Ondo Global Markets, Ondo Chain L1, Franklin Templeton integration \u2014 very active development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 65,
+        "evidence": "Franklin Templeton partnership; SEC cleared; institutional focus"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 80,
+        "evidence": "Tokenizing Wall Street assets for on-chain access \u2014 powerful clear narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 10,
+        "evidence": "Available on major exchanges including Binance and Coinbase"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 75,
+        "evidence": "Ondo Chain L1 launch, Franklin Templeton tokenized ETFs, continued TVL growth \u2014 multiple 2026 catalysts"
+      }
+    },
+    "composite_score": 65.5,
+    "community_links": {
+      "twitter": "https://twitter.com/OndoFinance",
+      "website": "https://ondo.finance"
+    }
+  },
+  {
+    "name": "Centrifuge",
+    "ticker": "CFG",
+    "category": "RWA_Tokenization",
+    "subcategory": "Institutional RWA Lending",
+    "status": "token_live",
+    "tier_suggestion": "1",
+    "one_liner": "Institutional RWA lending with $1B TVL, Apollo/Janus partnerships",
+    "quantitative_data": {
+      "price": {
+        "value": "$0.155-0.22",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "$89-124M",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": "$1B+ (surpassed Aug 2025); $1.1B+ active loans per 1000x Map",
+        "date": "2025-2026",
+        "source": "Both documents"
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "$89-124M market cap",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": "Projected 2026 revenue $15M; JTRSY fund $861M; JAAA (AAA-rated CLOs)",
+        "period": "FY2026 projected",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Binance (listed March 2026), major exchanges",
+        "pair_or_url": "CFG/USDT"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Apollo",
+        "amount": null,
+        "round": "partner"
+      },
+      {
+        "name": "Janus Henderson",
+        "amount": null,
+        "round": "partner"
+      },
+      {
+        "name": "S&P Dow Jones",
+        "amount": null,
+        "round": "partner"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Binance listing (March 2026) triggered 60% surge",
+        "est_date": "completed March 2026",
+        "impact": "high"
+      },
+      {
+        "event": "LayerZero integration enables 165+ blockchain deployment",
+        "est_date": "2026",
+        "impact": "medium"
+      },
+      {
+        "event": "Projected $15M revenue in 2026 against $89-124M market cap",
+        "est_date": "FY2026",
+        "impact": "high"
+      },
+      {
+        "event": "First on-chain S&P 500 index fund deployment",
+        "est_date": "completed",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Small market cap relative to TVL may indicate poor token value capture",
+        "severity": "medium"
+      },
+      {
+        "risk": "Credit risk on underlying RWA loans",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competition from Ondo, Securitize, and TradFi incumbents",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 45,
+        "evidence": "RWA lending still viewed skeptically by crypto purists and TradFi alike"
+      },
+      "working_code": {
+        "score_suggestion": 85,
+        "evidence": "$1B+ TVL, $1.1B+ active loans, JTRSY fund $861M, AAA-rated CLOs, LayerZero integration \u2014 robust working product"
+      },
+      "ideological_community": {
+        "score_suggestion": 40,
+        "evidence": "RWA community growing but not strongly ideological"
+      },
+      "developer_activity": {
+        "score_suggestion": 65,
+        "evidence": "LayerZero integration (165+ blockchains), multiple fund launches, Binance listing \u2014 active development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 75,
+        "evidence": "Apollo, Janus Henderson, S&P Dow Jones partnerships; Binance listing"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 70,
+        "evidence": "Institutional-grade on-chain lending with AAA-rated products \u2014 clear institutional narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 15,
+        "evidence": "Listed on Binance since March 2026; increasingly accessible"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 70,
+        "evidence": "Binance listing just occurred; $15M revenue projection for 2026; LayerZero cross-chain expansion"
+      }
+    },
+    "composite_score": 63.5,
+    "community_links": {
+      "twitter": "https://twitter.com/centrifuge",
+      "website": "https://centrifuge.io"
+    }
+  },
+  {
+    "name": "Plume Network",
+    "ticker": "PLUME",
+    "category": "RWA_Tokenization",
+    "subcategory": "RWA-focused L1/L2 Chain",
+    "status": "token_live",
+    "tier_suggestion": "1",
+    "one_liner": "Undervalued RWA chain, $645M assets, $50M cap, major partners",
+    "quantitative_data": {
+      "price": {
+        "value": "~$0.01",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "market_cap": {
+        "value": "~$50M",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": "$645M in tokenized assets",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "$50M market cap",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "DEX/CEX",
+        "pair_or_url": "PLUME"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "Apollo",
+        "amount": null,
+        "round": "partner"
+      },
+      {
+        "name": "WisdomTree (14 funds deployed)",
+        "amount": null,
+        "round": "partner"
+      },
+      {
+        "name": "Mastercard",
+        "amount": null,
+        "round": "partner"
+      },
+      {
+        "name": "Securitize",
+        "amount": null,
+        "round": "partner"
+      },
+      {
+        "name": "Blackstone",
+        "amount": null,
+        "round": "partner"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Market not pricing $645M in on-chain assets into $50M cap \u2014 massive value gap",
+        "est_date": "current",
+        "impact": "high"
+      },
+      {
+        "event": "SEC Transfer Agent registration provides regulatory legitimacy",
+        "est_date": "completed",
+        "impact": "medium"
+      },
+      {
+        "event": "Major partner integrations: Apollo, WisdomTree, Mastercard, Blackstone",
+        "est_date": "ongoing",
+        "impact": "high"
+      },
+      {
+        "event": "280K+ RWA holders indicates real user adoption",
+        "est_date": "current",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Extremely low price ($0.01) and market cap ($50M) may indicate structural problems",
+        "severity": "medium"
+      },
+      {
+        "risk": "$645M tokenized assets vs $50M cap suggests market doubts value capture",
+        "severity": "high"
+      },
+      {
+        "risk": "No revenue data provided",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 65,
+        "evidence": "RWA chain at $0.01 with $50M cap is deeply dismissed despite $645M in tokenized assets and major partners"
+      },
+      "working_code": {
+        "score_suggestion": 80,
+        "evidence": "$645M tokenized assets, 280K+ holders, SEC Transfer Agent registered, 14 WisdomTree funds deployed"
+      },
+      "ideological_community": {
+        "score_suggestion": 45,
+        "evidence": "280K+ RWA holders indicates real community but ideological aspect unclear"
+      },
+      "developer_activity": {
+        "score_suggestion": 60,
+        "evidence": "Multiple major partner integrations, SEC registration, active chain development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 80,
+        "evidence": "Apollo, WisdomTree, Mastercard, Securitize, Blackstone as partners \u2014 top-tier institutional backing"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 70,
+        "evidence": "RWA-native chain with $645M in assets at $50M valuation \u2014 clear undervaluation narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 30,
+        "evidence": "Token is live and tradeable; less accessible than major exchange tokens"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 65,
+        "evidence": "Value gap is current; partner integrations ongoing; 280K+ holders growing"
+      }
+    },
+    "composite_score": 66.0,
+    "community_links": {
+      "twitter": null,
+      "website": "https://plumenetwork.xyz"
+    }
+  },
+  {
+    "name": "Etherfuse",
+    "ticker": null,
+    "category": "RWA_Tokenization",
+    "subcategory": "Tokenized Sovereign Bonds",
+    "status": "pre_token",
+    "tier_suggestion": "3",
+    "one_liner": "Tokenized sovereign bonds focused on emerging markets",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Unknown",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Emerging market sovereign bond tokenization is a large addressable market",
+        "est_date": "ongoing",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Minimal data available \u2014 extremely early stage",
+        "severity": "critical"
+      },
+      {
+        "risk": "Sovereign bond tokenization faces significant regulatory hurdles",
+        "severity": "high"
+      },
+      {
+        "risk": "Emerging market credit risk layered on top of tokenization risk",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 75,
+        "evidence": "Tokenized sovereign bonds from emerging markets is deeply niche and dismissed"
+      },
+      "working_code": {
+        "score_suggestion": 15,
+        "evidence": "Described as frontier experiment; no metrics provided"
+      },
+      "ideological_community": {
+        "score_suggestion": 15,
+        "evidence": "No community data"
+      },
+      "developer_activity": {
+        "score_suggestion": 15,
+        "evidence": "No development metrics available"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 10,
+        "evidence": "No backers or funding mentioned"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 50,
+        "evidence": "Tokenized sovereign bonds for emerging markets \u2014 clear concept but unproven"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 85,
+        "evidence": "No clear investment mechanism; frontier experiment"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 15,
+        "evidence": "No specific catalysts mentioned"
+      }
+    },
+    "composite_score": 28.5,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Daylight",
+    "ticker": null,
+    "category": "RWA_Tokenization",
+    "subcategory": "Tokenized Energy Infrastructure",
+    "status": "pre_token",
+    "tier_suggestion": "3",
+    "one_liner": "Tokenized energy infrastructure vaults, frontier-stage experiment",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Unknown",
+        "pair_or_url": null
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "Energy infrastructure tokenization is a large TAM",
+        "est_date": "ongoing",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Minimal data available \u2014 frontier experiment stage",
+        "severity": "critical"
+      },
+      {
+        "risk": "Energy infrastructure tokenization faces regulatory and technical hurdles",
+        "severity": "high"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 80,
+        "evidence": "Tokenized energy infrastructure vaults is a concept most people cannot conceptualize"
+      },
+      "working_code": {
+        "score_suggestion": 10,
+        "evidence": "Described only as frontier experiment; no product data"
+      },
+      "ideological_community": {
+        "score_suggestion": 10,
+        "evidence": "No community data"
+      },
+      "developer_activity": {
+        "score_suggestion": 10,
+        "evidence": "No development metrics available"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 10,
+        "evidence": "No backers or funding mentioned"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 45,
+        "evidence": "Tokenized energy infrastructure \u2014 clear concept but extremely early"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 90,
+        "evidence": "No clear investment mechanism; frontier experiment"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 10,
+        "evidence": "No specific catalysts mentioned"
+      }
+    },
+    "composite_score": 26.25,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "Landshare",
+    "ticker": "LAND",
+    "category": "RWA_Tokenization",
+    "subcategory": "Tokenized Real Estate",
+    "status": "token_live",
+    "tier_suggestion": "3",
+    "one_liner": "BSC tokenized real estate with $7.5M cap and 4+ year track record",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": "~$7.5M",
+        "date": "2026",
+        "source": "1000x Opportunity Map"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": "$7.5M market cap",
+        "date": "2026",
+        "source": "1000x Opportunity Map"
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "BSC (BNB Smart Chain)",
+        "pair_or_url": "LAND"
+      }
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {
+        "event": "4+ years of real estate tokenization provides proven track record",
+        "est_date": "ongoing",
+        "impact": "medium"
+      },
+      {
+        "event": "RWA sector growth could lift all boats including micro-caps",
+        "est_date": "2026",
+        "impact": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "$7.5M micro-cap \u2014 extreme illiquidity and volatility risk",
+        "severity": "high"
+      },
+      {
+        "risk": "BSC-based \u2014 less institutional credibility than Ethereum-based RWA",
+        "severity": "medium"
+      },
+      {
+        "risk": "No specific revenue or growth metrics provided",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 60,
+        "evidence": "Tokenized real estate on BSC at $7.5M cap is deeply dismissed by most investors"
+      },
+      "working_code": {
+        "score_suggestion": 55,
+        "evidence": "4+ years of real estate tokenization demonstrates longevity and working product"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "No specific community data mentioned"
+      },
+      "developer_activity": {
+        "score_suggestion": 35,
+        "evidence": "4+ year track record implies ongoing development but no specific metrics"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 15,
+        "evidence": "No backers or institutional involvement mentioned"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 60,
+        "evidence": "Tokenized real estate \u2014 simple, clear narrative with real-world backing"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 50,
+        "evidence": "Available on BSC; requires BNB Chain wallet and familiarity with DeFi"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 30,
+        "evidence": "No specific upcoming catalysts; benefits from general RWA sector growth"
+      }
+    },
+    "composite_score": 40.5,
+    "community_links": {
+      "twitter": null,
+      "website": null
+    }
+  },
+  {
+    "name": "BlackRock BUIDL",
+    "ticker": null,
+    "category": "RWA_Tokenization",
+    "subcategory": "Tokenized Treasuries / Money Market",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Largest tokenized product globally at $2.42B AUM, tradable on Uniswap",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": "$2.42B AUM",
+        "date": "April 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": null,
+        "period": null,
+        "source": null
+      }
+    },
+    "entry_mechanisms": [
+      {
+        "type": "token_purchase",
+        "platform": "Uniswap / Securitize",
+        "pair_or_url": "BUIDL token; now tradable on Uniswap"
+      }
+    ],
+    "key_backers": [
+      {
+        "name": "BlackRock",
+        "amount": null,
+        "round": "issuer"
+      },
+      {
+        "name": "Securitize",
+        "amount": null,
+        "round": "infrastructure provider"
+      }
+    ],
+    "catalysts": [
+      {
+        "event": "Now tradable on Uniswap \u2014 increased DeFi accessibility",
+        "est_date": "completed",
+        "impact": "medium"
+      },
+      {
+        "event": "Continued AUM growth as tokenized treasuries sector expands",
+        "est_date": "ongoing",
+        "impact": "medium"
+      },
+      {
+        "event": "Validates RWA tokenization thesis with world's largest asset manager backing",
+        "est_date": "ongoing",
+        "impact": "high"
+      }
+    ],
+    "risks": [
+      {
+        "risk": "Not a traditional investment vehicle for asymmetric returns \u2014 stable value product",
+        "severity": "low"
+      },
+      {
+        "risk": "Yield-bearing tokenized treasury, not a high-growth token",
+        "severity": "medium"
+      },
+      {
+        "risk": "Regulatory treatment of on-chain treasury products may change",
+        "severity": "medium"
+      }
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": 15,
+        "evidence": "BlackRock involvement means BUIDL is NOT dismissed \u2014 it's the validation of the entire RWA thesis"
+      },
+      "working_code": {
+        "score_suggestion": 95,
+        "evidence": "$2.42B AUM; largest tokenized product globally; tradable on Uniswap; Securitize-powered"
+      },
+      "ideological_community": {
+        "score_suggestion": 30,
+        "evidence": "Institutional product, not community-driven"
+      },
+      "developer_activity": {
+        "score_suggestion": 55,
+        "evidence": "Securitize handles infrastructure; Uniswap integration shows ongoing development"
+      },
+      "smart_money_entry": {
+        "score_suggestion": 95,
+        "evidence": "BlackRock \u2014 the world's largest asset manager \u2014 IS the smart money"
+      },
+      "narrative_clarity": {
+        "score_suggestion": 90,
+        "evidence": "BlackRock tokenized Treasury fund on-chain \u2014 ultimate institutional validation narrative"
+      },
+      "hard_to_buy": {
+        "score_suggestion": 20,
+        "evidence": "Now tradable on Uniswap; also accessible via Securitize"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": 40,
+        "evidence": "Steady growth product; no explosive catalyst expected \u2014 this is infrastructure validation"
+      }
+    },
+    "composite_score": 58.25,
+    "community_links": {
+      "twitter": null,
+      "website": "https://securitize.io/buidl"
+    }
+  },
+  {
+    "name": "RWA Market Overview",
+    "ticker": null,
+    "category": "RWA_Tokenization",
+    "subcategory": "Market Data / Context",
+    "status": "token_live",
+    "tier_suggestion": null,
+    "one_liner": "Total RWA market $29.1B, stablecoins $302B, tokenized treasuries $8.6-8.7B",
+    "quantitative_data": {
+      "price": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "market_cap": {
+        "value": "Total RWA: $29.1B distributed asset value; Stablecoins: $302B; Tokenized US Treasuries: $8.6-8.7B (up 200%+ in a year)",
+        "date": "April 13, 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "ath": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "drawdown_from_ath": {
+        "value": null,
+        "source": null
+      },
+      "tvl": {
+        "value": "$29.1B total (+7.45% from 30 days ago)",
+        "date": "April 13, 2026",
+        "source": "Asymmetric Opportunity Atlas"
+      },
+      "funding_raised": {
+        "value": null,
+        "source": null
+      },
+      "valuation": {
+        "value": null,
+        "date": null,
+        "source": null
+      },
+      "revenue_or_volume": {
+        "value": "RWA grew from $5B start of 2025 to $12-18.4B to $29.1B \u2014 208-482% increase",
+        "period": "2025-2026",
+        "source": "Both documents"
+      }
+    },
+    "entry_mechanisms": [],
+    "key_backers": [],
+    "catalysts": [],
+    "risks": [],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {
+        "score_suggestion": null,
+        "evidence": "Market overview \u2014 not an individual opportunity"
+      },
+      "working_code": {
+        "score_suggestion": null,
+        "evidence": "Market overview \u2014 not an individual opportunity"
+      },
+      "ideological_community": {
+        "score_suggestion": null,
+        "evidence": "Market overview \u2014 not an individual opportunity"
+      },
+      "developer_activity": {
+        "score_suggestion": null,
+        "evidence": "Market overview \u2014 not an individual opportunity"
+      },
+      "smart_money_entry": {
+        "score_suggestion": null,
+        "evidence": "Market overview \u2014 not an individual opportunity"
+      },
+      "narrative_clarity": {
+        "score_suggestion": null,
+        "evidence": "Market overview \u2014 not an individual opportunity"
+      },
+      "hard_to_buy": {
+        "score_suggestion": null,
+        "evidence": "Market overview \u2014 not an individual opportunity"
+      },
+      "catalyst_proximity": {
+        "score_suggestion": null,
+        "evidence": "Market overview \u2014 not an individual opportunity"
+      }
+    },
+    "composite_score": null,
+    "community_links": {
+      "twitter": null,
+      "website": "https://rwa.xyz"
+    }
+  }
+]

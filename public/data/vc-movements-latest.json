@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-05-07T14:25:00Z",
+  "pipeline_version": "0.1.0",
+  "movements": [
+    {
+      "vc_name": "a16z Crypto",
+      "wallet_address": "0xA16z1234567890abcdef1234567890abcdef1234",
+      "token_name": "NeuralSwap",
+      "token_address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU",
+      "chain": "Solana",
+      "transfer_type": "accumulation",
+      "amount_usd": 250000,
+      "date": "2026-05-05T09:30:00Z",
+      "listed_status": "unlisted",
+      "is_sample": true
+    },
+    {
+      "vc_name": "a16z Crypto",
+      "wallet_address": "0xA16z1234567890abcdef1234567890abcdef5678",
+      "token_name": "NeuralSwap",
+      "token_address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU",
+      "chain": "Solana",
+      "transfer_type": "accumulation",
+      "amount_usd": 180000,
+      "date": "2026-05-05T11:45:00Z",
+      "listed_status": "unlisted",
+      "is_sample": true
+    },
+    {
+      "vc_name": "Paradigm",
+      "wallet_address": "0xPara1234567890abcdef1234567890abcdef1234",
+      "token_name": "NeuralSwap",
+      "token_address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU",
+      "chain": "Solana",
+      "transfer_type": "accumulation",
+      "amount_usd": 500000,
+      "date": "2026-05-05T14:00:00Z",
+      "listed_status": "unlisted",
+      "is_sample": true
+    },
+    {
+      "vc_name": "Paradigm",
+      "wallet_address": "0xPara1234567890abcdef1234567890abcdef1234",
+      "token_name": "OmniSense",
+      "token_address": "0x3a7d8eF9c12B4f0eA1d2C3b4E5f6A7B8c9D0e1F2",
+      "chain": "Base",
+      "transfer_type": "new_position",
+      "amount_usd": 350000,
+      "date": "2026-05-04T10:20:00Z",
+      "listed_status": "dex_only",
+      "is_sample": true
+    },
+    {
+      "vc_name": "Polychain Capital",
+      "wallet_address": "0xPoly1234567890abcdef1234567890abcdef1234",
+      "token_name": "VaultLayer",
+      "token_address": "0xA1b2C3d4E5f6A7B8c9D0e1F2a3B4c5D6e7F8a9B0",
+      "chain": "Ethereum",
+      "transfer_type": "new_position",
+      "amount_usd": 200000,
+      "date": "2026-04-30T08:00:00Z",
+      "listed_status": "unlisted",
+      "is_sample": true
+    },
+    {
+      "vc_name": "Multicoin Capital",
+      "wallet_address": "0xMulti234567890abcdef1234567890abcdef1234",
+      "token_name": "ChainRelay",
+      "token_address": "9yMwSPk3Ltg5CW27d07MXJSDpbF5jBkheTqA83TZRuJo",
+      "chain": "Solana",
+      "transfer_type": "accumulation",
+      "amount_usd": 750000,
+      "date": "2026-05-06T23:15:00Z",
+      "listed_status": "unlisted",
+      "is_sample": true
+    },
+    {
+      "vc_name": "Jump Crypto",
+      "wallet_address": "0xJump1234567890abcdef1234567890abcdef1234",
+      "token_name": "ChainRelay",
+      "token_address": "9yMwSPk3Ltg5CW27d07MXJSDpbF5jBkheTqA83TZRuJo",
+      "chain": "Solana",
+      "transfer_type": "new_position",
+      "amount_usd": 1000000,
+      "date": "2026-05-07T02:30:00Z",
+      "listed_status": "unlisted",
+      "is_sample": true
+    },
+    {
+      "vc_name": "Dragonfly Capital",
+      "wallet_address": "0xDrag1234567890abcdef1234567890abcdef1234",
+      "token_name": "ChainRelay",
+      "token_address": "9yMwSPk3Ltg5CW27d07MXJSDpbF5jBkheTqA83TZRuJo",
+      "chain": "Solana",
+      "transfer_type": "accumulation",
+      "amount_usd": 600000,
+      "date": "2026-05-07T06:00:00Z",
+      "listed_status": "unlisted",
+      "is_sample": true
+    },
+    {
+      "vc_name": "Sequoia Crypto",
+      "wallet_address": "0xSequ1234567890abcdef1234567890abcdef1234",
+      "token_name": "PixelMind",
+      "token_address": "0xF1e2D3c4B5a6F7e8D9c0B1a2F3e4D5c6B7a8F9e0",
+      "chain": "Arbitrum",
+      "transfer_type": "exit",
+      "amount_usd": 50000,
+      "date": "2026-04-25T16:00:00Z",
+      "listed_status": "coingecko",
+      "is_sample": true
+    },
+    {
+      "vc_name": "Electric Capital",
+      "wallet_address": "0xElec1234567890abcdef1234567890abcdef1234",
+      "token_name": "OmniSense",
+      "token_address": "0x3a7d8eF9c12B4f0eA1d2C3b4E5f6A7B8c9D0e1F2",
+      "chain": "Base",
+      "transfer_type": "accumulation",
+      "amount_usd": 275000,
+      "date": "2026-05-06T12:00:00Z",
+      "listed_status": "dex_only",
+      "is_sample": true
+    }
+  ],
+  "overlaps": [
+    {
+      "token_name": "NeuralSwap",
+      "token_address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU",
+      "chain": "Solana",
+      "vcs_involved": ["a16z Crypto", "Paradigm"],
+      "total_usd": 930000,
+      "first_seen": "2026-05-05T09:30:00Z",
+      "is_sample": true
+    },
+    {
+      "token_name": "ChainRelay",
+      "token_address": "9yMwSPk3Ltg5CW27d07MXJSDpbF5jBkheTqA83TZRuJo",
+      "chain": "Solana",
+      "vcs_involved": ["Multicoin Capital", "Jump Crypto", "Dragonfly Capital"],
+      "total_usd": 2350000,
+      "first_seen": "2026-05-06T23:15:00Z",
+      "is_sample": true
+    },
+    {
+      "token_name": "OmniSense",
+      "token_address": "0x3a7d8eF9c12B4f0eA1d2C3b4E5f6A7B8c9D0e1F2",
+      "chain": "Base",
+      "vcs_involved": ["Paradigm", "Electric Capital"],
+      "total_usd": 625000,
+      "first_seen": "2026-05-04T10:20:00Z",
+      "is_sample": true
+    }
+  ]
+}

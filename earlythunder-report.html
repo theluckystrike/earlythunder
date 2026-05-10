@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Early Thunder Status Report | April 14, 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; color: #F5F5F7; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; line-height: 1.6; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 60px 32px; }
+  h1 { font-size: 48px; font-weight: 600; letter-spacing: -0.03em; }
+  h2 { font-size: 28px; font-weight: 600; letter-spacing: -0.02em; margin-top: 56px; margin-bottom: 20px; }
+  h3 { font-size: 18px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; }
+  .subtitle { color: #86868B; font-size: 20px; margin-top: 8px; }
+  .date { color: #48484A; font-family: 'SF Mono', SFMono-Regular, Consolas, monospace; font-size: 13px; margin-top: 12px; }
+  .divider { height: 1px; background: #222; margin: 40px 0; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+  .stat-card { background: #111; border: 1px solid #222; border-radius: 16px; padding: 24px; }
+  .stat-label { font-family: 'SF Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #48484A; }
+  .stat-value { font-family: 'SF Mono', monospace; font-size: 32px; font-weight: 600; margin-top: 4px; }
+  .stat-detail { font-size: 12px; color: #48484A; margin-top: 4px; }
+  .green { color: #34C759; }
+  .amber { color: #FF9F0A; }
+  .red { color: #FF453A; }
+  .muted { color: #86868B; }
+  table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+  th { text-align: left; font-family: 'SF Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #48484A; padding: 10px 12px; border-bottom: 1px solid #222; }
+  td { padding: 10px 12px; border-bottom: 1px solid #111; font-size: 14px; color: #86868B; }
+  td:first-child { color: #F5F5F7; font-weight: 500; }
+  .mono { font-family: 'SF Mono', monospace; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+  .badge-t1 { background: rgba(52,199,89,0.15); color: #34C759; border: 1px solid rgba(52,199,89,0.3); }
+  .badge-t2 { background: rgba(255,159,10,0.15); color: #FF9F0A; border: 1px solid rgba(255,159,10,0.3); }
+  .badge-t3 { background: rgba(255,69,58,0.15); color: #FF453A; border: 1px solid rgba(255,69,58,0.3); }
+  .section-card { background: #111; border: 1px solid #222; border-radius: 16px; padding: 28px; margin-top: 16px; }
+  .flag-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid #111; }
+  .flag-num { font-family: 'SF Mono', monospace; font-size: 13px; font-weight: 600; min-width: 24px; }
+  .flag-text { font-size: 14px; color: #86868B; }
+  .commit-row { display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid #111; font-size: 13px; }
+  .commit-hash { font-family: 'SF Mono', monospace; color: #48484A; min-width: 70px; }
+  .commit-msg { color: #86868B; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+  .cat-bar { display: flex; align-items: center; gap: 12px; padding: 6px 0; }
+  .cat-name { font-size: 13px; color: #86868B; min-width: 240px; }
+  .cat-fill { height: 6px; background: #F5F5F7; border-radius: 3px; opacity: 0.3; }
+  .highlight-card { background: #111; border: 1px solid #333; border-top: 2px solid #F5F5F7; border-radius: 16px; padding: 28px; margin-top: 16px; }
+  a { color: #F5F5F7; text-decoration: none; border-bottom: 1px solid #333; }
+  a:hover { border-color: #F5F5F7; }
+  .url { font-family: 'SF Mono', monospace; font-size: 13px; color: #48484A; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Early Thunder</h1>
+<p class="subtitle">Platform Status Report</p>
+<p class="date">April 14, 2026 &middot; earlythunder.com &middot; Build aae8b7e</p>
+
+<div class="divider"></div>
+
+<!-- KEY METRICS -->
+<h2>Platform Overview</h2>
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-label">Total Opportunities</div>
+    <div class="stat-value">154</div>
+    <div class="stat-detail">145 active + 9 graveyard</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Static Pages</div>
+    <div class="stat-value">174</div>
+    <div class="stat-detail">Auto-deployed via Cloudflare</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Citations</div>
+    <div class="stat-value">744</div>
+    <div class="stat-detail">478 with source URLs</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Categories</div>
+    <div class="stat-value">22</div>
+    <div class="stat-detail">Across 3 asset classes</div>
+  </div>
+</div>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-label">Tier 1</div>
+    <div class="stat-value green">10</div>
+    <div class="stat-detail">Score 75+ with asymmetry</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Tier 2</div>
+    <div class="stat-value amber">105</div>
+    <div class="stat-detail">Score 55-74</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Tier 3</div>
+    <div class="stat-value red">30</div>
+    <div class="stat-detail">Score below 55</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Deep Dives</div>
+    <div class="stat-value">1</div>
+    <div class="stat-detail">Babylon (BABY) with full DD</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ALGORITHM REBUILD -->
+<h2>Algorithm Rebuild (This Session)</h2>
+<p class="muted" style="font-size: 15px; max-width: 700px;">
+  The scoring engine was rebuilt from scratch to prioritize <strong style="color:#F5F5F7">asymmetry</strong> over raw quality.
+  A $50B company with perfect fundamentals now scores lower than a $10M project with strong fundamentals,
+  because the asymmetry window is gone for the large-cap name.
+</p>
+
+<div class="section-card" style="margin-top: 24px;">
+  <h3 style="margin-top: 0;">New Signal Weights</h3>
+  <div class="two-col" style="margin-top: 16px;">
+    <div>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #48484A; margin-bottom: 8px;">Quality Signals (75%)</div>
+      <table>
+        <tr><td>Working Code</td><td class="mono" style="text-align:right">20%</td></tr>
+        <tr><td>Dev Activity</td><td class="mono" style="text-align:right">15%</td></tr>
+        <tr><td>Catalyst</td><td class="mono" style="text-align:right">15%</td></tr>
+        <tr><td>Smart Money</td><td class="mono" style="text-align:right">10%</td></tr>
+        <tr><td>Community</td><td class="mono" style="text-align:right">10%</td></tr>
+        <tr><td>Narrative</td><td class="mono" style="text-align:right">5%</td></tr>
+      </table>
+    </div>
+    <div>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #34C759; margin-bottom: 8px;">Asymmetry Signals (25%) NEW</div>
+      <table>
+        <tr><td class="green">Valuation Gap</td><td class="mono green" style="text-align:right">15%</td></tr>
+        <tr><td class="green">Obscurity</td><td class="mono green" style="text-align:right">10%</td></tr>
+      </table>
+      <div style="margin-top: 16px; font-size: 13px; color: #48484A;">
+        <strong style="color: #FF453A;">Removed</strong> Toy Phase, Hard to Buy<br>
+        <strong style="color: #FF9F0A;">Reduced</strong> Smart Money 15% to 10%
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Key Demotions</h3>
+<table>
+  <tr><th>Name</th><th>Old Score</th><th>New Score</th><th>Tier</th><th>Market Cap</th><th>Reason</th></tr>
+  <tr><td>Bittensor</td><td class="mono">82.0</td><td class="mono">69.5</td><td><span class="badge badge-t2">T2</span></td><td class="mono">$2.5B</td><td class="muted">Large cap, well-known, asymmetry gone</td></tr>
+  <tr><td>United Therapeutics</td><td class="mono">76.0</td><td class="mono">69.3</td><td><span class="badge badge-t2">T2</span></td><td class="mono">$25.3B</td><td class="muted">Massive market cap penalized</td></tr>
+  <tr><td>Sprott Uranium</td><td class="mono">75.3</td><td class="mono">66.7</td><td><span class="badge badge-t2">T2</span></td><td class="mono">$5.8B</td><td class="muted">Large-cap uranium trust</td></tr>
+  <tr><td>Cameco</td><td class="mono">66.0</td><td class="mono">61.8</td><td><span class="badge badge-t2">T2</span></td><td class="mono">$50B+</td><td class="muted">Zero asymmetry at this size</td></tr>
+  <tr><td>Babylon</td><td class="mono">80.3</td><td class="mono">65.5</td><td><span class="badge badge-t2">T2</span></td><td class="mono">$52M</td><td class="muted">Adversarial DD exposed structural issues</td></tr>
+</table>
+
+<div class="divider"></div>
+
+<!-- TOP 10 -->
+<h2>New Top 10 (Asymmetry-First Ranking)</h2>
+<table>
+  <tr><th>#</th><th>Name</th><th>Score</th><th>Tier</th><th>Valuation Gap</th><th>Obscurity</th><th>Market Cap</th><th>Category</th></tr>
+  <tr><td class="mono">1</td><td>Celo</td><td class="mono green">86.0</td><td><span class="badge badge-t1">T1</span></td><td class="mono">75</td><td class="mono">80</td><td class="muted">Private</td><td class="muted">DePIN</td></tr>
+  <tr><td class="mono">2</td><td>Helion Energy</td><td class="mono green">81.8</td><td><span class="badge badge-t1">T1</span></td><td class="mono">90</td><td class="mono">80</td><td class="muted">Private</td><td class="muted">Fusion Energy</td></tr>
+  <tr><td class="mono">3</td><td>Form Energy</td><td class="mono green">78.8</td><td><span class="badge badge-t1">T1</span></td><td class="mono">90</td><td class="mono">80</td><td class="muted">Private</td><td class="muted">Energy Storage</td></tr>
+  <tr><td class="mono">4</td><td>Loyal</td><td class="mono green">77.8</td><td><span class="badge badge-t1">T1</span></td><td class="mono">90</td><td class="mono">80</td><td class="muted">Private</td><td class="muted">Longevity / BCI</td></tr>
+  <tr><td class="mono">5</td><td>VitaDAO</td><td class="mono green">77.0</td><td><span class="badge badge-t1">T1</span></td><td class="mono">85</td><td class="mono">80</td><td class="mono">$5.4M</td><td class="muted">DeSci</td></tr>
+  <tr><td class="mono">6</td><td>Aztec Network</td><td class="mono green">76.0</td><td><span class="badge badge-t1">T1</span></td><td class="mono">75</td><td class="mono">80</td><td class="muted">Private</td><td class="muted">ZK/Privacy</td></tr>
+  <tr><td class="mono">7</td><td>QuEra Computing</td><td class="mono green">75.8</td><td><span class="badge badge-t1">T1</span></td><td class="mono">90</td><td class="mono">80</td><td class="muted">Private</td><td class="muted">Quantum Computing</td></tr>
+  <tr><td class="mono">8</td><td>Hivemapper</td><td class="mono green">75.7</td><td><span class="badge badge-t1">T1</span></td><td class="mono">85</td><td class="mono">80</td><td class="mono">$10.4M</td><td class="muted">DePIN</td></tr>
+  <tr><td class="mono">9</td><td>Grass Network</td><td class="mono green">75.2</td><td><span class="badge badge-t1">T1</span></td><td class="mono">75</td><td class="mono">80</td><td class="muted">Private</td><td class="muted">DePIN</td></tr>
+  <tr><td class="mono">10</td><td>Commonwealth Fusion</td><td class="mono green">75.0</td><td><span class="badge badge-t1">T1</span></td><td class="mono">90</td><td class="mono">80</td><td class="muted">Private</td><td class="muted">Fusion Energy</td></tr>
+</table>
+<p style="margin-top: 12px; font-size: 13px; color: #48484A;">
+  8 of top 10 are private/pre-token. 2 have market caps under $11M. Zero entries above $100M in top 10.
+  This is what asymmetry-first scoring produces.
+</p>
+
+<div class="divider"></div>
+
+<!-- BABYLON DEEP DIVE -->
+<h2>Babylon (BABY) Deep Dive</h2>
+<p class="muted" style="font-size: 15px; max-width: 700px;">
+  First opportunity to receive a full adversarial due diligence treatment with all content visible without paywall.
+  8-dimension analysis covering team, on-chain forensics, tokenomics, business model, competition, VC behavior, regulatory exposure, and technical risk.
+</p>
+
+<div class="highlight-card">
+  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+    <div>
+      <span style="font-size: 24px; font-weight: 600;">Babylon</span>
+      <span class="mono muted" style="margin-left: 8px;">BABY</span>
+    </div>
+    <div style="text-align: right;">
+      <span class="mono amber" style="font-size: 36px; font-weight: 600;">65.5</span>
+      <span class="badge badge-t2" style="margin-left: 8px;">T2</span>
+    </div>
+  </div>
+  <div style="margin-top: 12px; font-size: 14px; color: #86868B;">
+    Bitcoin-native restaking protocol with $3.6B TVL, zero external revenue, 92% token decline from ATH,
+    and a genuinely novel cryptographic architecture (EOTS) that remains unproven at the business model level.
+  </div>
+  <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+    <div><div class="stat-label">Verdict</div><div class="mono amber" style="font-size: 18px; margin-top: 4px;">HOLD</div></div>
+    <div><div class="stat-label">TVL</div><div class="mono" style="font-size: 18px; margin-top: 4px;">$3.6B</div></div>
+    <div><div class="stat-label">Revenue</div><div class="mono red" style="font-size: 18px; margin-top: 4px;">$0</div></div>
+    <div><div class="stat-label">Token from ATH</div><div class="mono red" style="font-size: 18px; margin-top: 4px;">-92%</div></div>
+  </div>
+  <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+    <div><div class="stat-label">Red Flags</div><div class="mono red" style="font-size: 18px; margin-top: 4px;">12</div></div>
+    <div><div class="stat-label">Conviction Signals</div><div class="mono green" style="font-size: 18px; margin-top: 4px;">9</div></div>
+    <div><div class="stat-label">Edge Data</div><div class="mono" style="font-size: 18px; margin-top: 4px;">5</div></div>
+    <div><div class="stat-label">Citations</div><div class="mono" style="font-size: 18px; margin-top: 4px;">20</div></div>
+  </div>
+</div>
+
+<div class="two-col" style="margin-top: 20px;">
+  <div class="section-card">
+    <h3 style="margin-top: 0; color: #FF453A;">12 Red Flags</h3>
+    <div style="margin-top: 12px;">
+      <div class="flag-item"><span class="flag-num red">01</span><span class="flag-text">Zero external revenue after 12 months of mainnet</span></div>
+      <div class="flag-item"><span class="flag-num red">02</span><span class="flag-text">$1.26B mercenary capital fled within 7 days of airdrop</span></div>
+      <div class="flag-item"><span class="flag-num red">03</span><span class="flag-text">612.5M token cliff unlock (22% supply increase)</span></div>
+      <div class="flag-item"><span class="flag-num red">04</span><span class="flag-text">FDV below total VC funding raised</span></div>
+      <div class="flag-item"><span class="flag-num red">05</span><span class="flag-text">66%+ supply controlled by insiders/foundation</span></div>
+      <div class="flag-item"><span class="flag-num red">06</span><span class="flag-text">92% decline with unlimited supply and 8% inflation</span></div>
+      <div class="flag-item"><span class="flag-num red">07</span><span class="flag-text">Phase 3 delayed, no clear timeline</span></div>
+      <div class="flag-item"><span class="flag-num red">08</span><span class="flag-text">7 critical audit findings including key recovery vuln</span></div>
+      <div class="flag-item"><span class="flag-num red">09</span><span class="flag-text">No CEO, part-time founder at Stanford</span></div>
+      <div class="flag-item"><span class="flag-num red">10</span><span class="flag-text">Opaque multi-entity BVI structure, 4+ legal entities</span></div>
+      <div class="flag-item"><span class="flag-num red">11</span><span class="flag-text">Covenant Committee contradicts trustless marketing</span></div>
+      <div class="flag-item"><span class="flag-num red">12</span><span class="flag-text">Stakers earn BABY (not BTC), face 33% slashing, no insurance</span></div>
+    </div>
+  </div>
+  <div class="section-card">
+    <h3 style="margin-top: 0; color: #34C759;">9 Conviction Signals</h3>
+    <div style="margin-top: 12px;">
+      <div class="flag-item"><span class="flag-num green">01</span><span class="flag-text">EOTS cryptographic innovation, peer-reviewed at IEEE S&P 2023</span></div>
+      <div class="flag-item"><span class="flag-num green">02</span><span class="flag-text">David Tse. Shannon Award, NAE, 77K+ citations</span></div>
+      <div class="flag-item"><span class="flag-num green">03</span><span class="flag-text">$103M+ from Paradigm, a16z (post-crash buy), Polychain</span></div>
+      <div class="flag-item"><span class="flag-num green">04</span><span class="flag-text">Self-custodial BTC staking addresses $1.7T idle capital</span></div>
+      <div class="flag-item"><span class="flag-num green">05</span><span class="flag-text">$3.6B in verifiable on-chain Bitcoin UTXOs</span></div>
+      <div class="flag-item"><span class="flag-num green">06</span><span class="flag-text">1-year insider lockup with no locked-token staking</span></div>
+      <div class="flag-item"><span class="flag-num green">07</span><span class="flag-text">Osmosis (96.57% vote), Sui, BOB BSN pipeline</span></div>
+      <div class="flag-item"><span class="flag-num green">08</span><span class="flag-text">6+ audits, v4.x releases, $500K Immunefi bounty</span></div>
+      <div class="flag-item"><span class="flag-num green">09</span><span class="flag-text">Restaking narrative may recover (EigenLayer also -96%)</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-card" style="margin-top: 20px;">
+  <h3 style="margin-top: 0;">Edge Data (What Most Miss)</h3>
+  <div style="margin-top: 12px;">
+    <div class="flag-item"><span class="flag-num muted">01</span><span class="flag-text">PumpBTC flagged by DeFiLlama for using unbacked assets to inflate TVL. Real "clean" TVL likely lower than $3.6B.</span></div>
+    <div class="flag-item"><span class="flag-num muted">02</span><span class="flag-text">BabylonChain Inc. quietly renamed to "Byzantine Research Inc." with no public announcement.</span></div>
+    <div class="flag-item"><span class="flag-num muted">03</span><span class="flag-text">a16z invested $15M in January 2026 AFTER the 92% crash for BTCVault development. Single strongest conviction signal.</span></div>
+    <div class="flag-item"><span class="flag-num muted">04</span><span class="flag-text">Locked insider tokens CAN be staked after Year 1, with staking rewards potentially liquid. Backdoor value extraction.</span></div>
+    <div class="flag-item"><span class="flag-num muted">05</span><span class="flag-text">Core/CoreDAO offers BTC staking with ZERO slashing risk. Undermines Babylon's value proposition for risk-averse holders.</span></div>
+  </div>
+</div>
+
+<div class="two-col" style="margin-top: 20px;">
+  <div class="section-card" style="border-top: 2px solid #FF453A;">
+    <h3 style="margin-top: 0; color: #FF453A;">Bull Case Breaks If</h3>
+    <p style="font-size: 14px; color: #86868B; margin-top: 8px;">
+      Phase 3 fails to launch by Q4 2026 with 3+ paying BSN customers. OR April 2026 cliff triggers sustained selling below $0.01072 ATL.
+      OR Lombard/Solv redirect BTC to Core/Symbiotic. OR EigenLayer proves restaking cannot support viable token prices even with 40 AVSs.
+    </p>
+  </div>
+  <div class="section-card" style="border-top: 2px solid #34C759;">
+    <h3 style="margin-top: 0; color: #34C759;">Bear Case Breaks If</h3>
+    <p style="font-size: 14px; color: #86868B; margin-top: 8px;">
+      3+ external BSNs go live generating $1M+ annualized fee revenue. OR Babylon captures more than 5% of Bitcoin supply in staking.
+      OR a sovereign wealth fund or corporate treasury stakes BTC through Babylon. OR Bitcoin dominance cycle drives BTC-native yield demand.
+    </p>
+  </div>
+</div>
+
+<p style="margin-top: 16px; font-size: 13px;">
+  <span class="muted">Live page.</span>
+  <a href="https://earlythunder.com/opportunities/babylon" class="url">earlythunder.com/opportunities/babylon</a>
+  <span class="muted" style="margin-left: 8px;">(no paywall, all content visible)</span>
+</p>
+
+<div class="divider"></div>
+
+<!-- DEEP DATA POPULATED -->
+<h2>Babylon Deep Data Populated</h2>
+<div class="stat-grid" style="grid-template-columns: repeat(5, 1fr);">
+  <div class="stat-card">
+    <div class="stat-label">On-Chain</div>
+    <div class="stat-value green" style="font-size: 20px;">Yes</div>
+    <div class="stat-detail">TVL, fees, whale activity</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Insider Activity</div>
+    <div class="stat-value green" style="font-size: 20px;">Yes</div>
+    <div class="stat-detail">Buys, sells, unlocks</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Team</div>
+    <div class="stat-value green" style="font-size: 20px;">Yes</div>
+    <div class="stat-detail">Tse, Yu profiles</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Tokenomics</div>
+    <div class="stat-value green" style="font-size: 20px;">Yes</div>
+    <div class="stat-detail">Supply, inflation, FDV</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Competitive</div>
+    <div class="stat-value green" style="font-size: 20px;">Yes</div>
+    <div class="stat-detail">EigenLayer, Core, Symbiotic</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ASSET CLASS -->
+<h2>Asset Class Breakdown</h2>
+<div class="stat-grid" style="grid-template-columns: repeat(3, 1fr);">
+  <div class="stat-card">
+    <div class="stat-label">Digital Assets</div>
+    <div class="stat-value">59</div>
+    <div class="stat-detail">41% of active portfolio</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Private Markets</div>
+    <div class="stat-value">56</div>
+    <div class="stat-detail">39% of active portfolio</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Public Equities</div>
+    <div class="stat-value">30</div>
+    <div class="stat-detail">21% of active portfolio</div>
+  </div>
+</div>
+
+<!-- CATEGORY DISTRIBUTION -->
+<h2>Top Categories</h2>
+<div class="section-card">
+  <div class="cat-bar"><span class="cat-name">AI x Crypto</span><div class="cat-fill" style="width: 180px;"></div><span class="mono muted" style="font-size: 12px;">18</span></div>
+  <div class="cat-bar"><span class="cat-name">DePIN</span><div class="cat-fill" style="width: 140px;"></div><span class="mono muted" style="font-size: 12px;">14</span></div>
+  <div class="cat-bar"><span class="cat-name">DeSci</span><div class="cat-fill" style="width: 110px;"></div><span class="mono muted" style="font-size: 12px;">11</span></div>
+  <div class="cat-bar"><span class="cat-name">Longevity / BCI</span><div class="cat-fill" style="width: 100px;"></div><span class="mono muted" style="font-size: 12px;">10</span></div>
+  <div class="cat-bar"><span class="cat-name">Restaking</span><div class="cat-fill" style="width: 80px;"></div><span class="mono muted" style="font-size: 12px;">8</span></div>
+  <div class="cat-bar"><span class="cat-name">New Market Structures</span><div class="cat-fill" style="width: 80px;"></div><span class="mono muted" style="font-size: 12px;">8</span></div>
+  <div class="cat-bar"><span class="cat-name">Venture Signal</span><div class="cat-fill" style="width: 80px;"></div><span class="mono muted" style="font-size: 12px;">8</span></div>
+  <div class="cat-bar"><span class="cat-name">Geopolitical / Critical Materials</span><div class="cat-fill" style="width: 70px;"></div><span class="mono muted" style="font-size: 12px;">7</span></div>
+  <div class="cat-bar"><span class="cat-name">Energy / Nuclear / SynBio</span><div class="cat-fill" style="width: 60px;"></div><span class="mono muted" style="font-size: 12px;">6 each</span></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- DATA INFRASTRUCTURE -->
+<h2>Data Infrastructure</h2>
+<div class="two-col">
+  <div class="section-card">
+    <h3 style="margin-top: 0;">Enrichment Pipeline</h3>
+    <table>
+      <tr><td>scripts/enrich/github_stats.py</td><td class="muted">Stars, contributors, last commit</td></tr>
+      <tr><td>scripts/enrich/coingecko_deep.py</td><td class="muted">FDV, circulating supply, ratios</td></tr>
+      <tr><td>scripts/enrich/valuation_scorer.py</td><td class="muted">Valuation gap signal (0-97)</td></tr>
+      <tr><td>scripts/enrich/obscurity_scorer.py</td><td class="muted">Obscurity signal (5-90)</td></tr>
+      <tr><td>scripts/rescore.py</td><td class="muted">Full rescore + re-tier + sort</td></tr>
+    </table>
+  </div>
+  <div class="section-card">
+    <h3 style="margin-top: 0;">Deep Data Model</h3>
+    <table>
+      <tr><td>OnChainMetrics</td><td class="muted">TVL, DAA, fees, revenue, whales</td></tr>
+      <tr><td>InsiderActivity</td><td class="muted">Buys, sells, unlocks, sentiment</td></tr>
+      <tr><td>TeamProfile</td><td class="muted">Members, size, track record</td></tr>
+      <tr><td>Tokenomics</td><td class="muted">Supply, inflation, burns, treasury</td></tr>
+      <tr><td>CompetitivePosition</td><td class="muted">Competitors, moat, TAM, penetration</td></tr>
+    </table>
+    <p style="margin-top: 12px; font-size: 12px; color: #48484A;">
+      All fields nullable. Render only when populated. Currently live for Babylon.
+    </p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SITE INFRASTRUCTURE -->
+<h2>Site Infrastructure</h2>
+<div class="stat-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+  <div class="stat-card">
+    <div class="stat-label">Legal Pages</div>
+    <div class="stat-value" style="font-size: 20px;">3</div>
+    <div class="stat-detail">Terms, Privacy, Disclaimer</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">SEO</div>
+    <div class="stat-value green" style="font-size: 20px;">Live</div>
+    <div class="stat-detail">JSON-LD, OG, sitemap, IndexNow</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Analytics</div>
+    <div class="stat-value green" style="font-size: 20px;">Plausible</div>
+    <div class="stat-detail">Script deployed</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">CSP Headers</div>
+    <div class="stat-value green" style="font-size: 20px;">Active</div>
+    <div class="stat-detail">Cloudflare _headers</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Blog Posts</div>
+    <div class="stat-value" style="font-size: 20px;">5</div>
+    <div class="stat-detail">Methodology + guides</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Deploy</div>
+    <div class="stat-value green" style="font-size: 20px;">Auto</div>
+    <div class="stat-detail">git push to Cloudflare ~50s</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- GIT HISTORY -->
+<h2>Git History</h2>
+<div class="section-card">
+  <div class="commit-row"><span class="commit-hash">aae8b7e</span><span class="commit-msg">feat: expand Babylon (BABY) with adversarial due diligence, remove paywall</span></div>
+  <div class="commit-row"><span class="commit-hash">d6980af</span><span class="commit-msg">algorithm: rebuild scoring for asymmetry over raw quality</span></div>
+  <div class="commit-row"><span class="commit-hash">5d8f67c</span><span class="commit-msg">copy: capitalize sentence starts and remove trailing colons</span></div>
+  <div class="commit-row"><span class="commit-hash">a39a033</span><span class="commit-msg">copy: clean all display text sitewide</span></div>
+  <div class="commit-row"><span class="commit-hash">47a82d7</span><span class="commit-msg">legal: comprehensive legal protection + resource pages</span></div>
+  <div class="commit-row"><span class="commit-hash">4700e38</span><span class="commit-msg">feat: add IndexNow key for Bing/Yandex instant indexing</span></div>
+  <div class="commit-row"><span class="commit-hash">94a1339</span><span class="commit-msg">feat: add JSON-LD structured data for search indexing</span></div>
+  <div class="commit-row"><span class="commit-hash">5e701f7</span><span class="commit-msg">feat: add 726 citations with URLs across 154 opportunities</span></div>
+  <div class="commit-row"><span class="commit-hash">aff70cc</span><span class="commit-msg">feat: add OG meta, Plausible analytics, CSP headers for live domain</span></div>
+  <div class="commit-row"><span class="commit-hash">c988a95</span><span class="commit-msg">design: Apple-inspired monochromatic overhaul</span></div>
+  <div class="commit-row"><span class="commit-hash">a19ee55</span><span class="commit-msg">feat: expand to 155 opportunities + live market data</span></div>
+  <div class="commit-row"><span class="commit-hash">8f34456</span><span class="commit-msg">feat: earlythunder.com v1.0</span></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PENDING -->
+<h2>Pending (Manual Setup Required)</h2>
+<div class="section-card">
+  <table>
+    <tr><th>Item</th><th>Status</th><th>Notes</th></tr>
+    <tr><td>Google Search Console</td><td><span class="badge badge-t3">Manual</span></td><td class="muted">Verify domain, submit sitemap</td></tr>
+    <tr><td>Plausible Account</td><td><span class="badge badge-t3">Manual</span></td><td class="muted">Script deployed, needs account activation at plausible.io</td></tr>
+    <tr><td>Resend API Key</td><td><span class="badge badge-t3">Manual</span></td><td class="muted">Email capture + weekly brief pipeline</td></tr>
+    <tr><td>Stripe Setup</td><td><span class="badge badge-t3">Manual</span></td><td class="muted">Paywall Phase 2 monetization</td></tr>
+    <tr><td>Attorney Review</td><td><span class="badge badge-t3">Manual</span></td><td class="muted">Legal pages ready, need professional review</td></tr>
+    <tr><td>GitHub Actions Secrets</td><td><span class="badge badge-t3">Manual</span></td><td class="muted">GITHUB_TOKEN for enrichment pipeline</td></tr>
+    <tr><td>More Deep Dives</td><td><span class="badge badge-t2">Next</span></td><td class="muted">Expand adversarial DD to more T1/T2 opportunities</td></tr>
+  </table>
+</div>
+
+<div class="divider"></div>
+
+<p style="text-align: center; color: #48484A; font-size: 13px; padding: 40px 0;">
+  Early Thunder &middot; earlythunder.com &middot; Build aae8b7e &middot; April 14, 2026
+</p>
+
+</div>
+</body>
+</html>

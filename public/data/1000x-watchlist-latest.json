@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-05-07T14:30:00Z",
+  "pipeline_version": "0.1.0",
+  "tokens": [
+    {
+      "name": "NeuralSwap",
+      "symbol": "NSWAP",
+      "chain": "Solana",
+      "contract_address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU",
+      "score_1000x": 9.4,
+      "signals": {
+        "contract": 9.2,
+        "vc": 9.8,
+        "dev": 9.1,
+        "market": 9.5
+      },
+      "mcap_usd": 820000,
+      "age_timestamp": "2026-05-05T10:00:00Z",
+      "deepseek_analysis": "Novel AMM architecture with cross-chain intent routing. Deployer previously built core Uniswap v3 contracts. Three a16z wallets accumulated positions pre-launch. Contract audit score 97/100 with zero critical findings. Token economics feature aggressive buyback mechanism tied to protocol revenue.",
+      "category": "DeFi",
+      "is_sample": true
+    },
+    {
+      "name": "OmniSense",
+      "symbol": "OMNI",
+      "chain": "Base",
+      "contract_address": "0x3a7d8eF9c12B4f0eA1d2C3b4E5f6A7B8c9D0e1F2",
+      "score_1000x": 8.7,
+      "signals": {
+        "contract": 8.5,
+        "vc": 9.0,
+        "dev": 8.8,
+        "market": 8.5
+      },
+      "mcap_usd": 1450000,
+      "age_timestamp": "2026-05-03T08:15:00Z",
+      "deepseek_analysis": "DePIN sensor network for real-time environmental data. Team includes 2 ex-Helium engineers. Paradigm wallet detected with 50 ETH position. Contract implements novel proof-of-coverage with slashing conditions. Growing developer community with 14 active contributors.",
+      "category": "DePIN",
+      "is_sample": true
+    },
+    {
+      "name": "VaultLayer",
+      "symbol": "VAULT",
+      "chain": "Ethereum",
+      "contract_address": "0xA1b2C3d4E5f6A7B8c9D0e1F2a3B4c5D6e7F8a9B0",
+      "score_1000x": 7.2,
+      "signals": {
+        "contract": 7.5,
+        "vc": 6.8,
+        "dev": 7.0,
+        "market": 7.5
+      },
+      "mcap_usd": 3200000,
+      "age_timestamp": "2026-04-28T16:45:00Z",
+      "deepseek_analysis": "RWA tokenization protocol for private credit. Smart contract architecture mirrors MakerDAO patterns with improved collateral management. One Polychain wallet observed. Audit pending from Trail of Bits.",
+      "category": "RWA",
+      "is_sample": true
+    },
+    {
+      "name": "PixelMind",
+      "symbol": "PXLM",
+      "chain": "Arbitrum",
+      "contract_address": "0xF1e2D3c4B5a6F7e8D9c0B1a2F3e4D5c6B7a8F9e0",
+      "score_1000x": 5.1,
+      "signals": {
+        "contract": 5.5,
+        "vc": 4.0,
+        "dev": 6.0,
+        "market": 4.9
+      },
+      "mcap_usd": 8900000,
+      "age_timestamp": "2026-04-20T12:00:00Z",
+      "deepseek_analysis": "AI-powered NFT generation platform. Contract is functional but uses standard patterns. No notable VC activity detected. Single developer with moderate GitHub history. Market interest tepid with declining volume trend.",
+      "category": "AI",
+      "is_sample": true
+    },
+    {
+      "name": "ChainRelay",
+      "symbol": "RELAY",
+      "chain": "Solana",
+      "contract_address": "9yMwSPk3Ltg5CW27d07MXJSDpbF5jBkheTqA83TZRuJo",
+      "score_1000x": 9.8,
+      "signals": {
+        "contract": 9.9,
+        "vc": 9.7,
+        "dev": 9.8,
+        "market": 9.8
+      },
+      "mcap_usd": 450000,
+      "age_timestamp": "2026-05-06T22:00:00Z",
+      "deepseek_analysis": "Cross-chain messaging infrastructure with sub-second finality. Lead developer is ex-Jump Crypto principal engineer. Contract implements zero-knowledge proof verification on-chain. Five tier-1 VC wallets detected within 48 hours of deployment. This is the strongest combined signal detected in the current cycle.",
+      "category": "Infrastructure",
+      "is_sample": true
+    }
+  ]
+}

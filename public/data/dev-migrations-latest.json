@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-05-07T14:20:00Z",
+  "pipeline_version": "0.1.0",
+  "migrations": [
+    {
+      "developer": "alexcrypto",
+      "known_for": "Uniswap v3 core contracts",
+      "new_repo": "neuralswap-protocol/core",
+      "repo_url": "https://github.com/neuralswap-protocol/core",
+      "description": "Cross-chain AMM with intent-based routing engine",
+      "other_devs": ["0xbuilder", "soliditywiz"],
+      "first_commit": "2026-04-28T14:00:00Z",
+      "commit_count": 47,
+      "is_sample": true
+    },
+    {
+      "developer": "0xbuilder",
+      "known_for": "Aave v3 liquidation engine",
+      "new_repo": "neuralswap-protocol/core",
+      "repo_url": "https://github.com/neuralswap-protocol/core",
+      "description": "Cross-chain AMM with intent-based routing engine",
+      "other_devs": ["alexcrypto", "soliditywiz"],
+      "first_commit": "2026-04-30T09:00:00Z",
+      "commit_count": 31,
+      "is_sample": true
+    },
+    {
+      "developer": "soliditywiz",
+      "known_for": "Compound governance module",
+      "new_repo": "neuralswap-protocol/core",
+      "repo_url": "https://github.com/neuralswap-protocol/core",
+      "description": "Cross-chain AMM with intent-based routing engine",
+      "other_devs": ["alexcrypto", "0xbuilder"],
+      "first_commit": "2026-05-01T11:30:00Z",
+      "commit_count": 22,
+      "is_sample": true
+    },
+    {
+      "developer": "heliumhacker",
+      "known_for": "Helium proof-of-coverage protocol",
+      "new_repo": "omnisense-network/node",
+      "repo_url": "https://github.com/omnisense-network/node",
+      "description": "DePIN sensor mesh network with staking-based coverage proofs",
+      "other_devs": ["iotengineer"],
+      "first_commit": "2026-04-15T08:00:00Z",
+      "commit_count": 89,
+      "is_sample": true
+    },
+    {
+      "developer": "zkresearcher",
+      "known_for": "StarkNet prover optimization",
+      "new_repo": "chainrelay-labs/zk-bridge",
+      "repo_url": "https://github.com/chainrelay-labs/zk-bridge",
+      "description": "Zero-knowledge cross-chain message verification",
+      "other_devs": ["jumpcryptoengineer", "proofmaster"],
+      "first_commit": "2026-05-02T20:00:00Z",
+      "commit_count": 63,
+      "is_sample": true
+    }
+  ]
+}

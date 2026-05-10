@@ -1,185 +1,371 @@
 import type { Metadata } from "next";
-import { FAQ_ITEMS } from "@/lib/pricing-data";
-import EmailCapture from "@/components/EmailCapture";
-import FAQAccordion from "./FAQAccordion";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Early Thunder membership. One tier, every signal, no fluff. $199/month.",
+    "Early Thunder pricing. Free market intelligence or Pro-tier alpha signals for $999/month.",
+  openGraph: {
+    title: "Pricing | Early Thunder",
+    description:
+      "Free market intelligence or Pro-tier alpha signals for $999/month.",
+  },
 };
 
-const DISCORD_URL = "https://discord.gg/QeHxTFbqmC";
+/* ------------------------------------------------------------------ */
+/*  Constants                                                          */
+/* ------------------------------------------------------------------ */
 
-const FEATURES = [
-  "All opportunities, fully ranked",
-  "Complete 8-signal breakdowns & source citations",
-  "Live scoring updates",
-  "Weekly deep-dive research briefs",
-  "Full graveyard archive with post-mortems",
-  "Community Discord access",
-  "Email alerts on new T1 calls",
-  "Cancel anytime, one click",
+/**
+ * Stripe payment link for EarlyThunder Pro ($999/mo).
+ * To generate: stripe payment_links create \
+ *   --line_items[0][price]=PRICE_ID --line_items[0][quantity]=1
+ * Then replace this URL with the real payment link.
+ */
+const STRIPE_CHECKOUT_URL =
+  process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK ??
+  "https://buy.stripe.com/PLACEHOLDER";
+
+const FREE_FEATURES = [
+  "Public blog articles",
+  "Market overview dashboard",
+  "1000x Discovery scores (summary)",
+  "Graveyard access",
+  "Methodology documentation",
 ] as const;
 
-const GUARANTEES = [
-  { label: "Pipeline cost", detail: "$15K / mo in tooling" },
-  { label: "No trial", detail: "Instant full access" },
-  { label: "Cancel anytime", detail: "One click, no lock-in" },
-  { label: "Zero conflicts", detail: "We never take positions" },
+const PRO_FEATURES = [
+  "Everything in Free",
+  "Real-time alpha signals (not delayed)",
+  "Full pipeline access: 300+ devs, 31 orgs, VC wallet tracking",
+  "AI-evaluated deep briefs with catalyst timelines",
+  "INVESTIGATE + HIGH_CONVICTION alerts",
+  "EkuboProtocol liquidity tracker",
+  "Full 8-Signal radar breakdowns",
+  "Discord Pro channel access",
+  "Weekly intelligence reports",
+  "First-mover alerts on pre-token discoveries",
+  "Direct research team access",
 ] as const;
 
-/** Pricing page: single-tier editorial design. */
+const COMPARISON_ROWS = [
+  { feature: "Blog articles", free: true, pro: true },
+  { feature: "Market overview", free: true, pro: true },
+  { feature: "1000x Discovery scores", free: "Summary", pro: "Full breakdown" },
+  { feature: "Signal delivery", free: "Delayed", pro: "Real-time" },
+  { feature: "Pipeline access (300+ devs, 31 orgs)", free: false, pro: true },
+  { feature: "AI-evaluated deep briefs", free: false, pro: true },
+  { feature: "INVESTIGATE alerts", free: false, pro: true },
+  { feature: "HIGH_CONVICTION alerts", free: false, pro: true },
+  { feature: "VC wallet tracking", free: false, pro: true },
+  { feature: "EkuboProtocol tracker", free: false, pro: true },
+  { feature: "8-Signal radar charts", free: false, pro: true },
+  { feature: "Discord Pro channel", free: false, pro: true },
+  { feature: "Weekly intelligence reports", free: false, pro: true },
+  { feature: "Pre-token discovery alerts", free: false, pro: true },
+  { feature: "Direct research team access", free: false, pro: true },
+] as const;
+
+const FAQ_ITEMS = [
+  {
+    question: "What is the 1000x Discovery System?",
+    answer:
+      "The 1000x Discovery System is our proprietary intelligence pipeline that systematically identifies asymmetric opportunities in crypto and emerging markets before they reach mainstream awareness. It combines on-chain data, developer activity, VC tracking, and DEX liquidity analysis to surface opportunities with outsized upside potential.",
+  },
+  {
+    question: "How does the scoring system work?",
+    answer:
+      "Every opportunity is evaluated through our 8-Signal Pattern Filter: six quality signals (team, technology, traction, tokenomics, community, narrative) and two asymmetry signals (market cap headroom, information asymmetry). Each signal is weighted and combined into a composite score from 0 to 100. Scores above 75 receive an INVESTIGATE rating. Scores above 85 with strong catalyst alignment receive HIGH_CONVICTION status.",
+  },
+  {
+    question: "What kind of signal quality can I expect?",
+    answer:
+      "Pro subscribers receive curated, research-backed signals -- not social media noise. Every signal includes the full thesis, risk factors, catalyst timeline, and radar chart breakdown. We prioritize quality over quantity: typically 3-5 actionable signals per week, each backed by our systematic methodology.",
+  },
+  {
+    question: "What is the refund policy?",
+    answer:
+      "We offer a full refund within the first 7 days of your subscription if you are not satisfied with the quality of research. After the initial 7-day period, subscriptions are non-refundable but can be canceled at any time to prevent future charges. Contact support@earlythunder.com for refund requests.",
+  },
+  {
+    question: "Can I cancel anytime?",
+    answer:
+      "Yes. There are no contracts or commitments. Cancel your subscription at any time from your account dashboard or by contacting support. Your access continues through the end of the current billing period.",
+  },
+  {
+    question: "What is included in the Discord community?",
+    answer:
+      "Pro members get access to a private Discord server with channels for daily signals, deep alpha discussion, EkuboProtocol tracking, and direct interaction with our research team. This is where real-time updates and emerging opportunities are shared first.",
+  },
+] as const;
+
+/* ------------------------------------------------------------------ */
+/*  Page                                                               */
+/* ------------------------------------------------------------------ */
+
 export default function PricingPage() {
-  console.assert(FEATURES.length === 8, "PricingPage: expected 8 features");
-  console.assert(FAQ_ITEMS.length > 0, "PricingPage: FAQ_ITEMS required");
-
   return (
-    <div className="mx-auto max-w-5xl px-6 py-20">
+    <div className="mx-auto max-w-6xl px-6 pt-28 pb-20">
       <PageHeader />
-      <PricingCard />
-      <GuaranteeStrip />
+      <PricingCards />
+      <ComparisonTable />
       <FAQSection />
     </div>
   );
 }
 
-/** Section label, title, and lede paragraph. */
+/* ------------------------------------------------------------------ */
+/*  Page Header                                                        */
+/* ------------------------------------------------------------------ */
+
 function PageHeader() {
   return (
-    <div className="text-center max-w-2xl mx-auto">
-      <p className="section-label">
-        <span className="num">11</span> Membership
-      </p>
-      <h1
-        className="mt-5 font-serif font-normal text-4xl md:text-5xl tracking-tight text-text-primary leading-[1.1]"
-        style={{ fontVariationSettings: "'opsz' 72" }}
-      >
-        One tier. Every signal.{" "}
-        <em className="not-italic text-bolt">No fluff.</em>
+    <div className="text-center">
+      <h1 className="text-5xl font-semibold tracking-tighter text-text-primary md:text-6xl">
+        Simple pricing.
+        <br />
+        <span className="text-text-secondary">Serious alpha.</span>
       </h1>
-      <p className="mt-6 text-base leading-relaxed text-text-secondary max-w-lg mx-auto">
-        We spend over $15,000 per month on data pipelines, AI scoring
-        infrastructure, and proprietary research tooling so you don&apos;t have
-        to. One membership unlocks everything.
+      <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary">
+        Free access to our public research, or unlock the full intelligence
+        pipeline with Pro. 300+ developers tracked. 31 organizations monitored.
+        VC wallets decoded. No contracts. Cancel anytime.
       </p>
     </div>
   );
 }
 
-/** Two-column pricing card: price + CTA left, features right. */
-function PricingCard() {
-  console.assert(typeof DISCORD_URL === "string", "PricingCard: DISCORD_URL required");
-  console.assert(FEATURES.length > 0, "PricingCard: FEATURES must not be empty");
+/* ------------------------------------------------------------------ */
+/*  Pricing Cards                                                      */
+/* ------------------------------------------------------------------ */
 
+function PricingCards() {
   return (
-    <div className="mt-14 border border-line-2 rounded-2xl bg-bg-card p-8 md:p-10 grid md:grid-cols-2 gap-10">
-      <PricingLeft />
-      <PricingRight />
+    <div className="mt-16 grid gap-8 md:grid-cols-2">
+      <FreeCard />
+      <ProCard />
     </div>
   );
 }
 
-/** Left half: badge, price, CTA, guarantee note. */
-function PricingLeft() {
+function FreeCard() {
   return (
-    <div className="flex flex-col justify-between">
-      <div>
-        <span className="inline-block font-mono text-[10px] font-medium uppercase tracking-wider text-text-secondary border border-line-2 rounded-full px-3 py-1">
-          Monthly &middot; no lock-in
-        </span>
-        <div className="mt-5 flex items-baseline gap-2">
-          <span
-            className="font-serif font-normal text-[72px] leading-none tracking-[-0.04em] text-text-primary"
-            style={{ fontVariationSettings: "'opsz' 144" }}
-          >
-            $199
-          </span>
-          <span className="font-mono text-sm text-text-secondary">/month</span>
-        </div>
+    <div className="flex flex-col rounded-2xl border border-border bg-bg-card p-8">
+      <h2 className="text-xl font-semibold tracking-tight text-text-primary">
+        Free
+      </h2>
+      <div className="mt-4 font-mono text-5xl font-semibold text-text-primary">
+        $0
       </div>
-      <div className="mt-8">
-        <a
-          href={DISCORD_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-bolt inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-medium w-full justify-center"
+      <p className="mt-2 text-sm text-text-secondary">
+        Free forever -- no credit card required
+      </p>
+      <FeatureList features={FREE_FEATURES} />
+      <div className="mt-auto pt-8">
+        <Link
+          href="/blog"
+          className="block rounded-full border border-border py-3.5 text-center text-sm font-medium text-text-primary transition-colors hover:border-border-hover hover:bg-bg-elevated"
         >
-          Join Discord &rarr;
-        </a>
-        <p className="mt-3 font-mono text-[10px] text-text-tertiary text-center uppercase tracking-wider">
-          Access granted in Discord after payment
-        </p>
+          Start Reading
+        </Link>
       </div>
     </div>
   );
 }
 
-/** Right half: feature checklist. */
-function PricingRight() {
+function ProCard() {
   return (
-    <div>
-      <h2 className="font-mono text-[11px] font-medium text-text-secondary uppercase tracking-wider">
-        What&apos;s included
-      </h2>
-      <ul className="mt-5 space-y-3.5">
-        {FEATURES.map((feature) => (
-          <FeatureRow key={feature} text={feature} />
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-/** Single feature row with checkmark. */
-function FeatureRow({ text }: { readonly text: string }) {
-  return (
-    <li className="flex items-start gap-3 text-sm text-text-primary/85 leading-snug">
-      <span className="text-bolt mt-0.5 flex-shrink-0" aria-hidden="true">
-        &#10003;
+    <div className="relative flex flex-col rounded-2xl border border-amber/40 bg-bg-card p-8">
+      <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber px-4 py-1 text-xs font-bold uppercase tracking-wider text-black">
+        Pro
       </span>
-      <span>{text}</span>
-    </li>
-  );
-}
-
-/** 4-column guarantee strip below the pricing card. */
-function GuaranteeStrip() {
-  console.assert(GUARANTEES.length === 4, "GuaranteeStrip: expected 4 guarantees");
-  console.assert(GUARANTEES.every((g) => g.label.length > 0), "GuaranteeStrip: all must have labels");
-
-  return (
-    <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 border border-line-2 rounded-xl bg-bg-elevated/50 p-6">
-      {GUARANTEES.map((item) => (
-        <div key={item.label} className="text-center">
-          <div className="font-mono text-[11px] font-semibold text-text-primary uppercase tracking-wider">
-            {item.label}
-          </div>
-          <div className="mt-1 font-mono text-[10px] text-text-tertiary">
-            {item.detail}
-          </div>
-        </div>
-      ))}
+      <h2 className="text-xl font-semibold tracking-tight text-text-primary">
+        Pro
+      </h2>
+      <div className="mt-4 flex items-baseline gap-1">
+        <span className="font-mono text-5xl font-semibold text-text-primary">
+          $999
+        </span>
+        <span className="text-sm text-text-secondary">/month</span>
+      </div>
+      <p className="mt-2 text-sm text-text-secondary">
+        Full intelligence pipeline -- institutional-grade alpha
+      </p>
+      <FeatureList features={PRO_FEATURES} />
+      <div className="mt-auto pt-8">
+        <a
+          href={STRIPE_CHECKOUT_URL}
+          className="block rounded-full bg-amber py-3.5 text-center text-sm font-bold text-black transition-colors hover:bg-amber-hover"
+        >
+          Unlock Full Pipeline
+        </a>
+      </div>
     </div>
   );
 }
 
-/** FAQ section with accordion items. */
-function FAQSection() {
+function FeatureList({
+  features,
+}: {
+  readonly features: readonly string[];
+}) {
   return (
-    <section className="mt-20">
-      <h2
-        className="font-serif font-normal text-2xl tracking-tight text-text-primary text-center"
-        style={{ fontVariationSettings: "'opsz' 72" }}
-      >
-        Questions
+    <ul className="mt-8 space-y-3">
+      {features.map((feature) => (
+        <li
+          key={feature}
+          className="flex items-start gap-3 text-sm text-text-secondary"
+        >
+          <CheckIcon />
+          <span>{feature}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      className="mt-0.5 shrink-0 text-score-high"
+      aria-hidden="true"
+    >
+      <path
+        d="M3 8.5L6.5 12L13 4"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Comparison Table                                                    */
+/* ------------------------------------------------------------------ */
+
+function ComparisonTable() {
+  return (
+    <section className="mt-24">
+      <h2 className="text-center text-3xl font-semibold tracking-tight text-text-primary">
+        Compare plans
       </h2>
-      <div className="mt-8 max-w-2xl mx-auto">
-        <FAQAccordion items={FAQ_ITEMS} />
-      </div>
-      <div className="mt-12">
-        <EmailCapture />
+      <div className="mt-10 overflow-x-auto">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="border-b border-border">
+              <th className="py-4 pr-4 text-left font-medium text-text-secondary">
+                Feature
+              </th>
+              <th className="py-4 px-4 text-center font-medium text-text-secondary">
+                Free
+              </th>
+              <th className="py-4 pl-4 text-center font-medium text-amber">
+                Pro
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {COMPARISON_ROWS.map((row) => (
+              <ComparisonRow key={row.feature} row={row} />
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
+  );
+}
+
+function ComparisonRow({
+  row,
+}: {
+  readonly row: {
+    readonly feature: string;
+    readonly free: boolean | string;
+    readonly pro: boolean | string;
+  };
+}) {
+  return (
+    <tr className="border-b border-border/50">
+      <td className="py-4 pr-4 text-text-primary">{row.feature}</td>
+      <td className="py-4 px-4 text-center">
+        <CellValue value={row.free} />
+      </td>
+      <td className="py-4 pl-4 text-center">
+        <CellValue value={row.pro} />
+      </td>
+    </tr>
+  );
+}
+
+function CellValue({ value }: { readonly value: boolean | string }) {
+  if (value === true) {
+    return (
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        className="mx-auto text-score-high"
+        aria-label="Included"
+      >
+        <path
+          d="M3 8.5L6.5 12L13 4"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+  if (value === false) {
+    return (
+      <span className="text-text-tertiary" aria-label="Not included">
+        --
+      </span>
+    );
+  }
+  return <span className="text-text-secondary">{value}</span>;
+}
+
+/* ------------------------------------------------------------------ */
+/*  FAQ Section                                                        */
+/* ------------------------------------------------------------------ */
+
+function FAQSection() {
+  return (
+    <section className="mt-24">
+      <h2 className="text-center text-3xl font-semibold tracking-tight text-text-primary">
+        Frequently asked questions
+      </h2>
+      <div className="mx-auto mt-10 max-w-3xl divide-y divide-border/50">
+        {FAQ_ITEMS.map((item) => (
+          <FAQItem key={item.question} item={item} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function FAQItem({
+  item,
+}: {
+  readonly item: { readonly question: string; readonly answer: string };
+}) {
+  return (
+    <div className="py-6">
+      <h3 className="text-base font-medium text-text-primary">
+        {item.question}
+      </h3>
+      <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+        {item.answer}
+      </p>
+    </div>
   );
 }

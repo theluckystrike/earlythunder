@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-05-07T14:10:00Z",
+  "pipeline_version": "0.1.0",
+  "tokens": [
+    {
+      "name": "ChainRelay",
+      "symbol": "RELAY",
+      "signal_a": 9.8,
+      "signal_b": 9.6,
+      "signal_c": 9.9,
+      "composite": 9.77,
+      "tier": "Deep Alpha",
+      "is_sample": true
+    },
+    {
+      "name": "NeuralSwap",
+      "symbol": "NSWAP",
+      "signal_a": 9.2,
+      "signal_b": 9.5,
+      "signal_c": 8.8,
+      "composite": 9.17,
+      "tier": "Deep Alpha",
+      "is_sample": true
+    },
+    {
+      "name": "OmniSense",
+      "symbol": "OMNI",
+      "signal_a": 8.5,
+      "signal_b": 8.8,
+      "signal_c": 8.2,
+      "composite": 8.50,
+      "tier": "Deep Alpha",
+      "is_sample": true
+    },
+    {
+      "name": "MeshOracle",
+      "symbol": "MESH",
+      "signal_a": 7.8,
+      "signal_b": 7.5,
+      "signal_c": 8.0,
+      "composite": 7.77,
+      "tier": "Emerging Signal",
+      "is_sample": true
+    },
+    {
+      "name": "VaultLayer",
+      "symbol": "VAULT",
+      "signal_a": 7.2,
+      "signal_b": 6.8,
+      "signal_c": 7.5,
+      "composite": 7.17,
+      "tier": "Emerging Signal",
+      "is_sample": true
+    },
+    {
+      "name": "YieldNest",
+      "symbol": "YNEST",
+      "signal_a": 6.5,
+      "signal_b": 6.8,
+      "signal_c": 6.2,
+      "composite": 6.50,
+      "tier": "Emerging Signal",
+      "is_sample": true
+    },
+    {
+      "name": "ZkBridge",
+      "symbol": "ZKB",
+      "signal_a": 6.0,
+      "signal_b": 5.8,
+      "signal_c": 6.2,
+      "composite": 6.00,
+      "tier": "Emerging Signal",
+      "is_sample": true
+    },
+    {
+      "name": "PixelMind",
+      "symbol": "PXLM",
+      "signal_a": 5.2,
+      "signal_b": 4.8,
+      "signal_c": 5.0,
+      "composite": 5.00,
+      "tier": "Watch List",
+      "is_sample": true
+    },
+    {
+      "name": "ChatDegen",
+      "symbol": "CDGN",
+      "signal_a": 3.5,
+      "signal_b": 4.0,
+      "signal_c": 3.2,
+      "composite": 3.57,
+      "tier": "Watch List",
+      "is_sample": true
+    },
+    {
+      "name": "MoonPump",
+      "symbol": "MPUMP",
+      "signal_a": 2.0,
+      "signal_b": 2.5,
+      "signal_c": 1.8,
+      "composite": 2.10,
+      "tier": "Watch List",
+      "is_sample": true
+    }
+  ]
+}

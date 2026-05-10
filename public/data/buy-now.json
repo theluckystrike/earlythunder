@@ -1,0 +1,46 @@
+{
+  "engine": "EarlyThunder Scoring Engine v1.0",
+  "filter": "score >= 60 OR (pre-token AND score >= 75)",
+  "scored_at": "2026-05-07T07:09:26.144536+00:00",
+  "count": 2,
+  "projects": [
+    {
+      "project": "Commonware",
+      "project_key": "commonware",
+      "team": 22,
+      "money": 23,
+      "product": 12,
+      "timing": 15,
+      "valuation": 13,
+      "total": 85,
+      "token_exists": false,
+      "tradeable": false,
+      "mcap_usd": null,
+      "tvl_usd": null,
+      "price_usd": null,
+      "classification": "WATCH_PRE_TOKEN",
+      "position_pct": 0.0,
+      "entry_timing": "wait_for_token",
+      "alert_trigger": "TOKEN_LAUNCH_TRIGGER"
+    },
+    {
+      "project": "EkuboProtocol",
+      "project_key": "ekubo",
+      "team": 17,
+      "money": 8,
+      "product": 20,
+      "timing": 10,
+      "valuation": 15,
+      "total": 70,
+      "token_exists": true,
+      "tradeable": true,
+      "mcap_usd": 4809825,
+      "tvl_usd": 22810358.51,
+      "price_usd": 0.480982,
+      "classification": "WATCH",
+      "position_pct": 3.0,
+      "entry_timing": "scale_in",
+      "alert_trigger": null
+    }
+  ]
+}

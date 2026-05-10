@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EarlyThunder - Personal Dashboard</title>
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-card: #111118;
+    --bg-card-hover: #16161f;
+    --bg-input: #1a1a24;
+    --border: #2a2a3a;
+    --gold: #d4a017;
+    --gold-dim: #8a6a10;
+    --green: #22c55e;
+    --green-dim: #166534;
+    --red: #ef4444;
+    --red-dim: #7f1d1d;
+    --orange: #f59e0b;
+    --blue: #3b82f6;
+    --text-primary: #e2e2e8;
+    --text-secondary: #8888a0;
+    --text-dim: #555570;
+    --font-mono: 'SF Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
+}
+
+html { font-size: 14px; }
+
+body {
+    font-family: var(--font-mono);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: linear-gradient(180deg, #0f0f18 0%, var(--bg-primary) 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.logo-sub {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.refresh-btn {
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    color: var(--gold);
+    padding: 0.4rem 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.15s;
+}
+
+.refresh-btn:hover { background: var(--bg-card-hover); }
+
+.last-refresh { color: var(--text-dim); font-size: 0.7rem; }
+
+/* ===== TABS ===== */
+.tab-bar {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-card);
+    overflow-x: auto;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.tab-btn:hover { color: var(--text-primary); }
+
+.tab-btn.active {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+}
+
+.tab-content {
+    display: none;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tab-content.active { display: block; }
+
+/* ===== CARDS ===== */
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===== ALERTS ===== */
+.alert-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #1a1a24;
+}
+
+.alert-row:last-child { border-bottom: none; }
+
+.alert-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.alert-dot.critical { background: var(--red); box-shadow: 0 0 6px var(--red); }
+.alert-dot.high { background: var(--gold); box-shadow: 0 0 6px var(--gold); }
+.alert-dot.info { background: var(--text-dim); }
+
+.alert-label { color: var(--text-secondary); font-size: 0.8rem; flex: 1; }
+.alert-value { font-size: 0.85rem; font-weight: 600; }
+.alert-value.critical { color: var(--red); }
+.alert-value.high { color: var(--gold); }
+.alert-value.info { color: var(--text-dim); }
+
+/* ===== TABLES ===== */
+.table-wrap { overflow-x: auto; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+th {
+    text-align: left;
+    color: var(--text-dim);
+    font-weight: 500;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid #1a1a24;
+    vertical-align: middle;
+}
+
+tr.row-gold { background: rgba(212, 160, 23, 0.08); }
+tr.row-green td { color: var(--green); }
+tr.row-dim td { color: var(--text-dim); }
+
+/* ===== SCORE BAR ===== */
+.score-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 160px;
+}
+
+.score-bar-track {
+    flex: 1;
+    height: 6px;
+    background: #1a1a24;
+    border-radius: 3px;
+    overflow: hidden;
+    min-width: 80px;
+}
+
+.score-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.score-bar-fill.tier-gold { background: var(--gold); }
+.score-bar-fill.tier-green { background: var(--green); }
+.score-bar-fill.tier-dim { background: var(--text-dim); }
+
+.score-num {
+    font-size: 0.8rem;
+    font-weight: 600;
+    min-width: 32px;
+    text-align: right;
+}
+
+.score-num.tier-gold { color: var(--gold); }
+.score-num.tier-green { color: var(--green); }
+.score-num.tier-dim { color: var(--text-dim); }
+
+/* ===== ACTION BADGES ===== */
+.action-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.action-badge.buy { background: rgba(34, 197, 94, 0.15); color: var(--green); border: 1px solid var(--green-dim); }
+.action-badge.watch { background: rgba(212, 160, 23, 0.15); color: var(--gold); border: 1px solid var(--gold-dim); }
+.action-badge.pass { background: rgba(85, 85, 112, 0.15); color: var(--text-dim); border: 1px solid #333; }
+.action-badge.pre-token { background: rgba(245, 158, 11, 0.15); color: var(--orange); border: 1px solid #7c3f00; }
+
+/* ===== QUICK STATS ===== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+}
+
+.stat-item {
+    background: var(--bg-input);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+}
+
+.stat-label { color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.stat-value { color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-top: 0.25rem; }
+.stat-value.gold { color: var(--gold); }
+.stat-value.green { color: var(--green); }
+.stat-value.red { color: var(--red); }
+
+/* ===== PORTFOLIO ===== */
+.portfolio-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.pf-stat {
+    background: var(--bg-input);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    text-align: center;
+}
+
+.pf-stat .label { color: var(--text-dim); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.pf-stat .value { font-size: 1.2rem; font-weight: 700; margin-top: 0.25rem; }
+
+.highlight-stop { background: rgba(239, 68, 68, 0.1); border-left: 3px solid var(--red); }
+.highlight-tp { background: rgba(212, 160, 23, 0.1); border-left: 3px solid var(--gold); }
+
+/* ===== PIPELINE STATUS ===== */
+.scanner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.scanner-card {
+    background: var(--bg-input);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid var(--text-dim);
+}
+
+.scanner-card.status-green { border-left-color: var(--green); }
+.scanner-card.status-yellow { border-left-color: var(--orange); }
+.scanner-card.status-red { border-left-color: var(--red); }
+
+.scanner-name { font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem; }
+
+.scanner-meta {
+    color: var(--text-dim);
+    font-size: 0.7rem;
+}
+
+.scanner-meta span { display: block; margin-top: 0.15rem; }
+
+.status-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 0.35rem;
+    vertical-align: middle;
+}
+
+.status-dot.green { background: var(--green); }
+.status-dot.yellow { background: var(--orange); }
+.status-dot.red { background: var(--red); }
+
+/* ===== RESEARCH SECTIONS ===== */
+.research-section {
+    margin-bottom: 0.75rem;
+}
+
+.research-toggle {
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.research-toggle:hover { background: var(--bg-card-hover); }
+
+.research-toggle .chevron {
+    color: var(--text-dim);
+    transition: transform 0.2s;
+    font-size: 0.7rem;
+}
+
+.research-section.open .chevron { transform: rotate(90deg); }
+
+.research-body {
+    display: none;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 1rem 1.25rem;
+}
+
+.research-section.open .research-toggle {
+    border-radius: 6px 6px 0 0;
+}
+
+.research-section.open .research-body { display: block; }
+
+.research-label {
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.research-label:first-child { margin-top: 0; }
+
+.research-text {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.research-text strong { color: var(--text-primary); }
+
+.score-breakdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.score-item {
+    background: var(--bg-input);
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+}
+
+.score-item .label { color: var(--text-dim); font-size: 0.65rem; text-transform: uppercase; }
+.score-item .val { font-size: 1rem; font-weight: 700; margin-top: 0.15rem; }
+
+.risk-list {
+    list-style: none;
+    margin-top: 0.35rem;
+}
+
+.risk-list li {
+    padding: 0.3rem 0;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.risk-list li::before {
+    content: "//";
+    color: var(--red);
+    margin-right: 0.5rem;
+    font-weight: 700;
+}
+
+.verdict-box {
+    background: rgba(212, 160, 23, 0.08);
+    border: 1px solid var(--gold-dim);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin-top: 0.75rem;
+}
+
+.verdict-box .verdict-label {
+    color: var(--gold);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.verdict-box .verdict-text {
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* ===== PLACEHOLDER ===== */
+.placeholder {
+    color: var(--text-dim);
+    font-style: italic;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* ===== COUNTDOWN ===== */
+.countdown-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    html { font-size: 13px; }
+    .header { padding: 0.75rem 1rem; }
+    .tab-content { padding: 1rem; }
+    .tab-btn { padding: 0.6rem 1rem; font-size: 0.8rem; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .scanner-grid { grid-template-columns: 1fr; }
+    .portfolio-summary { grid-template-columns: 1fr 1fr; }
+    .score-breakdown { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .portfolio-summary { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="header-left">
+        <div>
+            <div class="logo">EARLYTHUNDER</div>
+            <div class="logo-sub">1000x Discovery Pipeline</div>
+        </div>
+    </div>
+    <div class="header-right">
+        <span class="last-refresh" id="lastRefresh">--</span>
+        <button class="refresh-btn" id="refreshBtn" onclick="refreshAll()">REFRESH DATA</button>
+    </div>
+</div>
+
+<!-- TAB BAR -->
+<div class="tab-bar">
+    <button class="tab-btn active" data-tab="action">ACTION</button>
+    <button class="tab-btn" data-tab="portfolio">PORTFOLIO</button>
+    <button class="tab-btn" data-tab="pipeline">PIPELINE</button>
+    <button class="tab-btn" data-tab="research">RESEARCH</button>
+</div>
+
+<!-- TAB 1: ACTION -->
+<div class="tab-content active" id="tab-action">
+    <!-- ALERTS -->
+    <div class="card">
+        <div class="card-title">Alerts</div>
+        <div id="alertsContainer">
+            <div class="placeholder">Loading alerts...</div>
+        </div>
+    </div>
+
+    <!-- TOP OPPORTUNITIES -->
+    <div class="card">
+        <div class="card-title">Top Opportunities</div>
+        <div class="table-wrap">
+            <table id="opportunitiesTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                        <th>Size</th>
+                        <th>Where</th>
+                        <th>When</th>
+                    </tr>
+                </thead>
+                <tbody id="opportunitiesBody">
+                    <tr><td colspan="7" class="placeholder">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- QUICK STATS -->
+    <div class="card">
+        <div class="card-title">Quick Stats</div>
+        <div class="stats-grid" id="quickStats">
+            <div class="stat-item">
+                <div class="stat-label">Projects Tracked</div>
+                <div class="stat-value" id="statProjects">--</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">INVESTIGATE Signals</div>
+                <div class="stat-value gold" id="statInvestigate">--</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Pipeline Last Run</div>
+                <div class="stat-value" id="statLastRun">--</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TAB 2: PORTFOLIO -->
+<div class="tab-content" id="tab-portfolio">
+    <!-- PORTFOLIO SUMMARY -->
+    <div class="card">
+        <div class="card-title">Portfolio Summary</div>
+        <div class="portfolio-summary" id="portfolioSummary">
+            <div class="pf-stat">
+                <div class="label">Total Invested</div>
+                <div class="value" id="pfInvested">$0</div>
+            </div>
+            <div class="pf-stat">
+                <div class="label">Total Value</div>
+                <div class="value" id="pfValue">$0</div>
+            </div>
+            <div class="pf-stat">
+                <div class="label">Total P&L</div>
+                <div class="value" id="pfPnl">$0</div>
+            </div>
+            <div class="pf-stat">
+                <div class="label">P&L %</div>
+                <div class="value" id="pfPnlPct">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POSITIONS -->
+    <div class="card">
+        <div class="card-title">Positions</div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Token</th>
+                        <th>Chain</th>
+                        <th>Amount</th>
+                        <th>Entry</th>
+                        <th>Current</th>
+                        <th>Value</th>
+                        <th>P&L %</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="positionsBody">
+                    <tr><td colspan="8" class="placeholder">No positions yet -- run pipeline first</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- WATCHLIST -->
+    <div class="card">
+        <div class="card-title">Watchlist</div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Score</th>
+                        <th>Trigger</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="watchlistBody">
+                    <tr><td colspan="5" class="placeholder">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- TAB 3: PIPELINE -->
+<div class="tab-content" id="tab-pipeline">
+    <!-- SCANNER STATUS -->
+    <div class="card">
+        <div class="card-title">Scanner Status</div>
+        <div class="scanner-grid" id="scannerGrid">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <!-- CROSS-REFERENCE SUMMARY -->
+    <div class="card">
+        <div class="card-title">Cross-Reference Summary</div>
+        <div class="stats-grid" id="xrefStats">
+            <div class="stat-item">
+                <div class="stat-label">Projects Scored</div>
+                <div class="stat-value" id="xrefTotal">--</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">INVESTIGATE</div>
+                <div class="stat-value gold" id="xrefInvestigate">--</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">MONITOR</div>
+                <div class="stat-value" id="xrefMonitor">--</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LATEST FINDINGS -->
+    <div class="card">
+        <div class="card-title">Latest Findings (Top 20)</div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Project</th>
+                        <th>Score</th>
+                        <th>Class</th>
+                        <th>Sources</th>
+                        <th>VCs</th>
+                    </tr>
+                </thead>
+                <tbody id="findingsBody">
+                    <tr><td colspan="6" class="placeholder">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- TAB 4: RESEARCH -->
+<div class="tab-content" id="tab-research">
+    <div id="researchContainer">
+        <!-- Populated by JS -->
+    </div>
+</div>
+
+<script>
+/* ======================================================================
+   EarlyThunder Personal Dashboard
+   Pure JS, no dependencies. Loads from local JSON files.
+   NASA Power of 10: bounded loops, no dynamic allocation in hot paths,
+   all functions return, no recursion, assertions on critical paths.
+   ====================================================================== */
+
+'use strict';
+
+/* ===== CONSTANTS ===== */
+var DAO_EXPIRY = new Date('2026-07-28T00:00:00Z');
+var MAX_LOOP = 500;
+var REFRESH_INTERVAL_MS = 300000; /* 5 minutes */
+
+var KNOWN_DISCOVERIES = [
+    { name: "Commonware", score: 85, action: "WATCH_PRE_TOKEN", size_pct: 7, where: "No token", when: "Wait for launch", status: "pre_token",
+      chain: "--", dex: "--" },
+    { name: "EkuboProtocol", score: 72, action: "BUY_SMALL", size_pct: 3, where: "StarkNet DEX", when: "Scale in 5 days", status: "tradeable",
+      chain: "StarkNet", dex: "Ekubo" },
+    { name: "Aethir", score: 62, action: "WATCH", size_pct: 2, where: "DEXScreener", when: "Research more", status: "tradeable",
+      chain: "Ethereum", dex: "DEXScreener" },
+    { name: "KAIO", score: 38, action: "PASS", size_pct: 0, where: "KuCoin", when: "Pass", status: "monitor",
+      chain: "Ethereum", dex: "KuCoin" }
+];
+
+var SCANNER_DEFS = [
+    { id: "contract_scanner", name: "Contract Scanner", dir: "04-contract-scanner" },
+    { id: "vc_tracker", name: "VC Tracker", dir: "05-vc-tracker" },
+    { id: "dev_tracker", name: "Dev Tracker", dir: "06-dev-tracker" },
+    { id: "dex_scanner", name: "DEX Scanner", dir: "07-dex-scanner" },
+    { id: "alpha_signals", name: "Alpha Signals", dir: "10-intelligence-pipeline" },
+    { id: "whale_tracker", name: "Whale Tracker", dir: "10-intelligence-pipeline" }
+];
+
+var RESEARCH_DATA = {
+    commonware: {
+        name: "Commonware",
+        score: 85,
+        verdict: "DEEP_ALPHA",
+        scores: { team: 95, money: 90, product: 85, timing: 80, valuation: 75 },
+        thesis: "Open-source Rust library of composable blockchain primitives (\"Anti-Framework\"). Founded by Patrick O'Grady (ex-VP Engineering Ava Labs, built HyperSDK). Team includes Roberto Bayardo (Distinguished Engineer, Coinbase Base architect, 19yr Google), Ben Clabby (OP Labs fault proofs), Andre Silva (Parity/Polkadot core). $34M raised: $9M seed (Haun + Dragonfly at $63M val), $25M strategic (Tempo/Stripe + Paradigm). Profitable with 4 enterprise customers at >$1M ARR each. Custom io_uring runtime, qmdb merkle database, Simplex BFT consensus. ~200ms blocks, ~300ms finality.",
+        team: "Patrick O'Grady (Founder, ex-Ava Labs VP Eng), Roberto Bayardo (ex-Google 19yr, Coinbase Base architect), Ben Clabby (ex-OP Labs), Andre Silva (ex-Parity/Polkadot), Dan Laine (ex-Ava Labs), Brendan Chou (ex-dYdX first eng, Google, Princeton)",
+        funding: "$34M total. Seed $9M (Haun + Dragonfly, $63M val, Dec 2024). Strategic $25M (Tempo = Stripe + Paradigm, Nov 2025). Angels: Kevin Sekniqi (Avalanche co-founder), Smokey the Bera, Zaki Manian, Mert Mumtaz.",
+        risks: [
+            "No token may ever launch -- company is profitable, no structural need",
+            "Small team (7 employees) -- key-person risk on O'Grady and Bayardo",
+            "Tempo dependency -- $25M from largest customer creates concentration",
+            "Adoption risk -- Cosmos SDK and Substrate have mature ecosystems",
+            "Infrastructure value capture -- value may accrue to Tempo, not Commonware"
+        ],
+        action_items: [
+            "Monitor GitHub (commonwarexyz/monorepo) daily for token-related changes",
+            "Track Twitter (@commonwarexyz) for announcements",
+            "Watch Tempo for indirect token events",
+            "Alert if star count exceeds 1000 (viral growth signal)",
+            "No buy action -- pre-token monitoring only"
+        ]
+    },
+    ekubo: {
+        name: "EkuboProtocol",
+        score: 72,
+        verdict: "DEEP_ALPHA",
+        scores: { team: 90, money: 55, product: 80, timing: 70, valuation: 65 },
+        thesis: "Concentrated-liquidity DEX built by moodysalem, chief engineer behind Uniswap v3/v4. TVL ($22.8M) exceeds market cap ($4.8M) by nearly 5x -- extreme undervaluation. Fixed supply 10M tokens, no inflation. Active on StarkNet (69% TVL) and Ethereum. Price 93.7% below ATH ($7.64). DAO contract expires July 28, 2026. Recent $1.4M EVM router exploit (May 5) under investigation.",
+        team: "moodysalem (Uniswap v3/v4 chief engineer). Extremely active: 30+ GitHub events recently across EkuboProtocol repos, OpenZeppelin, Ethereum ERCs.",
+        funding: "No traditional VC funding. Token-funded protocol. Market cap $4.8M, TVL $22.8M.",
+        live_data: "Price: $0.48 | MCap: $4.8M | FDV: $4.8M | TVL: $22.8M | Vol 24h: ~$25K | ATH: $7.64 | 7d: -33.3%",
+        risks: [
+            "EVM router exploit ($1.4M, May 5 2026) -- smart contract risk",
+            "DAO contract expires July 28 2026 -- governance uncertainty",
+            "Low liquidity (~$25K daily volume) -- hard to enter/exit large positions",
+            "StarkNet concentration (69% TVL) -- ecosystem risk",
+            "Key-person dependency on moodysalem",
+            "DEX competition (Uniswap, Curve with larger network effects)"
+        ],
+        action_items: [
+            "BUY SMALL: 3% target allocation",
+            "Scale in over 5+ days due to thin liquidity",
+            "Entry target: ~$0.48",
+            "Stop-loss: 50% drawdown from entry",
+            "Take-profit targets: $1.44 (3x), $4.80 (10x), $14.40 (30x)",
+            "Monitor DAO expiry countdown (July 28)",
+            "Watch exploit investigation resolution"
+        ]
+    }
+};
+
+/* ===== STATE ===== */
+var state = {
+    scores: null,
+    portfolio: null,
+    brief: null,
+    watchlistScored: null,
+    lastRefresh: null
+};
+
+/* ===== UTILITIES ===== */
+function todayStr() {
+    var d = new Date();
+    var y = d.getFullYear();
+    var m = String(d.getMonth() + 1).padStart(2, '0');
+    var day = String(d.getDate()).padStart(2, '0');
+    return y + '-' + m + '-' + day;
+}
+
+function daysUntil(target) {
+    var now = new Date();
+    var diff = target.getTime() - now.getTime();
+    return Math.ceil(diff / 86400000);
+}
+
+function formatUSD(n) {
+    if (n === null || n === undefined) { return '$0'; }
+    if (Math.abs(n) >= 1000000) { return '$' + (n / 1000000).toFixed(2) + 'M'; }
+    if (Math.abs(n) >= 1000) { return '$' + (n / 1000).toFixed(1) + 'K'; }
+    return '$' + n.toFixed(2);
+}
+
+function scoreTier(score) {
+    if (score >= 75) { return 'gold'; }
+    if (score >= 60) { return 'green'; }
+    return 'dim';
+}
+
+function actionLabel(action) {
+    if (!action) { return { text: '--', cls: 'pass' }; }
+    var a = action.toUpperCase();
+    if (a.indexOf('BUY') !== -1) { return { text: 'BUY', cls: 'buy' }; }
+    if (a.indexOf('PRE_TOKEN') !== -1) { return { text: 'NO TOKEN', cls: 'pre-token' }; }
+    if (a.indexOf('WATCH') !== -1) { return { text: 'WATCH', cls: 'watch' }; }
+    if (a.indexOf('PASS') !== -1) { return { text: 'PASS', cls: 'pass' }; }
+    return { text: a, cls: 'pass' };
+}
+
+function sanitize(str) {
+    if (!str) { return ''; }
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+/* ===== DATA LOADING ===== */
+function loadJSON(path) {
+    return fetch(path).then(function(resp) {
+        if (!resp.ok) { return null; }
+        return resp.json();
+    }).catch(function() {
+        return null;
+    });
+}
+
+function refreshAll() {
+    var btn = document.getElementById('refreshBtn');
+    btn.textContent = 'LOADING...';
+    btn.disabled = true;
+
+    var dateStr = todayStr();
+
+    Promise.all([
+        loadJSON('all-scores.json'),
+        loadJSON('portfolio.json'),
+        loadJSON('daily-brief-' + dateStr + '.json'),
+        loadJSON('../12-intelligence-output/watchlist-scored.json')
+    ]).then(function(results) {
+        state.scores = results[0];
+        state.portfolio = results[1];
+        state.brief = results[2];
+        state.watchlistScored = results[3];
+        state.lastRefresh = new Date();
+
+        renderAll();
+
+        btn.textContent = 'REFRESH DATA';
+        btn.disabled = false;
+        document.getElementById('lastRefresh').textContent =
+            'Last: ' + state.lastRefresh.toLocaleTimeString();
+    }).catch(function() {
+        btn.textContent = 'REFRESH DATA';
+        btn.disabled = false;
+    });
+}
+
+/* ===== RENDER: ALERTS ===== */
+function renderAlerts() {
+    var container = document.getElementById('alertsContainer');
+    var html = '';
+
+    /* Commonware token status */
+    var cwStatus = 'NOT FOUND';
+    var cwLevel = 'high';
+    if (state.portfolio && state.portfolio.watchlist) {
+        for (var i = 0; i < state.portfolio.watchlist.length && i < MAX_LOOP; i++) {
+            if (state.portfolio.watchlist[i].name === 'Commonware') {
+                cwStatus = state.portfolio.watchlist[i].status === 'pre_token'
+                    ? 'NO TOKEN -- MONITORING' : 'TOKEN DETECTED';
+                cwLevel = state.portfolio.watchlist[i].status === 'pre_token' ? 'high' : 'critical';
+                break;
+            }
+        }
+    }
+    html += alertRow(cwLevel, 'Commonware Token', cwStatus);
+
+    /* Ekubo DAO countdown */
+    var daysLeft = daysUntil(DAO_EXPIRY);
+    var daoLevel = 'info';
+    if (daysLeft < 30) { daoLevel = 'critical'; }
+    else if (daysLeft < 60) { daoLevel = 'high'; }
+    html += alertRow(daoLevel, 'Ekubo DAO Expiry', daysLeft + ' DAYS');
+
+    /* Ekubo exploit status */
+    html += alertRow('critical', 'Ekubo EVM Router Exploit ($1.4M)', 'UNDER INVESTIGATION');
+
+    /* Stop-loss / take-profit checks */
+    if (state.portfolio && state.portfolio.positions) {
+        for (var j = 0; j < state.portfolio.positions.length && j < MAX_LOOP; j++) {
+            var pos = state.portfolio.positions[j];
+            if (pos.current_price && pos.entry_price) {
+                var pctChange = ((pos.current_price - pos.entry_price) / pos.entry_price) * 100;
+                if (pos.stop_loss_pct && pctChange <= -(pos.stop_loss_pct * 0.9)) {
+                    html += alertRow('critical', pos.name + ' STOP-LOSS',
+                        'Within 10% of stop (' + pctChange.toFixed(1) + '%)');
+                }
+            }
+        }
+    }
+
+    /* Pipeline status */
+    var pipelineDate = '--';
+    if (state.watchlistScored && state.watchlistScored.scan_date) {
+        pipelineDate = state.watchlistScored.scan_date;
+    }
+    html += alertRow('info', 'Pipeline Last Scan', pipelineDate);
+
+    container.innerHTML = html;
+}
+
+function alertRow(level, label, value) {
+    return '<div class="alert-row">' +
+        '<span class="alert-dot ' + level + '"></span>' +
+        '<span class="alert-label">' + sanitize(label) + '</span>' +
+        '<span class="alert-value ' + level + '">' + sanitize(value) + '</span>' +
+        '</div>';
+}
+
+/* ===== RENDER: OPPORTUNITIES ===== */
+function renderOpportunities() {
+    var tbody = document.getElementById('opportunitiesBody');
+    var items = getOpportunities();
+
+    /* Sort by score descending */
+    items.sort(function(a, b) { return b.score - a.score; });
+
+    if (items.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" class="placeholder">No data yet -- run pipeline first</td></tr>';
+        return;
+    }
+
+    var html = '';
+    for (var i = 0; i < items.length && i < MAX_LOOP; i++) {
+        var item = items[i];
+        var tier = scoreTier(item.score);
+        var act = actionLabel(item.action);
+        var rowCls = '';
+        if (item.score >= 75) { rowCls = 'row-gold'; }
+        else if (item.score < 50) { rowCls = 'row-dim'; }
+
+        html += '<tr class="' + rowCls + '">';
+        html += '<td>' + (i + 1) + '</td>';
+        html += '<td><strong>' + sanitize(item.name) + '</strong></td>';
+        html += '<td>' + scoreBarHTML(item.score) + '</td>';
+        html += '<td><span class="action-badge ' + act.cls + '">' + act.text + '</span>';
+        if (item.status === 'pre_token') {
+            html += '<br><span style="color:var(--orange);font-size:0.65rem;">NO TOKEN -- MONITORING</span>';
+        }
+        html += '</td>';
+        html += '<td>' + (item.size_pct ? item.size_pct + '%' : '--') + '</td>';
+        html += '<td>' + sanitize(item.where) + '</td>';
+        html += '<td>' + sanitize(item.when) + '</td>';
+        html += '</tr>';
+    }
+
+    tbody.innerHTML = html;
+}
+
+function getOpportunities() {
+    /* Merge pipeline data with known discoveries. Known discoveries take priority. */
+    var merged = {};
+
+    /* Start with known discoveries */
+    for (var i = 0; i < KNOWN_DISCOVERIES.length && i < MAX_LOOP; i++) {
+        var d = KNOWN_DISCOVERIES[i];
+        merged[d.name.toLowerCase()] = Object.assign({}, d);
+    }
+
+    /* Overlay with scores data if available */
+    if (state.scores && state.scores.projects) {
+        for (var j = 0; j < state.scores.projects.length && j < MAX_LOOP; j++) {
+            var p = state.scores.projects[j];
+            var key = (p.name || p.project_key || '').toLowerCase();
+            if (key && !merged[key]) {
+                merged[key] = {
+                    name: p.name || p.project_key,
+                    score: p.score || p.composite_score || 0,
+                    action: p.action || 'WATCH',
+                    size_pct: p.size_pct || 0,
+                    where: p.where || p.chain || '--',
+                    when: p.when || '--',
+                    status: p.status || 'monitor'
+                };
+            }
+        }
+    }
+
+    var result = [];
+    var keys = Object.keys(merged);
+    for (var k = 0; k < keys.length && k < MAX_LOOP; k++) {
+        result.push(merged[keys[k]]);
+    }
+    return result;
+}
+
+function scoreBarHTML(score) {
+    var tier = scoreTier(score);
+    return '<div class="score-bar-wrap">' +
+        '<div class="score-bar-track"><div class="score-bar-fill tier-' + tier + '" style="width:' + score + '%"></div></div>' +
+        '<span class="score-num tier-' + tier + '">' + score + '</span>' +
+        '</div>';
+}
+
+/* ===== RENDER: QUICK STATS ===== */
+function renderQuickStats() {
+    var totalProjects = KNOWN_DISCOVERIES.length;
+    var investigateCount = 0;
+    var pipelineDate = '--';
+
+    if (state.watchlistScored) {
+        if (state.watchlistScored.summary) {
+            totalProjects = state.watchlistScored.summary.total || totalProjects;
+            investigateCount = state.watchlistScored.summary.investigate || 0;
+        }
+        if (state.watchlistScored.scan_date) {
+            pipelineDate = state.watchlistScored.scan_date;
+        }
+    }
+
+    document.getElementById('statProjects').textContent = totalProjects;
+    document.getElementById('statInvestigate').textContent = investigateCount;
+    document.getElementById('statLastRun').textContent = pipelineDate;
+}
+
+/* ===== RENDER: PORTFOLIO ===== */
+function renderPortfolio() {
+    var pf = state.portfolio;
+
+    if (!pf) {
+        document.getElementById('pfInvested').textContent = '$0';
+        document.getElementById('pfValue').textContent = '$0';
+        document.getElementById('pfPnl').textContent = '$0';
+        document.getElementById('pfPnlPct').textContent = '0%';
+        document.getElementById('positionsBody').innerHTML =
+            '<tr><td colspan="8" class="placeholder">No data yet -- run pipeline first</td></tr>';
+        document.getElementById('watchlistBody').innerHTML =
+            '<tr><td colspan="5" class="placeholder">No data yet -- run pipeline first</td></tr>';
+        return;
+    }
+
+    /* Summary */
+    var totalInvested = 0;
+    var totalValue = 0;
+    if (pf.positions) {
+        for (var i = 0; i < pf.positions.length && i < MAX_LOOP; i++) {
+            var pos = pf.positions[i];
+            totalInvested += (pos.entry_price || 0) * (pos.amount || 0);
+            totalValue += (pos.current_price || 0) * (pos.amount || 0);
+        }
+    }
+    var totalPnl = totalValue - totalInvested;
+    var pnlPct = totalInvested > 0 ? ((totalPnl / totalInvested) * 100) : 0;
+
+    document.getElementById('pfInvested').textContent = formatUSD(totalInvested);
+    document.getElementById('pfValue').textContent = formatUSD(totalValue);
+    var pnlEl = document.getElementById('pfPnl');
+    pnlEl.textContent = formatUSD(totalPnl);
+    pnlEl.className = 'value ' + (totalPnl >= 0 ? '' : 'red');
+    var pctEl = document.getElementById('pfPnlPct');
+    pctEl.textContent = pnlPct.toFixed(1) + '%';
+    pctEl.className = 'value ' + (pnlPct >= 0 ? '' : 'red');
+
+    document.getElementById('pfInvested').parentElement.querySelector('.value').textContent = formatUSD(totalInvested);
+
+    /* Positions table */
+    var posHtml = '';
+    if (pf.positions && pf.positions.length > 0) {
+        for (var j = 0; j < pf.positions.length && j < MAX_LOOP; j++) {
+            var p = pf.positions[j];
+            var val = (p.current_price || 0) * (p.amount || 0);
+            var entryVal = (p.entry_price || 0) * (p.amount || 0);
+            var posPnl = entryVal > 0 ? ((val - entryVal) / entryVal * 100) : 0;
+            var rowCls = '';
+            if (p.stop_loss_pct && posPnl <= -(p.stop_loss_pct * 0.9)) { rowCls = 'highlight-stop'; }
+            if (p.take_profit_targets && p.take_profit_targets.length > 0) {
+                var tp1 = p.take_profit_targets[0];
+                var tpPct = ((tp1 - p.entry_price) / p.entry_price) * 100;
+                if (posPnl >= tpPct * 0.9) { rowCls = 'highlight-tp'; }
+            }
+
+            posHtml += '<tr class="' + rowCls + '">';
+            posHtml += '<td><strong>' + sanitize(p.name || p.ticker || '--') + '</strong></td>';
+            posHtml += '<td>' + sanitize(p.chain || '--') + '</td>';
+            posHtml += '<td>' + (p.amount || 0) + '</td>';
+            posHtml += '<td>' + formatUSD(p.entry_price) + '</td>';
+            posHtml += '<td>' + formatUSD(p.current_price) + '</td>';
+            posHtml += '<td>' + formatUSD(val) + '</td>';
+            posHtml += '<td style="color:' + (posPnl >= 0 ? 'var(--green)' : 'var(--red)') + '">' + posPnl.toFixed(1) + '%</td>';
+            posHtml += '<td>' + sanitize(p.status || '--') + '</td>';
+            posHtml += '</tr>';
+        }
+    } else {
+        posHtml = '<tr><td colspan="8" class="placeholder">No positions yet -- waiting for first trade</td></tr>';
+    }
+    document.getElementById('positionsBody').innerHTML = posHtml;
+
+    /* Watchlist table */
+    var wlHtml = '';
+    if (pf.watchlist && pf.watchlist.length > 0) {
+        for (var k = 0; k < pf.watchlist.length && k < MAX_LOOP; k++) {
+            var w = pf.watchlist[k];
+            wlHtml += '<tr>';
+            wlHtml += '<td><strong>' + sanitize(w.name) + '</strong></td>';
+            wlHtml += '<td>' + sanitize(w.status || '--') + '</td>';
+            wlHtml += '<td>' + scoreBarHTML(w.score || 0) + '</td>';
+            wlHtml += '<td>' + sanitize(w.trigger || '--') + '</td>';
+            wlHtml += '<td style="max-width:300px;white-space:normal;font-size:0.75rem;color:var(--text-secondary);">' + sanitize(w.notes || '') + '</td>';
+            wlHtml += '</tr>';
+        }
+    } else {
+        wlHtml = '<tr><td colspan="5" class="placeholder">No watchlist items</td></tr>';
+    }
+    document.getElementById('watchlistBody').innerHTML = wlHtml;
+}
+
+/* ===== RENDER: PIPELINE ===== */
+function renderPipeline() {
+    /* Scanner cards */
+    var gridHtml = '';
+    var dataSources = (state.watchlistScored && state.watchlistScored.data_sources) || {};
+
+    for (var i = 0; i < SCANNER_DEFS.length && i < MAX_LOOP; i++) {
+        var sc = SCANNER_DEFS[i];
+        var count = dataSources[sc.id] || dataSources[sc.id.replace('_', '')] || 0;
+
+        /* Determine status */
+        var statusCls = 'status-green';
+        var dotCls = 'green';
+        var statusText = 'OK';
+
+        if (count === 0) {
+            statusCls = 'status-yellow';
+            dotCls = 'yellow';
+            statusText = 'No data';
+        }
+
+        var lastRun = (state.watchlistScored && state.watchlistScored.scan_date) || '--';
+
+        gridHtml += '<div class="scanner-card ' + statusCls + '">';
+        gridHtml += '<div class="scanner-name"><span class="status-dot ' + dotCls + '"></span>' + sanitize(sc.name) + '</div>';
+        gridHtml += '<div class="scanner-meta">';
+        gridHtml += '<span>Items: ' + count + '</span>';
+        gridHtml += '<span>Last run: ' + sanitize(lastRun) + '</span>';
+        gridHtml += '<span>Status: ' + statusText + '</span>';
+        gridHtml += '</div></div>';
+    }
+    document.getElementById('scannerGrid').innerHTML = gridHtml;
+
+    /* Cross-reference summary */
+    if (state.watchlistScored && state.watchlistScored.summary) {
+        var s = state.watchlistScored.summary;
+        document.getElementById('xrefTotal').textContent = s.total || '--';
+        document.getElementById('xrefInvestigate').textContent = s.investigate || '--';
+        document.getElementById('xrefMonitor').textContent = s.monitor || '--';
+    }
+
+    /* Findings table */
+    var fHtml = '';
+    var tokens = [];
+    if (state.watchlistScored && state.watchlistScored.tokens) {
+        tokens = state.watchlistScored.tokens;
+    }
+
+    if (tokens.length === 0) {
+        fHtml = '<tr><td colspan="6" class="placeholder">No data yet -- run pipeline first</td></tr>';
+    } else {
+        /* Sort by composite_score descending */
+        var sorted = tokens.slice().sort(function(a, b) {
+            return (b.composite_score || 0) - (a.composite_score || 0);
+        });
+
+        var limit = Math.min(sorted.length, 20);
+        for (var j = 0; j < limit && j < MAX_LOOP; j++) {
+            var t = sorted[j];
+            fHtml += '<tr>';
+            fHtml += '<td>' + (j + 1) + '</td>';
+            fHtml += '<td><strong>' + sanitize(t.project_key || '--') + '</strong></td>';
+            fHtml += '<td>' + (t.composite_score || 0) + '/10</td>';
+            fHtml += '<td><span style="color:' +
+                (t.classification === 'INVESTIGATE' ? 'var(--gold)' :
+                 t.classification === 'MONITOR' ? 'var(--text-secondary)' : 'var(--text-dim)') +
+                '">' + sanitize(t.classification || '--') + '</span></td>';
+            fHtml += '<td>' + (t.source_count || 0) + '</td>';
+            fHtml += '<td style="font-size:0.7rem;max-width:200px;white-space:normal;">' +
+                sanitize((t.vc_names || []).join(', ') || '--') + '</td>';
+            fHtml += '</tr>';
+        }
+    }
+    document.getElementById('findingsBody').innerHTML = fHtml;
+}
+
+/* ===== RENDER: RESEARCH ===== */
+function renderResearch() {
+    var container = document.getElementById('researchContainer');
+    var html = '';
+
+    var keys = Object.keys(RESEARCH_DATA);
+    for (var i = 0; i < keys.length && i < MAX_LOOP; i++) {
+        var r = RESEARCH_DATA[keys[i]];
+        var tier = scoreTier(r.score);
+
+        html += '<div class="research-section" id="research-' + keys[i] + '">';
+
+        /* Toggle header */
+        html += '<button class="research-toggle" onclick="toggleResearch(\'' + keys[i] + '\')">';
+        html += '<span>';
+        html += '<strong style="color:var(--' + (tier === 'dim' ? 'text-dim' : tier) + ')">' + sanitize(r.name) + '</strong>';
+        html += ' <span style="color:var(--text-dim)">// Score ' + r.score + ' // ' + r.verdict + '</span>';
+        html += '</span>';
+        html += '<span class="chevron">&#9654;</span>';
+        html += '</button>';
+
+        /* Body */
+        html += '<div class="research-body">';
+
+        /* Score breakdown */
+        html += '<div class="research-label">Score Breakdown</div>';
+        html += '<div class="score-breakdown">';
+        var scoreKeys = Object.keys(r.scores);
+        for (var s = 0; s < scoreKeys.length && s < MAX_LOOP; s++) {
+            var sk = scoreKeys[s];
+            var sv = r.scores[sk];
+            var svTier = scoreTier(sv);
+            html += '<div class="score-item">';
+            html += '<div class="label">' + sk.toUpperCase() + '</div>';
+            html += '<div class="val" style="color:var(--' + (svTier === 'dim' ? 'text-dim' : svTier) + ')">' + sv + '</div>';
+            html += '</div>';
+        }
+        html += '</div>';
+
+        /* Thesis */
+        html += '<div class="research-label">Thesis</div>';
+        html += '<div class="research-text">' + sanitize(r.thesis) + '</div>';
+
+        /* Team */
+        html += '<div class="research-label">Team</div>';
+        html += '<div class="research-text">' + sanitize(r.team) + '</div>';
+
+        /* Funding */
+        html += '<div class="research-label">Funding</div>';
+        html += '<div class="research-text">' + sanitize(r.funding) + '</div>';
+
+        /* Live data (Ekubo only) */
+        if (r.live_data) {
+            html += '<div class="research-label">Live Data Snapshot</div>';
+            html += '<div class="research-text" style="color:var(--gold)">' + sanitize(r.live_data) + '</div>';
+        }
+
+        /* Risks */
+        html += '<div class="research-label">Risks</div>';
+        html += '<ul class="risk-list">';
+        for (var ri = 0; ri < r.risks.length && ri < MAX_LOOP; ri++) {
+            html += '<li>' + sanitize(r.risks[ri]) + '</li>';
+        }
+        html += '</ul>';
+
+        /* Verdict + Action Items */
+        html += '<div class="verdict-box">';
+        html += '<div class="verdict-label">Verdict: ' + sanitize(r.verdict) + '</div>';
+        html += '<div class="verdict-text">';
+        for (var ai = 0; ai < r.action_items.length && ai < MAX_LOOP; ai++) {
+            html += (ai > 0 ? '<br>' : '') + '&gt; ' + sanitize(r.action_items[ai]);
+        }
+        html += '</div></div>';
+
+        html += '</div>'; /* research-body */
+        html += '</div>'; /* research-section */
+    }
+
+    if (html === '') {
+        html = '<div class="placeholder">No research data available</div>';
+    }
+
+    container.innerHTML = html;
+}
+
+function toggleResearch(key) {
+    var section = document.getElementById('research-' + key);
+    if (section) {
+        section.classList.toggle('open');
+    }
+}
+
+/* ===== RENDER ALL ===== */
+function renderAll() {
+    renderAlerts();
+    renderOpportunities();
+    renderQuickStats();
+    renderPortfolio();
+    renderPipeline();
+    renderResearch();
+}
+
+/* ===== TAB SWITCHING ===== */
+(function initTabs() {
+    var buttons = document.querySelectorAll('.tab-btn');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+            var tabId = this.getAttribute('data-tab');
+
+            /* Deactivate all */
+            var allBtns = document.querySelectorAll('.tab-btn');
+            for (var j = 0; j < allBtns.length; j++) { allBtns[j].classList.remove('active'); }
+            var allTabs = document.querySelectorAll('.tab-content');
+            for (var k = 0; k < allTabs.length; k++) { allTabs[k].classList.remove('active'); }
+
+            /* Activate selected */
+            this.classList.add('active');
+            var target = document.getElementById('tab-' + tabId);
+            if (target) { target.classList.add('active'); }
+        });
+    }
+})();
+
+/* ===== AUTO-REFRESH ===== */
+var refreshTimer = null;
+
+function startAutoRefresh() {
+    if (refreshTimer) { clearInterval(refreshTimer); }
+    refreshTimer = setInterval(function() {
+        if (!document.hidden) {
+            refreshAll();
+        }
+    }, REFRESH_INTERVAL_MS);
+}
+
+document.addEventListener('visibilitychange', function() {
+    if (!document.hidden && state.lastRefresh) {
+        var elapsed = Date.now() - state.lastRefresh.getTime();
+        if (elapsed > REFRESH_INTERVAL_MS) {
+            refreshAll();
+        }
+    }
+});
+
+/* ===== INIT ===== */
+(function init() {
+    refreshAll();
+    startAutoRefresh();
+})();
+
+</script>
+</body>
+</html>

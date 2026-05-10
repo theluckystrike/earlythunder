@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-07",
+  "generated_at": "2026-05-07T07:12:00.289501+00:00",
+  "pipeline": "EarlyThunder Daily Monitor v1.0",
+  "alerts": [
+    {
+      "level": "INFO",
+      "message": "Commonware: NO TOKEN (monitoring daily)"
+    },
+    {
+      "level": "INFO",
+      "message": "Ekubo DAO expiry: 82 days remaining"
+    }
+  ],
+  "commonware": {
+    "token_found": false,
+    "dexscreener_results": 30,
+    "dexscreener_matches": [],
+    "coingecko_results": 0,
+    "coingecko_matches": []
+  },
+  "ekubo": {
+    "price_usd": 0.484206,
+    "price_change_24h": -3.17976,
+    "market_cap_usd": 4847280,
+    "tvl_usd": 22810358.51407,
+    "tvl_mcap_ratio": 4.71,
+    "dao_expiry_days": 82,
+    "health": "STABLE",
+    "errors": []
+  },
+  "market": {
+    "btc_price": 81462,
+    "btc_change_24h": -0.08,
+    "fear_greed": 47,
+    "fear_greed_label": "Neutral",
+    "errors": []
+  },
+  "portfolio": {
+    "total_value": 10000.0,
+    "total_pnl": 0,
+    "positions_count": 0,
+    "watchlist_count": 3,
+    "alerts": []
+  },
+  "new_discoveries": []
+}

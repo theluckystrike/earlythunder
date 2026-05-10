@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Early Thunder | Comprehensive Intelligence Report</title>
+<style>
+:root {
+    --base: #0B0F1A;
+    --surface: #141927;
+    --card: #1A2035;
+    --border: #2A3050;
+    --amber: #F5A623;
+    --blue: #3B82F6;
+    --green: #22C55E;
+    --yellow: #EAB308;
+    --red: #EF4444;
+    --text: #E2E8F0;
+    --text-sec: #94A3B8;
+    --mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+    --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --serif: 'Instrument Serif', Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--base); color: var(--text); font-family: var(--sans); line-height: 1.6; }
+
+/* Ticker */
+.ticker-wrap { background: var(--surface); border-bottom: 1px solid var(--border); overflow: hidden; white-space: nowrap; padding: 8px 0; }
+.ticker { display: inline-block; animation: scroll 60s linear infinite; }
+.ticker span { padding: 0 24px; font-family: var(--mono); font-size: 13px; color: var(--amber); }
+@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* Header */
+header { padding: 32px 48px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: var(--serif); font-size: 28px; color: var(--amber); }
+.logo small { font-family: var(--sans); font-size: 14px; color: var(--text-sec); margin-left: 12px; }
+.timestamp { font-family: var(--mono); font-size: 13px; color: var(--text-sec); }
+
+/* Metrics Strip */
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; padding: 24px 48px; background: var(--surface); border-bottom: 1px solid var(--border); }
+.metric { text-align: center; }
+.metric .value { font-family: var(--mono); font-size: 28px; font-weight: 700; color: var(--amber); }
+.metric .label { font-size: 12px; color: var(--text-sec); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
+/* Sections */
+.container { max-width: 1600px; margin: 0 auto; padding: 32px 48px; }
+.section { margin-bottom: 48px; }
+.section-title { font-family: var(--serif); font-size: 24px; color: var(--amber); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+
+/* Cards Grid */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+.card h3 { font-family: var(--serif); color: var(--text); margin-bottom: 8px; }
+.card .stat { font-family: var(--mono); font-size: 32px; color: var(--amber); }
+.card p { font-size: 14px; color: var(--text-sec); }
+
+/* Table */
+.table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead { background: var(--surface); position: sticky; top: 0; }
+th { padding: 12px 10px; text-align: left; color: var(--text-sec); font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; cursor: pointer; user-select: none; border-bottom: 2px solid var(--border); }
+th:hover { color: var(--amber); }
+td { padding: 10px; border-bottom: 1px solid var(--border); }
+tr:hover { background: rgba(245, 166, 35, 0.05); }
+tr.graveyard { opacity: 0.5; }
+.rank { width: 40px; font-family: var(--mono); color: var(--text-sec); text-align: center; }
+.name { font-weight: 600; white-space: nowrap; }
+.ticker { font-family: var(--mono); color: var(--blue); }
+.category { color: var(--text-sec); font-size: 12px; }
+.ac { font-size: 12px; color: var(--text-sec); }
+.one-liner { font-size: 12px; color: var(--text-sec); max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Tier badges */
+.tier-badge { padding: 2px 8px; border-radius: 4px; font-family: var(--mono); font-size: 11px; font-weight: 700; }
+.tier-1 .tier-badge, .tier-badge.tier-1 { background: rgba(34, 197, 94, 0.15); color: var(--green); }
+.tier-2 .tier-badge, .tier-badge.tier-2 { background: rgba(245, 166, 35, 0.15); color: var(--amber); }
+.tier-3 .tier-badge, .tier-badge.tier-3 { background: rgba(234, 179, 8, 0.15); color: var(--yellow); }
+.gy-badge { font-size: 10px; background: rgba(239, 68, 68, 0.2); color: var(--red); padding: 1px 5px; border-radius: 3px; margin-left: 6px; }
+
+/* Score bar */
+.score-bar-wrap { position: relative; width: 100px; height: 20px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; }
+.score-bar { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.score-val { position: absolute; right: 4px; top: 2px; font-family: var(--mono); font-size: 11px; font-weight: 700; }
+
+/* Category bars */
+.cat-row { display: flex; align-items: center; margin-bottom: 8px; }
+.cat-label { width: 200px; font-size: 13px; color: var(--text-sec); text-align: right; padding-right: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cat-bar-wrap { flex: 1; position: relative; height: 24px; background: rgba(255,255,255,0.03); border-radius: 4px; }
+.cat-bar { height: 100%; background: linear-gradient(90deg, var(--amber), var(--blue)); border-radius: 4px; opacity: 0.8; }
+.cat-count { position: absolute; right: 8px; top: 3px; font-family: var(--mono); font-size: 12px; color: var(--text); }
+
+/* Filters */
+.filters { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+.filters select, .filters input { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 6px; font-family: var(--sans); font-size: 13px; }
+.filters select:focus, .filters input:focus { border-color: var(--amber); outline: none; }
+
+/* File tree */
+.file-tree { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; font-family: var(--mono); font-size: 12px; line-height: 1.8; color: var(--text-sec); white-space: pre; overflow-x: auto; max-height: 500px; overflow-y: auto; }
+
+/* Build status */
+.status-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.status-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+.status-card h4 { color: var(--amber); font-family: var(--mono); font-size: 14px; margin-bottom: 8px; }
+.status-card .done { color: var(--green); }
+.status-card ul { list-style: none; padding: 0; }
+.status-card li { font-size: 13px; color: var(--text-sec); padding: 3px 0; }
+.status-card li::before { content: "->"; color: var(--blue); margin-right: 8px; font-family: var(--mono); }
+
+/* Footer */
+footer { padding: 32px 48px; border-top: 1px solid var(--border); text-align: center; color: var(--text-sec); font-size: 12px; }
+</style>
+</head>
+<body>
+
+<!-- Ticker -->
+<div class="ticker-wrap">
+<div class="ticker">
+    <span>Bittensor (TAO): 82.0</span><span>Cameco ($CCJ): 81.8</span><span>Helion Energy: 80.2</span><span>EigenLayer (EIGEN): 80.0</span><span>NexGen Energy (NXE): 80.0</span><span>Babylon (BABY): 80.0</span><span>Ondo Finance (ONDO): 80.0</span><span>IonQ (IONQ): 80.0</span><span>Form Energy: 76.2</span><span>United Therapeutics ($UTHR): 76.0</span><span>Unusual Machines ($UMAC): 75.8</span><span>Sprott Uranium Trust ($SRUUF): 75.3</span><span>Loyal: 75.3</span><span>Evolv Technology ($EVLV): 75.2</span><span>Ouster ($OUST): 75.1</span><span>Celo ($CELO): 75.0</span><span>American Superconductor ($AMSC): 75.0</span><span>Lightmatter: 74.5</span><span>Aztec Network: 74.0</span><span>Render Network (RENDER): 73.7</span>
+    <span>Bittensor (TAO): 82.0</span><span>Cameco ($CCJ): 81.8</span><span>Helion Energy: 80.2</span><span>EigenLayer (EIGEN): 80.0</span><span>NexGen Energy (NXE): 80.0</span><span>Babylon (BABY): 80.0</span><span>Ondo Finance (ONDO): 80.0</span><span>IonQ (IONQ): 80.0</span><span>Form Energy: 76.2</span><span>United Therapeutics ($UTHR): 76.0</span><span>Unusual Machines ($UMAC): 75.8</span><span>Sprott Uranium Trust ($SRUUF): 75.3</span><span>Loyal: 75.3</span><span>Evolv Technology ($EVLV): 75.2</span><span>Ouster ($OUST): 75.1</span><span>Celo ($CELO): 75.0</span><span>American Superconductor ($AMSC): 75.0</span><span>Lightmatter: 74.5</span><span>Aztec Network: 74.0</span><span>Render Network (RENDER): 73.7</span>
+</div>
+</div>
+
+<!-- Header -->
+<header>
+    <div class="logo">Early Thunder <small>Comprehensive Intelligence Report</small></div>
+    <div class="timestamp">Generated: 2026-04-13 23:20 | v2.0</div>
+</header>
+
+<!-- Metrics -->
+<div class="metrics">
+    <div class="metric"><div class="value">155</div><div class="label">Total Opportunities</div></div>
+    <div class="metric"><div class="value">143</div><div class="label">Active</div></div>
+    <div class="metric"><div class="value">12</div><div class="label">Graveyard</div></div>
+    <div class="metric"><div class="value">14</div><div class="label">Tier 1</div></div>
+    <div class="metric"><div class="value">47</div><div class="label">Tier 2</div></div>
+    <div class="metric"><div class="value">94</div><div class="label">Tier 3</div></div>
+    <div class="metric"><div class="value">61.1</div><div class="label">Avg Score</div></div>
+    <div class="metric"><div class="value">25</div><div class="label">Categories</div></div>
+    <div class="metric"><div class="value">1579</div><div class="label">Project Files</div></div>
+    <div class="metric"><div class="value">46,814</div><div class="label">Lines of Code</div></div>
+</div>
+
+<div class="container">
+
+<!-- Section: Opportunity Table -->
+<div class="section">
+<h2 class="section-title">Opportunity Intelligence Table</h2>
+<div class="filters">
+    <input type="text" id="search" placeholder="Search name or ticker..." oninput="filterTable()">
+    <select id="filter-cat" onchange="filterTable()">
+        <option value="">All Categories</option>
+        <option value="AI x Crypto">AI x Crypto (17)</option>
+<option value="DePIN">DePIN (14)</option>
+<option value="DeSci">DeSci (13)</option>
+<option value="Longevity / BCI">Longevity / BCI (10)</option>
+<option value="Synthetic Biology">Synthetic Biology (9)</option>
+<option value="Restaking">Restaking (8)</option>
+<option value="New Market Structures">New Market Structures (8)</option>
+<option value="Venture Signal">Venture Signal (8)</option>
+<option value="Energy Storage">Energy Storage (7)</option>
+<option value="Neuromorphic / Photonic Computing">Neuromorphic / Photonic Computing (7)</option>
+<option value="Nuclear / Uranium">Nuclear / Uranium (6)</option>
+<option value="Materials Science">Materials Science (6)</option>
+<option value="Geopolitical / Critical Materials">Geopolitical / Critical Materials (6)</option>
+<option value="ZK/Privacy">ZK/Privacy (5)</option>
+<option value="Space Technology">Space Technology (5)</option>
+<option value="Biological Computing">Biological Computing (4)</option>
+<option value="Fusion Energy">Fusion Energy (3)</option>
+<option value="RWA Tokenization">RWA Tokenization (3)</option>
+<option value="Quantum Computing">Quantum Computing (3)</option>
+<option value="Xenotransplantation">Xenotransplantation (3)</option>
+<option value="Autonomous Drones">Autonomous Drones (3)</option>
+<option value="Carbon / Climate Tech">Carbon / Climate Tech (3)</option>
+<option value="Graveyard">Graveyard (2)</option>
+<option value="Critical Minerals">Critical Minerals (1)</option>
+<option value="PayFi">PayFi (1)</option>
+    </select>
+    <select id="filter-ac" onchange="filterTable()">
+        <option value="">All Asset Classes</option>
+        <option value="digital_assets">Digital Assets (63)</option>
+        <option value="public_equities">Public Equities (32)</option>
+        <option value="private_markets">Private Markets (60)</option>
+    </select>
+    <select id="filter-tier" onchange="filterTable()">
+        <option value="">All Tiers</option>
+        <option value="1">Tier 1 (14)</option>
+        <option value="2">Tier 2 (47)</option>
+        <option value="3">Tier 3 (94)</option>
+    </select>
+</div>
+<div class="table-wrap" style="max-height:700px; overflow-y:auto;">
+<table id="opp-table">
+<thead>
+<tr>
+    <th onclick="sortTable(0,'num')">#</th>
+    <th onclick="sortTable(1,'str')">Name</th>
+    <th onclick="sortTable(2,'str')">Ticker</th>
+    <th onclick="sortTable(3,'str')">Category</th>
+    <th onclick="sortTable(4,'str')">Asset Class</th>
+    <th onclick="sortTable(5,'str')">Tier</th>
+    <th onclick="sortTable(6,'num')">Score</th>
+    <th>One-Liner</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tier-1" data-category="AI x Crypto" data-ac="digital_assets" data-tier="1" data-score="82.0"><td class="rank">1</td><td class="name">Bittensor</td><td class="ticker">TAO</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:82.0%;background:#22C55E"></div><span class="score-val">82.0</span></div></td><td class="one-liner">Decentralized network where AI models compete for rewards via subnet mining, with 128+ active subnets and a Grayscale ET</td></tr>
+<tr class="tier-1" data-category="Nuclear / Uranium" data-ac="public_equities" data-tier="1" data-score="81.8"><td class="rank">2</td><td class="name">Cameco</td><td class="ticker">$CCJ</td><td class="category">Nuclear / Uranium</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:81.8%;background:#22C55E"></div><span class="score-val">81.8</span></div></td><td class="one-liner">World's largest uranium miner with 49% stake in Westinghouse reactor technology.</td></tr>
+<tr class="tier-1" data-category="Fusion Energy" data-ac="private_markets" data-tier="1" data-score="80.2"><td class="rank">3</td><td class="name">Helion Energy</td><td class="ticker">-</td><td class="category">Fusion Energy</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:80.2%;background:#22C55E"></div><span class="score-val">80.2</span></div></td><td class="one-liner">Fusion startup that hit 150M degrees C in February 2026, with Sam Altman backing and OpenAI in talks for 5GW of power.</td></tr>
+<tr class="tier-1" data-category="Restaking" data-ac="digital_assets" data-tier="1" data-score="80.0"><td class="rank">4</td><td class="name">EigenLayer</td><td class="ticker">EIGEN</td><td class="category">Restaking</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:80.0%;background:#22C55E"></div><span class="score-val">80.0</span></div></td><td class="one-liner">Restaking protocol securing 280+ services with $19.7B in staked ETH, building the verifiable cloud for modular Ethereum.</td></tr>
+<tr class="tier-1" data-category="Nuclear / Uranium" data-ac="public_equities" data-tier="1" data-score="80.0"><td class="rank">5</td><td class="name">NexGen Energy</td><td class="ticker">NXE</td><td class="category">Nuclear / Uranium</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:80.0%;background:#22C55E"></div><span class="score-val">80.0</span></div></td><td class="one-liner">Advancing the world's highest-grade undeveloped uranium deposit at under $10/lb production cost, with final federal appr</td></tr>
+<tr class="tier-1" data-category="Restaking" data-ac="digital_assets" data-tier="1" data-score="80.0"><td class="rank">6</td><td class="name">Babylon</td><td class="ticker">BABY</td><td class="category">Restaking</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:80.0%;background:#22C55E"></div><span class="score-val">80.0</span></div></td><td class="one-liner">Native Bitcoin staking protocol securing PoS chains without bridges or wrapping, with $4.8B in BTC staked.</td></tr>
+<tr class="tier-1" data-category="RWA Tokenization" data-ac="digital_assets" data-tier="1" data-score="80.0"><td class="rank">7</td><td class="name">Ondo Finance</td><td class="ticker">ONDO</td><td class="category">RWA Tokenization</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:80.0%;background:#22C55E"></div><span class="score-val">80.0</span></div></td><td class="one-liner">Institutional RWA platform tokenizing treasuries, equities, and ETFs on-chain with $2B+ TVL and 58% market share.</td></tr>
+<tr class="tier-1" data-category="Quantum Computing" data-ac="public_equities" data-tier="1" data-score="80.0"><td class="rank">8</td><td class="name">IonQ</td><td class="ticker">IONQ</td><td class="category">Quantum Computing</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:80.0%;background:#22C55E"></div><span class="score-val">80.0</span></div></td><td class="one-liner">First quantum computing company to surpass $100M annual revenue, deploying 256-qubit trapped-ion systems in 2026.</td></tr>
+<tr class="tier-2" data-category="Energy Storage" data-ac="private_markets" data-tier="2" data-score="76.2"><td class="rank">9</td><td class="name">Form Energy</td><td class="ticker">-</td><td class="category">Energy Storage</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:76.2%;background:#F5A623"></div><span class="score-val">76.2</span></div></td><td class="one-liner">Clear LDES leader with iron-air batteries for 100+ hour storage, $1.13-1.43B raised, 75 GWh pipeline, and production sol</td></tr>
+<tr class="tier-1" data-category="Xenotransplantation" data-ac="public_equities" data-tier="1" data-score="76.0"><td class="rank">10</td><td class="name">United Therapeutics</td><td class="ticker">$UTHR</td><td class="category">Xenotransplantation</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:76.0%;background:#F5A623"></div><span class="score-val">76.0</span></div></td><td class="one-liner">A profitable $13B+ company with existing drug revenue where xenotransplantation via its Revivicor subsidiary represents </td></tr>
+<tr class="tier-1" data-category="Autonomous Drones" data-ac="public_equities" data-tier="1" data-score="75.8"><td class="rank">11</td><td class="name">Unusual Machines</td><td class="ticker">$UMAC</td><td class="category">Autonomous Drones</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:75.8%;background:#F5A623"></div><span class="score-val">75.8</span></div></td><td class="one-liner">NDAA-compliant drone component manufacturer with $103M cash, 101% YoY revenue growth, and supply-constrained through 202</td></tr>
+<tr class="tier-2" data-category="Nuclear / Uranium" data-ac="public_equities" data-tier="2" data-score="75.3"><td class="rank">12</td><td class="name">Sprott Uranium Trust</td><td class="ticker">$SRUUF</td><td class="category">Nuclear / Uranium</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:75.3%;background:#F5A623"></div><span class="score-val">75.3</span></div></td><td class="one-liner">Physical uranium trust providing direct exposure to uranium spot price.</td></tr>
+<tr class="tier-2" data-category="Longevity / BCI" data-ac="private_markets" data-tier="2" data-score="75.3"><td class="rank">13</td><td class="name">Loyal</td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:75.3%;background:#F5A623"></div><span class="score-val">75.3</span></div></td><td class="one-liner">First FDA-tracked longevity drug for dogs, with LOY-001 expected to launch in 2026 and a $100B+ pet care TAM.</td></tr>
+<tr class="tier-1" data-category="Materials Science" data-ac="public_equities" data-tier="1" data-score="75.2"><td class="rank">14</td><td class="name">Evolv Technology</td><td class="ticker">$EVLV</td><td class="category">Materials Science</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:75.2%;background:#F5A623"></div><span class="score-val">75.2</span></div></td><td class="one-liner">Metamaterial-based security screening deployed in stadiums and hospitals, with first-ever GAAP profitability and 40% YoY</td></tr>
+<tr class="tier-1" data-category="Autonomous Drones" data-ac="public_equities" data-tier="1" data-score="75.1"><td class="rank">15</td><td class="name">Ouster</td><td class="ticker">$OUST</td><td class="category">Autonomous Drones</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:75.1%;background:#F5A623"></div><span class="score-val">75.1</span></div></td><td class="one-liner">LiDAR sensing platform with 52.5% YoY revenue growth, 12 consecutive quarters of product revenue growth, and analyst Str</td></tr>
+<tr class="tier-1" data-category="DePIN" data-ac="digital_assets" data-tier="1" data-score="75.0"><td class="rank">16</td><td class="name">Celo</td><td class="ticker">$CELO</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:75.0%;background:#F5A623"></div><span class="score-val">75.0</span></div></td><td class="one-liner">The #1 Layer 2 by daily active users (840K DAU) with 11M MiniPay wallets, trading 99.2% below ATH — the most extreme usa</td></tr>
+<tr class="tier-1" data-category="Materials Science" data-ac="public_equities" data-tier="1" data-score="75.0"><td class="rank">17</td><td class="name">American Superconductor</td><td class="ticker">$AMSC</td><td class="category">Materials Science</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-1">T1</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:75.0%;background:#F5A623"></div><span class="score-val">75.0</span></div></td><td class="one-liner">Profitable HTS wire supplier powering the AI data center superconducting cable ecosystem, with 20%+ revenue growth and m</td></tr>
+<tr class="tier-3" data-category="Neuromorphic / Photonic Computing" data-ac="private_markets" data-tier="3" data-score="74.5"><td class="rank">18</td><td class="name">Lightmatter</td><td class="ticker">-</td><td class="category">Neuromorphic / Photonic Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:74.5%;background:#F5A623"></div><span class="score-val">74.5</span></div></td><td class="one-liner">Raised $850M at $4.4B valuation, photonic interconnect deployed with Microsoft, Amazon, xAI, and OpenAI — CEO hinted IPO</td></tr>
+<tr class="tier-2" data-category="ZK/Privacy" data-ac="digital_assets" data-tier="2" data-score="74.0"><td class="rank">19</td><td class="name">Aztec Network</td><td class="ticker">-</td><td class="category">ZK/Privacy</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:74.0%;background:#F5A623"></div><span class="score-val">74.0</span></div></td><td class="one-liner">Privacy-first L2 zkRollup building encrypted smart contract execution on Ethereum, backed by Vitalik with $119M+ raised.</td></tr>
+<tr class="tier-2" data-category="AI x Crypto" data-ac="digital_assets" data-tier="2" data-score="73.7"><td class="rank">20</td><td class="name">Render Network</td><td class="ticker">RENDER</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:73.7%;background:#F5A623"></div><span class="score-val">73.7</span></div></td><td class="one-liner">Decentralized GPU marketplace for AI inference and 3D rendering, adding 60,000 GPUs via RNP-023.</td></tr>
+<tr class="tier-2" data-category="DeSci" data-ac="digital_assets" data-tier="2" data-score="73.6"><td class="rank">21</td><td class="name">VitaDAO</td><td class="ticker">VITA</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:73.6%;background:#F5A623"></div><span class="score-val">73.6</span></div></td><td class="one-liner">Community-funded longevity research DAO with $55M treasury, IP-NFTs, and clinical trials underway.</td></tr>
+<tr class="tier-2" data-category="AI x Crypto" data-ac="digital_assets" data-tier="2" data-score="73.2"><td class="rank">22</td><td class="name">Akash Network</td><td class="ticker">AKT</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:73.2%;background:#F5A623"></div><span class="score-val">73.2</span></div></td><td class="one-liner">Permissionless cloud marketplace offering H100 GPUs at $1.33/hr vs AWS $3.93/hr, with burn-mint tokenomics.</td></tr>
+<tr class="tier-2" data-category="Nuclear / Uranium" data-ac="public_equities" data-tier="2" data-score="72.8"><td class="rank">23</td><td class="name">Denison Mines</td><td class="ticker">$DNN</td><td class="category">Nuclear / Uranium</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:72.8%;background:#F5A623"></div><span class="score-val">72.8</span></div></td><td class="one-liner">Canada's first ISR uranium mine approved, construction starting 2026.</td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="72.5"><td class="rank">24</td><td class="name">Helium</td><td class="ticker">HNT</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:72.5%;background:#F5A623"></div><span class="score-val">72.5</span></div></td><td class="one-liner">People-built wireless network with nearly 1M hotspots in 192 countries, with DC burns up 196.6% quarter-over-quarter.</td></tr>
+<tr class="tier-2" data-category="AI x Crypto" data-ac="digital_assets" data-tier="2" data-score="72.5"><td class="rank">25</td><td class="name">Gensyn</td><td class="ticker">$AI</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:72.5%;background:#F5A623"></div><span class="score-val">72.5</span></div></td><td class="one-liner">a16z-backed decentralized ML training network with $101M raised and token sale completed at $1B FDV, targeting the verif</td></tr>
+<tr class="tier-3" data-category="Xenotransplantation" data-ac="private_markets" data-tier="3" data-score="72.5"><td class="rank">26</td><td class="name">eGenesis</td><td class="ticker">-</td><td class="category">Xenotransplantation</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:72.5%;background:#F5A623"></div><span class="score-val">72.5</span></div></td><td class="one-liner">FDA IND cleared for pig-to-human kidney transplants — patient Tim Andrews has surpassed seven months post-transplant, di</td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="72.3"><td class="rank">27</td><td class="name">Grass Network</td><td class="ticker">$GRASS</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:72.3%;background:#F5A623"></div><span class="score-val">72.3</span></div></td><td class="one-liner">Unused internet bandwidth marketplace for AI training data that scaled from 200K to 8.5M MAU in one year with ~20 paying</td></tr>
+<tr class="tier-2" data-category="Critical Minerals" data-ac="public_equities" data-tier="2" data-score="72.2"><td class="rank">28</td><td class="name">Energy Fuels</td><td class="ticker">UUUU</td><td class="category">Critical Minerals</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:72.2%;background:#F5A623"></div><span class="score-val">72.2</span></div></td><td class="one-liner">Diversified uranium, rare earth, and medical isotope producer up 418% annually, with integrated mine-to-metal REE capabi</td></tr>
+<tr class="tier-2" data-category="Quantum Computing" data-ac="private_markets" data-tier="2" data-score="72.2"><td class="rank">29</td><td class="name">QuEra Computing</td><td class="ticker">-</td><td class="category">Quantum Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:72.2%;background:#F5A623"></div><span class="score-val">72.2</span></div></td><td class="one-liner">Neutral-atom quantum startup demonstrating 3,000-qubit arrays, backed by Google, SoftBank, and NVIDIA with $230M+ raised</td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="72.0"><td class="rank">30</td><td class="name">Hivemapper</td><td class="ticker">HONEY</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:72.0%;background:#F5A623"></div><span class="score-val">72.0</span></div></td><td class="one-liner">Drive-to-earn decentralized mapping platform with Volkswagen's autonomous fleet using Hivemapper data.</td></tr>
+<tr class="tier-2" data-category="Fusion Energy" data-ac="private_markets" data-tier="2" data-score="71.7"><td class="rank">31</td><td class="name">Commonwealth Fusion Systems</td><td class="ticker">-</td><td class="category">Fusion Energy</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:71.7%;background:#F5A623"></div><span class="score-val">71.7</span></div></td><td class="one-liner">MIT spinoff building SPARC tokamak prototype, with HTS magnet breakthrough and $2B+ raised from Bill Gates and Google.</td></tr>
+<tr class="tier-2" data-category="AI x Crypto" data-ac="digital_assets" data-tier="2" data-score="69.8"><td class="rank">32</td><td class="name">NEAR Protocol (AI Pivot)</td><td class="ticker">$NEAR</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:69.8%;background:#F5A623"></div><span class="score-val">69.8</span></div></td><td class="one-liner">L1 blockchain pivoting to AI cloud and chain abstraction with 1M TPS testing, 100M users via Brave Private Chat integrat</td></tr>
+<tr class="tier-2" data-category="AI x Crypto" data-ac="digital_assets" data-tier="2" data-score="69.8"><td class="rank">33</td><td class="name">NEAR Protocol</td><td class="ticker">$NEAR</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:69.8%;background:#F5A623"></div><span class="score-val">69.8</span></div></td><td class="one-liner">L1 blockchain pivoting to AI cloud, chain abstraction, and verifiable inference.</td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="69.7"><td class="rank">34</td><td class="name">Geodnet</td><td class="ticker">GEOD</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:69.7%;background:#F5A623"></div><span class="score-val">69.7</span></div></td><td class="one-liner">Decentralized RTK positioning network providing centimeter-level GPS accuracy for autonomous vehicles and precision agri</td></tr>
+<tr class="tier-2" data-category="AI x Crypto" data-ac="digital_assets" data-tier="2" data-score="69.5"><td class="rank">35</td><td class="name">ElizaOS / ai16z</td><td class="ticker">AI16Z</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:69.5%;background:#F5A623"></div><span class="score-val">69.5</span></div></td><td class="one-liner">Open-source AI agent framework on Solana that trended globally on GitHub, with a DAO managing $25M+ in assets.</td></tr>
+<tr class="tier-2" data-category="Longevity / BCI" data-ac="private_markets" data-tier="2" data-score="69.3"><td class="rank">36</td><td class="name">Altos Labs</td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:69.3%;background:#F5A623"></div><span class="score-val">69.3</span></div></td><td class="one-liner">$3B-funded cellular rejuvenation startup backed by Jeff Bezos, with Nobel Prize-winning scientists approaching human cli</td></tr>
+<tr class="tier-2" data-category="Longevity / BCI" data-ac="public_equities" data-tier="2" data-score="69.0"><td class="rank">37</td><td class="name">Niagen Bioscience (ChromaDex)</td><td class="ticker">$NAGE</td><td class="category">Longevity / BCI</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:69.0%;background:#F5A623"></div><span class="score-val">69.0</span></div></td><td class="one-liner">The only profitable public longevity company, with $129.4M net sales (+30% YoY), $17.4M net income, and NAD+ therapy dep</td></tr>
+<tr class="tier-3" data-category="Synthetic Biology" data-ac="private_markets" data-tier="3" data-score="68.2"><td class="rank">38</td><td class="name">Solugen</td><td class="ticker">-</td><td class="category">Synthetic Biology</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:68.2%;background:#F5A623"></div><span class="score-val">68.2</span></div></td><td class="one-liner">Raised $643M at a $2B valuation with a $213M DOE loan guarantee, backed by Founders Fund, Baillie Gifford, GIC, Temasek,</td></tr>
+<tr class="tier-2" data-category="Restaking" data-ac="digital_assets" data-tier="2" data-score="68.0"><td class="rank">39</td><td class="name">Symbiotic</td><td class="ticker">-</td><td class="category">Restaking</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:68.0%;background:#F5A623"></div><span class="score-val">68.0</span></div></td><td class="one-liner">Paradigm + Lido founders restaking protocol that attracted $200M deposits on day one and secured 70+ protocols across 45</td></tr>
+<tr class="tier-3" data-category="Space Technology" data-ac="private_markets" data-tier="3" data-score="67.8"><td class="rank">40</td><td class="name">Starcloud</td><td class="ticker">-</td><td class="category">Space Technology</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:67.8%;background:#F5A623"></div><span class="score-val">67.8</span></div></td><td class="one-liner">Fastest unicorn in YC history — 17 months to $1.1B valuation, launched the first H100 GPU to space, trained an LLM in or</td></tr>
+<tr class="tier-2" data-category="Geopolitical / Critical Materials" data-ac="public_equities" data-tier="2" data-score="67.8"><td class="rank">41</td><td class="name">MP Materials</td><td class="ticker">$MP</td><td class="category">Geopolitical / Critical Materials</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:67.8%;background:#F5A623"></div><span class="score-val">67.8</span></div></td><td class="one-liner">America's only fully integrated mine-to-magnet rare earth producer with $400M DoD investment and $1.25B magnet campus, b</td></tr>
+<tr class="tier-2" data-category="AI x Crypto" data-ac="digital_assets" data-tier="2" data-score="67.5"><td class="rank">42</td><td class="name">Ritual</td><td class="ticker">-</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:67.5%;background:#F5A623"></div><span class="score-val">67.5</span></div></td><td class="one-liner">Infrastructure enabling any smart contract to call verifiable AI models on-chain, with $25M Series A from top-tier VCs.</td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="67.5"><td class="rank">43</td><td class="name">Filecoin</td><td class="ticker">$FIL</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:67.5%;background:#F5A623"></div><span class="score-val">67.5</span></div></td><td class="one-liner">The largest decentralized storage network with 25+ EiB of storage capacity and growing enterprise adoption as an AWS/GCP</td></tr>
+<tr class="tier-2" data-category="DeSci" data-ac="digital_assets" data-tier="2" data-score="66.5"><td class="rank">44</td><td class="name">HairDAO</td><td class="ticker">$HAIR</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:66.5%;background:#F5A623"></div><span class="score-val">66.5</span></div></td><td class="one-liner">BioDAO for hair loss research with 6 patents filed, a completed clinical trial, and a consumer product at a $9.5M market</td></tr>
+<tr class="tier-2" data-category="Nuclear / Uranium" data-ac="public_equities" data-tier="2" data-score="66.3"><td class="rank">45</td><td class="name">Paladin Energy</td><td class="ticker">$PDN</td><td class="category">Nuclear / Uranium</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:66.3%;background:#F5A623"></div><span class="score-val">66.3</span></div></td><td class="one-liner">Uranium producer expanding through acquisitions and restarted mines.</td></tr>
+<tr class="tier-2" data-category="Longevity / BCI" data-ac="private_markets" data-tier="2" data-score="66.0"><td class="rank">46</td><td class="name">Synchron</td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:66.0%;background:#F5A623"></div><span class="score-val">66.0</span></div></td><td class="one-liner">FDA-authorized endovascular BCI that avoids open brain surgery, backed by Gates Foundation and Bezos Expeditions.</td></tr>
+<tr class="tier-2" data-category="Materials Science" data-ac="public_equities" data-tier="2" data-score="66.0"><td class="rank">47</td><td class="name">Perovskite Solar (Oxford PV / First Solar proxy)</td><td class="ticker">$FSLR</td><td class="category">Materials Science</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:66.0%;background:#F5A623"></div><span class="score-val">66.0</span></div></td><td class="one-liner">Perovskite-silicon tandem solar hit commercialization inflection — Oxford PV shipped first modules, licensed to First So</td></tr>
+<tr class="tier-2" data-category="DeSci" data-ac="digital_assets" data-tier="2" data-score="65.2"><td class="rank">48</td><td class="name">Bio Protocol</td><td class="ticker">$BIO</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:65.2%;background:#F5A623"></div><span class="score-val">65.2</span></div></td><td class="one-liner">Y Combinator for on-chain science funding 100+ biotech projects via AI agents with Binance listing and $33M+ raised in G</td></tr>
+<tr class="tier-2" data-category="Restaking" data-ac="digital_assets" data-tier="2" data-score="65.0"><td class="rank">49</td><td class="name">Espresso Systems</td><td class="ticker">$ESP</td><td class="category">Restaking</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:65.0%;background:#F5A623"></div><span class="score-val">65.0</span></div></td><td class="one-liner">Shared sequencer layer for L2s that launched ESP token with a 10% community airdrop across 1M+ eligible addresses.</td></tr>
+<tr class="tier-3" data-category="Space Technology" data-ac="private_markets" data-tier="3" data-score="65.0"><td class="rank">50</td><td class="name">Varda Space Industries</td><td class="ticker">-</td><td class="category">Space Technology</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:65.0%;background:#F5A623"></div><span class="score-val">65.0</span></div></td><td class="one-liner">Returned five capsules to Earth — more than any other in-space manufacturer — with $578M total funding from Founders Fun</td></tr>
+<tr class="tier-2" data-category="Synthetic Biology" data-ac="public_equities" data-tier="2" data-score="64.5"><td class="rank">51</td><td class="name">Twist Bioscience</td><td class="ticker">$TWST</td><td class="category">Synthetic Biology</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.5%;background:#EAB308"></div><span class="score-val">64.5</span></div></td><td class="one-liner">Revenue of $392M growing 17% YoY, approaching EBITDA breakeven, with the Atlas Data Storage spinoff funded at $155M for </td></tr>
+<tr class="tier-3" data-category="Neuromorphic / Photonic Computing" data-ac="private_markets" data-tier="3" data-score="64.5"><td class="rank">52</td><td class="name">Unconventional AI</td><td class="ticker">-</td><td class="category">Neuromorphic / Photonic Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.5%;background:#EAB308"></div><span class="score-val">64.5</span></div></td><td class="one-liner">Raised a $475M seed round at $4.5B valuation — one of the largest seeds in history — targeting 1,000x energy efficiency </td></tr>
+<tr class="tier-2" data-category="Carbon / Climate Tech" data-ac="public_equities" data-tier="2" data-score="64.4"><td class="rank">53</td><td class="name">LanzaTech</td><td class="ticker">$LNZA</td><td class="category">Carbon / Climate Tech</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.4%;background:#EAB308"></div><span class="score-val">64.4</span></div></td><td class="one-liner">Only public pure-play carbon recycling company, with world's first commercial SAF plant operational and Q4 licensing rev</td></tr>
+<tr class="tier-3" data-category="New Market Structures" data-ac="digital_assets" data-tier="3" data-score="64.3"><td class="rank">54</td><td class="name">Worldcoin / World</td><td class="ticker">$WLD</td><td class="category">New Market Structures</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.3%;background:#EAB308"></div><span class="score-val">64.3</span></div></td><td class="one-liner">Biometric identity protocol with 26M+ World App users and 15M+ verified, facing -97% drawdown but with EU eIDAS 2.0 cata</td></tr>
+<tr class="tier-3" data-category="DeSci" data-ac="private_markets" data-tier="3" data-score="64.2"><td class="rank">55</td><td class="name">Siren Biotechnology</td><td class="ticker">-</td><td class="category">DeSci</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.2%;background:#EAB308"></div><span class="score-val">64.2</span></div></td><td class="one-liner">Wefunder equity crowdfunding at $60M pre-money valuation developing AAV immuno-gene therapy for cancer, backed by Founde</td></tr>
+<tr class="tier-3" data-category="Longevity / BCI" data-ac="private_markets" data-tier="3" data-score="64.0"><td class="rank">56</td><td class="name">BCI Sector Macro</td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.0%;background:#EAB308"></div><span class="score-val">64.0</span></div></td><td class="one-liner">BCI sector funding tripled to $867M in 2025, signaling institutional validation of neural interface technology as an inv</td></tr>
+<tr class="tier-3" data-category="Fusion Energy" data-ac="private_markets" data-tier="3" data-score="64.0"><td class="rank">57</td><td class="name">Zap Energy</td><td class="ticker">-</td><td class="category">Fusion Energy</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.0%;background:#EAB308"></div><span class="score-val">64.0</span></div></td><td class="one-liner">Z-pinch fusion achieving 10,000x atmospheric pressure at low cost.</td></tr>
+<tr class="tier-3" data-category="Synthetic Biology" data-ac="private_markets" data-tier="3" data-score="64.0"><td class="rank">58</td><td class="name">Pivot Bio</td><td class="ticker">-</td><td class="category">Synthetic Biology</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.0%;background:#EAB308"></div><span class="score-val">64.0</span></div></td><td class="one-liner">Validated nitrogen-fixing microbes across 15 million acres in 34 states, raised $618M, and paid farmers over $13M throug</td></tr>
+<tr class="tier-2" data-category="PayFi" data-ac="digital_assets" data-tier="2" data-score="64.0"><td class="rank">59</td><td class="name">Huma Finance</td><td class="ticker">$HUMA</td><td class="category">PayFi</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:64.0%;background:#EAB308"></div><span class="score-val">64.0</span></div></td><td class="one-liner">The first PayFi network delivering $1.1B in quarterly originations with partnerships across Tala, Geoswift, and Circle C</td></tr>
+<tr class="tier-3" data-category="DePIN" data-ac="digital_assets" data-tier="3" data-score="63.8"><td class="rank">60</td><td class="name">DIMO</td><td class="ticker">DIMO</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:63.8%;background:#EAB308"></div><span class="score-val">63.8</span></div></td><td class="one-liner">Vehicle data platform connecting 425K+ cars across 50+ automakers, recovering from a $30M bridge exploit.</td></tr>
+<tr class="tier-3" data-category="Restaking" data-ac="digital_assets" data-tier="3" data-score="63.3"><td class="rank">61</td><td class="name">dappOS</td><td class="ticker">-</td><td class="category">Restaking</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:63.3%;background:#EAB308"></div><span class="score-val">63.3</span></div></td><td class="one-liner">Binance Labs + Polychain + Sequoia-backed intent execution layer with novel 'intent assets' that earn yield while functi</td></tr>
+<tr class="tier-3" data-category="Quantum Computing" data-ac="public_equities" data-tier="3" data-score="62.8"><td class="rank">62</td><td class="name">D-Wave Quantum</td><td class="ticker">QBTS</td><td class="category">Quantum Computing</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:62.8%;background:#EAB308"></div><span class="score-val">62.8</span></div></td><td class="one-liner">Quantum annealer demonstrating 10x faster defense optimization, with a $10M Fortune 100 enterprise deal signed.</td></tr>
+<tr class="tier-2" data-category="Space Technology" data-ac="public_equities" data-tier="2" data-score="62.8"><td class="rank">63</td><td class="name">Redwire</td><td class="ticker">$RDW</td><td class="category">Space Technology</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:62.8%;background:#EAB308"></div><span class="score-val">62.8</span></div></td><td class="one-liner">Solar arrays, ISS hardware, drone acquisition — $335M revenue with analyst consensus Strong Buy and a $13 price target.</td></tr>
+<tr class="tier-3" data-category="Xenotransplantation" data-ac="private_markets" data-tier="3" data-score="62.8"><td class="rank">64</td><td class="name">Life Biosciences</td><td class="ticker">-</td><td class="category">Xenotransplantation</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:62.8%;background:#EAB308"></div><span class="score-val">62.8</span></div></td><td class="one-liner">Received the first-ever FDA IND clearance for a cellular rejuvenation therapy — ER-100 delivers three reprogramming tran</td></tr>
+<tr class="tier-3" data-category="Restaking" data-ac="digital_assets" data-tier="3" data-score="62.5"><td class="rank">65</td><td class="name">CoW Protocol</td><td class="ticker">$COW</td><td class="category">Restaking</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:62.5%;background:#EAB308"></div><span class="score-val">62.5</span></div></td><td class="one-liner">Operational intent-based DEX aggregator with 30% monthly user retention and batch auction mechanism that protects agains</td></tr>
+<tr class="tier-3" data-category="Restaking" data-ac="digital_assets" data-tier="3" data-score="62.3"><td class="rank">66</td><td class="name">Karak Network</td><td class="ticker">-</td><td class="category">Restaking</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:62.3%;background:#EAB308"></div><span class="score-val">62.3</span></div></td><td class="one-liner">Multi-chain restaking protocol backed by Coinbase, Mubadala sovereign wealth, and Pantera at a $1B valuation.</td></tr>
+<tr class="tier-3" data-category="Energy Storage" data-ac="private_markets" data-tier="3" data-score="62.2"><td class="rank">67</td><td class="name">Antora Energy</td><td class="ticker">-</td><td class="category">Energy Storage</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:62.2%;background:#EAB308"></div><span class="score-val">62.2</span></div></td><td class="one-liner">Most commercially advanced thermal battery company with $272M raised from BlackRock and Temasek, deploying 2,400C carbon</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="digital_assets" data-tier="3" data-score="62.0"><td class="rank">68</td><td class="name">ElizaOS</td><td class="ticker">$ELIZAOS</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:62.0%;background:#EAB308"></div><span class="score-val">62.0</span></div></td><td class="one-liner">Open-source AI agent framework with 10.6K GitHub stars and 2,800 forks that trended #2 globally, now planning an L1 bloc</td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="61.8"><td class="rank">69</td><td class="name">HAQQ / Islamic Coin</td><td class="ticker">$ISLM</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:61.8%;background:#EAB308"></div><span class="score-val">61.8</span></div></td><td class="one-liner">The first purpose-built Shariah-compliant Layer 1 targeting a $5.4 trillion Islamic finance market with 1.8 billion Musl</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="digital_assets" data-tier="3" data-score="61.0"><td class="rank">70</td><td class="name">Qubic</td><td class="ticker">$QUBIC</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:61.0%;background:#EAB308"></div><span class="score-val">61.0</span></div></td><td class="one-liner">Proof-of-Useful-Work L1 converting mining energy into AI neural network training with CertiK-certified 15.5M TPS and DOG</td></tr>
+<tr class="tier-3" data-category="DeSci" data-ac="private_markets" data-tier="3" data-score="61.0"><td class="rank">71</td><td class="name">Junevity</td><td class="ticker">-</td><td class="category">DeSci</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:61.0%;background:#EAB308"></div><span class="score-val">61.0</span></div></td><td class="one-liner">AI-driven aging platform with expanded $20M seed round and first-in-human trials planned for H2 2026.</td></tr>
+<tr class="tier-2" data-category="Neuromorphic / Photonic Computing" data-ac="public_equities" data-tier="2" data-score="61.0"><td class="rank">72</td><td class="name">Marvell Technology (Celestial AI)</td><td class="ticker">$MRVL</td><td class="category">Neuromorphic / Photonic Computing</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:61.0%;background:#EAB308"></div><span class="score-val">61.0</span></div></td><td class="one-liner">Acquired Celestial AI for up to $5.5B — now the best public photonics exposure with revenue projected to ramp late 2028,</td></tr>
+<tr class="tier-3" data-category="DePIN" data-ac="digital_assets" data-tier="3" data-score="60.3"><td class="rank">73</td><td class="name">io.net</td><td class="ticker">$IO</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:60.3%;background:#EAB308"></div><span class="score-val">60.3</span></div></td><td class="one-liner">Decentralized GPU cloud on Solana aggregating idle compute for AI workloads.</td></tr>
+<tr class="tier-2" data-category="Geopolitical / Critical Materials" data-ac="public_equities" data-tier="2" data-score="60.1"><td class="rank">74</td><td class="name">Enapter</td><td class="ticker">-</td><td class="category">Geopolitical / Critical Materials</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:60.1%;background:#EAB308"></div><span class="score-val">60.1</span></div></td><td class="one-liner">Only public pure-play AEM electrolyzer company using no iridium, platinum, or titanium — a massive cost advantage over P</td></tr>
+<tr class="tier-3" data-category="Biological Computing" data-ac="private_markets" data-tier="3" data-score="60.0"><td class="rank">75</td><td class="name">Cortical Labs</td><td class="ticker">-</td><td class="category">Biological Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:60.0%;background:#EAB308"></div><span class="score-val">60.0</span></div></td><td class="one-liner">Launched CL1, the world's first commercial biological computer with 200,000 living human neurons on a CMOS chip, priced </td></tr>
+<tr class="tier-2" data-category="Geopolitical / Critical Materials" data-ac="public_equities" data-tier="2" data-score="60.0"><td class="rank">76</td><td class="name">USA Rare Earth</td><td class="ticker">$USAR</td><td class="category">Geopolitical / Critical Materials</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:60.0%;background:#EAB308"></div><span class="score-val">60.0</span></div></td><td class="one-liner">Earlier-stage rare earth play with $3.1B government capital package, offering higher-risk higher-reward exposure vs MP M</td></tr>
+<tr class="tier-2" data-category="Geopolitical / Critical Materials" data-ac="public_equities" data-tier="2" data-score="60.0"><td class="rank">77</td><td class="name">Energy Recovery</td><td class="ticker">$ERII</td><td class="category">Geopolitical / Critical Materials</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:60.0%;background:#EAB308"></div><span class="score-val">60.0</span></div></td><td class="one-liner">Desalination pure play at a 52-week low after abandoning CO2 business, but secular water scarcity tailwind makes this a </td></tr>
+<tr class="tier-3" data-category="RWA Tokenization" data-ac="digital_assets" data-tier="3" data-score="59.2"><td class="rank">78</td><td class="name">Maple Finance</td><td class="ticker">MPL</td><td class="category">RWA Tokenization</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:59.2%;background:#EAB308"></div><span class="score-val">59.2</span></div></td><td class="one-liner">Institutional DeFi lending platform with $780M in active loans, successfully pivoted from its 2022 bad-debt crisis.</td></tr>
+<tr class="tier-3" data-category="DeSci" data-ac="digital_assets" data-tier="3" data-score="59.2"><td class="rank">79</td><td class="name">Molecule Protocol</td><td class="ticker">-</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:59.2%;background:#EAB308"></div><span class="score-val">59.2</span></div></td><td class="one-liner">Pre-token infrastructure layer that pioneered the IP-NFT standard for biopharma intellectual property, with $14M raised </td></tr>
+<tr class="tier-3" data-category="Longevity / BCI" data-ac="private_markets" data-tier="3" data-score="59.2"><td class="rank">80</td><td class="name">Neuralink</td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:59.2%;background:#EAB308"></div><span class="score-val">59.2</span></div></td><td class="one-liner">Elon Musk's direct cortical BCI company — the sector's most visible player and competitive context reference for BCI inv</td></tr>
+<tr class="tier-3" data-category="Nuclear / Uranium" data-ac="public_equities" data-tier="3" data-score="59.2"><td class="rank">81</td><td class="name">NuScale Power</td><td class="ticker">$SMR</td><td class="category">Nuclear / Uranium</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:59.2%;background:#EAB308"></div><span class="score-val">59.2</span></div></td><td class="one-liner">First NRC-certified small modular reactor design, partnering for 6GW U.S. deployment.</td></tr>
+<tr class="tier-3" data-category="ZK/Privacy" data-ac="digital_assets" data-tier="3" data-score="59.0"><td class="rank">82</td><td class="name">Aleo</td><td class="ticker">$ALEO</td><td class="category">ZK/Privacy</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:59.0%;background:#EAB308"></div><span class="score-val">59.0</span></div></td><td class="one-liner">Privacy-by-default L1 blockchain using zero-knowledge proofs for all transactions.</td></tr>
+<tr class="tier-2" data-category="Space Technology" data-ac="public_equities" data-tier="2" data-score="59.0"><td class="rank">83</td><td class="name">Astroscale</td><td class="ticker">186A</td><td class="category">Space Technology</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:59.0%;background:#EAB308"></div><span class="score-val">59.0</span></div></td><td class="one-liner">The only public orbital debris removal company, trading below IPO price at ~$450M market cap with $29M revenue.</td></tr>
+<tr class="tier-3" data-category="Geopolitical / Critical Materials" data-ac="private_markets" data-tier="3" data-score="59.0"><td class="rank">84</td><td class="name">Cyclic Materials</td><td class="ticker">-</td><td class="category">Geopolitical / Critical Materials</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:59.0%;background:#EAB308"></div><span class="score-val">59.0</span></div></td><td class="one-liner">Rare earth recycling leader with $162M raised, T. Rowe Price-led Series C, MIT Tech Review Top 10 Climate Tech, and pote</td></tr>
+<tr class="tier-3" data-category="RWA Tokenization" data-ac="digital_assets" data-tier="3" data-score="58.7"><td class="rank">85</td><td class="name">Goldfinch</td><td class="ticker">$GFI</td><td class="category">RWA Tokenization</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:58.7%;background:#EAB308"></div><span class="score-val">58.7</span></div></td><td class="one-liner">DeFi protocol funding emerging market fintech lenders with 10-17% yields.</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="digital_assets" data-tier="3" data-score="58.3"><td class="rank">86</td><td class="name">Virtuals Protocol</td><td class="ticker">$VIRTUAL</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:58.3%;background:#EAB308"></div><span class="score-val">58.3</span></div></td><td class="one-liner">AI agent launchpad with 18,000+ deployed agents and $470M cumulative agentic GDP, trading 87% below ATH amid a revenue c</td></tr>
+<tr class="tier-3" data-category="Carbon / Climate Tech" data-ac="private_markets" data-tier="3" data-score="58.2"><td class="rank">87</td><td class="name">Twelve</td><td class="ticker">-</td><td class="category">Carbon / Climate Tech</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:58.2%;background:#EAB308"></div><span class="score-val">58.2</span></div></td><td class="one-liner">CO2-to-fuel company with $728M raised, first AirPlant under construction, backed by Amazon Climate Pledge Fund, United A</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="digital_assets" data-tier="3" data-score="58.0"><td class="rank">88</td><td class="name">Autonolas</td><td class="ticker">$OLAS</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:58.0%;background:#EAB308"></div><span class="score-val">58.0</span></div></td><td class="one-liner">Multi-chain AI agent infrastructure with 10M+ agent transactions across 9 blockchains, comprising 75% of Safe transactio</td></tr>
+<tr class="tier-3" data-category="ZK/Privacy" data-ac="digital_assets" data-tier="3" data-score="58.0"><td class="rank">89</td><td class="name">Mina Protocol</td><td class="ticker">$MINA</td><td class="category">ZK/Privacy</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:58.0%;background:#EAB308"></div><span class="score-val">58.0</span></div></td><td class="one-liner">22KB constant-size blockchain enabling ZK-powered privacy apps on any device.</td></tr>
+<tr class="tier-3" data-category="Materials Science" data-ac="private_markets" data-tier="3" data-score="57.5"><td class="rank">90</td><td class="name">VEIR</td><td class="ticker">-</td><td class="category">Materials Science</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:57.5%;background:#EAB308"></div><span class="score-val">57.5</span></div></td><td class="one-liner">Superconducting cable company backed by Microsoft's Climate Innovation Fund with $117M raised, demonstrated 3MW delivery</td></tr>
+<tr class="tier-3" data-category="ZK/Privacy" data-ac="digital_assets" data-tier="3" data-score="57.2"><td class="rank">91</td><td class="name">Namada</td><td class="ticker">$NAM</td><td class="category">ZK/Privacy</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:57.2%;background:#EAB308"></div><span class="score-val">57.2</span></div></td><td class="one-liner">Multi-asset shielded pool providing cross-chain privacy for any token.</td></tr>
+<tr class="tier-3" data-category="Geopolitical / Critical Materials" data-ac="private_markets" data-tier="3" data-score="57.2"><td class="rank">92</td><td class="name">Copenhagen Atomics</td><td class="ticker">-</td><td class="category">Geopolitical / Critical Materials</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:57.2%;background:#EAB308"></div><span class="score-val">57.2</span></div></td><td class="one-liner">Most advanced Western thorium molten salt reactor developer with two full-size prototypes and first European thorium MSR</td></tr>
+<tr class="tier-3" data-category="Neuromorphic / Photonic Computing" data-ac="private_markets" data-tier="3" data-score="57.0"><td class="rank">93</td><td class="name">Mythic AI</td><td class="ticker">-</td><td class="category">Neuromorphic / Photonic Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:57.0%;background:#EAB308"></div><span class="score-val">57.0</span></div></td><td class="one-liner">Came back from the dead after running out of cash in 2022, raised an oversubscribed $125M round claiming 750x more token</td></tr>
+<tr class="tier-3" data-category="Venture Signal" data-ac="private_markets" data-tier="3" data-score="57.0"><td class="rank">94</td><td class="name">Halter</td><td class="ticker">-</td><td class="category">Venture Signal</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:57.0%;background:#EAB308"></div><span class="score-val">57.0</span></div></td><td class="one-liner">AI cattle management company with $220M Series E personally overseen by Peter Thiel — applying precision tech to the $1.</td></tr>
+<tr class="tier-3" data-category="DeSci" data-ac="digital_assets" data-tier="3" data-score="56.8"><td class="rank">95</td><td class="name">ResearchHub</td><td class="ticker">$RSC</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:56.8%;background:#EAB308"></div><span class="score-val">56.8</span></div></td><td class="one-liner">Coinbase co-founder Brian Armstrong's 'Reddit for science' rewarding peer review with tokens at a ~$14M market cap.</td></tr>
+<tr class="tier-3" data-category="Autonomous Drones" data-ac="private_markets" data-tier="3" data-score="56.8"><td class="rank">96</td><td class="name">Terra Industries</td><td class="ticker">-</td><td class="category">Autonomous Drones</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:56.8%;background:#EAB308"></div><span class="score-val">56.8</span></div></td><td class="one-liner">Building Africa's biggest drone factory — 15,000 sq ft, 30,000 drones/year capacity — backed by 8VC and Lux Capital with</td></tr>
+<tr class="tier-3" data-category="Synthetic Biology" data-ac="private_markets" data-tier="3" data-score="56.5"><td class="rank">97</td><td class="name">Galy</td><td class="ticker">-</td><td class="category">Synthetic Biology</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:56.5%;background:#EAB308"></div><span class="score-val">56.5</span></div></td><td class="one-liner">Lab-grown cotton company with a $33M Series B led by Breakthrough Energy Ventures, $50M 10-year offtake from Suzuran Med</td></tr>
+<tr class="tier-3" data-category="Venture Signal" data-ac="private_markets" data-tier="3" data-score="56.5"><td class="rank">98</td><td class="name">Pocket (YC W2026)</td><td class="ticker">-</td><td class="category">Venture Signal</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:56.5%;background:#EAB308"></div><span class="score-val">56.5</span></div></td><td class="one-liner">YC W2026 standout with $27M ARR at seed stage — the strongest revenue signal of any company in the latest batch.</td></tr>
+<tr class="tier-3" data-category="Restaking" data-ac="digital_assets" data-tier="3" data-score="56.3"><td class="rank">99</td><td class="name">Anoma</td><td class="ticker">$XAN</td><td class="category">Restaking</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:56.3%;background:#EAB308"></div><span class="score-val">56.3</span></div></td><td class="one-liner">Intent-centric architecture with $57.75M raised and ZK privacy, still at devnet stage despite late-2025 token launch.</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="digital_assets" data-tier="3" data-score="56.0"><td class="rank">100</td><td class="name">AI Agent Infrastructure (ERC-4337 / x402)</td><td class="ticker">-</td><td class="category">AI x Crypto</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:56.0%;background:#EAB308"></div><span class="score-val">56.0</span></div></td><td class="one-liner">ERC-4337 account abstraction and x402 micropayment protocols provide the invisible plumbing enabling AI agents to autono</td></tr>
+<tr class="tier-3" data-category="DePIN" data-ac="digital_assets" data-tier="3" data-score="55.5"><td class="rank">101</td><td class="name">Acurast</td><td class="ticker">$ACU</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.5%;background:#EAB308"></div><span class="score-val">55.5</span></div></td><td class="one-liner">Smartphones repurposed as decentralized compute nodes earning $45-80/month per device with zero upfront hardware cost.</td></tr>
+<tr class="tier-3" data-category="Neuromorphic / Photonic Computing" data-ac="private_markets" data-tier="3" data-score="55.5"><td class="rank">102</td><td class="name">Atlas Data Storage</td><td class="ticker">-</td><td class="category">Neuromorphic / Photonic Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.5%;background:#EAB308"></div><span class="score-val">55.5</span></div></td><td class="one-liner">Twist Bioscience spinoff launched with $155M seed — the most well-funded DNA storage company ever, with indirect exposur</td></tr>
+<tr class="tier-3" data-category="Longevity / BCI" data-ac="private_markets" data-tier="3" data-score="55.5"><td class="rank">103</td><td class="name">Blueprint (Bryan Johnson)</td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.5%;background:#EAB308"></div><span class="score-val">55.5</span></div></td><td class="one-liner">Bryan Johnson's longevity brand raised $60M from celebrity angels but has no token, no public stock, and carries signifi</td></tr>
+<tr class="tier-3" data-category="Venture Signal" data-ac="private_markets" data-tier="3" data-score="55.5"><td class="rank">104</td><td class="name">Substrate (Founders Fund)</td><td class="ticker">-</td><td class="category">Venture Signal</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.5%;background:#EAB308"></div><span class="score-val">55.5</span></div></td><td class="one-liner">X-ray lithography startup challenging ASML's monopoly, valued at $1B with $100M raised and backed by Founders Fund.</td></tr>
+<tr class="tier-3" data-category="New Market Structures" data-ac="digital_assets" data-tier="3" data-score="55.3"><td class="rank">105</td><td class="name">Time.fun</td><td class="ticker">$TIME</td><td class="category">New Market Structures</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.3%;background:#EAB308"></div><span class="score-val">55.3</span></div></td><td class="one-liner">Brevan Howard + Coinbase Ventures-backed platform where creators tokenize their time into tradable minutes on Solana.</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="private_markets" data-tier="3" data-score="55.2"><td class="rank">106</td><td class="name">EZKL</td><td class="ticker">-</td><td class="category">AI x Crypto</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.2%;background:#EAB308"></div><span class="score-val">55.2</span></div></td><td class="one-liner">Open-source ZK-ML library enabling zero-knowledge proofs of AI inference — essential infrastructure for verifiable AI ag</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="private_markets" data-tier="3" data-score="55.2"><td class="rank">107</td><td class="name">Modulus Labs</td><td class="ticker">-</td><td class="category">AI x Crypto</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.2%;background:#EAB308"></div><span class="score-val">55.2</span></div></td><td class="one-liner">Variant-backed ZK-ML infrastructure with $6.3M raised, building zero-knowledge proofs for verifiable machine learning on</td></tr>
+<tr class="tier-3" data-category="DeSci" data-ac="digital_assets" data-tier="3" data-score="55.0"><td class="rank">108</td><td class="name">AminoChain</td><td class="ticker">-</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.0%;background:#EAB308"></div><span class="score-val">55.0</span></div></td><td class="one-liner">a16z-backed decentralized biobanking protocol enabling patients to own and monetize their biological data, pre-token.</td></tr>
+<tr class="tier-3" data-category="ZK/Privacy" data-ac="digital_assets" data-tier="3" data-score="55.0"><td class="rank">109</td><td class="name">Penumbra</td><td class="ticker">-</td><td class="category">ZK/Privacy</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:55.0%;background:#EAB308"></div><span class="score-val">55.0</span></div></td><td class="one-liner">Private shielded DEX and encrypted DeFi hub for the Cosmos ecosystem.</td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="54.8"><td class="rank">110</td><td class="name">Spacecoin</td><td class="ticker">$SPACE</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:54.8%;background:#EF4444"></div><span class="score-val">54.8</span></div></td><td class="one-liner">DePIN LEO nanosatellite constellation for decentralized internet — listed on Binance and Kraken, $22M cap, but only ~10%</td></tr>
+<tr class="tier-3" data-category="DeSci" data-ac="private_markets" data-tier="3" data-score="54.5"><td class="rank">111</td><td class="name">Circulate Health</td><td class="ticker">-</td><td class="category">DeSci</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:54.5%;background:#EF4444"></div><span class="score-val">54.5</span></div></td><td class="one-liner">Khosla Ventures-backed startup with $12M seed developing therapeutic plasma exchange technology.</td></tr>
+<tr class="tier-2" data-category="Space Technology" data-ac="public_equities" data-tier="2" data-score="54.0"><td class="rank">112</td><td class="name">ispace</td><td class="ticker">9348</td><td class="category">Space Technology</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:54.0%;background:#EF4444"></div><span class="score-val">54.0</span></div></td><td class="one-liner">Closest to lunar hardware deployment of any public company, but two crash landings make this a high-risk bet on the thir</td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="54.0"><td class="rank">113</td><td class="name">Arkreen</td><td class="ticker">$AKRE</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:54.0%;background:#EF4444"></div><span class="score-val">54.0</span></div></td><td class="one-liner">300,000+ distributed solar energy data nodes with 140 GWh tokenized and a live 300kW Thailand solar farm — but effective</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="private_markets" data-tier="3" data-score="53.2"><td class="rank">114</td><td class="name">Giza</td><td class="ticker">-</td><td class="category">AI x Crypto</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:53.2%;background:#EF4444"></div><span class="score-val">53.2</span></div></td><td class="one-liner">ZK-ML infrastructure on StarkNet enabling verifiable AI inference with zero-knowledge proofs, leveraging StarkNet's nati</td></tr>
+<tr class="tier-3" data-category="Venture Signal" data-ac="private_markets" data-tier="3" data-score="53.0"><td class="rank">115</td><td class="name">General Matter</td><td class="ticker">-</td><td class="category">Venture Signal</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:53.0%;background:#EF4444"></div><span class="score-val">53.0</span></div></td><td class="one-liner">HALEU nuclear fuel production company led by a former Founders Fund partner, addressing the critical fuel bottleneck for</td></tr>
+<tr class="tier-3" data-category="Venture Signal" data-ac="private_markets" data-tier="3" data-score="52.8"><td class="rank">116</td><td class="name">Asimov (YC W2026)</td><td class="ticker">-</td><td class="category">Venture Signal</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:52.8%;background:#EF4444"></div><span class="score-val">52.8</span></div></td><td class="one-liner">YC W2026 standout with 5,000+ contributor motion dataset for training robots — building the ImageNet of physical movemen</td></tr>
+<tr class="tier-3" data-category="DePIN" data-ac="digital_assets" data-tier="3" data-score="52.5"><td class="rank">117</td><td class="name">DAWN</td><td class="ticker">-</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:52.5%;background:#EF4444"></div><span class="score-val">52.5</span></div></td><td class="one-liner">Trustless last-mile wireless network with Proof-of-Bandwidth consensus delivering gigabit speeds at 70% lower cost than </td></tr>
+<tr class="tier-3" data-category="Venture Signal" data-ac="private_markets" data-tier="3" data-score="52.2"><td class="rank">118</td><td class="name">Rhoda AI</td><td class="ticker">-</td><td class="category">Venture Signal</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:52.2%;background:#EF4444"></div><span class="score-val">52.2</span></div></td><td class="one-liner">Robotic intelligence company with a $450M Series A from Founders Fund, building the AI layer for physical-world robotics</td></tr>
+<tr class="tier-2" data-category="Biological Computing" data-ac="public_equities" data-tier="2" data-score="51.2"><td class="rank">119</td><td class="name">BrainChip</td><td class="ticker">$BRN</td><td class="category">Biological Computing</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:51.2%;background:#EF4444"></div><span class="score-val">51.2</span></div></td><td class="one-liner">The only publicly traded pure-play neuromorphic chip company, trading 94% below its 2022 high with effectively zero reve</td></tr>
+<tr class="tier-3" data-category="Venture Signal" data-ac="private_markets" data-tier="3" data-score="51.2"><td class="rank">120</td><td class="name">Voltair (YC W2026)</td><td class="ticker">-</td><td class="category">Venture Signal</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:51.2%;background:#EF4444"></div><span class="score-val">51.2</span></div></td><td class="one-liner">YC W2026 standout building self-charging drones that perch on power lines — solving the range limitation that constraint</td></tr>
+<tr class="tier-3" data-category="New Market Structures" data-ac="digital_assets" data-tier="3" data-score="51.0"><td class="rank">121</td><td class="name">Zora Attention Markets</td><td class="ticker">$ZORA</td><td class="category">New Market Structures</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:51.0%;background:#EF4444"></div><span class="score-val">51.0</span></div></td><td class="one-liner">Attention Markets launched February 2026 on Solana where users trade tokens tied to viral memes, hashtags, and cultural </td></tr>
+<tr class="tier-2" data-category="Synthetic Biology" data-ac="public_equities" data-tier="2" data-score="51.0"><td class="rank">122</td><td class="name">Ginkgo Bioworks</td><td class="ticker">$DNA</td><td class="category">Synthetic Biology</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:51.0%;background:#EF4444"></div><span class="score-val">51.0</span></div></td><td class="one-liner">The synbio platform company pivoting to autonomous labs, trading at ~$6.80-9.71 with $421-552M market cap, burning $125-</td></tr>
+<tr class="tier-3" data-category="AI x Crypto" data-ac="private_markets" data-tier="3" data-score="50.8"><td class="rank">123</td><td class="name">Allora Network</td><td class="ticker">-</td><td class="category">AI x Crypto</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:50.8%;background:#EF4444"></div><span class="score-val">50.8</span></div></td><td class="one-liner">Decentralized AI inference network building self-improving ML models through economic incentives, operating in the same </td></tr>
+<tr class="tier-2" data-category="DePIN" data-ac="digital_assets" data-tier="2" data-score="50.8"><td class="rank">124</td><td class="name">Silencio</td><td class="ticker">$SLC</td><td class="category">DePIN</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-2">T2</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:50.8%;background:#EF4444"></div><span class="score-val">50.8</span></div></td><td class="one-liner">1.1 million users contributing noise data with 41 billion datapoints — the world's largest crowd-sourced noise map at a </td></tr>
+<tr class="tier-3" data-category="Carbon / Climate Tech" data-ac="private_markets" data-tier="3" data-score="50.5"><td class="rank">125</td><td class="name">Stardust Solutions</td><td class="ticker">-</td><td class="category">Carbon / Climate Tech</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:50.5%;background:#EF4444"></div><span class="score-val">50.5</span></div></td><td class="one-liner">Largest-ever geoengineering round ($75M Series A from Lowercarbon Capital) for stratospheric aerosol injection, with ext</td></tr>
+<tr class="tier-3" data-category="Energy Storage" data-ac="private_markets" data-tier="3" data-score="49.2"><td class="rank">126</td><td class="name">Fourth Power</td><td class="ticker">-</td><td class="category">Energy Storage</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:49.2%;background:#EF4444"></div><span class="score-val">49.2</span></div></td><td class="one-liner">MIT/Georgia Tech spinout building molten carbon thermal storage backed by Breakthrough Energy Ventures and Munich Re.</td></tr>
+<tr class="tier-3" data-category="Venture Signal" data-ac="private_markets" data-tier="3" data-score="47.8"><td class="rank">127</td><td class="name">Human Archive (YC W2026)</td><td class="ticker">-</td><td class="category">Venture Signal</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:47.8%;background:#EF4444"></div><span class="score-val">47.8</span></div></td><td class="one-liner">YC W2026 standout archiving the physical world for embodied AI — creating the spatial data layer for robot navigation an</td></tr>
+<tr class="tier-3" data-category="Neuromorphic / Photonic Computing" data-ac="private_markets" data-tier="3" data-score="47.2"><td class="rank">128</td><td class="name">Biomemory</td><td class="ticker">-</td><td class="category">Neuromorphic / Photonic Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:47.2%;background:#EF4444"></div><span class="score-val">47.2</span></div></td><td class="one-liner">Paris-based DNA storage company that acquired Catalog Technologies in March 2026, creating the largest combined DNA stor</td></tr>
+<tr class="tier-3" data-category="Energy Storage" data-ac="private_markets" data-tier="3" data-score="46.8"><td class="rank">129</td><td class="name">EnergyX</td><td class="ticker">-</td><td class="category">Energy Storage</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:46.8%;background:#EF4444"></div><span class="score-val">46.8</span></div></td><td class="one-liner">Direct lithium extraction via equity crowdfunding at $9.50/share with agreements covering 4 of the top 10 global lithium</td></tr>
+<tr class="tier-3" data-category="Longevity / BCI" data-ac="private_markets" data-tier="3" data-score="46.8"><td class="rank">130</td><td class="name">Rejuvenate Bio</td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:46.8%;background:#EF4444"></div><span class="score-val">46.8</span></div></td><td class="one-liner">George Church's gene therapy longevity company with active Wefunder campaign at $59.4M valuation, but employee count dro</td></tr>
+<tr class="tier-3" data-category="Biological Computing" data-ac="private_markets" data-tier="3" data-score="46.2"><td class="rank">131</td><td class="name">FinalSpark</td><td class="ticker">-</td><td class="category">Biological Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:46.2%;background:#EF4444"></div><span class="score-val">46.2</span></div></td><td class="one-liner">Runs the world's first online neuroplatform — 16 brain organoids with ~160,000 neurons accessible remotely via Python AP</td></tr>
+<tr class="tier-3" data-category="Longevity / BCI" data-ac="private_markets" data-tier="3" data-score="45.2"><td class="rank">132</td><td class="name">Paradromics</td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:45.2%;background:#EF4444"></div><span class="score-val">45.2</span></div></td><td class="one-liner">Record-breaking 200+ bits-per-second BCI data rate achiever, accessible only to accredited investors on secondary market</td></tr>
+<tr class="tier-3" data-category="Biological Computing" data-ac="private_markets" data-tier="3" data-score="44.2"><td class="rank">133</td><td class="name">Koniku</td><td class="ticker">-</td><td class="category">Biological Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:44.2%;background:#EF4444"></div><span class="score-val">44.2</span></div></td><td class="one-liner">Builds 'smell cyborgs' fusing 128 biological neurons with silicon for volatile organic compound detection, with an $8M A</td></tr>
+<tr class="tier-3" data-category="Synthetic Biology" data-ac="public_equities" data-tier="3" data-score="43.8"><td class="rank">134</td><td class="name">Agronomics</td><td class="ticker">$ANIC</td><td class="category">Synthetic Biology</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:43.8%;background:#EF4444"></div><span class="score-val">43.8</span></div></td><td class="one-liner">A listed fund on the LSE holding shares in Galy and other cellular agriculture companies — the simplest retail exposure </td></tr>
+<tr class="tier-3" data-category="New Market Structures" data-ac="digital_assets" data-tier="3" data-score="43.5"><td class="rank">135</td><td class="name">Farcaster</td><td class="ticker">-</td><td class="category">New Market Structures</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:43.5%;background:#EF4444"></div><span class="score-val">43.5</span></div></td><td class="one-liner">Decentralized social protocol acquired by Neynar for $180M refund — no official token coming, but $DEGEN community token</td></tr>
+<tr class="tier-3" data-category="New Market Structures" data-ac="digital_assets" data-tier="3" data-score="42.3"><td class="rank">136</td><td class="name">Opulous</td><td class="ticker">$OPUL</td><td class="category">New Market Structures</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:42.3%;background:#EF4444"></div><span class="score-val">42.3</span></div></td><td class="one-liner">Lowest market cap liquid music royalty token offering DeFi loans backed by music royalties on Algorand.</td></tr>
+<tr class="tier-3" data-category="DeSci" data-ac="digital_assets" data-tier="3" data-score="41.5"><td class="rank">137</td><td class="name">ValleyDAO</td><td class="ticker">$GROW</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:41.5%;background:#EF4444"></div><span class="score-val">41.5</span></div></td><td class="one-liner">Synthetic biology BioDAO with Imperial College London partnership, trading at $843K market cap after a 97% decline.</td></tr>
+<tr class="tier-3" data-category="New Market Structures" data-ac="private_markets" data-tier="3" data-score="41.0"><td class="rank">138</td><td class="name">Royal.io</td><td class="ticker">-</td><td class="category">New Market Structures</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:41.0%;background:#EF4444"></div><span class="score-val">41.0</span></div></td><td class="one-liner">Music royalty trading platform with $7.5M total volume and $156K in actual royalties paid out to token holders.</td></tr>
+<tr class="tier-3" data-category="Energy Storage" data-ac="public_equities" data-tier="3" data-score="40.5"><td class="rank">139</td><td class="name">ESS Inc</td><td class="ticker">$GWH</td><td class="category">Energy Storage</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:40.5%;background:#EF4444"></div><span class="score-val">40.5</span></div></td><td class="one-liner">Iron flow battery maker in survival mode at $31M market cap with 22-hour storage, zero degradation over 25 years, and Ho</td></tr>
+<tr class="tier-3" data-category="DeSci" data-ac="digital_assets" data-tier="3" data-score="39.2"><td class="rank">140</td><td class="name">CryoDAO</td><td class="ticker">-</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:39.2%;background:#EF4444"></div><span class="score-val">39.2</span></div></td><td class="one-liner">Cryopreservation-focused BioDAO within the Bio Protocol ecosystem, now trading at ~$293K market cap in the micro-cap dea</td></tr>
+<tr class="tier-3" data-category="New Market Structures" data-ac="digital_assets" data-tier="3" data-score="33.3"><td class="rank">141</td><td class="name">Bolero</td><td class="ticker">-</td><td class="category">New Market Structures</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:33.3%;background:#EF4444"></div><span class="score-val">33.3</span></div></td><td class="one-liner">Broadest IP approach to music tokenization on Polygon, covering master recordings rather than just streaming royalties.</td></tr>
+<tr class="tier-3" data-category="New Market Structures" data-ac="digital_assets" data-tier="3" data-score="30.5"><td class="rank">142</td><td class="name">Story Protocol</td><td class="ticker">$IP</td><td class="category">New Market Structures</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:30.5%;background:#EF4444"></div><span class="score-val">30.5</span></div></td><td class="one-liner">a16z-backed L1 for IP tokenization at $500M market cap, but generating less than $100 daily on-chain revenue while C2PA </td></tr>
+<tr class="tier-3" data-category="Energy Storage" data-ac="private_markets" data-tier="3" data-score="29.2"><td class="rank">143</td><td class="name">Malta Inc</td><td class="ticker">-</td><td class="category">Energy Storage</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:29.2%;background:#EF4444"></div><span class="score-val">29.2</span></div></td><td class="one-liner">Google X-origin pumped heat energy storage with Siemens partnership, but only 17 employees signal limited momentum.</td></tr>
+<tr class="tier-3 graveyard" data-category="DeSci" data-ac="digital_assets" data-tier="3" data-score="27.0"><td class="rank">144</td><td class="name">Pump.Science (URO)<span class="gy-badge">GY</span></td><td class="ticker">$URO</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:27.0%;background:#EF4444"></div><span class="score-val">27.0</span></div></td><td class="one-liner">Companion gamified longevity token to $RIF within the Pump.Science ecosystem, trading at ~$0.002 after the platform's se</td></tr>
+<tr class="tier-3 graveyard" data-category="Neuromorphic / Photonic Computing" data-ac="private_markets" data-tier="3" data-score="26.2"><td class="rank">145</td><td class="name">Rain AI<span class="gy-badge">GY</span></td><td class="ticker">-</td><td class="category">Neuromorphic / Photonic Computing</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:26.2%;background:#EF4444"></div><span class="score-val">26.2</span></div></td><td class="one-liner">In distress despite Sam Altman's backing — $150M Series B collapsed in Q1 2025, reportedly exploring a sale to OpenAI, N</td></tr>
+<tr class="tier-3 graveyard" data-category="DeSci" data-ac="digital_assets" data-tier="3" data-score="25.2"><td class="rank">146</td><td class="name">Pump.Science (RIF)<span class="gy-badge">GY</span></td><td class="ticker">$RIF</td><td class="category">DeSci</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:25.2%;background:#EF4444"></div><span class="score-val">25.2</span></div></td><td class="one-liner">Gamified longevity token that suffered a GitHub compromise exposing private keys, now effectively dead at 99% below ATH.</td></tr>
+<tr class="tier-3 graveyard" data-category="Materials Science" data-ac="public_equities" data-tier="3" data-score="18.2"><td class="rank">147</td><td class="name">Aspen Aerogels<span class="gy-badge">GY</span></td><td class="ticker">$ASPN</td><td class="category">Materials Science</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:18.2%;background:#EF4444"></div><span class="score-val">18.2</span></div></td><td class="one-liner">Revenue collapsed 40%, stock at ~$3 with massive impairment charges — aerogel insulation company in severe distress.</td></tr>
+<tr class="tier-3 graveyard" data-category="Longevity / BCI" data-ac="private_markets" data-tier="3" data-score="7.8"><td class="rank">148</td><td class="name">Nectome<span class="gy-badge">GY</span></td><td class="ticker">-</td><td class="category">Longevity / BCI</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:7.8%;background:#EF4444"></div><span class="score-val">7.8</span></div></td><td class="one-liner">Brain preservation startup largely dormant with 4 employees and ~$120K in funding — brain uploading remains science fict</td></tr>
+<tr class="tier-3 graveyard" data-category="Materials Science" data-ac="public_equities" data-tier="3" data-score="7.0"><td class="rank">149</td><td class="name">Meta Materials (MMATQ)<span class="gy-badge">GY</span></td><td class="ticker">$MMATQ</td><td class="category">Materials Science</td><td class="ac">Public Equities</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:7.0%;background:#EF4444"></div><span class="score-val">7.0</span></div></td><td class="one-liner">Effectively bankrupt metamaterials company with ~$700 market cap — a cautionary tale of materials science hype cycles.</td></tr>
+<tr class="tier-3 graveyard" data-category="Synthetic Biology" data-ac="private_markets" data-tier="3" data-score="5.5"><td class="rank">150</td><td class="name">Bolt Threads<span class="gy-badge">GY</span></td><td class="ticker">-</td><td class="category">Synthetic Biology</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:5.5%;background:#EF4444"></div><span class="score-val">5.5</span></div></td><td class="one-liner">Dead — website reads 'no longer operating.' Part of the synbio graveyard that destroyed over $1.1B in investor capital.</td></tr>
+<tr class="tier-3 graveyard" data-category="Synthetic Biology" data-ac="private_markets" data-tier="3" data-score="5.5"><td class="rank">151</td><td class="name">Amyris<span class="gy-badge">GY</span></td><td class="ticker">-</td><td class="category">Synthetic Biology</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:5.5%;background:#EF4444"></div><span class="score-val">5.5</span></div></td><td class="one-liner">Filed Chapter 11 in August 2023 with $1.15B in debt — equity wiped. The largest single failure in the synbio graveyard.</td></tr>
+<tr class="tier-3 graveyard" data-category="Synthetic Biology" data-ac="private_markets" data-tier="3" data-score="5.5"><td class="rank">152</td><td class="name">Zymergen<span class="gy-badge">GY</span></td><td class="ticker">-</td><td class="category">Synthetic Biology</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:5.5%;background:#EF4444"></div><span class="score-val">5.5</span></div></td><td class="one-liner">Acquired then liquidated — part of the synbio graveyard that destroyed over $1.1B in investor capital.</td></tr>
+<tr class="tier-3 graveyard" data-category="Graveyard" data-ac="digital_assets" data-tier="3" data-score="0.0"><td class="rank">153</td><td class="name">Terra/LUNA<span class="gy-badge">GY</span></td><td class="ticker">LUNA</td><td class="category">Graveyard</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:0.0%;background:#EF4444"></div><span class="score-val">0.0</span></div></td><td class="one-liner">Collapsed algorithmic stablecoin that lost $40B in value in May 2022, triggering cascading failures across crypto.</td></tr>
+<tr class="tier-3 graveyard" data-category="Graveyard" data-ac="digital_assets" data-tier="3" data-score="0.0"><td class="rank">154</td><td class="name">FTX / Alameda Research<span class="gy-badge">GY</span></td><td class="ticker">FTT</td><td class="category">Graveyard</td><td class="ac">Digital Assets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:0.0%;background:#EF4444"></div><span class="score-val">0.0</span></div></td><td class="one-liner">Collapsed crypto exchange and trading firm whose fraud destroyed $8B in customer funds and sent Sam Bankman-Fried to pri</td></tr>
+<tr class="tier-3 graveyard" data-category="Energy Storage" data-ac="private_markets" data-tier="3" data-score="0.0"><td class="rank">155</td><td class="name">Ambri<span class="gy-badge">GY</span></td><td class="ticker">-</td><td class="category">Energy Storage</td><td class="ac">Private Markets</td><td class="tier"><span class="tier-badge tier-3">T3</span></td><td class="score"><div class="score-bar-wrap"><div class="score-bar" style="width:0.0%;background:#EF4444"></div><span class="score-val">0.0</span></div></td><td class="one-liner">DEAD — Filed Chapter 11 May 2024, all assets in liquidation despite $222M raised and Bill Gates backing. A cautionary ta</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- Section: Category Distribution -->
+<div class="section">
+<h2 class="section-title">Category Distribution</h2>
+<div style="max-width:800px;">
+<div class="cat-row"><span class="cat-label">AI x Crypto</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:100.0%"></div><span class="cat-count">17</span></div></div>
+<div class="cat-row"><span class="cat-label">DePIN</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:82.35294117647058%"></div><span class="cat-count">14</span></div></div>
+<div class="cat-row"><span class="cat-label">DeSci</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:76.47058823529412%"></div><span class="cat-count">13</span></div></div>
+<div class="cat-row"><span class="cat-label">Longevity / BCI</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:58.82352941176471%"></div><span class="cat-count">10</span></div></div>
+<div class="cat-row"><span class="cat-label">Synthetic Biology</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:52.94117647058824%"></div><span class="cat-count">9</span></div></div>
+<div class="cat-row"><span class="cat-label">Restaking</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:47.05882352941176%"></div><span class="cat-count">8</span></div></div>
+<div class="cat-row"><span class="cat-label">New Market Structures</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:47.05882352941176%"></div><span class="cat-count">8</span></div></div>
+<div class="cat-row"><span class="cat-label">Venture Signal</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:47.05882352941176%"></div><span class="cat-count">8</span></div></div>
+<div class="cat-row"><span class="cat-label">Energy Storage</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:41.17647058823529%"></div><span class="cat-count">7</span></div></div>
+<div class="cat-row"><span class="cat-label">Neuromorphic / Photonic Computing</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:41.17647058823529%"></div><span class="cat-count">7</span></div></div>
+<div class="cat-row"><span class="cat-label">Nuclear / Uranium</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:35.294117647058826%"></div><span class="cat-count">6</span></div></div>
+<div class="cat-row"><span class="cat-label">Materials Science</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:35.294117647058826%"></div><span class="cat-count">6</span></div></div>
+<div class="cat-row"><span class="cat-label">Geopolitical / Critical Materials</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:35.294117647058826%"></div><span class="cat-count">6</span></div></div>
+<div class="cat-row"><span class="cat-label">ZK/Privacy</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:29.411764705882355%"></div><span class="cat-count">5</span></div></div>
+<div class="cat-row"><span class="cat-label">Space Technology</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:29.411764705882355%"></div><span class="cat-count">5</span></div></div>
+<div class="cat-row"><span class="cat-label">Biological Computing</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:23.52941176470588%"></div><span class="cat-count">4</span></div></div>
+<div class="cat-row"><span class="cat-label">Fusion Energy</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:17.647058823529413%"></div><span class="cat-count">3</span></div></div>
+<div class="cat-row"><span class="cat-label">RWA Tokenization</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:17.647058823529413%"></div><span class="cat-count">3</span></div></div>
+<div class="cat-row"><span class="cat-label">Quantum Computing</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:17.647058823529413%"></div><span class="cat-count">3</span></div></div>
+<div class="cat-row"><span class="cat-label">Xenotransplantation</span><div class="cat-bar-wrap"><div class="cat-bar" style="width:17.647058823529413%"></div><span class="cat-count">3</span></div></div>
+</div>
+</div>
+
+<!-- Section: Build Status -->
+<div class="section">
+<h2 class="section-title">Project Build Status</h2>
+<div class="status-grid">
+    <div class="status-card">
+        <h4><span class="done">COMPLETE</span> A1: Site Build</h4>
+        <ul>
+            <li>Next.js 16 + TypeScript + Tailwind v4</li>
+            <li>43 static pages generated</li>
+            <li>11 components, 6 lib modules</li>
+            <li>pnpm build + lint = zero warnings</li>
+            <li>Cloudflare Pages ready (output: export)</li>
+        </ul>
+    </div>
+    <div class="status-card">
+        <h4><span class="done">COMPLETE</span> A2: Data Seed</h4>
+        <ul>
+            <li>30 initial opportunities seeded</li>
+            <li>All composites validated vs formula</li>
+            <li>13 categories, 3 asset classes</li>
+            <li>2 graveyard entries (Terra, FTX)</li>
+        </ul>
+    </div>
+    <div class="status-card">
+        <h4><span class="done">COMPLETE</span> A3: Scout Pipeline</h4>
+        <ul>
+            <li>update-prices.py (CoinGecko + Yahoo Finance)</li>
+            <li>scout-scan.py (trending + DeFiLlama)</li>
+            <li>validate-data.py (schema validation)</li>
+            <li>3 GitHub Actions workflows (daily/weekly/PR)</li>
+        </ul>
+    </div>
+    <div class="status-card">
+        <h4><span class="done">COMPLETE</span> A4: Live Data Feeds</h4>
+        <ul>
+            <li>Cloudflare Worker (email capture)</li>
+            <li>IP rate limiting via KV (5 req/hr)</li>
+            <li>Resend welcome email integration</li>
+            <li>check-freshness.py monitor</li>
+        </ul>
+    </div>
+    <div class="status-card">
+        <h4><span class="done">COMPLETE</span> A5: Deploy + SEO</h4>
+        <ul>
+            <li>Sitemap + robots.txt generators</li>
+            <li>JSON-LD structured data (4 schemas)</li>
+            <li>5 blog seed posts</li>
+            <li>OG image SVG, Cloudflare headers</li>
+            <li>Analytics placeholder component</li>
+        </ul>
+    </div>
+    <div class="status-card">
+        <h4><span class="done">COMPLETE</span> Gap-Fill Extraction</h4>
+        <ul>
+            <li>AI x Crypto: 14 new entries</li>
+            <li>DeSci: 13 new entries</li>
+            <li>DePIN: 6 new entries</li>
+            <li>Energy Storage: 7 new entries</li>
+            <li>Longevity/BCI: 9 new entries</li>
+            <li>Restaking: 6 new entries</li>
+            <li>New Markets: 8 new entries</li>
+            <li>Seed cross-ref: 23 unique entries</li>
+            <li>Merged: 91 total after dedup</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!-- Section: Asset Class Breakdown -->
+<div class="section">
+<h2 class="section-title">Asset Class Breakdown</h2>
+<div class="cards">
+    <div class="card">
+        <h3>Digital Assets</h3>
+        <div class="stat">63</div>
+        <p>Tokens, DeFi protocols, crypto infrastructure</p>
+    </div>
+    <div class="card">
+        <h3>Private Markets</h3>
+        <div class="stat">60</div>
+        <p>Pre-IPO companies, equity crowdfunding, venture</p>
+    </div>
+    <div class="card">
+        <h3>Public Equities</h3>
+        <div class="stat">32</div>
+        <p>Listed stocks, ETFs, public companies</p>
+    </div>
+</div>
+</div>
+
+<!-- Section: Top 10 Deep Dive -->
+<div class="section">
+<h2 class="section-title">Top 10 Opportunities</h2>
+<div class="cards">
+<div class="card"><h3>Bittensor <span class="tier-badge tier-1">T1</span></h3><div class="stat">82.0</div><p style="margin-top:8px; color:var(--text);">Decentralized network where AI models compete for rewards via subnet mining, with 128+ active subnets and a Grayscale ETF filing.</p><p style="margin-top:8px;"><strong>Category:</strong> AI x Crypto | <strong>Class:</strong> Digital Assets</p></div>
+<div class="card"><h3>Cameco <span class="tier-badge tier-1">T1</span></h3><div class="stat">81.8</div><p style="margin-top:8px; color:var(--text);">World's largest uranium miner with 49% stake in Westinghouse reactor technology.</p><p style="margin-top:8px;"><strong>Category:</strong> Nuclear / Uranium | <strong>Class:</strong> Public Equities</p></div>
+<div class="card"><h3>Helion Energy <span class="tier-badge tier-1">T1</span></h3><div class="stat">80.2</div><p style="margin-top:8px; color:var(--text);">Fusion startup that hit 150M degrees C in February 2026, with Sam Altman backing and OpenAI in talks for 5GW of power.</p><p style="margin-top:8px;"><strong>Category:</strong> Fusion Energy | <strong>Class:</strong> Private Markets</p></div>
+<div class="card"><h3>EigenLayer <span class="tier-badge tier-1">T1</span></h3><div class="stat">80.0</div><p style="margin-top:8px; color:var(--text);">Restaking protocol securing 280+ services with $19.7B in staked ETH, building the verifiable cloud for modular Ethereum.</p><p style="margin-top:8px;"><strong>Category:</strong> Restaking | <strong>Class:</strong> Digital Assets</p></div>
+<div class="card"><h3>NexGen Energy <span class="tier-badge tier-1">T1</span></h3><div class="stat">80.0</div><p style="margin-top:8px; color:var(--text);">Advancing the world's highest-grade undeveloped uranium deposit at under $10/lb production cost, with final federal approval imminent.</p><p style="margin-top:8px;"><strong>Category:</strong> Nuclear / Uranium | <strong>Class:</strong> Public Equities</p></div>
+<div class="card"><h3>Babylon <span class="tier-badge tier-1">T1</span></h3><div class="stat">80.0</div><p style="margin-top:8px; color:var(--text);">Native Bitcoin staking protocol securing PoS chains without bridges or wrapping, with $4.8B in BTC staked.</p><p style="margin-top:8px;"><strong>Category:</strong> Restaking | <strong>Class:</strong> Digital Assets</p></div>
+<div class="card"><h3>Ondo Finance <span class="tier-badge tier-1">T1</span></h3><div class="stat">80.0</div><p style="margin-top:8px; color:var(--text);">Institutional RWA platform tokenizing treasuries, equities, and ETFs on-chain with $2B+ TVL and 58% market share.</p><p style="margin-top:8px;"><strong>Category:</strong> RWA Tokenization | <strong>Class:</strong> Digital Assets</p></div>
+<div class="card"><h3>IonQ <span class="tier-badge tier-1">T1</span></h3><div class="stat">80.0</div><p style="margin-top:8px; color:var(--text);">First quantum computing company to surpass $100M annual revenue, deploying 256-qubit trapped-ion systems in 2026.</p><p style="margin-top:8px;"><strong>Category:</strong> Quantum Computing | <strong>Class:</strong> Public Equities</p></div>
+<div class="card"><h3>Form Energy <span class="tier-badge tier-2">T2</span></h3><div class="stat">76.2</div><p style="margin-top:8px; color:var(--text);">Clear LDES leader with iron-air batteries for 100+ hour storage, $1.13-1.43B raised, 75 GWh pipeline, and production sold out through 2028.</p><p style="margin-top:8px;"><strong>Category:</strong> Energy Storage | <strong>Class:</strong> Private Markets</p></div>
+<div class="card"><h3>United Therapeutics <span class="tier-badge tier-1">T1</span></h3><div class="stat">76.0</div><p style="margin-top:8px; color:var(--text);">A profitable $13B+ company with existing drug revenue where xenotransplantation via its Revivicor subsidiary represents massive free optionality — the best risk-adjusted frontier play in the report.</p><p style="margin-top:8px;"><strong>Category:</strong> Xenotransplantation | <strong>Class:</strong> Public Equities</p></div>
+</div>
+</div>
+
+<!-- Section: Graveyard -->
+<div class="section">
+<h2 class="section-title">Opportunity Graveyard (12 entries)</h2>
+<div class="cards">
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Pump.Science (URO) <span class="gy-badge">GRAVEYARD</span></h3><p>Companion gamified longevity token to $RIF within the Pump.Science ecosystem, trading at ~$0.002 after the platform's security compromise.</p><p style="margin-top:8px;"><strong>Category:</strong> DeSci | <strong>Score:</strong> 27.0</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Rain AI <span class="gy-badge">GRAVEYARD</span></h3><p>In distress despite Sam Altman's backing — $150M Series B collapsed in Q1 2025, reportedly exploring a sale to OpenAI, NVIDIA, or Microsoft.</p><p style="margin-top:8px;"><strong>Category:</strong> Neuromorphic / Photonic Computing | <strong>Score:</strong> 26.2</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Pump.Science (RIF) <span class="gy-badge">GRAVEYARD</span></h3><p>Gamified longevity token that suffered a GitHub compromise exposing private keys, now effectively dead at 99% below ATH.</p><p style="margin-top:8px;"><strong>Category:</strong> DeSci | <strong>Score:</strong> 25.2</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Aspen Aerogels <span class="gy-badge">GRAVEYARD</span></h3><p>Revenue collapsed 40%, stock at ~$3 with massive impairment charges — aerogel insulation company in severe distress.</p><p style="margin-top:8px;"><strong>Category:</strong> Materials Science | <strong>Score:</strong> 18.2</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Nectome <span class="gy-badge">GRAVEYARD</span></h3><p>Brain preservation startup largely dormant with 4 employees and ~$120K in funding — brain uploading remains science fiction.</p><p style="margin-top:8px;"><strong>Category:</strong> Longevity / BCI | <strong>Score:</strong> 7.8</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Meta Materials (MMATQ) <span class="gy-badge">GRAVEYARD</span></h3><p>Effectively bankrupt metamaterials company with ~$700 market cap — a cautionary tale of materials science hype cycles.</p><p style="margin-top:8px;"><strong>Category:</strong> Materials Science | <strong>Score:</strong> 7.0</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Bolt Threads <span class="gy-badge">GRAVEYARD</span></h3><p>Dead — website reads 'no longer operating.' Part of the synbio graveyard that destroyed over $1.1B in investor capital.</p><p style="margin-top:8px;"><strong>Category:</strong> Synthetic Biology | <strong>Score:</strong> 5.5</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Amyris <span class="gy-badge">GRAVEYARD</span></h3><p>Filed Chapter 11 in August 2023 with $1.15B in debt — equity wiped. The largest single failure in the synbio graveyard.</p><p style="margin-top:8px;"><strong>Category:</strong> Synthetic Biology | <strong>Score:</strong> 5.5</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Zymergen <span class="gy-badge">GRAVEYARD</span></h3><p>Acquired then liquidated — part of the synbio graveyard that destroyed over $1.1B in investor capital.</p><p style="margin-top:8px;"><strong>Category:</strong> Synthetic Biology | <strong>Score:</strong> 5.5</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Terra/LUNA <span class="gy-badge">GRAVEYARD</span></h3><p>Collapsed algorithmic stablecoin that lost $40B in value in May 2022, triggering cascading failures across crypto.</p><p style="margin-top:8px;"><strong>Category:</strong> Graveyard | <strong>Score:</strong> 0.0</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">FTX / Alameda Research <span class="gy-badge">GRAVEYARD</span></h3><p>Collapsed crypto exchange and trading firm whose fraud destroyed $8B in customer funds and sent Sam Bankman-Fried to prison.</p><p style="margin-top:8px;"><strong>Category:</strong> Graveyard | <strong>Score:</strong> 0.0</p></div>
+<div class="card" style="border-color: var(--red); opacity: 0.8;"><h3 style="color: var(--red);">Ambri <span class="gy-badge">GRAVEYARD</span></h3><p>DEAD — Filed Chapter 11 May 2024, all assets in liquidation despite $222M raised and Bill Gates backing. A cautionary tale for energy storage.</p><p style="margin-top:8px;"><strong>Category:</strong> Energy Storage | <strong>Score:</strong> 0.0</p></div>
+</div>
+</div>
+
+<!-- Section: GitHub Repo -->
+<div class="section">
+<h2 class="section-title">Repository & Deployment</h2>
+<div class="cards">
+    <div class="card">
+        <h3>GitHub</h3>
+        <p style="font-family: var(--mono); color: var(--blue);">github.com/theluckystrike/earlythunder</p>
+        <p style="margin-top:8px;">Public repository, ready for initial push</p>
+    </div>
+    <div class="card">
+        <h3>Domain</h3>
+        <p style="font-family: var(--mono); color: var(--amber);">earlythunder.com</p>
+        <p style="margin-top:8px;">Cloudflare Pages deployment target</p>
+    </div>
+    <div class="card">
+        <h3>Tech Stack</h3>
+        <p>Next.js 16 | TypeScript | Tailwind v4 | Cloudflare Pages | GitHub Actions</p>
+    </div>
+</div>
+</div>
+
+<!-- Section: File Tree -->
+<div class="section">
+<h2 class="section-title">Project Structure</h2>
+<div class="file-tree">earlythunder/
+|-- .github/
+|   `-- workflows/
+|       |-- daily-prices.yml
+|       |-- validate.yml
+|       `-- weekly-scout.yml
+|-- .gitignore
+|-- AGENTS.md
+|-- CLAUDE.md
+|-- README.md
+|-- data/
+|   |-- blog-posts.json
+|   |-- blog.json
+|   |-- gap-fill/
+|   |   |-- ai-crypto.json
+|   |   |-- crypto-prices.json
+|   |   |-- depin.json
+|   |   |-- desci.json
+|   |   |-- energy-storage.json
+|   |   |-- equity-prices.json
+|   |   |-- fetch_equity_prices.py
+|   |   |-- longevity-bci.json
+|   |   |-- new-doc-1-6.json
+|   |   |-- new-doc-7-12.json
+|   |   |-- new-markets.json
+|   |   |-- restaking.json
+|   |   `-- seed-unique.json
+|   |-- merge-report.txt
+|   `-- opportunities.json
+|-- eslint.config.mjs
+|-- next-env.d.ts
+|-- next.config.ts
+|-- package.json
+|-- pnpm-lock.yaml
+|-- pnpm-workspace.yaml
+|-- postcss.config.mjs
+|-- public/
+|   |-- _headers
+|   |-- _redirects
+|   |-- favicon.svg
+|   `-- og-default.svg
+|-- scripts/
+|   |-- build-report.py
+|   |-- check-freshness.py
+|   |-- merge-all.py
+|   |-- merge-v2.py
+|   |-- requirements.txt
+|   |-- scout-scan.py
+|   |-- update-prices.py
+|   `-- validate-data.py
+|-- src/
+|   |-- app/
+|   |   |-- blog/
+|   |   |   |-- [slug]/
+
+|   |   |   `-- page.tsx
+|   |   |-- favicon.ico
+|   |   |-- globals.css
+|   |   |-- graveyard/
+|   |   |   `-- page.tsx
+|   |   |-- layout.tsx
+|   |   |-- methodology/
+|   |   |   `-- page.tsx
+|   |   |-- opportunities/
+|   |   |   |-- [slug]/
+
+|   |   |   `-- page.tsx
+|   |   |-- page.tsx
+|   |   |-- pricing/
+|   |   |   `-- page.tsx
+|   |   |-- robots.ts
+|   |   `-- sitemap.ts
+|   |-- components/
+|   |   |-- Analytics.tsx
+|   |   |-- EmailCapture.tsx
+|   |   |-- FilterBar.tsx
+|   |   |-- Footer.tsx
+|   |   |-- Header.tsx
+|   |   |-- JsonLd.tsx
+|   |   |-- OpportunityCard.tsx
+|   |   |-- OpportunityDetail.tsx
+|   |   |-- OpportunityTable.tsx
+|   |   |-- PaywallBlur.tsx
+|   |   |-- ScoreBar.tsx
+|   |   |-- SignalRadar.tsx
+|   |   |-- Ticker.tsx
+|   |   `-- TierBadge.tsx
+|   `-- lib/
+|       |-- constants.ts
+|       |-- data.ts
+|       |-- fonts.ts
+|       |-- format.ts
+|       |-- metadata.ts
+|       |-- pricing-data.ts
+|       |-- signal-details.ts
+|       |-- structured-data.ts
+|       `-- types.ts
+|-- state/
+
+|-- tsconfig.json
+|-- tsconfig.tsbuildinfo
+|-- worker/
+|   |-- package.json
+|   |-- src/
+|   |   |-- email.ts
+|   |   |-- index.ts
+|   |   |-- templates/
+|   |   |   `-- welcome.ts
+|   |   `-- validate.ts
+|   |-- tsconfig.json
+|   `-- wrangler.toml
+`-- wrangler.toml</div>
+</div>
+
+</div>
+
+<footer>
+    Early Thunder Intelligence Report | Generated 2026-04-13 23:20 | 155 Opportunities | 1579 Files | 46,814 Lines
+    <br>Not financial advice. Pattern match scores reflect research methodology, not investment recommendations.
+</footer>
+
+<script>
+var sortDir = {};
+function sortTable(colIdx, type) {
+    var table = document.getElementById('opp-table');
+    var tbody = table.querySelector('tbody');
+    var rows = Array.from(tbody.querySelectorAll('tr'));
+    var dir = sortDir[colIdx] === 'asc' ? 'desc' : 'asc';
+    sortDir[colIdx] = dir;
+    rows.sort(function(a, b) {
+        var aVal = a.cells[colIdx] ? a.cells[colIdx].textContent.trim() : '';
+        var bVal = b.cells[colIdx] ? b.cells[colIdx].textContent.trim() : '';
+        if (type === 'num') {
+            aVal = parseFloat(aVal) || 0;
+            bVal = parseFloat(bVal) || 0;
+            return dir === 'asc' ? aVal - bVal : bVal - aVal;
+        }
+        return dir === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+    });
+    for (var i = 0; i < rows.length; i++) tbody.appendChild(rows[i]);
+}
+function filterTable() {
+    var search = (document.getElementById('search').value || '').toLowerCase();
+    var cat = document.getElementById('filter-cat').value || '';
+    var ac = document.getElementById('filter-ac').value || '';
+    var tier = document.getElementById('filter-tier').value || '';
+    var rows = document.querySelectorAll('#opp-table tbody tr');
+    for (var i = 0; i < rows.length && i < 500; i++) {
+        var row = rows[i];
+        var name = row.querySelector('.name') ? row.querySelector('.name').textContent.toLowerCase() : '';
+        var tkr = row.querySelector('.ticker') ? row.querySelector('.ticker').textContent.toLowerCase() : '';
+        var matchSearch = !search || name.indexOf(search) >= 0 || tkr.indexOf(search) >= 0;
+        var matchCat = !cat || row.dataset.category === cat;
+        var matchAc = !ac || row.dataset.ac === ac;
+        var matchTier = !tier || row.dataset.tier === tier;
+        row.style.display = (matchSearch && matchCat && matchAc && matchTier) ? '' : 'none';
+    }
+}
+</script>
+</body>
+</html>

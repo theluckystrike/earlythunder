@@ -1,0 +1,46 @@
+{
+  "last_updated": "2026-05-07T07:11:42.484788+00:00",
+  "portfolio_size_usd": 10000.0,
+  "risk_per_trade_pct": 3,
+  "max_position_pct": 7,
+  "positions": [],
+  "watchlist": [
+    {
+      "name": "Commonware",
+      "ticker": null,
+      "coingecko_id": null,
+      "status": "pre_token",
+      "score": 85,
+      "trigger": "token_announcement",
+      "buy_if_fdv_under": 200000000,
+      "target_allocation_pct": 7,
+      "notes": "Pre-token. $34M raised at $63M seed. Stripe-backed. Alert on any token/airdrop news."
+    },
+    {
+      "name": "EkuboProtocol",
+      "ticker": "EKUBO",
+      "coingecko_id": "ekubo-protocol",
+      "status": "tradeable",
+      "score": 72,
+      "action": "scale_in",
+      "target_allocation_pct": 3,
+      "entry_price_target": 0.48,
+      "stop_loss_pct": 50,
+      "take_profit_targets": [
+        1.44,
+        4.8,
+        14.4
+      ],
+      "notes": "Thin liquidity ~$24K/pair. Scale in over 5+ days. StarkNet primary, Uniswap secondary."
+    },
+    {
+      "name": "KAIO",
+      "ticker": "KAIO",
+      "coingecko_id": "kaito",
+      "status": "monitor",
+      "score": 38,
+      "action": "pass",
+      "notes": "Nomura-backed RWA. $145M mcap too high for 1000x. Monitor for dips below $50M."
+    }
+  ]
+}

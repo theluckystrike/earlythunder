@@ -1,0 +1,1824 @@
+{
+  "extraction_metadata": {
+    "extracted_by": "ANALYST agent",
+    "extracted_date": "2026-04-13",
+    "source_documents": [
+      "compass_artifact_wf-897c427d (Asymmetric Opportunity Atlas)",
+      "compass_artifact_wf-926f59bf (1000x Opportunity Map)"
+    ],
+    "sections_covered": [12, 13, 14],
+    "total_opportunities": 28,
+    "total_meta_objects": 12
+  },
+
+  "opportunities": [
+    {
+      "id": "S12-001",
+      "name": "Time.fun (TIME Token)",
+      "ticker": "TIME",
+      "category": "Time_Tokenization",
+      "subcategory": "Creator Time Markets",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "Creators tokenize time into tradable minutes on Solana",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": "$96M", "date": "2026-04-13", "source": "1000x Opportunity Map"},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": "$3M", "source": "1000x Opportunity Map"},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "Solana DEX", "pair_or_url": "TIME/SOL"}
+      ],
+      "key_backers": [
+        {"name": "Brevan Howard Digital", "amount": null, "round": "Seed"},
+        {"name": "Coinbase Ventures", "amount": null, "round": "Seed"}
+      ],
+      "catalysts": [
+        {"event": "Base to Solana migration completed", "est_date": "2026", "impact": "medium"},
+        {"event": "Expansion beyond crypto-native audience to professionals", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Model unproven and currently limited to crypto-native audience", "severity": "high"},
+        {"risk": "TAM realization uncertain if concept does not expand beyond influencers", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 75, "evidence": "Time tokenization sounds absurd to mainstream — pure toy phase dismissal pattern"},
+        "working_code": {"score_suggestion": 60, "evidence": "Live product on Solana after Base migration, creators actively tokenizing time"},
+        "ideological_community": {"score_suggestion": 30, "evidence": "Limited to crypto-native audience currently"},
+        "developer_activity": {"score_suggestion": 40, "evidence": "No specific developer metrics mentioned"},
+        "smart_money_entry": {"score_suggestion": 70, "evidence": "Brevan Howard Digital and Coinbase Ventures backed with $3M"},
+        "narrative_clarity": {"score_suggestion": 80, "evidence": "Simple narrative: trade minutes of anyone's time"},
+        "hard_to_buy": {"score_suggestion": 50, "evidence": "On Solana DEX, not yet on major CEXs"},
+        "catalyst_proximity": {"score_suggestion": 40, "evidence": "No imminent catalysts identified beyond general adoption"}
+      },
+      "composite_score": 55.5,
+      "community_links": {"twitter": null, "website": "time.fun"}
+    },
+
+    {
+      "id": "S12-002",
+      "name": "Opulous",
+      "ticker": "OPUL",
+      "category": "Music_Royalties",
+      "subcategory": "Music Royalty DeFi",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "DeFi loans backed by music royalties on Algorand",
+      "quantitative_data": {
+        "price": {"value": "$0.06-0.18", "date": "2026-04-13", "source": "1000x Opportunity Map"},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "Algorand DEX / Exchanges", "pair_or_url": "OPUL"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Music industry tokenization adoption — $30B+ annual market vs $10-50M tokenized", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Tiny market with low liquidity", "severity": "high"},
+        {"risk": "Algorand ecosystem has limited DeFi activity", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "Music royalty tokenization is niche and largely ignored by mainstream crypto"},
+        "working_code": {"score_suggestion": 65, "evidence": "Live product offering DeFi loans backed by music royalties — lowest market cap liquid token in category"},
+        "ideological_community": {"score_suggestion": 25, "evidence": "No significant community data mentioned"},
+        "developer_activity": {"score_suggestion": 30, "evidence": "No developer metrics provided"},
+        "smart_money_entry": {"score_suggestion": 20, "evidence": "No notable backers mentioned"},
+        "narrative_clarity": {"score_suggestion": 70, "evidence": "Clear narrative: DeFi for music royalties"},
+        "hard_to_buy": {"score_suggestion": 60, "evidence": "On Algorand — not a mainstream chain for most investors"},
+        "catalyst_proximity": {"score_suggestion": 30, "evidence": "No imminent catalysts; depends on sector-wide adoption"}
+      },
+      "composite_score": 41.5,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-003",
+      "name": "Bolero",
+      "ticker": null,
+      "category": "Music_Royalties",
+      "subcategory": "Music IP Tokenization",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "Broadest IP approach for music on Polygon",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "airdrop_farming", "platform": "Polygon", "pair_or_url": null}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Token launch", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Pre-token with limited public data", "severity": "high"},
+        {"risk": "Music tokenization market unproven at scale", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "Music IP tokenization broadly dismissed"},
+        "working_code": {"score_suggestion": 45, "evidence": "On Polygon with broadest IP approach (master recordings, not just streaming)"},
+        "ideological_community": {"score_suggestion": 15, "evidence": "No community data provided"},
+        "developer_activity": {"score_suggestion": 20, "evidence": "No developer metrics"},
+        "smart_money_entry": {"score_suggestion": 10, "evidence": "No backers mentioned"},
+        "narrative_clarity": {"score_suggestion": 60, "evidence": "Clear niche: broadest music IP tokenization"},
+        "hard_to_buy": {"score_suggestion": 80, "evidence": "Pre-token, no direct investment mechanism"},
+        "catalyst_proximity": {"score_suggestion": 20, "evidence": "No timeline for token or major milestones"}
+      },
+      "composite_score": 34.75,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-004",
+      "name": "Royal.io",
+      "ticker": null,
+      "category": "Music_Royalties",
+      "subcategory": "Music Royalty Trading",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "Music royalty trading platform with $156K paid out",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": "$7.5M total trading volume", "period": "cumulative", "source": "1000x Opportunity Map"},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "airdrop_farming", "platform": "Royal.io", "pair_or_url": "https://royal.io"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "New products in development", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Very small trading volume ($7.5M cumulative)", "severity": "medium"},
+        {"risk": "No token — limited direct investment mechanism", "severity": "high"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 50, "evidence": "Music royalty tokens seen as niche"},
+        "working_code": {"score_suggestion": 70, "evidence": "$7.5M trading volume and $156K royalties actually paid to users — real product"},
+        "ideological_community": {"score_suggestion": 20, "evidence": "No community data"},
+        "developer_activity": {"score_suggestion": 30, "evidence": "New products in development mentioned but no specifics"},
+        "smart_money_entry": {"score_suggestion": 15, "evidence": "No notable backers mentioned in documents"},
+        "narrative_clarity": {"score_suggestion": 65, "evidence": "Simple: buy shares in music royalties, get paid"},
+        "hard_to_buy": {"score_suggestion": 75, "evidence": "No token, platform-only access"},
+        "catalyst_proximity": {"score_suggestion": 25, "evidence": "New products planned but no dates"}
+      },
+      "composite_score": 40.25,
+      "community_links": {"twitter": null, "website": "https://royal.io"}
+    },
+
+    {
+      "id": "S12-005",
+      "name": "Zora Attention Markets",
+      "ticker": "ZORA",
+      "category": "Attention_Markets",
+      "subcategory": "Cultural Trend Trading",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "Trade tokens tied to viral memes and cultural trends",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "Solana DEX", "pair_or_url": "ZORA"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Launched Attention Markets on Solana February 2026", "est_date": "2026-02", "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Highly speculative attention economy model", "severity": "high"},
+        {"risk": "Regulatory risk around culture/meme trading", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 85, "evidence": "Trading tokens tied to memes and hashtags is the definition of a toy phase concept"},
+        "working_code": {"score_suggestion": 55, "evidence": "Launched on Solana in February 2026 — live product"},
+        "ideological_community": {"score_suggestion": 35, "evidence": "Zora has a dedicated creator community from NFT era"},
+        "developer_activity": {"score_suggestion": 40, "evidence": "Active development with Solana launch"},
+        "smart_money_entry": {"score_suggestion": 30, "evidence": "No specific backer data for attention markets product"},
+        "narrative_clarity": {"score_suggestion": 75, "evidence": "Simple: trade cultural attention as tokens"},
+        "hard_to_buy": {"score_suggestion": 55, "evidence": "Earliest-stage pure attention market play"},
+        "catalyst_proximity": {"score_suggestion": 45, "evidence": "Just launched Feb 2026 — early growth phase"}
+      },
+      "composite_score": 51.0,
+      "community_links": {"twitter": null, "website": "https://zora.co"}
+    },
+
+    {
+      "id": "S12-006",
+      "name": "Farcaster / $DEGEN Community Token",
+      "ticker": "DEGEN",
+      "category": "Attention_Markets",
+      "subcategory": "Decentralized Social Protocol",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "Decentralized social protocol; $DEGEN is community token",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": "$180M VC (refunded after Neynar acquisition)", "source": "Asymmetric Opportunity Atlas"},
+        "revenue_or_volume": {"value": "$2.8M lifetime protocol revenue", "period": "cumulative", "source": "Asymmetric Opportunity Atlas"},
+        "user_count": {"value": "40-60K DAU (genuine Power Badge DAU ~4,360)", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "DEX", "pair_or_url": "$DEGEN community token"}
+      ],
+      "key_backers": [
+        {"name": "Neynar (acquired protocol Jan 2026)", "amount": null, "round": "Acquisition"}
+      ],
+      "catalysts": [
+        {"event": "NO official Farcaster token coming — Neynar acquired protocol, $180M VC refunded", "est_date": "2026-01", "impact": "low"}
+      ],
+      "risks": [
+        {"risk": "No official Farcaster token — airdrop is dead", "severity": "critical"},
+        {"risk": "Peak DAU was 80-100K but genuine Power Badge DAU only 4,360", "severity": "high"},
+        {"risk": "$DEGEN is community-created, not protocol-official", "severity": "high"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 40, "evidence": "Farcaster was seen as serious crypto social, but acquisition killed token thesis"},
+        "working_code": {"score_suggestion": 70, "evidence": "Working protocol with $2.8M lifetime revenue, 40-60K DAU"},
+        "ideological_community": {"score_suggestion": 65, "evidence": "Strong builder community on Warpcast; $DEGEN developed organically"},
+        "developer_activity": {"score_suggestion": 50, "evidence": "Active protocol but no longer on independent token path"},
+        "smart_money_entry": {"score_suggestion": 20, "evidence": "$180M VC was refunded — smart money exited"},
+        "narrative_clarity": {"score_suggestion": 55, "evidence": "Decentralized social is clear but token narrative collapsed"},
+        "hard_to_buy": {"score_suggestion": 45, "evidence": "$DEGEN available on DEX but Farcaster itself has no token"},
+        "catalyst_proximity": {"score_suggestion": 10, "evidence": "No token launch catalyst — acquisition killed the airdrop"}
+      },
+      "composite_score": 41.25,
+      "community_links": {"twitter": null, "website": "https://warpcast.com"}
+    },
+
+    {
+      "id": "S12-007",
+      "name": "Story Protocol",
+      "ticker": "IP",
+      "category": "Content_Provenance",
+      "subcategory": "IP Tokenization Layer 1",
+      "status": "token_live",
+      "tier_suggestion": "3",
+      "one_liner": "a16z-backed L1 for IP; crushed by C2PA competition",
+      "quantitative_data": {
+        "price": {"value": "$0.495", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": "$500M", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": "$14.89", "date": null, "source": "Asymmetric Opportunity Atlas"},
+        "drawdown_from_ath": {"value": "-96.7%", "source": "Asymmetric Opportunity Atlas"},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": "Less than $100 daily on-chain revenue", "period": "daily", "source": "Asymmetric Opportunity Atlas / DeFiLlama"},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "CEX/DEX", "pair_or_url": "IP"}
+      ],
+      "key_backers": [
+        {"name": "a16z", "amount": null, "round": null}
+      ],
+      "catalysts": [
+        {"event": "IP tokenization adoption", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Less than $100 daily on-chain revenue despite $500M market cap", "severity": "critical"},
+        {"risk": "C2PA (non-blockchain) has 6,000+ members and hardware adoption from Leica, Sony, Samsung, Google Pixel — becoming dominant standard", "severity": "critical"},
+        {"risk": "Co-founder departed August 2025; 10% staff cut March 2026", "severity": "high"},
+        {"risk": "Down 96.7% from ATH — may not recover", "severity": "high"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 30, "evidence": "Not dismissed as a toy — was hyped. Now dismissed as failed, different dynamic"},
+        "working_code": {"score_suggestion": 35, "evidence": "Live L1 but less than $100/day revenue shows near-zero usage"},
+        "ideological_community": {"score_suggestion": 25, "evidence": "No strong ideological community mentioned"},
+        "developer_activity": {"score_suggestion": 20, "evidence": "10% staff cut, co-founder departure signal declining activity"},
+        "smart_money_entry": {"score_suggestion": 50, "evidence": "a16z backed but no evidence of continued support post-crash"},
+        "narrative_clarity": {"score_suggestion": 55, "evidence": "IP on blockchain is clear but C2PA is winning the non-crypto approach"},
+        "hard_to_buy": {"score_suggestion": 20, "evidence": "Available on exchanges, not hard to buy"},
+        "catalyst_proximity": {"score_suggestion": 15, "evidence": "No near-term catalysts; competition from C2PA growing"}
+      },
+      "composite_score": 30.25,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-008",
+      "name": "Worldcoin / World",
+      "ticker": "WLD",
+      "category": "Decentralized_Identity",
+      "subcategory": "Biometric Identity + Wallet",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "Biometric identity with 26M+ users and EU catalyst",
+      "quantitative_data": {
+        "price": {"value": "$0.28", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": "-97%", "source": "Asymmetric Opportunity Atlas"},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "26M+ World App users, 15M+ verified", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "Major CEX (Binance, Coinbase)", "pair_or_url": "WLD/USDT"}
+      ],
+      "key_backers": [
+        {"name": "Sam Altman (co-founder)", "amount": null, "round": null}
+      ],
+      "catalysts": [
+        {"event": "Daily unlock rate cut 43% starting July 24, 2026", "est_date": "2026-07-24", "impact": "high"},
+        {"event": "EU eIDAS 2.0 enforcement begins June 2026 — member states must provide digital identity wallets", "est_date": "2026-06", "impact": "high"},
+        {"event": "EU legal acceptance of digital identity mandatory from 2027", "est_date": "2027", "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Down 97% from ATH with continued token unlocks", "severity": "high"},
+        {"risk": "Privacy and biometric data concerns globally", "severity": "high"},
+        {"risk": "Regulatory bans in multiple jurisdictions", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 50, "evidence": "Actively dismissed by privacy advocates and crypto purists as dystopian — but 26M users"},
+        "working_code": {"score_suggestion": 85, "evidence": "26M+ users, 15M+ verified — massive working product"},
+        "ideological_community": {"score_suggestion": 40, "evidence": "Users are more pragmatic than ideological; some anti-community"},
+        "developer_activity": {"score_suggestion": 60, "evidence": "Active development, continuous user onboarding"},
+        "smart_money_entry": {"score_suggestion": 65, "evidence": "Sam Altman co-founded; major VC backing historically"},
+        "narrative_clarity": {"score_suggestion": 70, "evidence": "Proof of personhood for the AI age — very clear"},
+        "hard_to_buy": {"score_suggestion": 15, "evidence": "Widely available on major exchanges"},
+        "catalyst_proximity": {"score_suggestion": 85, "evidence": "EU eIDAS June 2026, unlock cut July 2026 — two major catalysts within months"}
+      },
+      "composite_score": 62.0,
+      "community_links": {"twitter": null, "website": "https://worldcoin.org"}
+    },
+
+    {
+      "id": "S12-009",
+      "name": "Galxe",
+      "ticker": null,
+      "category": "Decentralized_Identity",
+      "subcategory": "On-chain Credential Platform",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "14M+ active users with 4000+ partner credential platform",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "14M+ active users, 4,000+ partners", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "CEX", "pair_or_url": "GAL"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "EU eIDAS 2.0 digital identity mandate", "est_date": "2026-06", "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Credential platform value capture unclear", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 30, "evidence": "Not heavily dismissed — widely used for airdrop campaigns"},
+        "working_code": {"score_suggestion": 90, "evidence": "14M+ active users across 4,000+ partner projects — massive adoption"},
+        "ideological_community": {"score_suggestion": 35, "evidence": "Users are utilitarian rather than ideological"},
+        "developer_activity": {"score_suggestion": 55, "evidence": "4,000+ partner integrations signal strong developer ecosystem"},
+        "smart_money_entry": {"score_suggestion": 30, "evidence": "No notable backer data in documents"},
+        "narrative_clarity": {"score_suggestion": 50, "evidence": "On-chain credentials and identity is clear but not exciting"},
+        "hard_to_buy": {"score_suggestion": 20, "evidence": "Available on major exchanges"},
+        "catalyst_proximity": {"score_suggestion": 40, "evidence": "EU eIDAS is a potential catalyst but indirect"}
+      },
+      "composite_score": 47.25,
+      "community_links": {"twitter": null, "website": "https://galxe.com"}
+    },
+
+    {
+      "id": "S12-010",
+      "name": "Human Passport (formerly Gitcoin Passport)",
+      "ticker": null,
+      "category": "Decentralized_Identity",
+      "subcategory": "Sybil Resistance",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "2M+ user Sybil resistance identity verification layer",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "2M+ users", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [
+        {"type": "airdrop_farming", "platform": "Gitcoin ecosystem", "pair_or_url": "https://passport.gitcoin.co"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Potential token launch", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "No token announced — may never tokenize", "severity": "high"},
+        {"risk": "Competes with Worldcoin and other identity solutions", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 35, "evidence": "Not heavily dismissed but not hyped either — quiet utility"},
+        "working_code": {"score_suggestion": 75, "evidence": "2M+ users providing Sybil resistance — real working product"},
+        "ideological_community": {"score_suggestion": 50, "evidence": "Gitcoin community is ideologically driven toward public goods"},
+        "developer_activity": {"score_suggestion": 45, "evidence": "Part of Gitcoin ecosystem with active development"},
+        "smart_money_entry": {"score_suggestion": 25, "evidence": "No specific funding data"},
+        "narrative_clarity": {"score_suggestion": 55, "evidence": "Sybil resistance is clear but niche"},
+        "hard_to_buy": {"score_suggestion": 85, "evidence": "No token — can only farm by using the product"},
+        "catalyst_proximity": {"score_suggestion": 20, "evidence": "No timeline for token or major events"}
+      },
+      "composite_score": 45.0,
+      "community_links": {"twitter": null, "website": "https://passport.gitcoin.co"}
+    },
+
+    {
+      "id": "S12-011",
+      "name": "Privado ID (formerly Polygon ID)",
+      "ticker": null,
+      "category": "Decentralized_Identity",
+      "subcategory": "ZK Identity Verification",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "ZK-proof identity with sub-second mobile verification",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "airdrop_farming", "platform": "Privado ID", "pair_or_url": null}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "EU eIDAS 2.0 mandate for digital identity wallets", "est_date": "2026-06", "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Pre-token with no clear tokenization timeline", "severity": "high"},
+        {"risk": "Competition from Worldcoin, Galxe, Human Passport", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 40, "evidence": "ZK identity is technically respected but not widely known"},
+        "working_code": {"score_suggestion": 60, "evidence": "Sub-second mobile verification — working ZK-proof identity product"},
+        "ideological_community": {"score_suggestion": 35, "evidence": "Privacy-focused community but size unknown"},
+        "developer_activity": {"score_suggestion": 45, "evidence": "Formerly Polygon ID — has development history"},
+        "smart_money_entry": {"score_suggestion": 30, "evidence": "Polygon ecosystem backing implied but not explicit"},
+        "narrative_clarity": {"score_suggestion": 60, "evidence": "ZK identity is technically clear"},
+        "hard_to_buy": {"score_suggestion": 85, "evidence": "No token exists"},
+        "catalyst_proximity": {"score_suggestion": 40, "evidence": "EU eIDAS June 2026 is relevant catalyst"}
+      },
+      "composite_score": 46.0,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-012",
+      "name": "Nexus Mutual",
+      "ticker": "NXM",
+      "category": "Decentralized_Insurance",
+      "subcategory": "Crypto Cover + Real-World Insurance",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "Decentralized insurance with $6B protected and real claims history",
+      "quantitative_data": {
+        "price": {"value": "~$55", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": "~$100M", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "10,000+ members", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "DEX / Nexus Mutual platform", "pair_or_url": "NXM"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "InShare partnership expanding into real-world insurance ($2.3M coverage for 5,000+ UK shopkeepers)", "est_date": "2026", "impact": "high"},
+        {"event": "Growing DeFi exploit environment ($757M+ stolen YTD 2026) increases demand for cover", "est_date": "ongoing", "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Regulatory uncertainty around decentralized insurance", "severity": "high"},
+        {"risk": "Limited to crypto-native user base historically", "severity": "medium"},
+        {"risk": "Concentration risk if major exploit hits covered protocol", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 45, "evidence": "Decentralized insurance was dismissed for years; now has proven claims track record"},
+        "working_code": {"score_suggestion": 90, "evidence": "$6B+ protected, spotless claims history through FTX/Terra Luna/exploits, coverage under 1% annually"},
+        "ideological_community": {"score_suggestion": 55, "evidence": "10,000+ members with genuine mutual structure"},
+        "developer_activity": {"score_suggestion": 50, "evidence": "Expanding into real-world via InShare partnership"},
+        "smart_money_entry": {"score_suggestion": 35, "evidence": "No specific VC data but institutional partnerships (InShare)"},
+        "narrative_clarity": {"score_suggestion": 65, "evidence": "Decentralized insurance is clear and needed — $757M stolen YTD"},
+        "hard_to_buy": {"score_suggestion": 50, "evidence": "NXM requires KYC via Nexus platform; wNXM available on DEX"},
+        "catalyst_proximity": {"score_suggestion": 55, "evidence": "InShare partnership active, exploit environment driving demand"}
+      },
+      "composite_score": 58.0,
+      "community_links": {"twitter": null, "website": "https://nexusmutual.io"}
+    },
+
+    {
+      "id": "S12-013",
+      "name": "Etherisc",
+      "ticker": null,
+      "category": "Decentralized_Insurance",
+      "subcategory": "Parametric Crop Microinsurance",
+      "status": "token_live",
+      "tier_suggestion": "3",
+      "one_liner": "22K Kenyan farmers insured with parametric crop coverage",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "22,000+ Kenyan farmers insured", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "DEX", "pair_or_url": "DIP token"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Expansion to additional emerging markets", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Very small scale (22K farmers)", "severity": "medium"},
+        {"risk": "Emerging market risk and regulatory challenges", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 60, "evidence": "Crop insurance on blockchain for Kenyan farmers sounds absurd to mainstream finance"},
+        "working_code": {"score_suggestion": 70, "evidence": "22,000+ farmers actually insured — real deployed product"},
+        "ideological_community": {"score_suggestion": 45, "evidence": "Mission-driven team focused on financial inclusion"},
+        "developer_activity": {"score_suggestion": 35, "evidence": "No developer metrics provided"},
+        "smart_money_entry": {"score_suggestion": 15, "evidence": "No notable backers mentioned"},
+        "narrative_clarity": {"score_suggestion": 70, "evidence": "Microinsurance for underserved farmers is compelling narrative"},
+        "hard_to_buy": {"score_suggestion": 60, "evidence": "DIP token on smaller exchanges"},
+        "catalyst_proximity": {"score_suggestion": 25, "evidence": "No imminent catalysts mentioned"}
+      },
+      "composite_score": 44.75,
+      "community_links": {"twitter": null, "website": "https://etherisc.com"}
+    },
+
+    {
+      "id": "S12-014",
+      "name": "Sentinel",
+      "ticker": "DVPN",
+      "category": "Privacy_Infrastructure",
+      "subcategory": "Decentralized VPN",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "Decentralized VPN with 10M+ users across 90+ countries",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "10M+ users via RYN VPN, 90+ countries", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "DEX / CEX", "pair_or_url": "DVPN"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "VPN industry is $50B+ — tiny market cap relative to industry", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Regulatory risk around VPN services in authoritarian countries", "severity": "medium"},
+        {"risk": "Tiny market cap relative to user count may reflect monetization difficulty", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 40, "evidence": "Decentralized VPN is respected conceptually but not taken seriously by most investors"},
+        "working_code": {"score_suggestion": 90, "evidence": "10M+ users in 90+ countries — massive working product"},
+        "ideological_community": {"score_suggestion": 60, "evidence": "Privacy is a strong ideological driver; censorship-resistant VPN has true believers"},
+        "developer_activity": {"score_suggestion": 45, "evidence": "No specific developer metrics"},
+        "smart_money_entry": {"score_suggestion": 15, "evidence": "No notable backers mentioned"},
+        "narrative_clarity": {"score_suggestion": 70, "evidence": "Decentralized VPN — simple, clear, needed"},
+        "hard_to_buy": {"score_suggestion": 45, "evidence": "Available on DEX/CEX but not major exchanges"},
+        "catalyst_proximity": {"score_suggestion": 30, "evidence": "No specific near-term catalysts"}
+      },
+      "composite_score": 50.25,
+      "community_links": {"twitter": null, "website": "https://sentinel.co"}
+    },
+
+    {
+      "id": "S12-015",
+      "name": "Nym Network",
+      "ticker": null,
+      "category": "Privacy_Infrastructure",
+      "subcategory": "Mixnet Privacy Layer",
+      "status": "token_live",
+      "tier_suggestion": "2",
+      "one_liner": "True mixnet privacy infrastructure backed by a16z/Polychain",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": "$26M", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": "$43M", "source": "Asymmetric Opportunity Atlas"},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "DEX / CEX", "pair_or_url": "NYM"}
+      ],
+      "key_backers": [
+        {"name": "a16z", "amount": null, "round": null},
+        {"name": "Polychain", "amount": null, "round": null},
+        {"name": "Binance Labs", "amount": null, "round": null}
+      ],
+      "catalysts": [
+        {"event": "Growing surveillance concerns and privacy demand", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "$26M market cap with $43M raised — trading below funding level", "severity": "high"},
+        {"risk": "Mixnet technology may be too complex for mass adoption", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "Mixnet privacy sounds obscure and is dismissed by mainstream"},
+        "working_code": {"score_suggestion": 60, "evidence": "True mixnet (not just IP masking) — technically superior to VPN"},
+        "ideological_community": {"score_suggestion": 55, "evidence": "Privacy-focused community with cypherpunk ethos"},
+        "developer_activity": {"score_suggestion": 45, "evidence": "Active project but no specific dev metrics"},
+        "smart_money_entry": {"score_suggestion": 80, "evidence": "a16z, Polychain Capital, and Binance Labs all invested — $43M total raised"},
+        "narrative_clarity": {"score_suggestion": 55, "evidence": "Mixnet privacy is technically clear but hard to explain simply"},
+        "hard_to_buy": {"score_suggestion": 50, "evidence": "Available but not on top-tier exchanges"},
+        "catalyst_proximity": {"score_suggestion": 30, "evidence": "No near-term catalysts identified"}
+      },
+      "composite_score": 54.75,
+      "community_links": {"twitter": null, "website": "https://nymtech.net"}
+    },
+
+    {
+      "id": "S12-016",
+      "name": "HOPR",
+      "ticker": "HOPR",
+      "category": "Privacy_Infrastructure",
+      "subcategory": "Ethereum Validator Privacy",
+      "status": "token_live",
+      "tier_suggestion": "3",
+      "one_liner": "Ethereum validator privacy network at $7M market cap",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": "$7M", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "DEX", "pair_or_url": "HOPR"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Ethereum validator privacy becoming more important", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Extremely small market cap ($7M) — very low liquidity", "severity": "high"},
+        {"risk": "Niche use case may limit growth", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 50, "evidence": "Validator privacy is niche and largely ignored"},
+        "working_code": {"score_suggestion": 50, "evidence": "Working product focused on Ethereum validator privacy"},
+        "ideological_community": {"score_suggestion": 40, "evidence": "Privacy community overlap"},
+        "developer_activity": {"score_suggestion": 35, "evidence": "No specific developer data"},
+        "smart_money_entry": {"score_suggestion": 10, "evidence": "No notable backers mentioned"},
+        "narrative_clarity": {"score_suggestion": 45, "evidence": "Ethereum validator privacy — clear but very niche"},
+        "hard_to_buy": {"score_suggestion": 65, "evidence": "Very small cap, DEX only, low liquidity"},
+        "catalyst_proximity": {"score_suggestion": 20, "evidence": "No near-term catalysts"}
+      },
+      "composite_score": 36.0,
+      "community_links": {"twitter": null, "website": "https://hoprnet.org"}
+    },
+
+    {
+      "id": "S12-017",
+      "name": "KlimaDAO / Klima Protocol",
+      "ticker": "KLIMA",
+      "category": "Carbon_Credits",
+      "subcategory": "On-chain Carbon Market",
+      "status": "graveyard",
+      "tier_suggestion": null,
+      "one_liner": "GRAVEYARD: -99.99% from ATH, rebranded as Klima Protocol",
+      "quantitative_data": {
+        "price": {"value": "$0.04", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": "$4,950", "date": null, "source": "Asymmetric Opportunity Atlas"},
+        "drawdown_from_ath": {"value": "-99.99%", "source": "Asymmetric Opportunity Atlas"},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "DEX", "pair_or_url": "KLIMA"}
+      ],
+      "key_backers": [],
+      "catalysts": [],
+      "risks": [
+        {"risk": "99.99% decline from ATH — effectively dead as investment", "severity": "critical"},
+        {"risk": "Ditched original treasury model — thesis fundamentally broken", "severity": "critical"},
+        {"risk": "Credit quality severely criticized — 99.9% of BCT credits too old for CORSIA compliance", "severity": "critical"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 5, "evidence": "No longer dismissed as toy — dismissed as dead"},
+        "working_code": {"score_suggestion": 25, "evidence": "Technically functional but rebranded and ditched original model"},
+        "ideological_community": {"score_suggestion": 15, "evidence": "Community largely dispersed after 99.99% decline"},
+        "developer_activity": {"score_suggestion": 10, "evidence": "Rebranding signals minimal development momentum"},
+        "smart_money_entry": {"score_suggestion": 5, "evidence": "No smart money interest at current levels"},
+        "narrative_clarity": {"score_suggestion": 20, "evidence": "Original narrative (carbon offset treasury) abandoned"},
+        "hard_to_buy": {"score_suggestion": 30, "evidence": "DEX only, minimal liquidity"},
+        "catalyst_proximity": {"score_suggestion": 5, "evidence": "No catalysts visible"}
+      },
+      "composite_score": 13.0,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-018",
+      "name": "Toucan BCT",
+      "ticker": "BCT",
+      "category": "Carbon_Credits",
+      "subcategory": "Base Carbon Tonne Token",
+      "status": "graveyard",
+      "tier_suggestion": null,
+      "one_liner": "GRAVEYARD: $0.08 from $8.60, carbon credits too old",
+      "quantitative_data": {
+        "price": {"value": "$0.08", "date": "2026-04-13", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": "$8.60", "date": null, "source": "Asymmetric Opportunity Atlas"},
+        "drawdown_from_ath": {"value": "-99.1%", "source": "Calculated from $0.08/$8.60"},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "DEX", "pair_or_url": "BCT"}
+      ],
+      "key_backers": [],
+      "catalysts": [],
+      "risks": [
+        {"risk": "99.9% of BCT credits too old for CORSIA compliance — fundamental quality issue", "severity": "critical"},
+        {"risk": "Effectively dead as investment per both source documents", "severity": "critical"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 5, "evidence": "Not dismissed as toy — dismissed as failed"},
+        "working_code": {"score_suggestion": 20, "evidence": "Technically functional but credit quality is fatally flawed"},
+        "ideological_community": {"score_suggestion": 10, "evidence": "Community dispersed"},
+        "developer_activity": {"score_suggestion": 10, "evidence": "No development momentum noted"},
+        "smart_money_entry": {"score_suggestion": 5, "evidence": "No smart money interest"},
+        "narrative_clarity": {"score_suggestion": 15, "evidence": "Carbon credits narrative undermined by quality issues"},
+        "hard_to_buy": {"score_suggestion": 30, "evidence": "DEX only"},
+        "catalyst_proximity": {"score_suggestion": 5, "evidence": "No catalysts"}
+      },
+      "composite_score": 11.25,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-019",
+      "name": "Dark Forest (On-chain Game)",
+      "ticker": null,
+      "category": "On_Chain_Gaming",
+      "subcategory": "Fully On-Chain Game (FOCG)",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "Pioneer FOCG with real on-chain economics, hundreds of users",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "Hundreds", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [],
+      "key_backers": [],
+      "catalysts": [],
+      "risks": [
+        {"risk": "User counts in the hundreds — no investable token at meaningful scale", "severity": "critical"},
+        {"risk": "No investable pure-FOCG token exists", "severity": "critical"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 80, "evidence": "FOCGs are dismissed by mainstream gaming and crypto alike"},
+        "working_code": {"score_suggestion": 55, "evidence": "Real on-chain economic systems functioning — genuine FOCG"},
+        "ideological_community": {"score_suggestion": 50, "evidence": "Small but dedicated community of on-chain gaming enthusiasts"},
+        "developer_activity": {"score_suggestion": 40, "evidence": "Pioneer project with ZK-proof game mechanics"},
+        "smart_money_entry": {"score_suggestion": 10, "evidence": "No notable investment"},
+        "narrative_clarity": {"score_suggestion": 45, "evidence": "Fully on-chain gaming is interesting but niche"},
+        "hard_to_buy": {"score_suggestion": 95, "evidence": "No investable token exists"},
+        "catalyst_proximity": {"score_suggestion": 10, "evidence": "No near-term catalysts for investment"}
+      },
+      "composite_score": 40.75,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-020",
+      "name": "Loot Survivor (On-chain Game)",
+      "ticker": null,
+      "category": "On_Chain_Gaming",
+      "subcategory": "Fully On-Chain Game (FOCG)",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "On-chain survival game with real economic systems",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "Hundreds", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [],
+      "key_backers": [],
+      "catalysts": [],
+      "risks": [
+        {"risk": "User counts in the hundreds", "severity": "critical"},
+        {"risk": "No investable token", "severity": "critical"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 80, "evidence": "FOCGs broadly dismissed"},
+        "working_code": {"score_suggestion": 50, "evidence": "Functioning on-chain game"},
+        "ideological_community": {"score_suggestion": 45, "evidence": "Small dedicated gaming community"},
+        "developer_activity": {"score_suggestion": 35, "evidence": "Active but small"},
+        "smart_money_entry": {"score_suggestion": 5, "evidence": "No investment data"},
+        "narrative_clarity": {"score_suggestion": 40, "evidence": "On-chain survival game — niche"},
+        "hard_to_buy": {"score_suggestion": 95, "evidence": "No investable token"},
+        "catalyst_proximity": {"score_suggestion": 5, "evidence": "No catalysts"}
+      },
+      "composite_score": 37.75,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-021",
+      "name": "Mithraeum (On-chain Game)",
+      "ticker": null,
+      "category": "On_Chain_Gaming",
+      "subcategory": "Fully On-Chain Game (FOCG)",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "FOCG with on-chain economic systems, tiny userbase",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": "Hundreds", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"}
+      },
+      "entry_mechanisms": [],
+      "key_backers": [],
+      "catalysts": [],
+      "risks": [
+        {"risk": "User counts in the hundreds", "severity": "critical"},
+        {"risk": "No investable token", "severity": "critical"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 80, "evidence": "FOCGs broadly dismissed"},
+        "working_code": {"score_suggestion": 50, "evidence": "Functioning on-chain game"},
+        "ideological_community": {"score_suggestion": 45, "evidence": "Small dedicated community"},
+        "developer_activity": {"score_suggestion": 35, "evidence": "Active but small"},
+        "smart_money_entry": {"score_suggestion": 5, "evidence": "No investment data"},
+        "narrative_clarity": {"score_suggestion": 40, "evidence": "On-chain game — niche"},
+        "hard_to_buy": {"score_suggestion": 95, "evidence": "No investable token"},
+        "catalyst_proximity": {"score_suggestion": 5, "evidence": "No catalysts"}
+      },
+      "composite_score": 37.75,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-022",
+      "name": "MUD by Lattice (Gaming Infrastructure)",
+      "ticker": null,
+      "category": "On_Chain_Gaming",
+      "subcategory": "FOCG Infrastructure / Engine",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "On-chain game engine where long-term FOCG value accrues",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Growth of FOCG ecosystem", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "No token — infrastructure layer only", "severity": "high"},
+        {"risk": "FOCG ecosystem still tiny (hundreds of users)", "severity": "high"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 75, "evidence": "On-chain game engines dismissed; documents say infrastructure is where value accrues"},
+        "working_code": {"score_suggestion": 55, "evidence": "Working infrastructure framework for FOCGs"},
+        "ideological_community": {"score_suggestion": 40, "evidence": "Developer community building on MUD"},
+        "developer_activity": {"score_suggestion": 50, "evidence": "Active framework development by Lattice"},
+        "smart_money_entry": {"score_suggestion": 15, "evidence": "No specific funding data"},
+        "narrative_clarity": {"score_suggestion": 50, "evidence": "Unity for on-chain games — clear but very early"},
+        "hard_to_buy": {"score_suggestion": 95, "evidence": "No token, no direct investment"},
+        "catalyst_proximity": {"score_suggestion": 15, "evidence": "FOCG adoption still nascent"}
+      },
+      "composite_score": 44.0,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-023",
+      "name": "Dojo (StarkNet Gaming Infrastructure)",
+      "ticker": null,
+      "category": "On_Chain_Gaming",
+      "subcategory": "FOCG Infrastructure / Engine",
+      "status": "pre_token",
+      "tier_suggestion": "3",
+      "one_liner": "StarkNet-based on-chain game engine for FOCGs",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "token_purchase", "platform": "StarkNet ecosystem", "pair_or_url": "STRK (indirect via StarkNet token)"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Growth of StarkNet FOCG ecosystem", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "No direct token — only indirect exposure via STRK", "severity": "high"},
+        {"risk": "StarkNet ecosystem still maturing", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 75, "evidence": "On-chain gaming infrastructure on StarkNet is deeply niche"},
+        "working_code": {"score_suggestion": 50, "evidence": "Working framework on StarkNet"},
+        "ideological_community": {"score_suggestion": 40, "evidence": "StarkNet developer community"},
+        "developer_activity": {"score_suggestion": 45, "evidence": "Active development on StarkNet"},
+        "smart_money_entry": {"score_suggestion": 15, "evidence": "No specific funding data for Dojo itself"},
+        "narrative_clarity": {"score_suggestion": 45, "evidence": "StarkNet game engine — clear but very niche"},
+        "hard_to_buy": {"score_suggestion": 90, "evidence": "No direct token, only indirect via STRK"},
+        "catalyst_proximity": {"score_suggestion": 15, "evidence": "No near-term catalysts"}
+      },
+      "composite_score": 41.25,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S12-024",
+      "name": "Cadiz Inc",
+      "ticker": "CDZI",
+      "category": "New_Market_Structures",
+      "subcategory": "Water Rights Infrastructure",
+      "status": "public_equity",
+      "tier_suggestion": "2",
+      "one_liner": "Water rights play with Mojave Groundwater Bank, $10-15 target",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "NYSE/NASDAQ", "pair_or_url": "CDZI"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Analyst price target $10-15/share", "est_date": null, "impact": "medium"},
+        {"event": "Water scarcity increasing in American Southwest", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Water rights regulatory and political risk", "severity": "medium"},
+        {"risk": "Long development timeline for groundwater bank", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 55, "evidence": "Water rights as investment dismissed by traditional equity investors"},
+        "working_code": {"score_suggestion": 45, "evidence": "Mojave Groundwater Bank in development but not yet fully operational"},
+        "ideological_community": {"score_suggestion": 20, "evidence": "No strong community — traditional equity"},
+        "developer_activity": {"score_suggestion": 30, "evidence": "Infrastructure development ongoing"},
+        "smart_money_entry": {"score_suggestion": 30, "evidence": "Analyst coverage with $10-15 target"},
+        "narrative_clarity": {"score_suggestion": 75, "evidence": "Water scarcity in the American Southwest — powerful simple narrative"},
+        "hard_to_buy": {"score_suggestion": 10, "evidence": "Public equity — easy to buy"},
+        "catalyst_proximity": {"score_suggestion": 40, "evidence": "Ongoing water scarcity but no imminent trigger"}
+      },
+      "composite_score": 38.25,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S13-001",
+      "name": "Trump Media & Technology Group / TAE Technologies (Fusion)",
+      "ticker": "DJT",
+      "category": "Public_Equity_Proxy",
+      "subcategory": "Nuclear Fusion",
+      "status": "public_equity",
+      "tier_suggestion": "1",
+      "one_liner": "First pure-play fusion stock via TAE merger at $6B+ value",
+      "quantitative_data": {
+        "price": {"value": "$9.18", "date": "2026-04-02", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": "~$2.5B", "date": "2026-04-02", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": "$27.78 (52-wk high)", "date": null, "source": "Asymmetric Opportunity Atlas"},
+        "drawdown_from_ath": {"value": "-67% from 52-wk high", "source": "Calculated"},
+        "funding_raised": {"value": "$300M cash (TMTG providing $200M at signing + $100M at S-4 filing)", "source": "Asymmetric Opportunity Atlas"},
+        "revenue_or_volume": {"value": "$3.7M TTM revenue, -$712M net loss TTM", "period": "TTM", "source": "Asymmetric Opportunity Atlas"},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "DJT"}
+      ],
+      "key_backers": [
+        {"name": "Google (TAE Technology)", "amount": null, "round": "Strategic"},
+        {"name": "Chevron (TAE Technology)", "amount": null, "round": "Strategic"},
+        {"name": "Goldman Sachs (TAE Technology)", "amount": null, "round": "Strategic"}
+      ],
+      "catalysts": [
+        {"event": "TAE/TMTG merger closing — creates first pure-play fusion stock", "est_date": "mid-2026 (May 1 target)", "impact": "high"},
+        {"event": "Truth Social spin-off into separate public entity (SpinCo via TVA)", "est_date": "2026", "impact": "high"},
+        {"event": "TAE skipped 6th-gen Copernicus machine — direct to commercial Da Vinci prototype", "est_date": "2026+", "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Net loss of $712M TTM on only $3.7M revenue", "severity": "critical"},
+        {"risk": "Extreme Trump political brand risk (beta 4.54)", "severity": "critical"},
+        {"risk": "Fusion net energy gain not yet demonstrated by TAE", "severity": "high"},
+        {"risk": "Merger may not close — no definitive agreement for SpinCo yet", "severity": "high"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 65, "evidence": "Fusion broadly dismissed as 'always 20 years away'; TAE/DJT merger dismissed as meme stock"},
+        "working_code": {"score_suggestion": 60, "evidence": "TAE achieved NBI-only FRC plasma at >70M C (Nature Communications), 1,600+ patents"},
+        "ideological_community": {"score_suggestion": 40, "evidence": "DJT has strong retail/political following; fusion has scientific community support"},
+        "developer_activity": {"score_suggestion": 55, "evidence": "TAE skipped entire reactor generation — accelerated R&D timeline"},
+        "smart_money_entry": {"score_suggestion": 65, "evidence": "Google, Chevron, Goldman Sachs backed TAE; $6B+ deal value"},
+        "narrative_clarity": {"score_suggestion": 80, "evidence": "First publicly traded pure-play fusion company — extremely clear"},
+        "hard_to_buy": {"score_suggestion": 5, "evidence": "Public on NASDAQ — anyone can buy DJT"},
+        "catalyst_proximity": {"score_suggestion": 80, "evidence": "Merger target mid-2026 (May 1); SpinCo separating Truth Social"}
+      },
+      "composite_score": 58.75,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S13-002",
+      "name": "ESS Inc",
+      "ticker": "GWH",
+      "category": "Public_Equity_Proxy",
+      "subcategory": "Iron Flow Batteries / Energy Storage",
+      "status": "public_equity",
+      "tier_suggestion": "3",
+      "one_liner": "Iron flow batteries in survival mode with $31M market cap",
+      "quantitative_data": {
+        "price": {"value": "$1.15", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": "$31M", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": "$13.87 (52-wk high)", "date": null, "source": "Asymmetric Opportunity Atlas"},
+        "drawdown_from_ath": {"value": "-91.7% from 52-wk high", "source": "Calculated"},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": "$1.6M FY2025 (down 75% YoY)", "period": "FY2025", "source": "Asymmetric Opportunity Atlas"},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "NYSE", "pair_or_url": "GWH"}
+      ],
+      "key_backers": [
+        {"name": "Honeywell", "amount": null, "round": "Strategic"}
+      ],
+      "catalysts": [
+        {"event": "Energy Base product pivot targeting 2027 commercialization", "est_date": "2027", "impact": "medium"},
+        {"event": "SRP pilot with Google", "est_date": null, "impact": "medium"},
+        {"event": "1.2 GWh in proposals worth ~$400M", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Going concern signals — cash $22M, working capital ~$1M", "severity": "critical"},
+        {"risk": "Revenue down 75% YoY to only $1.6M", "severity": "critical"},
+        {"risk": "High-risk turnaround play — may not survive", "severity": "critical"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 35, "evidence": "Not dismissed as toy — dismissed as failing company"},
+        "working_code": {"score_suggestion": 40, "evidence": "22-hour iron flow battery works, zero degradation over 25 years, but revenue collapsing"},
+        "ideological_community": {"score_suggestion": 15, "evidence": "No meaningful community"},
+        "developer_activity": {"score_suggestion": 30, "evidence": "Pivoting to Energy Base product but tiny team"},
+        "smart_money_entry": {"score_suggestion": 25, "evidence": "Honeywell backing, Google pilot"},
+        "narrative_clarity": {"score_suggestion": 55, "evidence": "Iron flow batteries for grid storage — clear technology thesis"},
+        "hard_to_buy": {"score_suggestion": 5, "evidence": "Public on NYSE"},
+        "catalyst_proximity": {"score_suggestion": 30, "evidence": "2027 commercialization target is 1+ year out"}
+      },
+      "composite_score": 31.25,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S13-003",
+      "name": "Agronomics",
+      "ticker": "ANIC",
+      "category": "Public_Equity_Proxy",
+      "subcategory": "Cultivated Meat",
+      "status": "public_equity",
+      "tier_suggestion": "2",
+      "one_liner": "Only pure-play public cultivated meat investment vehicle",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "LSE", "pair_or_url": "LSE: ANIC"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Cultivated meat regulatory approvals expanding globally", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Cultivated meat industry still pre-commercial at scale", "severity": "high"},
+        {"risk": "Regulatory uncertainty in key markets", "severity": "medium"},
+        {"risk": "LSE listed — lower liquidity than US exchanges", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 70, "evidence": "Cultivated meat is broadly dismissed as impractical by mainstream food industry"},
+        "working_code": {"score_suggestion": 35, "evidence": "Investment vehicle — depends on portfolio company progress"},
+        "ideological_community": {"score_suggestion": 50, "evidence": "Strong ethical/environmental community around cultivated meat"},
+        "developer_activity": {"score_suggestion": 30, "evidence": "Portfolio level — no direct R&D metrics"},
+        "smart_money_entry": {"score_suggestion": 25, "evidence": "No specific backer data in documents"},
+        "narrative_clarity": {"score_suggestion": 70, "evidence": "Only public way to invest in cultivated meat — clear and unique"},
+        "hard_to_buy": {"score_suggestion": 55, "evidence": "LSE listed — harder for US investors to access"},
+        "catalyst_proximity": {"score_suggestion": 30, "evidence": "No imminent regulatory catalysts mentioned"}
+      },
+      "composite_score": 41.25,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S13-004",
+      "name": "Rigetti Computing",
+      "ticker": "RGTI",
+      "category": "Public_Equity_Proxy",
+      "subcategory": "Quantum Computing",
+      "status": "public_equity",
+      "tier_suggestion": "2",
+      "one_liner": "Quantum computing with +5,700% trailing year performance",
+      "quantitative_data": {
+        "price": {"value": "$14-16", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": "~$8.5B", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": "~$12.7M FY2025", "period": "FY2025", "source": "Asymmetric Opportunity Atlas"},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "RGTI"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Quantum computing sector transitioning from lab to market", "est_date": null, "impact": "high"},
+        {"event": "Funding doubled to $4.2B in 2025 sector-wide", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "P/S ratio ~670x — extreme valuation", "severity": "critical"},
+        {"risk": "Only $12.7M in revenue for $8.5B market cap", "severity": "high"},
+        {"risk": "Quantum computing commercial viability still unproven at scale", "severity": "high"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 45, "evidence": "Quantum computing is taken seriously now after +5,700% run; less dismissal"},
+        "working_code": {"score_suggestion": 50, "evidence": "$12.7M revenue — commercial products exist but small"},
+        "ideological_community": {"score_suggestion": 25, "evidence": "Scientific/tech community, not ideological"},
+        "developer_activity": {"score_suggestion": 55, "evidence": "Active R&D in quantum processors"},
+        "smart_money_entry": {"score_suggestion": 40, "evidence": "Public company with institutional ownership"},
+        "narrative_clarity": {"score_suggestion": 65, "evidence": "Quantum computing — well understood narrative"},
+        "hard_to_buy": {"score_suggestion": 5, "evidence": "Public on NASDAQ"},
+        "catalyst_proximity": {"score_suggestion": 45, "evidence": "Sector funding doubling and commercial traction increasing"}
+      },
+      "composite_score": 42.75,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S13-005",
+      "name": "Securitize SPAC",
+      "ticker": "SECZ",
+      "category": "Public_Equity_Proxy",
+      "subcategory": "RWA Tokenization Infrastructure",
+      "status": "public_equity",
+      "tier_suggestion": "1",
+      "one_liner": "First pure-play tokenization company going public, profitable",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": "~$1.82B post-merger", "date": "2026", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": "Up to ~$469M gross proceeds from SPAC", "source": "Asymmetric Opportunity Atlas"},
+        "revenue_or_volume": {"value": "Projected 2026 revenue $110M, net income $24M", "period": "2026 projected", "source": "Asymmetric Opportunity Atlas"},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "SECZ (post-merger with CEPT)"}
+      ],
+      "key_backers": [
+        {"name": "ARK Invest", "amount": null, "round": "Investor"},
+        {"name": "BlackRock", "amount": null, "round": "Investor"},
+        {"name": "Morgan Stanley", "amount": null, "round": "Investor"}
+      ],
+      "catalysts": [
+        {"event": "SPAC merger closing", "est_date": "H1 2026", "impact": "high"},
+        {"event": "Underpins $22B in tokenized RWAs — 70% of US tokenization market", "est_date": null, "impact": "high"},
+        {"event": "Benchmark initiated Buy, $16 price target", "est_date": null, "impact": "medium"},
+        {"event": "Stocks on Securitize for natively tokenized public equities", "est_date": "2026", "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "SPAC mergers have historically poor post-merger performance", "severity": "medium"},
+        {"risk": "Tokenization adoption may slow if crypto winter continues", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 35, "evidence": "RWA tokenization is gaining mainstream acceptance, less toy phase"},
+        "working_code": {"score_suggestion": 90, "evidence": "$22B in tokenized RWAs, 70% US market share, BlackRock BUIDL $2.42B"},
+        "ideological_community": {"score_suggestion": 30, "evidence": "Institutional rather than ideological"},
+        "developer_activity": {"score_suggestion": 65, "evidence": "Active development on Stocks on Securitize and platform expansion"},
+        "smart_money_entry": {"score_suggestion": 85, "evidence": "BlackRock, ARK, Morgan Stanley all existing investors"},
+        "narrative_clarity": {"score_suggestion": 80, "evidence": "First pure-play tokenization stock — crystal clear narrative"},
+        "hard_to_buy": {"score_suggestion": 15, "evidence": "Public via SPAC — accessible to all investors"},
+        "catalyst_proximity": {"score_suggestion": 75, "evidence": "H1 2026 merger close, $16 price target, profitable projections"}
+      },
+      "composite_score": 65.5,
+      "community_links": {"twitter": null, "website": "https://securitize.io"}
+    },
+
+    {
+      "id": "S13-006",
+      "name": "Sprott Junior Uranium Miners ETF",
+      "ticker": "URNJ",
+      "category": "Public_Equity_Proxy",
+      "subcategory": "Junior Uranium Miners ETF",
+      "status": "public_equity",
+      "tier_suggestion": "2",
+      "one_liner": "Diversified junior uranium exposure, $447M AUM",
+      "quantitative_data": {
+        "price": {"value": "$33.41", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"},
+        "market_cap": {"value": "AUM ~$447M", "date": "2026-04", "source": "Asymmetric Opportunity Atlas"},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "NYSE Arca", "pair_or_url": "URNJ"}
+      ],
+      "key_backers": [
+        {"name": "Sprott", "amount": null, "round": "Fund Manager"}
+      ],
+      "catalysts": [
+        {"event": "Uranium spot above $84.55/lb, Citi forecasts $100/lb for 2026", "est_date": "2026", "impact": "high"},
+        {"event": "Structural supply deficit widening", "est_date": "ongoing", "impact": "high"},
+        {"event": "Demand expected to double by 2040 with SMR buildouts", "est_date": "2040", "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Junior miners are inherently high-risk with many going to zero", "severity": "high"},
+        {"risk": "Uranium price volatility", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 30, "evidence": "Uranium is no longer dismissed — increasingly mainstream energy narrative"},
+        "working_code": {"score_suggestion": 50, "evidence": "ETF product with $447M AUM — proven fund vehicle"},
+        "ideological_community": {"score_suggestion": 45, "evidence": "r/UraniumSqueeze community actively discusses thesis"},
+        "developer_activity": {"score_suggestion": 30, "evidence": "N/A — ETF, not a technology company"},
+        "smart_money_entry": {"score_suggestion": 55, "evidence": "Sprott is the premier name in natural resource investing"},
+        "narrative_clarity": {"score_suggestion": 75, "evidence": "Nuclear renaissance + supply deficit — powerful macro narrative"},
+        "hard_to_buy": {"score_suggestion": 5, "evidence": "Public ETF on NYSE Arca — maximally easy to buy"},
+        "catalyst_proximity": {"score_suggestion": 65, "evidence": "Uranium above $84/lb, Citi target $100, structural deficit ongoing"}
+      },
+      "composite_score": 44.75,
+      "community_links": {"twitter": null, "website": null}
+    },
+
+    {
+      "id": "S13-007",
+      "name": "Robinhood",
+      "ticker": "HOOD",
+      "category": "Public_Equity_Proxy",
+      "subcategory": "Prediction Market Proxy",
+      "status": "public_equity",
+      "tier_suggestion": "2",
+      "one_liner": "Public prediction market proxy with ~$300M event trading ARR",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": "~$300M annual recurring revenue from event trading (ARK Invest estimate)", "period": "annual", "source": "1000x Opportunity Map"},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "NASDAQ", "pair_or_url": "HOOD"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "Prediction market growth — $44B+ combined 2025 volume", "est_date": null, "impact": "medium"},
+        {"event": "Event trading ARR growing rapidly", "est_date": null, "impact": "medium"}
+      ],
+      "risks": [
+        {"risk": "Event trading is only one segment of broader business", "severity": "medium"},
+        {"risk": "Regulatory risk around prediction market / event contracts", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 20, "evidence": "Robinhood is well-known — no toy phase dismissal"},
+        "working_code": {"score_suggestion": 85, "evidence": "Live product with ~$300M ARR from event trading alone"},
+        "ideological_community": {"score_suggestion": 25, "evidence": "Retail trader base but not ideological"},
+        "developer_activity": {"score_suggestion": 50, "evidence": "Active product development"},
+        "smart_money_entry": {"score_suggestion": 35, "evidence": "Public company with institutional holders"},
+        "narrative_clarity": {"score_suggestion": 50, "evidence": "Prediction market proxy — indirect narrative"},
+        "hard_to_buy": {"score_suggestion": 5, "evidence": "Major public equity on NASDAQ"},
+        "catalyst_proximity": {"score_suggestion": 40, "evidence": "Event trading growth ongoing"}
+      },
+      "composite_score": 43.75,
+      "community_links": {"twitter": null, "website": "https://robinhood.com"}
+    },
+
+    {
+      "id": "S13-008",
+      "name": "Energy Fuels",
+      "ticker": "UUUU",
+      "category": "Public_Equity_Proxy",
+      "subcategory": "Uranium + Rare Earths",
+      "status": "public_equity",
+      "tier_suggestion": "2",
+      "one_liner": "Non-Chinese rare earth processor with uranium exposure bonus",
+      "quantitative_data": {
+        "price": {"value": null, "date": null, "source": null},
+        "market_cap": {"value": null, "date": null, "source": null},
+        "ath": {"value": null, "date": null, "source": null},
+        "drawdown_from_ath": {"value": null, "source": null},
+        "funding_raised": {"value": null, "source": null},
+        "revenue_or_volume": {"value": null, "period": null, "source": null},
+        "user_count": {"value": null, "date": null, "source": null}
+      },
+      "entry_mechanisms": [
+        {"type": "public_equity", "platform": "NYSE", "pair_or_url": "UUUU"}
+      ],
+      "key_backers": [],
+      "catalysts": [
+        {"event": "One of few non-Chinese rare earth processors in Western hemisphere", "est_date": null, "impact": "high"},
+        {"event": "Uranium price at $84.55/lb with structural deficit", "est_date": "2026", "impact": "high"},
+        {"event": "China controls ~60% mining, ~90% processing of rare earths — Western alternatives critical", "est_date": null, "impact": "high"}
+      ],
+      "risks": [
+        {"risk": "Commodity price volatility", "severity": "medium"},
+        {"risk": "Scale-up risk for rare earth processing", "severity": "medium"}
+      ],
+      "signal_scores_evidence": {
+        "toy_phase_dismissal": {"score_suggestion": 25, "evidence": "Energy/mining is mainstream — not dismissed as toy"},
+        "working_code": {"score_suggestion": 65, "evidence": "Operating uranium + rare earth processing — real revenue"},
+        "ideological_community": {"score_suggestion": 30, "evidence": "Uranium investing community (r/UraniumSqueeze)"},
+        "developer_activity": {"score_suggestion": 40, "evidence": "Active rare earth processing development"},
+        "smart_money_entry": {"score_suggestion": 35, "evidence": "Institutional mining investors"},
+        "narrative_clarity": {"score_suggestion": 75, "evidence": "Dual uranium + rare earths in a de-China supply chain world — very compelling"},
+        "hard_to_buy": {"score_suggestion": 5, "evidence": "NYSE listed — easy to buy"},
+        "catalyst_proximity": {"score_suggestion": 60, "evidence": "Uranium structural deficit and rare earth supply chain reshoring both active trends"}
+      },
+      "composite_score": 43.0,
+      "community_links": {"twitter": null, "website": null}
+    }
+  ],
+
+  "meta_data": [
+    {
+      "id": "META-001",
+      "meta_type": "market_data",
+      "label": "Historical Pattern Data — Previous 1000x Cycles",
+      "data": {
+        "eth_ico": {
+          "price": "$0.30 per token",
+          "raised": "$18M",
+          "source": "1000x Opportunity Map"
+        },
+        "sol_coinlist": {
+          "price": "$0.95 via CoinList auction",
+          "raised": "$1.76M",
+          "source": "1000x Opportunity Map"
+        },
+        "defi_tvl_timeline": {
+          "start_2020": "$700M",
+          "end_2020": "$15B",
+          "growth": "~21x in one year",
+          "source": "1000x Opportunity Map"
+        },
+        "nft_volume_timeline": {
+          "opensea_2020": "$21.7M total",
+          "opensea_2021": "$14B",
+          "growth": "646x",
+          "source": "1000x Opportunity Map"
+        },
+        "pattern": "Genuine paradigm shifts start in single-digit millions to low billions before reaching trillions"
+      }
+    },
+
+    {
+      "id": "META-002",
+      "meta_type": "market_data",
+      "label": "Market Risk Data — Token Death and Failure Rates",
+      "data": {
+        "crypto_death_rate": {
+          "stat": "53.2% of ALL cryptocurrencies are now dead/inactive",
+          "source": "CoinGecko, January 2026",
+          "document": "Asymmetric Opportunity Atlas"
+        },
+        "tokens_failed_2025": {
+          "stat": "11.56 million tokens failed — 86.3% of all failures since 2021",
+          "source": "CoinGecko",
+          "document": "Asymmetric Opportunity Atlas"
+        },
+        "q4_2025_liquidation_cascade": {
+          "stat": "$19B wiped in 24 hours, killing 7.7M tokens in Q4 alone",
+          "date": "October 2025",
+          "source": "Asymmetric Opportunity Atlas"
+        },
+        "tge_failure_rate": {
+          "stat": "84.7% of 118 TGE launches trading below launch price",
+          "median_decline": "-71.1% FDV",
+          "only_profitable": "15.3% (median gain +109.7%)",
+          "source": "Memento Research 2025",
+          "document": "Asymmetric Opportunity Atlas"
+        },
+        "airdrop_loss_rate": {
+          "stat": "88% of airdropped tokens lose value within 3 months",
+          "farming_success_rate": "Only 35-45% of farmed protocols actually distribute tokens",
+          "source": "Asymmetric Opportunity Atlas"
+        },
+        "vc_correlation": {
+          "stat": "Having a 'Top VC' on the cap table no longer correlates with positive returns",
+          "source": "Asymmetric Opportunity Atlas"
+        },
+        "exploits_2026_ytd": {
+          "stat": "$757M+ stolen YTD through mid-April 2026",
+          "largest": "Drift Protocol lost $285M on April 1 (likely North Korean hackers per TRM Labs)",
+          "phishing_surge": "1,400% year-over-year",
+          "post_hack_price_impact": "Hacked tokens lose 61% of value within 6 months and rarely recover",
+          "source": "Asymmetric Opportunity Atlas"
+        }
+      }
+    },
+
+    {
+      "id": "META-003",
+      "meta_type": "market_data",
+      "label": "SEC Regulatory Posture 2026",
+      "data": {
+        "chair": "Paul Atkins",
+        "posture": "Permissive — dismissed or closed major cases",
+        "dismissed_cases": ["Coinbase", "Binance", "Gemini"],
+        "ondo_investigation": "Closed without charges (November 2025)",
+        "digital_commodities": "16 digital assets classified as 'digital commodities'",
+        "no_pending_actions_against": ["Bittensor", "Virtuals", "Bio Protocol", "Centrifuge"],
+        "gray_area": "DeSci operates in legal gray areas — no specific SEC guidance on tokenized IP or BioDAO structures",
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+
+    {
+      "id": "META-004",
+      "meta_type": "market_data",
+      "label": "Total Sector Market Caps",
+      "data": {
+        "desci": {
+          "market_cap": "~$238M",
+          "peak": "~$1.3B",
+          "decline": "82%",
+          "source": "CoinGecko / Asymmetric Opportunity Atlas"
+        },
+        "depin": {
+          "market_cap": "~$19.2B",
+          "projects": "423 active",
+          "devices": "41.8M",
+          "projection": "$3.5T by 2028 (World Economic Forum)",
+          "source": "1000x Opportunity Map"
+        },
+        "ai_x_crypto": {
+          "market_cap": "~$22.6B",
+          "decline": "55-90% from highs",
+          "vc_share": "40 cents of every VC dollar in crypto 2025 went to AI-integrated projects (up from 18 cents)",
+          "source": "1000x Opportunity Map"
+        }
+      }
+    },
+
+    {
+      "id": "META-005",
+      "meta_type": "tools",
+      "label": "On-Chain Analytics Tools",
+      "data": {
+        "tier_1_essential": [
+          {
+            "name": "Nansen",
+            "cost": "$49/mo",
+            "description": "Token God Mode for AI x Crypto smart money tracking; 500M+ labeled addresses; AI agent for conversational queries; agentic trading on Solana/Base",
+            "source": "Asymmetric Opportunity Atlas"
+          },
+          {
+            "name": "Arkham Intelligence",
+            "cost": "Free",
+            "description": "Deanonymizes wallets to real-world identities (1,000+ tracked entities); Intel Exchange bounties; 3M+ users; Visualizer for fund flows",
+            "source": "Asymmetric Opportunity Atlas"
+          },
+          {
+            "name": "DeFiLlama",
+            "cost": "Free",
+            "description": "TVL, yields, token unlocks at defillama.com/unlocks; open-source, ad-free",
+            "source": "Asymmetric Opportunity Atlas"
+          }
+        ],
+        "tier_2_specialized": [
+          {
+            "name": "CryptoQuant",
+            "cost": null,
+            "description": "Exchange flows, miner behavior, whale deposits, BTC ETF wallet tracking"
+          },
+          {
+            "name": "Glassnode",
+            "cost": null,
+            "description": "Macro cycle metrics (MVRV, SOPR, HODL waves)"
+          },
+          {
+            "name": "Token Terminal",
+            "cost": null,
+            "description": "Revenue-based protocol rankings (P/S, P/E for crypto)"
+          },
+          {
+            "name": "RWA.xyz",
+            "cost": null,
+            "description": "Industry-standard tokenized RWA analytics"
+          }
+        ],
+        "additional": [
+          {
+            "name": "DEXScreener",
+            "cost": "Free",
+            "description": "Real-time visibility into new token launches and liquidity across chains",
+            "source": "1000x Opportunity Map"
+          },
+          {
+            "name": "DePINscan",
+            "cost": null,
+            "description": "Tracks all 423+ DePIN projects with device counts and network activity",
+            "source": "1000x Opportunity Map"
+          },
+          {
+            "name": "Kaito AI",
+            "cost": null,
+            "description": "Tracks mindshare and narrative momentum across Crypto Twitter",
+            "source": "1000x Opportunity Map"
+          },
+          {
+            "name": "Dune Analytics",
+            "cost": null,
+            "description": "Custom queries across 100+ chains",
+            "source": "1000x Opportunity Map"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "META-006",
+      "meta_type": "tools",
+      "label": "Dune Dashboards",
+      "data": {
+        "dashboards": [
+          {"name": "Bittensor ecosystem", "url": "https://dune.com/sayhozay/bittensor", "tracks": "Protocol-level TAO metrics"},
+          {"name": "wTAO Market", "url": "https://dune.com/0x_mrmarx/wtao", "tracks": "Daily trades, whale list, top trades"},
+          {"name": "AI Narrative", "url": "https://dune.com/cryptokoryo/ai", "tracks": "AI-sector token aggregate metrics"},
+          {"name": "RWA Overview", "url": "https://dune.com/cryptokoryo/rwa", "tracks": "Comprehensive RWA market data"},
+          {"name": "RWA Lending", "url": "https://dune.com/impossiblefinance/rwa-lending-landscape", "tracks": "Tokenized treasuries and lending"},
+          {"name": "DePIN", "url": "https://dune.com/oj_dominus/depin", "tracks": "DePIN ecosystem metrics"},
+          {"name": "Tokenized Commodities", "url": "https://dune.com/hashed_official/tokenized-commodities", "tracks": "On-chain commodity tracking"}
+        ],
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+
+    {
+      "id": "META-007",
+      "meta_type": "tools",
+      "label": "Token Unlock Tracking Tools",
+      "data": {
+        "tools": [
+          {"name": "Tokenomist.ai", "note": "Formerly TokenUnlocks.app — industry standard, source-verified data across 500+ tokens"},
+          {"name": "CryptoRank Token Unlock", "note": null},
+          {"name": "DropsTab Vesting", "note": "9,000+ tokens tracked"},
+          {"name": "CoinGlass", "note": null},
+          {"name": "DeFiLlama Unlocks", "note": "defillama.com/unlocks"}
+        ],
+        "source": "Asymmetric Opportunity Atlas"
+      }
+    },
+
+    {
+      "id": "META-008",
+      "meta_type": "information_sources",
+      "label": "Newsletters",
+      "data": {
+        "newsletters": [
+          {"name": "Bankless", "authors": "Ryan Sean Adams & David Hoffman", "cost": "$22/mo", "focus": "DeFi, AI, ecosystem coverage"},
+          {"name": "The Defiant", "authors": "Camila Russo", "cost": "$15/mo", "focus": "DeFi Alpha Letter — yield farming and airdrops"},
+          {"name": "The Oregon Group", "authors": null, "cost": null, "focus": "Critical minerals/mining with institutional rigor"},
+          {"name": "Blockworks Daily", "authors": null, "cost": "Free", "focus": "General crypto — 160K+ readers"},
+          {"name": "Not Boring", "authors": "Packy McCormick", "cost": null, "focus": "Business strategy + crypto deep dives"},
+          {"name": "VitaDAO Newsletter", "authors": null, "cost": null, "focus": "DeSci"},
+          {"name": "Ale Research", "authors": null, "cost": null, "focus": "DeSci (on Substack)"},
+          {"name": "0xResearch (Blockworks)", "authors": null, "cost": "Free", "focus": "Protocol design and tokenomics — daily must-read"},
+          {"name": "Uranium Insider", "authors": null, "cost": null, "focus": "Junior uranium thesis"}
+        ],
+        "research_platforms": [
+          {"name": "Delphi Digital", "cost": "$199/mo for Pro", "focus": "Gold standard — deep-dive reports and Alpha Feed surface narratives before CT"},
+          {"name": "Messari", "cost": "$29.99/mo", "focus": "Fundraising trackers, screeners, annual Crypto Theses report"}
+        ],
+        "source": "Both documents"
+      }
+    },
+
+    {
+      "id": "META-009",
+      "meta_type": "social_accounts",
+      "label": "Key Twitter/X Accounts",
+      "data": {
+        "ai_agents": [
+          {"handle": "@shawmakesmagic", "focus": "ElizaOS creator"},
+          {"handle": "@S4mmyEth", "focus": "AI agents"},
+          {"handle": "@sandraaleow", "focus": "AI agents"},
+          {"handle": "@CookieFun", "focus": "AI agents"}
+        ],
+        "desci": [
+          {"handle": "@molecule_dao", "focus": "Molecule Protocol / DeSci"},
+          {"handle": "@vita_dao", "focus": "VitaDAO / DeSci"},
+          {"handle": "@bio_xyz", "focus": "Bio Protocol / DeSci"}
+        ],
+        "on_chain_detective": [
+          {"handle": "@ZachXBT", "focus": "On-chain detective work"}
+        ],
+        "macro": [
+          {"handle": "@ArthurHayes", "focus": "Crypto macro"},
+          {"handle": "@APompliano", "focus": "Crypto macro"}
+        ],
+        "research": [
+          {"handle": "@Delphi_Digital", "focus": "Research platform"},
+          {"handle": "@MessariCrypto", "focus": "Research platform"}
+        ],
+        "protocol_insights": [
+          {"handle": "@VitalikButerin", "focus": "Ethereum / protocol-level insights"},
+          {"handle": "@_kaitoai", "focus": "AI narrative tracking"}
+        ],
+        "bittensor": [
+          {"handle": "@opentensor", "focus": "Bittensor / TAO"}
+        ],
+        "source": "Both documents"
+      }
+    },
+
+    {
+      "id": "META-010",
+      "meta_type": "information_sources",
+      "label": "Podcasts",
+      "data": {
+        "podcasts": [
+          {"name": "Bankless", "hosts": "Ryan Sean Adams & David Hoffman", "focus": "Top crypto podcast — DeFi, AI, ecosystem coverage"},
+          {"name": "Unchained", "hosts": "Laura Shin", "focus": "Interviews with the most important builders"},
+          {"name": "Fully Diluted", "hosts": "Messari", "focus": "Deep dives on AI x crypto, DePIN, L1/L2 dynamics"},
+          {"name": "a16z Bio podcast", "hosts": null, "focus": "Deep tech / biotech"},
+          {"name": "Longevity.Technology", "hosts": null, "focus": "Longevity science newsletter/podcast"},
+          {"name": "The Quantum Insider", "hosts": null, "focus": "Quantum computing"}
+        ],
+        "source": "1000x Opportunity Map"
+      }
+    },
+
+    {
+      "id": "META-011",
+      "meta_type": "communities",
+      "label": "Discord Servers, Reddit Communities, and Junior Mining Sources",
+      "data": {
+        "discord_servers": [
+          {"name": "Milk Road PRO", "focus": "Research-driven, value investing focus"},
+          {"name": "Ground Zero by Grunge", "focus": "Data-driven calls"},
+          {"name": "Developer DAO", "focus": "Builder alpha / Web3 developers"},
+          {"name": "BuidlGuidl", "focus": "Builder alpha / Web3 prototypes"},
+          {"name": "Friends With Benefits (FWB)", "focus": "Token-gated cultural alpha"}
+        ],
+        "reddit_communities": [
+          {"name": "r/ethfinance", "focus": "Highest quality Ethereum discussion"},
+          {"name": "r/UraniumSqueeze", "focus": "Junior uranium thesis"},
+          {"name": "r/DeSci", "focus": "Decentralized science — small but early"},
+          {"name": "r/singularity", "focus": "AI/AGI crossover"},
+          {"name": "r/biotech", "focus": "DeSci crossover"},
+          {"name": "r/CryptoMoonShots", "focus": "High-risk but occasionally surfaces genuine micro-cap finds"}
+        ],
+        "builder_communities": [
+          {"name": "Farcaster / Warpcast", "focus": "Closest equivalent to early BitcoinTalk — builders discuss before tokens exist"},
+          {"name": "Ethresear.ch", "focus": "Ethereum protocol-level innovations first discussed here"},
+          {"name": "Hacker News", "focus": "Surfaces deep tech alpha before crypto communities"}
+        ],
+        "junior_mining_sources": [
+          {"name": "CEO.ca", "focus": "Primary hub for Canadian junior mining discussion"},
+          {"name": "Junior Mining Network", "url": "juniorminingnetwork.com", "focus": "Real-time junior mining news"},
+          {"name": "The Oregon Group", "url": "theoregongroup.com", "focus": "Uranium/critical minerals with institutional rigor"},
+          {"name": "WARNING", "focus": "Telegram mining groups are rife with scams per Bitcoin Magazine and Nasdaq — verify legitimacy"}
+        ],
+        "source": "Both documents"
+      }
+    },
+
+    {
+      "id": "META-012",
+      "meta_type": "market_data",
+      "label": "Audit Status and Founder Red Flags",
+      "data": {
+        "audit_status": [
+          {
+            "protocol": "Symbiotic",
+            "auditor": "ChainSecurity",
+            "result": "High level of security",
+            "risk_note": "Open design allows dangerous configurations",
+            "source": "Asymmetric Opportunity Atlas"
+          },
+          {
+            "protocol": "EigenLayer",
+            "auditor": "Consensys Diligence + Dedaub",
+            "result": "Excellent quality",
+            "risk_note": "Malicious large-stake owner risk",
+            "source": "Asymmetric Opportunity Atlas"
+          },
+          {
+            "protocol": "Bittensor",
+            "auditor": "NO formal audit submitted",
+            "result": "UNAUDITED",
+            "risk_note": "$8M exploit July 2024 (PyPI supply chain); repeat typosquatting Aug 2025; network was halted",
+            "source": "Asymmetric Opportunity Atlas"
+          }
+        ],
+        "founder_red_flags": [
+          {
+            "person": "Shaw Walters (ai16z/ElizaOS)",
+            "flags": [
+              "Forced rebrand after a16z trademark dispute",
+              "X account hacked February 2025 promoting scam tokens",
+              "Publicly admitted 'the financial pressure is significant' with minimal token holdings",
+              "Community repeatedly calls him a 'scammer' (which he denies)"
+            ],
+            "source": "Asymmetric Opportunity Atlas"
+          },
+          {
+            "entity": "Bittensor (Opentensor Foundation)",
+            "flags": [
+              "Unilateral blockchain halt during July 2024 hack undermines decentralization claims",
+              "Repeat supply-chain attacks (July 2024, August 2025)",
+              "Covenant AI exit (April 2026) revealed governance centralization concerns — co-founder accused leadership of 'decentralization theatre', alleged emission suspension, strategic token dumps, economic pressure"
+            ],
+            "source": "Asymmetric Opportunity Atlas"
+          }
+        ]
+      }
+    }
+  ]
+}

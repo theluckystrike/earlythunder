@@ -1,0 +1,261 @@
+[
+  {
+    "name": "Bittensor",
+    "ticker": "TAO",
+    "category": "AI_x_Crypto",
+    "subcategory": "Decentralized AI Network",
+    "status": "mainnet_live",
+    "tier_suggestion": "1",
+    "one_liner": "Decentralized market for machine intelligence with 128 subnets",
+    "quantitative_data": {
+      "price": {"value": "$258", "date": "2026-04-12", "source": "Asymmetric Opportunity Atlas"},
+      "market_cap": {"value": "$2.6B", "date": "2026-04-12", "source": "Asymmetric Opportunity Atlas"},
+      "ath": {"value": "$337", "date": "2026-04-09", "source": "Asymmetric Opportunity Atlas"},
+      "drawdown_from_ath": {"value": "~23% from recent high; 85-99% sector-wide compression", "source": "Asymmetric Opportunity Atlas"},
+      "tvl": {"value": null, "date": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "revenue_or_volume": {"value": "$3-15M actual external revenue annually; ~$148M annual TAO emission subsidies", "period": "annual", "source": "Asymmetric Opportunity Atlas"},
+      "github_stars": {"value": null, "date": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "token_purchase", "platform": "Binance", "pair_or_url": "TAO/USDT"},
+      {"type": "token_purchase", "platform": "Coinbase", "pair_or_url": "TAO/USD"},
+      {"type": "staking", "platform": "Bittensor subnets", "pair_or_url": "Stake TAO into specific subnets for Alpha tokens"}
+    ],
+    "key_backers": [
+      {"name": "Grayscale", "amount": "43% allocation in fund; S-1 for TAO spot ETF filed", "round": "Investment trust"},
+      {"name": "NVIDIA (Jensen Huang endorsement)", "amount": null, "round": null}
+    ],
+    "catalysts": [
+      {"event": "Grayscale TAO spot ETF approval (S-1 filed on NYSE)", "est_date": "2026", "impact": "high"},
+      {"event": "Europe's first Staked TAO ETP launched on SIX Swiss Exchange", "est_date": "2026-04", "impact": "medium"},
+      {"event": "December 2025 halving cut emissions to 3,600 TAO/day", "est_date": "2025-12-14", "impact": "high"},
+      {"event": "Subnet expansion from 128 to 256", "est_date": "2026", "impact": "medium"},
+      {"event": "Grayscale boosted TAO allocation from 31% to 43%", "est_date": "2026-04-07", "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Subsidy-to-revenue ratio of 22-40:1 — only $3-15M real revenue vs $148M emissions", "severity": "critical"},
+      {"risk": "Covenant AI exit exposed governance centralization and 'decentralization theatre' allegations", "severity": "high"},
+      {"risk": "No formal security audit submitted; $8M exploit July 2024 via PyPI supply chain attack", "severity": "high"},
+      {"risk": "Network was halted unilaterally during July 2024 hack — undermines decentralization", "severity": "high"},
+      {"risk": "Repeat supply-chain/typosquatting attacks (July 2024, August 2025)", "severity": "medium"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 70, "evidence": "AI x Crypto sector widely dismissed as 'AI-washing'; but institutional interest (Grayscale ETF) means it's partially past toy phase"},
+      "working_code": {"score_suggestion": 85, "evidence": "128 active subnets live, Covenant-72B model trained collaboratively across 70+ contributors on commodity hardware competing with Llama 2 70B"},
+      "ideological_community": {"score_suggestion": 75, "evidence": "Strong decentralized AI ideology; 68-77% staking ratio; validators up 34% MoM; but Covenant AI exit revealed community fractures"},
+      "developer_activity": {"score_suggestion": 80, "evidence": "128 active subnets (from 32 a year ago); validators up 34% MoM; multiple subnet teams building"},
+      "smart_money_entry": {"score_suggestion": 90, "evidence": "Grayscale 43% allocation, S-1 ETF filing, European ETP on SIX Swiss Exchange, Jensen Huang endorsement"},
+      "narrative_clarity": {"score_suggestion": 85, "evidence": "Clear narrative: 'decentralized market for AI' — fits in one sentence"},
+      "hard_to_buy": {"score_suggestion": 30, "evidence": "Available on Binance and Coinbase — easy to buy; subnet tokens harder"},
+      "catalyst_proximity": {"score_suggestion": 85, "evidence": "ETF filing pending, post-halving supply dynamics, institutional on-ramps active"}
+    },
+    "composite_score": 78.5,
+    "community_links": {"twitter": "@opentensor", "discord": null, "website": "https://bittensor.com", "github": null}
+  },
+  {
+    "name": "Templar (Bittensor SN3)",
+    "ticker": "SN3",
+    "category": "AI_x_Crypto",
+    "subcategory": "Bittensor Subnet Token",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Bittensor subnet token with 444% March surge",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "$137M", "date": "2026-03", "source": "1000x Opportunity Map"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": "-57.5% during Covenant AI crash", "source": "Asymmetric Opportunity Atlas"},
+      "tvl": {"value": null, "date": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null},
+      "github_stars": {"value": null, "date": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "staking", "platform": "Bittensor", "pair_or_url": "Stake TAO into SN3 for Alpha tokens"}
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {"event": "+444% surge in March 2026 — momentum play", "est_date": "2026-03", "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Crashed -57.5% during Covenant AI exit event", "severity": "high"},
+      {"risk": "Dependent on Bittensor ecosystem health and emissions", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 80, "evidence": "Subnet tokens are dismissed even within crypto; most investors don't understand subnets"},
+      "working_code": {"score_suggestion": 60, "evidence": "Active subnet on Bittensor but limited detail on specific product"},
+      "ideological_community": {"score_suggestion": 50, "evidence": "Part of broader Bittensor community"},
+      "developer_activity": {"score_suggestion": 50, "evidence": "Active subnet but limited public data on development"},
+      "smart_money_entry": {"score_suggestion": 40, "evidence": "No specific institutional backing mentioned beyond Bittensor ecosystem"},
+      "narrative_clarity": {"score_suggestion": 60, "evidence": "Clear as a subnet play within Bittensor ecosystem"},
+      "hard_to_buy": {"score_suggestion": 80, "evidence": "Must stake TAO into subnets — complex process"},
+      "catalyst_proximity": {"score_suggestion": 50, "evidence": "Tied to Bittensor ecosystem catalysts"}
+    },
+    "composite_score": 57.0,
+    "community_links": {"twitter": null, "discord": null, "website": null, "github": null}
+  },
+  {
+    "name": "Chutes (Bittensor SN64)",
+    "ticker": "SN64",
+    "category": "AI_x_Crypto",
+    "subcategory": "Bittensor Subnet Token",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Top Bittensor subnet processing 9.1T tokens with revenue",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": "$132M", "date": "2026-03", "source": "1000x Opportunity Map"},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "tvl": {"value": null, "date": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "revenue_or_volume": {"value": "$1.3-2.4M real revenue; $5.5M annualized; receives ~$52M in annualized subsidies", "period": "annual", "source": "Both documents merged"},
+      "github_stars": {"value": null, "date": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "staking", "platform": "Bittensor", "pair_or_url": "Stake TAO into SN64 for Alpha tokens"}
+    ],
+    "key_backers": [],
+    "catalysts": [
+      {"event": "Highest real revenue subnet — potential for organic growth", "est_date": null, "impact": "medium"}
+    ],
+    "risks": [
+      {"risk": "Receives ~$52M in subsidies for ~$2.4M revenue — 22:1 subsidy ratio", "severity": "critical"},
+      {"risk": "Dependent on Bittensor emission schedule", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 75, "evidence": "Subnet tokens dismissed even within crypto community"},
+      "working_code": {"score_suggestion": 80, "evidence": "Processing 9.1T tokens with $1.3-2.4M in real external revenue — top subnet by revenue"},
+      "ideological_community": {"score_suggestion": 50, "evidence": "Part of Bittensor ecosystem"},
+      "developer_activity": {"score_suggestion": 65, "evidence": "Active subnet with real usage metrics"},
+      "smart_money_entry": {"score_suggestion": 40, "evidence": "No specific institutional backing mentioned"},
+      "narrative_clarity": {"score_suggestion": 70, "evidence": "Clear value prop: decentralized AI inference with real revenue"},
+      "hard_to_buy": {"score_suggestion": 80, "evidence": "Must stake TAO into subnets — complex process"},
+      "catalyst_proximity": {"score_suggestion": 50, "evidence": "Revenue growth trajectory is the catalyst"}
+    },
+    "composite_score": 62.25,
+    "community_links": {"twitter": null, "discord": null, "website": null, "github": null}
+  },
+  {
+    "name": "Targon (Bittensor SN4)",
+    "ticker": "SN4",
+    "category": "AI_x_Crypto",
+    "subcategory": "Bittensor Subnet Token",
+    "status": "token_live",
+    "tier_suggestion": "2",
+    "one_liner": "Bittensor subnet with $10.5M Series A funding",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": null, "source": null},
+      "tvl": {"value": null, "date": null, "source": null},
+      "funding_raised": {"value": "$10.5M Series A", "source": "1000x Opportunity Map"},
+      "revenue_or_volume": {"value": null, "period": null, "source": null},
+      "github_stars": {"value": null, "date": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "staking", "platform": "Bittensor", "pair_or_url": "Stake TAO into SN4 for Alpha tokens"}
+    ],
+    "key_backers": [
+      {"name": "Series A investors (unspecified)", "amount": "$10.5M", "round": "Series A"}
+    ],
+    "catalysts": [],
+    "risks": [
+      {"risk": "Dependent on Bittensor ecosystem health and emissions", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 75, "evidence": "Subnet tokens dismissed even within crypto"},
+      "working_code": {"score_suggestion": 55, "evidence": "Active subnet but limited detail on product"},
+      "ideological_community": {"score_suggestion": 50, "evidence": "Part of Bittensor ecosystem"},
+      "developer_activity": {"score_suggestion": 60, "evidence": "Series A funding suggests active development"},
+      "smart_money_entry": {"score_suggestion": 55, "evidence": "$10.5M Series A is notable for a subnet"},
+      "narrative_clarity": {"score_suggestion": 55, "evidence": "Bittensor subnet play"},
+      "hard_to_buy": {"score_suggestion": 80, "evidence": "Must stake TAO into subnets"},
+      "catalyst_proximity": {"score_suggestion": 40, "evidence": "No specific upcoming catalysts mentioned"}
+    },
+    "composite_score": 57.5,
+    "community_links": {"twitter": null, "discord": null, "website": null, "github": null}
+  },
+  {
+    "name": "Grail (Bittensor SN81)",
+    "ticker": "SN81",
+    "category": "AI_x_Crypto",
+    "subcategory": "Bittensor Subnet Token",
+    "status": "token_live",
+    "tier_suggestion": "3",
+    "one_liner": "Bittensor subnet hit hardest by Covenant AI crash",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": "-68% during Covenant AI crash", "source": "Asymmetric Opportunity Atlas"},
+      "tvl": {"value": null, "date": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null},
+      "github_stars": {"value": null, "date": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "staking", "platform": "Bittensor", "pair_or_url": "Stake TAO into SN81 for Alpha tokens"}
+    ],
+    "key_backers": [],
+    "catalysts": [],
+    "risks": [
+      {"risk": "Crashed -68% during Covenant AI exit — most affected subnet", "severity": "critical"},
+      {"risk": "Dependent on Bittensor ecosystem", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 75, "evidence": "Subnet tokens dismissed even within crypto"},
+      "working_code": {"score_suggestion": 40, "evidence": "No specific product details provided"},
+      "ideological_community": {"score_suggestion": 45, "evidence": "Part of Bittensor ecosystem"},
+      "developer_activity": {"score_suggestion": 35, "evidence": "No development details provided"},
+      "smart_money_entry": {"score_suggestion": 30, "evidence": "No institutional backing mentioned"},
+      "narrative_clarity": {"score_suggestion": 45, "evidence": "Generic subnet positioning"},
+      "hard_to_buy": {"score_suggestion": 80, "evidence": "Must stake TAO into subnets"},
+      "catalyst_proximity": {"score_suggestion": 30, "evidence": "No specific catalysts mentioned"}
+    },
+    "composite_score": 44.75,
+    "community_links": {"twitter": null, "discord": null, "website": null, "github": null}
+  },
+  {
+    "name": "Basilica (Bittensor SN39)",
+    "ticker": "SN39",
+    "category": "AI_x_Crypto",
+    "subcategory": "Bittensor Subnet Token",
+    "status": "token_live",
+    "tier_suggestion": "3",
+    "one_liner": "Bittensor subnet cratered 62% in Covenant crash",
+    "quantitative_data": {
+      "price": {"value": null, "date": null, "source": null},
+      "market_cap": {"value": null, "date": null, "source": null},
+      "ath": {"value": null, "date": null, "source": null},
+      "drawdown_from_ath": {"value": "-62% during Covenant AI crash", "source": "Asymmetric Opportunity Atlas"},
+      "tvl": {"value": null, "date": null, "source": null},
+      "funding_raised": {"value": null, "source": null},
+      "revenue_or_volume": {"value": null, "period": null, "source": null},
+      "github_stars": {"value": null, "date": null, "source": null}
+    },
+    "entry_mechanisms": [
+      {"type": "staking", "platform": "Bittensor", "pair_or_url": "Stake TAO into SN39 for Alpha tokens"}
+    ],
+    "key_backers": [],
+    "catalysts": [],
+    "risks": [
+      {"risk": "Crashed -62% during Covenant AI exit event", "severity": "critical"},
+      {"risk": "Dependent on Bittensor ecosystem", "severity": "high"}
+    ],
+    "signal_scores_evidence": {
+      "toy_phase_dismissal": {"score_suggestion": 75, "evidence": "Subnet tokens dismissed even within crypto"},
+      "working_code": {"score_suggestion": 40, "evidence": "No specific product details provided"},
+      "ideological_community": {"score_suggestion": 45, "evidence": "Part of Bittensor ecosystem"},
+      "developer_activity": {"score_suggestion": 35, "evidence": "No development details provided"},
+      "smart_money_entry": {"score_suggestion": 30, "evidence": "No institutional backing mentioned"},
+      "narrative_clarity": {"score_suggestion": 45, "evidence": "Generic subnet positioning"},
+      "hard_to_buy": {"score_suggestion": 80, "evidence": "Must stake TAO into subnets"},
+      "catalyst_proximity": {"score_suggestion": 30, "evidence": "No specific catalysts mentioned"}
+    },
+    "composite_score": 44.75,
+    "community_links": {"twitter": null, "discord": null, "website": null, "github": null}
+  }
+]

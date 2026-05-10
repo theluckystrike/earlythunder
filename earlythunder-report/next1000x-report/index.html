@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>next1000x.com — Project Status Report</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg2: #111118;
+    --bg3: #1a1a2e;
+    --green: #00ff88;
+    --amber: #ffaa00;
+    --red: #ff3344;
+    --blue: #4488ff;
+    --purple: #aa66ff;
+    --text: #e0e0e8;
+    --muted: #6a6a7a;
+    --border: #2a2a3e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace; line-height: 1.6; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+  h1 { color: var(--green); font-size: 2rem; margin-bottom: 8px; }
+  h2 { color: var(--amber); font-size: 1.4rem; margin: 40px 0 16px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  h3 { color: var(--text); font-size: 1.1rem; margin: 24px 0 12px; }
+  .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 30px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 16px 0; }
+  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .card:hover { border-color: var(--green); }
+  .card-title { color: var(--green); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .card-value { font-size: 2.2rem; font-weight: bold; color: var(--text); }
+  .card-detail { color: var(--muted); font-size: 0.8rem; margin-top: 4px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; }
+  .badge-t1 { background: rgba(0,255,136,0.15); color: var(--green); border: 1px solid var(--green); }
+  .badge-t2 { background: rgba(255,170,0,0.15); color: var(--amber); border: 1px solid var(--amber); }
+  .badge-t3 { background: rgba(255,51,68,0.15); color: var(--red); border: 1px solid var(--red); }
+  .badge-done { background: rgba(0,255,136,0.15); color: var(--green); }
+  .badge-pending { background: rgba(255,170,0,0.15); color: var(--amber); }
+  .badge-gap { background: rgba(255,51,68,0.15); color: var(--red); }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.85rem; }
+  th { background: var(--bg3); color: var(--amber); text-align: left; padding: 10px 12px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; user-select: none; position: sticky; top: 0; }
+  th:hover { color: var(--green); }
+  td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  tr:hover td { background: var(--bg3); }
+  .score { font-weight: bold; }
+  .score-high { color: var(--green); }
+  .score-mid { color: var(--amber); }
+  .score-low { color: var(--red); }
+  .section { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin: 16px 0; }
+  .file-tree { font-size: 0.8rem; color: var(--muted); }
+  .file-tree .file { color: var(--text); }
+  .file-tree .dir { color: var(--blue); }
+  .file-tree .lines { color: var(--amber); }
+  .progress-bar { background: var(--bg3); border-radius: 4px; height: 8px; overflow: hidden; margin: 4px 0; }
+  .progress-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+  .progress-fill.green { background: var(--green); }
+  .progress-fill.amber { background: var(--amber); }
+  .ticker { display: flex; gap: 24px; overflow: hidden; padding: 12px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 20px 0; animation: scroll 30s linear infinite; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .ticker-item { white-space: nowrap; font-size: 0.85rem; }
+  .ticker-name { color: var(--text); }
+  .ticker-score { margin-left: 4px; }
+  .tab-container { margin: 16px 0; }
+  .tabs { display: flex; gap: 2px; margin-bottom: 0; }
+  .tab { padding: 8px 16px; background: var(--bg3); color: var(--muted); border: 1px solid var(--border); border-bottom: none; border-radius: 6px 6px 0 0; cursor: pointer; font-family: inherit; font-size: 0.8rem; }
+  .tab.active { background: var(--bg2); color: var(--green); border-color: var(--green); border-bottom: 1px solid var(--bg2); }
+  .tab-content { display: none; background: var(--bg2); border: 1px solid var(--border); border-radius: 0 8px 8px 8px; padding: 20px; }
+  .tab-content.active { display: block; }
+  .chart-bar { display: flex; align-items: center; gap: 8px; margin: 6px 0; font-size: 0.8rem; }
+  .chart-label { width: 160px; text-align: right; color: var(--muted); }
+  .chart-fill { height: 20px; border-radius: 3px; min-width: 2px; display: flex; align-items: center; padding-left: 8px; font-size: 0.7rem; color: var(--bg); font-weight: bold; }
+  .warn { background: rgba(255,170,0,0.1); border: 1px solid var(--amber); border-radius: 6px; padding: 12px 16px; margin: 12px 0; font-size: 0.85rem; }
+  .warn::before { content: "!"; display: inline-block; width: 20px; height: 20px; background: var(--amber); color: var(--bg); border-radius: 50%; text-align: center; line-height: 20px; font-weight: bold; margin-right: 8px; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { color: var(--green); }
+  .timestamp { color: var(--muted); font-size: 0.75rem; }
+  pre { background: var(--bg3); padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 0.8rem; margin: 12px 0; }
+  code { color: var(--green); }
+  .checklist { list-style: none; font-size: 0.85rem; }
+  .checklist li { padding: 4px 0; }
+  .checklist li::before { content: ""; display: inline-block; width: 16px; height: 16px; border: 2px solid var(--green); border-radius: 3px; margin-right: 8px; vertical-align: middle; }
+  .checklist li.done::before { content: "\2713"; background: var(--green); color: var(--bg); text-align: center; line-height: 16px; font-size: 10px; }
+  .checklist li.gap::before { border-color: var(--red); }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- HEADER -->
+<h1>NEXT1000X.COM</h1>
+<div class="subtitle">Project Status Report &mdash; Generated April 13, 2026 &bull; Phase 1 Pre-Build</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="grid">
+  <div class="card">
+    <div class="card-title">Total Files Generated</div>
+    <div class="card-value">21</div>
+    <div class="card-detail">17,405 lines across plans, schema, content, research, extractions</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Opportunities Extracted</div>
+    <div class="card-value">69</div>
+    <div class="card-detail">From 2 research documents (2,010 sources combined)</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Seed Opportunities Scored</div>
+    <div class="card-value">47</div>
+    <div class="card-detail">Independent web research across 10 categories</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Build Plan Chunks</div>
+    <div class="card-value">35</div>
+    <div class="card-detail">8 batches &bull; 0/35 complete &bull; Ready to execute</div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div style="overflow:hidden;">
+<div class="ticker">
+  <span class="ticker-item"><span class="ticker-name">POLY</span> <span class="ticker-score score-high">81.0</span></span>
+  <span class="ticker-item"><span class="ticker-name">TAO</span> <span class="ticker-score score-high">78.5</span></span>
+  <span class="ticker-item"><span class="ticker-name">CFS</span> <span class="ticker-score score-mid">72.0</span></span>
+  <span class="ticker-item"><span class="ticker-name">SECZ</span> <span class="ticker-score score-mid">71.3</span></span>
+  <span class="ticker-item"><span class="ticker-name">Kalshi</span> <span class="ticker-score score-mid">69.3</span></span>
+  <span class="ticker-item"><span class="ticker-name">PLUME</span> <span class="ticker-score score-mid">66.0</span></span>
+  <span class="ticker-item"><span class="ticker-name">ONDO</span> <span class="ticker-score score-mid">65.5</span></span>
+  <span class="ticker-item"><span class="ticker-name">LINK</span> <span class="ticker-score score-mid">64.3</span></span>
+  <span class="ticker-item"><span class="ticker-name">INFQ</span> <span class="ticker-score score-mid">63.8</span></span>
+  <span class="ticker-item"><span class="ticker-name">CFG</span> <span class="ticker-score score-mid">63.5</span></span>
+  <span class="ticker-item"><span class="ticker-name">Helion</span> <span class="ticker-score score-mid">62.5</span></span>
+  <span class="ticker-item"><span class="ticker-name">SN64</span> <span class="ticker-score score-mid">62.3</span></span>
+  <span class="ticker-item"><span class="ticker-name">UMA</span> <span class="ticker-score score-mid">59.3</span></span>
+  <span class="ticker-item"><span class="ticker-name">BMM</span> <span class="ticker-score score-mid">58.8</span></span>
+  <span class="ticker-item"><span class="ticker-name">IONQ</span> <span class="ticker-score score-mid">58.0</span></span>
+  <!-- repeat for scroll -->
+  <span class="ticker-item"><span class="ticker-name">POLY</span> <span class="ticker-score score-high">81.0</span></span>
+  <span class="ticker-item"><span class="ticker-name">TAO</span> <span class="ticker-score score-high">78.5</span></span>
+  <span class="ticker-item"><span class="ticker-name">CFS</span> <span class="ticker-score score-mid">72.0</span></span>
+  <span class="ticker-item"><span class="ticker-name">SECZ</span> <span class="ticker-score score-mid">71.3</span></span>
+  <span class="ticker-item"><span class="ticker-name">Kalshi</span> <span class="ticker-score score-mid">69.3</span></span>
+  <span class="ticker-item"><span class="ticker-name">PLUME</span> <span class="ticker-score score-mid">66.0</span></span>
+  <span class="ticker-item"><span class="ticker-name">ONDO</span> <span class="ticker-score score-mid">65.5</span></span>
+  <span class="ticker-item"><span class="ticker-name">LINK</span> <span class="ticker-score score-mid">64.3</span></span>
+  <span class="ticker-item"><span class="ticker-name">INFQ</span> <span class="ticker-score score-mid">63.8</span></span>
+  <span class="ticker-item"><span class="ticker-name">CFG</span> <span class="ticker-score score-mid">63.5</span></span>
+</div>
+</div>
+
+<!-- AGENT COMPLETION STATUS -->
+<h2>Agent Completion Status</h2>
+<div class="section">
+<h3>Batch 1 — Foundation Agents (5/5 Complete)</h3>
+<table>
+  <thead><tr><th>Agent</th><th>Role</th><th>Output</th><th>Lines</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>PM Planner</td><td>Execution plan</td><td><code>plan.md</code></td><td>821</td><td><span class="badge badge-done">DONE</span></td></tr>
+    <tr><td>DB Architect</td><td>Database schema</td><td><code>docs/schema/001_initial_schema.sql</code></td><td>649</td><td><span class="badge badge-done">DONE</span></td></tr>
+    <tr><td>SCOUT/Analyst</td><td>Seed opportunities</td><td><code>docs/research/seed-opportunities.md</code></td><td>1,198</td><td><span class="badge badge-done">DONE</span></td></tr>
+    <tr><td>WRITER</td><td>Site content/copy</td><td><code>docs/content/*.md</code> (6 files)</td><td>845</td><td><span class="badge badge-done">DONE</span></td></tr>
+    <tr><td>GROWTH</td><td>SEO &amp; growth strategy</td><td><code>docs/research/*.md</code> (5 files)</td><td>4,179</td><td><span class="badge badge-done">DONE</span></td></tr>
+  </tbody>
+</table>
+
+<h3>Batch 2 — Data Extraction Agents (5/5 Complete)</h3>
+<table>
+  <thead><tr><th>Agent</th><th>Sections</th><th>Output</th><th>Entries</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>Extractor 1</td><td>AI x Crypto, DeSci, DePIN</td><td><code>extracted-sections-1-3.json</code></td><td>6</td><td><span class="badge badge-gap">INCOMPLETE</span></td></tr>
+    <tr><td>Extractor 2</td><td>Fusion, Critical Minerals</td><td><code>extracted-sections-4-5.json</code></td><td>32</td><td><span class="badge badge-done">DONE</span></td></tr>
+    <tr><td>Extractor 3</td><td>Quantum, Prediction, RWA</td><td><code>extracted-sections-6-8.json</code></td><td>29</td><td><span class="badge badge-done">DONE</span></td></tr>
+    <tr><td>Extractor 4</td><td>Energy, Longevity, Restaking</td><td><code>extracted-sections-9-11.json</code></td><td>21</td><td><span class="badge badge-done">DONE</span></td></tr>
+    <tr><td>Extractor 5</td><td>Markets, Equities, Meta</td><td><code>extracted-sections-12-14.json</code></td><td>32 + 12 meta</td><td><span class="badge badge-done">DONE</span></td></tr>
+  </tbody>
+</table>
+
+<div class="warn">Sections 1-3 extraction is incomplete — only 6 entries (Bittensor family). Missing: DeSci (~12 entries: BIO, VITA, HairDAO, RSC, Molecule, CryoDAO, ValleyDAO, Pump.Science, etc.), DePIN (~6 entries: GRASS, Acurast, DAWN, Hivemapper), additional AI (Gensyn, Akash, Render, EZKL, Virtuals, OLAS, Qubic), and airdrop opportunities (Symbiotic, Base, MetaMask, OpenSea, Hyperliquid). <strong>Re-extraction recommended.</strong></div>
+</div>
+
+<!-- OPPORTUNITY DATABASE -->
+<h2>Opportunity Database — All 69 Extracted Entries</h2>
+<div class="section" style="overflow-x: auto;">
+<table id="opp-table">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">#</th>
+      <th onclick="sortTable(1)">Name</th>
+      <th onclick="sortTable(2)">Ticker</th>
+      <th onclick="sortTable(3)">Category</th>
+      <th onclick="sortTable(4)">Tier</th>
+      <th onclick="sortTable(5)">Score</th>
+      <th onclick="sortTable(6)">Status</th>
+      <th onclick="sortTable(7)">Market Cap</th>
+      <th>One-Liner</th>
+    </tr>
+  </thead>
+  <tbody id="opp-body">
+  </tbody>
+</table>
+</div>
+
+<!-- CATEGORY BREAKDOWN -->
+<h2>Category Distribution</h2>
+<div class="section">
+  <div class="chart-bar"><span class="chart-label">Critical Minerals</span><div class="chart-fill" style="width:290px;background:var(--green);">20</div></div>
+  <div class="chart-bar"><span class="chart-label">Fusion Energy</span><div class="chart-fill" style="width:174px;background:var(--amber);">12</div></div>
+  <div class="chart-bar"><span class="chart-label">Quantum Computing</span><div class="chart-fill" style="width:160px;background:var(--blue);">11</div></div>
+  <div class="chart-bar"><span class="chart-label">RWA Tokenization</span><div class="chart-fill" style="width:145px;background:var(--purple);">10</div></div>
+  <div class="chart-bar"><span class="chart-label">Prediction Markets</span><div class="chart-fill" style="width:116px;background:var(--green);">8</div></div>
+  <div class="chart-bar"><span class="chart-label">AI x Crypto</span><div class="chart-fill" style="width:87px;background:var(--red);">6 (incomplete)</div></div>
+  <div class="chart-bar"><span class="chart-label">Energy Storage</span><div class="chart-fill" style="width:15px;background:var(--red);">1 (partial)</div></div>
+  <div class="chart-bar"><span class="chart-label">DeSci</span><div class="chart-fill" style="width:4px;background:var(--red);">0 (missing)</div></div>
+  <div class="chart-bar"><span class="chart-label">DePIN</span><div class="chart-fill" style="width:4px;background:var(--red);">0 (missing)</div></div>
+  <div class="chart-bar"><span class="chart-label">Longevity/BCI</span><div class="chart-fill" style="width:4px;background:var(--red);">0 (partial)</div></div>
+
+  <h3>Tier Distribution</h3>
+  <div class="chart-bar"><span class="chart-label">Tier 1 (80-100)</span><div class="chart-fill" style="width:189px;background:var(--green);">13</div></div>
+  <div class="chart-bar"><span class="chart-label">Tier 2 (65-79)</span><div class="chart-fill" style="width:450px;background:var(--amber);">31</div></div>
+  <div class="chart-bar"><span class="chart-label">Tier 3 (55-64)</span><div class="chart-fill" style="width:334px;background:var(--red);">23</div></div>
+</div>
+
+<!-- BUILD PLAN -->
+<h2>Build Plan Overview — 8 Batches, 35 Chunks</h2>
+<div class="section">
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">Batch 1: Scaffold</div>
+      <div>6 chunks &bull; Next.js, Tailwind, Supabase client, Vercel deploy</div>
+      <div class="progress-bar"><div class="progress-fill amber" style="width:0%"></div></div>
+      <div class="card-detail">0/6 complete &bull; No dependencies</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Batch 2: Database</div>
+      <div>5 chunks &bull; Schema, RLS, seed data, TypeScript types</div>
+      <div class="progress-bar"><div class="progress-fill amber" style="width:0%"></div></div>
+      <div class="card-detail">0/5 complete &bull; Depends on Batch 1</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Batch 3: Core Pages</div>
+      <div>5 chunks &bull; Landing, grid, detail, methodology, graveyard, pricing</div>
+      <div class="progress-bar"><div class="progress-fill amber" style="width:0%"></div></div>
+      <div class="card-detail">0/5 complete &bull; Depends on Batch 2</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Batch 4: Auth &amp; Paywall</div>
+      <div>5 chunks &bull; Supabase Auth, Stripe, webhooks, gate component</div>
+      <div class="progress-bar"><div class="progress-fill amber" style="width:0%"></div></div>
+      <div class="card-detail">0/5 complete &bull; Depends on Batch 2</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Batch 5: Content Pipeline</div>
+      <div>4 chunks &bull; WRITER prompts, batch generation, quality pass</div>
+      <div class="progress-bar"><div class="progress-fill amber" style="width:0%"></div></div>
+      <div class="card-detail">0/4 complete &bull; Depends on Batch 2</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Batch 6: Programmatic SEO</div>
+      <div>4 chunks &bull; Meta tags, OG images, category pages, sitemap</div>
+      <div class="progress-bar"><div class="progress-fill amber" style="width:0%"></div></div>
+      <div class="card-detail">0/4 complete &bull; Depends on Batches 3+4</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Batch 7: Email</div>
+      <div>3 chunks &bull; Resend setup, welcome sequence, weekly brief</div>
+      <div class="progress-bar"><div class="progress-fill amber" style="width:0%"></div></div>
+      <div class="card-detail">0/3 complete &bull; Depends on Batches 2+4</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Batch 8: SCOUT Automation</div>
+      <div>4 chunks &bull; Source adapters, signal detection, weekly cron</div>
+      <div class="progress-bar"><div class="progress-fill amber" style="width:0%"></div></div>
+      <div class="card-detail">0/4 complete &bull; Depends on Batches 2+5</div>
+    </div>
+  </div>
+  <h3>Dependency Graph</h3>
+  <pre>
+Batch 1 (Scaffold) ──&gt; Batch 2 (Database) ──┬──&gt; Batch 3 (Core Pages) ──┐
+                                              ├──&gt; Batch 4 (Auth)     ──┤──&gt; Batch 6 (SEO)
+                                              ├──&gt; Batch 5 (Content)    │──&gt; Batch 7 (Email)
+                                              └────────────────────────────&gt; Batch 8 (SCOUT)
+
+Parallelism: After Batch 2, agents can work on Batches 3/4/5 simultaneously.
+  </pre>
+</div>
+
+<!-- DATABASE SCHEMA -->
+<h2>Database Schema — 649 Lines of Production SQL</h2>
+<div class="section">
+  <div class="two-col">
+    <div>
+      <h3>10 Tables</h3>
+      <ul class="checklist">
+        <li class="done">profiles (extends auth.users)</li>
+        <li class="done">opportunities (core tracking)</li>
+        <li class="done">opportunity_signals (8-signal scores)</li>
+        <li class="done">entry_mechanisms (how to buy)</li>
+        <li class="done">risks (probability x severity)</li>
+        <li class="done">catalysts (upcoming events)</li>
+        <li class="done">communities (social links)</li>
+        <li class="done">scout_signals (raw pipeline)</li>
+        <li class="done">weekly_briefs (intelligence summaries)</li>
+        <li class="done">graveyard_postmortems (failure analysis)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Infrastructure</h3>
+      <ul class="checklist">
+        <li class="done">11 enum types</li>
+        <li class="done">16 indexes (3 partial)</li>
+        <li class="done">14 RLS policies</li>
+        <li class="done">2 paywall-gated views</li>
+        <li class="done">Auto-recalculate composite score trigger</li>
+        <li class="done">Auto-create profile on signup trigger</li>
+        <li class="done">Auto updated_at on all tables</li>
+        <li class="done">is_paid_subscriber() helper</li>
+        <li class="done">is_admin() helper</li>
+        <li class="done">opportunity_dashboard view</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Signal Weight Formula (Auto-Calculated)</h3>
+  <pre>composite = (toy_phase * 0.15) + (working_code * 0.20) + (community * 0.10) + (dev_activity * 0.15)
+           + (smart_money * 0.15) + (narrative * 0.05) + (hard_to_buy * 0.05) + (catalyst * 0.15)</pre>
+</div>
+
+<!-- CONTENT INVENTORY -->
+<h2>Content Inventory — 6 Publish-Ready Files</h2>
+<div class="section">
+<table>
+  <thead><tr><th>File</th><th>Purpose</th><th>Lines</th><th>Quality</th></tr></thead>
+  <tbody>
+    <tr><td><code>landing-page.md</code></td><td>Hero, 8-signal teaser, sample cards, pricing, 8 FAQs</td><td>211</td><td><span class="badge badge-done">Ready</span></td></tr>
+    <tr><td><code>methodology.md</code></td><td>4 case studies (BTC/ETH/DeFi/NFTs), signal breakdowns, limitations</td><td>261</td><td><span class="badge badge-done">Ready</span></td></tr>
+    <tr><td><code>pricing.md</code></td><td>Free/Pro/API tiers, 9 billing FAQs</td><td>102</td><td><span class="badge badge-done">Ready</span></td></tr>
+    <tr><td><code>graveyard-intro.md</code></td><td>Failure tracking credibility framing</td><td>19</td><td><span class="badge badge-done">Ready</span></td></tr>
+    <tr><td><code>disclaimer.md</code></td><td>Full legal: not financial advice, risk acknowledgment</td><td>87</td><td><span class="badge badge-done">Ready</span></td></tr>
+    <tr><td><code>email-sequences.md</code></td><td>3-email welcome: framework, DeFi case study, soft paywall CTA</td><td>165</td><td><span class="badge badge-done">Ready</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- GROWTH STRATEGY -->
+<h2>Growth &amp; SEO Strategy — 5 Implementation Docs</h2>
+<div class="section">
+<table>
+  <thead><tr><th>File</th><th>Contents</th><th>Lines</th></tr></thead>
+  <tbody>
+    <tr><td><code>seo-strategy.md</code></td><td>6 page types, 7 JSON-LD schemas, sitemap.ts, CWV targets, keyword framework</td><td>1,009</td></tr>
+    <tr><td><code>page-templates.md</code></td><td>Handlebars templates, TypeScript helpers, CTA placement, FAQ microdata</td><td>1,016</td></tr>
+    <tr><td><code>email-plan.md</code></td><td>7 capture points, welcome sequence, Resend cron, SQL schemas, A/B tests</td><td>662</td></tr>
+    <tr><td><code>social-automation.md</code></td><td>Twitter/Reddit/Farcaster/Dev.to with API code, rate limits, post templates</td><td>871</td></tr>
+    <tr><td><code>conversion-funnel.md</code></td><td>8-stage funnel, Stripe config, churn signals, 6-month revenue model</td><td>621</td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- FILE TREE -->
+<h2>Complete File Tree</h2>
+<div class="section">
+<pre class="file-tree">
+<span class="dir">next1000x/</span>
+├── <span class="file">plan.md</span>                                    <span class="lines">821 lines — 8 batches, 35 chunks</span>
+├── <span class="file">plan-archive.md</span>                             <span class="lines">Empty — ready for completed chunks</span>
+│
+├── <span class="dir">docs/schema/</span>
+│   ├── <span class="file">001_initial_schema.sql</span>                  <span class="lines">649 lines — 10 tables, 16 indexes, 14 RLS policies</span>
+│   └── <span class="file">README.md</span>                               <span class="lines">107 lines — Schema design decisions</span>
+│
+├── <span class="dir">docs/content/</span>
+│   ├── <span class="file">landing-page.md</span>                        <span class="lines">211 lines — Hero + value prop + sample cards</span>
+│   ├── <span class="file">methodology.md</span>                         <span class="lines">261 lines — 8-Signal Framework deep dive</span>
+│   ├── <span class="file">pricing.md</span>                             <span class="lines">102 lines — Free/Pro/API tiers</span>
+│   ├── <span class="file">graveyard-intro.md</span>                     <span class="lines"> 19 lines — Failure tracking framing</span>
+│   ├── <span class="file">disclaimer.md</span>                          <span class="lines"> 87 lines — Legal disclaimer</span>
+│   └── <span class="file">email-sequences.md</span>                     <span class="lines">165 lines — 3-email welcome sequence</span>
+│
+├── <span class="dir">docs/research/</span>
+│   ├── <span class="file">seed-opportunities.md</span>                  <span class="lines">1,198 lines — 47 scored opportunities (web research)</span>
+│   ├── <span class="file">extracted-sections-1-3.json</span>            <span class="lines">  261 lines — 6 entries (INCOMPLETE)</span>
+│   ├── <span class="file">extracted-sections-4-5.json</span>            <span class="lines">1,573 lines — 32 entries (Fusion + Minerals)</span>
+│   ├── <span class="file">extracted-sections-6-8.json</span>            <span class="lines">3,776 lines — 29 entries (Quantum + Prediction + RWA)</span>
+│   ├── <span class="file">extracted-sections-9-11.json</span>           <span class="lines">2,172 lines — 21 entries (Energy + Longevity + Restaking)</span>
+│   ├── <span class="file">extracted-sections-12-14.json</span>          <span class="lines">1,824 lines — 32 entries + 12 meta objects</span>
+│   ├── <span class="file">seo-strategy.md</span>                        <span class="lines">1,009 lines — Full SEO plan</span>
+│   ├── <span class="file">page-templates.md</span>                      <span class="lines">1,016 lines — Programmatic page templates</span>
+│   ├── <span class="file">email-plan.md</span>                          <span class="lines">  662 lines — Email marketing plan</span>
+│   ├── <span class="file">social-automation.md</span>                   <span class="lines">  871 lines — Social distribution automation</span>
+│   └── <span class="file">conversion-funnel.md</span>                   <span class="lines">  621 lines — 8-stage conversion funnel</span>
+</pre>
+</div>
+
+<!-- GAPS & NEXT STEPS -->
+<h2>Known Gaps &amp; Immediate Next Steps</h2>
+<div class="section">
+  <h3>Critical Gaps</h3>
+  <div class="warn">Sections 1-3 extraction incomplete: Only 6 AI x Crypto entries extracted (Bittensor family). Missing ~40 entries across DeSci, DePIN, additional AI, and airdrop opportunities. This represents the largest category gap in the database.</div>
+  <div class="warn">Sections 9-11 and 12-14 had partial JSON parse issues in some entries. Energy Storage shows only 1 entry in parsed data vs 7 extracted. Longevity/BCI entries not appearing in consolidated count. Recommend re-validation.</div>
+
+  <h3>Recommended Next Actions</h3>
+  <ol style="font-size:0.9rem; padding-left:24px;">
+    <li style="margin:8px 0;"><strong>Re-extract Sections 1-3</strong> — Run a new extraction agent specifically for AI x Crypto (15+ entries), DeSci (12+ entries), DePIN (6+ entries), and airdrop opportunities (7+ entries)</li>
+    <li style="margin:8px 0;"><strong>Validate &amp; merge all JSON</strong> — Fix parse errors in sections 9-11 and 12-14, merge all extraction files into a single <code>all-opportunities.json</code></li>
+    <li style="margin:8px 0;"><strong>Cross-reference with seed research</strong> — The 47 seed opportunities from web research contain entries not in the extraction (Babylon, Geodnet, Aztec, Aleo, etc.). Merge these in.</li>
+    <li style="margin:8px 0;"><strong>Begin Batch 1 execution</strong> — Next.js init, Tailwind dark theme, Supabase client, Vercel deploy. All planning/research is complete.</li>
+    <li style="margin:8px 0;"><strong>Set up GitHub repo</strong> — <code>theluckystrike/next1000x</code> needs to be created, plan.md committed</li>
+    <li style="margin:8px 0;"><strong>Set up Supabase project</strong> — Create project, run <code>001_initial_schema.sql</code> migration</li>
+    <li style="margin:8px 0;"><strong>Set up Stripe</strong> — Create products ($49/mo, $399/yr), get API keys</li>
+  </ol>
+
+  <h3>Execution Readiness Checklist</h3>
+  <div class="two-col">
+    <ul class="checklist">
+      <li class="done">Execution plan with 35 atomic chunks</li>
+      <li class="done">Database schema with RLS + triggers</li>
+      <li class="done">Seed opportunity data (47 scored)</li>
+      <li class="done">Research document extractions (69 entries)</li>
+      <li class="done">All site content/copy written</li>
+    </ul>
+    <ul class="checklist">
+      <li class="done">SEO strategy + page templates</li>
+      <li class="done">Email marketing plan</li>
+      <li class="done">Social automation plan</li>
+      <li class="done">Conversion funnel mapped</li>
+      <li class="gap">GitHub repo (not created yet)</li>
+      <li class="gap">Supabase project (not created yet)</li>
+      <li class="gap">Stripe products (not created yet)</li>
+      <li class="gap">Vercel project (not created yet)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- TECH STACK -->
+<h2>Tech Stack</h2>
+<div class="section">
+<pre>
+Framework:    Next.js 14+ (App Router, SSG/ISR)
+Styling:      Tailwind CSS (dark Bloomberg Terminal aesthetic)
+Database:     Supabase (PostgreSQL 15+, Auth, RLS, Realtime)
+Payments:     Stripe (checkout, webhooks, customer portal)
+Email:        Resend (transactional + marketing)
+Deployment:   Vercel (edge functions, cron jobs)
+Package Mgr:  pnpm
+Domain:       next1000x.com
+Analytics:    PostHog (planned)
+Search:       Algolia or Meilisearch (planned)
+</pre>
+</div>
+
+<div style="text-align:center; padding:40px; color:var(--muted); font-size:0.75rem;">
+  Generated by 10 autonomous agents &bull; April 13, 2026 &bull; next1000x.com
+</div>
+
+</div>
+
+<script>
+// Opportunity data
+const opps = [{"name":"Polymarket","ticker":"POLY","category":"Prediction_Markets","tier":"1","score":81.0,"status":"pre_token","one_liner":"Dominant crypto prediction market, $POLY token and airdrop confirmed","mcap":null},{"name":"Bittensor","ticker":"TAO","category":"AI_x_Crypto","tier":"1","score":78.5,"status":"mainnet_live","one_liner":"Decentralized market for machine intelligence with 128 subnets","mcap":"$2.6B"},{"name":"Commonwealth Fusion Systems","ticker":null,"category":"Fusion_Energy","tier":"2","score":72.0,"status":"pre_ipo","one_liner":"SPARC tokamak approaching first plasma 2027 with $3B raised","mcap":null},{"name":"Securitize SPAC","ticker":"SECZ","category":"RWA_Tokenization","tier":"1","score":71.25,"status":"SPAC","one_liner":"First pure-play tokenization company, ~70% US market, profitable","mcap":"~$1.82B"},{"name":"Kalshi","ticker":null,"category":"Prediction_Markets","tier":"1","score":69.25,"status":"pre_token","one_liner":"$22B valuation prediction exchange with $1.5B annualized revenue","mcap":null},{"name":"Plume Network","ticker":"PLUME","category":"RWA_Tokenization","tier":"1","score":66.0,"status":"token_live","one_liner":"Undervalued RWA chain, $645M assets, $50M cap, major partners","mcap":"~$50M"},{"name":"Ondo Finance","ticker":"ONDO","category":"RWA_Tokenization","tier":"1","score":65.5,"status":"token_live","one_liner":"Leading tokenized treasury platform, $2.75B TVL, Ondo Chain L1","mcap":"~$1.2B"},{"name":"Chainlink","ticker":"LINK","category":"Prediction_Markets","tier":"2","score":64.25,"status":"token_live","one_liner":"Dominant oracle with $18B/month CCIP volume, JPMorgan partnerships","mcap":"$6.5B"},{"name":"Infleqtion","ticker":"INFQ","category":"Quantum_Computing","tier":"1","score":63.75,"status":"SPAC","one_liner":"Lowest P/S quantum SPAC with NASA contract and error correction","mcap":"~$2.3B"},{"name":"Centrifuge","ticker":"CFG","category":"RWA_Tokenization","tier":"1","score":63.5,"status":"token_live","one_liner":"Institutional RWA lending with $1B TVL, Apollo/Janus partnerships","mcap":"$89-124M"},{"name":"Helion Energy","ticker":null,"category":"Fusion_Energy","tier":"2","score":62.5,"status":"pre_ipo","one_liner":"Altman-backed fusion with first D-T fuel milestone achieved","mcap":null},{"name":"Chutes (SN64)","ticker":"SN64","category":"AI_x_Crypto","tier":"2","score":62.25,"status":"token_live","one_liner":"Top Bittensor subnet processing 9.1T tokens with revenue","mcap":"$132M"},{"name":"UMA Protocol","ticker":"UMA","category":"Prediction_Markets","tier":"1","score":59.25,"status":"token_live","one_liner":"Powers Polymarket resolution, trading at all-time low $0.42","mcap":null},{"name":"Blue Moon Metals","ticker":"BMM","category":"Critical_Minerals","tier":"1","score":58.75,"status":"public_equity","one_liner":"Western gallium-germanium mine with Teck/Oaktree/Wheaton backing","mcap":"~C$80-100M"},{"name":"BlackRock BUIDL","ticker":null,"category":"RWA_Tokenization","tier":"2","score":58.25,"status":"token_live","one_liner":"Largest tokenized product globally at $2.42B AUM","mcap":null},{"name":"IonQ","ticker":"IONQ","category":"Quantum_Computing","tier":"2","score":58.0,"status":"public_equity","one_liner":"First public quantum company exceeding $100M annual revenue","mcap":"$16-18B"},{"name":"Targon (SN4)","ticker":"SN4","category":"AI_x_Crypto","tier":"2","score":57.5,"status":"token_live","one_liner":"Bittensor subnet with $10.5M Series A funding","mcap":null},{"name":"Larvotto Resources","ticker":"LRV","category":"Critical_Minerals","tier":"1","score":57.25,"status":"public_equity","one_liner":"Hillgrove DFS: NPV A$694M, IRR 102%, production Q2 2026","mcap":"~A$200-400M"},{"name":"Templar (SN3)","ticker":"SN3","category":"AI_x_Crypto","tier":"2","score":57.0,"status":"token_live","one_liner":"Bittensor subnet token with 444% March surge","mcap":"$137M"},{"name":"Skyharbour","ticker":"SYH","category":"Critical_Minerals","tier":"2","score":56.75,"status":"public_equity","one_liner":"High-grade Athabasca uranium with 11.77% U3O8 results","mcap":"~C$35M"},{"name":"TAE/DJT Merger","ticker":"DJT","category":"Fusion_Energy","tier":"3","score":55.5,"status":"public_equity","one_liner":"First publicly traded pure-play fusion stock via merger","mcap":"~$2.5B"},{"name":"Perpetua Resources","ticker":"PPTA","category":"Critical_Minerals","tier":"1","score":55.0,"status":"public_equity","one_liner":"Stibnite mine: 35% of US antimony, $2B EXIM financing","mcap":"$3.5B"},{"name":"PsiQuantum","ticker":null,"category":"Quantum_Computing","tier":"2","score":52.25,"status":"pre_ipo","one_liner":"$7B valuation photonic quantum building utility-scale sites","mcap":null},{"name":"Republic Mirror","ticker":null,"category":"RWA_Tokenization","tier":"2","score":52.25,"status":"token_live","one_liner":"Tokenized SpaceX/ByteDance via Reg D notes on Solana","mcap":null},{"name":"F3 Uranium","ticker":"FUU","category":"Critical_Minerals","tier":"2","score":51.5,"status":"public_equity","one_liner":"JR Zone: 12.23% U3O8 high-grade domain","mcap":"Small"},{"name":"Military Metals","ticker":"MILI","category":"Critical_Minerals","tier":"1","score":49.75,"status":"public_equity","one_liner":"Highest-asymmetry antimony with European drill results","mcap":"C$39M"},{"name":"US Antimony","ticker":"UAMY","category":"Critical_Minerals","tier":"2","score":48.75,"status":"public_equity","one_liner":"2 of 3 Western antimony smelters, $125M revenue guidance","mcap":"$200-400M"},{"name":"Pasqal","ticker":null,"category":"Quantum_Computing","tier":"2","score":48.75,"status":"SPAC","one_liner":"French neutral-atom quantum via Bleichroeder SPAC","mcap":null},{"name":"Drift BET","ticker":"BET","category":"Prediction_Markets","tier":"2","score":48.5,"status":"token_live","one_liner":"Solana prediction market on Drift $25B+ volume","mcap":null},{"name":"Pulsar Helium","ticker":"PLSR","category":"Critical_Minerals","tier":"2","score":47.5,"status":"public_equity","one_liner":"Only public company with confirmed terrestrial He-3","mcap":"~$300M"},{"name":"North Shore Uranium","ticker":"NSU","category":"Critical_Minerals","tier":"2","score":47.0,"status":"public_equity","one_liner":"YTD +637.5% in 2025, 11.4M lbs historical resource","mcap":"C$22M"},{"name":"Robinhood","ticker":"HOOD","category":"Prediction_Markets","tier":"2","score":47.0,"status":"public_equity","one_liner":"Prediction market proxy, ~$300M ARR from events","mcap":null},{"name":"D-Wave","ticker":"QBTS","category":"Quantum_Computing","tier":"2","score":45.0,"status":"public_equity","one_liner":"Quantum annealing pioneer, $24.6M revenue, +179%","mcap":"~$10B"},{"name":"Rigetti","ticker":"RGTI","category":"Quantum_Computing","tier":"2","score":42.0,"status":"public_equity","one_liner":"Superconducting quantum, +5700% trailing year","mcap":"~$8.5B"},{"name":"Landshare","ticker":"LAND","category":"RWA_Tokenization","tier":"3","score":40.5,"status":"token_live","one_liner":"BSC real estate tokenization, $7.5M cap, 4+ years","mcap":"~$7.5M"},{"name":"Pacific Fusion","ticker":null,"category":"Fusion_Energy","tier":"3","score":37.75,"status":"pre_product","one_liner":"Inertial confinement fusion, record $900M Series A","mcap":null}];
+
+// Render table
+const tbody = document.getElementById('opp-body');
+opps.forEach((o, i) => {
+  const tierClass = o.tier === '1' ? 'badge-t1' : o.tier === '2' ? 'badge-t2' : 'badge-t3';
+  const scoreClass = o.score >= 65 ? 'score-high' : o.score >= 50 ? 'score-mid' : 'score-low';
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td>${i+1}</td>
+    <td><strong>${o.name}</strong></td>
+    <td>${o.ticker || '—'}</td>
+    <td>${o.category.replace(/_/g, ' ')}</td>
+    <td><span class="badge ${tierClass}">T${o.tier}</span></td>
+    <td class="score ${scoreClass}">${o.score.toFixed(1)}</td>
+    <td>${o.status.replace(/_/g, ' ')}</td>
+    <td>${o.mcap || '—'}</td>
+    <td style="font-size:0.8rem;color:var(--muted);max-width:300px;">${o.one_liner}</td>
+  `;
+  tbody.appendChild(row);
+});
+
+// Sort table
+let sortDir = {};
+function sortTable(col) {
+  const rows = Array.from(tbody.rows);
+  sortDir[col] = !sortDir[col];
+  rows.sort((a, b) => {
+    let aVal = a.cells[col].textContent.trim();
+    let bVal = b.cells[col].textContent.trim();
+    const aNum = parseFloat(aVal);
+    const bNum = parseFloat(bVal);
+    if (!isNaN(aNum) && !isNaN(bNum)) {
+      return sortDir[col] ? aNum - bNum : bNum - aNum;
+    }
+    return sortDir[col] ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+</body>
+</html>
