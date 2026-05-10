@@ -90,6 +90,114 @@ export function getArticleSchema(
   };
 }
 
+/** JSON-LD WebApplication schema for the intelligence dashboard. */
+export function getIntelligenceDashboardSchema(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE_NAME} Intelligence Dashboard`,
+    url: `${SITE_URL}/intelligence`,
+    description:
+      "Real-time convergence signal tracker across crypto, DeFi, and emerging markets. Monitor 8-signal pattern scores, smart money flows, and catalyst timelines.",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    creator: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    featureList: [
+      "Convergence signal monitoring",
+      "Smart money flow tracking",
+      "Airdrop calibration engine",
+      "Catalyst timeline alerts",
+      "8-Signal Pattern Filter scoring",
+    ],
+  };
+}
+
+/** JSON-LD DataCatalog schema for the research library. */
+export function getResearchCatalogSchema(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DataCatalog",
+    name: `${SITE_NAME} Research Library`,
+    url: `${SITE_URL}/research`,
+    description:
+      "Deep-dive research articles covering DeFi exploits, airdrop performance, tokenless protocol analysis, and asymmetric opportunity breakdowns.",
+    creator: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    provider: {
+      "@type": "Organization",
+      name: AUTHOR_NAME,
+    },
+    keywords: [
+      "crypto research",
+      "DeFi analysis",
+      "airdrop data",
+      "tokenless protocols",
+      "smart money signals",
+    ],
+  };
+}
+
+/** JSON-LD FAQPage schema for intelligence and research pages. */
+export function getResearchFAQSchema(): Record<string, unknown> {
+  const faqs = [
+    {
+      question:
+        "What are convergence signals and how does Early Thunder track them?",
+      answer:
+        "Convergence signals occur when multiple independent indicators — smart money flows, developer activity, catalyst timelines, and valuation gaps — align simultaneously on a single asset. Early Thunder's 8-Signal Pattern Filter scores each dimension 0-100 and flags assets where three or more signals converge above threshold, historically correlating with 5-50x pre-mainstream moves.",
+    },
+    {
+      question:
+        "How does the airdrop calibration engine calculate expected value?",
+      answer:
+        "The airdrop calibration engine analyzes historical airdrop performance data across 200+ token distributions, weighting factors like protocol TVL at snapshot, time-locked vs. immediate vesting, and sector momentum. It produces an expected-value score that accounts for opportunity cost, gas fees, and sybil-resistance difficulty to help users prioritize which airdrops to farm.",
+    },
+    {
+      question:
+        "What are tokenless protocols and why does TVL matter for them?",
+      answer:
+        "Tokenless protocols are blockchain projects that have raised venture capital but have not yet launched a native token. TVL (Total Value Locked) matters because it signals genuine user adoption and capital commitment. Protocols with rapidly growing TVL often launch tokens with generous airdrops to reward early depositors, making TVL tracking a leading indicator for airdrop hunters.",
+    },
+    {
+      question:
+        "How often is the intelligence dashboard updated with new data?",
+      answer:
+        "The intelligence dashboard refreshes convergence scores and signal data daily. Smart money flow data updates every 6 hours from on-chain sources. Catalyst timelines are maintained in real-time as governance votes, token unlocks, and protocol upgrades are announced. Research articles are published weekly with deep-dive analysis.",
+    },
+    {
+      question:
+        "What methodology does Early Thunder use to score asymmetric opportunities?",
+      answer:
+        "Early Thunder uses a proprietary 8-Signal Pattern Filter that evaluates opportunities across eight dimensions: Working Code (20%), Dev Activity (15%), Smart Money (10%), Community (10%), Catalyst (15%), Narrative (5%), Valuation Gap (15%), and Obscurity (10%). Each signal is scored 0-100 from verifiable data sources, producing a composite score that identifies pre-mainstream asymmetric setups.",
+    },
+  ];
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
 /** JSON-LD Product schema for an opportunity. */
 export function getOpportunitySchema(
   opp: Opportunity,

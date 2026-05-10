@@ -5,10 +5,10 @@
 
 export const SITE_URL = 'https://earlythunder.com' as const;
 export const SITE_NAME = 'Early Thunder' as const;
-export const SITE_TAGLINE = 'Hear the storm before anyone else' as const;
+export const SITE_TAGLINE = 'Follow the money that cannot lie' as const;
 
 export const SITE_DESCRIPTION =
-  'Tracks pre-mainstream asymmetric opportunities across crypto, deep tech, and emerging markets. 8-signal pattern filter scores what others miss.' as const;
+  'Autonomous intelligence pipeline scanning 154+ protocols for convergence signals, earnings yield, and deadline catalysts. 58 convergence events detected across crypto and emerging markets.' as const;
 
 export const OG_IMAGE_PATH = '/og-default.svg' as const;
 export const OG_IMAGE_WIDTH = 1200 as const;

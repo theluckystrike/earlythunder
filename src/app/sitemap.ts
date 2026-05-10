@@ -5,6 +5,8 @@ import {
   PRIORITY_MAP,
   OPPORTUNITY_PRIORITY,
   BLOG_POST_PRIORITY,
+  RESEARCH_SLUGS,
+  RESEARCH_ARTICLE_PRIORITY,
 } from "@/lib/constants";
 import { getAllOpportunities, getAllBlogPosts } from "@/lib/data";
 
@@ -13,9 +15,22 @@ export const dynamic = "force-static";
 const DEFAULT_PRIORITY = 0.5;
 const MAX_ENTRIES = 50000;
 
+/** Returns the appropriate changeFrequency for a static page path. */
+function getChangeFrequency(
+  page: string,
+): "daily" | "weekly" | "monthly" {
+  if (page === "/" || page === "/intelligence") {
+    return "daily";
+  }
+  if (page === "/research") {
+    return "weekly";
+  }
+  return "weekly";
+}
+
 /**
  * Generates the sitemap.xml at build time.
- * Reads opportunity and blog data to produce dynamic entries.
+ * Reads opportunity, blog, and research data to produce dynamic entries.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -24,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     (page) => ({
       url: `${SITE_URL}${page === "/" ? "" : page}`,
       lastModified: now,
-      changeFrequency: page === "/" ? "daily" : "weekly",
+      changeFrequency: getChangeFrequency(page),
       priority: PRIORITY_MAP[page] ?? DEFAULT_PRIORITY,
     }),
   );
@@ -51,5 +66,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: BLOG_POST_PRIORITY,
     }));
 
-  return [...staticEntries, ...opportunityEntries, ...blogEntries];
+  const researchEntries: MetadataRoute.Sitemap = RESEARCH_SLUGS.map(
+    (slug) => ({
+      url: `${SITE_URL}/research/${slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: RESEARCH_ARTICLE_PRIORITY,
+    }),
+  );
+
+  return [
+    ...staticEntries,
+    ...opportunityEntries,
+    ...blogEntries,
+    ...researchEntries,
+  ];
 }

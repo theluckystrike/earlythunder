@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EarlyThunder Intelligence Dashboard — Live Crypto Convergence Signals</title>
+<meta name="description" content="Live crypto intelligence dashboard tracking tokenless protocols, convergence signals, airdrop calibration deadlines, and earnings yield data across 154+ protocols updated daily.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://earlythunder.com/intelligence/">
+<meta property="og:title" content="EarlyThunder Intelligence Dashboard — Live Crypto Convergence Signals">
+<meta property="og:description" content="Autonomous crypto intelligence scanning 154+ protocols daily. Live convergence signals, airdrop deadline tracker, and earnings yield data.">
+<meta property="og:url" content="https://earlythunder.com/intelligence/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://earlythunder.com/og-default.svg">
+<meta property="og:site_name" content="EarlyThunder">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EarlyThunder Intelligence Dashboard — Live Crypto Convergence Signals">
+<meta name="twitter:description" content="Live convergence signals, airdrop calibration deadlines, and earnings yield data across 154+ tokenless protocols.">
+<meta name="twitter:image" content="https://earlythunder.com/og-default.svg">
+<meta name="twitter:site" content="@EarlyThunder">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "EarlyThunder Intelligence Dashboard",
+  "url": "https://earlythunder.com/intelligence/",
+  "description": "Autonomous crypto intelligence dashboard tracking tokenless protocols, convergence signals, airdrop calibration deadlines, and earnings yield across 154+ protocols.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "EarlyThunder",
+    "url": "https://earlythunder.com/"
+  },
+  "featureList": [
+    "Live convergence signal detection across 154+ protocols",
+    "Real-time airdrop deadline tracker with countdown timers",
+    "Earnings yield scanner with Hyperliquid-grade tier classification",
+    "Smart money watchlist with conviction scoring",
+    "Stablecoin flow heatmap by chain"
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0a0f;--card-bg:#12121a;--card-border:#1e1e2e;--text:#e0e0e5;--text-muted:#8888a0;--accent:#00d4aa;--accent-dim:rgba(0,212,170,0.15);--warning:#ff6b6b;--warning-dim:rgba(255,107,107,0.15);--amber:#ffa500;--amber-dim:rgba(255,165,0,0.15);--blue:#4a9eff;--blue-dim:rgba(74,158,255,0.15);--max-w:1200px}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 1.25rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.site-nav{background:#08080d;border-bottom:1px solid var(--card-border);padding:0.6rem 0;position:sticky;top:0;z-index:100}
+.site-nav .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem}
+.site-nav .nav-brand{font-weight:800;font-size:1.1rem;color:#fff;letter-spacing:-0.02em}
+.site-nav .nav-brand span{color:var(--accent)}
+.site-nav .nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}
+.site-nav .nav-links a{font-size:0.85rem;color:var(--text-muted);font-weight:500;transition:color 0.15s}
+.site-nav .nav-links a:hover,.site-nav .nav-links a.active{color:var(--accent);text-decoration:none}
+.hero{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid var(--card-border)}
+.hero h1{font-size:2.5rem;font-weight:800;letter-spacing:-0.02em;color:#fff}
+.hero h1 span{color:var(--accent)}
+.hero .tagline{font-size:1.1rem;color:var(--text-muted);margin-top:0.5rem}
+.hero .meta-row{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-top:1.25rem;font-family:ui-monospace,monospace;font-size:0.85rem;color:var(--text-muted)}
+.hero .meta-row strong{color:var(--accent)}
+.last-updated{text-align:center;margin-top:0.75rem;font-size:0.78rem;color:var(--text-muted)}
+section{padding:2.5rem 0;border-bottom:1px solid var(--card-border)}
+section:last-of-type{border-bottom:none}
+h2{font-size:1.8rem;font-weight:700;margin-bottom:0.75rem;color:#fff}
+h2 .accent{color:var(--accent)}
+.section-desc{color:var(--text-muted);margin-bottom:1.5rem;max-width:700px;font-size:0.95rem}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:1.25rem}
+.card .card-label{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:0.25rem}
+.card .card-value{font-size:1.6rem;font-weight:700;font-family:ui-monospace,monospace;color:#fff}
+.card .card-sub{font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem}
+.card.fear .card-value{color:var(--amber)}
+.card.risk-off .card-value{color:var(--warning)}
+.card.accent-val .card-value{color:var(--accent)}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:0.9rem}
+th{text-align:left;padding:0.6rem 0.75rem;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);border-bottom:1px solid var(--card-border);white-space:nowrap;cursor:pointer;user-select:none}
+th:hover{color:var(--accent)}
+th.sorted-asc::after{content:" \25B2";font-size:0.6rem}
+th.sorted-desc::after{content:" \25BC";font-size:0.6rem}
+td{padding:0.6rem 0.75rem;border-bottom:1px solid rgba(30,30,46,0.5);white-space:nowrap}
+tr:hover td{background:rgba(0,212,170,0.04)}
+.mono{font-family:ui-monospace,monospace}
+.score-bar{display:flex;align-items:center;gap:0.5rem}
+.score-bar .bar{height:6px;border-radius:3px;background:var(--accent)}
+.score-bar .val{font-family:ui-monospace,monospace;font-size:0.85rem;font-weight:600;min-width:2rem}
+.pill{display:inline-block;font-size:0.7rem;padding:2px 6px;border-radius:4px;margin:1px;font-weight:600}
+.pill-tokenless{background:var(--accent-dim);color:var(--accent)}
+.pill-airdrop{background:var(--blue-dim);color:var(--blue)}
+.pill-tvl{background:rgba(160,120,255,0.15);color:#a078ff}
+.pill-dev{background:rgba(255,200,50,0.15);color:#ffc832}
+.pill-alpha{background:rgba(255,150,200,0.15);color:#ff96c8}
+.deadline-group{margin-bottom:1.5rem}
+.deadline-group h3{font-size:1rem;font-weight:700;margin-bottom:0.75rem;padding:0.4rem 0.75rem;border-radius:6px;display:inline-block}
+.deadline-group h3.critical{background:var(--warning-dim);color:var(--warning)}
+.deadline-group h3.high{background:var(--amber-dim);color:var(--amber)}
+.deadline-group h3.watch{background:var(--blue-dim);color:var(--blue)}
+.deadline-group h3.low{background:rgba(100,100,120,0.2);color:var(--text-muted)}
+.deadline-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:0.6rem;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:0.75rem}
+.deadline-card .dl-left{flex:1;min-width:200px}
+.deadline-card .dl-name{font-weight:700;font-size:1rem;color:#fff}
+.deadline-card .dl-event{font-size:0.85rem;color:var(--text-muted);margin-top:0.15rem}
+.deadline-card .dl-notes{font-size:0.78rem;color:var(--text-muted);margin-top:0.3rem;max-width:500px;white-space:normal}
+.deadline-card .dl-right{text-align:right}
+.deadline-card .countdown{font-family:ui-monospace,monospace;font-size:1.15rem;font-weight:700}
+.deadline-card .countdown.critical{color:var(--warning)}
+.deadline-card .countdown.high{color:var(--amber)}
+.deadline-card .countdown.watch{color:var(--blue)}
+.deadline-card .countdown.low{color:var(--text-muted)}
+.deadline-card .dl-status{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-top:0.2rem}
+.yield-tier{font-size:0.7rem;font-weight:700;padding:2px 6px;border-radius:4px}
+.tier-hyper{background:var(--accent-dim);color:var(--accent)}
+.tier-high{background:var(--amber-dim);color:var(--amber)}
+.research-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.research-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:1.5rem}
+.research-card h3{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.4rem}
+.research-card p{font-size:0.85rem;color:var(--text-muted);line-height:1.5}
+.pull-quote{background:var(--card-bg);border-left:3px solid var(--accent);padding:1.25rem 1.5rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
+.pull-quote .pq-stat{font-size:2rem;font-weight:800;color:var(--warning);font-family:ui-monospace,monospace}
+.pull-quote .pq-text{font-size:0.95rem;color:var(--text-muted);margin-top:0.25rem}
+.pull-quote .pq-source{font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;font-style:italic}
+.premium-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-bottom:1.5rem}
+.premium-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:1.5rem;position:relative;overflow:hidden}
+.premium-card::after{content:'';position:absolute;inset:0;background:rgba(10,10,15,0.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:1}
+.premium-card .pc-inner{position:relative;z-index:0}
+.premium-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.3rem}
+.premium-card p{font-size:0.85rem;color:var(--text-muted)}
+.waitlist-box{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:2rem;text-align:center}
+.waitlist-box h3{font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
+.waitlist-box p{color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem}
+.waitlist-box .btn{display:inline-block;background:var(--accent);color:#0a0a0f;font-weight:700;font-size:0.95rem;padding:0.7rem 2rem;border-radius:8px;border:none;cursor:pointer;transition:opacity 0.2s}
+.waitlist-box .btn:hover{opacity:0.85;text-decoration:none}
+.method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
+.method-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:1.5rem}
+.method-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
+.method-card p,.method-card ul{font-size:0.85rem;color:var(--text-muted);line-height:1.6}
+.method-card ul{padding-left:1.2rem;margin-top:0.4rem}
+.method-card li{margin-bottom:0.25rem}
+footer{padding:2rem 0 3rem;text-align:center;font-size:0.8rem;color:var(--text-muted);border-top:1px solid var(--card-border)}
+footer p{margin-bottom:0.3rem}
+footer .footer-links{margin-top:0.75rem}
+footer .footer-links a{margin:0 0.75rem}
+.back-link{display:inline-block;margin-top:1rem;font-size:0.85rem;color:var(--accent);font-weight:600}
+@media(max-width:600px){.hero h1{font-size:1.8rem}h2{font-size:1.4rem}.hero .meta-row{gap:0.75rem;font-size:0.75rem}.card .card-value{font-size:1.3rem}section{padding:1.75rem 0}.deadline-card{flex-direction:column;align-items:flex-start}.deadline-card .dl-right{text-align:left}.site-nav .container{justify-content:center}.site-nav .nav-links{gap:0.75rem}}
+</style>
+</head>
+<body>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="https://earlythunder.com/" class="nav-brand">Early<span>Thunder</span></a>
+    <div class="nav-links">
+      <a href="https://earlythunder.com/">Home</a>
+      <a href="https://earlythunder.com/opportunities/">Opportunities</a>
+      <a href="https://earlythunder.com/blog/">Blog</a>
+      <a href="https://earlythunder.com/methodology/">Methodology</a>
+      <a href="https://earlythunder.com/intelligence/" class="active">Intelligence</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" role="banner">
+  <div class="container">
+    <h1>Early<span>Thunder</span> Intelligence Dashboard</h1>
+    <p class="tagline">Live Crypto Convergence Signals &amp; Airdrop Calibration &mdash; Updated Daily</p>
+    <div class="meta-row" aria-label="Pipeline statistics">
+      <span>Protocols scanned: <strong>154+</strong></span>
+      <span>Convergence events: <strong>58</strong></span>
+      <span>Deadlines tracked: <strong>24</strong></span>
+    </div>
+    <p class="last-updated">Last updated: <time datetime="2026-05-10T09:00:00Z">May 10, 2026 at 09:00 UTC</time></p>
+  </div>
+</header>
+
+<main class="container">
+
+<section id="market-overview" aria-labelledby="mo-heading">
+  <h2 id="mo-heading"><span class="accent">//</span> Market Overview</h2>
+  <p class="section-desc">Real-time sentiment and capital flow snapshot across the crypto ecosystem.</p>
+  <div class="card-grid">
+    <article class="card fear">
+      <div class="card-label">Fear &amp; Greed Index</div>
+      <div class="card-value">38</div>
+      <div class="card-sub">Fear &mdash; Neutral signal</div>
+    </article>
+    <article class="card risk-off">
+      <div class="card-label">Market Regime</div>
+      <div class="card-value" style="font-size:1.2rem;">RISK-OFF</div>
+      <div class="card-sub">Contracting &mdash; Stablecoin outflows exceed inflows</div>
+    </article>
+    <article class="card accent-val">
+      <div class="card-label">Total Stablecoin Market Cap</div>
+      <div class="card-value">$320.5B</div>
+      <div class="card-sub">-1.04% weekly &mdash; $482.9M daily outflow</div>
+    </article>
+    <article class="card">
+      <div class="card-label">Stablecoin Flows (7d)</div>
+      <div class="card-value" style="color:var(--accent);">18 inflows</div>
+      <div class="card-sub">20 outflows &middot; 127 stable &middot; 165 chains analyzed</div>
+    </article>
+  </div>
+</section>
+
+<section id="convergence" aria-labelledby="conv-heading">
+  <h2 id="conv-heading"><span class="accent">//</span> Convergence Signals</h2>
+  <p class="section-desc">Convergence = multiple independent signals aligning on one protocol. When tokenless status, TVL growth, developer activity, VC investment, and stablecoin inflows all point to the same project, the probability of a high-value event increases dramatically.</p>
+
+  <div class="table-wrap">
+    <table id="convergence-table" aria-label="Top convergence events by conviction score">
+      <thead>
+        <tr>
+          <th data-col="rank">#</th>
+          <th data-col="name">Protocol</th>
+          <th data-col="score" class="sorted-desc">Conviction Score</th>
+          <th data-col="level">Level</th>
+          <th data-col="category">Category</th>
+          <th data-col="tvl">TVL</th>
+          <th data-col="signals">Signals</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mono">1</td>
+          <td><strong>Commonware</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:60px;"></div><span class="val">60</span></div></td>
+          <td>L1</td>
+          <td>Infrastructure</td>
+          <td class="mono">&mdash;</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-dev">DEV</span><span class="pill pill-airdrop">AIRDROP 80</span></td>
+        </tr>
+        <tr>
+          <td class="mono">2</td>
+          <td><strong>Gauntlet</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:45px;"></div><span class="val">45</span></div></td>
+          <td>L1</td>
+          <td>Risk Curators</td>
+          <td class="mono">$1.49B</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-airdrop">AIRDROP 80</span><span class="pill pill-tvl">TVL INFLOW</span></td>
+        </tr>
+        <tr>
+          <td class="mono">3</td>
+          <td><strong>Concrete</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:40px;"></div><span class="val">40</span></div></td>
+          <td>L1</td>
+          <td>Capital Allocator</td>
+          <td class="mono">$1.04B</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-airdrop">AIRDROP 90</span></td>
+        </tr>
+        <tr>
+          <td class="mono">4</td>
+          <td><strong>Grove Finance</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:40px;"></div><span class="val">40</span></div></td>
+          <td>L1</td>
+          <td>Capital Allocator</td>
+          <td class="mono">$2.59B</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-airdrop">AIRDROP 85</span></td>
+        </tr>
+        <tr>
+          <td class="mono">5</td>
+          <td><strong>Spiko</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:40px;"></div><span class="val">40</span></div></td>
+          <td>L1</td>
+          <td>RWA</td>
+          <td class="mono">$1.19B</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-airdrop">AIRDROP 80</span></td>
+        </tr>
+        <tr>
+          <td class="mono">6</td>
+          <td><strong>BounceBit CeDeFi</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:40px;"></div><span class="val">40</span></div></td>
+          <td>L1</td>
+          <td>Basis Trading</td>
+          <td class="mono">$377.6M</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-airdrop">AIRDROP 80</span></td>
+        </tr>
+        <tr>
+          <td class="mono">7</td>
+          <td><strong>Mellow Core</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:40px;"></div><span class="val">40</span></div></td>
+          <td>L1</td>
+          <td>Capital Allocator</td>
+          <td class="mono">$434.6M</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-tvl">TVL +45.8%</span><span class="pill pill-airdrop">AIRDROP 75</span></td>
+        </tr>
+        <tr>
+          <td class="mono">8</td>
+          <td><strong>Paradex</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:40px;"></div><span class="val">40</span></div></td>
+          <td>L1</td>
+          <td>Perp DEX</td>
+          <td class="mono">$300.0M</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-airdrop">AIRDROP 80</span><span class="pill pill-alpha">ALPHA</span></td>
+        </tr>
+        <tr>
+          <td class="mono">9</td>
+          <td><strong>Multipli.fi</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:40px;"></div><span class="val">40</span></div></td>
+          <td>L1</td>
+          <td>Yield</td>
+          <td class="mono">$366.4M</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-airdrop">AIRDROP 80</span></td>
+        </tr>
+        <tr>
+          <td class="mono">10</td>
+          <td><strong>OpenSea</strong></td>
+          <td><div class="score-bar"><div class="bar" style="width:40px;"></div><span class="val">40</span></div></td>
+          <td>L1</td>
+          <td>NFT Marketplace</td>
+          <td class="mono">&mdash;</td>
+          <td><span class="pill pill-tokenless">TOKENLESS</span><span class="pill pill-airdrop">AIRDROP 80</span><span class="pill pill-alpha">ALPHA</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="deadlines" aria-labelledby="dl-heading">
+  <h2 id="dl-heading"><span class="accent">//</span> Airdrop Deadline Tracker</h2>
+  <p class="section-desc">Active and upcoming airdrop deadlines across 24 tracked events. Countdown timers update in real time.</p>
+
+  <div class="deadline-group">
+    <h3 class="critical">CRITICAL</h3>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Limitless</div>
+        <div class="dl-event">Season 3 Points Farming (Base prediction market)</div>
+        <div class="dl-notes">Season 3 ends May 25. Farm on Base. LMTS token already launched but ongoing season rewards.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown critical" data-deadline="2026-05-25T23:59:59Z"></div>
+        <div class="dl-status" style="color:var(--warning);">LIVE &middot; Ends May 25</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="deadline-group">
+    <h3 class="high">HIGH</h3>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">MegaETH</div>
+        <div class="dl-event">Terminal Season 1 Points Farming</div>
+        <div class="dl-notes">Season 1 ends June 23. Points distributed weekly for interacting with Terminal apps. MEGA token launched April 30.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high" data-deadline="2026-06-23T23:59:59Z"></div>
+        <div class="dl-status" style="color:var(--amber);">LIVE &middot; Ends Jun 23</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Concrete</div>
+        <div class="dl-event">Phase 1 Social Bags Campaign</div>
+        <div class="dl-notes">Free social quests to earn Bags. TGE expected Q2-Q3 2026. Phase 1 could close any time. Complete ASAP.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">TBD</div>
+        <div class="dl-status" style="color:var(--amber);">LIVE &middot; Could close anytime</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Symbiotic</div>
+        <div class="dl-event">Points Season 2 Farming</div>
+        <div class="dl-notes">Season 2 ongoing. Deposit wstETH/cbETH. Points proportional to TIME x AMOUNT. $542M TVL. Capital: $1,200+.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">TBD</div>
+        <div class="dl-status" style="color:var(--amber);">LIVE &middot; Time-weighted</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Paradex</div>
+        <div class="dl-event">XP Season 3 Farming (post-TGE rewards)</div>
+        <div class="dl-notes">26.6% supply allocated to community. Zero trading fees. 4M XP distributed weekly on Fridays.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">TBD</div>
+        <div class="dl-status" style="color:var(--amber);">LIVE &middot; Zero fees</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Polymarket</div>
+        <div class="dl-event">POLY Token Launch + Airdrop</div>
+        <div class="dl-notes">CMO confirmed POLY token + airdrop. Time-weighted activity is scoring formula. Trade 3-4x/week for 6+ months.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">H2 2026</div>
+        <div class="dl-status" style="color:var(--amber);">UPCOMING &middot; Build activity now</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Base (Coinbase L2)</div>
+        <div class="dl-event">Native Network Token Launch</div>
+        <div class="dl-notes">Jesse Pollak confirmed exploring a network token. JPMorgan projects $12-34B valuation. Potentially the largest airdrop in crypto history.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">Q2-Q4 2026</div>
+        <div class="dl-status" style="color:var(--amber);">SPECULATED</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">MetaMask</div>
+        <div class="dl-event">MASK Token Launch</div>
+        <div class="dl-notes">Joe Lubin confirmed token is coming. $30M Season 1 rewards distributed. 100M+ users. Use MetaMask for all swaps.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">Q3-Q4 2026</div>
+        <div class="dl-status" style="color:var(--amber);">SPECULATED</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Berachain</div>
+        <div class="dl-event">BGT Governance Airdrop</div>
+        <div class="dl-notes">Q3 2026 airdrop gated behind BGT governance participation (voting + delegating, NOT just holding). $1.6B pre-launch liquidity.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">Q3 2026</div>
+        <div class="dl-status" style="color:var(--amber);">UPCOMING &middot; Must vote+delegate</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Aerodrome Finance</div>
+        <div class="dl-event">Cross-Chain DEX Launch (Aero + Velodrome merger)</div>
+        <div class="dl-notes">Expanding to Ethereum mainnet + Circle Arc. $602M TVL on Base. Stacks with Base token farming.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">Q2-Q3 2026</div>
+        <div class="dl-status" style="color:var(--amber);">UPCOMING</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Morpho</div>
+        <div class="dl-event">Fee Switch Activation</div>
+        <div class="dl-notes">$174.6M/yr in fees go NOWHERE. Fee switch = massive catalyst. $7.2B TVL. Apollo Global partnership.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">2026-2027</div>
+        <div class="dl-status" style="color:var(--amber);">SPECULATED</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Kelp (KernelDAO)</div>
+        <div class="dl-event">KERNEL Token TGE</div>
+        <div class="dl-notes">KERNEL TGE confirmed for Q2 2026 with 10% airdrop allocation. $1.56B TVL. Points program active.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown high">Q2 2026</div>
+        <div class="dl-status" style="color:var(--amber);">UPCOMING &middot; Points active</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="deadline-group">
+    <h3 class="watch">WATCH</h3>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Concrete</div>
+        <div class="dl-event">Phase 2 Vault Deposits &amp; TGE (Q2-Q3 2026)</div>
+        <div class="dl-notes">Deposit $1-5K when live. Expected to carry 70-80% of airdrop allocation. $17M raised from Polychain, YZi Labs. $1.04B TVL.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown watch">Q2-Q3 2026</div>
+        <div class="dl-status" style="color:var(--blue);">UPCOMING</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">OpenSea</div>
+        <div class="dl-event">SEA Token Launch (delayed from March 2026)</div>
+        <div class="dl-notes">Originally March 30, 2026 -- delayed indefinitely. CEO: market conditions are challenging. 50% supply to community.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown watch">Q3-Q4 2026</div>
+        <div class="dl-status" style="color:var(--blue);">DELAYED</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Symbiotic</div>
+        <div class="dl-event">Token Distribution to Point Holders</div>
+        <div class="dl-notes">TGE occurred Nov 2024 but supply = 0. Distribution expected Q3-Q4 2026. CAUTION: EIGEN crashed 96% post-launch.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown watch">Q3-Q4 2026</div>
+        <div class="dl-status" style="color:var(--blue);">UPCOMING</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Commonware</div>
+        <div class="dl-event">Potential Token Launch</div>
+        <div class="dl-notes">Convergence score 60. 35-40% chance token NEVER launches. Zero farming mechanism. Deploy on Tempo testnet for positioning.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown watch">Q4 2026+</div>
+        <div class="dl-status" style="color:var(--blue);">SPECULATED</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Veda</div>
+        <div class="dl-event">Token Launch / Airdrop</div>
+        <div class="dl-notes">Yield infra with $1.14B TVL ($3.7B peak). Points program live. 100K+ depositors. No confirmed TGE date.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown watch">2026</div>
+        <div class="dl-status" style="color:var(--blue);">UPCOMING</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Fluid</div>
+        <div class="dl-event">FLUID Token Staking Rewards</div>
+        <div class="dl-notes">Already has FLUID token (rebranded from INST). $773M TVL. Additional distribution may occur. 200-400K wallets dilutes per-user value.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown watch">TBD</div>
+        <div class="dl-status" style="color:var(--blue);">LIVE</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Klarna / Tempo</div>
+        <div class="dl-event">KlarnaUSD Mainnet Deployment</div>
+        <div class="dl-notes">Klarna (114M customers) issuing first bank stablecoin on Tempo. Live on testnet. Could trigger Commonware token speculation.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown watch">2026</div>
+        <div class="dl-status" style="color:var(--blue);">UPCOMING</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="deadline-group">
+    <h3 class="low">LOW / ENDED</h3>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Paradex</div>
+        <div class="dl-event">DIME Genesis Airdrop Claim Window</div>
+        <div class="dl-notes">Genesis airdrop claim window closed March 19. 25% of supply airdropped.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown low">ENDED</div>
+        <div class="dl-status">Closed Mar 19</div>
+      </div>
+    </div>
+    <div class="deadline-card">
+      <div class="dl-left">
+        <div class="dl-name">Lagoon Finance</div>
+        <div class="dl-event">Potential Token Launch</div>
+        <div class="dl-notes">Tokenless institutional vault infra. $140M TVL, 120+ vaults on 18 chains. No token signals yet.</div>
+      </div>
+      <div class="dl-right">
+        <div class="countdown low">TBD</div>
+        <div class="dl-status">SPECULATED &middot; No signals</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="earnings" aria-labelledby="ey-heading">
+  <h2 id="ey-heading"><span class="accent">//</span> Earnings Yield Scanner</h2>
+  <p class="section-desc">Earnings Yield = Annualized Revenue / Market Cap. Protocols earning disproportionately more than their valuation suggests may be undervalued &mdash; or the yield may be unsustainable. 24 protocols currently show Hyperliquid-grade yields (&gt;100%).</p>
+
+  <div class="table-wrap">
+    <table id="earnings-table" aria-label="Top protocols by earnings yield">
+      <thead>
+        <tr>
+          <th data-col="rank">#</th>
+          <th data-col="name">Protocol</th>
+          <th data-col="symbol">Symbol</th>
+          <th data-col="category">Category</th>
+          <th data-col="chain">Chain</th>
+          <th data-col="yield" class="sorted-desc">Earnings Yield</th>
+          <th data-col="revenue">Ann. Revenue</th>
+          <th data-col="mcap">Market Cap</th>
+          <th data-col="tier">Tier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">1</td><td><strong>BabySwap</strong></td><td class="mono">BABY</td><td>DEX</td><td>BSC</td><td class="mono" style="color:var(--accent);">2,077.2%</td><td class="mono">$3,112</td><td class="mono">$150</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">2</td><td><strong>Aark Digital</strong></td><td class="mono">AARK</td><td>Interface</td><td>Arbitrum</td><td class="mono" style="color:var(--accent);">1,395.8%</td><td class="mono">$1.80M</td><td class="mono">$129K</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">3</td><td><strong>HawkFi</strong></td><td class="mono">HAWK</td><td>Liquidity Mgr</td><td>Solana</td><td class="mono" style="color:var(--accent);">796.2%</td><td class="mono">$134.8K</td><td class="mono">$16.9K</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">4</td><td><strong>Integral</strong></td><td class="mono">ITGR</td><td>DEX</td><td>ETH / ARB</td><td class="mono" style="color:var(--accent);">528.2%</td><td class="mono">$225.9K</td><td class="mono">$42.8K</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">5</td><td><strong>Moonwell Apollo</strong></td><td class="mono">MFAM</td><td>Lending</td><td>Moonriver</td><td class="mono" style="color:var(--accent);">452.7%</td><td class="mono">$32.3K</td><td class="mono">$7.1K</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">6</td><td><strong>Iron Bank</strong></td><td class="mono">IB</td><td>Lending</td><td>ETH / OP / AVAX</td><td class="mono" style="color:var(--accent);">346.3%</td><td class="mono">$92.3K</td><td class="mono">$26.7K</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">7</td><td><strong>Houdini Swap</strong></td><td class="mono">LOCK</td><td>DEX Aggregator</td><td>Ethereum</td><td class="mono" style="color:var(--accent);">232.6%</td><td class="mono">$394.9K</td><td class="mono">$169.8K</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">8</td><td><strong>Streamflow</strong></td><td class="mono">STREAM</td><td>Payments</td><td>Solana</td><td class="mono" style="color:var(--accent);">231.6%</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">9</td><td><strong>Gamma</strong></td><td class="mono">GAMMA</td><td>Liquidity Mgr</td><td>Multi-chain</td><td class="mono" style="color:var(--accent);">173.0%</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+        <tr><td class="mono">10</td><td><strong>Valas Finance</strong></td><td class="mono">VALAS</td><td>Lending</td><td>BSC</td><td class="mono" style="color:var(--accent);">139.2%</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td><span class="yield-tier tier-hyper">HYPER</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.75rem;">Scan stats: 131 protocols with measurable yield &middot; 24 Hyperliquid-grade &middot; 19 High &middot; 14 Moderate &middot; 25 Low &middot; 49 Negligible. DeepSeek AI verdict on top-7: all SKIP (unsustainable yield, low liquidity).</p>
+</section>
+
+<section id="smart-money" aria-labelledby="sm-heading">
+  <h2 id="sm-heading"><span class="accent">//</span> Smart Money Watchlist</h2>
+  <p class="section-desc">Conviction portfolio scoring based on TVL momentum, ATH distance, unlock pressure, sentiment, and volume health. Score 70+ = INVESTIGATE. Score 60+ = WATCH.</p>
+  <div class="table-wrap">
+    <table aria-label="Smart money watchlist">
+      <thead>
+        <tr><th>Token</th><th>Price</th><th>Market Cap</th><th>7d Change</th><th>ATH Ratio</th><th>TVL</th><th>TVL 7d</th><th>Score</th><th>Signal</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>GMX</strong></td><td class="mono">$7.61</td><td class="mono">$79.2M</td><td class="mono" style="color:var(--accent);">+7.5%</td><td class="mono">0.084x</td><td class="mono">$316.7M</td><td class="mono" style="color:var(--accent);">+31.3%</td><td><div class="score-bar"><div class="bar" style="width:86px;"></div><span class="val">86</span></div></td><td style="color:var(--accent);font-weight:700;">INVESTIGATE</td></tr>
+        <tr><td><strong>GNS</strong></td><td class="mono">$0.585</td><td class="mono">$14.2M</td><td class="mono" style="color:var(--accent);">+9.8%</td><td class="mono">0.047x</td><td class="mono">$20.2M</td><td class="mono" style="color:var(--accent);">+39.7%</td><td><div class="score-bar"><div class="bar" style="width:86px;"></div><span class="val">86</span></div></td><td style="color:var(--accent);font-weight:700;">INVESTIGATE</td></tr>
+        <tr><td><strong>LQTY</strong></td><td class="mono">$0.341</td><td class="mono">$33.7M</td><td class="mono" style="color:var(--accent);">+11.3%</td><td class="mono">0.002x</td><td class="mono">$323.7M</td><td class="mono" style="color:var(--accent);">+15.2%</td><td><div class="score-bar"><div class="bar" style="width:83px;"></div><span class="val">83</span></div></td><td style="color:var(--accent);font-weight:700;">INVESTIGATE</td></tr>
+        <tr><td><strong>PENDLE</strong></td><td class="mono">$2.06</td><td class="mono">$349.6M</td><td class="mono" style="color:var(--accent);">+34.5%</td><td class="mono">0.275x</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td><div class="score-bar"><div class="bar" style="width:73px;"></div><span class="val">73</span></div></td><td style="color:var(--accent);font-weight:700;">INVESTIGATE</td></tr>
+        <tr><td><strong>HYPE</strong></td><td class="mono">$43.74</td><td class="mono">$10.4B</td><td class="mono" style="color:var(--accent);">+4.9%</td><td class="mono">0.738x</td><td class="mono">$5.07B</td><td class="mono" style="color:var(--accent);">+5.5%</td><td><div class="score-bar"><div class="bar" style="width:57px;"></div><span class="val">57</span></div></td><td style="color:var(--amber);font-weight:700;">WATCH</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="stablecoin-flows" aria-labelledby="sf-heading">
+  <h2 id="sf-heading"><span class="accent">//</span> Stablecoin Flow Heatmap</h2>
+  <p class="section-desc">Top stablecoin inflows and outflows by chain over 7 days. Capital follows opportunity &mdash; chains with strong inflows often signal upcoming activity.</p>
+  <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+    <div class="card" style="border-color:rgba(0,212,170,0.3);">
+      <div class="card-label" style="color:var(--accent);">Top Inflows (7d)</div>
+      <table style="margin-top:0.5rem;">
+        <tbody>
+          <tr><td>Conflux</td><td class="mono" style="color:var(--accent);text-align:right;">+466.2%</td></tr>
+          <tr><td>Katana</td><td class="mono" style="color:var(--accent);text-align:right;">+167.4%</td></tr>
+          <tr><td>StarkNet</td><td class="mono" style="color:var(--accent);text-align:right;">+165.7%</td></tr>
+          <tr><td>Morph</td><td class="mono" style="color:var(--accent);text-align:right;">+80.2%</td></tr>
+          <tr><td>Citrea</td><td class="mono" style="color:var(--accent);text-align:right;">+56.1%</td></tr>
+          <tr><td>Fraxtal</td><td class="mono" style="color:var(--accent);text-align:right;">+45.1%</td></tr>
+          <tr><td>Solana</td><td class="mono" style="color:var(--accent);text-align:right;">+37.8%</td></tr>
+          <tr><td>Avalanche</td><td class="mono" style="color:var(--accent);text-align:right;">+24.0%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="border-color:rgba(255,107,107,0.3);">
+      <div class="card-label" style="color:var(--warning);">Top Outflows (7d)</div>
+      <table style="margin-top:0.5rem;">
+        <tbody>
+          <tr><td>zkSync Lite</td><td class="mono" style="color:var(--warning);text-align:right;">-100.0%</td></tr>
+          <tr><td>Corn</td><td class="mono" style="color:var(--warning);text-align:right;">-99.8%</td></tr>
+          <tr><td>Sophon</td><td class="mono" style="color:var(--warning);text-align:right;">-96.5%</td></tr>
+          <tr><td>World Chain</td><td class="mono" style="color:var(--warning);text-align:right;">-72.1%</td></tr>
+          <tr><td>Fluent</td><td class="mono" style="color:var(--warning);text-align:right;">-71.8%</td></tr>
+          <tr><td>MANTRA</td><td class="mono" style="color:var(--warning);text-align:right;">-63.1%</td></tr>
+          <tr><td>MegaETH</td><td class="mono" style="color:var(--warning);text-align:right;">-52.7%</td></tr>
+          <tr><td>Sonic</td><td class="mono" style="color:var(--warning);text-align:right;">-30.1%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="research" aria-labelledby="rl-heading">
+  <h2 id="rl-heading"><span class="accent">//</span> Research Library</h2>
+  <p class="section-desc">Deep-dive analyses and data-backed intelligence reports from the EarlyThunder pipeline.</p>
+  <div class="pull-quote">
+    <div class="pq-stat">88%</div>
+    <div class="pq-text">of airdrop tokens lose value within 90 days of claim. The historical median payout across 12 major airdrops is approximately $1,000 per user per airdrop.</div>
+    <div class="pq-source">Source: EarlyThunder Airdrop Calibration Dataset &mdash; 12 airdrops analyzed (UNI, dYdX, ENS, OP, APT, ARB, BLUR, JTO, JUP, HYPE, EIGEN, STRK)</div>
+  </div>
+  <div class="research-grid">
+    <article class="research-card" id="airdrop-data">
+      <h3>Airdrop Calibration Data</h3>
+      <p>12 historical airdrops analyzed. Median per-user payout: $1,000. Conservative floor across 6 targets: $2,100. Base case: $7,300. Bull case: $34,000. Key finding: TVL is a poor predictor of per-user value &mdash; eligible wallet count matters 250x more.</p>
+    </article>
+    <article class="research-card" id="tokenless-protocols">
+      <h3>Tokenless Protocol Tracker</h3>
+      <p>27 Level 1 convergence events detected across tokenless protocols. Top signals: Commonware (60 conviction), Gauntlet ($1.49B TVL, tokenless), Concrete ($1.04B TVL, airdrop score 90/100). All classified as PRIME TOKENLESS TARGETS.</p>
+    </article>
+    <article class="research-card" id="kelp-exploit">
+      <h3>Kelp DAO Analysis</h3>
+      <p>$1.56B TVL restaking protocol. KERNEL TGE confirmed Q2 2026 with 10% airdrop allocation. Points program active. DeepSeek verdict: ACT ($6,000 EV). Risk: points dilution or lower-than-expected token value.</p>
+    </article>
+    <article class="research-card" id="lqty-v2-analysis">
+      <h3>LQTY v2 Deep Value</h3>
+      <p>Smart money score: 83/100 (INVESTIGATE). Price: $0.34 (99.8% below ATH). TVL: $323.7M (+15.2% 7d). Deep value indicator triggered. TVL growing while price at rock bottom &mdash; classic accumulation signal.</p>
+    </article>
+  </div>
+</section>
+
+<section id="premium" aria-labelledby="prem-heading">
+  <h2 id="prem-heading"><span class="accent">//</span> Premium Intelligence</h2>
+  <p class="section-desc">Advanced features for serious participants. Coming soon.</p>
+  <div class="premium-grid">
+    <div class="premium-card"><div class="pc-inner"><h3>Daily Action Queue</h3><p>5 ranked actions with exact steps, capital requirements, and expected value calculations. Updated every 09:00 UTC.</p></div></div>
+    <div class="premium-card"><div class="pc-inner"><h3>DeepSeek AI Analysis</h3><p>Bull/bear scenarios per target. AI-powered risk assessment with ACT/SKIP verdicts and expected value estimates.</p></div></div>
+    <div class="premium-card"><div class="pc-inner"><h3>Portfolio Red-Team</h3><p>Weekly adversarial review. Identifies concentration risks, correlated positions, and deadline conflicts across your portfolio.</p></div></div>
+    <div class="premium-card"><div class="pc-inner"><h3>Telegram Alerts</h3><p>Push notifications for critical deadline changes, convergence score spikes, and new tokenless protocol discoveries.</p></div></div>
+  </div>
+  <div class="waitlist-box">
+    <h3>Coming Soon &mdash; Join the Waitlist</h3>
+    <p>Be first to access premium intelligence when it launches.</p>
+    <a href="https://earlythunder.com/pricing/" class="btn">View Pricing</a>
+  </div>
+</section>
+
+<section id="methodology" aria-labelledby="meth-heading">
+  <h2 id="meth-heading"><span class="accent">//</span> Methodology</h2>
+  <p class="section-desc">Transparency in how signals are generated and filtered.</p>
+  <div class="method-grid">
+    <div class="method-card">
+      <h3>Convergence Detection</h3>
+      <p>The convergence detector cross-references data from 6 independent scanners: airdrop opportunity scanner, earnings yield scanner, stablecoin flow tracker, TVL inflow monitor, developer activity tracker, and VC investment tracker. When 2+ scanners independently flag the same protocol, a convergence event is generated.</p>
+      <ul>
+        <li>Tokenless status: +25 conviction points</li>
+        <li>TVL growth &gt;10% 7d: +10 points</li>
+        <li>Chain stablecoin inflow: +10 points</li>
+        <li>Active developer commits: +20 points</li>
+        <li>Each additional scanner hit: +5 points</li>
+      </ul>
+    </div>
+    <div class="method-card">
+      <h3>Hyperliquid-Grade Earnings Yield</h3>
+      <p>Named after Hyperliquid, which demonstrated that protocols earning real revenue relative to their market cap can be dramatically undervalued. The formula:</p>
+      <p style="margin-top:0.5rem;font-family:ui-monospace,monospace;color:#fff;">Earnings Yield = (Revenue_30d x 12) / Market Cap x 100%</p>
+      <p style="margin-top:0.5rem;">Tiers: Hyperliquid-Grade (&gt;100%), High (50-100%), Moderate (20-50%), Low (5-20%), Negligible (&lt;5%). Warning: extreme yields often indicate unsustainable revenue or micro-cap illiquidity.</p>
+    </div>
+    <div class="method-card">
+      <h3>False Positive Filtering</h3>
+      <p>Not every signal is actionable. The pipeline applies DeepSeek AI analysis to filter noise:</p>
+      <ul>
+        <li><strong>Kelp:</strong> ACT verdict &mdash; $6,000 EV, genuine restaking protocol with confirmed TGE</li>
+        <li><strong>Fluid:</strong> ACT verdict &mdash; $4,000 EV, but already has token (INST rebrand); risk of disappointment</li>
+        <li><strong>Steakhouse:</strong> ACT verdict &mdash; $5,000 EV, strong TVL growth but no confirmed token</li>
+        <li><strong>BabySwap:</strong> SKIP &mdash; extreme yield from micro-cap, thin liquidity trap</li>
+        <li><strong>DefiBox volume anomaly:</strong> SKIP &mdash; likely wash trading</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <p>Built by an autonomous AI pipeline. Scans 154+ protocols daily.</p>
+    <p>Data refreshes at 09:00 UTC. Last scan: <time datetime="2026-05-10T09:00:00Z">May 10, 2026 09:00 UTC</time>.</p>
+    <div class="footer-links">
+      <a href="https://x.com/EarlyThunder" aria-label="Follow EarlyThunder on X (Twitter)">X / Twitter</a>
+      <a href="https://github.com/EarlyThunder" aria-label="EarlyThunder on GitHub">GitHub</a>
+    </div>
+    <a href="https://earlythunder.com/" class="back-link">&larr; Back to Main Site</a>
+    <p style="margin-top:1rem;font-size:0.7rem;">Market regime: RISK_OFF_CONTRACTING &middot; Fear &amp; Greed: 38 (Fear) &middot; Stablecoin MCap: $320.5B (-1.04% weekly)</p>
+  </div>
+</footer>
+
+<script id="convergence-data" type="application/json">
+[{"slug":"commonware","name":"Commonware","conviction_score":60,"convergence_level":1,"category":"Infrastructure","tvl":0,"is_tokenless":true,"airdrop_score":80,"scanners_hit":["airdrop","watchlist"]},{"slug":"gauntlet","name":"Gauntlet","conviction_score":45,"convergence_level":1,"category":"Risk Curators","tvl":1486639085,"is_tokenless":true,"airdrop_score":80,"scanners_hit":["airdrop","tvl-inflow"]},{"slug":"concrete","name":"Concrete","conviction_score":40,"convergence_level":1,"category":"Onchain Capital Allocator","tvl":1039062253,"is_tokenless":true,"airdrop_score":90,"scanners_hit":["airdrop"]},{"slug":"grove-finance","name":"Grove Finance","conviction_score":40,"convergence_level":1,"category":"Onchain Capital Allocator","tvl":2586533637,"is_tokenless":true,"airdrop_score":85,"scanners_hit":["airdrop"]},{"slug":"spiko","name":"Spiko","conviction_score":40,"convergence_level":1,"category":"RWA","tvl":1187486641,"is_tokenless":true,"airdrop_score":80,"scanners_hit":["airdrop"]},{"slug":"bouncebit-cedefi-yield","name":"BounceBit CeDeFi Yield","conviction_score":40,"convergence_level":1,"category":"Basis Trading","tvl":377568723,"is_tokenless":true,"airdrop_score":80,"scanners_hit":["airdrop"]},{"slug":"mellow-core","name":"Mellow Core","conviction_score":40,"convergence_level":1,"category":"Onchain Capital Allocator","tvl":434638297,"is_tokenless":true,"airdrop_score":75,"scanners_hit":["airdrop","tvl-inflow"]},{"slug":"paradex","name":"Paradex","conviction_score":40,"convergence_level":1,"category":"Perp DEX","tvl":300000000,"is_tokenless":true,"airdrop_score":80,"scanners_hit":["alpha-hunt"]},{"slug":"multipli.fi","name":"Multipli.fi","conviction_score":40,"convergence_level":1,"category":"Yield","tvl":366364563,"is_tokenless":true,"airdrop_score":80,"scanners_hit":["airdrop"]},{"slug":"opensea","name":"OpenSea","conviction_score":40,"convergence_level":1,"category":"NFT Marketplace","tvl":0,"is_tokenless":true,"airdrop_score":80,"scanners_hit":["alpha-hunt"]}]
+</script>
+
+<script id="deadline-data" type="application/json">
+[{"id":"limitless_season3","protocol":"Limitless","event":"Season 3 Points Farming","end_date":"2026-05-25","urgency":"CRITICAL","status":"LIVE"},{"id":"megaeth_terminal_s1","protocol":"MegaETH","event":"Terminal Season 1","end_date":"2026-06-23","urgency":"HIGH","status":"LIVE"},{"id":"concrete_phase1_social","protocol":"Concrete","event":"Phase 1 Social Bags","end_date":null,"urgency":"HIGH","status":"LIVE"},{"id":"symbiotic_season2","protocol":"Symbiotic","event":"Points Season 2","end_date":null,"urgency":"HIGH","status":"LIVE"},{"id":"paradex_season3","protocol":"Paradex","event":"XP Season 3","end_date":null,"urgency":"HIGH","status":"LIVE"},{"id":"polymarket_poly_token","protocol":"Polymarket","event":"POLY Token + Airdrop","end_date":null,"urgency":"HIGH","status":"UPCOMING"},{"id":"base_token","protocol":"Base","event":"Network Token Launch","end_date":null,"urgency":"HIGH","status":"SPECULATED"},{"id":"metamask_mask_token","protocol":"MetaMask","event":"MASK Token Launch","end_date":null,"urgency":"HIGH","status":"SPECULATED"},{"id":"berachain_bgt_airdrop","protocol":"Berachain","event":"BGT Governance Airdrop","end_date":null,"urgency":"HIGH","status":"UPCOMING"},{"id":"aerodrome_crosschain","protocol":"Aerodrome","event":"Cross-Chain Launch","end_date":null,"urgency":"HIGH","status":"UPCOMING"},{"id":"morpho_fee_switch","protocol":"Morpho","event":"Fee Switch Activation","end_date":null,"urgency":"HIGH","status":"SPECULATED"},{"id":"kelp_kernel_tge","protocol":"Kelp","event":"KERNEL TGE","end_date":null,"urgency":"HIGH","status":"UPCOMING"}]
+</script>
+
+<script id="earnings-data" type="application/json">
+[{"slug":"babyswap","name":"BabySwap","symbol":"BABY","earnings_yield_pct":2077.22,"annualized_revenue":3112,"mcap":150,"tier":"HYPERLIQUID-GRADE"},{"slug":"aark-digital","name":"Aark Digital","symbol":"AARK","earnings_yield_pct":1395.78,"annualized_revenue":1798608,"mcap":128860,"tier":"HYPERLIQUID-GRADE"},{"slug":"hawkfi","name":"HawkFi","symbol":"HAWK","earnings_yield_pct":796.17,"annualized_revenue":134784,"mcap":16929,"tier":"HYPERLIQUID-GRADE"},{"slug":"integral","name":"Integral","symbol":"ITGR","earnings_yield_pct":528.19,"annualized_revenue":225932,"mcap":42775,"tier":"HYPERLIQUID-GRADE"},{"slug":"moonwell-apollo","name":"Moonwell Apollo","symbol":"MFAM","earnings_yield_pct":452.69,"annualized_revenue":32268,"mcap":7128,"tier":"HYPERLIQUID-GRADE"},{"slug":"iron-bank","name":"Iron Bank","symbol":"IB","earnings_yield_pct":346.26,"annualized_revenue":92316,"mcap":26661,"tier":"HYPERLIQUID-GRADE"},{"slug":"houdini-swap","name":"Houdini Swap","symbol":"LOCK","earnings_yield_pct":232.59,"annualized_revenue":394944,"mcap":169805,"tier":"HYPERLIQUID-GRADE"}]
+</script>
+
+<script id="market-data" type="application/json">
+{"fear_greed":{"value":38,"classification":"Fear","signal":"NEUTRAL"},"market_regime":"RISK_OFF_CONTRACTING","stablecoin_mcap":320483023770.31,"stablecoin_weekly_change_pct":-1.04,"stablecoin_daily_delta":-482873940.08,"chains_analyzed":165,"inflow_count":18,"outflow_count":20,"scan_date":"2026-05-10","generated_at":"2026-05-10T09:00:00Z"}
+</script>
+
+<script>
+(function(){"use strict";function updateCountdowns(){var elements=document.querySelectorAll(".countdown[data-deadline]");var now=Date.now();var i,el,deadline,diff,days,hours,mins;for(i=0;i<elements.length;i++){el=elements[i];deadline=el.getAttribute("data-deadline");if(!deadline||deadline.length<10){continue;}diff=new Date(deadline).getTime()-now;if(diff<=0){el.textContent="ENDED";continue;}days=Math.floor(diff/86400000);hours=Math.floor((diff%86400000)/3600000);mins=Math.floor((diff%3600000)/60000);el.textContent=days+"d "+hours+"h "+mins+"m";}}updateCountdowns();setInterval(updateCountdowns,60000);function sortTable(table,colIndex,isNumeric,ascending){var tbody=table.querySelector("tbody");if(!tbody){return;}var rows=Array.prototype.slice.call(tbody.querySelectorAll("tr"));rows.sort(function(a,b){var cellA=a.cells[colIndex];var cellB=b.cells[colIndex];if(!cellA||!cellB){return 0;}var valA=cellA.textContent.trim();var valB=cellB.textContent.trim();if(isNumeric){valA=parseFloat(valA.replace(/[^0-9.\-]/g,""))||0;valB=parseFloat(valB.replace(/[^0-9.\-]/g,""))||0;return ascending?valA-valB:valB-valA;}return ascending?valA.localeCompare(valB):valB.localeCompare(valA);});var frag=document.createDocumentFragment();var j;for(j=0;j<rows.length;j++){frag.appendChild(rows[j]);}tbody.appendChild(frag);}function attachSortHandlers(table){var headers=table.querySelectorAll("th");var numericCols={rank:true,score:true,yield:true,revenue:true,mcap:true,tvl:true};var k,th;for(k=0;k<headers.length;k++){th=headers[k];th.addEventListener("click",(function(index,header){return function(){var colName=header.getAttribute("data-col")||"";var isNum=numericCols[colName]||false;var wasAsc=header.classList.contains("sorted-asc");var allTh=header.parentNode.querySelectorAll("th");var m;for(m=0;m<allTh.length;m++){allTh[m].classList.remove("sorted-asc","sorted-desc");}if(wasAsc){header.classList.add("sorted-desc");sortTable(table,index,isNum,false);}else{header.classList.add("sorted-asc");sortTable(table,index,isNum,true);}};})(k,th));}}var tables=document.querySelectorAll("table[id]");var t;for(t=0;t<tables.length;t++){attachSortHandlers(tables[t]);}})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeFi Earnings Yield Scanner — Hyperliquid-Grade Protocols | EarlyThunder</title>
+<meta name="description" content="Scan 131 DeFi protocols by earnings yield. 24 Hyperliquid-grade opportunities with annualized revenue exceeding market cap. Data from May 9, 2026.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://earlythunder.com/earnings/">
+<meta property="og:title" content="DeFi Earnings Yield Scanner | EarlyThunder">
+<meta property="og:description" content="Scan 131 DeFi protocols by earnings yield. 24 Hyperliquid-grade opportunities identified.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://earlythunder.com/earnings/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DeFi Earnings Yield Scanner | EarlyThunder">
+<meta name="twitter:description" content="131 protocols scanned. 24 Hyperliquid-grade yields identified.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "DeFi Earnings Yield Scanner — May 2026",
+  "description": "Earnings yield analysis of 131 DeFi protocols, ranking by annualized revenue relative to market capitalization.",
+  "url": "https://earlythunder.com/earnings/",
+  "dateModified": "2026-05-09",
+  "creator": {"@type": "Organization", "name": "EarlyThunder"},
+  "distribution": [{"@type": "DataDownload", "encodingFormat": "text/html", "contentUrl": "https://earlythunder.com/earnings/"}],
+  "variableMeasured": [
+    {"@type": "PropertyValue", "name": "Earnings Yield %", "description": "Annualized protocol revenue divided by fully diluted market cap"},
+    {"@type": "PropertyValue", "name": "Annualized Revenue", "description": "30-day revenue extrapolated to 12 months"},
+    {"@type": "PropertyValue", "name": "Market Cap", "description": "Fully diluted market capitalization"}
+  ]
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-card: #111118;
+    --bg-card-hover: #16161f;
+    --bg-input: #1a1a24;
+    --border: #2a2a3a;
+    --gold: #d4a017;
+    --gold-dim: #8a6a10;
+    --green: #22c55e;
+    --green-dim: #166534;
+    --red: #ef4444;
+    --red-dim: #7f1d1d;
+    --orange: #f59e0b;
+    --blue: #3b82f6;
+    --cyan: #00d4aa;
+    --text-primary: #e2e2e8;
+    --text-secondary: #8888a0;
+    --text-dim: #555570;
+    --font-mono: 'SF Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
+}
+
+html { font-size: 13px; }
+
+body {
+    font-family: var(--font-mono);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: linear-gradient(180deg, #0f0f18 0%, var(--bg-primary) 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.logo-sub {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: all 0.15s;
+}
+
+nav a:hover { color: var(--text-primary); background: var(--bg-input); }
+nav a.active { color: var(--gold); background: var(--bg-input); border: 1px solid var(--gold-dim); }
+
+/* ===== MAIN ===== */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+}
+
+.page-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== STATS BAR ===== */
+.stats-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    flex: 1;
+    min-width: 110px;
+}
+
+.stat-label {
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.stat-value.hyper { color: var(--gold); }
+.stat-value.high { color: var(--green); }
+.stat-value.moderate { color: var(--blue); }
+.stat-value.low { color: var(--text-dim); }
+.stat-value.total { color: var(--text-primary); }
+
+/* ===== FILTER ===== */
+.controls {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.filter-btn:hover { color: var(--text-primary); border-color: var(--text-dim); }
+.filter-btn.active { color: var(--gold); border-color: var(--gold-dim); background: var(--bg-input); }
+
+.search-input {
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    width: 200px;
+}
+
+.search-input::placeholder { color: var(--text-dim); }
+.search-input:focus { outline: none; border-color: var(--gold-dim); }
+
+/* ===== TABLE ===== */
+.table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-card);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+thead th {
+    background: var(--bg-input);
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+thead th:hover { color: var(--gold); }
+thead th.sorted { color: var(--gold); }
+thead th .arrow { margin-left: 0.25rem; font-size: 0.65rem; }
+
+tbody tr {
+    border-bottom: 1px solid #1a1a24;
+    transition: background 0.1s;
+}
+
+tbody tr:hover { background: var(--bg-card-hover); }
+
+td {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+td.name-cell {
+    font-weight: 600;
+    white-space: normal;
+    min-width: 120px;
+}
+
+td.symbol-cell { color: var(--text-secondary); }
+
+td.yield-cell {
+    font-weight: 700;
+    text-align: right;
+}
+
+td.money-cell {
+    text-align: right;
+    color: var(--text-secondary);
+}
+
+td.chains-cell {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-dim);
+    font-size: 0.72rem;
+}
+
+.tier-badge {
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.tier-hyper { background: #3d2e00; color: var(--gold); }
+.tier-high { background: var(--green-dim); color: var(--green); }
+.tier-moderate { background: #1e3a5f; color: var(--blue); }
+.tier-low { background: #1a1a24; color: var(--text-dim); }
+
+.rank-cell {
+    color: var(--text-dim);
+    font-size: 0.72rem;
+    text-align: center;
+    width: 35px;
+}
+
+/* ===== METHODOLOGY ===== */
+.methodology {
+    margin-top: 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.25rem;
+}
+
+.methodology h2 {
+    font-size: 0.9rem;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+}
+
+.methodology p {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.formula-box {
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    font-size: 0.85rem;
+    color: var(--cyan);
+}
+
+.tier-legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.tier-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.tier-legend-item .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot-hyper { background: var(--gold); }
+.dot-high { background: var(--green); }
+.dot-moderate { background: var(--blue); }
+.dot-low { background: var(--text-dim); }
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-dim);
+    font-size: 0.72rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+}
+
+.footer a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.footer a:hover { text-decoration: underline; }
+
+.results-count {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .container { padding: 1rem; }
+    .header { padding: 0.75rem 1rem; }
+    .stats-bar { gap: 0.5rem; }
+    .stat-box { min-width: 80px; padding: 0.5rem 0.6rem; }
+    .stat-value { font-size: 1.1rem; }
+    .search-input { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    html { font-size: 12px; }
+    .stats-bar { flex-direction: column; }
+    .controls { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-left">
+        <a href="/" class="logo">EARLYTHUNDER <span class="logo-sub">YIELD SCANNER</span></a>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/research/">Research</a>
+        <a href="/intelligence/">Intelligence</a>
+        <a href="/earnings/" class="active">Earnings</a>
+        <a href="/deadlines/">Deadlines</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h1 class="page-title">DeFi Earnings Yield Scanner</h1>
+    <p class="page-subtitle">131 protocols scanned by earnings yield -- annualized revenue vs. market cap. Data: May 9, 2026.</p>
+
+    <div class="stats-bar">
+        <div class="stat-box">
+            <div class="stat-label">Total Scanned</div>
+            <div class="stat-value total">131</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Hyperliquid-Grade</div>
+            <div class="stat-value hyper">24</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">High Yield</div>
+            <div class="stat-value high">19</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Moderate</div>
+            <div class="stat-value moderate">14</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Low</div>
+            <div class="stat-value low">25</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="filter-btn active" data-filter="all" onclick="filterTier('all')">All (50)</button>
+        <button class="filter-btn" data-filter="HYPERLIQUID-GRADE" onclick="filterTier('HYPERLIQUID-GRADE')">Hyperliquid-Grade (24)</button>
+        <button class="filter-btn" data-filter="HIGH-YIELD" onclick="filterTier('HIGH-YIELD')">High (19)</button>
+        <button class="filter-btn" data-filter="MODERATE" onclick="filterTier('MODERATE')">Moderate (7)</button>
+        <input type="text" class="search-input" id="search" placeholder="Search protocol or symbol..." oninput="applyFilters()">
+    </div>
+
+    <div class="results-count" id="results-count"></div>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th class="sorted" data-col="rank"># <span class="arrow">v</span></th>
+                    <th data-col="name">Protocol <span class="arrow"></span></th>
+                    <th data-col="symbol">Symbol <span class="arrow"></span></th>
+                    <th data-col="tier">Tier <span class="arrow"></span></th>
+                    <th data-col="yield">Yield % <span class="arrow"></span></th>
+                    <th data-col="category">Category <span class="arrow"></span></th>
+                    <th data-col="revenue">Ann. Revenue <span class="arrow"></span></th>
+                    <th data-col="mcap">Market Cap <span class="arrow"></span></th>
+                    <th data-col="tvl">TVL <span class="arrow"></span></th>
+                    <th data-col="chains">Chains <span class="arrow"></span></th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <div class="methodology">
+        <h2>Methodology</h2>
+        <p>The Earnings Yield Scanner identifies protocols whose annualized revenue significantly exceeds their market capitalization -- a signal that the token may be undervalued relative to the protocol's actual cash flows.</p>
+        <div class="formula-box">
+            Earnings Yield % = (Annualized Revenue / Market Cap) x 100<br>
+            Annualized Revenue = 30-day Revenue x 12
+        </div>
+        <p>Revenue is defined as the portion of fees that accrue to the protocol or token holders (not to liquidity providers). This is analogous to net income in traditional finance, making earnings yield comparable to an inverted P/E ratio.</p>
+        <p>A yield of 20%+ (Hyperliquid-grade) means the protocol earns more than 20% of its entire market cap per year in revenue -- an extreme signal of potential undervaluation, but also potentially a sign of low market confidence, smart contract risk, or unsustainable fee generation.</p>
+
+        <div class="tier-legend">
+            <div class="tier-legend-item"><span class="dot dot-hyper"></span>HYPERLIQUID-GRADE: 20%+ yield</div>
+            <div class="tier-legend-item"><span class="dot dot-high"></span>HIGH-YIELD: 10-20% yield</div>
+            <div class="tier-legend-item"><span class="dot dot-moderate"></span>MODERATE: 5-10% yield</div>
+            <div class="tier-legend-item"><span class="dot dot-low"></span>LOW: under 5% yield</div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <a href="/intelligence/">Intelligence Dashboard</a> &middot; <a href="/deadlines/">Deadline Tracker</a> &middot; <a href="/">EarlyThunder Home</a>
+    <br>Data sourced from DefiLlama and CoinGecko. Not financial advice. Scan date: May 9, 2026.
+</footer>
+
+<script>
+(function() {
+    "use strict";
+
+    var PROTOCOLS = [
+        {rank:1,name:"BabySwap",symbol:"BABY",category:"Dexs",chains:["BSC"],earnings_yield_pct:2077.2159,annualized_revenue:3112.2,mcap:149.83,tvl:1365912.01,tier:"HYPERLIQUID-GRADE"},
+        {rank:2,name:"Aark Digital",symbol:"AARK",category:"Interface",chains:["Arbitrum"],earnings_yield_pct:1395.7816,annualized_revenue:1798608,mcap:128860.27,tvl:0,tier:"HYPERLIQUID-GRADE"},
+        {rank:3,name:"HawkFi",symbol:"HAWK",category:"Liquidity Manager",chains:["Solana"],earnings_yield_pct:796.1686,annualized_revenue:134784,mcap:16929.08,tvl:8059794.38,tier:"HYPERLIQUID-GRADE"},
+        {rank:4,name:"Integral",symbol:"ITGR",category:"Dexs",chains:["Ethereum","Arbitrum"],earnings_yield_pct:528.1919,annualized_revenue:225932.4,mcap:42774.68,tvl:521845.05,tier:"HYPERLIQUID-GRADE"},
+        {rank:5,name:"Moonwell Apollo",symbol:"MFAM",category:"Lending",chains:["Moonriver"],earnings_yield_pct:452.6943,annualized_revenue:32268,mcap:7127.99,tvl:864872.37,tier:"HYPERLIQUID-GRADE"},
+        {rank:6,name:"Iron Bank",symbol:"IB",category:"Lending",chains:["Ethereum","OP Mainnet","Avalanche"],earnings_yield_pct:346.2649,annualized_revenue:92316,mcap:26660.52,tvl:226195.65,tier:"HYPERLIQUID-GRADE"},
+        {rank:7,name:"Houdini Swap",symbol:"LOCK",category:"DEX Aggregator",chains:["Ethereum"],earnings_yield_pct:232.5868,annualized_revenue:394944,mcap:169804.96,tvl:0,tier:"HYPERLIQUID-GRADE"},
+        {rank:8,name:"Streamflow",symbol:"STREAM",category:"Payments",chains:["Solana"],earnings_yield_pct:231.5881,annualized_revenue:1343712,mcap:580216.4,tvl:404912.62,tier:"HYPERLIQUID-GRADE"},
+        {rank:9,name:"Gamma",symbol:"GAMMA",category:"Liquidity Manager",chains:["BSC","OP Mainnet","Ethereum","Polygon zkEVM","Polygon","Arbitrum","Celo","Moonbeam","Avalanche","Fantom"],earnings_yield_pct:172.9664,annualized_revenue:112992,mcap:65326,tvl:4128643.6,tier:"HYPERLIQUID-GRADE"},
+        {rank:10,name:"Valas Finance",symbol:"VALAS",category:"Lending",chains:["BSC"],earnings_yield_pct:139.2103,annualized_revenue:493968,mcap:354835.74,tvl:0,tier:"HYPERLIQUID-GRADE"},
+        {rank:11,name:"Echelon Market",symbol:"ELON",category:"Lending",chains:["Aptos","Movement"],earnings_yield_pct:68.6153,annualized_revenue:651636,mcap:949694.47,tvl:20253470.37,tier:"HYPERLIQUID-GRADE"},
+        {rank:12,name:"Turbos",symbol:"TURBOS",category:"Dexs",chains:["Sui"],earnings_yield_pct:53.7612,annualized_revenue:369732,mcap:687729.91,tvl:4449666.51,tier:"HYPERLIQUID-GRADE"},
+        {rank:13,name:"mETH Protocol",symbol:"COOK",category:"Liquid Staking",chains:["Ethereum"],earnings_yield_pct:50.5853,annualized_revenue:1449960,mcap:2866367.2,tvl:538854139.47,tier:"HYPERLIQUID-GRADE"},
+        {rank:14,name:"Velora",symbol:"VLR",category:"DEX Aggregator",chains:["BSC","Ethereum","Avalanche","Polygon","Fantom","Arbitrum","OP Mainnet","Polygon zkEVM","Base"],earnings_yield_pct:47.5368,annualized_revenue:454188,mcap:955444.27,tvl:0,tier:"HYPERLIQUID-GRADE"},
+        {rank:15,name:"Quickswap Dex",symbol:"QUICK",category:"Dexs",chains:["Polygon","Base"],earnings_yield_pct:43.5863,annualized_revenue:3722832,mcap:8541283.1,tvl:465985446.77,tier:"HYPERLIQUID-GRADE"},
+        {rank:16,name:"fx Protocol",symbol:"FXN",category:"Dual-Token Stablecoin",chains:["Ethereum"],earnings_yield_pct:38.8703,annualized_revenue:961392,mcap:2473330.51,tvl:82619482.42,tier:"HYPERLIQUID-GRADE"},
+        {rank:17,name:"Vesper",symbol:"VSP",category:"Yield Aggregator",chains:["Ethereum","Base","OP Mainnet"],earnings_yield_pct:37.8605,annualized_revenue:328368,mcap:867309.93,tvl:45628624.19,tier:"HYPERLIQUID-GRADE"},
+        {rank:18,name:"CLever",symbol:"CLEV",category:"Yield",chains:["Ethereum"],earnings_yield_pct:35.9532,annualized_revenue:84084,mcap:233870.49,tvl:6707033.33,tier:"HYPERLIQUID-GRADE"},
+        {rank:19,name:"Concentrator",symbol:"CTR",category:"Yield",chains:["Ethereum"],earnings_yield_pct:32.0473,annualized_revenue:41304,mcap:128884.63,tvl:50458128.14,tier:"HYPERLIQUID-GRADE"},
+        {rank:20,name:"ODOS",symbol:"ODOS",category:"DEX Aggregator",chains:["OP Mainnet","Ethereum","Polygon zkEVM","Avalanche","Polygon","Arbitrum","Base","Fantom","BSC","ZKsync Era"],earnings_yield_pct:30.6408,annualized_revenue:549948,mcap:1794825.41,tvl:0,tier:"HYPERLIQUID-GRADE"},
+        {rank:21,name:"SideShift",symbol:"XAI",category:"Cross Chain Bridge",chains:["Ethereum"],earnings_yield_pct:25.013,annualized_revenue:3468672,mcap:13867458.5,tvl:0,tier:"HYPERLIQUID-GRADE"},
+        {rank:22,name:"Gains Network",symbol:"GNS",category:"Derivatives",chains:["Polygon","Arbitrum","Base","ApeChain","MegaETH"],earnings_yield_pct:24.0439,annualized_revenue:3308256,mcap:13759239.81,tvl:14734375.92,tier:"HYPERLIQUID-GRADE"},
+        {rank:23,name:"Dolomite",symbol:"DOLO",category:"Lending",chains:["Polygon zkEVM","Mantle","Berachain","Arbitrum","Ethereum"],earnings_yield_pct:23.1461,annualized_revenue:3977604,mcap:17184795.97,tvl:173728799.41,tier:"HYPERLIQUID-GRADE"},
+        {rank:24,name:"Beefy",symbol:"BIFI",category:"Yield Aggregator",chains:["Arbitrum","Base","Polygon","Avalanche","Fantom","OP Mainnet","BSC","Ethereum","Metis","Mantle"],earnings_yield_pct:21.4931,annualized_revenue:871248,mcap:4053626.52,tvl:125314964.89,tier:"HYPERLIQUID-GRADE"},
+        {rank:25,name:"Inverse Finance FiRM",symbol:"INV",category:"CDP",chains:["Ethereum"],earnings_yield_pct:18.9804,annualized_revenue:2076888,mcap:10942251.02,tvl:23939216.65,tier:"HIGH-YIELD"},
+        {rank:26,name:"Overtime",symbol:"OVER",category:"Prediction Market",chains:["Polygon","Arbitrum","Base","OP Mainnet"],earnings_yield_pct:18.7545,annualized_revenue:1245276,mcap:6639881.11,tvl:1829854.53,tier:"HIGH-YIELD"},
+        {rank:27,name:"FlashTrade",symbol:"FAF",category:"Derivatives",chains:["Solana"],earnings_yield_pct:18.4382,annualized_revenue:701460,mcap:3804383.72,tvl:10776142.59,tier:"HIGH-YIELD"},
+        {rank:28,name:"Geodnet",symbol:"GEOD",category:"Oracle",chains:["Polygon","Solana"],earnings_yield_pct:17.9178,annualized_revenue:10170480,mcap:56761806.38,tvl:0,tier:"HIGH-YIELD"},
+        {rank:29,name:"BaseSwap V2",symbol:"BSWAP",category:"Dexs",chains:["Base"],earnings_yield_pct:17.0942,annualized_revenue:7099.2,mcap:41529.9,tvl:663297.64,tier:"HIGH-YIELD"},
+        {rank:30,name:"Lido",symbol:"LDO",category:"Liquid Staking",chains:["Ethereum"],earnings_yield_pct:16.7403,annualized_revenue:57820272,mcap:345395409.81,tvl:20357681610.66,tier:"HIGH-YIELD"},
+        {rank:31,name:"Index Coop",symbol:"INDEX",category:"Indexes",chains:["Arbitrum","Base","Ethereum"],earnings_yield_pct:16.4679,annualized_revenue:296796,mcap:1802268.75,tvl:14800524.2,tier:"HIGH-YIELD"},
+        {rank:32,name:"Strike",symbol:"STRK",category:"Lending",chains:["Ethereum"],earnings_yield_pct:15.1481,annualized_revenue:13860,mcap:91496.91,tvl:2718.45,tier:"HIGH-YIELD"},
+        {rank:33,name:"CoWSwap",symbol:"COW",category:"DEX Aggregator",chains:["Ethereum","Gnosis","Arbitrum","Base","Polygon","Avalanche","Lens"],earnings_yield_pct:14.8936,annualized_revenue:15267660,mcap:102511815.78,tvl:0,tier:"HIGH-YIELD"},
+        {rank:34,name:"NetSwap",symbol:"NETT",category:"Dexs",chains:["Metis"],earnings_yield_pct:14.187,annualized_revenue:17532,mcap:123578.3,tvl:1449669.3,tier:"HIGH-YIELD"},
+        {rank:35,name:"Mendi Finance",symbol:"MENDI",category:"Lending",chains:["Linea"],earnings_yield_pct:13.5136,annualized_revenue:3144,mcap:23265.47,tvl:1531194.63,tier:"HIGH-YIELD"},
+        {rank:36,name:"Solarbeam",symbol:"SOLAR",category:"Dexs",chains:["Moonriver"],earnings_yield_pct:13.4175,annualized_revenue:2988,mcap:22269.42,tvl:274415.49,tier:"HIGH-YIELD"},
+        {rank:37,name:"Banana Gun",symbol:"BANANA",category:"Telegram Bot",chains:["Ethereum","Solana","Blast","Base","BSC","Sonic","Unichain"],earnings_yield_pct:12.9901,annualized_revenue:2231196,mcap:17176138.75,tvl:0,tier:"HIGH-YIELD"},
+        {rank:38,name:"Solana Name Service",symbol:"SNS",category:"Domains",chains:["Solana"],earnings_yield_pct:12.5482,annualized_revenue:398520,mcap:3175911.4,tvl:0,tier:"HIGH-YIELD"},
+        {rank:39,name:"Stride",symbol:"STRD",category:"Liquid Staking",chains:["Osmosis","CosmosHub","Stargaze","Juno","Evmos","Terra Classic","Celestia","dYdX","Dymension","Injective"],earnings_yield_pct:12.5381,annualized_revenue:104460,mcap:833138.59,tvl:8747538.15,tier:"HIGH-YIELD"},
+        {rank:40,name:"Usual USD0",symbol:"USUAL",category:"RWA",chains:["Ethereum"],earnings_yield_pct:11.5564,annualized_revenue:3412320,mcap:29527537.11,tvl:100371148.86,tier:"HIGH-YIELD"},
+        {rank:41,name:"Sonne Finance",symbol:"SONNE",category:"Lending",chains:["OP Mainnet","Base"],earnings_yield_pct:11.3129,annualized_revenue:2916,mcap:25775.84,tvl:154450.29,tier:"HIGH-YIELD"},
+        {rank:42,name:"Bifrost Liquid Staking",symbol:"BNC",category:"Liquid Staking",chains:["Bifrost"],earnings_yield_pct:10.861,annualized_revenue:132192,mcap:1217125.68,tvl:24923205.57,tier:"HIGH-YIELD"},
+        {rank:43,name:"KiloEx",symbol:"KILO",category:"Derivatives",chains:["BSC","opBNB","Manta","Taiko","BSquared","Base"],earnings_yield_pct:10.8522,annualized_revenue:138252,mcap:1273954.48,tvl:3635016.34,tier:"HIGH-YIELD"},
+        {rank:44,name:"Gearbox",symbol:"GEAR",category:"Lending",chains:["Ethereum","Arbitrum","OP Mainnet","Sonic","BSC","Hemi","Lisk","Monad"],earnings_yield_pct:9.9487,annualized_revenue:295452,mcap:2969765.49,tvl:27807504.26,tier:"MODERATE"},
+        {rank:45,name:"Indigo",symbol:"INDY",category:"CDP",chains:["Cardano"],earnings_yield_pct:9.673,annualized_revenue:284952,mcap:2945840.74,tvl:7239247.51,tier:"MODERATE"},
+        {rank:46,name:"Stake DAO",symbol:"SDT",category:"Yield",chains:["Ethereum"],earnings_yield_pct:9.5927,annualized_revenue:876540,mcap:9137592.12,tvl:161042065.36,tier:"MODERATE"},
+        {rank:47,name:"STON.fi",symbol:"STON",category:"Dexs",chains:["TON"],earnings_yield_pct:9.0595,annualized_revenue:2935164,mcap:32398728.45,tvl:40749293.52,tier:"MODERATE"},
+        {rank:48,name:"deBridge",symbol:"DBR",category:"Bridge",chains:["OP Mainnet","BSC","Ethereum","Linea","Avalanche","Polygon","Solana","Arbitrum","Base","Fantom"],earnings_yield_pct:8.5757,annualized_revenue:6273756,mcap:73157634.86,tvl:5890385.79,tier:"MODERATE"},
+        {rank:49,name:"Definitive",symbol:"EDGE",category:"DEX Aggregator",chains:["Ethereum","Base","OP Mainnet","Polygon","BSC","Arbitrum","Avalanche","Solana"],earnings_yield_pct:8.4047,annualized_revenue:2159136,mcap:25689613.96,tvl:101396.22,tier:"MODERATE"},
+        {rank:50,name:"Rocket Pool",symbol:"RPL",category:"Liquid Staking",chains:["Ethereum"],earnings_yield_pct:7.643,annualized_revenue:3507057,mcap:45886096.87,tvl:1154074976.28,tier:"MODERATE"}
+    ];
+
+    var TIER_ORDER = { "HYPERLIQUID-GRADE": 0, "HIGH-YIELD": 1, "MODERATE": 2, "LOW": 3 };
+    var currentFilter = "all";
+    var currentSortCol = "rank";
+    var currentSortAsc = true;
+
+    function formatMoney(val) {
+        if (val === 0 || val === null || val === undefined) { return "--"; }
+        if (val >= 1000000000) { return "$" + (val / 1000000000).toFixed(2) + "B"; }
+        if (val >= 1000000) { return "$" + (val / 1000000).toFixed(2) + "M"; }
+        if (val >= 1000) { return "$" + (val / 1000).toFixed(1) + "K"; }
+        return "$" + val.toFixed(0);
+    }
+
+    function getTierBadgeClass(tier) {
+        if (tier === "HYPERLIQUID-GRADE") { return "tier-hyper"; }
+        if (tier === "HIGH-YIELD") { return "tier-high"; }
+        if (tier === "MODERATE") { return "tier-moderate"; }
+        return "tier-low";
+    }
+
+    function getTierLabel(tier) {
+        if (tier === "HYPERLIQUID-GRADE") { return "HYPER"; }
+        if (tier === "HIGH-YIELD") { return "HIGH"; }
+        return tier;
+    }
+
+    function getYieldColor(pct) {
+        if (pct >= 20) { return "var(--gold)"; }
+        if (pct >= 10) { return "var(--green)"; }
+        if (pct >= 5) { return "var(--blue)"; }
+        return "var(--text-dim)";
+    }
+
+    function getFiltered() {
+        var search = document.getElementById("search").value.toLowerCase().trim();
+        var filtered = [];
+        for (var i = 0; i < PROTOCOLS.length; i++) {
+            var p = PROTOCOLS[i];
+            if (currentFilter !== "all" && p.tier !== currentFilter) { continue; }
+            if (search && p.name.toLowerCase().indexOf(search) === -1 && p.symbol.toLowerCase().indexOf(search) === -1 && p.category.toLowerCase().indexOf(search) === -1) { continue; }
+            filtered.push(p);
+        }
+        return filtered;
+    }
+
+    function getSorted(data) {
+        var sorted = data.slice();
+        sorted.sort(function(a, b) {
+            var va, vb;
+            if (currentSortCol === "rank") { va = a.rank; vb = b.rank; }
+            else if (currentSortCol === "name") { va = a.name.toLowerCase(); vb = b.name.toLowerCase(); return currentSortAsc ? va.localeCompare(vb) : vb.localeCompare(va); }
+            else if (currentSortCol === "symbol") { va = a.symbol.toLowerCase(); vb = b.symbol.toLowerCase(); return currentSortAsc ? va.localeCompare(vb) : vb.localeCompare(va); }
+            else if (currentSortCol === "tier") { va = TIER_ORDER[a.tier] !== undefined ? TIER_ORDER[a.tier] : 99; vb = TIER_ORDER[b.tier] !== undefined ? TIER_ORDER[b.tier] : 99; }
+            else if (currentSortCol === "yield") { va = a.earnings_yield_pct; vb = b.earnings_yield_pct; }
+            else if (currentSortCol === "category") { va = a.category.toLowerCase(); vb = b.category.toLowerCase(); return currentSortAsc ? va.localeCompare(vb) : vb.localeCompare(va); }
+            else if (currentSortCol === "revenue") { va = a.annualized_revenue; vb = b.annualized_revenue; }
+            else if (currentSortCol === "mcap") { va = a.mcap; vb = b.mcap; }
+            else if (currentSortCol === "tvl") { va = a.tvl; vb = b.tvl; }
+            else if (currentSortCol === "chains") { va = a.chains.length; vb = b.chains.length; }
+            else { va = a.rank; vb = b.rank; }
+            if (va === undefined) { va = 0; }
+            if (vb === undefined) { vb = 0; }
+            return currentSortAsc ? (va > vb ? 1 : va < vb ? -1 : 0) : (va < vb ? 1 : va > vb ? -1 : 0);
+        });
+        return sorted;
+    }
+
+    function renderTable() {
+        var filtered = getFiltered();
+        var sorted = getSorted(filtered);
+        var tbody = document.getElementById("table-body");
+        var html = "";
+
+        for (var i = 0; i < sorted.length; i++) {
+            var p = sorted[i];
+            html += "<tr>";
+            html += '<td class="rank-cell">' + p.rank + "</td>";
+            html += '<td class="name-cell">' + p.name + "</td>";
+            html += '<td class="symbol-cell">' + p.symbol + "</td>";
+            html += '<td><span class="tier-badge ' + getTierBadgeClass(p.tier) + '">' + getTierLabel(p.tier) + "</span></td>";
+            html += '<td class="yield-cell" style="color:' + getYieldColor(p.earnings_yield_pct) + '">' + p.earnings_yield_pct.toFixed(2) + "%</td>";
+            html += "<td>" + p.category + "</td>";
+            html += '<td class="money-cell">' + formatMoney(p.annualized_revenue) + "</td>";
+            html += '<td class="money-cell">' + formatMoney(p.mcap) + "</td>";
+            html += '<td class="money-cell">' + formatMoney(p.tvl) + "</td>";
+            html += '<td class="chains-cell">' + p.chains.join(", ") + "</td>";
+            html += "</tr>";
+        }
+
+        tbody.innerHTML = html;
+        document.getElementById("results-count").textContent = "Showing " + sorted.length + " of " + PROTOCOLS.length + " protocols";
+
+        var ths = document.querySelectorAll("thead th");
+        for (var j = 0; j < ths.length; j++) {
+            var col = ths[j].getAttribute("data-col");
+            ths[j].classList.toggle("sorted", col === currentSortCol);
+            var arrow = ths[j].querySelector(".arrow");
+            if (arrow) {
+                if (col === currentSortCol) {
+                    arrow.textContent = currentSortAsc ? "v" : "^";
+                } else {
+                    arrow.textContent = "";
+                }
+            }
+        }
+    }
+
+    function filterTier(tier) {
+        currentFilter = tier;
+        var buttons = document.querySelectorAll(".filter-btn");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.toggle("active", buttons[i].getAttribute("data-filter") === tier);
+        }
+        renderTable();
+    }
+
+    function applyFilters() {
+        renderTable();
+    }
+
+    document.querySelectorAll("thead th").forEach(function(th) {
+        th.addEventListener("click", function() {
+            var col = th.getAttribute("data-col");
+            if (!col) { return; }
+            if (currentSortCol === col) {
+                currentSortAsc = !currentSortAsc;
+            } else {
+                currentSortCol = col;
+                currentSortAsc = (col === "name" || col === "symbol" || col === "category" || col === "rank");
+            }
+            renderTable();
+        });
+    });
+
+    window.filterTier = filterTier;
+    window.applyFilters = applyFilters;
+
+    renderTable();
+})();
+</script>
+</body>
+</html>

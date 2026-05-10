@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Intelligence dashboard is fully crawlable
+# All dynamic content is server-rendered for SEO

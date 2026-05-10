@@ -137,6 +137,150 @@ export const blogPageMetadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/blog` },
 };
 
+/** Metadata for the intelligence dashboard page. */
+export const intelligencePageMetadata: Metadata = {
+  title: "Intelligence Dashboard",
+  description:
+    "Real-time convergence signal tracker. Monitor 8-signal pattern scores, smart money flows, airdrop calibration, and catalyst timelines across crypto and DeFi.",
+  keywords: [
+    "crypto intelligence",
+    "convergence signals",
+    "smart money tracker",
+    "DeFi dashboard",
+    "airdrop calibration",
+    "catalyst timeline",
+    "signal analysis",
+  ],
+  openGraph: {
+    title: `Intelligence Dashboard | ${SITE_NAME}`,
+    description:
+      "Real-time convergence signal tracker. Monitor smart money flows, airdrop calibration, and catalyst timelines.",
+    url: `${SITE_URL}/intelligence`,
+  },
+  alternates: { canonical: `${SITE_URL}/intelligence` },
+};
+
+/** Metadata for the research hub page. */
+export const researchPageMetadata: Metadata = {
+  title: "Research",
+  description:
+    "Deep-dive research articles covering DeFi exploits, airdrop performance data, tokenless protocol TVL analysis, and asymmetric opportunity breakdowns.",
+  keywords: [
+    "crypto research",
+    "DeFi analysis",
+    "airdrop performance",
+    "tokenless protocols",
+    "TVL analysis",
+    "smart money research",
+  ],
+  openGraph: {
+    title: `Research | ${SITE_NAME}`,
+    description:
+      "Deep-dive research articles on DeFi, airdrops, tokenless protocols, and asymmetric opportunities.",
+    url: `${SITE_URL}/research`,
+  },
+  alternates: { canonical: `${SITE_URL}/research` },
+};
+
+/** Research article title/description map for metadata generation. */
+const RESEARCH_META: Record<
+  string,
+  { readonly title: string; readonly description: string }
+> = {
+  "kelp-exploit-analysis": {
+    title: "Kelp Exploit Analysis",
+    description:
+      "Forensic breakdown of the Kelp DeFi exploit — attack vectors, fund flows, and lessons for protocol security.",
+  },
+  "airdrop-performance-data": {
+    title: "Airdrop Performance Data",
+    description:
+      "Historical airdrop ROI analysis across 200+ token distributions with expected-value calculations and farming strategy insights.",
+  },
+  "tokenless-protocols-tvl-2026": {
+    title: "Tokenless Protocols TVL 2026",
+    description:
+      "Comprehensive TVL tracker for protocols without tokens in 2026. Identify the highest-potential airdrop targets by capital flows.",
+  },
+  "lqty-v2-value-break": {
+    title: "LQTY v2 Value Break Analysis",
+    description:
+      "Deep-dive into Liquity v2 value accrual mechanics — protocol revenue, token utility changes, and valuation gap assessment.",
+  },
+  "crypto-intelligence-brief-week-of-2026-05-09": {
+    title: "Crypto Intelligence Brief — Week of May 9, 2026",
+    description:
+      "Weekly intelligence brief covering market-moving signals, convergence events, and asymmetric setups for the week of May 9, 2026.",
+  },
+  "commonware-analysis-potential-1000x-2500x-roi-opportunity": {
+    title: "Commonware Analysis: 1000x-2500x ROI Opportunity",
+    description:
+      "Full-stack analysis of Commonware — architecture review, team assessment, and quantified ROI thesis for early participants.",
+  },
+  "gains-network-analysis-smart-money-score-86-with-40-tvl-surge": {
+    title: "Gains Network: Smart Money Score 86 with 40% TVL Surge",
+    description:
+      "Gains Network deep-dive — smart money score 86/100, 40% TVL surge analysis, and decentralized perpetuals market positioning.",
+  },
+  "commonware-deep-alpha": {
+    title: "Commonware Deep Alpha",
+    description:
+      "Extended alpha research on Commonware — technical architecture deep-dive, competitive moat analysis, and conviction-level thesis.",
+  },
+  "the-23-billion-divergence": {
+    title: "The $23 Billion Divergence",
+    description:
+      "Analysis of the $23B divergence between DeFi fundamentals and token valuations — where the gap is widest and how to position.",
+  },
+  "genius-act-countdown": {
+    title: "GENIUS Act Countdown",
+    description:
+      "Regulatory intelligence on the GENIUS Act — timeline, market impact scenarios, and which crypto sectors benefit most.",
+  },
+  "ai-crypto-convergence": {
+    title: "AI-Crypto Convergence",
+    description:
+      "Mapping the intersection of artificial intelligence and crypto — infrastructure plays, data markets, and the convergence trade thesis.",
+  },
+  "rwa-tokenization-tripled": {
+    title: "RWA Tokenization Tripled",
+    description:
+      "Real World Asset tokenization has tripled — sector breakdown, protocol comparison, and the institutional capital pipeline driving growth.",
+  },
+  "infrastructure-monopoly-map": {
+    title: "Infrastructure Monopoly Map",
+    description:
+      "Visual mapping of crypto infrastructure monopolies — who controls the critical layers and where challenger opportunities exist.",
+  },
+};
+
+/** Generate metadata for an individual research article page. */
+export function getResearchArticleMetadata(slug: string): Metadata {
+  const meta = RESEARCH_META[slug];
+  if (!meta) {
+    return { title: "Research Article Not Found" };
+  }
+
+  const url = `${SITE_URL}/research/${slug}`;
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    openGraph: {
+      title: `${meta.title} | ${SITE_NAME}`,
+      description: meta.description,
+      url,
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${meta.title} | ${SITE_NAME}`,
+      description: meta.description,
+    },
+    alternates: { canonical: url },
+  };
+}
+
 /** Generate metadata for an individual opportunity page. */
 export function getOpportunityMetadata(opp: Opportunity): Metadata {
   if (!opp || typeof opp.slug !== "string") {

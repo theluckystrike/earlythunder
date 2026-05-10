@@ -7,8 +7,8 @@ const SIGNALS = [
   { name: "Dev Activity", description: "Active development with contributor diversity." },
   { name: "Smart Money", description: "Sophisticated capital flowing before the crowd." },
   { name: "Narrative", description: "Compelling story that spreads virally." },
-  { name: "Hard to Buy", description: "Friction creates opportunity for the diligent." },
-  { name: "Catalyst", description: "Identifiable near-term events to unlock value." },
+  { name: "Earnings Yield", description: "131 protocols with real yield data. 24 Hyperliquid-grade." },
+  { name: "Catalyst", description: "24 active deadlines tracked. Near-term events to unlock value." },
 ] as const;
 
 /** The 8-Signal Pattern Filter section. */
@@ -19,7 +19,7 @@ export default function SignalsSection() {
         The 8-Signal Pattern Filter
       </h2>
       <p className="text-text-secondary text-lg mt-4">
-        Every opportunity evaluated across eight dimensions.
+        58 convergence events detected across 154+ protocols. Every opportunity evaluated across eight dimensions.
       </p>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {SIGNALS.map((signal, index) => (
@@ -31,12 +31,20 @@ export default function SignalsSection() {
           />
         ))}
       </div>
-      <Link
-        href="/methodology"
-        className="text-text-secondary hover:text-text-primary text-sm mt-8 block transition"
-      >
-        Read full methodology &rarr;
-      </Link>
+      <div className="flex gap-6 mt-8">
+        <Link
+          href="/intelligence"
+          className="text-text-secondary hover:text-text-primary text-sm transition"
+        >
+          View live convergence signals &rarr;
+        </Link>
+        <Link
+          href="/methodology"
+          className="text-text-secondary hover:text-text-primary text-sm transition"
+        >
+          Read full methodology &rarr;
+        </Link>
+      </div>
     </section>
   );
 }

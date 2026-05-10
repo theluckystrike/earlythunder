@@ -1826,15 +1826,15 @@
     "asset_class": "digital_assets",
     "tier": 2,
     "composite_score": 71.8,
-    "one_liner": "Paradigm + Lido founders restaking protocol that attracted $200M deposits on day one and secured 70+ protocols across 45 countries.",
-    "thesis": "Symbiotic represents the strongest challenger to EigenLayer in the restaking narrative, differentiated by its permissionless and modular architecture. Backed by Paradigm and co-founded by Lido founders, the protocol attracted $200M in deposits within its first day of launch, demonstrating extraordinary demand for restaking infrastructure beyond EigenLayer's dominant position. As of April 2026, TVL stands at approximately $355M (down from a $1.6B peak), with over 1,200 active node operators across 45 countries and 70+ protocols secured.\n\nThe token TGE occurred on November 20, 2024, but the token has not yet achieved major CEX listings, creating a friction-based moat that early participants can exploit. The protocol supports a wide array of collateral types including wstETH, wBETH, cbETH, sUDE, mETH, rETH, ENA, and swETH, giving it broader asset coverage than competitors. The External Rewards feature is distributing partner tokens (Hyperlane HYPER, Omni's $10M allocation), creating additional yield incentives.\n\nWith 66,000+ unique depositors historically and a points program still active via Mellow Protocol vaults, Symbiotic occupies the second-mover advantage position in restaking. The ChainSecurity audit returned a 'high level of security' rating, though auditors noted that the open design allows potentially dangerous configurations. The key risk is that TVL has declined 78% from peak, suggesting either rotation to other protocols or broader market disengagement from restaking as a category.\n\nThe bull case rests on restaking becoming a foundational infrastructure layer for crypto-economic security, with Symbiotic capturing meaningful share from EigenLayer due to its more permissionless design. If the broader restaking market recovers to its $19B+ peak (EigenLayer alone held $18-19.7B), Symbiotic's share at current TVL ratios implies significant upside.",
+    "one_liner": "Paradigm + Pantera backed restaking protocol with $542.7M TVL, active Points Season 2, and permissionless shared security for 70+ protocols across 45 countries.",
+    "thesis": "Symbiotic represents the strongest challenger to EigenLayer in the restaking narrative, differentiated by its permissionless and modular architecture. Backed by Paradigm and co-founded by Lido founders, the protocol attracted $200M in deposits within its first day of launch, demonstrating extraordinary demand for restaking infrastructure beyond EigenLayer's dominant position. As of April 2026, TVL stands at approximately $542.7M (down from a $1.6B peak), with over 1,200 active node operators across 45 countries and 70+ protocols secured.\n\nThe token TGE occurred on November 20, 2024, but the token has not yet achieved major CEX listings, creating a friction-based moat that early participants can exploit. The protocol supports a wide array of collateral types including wstETH, wBETH, cbETH, sUDE, mETH, rETH, ENA, and swETH, giving it broader asset coverage than competitors. The External Rewards feature is distributing partner tokens (Hyperlane HYPER, Omni's $10M allocation), creating additional yield incentives.\n\nWith 66,000+ unique depositors historically and a points program still active via Mellow Protocol vaults, Symbiotic occupies the second-mover advantage position in restaking. The ChainSecurity audit returned a 'high level of security' rating, though auditors noted that the open design allows potentially dangerous configurations. The key risk is that TVL has declined 78% from peak, suggesting either rotation to other protocols or broader market disengagement from restaking as a category.\n\nThe bull case rests on restaking becoming a foundational infrastructure layer for crypto-economic security, with Symbiotic capturing meaningful share from EigenLayer due to its more permissionless design. If the broader restaking market recovers to its $19B+ peak (EigenLayer alone held $18-19.7B), Symbiotic's share at current TVL ratios implies significant upside.",
     "signals": {
       "working_code": 80,
       "community": 55,
       "dev_activity": 65,
       "smart_money": 85,
       "narrative": 75,
-      "catalyst": 60,
+      "catalyst": 70,
       "valuation_gap": 75,
       "obscurity": 80
     },
@@ -1900,9 +1900,21 @@
         "source": "Security Audit",
         "url": "",
         "type": "research"
+      },
+      {
+        "claim": "TVL $542.7M on Ethereum, annualized fees $449K",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Points Season 2 active; $34.8M raised (Paradigm $5.8M seed, Pantera $29M Series A)",
+        "source": "Sprint 3 Deep Research",
+        "url": "",
+        "type": "research"
       }
     ],
-    "updated_at": "2026-04-13T00:00:00Z",
+    "updated_at": "2026-05-10",
     "is_graveyard": false,
     "slug": "symbiotic",
     "related_slugs": [],
@@ -1911,9 +1923,9 @@
     "volume_24h_usd": null,
     "citation_types": {
       "official": 1,
-      "data": 2,
-      "news": 1,
-      "research": 3
+      "data": 3,
+      "research": 6,
+      "news": 1
     },
     "valuation_gap_score": 75,
     "obscurity_score": 80,
@@ -1924,7 +1936,7 @@
     "competitive": null,
     "fdv": null,
     "circulating_pct": null,
-    "tvl": null,
+    "tvl": "$542.7M",
     "fees_30d": null,
     "holders": null,
     "github_stars": null,
@@ -7407,12 +7419,12 @@
     ],
     "citations": [
       {
-        "claim": "Two full-size non-fission prototypes, critical experiment at Paul Scherrer Institute 2026-27, €25M+ raised",
+        "claim": "Two full-size non-fission prototypes, critical experiment at Paul Scherrer Institute 2026-27, \u20ac25M+ raised",
         "source": "Invisible Layer Report",
         "url": ""
       },
       {
-        "claim": "Most advanced Western thorium molten salt reactor developer. Two full-size non-fission prototypes built, critical experiment at Paul Scherrer Institute planned 2026. 27. The first European thorium MSR critical experiment ever. Commercial reactors targeted early 2030s. Private, €25M+ raised",
+        "claim": "Most advanced Western thorium molten salt reactor developer. Two full-size non-fission prototypes built, critical experiment at Paul Scherrer Institute planned 2026. 27. The first European thorium MSR critical experiment ever. Commercial reactors targeted early 2030s. Private, \u20ac25M+ raised",
         "source": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Copenhagen_Atomics",
         "type": "research"
@@ -8889,7 +8901,7 @@
     ],
     "citations": [
       {
-        "claim": "~¥500, ~$450M market cap, $29M revenue. Only public orbital debris removal company. Below IPO price",
+        "claim": "~\u00a5500, ~$450M market cap, $29M revenue. Only public orbital debris removal company. Below IPO price",
         "source": "Document reference (no specific URL cited for Astroscale)",
         "url": "",
         "type": "data"
@@ -11234,7 +11246,7 @@
     ],
     "citations": [
       {
-        "claim": "~¥500, ~$450M market cap, ¥4.7B revenue. Closest to lunar hardware. Two crash landings. High risk",
+        "claim": "~\u00a5500, ~$450M market cap, \u00a54.7B revenue. Closest to lunar hardware. Two crash landings. High risk",
         "source": "Document reference (no specific URL cited for ispace)",
         "url": "",
         "type": "data"
@@ -13809,5 +13821,1383 @@
     "google_trends_interest": null,
     "valuation_gap_score": 72,
     "obscurity_score": 65
+  },
+  {
+    "slug": "commonware",
+    "name": "Commonware",
+    "ticker": null,
+    "category": "Infrastructure",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 82.0,
+    "one_liner": "Open-source blockchain primitives library powering Stripe's Tempo chain and Noble's Cosmos migration, backed by Paradigm, Haun, and Dragonfly with $34M raised.",
+    "thesis": "Commonware is a set of open-source blockchain primitives (consensus, networking, storage) that lets developers build custom blockchains without adopting a full framework like Cosmos SDK or Substrate. Founded by Patrick O'Grady (ex-Ava Labs, built HyperSDK), the project raised $34M from Paradigm, Haun Ventures, and Dragonfly.\n\nThe primary production chain built on Commonware is Tempo (backed by Stripe), which targets institutional stablecoin payments. Stripe's Bridge acquisition ($1.1B) and Tempo's enterprise partners (including WLFI USD1 integration) create a direct pipeline to trillions in payment volume. Noble, the largest stablecoin issuer on Cosmos ($3.8B USDC), is migrating from Cosmos SDK to Commonware primitives. LayerZero is building its 'Zero' L1 (fall 2026) on QMDB, the storage primitive co-developed with Commonware.\n\nCurrently tokenless with zero code references to tokens, governance, or foundations in any repository. Token launch probability estimated at 55-65% within 24 months. If token launches, expect Cosmos-like model with 20-30% community allocation. The risk is Stripe acquisition ($200-500M equity exit) that bypasses tokenization entirely. The project is already profitable (~$4M ARR, 7 employees).",
+    "signals": {
+      "working_code": 90,
+      "dev_activity": 85,
+      "smart_money": 90,
+      "community": 40,
+      "catalyst": 80,
+      "narrative": 85,
+      "valuation_gap": 85,
+      "obscurity": 90
+    },
+    "catalysts": [
+      "LayerZero Zero chain launch (fall 2026) using QMDB validates Commonware as cross-ecosystem standard",
+      "Noble migration from Cosmos SDK to Commonware primitives validates anti-framework thesis",
+      "Tempo ecosystem growth with Stripe's institutional payment partnerships"
+    ],
+    "risks": [
+      "Zero code mentions of token/governance/foundation in any repository as of May 2026",
+      "Stripe corporate culture is anti-token; acquisition exit ($200-500M) may bypass tokenization entirely",
+      "Enterprise customers may resist tokenization due to compliance complexity"
+    ],
+    "related_slugs": [
+      "aztec-network",
+      "espresso-systems",
+      "story-protocol"
+    ],
+    "citations": [
+      {
+        "claim": "Convergence score 92/100 in EarlyThunder pipeline",
+        "source": "EarlyThunder Sprint 3",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "$34M raised from Paradigm, Haun Ventures, Dragonfly; founded by Patrick O'Grady (ex-Ava Labs)",
+        "source": "Sprint 3 Deep Research",
+        "url": "https://github.com/commonwarexyz/monorepo",
+        "type": "github"
+      },
+      {
+        "claim": "Noble migrating from Cosmos SDK to Commonware; LayerZero building Zero L1 on QMDB",
+        "source": "Sprint 3 Deep Research",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 2,
+      "github": 1
+    },
+    "valuation_gap_score": 85,
+    "obscurity_score": 90,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "gauntlet",
+    "name": "Gauntlet",
+    "ticker": null,
+    "category": "Risk Management",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 68.0,
+    "one_liner": "DeFi risk management and portfolio optimization platform with $1.49B TVL, providing risk models for Aave, Compound, and major lending protocols.",
+    "thesis": "Gauntlet is a DeFi-native risk management platform that provides simulation-based risk analysis, parameter optimization, and portfolio management for top DeFi protocols. The platform currently manages $1.49B in TVL on Binance chain with a +0.74% 7-day inflow, indicating steady capital accumulation.\n\nGauntlet's core value proposition is providing institutional-grade risk infrastructure for DeFi. They build agent-based simulations that model market dynamics to optimize protocol parameters (interest rates, collateral factors, liquidation thresholds) for lending protocols like Aave and Compound. This positions them as critical infrastructure that protocols cannot easily replace.\n\nCurrently tokenless. The risk management vertical is increasingly important as DeFi matures and institutional capital demands robust risk frameworks. The key question is whether Gauntlet tokenizes its platform or remains a B2B service business.",
+    "signals": {
+      "working_code": 80,
+      "dev_activity": 70,
+      "smart_money": 65,
+      "community": 45,
+      "catalyst": 55,
+      "narrative": 65,
+      "valuation_gap": 70,
+      "obscurity": 75
+    },
+    "catalysts": [
+      "$1.49B TVL with positive 7-day inflow (+0.74%) signals steady capital accumulation",
+      "Growing institutional demand for DeFi risk management infrastructure",
+      "Potential tokenization as DeFi governance matures"
+    ],
+    "risks": [
+      "B2B service model may not require tokenization, limiting retail opportunity",
+      "Risk management is a competitive space with multiple providers",
+      "TVL concentration on Binance chain limits cross-chain narrative"
+    ],
+    "related_slugs": [
+      "symbiotic",
+      "eigenlayer",
+      "maple-finance"
+    ],
+    "citations": [
+      {
+        "claim": "$1.49B TVL with +0.74% 7d change on Binance",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Top TVL inflow protocol in smart money scan May 9 2026",
+        "source": "EarlyThunder Pipeline",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "data": 2
+    },
+    "valuation_gap_score": 70,
+    "obscurity_score": 75,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$1.49B",
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "concrete",
+    "name": "Concrete",
+    "ticker": null,
+    "category": "Yield Infrastructure",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 80.0,
+    "one_liner": "Full-stack DeFi yield infrastructure protocol with $1.04B TVL, backed by Polychain and YZi Labs (Binance), with active Bags/Points campaign signaling imminent TGE.",
+    "thesis": "Concrete (by Blueprint Finance) is a full-stack DeFi yield infrastructure protocol providing automated ERC-4626 vault products that route deposits into optimized strategies across Aave, Compound, Morpho, and other lending markets. Current TVL stands at $1.04B, with 87% on Ethereum.\n\nThe protocol raised $17M total: $7.5M Series A (Hashed, Tribe Capital) and $9.5M (Polychain Capital, YZi Labs/Binance Labs, VanEck, Selini Capital, Portal Ventures, Gate Ventures, BitGo). The team includes alumni from EigenLayer (Head of Sales), Maple Finance (Head of Product), Euler (Smart Contract Lead), and Consensys (Staff Technical Lead).\n\nAn active Bags/Points campaign is live with Phase 1 (social quests) active and Phase 2 (vault deposits) coming. This is a textbook pre-TGE setup. Token launch expected Q2-Q3 2026 at $1-3B FDV with 5-8% allocated to airdrop. The 73.6% TVL growth in 7 days signals accelerating capital inflows driven by airdrop anticipation.\n\nKey risk: Most V1 vaults are marked 'Deprecated,' suggesting mid-migration from V1 to V2. If V2 launch is delayed or buggy, TVL could collapse. Revenue capture is limited ($371K cumulative) despite $3.34M annualized fees.",
+    "signals": {
+      "working_code": 85,
+      "dev_activity": 75,
+      "smart_money": 85,
+      "community": 70,
+      "catalyst": 85,
+      "narrative": 80,
+      "valuation_gap": 80,
+      "obscurity": 75
+    },
+    "catalysts": [
+      "Active Bags/Points campaign with Phase 2 (vault deposits) imminent, signaling Q2-Q3 2026 TGE",
+      "73.6% TVL growth in 7 days driven by airdrop anticipation and institutional capital",
+      "$17M raised from Polychain, YZi Labs (Binance), VanEck with team from EigenLayer, Maple, Euler"
+    ],
+    "risks": [
+      "Most V1 vaults deprecated; mid-migration to V2 architecture creates execution risk",
+      "Only $371K cumulative revenue despite $1.04B TVL suggests limited product-market fit beyond yield",
+      "Token launch delay to 2027 could cause TVL rotation to competitors"
+    ],
+    "related_slugs": [
+      "maple-finance",
+      "goldfinch",
+      "symbiotic"
+    ],
+    "citations": [
+      {
+        "claim": "$1.04B TVL (87% Ethereum), $17M raised from Polychain, YZi Labs, VanEck",
+        "source": "Sprint 3 Deep Research",
+        "url": "https://app.concrete.xyz",
+        "type": "official"
+      },
+      {
+        "claim": "Active Bags/Points campaign with social quests live; TGE expected Q2-Q3 2026",
+        "source": "Sprint 3 Deep Research",
+        "url": "https://points.concrete.xyz/home",
+        "type": "official"
+      },
+      {
+        "claim": "Team from EigenLayer, Maple Finance, Euler, Consensys",
+        "source": "Sprint 3 Deep Research",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "official": 2,
+      "research": 1
+    },
+    "valuation_gap_score": 80,
+    "obscurity_score": 75,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$1.04B",
+    "fees_30d": "$278K",
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "grove-finance",
+    "name": "Grove Finance",
+    "ticker": null,
+    "category": "DeFi",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 55.0,
+    "one_liner": "Emerging DeFi protocol targeting automated yield optimization with cross-chain deployment ambitions.",
+    "thesis": "Grove Finance is an emerging DeFi protocol focused on automated yield optimization and capital efficiency across multiple chains. The protocol is in early stages with limited public information available, but appears in EarlyThunder convergence pipeline data as a target worth monitoring.\n\nThe tokenless status and early-stage development create a potential asymmetric opportunity if the protocol gains traction and launches a token with community allocation. However, limited public data means the thesis is speculative and requires ongoing monitoring for validation signals.\n\nKey tracking points: TVL growth trajectory, team background validation, VC backing announcements, and any points/rewards program launches that would signal token intentions.",
+    "signals": {
+      "working_code": 50,
+      "dev_activity": 45,
+      "smart_money": 40,
+      "community": 35,
+      "catalyst": 50,
+      "narrative": 55,
+      "valuation_gap": 65,
+      "obscurity": 85
+    },
+    "catalysts": [
+      "Potential token launch with community allocation if protocol gains traction",
+      "Cross-chain DeFi expansion could attract institutional capital",
+      "Early-stage positioning offers highest asymmetry if thesis validates"
+    ],
+    "risks": [
+      "Limited public information and early-stage development create high uncertainty",
+      "No confirmed VC backing or team background publicly available",
+      "May never tokenize or achieve meaningful TVL"
+    ],
+    "related_slugs": [
+      "maple-finance",
+      "goldfinch"
+    ],
+    "citations": [
+      {
+        "claim": "Identified in EarlyThunder convergence pipeline as monitoring target",
+        "source": "EarlyThunder Pipeline",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 1
+    },
+    "valuation_gap_score": 65,
+    "obscurity_score": 85,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "spiko",
+    "name": "Spiko",
+    "ticker": null,
+    "category": "RWA / Tokenized Securities",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 65.0,
+    "one_liner": "European regulated platform tokenizing government money market funds on Ethereum and Polygon, bridging TradFi with DeFi yield infrastructure.",
+    "thesis": "Spiko is a European-regulated platform that tokenizes government money market funds, making them accessible on-chain via Ethereum and Polygon. The protocol targets the $23.6B tokenized RWA market (up 66% YTD as of March 2026), positioning at the intersection of institutional DeFi and regulatory compliance.\n\nAs RWAs become an increasingly dominant portion of DeFi TVL (~25% of all DeFi TVL), platforms like Spiko that provide regulated access to yield-bearing government securities on-chain are poised for growth. The European regulatory framework provides a compliance moat that US-focused competitors lack.\n\nCurrently tokenless. The RWA tokenization trend is one of the strongest secular narratives in crypto, with BlackRock BUIDL at $2.3B AUM and Ondo at $3.53B TVL leading the charge. Spiko's focus on European government money market funds provides geographic diversification in the RWA space.",
+    "signals": {
+      "working_code": 70,
+      "dev_activity": 55,
+      "smart_money": 60,
+      "community": 40,
+      "catalyst": 65,
+      "narrative": 80,
+      "valuation_gap": 70,
+      "obscurity": 80
+    },
+    "catalysts": [
+      "Tokenized RWA market hit $23.6B (up 66% YTD), secular growth trend accelerating",
+      "European regulatory compliance creates moat against unregulated competitors",
+      "Potential token launch to decentralize governance of tokenized securities platform"
+    ],
+    "risks": [
+      "European regulatory environment may limit growth speed compared to offshore competitors",
+      "Competition from BlackRock BUIDL, Ondo, and other well-funded RWA protocols",
+      "Government bond yields may decline, reducing attractiveness of tokenized money market products"
+    ],
+    "related_slugs": [
+      "ondo-finance",
+      "maple-finance",
+      "goldfinch"
+    ],
+    "citations": [
+      {
+        "claim": "RWA market hit $23.6B (up 66% YTD March 2026), ~25% of all DeFi TVL",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Identified in EarlyThunder convergence pipeline",
+        "source": "EarlyThunder Pipeline",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 2
+    },
+    "valuation_gap_score": 70,
+    "obscurity_score": 80,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "bouncebit",
+    "name": "BounceBit",
+    "ticker": "$BB",
+    "category": "CeDeFi / BTC Restaking",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 62.0,
+    "one_liner": "CeDeFi infrastructure chain combining Bitcoin restaking with institutional yield products, bridging centralized and decentralized finance.",
+    "thesis": "BounceBit is a CeDeFi (Centralized-Decentralized Finance) infrastructure chain that enables Bitcoin restaking and institutional-grade yield products. The protocol creates a bridge between centralized finance infrastructure and DeFi composability, targeting Bitcoin holders who want yield without fully entering DeFi.\n\nThe BTC restaking narrative has grown alongside the broader restaking trend, with protocols like Babylon Protocol reaching $4.08B TVL. BounceBit differentiates by combining CeFi custody solutions with DeFi yield strategies, potentially attracting institutional Bitcoin holders who prioritize security and compliance.\n\nThe $BB token is live. Key tracking metrics include TVL growth, institutional adoption of BTC yield products, and expansion of CeDeFi partnerships.",
+    "signals": {
+      "working_code": 65,
+      "dev_activity": 55,
+      "smart_money": 55,
+      "community": 55,
+      "catalyst": 60,
+      "narrative": 70,
+      "valuation_gap": 65,
+      "obscurity": 70
+    },
+    "catalysts": [
+      "BTC restaking narrative growing with Babylon Protocol at $4.08B TVL as category leader",
+      "CeDeFi model attracts institutional Bitcoin holders prioritizing security and compliance",
+      "Expansion of BTC yield products across multiple chains"
+    ],
+    "risks": [
+      "CeDeFi hybrid model may face criticism from both CeFi and DeFi purists",
+      "Competition from Babylon Protocol and other BTC-native restaking solutions",
+      "Regulatory scrutiny on BTC yield products could limit institutional adoption"
+    ],
+    "related_slugs": [
+      "babylon",
+      "symbiotic",
+      "eigenlayer"
+    ],
+    "citations": [
+      {
+        "claim": "Babylon Protocol at $4.08B TVL as BTC restaking category leader",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Identified in EarlyThunder convergence pipeline",
+        "source": "EarlyThunder Pipeline",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "data": 1,
+      "research": 1
+    },
+    "valuation_gap_score": 65,
+    "obscurity_score": 70,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "multipli-fi",
+    "name": "Multipli.fi",
+    "ticker": null,
+    "category": "Yield Aggregation",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 52.0,
+    "one_liner": "DeFi yield aggregation protocol offering automated multi-strategy vaults for optimized returns across lending and liquidity markets.",
+    "thesis": "Multipli.fi is a DeFi yield aggregation protocol that provides automated multi-strategy vaults, routing capital across lending markets and liquidity pools for optimized returns. The protocol targets the growing demand for passive DeFi yield without the complexity of manual strategy management.\n\nCurrently tokenless and in early stages. The yield aggregation space is competitive with established players like Yearn, Convex, and Concrete, but new entrants with superior routing algorithms or novel strategy sets can carve out meaningful market share.\n\nKey monitoring points: TVL traction, strategy performance vs. competitors, team doxxing, VC announcements, and any points/rewards programs.",
+    "signals": {
+      "working_code": 50,
+      "dev_activity": 40,
+      "smart_money": 35,
+      "community": 30,
+      "catalyst": 45,
+      "narrative": 60,
+      "valuation_gap": 65,
+      "obscurity": 85
+    },
+    "catalysts": [
+      "Potential token launch with community allocation if protocol achieves product-market fit",
+      "Growing demand for automated DeFi yield management as retail users seek passive returns",
+      "Novel strategy routing could differentiate from established yield aggregators"
+    ],
+    "risks": [
+      "Highly competitive yield aggregation market with established players (Yearn, Convex)",
+      "Early-stage with limited public track record or TVL data",
+      "Smart contract risk inherent in multi-strategy vault architectures"
+    ],
+    "related_slugs": [
+      "concrete",
+      "maple-finance"
+    ],
+    "citations": [
+      {
+        "claim": "Identified in EarlyThunder convergence pipeline as monitoring target",
+        "source": "EarlyThunder Pipeline",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 1
+    },
+    "valuation_gap_score": 65,
+    "obscurity_score": 85,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "upshift",
+    "name": "Upshift",
+    "ticker": null,
+    "category": "Yield Infrastructure",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 54.0,
+    "one_liner": "Emerging yield infrastructure protocol offering optimized lending and staking products with institutional-grade risk management.",
+    "thesis": "Upshift is an emerging yield infrastructure protocol that provides optimized lending and staking products. The protocol targets institutional and retail users seeking managed yield exposure with built-in risk management frameworks.\n\nCurrently tokenless and early-stage. The yield infrastructure space is experiencing consolidation as institutional capital demands regulated, risk-managed yield products. Protocols that can bridge the gap between DeFi yield and institutional compliance requirements have significant upside.\n\nKey monitoring points: TVL growth, partnership announcements, regulatory framework adoption, and any tokenization signals.",
+    "signals": {
+      "working_code": 50,
+      "dev_activity": 45,
+      "smart_money": 40,
+      "community": 35,
+      "catalyst": 50,
+      "narrative": 60,
+      "valuation_gap": 65,
+      "obscurity": 80
+    },
+    "catalysts": [
+      "Institutional demand for managed DeFi yield products is accelerating",
+      "Potential token launch with community allocation as protocol matures",
+      "Risk management differentiation could attract compliance-conscious capital"
+    ],
+    "risks": [
+      "Early-stage protocol with limited public track record",
+      "Competitive yield infrastructure market with well-funded incumbents",
+      "Regulatory uncertainty around managed yield products"
+    ],
+    "related_slugs": [
+      "concrete",
+      "maple-finance",
+      "goldfinch"
+    ],
+    "citations": [
+      {
+        "claim": "Identified in EarlyThunder convergence pipeline as monitoring target",
+        "source": "EarlyThunder Pipeline",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 1
+    },
+    "valuation_gap_score": 65,
+    "obscurity_score": 80,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "mellow-core",
+    "name": "Mellow Core",
+    "ticker": null,
+    "category": "Liquid Restaking",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 78.0,
+    "one_liner": "Modular liquid restaking protocol with $434.9M TVL and explosive +45.8% weekly inflow, providing permissionless vault infrastructure for Symbiotic and Lido ecosystem.",
+    "thesis": "Mellow Core is a modular liquid restaking protocol on Ethereum that provides permissionless vault infrastructure, primarily serving as the deposit layer for Symbiotic restaking. Current TVL stands at $434.9M with an explosive +45.8% 7-day inflow, one of the strongest TVL growth signals in the entire DeFi ecosystem.\n\nMellow operates as a Lido Alliance member and Symbiotic deposit infrastructure layer, creating a triple-stacking opportunity: users deposit LSTs (like stETH) into Mellow vaults, which restake into Symbiotic, earning Lido + Mellow + Symbiotic points simultaneously. This composability is driving the massive inflows.\n\nCurrently tokenless but strongly positioned for a token launch given the Symbiotic ecosystem trajectory. The +45.8% weekly TVL growth is among the highest in all of DeFi, suggesting either smart money front-running an announcement or genuine organic demand for the triple-point stacking strategy.\n\nKey risk: Heavy dependency on Symbiotic's success. If Symbiotic's token launch disappoints (as EigenLayer's did, dropping 96% from ATH), Mellow's value proposition weakens significantly.",
+    "signals": {
+      "working_code": 80,
+      "dev_activity": 70,
+      "smart_money": 85,
+      "community": 55,
+      "catalyst": 80,
+      "narrative": 75,
+      "valuation_gap": 80,
+      "obscurity": 80
+    },
+    "catalysts": [
+      "+45.8% TVL growth in 7 days ($434.9M) signals massive smart money inflow",
+      "Triple-point stacking (Lido + Mellow + Symbiotic) driving organic deposit growth",
+      "Potential token launch as Symbiotic ecosystem prepares for TGE"
+    ],
+    "risks": [
+      "Heavy dependency on Symbiotic's success; if Symbiotic token disappoints, Mellow loses value proposition",
+      "EigenLayer EIGEN dropped 96% from ATH, destroying the restaking comparable",
+      "TVL concentration on Ethereum limits cross-chain narrative"
+    ],
+    "related_slugs": [
+      "symbiotic",
+      "eigenlayer"
+    ],
+    "citations": [
+      {
+        "claim": "$434.9M TVL with +45.8% 7-day inflow on Ethereum",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Lido Alliance member serving as Symbiotic deposit infrastructure",
+        "source": "EarlyThunder Pipeline",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "data": 1,
+      "research": 1
+    },
+    "valuation_gap_score": 80,
+    "obscurity_score": 80,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$434.9M",
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "paradex",
+    "name": "Paradex",
+    "ticker": null,
+    "category": "Perp DEX",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 79.0,
+    "one_liner": "Zero-fee perpetual DEX on Starknet with $300M+ TVL, $210B+ cumulative volume, and 46.6% of DIME token supply allocated to community -- the most generous airdrop allocation in crypto.",
+    "thesis": "Paradex is a privacy-focused perpetual DEX built as a Starknet appchain, offering zero trading fees, atomic settlement, pre-IPO asset trading, and XUSD yield-bearing synthetic dollar. TVL has grown from $25M to $300M+ in 2025, with $210B+ cumulative trading volume and daily volumes regularly exceeding $1B.\n\nThe DIME token is confirmed but not yet launched. Season 2 has been extended by 6 months for optimal launch conditions. The allocation is extraordinarily generous: 20% to Genesis Airdrop (5% Season 1, 15% Season 2) and 26.6% to ongoing community rewards, totaling 46.6% to community -- one of the highest allocations in crypto history.\n\nAn active XP program distributes 4M XP per week (Fridays). Users earn XP through trading, providing liquidity, keeping open positions, and depositing collateral. Zero trading fees mean farming costs nothing, dramatically lowering the barrier to participation.\n\nThe post-Hyperliquid perp DEX wars are creating aggressive airdrop dynamics. Lighter already airdropped 25% to users at $2.5B FDV. Paradex's 46.6% community allocation at even a conservative $500M FDV would distribute $233M to users.\n\nKey risk: Starknet ecosystem is smaller than Arbitrum or Base, and Season 2 extension suggests the team is cautious about launch timing.",
+    "signals": {
+      "working_code": 85,
+      "dev_activity": 75,
+      "smart_money": 75,
+      "community": 70,
+      "catalyst": 85,
+      "narrative": 80,
+      "valuation_gap": 80,
+      "obscurity": 75
+    },
+    "catalysts": [
+      "46.6% of DIME token supply to community -- most generous allocation in crypto; TGE approaching after Season 2 extension",
+      "Zero-fee trading with 4M XP/week distribution creates costless farming opportunity",
+      "Post-Hyperliquid perp DEX wars driving aggressive airdrop dynamics (Lighter: 25% at $2.5B FDV)"
+    ],
+    "risks": [
+      "Starknet ecosystem smaller than Arbitrum/Base, limiting user acquisition",
+      "Season 2 extended by 6 months signals team caution about timing",
+      "Perp DEX competition intensifying with Hyperliquid commanding 70% of on-chain perp volume"
+    ],
+    "related_slugs": [
+      "aztec-network",
+      "story-protocol"
+    ],
+    "citations": [
+      {
+        "claim": "$300M+ TVL, $210B+ cumulative volume, zero fees, 46.6% DIME to community",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Convergence target in EarlyThunder pipeline with airdrop score 80/100",
+        "source": "EarlyThunder Convergence Detector",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Starknet perp DEX appchain with 4M XP distributed per week",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 2,
+      "data": 1
+    },
+    "valuation_gap_score": 80,
+    "obscurity_score": 75,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$300M+",
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "opensea",
+    "name": "OpenSea",
+    "ticker": null,
+    "category": "NFT Marketplace",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 65.0,
+    "one_liner": "Dominant NFT marketplace with 71.5% Ethereum NFT volume share, 50% of SEA token allocated to community, and Voyages rewards program active despite delayed TGE.",
+    "thesis": "OpenSea is the dominant NFT marketplace with $35B+ total trading volume since 2017, 2M+ active users, and 71.5% Ethereum NFT volume market share. The platform is expanding into ERC-20 tokens and 'culture trading,' positioning beyond pure NFTs.\n\nThe SEA token was confirmed with 50% of supply allocated to community -- an extraordinary allocation for a platform that raised $300M at $13.3B valuation. Originally scheduled for March 30, 2026, the launch was delayed due to 'challenging market conditions.' No new date has been announced.\n\nThe Voyages rewards program is active with 12 chest levels (Wood to Solar), each with 3 tiers. Higher chests mean larger SEA allocations. Users farm by listing, minting, and trading NFTs. At the previous $13.3B valuation, 50% community allocation represents $6.65B in potential distribution.\n\nKey risk: The delay signals either internal execution issues or strategic patience waiting for NFT market recovery. The NFT market has been in a prolonged downturn, and further delay or reduced allocation is possible.",
+    "signals": {
+      "working_code": 85,
+      "dev_activity": 65,
+      "smart_money": 60,
+      "community": 75,
+      "catalyst": 60,
+      "narrative": 55,
+      "valuation_gap": 65,
+      "obscurity": 40
+    },
+    "catalysts": [
+      "50% SEA token to community at $13.3B previous valuation represents massive potential distribution",
+      "Expanding into ERC-20 tokens and culture trading beyond pure NFTs",
+      "Voyages rewards program actively farming community engagement pre-TGE"
+    ],
+    "risks": [
+      "TGE delayed from March 2026 due to challenging market conditions; no new date announced",
+      "NFT market in prolonged downturn may further delay or reduce allocation",
+      "Competition from Blur, Magic Eden, and new NFT platforms eroding market share"
+    ],
+    "related_slugs": [
+      "farcaster",
+      "zora-attention-markets"
+    ],
+    "citations": [
+      {
+        "claim": "$35B+ total volume, 2M+ users, 71.5% ETH NFT volume, 50% SEA to community",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Convergence target in EarlyThunder pipeline with airdrop score 80/100",
+        "source": "EarlyThunder Convergence Detector",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Voyages rewards program with 12 chest levels; TGE delayed from March 2026",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 2,
+      "data": 1
+    },
+    "valuation_gap_score": 65,
+    "obscurity_score": 40,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "hyperliquid",
+    "name": "Hyperliquid",
+    "ticker": "$HYPE",
+    "category": "Perp DEX",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 88.0,
+    "one_liner": "Category-defining perp DEX commanding 70% of on-chain perpetual volume with $700M+ annualized revenue, $5.07B TVL, and the most successful community airdrop in crypto history.",
+    "thesis": "Hyperliquid is the dominant on-chain perpetual trading platform, processing $180B/month in volume and commanding ~70% of all on-chain perp market share. The protocol generates $700M+ in annualized revenue, making it one of the most profitable DeFi protocols in existence.\n\nHYPE trades at $43.74 with a $10.43B market cap (rank #12), having pulled back 26% from its $59.30 ATH. TVL stands at $5.07B with +5.5% 7-day growth, indicating continued capital accumulation. The smart money score is 57 (WATCH), with TVL momentum, ATH value gap, and mild accumulation signals all positive.\n\nThe protocol pioneered the massive community airdrop model, distributing tokens worth billions to early users. This created a blueprint that Paradex, Lighter, and other perp DEXs are now replicating. Hyperliquid's HyperEVM expansion enables general-purpose smart contracts on top of the high-performance trading layer.\n\nAt current prices, HYPE represents a blue-chip DeFi position with strong revenue fundamentals and network effects. The key question is whether the 70% market share is sustainable as competitors aggressively airdrop to steal users.",
+    "signals": {
+      "working_code": 95,
+      "dev_activity": 85,
+      "smart_money": 80,
+      "community": 90,
+      "catalyst": 80,
+      "narrative": 90,
+      "valuation_gap": 70,
+      "obscurity": 30
+    },
+    "catalysts": [
+      "$700M+ annualized revenue with 70% market share in on-chain perps",
+      "HyperEVM expansion enables general-purpose smart contracts on trading infrastructure",
+      "TVL growing +5.5% weekly to $5.07B signals continued capital accumulation"
+    ],
+    "risks": [
+      "70% market share may be peak; aggressive competitor airdrops (Paradex, Lighter) eroding share",
+      "26% below ATH suggests market has partially de-rated the growth story",
+      "Concentrated platform risk if a major exploit or liquidation cascade occurs"
+    ],
+    "related_slugs": [
+      "paradex"
+    ],
+    "citations": [
+      {
+        "claim": "Price $43.74, mcap $10.43B, rank #12, ATH $59.30, -26.2% from ATH",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "TVL $5.07B with +5.5% 7d growth; smart money score 57",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "70% on-chain perp market share, $180B/month volume, $700M+ annualized revenue",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": 43.74,
+    "market_cap_usd": 10425161495,
+    "volume_24h_usd": 238681440,
+    "citation_types": {
+      "data": 2,
+      "research": 1
+    },
+    "valuation_gap_score": 70,
+    "obscurity_score": 30,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$5.07B",
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "liquity",
+    "name": "Liquity",
+    "ticker": "$LQTY",
+    "category": "Stablecoin / Lending",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 81.0,
+    "one_liner": "Decentralized borrowing protocol with $323.7M TVL growing +15.2% weekly, trading 99.8% below ATH at $0.34 with smart money score 83/100 (INVESTIGATE signal).",
+    "thesis": "Liquity is a decentralized borrowing protocol that allows users to draw interest-free loans against ETH collateral. LQTY trades at $0.34 with a $33.7M market cap, an astonishing 99.8% below its $146.94 ATH. Despite the price collapse, the protocol's TVL stands at $323.7M with +15.2% weekly growth, creating one of the most extreme usage-price disconnects in DeFi.\n\nThe smart money score is 83/100 (INVESTIGATE signal), with maximum scores on ATH value gap (25/25) and TVL momentum (20/20). The TVL-to-volume ratio of 68.22 indicates mild accumulation. Liquity V2 represents a major protocol upgrade with novel interest rate mechanisms and enhanced capital efficiency.\n\nThe 99.8% decline from ATH combined with growing TVL and strong smart money signals creates a deep value setup. The protocol generates real revenue from borrowing fees and liquidations, making it fundamentally sound. The key question is whether V2 can reignite narrative interest and attract new capital.\n\nRisk: The extreme ATH decline may reflect structural tokenomics issues rather than just market cycle dynamics. Competition from Aave, Compound, and newer lending protocols is intense.",
+    "signals": {
+      "working_code": 85,
+      "dev_activity": 75,
+      "smart_money": 85,
+      "community": 60,
+      "catalyst": 75,
+      "narrative": 70,
+      "valuation_gap": 95,
+      "obscurity": 70
+    },
+    "catalysts": [
+      "99.8% below ATH with $323.7M TVL growing +15.2% weekly -- extreme usage-price disconnect",
+      "Smart money score 83/100 (INVESTIGATE) with maximum ATH value gap and TVL momentum scores",
+      "Liquity V2 upgrade with novel interest rate mechanisms and enhanced capital efficiency"
+    ],
+    "risks": [
+      "99.8% ATH decline may reflect structural tokenomics issues, not just market cycle",
+      "Competition from Aave, Compound, and newer lending protocols is intense",
+      "Small market cap ($33.7M) creates liquidity risk for larger positions"
+    ],
+    "related_slugs": [
+      "maple-finance",
+      "goldfinch"
+    ],
+    "citations": [
+      {
+        "claim": "Price $0.34, mcap $33.7M, rank #663, ATH $146.94, -99.77% from ATH",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "TVL $323.7M with +15.2% 7d growth; smart money score 83 (INVESTIGATE)",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Deep value signal: true; TVL-to-volume ratio 68.22 (mild accumulation)",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": 0.341269,
+    "market_cap_usd": 33679834,
+    "volume_24h_usd": 4745563,
+    "citation_types": {
+      "data": 3
+    },
+    "valuation_gap_score": 95,
+    "obscurity_score": 70,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$323.7M",
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "gmx",
+    "name": "GMX",
+    "ticker": "$GMX",
+    "category": "Perp DEX",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 83.0,
+    "one_liner": "Battle-tested perp DEX on Arbitrum with $316.7M TVL growing +31.3% weekly, trading 91.6% below ATH at $7.61, with smart money score 86/100 (INVESTIGATE).",
+    "thesis": "GMX is a decentralized perpetual exchange on Arbitrum and Avalanche that pioneered the GLP liquidity pool model. GMX trades at $7.61 with a $79.2M market cap, 91.6% below its $91.07 ATH. TVL stands at $316.7M with an explosive +31.3% weekly growth rate, one of the strongest inflow signals in the perp DEX category.\n\nThe smart money score is 86/100 (INVESTIGATE signal), with maximum scores on ATH value gap (25/25) and TVL momentum (25/25). The protocol generates real revenue from trading fees distributed to stakers. GMX V2 introduced isolated markets and synthetic assets, expanding the tradeable universe.\n\nThe +31.3% weekly TVL growth combined with the deep value positioning (91.6% below ATH) creates a compelling asymmetric setup. Revenue-generating perp DEXs with proven track records trading at deep discounts represent one of the strongest value plays in DeFi.\n\nKey competitive dynamic: Hyperliquid's dominance (70% market share) has compressed valuations for all other perp DEXs, but GMX's battle-tested smart contracts, Arbitrum ecosystem position, and real yield model provide durable differentiation.",
+    "signals": {
+      "working_code": 90,
+      "dev_activity": 80,
+      "smart_money": 90,
+      "community": 75,
+      "catalyst": 80,
+      "narrative": 75,
+      "valuation_gap": 90,
+      "obscurity": 55
+    },
+    "catalysts": [
+      "TVL +31.3% weekly growth to $316.7M signals massive capital rotation into GMX",
+      "Smart money score 86/100 (INVESTIGATE) with maximum ATH value gap and TVL momentum",
+      "GMX V2 isolated markets and synthetic assets expanding tradeable universe"
+    ],
+    "risks": [
+      "Hyperliquid commanding 70% of on-chain perp volume compresses GMX's market share",
+      "91.6% ATH decline suggests market has structurally de-rated the GMX model",
+      "Arbitrum ecosystem facing competition from Base and other L2s"
+    ],
+    "related_slugs": [
+      "hyperliquid",
+      "paradex"
+    ],
+    "citations": [
+      {
+        "claim": "Price $7.61, mcap $79.2M, rank #369, ATH $91.07, -91.6% from ATH",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "TVL $316.7M with +31.3% 7d growth; smart money score 86 (INVESTIGATE)",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Deep value signal: true; TVL-to-volume ratio 61.01 (mild accumulation)",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": 7.61,
+    "market_cap_usd": 79198688,
+    "volume_24h_usd": 5191347,
+    "citation_types": {
+      "data": 3
+    },
+    "valuation_gap_score": 90,
+    "obscurity_score": 55,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$316.7M",
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "gains-network",
+    "name": "Gains Network",
+    "ticker": "$GNS",
+    "category": "Perp DEX",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 80.0,
+    "one_liner": "Multi-asset leveraged trading platform with $20.2M TVL growing +39.7% weekly, trading 95.3% below ATH at $0.59, with smart money score 86/100 (INVESTIGATE).",
+    "thesis": "Gains Network (gTrade) is a decentralized leveraged trading platform supporting crypto, forex, stocks, and commodities on Arbitrum and Polygon. GNS trades at $0.585 with a $14.2M market cap, 95.3% below its $12.48 ATH. TVL stands at $20.2M with +39.7% weekly growth, the strongest relative inflow in the perp DEX category.\n\nThe smart money score is 86/100 (INVESTIGATE signal), matching GMX's score. Maximum scores on ATH value gap (25/25) and TVL momentum (25/25). The protocol differentiates from pure crypto perp DEXs by offering multi-asset trading including forex and stocks with up to 150x leverage.\n\nThe extreme deep value positioning (95.3% below ATH, $14.2M mcap) combined with +39.7% TVL growth creates a high-conviction asymmetric setup. The multi-asset approach provides diversification beyond pure crypto trading volume, potentially making GNS more resilient across market cycles.\n\nKey risk: The very small market cap ($14.2M) creates significant liquidity risk. The -20.2% 30-day price decline suggests near-term selling pressure despite TVL growth.",
+    "signals": {
+      "working_code": 80,
+      "dev_activity": 70,
+      "smart_money": 90,
+      "community": 55,
+      "catalyst": 75,
+      "narrative": 70,
+      "valuation_gap": 95,
+      "obscurity": 75
+    },
+    "catalysts": [
+      "TVL +39.7% weekly growth signals strong capital rotation despite small absolute size",
+      "Smart money score 86/100 (INVESTIGATE) with maximum ATH value gap and TVL momentum",
+      "Multi-asset trading (crypto, forex, stocks, commodities) differentiates from pure crypto perp DEXs"
+    ],
+    "risks": [
+      "$14.2M market cap creates severe liquidity risk for larger positions",
+      "-20.2% 30-day price decline despite TVL growth suggests structural selling pressure",
+      "95.3% ATH decline may reflect fundamental market rejection of the GNS model"
+    ],
+    "related_slugs": [
+      "gmx",
+      "hyperliquid",
+      "paradex"
+    ],
+    "citations": [
+      {
+        "claim": "Price $0.585, mcap $14.2M, rank #1070, ATH $12.48, -95.3% from ATH",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "TVL $20.2M with +39.7% 7d growth; smart money score 86 (INVESTIGATE)",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Deep value signal: true; multi-asset trading platform on Arbitrum and Polygon",
+        "source": "EarlyThunder Smart Money Scanner",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": 0.585072,
+    "market_cap_usd": 14240722,
+    "volume_24h_usd": 1242216,
+    "citation_types": {
+      "data": 3
+    },
+    "valuation_gap_score": 95,
+    "obscurity_score": 75,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$20.2M",
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "polymarket",
+    "name": "Polymarket",
+    "ticker": null,
+    "category": "Prediction Market",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 82.0,
+    "one_liner": "Largest prediction market platform with $4.9B+ volume in 2026, 1.35M+ active traders, POLY token confirmed by CMO, and highest-conviction tokenless airdrop opportunity.",
+    "thesis": "Polymarket is the dominant prediction market platform, processing $4.9B+ in trading volume in 2026 alone with 1.35M+ active traders. The platform achieved mainstream recognition during the 2024 election cycle and has maintained strong volume across sports, politics, crypto, and cultural events.\n\nThe POLY token has been confirmed by Polymarket's CMO, with trademark filings detected in February 2026. TGE is planned after U.S. platform relaunch but no official date has been confirmed. Galaxy Digital is a known VC backer, and the platform's $9B valuation positions it as potentially the largest tokenless airdrop in crypto history.\n\nAn active points program rewards resting limit orders with daily USDC incentives, a $5M+ sports liquidity incentive program launched April 2026, and Time-Weighted Open Interest gives 2x multiplier for positions held 72+ hours. The algorithm penalizes wash-trading bots, favoring genuine traders.\n\nMultiple analysts rate this as the highest expected-value airdrop farming opportunity of 2026. Consistent 6-month farming with $200-500 could yield $2,000-10,000+ based on Hyperliquid/Lighter precedent.\n\nKey risk: Token may never launch, and the prediction market regulatory landscape is uncertain.",
+    "signals": {
+      "working_code": 90,
+      "dev_activity": 75,
+      "smart_money": 85,
+      "community": 90,
+      "catalyst": 80,
+      "narrative": 85,
+      "valuation_gap": 75,
+      "obscurity": 35
+    },
+    "catalysts": [
+      "POLY token confirmed by CMO with trademark filings Feb 2026; TGE expected after U.S. relaunch",
+      "$4.9B+ volume in 2026 with 1.35M+ active traders at $9B valuation",
+      "Active $5M+ sports liquidity incentive program with USDC rewards and Time-Weighted Open Interest scoring"
+    ],
+    "risks": [
+      "Token launch timing uncertain; may be delayed indefinitely by regulatory concerns",
+      "Prediction market regulatory landscape evolving; CFTC oversight could restrict operations",
+      "Post-election volume decline could reduce platform relevance and valuation"
+    ],
+    "related_slugs": [
+      "farcaster",
+      "zora-attention-markets"
+    ],
+    "citations": [
+      {
+        "claim": "$4.9B volume, POLY confirmed by CMO, Galaxy Digital backer, $9B valuation",
+        "source": "Sprint 3 Alpha Hunt / EarlyThunder Convergence",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Convergence level 1 target with conviction score 35, airdrop score 80/100",
+        "source": "EarlyThunder Convergence Detector",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "$5M+ sports incentive program, Time-Weighted Open Interest 2x multiplier, wash-trade penalties",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 2,
+      "data": 1
+    },
+    "valuation_gap_score": 75,
+    "obscurity_score": 35,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "base",
+    "name": "Base",
+    "ticker": null,
+    "category": "L2 Chain",
+    "asset_class": "digital_assets",
+    "tier": 1,
+    "composite_score": 80.0,
+    "one_liner": "Coinbase's profitable L2 chain with $4.3B TVL, 10M+ daily transactions, and token exploration confirmed -- potentially the largest airdrop in crypto history.",
+    "thesis": "Base is Coinbase's Layer 2 network built on the OP Stack, and the only L2 to achieve profitability ($82.6M annual revenue, ~$55M net profit in 2025). TVL stands at $4.3B (peaked $5.6B in Oct 2025) with 10M+ daily transactions, making it one of the most active chains in crypto.\n\nJesse Pollak confirmed 'exploring a network token' in September 2025, with potential launch Q2-Q4 2026. JPMorgan projects a $12-34B valuation for a Base token. Historical L2 airdrops (ARB, OP) allocated 20-25% to community, suggesting a massive potential distribution.\n\nBase is the primary chain for several high-growth protocols: Aerodrome (dominant DEX), Morpho on Base (lending), and is attracting significant stablecoin flows. The Coinbase backing provides essentially infinite runway and institutional credibility.\n\nStablecoin flow data shows Base at $4.8B in stablecoin market cap with -8.58% weekly change, suggesting some rotation. However, the long-term positioning for a potential token airdrop remains compelling.\n\nKey risk: Coinbase has been deliberately ambiguous about token plans. Base may never launch a token, operating purely as infrastructure for Coinbase's exchange business.",
+    "signals": {
+      "working_code": 90,
+      "dev_activity": 85,
+      "smart_money": 80,
+      "community": 85,
+      "catalyst": 75,
+      "narrative": 80,
+      "valuation_gap": 70,
+      "obscurity": 30
+    },
+    "catalysts": [
+      "Jesse Pollak confirmed token exploration; JPMorgan projects $12-34B valuation",
+      "Only profitable L2 with $82.6M revenue and 10M+ daily transactions",
+      "Historical L2 airdrops (ARB, OP) allocated 20-25% to community; Base ecosystem larger"
+    ],
+    "risks": [
+      "Coinbase deliberately ambiguous about token plans; may never launch",
+      "Stablecoin outflows (-8.58% weekly) suggest some near-term capital rotation",
+      "As a Coinbase product, subject to U.S. regulatory scrutiny on token classification"
+    ],
+    "related_slugs": [
+      "near-protocol",
+      "filecoin"
+    ],
+    "citations": [
+      {
+        "claim": "$4.3B TVL, only profitable L2, $82.6M revenue, 10M+ daily tx, token exploration confirmed",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Convergence level 1 target with airdrop score 80/100",
+        "source": "EarlyThunder Convergence Detector",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Stablecoin mcap $4.8B with -8.58% weekly change",
+        "source": "EarlyThunder Stablecoin Flow Scanner",
+        "url": "",
+        "type": "data"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 1,
+      "data": 2
+    },
+    "valuation_gap_score": 70,
+    "obscurity_score": 30,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": "$4.3B",
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
+  },
+  {
+    "slug": "metamask",
+    "name": "MetaMask",
+    "ticker": null,
+    "category": "Wallet Infrastructure",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 72.0,
+    "one_liner": "Dominant crypto wallet with 100M+ installs, mUSD stablecoin ($53M+ mcap), $30M rewards program distributing LINEA tokens, and MASK token expected 2026.",
+    "thesis": "MetaMask is the dominant self-custodial crypto wallet with 100M+ installs, backed by Consensys ($725M+ raised, $7B valuation). The wallet has evolved beyond simple transaction signing into a full financial platform: mUSD stablecoin (via Bridge/Stripe + M0, $53M+ mcap), perpetual trading, cross-chain bridging, and a $30M+ rewards program distributing LINEA tokens.\n\nClaims.metamask.io portal appeared in October 2025, and a MASK token is expected in 2026 but no official confirmation. The $30M rewards program launched with points accumulating through swaps, perpetual trades, bridging, and referrals.\n\nAt Consensys's $7B valuation with 20% community allocation, MASK could distribute $1.4B to users. The low-effort farming strategy (simply use MetaMask for all swaps/bridges instead of alternatives) makes it accessible to every crypto user.\n\nKey risk: Consensys has faced regulatory challenges (SEC lawsuit threat) and the Linea L2 ecosystem hasn't achieved the traction of Base or Arbitrum. Token launch timing is highly uncertain.",
+    "signals": {
+      "working_code": 85,
+      "dev_activity": 80,
+      "smart_money": 70,
+      "community": 85,
+      "catalyst": 65,
+      "narrative": 65,
+      "valuation_gap": 60,
+      "obscurity": 25
+    },
+    "catalysts": [
+      "MASK token expected 2026; claims.metamask.io portal appeared Oct 2025",
+      "$30M+ rewards program distributing tokens through swaps, trades, bridging, referrals",
+      "mUSD stablecoin launch ($53M+ mcap) transforms MetaMask from wallet to financial platform"
+    ],
+    "risks": [
+      "Consensys regulatory challenges (SEC lawsuit threat) could delay or prevent token",
+      "Linea L2 ecosystem hasn't achieved traction of Base or Arbitrum",
+      "100M installs but daily active users much lower; may overstate actual engagement"
+    ],
+    "related_slugs": [
+      "farcaster",
+      "base"
+    ],
+    "citations": [
+      {
+        "claim": "100M+ installs, mUSD stablecoin $53M+ mcap, MASK token expected 2026",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      },
+      {
+        "claim": "Convergence level 1 target with airdrop score 80/100",
+        "source": "EarlyThunder Convergence Detector",
+        "url": "",
+        "type": "data"
+      },
+      {
+        "claim": "Consensys $7B valuation, $725M+ raised, $30M rewards program",
+        "source": "Sprint 3 Alpha Hunt",
+        "url": "",
+        "type": "research"
+      }
+    ],
+    "updated_at": "2026-05-10",
+    "is_graveyard": false,
+    "current_price_usd": null,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "research": 2,
+      "data": 1
+    },
+    "valuation_gap_score": 60,
+    "obscurity_score": 25,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null
   }
 ]
