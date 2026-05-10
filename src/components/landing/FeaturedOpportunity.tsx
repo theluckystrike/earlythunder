@@ -236,17 +236,17 @@ export default function FeaturedOpportunity({
 
   return (
     <section className="top-signal">
-      <div className="top-signal__header">
-        <span className="top-signal__eyebrow">
-          02 &mdash; TOP SIGNAL &middot; CONVICTION {score}
-        </span>
-        <h2 className="top-signal__title">Highest conviction this week</h2>
-        <p className="top-signal__sub">
-          Combined score across all 8 dimensions. Sourced and timestamped.
-        </p>
-        <a href="/intelligence/" className="ghost-link">
-          View all {totalOpportunities} opportunities &rarr;
-        </a>
+      <div className="section__head">
+        <div>
+          <div className="section__eyebrow mono">
+            02 &mdash; TOP SIGNAL &middot; CONVICTION {score}
+          </div>
+          <h2 className="section__title">Highest conviction this week</h2>
+          <p className="section__sub">
+            Combined score across all 8 dimensions. Sourced and timestamped.
+          </p>
+        </div>
+        <Link className="ghost-btn" href="/opportunities">View all {totalOpportunities} opportunities <span className="arr">&rarr;</span></Link>
       </div>
       <SignalCard opportunity={opportunity} />
     </section>

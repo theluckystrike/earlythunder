@@ -200,17 +200,15 @@ export default function ToolsShowcase({
 
   return (
     <section className="bento-section">
-      <div className="bento-section__head">
+      <div className="section__head">
         <div>
-          <span className="bento-section__eyebrow">01 &mdash; TERMINAL</span>
-          <h2 className="bento-section__title">Live intelligence tools</h2>
-          <p className="bento-section__sub">
+          <div className="section__eyebrow mono">01 &mdash; TERMINAL</div>
+          <h2 className="section__title">Live intelligence tools</h2>
+          <p className="section__sub">
             Four interactive data terminals. Updated daily from our autonomous research pipeline.
           </p>
         </div>
-        <a href="/intelligence/" className="bento-section__link">
-          View all tools &rarr;
-        </a>
+        <a className="ghost-btn" href="/intelligence/">View all tools <span className="arr">&rarr;</span></a>
       </div>
       <div className="bento">
         <ToolCard tool={tools[0]}>

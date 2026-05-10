@@ -91,18 +91,16 @@ function TerminalFoot() {
 export default function PipelineLog() {
   return (
     <section className="bento-section">
-      <div className="bento-section__head">
+      <div className="section__head">
         <div>
-          <span className="bento-section__eyebrow">06 &mdash; SHOW YOUR WORK</span>
-          <h2 className="bento-section__title">The pipeline runs in public</h2>
-          <p className="bento-section__sub">
+          <div className="section__eyebrow mono">06 &mdash; SHOW YOUR WORK</div>
+          <h2 className="section__title">The pipeline runs in public</h2>
+          <p className="section__sub">
             Every score change, source addition, and convergence event is logged.
             No black box. No vibes.
           </p>
         </div>
-        <a href="/pipeline" className="bento-section__link">
-          View 30-day history &rarr;
-        </a>
+        <a className="ghost-btn" href="/intelligence/">View 30-day history <span className="arr">&rarr;</span></a>
       </div>
       <div className="terminal">
         <TerminalHead />

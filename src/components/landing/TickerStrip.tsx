@@ -31,7 +31,7 @@ function colorClass(c: TickerItem["c"]): string {
 /** Render a single ticker item cell. */
 function TickerCell({ item }: { readonly item: TickerItem }) {
   return (
-    <span className="ticker-item">
+    <span className="ticker-item mono">
       <span className="ticker-item__tag">{item.tag}</span>
       <span className="ticker-item__k">{item.k}</span>
       <span className={`ticker-item__v ${colorClass(item.c)}`}>{item.v}</span>
@@ -48,7 +48,7 @@ export default function TickerStrip({ items }: TickerStripProps) {
   return (
     <section className="ticker-strip">
       <div className="ticker-strip__inner">
-        <div className="ticker-strip__label">
+        <div className="ticker-strip__label mono">
           <span className="ticker-strip__dot" />
           <span>PIPELINE · LIVE</span>
         </div>

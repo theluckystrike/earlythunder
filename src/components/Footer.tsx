@@ -13,14 +13,19 @@ interface FooterLink {
   readonly label: string;
 }
 
-const FOOTER_SECTIONS: readonly { readonly title: string; readonly links: readonly FooterLink[] }[] = [
+interface FooterSection {
+  readonly title: string;
+  readonly links: readonly FooterLink[];
+}
+
+const FOOTER_SECTIONS: readonly FooterSection[] = [
   {
     title: "INTELLIGENCE",
     links: [
       { href: "/intelligence/", label: "Dashboard" },
       { href: "/earnings/", label: "Earnings Scanner" },
       { href: "/deadlines/", label: "Deadline Tracker" },
-      { href: "/discoveries", label: "Convergence Signals" },
+      { href: "/intelligence/", label: "Convergence Signals" },
     ],
   },
   {
@@ -38,7 +43,6 @@ const FOOTER_SECTIONS: readonly { readonly title: string; readonly links: readon
       { href: "/methodology", label: "Methodology" },
       { href: "/how-it-works", label: "How it works" },
       { href: "/pricing", label: "Pricing" },
-      { href: "/contact", label: "Contact" },
     ],
   },
   {
@@ -53,52 +57,49 @@ const FOOTER_SECTIONS: readonly { readonly title: string; readonly links: readon
 
 /** Render a single link — standalone <a> or Next.js <Link>. */
 function FooterAnchor({ href, label }: FooterLink) {
-  const cls = "footer__link";
   if (STANDALONE_ROUTES.has(href)) {
-    return <a href={href} className={cls}>{label}</a>;
+    return <a href={href}>{label}</a>;
   }
-  return <Link href={href} className={cls}>{label}</Link>;
+  return <Link href={href}>{label}</Link>;
+}
+
+/** Render one column of footer links. */
+function FooterColumn({ section }: { section: FooterSection }) {
+  return (
+    <div>
+      <div className="footer__head mono">{section.title}</div>
+      {section.links.map((link) => (
+        <FooterAnchor key={link.href + link.label} href={link.href} label={link.label} />
+      ))}
+    </div>
+  );
 }
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__top">
-        {/* Brand column */}
         <div className="footer__brand">
-          <Link href="/" className="footer__logo">EarlyThunder</Link>
-          <p className="footer__tagline">Pre-mainstream opportunity intelligence.</p>
-          <p className="footer__status">
-            <span className="footer__dot" /> Pipeline operational &middot; 154 protocols
+          <div className="logo">EarlyThunder</div>
+          <p className="footer__tag">
+            Pre-mainstream opportunity intelligence. Hear the storm before anyone else.
           </p>
+          <div className="footer__status mono">
+            <span className="dot dot--positive pulse" /> Pipeline operational &middot; 154 protocols &middot; updated daily
+          </div>
         </div>
-
-        {/* Link columns */}
-        <div className="footer__links">
+        <div className="footer__cols">
           {FOOTER_SECTIONS.map((section) => (
-            <div key={section.title} className="footer__col">
-              <h3 className="footer__col-title">{section.title}</h3>
-              <ul className="footer__col-list">
-                {section.links.map((link) => (
-                  <li key={link.href}>
-                    <FooterAnchor href={link.href} label={link.label} />
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <FooterColumn key={section.title} section={section} />
           ))}
         </div>
       </div>
-
-      {/* Bottom bar */}
       <div className="footer__bot">
-        <p className="footer__copy">&copy; 2026 AUTOM8 LLC</p>
-        <p className="footer__disclaimer">
-          Not financial advice. Past patterns do not predict future results.{" "}
-          <Link href="/disclaimer" className="footer__disclaimer-link">
-            Full disclaimer &rarr;
-          </Link>
-        </p>
+        <div className="mono t-tert">&copy; 2026 AUTOM8 LLC &middot; All rights reserved</div>
+        <div className="t-tert">
+          For informational purposes only. Nothing constitutes financial advice.{" "}
+          <Link href="/disclaimer">Read full disclaimer &rarr;</Link>
+        </div>
       </div>
     </footer>
   );

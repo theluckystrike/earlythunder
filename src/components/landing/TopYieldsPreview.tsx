@@ -219,13 +219,13 @@ function SectionHeader({ count, total }: { readonly count: number; readonly tota
   return (
     <div className="section__head">
       <div>
-        <span className="section__eyebrow">03 &mdash; EARNINGS SCANNER</span>
+        <div className="section__eyebrow mono">03 &mdash; EARNINGS SCANNER</div>
         <h2 className="section__title">Protocols earning more than their market cap</h2>
         <p className="section__sub">
           Annualized revenue &divide; FDV. Sorted by yield. {count} of {total} shown.
         </p>
       </div>
-      <a href="/earnings/" className="ghost-btn">Open scanner &rarr;</a>
+      <a className="ghost-btn" href="/earnings/">Open scanner <span className="arr">&rarr;</span></a>
     </div>
   );
 }

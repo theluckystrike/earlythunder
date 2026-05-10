@@ -86,16 +86,16 @@ export default function DeadlineStrip({ deadlines }: DeadlinesGridProps) {
 
   return (
     <section className="deadlines">
-      <div className="deadlines__header">
-        <span className="deadlines__eyebrow">04 — DEADLINE TRACKER</span>
-        <h2 className="deadlines__title">Don&apos;t miss the window</h2>
-        <p className="deadlines__sub">
-          23 active countdowns across points programs, mainnet launches, and
-          governance votes.
-        </p>
-        <a href="/deadlines/" className="deadlines__link">
-          Track all 23 deadlines &rarr;
-        </a>
+      <div className="section__head">
+        <div>
+          <div className="section__eyebrow mono">04 &mdash; DEADLINE TRACKER</div>
+          <h2 className="section__title">Don&apos;t miss the window</h2>
+          <p className="section__sub">
+            23 active countdowns across points programs, mainnet launches, and
+            governance votes.
+          </p>
+        </div>
+        <a className="ghost-btn" href="/deadlines/">Track all deadlines <span className="arr">&rarr;</span></a>
       </div>
       <div className="deadlines__grid">
         {visible.map((d) => (

@@ -134,7 +134,7 @@ export default function HomePage() {
   } = buildPageData();
 
   return (
-    <div className="page">
+    <>
       <HeroSection
         totalOpportunities={opportunities.length}
         topOpportunities={topOpportunities}
@@ -162,6 +162,6 @@ export default function HomePage() {
       <CoverageMap protocols={coverageProtocols} />
       <CategoryRow categories={categories} />
       <NewsletterCTA />
-    </div>
+    </>
   );
 }

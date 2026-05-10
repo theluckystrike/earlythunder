@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-/* ─── Types ─── */
+/* --- Types --- */
 
 interface Protocol {
   readonly name: string;
@@ -20,7 +20,7 @@ interface TierInfo {
   readonly count: number;
 }
 
-/* ─── Helpers ─── */
+/* --- Helpers --- */
 
 function tierColor(score: number): string {
   if (score >= 85) return "var(--color-score-elite, #3B82F6)";
@@ -40,7 +40,7 @@ function cellOpacity(score: number): number {
   return 0.4 + (score / 100) * 0.6;
 }
 
-/* ─── HeatmapCell ─── */
+/* --- HeatmapCell --- */
 
 function HeatmapCell({
   protocol,
@@ -69,7 +69,7 @@ function HeatmapCell({
   );
 }
 
-/* ─── DetailPanel ─── */
+/* --- DetailPanel --- */
 
 function DetailPanel({
   protocol,
@@ -82,16 +82,16 @@ function DetailPanel({
 }) {
   if (!protocol) {
     return (
-      <div className="coverage__detail">
+      <aside className="coverage__detail">
         <span className="coverage__detail-tag">COVERAGE MAP</span>
         <span className="coverage__detail-name">Hover any cell</span>
         <span className="coverage__detail-meta">{total} protocols tracked</span>
-      </div>
+      </aside>
     );
   }
 
   return (
-    <div className="coverage__detail">
+    <aside className="coverage__detail">
       <span className="coverage__detail-tag">PROTOCOL #{String(index + 1).padStart(3, "0")}</span>
       <span className="coverage__detail-name">{protocol.name}</span>
       <span className="coverage__detail-cat">{protocol.category}</span>
@@ -99,11 +99,11 @@ function DetailPanel({
         {protocol.score}
       </span>
       <span className="coverage__detail-meta">{tierLabel(protocol.score)}</span>
-    </div>
+    </aside>
   );
 }
 
-/* ─── Legend ─── */
+/* --- Legend --- */
 
 function Legend({ protocols }: { readonly protocols: readonly Protocol[] }) {
   const tiers: readonly TierInfo[] = [
@@ -114,7 +114,7 @@ function Legend({ protocols }: { readonly protocols: readonly Protocol[] }) {
   ];
 
   return (
-    <div className="coverage-legend">
+    <div className="coverage-legend mono">
       {tiers.map((tier) => (
         <div key={tier.label} className="coverage-legend__item">
           <span
@@ -128,7 +128,7 @@ function Legend({ protocols }: { readonly protocols: readonly Protocol[] }) {
   );
 }
 
-/* ─── CoverageMap (main export) ─── */
+/* --- CoverageMap (main export) --- */
 
 export default function CoverageMap({ protocols }: CoverageMapProps) {
   const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -137,16 +137,17 @@ export default function CoverageMap({ protocols }: CoverageMapProps) {
   const hoveredProtocol = hoveredIdx !== null ? bounded[hoveredIdx] : null;
 
   return (
-    <section className="bento-section">
-      <div className="bento-section__head">
+    <section className="section">
+      <div className="section__head">
         <div>
-          <span className="bento-section__eyebrow">07 &mdash; COVERAGE</span>
-          <h2 className="bento-section__title">Every protocol on one screen</h2>
-          <p className="bento-section__sub">
+          <div className="section__eyebrow mono">07 &mdash; COVERAGE</div>
+          <h2 className="section__title">Every protocol on one screen</h2>
+          <p className="section__sub">
             {bounded.length} active protocols. Each cell is a current conviction score.
             Hover to inspect.
           </p>
         </div>
+        <Legend protocols={bounded} />
       </div>
       <div className="coverage">
         <div className="coverage__grid">
@@ -166,7 +167,6 @@ export default function CoverageMap({ protocols }: CoverageMapProps) {
           total={bounded.length}
         />
       </div>
-      <Legend protocols={bounded} />
     </section>
   );
 }

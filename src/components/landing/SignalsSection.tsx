@@ -1,5 +1,7 @@
 /* SignalsExplainer — 8-signal methodology grid. Server Component. */
 
+import Link from "next/link";
+
 /* ─── Data ─── */
 
 interface Signal {
@@ -44,16 +46,16 @@ function SignalCell({ signal }: { readonly signal: Signal }) {
 export default function SignalsSection() {
   return (
     <section className="signals-section">
-      <div className="signals-section__header">
-        <span className="signals-section__eyebrow">05 — METHODOLOGY</span>
-        <h2 className="signals-section__title">How we score: 8 signals</h2>
-        <p className="signals-section__sub">
-          Every opportunity is scored across 8 dimensions, equally weighted at
-          12.5%. Combined score determines conviction.
-        </p>
-        <a href="/methodology" className="signals-section__link">
-          Read full methodology &rarr;
-        </a>
+      <div className="section__head">
+        <div>
+          <div className="section__eyebrow mono">05 &mdash; METHODOLOGY</div>
+          <h2 className="section__title">How we score: 8 signals</h2>
+          <p className="section__sub">
+            Every opportunity is scored across 8 dimensions, equally weighted at
+            12.5%. Combined score determines conviction.
+          </p>
+        </div>
+        <Link className="ghost-btn" href="/methodology">Read full methodology <span className="arr">&rarr;</span></Link>
       </div>
       <div className="signals">
         {SIGNALS.map((s) => (

@@ -94,10 +94,12 @@ function ConvictionLadder({
   return (
     <div className="ladder">
       <div className="ladder__head">
-        <span className="ladder__title">CONVICTION INDEX</span>
-        <span className="ladder__sub">
-          Top 8 &middot; live &middot; sorted by score
-        </span>
+        <div>
+          <div className="ladder__title">CONVICTION INDEX</div>
+          <div className="ladder__sub">
+            Top 8 &middot; live &middot; sorted by score
+          </div>
+        </div>
         <span className="ladder__live">LIVE</span>
       </div>
       <div className="ladder__rows">
@@ -137,21 +139,21 @@ function RegimeStrip({
           RISK_OFF
         </span>
       </div>
-      <span className="regime__sep" />
+      <span className="regime__sep" aria-hidden="true">|</span>
       <div className="regime__item">
         <span className="regime__label">NEXT DEADLINE</span>
         <span className="regime__value">
           {nearestDeadline.protocol} &middot; {nearestDeadline.daysLeft}d
         </span>
       </div>
-      <span className="regime__sep" />
+      <span className="regime__sep" aria-hidden="true">|</span>
       <div className="regime__item">
         <span className="regime__label">TOP YIELD</span>
         <span className="regime__value">
           {topYield.value} &middot; {topYield.name}
         </span>
       </div>
-      <span className="regime__sep" />
+      <span className="regime__sep" aria-hidden="true">|</span>
       <div className="regime__item">
         <span className="regime__label">PIPELINE</span>
         <span className="regime__value">
@@ -179,8 +181,8 @@ function HeroLeft({
       </div>
 
       <h1 className="hero__title">
-        <span className="hero__line">Hear the storm before</span>
-        <span className="hero__line hero__line--accent">anyone else.</span>
+        <span className="hero__line">Follow the money</span>
+        <span className="hero__line hero__line--accent">that cannot lie.</span>
       </h1>
 
       <p className="hero__sub">

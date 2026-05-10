@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 
-/** Subscribe section — weekly intelligence brief signup. */
+/* --- NewsletterCTA (main export) --- */
+
 export default function NewsletterCTA() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -14,9 +15,9 @@ export default function NewsletterCTA() {
   }
 
   return (
-    <section className="subscribe-section">
+    <section className="section subscribe-section">
       <div className="subscribe">
-        <span className="subscribe__eyebrow">&mdash; WEEKLY BRIEF</span>
+        <div className="section__eyebrow mono">&mdash; WEEKLY BRIEF</div>
         <h2 className="subscribe__title">Free intelligence. Every Monday.</h2>
         <p className="subscribe__sub">
           Top convergence signals + upcoming deadlines. One email. No spam.
@@ -34,15 +35,15 @@ export default function NewsletterCTA() {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <button type="submit" className="subscribe__btn">
+            <button type="submit" className="primary-btn">
               Subscribe &rarr;
             </button>
           </form>
         )}
 
-        <p className="subscribe__meta">
+        <div className="subscribe__meta mono t-tert">
           14,200+ analysts &middot; Last brief: 2026-05-04
-        </p>
+        </div>
       </div>
     </section>
   );
