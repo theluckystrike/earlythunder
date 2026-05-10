@@ -128,16 +128,14 @@ tr:hover td{background:rgba(0,212,170,0.04)}
 .pull-quote .pq-text{font-size:0.95rem;color:var(--text-muted);margin-top:0.25rem}
 .pull-quote .pq-source{font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;font-style:italic}
 .premium-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-bottom:1.5rem}
-.premium-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:1.5rem;position:relative;overflow:hidden}
-.premium-card::after{content:'';position:absolute;inset:0;background:rgba(10,10,15,0.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:1}
-.premium-card .pc-inner{position:relative;z-index:0}
+.premium-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:1.5rem}
 .premium-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.3rem}
 .premium-card p{font-size:0.85rem;color:var(--text-muted)}
-.waitlist-box{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:2rem;text-align:center}
-.waitlist-box h3{font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
-.waitlist-box p{color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem}
-.waitlist-box .btn{display:inline-block;background:var(--accent);color:#0a0a0f;font-weight:700;font-size:0.95rem;padding:0.7rem 2rem;border-radius:8px;border:none;cursor:pointer;transition:opacity 0.2s}
-.waitlist-box .btn:hover{opacity:0.85;text-decoration:none}
+.alpha-cta{background:var(--card-bg);border:1px solid var(--accent);border-radius:10px;padding:2rem;text-align:center}
+.alpha-cta h3{font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
+.alpha-cta p{color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem}
+.alpha-cta .btn{display:inline-block;background:var(--accent);color:#0a0a0f;font-weight:700;font-size:0.95rem;padding:0.7rem 2rem;border-radius:8px;border:none;cursor:pointer;transition:opacity 0.2s;text-decoration:none}
+.alpha-cta .btn:hover{opacity:0.85;text-decoration:none}
 .method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
 .method-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:1.5rem}
 .method-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
@@ -695,18 +693,30 @@ footer .footer-links a{margin:0 0.75rem}
 </section>
 
 <section id="premium" aria-labelledby="prem-heading">
-  <h2 id="prem-heading"><span class="accent">//</span> Premium Intelligence</h2>
-  <p class="section-desc">Advanced features for serious participants. Coming soon.</p>
+  <h2 id="prem-heading"><span class="accent">//</span> Advanced Intelligence</h2>
+  <p class="section-desc">All features included &mdash; Open Alpha. No gates, no waitlist.</p>
   <div class="premium-grid">
-    <div class="premium-card"><div class="pc-inner"><h3>Daily Action Queue</h3><p>5 ranked actions with exact steps, capital requirements, and expected value calculations. Updated every 09:00 UTC.</p></div></div>
-    <div class="premium-card"><div class="pc-inner"><h3>DeepSeek AI Analysis</h3><p>Bull/bear scenarios per target. AI-powered risk assessment with ACT/SKIP verdicts and expected value estimates.</p></div></div>
-    <div class="premium-card"><div class="pc-inner"><h3>Portfolio Red-Team</h3><p>Weekly adversarial review. Identifies concentration risks, correlated positions, and deadline conflicts across your portfolio.</p></div></div>
-    <div class="premium-card"><div class="pc-inner"><h3>Telegram Alerts</h3><p>Push notifications for critical deadline changes, convergence score spikes, and new tokenless protocol discoveries.</p></div></div>
+    <div class="premium-card">
+      <h3>Daily Action Queue</h3>
+      <p>5 ranked actions with exact steps, capital requirements, and expected value calculations. Updated every 09:00 UTC. Scroll up to the <a href="#convergence" style="color:var(--accent)">convergence signals</a> and <a href="#deadlines" style="color:var(--accent)">deadline tracker</a> to see today's top-priority moves.</p>
+    </div>
+    <div class="premium-card">
+      <h3>DeepSeek AI Analysis</h3>
+      <p>Every protocol in the convergence table is run through DeepSeek R1 for bull/bear scenario modeling. Each target receives an ACT or SKIP verdict with expected value estimates. See verdicts in the <a href="#research" style="color:var(--accent)">research section</a> above.</p>
+    </div>
+    <div class="premium-card">
+      <h3>Portfolio Red-Team</h3>
+      <p>Weekly adversarial review of active positions. Identifies concentration risks, correlated exposure across L2s, deadline conflicts that could force simultaneous capital lockups, and liquidity traps in micro-cap yield plays.</p>
+    </div>
+    <div class="premium-card">
+      <h3>Telegram Alerts</h3>
+      <p>Real-time push notifications for critical deadline changes, conviction score spikes above 50, new tokenless protocol discoveries, and market regime shifts. Follow <a href="https://x.com/EarlyThunder" style="color:var(--accent)">@EarlyThunder on X</a> for alert previews.</p>
+    </div>
   </div>
-  <div class="waitlist-box">
-    <h3>Coming Soon &mdash; Join the Waitlist</h3>
-    <p>Be first to access premium intelligence when it launches.</p>
-    <a href="https://earlythunder.com/pricing/" class="btn">View Pricing</a>
+  <div class="alpha-cta">
+    <h3>All Features Are Live</h3>
+    <p>Everything on this dashboard is free during Open Alpha. Explore the full intelligence pipeline above.</p>
+    <a href="#convergence" class="btn">Start with Top Signals</a>
   </div>
 </section>
 

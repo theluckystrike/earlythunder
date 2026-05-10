@@ -15,15 +15,18 @@ export const dynamic = "force-static";
 const DEFAULT_PRIORITY = 0.5;
 const MAX_ENTRIES = 50000;
 
+/** Pages that update daily (interactive dashboards, live data). */
+const DAILY_PAGES = new Set(["/", "/intelligence", "/opportunities", "/discoveries"]);
+
 /** Returns the appropriate changeFrequency for a static page path. */
 function getChangeFrequency(
   page: string,
 ): "daily" | "weekly" | "monthly" {
-  if (page === "/" || page === "/intelligence") {
+  if (DAILY_PAGES.has(page)) {
     return "daily";
   }
-  if (page === "/research") {
-    return "weekly";
+  if (page === "/terms" || page === "/privacy" || page === "/disclaimer") {
+    return "monthly";
   }
   return "weekly";
 }

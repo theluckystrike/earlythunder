@@ -92,9 +92,9 @@ function DescriptionOfService() {
           personalized financial advice.
         </p>
         <p>
-          The Service includes free publicly accessible information and
-          premium subscription content. All information on the Site is
-          provided for general informational and educational purposes only.
+          The Service provides publicly accessible research and analysis.
+          All information on the Site is provided for general informational
+          and educational purposes only.
         </p>
       </div>
     </section>
@@ -269,26 +269,26 @@ function UserAccountsAndSubscriptions() {
   return (
     <section>
       <h2 className="mt-12 mb-4 text-lg font-semibold text-text-primary">
-        8. User Accounts and Subscriptions
+        8. User Accounts and Access
       </h2>
       <div className="space-y-4 text-sm leading-relaxed text-text-secondary">
         <p>
-          Certain features of the Service require account registration. You
-          are responsible for maintaining the confidentiality of your account
-          credentials and for all activity that occurs under your account.
-          You agree to notify AUTOM8 LLC immediately of any unauthorized
-          use.
+          Certain features of the Service may require account registration.
+          You are responsible for maintaining the confidentiality of your
+          account credentials and for all activity that occurs under your
+          account. You agree to notify AUTOM8 LLC immediately of any
+          unauthorized use.
         </p>
         <p>
-          Subscription fees are billed in advance on a recurring basis. All
-          fees are non-refundable except as required by applicable law or as
-          explicitly stated in the refund policy.
+          The platform currently provides open access to all published
+          research and analysis. AUTOM8 LLC reserves the right to
+          introduce paid tiers or modify access levels in the future with
+          reasonable prior notice.
         </p>
         <p>
-          AUTOM8 LLC reserves the right to modify subscription pricing
-          with at least 30 days prior notice. The Company may suspend or
-          terminate your account at its sole discretion for any violation
-          of these Terms, with or without notice.
+          The Company may suspend or terminate your account at its sole
+          discretion for any violation of these Terms, with or without
+          notice.
         </p>
       </div>
     </section>
@@ -319,7 +319,7 @@ function ProhibitedUses() {
 const PROHIBITED_USES = [
   "Engage in market manipulation, front-running, or any form of trading abuse based on information obtained from the Site",
   "Scrape, crawl, or use automated means to extract data from the Site without prior written consent",
-  "Redistribute, resell, or republish premium or subscription-only content",
+  "Redistribute, resell, or republish platform content without authorization",
   "Create competing products or services using data, methodologies, or analyses derived from the Site",
   "Use the Site for any purpose that violates applicable local, state, national, or international law",
   "Impersonate any person or entity or misrepresent your affiliation with any person or entity",

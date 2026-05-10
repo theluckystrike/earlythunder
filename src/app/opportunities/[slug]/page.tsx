@@ -16,7 +16,6 @@ import { getTierLabel } from "@/lib/format";
 import type { Opportunity, AssetClass, OnChainMetrics, InsiderActivity, TeamProfile, Tokenomics, CompetitivePosition } from "@/lib/types";
 import { SIGNAL_KEYS, SIGNAL_LABELS } from "@/lib/types";
 import SignalRadar from "@/components/SignalRadar";
-import PaywallBlur from "@/components/PaywallBlur";
 import CitationSection from "@/components/CitationSection";
 
 interface PageProps {
@@ -519,11 +518,11 @@ function CompetitiveSection({ data }: { readonly data: CompetitivePosition }) {
 
 function PremiumContent({ opportunity }: { readonly opportunity: Opportunity }) {
   return (
-    <PaywallBlur bypass={opportunity.free_access === true}>
+    <>
       <PremiumThesis thesis={opportunity.thesis} />
       <PremiumCatalysts catalysts={opportunity.catalysts} />
       <PremiumRisks risks={opportunity.risks} />
-    </PaywallBlur>
+    </>
   );
 }
 

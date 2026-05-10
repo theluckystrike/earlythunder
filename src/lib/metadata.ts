@@ -73,11 +73,29 @@ export const rootMetadata: Metadata = {
 /** Metadata for the opportunities listing page. */
 export const opportunitiesPageMetadata: Metadata = {
   title: "Opportunities",
-  description: "Explore pre-mainstream asymmetric opportunities scored by the 8-Signal Pattern Filter across crypto, deep tech, and emerging markets.",
+  description:
+    "Sortable, filterable table of pre-mainstream asymmetric opportunities scored 0-100 by the 8-Signal Pattern Filter. Compare composite scores, signal breakdowns, and catalyst timelines across crypto, deep tech, and emerging markets.",
+  keywords: [
+    "asymmetric opportunities",
+    "8-signal pattern filter",
+    "crypto opportunity tracker",
+    "pre-mainstream investing",
+    "opportunity scoring",
+  ],
   openGraph: {
     title: `Opportunities | ${SITE_NAME}`,
-    description: "Explore pre-mainstream asymmetric opportunities scored by the 8-Signal Pattern Filter.",
+    description:
+      "Sortable, filterable table of pre-mainstream opportunities scored by the 8-Signal Pattern Filter with signal breakdowns.",
     url: `${SITE_URL}/opportunities`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Opportunities | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Opportunities | ${SITE_NAME}`,
+    description:
+      "Sortable, filterable table of pre-mainstream opportunities scored by the 8-Signal Pattern Filter.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
   },
   alternates: { canonical: `${SITE_URL}/opportunities` },
 };
@@ -85,12 +103,28 @@ export const opportunitiesPageMetadata: Metadata = {
 export const methodologyPageMetadata: Metadata = {
   title: "Methodology",
   description:
-    "How the 8-Signal Pattern Filter evaluates opportunities across eight dimensions to identify asymmetric setups before the crowd.",
+    "The 8-Signal Pattern Filter explained: Working Code (20%), Dev Activity (15%), Smart Money (10%), Community (10%), Catalyst (15%), Narrative (5%), Valuation Gap (15%), Obscurity (10%). Each signal scored 0-100 from verifiable on-chain and off-chain data sources.",
+  keywords: [
+    "8-signal pattern filter",
+    "opportunity scoring methodology",
+    "crypto signal analysis",
+    "composite score calculation",
+    "smart money tracking methodology",
+  ],
   openGraph: {
     title: `Methodology | ${SITE_NAME}`,
     description:
-      "The 8-Signal Pattern Filter. How Early Thunder scores and ranks pre-mainstream opportunities.",
+      "The 8-Signal Pattern Filter: eight weighted dimensions scored 0-100 to identify pre-mainstream asymmetric setups.",
     url: `${SITE_URL}/methodology`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Methodology | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Methodology | ${SITE_NAME}`,
+    description:
+      "The 8-Signal Pattern Filter: eight weighted dimensions scored 0-100 to identify pre-mainstream asymmetric setups.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
   },
   alternates: { canonical: `${SITE_URL}/methodology` },
 };
@@ -99,12 +133,28 @@ export const methodologyPageMetadata: Metadata = {
 export const graveyardPageMetadata: Metadata = {
   title: "Opportunity Graveyard",
   description:
-    "Transparent record of failed theses and invalidated opportunities with full post-mortems. Every miss contains a lesson.",
+    "Transparent post-mortem archive of failed theses and invalidated opportunities. Each entry includes the original composite score, what signals failed, and the specific lesson extracted. No other tracker publishes its failures.",
+  keywords: [
+    "failed crypto theses",
+    "investment post-mortem",
+    "opportunity graveyard",
+    "transparent investing",
+    "crypto failure analysis",
+  ],
   openGraph: {
     title: `Opportunity Graveyard | ${SITE_NAME}`,
     description:
-      "Every dead thesis contains a lesson. A transparent record of what went wrong and why.",
+      "Transparent post-mortem archive: original scores, failed signals, and lessons from every dead thesis.",
     url: `${SITE_URL}/graveyard`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Opportunity Graveyard | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Opportunity Graveyard | ${SITE_NAME}`,
+    description:
+      "Transparent post-mortem archive: original scores, failed signals, and lessons from every dead thesis.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
   },
   alternates: { canonical: `${SITE_URL}/graveyard` },
 };
@@ -113,12 +163,21 @@ export const graveyardPageMetadata: Metadata = {
 export const pricingPageMetadata: Metadata = {
   title: "Pricing",
   description:
-    "Choose the plan that fits your investment research needs. Free tier available with full signal breakdowns on premium plans.",
+    "Free tier with 8-Signal Pattern Filter scores and opportunity listings. Premium unlocks full signal breakdowns, smart money flow data, catalyst timelines, and deep-dive research across 154+ protocols.",
   openGraph: {
     title: `Pricing | ${SITE_NAME}`,
     description:
-      "Access pre-mainstream opportunity intelligence. Free and premium plans available.",
+      "Free tier with scores and listings. Premium unlocks full signal breakdowns, smart money data, and deep-dive research.",
     url: `${SITE_URL}/pricing`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Pricing | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Pricing | ${SITE_NAME}`,
+    description:
+      "Free tier with scores and listings. Premium unlocks full signal breakdowns and deep-dive research.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
   },
   alternates: { canonical: `${SITE_URL}/pricing` },
 };
@@ -127,12 +186,21 @@ export const pricingPageMetadata: Metadata = {
 export const blogPageMetadata: Metadata = {
   title: "Blog",
   description:
-    "Research notes, market analysis, and deep dives into asymmetric opportunities from Early Thunder.",
+    "Research notes, market analysis, and deep dives into asymmetric opportunities. Covers convergence events, airdrop performance data, tokenless protocol TVL, and smart money flow breakdowns.",
   openGraph: {
     title: `Blog | ${SITE_NAME}`,
     description:
-      "Research notes, market analysis, and deep dives from Early Thunder.",
+      "Research notes, market analysis, and deep dives into asymmetric opportunities from Early Thunder.",
     url: `${SITE_URL}/blog`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Blog | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Blog | ${SITE_NAME}`,
+    description:
+      "Research notes, market analysis, and deep dives into asymmetric opportunities.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
   },
   alternates: { canonical: `${SITE_URL}/blog` },
 };
@@ -141,7 +209,7 @@ export const blogPageMetadata: Metadata = {
 export const intelligencePageMetadata: Metadata = {
   title: "Intelligence Dashboard",
   description:
-    "Real-time convergence signal tracker. Monitor 8-signal pattern scores, smart money flows, airdrop calibration, and catalyst timelines across crypto and DeFi.",
+    "Interactive real-time convergence signal tracker scanning 154+ protocols. Monitor 8-signal pattern scores, smart money flows updated every 6 hours, airdrop calibration engine with 200+ historical distributions, and catalyst countdown timelines.",
   keywords: [
     "crypto intelligence",
     "convergence signals",
@@ -150,12 +218,22 @@ export const intelligencePageMetadata: Metadata = {
     "airdrop calibration",
     "catalyst timeline",
     "signal analysis",
+    "real-time crypto data",
   ],
   openGraph: {
     title: `Intelligence Dashboard | ${SITE_NAME}`,
     description:
-      "Real-time convergence signal tracker. Monitor smart money flows, airdrop calibration, and catalyst timelines.",
+      "Interactive real-time convergence signal tracker. Smart money flows, airdrop calibration, and catalyst countdown timelines across 154+ protocols.",
     url: `${SITE_URL}/intelligence`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Intelligence Dashboard | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Intelligence Dashboard | ${SITE_NAME}`,
+    description:
+      "Interactive real-time convergence signal tracker. Smart money flows, airdrop calibration, and catalyst countdown timelines.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
   },
   alternates: { canonical: `${SITE_URL}/intelligence` },
 };
@@ -164,7 +242,7 @@ export const intelligencePageMetadata: Metadata = {
 export const researchPageMetadata: Metadata = {
   title: "Research",
   description:
-    "Deep-dive research articles covering DeFi exploits, airdrop performance data, tokenless protocol TVL analysis, and asymmetric opportunity breakdowns.",
+    "Deep-dive research library with forensic exploit breakdowns, airdrop ROI data across 200+ distributions, tokenless protocol TVL tracking, and quantified opportunity theses with cited on-chain sources.",
   keywords: [
     "crypto research",
     "DeFi analysis",
@@ -172,14 +250,117 @@ export const researchPageMetadata: Metadata = {
     "tokenless protocols",
     "TVL analysis",
     "smart money research",
+    "crypto exploit analysis",
+    "on-chain data research",
   ],
   openGraph: {
     title: `Research | ${SITE_NAME}`,
     description:
-      "Deep-dive research articles on DeFi, airdrops, tokenless protocols, and asymmetric opportunities.",
+      "Deep-dive research library: exploit forensics, airdrop ROI data, tokenless protocol TVL, and quantified opportunity theses.",
     url: `${SITE_URL}/research`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Research | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Research | ${SITE_NAME}`,
+    description:
+      "Deep-dive research library: exploit forensics, airdrop ROI data, tokenless protocol TVL, and quantified opportunity theses.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
   },
   alternates: { canonical: `${SITE_URL}/research` },
+};
+
+/** Metadata for the discoveries (1000x dashboard) page. */
+export const discoveriesPageMetadata: Metadata = {
+  title: "1000x Discoveries",
+  description:
+    "Interactive 1000x Discovery Dashboard: 4-scanner pipeline monitoring new contract deployments, VC wallet movements, elite developer migrations across 161 devs and 17 orgs, and DEX liquidity events in real-time. Filter and sort by composite conviction score.",
+  keywords: [
+    "1000x opportunities",
+    "crypto discovery engine",
+    "VC wallet tracker",
+    "developer migration tracker",
+    "DEX liquidity scanner",
+    "contract scanner",
+    "alpha discovery",
+  ],
+  openGraph: {
+    title: `1000x Discoveries | ${SITE_NAME}`,
+    description:
+      "Interactive 4-scanner pipeline: contract deployments, VC wallet movements, developer migrations, and DEX liquidity events.",
+    url: `${SITE_URL}/discoveries`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `1000x Discoveries | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `1000x Discoveries | ${SITE_NAME}`,
+    description:
+      "Interactive 4-scanner pipeline: contract deployments, VC wallet movements, developer migrations, and DEX liquidity events.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
+  },
+  alternates: { canonical: `${SITE_URL}/discoveries` },
+};
+
+/** Metadata for the performance page. */
+export const performancePageMetadata: Metadata = {
+  title: "Performance",
+  description:
+    "Full track record of the 1000x Discovery System: signal history with verdicts (DEEP ALPHA, MONITOR, NOISE), pipeline stats across 161 elite devs and 17 orgs, scanner operational status, and cross-reference scoring methodology.",
+  keywords: [
+    "crypto signal performance",
+    "discovery system track record",
+    "alpha signal history",
+    "pipeline statistics",
+    "scanner status",
+  ],
+  openGraph: {
+    title: `Performance | ${SITE_NAME}`,
+    description:
+      "Full track record: signal verdicts, pipeline stats, scanner status, and cross-reference scoring from the 1000x Discovery System.",
+    url: `${SITE_URL}/performance`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Performance | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Performance | ${SITE_NAME}`,
+    description:
+      "Full track record: signal verdicts, pipeline stats, and scanner status from the 1000x Discovery System.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
+  },
+  alternates: { canonical: `${SITE_URL}/performance` },
+};
+
+/** Metadata for the how-it-works page. */
+export const howItWorksPageMetadata: Metadata = {
+  title: "How It Works",
+  description:
+    "Three-stage pipeline: Scout (50+ sources including on-chain data, GitHub, arXiv, SEC filings), Score (8-Signal Pattern Filter with weighted dimensions), and Track (weekly score updates, catalyst monitoring, and graveyard post-mortems). Covers digital assets, public equities, and private markets.",
+  keywords: [
+    "opportunity pipeline",
+    "signal detection",
+    "investment intelligence pipeline",
+    "crypto scouting",
+    "asset scoring system",
+  ],
+  openGraph: {
+    title: `How It Works | ${SITE_NAME}`,
+    description:
+      "Three-stage pipeline: Scout 50+ sources, Score with 8-Signal Pattern Filter, Track with weekly updates and post-mortems.",
+    url: `${SITE_URL}/how-it-works`,
+    images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `How It Works | ${SITE_NAME}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `How It Works | ${SITE_NAME}`,
+    description:
+      "Three-stage pipeline: Scout 50+ sources, Score with 8-Signal Pattern Filter, Track with weekly updates and post-mortems.",
+    images: [OG_IMAGE_URL],
+    creator: TWITTER_HANDLE,
+  },
+  alternates: { canonical: `${SITE_URL}/how-it-works` },
 };
 
 /** Research article title/description map for metadata generation. */

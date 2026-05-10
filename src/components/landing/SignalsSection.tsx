@@ -8,7 +8,7 @@ const SIGNALS = [
   { name: "Smart Money", description: "Sophisticated capital flowing before the crowd." },
   { name: "Narrative", description: "Compelling story that spreads virally." },
   { name: "Earnings Yield", description: "131 protocols with real yield data. 24 Hyperliquid-grade." },
-  { name: "Catalyst", description: "24 active deadlines tracked. Near-term events to unlock value." },
+  { name: "Catalyst", description: "24 active deadlines tracked. Near-term events that drive repricing." },
 ] as const;
 
 /** The 8-Signal Pattern Filter section. */

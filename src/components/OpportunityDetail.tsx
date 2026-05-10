@@ -1,33 +1,30 @@
 import type { Opportunity } from "@/lib/types";
 import { SIGNAL_KEYS, SIGNAL_LABELS } from "@/lib/types";
 import SignalRadar from "./SignalRadar";
-import PaywallBlur from "./PaywallBlur";
 
 interface PremiumSectionProps {
   readonly opportunity: Opportunity;
 }
 
-/** Premium content section with paywall blur overlay. */
+/** Premium content section — all signals rendered openly. */
 export function PremiumSection({ opportunity }: PremiumSectionProps) {
   if (!opportunity) return null;
 
   return (
-    <PaywallBlur>
-      <div className="mt-8 grid gap-8 lg:grid-cols-2">
-        <div className="space-y-8">
-          <ThesisBlock thesis={opportunity.thesis} />
-          <CatalystsBlock catalysts={opportunity.catalysts} />
-          <RisksBlock risks={opportunity.risks} />
-        </div>
-        <div className="space-y-8">
-          <SignalRadar
-            signals={opportunity.signals}
-            compositeScore={opportunity.composite_score}
-          />
-          <SignalBreakdownTable opportunity={opportunity} />
-        </div>
+    <div className="mt-8 grid gap-8 lg:grid-cols-2">
+      <div className="space-y-8">
+        <ThesisBlock thesis={opportunity.thesis} />
+        <CatalystsBlock catalysts={opportunity.catalysts} />
+        <RisksBlock risks={opportunity.risks} />
       </div>
-    </PaywallBlur>
+      <div className="space-y-8">
+        <SignalRadar
+          signals={opportunity.signals}
+          compositeScore={opportunity.composite_score}
+        />
+        <SignalBreakdownTable opportunity={opportunity} />
+      </div>
+    </div>
   );
 }
 

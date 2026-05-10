@@ -43,7 +43,7 @@ export default function Header() {
             href="/pricing"
             className="rounded-full bg-text-primary px-4 py-1.5 text-sm font-medium text-black transition-opacity hover:opacity-90"
           >
-            Get Access
+            View Research
           </Link>
         </div>
 
@@ -84,7 +84,7 @@ function MobileNav({ onClose }: { readonly onClose: () => void }) {
           onClick={onClose}
           className="mt-2 rounded-full bg-text-primary px-4 py-2 text-center text-sm font-medium text-black transition-opacity hover:opacity-90"
         >
-          Get Access
+          View Research
         </Link>
       </nav>
     </div>

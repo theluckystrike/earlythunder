@@ -7,6 +7,9 @@ import {
 } from "./constants";
 import type { Opportunity, BlogPost } from "./types";
 
+/** Maximum items rendered in any JSON-LD list to prevent unbounded output. */
+const MAX_LIST_ITEMS = 50;
+
 /** JSON-LD Organization schema for Early Thunder. */
 export function getOrganizationSchema(): Record<string, unknown> {
   if (typeof SITE_URL !== "string" || SITE_URL.length === 0) {
@@ -92,6 +95,13 @@ export function getArticleSchema(
 
 /** JSON-LD WebApplication schema for the intelligence dashboard. */
 export function getIntelligenceDashboardSchema(): Record<string, unknown> {
+  if (typeof SITE_URL !== "string" || SITE_URL.length === 0) {
+    throw new Error("SITE_URL is required for intelligence dashboard schema.");
+  }
+  if (typeof SITE_NAME !== "string" || SITE_NAME.length === 0) {
+    throw new Error("SITE_NAME is required for intelligence dashboard schema.");
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -123,6 +133,13 @@ export function getIntelligenceDashboardSchema(): Record<string, unknown> {
 
 /** JSON-LD DataCatalog schema for the research library. */
 export function getResearchCatalogSchema(): Record<string, unknown> {
+  if (typeof SITE_URL !== "string" || SITE_URL.length === 0) {
+    throw new Error("SITE_URL is required for research catalog schema.");
+  }
+  if (typeof AUTHOR_NAME !== "string" || AUTHOR_NAME.length === 0) {
+    throw new Error("AUTHOR_NAME is required for research catalog schema.");
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "DataCatalog",
@@ -151,6 +168,13 @@ export function getResearchCatalogSchema(): Record<string, unknown> {
 
 /** JSON-LD FAQPage schema for intelligence and research pages. */
 export function getResearchFAQSchema(): Record<string, unknown> {
+  if (typeof SITE_URL !== "string" || SITE_URL.length === 0) {
+    throw new Error("SITE_URL is required for FAQ schema.");
+  }
+  if (typeof SITE_NAME !== "string" || SITE_NAME.length === 0) {
+    throw new Error("SITE_NAME is required for FAQ schema.");
+  }
+
   const faqs = [
     {
       question:
@@ -235,5 +259,67 @@ export function getOpportunitySchema(
         name: AUTHOR_NAME,
       },
     },
+  };
+}
+
+/**
+ * JSON-LD ItemList schema for the opportunities listing page.
+ * Renders the top opportunities as a ranked list for rich results.
+ */
+export function getItemListSchema(
+  opportunities: readonly Opportunity[],
+): Record<string, unknown> {
+  if (!Array.isArray(opportunities)) {
+    throw new Error("Opportunities array is required for ItemList schema.");
+  }
+  if (opportunities.length === 0) {
+    throw new Error("At least one opportunity is required for ItemList schema.");
+  }
+
+  const bounded = opportunities.slice(0, MAX_LIST_ITEMS);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Top ${bounded.length} Asymmetric Opportunities — ${SITE_NAME}`,
+    description:
+      "Ranked list of pre-mainstream opportunities scored by the 8-Signal Pattern Filter across crypto, deep tech, and emerging markets.",
+    numberOfItems: bounded.length,
+    url: `${SITE_URL}/opportunities`,
+    itemListElement: bounded.map((opp, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: opp.ticker ? `${opp.name} (${opp.ticker})` : opp.name,
+      url: `${SITE_URL}/opportunities/${opp.slug}`,
+      description: opp.one_liner,
+    })),
+  };
+}
+
+/**
+ * JSON-LD BreadcrumbList schema for hierarchical navigation.
+ * Generates breadcrumb trail from path segments.
+ */
+export function getBreadcrumbListSchema(
+  crumbs: readonly { readonly name: string; readonly path: string }[],
+): Record<string, unknown> {
+  if (!Array.isArray(crumbs)) {
+    throw new Error("Breadcrumb array is required.");
+  }
+  if (crumbs.length === 0) {
+    throw new Error("At least one breadcrumb is required.");
+  }
+
+  const bounded = crumbs.slice(0, MAX_LIST_ITEMS);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: bounded.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.name,
+      item: `${SITE_URL}${crumb.path}`,
+    })),
   };
 }

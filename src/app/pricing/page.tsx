@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Pricing — Free During Open Alpha | Early Thunder",
   description:
-    "Early Thunder pricing. Free market intelligence or Pro-tier alpha signals for $999/month.",
+    "All Early Thunder features are free during the open alpha. Full thesis access, 8-signal radar charts, catalyst tracking, and research reports -- no credit card required.",
   openGraph: {
-    title: "Pricing | Early Thunder",
+    title: "Pricing — Free During Open Alpha | Early Thunder",
     description:
-      "Free market intelligence or Pro-tier alpha signals for $999/month.",
+      "All features free during open alpha. Full intelligence pipeline, radar charts, and research reports at no cost.",
   },
 };
 
@@ -16,57 +16,43 @@ export const metadata: Metadata = {
 /*  Constants                                                          */
 /* ------------------------------------------------------------------ */
 
-/**
- * Stripe payment link for EarlyThunder Pro ($999/mo).
- * To generate: stripe payment_links create \
- *   --line_items[0][price]=PRICE_ID --line_items[0][quantity]=1
- * Then replace this URL with the real payment link.
- */
-const STRIPE_CHECKOUT_URL =
-  process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK ??
-  "https://buy.stripe.com/PLACEHOLDER";
-
-const FREE_FEATURES = [
-  "Public blog articles",
-  "Market overview dashboard",
-  "1000x Discovery scores (summary)",
-  "Graveyard access",
-  "Methodology documentation",
-] as const;
-
-const PRO_FEATURES = [
-  "Everything in Free",
-  "Real-time alpha signals (not delayed)",
+const ALPHA_FEATURES = [
+  "Full thesis and deep analysis",
+  "Real-time alpha signals",
   "Full pipeline access: 300+ devs, 31 orgs, VC wallet tracking",
   "AI-evaluated deep briefs with catalyst timelines",
   "INVESTIGATE + HIGH_CONVICTION alerts",
   "EkuboProtocol liquidity tracker",
   "Full 8-Signal radar breakdowns",
-  "Discord Pro channel access",
   "Weekly intelligence reports",
-  "First-mover alerts on pre-token discoveries",
-  "Direct research team access",
+  "Pre-token discovery alerts",
+  "Market overview dashboard",
+  "Graveyard access",
+  "Blog articles and methodology docs",
 ] as const;
 
 const COMPARISON_ROWS = [
-  { feature: "Blog articles", free: true, pro: true },
-  { feature: "Market overview", free: true, pro: true },
-  { feature: "1000x Discovery scores", free: "Summary", pro: "Full breakdown" },
-  { feature: "Signal delivery", free: "Delayed", pro: "Real-time" },
-  { feature: "Pipeline access (300+ devs, 31 orgs)", free: false, pro: true },
-  { feature: "AI-evaluated deep briefs", free: false, pro: true },
-  { feature: "INVESTIGATE alerts", free: false, pro: true },
-  { feature: "HIGH_CONVICTION alerts", free: false, pro: true },
-  { feature: "VC wallet tracking", free: false, pro: true },
-  { feature: "EkuboProtocol tracker", free: false, pro: true },
-  { feature: "8-Signal radar charts", free: false, pro: true },
-  { feature: "Discord Pro channel", free: false, pro: true },
-  { feature: "Weekly intelligence reports", free: false, pro: true },
-  { feature: "Pre-token discovery alerts", free: false, pro: true },
-  { feature: "Direct research team access", free: false, pro: true },
+  { feature: "Blog articles", included: true },
+  { feature: "Market overview", included: true },
+  { feature: "1000x Discovery scores (full breakdown)", included: true },
+  { feature: "Real-time signal delivery", included: true },
+  { feature: "Pipeline access (300+ devs, 31 orgs)", included: true },
+  { feature: "AI-evaluated deep briefs", included: true },
+  { feature: "INVESTIGATE alerts", included: true },
+  { feature: "HIGH_CONVICTION alerts", included: true },
+  { feature: "VC wallet tracking", included: true },
+  { feature: "EkuboProtocol tracker", included: true },
+  { feature: "8-Signal radar charts", included: true },
+  { feature: "Weekly intelligence reports", included: true },
+  { feature: "Pre-token discovery alerts", included: true },
 ] as const;
 
 const FAQ_ITEMS = [
+  {
+    question: "Is everything really free right now?",
+    answer:
+      "Yes. During the open alpha, every feature on Early Thunder is completely free. No credit card, no trial limits, no paywalls. We are building in public and want early users to experience the full intelligence pipeline. Premium tiers will be introduced later, but alpha users get everything at no cost.",
+  },
   {
     question: "What is the 1000x Discovery System?",
     answer:
@@ -78,24 +64,19 @@ const FAQ_ITEMS = [
       "Every opportunity is evaluated through our 8-Signal Pattern Filter: six quality signals (team, technology, traction, tokenomics, community, narrative) and two asymmetry signals (market cap headroom, information asymmetry). Each signal is weighted and combined into a composite score from 0 to 100. Scores above 75 receive an INVESTIGATE rating. Scores above 85 with strong catalyst alignment receive HIGH_CONVICTION status.",
   },
   {
+    question: "Will there be paid plans later?",
+    answer:
+      "Yes. We plan to introduce premium tiers once the platform matures. Early alpha users will be the first to know about pricing changes and may receive preferential rates. For now, enjoy full access at no cost.",
+  },
+  {
     question: "What kind of signal quality can I expect?",
     answer:
-      "Pro subscribers receive curated, research-backed signals -- not social media noise. Every signal includes the full thesis, risk factors, catalyst timeline, and radar chart breakdown. We prioritize quality over quantity: typically 3-5 actionable signals per week, each backed by our systematic methodology.",
+      "You receive curated, research-backed signals -- not social media noise. Every signal includes the full thesis, risk factors, catalyst timeline, and radar chart breakdown. We prioritize quality over quantity: typically 3-5 actionable signals per week, each backed by our systematic methodology.",
   },
   {
-    question: "What is the refund policy?",
+    question: "What asset classes do you cover?",
     answer:
-      "We offer a full refund within the first 7 days of your subscription if you are not satisfied with the quality of research. After the initial 7-day period, subscriptions are non-refundable but can be canceled at any time to prevent future charges. Contact support@earlythunder.com for refund requests.",
-  },
-  {
-    question: "Can I cancel anytime?",
-    answer:
-      "Yes. There are no contracts or commitments. Cancel your subscription at any time from your account dashboard or by contacting support. Your access continues through the end of the current billing period.",
-  },
-  {
-    question: "What is included in the Discord community?",
-    answer:
-      "Pro members get access to a private Discord server with channels for daily signals, deep alpha discussion, EkuboProtocol tracking, and direct interaction with our research team. This is where real-time updates and emerging opportunities are shared first.",
+      "Early Thunder covers three asset classes. Digital assets (crypto, tokens, protocols), public equities (stocks, ETFs), and private markets (pre-IPO, venture-backed companies).",
   },
 ] as const;
 
@@ -107,8 +88,8 @@ export default function PricingPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 pt-28 pb-20">
       <PageHeader />
-      <PricingCards />
-      <ComparisonTable />
+      <AlphaCard />
+      <FeatureTable />
       <FAQSection />
     </div>
   );
@@ -122,87 +103,74 @@ function PageHeader() {
   return (
     <div className="text-center">
       <h1 className="text-5xl font-semibold tracking-tighter text-text-primary md:text-6xl">
-        Simple pricing.
+        Everything is free.
         <br />
-        <span className="text-text-secondary">Serious alpha.</span>
+        <span className="text-text-secondary">Open alpha access.</span>
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary">
-        Free access to our public research, or unlock the full intelligence
-        pipeline with Pro. 300+ developers tracked. 31 organizations monitored.
-        VC wallets decoded. No contracts. Cancel anytime.
+        All features are currently free while we build in public. Full
+        intelligence pipeline, 8-signal radar charts, deep briefs, and
+        research reports -- no credit card, no limits. Premium tiers
+        coming later.
       </p>
     </div>
   );
 }
 
 /* ------------------------------------------------------------------ */
-/*  Pricing Cards                                                      */
+/*  Alpha Access Card                                                  */
 /* ------------------------------------------------------------------ */
 
-function PricingCards() {
+function AlphaCard() {
   return (
-    <div className="mt-16 grid gap-8 md:grid-cols-2">
-      <FreeCard />
-      <ProCard />
+    <div className="mx-auto mt-16 max-w-xl">
+      <div className="relative flex flex-col rounded-2xl border border-amber/40 bg-bg-card p-8">
+        <AlphaBadge />
+        <h2 className="text-xl font-semibold tracking-tight text-text-primary">
+          Open Alpha
+        </h2>
+        <AlphaPrice />
+        <p className="mt-2 text-sm text-text-secondary">
+          Full intelligence pipeline -- every feature, no restrictions
+        </p>
+        <FeatureList features={ALPHA_FEATURES} />
+        <div className="mt-auto pt-8">
+          <Link
+            href="/opportunities"
+            className="block rounded-full bg-amber py-3.5 text-center text-sm font-bold text-black transition-colors hover:bg-amber-hover"
+          >
+            Start Exploring
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
 
-function FreeCard() {
+function AlphaBadge() {
   return (
-    <div className="flex flex-col rounded-2xl border border-border bg-bg-card p-8">
-      <h2 className="text-xl font-semibold tracking-tight text-text-primary">
-        Free
-      </h2>
-      <div className="mt-4 font-mono text-5xl font-semibold text-text-primary">
+    <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber px-4 py-1 text-xs font-bold uppercase tracking-wider text-black">
+      Early Access
+    </span>
+  );
+}
+
+function AlphaPrice() {
+  return (
+    <div className="mt-4 flex items-baseline gap-2">
+      <span className="font-mono text-5xl font-semibold text-text-primary">
         $0
-      </div>
-      <p className="mt-2 text-sm text-text-secondary">
-        Free forever -- no credit card required
-      </p>
-      <FeatureList features={FREE_FEATURES} />
-      <div className="mt-auto pt-8">
-        <Link
-          href="/blog"
-          className="block rounded-full border border-border py-3.5 text-center text-sm font-medium text-text-primary transition-colors hover:border-border-hover hover:bg-bg-elevated"
-        >
-          Start Reading
-        </Link>
-      </div>
+      </span>
+      <span className="text-sm text-text-secondary">
+        / free during alpha
+      </span>
     </div>
   );
 }
 
-function ProCard() {
-  return (
-    <div className="relative flex flex-col rounded-2xl border border-amber/40 bg-bg-card p-8">
-      <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber px-4 py-1 text-xs font-bold uppercase tracking-wider text-black">
-        Pro
-      </span>
-      <h2 className="text-xl font-semibold tracking-tight text-text-primary">
-        Pro
-      </h2>
-      <div className="mt-4 flex items-baseline gap-1">
-        <span className="font-mono text-5xl font-semibold text-text-primary">
-          $999
-        </span>
-        <span className="text-sm text-text-secondary">/month</span>
-      </div>
-      <p className="mt-2 text-sm text-text-secondary">
-        Full intelligence pipeline -- institutional-grade alpha
-      </p>
-      <FeatureList features={PRO_FEATURES} />
-      <div className="mt-auto pt-8">
-        <a
-          href={STRIPE_CHECKOUT_URL}
-          className="block rounded-full bg-amber py-3.5 text-center text-sm font-bold text-black transition-colors hover:bg-amber-hover"
-        >
-          Unlock Full Pipeline
-        </a>
-      </div>
-    </div>
-  );
-}
+/* ------------------------------------------------------------------ */
+/*  Feature List                                                       */
+/* ------------------------------------------------------------------ */
 
 function FeatureList({
   features,
@@ -246,15 +214,19 @@ function CheckIcon() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Comparison Table                                                    */
+/*  Feature Table                                                      */
 /* ------------------------------------------------------------------ */
 
-function ComparisonTable() {
+function FeatureTable() {
   return (
     <section className="mt-24">
       <h2 className="text-center text-3xl font-semibold tracking-tight text-text-primary">
-        Compare plans
+        All features included
       </h2>
+      <p className="mx-auto mt-3 max-w-lg text-center text-sm text-text-secondary">
+        Everything listed below is available right now at no cost during the
+        open alpha period.
+      </p>
       <div className="mt-10 overflow-x-auto">
         <table className="w-full border-collapse text-sm">
           <thead>
@@ -262,17 +234,14 @@ function ComparisonTable() {
               <th className="py-4 pr-4 text-left font-medium text-text-secondary">
                 Feature
               </th>
-              <th className="py-4 px-4 text-center font-medium text-text-secondary">
-                Free
-              </th>
               <th className="py-4 pl-4 text-center font-medium text-amber">
-                Pro
+                Open Alpha
               </th>
             </tr>
           </thead>
           <tbody>
             {COMPARISON_ROWS.map((row) => (
-              <ComparisonRow key={row.feature} row={row} />
+              <FeatureRow key={row.feature} feature={row.feature} />
             ))}
           </tbody>
         </table>
@@ -281,57 +250,36 @@ function ComparisonTable() {
   );
 }
 
-function ComparisonRow({
-  row,
-}: {
-  readonly row: {
-    readonly feature: string;
-    readonly free: boolean | string;
-    readonly pro: boolean | string;
-  };
-}) {
+function FeatureRow({ feature }: { readonly feature: string }) {
   return (
     <tr className="border-b border-border/50">
-      <td className="py-4 pr-4 text-text-primary">{row.feature}</td>
-      <td className="py-4 px-4 text-center">
-        <CellValue value={row.free} />
-      </td>
+      <td className="py-4 pr-4 text-text-primary">{feature}</td>
       <td className="py-4 pl-4 text-center">
-        <CellValue value={row.pro} />
+        <IncludedIcon />
       </td>
     </tr>
   );
 }
 
-function CellValue({ value }: { readonly value: boolean | string }) {
-  if (value === true) {
-    return (
-      <svg
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="none"
-        className="mx-auto text-score-high"
-        aria-label="Included"
-      >
-        <path
-          d="M3 8.5L6.5 12L13 4"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    );
-  }
-  if (value === false) {
-    return (
-      <span className="text-text-tertiary" aria-label="Not included">
-        --
-      </span>
-    );
-  }
-  return <span className="text-text-secondary">{value}</span>;
+function IncludedIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      className="mx-auto text-score-high"
+      aria-label="Included"
+    >
+      <path
+        d="M3 8.5L6.5 12L13 4"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
 }
 
 /* ------------------------------------------------------------------ */
