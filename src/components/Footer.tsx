@@ -1,30 +1,61 @@
 import Link from "next/link";
 
-const FOOTER_LINKS = {
-  Platform: [
-    { href: "/opportunities", label: "Opportunities" },
-    { href: "/methodology", label: "Methodology" },
-    { href: "/graveyard", label: "Graveyard" },
-    { href: "/pricing", label: "Pricing" },
-  ],
-  Resources: [
-    { href: "/blog", label: "Blog" },
-    { href: "/how-it-works", label: "How It Works" },
-  ],
-  Legal: [
-    { href: "/terms", label: "Terms of Service" },
-    { href: "/privacy", label: "Privacy Policy" },
-    { href: "/disclaimer", label: "Disclaimer" },
-  ],
-} as const;
+/** Routes served as standalone HTML from public/ — use <a> tags, not <Link>. */
+const STANDALONE_ROUTES = new Set([
+  "/intelligence/",
+  "/earnings/",
+  "/deadlines/",
+  "/research/",
+]);
+
+interface FooterLink {
+  readonly href: string;
+  readonly label: string;
+}
+
+const FOOTER_SECTIONS: readonly { readonly title: string; readonly links: readonly FooterLink[] }[] = [
+  {
+    title: "Intelligence Tools",
+    links: [
+      { href: "/intelligence/", label: "Intelligence Dashboard" },
+      { href: "/earnings/", label: "Earnings Scanner" },
+      { href: "/deadlines/", label: "Deadline Tracker" },
+      { href: "/discoveries", label: "Discoveries" },
+    ],
+  },
+  {
+    title: "Research",
+    links: [
+      { href: "/research/", label: "Research Library" },
+      { href: "/blog", label: "Blog" },
+      { href: "/opportunities", label: "Opportunities" },
+      { href: "/graveyard", label: "Graveyard" },
+    ],
+  },
+  {
+    title: "About",
+    links: [
+      { href: "/methodology", label: "Methodology" },
+      { href: "/how-it-works", label: "How It Works" },
+      { href: "/performance", label: "Performance" },
+      { href: "/pricing", label: "Pricing" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { href: "/terms", label: "Terms of Service" },
+      { href: "/privacy", label: "Privacy Policy" },
+      { href: "/disclaimer", label: "Disclaimer" },
+    ],
+  },
+] as const;
 
 export default function Footer() {
-  const sections = Object.entries(FOOTER_LINKS);
-
   return (
     <footer className="border-t border-border/50 bg-black py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
           {/* Brand column */}
           <div>
             <Link href="/" className="text-sm font-semibold tracking-tight text-text-primary">
@@ -37,8 +68,8 @@ export default function Footer() {
           </div>
 
           {/* Link columns */}
-          {sections.map(([title, links]) => (
-            <LinkColumn key={title} title={title} links={links} />
+          {FOOTER_SECTIONS.map((section) => (
+            <LinkColumn key={section.title} title={section.title} links={section.links} />
           ))}
         </div>
 
@@ -77,7 +108,7 @@ function LinkColumn({
   links,
 }: {
   readonly title: string;
-  readonly links: readonly { readonly href: string; readonly label: string }[];
+  readonly links: readonly FooterLink[];
 }) {
   if (typeof title !== "string" || title.length === 0) return null;
 
@@ -89,12 +120,21 @@ function LinkColumn({
       <ul className="mt-3 space-y-2">
         {links.map((link) => (
           <li key={`${link.href}-${link.label}`}>
-            <Link
-              href={link.href}
-              className="text-sm text-text-secondary transition-colors hover:text-text-primary"
-            >
-              {link.label}
-            </Link>
+            {STANDALONE_ROUTES.has(link.href) ? (
+              <a
+                href={link.href}
+                className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                href={link.href}
+                className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+              >
+                {link.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

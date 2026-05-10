@@ -1,6 +1,7 @@
 import { getActiveOpportunities } from "@/lib/data";
 import HeroSection from "@/components/landing/HeroSection";
 import NumbersStrip from "@/components/landing/NumbersStrip";
+import ToolsShowcase from "@/components/landing/ToolsShowcase";
 import TopOpportunities from "@/components/landing/TopOpportunities";
 import SignalsSection from "@/components/landing/SignalsSection";
 import AssetClassesSection from "@/components/landing/AssetClassesSection";
@@ -16,6 +17,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <NumbersStrip />
+      <ToolsShowcase />
       <TopOpportunities opportunities={topOpportunities} />
       <SignalsSection />
       <AssetClassesSection />

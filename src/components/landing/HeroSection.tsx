@@ -10,10 +10,12 @@ export default function HeroSection() {
         <span className="text-text-secondary">that cannot lie.</span>
       </h1>
       <p className="text-xl md:text-2xl text-text-secondary font-normal mt-8 max-w-2xl leading-relaxed">
-        An autonomous intelligence pipeline scanning 154+ protocols for convergence
-        signals, earnings yield, and deadline catalysts -- before the crowd arrives.
+        4 live intelligence tools scanning 154+ protocols for convergence
+        signals, earnings yield, and deadline catalysts &mdash; updated daily,
+        entirely free.
       </p>
       <HeroButtons />
+      <ToolBadgeStrip />
     </section>
   );
 }
@@ -21,18 +23,43 @@ export default function HeroSection() {
 function HeroButtons() {
   return (
     <div className="flex gap-4 mt-10">
-      <Link
-        href="/intelligence"
+      <a
+        href="/intelligence/"
         className="bg-text-primary text-black font-medium px-7 py-3 rounded-full text-base hover:opacity-90 transition"
       >
-        View intelligence &rarr;
-      </Link>
+        Open Intelligence Terminal &rarr;
+      </a>
       <Link
         href="/opportunities"
         className="text-text-secondary hover:text-text-primary font-medium text-base transition flex items-center"
       >
-        Explore opportunities
+        Browse 172 Opportunities
       </Link>
+    </div>
+  );
+}
+
+/** Badge data for each live tool. */
+const TOOL_BADGES = [
+  { label: "Convergence Signals", href: "/intelligence/" },
+  { label: "Earnings Scanner", href: "/earnings/" },
+  { label: "Deadline Tracker", href: "/deadlines/" },
+  { label: "13 Research Briefs", href: "/research/" },
+] as const;
+
+/** Horizontal strip of small pill badges linking to each tool page. */
+function ToolBadgeStrip() {
+  return (
+    <div className="flex flex-wrap gap-2 mt-6">
+      {TOOL_BADGES.map((badge) => (
+        <a
+          key={badge.href}
+          href={badge.href}
+          className="inline-flex items-center font-mono text-xs border border-border-primary text-text-secondary rounded-full px-3 py-1 hover:border-accent hover:text-text-primary transition"
+        >
+          {badge.label}
+        </a>
+      ))}
     </div>
   );
 }

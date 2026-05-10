@@ -3,12 +3,44 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const NAV_LINKS = [
-  { href: "/opportunities", label: "Opportunities" },
-  { href: "/methodology", label: "Methodology" },
-  { href: "/graveyard", label: "Graveyard" },
-  { href: "/pricing", label: "Pricing" },
+/** Primary nav: alpha tools showcased front and center */
+const PRIMARY_NAV = [
+  { href: "/intelligence/", label: "Intelligence", isNextRoute: false },
+  { href: "/opportunities", label: "Opportunities", isNextRoute: true },
+  { href: "/research/", label: "Research", isNextRoute: false },
+  { href: "/earnings/", label: "Earnings", isNextRoute: false },
+  { href: "/deadlines/", label: "Deadlines", isNextRoute: false },
 ] as const;
+
+/** Secondary nav: shown only in mobile menu below a divider */
+const SECONDARY_NAV = [
+  { href: "/methodology", label: "Methodology", isNextRoute: true },
+  { href: "/how-it-works", label: "How It Works", isNextRoute: true },
+  { href: "/graveyard", label: "Graveyard", isNextRoute: true },
+  { href: "/pricing", label: "Pricing", isNextRoute: true },
+  { href: "/blog", label: "Blog", isNextRoute: true },
+] as const;
+
+type NavItem = { readonly href: string; readonly label: string; readonly isNextRoute: boolean };
+
+function NavLink({ item, className, onClick }: {
+  readonly item: NavItem;
+  readonly className: string;
+  readonly onClick?: () => void;
+}) {
+  if (item.isNextRoute) {
+    return (
+      <Link href={item.href} className={className} onClick={onClick}>
+        {item.label}
+      </Link>
+    );
+  }
+  return (
+    <a href={item.href} className={className} onClick={onClick}>
+      {item.label}
+    </a>
+  );
+}
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -24,27 +56,17 @@ export default function Header() {
           Early Thunder
         </Link>
 
-        {/* Center: Nav */}
-        <nav className="hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm text-text-secondary transition-colors hover:text-text-primary"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        {/* Center: Primary Nav */}
+        <DesktopNav />
 
         {/* Right: CTA */}
         <div className="hidden md:block">
-          <Link
-            href="/pricing"
+          <a
+            href="/intelligence/"
             className="rounded-full bg-text-primary px-4 py-1.5 text-sm font-medium text-black transition-opacity hover:opacity-90"
           >
-            View Research
-          </Link>
+            Explore Alpha
+          </a>
         </div>
 
         {/* Mobile: Hamburger */}
@@ -65,27 +87,47 @@ export default function Header() {
   );
 }
 
+function DesktopNav() {
+  return (
+    <nav className="hidden items-center gap-8 md:flex">
+      {PRIMARY_NAV.map((item) => (
+        <NavLink
+          key={item.href}
+          item={item}
+          className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+        />
+      ))}
+    </nav>
+  );
+}
+
 function MobileNav({ onClose }: { readonly onClose: () => void }) {
+  const linkClass = "rounded-lg px-3 py-2 text-sm text-text-secondary transition-colors hover:text-text-primary";
+
   return (
     <div className="border-t border-border/50 bg-black px-4 py-4 md:hidden">
       <nav className="flex flex-col gap-1">
-        {NAV_LINKS.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            onClick={onClose}
-            className="rounded-lg px-3 py-2 text-sm text-text-secondary transition-colors hover:text-text-primary"
-          >
-            {link.label}
-          </Link>
+        {/* Primary alpha tools */}
+        {PRIMARY_NAV.map((item) => (
+          <NavLink key={item.href} item={item} className={linkClass} onClick={onClose} />
         ))}
-        <Link
-          href="/pricing"
+
+        {/* Divider */}
+        <div className="my-2 border-t border-border/30" />
+
+        {/* Secondary links */}
+        {SECONDARY_NAV.map((item) => (
+          <NavLink key={item.href} item={item} className={linkClass} onClick={onClose} />
+        ))}
+
+        {/* CTA */}
+        <a
+          href="/intelligence/"
           onClick={onClose}
           className="mt-2 rounded-full bg-text-primary px-4 py-2 text-center text-sm font-medium text-black transition-opacity hover:opacity-90"
         >
-          View Research
-        </Link>
+          Explore Alpha
+        </a>
       </nav>
     </div>
   );

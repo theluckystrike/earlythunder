@@ -1,5 +1,6 @@
 import Link from "next/link";
-import type { Opportunity } from "@/lib/types";
+import type { Opportunity, Signals } from "@/lib/types";
+import { SIGNAL_LABELS } from "@/lib/types";
 import TierBadge from "./TierBadge";
 
 interface OpportunityCardProps {
@@ -20,18 +21,20 @@ export default function OpportunityCard({ opportunity }: OpportunityCardProps) {
       className={`block bg-bg-card rounded-2xl border border-border p-6 hover:border-border-hover transition-colors duration-200 cursor-pointer ${tierBorderClass}`}
     >
       <CardHeader opportunity={opportunity} />
-      <div className="mt-1">
+      <div className="mt-1 flex items-center gap-2">
         {opportunity.ticker && (
           <span className="font-mono text-sm text-text-tertiary">
             {opportunity.ticker}
           </span>
         )}
+        <TopSignalBadges signals={opportunity.signals} />
       </div>
       <p className="mt-3 text-sm text-text-secondary leading-relaxed line-clamp-2">
         {opportunity.one_liner}
       </p>
       <CardDataRow opportunity={opportunity} />
       <CardFooter opportunity={opportunity} />
+      <ThesisIndicator />
     </Link>
   );
 }
@@ -82,6 +85,36 @@ function CardDataRow({ opportunity }: { readonly opportunity: Opportunity }) {
     <div className="mt-2 font-mono text-[10px] text-text-tertiary truncate">
       {parts.join(" \u00b7 ")}
     </div>
+  );
+}
+
+/** Shows the top 2 signals as small badges. */
+function TopSignalBadges({ signals }: { readonly signals: Signals }) {
+  const sorted = (Object.entries(signals) as [keyof Signals, number][])
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 2);
+
+  return (
+    <span className="inline-flex gap-1">
+      {sorted.map(([key, value]) => (
+        <span
+          key={key}
+          className="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[10px] text-text-tertiary"
+          title={`${SIGNAL_LABELS[key]}: ${value}`}
+        >
+          {SIGNAL_LABELS[key]}
+        </span>
+      ))}
+    </span>
+  );
+}
+
+/** Subtle indicator that the full thesis is freely available. */
+function ThesisIndicator() {
+  return (
+    <p className="mt-3 text-[11px] text-text-tertiary tracking-wide">
+      Full thesis available
+    </p>
   );
 }
 

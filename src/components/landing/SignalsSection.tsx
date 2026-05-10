@@ -1,14 +1,14 @@
 import Link from "next/link";
 
 const SIGNALS = [
-  { name: "Toy Phase", description: "Still dismissed by incumbents. Maximum asymmetry window." },
-  { name: "Working Code", description: "Deployed, functional technology. Not vaporware." },
-  { name: "Community", description: "Organic growth of genuine users and advocates." },
-  { name: "Dev Activity", description: "Active development with contributor diversity." },
-  { name: "Smart Money", description: "Sophisticated capital flowing before the crowd." },
-  { name: "Narrative", description: "Compelling story that spreads virally." },
-  { name: "Earnings Yield", description: "131 protocols with real yield data. 24 Hyperliquid-grade." },
-  { name: "Catalyst", description: "24 active deadlines tracked. Near-term events that drive repricing." },
+  { name: "Toy Phase", description: "Still dismissed by incumbents. Maximum asymmetry window.", href: "/opportunities" },
+  { name: "Working Code", description: "Deployed, functional technology. Not vaporware.", href: "/opportunities" },
+  { name: "Community", description: "Organic growth of genuine users and advocates.", href: "/opportunities" },
+  { name: "Dev Activity", description: "Active development with contributor diversity.", href: "/opportunities" },
+  { name: "Smart Money", description: "Sophisticated capital flowing before the crowd.", href: "/intelligence/" },
+  { name: "Narrative", description: "Compelling story that spreads virally.", href: "/blog" },
+  { name: "Earnings Yield", description: "131 protocols with real yield data. 24 Hyperliquid-grade.", href: "/earnings/" },
+  { name: "Catalyst", description: "24 active deadlines tracked. Near-term events that drive repricing.", href: "/deadlines/" },
 ] as const;
 
 /** The 8-Signal Pattern Filter section. */
@@ -19,7 +19,7 @@ export default function SignalsSection() {
         The 8-Signal Pattern Filter
       </h2>
       <p className="text-text-secondary text-lg mt-4">
-        58 convergence events detected across 154+ protocols. Every opportunity evaluated across eight dimensions.
+        Click any signal to explore the data behind it. 58 convergence events detected.
       </p>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {SIGNALS.map((signal, index) => (
@@ -28,6 +28,7 @@ export default function SignalsSection() {
             number={String(index + 1).padStart(2, "0")}
             name={signal.name}
             description={signal.description}
+            href={signal.href}
           />
         ))}
       </div>
@@ -53,20 +54,28 @@ function SignalCard({
   number,
   name,
   description,
+  href,
 }: {
   readonly number: string;
   readonly name: string;
   readonly description: string;
+  readonly href: string;
 }) {
   return (
-    <div className="bg-bg-card rounded-2xl p-6 md:p-8 border border-border hover:border-border-hover transition">
+    <Link
+      href={href}
+      className="group block bg-bg-card rounded-2xl p-6 md:p-8 border border-border hover:border-accent transition-colors"
+    >
       <div className="text-text-tertiary font-mono text-sm">{number}</div>
-      <h3 className="text-text-primary text-lg font-semibold mt-4 tracking-tight">
+      <h3 className="text-text-primary text-lg font-semibold mt-4 tracking-tight flex items-center justify-between">
         {name}
+        <span className="opacity-0 group-hover:opacity-100 transition-opacity text-accent">
+          &rarr;
+        </span>
       </h3>
       <p className="text-text-secondary text-sm mt-2 leading-relaxed">
         {description}
       </p>
-    </div>
+    </Link>
   );
 }
