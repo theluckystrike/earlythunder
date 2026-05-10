@@ -1,86 +1,49 @@
-import Link from "next/link";
+/* NumbersStrip (StatsStrip) — Full-width stats bar. Server Component. */
 
-interface NumbersStripProps {
-  readonly totalProtocols: number;
-  readonly convergenceEvents: number;
-  readonly activeDeadlines: number;
-  readonly criticalDeadlines: number;
+export interface StatsStripProps {
+  readonly stats: readonly {
+    readonly value: string;
+    readonly suffix?: string;
+    readonly label: string;
+    readonly sub?: string;
+  }[];
 }
 
-interface StatItem {
-  readonly value: string;
-  readonly label: string;
-  readonly href: string;
-  readonly useNextLink: boolean;
-}
-
-/** Numbers strip showing computed pipeline data counts. */
-export default function NumbersStrip({
-  totalProtocols,
-  convergenceEvents,
-  activeDeadlines,
-  criticalDeadlines,
-}: NumbersStripProps) {
-  const stats: readonly StatItem[] = [
-    { value: `${totalProtocols}+`, label: "Protocols Scanned", href: "/opportunities", useNextLink: true },
-    { value: `${convergenceEvents}`, label: "Convergence Events", href: "/intelligence/", useNextLink: false },
-    { value: `${activeDeadlines}`, label: "Active Deadlines", href: "/deadlines/", useNextLink: false },
-    { value: `${criticalDeadlines} critical`, label: "Critical Deadlines", href: "/deadlines/", useNextLink: false },
-  ];
-
+/** Single stat block: value + optional suffix, label, optional sub. */
+function Stat({
+  stat,
+}: {
+  readonly stat: StatsStripProps["stats"][number];
+}) {
   return (
-    <>
-      <div className="divider" />
-      <section className="py-20 max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {stats.map((stat) => (
-            <StatBlock key={stat.label} stat={stat} />
-          ))}
-        </div>
-        <div className="mt-6 flex items-center justify-center gap-2">
-          <span className="inline-block h-2 w-2 rounded-full bg-score-high animate-pulse" />
-          <span className="text-xs text-text-tertiary font-mono">
-            Pipeline updated daily
-          </span>
-        </div>
-      </section>
-    </>
-  );
-}
-
-/** Single clickable stat linking to its tool page. */
-function StatBlock({ stat }: { readonly stat: StatItem }) {
-  const inner = (
-    <>
-      <div className="text-4xl md:text-5xl font-semibold tracking-tight text-text-primary">
+    <div className="stat">
+      <div className="stat__value">
         {stat.value}
+        {stat.suffix && <span className="stat__suffix">{stat.suffix}</span>}
       </div>
-      <div className="text-sm text-text-tertiary mt-2 uppercase tracking-widest group-hover:underline group-hover:underline-offset-4">
-        {stat.label}
-        <span className="inline-block ml-1 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-          &rarr;
-        </span>
-      </div>
-    </>
+      <div className="stat__label">{stat.label}</div>
+      {stat.sub && <div className="stat__sub">{stat.sub}</div>}
+    </div>
   );
+}
 
-  if (stat.useNextLink) {
-    return (
-      <Link
-        href={stat.href}
-        className="group block cursor-pointer transition-opacity duration-200 hover:opacity-80"
-      >
-        {inner}
-      </Link>
-    );
-  }
+/** Vertical 1px divider between stat blocks. */
+function Separator() {
+  return <div className="stats__sep" />;
+}
 
+/** Full-width stats strip with 4 stat blocks separated by dividers. */
+export default function NumbersStrip({ stats }: StatsStripProps) {
   return (
-    <a
-      href={stat.href}
-      className="group block cursor-pointer transition-opacity duration-200 hover:opacity-80"
-    >
-      {inner}
-    </a>
+    <section className="stats">
+      <div className="stats__inner">
+        {stats.map((stat, i) => (
+          <span key={stat.label} className="contents">
+            {i > 0 && <Separator />}
+            <Stat stat={stat} />
+          </span>
+        ))}
+      </div>
+    </section>
   );
 }

@@ -15,129 +15,91 @@ interface FooterLink {
 
 const FOOTER_SECTIONS: readonly { readonly title: string; readonly links: readonly FooterLink[] }[] = [
   {
-    title: "Intelligence Tools",
+    title: "INTELLIGENCE",
     links: [
-      { href: "/intelligence/", label: "Intelligence Dashboard" },
+      { href: "/intelligence/", label: "Dashboard" },
       { href: "/earnings/", label: "Earnings Scanner" },
       { href: "/deadlines/", label: "Deadline Tracker" },
-      { href: "/discoveries", label: "Discoveries" },
+      { href: "/discoveries", label: "Convergence Signals" },
     ],
   },
   {
-    title: "Research",
+    title: "RESEARCH",
     links: [
-      { href: "/research/", label: "Research Library" },
+      { href: "/research/", label: "Library" },
       { href: "/blog", label: "Blog" },
-      { href: "/opportunities", label: "Opportunities" },
       { href: "/graveyard", label: "Graveyard" },
+      { href: "/performance", label: "Performance" },
     ],
   },
   {
-    title: "About",
+    title: "ABOUT",
     links: [
       { href: "/methodology", label: "Methodology" },
-      { href: "/how-it-works", label: "How It Works" },
-      { href: "/performance", label: "Performance" },
+      { href: "/how-it-works", label: "How it works" },
       { href: "/pricing", label: "Pricing" },
+      { href: "/contact", label: "Contact" },
     ],
   },
   {
-    title: "Legal",
+    title: "LEGAL",
     links: [
-      { href: "/terms", label: "Terms of Service" },
-      { href: "/privacy", label: "Privacy Policy" },
+      { href: "/terms", label: "Terms" },
+      { href: "/privacy", label: "Privacy" },
       { href: "/disclaimer", label: "Disclaimer" },
     ],
   },
-] as const;
+];
+
+/** Render a single link — standalone <a> or Next.js <Link>. */
+function FooterAnchor({ href, label }: FooterLink) {
+  const cls = "footer__link";
+  if (STANDALONE_ROUTES.has(href)) {
+    return <a href={href} className={cls}>{label}</a>;
+  }
+  return <Link href={href} className={cls}>{label}</Link>;
+}
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border/50 bg-black py-12">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
-          {/* Brand column */}
-          <div>
-            <Link href="/" className="text-sm font-semibold tracking-tight text-text-primary">
-              Early Thunder
-            </Link>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-text-secondary">
-              Pre-mainstream opportunity intelligence.
-              Hear the storm before anyone else.
-            </p>
-          </div>
+    <footer className="footer">
+      <div className="footer__top">
+        {/* Brand column */}
+        <div className="footer__brand">
+          <Link href="/" className="footer__logo">EarlyThunder</Link>
+          <p className="footer__tagline">Pre-mainstream opportunity intelligence.</p>
+          <p className="footer__status">
+            <span className="footer__dot" /> Pipeline operational &middot; 154 protocols
+          </p>
+        </div>
 
-          {/* Link columns */}
+        {/* Link columns */}
+        <div className="footer__links">
           {FOOTER_SECTIONS.map((section) => (
-            <LinkColumn key={section.title} title={section.title} links={section.links} />
+            <div key={section.title} className="footer__col">
+              <h3 className="footer__col-title">{section.title}</h3>
+              <ul className="footer__col-list">
+                {section.links.map((link) => (
+                  <li key={link.href}>
+                    <FooterAnchor href={link.href} label={link.label} />
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
+      </div>
 
-        {/* Bottom bar */}
-        <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 sm:flex-row">
-          <p className="text-xs text-text-tertiary">
-            &copy; 2026 AUTOM8 LLC. All rights reserved.
-          </p>
-        </div>
-
-        {/* Disclaimer callout */}
-        <div className="mt-6 border-t border-border pt-6">
-          <p className="mx-auto max-w-2xl text-center text-xs leading-relaxed text-text-tertiary">
-            Early Thunder provides research and analysis for informational
-            purposes only. Nothing on this site constitutes financial advice,
-            investment recommendations, or an offer to buy or sell securities.
-            Pattern match scores reflect the analytical methodology, not
-            investment ratings. Past patterns do not predict future results.
-          </p>
-          <p className="mt-2 text-center">
-            <Link
-              href="/disclaimer"
-              className="text-xs text-text-secondary underline hover:text-text-primary"
-            >
-              Read full disclaimer &rarr;
-            </Link>
-          </p>
-        </div>
+      {/* Bottom bar */}
+      <div className="footer__bot">
+        <p className="footer__copy">&copy; 2026 AUTOM8 LLC</p>
+        <p className="footer__disclaimer">
+          Not financial advice. Past patterns do not predict future results.{" "}
+          <Link href="/disclaimer" className="footer__disclaimer-link">
+            Full disclaimer &rarr;
+          </Link>
+        </p>
       </div>
     </footer>
-  );
-}
-
-function LinkColumn({
-  title,
-  links,
-}: {
-  readonly title: string;
-  readonly links: readonly FooterLink[];
-}) {
-  if (typeof title !== "string" || title.length === 0) return null;
-
-  return (
-    <div>
-      <h3 className="text-xs font-semibold uppercase tracking-wider text-text-secondary">
-        {title}
-      </h3>
-      <ul className="mt-3 space-y-2">
-        {links.map((link) => (
-          <li key={`${link.href}-${link.label}`}>
-            {STANDALONE_ROUTES.has(link.href) ? (
-              <a
-                href={link.href}
-                className="text-sm text-text-secondary transition-colors hover:text-text-primary"
-              >
-                {link.label}
-              </a>
-            ) : (
-              <Link
-                href={link.href}
-                className="text-sm text-text-secondary transition-colors hover:text-text-primary"
-              >
-                {link.label}
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 /** Primary nav: alpha tools showcased front and center */
 const PRIMARY_NAV = [
@@ -21,7 +21,30 @@ const SECONDARY_NAV = [
   { href: "/blog", label: "Blog", isNextRoute: true },
 ] as const;
 
-type NavItem = { readonly href: string; readonly label: string; readonly isNextRoute: boolean };
+type NavItem = {
+  readonly href: string;
+  readonly label: string;
+  readonly isNextRoute: boolean;
+};
+
+/* ─── Scroll hook ─────────────────────────────────────────── */
+
+function useScrolled(threshold: number = 8): boolean {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handler = () => {
+      setScrolled(window.scrollY > threshold);
+    };
+    handler();
+    window.addEventListener("scroll", handler, { passive: true });
+    return () => window.removeEventListener("scroll", handler);
+  }, [threshold]);
+
+  return scrolled;
+}
+
+/* ─── NavLink helper ──────────────────────────────────────── */
 
 function NavLink({ item, className, onClick }: {
   readonly item: NavItem;
@@ -42,96 +65,119 @@ function NavLink({ item, className, onClick }: {
   );
 }
 
+/* ─── Header (exported) ──────────────────────────────────── */
+
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const scrolled = useScrolled(8);
+
+  const closeMobile = useCallback(() => setMobileOpen(false), []);
+  const toggleMobile = useCallback(() => setMobileOpen((v) => !v), []);
+
+  const navClass = scrolled ? "nav nav--scrolled" : "nav";
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-border/50 bg-black/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Left: Brand */}
-        <Link
-          href="/"
-          className="text-sm font-semibold tracking-tight text-text-primary"
-        >
-          Early Thunder
+    <header className={navClass}>
+      <div className="nav__inner">
+        {/* Logo */}
+        <Link href="/" className="nav__logo">
+          EarlyThunder
         </Link>
 
-        {/* Center: Primary Nav */}
+        {/* Center: Nav links (hidden at <=720px via CSS) */}
         <DesktopNav />
 
-        {/* Right: CTA */}
-        <div className="hidden md:block">
-          <a
-            href="/intelligence/"
-            className="rounded-full bg-text-primary px-4 py-1.5 text-sm font-medium text-black transition-opacity hover:opacity-90"
-          >
-            Explore Alpha
-          </a>
-        </div>
+        {/* Right: CTAs */}
+        <CtaGroup />
 
-        {/* Mobile: Hamburger */}
+        {/* Mobile hamburger (visible at <=720px via CSS) */}
         <button
           type="button"
-          className="rounded-lg p-2 text-text-secondary md:hidden"
-          onClick={() => setMobileOpen(!mobileOpen)}
+          className="nav__mobile-toggle"
+          onClick={toggleMobile}
           aria-label="Toggle navigation menu"
+          aria-expanded={mobileOpen}
         >
           <MobileMenuIcon open={mobileOpen} />
         </button>
       </div>
 
-      {mobileOpen && (
-        <MobileNav onClose={() => setMobileOpen(false)} />
-      )}
+      {mobileOpen && <MobileNav onClose={closeMobile} />}
     </header>
   );
 }
 
+/* ─── Desktop nav links ───────────────────────────────────── */
+
 function DesktopNav() {
   return (
-    <nav className="hidden items-center gap-8 md:flex">
+    <nav className="nav__links">
       {PRIMARY_NAV.map((item) => (
         <NavLink
           key={item.href}
           item={item}
-          className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+          className="nav__link"
         />
       ))}
     </nav>
   );
 }
 
-function MobileNav({ onClose }: { readonly onClose: () => void }) {
-  const linkClass = "rounded-lg px-3 py-2 text-sm text-text-secondary transition-colors hover:text-text-primary";
+/* ─── CTA group (sign in + primary) ──────────────────────── */
 
+function CtaGroup() {
   return (
-    <div className="border-t border-border/50 bg-black px-4 py-4 md:hidden">
-      <nav className="flex flex-col gap-1">
-        {/* Primary alpha tools */}
+    <div className="nav__cta">
+      <Link href="/pricing" className="ghost-btn nav__signin">
+        Sign in
+      </Link>
+      <a href="/intelligence/" className="primary-btn">
+        Open Terminal &rarr;
+      </a>
+    </div>
+  );
+}
+
+/* ─── Mobile nav ──────────────────────────────────────────── */
+
+function MobileNav({ onClose }: { readonly onClose: () => void }) {
+  return (
+    <div className="nav__mobile-panel">
+      <nav className="nav__mobile-links">
         {PRIMARY_NAV.map((item) => (
-          <NavLink key={item.href} item={item} className={linkClass} onClick={onClose} />
+          <NavLink
+            key={item.href}
+            item={item}
+            className="nav__mobile-link"
+            onClick={onClose}
+          />
         ))}
 
-        {/* Divider */}
-        <div className="my-2 border-t border-border/30" />
+        <div className="nav__mobile-divider" />
 
-        {/* Secondary links */}
         {SECONDARY_NAV.map((item) => (
-          <NavLink key={item.href} item={item} className={linkClass} onClick={onClose} />
+          <NavLink
+            key={item.href}
+            item={item}
+            className="nav__mobile-link"
+            onClick={onClose}
+          />
         ))}
 
-        {/* CTA */}
+        {/* Mobile CTA */}
         <a
           href="/intelligence/"
           onClick={onClose}
-          className="mt-2 rounded-full bg-text-primary px-4 py-2 text-center text-sm font-medium text-black transition-opacity hover:opacity-90"
+          className="primary-btn nav__mobile-cta"
         >
-          Explore Alpha
+          Open Terminal &rarr;
         </a>
       </nav>
     </div>
   );
 }
+
+/* ─── Mobile menu icon (hamburger / close) ────────────────── */
 
 function MobileMenuIcon({ open }: { readonly open: boolean }) {
   if (open) {

@@ -1,93 +1,231 @@
-interface ToolsShowcaseProps {
-  readonly topYield: { name: string; symbol: string; yield_pct: number };
-  readonly nearestDeadline: { protocol: string; end_date: string | null; urgency: string };
-  readonly topScore: { name: string; score: number };
+/* ─── Types ─── */
+
+interface ToolsBentoProps {
+  readonly topScores: readonly { name: string; ticker: string; score: number; yield?: string }[];
+  readonly topDeadlines: readonly { name: string; daysLeft: string; urgency: string }[];
+  readonly topResearch: readonly { title: string; date: string; words: string }[];
   readonly totalOpportunities: number;
 }
 
-interface ToolCard {
-  readonly title: string;
-  readonly liveData: string;
-  readonly subtitle: string;
+interface ToolDef {
+  readonly name: string;
+  readonly count: string;
+  readonly headline: string;
   readonly href: string;
-  readonly accent: string;
+  readonly size: "large" | "medium";
 }
 
-function buildCards(props: ToolsShowcaseProps): readonly ToolCard[] {
+/* ─── Tool Definitions ─── */
+
+function buildTools(total: number): readonly ToolDef[] {
   return [
     {
-      title: "Convergence Signals",
-      liveData: `${props.topScore.name} scored ${props.topScore.score}`,
-      subtitle: "58 convergence events · 154+ protocols",
+      name: "Convergence Signals",
+      count: `${total} active`,
+      headline: "Multi-factor scoring · daily refresh",
       href: "/intelligence/",
-      accent: "#00d4aa",
+      size: "large",
     },
     {
-      title: "Earnings Yield Scanner",
-      liveData: `${props.topYield.symbol} · ${props.topYield.yield_pct}% yield`,
-      subtitle: "24 Hyperliquid-grade protocols found",
+      name: "Earnings Yield Scanner",
+      count: "24 protocols",
+      headline: "Real yield · fee revenue · buybacks",
       href: "/earnings/",
-      accent: "#34C759",
+      size: "medium",
     },
     {
-      title: "Deadline Tracker",
-      liveData: `${props.nearestDeadline.protocol} · ${props.nearestDeadline.urgency}`,
-      subtitle: "23 active countdowns",
+      name: "Deadline Tracker",
+      count: "23 countdowns",
+      headline: "TGE · unlock · snapshot deadlines",
       href: "/deadlines/",
-      accent: "#FF9F0A",
+      size: "medium",
     },
     {
-      title: "Research Library",
-      liveData: "13 deep-dive analyses",
-      subtitle: "Original research · 8,000+ words",
+      name: "Research Library",
+      count: "13 analyses",
+      headline: "Original research · 8,000+ words avg",
       href: "/research/",
-      accent: "#3b82f6",
+      size: "medium",
     },
   ] as const;
 }
 
-/** Live intelligence tools showcase -- 2x2 grid with real data previews. */
-export default function ToolsShowcase(props: ToolsShowcaseProps) {
-  const cards = buildCards(props);
+/* ─── MiniTable (Convergence) ─── */
+
+function MiniTable(
+  { rows }: { readonly rows: readonly { name: string; ticker: string; score: number; yield?: string }[] },
+) {
+  const display = rows.slice(0, 4);
 
   return (
-    <section className="py-20 max-w-6xl mx-auto px-6">
-      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-text-primary">
-        Live Intelligence Tools
-      </h2>
-      <p className="text-text-secondary text-lg mt-4 max-w-2xl">
-        Interactive data terminals. Updated daily from our autonomous pipeline.
-      </p>
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
-        {cards.map((card) => (
-          <ToolPreviewCard key={card.href} tool={card} />
-        ))}
+    <div className="mini-table">
+      <div className="mini-table__row mini-table__row--head">
+        <span>#</span>
+        <span>SYMBOL</span>
+        <span>YIELD</span>
+        <span>SCORE</span>
       </div>
-    </section>
+      {display.map((row, idx) => (
+        <div key={row.ticker} className="mini-table__row">
+          <span>{String(idx + 1).padStart(2, "0")}</span>
+          <span>{row.ticker}</span>
+          <span>{row.yield ?? "—"}</span>
+          <span>{row.score}</span>
+        </div>
+      ))}
+    </div>
   );
 }
 
-function ToolPreviewCard({ tool }: { readonly tool: ToolCard }) {
+/* ─── MiniSparkline (Earnings) ─── */
+
+function MiniSparkline() {
+  const points = [12, 18, 14, 22, 19, 28, 24, 32, 29, 35, 31, 38];
+  const max = Math.max(...points);
+  const min = Math.min(...points);
+  const h = 60;
+  const w = 200;
+
+  const coords = points.map((p, i) => {
+    const x = (i / (points.length - 1)) * w;
+    const y = h - ((p - min) / (max - min)) * h;
+    return `${x},${y}`;
+  });
+
+  const polyline = coords.join(" ");
+  const fillPath = `M0,${h} L${coords.join(" L")} L${w},${h} Z`;
+
   return (
-    <a
-      href={tool.href}
-      className="group bg-bg-card rounded-2xl border border-border hover:border-border-hover transition-all duration-200 overflow-hidden block"
-    >
-      <div className="h-1" style={{ background: tool.accent }} />
-      <div className="p-6 md:p-8">
-        <h3 className="text-text-primary text-xl font-semibold tracking-tight">
-          {tool.title}
-        </h3>
-        <p className="font-mono text-sm mt-3" style={{ color: tool.accent }}>
-          {tool.liveData}
-        </p>
-        <p className="text-text-secondary text-sm mt-2 leading-relaxed">
-          {tool.subtitle}
-        </p>
-        <span className="text-text-secondary group-hover:text-text-primary text-sm transition mt-5 inline-block">
-          Explore &rarr;
-        </span>
+    <div className="mini-spark">
+      <svg viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" width="100%" height="60">
+        <defs>
+          <linearGradient id="spark-fill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="var(--color-score-high)" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="var(--color-score-high)" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <path d={fillPath} fill="url(#spark-fill)" />
+        <polyline
+          points={polyline}
+          fill="none"
+          stroke="var(--color-score-high)"
+          strokeWidth="2"
+          vectorEffect="non-scaling-stroke"
+        />
+      </svg>
+    </div>
+  );
+}
+
+/* ─── MiniCountdown (Deadlines) ─── */
+
+function MiniCountdown(
+  { rows }: { readonly rows: readonly { name: string; daysLeft: string; urgency: string }[] },
+) {
+  const display = rows.slice(0, 3);
+
+  function urgencyColor(urgency: string): string {
+    if (urgency === "critical") return "var(--color-score-low)";
+    if (urgency === "warning") return "var(--color-score-mid)";
+    return "var(--color-score-high)";
+  }
+
+  return (
+    <div className="mini-countdown">
+      {display.map((row) => (
+        <div key={row.name} className="mini-countdown__row">
+          <span className="mini-countdown__name">{row.name}</span>
+          <span style={{ color: urgencyColor(row.urgency) }}>{row.daysLeft}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ─── MiniResearch (Research Library) ─── */
+
+function MiniResearch(
+  { rows }: { readonly rows: readonly { title: string; date: string; words: string }[] },
+) {
+  const display = rows.slice(0, 3);
+
+  return (
+    <div className="mini-research">
+      {display.map((row) => (
+        <div key={row.title} className="mini-research__row">
+          <span className="mini-research__title">{row.title}</span>
+          <span className="mini-research__meta">{row.date} &middot; {row.words}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ─── ToolCard ─── */
+
+function ToolCard(
+  { tool, children }: { readonly tool: ToolDef; readonly children: React.ReactNode },
+) {
+  const sizeClass = tool.size === "large" ? "tool--large" : "tool--medium";
+
+  return (
+    <a href={tool.href} className={`tool ${sizeClass}`}>
+      <div className="tool__head">
+        <div>
+          <span className="tool__name">{tool.name}</span>
+          <span className="tool__count">{tool.count}</span>
+        </div>
+        <span className="tool__live">&#9679; LIVE</span>
+      </div>
+      <div className="tool__preview">
+        {children}
+      </div>
+      <div className="tool__foot">
+        <span className="tool__head-line">{tool.headline}</span>
+        <span className="tool__cta">Explore &rarr;</span>
       </div>
     </a>
+  );
+}
+
+/* ─── ToolsBento (main export) ─── */
+
+export default function ToolsShowcase({
+  topScores,
+  topDeadlines,
+  topResearch,
+  totalOpportunities,
+}: ToolsBentoProps) {
+  const tools = buildTools(totalOpportunities);
+
+  return (
+    <section className="bento-section">
+      <div className="bento-section__head">
+        <div>
+          <span className="bento-section__eyebrow">01 &mdash; TERMINAL</span>
+          <h2 className="bento-section__title">Live intelligence tools</h2>
+          <p className="bento-section__sub">
+            Four interactive data terminals. Updated daily from our autonomous research pipeline.
+          </p>
+        </div>
+        <a href="/intelligence/" className="bento-section__link">
+          View all tools &rarr;
+        </a>
+      </div>
+      <div className="bento">
+        <ToolCard tool={tools[0]}>
+          <MiniTable rows={topScores} />
+        </ToolCard>
+        <ToolCard tool={tools[1]}>
+          <MiniSparkline />
+        </ToolCard>
+        <ToolCard tool={tools[2]}>
+          <MiniCountdown rows={topDeadlines} />
+        </ToolCard>
+        <ToolCard tool={tools[3]}>
+          <MiniResearch rows={topResearch} />
+        </ToolCard>
+      </div>
+    </section>
   );
 }

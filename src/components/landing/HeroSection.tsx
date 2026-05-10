@@ -1,83 +1,233 @@
 import Link from "next/link";
 
-/* ─── Live data constants (will become API-driven) ─── */
-
-const LIVE_PULSE_DATA = [
-  { label: "MARKET REGIME", value: "RISK_OFF", color: "bg-teal-400" },
-  { label: "NEXT DEADLINE", value: "Limitless \u00b7 15d", color: "bg-amber-400" },
-  { label: "TOP YIELD", value: "2,077% \u00b7 BabySwap", color: "bg-green-400" },
-] as const;
-
 /* ─── Types ─── */
 
-interface PulseItem {
-  readonly label: string;
-  readonly value: string;
-  readonly color: string;
+interface HeroProps {
+  readonly totalOpportunities: number;
+  readonly topOpportunities: readonly {
+    name: string;
+    score: number;
+    category: string;
+  }[];
+  readonly nearestDeadline: { protocol: string; daysLeft: number };
+  readonly topYield: { name: string; value: string };
 }
 
-interface LivePulseStripProps {
-  readonly items: readonly PulseItem[];
+interface RegimeStripProps {
+  readonly totalOpportunities: number;
+  readonly nearestDeadline: { protocol: string; daysLeft: number };
+  readonly topYield: { name: string; value: string };
 }
 
-/* ─── LivePulseStrip ─── */
+interface LadderRowProps {
+  readonly rank: number;
+  readonly name: string;
+  readonly score: number;
+  readonly category: string;
+}
 
-/** Bloomberg-style data ticker showing live pipeline intelligence. */
-function LivePulseStrip({ items }: LivePulseStripProps) {
-  if (!items || items.length === 0) return null;
-  if (typeof items[0].label !== "string") return null;
+interface ConvictionLadderProps {
+  readonly opportunities: readonly {
+    name: string;
+    score: number;
+    category: string;
+  }[];
+  readonly totalOpportunities: number;
+}
+
+/* ─── Helpers ─── */
+
+function getScoreTier(score: number): string {
+  if (score >= 85) return "var(--color-score-elite, #3B82F6)";
+  if (score >= 70) return "var(--color-score-high, #34C759)";
+  if (score >= 50) return "var(--color-score-mid, #FF9F0A)";
+  return "var(--color-score-low, #6B7280)";
+}
+
+function getScoreClass(score: number): string {
+  if (score >= 85) return "ladder__seg--elite";
+  if (score >= 70) return "ladder__seg--high";
+  if (score >= 50) return "ladder__seg--mid";
+  return "ladder__seg--low";
+}
+
+/* ─── LadderRow ─── */
+
+function LadderRow({ rank, name, score, category }: LadderRowProps) {
+  const filledSegments = Math.round(score / 10);
+  const tierClass = getScoreClass(score);
+  const tierColor = getScoreTier(score);
 
   return (
-    <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs text-text-secondary">
-      {items.map((item, idx) => (
-        <span key={item.label} className="flex items-center gap-x-2">
-          {idx > 0 && (
-            <span className="text-border-primary mr-2 hidden sm:inline">|</span>
-          )}
-          <span className={`inline-block h-2 w-2 rounded-full ${item.color}`} />
-          <span className="uppercase tracking-wide">{item.label}:</span>
-          <span className="text-text-primary font-semibold">{item.value}</span>
-        </span>
-      ))}
+    <div className="ladder__row">
+      <span className="ladder__rank">
+        {String(rank).padStart(2, "0")}
+      </span>
+      <span className="ladder__name">{name}</span>
+      <span className="ladder__cat">{category}</span>
+      <span className="ladder__bar">
+        {Array.from({ length: 10 }, (_, i) => (
+          <span
+            key={i}
+            className={`ladder__seg ${i < filledSegments ? tierClass : ""}`}
+          />
+        ))}
+      </span>
+      <span className="ladder__score" style={{ color: tierColor }}>
+        {score}
+      </span>
     </div>
   );
 }
 
-/* ─── HeroButtons ─── */
+/* ─── ConvictionLadder ─── */
 
-/** Primary and secondary CTAs for the hero section. */
-function HeroButtons() {
+function ConvictionLadder({
+  opportunities,
+  totalOpportunities,
+}: ConvictionLadderProps) {
+  if (!opportunities || opportunities.length === 0) return null;
+
+  const top8 = opportunities.slice(0, 8);
+  const remaining = totalOpportunities - top8.length;
+
   return (
-    <div className="flex flex-wrap gap-4 mt-10">
-      <a
-        href="/intelligence/"
-        className="bg-text-primary text-black font-medium px-7 py-3 rounded-full text-base hover:opacity-90 transition"
-      >
-        Open Intelligence Terminal &rarr;
-      </a>
-      <Link
-        href="/opportunities"
-        className="text-text-secondary hover:text-text-primary font-medium text-base transition flex items-center"
-      >
-        Scan 172 Opportunities
-      </Link>
+    <div className="ladder">
+      <div className="ladder__head">
+        <span className="ladder__title">CONVICTION INDEX</span>
+        <span className="ladder__sub">
+          Top 8 &middot; live &middot; sorted by score
+        </span>
+        <span className="ladder__live">LIVE</span>
+      </div>
+      <div className="ladder__rows">
+        {top8.map((opp, idx) => (
+          <LadderRow
+            key={opp.name}
+            rank={idx + 1}
+            name={opp.name}
+            score={opp.score}
+            category={opp.category}
+          />
+        ))}
+      </div>
+      <div className="ladder__foot">
+        <span>+ {remaining} more &middot; updated daily</span>
+        <Link href="/intelligence/" className="ladder__cta">
+          Open Index &rarr;
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+/* ─── RegimeStrip ─── */
+
+function RegimeStrip({
+  totalOpportunities,
+  nearestDeadline,
+  topYield,
+}: RegimeStripProps) {
+  return (
+    <div className="regime">
+      <div className="regime__item">
+        <span className="regime__label">MARKET REGIME</span>
+        <span className="regime__value regime__value--negative">
+          <span className="regime__dot regime__dot--red" />
+          RISK_OFF
+        </span>
+      </div>
+      <span className="regime__sep" />
+      <div className="regime__item">
+        <span className="regime__label">NEXT DEADLINE</span>
+        <span className="regime__value">
+          {nearestDeadline.protocol} &middot; {nearestDeadline.daysLeft}d
+        </span>
+      </div>
+      <span className="regime__sep" />
+      <div className="regime__item">
+        <span className="regime__label">TOP YIELD</span>
+        <span className="regime__value">
+          {topYield.value} &middot; {topYield.name}
+        </span>
+      </div>
+      <span className="regime__sep" />
+      <div className="regime__item">
+        <span className="regime__label">PIPELINE</span>
+        <span className="regime__value">
+          <span className="regime__dot regime__dot--green" />
+          Live &middot; updated daily
+        </span>
+      </div>
+    </div>
+  );
+}
+
+/* ─── HeroLeft ─── */
+
+function HeroLeft({
+  totalOpportunities,
+  nearestDeadline,
+  topYield,
+}: RegimeStripProps) {
+  return (
+    <div className="hero__left">
+      <div className="hero__eyebrow">
+        <span className="eyebrow-dot" />
+        ALPHA INTELLIGENCE &middot; v2.4 &middot;{" "}
+        {totalOpportunities} OPPORTUNITIES
+      </div>
+
+      <h1 className="hero__title">
+        <span className="hero__line">Hear the storm before</span>
+        <span className="hero__line hero__line--accent">anyone else.</span>
+      </h1>
+
+      <p className="hero__sub">
+        Four autonomous tools score every pre-mainstream opportunity across
+        DeFi, equities, and private markets. Sourced, timestamped,
+        methodology-linked. Updated daily.
+      </p>
+
+      <div className="hero__ctas">
+        <a href="/intelligence/" className="primary-btn primary-btn--lg">
+          Open Intelligence Terminal &rarr;
+        </a>
+        <Link href="/opportunities" className="secondary-btn secondary-btn--lg">
+          Scan {totalOpportunities} Opportunities
+        </Link>
+      </div>
+
+      <RegimeStrip
+        totalOpportunities={totalOpportunities}
+        nearestDeadline={nearestDeadline}
+        topYield={topYield}
+      />
     </div>
   );
 }
 
 /* ─── HeroSection (main export) ─── */
 
-/** Data-dense hero with live pipeline intelligence pulse strip. */
-export default function HeroSection() {
+export default function HeroSection({
+  totalOpportunities,
+  topOpportunities,
+  nearestDeadline,
+  topYield,
+}: HeroProps) {
   return (
-    <section className="min-h-[75vh] flex flex-col justify-center max-w-6xl mx-auto px-6">
-      <h1 className="text-5xl md:text-7xl lg:text-[80px] font-semibold tracking-tighter leading-[1.05]">
-        <span className="text-text-primary">Follow the money</span>
-        <br />
-        <span className="text-text-secondary">that cannot lie.</span>
-      </h1>
-      <LivePulseStrip items={LIVE_PULSE_DATA} />
-      <HeroButtons />
+    <section className="hero hero--split">
+      <div className="hero__inner">
+        <HeroLeft
+          totalOpportunities={totalOpportunities}
+          nearestDeadline={nearestDeadline}
+          topYield={topYield}
+        />
+        <ConvictionLadder
+          opportunities={topOpportunities}
+          totalOpportunities={totalOpportunities}
+        />
+      </div>
     </section>
   );
 }

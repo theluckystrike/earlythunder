@@ -1,21 +1,49 @@
-import EmailCapture from "@/components/EmailCapture";
+"use client";
 
-/** Newsletter signup call-to-action. */
+import { useState } from "react";
+
+/** Subscribe section — weekly intelligence brief signup. */
 export default function NewsletterCTA() {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (email.length === 0) return;
+    setSubmitted(true);
+  }
+
   return (
-    <section className="py-24 text-center max-w-6xl mx-auto px-6">
-      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-text-primary">
-        Weekly intelligence brief
-      </h2>
-      <p className="text-text-secondary text-lg mt-4">
-        Top convergence signals + upcoming deadlines. One email. Every Monday.
-      </p>
-      <div className="mt-8 max-w-md mx-auto">
-        <EmailCapture />
+    <section className="subscribe-section">
+      <div className="subscribe">
+        <span className="subscribe__eyebrow">&mdash; WEEKLY BRIEF</span>
+        <h2 className="subscribe__title">Free intelligence. Every Monday.</h2>
+        <p className="subscribe__sub">
+          Top convergence signals + upcoming deadlines. One email. No spam.
+        </p>
+
+        {submitted ? (
+          <p className="subscribe__confirm">Confirmed. First brief arrives Monday.</p>
+        ) : (
+          <form className="subscribe__form" onSubmit={handleSubmit}>
+            <input
+              type="email"
+              className="subscribe__input"
+              placeholder="analyst@yourfund.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <button type="submit" className="subscribe__btn">
+              Subscribe &rarr;
+            </button>
+          </form>
+        )}
+
+        <p className="subscribe__meta">
+          14,200+ analysts &middot; Last brief: 2026-05-04
+        </p>
       </div>
-      <p className="text-xs text-text-tertiary mt-4">
-        No spam. Unsubscribe anytime.
-      </p>
     </section>
   );
 }

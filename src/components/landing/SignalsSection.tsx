@@ -1,92 +1,65 @@
-import Link from "next/link";
+/* SignalsExplainer — 8-signal methodology grid. Server Component. */
+
+/* ─── Data ─── */
 
 interface Signal {
+  readonly n: string;
   readonly name: string;
-  readonly hint: string;
-  readonly weight: string;
-  readonly href: string;
-  readonly external: boolean;
+  readonly desc: string;
+  readonly source: string;
 }
 
 const SIGNALS: readonly Signal[] = [
-  { name: "Toy Phase", hint: "Pre-hype asymmetry", weight: "12.5%", href: "/opportunities", external: false },
-  { name: "Working Code", hint: "Deployed technology", weight: "12.5%", href: "/opportunities", external: false },
-  { name: "Community", hint: "Organic user growth", weight: "12.5%", href: "/opportunities", external: false },
-  { name: "Dev Activity", hint: "Active contributors", weight: "12.5%", href: "/opportunities", external: false },
-  { name: "Smart Money", hint: "Capital inflows", weight: "12.5%", href: "/intelligence/", external: true },
-  { name: "Narrative", hint: "Viral story potential", weight: "12.5%", href: "/blog", external: false },
-  { name: "Earnings Yield", hint: "Revenue vs market cap", weight: "12.5%", href: "/earnings/", external: true },
-  { name: "Catalyst", hint: "Near-term triggers", weight: "12.5%", href: "/deadlines/", external: true },
+  { n: "01", name: "Toy Phase", desc: "Pre-hype asymmetry", source: "Github stars x Discord growth, < 10k DAU window" },
+  { n: "02", name: "Working Code", desc: "Deployed technology", source: "Mainnet TVL >= $10M sustained 30d" },
+  { n: "03", name: "Community", desc: "Organic user growth", source: "Twitter velocity / paid CPI < 0.4" },
+  { n: "04", name: "Dev Activity", desc: "Active contributors", source: "GH commits 30d / 30 unique authors" },
+  { n: "05", name: "Smart Money", desc: "Capital inflows", source: "Nansen smart wallets net flow 14d" },
+  { n: "06", name: "Narrative", desc: "Viral story potential", source: "Tier-1 founder mentions, mindshare delta" },
+  { n: "07", name: "Earnings Yield", desc: "Revenue vs market cap", source: "Annualized fees / FDV >= 25%" },
+  { n: "08", name: "Catalyst", desc: "Near-term triggers", source: "Token unlock, mainnet, governance vote" },
 ] as const;
 
-/** Scoring methodology at a glance — 8 signals with weights. */
-export default function SignalsSection() {
+/* ─── SignalCell ─── */
+
+function SignalCell({ signal }: { readonly signal: Signal }) {
   return (
-    <section className="py-20 max-w-6xl mx-auto px-6">
-      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-text-primary">
-        How We Score: 8 Signals
-      </h2>
-      <p className="text-text-secondary text-lg mt-4">
-        Every opportunity is scored across 8 dimensions. Combined score determines conviction.
-      </p>
-      <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-3">
-        {SIGNALS.map((signal, index) => (
-          <SignalCard
-            key={signal.name}
-            number={String(index + 1).padStart(2, "0")}
-            signal={signal}
-          />
-        ))}
+    <div className="signal">
+      <div className="signal__top">
+        <span className="signal__n">{signal.n}</span>
+        <span className="signal__weight">12.5%</span>
       </div>
-      <div className="mt-8">
-        <Link
-          href="/opportunities"
-          className="text-text-secondary hover:text-text-primary text-sm transition"
-        >
-          View all 172 scored opportunities &rarr;
-        </Link>
+      <h3 className="signal__name">{signal.name}</h3>
+      <p className="signal__desc">{signal.desc}</p>
+      <div className="signal__source">
+        <span className="signal__source-label">SOURCE</span>
+        <span className="signal__source-text">{signal.source}</span>
       </div>
-    </section>
+    </div>
   );
 }
 
-function SignalCard({
-  number,
-  signal,
-}: {
-  readonly number: string;
-  readonly signal: Signal;
-}) {
-  const classes =
-    "group block bg-bg-card rounded-xl p-4 md:p-5 border border-border hover:border-accent transition-colors";
+/* ─── Main Export ─── */
 
-  const content = (
-    <>
-      <div className="flex items-center justify-between">
-        <span className="text-text-tertiary font-mono text-xs">{number}</span>
-        <span className="text-text-tertiary font-mono text-xs">{signal.weight}</span>
-      </div>
-      <h3 className="text-text-primary text-sm font-semibold mt-2 tracking-tight flex items-center justify-between">
-        {signal.name}
-        <span className="opacity-0 group-hover:opacity-100 transition-opacity text-accent">
-          &rarr;
-        </span>
-      </h3>
-      <p className="text-text-tertiary text-xs mt-1">{signal.hint}</p>
-    </>
-  );
-
-  if (signal.external) {
-    return (
-      <a href={signal.href} className={classes}>
-        {content}
-      </a>
-    );
-  }
-
+export default function SignalsSection() {
   return (
-    <Link href={signal.href} className={classes}>
-      {content}
-    </Link>
+    <section className="signals-section">
+      <div className="signals-section__header">
+        <span className="signals-section__eyebrow">05 — METHODOLOGY</span>
+        <h2 className="signals-section__title">How we score: 8 signals</h2>
+        <p className="signals-section__sub">
+          Every opportunity is scored across 8 dimensions, equally weighted at
+          12.5%. Combined score determines conviction.
+        </p>
+        <a href="/methodology" className="signals-section__link">
+          Read full methodology &rarr;
+        </a>
+      </div>
+      <div className="signals">
+        {SIGNALS.map((s) => (
+          <SignalCell key={s.n} signal={s} />
+        ))}
+      </div>
+    </section>
   );
 }
