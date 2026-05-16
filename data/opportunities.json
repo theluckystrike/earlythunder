@@ -3040,40 +3040,41 @@
     "slug": "bittensor",
     "name": "Bittensor",
     "ticker": "TAO",
-    "category": "AI x Crypto",
+    "category": "AI Infrastructure",
     "asset_class": "digital_assets",
     "tier": 2,
-    "composite_score": 69.5,
-    "one_liner": "Decentralized network where AI models compete for rewards via subnet mining, with 128+ active subnets and a Grayscale ETF filing.",
-    "thesis": "Bittensor has shipped working infrastructure with 128+ active subnets and is expanding the cap to 256 in 2026. The December 2025 halving cut emissions to 3,600 TAO/day, creating genuine scarcity dynamics. 70% of TAO is staked, indicating strong holder conviction, and validators are up 34% month-over-month.\n\nThe institutional narrative is accelerating. Grayscale holds a 43% allocation and has filed an S-1 for a TAO spot ETF on NYSE. A European Staked TAO ETP launched on SIX Swiss Exchange in April 2026. Jensen Huang's endorsement of the decentralized AI thesis adds mainstream credibility.\n\nThe key tension is the subsidy-to-revenue ratio of 22-40:1. Real revenue is $3-15M annually against ~$148M in emission subsidies. The Covenant AI exit also exposed governance centralization risks. However, the subnet expansion, post-halving supply shock, and ETF catalyst create a compelling setup for 2026-2027.\n\nAt ~$2.6B market cap with a pending ETF, Bittensor is priced for the AI x Crypto thesis to gain mainstream adoption. The 8-signal pattern strongly favors accumulation at current levels.",
+    "composite_score": 80,
+    "one_liner": "Decentralized AI compute network with 60+ subnets and CLI-accessible staking",
+    "thesis": "Bittensor powers decentralized AI inference across 60+ specialized subnets. Top-50 crypto by market cap. Staking yields 5-30% APY via delegation. dTAO upgrade enables dynamic subnet alpha staking.\n\nThe institutional narrative is accelerating. Grayscale holds a 43% allocation and has filed an S-1 for a TAO spot ETF on NYSE. A European Staked TAO ETP launched on SIX Swiss Exchange in April 2026. Jensen Huang's endorsement of the decentralized AI thesis adds mainstream credibility.\n\nThe December 2025 halving cut emissions to 3,600 TAO/day, creating genuine scarcity dynamics. 70% of TAO is staked, indicating strong holder conviction, and validators are up 34% month-over-month. The dTAO dynamic staking upgrade is now live, enabling more granular subnet-level alpha exposure.",
     "signals": {
       "working_code": 90,
-      "community": 85,
-      "dev_activity": 88,
+      "dev_activity": 85,
       "smart_money": 80,
+      "community": 75,
+      "catalyst": 70,
       "narrative": 85,
-      "catalyst": 82,
-      "valuation_gap": 18,
-      "obscurity": 25
+      "valuation_gap": 65,
+      "obscurity": 35
     },
     "catalysts": [
-      "Grayscale TAO spot ETF approval pending (S-1 filed on NYSE)",
-      "Subnet expansion from 128 to 256 planned for 2026",
-      "Post-halving supply shock (Dec 2025 cut to 3,600 TAO/day)",
-      "European Staked TAO ETP live on SIX Swiss Exchange"
+      "dTAO dynamic staking live",
+      "Subnet expansion",
+      "AI narrative growth",
+      "Enterprise adoption",
+      "Grayscale TAO spot ETF approval pending (S-1 filed on NYSE)"
     ],
     "risks": [
-      "Subsidy-to-revenue ratio of 22-40:1 raises sustainability questions",
-      "Covenant AI exit exposed governance centralization vulnerabilities",
-      "No formal security audit; $8M exploit occurred July 2024",
-      "Unilateral network halt during hack raises decentralization concerns"
+      "GPU-intensive mining favors large operators",
+      "Subnet quality varies widely",
+      "Regulatory uncertainty for AI tokens",
+      "Subsidy-to-revenue ratio of 22-40:1 raises sustainability questions"
     ],
     "related_slugs": [
       "render-network",
       "akash-network",
       "eigenlayer"
     ],
-    "updated_at": "2026-04-13T00:00:00Z",
+    "updated_at": "2026-05-16T16:00:00Z",
     "is_graveyard": false,
     "citations": [
       {
@@ -3255,8 +3256,8 @@
       "research": 2,
       "github": 1
     },
-    "valuation_gap_score": 18,
-    "obscurity_score": 25,
+    "valuation_gap_score": 65,
+    "obscurity_score": 35,
     "on_chain": null,
     "insider_activity": null,
     "team": null,
@@ -14811,72 +14812,80 @@
     "slug": "hyperliquid",
     "name": "Hyperliquid",
     "ticker": "$HYPE",
-    "category": "Perp DEX",
+    "category": "Perpetual DEX",
     "asset_class": "digital_assets",
     "tier": 1,
-    "composite_score": 88.0,
-    "one_liner": "Category-defining perp DEX commanding 70% of on-chain perpetual volume with $700M+ annualized revenue, $5.07B TVL, and the most successful community airdrop in crypto history.",
-    "thesis": "Hyperliquid is the dominant on-chain perpetual trading platform, processing $180B/month in volume and commanding ~70% of all on-chain perp market share. The protocol generates $700M+ in annualized revenue, making it one of the most profitable DeFi protocols in existence.\n\nHYPE trades at $43.74 with a $10.43B market cap (rank #12), having pulled back 26% from its $59.30 ATH. TVL stands at $5.07B with +5.5% 7-day growth, indicating continued capital accumulation. The smart money score is 57 (WATCH), with TVL momentum, ATH value gap, and mild accumulation signals all positive.\n\nThe protocol pioneered the massive community airdrop model, distributing tokens worth billions to early users. This created a blueprint that Paradex, Lighter, and other perp DEXs are now replicating. Hyperliquid's HyperEVM expansion enables general-purpose smart contracts on top of the high-performance trading layer.\n\nAt current prices, HYPE represents a blue-chip DeFi position with strong revenue fundamentals and network effects. The key question is whether the 70% market share is sustainable as competitors aggressively airdrop to steal users.",
+    "composite_score": 92,
+    "one_liner": "Leading perpetual DEX with 428M HYPE remaining for community distribution",
+    "thesis": "Hyperliquid dominates on-chain perpetuals with $14B+ remaining rewards. HyperEVM ecosystem growing with 6+ DeFi protocols. 21Shares ETF (THYP) launched May 12. HIP-4 prediction markets live.\n\nThe protocol has rapidly captured market share in the perpetual futures space, offering a vertically integrated order book with sub-second latency. Season 3 airdrop distribution of 428M HYPE tokens represents one of the largest remaining community incentive programs in crypto.\n\nInstitutional validation arrived with 21Shares launching the first US spot Hyperliquid ETF (THYP) on May 12, recording $1.8M in day-one volume. HIP-4 prediction markets went live May 2, positioning Hyperliquid as a direct competitor to Polymarket within its own ecosystem.\n\nThe HyperEVM layer enables composable DeFi applications including Felix (feUSD stablecoin), HyperLend, and multiple yield protocols. This creates a flywheel where trading activity generates fees that fund ecosystem growth.",
     "signals": {
       "working_code": 95,
-      "dev_activity": 85,
-      "smart_money": 80,
+      "dev_activity": 90,
+      "smart_money": 95,
       "community": 90,
-      "catalyst": 80,
-      "narrative": 90,
-      "valuation_gap": 70,
+      "catalyst": 95,
+      "narrative": 85,
+      "valuation_gap": 80,
       "obscurity": 30
     },
     "catalysts": [
-      "$700M+ annualized revenue with 70% market share in on-chain perps",
-      "HyperEVM expansion enables general-purpose smart contracts on trading infrastructure",
-      "TVL growing +5.5% weekly to $5.07B signals continued capital accumulation"
+      "Season 3 airdrop (428M HYPE)",
+      "21Shares HYPE ETF institutional inflows",
+      "HIP-4 prediction markets expansion",
+      "Felix feUSD stablecoin launch"
     ],
     "risks": [
-      "70% market share may be peak; aggressive competitor airdrops (Paradex, Lighter) eroding share",
-      "26% below ATH suggests market has partially de-rated the growth story",
-      "Concentrated platform risk if a major exploit or liquidation cascade occurs"
+      "Concentrated validator set",
+      "Regulatory scrutiny on perp DEXs",
+      "Token inflation from distributions"
     ],
     "related_slugs": [
       "paradex"
     ],
     "citations": [
       {
-        "claim": "Price $43.74, mcap $10.43B, rank #12, ATH $59.30, -26.2% from ATH",
-        "source": "EarlyThunder Smart Money Scanner",
-        "url": "",
-        "type": "data"
+        "claim": "21Shares launched the first US spot Hyperliquid ETF (THYP) on May 12 with $1.8M day-one volume",
+        "source": "21Shares",
+        "url": "https://21shares.com",
+        "type": "news"
       },
       {
-        "claim": "TVL $5.07B with +5.5% 7d growth; smart money score 57",
-        "source": "EarlyThunder Smart Money Scanner",
-        "url": "",
-        "type": "data"
+        "claim": "HIP-4 prediction markets went live May 2",
+        "source": "Hyperliquid Foundation",
+        "url": "https://hyperliquid.xyz",
+        "type": "official"
       },
       {
-        "claim": "70% on-chain perp market share, $180B/month volume, $700M+ annualized revenue",
-        "source": "Sprint 3 Alpha Hunt",
-        "url": "",
-        "type": "research"
+        "claim": "428M HYPE remaining for community distribution in Season 3",
+        "source": "Hyperliquid Foundation",
+        "url": "https://hyperliquid.xyz",
+        "type": "official"
+      },
+      {
+        "claim": "HyperEVM ecosystem with 6+ DeFi protocols including Felix feUSD",
+        "source": "DeFi Llama",
+        "url": "https://defillama.com/chain/Hyperliquid",
+        "type": "data"
       }
     ],
-    "updated_at": "2026-05-10",
+    "updated_at": "2026-05-16T16:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 43.74,
+    "current_price_usd": 44.01,
     "market_cap_usd": 10425161495,
     "volume_24h_usd": 238681440,
     "citation_types": {
-      "data": 2,
-      "research": 1
+      "news": 1,
+      "official": 2,
+      "data": 1
     },
-    "valuation_gap_score": 70,
+    "valuation_gap_score": 80,
     "obscurity_score": 30,
     "on_chain": null,
     "insider_activity": null,
     "team": null,
     "tokenomics": null,
     "competitive": null,
-    "fdv": null,
+    "fdv": "$14B+",
     "circulating_pct": null,
     "tvl": "$5.07B",
     "fees_30d": null,
@@ -15132,31 +15141,32 @@
     "slug": "polymarket",
     "name": "Polymarket",
     "ticker": null,
-    "category": "Prediction Market",
+    "category": "Prediction Markets",
     "asset_class": "digital_assets",
     "tier": 1,
-    "composite_score": 82.0,
-    "one_liner": "Largest prediction market platform with $4.9B+ volume in 2026, 1.35M+ active traders, POLY token confirmed by CMO, and highest-conviction tokenless airdrop opportunity.",
-    "thesis": "Polymarket is the dominant prediction market platform, processing $4.9B+ in trading volume in 2026 alone with 1.35M+ active traders. The platform achieved mainstream recognition during the 2024 election cycle and has maintained strong volume across sports, politics, crypto, and cultural events.\n\nThe POLY token has been confirmed by Polymarket's CMO, with trademark filings detected in February 2026. TGE is planned after U.S. platform relaunch but no official date has been confirmed. Galaxy Digital is a known VC backer, and the platform's $9B valuation positions it as potentially the largest tokenless airdrop in crypto history.\n\nAn active points program rewards resting limit orders with daily USDC incentives, a $5M+ sports liquidity incentive program launched April 2026, and Time-Weighted Open Interest gives 2x multiplier for positions held 72+ hours. The algorithm penalizes wash-trading bots, favoring genuine traders.\n\nMultiple analysts rate this as the highest expected-value airdrop farming opportunity of 2026. Consistent 6-month farming with $200-500 could yield $2,000-10,000+ based on Hyperliquid/Lighter precedent.\n\nKey risk: Token may never launch, and the prediction market regulatory landscape is uncertain.",
+    "composite_score": 88,
+    "one_liner": "Dominant prediction market with confirmed token and $1B+ weekly volume",
+    "thesis": "CMO confirmed POLY token. V2 launched Apr 28 with pUSD collateral. Weekly volume exceeds $1B. LP rewards pay $30-80/day on $10K. CLARITY Act passage (73% odds) could catalyze token launch.\n\nPolymarket has established itself as the dominant prediction market platform, consistently exceeding $1B in weekly trading volume. The platform's V2 upgrade introduced pUSD as native collateral, improving capital efficiency and composability.\n\nThe confirmed POLY token represents a major catalyst. With the platform already generating substantial volume and revenue, a token launch would enable value accrual to participants and create one of the largest retroactive distribution events in DeFi history.\n\nThe CLARITY Act clearing committee with 73% passage odds on the platform itself creates a recursive catalyst. Regulatory clarity would legitimize prediction markets as a category, directly benefiting Polymarket as the category leader.",
     "signals": {
       "working_code": 90,
-      "dev_activity": 75,
-      "smart_money": 85,
-      "community": 90,
-      "catalyst": 80,
-      "narrative": 85,
-      "valuation_gap": 75,
-      "obscurity": 35
+      "dev_activity": 85,
+      "smart_money": 90,
+      "community": 95,
+      "catalyst": 90,
+      "narrative": 95,
+      "valuation_gap": 85,
+      "obscurity": 25
     },
     "catalysts": [
-      "POLY token confirmed by CMO with trademark filings Feb 2026; TGE expected after U.S. relaunch",
-      "$4.9B+ volume in 2026 with 1.35M+ active traders at $9B valuation",
-      "Active $5M+ sports liquidity incentive program with USDC rewards and Time-Weighted Open Interest scoring"
+      "POLY token launch Q3-Q4 2026",
+      "CLARITY Act passage",
+      "V2 volume growth",
+      "Perpetual futures expansion"
     ],
     "risks": [
-      "Token launch timing uncertain; may be delayed indefinitely by regulatory concerns",
-      "Prediction market regulatory landscape evolving; CFTC oversight could restrict operations",
-      "Post-election volume decline could reduce platform relevance and valuation"
+      "Regulatory risk (CFTC)",
+      "Token mechanics unknown",
+      "Competition from HIP-4 on Hyperliquid"
     ],
     "related_slugs": [
       "farcaster",
@@ -15164,35 +15174,42 @@
     ],
     "citations": [
       {
-        "claim": "$4.9B volume, POLY confirmed by CMO, Galaxy Digital backer, $9B valuation",
-        "source": "Sprint 3 Alpha Hunt / EarlyThunder Convergence",
-        "url": "",
-        "type": "research"
+        "claim": "CMO confirmed POLY token",
+        "source": "Polymarket CMO interview",
+        "url": "https://polymarket.com",
+        "type": "official"
       },
       {
-        "claim": "Convergence level 1 target with conviction score 35, airdrop score 80/100",
-        "source": "EarlyThunder Convergence Detector",
-        "url": "",
+        "claim": "V2 launched Apr 28 with pUSD collateral",
+        "source": "Polymarket Blog",
+        "url": "https://polymarket.com/blog",
+        "type": "official"
+      },
+      {
+        "claim": "Weekly volume exceeds $1B",
+        "source": "Dune Analytics",
+        "url": "https://dune.com/rchen8/polymarket",
         "type": "data"
       },
       {
-        "claim": "$5M+ sports incentive program, Time-Weighted Open Interest 2x multiplier, wash-trade penalties",
-        "source": "Sprint 3 Alpha Hunt",
+        "claim": "CLARITY Act cleared Senate Banking Committee 15-9 on May 14",
+        "source": "Congressional Record",
         "url": "",
-        "type": "research"
+        "type": "news"
       }
     ],
-    "updated_at": "2026-05-10",
+    "updated_at": "2026-05-16T16:00:00Z",
     "is_graveyard": false,
     "current_price_usd": null,
     "market_cap_usd": null,
     "volume_24h_usd": null,
     "citation_types": {
-      "research": 2,
-      "data": 1
+      "official": 2,
+      "data": 1,
+      "news": 1
     },
-    "valuation_gap_score": 75,
-    "obscurity_score": 35,
+    "valuation_gap_score": 85,
+    "obscurity_score": 25,
     "on_chain": null,
     "insider_activity": null,
     "team": null,
@@ -15370,5 +15387,173 @@
     "last_github_commit": null,
     "google_trends_interest": null,
     "free_access": true
+  },
+  {
+    "name": "MegaETH",
+    "ticker": "MEGA",
+    "category": "Layer 2",
+    "asset_class": "digital_assets",
+    "tier": 2,
+    "composite_score": 75,
+    "one_liner": "Real-time blockchain with 10ms latency and Terminal Season 1 farming live",
+    "thesis": "MegaETH mainnet live since Feb 9. 100K TPS capability. Terminal Season 1 ends Jun 23 with 250M MEGA rewards. Token at ATL ($0.097) after 55% decline from ATH.\n\nMegaETH represents a new approach to Layer 2 scaling, achieving real-time transaction processing with sub-10ms latency. The architecture processes 100,000 transactions per second, orders of magnitude faster than existing L2s.\n\nTerminal Season 1 is the active farming program distributing 250M MEGA tokens to early ecosystem participants. The season ends June 23, creating urgency for participants and a clear timeline for the token distribution event.\n\nThe token trading at all-time lows after a 55% decline from ATH presents a contrarian entry point. The technology is live and functional, with the price decline primarily driven by broader market conditions rather than fundamental deterioration.",
+    "signals": {
+      "working_code": 85,
+      "dev_activity": 80,
+      "smart_money": 70,
+      "community": 65,
+      "catalyst": 80,
+      "narrative": 75,
+      "valuation_gap": 70,
+      "obscurity": 40
+    },
+    "catalysts": [
+      "Terminal Season 1 ends Jun 23",
+      "Ecosystem app launches",
+      "Developer tooling improvements"
+    ],
+    "risks": [
+      "Token at ATL - potential further decline",
+      "Early-stage ecosystem",
+      "Competition from established L2s"
+    ],
+    "related_slugs": [
+      "hyperliquid",
+      "berachain"
+    ],
+    "citations": [
+      {
+        "claim": "MegaETH mainnet live since Feb 9 with 100K TPS and 10ms latency",
+        "source": "MegaETH Foundation",
+        "url": "https://megaeth.systems",
+        "type": "official"
+      },
+      {
+        "claim": "Terminal Season 1 distributing 250M MEGA rewards, ends Jun 23",
+        "source": "MegaETH Blog",
+        "url": "https://megaeth.systems/blog",
+        "type": "official"
+      },
+      {
+        "claim": "MEGA token at ATL ($0.097) after 55% decline from ATH",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/megaeth",
+        "type": "data"
+      }
+    ],
+    "updated_at": "2026-05-16T16:00:00Z",
+    "is_graveyard": false,
+    "slug": "megaeth",
+    "current_price_usd": 0.097,
+    "market_cap_usd": null,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "official": 2,
+      "data": 1
+    },
+    "valuation_gap_score": 70,
+    "obscurity_score": 40,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null,
+    "free_access": null
+  },
+  {
+    "name": "Berachain",
+    "ticker": "BERA",
+    "category": "Layer 1",
+    "asset_class": "digital_assets",
+    "tier": 3,
+    "composite_score": 65,
+    "one_liner": "Proof of Liquidity L1 with $3.2B TVL but token down 97% from ATH",
+    "thesis": "Berachain's PoL flywheel attracts massive TVL ($3.2B) despite BERA price collapse. BBB strategic pivot to revenue model. Infrared iBGT vaults at ~270% APR. Extreme TVL/market cap divergence ($3.2B vs $97M).\n\nThe Proof of Liquidity consensus mechanism creates a unique flywheel where validators must provide liquidity to earn BGT emissions. This has attracted $3.2B in TVL, making the TVL-to-market-cap ratio one of the most extreme in all of DeFi.\n\nThe BBB (Build a Bear) strategic pivot signals a transition from pure ecosystem incentives to a revenue-generating model. This could address the core bear case that high emissions are diluting token value without creating sustainable revenue.\n\nInfrared's iBGT vaults offer approximately 270% APR, though the non-redeemable nature of iBGT and unsustainability of emissions rates are significant risks. The 97% price decline from ATH is either a deep value opportunity or a reflection of fundamental problems with the tokenomics model.\n\nThe preconfirmation system targeting 200ms transaction latency represents a meaningful technical upgrade that could improve user experience and attract more applications to the ecosystem.",
+    "signals": {
+      "working_code": 80,
+      "dev_activity": 75,
+      "smart_money": 60,
+      "community": 70,
+      "catalyst": 65,
+      "narrative": 60,
+      "valuation_gap": 90,
+      "obscurity": 30
+    },
+    "catalysts": [
+      "BBB app acquisitions",
+      "Preconfirmation system (200ms latency)",
+      "TVL/mcap convergence",
+      "BGT flywheel maturation"
+    ],
+    "risks": [
+      "97% price decline signals deep problems",
+      "iBGT non-redeemable",
+      "Unsustainable APR emissions"
+    ],
+    "related_slugs": [
+      "megaeth"
+    ],
+    "citations": [
+      {
+        "claim": "Berachain TVL at $3.2B with Proof of Liquidity consensus",
+        "source": "DeFi Llama",
+        "url": "https://defillama.com/chain/Berachain",
+        "type": "data"
+      },
+      {
+        "claim": "BERA token down 97% from ATH, market cap $97M",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/berachain",
+        "type": "data"
+      },
+      {
+        "claim": "Infrared iBGT vaults at ~270% APR",
+        "source": "Infrared Finance",
+        "url": "https://infrared.finance",
+        "type": "data"
+      },
+      {
+        "claim": "BBB strategic pivot to revenue model",
+        "source": "Berachain Blog",
+        "url": "https://blog.berachain.com",
+        "type": "official"
+      }
+    ],
+    "updated_at": "2026-05-16T16:00:00Z",
+    "is_graveyard": false,
+    "slug": "berachain",
+    "current_price_usd": 0.3714,
+    "market_cap_usd": 97000000,
+    "volume_24h_usd": null,
+    "citation_types": {
+      "data": 3,
+      "official": 1
+    },
+    "valuation_gap_score": 90,
+    "obscurity_score": 30,
+    "on_chain": null,
+    "insider_activity": null,
+    "team": null,
+    "tokenomics": null,
+    "competitive": null,
+    "fdv": null,
+    "circulating_pct": null,
+    "tvl": null,
+    "fees_30d": null,
+    "holders": null,
+    "github_stars": null,
+    "github_contributors": null,
+    "last_github_commit": null,
+    "google_trends_interest": null,
+    "free_access": null
   }
 ]

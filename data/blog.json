@@ -280,5 +280,20 @@
       "infrastructure",
       "stablecoins"
     ]
+  },
+  {
+    "slug": "sprint-17-market-intelligence-may-2026",
+    "title": "Sprint 17 Market Intelligence: THORChain Exploit, CLARITY Act, and the Great DAI Migration",
+    "excerpt": "Our latest intelligence sweep reveals critical security incidents, a landmark regulatory vote, and the end of an era for DAI. Here's what you need to know.",
+    "content": "## Key Findings from Sprint 17\n\n### Critical Security Events\n\nTHORChain suffered a $10.8M cross-chain exploit on May 15, 2026, affecting BTC, ETH, BSC, and Base chains. The attack exploited a GG20 threshold signature scheme vulnerability from a churned validator's leaked key fragments. RUNE dropped 12% and trading is halted.\n\nApril 2026 was the worst month in crypto security history with $651M stolen across 30 exploits. DPRK-linked groups were responsible for 76% of losses, now using AI-assisted target selection.\n\n### The DAI Migration\n\nThe DAI to USDS migration deadline passed on May 11. Coinbase delisted DAI on May 4 with auto-conversion to USDS. The sDAI savings rate has dropped from 8% to just 1.25% APY. All positions should be migrated to sUSDS immediately.\n\n### CLARITY Act Passes Committee\n\nThe CLARITY Act cleared the Senate Banking Committee 15-9 on May 14, with two Democrats crossing party lines. This landmark bill defines which crypto assets are commodities vs securities. The White House wants it signed by July 4.\n\n### Hyperliquid Goes Institutional\n\n21Shares launched the first US spot Hyperliquid ETF (THYP) on May 12, with $1.8M day-one volume. HIP-4 prediction markets went live May 2, positioning Hyperliquid as a direct Polymarket competitor.\n\n### New Opportunities\n\n- MegaETH Terminal Season 1 farming (ends Jun 23)\n- Polymarket V2 with pUSD collateral\n- Berachain BBB strategic pivot\n- MCP server ecosystem for autonomous DeFi\n- Bittensor CLI staking (5-30% APY)\n\n### Market Sentiment\n\nBTC at $78,433 with Fear & Greed at 45 (trending toward fear). BTC ETF outflows hit $1B weekly — worst since January. PPI inflation at +6% above expectations. Risk-off environment suggests caution on leverage.",
+    "published_at": "2026-05-16T16:00:00Z",
+    "author": "Early Thunder Research",
+    "tags": [
+      "market-intelligence",
+      "security",
+      "regulation",
+      "defi",
+      "sprint-17"
+    ]
   }
 ]
