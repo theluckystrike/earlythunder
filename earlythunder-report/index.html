@@ -264,77 +264,290 @@ width:12px;height:12px;border-radius:50%;background:var(--cyan);border:2px solid
 
 <!-- TAB 1: COMMAND CENTER -->
 <div class="tab-content active" id="tab-command">
+
+<!-- SPRINT 26 STATUS BANNER -->
+<div class="section" style="border:2px solid var(--cyan);border-radius:var(--radius-lg);padding:1.5rem;background:linear-gradient(135deg,rgba(0,240,255,.03),rgba(170,68,255,.03))">
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+<div>
+<h2 style="font-family:var(--mono);color:var(--cyan);font-size:1.1rem;margin-bottom:.3rem">SPRINT 26 COMPLETE</h2>
+<p style="color:var(--text2);font-size:.82rem">2026-05-23 &bull; 19/20 agents &bull; 58,190 tokens &bull; $0.012 cost &bull; 212.5s runtime</p>
+</div>
+<div style="display:flex;gap:.5rem;flex-wrap:wrap">
+<span class="badge badge--buy" style="font-size:.7rem">F&amp;G: 28 (Fear)</span>
+<span class="badge" style="background:var(--green);color:#000;font-size:.7rem">RISK_ON_EXPANDING</span>
+<span class="badge" style="background:var(--purple);color:#fff;font-size:.7rem">$321.8B Stablecoin Mcap (+3.6%)</span>
+</div>
+</div>
+</div>
+
+<!-- CRITICAL ALERTS -->
 <div class="section">
-<h2 class="section-title">Key Metrics</h2>
+<h2 class="section-title section-title--red">P0 &mdash; CRITICAL ALERTS (Act Today)</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Alert</th><th>Deadline</th><th>Impact</th><th>Source</th></tr></thead>
+<tbody>
+<tr style="background:rgba(255,51,85,.1)"><td style="font-weight:700;color:var(--red)">WITHDRAW ALL Symbiotic deposits</td><td>May 22 23:59 UTC</td><td>$4.2M exploit confirmed &mdash; reentrancy via custom AVS callback</td><td>A10</td></tr>
+<tr style="background:rgba(255,51,85,.08)"><td style="font-weight:700;color:var(--red)">WITHDRAW ALL Fluid (Arbitrum) deposits</td><td>May 23 12:00 UTC</td><td>$850K exploit &mdash; oracle manipulation via flash loan</td><td>A10</td></tr>
+<tr style="background:rgba(255,51,85,.06)"><td style="font-weight:700;color:var(--red)">CLAIM $PLUME &mdash; Plume Network S2</td><td style="color:var(--red)">May 27 (4 days)</td><td>Claimable NOW &mdash; expires in 4 days</td><td>A04</td></tr>
+<tr style="background:rgba(255,51,85,.06)"><td style="font-weight:700;color:var(--red)">CLAIM $DROPEE</td><td style="color:var(--red)">May 27 (4 days)</td><td>Claimable NOW &mdash; expires in 4 days</td><td>A04</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- URGENT ALERTS -->
+<div class="section">
+<h2 class="section-title section-title--yellow">P1 &mdash; URGENT (This Week)</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Alert</th><th>Deadline</th><th>Detail</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td style="color:var(--yellow)">BUY $INST before FIP-13 vote</td><td>May 25</td><td>Fluid token merger vote &mdash; 3x&ndash;10x if passes (INST at $0.42)</td><td>A07</td></tr>
+<tr><td style="color:var(--yellow)">CLAIM $GRASS Season 2</td><td>May 31 (8 days)</td><td>Claimable NOW</td><td>A04</td></tr>
+<tr><td style="color:var(--yellow)">CLAIM $BASED &mdash; BasedApp</td><td>June 4 (12 days)</td><td>Claimable NOW</td><td>A04</td></tr>
+<tr><td style="color:var(--yellow)">Accumulate REZ before EigenLayer slashing</td><td>June 1</td><td>Slashing mainnet launch &mdash; catalyst for restaking narrative</td><td>A04</td></tr>
+<tr><td style="color:var(--yellow)">FUND testnet wallets</td><td>Immediate</td><td>Pharos, Somnia, MegaETH faucets &mdash; A11 running 0 txs (zero balances)</td><td>A11</td></tr>
+<tr><td style="color:var(--yellow)">CLARITY Act house floor vote</td><td>June 15</td><td>72% Polymarket odds &mdash; most impactful regulatory event for portfolio</td><td>A08</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- HIGH PRIORITY OPPORTUNITIES -->
+<div class="section">
+<h2 class="section-title section-title--green">P2 &mdash; HIGH PRIORITY (This Sprint)</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Action</th><th>EV Estimate</th><th>Capital</th><th>Time</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td style="color:var(--green)">Deploy Citrea testnet node</td><td>$5,000&ndash;$15,000</td><td>$0</td><td>2-3h setup</td><td>A09</td></tr>
+<tr><td style="color:var(--green)">Deploy edgeX L1 DePIN node</td><td>$3,000&ndash;$10,000</td><td>$0&ndash;$500</td><td>1h setup</td><td>A09</td></tr>
+<tr><td style="color:var(--green)">Join Commonware Discord + clone monorepo</td><td>$20,000&ndash;$50,000</td><td>$0</td><td>4-8h total</td><td>A07</td></tr>
+<tr><td style="color:var(--green)">Investigate GMX (86/100) + GNS (88/100)</td><td>$5,000&ndash;$15,000</td><td>Existing</td><td>Research</td><td>A03</td></tr>
+<tr><td style="color:var(--green)">Bridge 0.22 ETH to MegaETH</td><td>$277&ndash;$1,200</td><td>0.22 ETH</td><td>12h over 6 wks</td><td>A04</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- FINANCIAL SUMMARY -->
+<div class="section">
+<h2 class="section-title section-title--cyan">Sprint 26 &mdash; EV Summary (Risk-Adjusted)</h2>
 <div class="card-grid">
-<div class="card"><div class="card-label">Total Sprints</div><div class="card-value">25</div><div class="card-sub">17 documented in detail</div></div>
-<div class="card card--purple"><div class="card-label">Agents Deployed</div><div class="card-value card--purple">116+</div><div class="card-sub">Sprints 19-25 parallel</div></div>
-<div class="card card--pink"><div class="card-label">Protocols Scanned</div><div class="card-value card--pink">811+</div><div class="card-sub">DeFiLlama + CoinGecko</div></div>
-<div class="card card--yellow"><div class="card-label">V1 Verified</div><div class="card-value card--yellow">11</div><div class="card-sub">Adversarial verification</div></div>
-<div class="card card--green"><div class="card-label">Confirmed BUYs</div><div class="card-value card--green">1</div><div class="card-sub">GEOD — 9.1% hit rate</div></div>
-<div class="card"><div class="card-label">Pipeline Complete</div><div class="card-value">95%</div><div class="card-sub">MCP deploy remaining</div></div>
+<div class="card card--green"><div class="card-label">Raw EV (Low)</div><div class="card-value card--green">$12.3K</div></div>
+<div class="card card--green"><div class="card-label">Raw EV (High)</div><div class="card-value card--green">$42.5K</div></div>
+<div class="card card--purple"><div class="card-label">Risk-Adj EV (Low)</div><div class="card-value" style="color:var(--purple)">$7.0K</div></div>
+<div class="card card--purple"><div class="card-label">Risk-Adj EV (High)</div><div class="card-value" style="color:var(--purple)">$23.6K</div></div>
+<div class="card card--cyan"><div class="card-label">Sprint Cost</div><div class="card-value" style="color:var(--cyan)">$0.012</div></div>
+<div class="card card--yellow"><div class="card-label">Agents OK</div><div class="card-value card--yellow">19/20</div></div>
+</div>
+<div class="table-wrap" style="margin-top:1rem">
+<table style="font-size:.78rem">
+<thead><tr><th>Category</th><th>Low EV</th><th>High EV</th><th>Risk Factor</th><th>Risk-Adj Low</th><th>Risk-Adj High</th><th>Confidence</th></tr></thead>
+<tbody>
+<tr><td>Airdrop Claims (Plume, Dropee, Grass, Based)</td><td>$2,500</td><td>$8,000</td><td>0.9</td><td style="color:var(--green)">$2,250</td><td style="color:var(--green)">$7,200</td><td><span class="badge badge--buy" style="font-size:.6rem">HIGH</span></td></tr>
+<tr><td>Smart Money (GMX, GNS investigate)</td><td>$5,000</td><td>$15,000</td><td>0.6</td><td>$3,000</td><td>$9,000</td><td><span class="badge badge--wait" style="font-size:.6rem">MED</span></td></tr>
+<tr><td>Fluid Points Farming</td><td>$2,500</td><td>$6,250</td><td>0.4</td><td>$1,000</td><td>$2,500</td><td><span class="badge badge--wait" style="font-size:.6rem">MED</span></td></tr>
+<tr><td>Symbiotic Season 2</td><td>$500</td><td>$5,000</td><td>0.5</td><td>$250</td><td>$2,500</td><td><span class="badge badge--wait" style="font-size:.6rem">MED</span></td></tr>
+<tr><td>DeFi Yield Opportunities</td><td>$1,000</td><td>$5,000</td><td>0.2</td><td>$200</td><td>$1,000</td><td><span class="badge badge--trim" style="font-size:.6rem">LOW</span></td></tr>
+<tr><td>Funding Rate Arbitrage</td><td>$500</td><td>$2,000</td><td>0.3</td><td>$150</td><td>$600</td><td><span class="badge badge--trim" style="font-size:.6rem">LOW</span></td></tr>
+<tr><td>MegaETH Season 1</td><td>$277</td><td>$1,200</td><td>0.7</td><td>$194</td><td>$840</td><td><span class="badge badge--wait" style="font-size:.6rem">MED</span></td></tr>
+<tr style="border-top:2px solid var(--cyan);font-weight:700"><td>TOTAL</td><td>$12,277</td><td>$42,450</td><td>&mdash;</td><td style="color:var(--green)">$7,044</td><td style="color:var(--green)">$23,640</td><td></td></tr>
+</tbody>
+</table>
 </div>
 </div>
 
+<!-- FUNDING RATE EXTREMES -->
 <div class="section">
-<h2 class="section-title section-title--green">Infrastructure Status</h2>
-<div class="infra-grid">
-<div class="infra-item"><span class="dot dot--green"></span><div><div class="infra-label">Codebase</div><div class="infra-val">16K+ LoC, 22 scripts + 5 scanners + MCP</div></div></div>
-<div class="infra-item"><span class="dot dot--green"></span><div><div class="infra-label">P10 Score</div><div class="infra-val">9.5 / 10 (NASA Power of 10)</div></div></div>
-<div class="infra-item"><span class="dot dot--green"></span><div><div class="infra-label">Website</div><div class="infra-val">earlythunder.com — 241 pages, CF Pages (deployed S22)</div></div></div>
-<div class="infra-item"><span class="dot dot--green"></span><div><div class="infra-label">Operating Cost</div><div class="infra-val">~$5/mo (DeepSeek + free APIs)</div></div></div>
-<div class="infra-item"><span class="dot dot--green"></span><div><div class="infra-label">Revenue</div><div class="infra-val">$0 MRR — MCPize LIVE (set $29/mo pricing + Stripe to activate)</div></div></div>
-<div class="infra-item"><span class="dot dot--yellow"></span><div><div class="infra-label">Pipeline Health</div><div class="infra-val">YELLOW — 11/12 pass (named tunnel blocked)</div></div></div>
+<h2 class="section-title section-title--orange">Funding Rate Extremes &mdash; 1,000 Pairs Scanned (A01)</h2>
+<p style="color:var(--text2);font-size:.75rem;margin-bottom:.5rem">101 pairs above 15% annualized. Exchanges: Binance (500), Bybit (500), OKX (326), Hyperliquid (230).</p>
+<div class="table-wrap">
+<table style="font-size:.78rem">
+<thead><tr><th>Symbol</th><th>Exchange</th><th>Rate</th><th>Annualized</th><th>Z-Score</th><th>Direction</th></tr></thead>
+<tbody>
+<tr style="background:rgba(255,51,85,.06)"><td style="font-weight:700;color:var(--red)">BOBBOB</td><td>Bybit</td><td>-0.709%</td><td style="color:var(--red)">-776.1%</td><td>0.00</td><td>SHORT_SPOT_LONG_PERP</td></tr>
+<tr><td>RIF</td><td>Binance</td><td>-0.300%</td><td style="color:var(--red)">-328.1%</td><td>-19.27</td><td>SHORT_SPOT_LONG_PERP</td></tr>
+<tr><td>10000NEX</td><td>Bybit</td><td>-0.279%</td><td style="color:var(--red)">-305.5%</td><td>0.00</td><td>SHORT_SPOT_LONG_PERP</td></tr>
+<tr><td>DIS</td><td>Binance</td><td>+0.234%</td><td style="color:var(--green)">+256.1%</td><td>+2.65</td><td>LONG_SPOT_SHORT_PERP</td></tr>
+<tr><td>SNT</td><td>Bybit</td><td>-0.122%</td><td>-133.7%</td><td>0.00</td><td>SHORT_SPOT_LONG_PERP</td></tr>
+<tr><td>V</td><td>Binance</td><td>+0.116%</td><td style="color:var(--green)">+127.5%</td><td>+1.21</td><td>LONG_SPOT_SHORT_PERP</td></tr>
+<tr><td>PLAY</td><td>Binance</td><td>-0.113%</td><td>-123.6%</td><td>-2.41</td><td>SHORT_SPOT_LONG_PERP</td></tr>
+<tr><td>BSB</td><td>Binance</td><td>+0.111%</td><td style="color:var(--green)">+121.1%</td><td>+4.91</td><td>LONG_SPOT_SHORT_PERP</td></tr>
+</tbody>
+</table>
 </div>
+<p style="font-size:.7rem;color:var(--text3);margin-top:.3rem">Contrarian longs: KSM (z=-5.89), MTL (z=-4.17), NIL (z=-82.22), LQTY (z=-3.31). Contrarian shorts: NATGAS (z=+8.39), AZTEC (z=+6.23).</p>
 </div>
 
+<!-- STABLECOIN FLOWS -->
 <div class="section">
-<h2 class="section-title section-title--red">Critical Alerts</h2>
-<div class="alert-card">
-<div class="alert-title">MCPize 85% Founding Rate Deadline</div>
-<div class="alert-countdown" data-deadline="2026-06-10T00:00:00Z">--d --h</div>
+<h2 class="section-title section-title--blue">Stablecoin Flows &mdash; Risk-On Expanding (A03)</h2>
+<div class="card-grid" style="margin-bottom:1rem">
+<div class="card card--green"><div class="card-label">Total Mcap</div><div class="card-value card--green">$321.8B</div></div>
+<div class="card card--green"><div class="card-label">Weekly Change</div><div class="card-value card--green">+3.60%</div></div>
+<div class="card card--cyan"><div class="card-label">Chains Analyzed</div><div class="card-value" style="color:var(--cyan)">165</div></div>
+<div class="card card--yellow"><div class="card-label">Regime</div><div class="card-value card--yellow">RISK ON</div></div>
 </div>
-<div class="alert-card alert-card--yellow">
-<div class="alert-title">KMNO 229M Token Unlock</div>
-<div class="alert-countdown" data-deadline="2026-05-30T00:00:00Z">--d --h</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+<div>
+<h3 style="color:var(--green);font-size:.85rem;margin-bottom:.5rem">Top Inflows (Bullish)</h3>
+<table style="font-size:.75rem"><tbody>
+<tr><td>IOTA EVM</td><td style="color:var(--green)">+71.6%</td><td>$503K&rarr;$863K</td></tr>
+<tr><td style="font-weight:700">Arbitrum</td><td style="color:var(--green);font-weight:700">+32.2%</td><td>$3.15B&rarr;$4.17B</td></tr>
+<tr><td>XRPL</td><td style="color:var(--green)">+19.4%</td><td>$609M&rarr;$727M</td></tr>
+<tr><td style="font-weight:700">Hyperliquid</td><td style="color:var(--green)">+17.4%</td><td>$5.77B&rarr;$6.78B</td></tr>
+<tr><td>Flare</td><td style="color:var(--green)">+10.3%</td><td>$58M&rarr;$64M</td></tr>
+</tbody></table>
 </div>
-<div class="alert-card">
-<div class="alert-title">ZRO 25.71M UNLOCK — SELL BEFORE (10% of float!)</div>
-<div class="alert-countdown" data-deadline="2026-05-20T00:00:00Z">--d --h</div>
+<div>
+<h3 style="color:var(--red);font-size:.85rem;margin-bottom:.5rem">Top Outflows (Bearish)</h3>
+<table style="font-size:.75rem"><tbody>
+<tr><td>Stable</td><td style="color:var(--red)">-54.5%</td><td>$33M&rarr;$15M</td></tr>
+<tr><td>XDC</td><td style="color:var(--red)">-47.0%</td><td>$115M&rarr;$61M</td></tr>
+<tr><td>ApeChain</td><td style="color:var(--red)">-44.2%</td><td>$511K&rarr;$285K</td></tr>
+<tr><td>Mantle</td><td style="color:var(--red)">-25.7%</td><td>$768M&rarr;$571M</td></tr>
+<tr><td>Citrea</td><td style="color:var(--red)">-20.2%</td><td>$30M&rarr;$24M</td></tr>
+</tbody></table>
 </div>
-<div class="alert-card">
-<div class="alert-title">HYPE $429M Contributor Unlock</div>
-<div class="alert-countdown" data-deadline="2026-06-06T00:00:00Z">--d --h</div>
-</div>
-<div class="alert-card alert-card--yellow">
-<div class="alert-title">PLUME / DROPEE Airdrop</div>
-<div class="alert-countdown" data-deadline="2026-05-27T00:00:00Z">--d --h</div>
-</div>
-<div class="alert-card alert-card--yellow">
-<div class="alert-title">GRASS Season 2</div>
-<div class="alert-countdown" data-deadline="2026-05-31T00:00:00Z">--d --h</div>
-</div>
-<div class="alert-card alert-card--yellow">
-<div class="alert-title">BasedApp Airdrop</div>
-<div class="alert-countdown" data-deadline="2026-06-04T00:00:00Z">--d --h</div>
-</div>
-<div class="alert-card">
-<div class="alert-title">GEOD Halving Event</div>
-<div class="alert-countdown" data-deadline="2026-06-30T00:00:00Z">--d --h</div>
 </div>
 </div>
 
+<!-- NEW OPPORTUNITY DISCOVERY -->
 <div class="section">
-<h2 class="section-title">Pipeline Completeness</h2>
-<div style="display:flex;align-items:center;gap:1rem">
-<div style="flex:1"><div class="progress"><div class="progress-fill progress-fill--cyan" style="width:95%"></div></div></div>
-<span style="font-family:var(--mono);font-size:1rem;color:var(--cyan)">95%</span>
-</div>
-<p style="font-size:.78rem;color:var(--text3);margin-top:.5rem">Missing: MCPize pricing + Stripe, xpay.sh wallet, live trading. Named Tunnel BLOCKED (CF login). R2 data sync RECOMMENDED. Multi-Platform: 3/4 submitted (MCPize LIVE, AgenticMarket SUBMITTED, MCP Hive PENDING, xpay.sh NEEDS WALLET).</p>
+<h2 class="section-title section-title--purple">New Opportunity Discovery &mdash; Top 8 (A09)</h2>
+<div class="table-wrap">
+<table style="font-size:.78rem">
+<thead><tr><th>#</th><th>Protocol</th><th>Category</th><th>EV/Effort</th><th>Per-User Value</th><th>Capital</th><th>Risk</th><th>Confidence</th></tr></thead>
+<tbody>
+<tr style="background:rgba(0,255,136,.06)"><td>1</td><td style="font-weight:700;color:var(--green)">Citrea</td><td>Testnet node</td><td>85.0</td><td>$5K&ndash;$15K</td><td>$0</td><td>LOW</td><td><span class="badge badge--buy" style="font-size:.6rem">HIGH</span></td></tr>
+<tr style="background:rgba(0,255,136,.04)"><td>2</td><td style="font-weight:700;color:var(--green)">edgeX L1</td><td>DePIN node</td><td>70.0</td><td>$3K&ndash;$10K</td><td>$0&ndash;$500</td><td>MED</td><td><span class="badge badge--buy" style="font-size:.6rem">HIGH</span></td></tr>
+<tr><td>3</td><td>Sonic</td><td>Yield farming</td><td>55.0</td><td>$1K&ndash;$5K</td><td>$500&ndash;$2K</td><td>MED</td><td><span class="badge badge--wait" style="font-size:.6rem">MED</span></td></tr>
+<tr><td>4</td><td>MegaETH</td><td>Airdrop</td><td>45.0</td><td>$277&ndash;$1.2K</td><td>$100&ndash;$500</td><td>LOW</td><td><span class="badge badge--buy" style="font-size:.6rem">HIGH</span></td></tr>
+<tr><td>5</td><td style="font-weight:700">Commonware</td><td>Testnet node</td><td>40.0</td><td style="color:var(--green)">$20K&ndash;$50K</td><td>$0</td><td>LOW</td><td><span class="badge badge--buy" style="font-size:.6rem">HIGH</span></td></tr>
+<tr><td>6</td><td>Symbiotic</td><td>Points farming</td><td>35.0</td><td>$4K&ndash;$13K</td><td>$500&ndash;$5K</td><td>MED</td><td><span class="badge badge--buy" style="font-size:.6rem">HIGH</span></td></tr>
+<tr><td>7</td><td>Fluid</td><td>Points farming</td><td>25.0</td><td>$2.5K&ndash;$6.3K</td><td>$200&ndash;$2K</td><td>MED</td><td><span class="badge badge--wait" style="font-size:.6rem">MED</span></td></tr>
+<tr><td>8</td><td>Kelp (rsETH)</td><td>Liquid restaking</td><td>20.0</td><td>$1.5K&ndash;$5K</td><td>$500&ndash;$3K</td><td>MED</td><td><span class="badge badge--wait" style="font-size:.6rem">MED</span></td></tr>
+</tbody>
+</table>
 </div>
 </div>
 
-<!-- TAB 2: THESIS -->
+<!-- EXPLOIT MONITOR -->
+<div class="section">
+<h2 class="section-title section-title--red">Active Exploits &mdash; Portfolio Exposure (A10)</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Protocol</th><th>Date</th><th>Amount Lost</th><th>Attack Vector</th><th>Our Exposure</th><th>Action</th></tr></thead>
+<tbody>
+<tr style="background:rgba(255,51,85,.1)"><td style="font-weight:700;color:var(--red)">Symbiotic</td><td>May 19</td><td style="color:var(--red)">$4,200,000</td><td>Reentrancy via custom AVS callback</td><td>$500&ndash;$5K</td><td style="color:var(--red);font-weight:700">WITHDRAW ALL</td></tr>
+<tr style="background:rgba(255,51,85,.08)"><td style="font-weight:700;color:var(--red)">Fluid (Arb)</td><td>May 18</td><td style="color:var(--red)">$850,000</td><td>Oracle manipulation via flash loan</td><td>$200&ndash;$2K</td><td style="color:var(--red);font-weight:700">WITHDRAW ALL</td></tr>
+<tr><td>MegaETH</td><td>May 20</td><td style="color:var(--green)">$0</td><td>Bridge UI display bug (false alarm)</td><td>0.22 ETH</td><td>Continue farming</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- REGULATORY MONITOR -->
+<div class="section">
+<h2 class="section-title section-title--blue">Regulatory Monitor &mdash; Key Bills (A08)</h2>
+<div class="table-wrap">
+<table style="font-size:.78rem">
+<thead><tr><th>Bill/Action</th><th>Status</th><th>Impact</th><th>Polymarket</th><th>Key Date</th></tr></thead>
+<tbody>
+<tr><td style="font-weight:700;color:var(--green)">CLARITY Act</td><td>Passed House Committee</td><td style="color:var(--green)">HIGH POSITIVE</td><td>72% passage</td><td style="font-weight:700">June 15 floor vote</td></tr>
+<tr><td style="font-weight:700;color:var(--green)">GENIUS Act (Stablecoins)</td><td>Conference committee</td><td style="color:var(--green)">MED POSITIVE</td><td>81% passage</td><td>Sep 30</td></tr>
+<tr><td>SEC Crypto Enforcement</td><td>Uniswap dropped, Binance.US filed</td><td>MIXED</td><td>&mdash;</td><td>June 12 hearing</td></tr>
+<tr><td style="color:var(--red)">CFTC Prediction Market Ban</td><td>Comment period open</td><td style="color:var(--red)">NEGATIVE</td><td>34% ban</td><td>June 30</td></tr>
+<tr><td style="color:var(--red)">IRS DeFi Broker Rule</td><td>Effective Jan 2027</td><td style="color:var(--red)">NEGATIVE</td><td>55% struck down</td><td>July 15 oral args</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- PROTOCOL DEEP DIVES -->
+<div class="section">
+<h2 class="section-title section-title--purple">Protocol Deep Dives &mdash; Top 3 (A07)</h2>
+<div class="card-grid">
+<div class="card" style="border-color:var(--green)">
+<div class="card-label">Symbiotic</div>
+<div style="font-size:.78rem;color:var(--text)">TVL: $541M (+7.4% 7d) &bull; Pre-token "SYM" &bull; 10-15% airdrop allocation<br>
+<span style="color:var(--red);font-weight:700">EXPLOIT: $4.2M lost May 19 &mdash; WITHDRAW</span><br>
+<span style="color:var(--text2)">Alpha: Deposit via Mellow for double points. &lt;20% qualify for duration multiplier.</span></div>
+</div>
+<div class="card" style="border-color:var(--green)">
+<div class="card-label">Fluid (Instadapp)</div>
+<div style="font-size:.78rem;color:var(--text)">TVL: $823.4M (+12.1% 7d) &bull; $18M annualized rev &bull; INST $0.42<br>
+<span style="color:var(--yellow);font-weight:700">FIP-13: INST&rarr;FLUID merger vote May 25 &mdash; BUY INST for 3x&ndash;10x</span><br>
+<span style="color:var(--red)">EXPLOIT: $850K Arb flash loan &mdash; avoid Arbitrum deposits</span></div>
+</div>
+<div class="card" style="border-color:var(--cyan)">
+<div class="card-label">Commonware</div>
+<div style="font-size:.78rem;color:var(--text)">$25M Paradigm + Haun &bull; Pre-launch &bull; Testnet July 2026<br>
+<span style="color:var(--green);font-weight:700">100x&ndash;250x ROI estimate &bull; $0 capital required</span><br>
+<span style="color:var(--text2)">Alpha: Join Discord, run validator, submit 3+ GitHub PRs = 5x multiplier.</span></div>
+</div>
+</div>
+</div>
+
+<!-- AIRDROP TRACKER -->
+<div class="section">
+<h2 class="section-title section-title--yellow">Airdrop ROI Rankings &mdash; Top 7 (A04)</h2>
+<div class="table-wrap">
+<table style="font-size:.78rem">
+<thead><tr><th>#</th><th>Protocol</th><th>ROI Estimate</th><th>Per-User Value</th><th>Status</th></tr></thead>
+<tbody>
+<tr style="background:rgba(0,255,136,.06)"><td>1</td><td style="font-weight:700;color:var(--green)">Commonware</td><td style="color:var(--green)">100x&ndash;250x</td><td>$20,000&ndash;$50,000</td><td>Testnet July 2026</td></tr>
+<tr><td>2</td><td>Fluid (Instadapp)</td><td>1.1x&ndash;13.9x</td><td>$2,500&ndash;$6,250</td><td>Active</td></tr>
+<tr><td>3</td><td>Symbiotic</td><td>0.8x&ndash;16.7x</td><td>$4,000&ndash;$13,333</td><td>S2 Active</td></tr>
+<tr><td>4</td><td>Kelp (rsETH)</td><td>0.6x&ndash;15.4x</td><td>$3,333&ndash;$10,000</td><td>Active</td></tr>
+<tr><td>5</td><td>Polymarket</td><td>0.8x&ndash;4.2x</td><td>$750&ndash;$1,875</td><td>Active</td></tr>
+<tr><td>6</td><td>MegaETH</td><td>0.3x&ndash;1.7x</td><td>$277&ndash;$1,200</td><td>S1 ends June 23</td></tr>
+<tr><td>7</td><td>MetaMask</td><td>0.1x&ndash;1.0x</td><td>$16&ndash;$50</td><td>Speculative</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:.7rem;color:var(--text3);margin-top:.3rem">128 tokenless protocols with TVL &gt;$50M discovered. Top: Kelp ($1.35B TVL, score 90), Veda ($1.02B, 90), Grove ($2.57B, 85).</p>
+</div>
+
+<!-- DeFi YIELD TOP POOLS -->
+<div class="section">
+<h2 class="section-title section-title--green">DeFi Yield &mdash; Top Pools (A02)</h2>
+<p style="color:var(--text2);font-size:.75rem;margin-bottom:.5rem">808 pools exported. 71 high-signal (APY&gt;10%, TVL&gt;$1M). 14 flagged. 52 volume anomalies.</p>
+<div class="table-wrap">
+<table style="font-size:.78rem">
+<thead><tr><th>Protocol</th><th>Pool</th><th>Chain</th><th>APY</th><th>TVL</th><th>IL Risk</th></tr></thead>
+<tbody>
+<tr style="background:rgba(255,51,85,.06)"><td>Morpho Blue</td><td>1337USDC</td><td>ETH</td><td style="color:var(--red)">297,995%</td><td>$11.4M</td><td>LOW <span style="color:var(--red)">(ANOMALY)</span></td></tr>
+<tr><td>Blackhole CLMM</td><td>WAVAX-USDC</td><td>AVAX</td><td style="color:var(--green)">17,368%</td><td>$2.3M</td><td>HIGH</td></tr>
+<tr><td>Morpho Blue</td><td>ADPUSDC</td><td>ETH</td><td style="color:var(--green)">5,360%</td><td>$21.4M</td><td>LOW</td></tr>
+<tr><td>Uniswap V4</td><td>WETH-NOOK</td><td>Base</td><td>512%</td><td>$1.4M</td><td>MED</td></tr>
+<tr><td>Aerodrome</td><td>USDC-CBBTC</td><td>Base</td><td>284%</td><td>$3.9M</td><td>HIGH</td></tr>
+<tr><td>Project-X</td><td>WHYPE-USDC</td><td>HyperL1</td><td>268%</td><td>$5.2M</td><td>HIGH</td></tr>
+<tr><td>Project-X</td><td>WHYPE-UBTC</td><td>HyperL1</td><td>192%</td><td>$7.0M</td><td>HIGH</td></tr>
+<tr><td>CETUS CLMM</td><td>USDC-SUI</td><td>Sui</td><td>139%</td><td>$4.3M</td><td>HIGH</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- PIPELINE HEALTH -->
+<div class="section">
+<h2 class="section-title">Pipeline Health &mdash; Sprint 26</h2>
+<div class="card-grid">
+<div class="card card--green"><div class="card-label">Funding Pairs</div><div class="card-value card--green">1,000</div></div>
+<div class="card card--green"><div class="card-label">DeFi Pools</div><div class="card-value card--green">808</div></div>
+<div class="card card--green"><div class="card-label">Tokenless Found</div><div class="card-value card--green">128</div></div>
+<div class="card card--yellow"><div class="card-label">Testnet Chains</div><div class="card-value card--yellow">0/3 active</div></div>
+<div class="card card--green"><div class="card-label">P10 Score</div><div class="card-value card--green">10/10</div></div>
+<div class="card card--red"><div class="card-label">Config Integrity</div><div class="card-value card--red">45/100</div></div>
+<div class="card card--green"><div class="card-label">Exploits Found</div><div class="card-value card--red">2 active</div></div>
+<div class="card card--green"><div class="card-label">New Bounties</div><div class="card-value card--green">2 (&gt;$10K)</div></div>
+</div>
+</div>
+
+</div>
 <div class="tab-content" id="tab-thesis">
 <div class="section">
 <h2 class="section-title section-title--purple">Hyperliquid Blueprint — 10 Criteria</h2>
