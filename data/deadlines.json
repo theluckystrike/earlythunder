@@ -1,25 +1,122 @@
 [
-  {"id":"limitless_season3","protocol":"Limitless","event":"Season 3 Points Farming","status":"LIVE","end_date":"2026-05-25","urgency":"CRITICAL","url":"https://limitless.exchange/"},
-  {"id":"megaeth_terminal_s1","protocol":"MegaETH","event":"Terminal Season 1","status":"LIVE","end_date":"2026-06-23","urgency":"HIGH","url":"https://terminal.megaeth.com/guide"},
-  {"id":"concrete_phase1_social","protocol":"Concrete","event":"Phase 1 Social Bags","status":"LIVE","estimated_end":"Q2-Q3 2026","urgency":"HIGH","url":"https://points.concrete.xyz/home"},
-  {"id":"symbiotic_season2","protocol":"Symbiotic","event":"Points Season 2","status":"LIVE","estimated_end":"Q3-Q4 2026","urgency":"HIGH","url":"https://app.symbiotic.fi/restake/"},
-  {"id":"paradex_season3","protocol":"Paradex","event":"XP Season 3","status":"LIVE","urgency":"HIGH","url":"https://paradex.trade/"},
-  {"id":"polymarket_poly_token","protocol":"Polymarket","event":"POLY Token + Airdrop","status":"UPCOMING","estimated_end":"H2 2026","urgency":"HIGH","url":"https://polymarket.com/"},
-  {"id":"base_token","protocol":"Base (Coinbase L2)","event":"Network Token Launch","status":"SPECULATED","estimated_end":"Q2-Q4 2026","urgency":"HIGH","url":"https://base.org/"},
-  {"id":"metamask_mask_token","protocol":"MetaMask","event":"MASK Token Launch","status":"SPECULATED","estimated_end":"Q3-Q4 2026","urgency":"HIGH","url":"https://metamask.io/"},
-  {"id":"berachain_bgt_airdrop","protocol":"Berachain","event":"BGT Governance Airdrop","status":"UPCOMING","estimated_end":"Q3 2026","urgency":"HIGH","url":"https://berachain.com/"},
-  {"id":"aerodrome_crosschain","protocol":"Aerodrome","event":"Cross-Chain DEX Launch","status":"UPCOMING","estimated_end":"Q2-Q3 2026","urgency":"HIGH","url":"https://aerodrome.finance/"},
-  {"id":"morpho_fee_switch","protocol":"Morpho","event":"Fee Switch Activation","status":"SPECULATED","estimated_end":"2026-2027","urgency":"HIGH","url":"https://morpho.org/"},
-  {"id":"kelp_kernel_tge","protocol":"Kelp (KernelDAO)","event":"KERNEL Token TGE","status":"UPCOMING","estimated_end":"Q2 2026","urgency":"HIGH","url":"https://kelpdao.xyz/"},
-  {"id":"concrete_phase2_vaults","protocol":"Concrete","event":"Phase 2 Vault Deposits","status":"UPCOMING","urgency":"WATCH","url":"https://app.concrete.xyz/earn"},
-  {"id":"concrete_tge","protocol":"Concrete","event":"Token Generation Event","status":"UPCOMING","estimated_end":"Q2-Q3 2026","urgency":"WATCH","url":"https://concrete.xyz/"},
-  {"id":"opensea_sea_token","protocol":"OpenSea","event":"SEA Token Launch","status":"DELAYED","estimated_end":"Q3-Q4 2026","urgency":"WATCH","url":"https://opensea.io/"},
-  {"id":"symbiotic_token_distribution","protocol":"Symbiotic","event":"Token Distribution","status":"UPCOMING","estimated_end":"Q3-Q4 2026","urgency":"WATCH","url":"https://app.symbiotic.fi/dashboard/"},
-  {"id":"commonware_token","protocol":"Commonware","event":"Potential Token Launch","status":"SPECULATED","estimated_end":"Q4 2026 - H1 2027","urgency":"WATCH","url":"https://github.com/commonwarexyz/monorepo"},
-  {"id":"veda_token","protocol":"Veda","event":"Token Launch","status":"UPCOMING","estimated_end":"2026","urgency":"WATCH","url":"https://www.veda.tech/"},
-  {"id":"fluid_rewards","protocol":"Fluid","event":"Additional Distribution","status":"LIVE","urgency":"WATCH","url":"https://fluid.instadapp.io/"},
-  {"id":"megaeth_terminal_s2","protocol":"MegaETH","event":"Terminal Season 2","status":"UPCOMING","estimated_end":"H2 2026","urgency":"WATCH","url":"https://terminal.megaeth.com/guide"},
-  {"id":"klarna_stablecoin_tempo","protocol":"Tempo / Klarna","event":"KlarnaUSD Mainnet","status":"UPCOMING","estimated_end":"2026","urgency":"WATCH","url":"https://tempo.xyz/"},
-  {"id":"paradex_dime_claim","protocol":"Paradex","event":"DIME Genesis Airdrop","status":"ENDED","urgency":"LOW","url":"https://paradex.trade/"},
-  {"id":"lagoon_finance_token","protocol":"Lagoon Finance","event":"Potential Token Launch","status":"SPECULATED","urgency":"LOW","url":"https://lagoon.finance/"}
+  {
+    "protocol": "Ethereum",
+    "event": "Glamsterdam upgrade live on mainnet (EIP-7732, EIP-7691)",
+    "end_date": "2026-08-15",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Solana",
+    "event": "Firedancer validator client mainnet launch (Jump Crypto)",
+    "end_date": "2026-09-01",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Arbitrum",
+    "event": "ARB token unlock (1.12B tokens, ~$1.2B at current prices)",
+    "end_date": "2026-09-16",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Aptos",
+    "event": "APT token unlock (24.2M tokens, ~$250M)",
+    "end_date": "2026-07-12",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Optimism",
+    "event": "OP token unlock (24.2M tokens, ~$100M)",
+    "end_date": "2026-08-30",
+    "estimated_end": null,
+    "urgency": "MEDIUM",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Uniswap",
+    "event": "Fee switch activation vote (UNI stakers earn protocol fees)",
+    "end_date": "2026-10-15",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "EU Regulation",
+    "event": "MiCA full implementation deadline (stablecoin & CASP rules)",
+    "end_date": "2026-06-30",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "SEC",
+    "event": "SEC ruling on spot Solana ETF (final deadline)",
+    "end_date": "2026-07-31",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "SEC",
+    "event": "SEC ruling on spot XRP ETF (final deadline)",
+    "end_date": "2026-10-15",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Binance",
+    "event": "Binance Launchpad IEO (project TBD, typically quarterly)",
+    "end_date": "2026-09-15",
+    "estimated_end": null,
+    "urgency": "MEDIUM",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Coinbase",
+    "event": "Coinbase listing for major token (likely L2 or DeFi protocol)",
+    "end_date": "2026-11-01",
+    "estimated_end": null,
+    "urgency": "MEDIUM",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "zkSync",
+    "event": "zkSync Era mainnet upgrade (ZK Stack v2 with boojum)",
+    "end_date": "2026-08-01",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "StarkNet",
+    "event": "STRK token unlock (1.2B tokens, ~$1.5B)",
+    "end_date": "2026-12-01",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Polygon",
+    "event": "POL token migration complete (MATIC to POL full transition)",
+    "end_date": "2026-09-04",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "dYdX",
+    "event": "dYdX v4 mainnet launch (Cosmos-based perpetuals DEX)",
+    "end_date": "2026-10-01",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  }
 ]
