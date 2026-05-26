@@ -61,6 +61,39 @@ function changeColor(change: number): string {
   return change >= 0 ? "text-emerald-400" : "text-red-400";
 }
 
+function fmtSupply(n: number | null | undefined): string {
+  if (n == null || n === 0) return "\u2014";
+  if (n >= 1e9) return `${(n / 1e9).toFixed(1)}B`;
+  if (n >= 1e6) return `${(n / 1e6).toFixed(1)}M`;
+  if (n >= 1e3) return `${(n / 1e3).toFixed(1)}K`;
+  return n.toLocaleString();
+}
+
+function fmtUsd(n: number | null | undefined): string {
+  if (n == null || n === 0) return "\u2014";
+  if (n >= 1e9) return `$${(n / 1e9).toFixed(1)}B`;
+  if (n >= 1e6) return `$${(n / 1e6).toFixed(0)}M`;
+  return `$${n.toLocaleString()}`;
+}
+
+function circColor(circ: number | null | undefined, total: number | null | undefined): string {
+  if (!circ || !total || total === 0) return "text-text-tertiary";
+  const pct = (circ / total) * 100;
+  if (pct >= 90) return "text-emerald-400";
+  if (pct >= 60) return "text-yellow-400";
+  if (pct >= 30) return "text-orange-400";
+  return "text-red-400";
+}
+
+function dilColor(mcap: number | null | undefined, fdv: number | null | undefined): string {
+  if (!mcap || !fdv || mcap === 0) return "text-text-tertiary";
+  const x = fdv / mcap;
+  if (x <= 1.1) return "text-emerald-400";
+  if (x <= 2) return "text-yellow-400";
+  if (x <= 5) return "text-orange-400";
+  return "text-red-400";
+}
+
 export default function ScorecardPage() {
   const { tokens, benchmark, updated_at } = scorecardData;
   const sorted = [...tokens].sort((a, b) => b.score - a.score);
@@ -90,37 +123,58 @@ export default function ScorecardPage() {
           <table className="w-full text-sm font-mono">
             <thead>
               <tr className="border-b border-border bg-bg-card">
-                <th className="px-4 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">#</th>
-                <th className="px-4 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Token</th>
-                <th className="px-4 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Score</th>
-                <th className="px-4 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Verdict</th>
-                <th className="px-4 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">Price</th>
-                <th className="px-4 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">24h</th>
-                <th className="px-4 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">ATH Dist</th>
-                <th className="px-4 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider hidden lg:table-cell">Key Catalyst</th>
-                <th className="px-4 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider hidden lg:table-cell">Key Risk</th>
+                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">#</th>
+                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Token</th>
+                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Score</th>
+                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Verdict</th>
+                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">Price</th>
+                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">MCap</th>
+                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">FDV</th>
+                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider hidden md:table-cell">Circ</th>
+                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider hidden md:table-cell">Total</th>
+                <th className="px-3 py-3 text-center text-xs text-text-tertiary uppercase tracking-wider hidden md:table-cell">Max</th>
+                <th className="px-3 py-3 text-center text-xs text-text-tertiary uppercase tracking-wider">Circ%</th>
+                <th className="px-3 py-3 text-center text-xs text-text-tertiary uppercase tracking-wider">Dil.</th>
+                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider hidden xl:table-cell">Catalyst</th>
+                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider hidden xl:table-cell">Risk</th>
               </tr>
             </thead>
             <tbody>
-              {sorted.map((token, i) => (
+              {sorted.map((token, i) => {
+                const t = token as Record<string, unknown>;
+                const circS = t.circulating_supply as number | null;
+                const totalS = t.total_supply as number | null;
+                const maxS = t.max_supply as number | null;
+                const fdvVal = (t.fdv as number | null) ?? (t.fully_diluted_valuation as number | null);
+                const circPct = circS && totalS && totalS > 0 ? (circS / totalS) * 100 : null;
+                const dilX = token.market_cap && fdvVal && token.market_cap > 0 ? fdvVal / token.market_cap : null;
+                return (
                 <tr key={token.symbol} className="border-b border-border/50 hover:bg-bg-card/50 transition-colors">
-                  <td className="px-4 py-3 text-text-tertiary">{i + 1}</td>
-                  <td className="px-4 py-3 font-semibold text-text-primary">{token.symbol}</td>
-                  <td className="px-4 py-3">
+                  <td className="px-3 py-2.5 text-text-tertiary">{i + 1}</td>
+                  <td className="px-3 py-2.5 font-semibold text-text-primary">{token.symbol}</td>
+                  <td className="px-3 py-2.5">
                     <span className={`font-bold ${scoreColor(token.score / 10)}`}>{token.score}</span>
                   </td>
-                  <td className="px-4 py-3">{verdictBadge(token.verdict, token.verdict_color)}</td>
-                  <td className="px-4 py-3 text-right text-text-primary">
+                  <td className="px-3 py-2.5">{verdictBadge(token.verdict, token.verdict_color)}</td>
+                  <td className="px-3 py-2.5 text-right text-text-primary">
                     ${token.price < 10 ? token.price.toFixed(2) : token.price.toLocaleString()}
                   </td>
-                  <td className={`px-4 py-3 text-right ${changeColor(token.change_24h ?? 0)}`}>
-                    {(token.change_24h ?? 0) > 0 ? "+" : ""}{(token.change_24h ?? 0).toFixed(2)}%
+                  <td className="px-3 py-2.5 text-right text-text-secondary">{fmtUsd(token.market_cap)}</td>
+                  <td className="px-3 py-2.5 text-right text-text-tertiary">{fmtUsd(fdvVal)}</td>
+                  <td className="px-3 py-2.5 text-right text-text-secondary hidden md:table-cell">{fmtSupply(circS)}</td>
+                  <td className="px-3 py-2.5 text-right text-text-tertiary hidden md:table-cell">{fmtSupply(totalS)}</td>
+                  <td className="px-3 py-2.5 text-center text-text-tertiary hidden md:table-cell">{maxS == null ? "\u221E" : fmtSupply(maxS)}</td>
+                  <td className={`px-3 py-2.5 text-center font-semibold ${circColor(circS, totalS)}`}>
+                    {circPct != null ? `${circPct.toFixed(0)}%` : "\u2014"}
                   </td>
-                  <td className="px-4 py-3 text-right text-red-400">{token.ath_distance_pct ?? 0}%</td>
-                  <td className="px-4 py-3 text-text-secondary text-xs hidden lg:table-cell">{token.key_catalyst}</td>
-                  <td className="px-4 py-3 text-text-secondary text-xs hidden lg:table-cell">{token.key_risk}</td>
+                  <td className={`px-3 py-2.5 text-center ${dilColor(token.market_cap, fdvVal)}`}>
+                    {dilX != null ? `${dilX.toFixed(1)}x` : "\u2014"}
+                  </td>
+                  <td className="px-3 py-2.5 text-text-secondary text-xs hidden xl:table-cell">{token.key_catalyst}</td>
+                  <td className="px-3 py-2.5 text-text-secondary text-xs hidden xl:table-cell">{token.key_risk}</td>
                 </tr>
-              ))}
+                );
+              })}
             </tbody>
           </table>
         </div>
