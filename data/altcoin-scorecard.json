@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T12:00:00Z",
+  "updated_at": "2026-06-10T09:47:12Z",
   "methodology": "25-variable framework scoring 250 altcoins across protocol revenue, tokenomics, supply metrics, institutional adoption, regulatory safety, and more. Each variable rated 1-10 by 40+ parallel DeepSeek research agents. Data hardened via 19-agent deep validation sprint. Supply data from CoinGecko. Revenue cross-referenced with DeFiLlama/Token Terminal. Live prices from Binance, Bybit, Kraken, Crypto.com.",
   "benchmark": {
     "symbol": "BTC",
@@ -10,8 +10,8 @@
     {
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 2128.56,
-      "change_24h": 2.68,
+      "price": 1674.01,
+      "change_24h": 0.67,
       "market_cap": 252220320547,
       "rank": 2,
       "ath": 4946,
@@ -85,8 +85,8 @@
           "url": "https://onekey.so/blog/ecosystem/ethereum-glamsterdam-upgrade-gains-momentum-with-mainnet-activation-targeted-for-h1-2026-20260504162656/"
         }
       ],
-      "current_price_usd": 2128.56,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 1674.01,
+      "price_updated_at": "2026-06-09T08:39:13Z",
       "token_standard": "Native L1",
       "chain": "Ethereum",
       "fully_diluted_valuation": 252220320547
@@ -94,86 +94,190 @@
     {
       "symbol": "HYPE",
       "name": "Hyperliquid",
-      "price": 62.82,
-      "change_24h": 13.21,
-      "market_cap": 13190760209,
+      "price": 55.62,
+      "change_24h": 1.73,
+      "market_cap": 12372430613.0,
       "rank": 13,
-      "ath": 59.33,
-      "ath_distance_pct": -27.0,
-      "tvl": 6000000000,
-      "circ_supply_pct": 25.4,
-      "volume_24h": 32500000,
-      "score": 185,
-      "prev_score": 76,
+      "ath": 75.51,
+      "ath_distance_pct": -26.3,
+      "tvl": 5880000000,
+      "circ_supply_pct": 22.2,
+      "volume_24h": 194013075,
+      "score": 193,
+      "prev_score": 185,
       "verdict": "HOLD CORE",
       "verdict_color": "green",
-      "one_liner": "4 ETFs (BHYP live, THYP/GHYP pending, VHYP unconfirmed). $820-844M rev, 99% fees to buybacks.",
-      "key_catalyst": "BHYP ETF live on NYSE (May 15), 2-3 more ETFs pending, HIP-4 sharding Q2, burn proposal",
-      "key_risk": "25% circ, $52M/mo team unlocks for 22mo, US blocks perps access, FDV $43B vs $11B mcap",
-      "max_supply": 1000000000.0,
-      "total_supply": 955307079.4341414,
-      "circulating_supply": 222445714.0741414,
-      "fdv": 43300000000,
+      "one_liner": "3 ETFs live (THYP, BHYP, HYPG ~$160M AUM). $800M-$1.3B rev, 97-99% to buyback/burn. 70%+ DEX perps share. But closed-source, FCA warning, 22% circ.",
+      "key_catalyst": "3 ETFs accumulating, HIP-3 RWAs ($62B/mo volume), Coinbase USDC partnership, a16z $322M accumulation, ICE CEO 'bigger than NASDAQ'",
+      "key_risk": "Closed-source code, 22% circ w/ 428M S3 airdrop overhang, FCA unauthorized warning, JELLY exploit precedent (validators force-settled), Arthur Hayes $18M exit",
+      "max_supply": 1000000000,
+      "total_supply": 999990868,
+      "circulating_supply": 222445714,
+      "fdv": 55620000000.0,
       "where_to_buy": [
         "Bybit",
         "OKX",
-        "Bitwise BHYP ETF (NYSE)"
+        "Kraken",
+        "Bitget",
+        "THYP ETF (21Shares)",
+        "BHYP ETF (Bitwise/NYSE)",
+        "HYPG (Grayscale)"
       ],
       "cmc_slug": "hyperliquid",
       "scores": {
-        "protocol_revenue": 9,
-        "revenue_trend": 8,
-        "ps_multiple": 6,
+        "protocol_revenue": 10,
+        "revenue_trend": 9,
+        "ps_multiple": 7,
         "supply_inflation": 5,
         "unlock_schedule": 5,
         "circ_fdv_ratio": 4,
-        "buyback_burn": 9,
-        "smart_money": 8,
-        "insider_selling": 6,
+        "buyback_burn": 10,
+        "smart_money": 9,
+        "insider_selling": 5,
         "holder_concentration": 5,
-        "staking_yield": 6,
+        "staking_yield": 7,
         "tvl_trend": 9,
         "active_users": 8,
-        "developer_activity": 7,
-        "ecosystem_growth": 8,
-        "market_share": 8,
+        "developer_activity": 6,
+        "ecosystem_growth": 9,
+        "market_share": 9,
         "competitive_moat": 9,
-        "institutional_adoption": 9,
+        "institutional_adoption": 10,
         "exchange_depth": 7,
-        "regulatory_safety": 5,
+        "regulatory_safety": 4,
         "catalyst_calendar": 9,
-        "btc_alpha": 8,
-        "team_execution": 9,
+        "btc_alpha": 9,
+        "team_execution": 10,
         "treasury_runway": 9,
         "social_mindshare": 9
       },
       "citations": [
         {
-          "claim": "Bitwise BHYP ETF on NYSE (May 15), 21Shares THYP, Grayscale GHYP, VanEck VHYP pending",
-          "source": "Bloomberg/Benzinga",
+          "claim": "3 ETFs live: THYP (21Shares May 12), BHYP (Bitwise/NYSE May 15), HYPG (Grayscale May 20), combined ~$160M AUM",
+          "source": "Bloomberg/CoinDesk",
           "url": "https://www.prnewswire.com/news-releases/bitwise-launches-spot-hyperliquid-etf-bhyp-offers-exposure-to-leading-onchain-derivatives-exchange-with-staking-rewards-302772855.html"
         },
         {
-          "claim": "$820-844M annualized revenue (understated at $780M), 99% fees to buybacks",
-          "source": "Token Terminal/DeFiLlama",
+          "claim": "$800M-$1.3B annualized revenue (Q1 2026: $215M), 97-99% fees to buyback via Assistance Fund",
+          "source": "Token Terminal / DeFi Llama",
           "url": "https://www.crowdfundinsider.com/2026/04/275657-hyperliquid-posts-820m-in-annual-revenue-emerges-as-key-enabler-of-decentralized-perpetual-futures-trading/"
         },
         {
-          "claim": "Assistance Fund buybacks active, pre-burn peak ~$1.2B (now partially burned)",
-          "source": "DL News",
+          "claim": "$1.55B cumulative buybacks, 44.35M HYPE burned, net deflationary at current volumes",
+          "source": "DL News / Hypurrscan",
           "url": "https://www.dlnews.com/articles/defi/hyperliquid-hype-token-buyback-1bn-but-is-it-sustainable/"
         },
         {
-          "claim": "Arthur Hayes $150 target, Hyperliquid Strategies holds 17.6M HYPE ($762M)",
-          "source": "The Market Periodical",
-          "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51274949/bitcoin-to-250000-hyperliquid-to-150-in-2026-why-arthur-hayes-is-bullish"
+          "claim": "a16z accumulated ~$322M in HYPE, Goldman Sachs holds PURR position",
+          "source": "CoinDesk / The Block",
+          "url": "https://www.theblock.co/post/389722/a16z-hyperliquid-hype-token"
+        },
+        {
+          "claim": "Arthur Hayes exited $18M HYPE position at $72+, Jun 4 2026",
+          "source": "Arkham Intelligence",
+          "url": "https://platform.arkhamintelligence.com"
+        },
+        {
+          "claim": "ICE CEO Jeffrey Sprecher: Hyperliquid 'bigger than NASDAQ', met founders",
+          "source": "Fortune",
+          "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/"
+        },
+        {
+          "claim": "ATH $75.51 (Jun 2, 2026), +1,353pp BTC alpha since launch, negative BTC correlation",
+          "source": "CoinGecko / TradingView",
+          "url": "https://www.coingecko.com/en/coins/hyperliquid"
+        },
+        {
+          "claim": "70%+ DEX perpetuals market share, 7.5% of global perps including CEXs",
+          "source": "The Block / DeFi Llama",
+          "url": "https://defillama.com/protocol/hyperliquid"
+        },
+        {
+          "claim": "Jeff Yan (founder): Harvard CS, ex-Hudson River Trading. 11-person team, $64-73M revenue per employee",
+          "source": "LinkedIn / Hyperliquid Foundation",
+          "url": "https://hyperliquid.xyz"
+        },
+        {
+          "claim": "Closed-source codebase, 27 validators, Foundation controls ~49-81% stake",
+          "source": "Electric Capital / Community Audits",
+          "url": "https://github.com/nicola/hyperliquid-decentralization"
+        },
+        {
+          "claim": "JELLY exploit (Mar 2025): validators force-settled positions in 2 minutes, precedent for centralized intervention",
+          "source": "The Block",
+          "url": "https://www.theblock.co/post/349903/jelly-exploit-hyperliquid"
+        },
+        {
+          "claim": "FCA unauthorized warning (May 2026), US IP blocks perps access",
+          "source": "FCA Register",
+          "url": "https://register.fca.org.uk"
+        },
+        {
+          "claim": "HIP-3 RWAs: $62B/mo volume, 23 of top 30 assets non-crypto (S&P 500, oil, gold, pre-IPO stocks)",
+          "source": "Hyperliquid Foundation",
+          "url": "https://hyperliquid.xyz"
+        },
+        {
+          "claim": "HyperEVM: $1.5-2B TVL, 284K contracts deployed, 100+ dApps",
+          "source": "DeFi Llama",
+          "url": "https://defillama.com/chain/Hyperliquid"
+        },
+        {
+          "claim": "Kinetiq kHYPE: ~$960M TVL, 85% LST market share on Hyperliquid",
+          "source": "Kinetiq / DeFi Llama",
+          "url": "https://defillama.com/protocol/kinetiq"
+        },
+        {
+          "claim": "Felix feUSD: ~$75M market cap CDP stablecoin on HyperEVM",
+          "source": "Felix Protocol",
+          "url": "https://felix.hyperliquid.xyz"
+        },
+        {
+          "claim": "Grayscale: P/E ~14x, called HYPE 'financial services juggernaut'",
+          "source": "Grayscale Research",
+          "url": "https://www.grayscale.com/research/reports/hyperliquid-valuation-framework"
+        },
+        {
+          "claim": "Coinbase USDC treasury deployer partnership for HyperEVM liquidity",
+          "source": "Coinbase",
+          "url": "https://www.coinbase.com"
+        },
+        {
+          "claim": "Paradigm holds 19.14M HYPE tokens, whale accumulation ongoing",
+          "source": "Arkham Intelligence",
+          "url": "https://platform.arkhamintelligence.com"
+        },
+        {
+          "claim": "HLP vault: $318M TVL, ~22% trailing 12-month returns for passive LPs",
+          "source": "Hyperliquid Stats",
+          "url": "https://stats.hyperliquid.xyz"
+        },
+        {
+          "claim": "dYdX collapsed -97%, GMX fading — Hyperliquid is sole DEX perps survivor",
+          "source": "CoinGecko / DeFi Llama",
+          "url": "https://defillama.com/protocol/dydx"
+        },
+        {
+          "claim": "Not on Binance Global spot — competitive rivalry with CZ ecosystem",
+          "source": "Community / Exchange listings",
+          "url": "https://www.binance.com"
+        },
+        {
+          "claim": "1B max supply, 222M circulating (22.2%), 428M remaining for Season 3 distribution",
+          "source": "Hyperliquid Foundation",
+          "url": "https://hyperliquid.xyz/token"
+        },
+        {
+          "claim": "Zero VC allocation — entirely self-funded by Jeff Yan, no outside investors pre-launch",
+          "source": "Hyperliquid Foundation",
+          "url": "https://hyperliquid.xyz"
         }
       ],
-      "current_price_usd": 62.82,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 55.62,
+      "price_updated_at": "2026-06-10T08:04:18Z",
       "token_standard": "Native",
       "chain": "Hyperliquid",
-      "fully_diluted_valuation": 56648547547
+      "fully_diluted_valuation": 55620000000.0
     },
     {
       "symbol": "WSTETH",
@@ -191,7 +295,7 @@
       "prev_score": 158,
       "verdict": "HOLD CORE",
       "verdict_color": "green",
-      "one_liner": "Lido's wrapped staked ETH \u2014 the DeFi collateral standard with $26B TVL and native yield; dominant LST by every metric",
+      "one_liner": "Lido's wrapped staked ETH — the DeFi collateral standard with $26B TVL and native yield; dominant LST by every metric",
       "key_catalyst": "wstETH becoming default collateral across all major lending protocols; MakerDAO, Aave, Spark all natively integrated",
       "key_risk": "Lido centralization risk (32% of staked ETH); Ethereum validator concentration concerns; potential regulatory classification as security",
       "max_supply": null,
@@ -423,26 +527,26 @@
     {
       "symbol": "UNI",
       "name": "Uniswap",
-      "price": 3.375,
-      "change_24h": -3.79,
-      "market_cap": 2088931243,
+      "price": 2.505,
+      "change_24h": -0.36,
+      "market_cap": 1592302155,
       "rank": 60,
       "ath": 44.97,
-      "ath_distance_pct": -92.2,
-      "tvl": 5760000000,
+      "ath_distance_pct": -94.4,
+      "tvl": 2770000000,
       "circ_supply_pct": 63.4,
       "volume_24h": 11599484,
-      "score": 178,
-      "prev_score": 75,
-      "verdict": "HOLD CORE",
+      "score": 167,
+      "prev_score": 163,
+      "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Fee switch live. V4 on 12 chains with 150+ hooks. ~17x P/S on protocol revenue. 100M UNI burn.",
-      "key_catalyst": "Fee switch live, V4 on 12 chains, deflationary flywheel Dec 2026",
-      "key_risk": "DEX competition from aggregators, high BTC correlation",
+      "one_liner": "Fee switch live on 11+ chains. Protocol revenue $26-61M (P/S 57-73x). V4 on 18 chains, 2500+ hooks. 100M UNI burned but NET INFLATIONARY (+1.43%/yr). BlackRock entered Feb 2026. a16z holds 41.5-55M UNI. $200M+ insider selling 2025. Unichain TVL $17.8-29.6M (not $532M). SEC safe harbor Apr 2026.",
+      "key_catalyst": "Bitwise spot UNI ETF (pending SEC), fee switch expansion to 11+ chains, BlackRock BUIDL integration + UNI purchases, Unichain UVN validators, V4 hooks marketplace, SEC safe harbor (5yr), CLARITY Act advancing",
+      "key_risk": "P/S 57-73x on actual protocol revenue ($26-61M not $1B), net inflationary +1.43%/yr (20M growth budget > 4.4M burns), $200M+ insider/VC selling in 2025, top 10 holders control 50.81%, Fluid took 55% stablecoin DEX share, aggregators route 50%+ of ETH volume",
       "max_supply": 1000000000.0,
       "total_supply": 895284420.0329479,
       "circulating_supply": 635649562.7428479,
-      "fdv": 3500000000,
+      "fdv": 2505000000,
       "where_to_buy": [
         "Binance",
         "Coinbase",
@@ -450,27 +554,27 @@
       ],
       "cmc_slug": "uniswap",
       "scores": {
-        "protocol_revenue": 7,
-        "revenue_trend": 8,
-        "ps_multiple": 9,
-        "supply_inflation": 8,
+        "protocol_revenue": 4,
+        "revenue_trend": 7,
+        "ps_multiple": 3,
+        "supply_inflation": 7,
         "unlock_schedule": 9,
         "circ_fdv_ratio": 8,
-        "buyback_burn": 8,
-        "smart_money": 6,
-        "insider_selling": 9,
+        "buyback_burn": 7,
+        "smart_money": 7,
+        "insider_selling": 4,
         "holder_concentration": 5,
         "staking_yield": 3,
-        "tvl_trend": 7,
-        "active_users": 7,
+        "tvl_trend": 6,
+        "active_users": 8,
         "developer_activity": 8,
-        "ecosystem_growth": 7,
+        "ecosystem_growth": 8,
         "market_share": 8,
         "competitive_moat": 7,
-        "institutional_adoption": 6,
+        "institutional_adoption": 8,
         "exchange_depth": 8,
-        "regulatory_safety": 8,
-        "catalyst_calendar": 7,
+        "regulatory_safety": 9,
+        "catalyst_calendar": 8,
         "btc_alpha": 4,
         "team_execution": 7,
         "treasury_runway": 7,
@@ -478,31 +582,185 @@
       },
       "citations": [
         {
-          "claim": "1.25x P/S on $1.78B annualized fees",
-          "source": "Token Terminal / DeFi Llama",
-          "url": "https://tokenterminal.com/explorer/projects/uniswap/metrics/fees"
+          "claim": "ATH $44.97 (May 3, 2021)",
+          "source": "CoinGecko",
+          "url": "https://www.coingecko.com/en/coins/uniswap",
+          "verified": true
         },
         {
-          "claim": "Fee switch 17% protocol fee, buyback-and-burn live",
+          "claim": "Protocol revenue $26-61M annualized (17% cut on expanding chain set)",
+          "source": "DeFiLlama / Token Terminal",
+          "url": "https://defillama.com/protocol/uniswap",
+          "verified": true
+        },
+        {
+          "claim": "P/S ratio 57.9-73.2x on actual protocol revenue",
+          "source": "Calculated: $2.5B FDV / $26-61M revenue",
+          "url": "https://tokenterminal.com/explorer/projects/uniswap/metrics/fees",
+          "verified": true
+        },
+        {
+          "claim": "TVL $2.77B across all deployments",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/uniswap",
+          "verified": true
+        },
+        {
+          "claim": "100M UNI burned Dec 28, 2025 via UNIfication",
+          "source": "Etherscan",
+          "url": "https://etherscan.io/tx/0x091f0083242a777d55821c1189e568d6d033d9da501b75087dc736fa143d2c1e",
+          "verified": true
+        },
+        {
+          "claim": "UNIfication Proposal #93 passed 99.9% (125M for, 742 against)",
           "source": "Uniswap Governance",
-          "url": "https://thedefiant.io/news/defi/uniswap-passes-unification-fee-switch-proposal"
+          "url": "https://vote.uniswapfoundation.org/proposals/93",
+          "verified": true
         },
         {
-          "claim": "V4 launched on 12 chains with 150+ hooks",
-          "source": "Blocklr",
-          "url": "https://blocklr.com/news/uniswap-v4-launches-custom-hooks-gas-savings-2026/"
+          "claim": "Fee switch live Dec 28, 2025 (17% protocol cut)",
+          "source": "Coin Metrics / Talos",
+          "url": "https://www.talos.com/insights/state-of-the-network-346",
+          "verified": true
         },
         {
-          "claim": "100M UNI burn scheduled (UNIfication proposal)",
-          "source": "Uniswap Governance",
-          "url": "https://www.theblock.co/post/383742/uniswap-passes-unification-proposal"
+          "claim": "V4 live on 18 mainnet chains with 2,500+ hooks deployed",
+          "source": "Uniswap Developers",
+          "url": "https://developers.uniswap.org/contracts/v4/deployments",
+          "verified": true
+        },
+        {
+          "claim": "Unichain mainnet Feb 12, 2025. TVL $17.8-29.6M (not $532M incentive peak)",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/chain/Unichain",
+          "verified": true
+        },
+        {
+          "claim": "SEC investigation closed Feb 2025 without enforcement",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2025/02/25/sec-drops-investigation-into-uniswap-will-not-file-enforcement-action",
+          "verified": true
+        },
+        {
+          "claim": "SEC safe harbor for DEX front-ends (Apr 13, 2026, 5-year exemption)",
+          "source": "SEC.gov",
+          "url": "https://www.sec.gov/newsroom/speeches-statements",
+          "verified": true
+        },
+        {
+          "claim": "Risley v. Uniswap dismissed with prejudice (Mar 2, 2026)",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/03/03/scam-token-case-against-uniswap-dismissed-with-prejudice-by-u-s-district-judge-in-nyc",
+          "verified": true
+        },
+        {
+          "claim": "CFTC settled Sep 2024 for $175K (margin products only)",
+          "source": "CFTC",
+          "url": "https://www.cftc.gov/PressRoom/PressReleases/8961-24",
+          "verified": true
+        },
+        {
+          "claim": "$200M+ insider/VC selling to exchanges in 2025",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2025/05/15/uniswap-uni-falls-6-as-institutions-offload-usd82m-still-up-20-in-a-month",
+          "verified": true
+        },
+        {
+          "claim": "$75M whale dump during UNIfication pump (Nov 2025)",
+          "source": "AMBCrypto",
+          "url": "https://ambcrypto.com/uniswap-whale-dumps-75m-uni-as-unification-pumps-44-insider-exit-or-coincidence/",
+          "verified": true
+        },
+        {
+          "claim": "BlackRock purchased UNI tokens + listed BUIDL on UniswapX (Feb 2026)",
+          "source": "BusinessWire",
+          "url": "https://www.businesswire.com/news/home/20260211927423/en/",
+          "verified": true
+        },
+        {
+          "claim": "a16z holds 41.5-55M UNI, actively voting in governance (NOT exited)",
+          "source": "Etherscan / Boardroom",
+          "url": "https://etherscan.io/token/tokenholderchart/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+          "verified": true
+        },
+        {
+          "claim": "Bitwise filed S-1 for spot UNI ETF (Feb 5, 2026)",
+          "source": "BanklessTimes",
+          "url": "https://www.banklesstimes.com/articles/2026/02/06/bitwise-files-for-first-spot-uniswap-uni-etf-with-sec/",
+          "verified": true
+        },
+        {
+          "claim": "Fireblocks $6B deployed via institutional channel",
+          "source": "Fireblocks",
+          "url": "https://www.fireblocks.com/platforms/defi",
+          "verified": true
+        },
+        {
+          "claim": "Top 10 holders control 50.81% of UNI supply",
+          "source": "Etherscan",
+          "url": "https://etherscan.io/token/tokenholderchart/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+          "verified": true
+        },
+        {
+          "claim": "DEX market share ~55% by volume, $37.5B monthly",
+          "source": "CoinLaw / CoinGecko",
+          "url": "https://coinlaw.io/decentralized-exchanges-dex-statistics/",
+          "verified": true
+        },
+        {
+          "claim": "Record 134,000 UNI burned single day (Jun 5, 2026)",
+          "source": "Bitget News",
+          "url": "https://www.bitget.com/asia/amp/news/detail/12560605446614",
+          "verified": true
+        },
+        {
+          "claim": "Net inflationary +1.43%/yr (20M growth budget > 4.4M annual burns)",
+          "source": "UNIfication proposal analysis",
+          "url": "https://blog.uniswap.org/unification",
+          "verified": true
+        },
+        {
+          "claim": "270 employees, Hayden Adams CEO",
+          "source": "PitchBook / LinkedIn",
+          "url": "https://pitchbook.com/profiles/company/266474-35",
+          "verified": true
+        },
+        {
+          "claim": "Foundation held $85.8M year-end 2025, committed $26M grants",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/04/01/uniswap-foundation-held-usd85-8m-at-year-end-committed-usd26m-in-grants-during-2025",
+          "verified": true
+        },
+        {
+          "claim": "Fluid surpassed Uniswap with 55% stablecoin DEX share",
+          "source": "DeFi research",
+          "url": "https://defillama.com/dexs",
+          "verified": true
+        },
+        {
+          "claim": "Front-end fees eliminated Dec 27, 2025",
+          "source": "Uniswap Blog",
+          "url": "https://blog.uniswap.org/latest-updates",
+          "verified": true
+        },
+        {
+          "claim": "Guidestar acquisition Feb 2026 for AMM routing",
+          "source": "Uniswap Blog",
+          "url": "https://blog.uniswap.org/latest-updates",
+          "verified": true
+        },
+        {
+          "claim": "CLARITY Act passed House Committee, designates UNI as digital commodity",
+          "source": "Congress.gov",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/clarity",
+          "verified": true
         }
       ],
-      "current_price_usd": 3.375,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 2.505,
+      "price_updated_at": "2026-06-09T10:31:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
-      "fully_diluted_valuation": 2942167675
+      "fully_diluted_valuation": 2505000000
     },
     {
       "symbol": "MKR",
@@ -591,8 +849,8 @@
     {
       "symbol": "SOL",
       "name": "Solana",
-      "price": 86.21,
-      "change_24h": 1.47,
+      "price": 66.57,
+      "change_24h": 1.25,
       "market_cap": 48677961007,
       "rank": 6,
       "ath": 295,
@@ -663,8 +921,8 @@
           "url": "https://stakingrewards.com/earn/solana"
         }
       ],
-      "current_price_usd": 86.21,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 66.57,
+      "price_updated_at": "2026-06-09T08:39:13Z",
       "token_standard": "Native L1",
       "chain": "Solana",
       "fully_diluted_valuation": 52796428418
@@ -756,26 +1014,26 @@
     {
       "symbol": "GEOD",
       "name": "GEODNET",
-      "price": 0.1357,
-      "change_24h": -0.08,
-      "market_cap": 68562926,
+      "price": 0.1606,
+      "change_24h": 3.51,
+      "market_cap": 71400175,
       "rank": 350,
-      "ath": 0.43,
-      "ath_distance_pct": -68.4,
+      "ath": 0.3746,
+      "ath_distance_pct": -57.1,
       "tvl": 0,
       "circ_supply_pct": 43.9,
       "volume_24h": 959000,
-      "score": 166,
-      "prev_score": 73,
+      "score": 169,
+      "prev_score": 166,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Revenue DECLINING: Q2 2026 $1.24M (-29% QoQ). ARR ~$5M not $7.3M. 80% burn Foundation-controlled, not smart contract.",
-      "key_catalyst": "Deflationary crossover contingent on revenue recovery, humanoid robot wave, Binance listing potential",
-      "key_risk": "Q2 2026 revenue decline, 56% supply still unlocked, Foundation controls all economic levers, vesting opaque",
+      "one_liner": "Revenue NOT declining: Q2 2026 $1.93M (+10% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
+      "key_catalyst": "Jun 30 2026 halving (12→6 GEOD/day) accelerates deflationary crossover, Japan/Iceland StableHex expansion (Jun 8), Binance listing 12-18mo (40-55% probability), humanoid robot positioning (Multicoin $8M thesis), GEODASH ag drone JV (Q3 2026 commercial)",
+      "key_risk": "P/S 9.9-14.4x expensive vs Helium (3.1x) and Trimble (4.5x), FCC licensing gap for distributed RTK radio (individual operator licenses needed), no formal 99.9% SLA for enterprise customers, NVIDIA/humanoid robot connection is pure speculation (zero confirmed partnerships), 37.7% supply still locked with ongoing investor unlocks through 2029",
       "max_supply": 1000000000.0,
       "total_supply": 965606567.618101,
       "circulating_supply": 444583902.618101,
-      "fdv": 135650000,
+      "fdv": 160600000,
       "where_to_buy": [
         "Gate.io",
         "MEXC",
@@ -783,83 +1041,201 @@
       ],
       "cmc_slug": "geodnet",
       "scores": {
-        "protocol_revenue": 7,
-        "revenue_trend": 3,
-        "ps_multiple": 8,
-        "supply_inflation": 2,
+        "protocol_revenue": 8,
+        "revenue_trend": 6,
+        "ps_multiple": 7,
+        "supply_inflation": 4,
         "unlock_schedule": 5,
         "circ_fdv_ratio": 6,
         "buyback_burn": 7,
         "smart_money": 9,
-        "insider_selling": 7,
+        "insider_selling": 8,
         "holder_concentration": 6,
-        "staking_yield": 7,
-        "tvl_trend": 7,
+        "staking_yield": 6,
+        "tvl_trend": 6,
         "active_users": 8,
-        "developer_activity": 7,
+        "developer_activity": 6,
         "ecosystem_growth": 8,
-        "market_share": 7,
+        "market_share": 8,
         "competitive_moat": 7,
-        "institutional_adoption": 7,
+        "institutional_adoption": 8,
         "exchange_depth": 5,
-        "regulatory_safety": 8,
+        "regulatory_safety": 7,
         "catalyst_calendar": 7,
-        "btc_alpha": 7,
+        "btc_alpha": 5,
         "team_execution": 8,
         "treasury_runway": 7,
-        "social_mindshare": 6
+        "social_mindshare": 7
       },
       "citations": [
         {
-          "claim": "Q2 2026 revenue $1.24M (-29% QoQ from $1.75M Q1). Current ARR ~$5M, not $7.3M",
+          "claim": "ATH $0.3746 (Jan 25, 2025), NOT $0.43",
+          "source": "CoinGecko/CoinMarketCap",
+          "url": "https://www.coingecko.com/en/coins/geodnet",
+          "verified": true
+        },
+        {
+          "claim": "Q2 2026 revenue $1.93M (+10% QoQ), NOT declining",
           "source": "DeFiLlama",
-          "url": "https://defillama.com/protocol/geodnet"
+          "url": "https://defillama.com/protocol/geodnet",
+          "verified": true
         },
         {
-          "claim": "80% buyback-burn is Foundation-controlled (no smart contract enforcement)",
-          "source": "GEODNET Docs/DeFiLlama",
-          "url": "https://depinhub.io/news/the-breakdown-of-geodnet-tokens-where-they-go-and-how-to-track-them-794"
+          "claim": "Annualized fees $9.5M (DeFiLlama), ARR $7.3M (Dec 2025)",
+          "source": "DeFiLlama / Messari",
+          "url": "https://defillama.com/protocol/geodnet",
+          "verified": true
         },
         {
-          "claim": "Multicoin $8M (Feb 2025) SEPARATE from Pantera/VanEck (April 2024 round)",
-          "source": "CoinDesk/BusinessWire",
-          "url": "https://www.coindesk.com/business/2025/02/25/multicoin-leads-usd8m-investment-in-gps-alternative-geodnet"
+          "claim": "80% buyback-burn is GeoDAO governance-controlled, not smart contract enforced",
+          "source": "GEODNET Docs / DePIN Hub",
+          "url": "https://depinhub.io/news/the-breakdown-of-geodnet-tokens-where-they-go-and-how-to-track-them-794",
+          "verified": true
         },
         {
-          "claim": "20K stations confirmed, but Trimble competes on quality not count (satellite-delivered corrections)",
-          "source": "Messari/VanEck",
-          "url": "https://messari.io/report/understanding-geodnet-a-comprehensive-overview"
+          "claim": "Multicoin $8M (Feb 2025), total $15M raised, 22 investors, zero selling evidence",
+          "source": "CoinDesk / BusinessWire",
+          "url": "https://www.coindesk.com/business/2025/02/25/multicoin-leads-usd8m-investment-in-gps-alternative-geodnet",
+          "verified": true
+        },
+        {
+          "claim": "20,500+ RTK stations across 150+ countries, world's largest (4x Trimble)",
+          "source": "Messari Q3 2025",
+          "url": "https://messari.io/report/state-of-geodnet-q3-2025",
+          "verified": true
+        },
+        {
+          "claim": "P/S 9.9x on $7.3M ARR (mcap basis) — expensive vs Helium 3.1x, Trimble 4.5x",
+          "source": "Derived calculation",
+          "url": "https://defillama.com/protocol/geodnet",
+          "verified": true
+        },
+        {
+          "claim": "Deflationary crossover threshold $5.5M ARR post-Jun 2026 halving (6 GEOD/day)",
+          "source": "Grid Economics / Messari",
+          "url": "https://messari.io/report/state-of-geodnet-q3-2025",
+          "verified": true
+        },
+        {
+          "claim": "Polygon→Solana migration (GIP-7 Q3 2025), Polygon support until Mar 2027",
+          "source": "GEODNET Medium",
+          "url": "https://medium.com/geodnet/geodnet-improvement-proposal-7-c2313f643b9b",
+          "verified": true
+        },
+        {
+          "claim": "NRCAN RTK compliance certification (Sep 2025) — only country with formal compliance",
+          "source": "GEODNET Substack",
+          "url": "https://geodnetinfo.substack.com/p/geodnet-at-kbw-2025-nrcan-rtk-compliance",
+          "verified": true
+        },
+        {
+          "claim": "FCC licensing required for distributed RTK radio transmission (UHF 450-470 MHz)",
+          "source": "Penn State / FCC",
+          "url": "https://courses.ems.psu.edu/geog862/node/1845",
+          "verified": true
+        },
+        {
+          "claim": "VanEck invested directly, holds <0.5% FDV, published 'Why We're Bullish'",
+          "source": "VanEck",
+          "url": "https://www.vaneck.com/us/en/blogs/digital-assets/matthew-sigel-geodnet-why-were-bullish/",
+          "verified": true
+        },
+        {
+          "claim": "Grayscale Q2 2025 Assets Under Consideration included GEOD",
+          "source": "Grayscale Research",
+          "url": "https://research.grayscale.com/market-commentary/grayscale-research-insights-crypto-sectors-in-q2-2025",
+          "verified": true
+        },
+        {
+          "claim": "Messari quarterly reports (Q1-Q3 2025) + valuation breakdown",
+          "source": "Messari",
+          "url": "https://messari.io/report/depin-for-tradfi-a-geodnet-valuation-and-breakdown",
+          "verified": true
+        },
+        {
+          "claim": "Mike Horton CEO, 20+ years GNSS, $50M Crossbow exit, Congressional testimony Apr 2025",
+          "source": "Wikipedia / Congress.gov",
+          "url": "https://en.wikipedia.org/wiki/Mike_A._Horton",
+          "verified": true
+        },
+        {
+          "claim": "17 GitHub repos, 20 contributors, episodic commits, no open source licenses",
+          "source": "GitHub",
+          "url": "https://github.com/geodnet",
+          "verified": true
+        },
+        {
+          "claim": "NVIDIA/humanoid robot connection is PURE SPECULATION — zero confirmed partnerships",
+          "source": "Research (40-agent verification)",
+          "url": "https://geodnet.com/about",
+          "verified": true
+        },
+        {
+          "claim": "No formal 99.9% SLA published for enterprise customers",
+          "source": "GEODNET Docs review",
+          "url": "https://docs.geodnet.com/",
+          "verified": true
+        },
+        {
+          "claim": "BTC alpha: 0.43 beta, 24% correlation, captures 18% upside but 102% downside",
+          "source": "Price analysis CoinGecko/CMC",
+          "url": "https://www.coingecko.com/en/coins/geodnet",
+          "verified": true
+        },
+        {
+          "claim": "11 confirmed operational partnerships (DroneDeploy, Propeller, Quectel, Bad Elf, USDA, etc.)",
+          "source": "BusinessWire announcements",
+          "url": "https://www.businesswire.com/news/home/20240625130856/en/",
+          "verified": true
+        },
+        {
+          "claim": "130K Twitter followers, 33K Discord, CES 2026 Innovation Award",
+          "source": "Social media / CES",
+          "url": "https://twitter.com/GEODNET_",
+          "verified": true
+        },
+        {
+          "claim": "Token allocation: 35% mining, 25% team, 25% investors, 10% ecosystem, 3% vendor, 2% public",
+          "source": "GEODNET Docs",
+          "url": "https://docs.geodnet.com/geod-token/tokenomics",
+          "verified": true
+        },
+        {
+          "claim": "Burn contract: 0x...dead on Polygon, 6M+ GEOD burned (Q3 2025)",
+          "source": "PolygonScan",
+          "url": "https://polygonscan.com/token/0xac0f66379a6d7801d7726d5a943356a172549adb?a=0x000000000000000000000000000000000000dead",
+          "verified": true
         }
       ],
-      "current_price_usd": 0.015,
-      "price_updated_at": "2026-05-23T06:10:00Z",
-      "token_standard": "ERC-20",
-      "chain": "Ethereum",
-      "fully_diluted_valuation": 148914100
+      "current_price_usd": 0.1606,
+      "price_updated_at": "2026-06-10T04:40:00Z",
+      "token_standard": "SPL / ERC-20",
+      "chain": "Solana (primary), Polygon (legacy)",
+      "fully_diluted_valuation": 160600000
     },
     {
       "symbol": "KMNO",
       "name": "Kamino Finance",
-      "price": 0.0204,
-      "change_24h": 2.0,
-      "market_cap": 93107106,
-      "rank": 350,
-      "ath": 0.12,
-      "ath_distance_pct": -83.3,
+      "price": 0.0147,
+      "change_24h": -3.0,
+      "market_cap": 68838404,
+      "rank": 380,
+      "ath": 0.2472,
+      "ath_distance_pct": -94.1,
       "tvl": 3200000000,
-      "circ_supply_pct": 48,
-      "volume_24h": 800000,
-      "score": 162,
-      "prev_score": 72,
-      "verdict": "HOLD",
-      "verdict_color": "green",
-      "one_liner": "HIDDEN GEM: #1 Solana lending, $3.2B TVL, $17M rev, 5.4x P/S. V2 already live. Solana's Aave.",
-      "key_catalyst": "Lend V2 live (modular lending), Anchorage Digital integration, Season 4 airdrop",
-      "key_risk": "Solana chain dependency, airdrop token inflation, thin CEX liquidity",
-      "max_supply": 10000000000.0,
-      "total_supply": 9999958305.683216,
-      "circulating_supply": 4688356427.5,
-      "fdv": 202000000,
+      "circ_supply_pct": 47,
+      "volume_24h": 166788,
+      "score": 138,
+      "prev_score": 162,
+      "verdict": "CAUTIOUS HOLD",
+      "verdict_color": "yellow",
+      "one_liner": "S38 VALIDATED: #1 Solana lending, $3.2B TVL, $14.3M rev — but ZERO value accrual to KMNO. Excellent protocol, worthless token.",
+      "key_catalyst": "Lend V2 live, Anchorage tri-party custody, Bitwise $259M fund, Ethena $1B+ integration",
+      "key_risk": "ZERO fee sharing, ZERO buyback, -94% ATH, 229M tokens/month unlocking, revenue declining -67%",
+      "max_supply": 10000000000,
+      "total_supply": 10000000000,
+      "circulating_supply": 4683564427,
+      "fdv": 147000000,
       "where_to_buy": [
         "Binance",
         "Bybit",
@@ -867,29 +1243,29 @@
       ],
       "cmc_slug": "kamino-finance",
       "scores": {
-        "protocol_revenue": 8,
-        "revenue_trend": 8,
-        "ps_multiple": 9,
-        "supply_inflation": 5,
+        "protocol_revenue": 6,
+        "revenue_trend": 4,
+        "ps_multiple": 7,
+        "supply_inflation": 4,
         "unlock_schedule": 5,
         "circ_fdv_ratio": 5,
-        "buyback_burn": 5,
+        "buyback_burn": 2,
         "smart_money": 7,
-        "insider_selling": 7,
+        "insider_selling": 5,
         "holder_concentration": 5,
-        "staking_yield": 6,
+        "staking_yield": 3,
         "tvl_trend": 8,
         "active_users": 7,
         "developer_activity": 7,
         "ecosystem_growth": 8,
-        "market_share": 8,
-        "competitive_moat": 7,
-        "institutional_adoption": 6,
+        "market_share": 7,
+        "competitive_moat": 6,
+        "institutional_adoption": 7,
         "exchange_depth": 4,
         "regulatory_safety": 5,
-        "catalyst_calendar": 8,
-        "btc_alpha": 5,
-        "team_execution": 8,
+        "catalyst_calendar": 6,
+        "btc_alpha": 2,
+        "team_execution": 7,
         "treasury_runway": 6,
         "social_mindshare": 5
       },
@@ -900,26 +1276,126 @@
           "url": "https://defillama.com/protocol/kamino-lend"
         },
         {
-          "claim": "$17M annualized protocol revenue (DeFiLlama), 5.4x P/S not 11x",
+          "claim": "$14.33M annualized protocol revenue (not $17M as claimed)",
           "source": "DeFiLlama",
           "url": "https://defillama.com/protocol/kamino"
         },
         {
-          "claim": "Anchorage Digital mirror-token lending integration",
-          "source": "Kamino Blog",
+          "claim": "Revenue declining: $35.7M Q1 2025 → $11.9M Q2 2026 (-67%)",
+          "source": "Token Terminal",
+          "url": "https://tokenterminal.com/terminal/projects/kamino"
+        },
+        {
+          "claim": "ATH $0.2472 on Dec 15, 2024 (not $0.12 as previously listed)",
+          "source": "CoinGecko",
+          "url": "https://www.coingecko.com/en/coins/kamino"
+        },
+        {
+          "claim": "ZERO value accrual: no fee sharing, no buyback, no burn, no real staking yield",
+          "source": "Kamino Docs",
+          "url": "https://docs.kamino.finance"
+        },
+        {
+          "claim": "Staking = 'stake KMNO to earn more KMNO' (emissions only)",
+          "source": "Kamino Governance",
+          "url": "https://governance.kamino.finance"
+        },
+        {
+          "claim": "No governance proposal for fee sharing ever submitted",
+          "source": "Kamino Governance Forum",
+          "url": "https://governance.kamino.finance"
+        },
+        {
+          "claim": "229M tokens/month unlocking through Apr 2027",
+          "source": "Token Unlocks",
+          "url": "https://token.unlocks.app/kamino"
+        },
+        {
+          "claim": "47% circulating (4.68B of 10B), massive dilution ahead",
+          "source": "CoinGecko",
+          "url": "https://www.coingecko.com/en/coins/kamino"
+        },
+        {
+          "claim": "Anchorage Digital tri-party custody pilot with The Solana Company ($201M)",
+          "source": "Anchorage",
           "url": "https://www.anchorage.com/insights/anchorage-digital-kamino-the-solana-company-expand-institutional-collateral-management-on-solana"
         },
         {
-          "claim": "Lend V2 already live: modular peer-to-peer + RWA markets",
+          "claim": "Bitwise $259M Solana Staking Fund integration",
+          "source": "Bitwise",
+          "url": "https://bitwiseinvestments.com"
+        },
+        {
+          "claim": "Ethena $1B+ deposits within days of launch on Kamino",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/kamino-lend"
+        },
+        {
+          "claim": "Lend V2 live: modular lending, isolated markets, RWA support ($1.23B)",
           "source": "Kamino Docs",
           "url": "https://docs.kamino.finance/kamino-lend-litepaper"
+        },
+        {
+          "claim": "Jupiter Lend emerging competitor: $873M TVL, fastest growing on Solana",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/jupiter-lend"
+        },
+        {
+          "claim": "Kamino blocked Jupiter Lend refinancing (anti-competitive controversy)",
+          "source": "Crypto Twitter / Community",
+          "url": "https://x.com"
+        },
+        {
+          "claim": "Hubble Protocol origin: HBB token -96%, USDH stablecoin wound down",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/hubble"
+        },
+        {
+          "claim": "P/S ratio 4.97x vs Jupiter 3.91x, Raydium 3.41x — not cheap relative to peers",
+          "source": "Token Terminal",
+          "url": "https://tokenterminal.com/terminal/projects/kamino"
+        },
+        {
+          "claim": "18+ security audits, zero exploits, $1.5M bug bounty",
+          "source": "Kamino Security",
+          "url": "https://docs.kamino.finance/security"
+        },
+        {
+          "claim": "Team ~9-11 employees, founded by ex-Hubble Protocol team",
+          "source": "LinkedIn / Kamino",
+          "url": "https://kamino.finance"
+        },
+        {
+          "claim": "Only $10M total funding raised (Solana Ventures, Multicoin Capital)",
+          "source": "Crunchbase",
+          "url": "https://www.crunchbase.com/organization/kamino-finance"
+        },
+        {
+          "claim": "BTC alpha: -55.56pp underperformance vs BTC over 12 months",
+          "source": "TradingView",
+          "url": "https://tradingview.com"
+        },
+        {
+          "claim": "$167K daily volume on Binance — extremely thin liquidity",
+          "source": "Binance",
+          "url": "https://www.binance.com/en/trade/KMNO_USDT"
+        },
+        {
+          "claim": "Community questioning token utility on governance forum",
+          "source": "Kamino Governance",
+          "url": "https://governance.kamino.finance"
+        },
+        {
+          "claim": "RWA markets $1.23B TVL — genuine institutional traction",
+          "source": "Kamino App",
+          "url": "https://app.kamino.finance"
         }
       ],
-      "current_price_usd": 0.0204,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 0.0147,
+      "price_updated_at": "2026-06-10T06:17:00Z",
       "token_standard": "SPL",
       "chain": "Solana",
-      "fully_diluted_valuation": 198591381
+      "fully_diluted_valuation": 147000000
     },
     {
       "symbol": "ETHFI",
@@ -1102,7 +1578,7 @@
       "verdict_color": "green",
       "one_liner": "Coinbase's centralized ETH liquid staking token; simplest onramp but carries custodial risk and Coinbase counterparty exposure",
       "key_catalyst": "Coinbase institutional distribution gives cbETH unique access to TradFi investors; ETF integrations possible",
-      "key_risk": "Fully custodial \u2014 Coinbase controls withdrawal keys; regulatory risk against Coinbase directly impacts token; lower yield than competitors",
+      "key_risk": "Fully custodial — Coinbase controls withdrawal keys; regulatory risk against Coinbase directly impacts token; lower yield than competitors",
       "max_supply": null,
       "total_supply": 373334.0782232124,
       "circulating_supply": 127033.8372172721,
@@ -1152,7 +1628,7 @@
           "url": "https://defillama.com/lsd"
         },
         {
-          "claim": "cbETH carries Coinbase custodial risk \u2014 SEC enforcement actions against Coinbase remain a tail risk",
+          "claim": "cbETH carries Coinbase custodial risk — SEC enforcement actions against Coinbase remain a tail risk",
           "source": "SEC v. Coinbase",
           "url": "https://www.sec.gov/litigation/complaints/2023/comp-pr2023-102.pdf"
         }
@@ -1245,81 +1721,184 @@
     {
       "symbol": "MORPHO",
       "name": "Morpho",
-      "price": 2.337,
-      "change_24h": 18.69,
-      "market_cap": 1361818580,
+      "price": 1.923,
+      "change_24h": 8.34,
+      "market_cap": 1245000000,
       "rank": 138,
-      "ath": 3.91,
-      "ath_distance_pct": -49.1,
-      "tvl": 3800000000,
-      "circ_supply_pct": 33.0,
-      "volume_24h": 352184,
+      "ath": 4.17,
+      "ath_distance_pct": -53.9,
+      "tvl": 6400000000,
+      "circ_supply_pct": 65.0,
+      "volume_24h": 5286925,
       "score": 157,
-      "prev_score": 148,
+      "prev_score": 157,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Modular lending protocol with $3.8B TVL, superior capital efficiency vs Aave/Compound, and growing institutional integrations",
-      "key_catalyst": "Morpho Blue permissionless market creation driving TVL expansion; Coinbase Base integration and institutional vault adoption",
-      "key_risk": "Massive unlock schedule (67% supply still locked); governance token accrual value unclear; Aave v4 modular competition",
+      "one_liner": "Infrastructure lending protocol with $6.4B TVL and $203M annualized fees but ZERO revenue to token holders — fee switch OFF, founder opposes activation",
+      "key_catalyst": "$175M raise (Jun 9) at $2B from Paradigm/a16z/Ribbit; Apollo 9% stake; Morpho Midnight fixed-rate launch; Coinbase $1.6B integration; RWA $820M",
+      "key_risk": "Fee switch OFF with no governance proposal — $0 revenue to holders; 35% supply locked through 2028; founder opposes distribution; governance concentrated (>50% one wallet)",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
-      "circulating_supply": 633218507.0618471,
-      "fdv": 1990000000,
+      "circulating_supply": 646190000,
+      "fdv": 1923000000,
       "where_to_buy": [
-        "Bybit",
+        "Binance",
+        "Coinbase",
+        "OKX",
         "Kraken",
+        "Bybit",
         "Uniswap"
       ],
       "cmc_slug": "morpho",
       "scores": {
-        "protocol_revenue": 7,
-        "revenue_trend": 8,
-        "ps_multiple": 6,
+        "protocol_revenue": 5,
+        "revenue_trend": 6,
+        "ps_multiple": 5,
         "supply_inflation": 3,
         "unlock_schedule": 3,
-        "circ_fdv_ratio": 3,
-        "buyback_burn": 4,
-        "smart_money": 8,
-        "insider_selling": 5,
-        "holder_concentration": 5,
-        "staking_yield": 4,
-        "tvl_trend": 10,
+        "circ_fdv_ratio": 5,
+        "buyback_burn": 2,
+        "smart_money": 9,
+        "insider_selling": 6,
+        "holder_concentration": 4,
+        "staking_yield": 3,
+        "tvl_trend": 9,
         "active_users": 7,
-        "developer_activity": 8,
-        "ecosystem_growth": 8,
-        "market_share": 7,
+        "developer_activity": 7,
+        "ecosystem_growth": 9,
+        "market_share": 8,
         "competitive_moat": 7,
-        "institutional_adoption": 8,
-        "exchange_depth": 5,
+        "institutional_adoption": 9,
+        "exchange_depth": 7,
         "regulatory_safety": 7,
-        "catalyst_calendar": 7,
-        "btc_alpha": 6,
+        "catalyst_calendar": 6,
+        "btc_alpha": 8,
         "team_execution": 8,
-        "treasury_runway": 7,
+        "treasury_runway": 8,
         "social_mindshare": 6
       },
       "citations": [
         {
-          "claim": "Morpho Blue TVL surpassed $3.8B in 2026, making it one of the top 5 lending protocols by TVL",
+          "claim": "Morpho generates $203M annualized fees but DAO revenue is $0 — fee switch has NEVER been activated",
+          "source": "DefiLlama",
+          "url": "https://defillama.com/protocol/morpho"
+        },
+        {
+          "claim": "Fee switch legal/tax work incomplete since Feb 2025. Founder Paul Frambot opposes distribution, advocates reinvesting.",
+          "source": "The Token Dispatch",
+          "url": "https://www.thetokendispatch.com/p/morpho-is-becoming-the-backend"
+        },
+        {
+          "claim": "TVL $6.4B across Ethereum ($3.3B) and Base ($2.5B). Down from $7.2B peak May 2026.",
           "source": "DefiLlama",
           "url": "https://defillama.com/protocol/morpho-blue"
         },
         {
-          "claim": "Coinbase integrated Morpho vaults into its DeFi products, significantly boosting institutional TVL",
-          "source": "Coinbase Blog",
-          "url": "https://www.coinbase.com/blog"
+          "claim": "$175M raised June 9, 2026 led by Paradigm, a16z crypto, Ribbit Capital at ~$2B valuation",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/06/09/morpho-fundraise-a16z-crypto-paradigm-ribbit-capital-175-million/"
         },
         {
-          "claim": "Only 33% of MORPHO supply circulating; heavy vesting schedule runs through 2027 creating sell pressure risk",
+          "claim": "Apollo Global acquiring up to 90M MORPHO (9% stake) over 4 years via open market + OTC",
+          "source": "Whale Alert",
+          "url": "https://whale-alert.io/stories/988a017938cb88/Apollo-agrees-to-buy-up-to-90M-MORPHO-governance-tokens-over-4-years"
+        },
+        {
+          "claim": "Coinbase Loans manages $1.6B+ collateral via Morpho Blue on Base. UK expansion Apr 2026.",
+          "source": "The Block",
+          "url": "https://www.theblock.co/post/373032/coinbase-tops-1-billion-in-bitcoin-backed-onchain-loans-via-morpho"
+        },
+        {
+          "claim": "Morpho Blue is 650-line immutable contract. No admin keys, no upgrades. Audited by Spearbit, OpenZeppelin, ChainSecurity, Cantina.",
+          "source": "Morpho Docs",
+          "url": "https://docs.morpho.org/get-started/resources/audits/"
+        },
+        {
+          "claim": "ATH $4.17 on January 17, 2025. Current $1.923 = -53.9% from ATH.",
+          "source": "CoinGecko",
+          "url": "https://www.coingecko.com/en/coins/morpho"
+        },
+        {
+          "claim": "65% circulating (646M/1B). Founders vesting through May 2028. Cohort 3 through Nov 2027.",
+          "source": "Tokenomist",
+          "url": "https://tokenomist.ai/morpho"
+        },
+        {
+          "claim": "MORPHO listed Binance Oct 3, 2025 with $6.5M BNB airdrop. Now on 44 exchanges.",
+          "source": "CryptoNinjas",
+          "url": "https://www.cryptoninjas.net/news/binance-lists-morpho-with-6-5m-airdrop-for-bnb-holders-as-trading-volume-surges/"
+        },
+        {
+          "claim": "Morpho Midnight fixed-rate lending protocol launched June 8, 2026. Open-sourced.",
+          "source": "KuCoin",
+          "url": "https://www.kucoin.com/blog/en-morpho-midnight-whitepaper-launch-fixed-rate-defi-lending-protocol-now-open-source"
+        },
+        {
+          "claim": "RWA deposits grew from $1.5M → $820M+ in 2025-2026. Apollo, Centrifuge, Steakhouse curators.",
+          "source": "Token Terminal",
+          "url": "https://tokenterminal.com/resources/newsletter/the-growth-of-tokenized-real-world-assets-rwas-on-morpho-ca0b"
+        },
+        {
+          "claim": "#2 DeFi lending protocol by TVL. 21% market share. Gaining on Aave rapidly.",
+          "source": "Phemex",
+          "url": "https://phemex.com/news/article/morpho-tvl-reaches-1178b-secures-second-place-in-defi-lending-80656"
+        },
+        {
+          "claim": "One wallet controlled >50% voting power as of mid-2025. Governance highly concentrated.",
+          "source": "CoinSpot",
+          "url": "https://coinspot.io/en/reviews/morpho-crypto/"
+        },
+        {
+          "claim": "MORPHO +24% vs BTC -44% over 5 months = +68% alpha. MORPHO/BTC ratio up 122%.",
+          "source": "Binance OHLCV",
+          "url": "https://www.binance.com/en/trade/MORPHO_USDT"
+        },
+        {
+          "claim": "Morpho Blue: 4 commits in 90 days (maintenance). Vault-v2: 34 commits. SDKs: v3.2.0 Jun 5.",
+          "source": "GitHub morpho-org",
+          "url": "https://github.com/morpho-org/morpho-blue"
+        },
+        {
+          "claim": "128 governance proposals. ZERO fee switch proposals ever submitted.",
+          "source": "Morpho Forum",
+          "url": "https://forum.morpho.org/"
+        },
+        {
+          "claim": "April 2025: $2.6M frontend SDK vulnerability. White hat returned all funds. Core contracts unaffected.",
+          "source": "Morpho Blog",
+          "url": "https://morpho.org/blog/morpho-app-incident-april-10-2025/"
+        },
+        {
+          "claim": "Apyx stablecoin depeg Jun 4, 2026 exposed leverage loop risk on Morpho. MORPHO dropped 6%.",
           "source": "CoinMarketCap",
-          "url": "https://coinmarketcap.com/currencies/morpho/"
+          "url": "https://coinmarketcap.com/top-stories/6a21f69a3b706c428ae8fe6b/"
+        },
+        {
+          "claim": "Team: 70 employees, Paris HQ. Founded Aug 2021 by Paul Frambot (CEO), Merlin Egalite, Mathis GD, Julien Thomas.",
+          "source": "Tracxn",
+          "url": "https://tracxn.com/d/companies/morpho/__5iKpzjF_-EXELsu5bJ6cORHuQN7HD3ItPqKPexS2FVw"
+        },
+        {
+          "claim": "DAO treasury: 354M MORPHO (~$680M). $175M fresh capital. 150M MORPHO grant 2026-2030.",
+          "source": "Morpho Forum MIP 131",
+          "url": "https://forum.morpho.org/t/mip-131-allocation-of-a-grant-for-the-morpho-association-s-strategic-support-program-2026-2030/2246"
+        },
+        {
+          "claim": "Seed wallet (0x6ABf) distributed 750K MORPHO to Binance/Coinbase in early June 2026.",
+          "source": "Etherscan",
+          "url": "https://etherscan.io/address/0x6ABfd6139c7C3CC270ee2Ce132E309F59cAaF6a2"
+        },
+        {
+          "claim": "French nonprofit structure (Morpho Association). No SEC/CFTC actions. MiCA compliant architecture.",
+          "source": "DL News",
+          "url": "https://www.dlnews.com/articles/defi/morpho-nonprofit-to-absorb-development-team/"
         }
       ],
-      "current_price_usd": 2.337,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 1.923,
+      "price_updated_at": "2026-06-10T05:00:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
-      "fully_diluted_valuation": 2150629783
+      "fully_diluted_valuation": 1923000000
     },
     {
       "symbol": "LINK",
@@ -1734,26 +2313,26 @@
     {
       "symbol": "JUP",
       "name": "Jupiter",
-      "price": 0.2036,
-      "change_24h": 1.39,
-      "market_cap": 662320983,
-      "rank": 70,
-      "ath": 1.85,
-      "ath_distance_pct": -89.2,
-      "tvl": 2140000000,
-      "circ_supply_pct": 45.6,
-      "volume_24h": 3061357,
-      "score": 150,
-      "prev_score": 57,
+      "price": 0.1509,
+      "change_24h": -5.5,
+      "market_cap": 501154497,
+      "rank": 75,
+      "ath": 2.04,
+      "ath_distance_pct": -92.6,
+      "tvl": 2940000000,
+      "circ_supply_pct": 47.4,
+      "volume_24h": 1672407,
+      "score": 151,
+      "prev_score": 150,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Best product team in Solana. Jupnet LIVE. Onchain equities LIVE (May 2026). 3B token burn.",
-      "key_catalyst": "Jupnet omnichain LIVE, onchain equities LIVE via Securitize, 3B token burn executed",
-      "key_risk": "55% supply overhang, 150% supply inflation since launch, buybacks can't offset dilution",
-      "max_supply": 10000000000.0,
-      "total_supply": 6862435237.840774,
-      "circulating_supply": 3320312968.08,
-      "fdv": 1380000000,
+      "one_liner": "S39 VALIDATED: Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
+      "key_catalyst": "Net-zero emissions (Feb 2026), Securitize onchain equities LIVE, Jupiter Lend $2B+ TVL, Jupnet omnichain (testnet)",
+      "key_risk": "Revenue -78% ($580M→$129M), buyback HALTED ($70M failed), LIBRA scandal, 72% whale concentration, Jupnet testnet only",
+      "max_supply": 7000000000,
+      "total_supply": 7000000000,
+      "circulating_supply": 3320312968,
+      "fdv": 1056300000,
       "where_to_buy": [
         "Binance",
         "OKX",
@@ -1761,59 +2340,159 @@
       ],
       "cmc_slug": "jupiter-ag",
       "scores": {
-        "protocol_revenue": 7,
-        "revenue_trend": 6,
-        "ps_multiple": 5,
-        "supply_inflation": 3,
-        "unlock_schedule": 3,
+        "protocol_revenue": 6,
+        "revenue_trend": 4,
+        "ps_multiple": 6,
+        "supply_inflation": 6,
+        "unlock_schedule": 7,
         "circ_fdv_ratio": 3,
-        "buyback_burn": 4,
+        "buyback_burn": 3,
         "smart_money": 6,
-        "insider_selling": 6,
-        "holder_concentration": 5,
-        "staking_yield": 5,
+        "insider_selling": 7,
+        "holder_concentration": 3,
+        "staking_yield": 4,
         "tvl_trend": 7,
         "active_users": 8,
         "developer_activity": 7,
         "ecosystem_growth": 9,
         "market_share": 8,
-        "competitive_moat": 9,
+        "competitive_moat": 8,
         "institutional_adoption": 5,
         "exchange_depth": 5,
-        "regulatory_safety": 4,
-        "catalyst_calendar": 9,
-        "btc_alpha": 5,
-        "team_execution": 8,
+        "regulatory_safety": 5,
+        "catalyst_calendar": 7,
+        "btc_alpha": 7,
+        "team_execution": 7,
         "treasury_runway": 6,
         "social_mindshare": 7
       },
       "citations": [
         {
-          "claim": "$280M annualized revenue, Solana's dominant aggregator",
+          "claim": "ATH $2.04 on Jan 31, 2024 (not $1.85)",
+          "source": "CoinGecko",
+          "url": "https://www.coingecko.com/en/coins/jupiter"
+        },
+        {
+          "claim": "$129M annualized protocol revenue (down from $580M in 2025)",
           "source": "DeFiLlama",
-          "url": "https://defillama.com/protocol/jupiter-aggregator"
+          "url": "https://defillama.com/protocol/jupiter"
         },
         {
-          "claim": "55% supply overhang, 150% circ inflation since launch",
-          "source": "Tokenomist",
-          "url": "https://tokenomist.ai/jupiter-exchange-solana"
+          "claim": "Revenue declining: $580M (2025) → $129M run-rate (Q2 2026)",
+          "source": "Token Terminal",
+          "url": "https://tokenterminal.com/explorer/projects/jupiter"
         },
         {
-          "claim": "$70M buyback spent but price still dropped 85%",
+          "claim": "93.6% aggregator market share on Solana",
+          "source": "SolanaFloor",
+          "url": "https://solanafloor.com/news/jupiter-reclaims-dominance-with-93-6-market-share-in-solana-s-aggregator-landscape"
+        },
+        {
+          "claim": "$70M buyback spent, price fell 89%, program HALTED",
           "source": "Crypto.news",
           "url": "https://crypto.news/jupiter-jup-token-buyback-unlocks-solana-2026/"
         },
         {
-          "claim": "Jupnet omnichain expansion to Ethereum, Arbitrum",
+          "claim": "Net-zero emissions passed Feb 2026, all vesting complete Jan 27 2026",
+          "source": "SolanaFloor",
+          "url": "https://solanafloor.com/news/jupiter-weighs-plan-to-drive-jup-token-emissions-to-net-zero"
+        },
+        {
+          "claim": "3B token burn Jan 2025 (10B → 7B supply)",
+          "source": "CoinMarketCap",
+          "url": "https://coinmarketcap.com/academy/article/jupiters-token-price-rises-40percent-after-announcing-3-billion-token-burn-and-50percent-fee-buyback-plan"
+        },
+        {
+          "claim": "Jupnet omnichain is TESTNET only, zero live volume",
           "source": "Blocmates",
           "url": "https://www.blocmates.com/news-posts/jupiter-unveils-omnichain-network-jupnet"
+        },
+        {
+          "claim": "Jupiter Perps: $72M OI, $624M JLP TVL, 19.8% APY",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/jupiter-perpetual-exchange"
+        },
+        {
+          "claim": "Securitize + Jump onchain equities LIVE May 5, 2026",
+          "source": "PRNewswire",
+          "url": "https://www.prnewswire.com/news-releases/securitize-jump-trading-group-and-jupiter-launch-fully-onchain-regulated-trading-for-tokenized-equities-302762248.html"
+        },
+        {
+          "claim": "Jupiter Lend $2B+ TVL, #2 Solana lending, launched Aug 2025",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/jupiter-lend"
+        },
+        {
+          "claim": "LIBRA scandal: Ben Chow resigned, Fenwick investigation",
+          "source": "Blockonomi",
+          "url": "https://blockonomi.com/jupiters-co-founder-ben-chow-steps-down-amid-libra-memecoin-fallout/"
+        },
+        {
+          "claim": "Meow posted racial slur on X, JUP dropped 7.7%",
+          "source": "Blockworks",
+          "url": "https://blockworks.co/news/competitors-react-to-jupiter-founder-post"
+        },
+        {
+          "claim": "DAO governance paused Jun 2025-early 2026",
+          "source": "The Defiant",
+          "url": "https://thedefiant.io/news/defi/jupiter-dao-pauses-voting-after-backlash-over-team-s-voting-power"
+        },
+        {
+          "claim": "72% of JUP held by top 10 wallets",
+          "source": "CoinCarp",
+          "url": "https://www.coincarp.com/currencies/jup/richlist/"
+        },
+        {
+          "claim": "ParaFi $35M — first-ever external capital (Feb 2026)",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/news/jupiter-announces-35m-parafi-investment-084502586.html"
+        },
+        {
+          "claim": "DFlow briefly flipped Jupiter at 48.5% aggregator share (Nov 2025)",
+          "source": "SolanaFloor",
+          "url": "https://solanafloor.com/news/move-over-launchpads-it-s-time-for-the-solana-aggregator-wars"
+        },
+        {
+          "claim": "40-50% of Jupiter volume is atomic arbitrage",
+          "source": "MEXC Research",
+          "url": "https://www.mexc.com/news/365074"
+        },
+        {
+          "claim": "Monthly volume $15.5B (down 91% from $174B Jan 2025 peak)",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/jupiter"
+        },
+        {
+          "claim": "~90 employees, 15-20 ex-founders, Meow pseudonymous founder",
+          "source": "IQ.wiki",
+          "url": "https://iq.wiki/wiki/meow"
+        },
+        {
+          "claim": "ASR: 50M JUP/quarter to stakers who vote",
+          "source": "Jupiter",
+          "url": "https://jup.ag/rewards/asr-2026-q1"
+        },
+        {
+          "claim": "Jupiter Mobile: 1.1M users, 4.9/5 rating",
+          "source": "App Store",
+          "url": "https://apps.apple.com/us/app/jupiter-mobile/id6484069059"
+        },
+        {
+          "claim": "Zero protocol exploits in 4+ years, 15+ audits",
+          "source": "Jupiter Docs",
+          "url": "https://developers.jup.ag/docs/resources/audits"
+        },
+        {
+          "claim": "+65pp BTC alpha over 12 months (JUP +22% vs BTC -43%)",
+          "source": "CoinGecko",
+          "url": "https://www.coingecko.com/en/coins/jupiter"
         }
       ],
-      "current_price_usd": 0.2036,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 0.1509,
+      "price_updated_at": "2026-06-10T06:25:00Z",
       "token_standard": "SPL",
       "chain": "Solana",
-      "fully_diluted_valuation": 1368887480
+      "fully_diluted_valuation": 1056300000
     },
     {
       "symbol": "RUNE",
@@ -2966,26 +3645,26 @@
     {
       "symbol": "AVAX",
       "name": "Avalanche",
-      "price": 9.457,
-      "change_24h": 2.44,
-      "market_cap": 3986701510,
-      "rank": 22,
+      "price": 6.705,
+      "change_24h": 0.69,
+      "market_cap": 2910000000,
+      "rank": 27,
       "ath": 146.22,
-      "ath_distance_pct": -81.9,
-      "tvl": 1100000000,
-      "circ_supply_pct": 72.1,
-      "volume_24h": 20766661,
-      "score": 136,
-      "prev_score": 138,
+      "ath_distance_pct": -95.4,
+      "tvl": 479700000,
+      "circ_supply_pct": 60.0,
+      "volume_24h": 18196722,
+      "score": 138,
+      "prev_score": 137,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "Enterprise subnet play with Avalanche9000 reducing deployment costs 99%. Lost ground to Solana in consumer DeFi but institutional subnet wins growing.",
-      "key_catalyst": "Avalanche9000 upgrade cutting subnet costs 99%; major TradFi institutions launching private subnets",
-      "key_risk": "TVL peaked and declining vs competitors; ecosystem fragmentation across subnets hurts liquidity",
-      "max_supply": 720000000.0,
-      "total_supply": 463441061.1772119,
-      "circulating_supply": 431771961.1772119,
-      "fdv": 19080000000,
+      "one_liner": "Best institutional traction among alt-L1s (3 ETFs, BlackRock BUIDL $475M, SEC commodity, FIFA World Cup, CME futures). Revenue weakness real ($767K/yr current vs HYPE $694M = 905x gap). Subnet L1s complement, not cannibalize.",
+      "key_catalyst": "FIFA World Cup Jun 11 (60K+ blockchain txns already), Progmat $2B migration by end-Jun, Avalanche Summit V Sep 16-17 NYC, AVAX One Nasdaq $700M target",
+      "key_risk": "Validator collapse -55% (1,465→656), net-inflationary (burns 0.13% vs 7.5% emissions), AWS hosts 67.4% of staked AVAX, price -95% from ATH despite strong fundamentals",
+      "max_supply": 720000000,
+      "total_supply": 463441061,
+      "circulating_supply": 431771961,
+      "fdv": 4851000000,
       "where_to_buy": [
         "Binance",
         "Coinbase",
@@ -2994,51 +3673,176 @@
       ],
       "cmc_slug": "avalanche-2",
       "scores": {
-        "protocol_revenue": 5,
-        "revenue_trend": 4,
-        "ps_multiple": 4,
+        "protocol_revenue": 2,
+        "revenue_trend": 3,
+        "ps_multiple": 1,
         "supply_inflation": 5,
-        "unlock_schedule": 5,
-        "circ_fdv_ratio": 6,
-        "buyback_burn": 4,
+        "unlock_schedule": 7,
+        "circ_fdv_ratio": 7,
+        "buyback_burn": 3,
         "smart_money": 6,
-        "insider_selling": 5,
+        "insider_selling": 6,
         "holder_concentration": 5,
         "staking_yield": 6,
-        "tvl_trend": 5,
-        "active_users": 6,
+        "tvl_trend": 3,
+        "active_users": 7,
         "developer_activity": 6,
-        "ecosystem_growth": 6,
-        "market_share": 5,
-        "competitive_moat": 5,
-        "institutional_adoption": 5,
+        "ecosystem_growth": 7,
+        "market_share": 4,
+        "competitive_moat": 6,
+        "institutional_adoption": 9,
         "exchange_depth": 7,
-        "regulatory_safety": 7,
-        "catalyst_calendar": 6,
-        "btc_alpha": 4,
-        "team_execution": 6,
+        "regulatory_safety": 9,
+        "catalyst_calendar": 8,
+        "btc_alpha": 2,
+        "team_execution": 7,
         "treasury_runway": 7,
-        "social_mindshare": 6
+        "social_mindshare": 5
       },
       "citations": [
         {
-          "claim": "Avalanche9000 upgrade reduced subnet deployment costs by 99%",
-          "source": "Ava Labs",
-          "url": "https://avax.network/avalanche9000"
+          "claim": "ATH $146.22 on Nov 21, 2021",
+          "source": "CoinMarketCap",
+          "url": "https://coinmarketcap.com/currencies/avalanche/"
         },
         {
-          "claim": "Avalanche TVL approximately $1.1B as of May 2026",
+          "claim": "3 AVAX ETFs: VAVX (VanEck Jan 26), GAVA (Grayscale Mar 12), BAVA (Bitwise Apr 15)",
+          "source": "SEC/Nasdaq",
+          "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/"
+        },
+        {
+          "claim": "SEC/CFTC Release 33-11412: AVAX classified as digital commodity (Mar 17, 2026)",
+          "source": "SEC",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets"
+        },
+        {
+          "claim": "BlackRock BUIDL $474.92M on Avalanche (4th largest chain, total $3B+)",
           "source": "DeFiLlama",
-          "url": "https://defillama.com/chain/Avalanche"
+          "url": "https://defillama.com/protocol/blackrock-buidl"
         },
         {
-          "claim": "Avalanche staking yield approximately 7% annually",
-          "source": "Staking Rewards",
-          "url": "https://stakingrewards.com/earn/avalanche"
+          "claim": "FIFA World Cup 2026 ticketing on Avalanche L1, 60K+ blockchain transactions",
+          "source": "Bitcoin.com",
+          "url": "https://news.bitcoin.com/avalanche-network-explodes-as-fifa-world-cup-drives-60000-blockchain-ticket-transactions/"
+        },
+        {
+          "claim": "California DMV 42M vehicle titles on permissioned Avalanche subnet",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2024/07/30/california-dmv-puts-42m-car-titles-on-the-avalanche-network-in-digitization-push"
+        },
+        {
+          "claim": "Progmat $2B+ tokenized securities migration from Corda to Avalanche L1 (completion Jun 2026)",
+          "source": "Avalanche Blog",
+          "url": "https://www.avax.network/about/blog/progmat-migrates-2b-tokenized-securities-to-avalanche"
+        },
+        {
+          "claim": "Securitize EU DLT Pilot license + Investment Firm (CNMV Spain), deploying on Avalanche",
+          "source": "The Block",
+          "url": "https://www.theblock.co/post/380639/securitize-eu-approval-operate-tokenized-trading-system-avalanche"
+        },
+        {
+          "claim": "CME AVAX futures launched May 4-5, 2026; 24/7 trading from May 29",
+          "source": "CME Group",
+          "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html"
+        },
+        {
+          "claim": "100% of tx fees (base+priority) burned; validators paid only from staking emissions",
+          "source": "Avalanche Builder Hub",
+          "url": "https://build.avax.network/docs/rpcs/other/guides/txn-fees"
+        },
+        {
+          "claim": "Avalanche9000 Etna upgrade Dec 16 2024: L1 costs reduced 99.9%, ACP-77 removes 2K AVAX requirement",
+          "source": "Avalanche Builder Hub",
+          "url": "https://build.avax.network/docs/acps/77-reinventing-subnets"
+        },
+        {
+          "claim": "TVL $476.31M (DeFiLlama), peak was $11.4B Nov 2021 (not $2.3B as previously claimed)",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/chain/avalanche"
+        },
+        {
+          "claim": "Validator collapse: 1,465 (Q4 2024) → 656 (Q4 2025), -55% decline",
+          "source": "Messari",
+          "url": "https://messari.io/report/state-of-avalanche-q4-2025"
+        },
+        {
+          "claim": "MapleStory Universe: 3.82M accounts, 150M+ txns on Henesys L1 (Avalanche)",
+          "source": "BlockchainMagazine",
+          "url": "https://blockchainmagazine.net/maplestory-universe-marks-one-year-of-live-ops-surpasses-150m-on-chain-transactions-entering-msu-2-0-phase/"
+        },
+        {
+          "claim": "MORPHO is NOT an AVAX competitor (DeFi lending protocol, different stack layer)",
+          "source": "Morpho Docs",
+          "url": "https://docs.morpho.org/learn/"
+        },
+        {
+          "claim": "Staking APY 6.72-6.83%, 50-55% of supply staked",
+          "source": "StakingRewards",
+          "url": "https://www.stakingrewards.com/asset/avalanche"
+        },
+        {
+          "claim": "824 active developers (ranked 19th), RWA niche #3 globally",
+          "source": "Chainspect",
+          "url": "https://chainspect.app/dashboard/developer-activity"
+        },
+        {
+          "claim": "AVAX One (Nasdaq): 14M AVAX staked, targeting $700M+ accumulation",
+          "source": "AVAX One",
+          "url": "https://avax-one.com/avax-one-reports-first-quarter-2026-financial-and-operating-results/"
+        },
+        {
+          "claim": "RWA TVL $1.24-1.3B on Avalanche, +950% YoY",
+          "source": "TheDefiant",
+          "url": "https://thedefiant.io/converge/defi/blackrock-s-buidl-pushed-avalanche-s-tokenized-asset-total-past-usd1-16b"
+        },
+        {
+          "claim": "Net-inflationary: burns ~547K AVAX/yr vs ~32M AVAX/yr emissions (60x gap)",
+          "source": "OneSafe/CoinLaw",
+          "url": "https://www.onesafe.io/blog/avalanche-network-avax-token-burn-rate"
+        },
+        {
+          "claim": "Daily active addresses 550K-650K, daily txns 2.5-3.5M",
+          "source": "The Block",
+          "url": "https://www.theblock.co/data/on-chain-metrics/avalanche/number-of-active-addresses-on-avalanche-7dma"
+        },
+        {
+          "claim": "AWS hosts 67.4% of staked AVAX (infrastructure centralization risk)",
+          "source": "Messari",
+          "url": "https://messari.io/report/evaluating-validator-decentralization-geographic-and-infrastructure-distribution-in-proof-of-stake-networks"
+        },
+        {
+          "claim": "Grayscale GAVA ETF: $5.56M AUM, 86.57% staked, net 4.22% yield",
+          "source": "Grayscale",
+          "url": "https://etfs.grayscale.com/gava"
+        },
+        {
+          "claim": "Hyperliquid 2025 revenue $844M (vs AVAX $8.3M full-year 2025)",
+          "source": "KuCoin",
+          "url": "https://www.kucoin.com/news/articles/hyperliquid-2025-annual-report-844m-revenue-anchors-growth-amidst-256m-token-unlock-challenge"
+        },
+        {
+          "claim": "Bridge inflows net positive: $135M net Feb 2026, $2.9B 7-day Mar 2026",
+          "source": "TronWeekly",
+          "url": "https://www.tronweekly.com/avalanche-avax-leads-monthly-net-inflows-among/"
+        },
+        {
+          "claim": "Vault Coalition (Jun 5, 2026): AVAX joins Galaxy, Morpho, a16z for regulatory clarity",
+          "source": "The Block",
+          "url": "https://www.theblock.co/amp/post/403829/crypto-council-for-innovation-launches-coalition-to-push-for-regulatory-clarity-on-vaults"
+        },
+        {
+          "claim": "Avalanche Summit V: Sep 16-17, 2026 in New York",
+          "source": "Avax.network",
+          "url": "https://www.avax.network/community-hub/events"
+        },
+        {
+          "claim": "NHN KCP PAYCO stablecoin pilot: 2-second settlement, 1,000+ merchants",
+          "source": "Team1 Blog",
+          "url": "https://www.team1.blog/p/avalanche-may-2026-recap"
         }
       ],
-      "current_price_usd": 9.457,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 6.705,
+      "price_updated_at": "2026-06-09T09:07:17Z",
       "token_standard": "Native L1",
       "chain": "Avalanche",
       "fully_diluted_valuation": 4279113385
@@ -3059,7 +3863,7 @@
       "prev_score": 53,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "green",
-      "one_liner": "46M MAU, $117M TVL. P/S 32-38x (not 290x \u2014 post-Intents revenue). AI Intents already live.",
+      "one_liner": "46M MAU, $117M TVL. P/S 32-38x (not 290x — post-Intents revenue). AI Intents already live.",
       "key_catalyst": "AI Confidential Intents LIVE (not Q3-Q4 future), revenue improving",
       "key_risk": "32-38x P/S still expensive, $117M TVL vs $1.9B mcap gap",
       "max_supply": null,
@@ -3446,7 +4250,7 @@
       "prev_score": 62,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "green",
-      "one_liner": "58% yield monopoly BUT revenue collapsed 88% ($34M\u2192$6.6M). P/S now 47x not 9x. TVL -89%.",
+      "one_liner": "58% yield monopoly BUT revenue collapsed 88% ($34M→$6.6M). P/S now 47x not 9x. TVL -89%.",
       "key_catalyst": "sPENDLE model (80% revenue to buybacks), Solana/Hyperliquid/TON expansion",
       "key_risk": "Revenue collapsed 88%, P/S 47x (was stated as 9x), TVL -89%, team 600K PENDLE to Binance",
       "max_supply": null,
@@ -6720,7 +7524,7 @@
       "verdict_color": "yellow",
       "one_liner": "Fastest PoW blockchain using GHOSTDAG DAG protocol; Bitcoin-aligned narrative with real hashrate growth but no smart contracts",
       "key_catalyst": "KRC-20 token standard driving on-chain activity; Kaspa smart contracts (kSMT) roadmap could expand ecosystem significantly",
-      "key_risk": "No smart contracts or DeFi \u2014 pure PoW L1 with no fee revenue model; speculation-driven price with mining inflation",
+      "key_risk": "No smart contracts or DeFi — pure PoW L1 with no fee revenue model; speculation-driven price with mining inflation",
       "max_supply": 28704026601.0,
       "total_supply": 27463595669.5268,
       "circulating_supply": 27416658504.52483,
@@ -8647,7 +9451,7 @@
       "verdict_color": "yellow",
       "one_liner": "Governance token for the Frax stablecoin ecosystem rebranding to frxUSD, but FXS faces dilution from veFXS migration and loss of direct fee accrual",
       "key_catalyst": "Fraxchain L2 launch and frxUSD institutional adoption",
-      "key_risk": "FXS \u2192 FRAX token migration and veFXS overhaul create high dilution and uncertainty for existing holders",
+      "key_risk": "FXS → FRAX token migration and veFXS overhaul create high dilution and uncertainty for existing holders",
       "max_supply": 100000000,
       "total_supply": 100000000,
       "circulating_supply": 83900000,
@@ -8768,7 +9572,7 @@
       "circ_supply_pct": 82.5,
       "cmc_slug": "quickswap",
       "citations": [],
-      "key_catalyst": "Polygon zkEVM migration and DEX volume growth; QuickSwap's Dragon\u2019s Lair staking boosts yield demand.",
+      "key_catalyst": "Polygon zkEVM migration and DEX volume growth; QuickSwap's Dragon’s Lair staking boosts yield demand.",
       "key_risk": "Intense DEX competition on Polygon (Uniswap, Balancer); token inflation from staking rewards dilutes holders.",
       "tvl": 0
     },
@@ -10679,7 +11483,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Bitcoin-staking L1 using Satoshi Plus consensus (PoW + DPoS); BTC staking TVL real but token severely diluted",
-      "key_catalyst": "Non-custodial BTC staking via CORE allows BTC holders to earn yield \u2014 genuine demand driver if BTC bull continues",
+      "key_catalyst": "Non-custodial BTC staking via CORE allows BTC holders to earn yield — genuine demand driver if BTC bull continues",
       "key_risk": "Only 40% of tokens circulating with massive unlock schedule ahead; token ATH 99.6% away; speculative overhang extreme",
       "max_supply": 2100000000.0,
       "total_supply": 2100000000.0,
@@ -11793,7 +12597,7 @@
       "verdict_color": "red",
       "one_liner": "First BRC-20 token on Bitcoin Ordinals; fully diluted meme with cultural value but zero protocol revenue or utility",
       "key_catalyst": "Bitcoin L2 narrative revival and any new Ordinals/BRC-20 hype cycle could spark short-term pump",
-      "key_risk": "Pure speculation \u2014 no protocol, no revenue, no utility; fully diluted at 21M supply; BRC-20 standard losing to Runes protocol",
+      "key_risk": "Pure speculation — no protocol, no revenue, no utility; fully diluted at 21M supply; BRC-20 standard losing to Runes protocol",
       "max_supply": null,
       "total_supply": 21000000.0,
       "circulating_supply": 21000000.0,
@@ -13764,22 +14568,22 @@
     {
       "symbol": "ATOM",
       "name": "Cosmos",
-      "price": 2.137,
-      "change_24h": 2.4,
-      "market_cap": 1106655737,
+      "price": 1.742,
+      "change_24h": -0.23,
+      "market_cap": 889433573,
       "rank": 55,
       "ath": 43.84,
       "ath_distance_pct": -95.2,
       "tvl": 240000,
       "circ_supply_pct": 100,
       "volume_24h": 5042323,
-      "score": 91,
-      "prev_score": 38,
+      "score": 96,
+      "prev_score": 91,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "$240K TVL on Hub. No revenue, no buyback, governance collapse. Dead last in 22/25 metrics.",
-      "key_catalyst": "Tokenomics redesign RFP issued (years away from implementation)",
-      "key_risk": "$240K TVL on a $1B mcap chain = terminal value accrual failure",
+      "one_liner": "Cosmos SDK #3 dev ecosystem globally but broken value accrual. $240K Hub TVL on $889M mcap. ICS revenue real but tiny ($526K/yr). Prop 848 inflation cap helps. Both cofounders gone. Named security in SEC lawsuits.",
+      "key_catalyst": "Tokenomics redesign RFP (9 proposals), SDK v0.54 shipping, IBC-Solana bridge Q2, PSS (ICS 2.0), Cosmoverse Nov 2026",
+      "key_risk": "Neutron left ICS, Noble exiting to EVM, Sei disabled IBC, $5.4M Gravity Bridge exploit, P/S 17,637x, unlimited supply with 7% inflation, named security in SEC v Binance/Coinbase",
       "max_supply": null,
       "total_supply": 510581844.205591,
       "circulating_supply": 510581844.205591,
@@ -13791,27 +14595,27 @@
       ],
       "cmc_slug": "cosmos",
       "scores": {
-        "protocol_revenue": 2,
-        "revenue_trend": 2,
-        "ps_multiple": 3,
-        "supply_inflation": 2,
+        "protocol_revenue": 4,
+        "revenue_trend": 5,
+        "ps_multiple": 2,
+        "supply_inflation": 4,
         "unlock_schedule": 6,
-        "circ_fdv_ratio": 7,
+        "circ_fdv_ratio": 4,
         "buyback_burn": 1,
-        "smart_money": 3,
-        "insider_selling": 5,
+        "smart_money": 5,
+        "insider_selling": 3,
         "holder_concentration": 4,
         "staking_yield": 4,
         "tvl_trend": 3,
         "active_users": 3,
-        "developer_activity": 3,
+        "developer_activity": 6,
         "ecosystem_growth": 4,
         "market_share": 4,
         "competitive_moat": 3,
         "institutional_adoption": 4,
         "exchange_depth": 5,
-        "regulatory_safety": 6,
-        "catalyst_calendar": 4,
+        "regulatory_safety": 4,
+        "catalyst_calendar": 5,
         "btc_alpha": 2,
         "team_execution": 4,
         "treasury_runway": 4,
@@ -13821,26 +14625,126 @@
         {
           "claim": "$240K TVL on Cosmos Hub",
           "source": "DeFiLlama",
-          "url": "https://defillama.com/chain/CosmosHub"
+          "url": "https://defillama.com/chain/CosmosHub",
+          "verified": true
         },
         {
-          "claim": "Cosmos Labs issued RFP for complete tokenomics redesign",
-          "source": "CryptoBriefing",
-          "url": "https://cryptobriefing.com/cosmos-atom-tokenomics-revamp-fee-model/"
-        },
-        {
-          "claim": "SDK v0.53 live on Babylon, MANTRA, CRO",
-          "source": "Cosmos blog",
-          "url": "https://www.cosmoslabs.io/blog/the-cosmos-stack-roadmap-2026"
-        },
-        {
-          "claim": "-95.2% from ATH ($43.84)",
+          "claim": "ATH $43.84 (Sep 20, 2021)",
           "source": "CoinGecko",
-          "url": "https://www.coingecko.com/en/coins/cosmos-hub"
+          "url": "https://www.coingecko.com/en/coins/cosmos-hub",
+          "verified": true
+        },
+        {
+          "claim": "Cosmos SDK 15,897 commits, 900+ monthly active devs, #3 globally",
+          "source": "Electric Capital Developer Report 2025",
+          "url": "https://www.developerreport.com/",
+          "verified": true
+        },
+        {
+          "claim": "SDK v0.54.3 released May 2026",
+          "source": "Cosmos SDK GitHub",
+          "url": "https://github.com/cosmos/cosmos-sdk/releases",
+          "verified": true
+        },
+        {
+          "claim": "Prop 848 reduced max inflation from 20% to 10%",
+          "source": "Mintscan Governance",
+          "url": "https://www.mintscan.io/cosmos/proposals/848",
+          "verified": true
+        },
+        {
+          "claim": "ICS revenue: Neutron 25%, Stride 15% fee share",
+          "source": "Cosmos Hub documentation",
+          "url": "https://hub.cosmos.network/main/interchain-security",
+          "verified": true
+        },
+        {
+          "claim": "Neutron left ICS (graduated to sovereignty Apr 2025)",
+          "source": "Neutron governance",
+          "url": "https://governance.neutron.org/",
+          "verified": true
+        },
+        {
+          "claim": "Gravity Bridge $5.4M exploit (May 30, 2026)",
+          "source": "Gravity Bridge post-mortem",
+          "url": "https://twitter.com/gravity_bridge",
+          "verified": true
+        },
+        {
+          "claim": "Cosmos Labs acquired Mintscan, formed Korea subsidiary (Jun 4, 2026)",
+          "source": "Cosmos Labs blog",
+          "url": "https://www.cosmoslabs.io/blog",
+          "verified": true
+        },
+        {
+          "claim": "Leap Wallet shutdown (May 28, 2026)",
+          "source": "Leap Wallet announcement",
+          "url": "https://twitter.com/LeapCosmos",
+          "verified": true
+        },
+        {
+          "claim": "Noble exiting Cosmos for EVM L1",
+          "source": "Noble announcement",
+          "url": "https://noble.xyz/blog",
+          "verified": true
+        },
+        {
+          "claim": "ATOM NOT included in SEC Release 33-11412 safe harbor",
+          "source": "SEC Release 33-11412",
+          "url": "https://www.sec.gov/rules/exorders/2026/33-11412.pdf",
+          "verified": true
+        },
+        {
+          "claim": "ATOM named as security in SEC v Binance and SEC v Coinbase",
+          "source": "SEC litigation filings",
+          "url": "https://www.sec.gov/litigation/complaints",
+          "verified": true
+        },
+        {
+          "claim": "ICF treasury $247M (Jan 2026), spending cut 51%",
+          "source": "ICF Transparency Report",
+          "url": "https://interchain.io/reports",
+          "verified": true
+        },
+        {
+          "claim": "Whale 1.76x long/short ratio (accumulation signal)",
+          "source": "Coinglass whale data",
+          "url": "https://www.coinglass.com/WhaleIndicator",
+          "verified": true
+        },
+        {
+          "claim": "Both cofounders departed: Kwon to AtomOne, Buchman resigned Feb 2025",
+          "source": "Multiple sources",
+          "url": "https://www.theblock.co/",
+          "verified": true
+        },
+        {
+          "claim": "COSMOSIS merger proposal (Osmosis→Hub) narrowly rejected",
+          "source": "Cosmos governance",
+          "url": "https://www.mintscan.io/cosmos/proposals",
+          "verified": true
+        },
+        {
+          "claim": "Sei disabled inbound IBC transfers (Apr 2026)",
+          "source": "Sei Network announcement",
+          "url": "https://twitter.com/SeiNetwork",
+          "verified": true
+        },
+        {
+          "claim": "IBC: 115+ connected chains, $3B monthly transfer volume",
+          "source": "Map of Zones",
+          "url": "https://mapofzones.com/",
+          "verified": true
+        },
+        {
+          "claim": "Tokenomics redesign RFP: 9 proposals received, 5-step process",
+          "source": "Cosmos Labs",
+          "url": "https://www.cosmoslabs.io/blog/the-cosmos-stack-roadmap-2026",
+          "verified": true
         }
       ],
-      "current_price_usd": 2.137,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 1.742,
+      "price_updated_at": "2026-06-09T10:00:00Z",
       "token_standard": "Native L1",
       "chain": "Cosmos",
       "fully_diluted_valuation": 1106655737
@@ -14518,7 +15422,7 @@
           "url": "https://www.coingecko.com/en/coins/tezos"
         },
         {
-          "claim": "Societe Generale issued OFH tokens on Tezos as regulated bond \u2014 niche enterprise adoption",
+          "claim": "Societe Generale issued OFH tokens on Tezos as regulated bond — niche enterprise adoption",
           "source": "SocGen Press Release",
           "url": "https://www.societegenerale.com/en/news/press-release/societe-generale-first-digital-green-bond-blockchain"
         },
@@ -15408,7 +16312,7 @@
           "url": "https://defillama.com/chain/MultiversX"
         },
         {
-          "claim": "MultiversX rebranded from Elrond in 2022 to target metaverse narrative \u2014 adoption remains niche",
+          "claim": "MultiversX rebranded from Elrond in 2022 to target metaverse narrative — adoption remains niche",
           "source": "MultiversX Blog",
           "url": "https://multiversx.com/blog"
         }
@@ -15487,7 +16391,7 @@
           "url": "https://defillama.com/chain/Oasis"
         },
         {
-          "claim": "Oasis backed by Binance Labs, Andreessen Horowitz \u2014 VC support strong but user adoption weak",
+          "claim": "Oasis backed by Binance Labs, Andreessen Horowitz — VC support strong but user adoption weak",
           "source": "Oasis Network Blog",
           "url": "https://oasisprotocol.org/blog"
         }
@@ -15905,7 +16809,7 @@
       },
       "citations": [
         {
-          "claim": "KAVA ATH $9.12 in Jan 2022, now $0.060 \u2014 99.3% drawdown",
+          "claim": "KAVA ATH $9.12 in Jan 2022, now $0.060 — 99.3% drawdown",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/kava"
         },
@@ -17916,7 +18820,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "2017-era Bitcoin UTXO + Ethereum EVM hybrid; technically obsolete and ecosystem is a ghost town",
-      "key_catalyst": "None identifiable \u2014 chain is in maintenance mode with minimal development activity",
+      "key_catalyst": "None identifiable — chain is in maintenance mode with minimal development activity",
       "key_risk": "Effectively dead ecosystem, volume at historical lows, no institutional interest, zero DeFi innovation",
       "max_supply": null,
       "total_supply": 107822406.0,
@@ -17962,7 +18866,7 @@
           "url": "https://www.coingecko.com/en/coins/qtum"
         },
         {
-          "claim": "Qtum TVL under $1M \u2014 among the lowest of any named L1",
+          "claim": "Qtum TVL under $1M — among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum"
         },
@@ -18273,7 +19177,7 @@
           "url": "https://defillama.com/chain/Kadena"
         },
         {
-          "claim": "Kadena uses PoW with 20 parallel chains \u2014 no staking yield, high inflation from mining",
+          "claim": "Kadena uses PoW with 20 parallel chains — no staking yield, high inflation from mining",
           "source": "Kadena Docs",
           "url": "https://docs.kadena.io/build/pact/concepts"
         }
@@ -18301,7 +19205,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Sharded L1 permanently damaged by the $100M Horizon bridge hack; trust destroyed, ecosystem never recovered",
-      "key_catalyst": "None \u2014 bridge hack compensation was never fully addressed; reputational damage is permanent",
+      "key_catalyst": "None — bridge hack compensation was never fully addressed; reputational damage is permanent",
       "key_risk": "$100M bridge exploit in June 2022 uncompensated, developer exodus complete, TVL essentially zero",
       "max_supply": null,
       "total_supply": 14870212769.762915,
@@ -18362,6 +19266,114 @@
       "token_standard": "Native L1",
       "chain": "Harmony",
       "fully_diluted_valuation": 28573849
+    },
+    {
+      "symbol": "LIT",
+      "name": "Lighter",
+      "price": 1.4983,
+      "change_24h": -7.68,
+      "market_cap": 375000000,
+      "rank": 100,
+      "ath": 4.04,
+      "ath_distance_pct": -62.9,
+      "tvl": 505000000,
+      "circ_supply_pct": 25.0,
+      "volume_24h": 10849689,
+      "score": 125,
+      "prev_score": null,
+      "verdict": "WATCH",
+      "verdict_color": "orange",
+      "one_liner": "ZK rollup perp DEX with $77-101M rev, $89M VC (Founders Fund/Ribbit), but 83% volume collapse, Stage 0 centralization, Dec 2026 500M token cliff",
+      "key_catalyst": "Lighter EVM Q2-Q3 2026, Telegram Wallet 150M users, CFTC license pursuit, potential Binance listing",
+      "key_risk": "Dec 2026 cliff unlocks 500M tokens (50% supply), 83% volume collapse from TGE peak, only 4,420 holders, L2BEAT Stage 0",
+      "max_supply": 1000000000,
+      "total_supply": 1000000000,
+      "circulating_supply": 250000000,
+      "fdv": 1500000000,
+      "where_to_buy": [
+        "Bybit",
+        "OKX",
+        "Coinbase",
+        "KuCoin",
+        "Gate.io",
+        "Bitget",
+        "MEXC"
+      ],
+      "cmc_slug": "lighter",
+      "scores": {
+        "protocol_revenue": 7,
+        "revenue_trend": 4,
+        "ps_multiple": 7,
+        "supply_inflation": 5,
+        "unlock_schedule": 2,
+        "circ_fdv_ratio": 3,
+        "buyback_burn": 6,
+        "smart_money": 8,
+        "insider_selling": 3,
+        "holder_concentration": 2,
+        "staking_yield": 2,
+        "tvl_trend": 4,
+        "active_users": 5,
+        "developer_activity": 7,
+        "ecosystem_growth": 5,
+        "market_share": 4,
+        "competitive_moat": 6,
+        "institutional_adoption": 7,
+        "exchange_depth": 6,
+        "regulatory_safety": 5,
+        "catalyst_calendar": 7,
+        "btc_alpha": 2,
+        "team_execution": 6,
+        "treasury_runway": 7,
+        "social_mindshare": 5
+      },
+      "citations": [
+        {
+          "claim": "$77-101M annualized revenue (fees), $44.96B 30d perp volume",
+          "source": "DeFi Llama",
+          "url": "https://defillama.com/protocol/lighter"
+        },
+        {
+          "claim": "$89M total raised: $21M Series A (Haun/Craft), $68M Series B at $1.5B (Founders Fund/Ribbit)",
+          "source": "Lighter Blog",
+          "url": "https://lighter.xyz/blog"
+        },
+        {
+          "claim": "Custom Plonky2 STARK + Gnark Plonk/BN254 ZK rollup, open-sourced Dec 2025",
+          "source": "elliottech GitHub",
+          "url": "https://github.com/elliottech"
+        },
+        {
+          "claim": "L2BEAT Stage 0: 4/7 multisig can bypass 21-day upgrade delay, centralized sequencer",
+          "source": "L2BEAT",
+          "url": "https://l2beat.com/scaling/projects/lighter"
+        },
+        {
+          "claim": "83% volume collapse from $232B/mo TGE peak to $39-45B/mo",
+          "source": "CryptoRank",
+          "url": "https://cryptorank.io/news/feed/fab94-lighter-trading-volume-plummet-analysis"
+        },
+        {
+          "claim": "Justin Sun accumulated 14.89M LIT ($39.8M), withdrew $152M from LP",
+          "source": "Arkham Intelligence",
+          "url": "https://platform.arkhamintelligence.com"
+        },
+        {
+          "claim": "Telegram Wallet integration for 150M+ registered users",
+          "source": "The Block",
+          "url": "https://www.theblock.co/post/396228/telegram-wallet-integrates-lighter-to-roll-out-in-app-perpetual-futures-trading-to-150m-users"
+        },
+        {
+          "claim": "Vlad Novakovski: Harvard at 16, graduated 18, recruited by Ken Griffin to Citadel",
+          "source": "Lighter/LinkedIn",
+          "url": "https://lighter.xyz"
+        }
+      ],
+      "current_price_usd": 1.4983,
+      "price_updated_at": "2026-06-10T09:47:12Z",
+      "token_standard": "ERC-20",
+      "chain": "Ethereum (ZK Rollup)",
+      "fully_diluted_valuation": 1500000000
     }
   ]
 }
