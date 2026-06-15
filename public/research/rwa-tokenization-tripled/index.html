@@ -28,41 +28,114 @@
   "mainEntityOfPage": "https://earlythunder.com/research/rwa-tokenization-tripled/"
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{background:#0a0a0f;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,sans-serif;line-height:1.8;min-height:100vh}
-a{color:#d4a017;text-decoration:none;transition:color .2s}a:hover{color:#f0c040}
-nav{background:#0d0d14;border-bottom:1px solid #1a1a2e;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;position:sticky;top:0;z-index:100}
-.nav-brand{font-size:1.25rem;font-weight:700;color:#d4a017;letter-spacing:1px}
-.nav-links{display:flex;gap:1.5rem;flex-wrap:wrap}.nav-links a{color:#a0a0b0;font-size:.9rem;font-weight:500}.nav-links a:hover,.nav-links a.active{color:#d4a017}
-.article-container{max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem}
-.article-meta{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid #1a1a2e;color:#888;font-size:.85rem}
-.article-meta .date{color:#d4a017}.article-meta .reading-time{color:#a0a0b0}.article-meta .tag{background:#1a1a2e;color:#d4a017;padding:.15rem .6rem;border-radius:3px;font-size:.75rem}
-h1{font-size:2rem;line-height:1.3;margin-bottom:1.5rem;color:#fff;font-weight:700}
-h2{font-size:1.5rem;margin-top:2.5rem;margin-bottom:1rem;color:#fff;border-left:3px solid #d4a017;padding-left:.75rem}
-h3{font-size:1.2rem;margin-top:2rem;margin-bottom:.75rem;color:#e8e8e8}
-p{margin-bottom:1.25rem;color:#d0d0d0}strong{color:#fff}em{color:#c0c0c0}
-ul,ol{margin-bottom:1.25rem;padding-left:1.5rem}li{margin-bottom:.5rem;color:#d0d0d0}
+body{background:#0A0B0F;color:#F0F0F3;font-family:'Geist',system-ui,-apple-system,sans-serif;line-height:1.8;min-height:100vh}
+a{color:#F5A623;text-decoration:none;transition:color .2s}a:hover{color:#F5A623;opacity:0.8}
+
+
+
+.article-container{max-width:900px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.article-meta{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid #2A2C38;color:#5C5E6A;font-size:.85rem}
+.article-meta .date{color:#F5A623}.article-meta .reading-time{color:#9496A1}.article-meta .tag{background:rgba(245,166,35,0.15);color:#F5A623;padding:.15rem .6rem;border-radius:3px;font-size:.75rem}
+h1{font-size:2.25rem;line-height:1.3;margin-bottom:1.5rem;color:#F0F0F3;font-weight:600;letter-spacing:-0.03em}
+h2{font-size:1.5rem;margin-top:2.5rem;margin-bottom:1rem;color:#F0F0F3;border-left:3px solid #F5A623;padding-left:.75rem}
+h3{font-size:1.2rem;margin-top:2rem;margin-bottom:.75rem;color:#F0F0F3}
+p{margin-bottom:1.25rem;color:#d0d0d5}strong{color:#fff}em{color:#c0c0c0}
+ul,ol{margin-bottom:1.25rem;padding-left:1.5rem}li{margin-bottom:.5rem;color:#d0d0d5}
 table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.85rem;overflow-x:auto;display:block}
-thead{background:#12121f}th{padding:.75rem .8rem;text-align:left;color:#d4a017;font-weight:600;border-bottom:2px solid #d4a017;white-space:nowrap}
-td{padding:.75rem .8rem;border-bottom:1px solid #1a1a2e;color:#d0d0d0}tr:hover td{background:#12121f}
-hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
-.back-links{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:3rem;padding-top:1.5rem;border-top:1px solid #1a1a2e}
-.back-links a{display:inline-flex;align-items:center;gap:.4rem;color:#d4a017;font-size:.9rem;font-weight:500}.back-links a:hover{color:#f0c040}
-.disclaimer{margin-top:2rem;padding:1rem;background:#0d0d14;border:1px solid #1a1a2e;border-radius:6px;font-size:.8rem;color:#888;font-style:italic}
+thead{background:#1A1B24}th{padding:.75rem .8rem;text-align:left;color:#F5A623;font-weight:600;border-bottom:2px solid #F5A623;white-space:nowrap}
+td{padding:.75rem .8rem;border-bottom:1px solid #2A2C38;color:#d0d0d5}tr:hover td{background:#1A1B24}
+hr{border:none;border-top:1px solid #2A2C38;margin:2rem 0}
+.back-links{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:3rem;padding-top:1.5rem;border-top:1px solid #2A2C38}
+.back-links a{display:inline-flex;align-items:center;gap:.4rem;color:#F5A623;font-size:.9rem;font-weight:500}.back-links a:hover{color:#F5A623;opacity:0.8}
+.disclaimer{margin-top:2rem;padding:1rem;background:#1A1B24;border:1px solid #2A2C38;border-radius:16px;font-size:.8rem;color:#5C5E6A;font-style:italic}
 @media(max-width:600px){h1{font-size:1.5rem}h2{font-size:1.25rem}.article-container{padding:1.25rem 1rem 3rem}nav{padding:.75rem 1rem}.nav-links{gap:1rem}table{font-size:.75rem}th,td{padding:.5rem .5rem}}
+
+/* === STANDARD NAV (matches Next.js Header) === */
+.et-nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: 56px;
+    z-index: 100;
+    background: rgba(10, 11, 15, 0.85);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    border-bottom: 1px solid #2A2C38;
+}
+.et-nav__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
+}
+.et-nav__logo {
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 600; font-size: 15px; letter-spacing: -0.01em;
+    color: #F0F0F3;
+    text-decoration: none;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__logo:hover { text-decoration: none; color: #F0F0F3; }
+.et-nav__links {
+    display: flex; gap: 28px;
+    list-style: none; margin: 0; padding: 0;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__links a {
+    color: #9496A1;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 150ms;
+}
+.et-nav__links a:hover { color: #F0F0F3; text-decoration: none; }
+.et-nav__links a.active { color: #F0F0F3; }
+.et-nav__cta {
+    display: flex; gap: 8px; align-items: center; justify-content: flex-end;
+}
+.et-nav__cta a {
+    font-size: 14px; padding: 8px 16px; border-radius: 8px;
+    text-decoration: none; transition: all 150ms;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__cta .et-ghost {
+    color: #9496A1; background: transparent; border: 1px solid transparent;
+}
+.et-nav__cta .et-ghost:hover { color: #F0F0F3; }
+.et-nav__cta .et-primary {
+    color: #0A0B0F; background: #F0F0F3; font-weight: 500; border: none;
+}
+.et-nav__cta .et-primary:hover { opacity: 0.9; }
+/* Push body down to account for fixed nav */
+body { padding-top: 56px; }
+@media(max-width: 720px) {
+    .et-nav__links { display: none; }
+    .et-nav__cta { display: none; }
+    .et-nav__inner { grid-template-columns: 1fr; padding: 0 24px; justify-items: center; }
+}
+
 </style>
 </head>
 <body>
-<nav>
-  <div class="nav-brand">EarlyThunder</div>
-  <div class="nav-links">
-    <a href="/">Home</a><a href="/dashboard">Opportunities</a><a href="/blog">Blog</a><a href="/intelligence/">Intelligence</a><a href="/research/" class="active">Research</a>
+<header class="et-nav">
+  <div class="et-nav__inner">
+    <a href="/" class="et-nav__logo">EarlyThunder</a>
+    <nav class="et-nav__links"><a href="/intelligence/">Intelligence</a><a href="/opportunities/">Opportunities</a><a href="/research/" class="active">Research</a><a href="/earnings/">Earnings</a><a href="/deadlines/">Deadlines</a><a href="/scorecard/">Scorecard</a></nav>
+    <div class="et-nav__cta">
+      <a href="/pricing/" class="et-ghost">Sign in</a>
+      <a href="/intelligence/" class="et-primary">Open Terminal →</a>
+    </div>
   </div>
-</nav>
+</header>
 <main class="article-container">
   <article>
-    <h1>RWA Tokenization Just Tripled: $19.3B and Accelerating</h1>
+    <h1>RWA Tokenization Just Tripled - $19.3B and Accelerating</h1>
     <div class="article-meta">
       <span class="date">May 7, 2026</span>
       <span class="reading-time">9 min read</span>
@@ -71,7 +144,7 @@ hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
       <span class="tag">BlackRock</span>
     </div>
 
-    <p>The total value of tokenized real-world assets on-chain hit <strong>$19.3B</strong> in May 2026, tripled from $5.42B in January 2025. This is not speculative DeFi yield farming. These are tokenized U.S. Treasuries, gold bars, real estate, and credit instruments - assets with real underlying value sitting on blockchain rails.</p>
+    <p>The total value of tokenized real-world assets on-chain hit $19.3B in May 2026, tripled from $5.42B in January 2025. This is not speculative DeFi yield farming. These are tokenized U.S. Treasuries, gold bars, real estate, and credit instruments - assets with real underlying value sitting on blockchain rails.</p>
 
     <h2>Where the $19.3B Lives</h2>
     <table>
@@ -84,18 +157,18 @@ hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
       </tbody>
     </table>
 
-    <h2>Tokenized Treasuries: The Anchor Asset</h2>
+    <h2>Tokenized Treasuries - The Anchor Asset</h2>
     <p>Tokenized U.S. Treasuries crossed the $10B milestone on February 11, 2026. This sounds significant - and it is - but context matters. The total U.S. Treasury market is $28T. Tokenized Treasuries represent less than 0.03% of that market.</p>
     <p>If tokenization captures 1% of the Treasury market, that is $280B flowing on-chain. McKinsey projects the total tokenized asset market will reach $2T by 2030.</p>
     <p>BlackRock's BUIDL fund is the institutional benchmark. It provides tokenized Treasury exposure with daily liquidity, and its existence signals to every other asset manager that tokenization is not experimental - it is the next distribution channel.</p>
 
-    <h2>Tokenized Gold: The Quiet Giant</h2>
-    <p>Tokenized gold hit $5.5B in total value with $90.7B in Q1 2026 trading volume - surpassing all of 2025's $84.6B in a single quarter. XAUT (Tether Gold) and PAXG (Paxos Gold) together account for 89% of that growth.</p>
+    <h2>Tokenized Gold - The Quiet Giant</h2>
+    <p>Tokenized gold hit $5.5B in total value with $90.7B in Q1 2026 trading volume - exceeding all of 2025's $84.6B in a single quarter. XAUT (Tether Gold) and PAXG (Paxos Gold) together account for 89% of that growth.</p>
     <p>Tokenized gold is the first asset class where on-chain versions are seeing genuine demand that rivals traditional gold ETFs in certain demographics. It also serves as a geopolitical hedge - tokenized gold has no custody risk tied to any single bank or vault jurisdiction.</p>
 
     <h2>The Protocols Capturing RWA Growth</h2>
 
-    <h3>Ondo Finance (ONDO) - Alpha Score: 8.0/10 (Deep Alpha)</h3>
+    <h3>Ondo Finance (ONDO) - Alpha Score - 8.0/10 (Deep Alpha)</h3>
     <table>
       <thead><tr><th>Metric</th><th>Value</th></tr></thead>
       <tbody>
@@ -107,7 +180,7 @@ hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
     </table>
     <p>Ondo is the tokenized Treasury leader with the strongest institutional distribution advantage in the sector. The BlackRock partnership gives it access to the largest asset manager's client base.</p>
 
-    <h3>MakerDAO / Sky (MKR) - Alpha Score: 7.0/10 (Emerging Signal)</h3>
+    <h3>MakerDAO / Sky (MKR) - Alpha Score - 7.0/10 (Emerging Signal)</h3>
     <table>
       <thead><tr><th>Metric</th><th>Value</th></tr></thead>
       <tbody>
@@ -118,7 +191,7 @@ hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
     </table>
     <p>MakerDAO has quietly become the largest RWA-backed stablecoin protocol. Over 60% of DAI's collateral now comes from real-world assets, primarily U.S. Treasuries. The rebrand to "Sky" has not changed the underlying economics: $66M in annualized revenue from a protocol that is increasingly a tokenized Treasury yield machine.</p>
 
-    <h3>Centrifuge (CFG) - Alpha Score: 5.0/10 (Watch List)</h3>
+    <h3>Centrifuge (CFG) - Alpha Score - 5.0/10 (Watch List)</h3>
     <table>
       <thead><tr><th>Metric</th><th>Value</th></tr></thead>
       <tbody>
@@ -128,7 +201,7 @@ hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
       </tbody>
     </table>
 
-    <h3>Clearpool (CPOOL) - Alpha Score: 5.0/10 (Watch List)</h3>
+    <h3>Clearpool (CPOOL) - Alpha Score - 5.0/10 (Watch List)</h3>
     <table>
       <thead><tr><th>Metric</th><th>Value</th></tr></thead>
       <tbody>

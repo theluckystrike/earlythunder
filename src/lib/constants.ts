@@ -25,7 +25,9 @@ export const STATIC_PAGES = [
   '/pricing',
   '/performance',
   '/discoveries',
+  '/scorecard',
   '/blog',
+  '/guides',
   '/intelligence',
   '/deadlines',
   '/earnings',
@@ -65,7 +67,9 @@ export const PRIORITY_MAP: Readonly<Record<string, number>> = {
   '/pricing': 0.5,
   '/performance': 0.6,
   '/discoveries': 0.7,
+  '/scorecard': 0.9,
   '/blog': 0.7,
+  '/guides': 0.8,
   '/research': 0.8,
   '/terms': 0.3,
   '/privacy': 0.3,
@@ -76,5 +80,6 @@ export const RESEARCH_ARTICLE_PRIORITY = 0.7 as const;
 
 export const OPPORTUNITY_PRIORITY = 0.8 as const;
 export const BLOG_POST_PRIORITY = 0.7 as const;
+export const GUIDE_PRIORITY = 0.8 as const;
 
 export const AUTHOR_NAME = 'Early Thunder Research' as const;

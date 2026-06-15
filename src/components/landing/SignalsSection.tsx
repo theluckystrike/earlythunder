@@ -1,4 +1,4 @@
-/* SignalsExplainer — 8-signal methodology grid. Server Component. */
+/* SignalsExplainer, 8-signal methodology grid. Server Component. */
 
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ const SIGNALS: readonly Signal[] = [
   { n: "05", name: "Smart Money", desc: "Capital inflows", source: "Nansen smart wallets net flow 14d" },
   { n: "06", name: "Narrative", desc: "Viral story potential", source: "Tier-1 founder mentions, mindshare delta" },
   { n: "07", name: "Earnings Yield", desc: "Revenue vs market cap", source: "Annualized fees / FDV >= 25%" },
-  { n: "08", name: "Catalyst", desc: "Near-term triggers", source: "Token unlock, mainnet, governance vote" },
+  { n: "08", name: "Catalyst", desc: "Near-term triggers", source: "token unlock, mainnet, governance vote" },
 ] as const;
 
 /* ─── SignalCell ─── */
@@ -48,8 +48,8 @@ export default function SignalsSection() {
     <section className="signals-section">
       <div className="section__head">
         <div>
-          <div className="section__eyebrow mono">05 &mdash; METHODOLOGY</div>
-          <h2 className="section__title">How we score: 8 signals</h2>
+          <div className="section__eyebrow mono">05, METHODOLOGY</div>
+          <h2 className="section__title">How we score 8 signals</h2>
           <p className="section__sub">
             Every opportunity is scored across 8 dimensions, equally weighted at
             12.5%. Combined score determines conviction.

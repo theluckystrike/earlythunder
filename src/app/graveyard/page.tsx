@@ -154,7 +154,7 @@ function ExploreMoreSection() {
           className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
         >
           <span className="text-sm font-semibold text-text-primary">Research Library</span>
-          <span className="text-xs text-text-secondary mt-1 block">Deep-dive analyses and market reports</span>
+          <span className="text-xs text-text-secondary mt-1 block">analysis analyses and market reports</span>
         </a>
         <a
           href="/intelligence/"

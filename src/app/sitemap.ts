@@ -5,10 +5,11 @@ import {
   PRIORITY_MAP,
   OPPORTUNITY_PRIORITY,
   BLOG_POST_PRIORITY,
+  GUIDE_PRIORITY,
   RESEARCH_SLUGS,
   RESEARCH_ARTICLE_PRIORITY,
 } from "@/lib/constants";
-import { getAllOpportunities, getAllBlogPosts } from "@/lib/data";
+import { getAllOpportunities, getAllBlogPosts, getAllGuides } from "@/lib/data";
 
 export const dynamic = "force-static";
 
@@ -16,7 +17,7 @@ const DEFAULT_PRIORITY = 0.5;
 const MAX_ENTRIES = 50000;
 
 /** Pages that update daily (interactive dashboards, live data). */
-const DAILY_PAGES = new Set(["/", "/intelligence", "/deadlines", "/earnings", "/opportunities", "/discoveries"]);
+const DAILY_PAGES = new Set(["/", "/intelligence", "/deadlines", "/earnings", "/opportunities", "/discoveries", "/scorecard"]);
 
 /** Returns the appropriate changeFrequency for a static page path. */
 function getChangeFrequency(
@@ -69,6 +70,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: BLOG_POST_PRIORITY,
     }));
 
+  const guides = getAllGuides();
+  const guideEntries: MetadataRoute.Sitemap = guides
+    .slice(0, MAX_ENTRIES)
+    .map((guide) => ({
+      url: `${SITE_URL}/guides/${guide.slug}`,
+      lastModified: guide.published_at
+        ? new Date(guide.published_at)
+        : now,
+      changeFrequency: "monthly" as const,
+      priority: GUIDE_PRIORITY,
+    }));
+
   const researchEntries: MetadataRoute.Sitemap = RESEARCH_SLUGS.map(
     (slug) => ({
       url: `${SITE_URL}/research/${slug}`,
@@ -82,6 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticEntries,
     ...opportunityEntries,
     ...blogEntries,
+    ...guideEntries,
     ...researchEntries,
   ];
 }

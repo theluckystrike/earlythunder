@@ -23,8 +23,8 @@
   "url": "https://earlythunder.com/deadlines/",
   "numberOfItems": 24,
   "itemListElement": [
-    {"@type":"ListItem","position":1,"name":"Limitless Season 3 — ends May 25, 2026","url":"https://limitless.exchange/"},
-    {"@type":"ListItem","position":2,"name":"MegaETH Terminal Season 1 — ends June 23, 2026","url":"https://terminal.megaeth.com/guide"},
+    {"@type":"ListItem","position":1,"name":"Limitless Season 3, ends May 25, 2026","url":"https://limitless.exchange/"},
+    {"@type":"ListItem","position":2,"name":"MegaETH Terminal Season 1, ends June 23, 2026","url":"https://terminal.megaeth.com/guide"},
     {"@type":"ListItem","position":3,"name":"Concrete Phase 1 Social Bags Campaign","url":"https://points.concrete.xyz/home"},
     {"@type":"ListItem","position":4,"name":"Symbiotic Points Season 2","url":"https://app.symbiotic.fi/restake/"},
     {"@type":"ListItem","position":5,"name":"Paradex XP Season 3","url":"https://paradex.trade/"},
@@ -50,89 +50,44 @@
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --bg-primary: #0a0a0f;
-    --bg-card: #111118;
-    --bg-card-hover: #16161f;
-    --bg-input: #1a1a24;
-    --border: #2a2a3a;
-    --gold: #d4a017;
-    --gold-dim: #8a6a10;
+    --bg-primary: #0A0B0F;
+    --bg-card: #1A1B24;
+    --bg-card-hover: #22232E;
+    --bg-input: #1A1B24;
+    --border: #2A2C38;
+    --gold: #F5A623;
+    --gold-dim: rgba(245,166,35,0.3);
     --green: #22c55e;
     --green-dim: #166534;
     --red: #ef4444;
     --red-dim: #7f1d1d;
     --orange: #f59e0b;
     --blue: #3b82f6;
-    --cyan: #00d4aa;
-    --text-primary: #e2e2e8;
-    --text-secondary: #8888a0;
-    --text-dim: #555570;
-    --font-mono: 'SF Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
+    --cyan: #F5A623;
+    --text-primary: #F0F0F3;
+    --text-secondary: #9496A1;
+    --text-dim: #5C5E6A;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
 html { font-size: 14px; }
 
 body {
-    font-family: var(--font-mono);
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
     background: var(--bg-primary);
     color: var(--text-primary);
     min-height: 100vh;
     line-height: 1.5;
 }
 
-/* ===== HEADER ===== */
-.header {
-    background: linear-gradient(180deg, #0f0f18 0%, var(--bg-primary) 100%);
-    border-bottom: 1px solid var(--border);
-    padding: 1rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo {
-    color: var(--gold);
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-}
-
-.logo-sub {
-    color: var(--text-dim);
-    font-size: 0.75rem;
-}
-
-nav {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    padding: 0.4rem 0.75rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    transition: all 0.15s;
-}
-
-nav a:hover { color: var(--text-primary); background: var(--bg-input); }
-nav a.active { color: var(--gold); background: var(--bg-input); border: 1px solid var(--gold-dim); }
-
+/* header CSS removed, using standard nav */
 /* ===== MAIN ===== */
 .container {
     max-width: 1200px;
@@ -163,7 +118,7 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
 .stat-box {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 6px;
+    border-radius: 16px;
     padding: 0.75rem 1rem;
     flex: 1;
     min-width: 120px;
@@ -201,13 +156,13 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
     color: var(--text-secondary);
     padding: 0.4rem 0.75rem;
     border-radius: 4px;
-    font-family: var(--font-mono);
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
     font-size: 0.75rem;
     cursor: pointer;
     transition: all 0.15s;
 }
 
-.sort-btn:hover { color: var(--text-primary); border-color: var(--text-dim); }
+.sort-btn:hover { color: var(--text-primary); border-color: var(--gold); }
 .sort-btn.active { color: var(--gold); border-color: var(--gold-dim); background: var(--bg-input); }
 
 /* ===== URGENCY SECTIONS ===== */
@@ -248,7 +203,7 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
 .deadline-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 6px;
+    border-radius: 16px;
     padding: 1rem 1.25rem;
     margin-bottom: 0.75rem;
     transition: all 0.15s;
@@ -260,7 +215,7 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
 
 .deadline-card:hover {
     background: var(--bg-card-hover);
-    border-color: var(--text-dim);
+    border-color: var(--gold);
 }
 
 .deadline-card.critical-border { border-left: 3px solid var(--red); }
@@ -282,7 +237,7 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
     text-decoration: none;
 }
 
-.protocol-name a:hover { color: var(--gold); }
+.protocol-name a:hover { color: var(--gold); text-decoration: none; }
 
 .event-desc {
     color: var(--text-secondary);
@@ -306,7 +261,7 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
 .badge {
     display: inline-block;
     padding: 0.15rem 0.5rem;
-    border-radius: 3px;
+    border-radius: 6px;
     font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -444,6 +399,72 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
     .stats-bar { flex-direction: column; }
     .controls { flex-direction: column; }
 }
+
+/* === STANDARD NAV (matches Next.js Header) === */
+.et-nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: 56px;
+    z-index: 100;
+    background: rgba(10, 11, 15, 0.85);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    border-bottom: 1px solid #2A2C38;
+}
+.et-nav__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
+}
+.et-nav__logo {
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 600; font-size: 15px; letter-spacing: -0.01em;
+    color: #F0F0F3;
+    text-decoration: none;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__logo:hover { text-decoration: none; color: #F0F0F3; }
+.et-nav__links {
+    display: flex; gap: 28px;
+    list-style: none; margin: 0; padding: 0;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__links a {
+    color: #9496A1;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 150ms;
+}
+.et-nav__links a:hover { color: #F0F0F3; text-decoration: none; }
+.et-nav__links a.active { color: #F0F0F3; }
+.et-nav__cta {
+    display: flex; gap: 8px; align-items: center; justify-content: flex-end;
+}
+.et-nav__cta a {
+    font-size: 14px; padding: 8px 16px; border-radius: 8px;
+    text-decoration: none; transition: all 150ms;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__cta .et-ghost {
+    color: #9496A1; background: transparent; border: 1px solid transparent;
+}
+.et-nav__cta .et-ghost:hover { color: #F0F0F3; }
+.et-nav__cta .et-primary {
+    color: #0A0B0F; background: #F0F0F3; font-weight: 500; border: none;
+}
+.et-nav__cta .et-primary:hover { opacity: 0.9; }
+/* Push body down to account for fixed nav */
+body { padding-top: 56px; }
+@media(max-width: 720px) {
+    .et-nav__links { display: none; }
+    .et-nav__cta { display: none; }
+    .et-nav__inner { grid-template-columns: 1fr; padding: 0 24px; justify-items: center; }
+}
+
 </style>
 </head>
 <body>
@@ -463,7 +484,7 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
 
 <main class="container">
     <h1 class="page-title">Airdrop & Token Launch Deadlines</h1>
-    <p class="page-subtitle">Live countdown tracker -- 24 deadlines across airdrops, TGEs, and farming windows. Last updated: May 9, 2026.</p>
+    <p class="page-subtitle">Live countdown tracker, 24 deadlines across airdrops, TGEs, and farming windows. Last updated: May 9, 2026.</p>
 
     <div class="stats-bar">
         <div class="stat-box">
@@ -561,8 +582,8 @@ nav a.active { color: var(--gold); background: var(--bg-input); border: 1px soli
         {id:"kelp_kernel_tge",protocol:"Kelp (KernelDAO)",event:"KERNEL Token TGE",status:"UPCOMING",start_date:null,end_date:null,estimated_end:"Q2 2026",url:"https://kelpdao.xyz/",farming_active:true,capital_required:1000,urgency:"HIGH",notes:"KERNEL TGE confirmed for Q2 2026 with 10% airdrop allocation. $1.56B TVL. Restaking protocol comparable to EigenLayer at 10% of TVL. Points program active."},
         {id:"concrete_phase2_vaults",protocol:"Concrete",event:"Phase 2 Vault Deposit Farming",status:"UPCOMING",start_date:null,end_date:null,estimated_end:null,url:"https://app.concrete.xyz/earn",farming_active:false,capital_required:1000,urgency:"WATCH",notes:"Deposit $1-5K when live. Expected to carry 70-80% of airdrop allocation. No launch date announced. Monitor @ConcreteXYZ for announcement."},
         {id:"concrete_tge",protocol:"Concrete",event:"Token Generation Event",status:"UPCOMING",start_date:null,end_date:null,estimated_end:"Q2-Q3 2026",url:"https://concrete.xyz/",farming_active:false,capital_required:0,urgency:"WATCH",notes:"TGE expected Q2-Q3 2026 per MEXC, airdrops.com, CoinLaunch. $17M raised from Polychain, YZi Labs (Binance), VanEck. $1.04B TVL."},
-        {id:"opensea_sea_token",protocol:"OpenSea",event:"SEA Token Launch",status:"DELAYED",start_date:null,end_date:null,estimated_end:"Q3-Q4 2026",url:"https://opensea.io/",farming_active:true,capital_required:0,urgency:"WATCH",notes:"Originally March 30, 2026 -- DELAYED indefinitely. CEO: 'market conditions are challenging.' 50% supply to community. Voyages rewards program still active. No new date announced."},
-        {id:"symbiotic_token_distribution",protocol:"Symbiotic",event:"Token Distribution to Point Holders",status:"UPCOMING",start_date:null,end_date:null,estimated_end:"Q3-Q4 2026",url:"https://app.symbiotic.fi/dashboard/",farming_active:false,capital_required:0,urgency:"WATCH",notes:"TGE occurred Nov 2024 but supply = 0. Distribution expected Q3-Q4 2026. $34.8M raised from Paradigm, Pantera. CAUTION: EIGEN crashed 96% post-launch."},
+        {id:"opensea_sea_token",protocol:"OpenSea",event:"SEA Token Launch",status:"DELAYED",start_date:null,end_date:null,estimated_end:"Q3-Q4 2026",url:"https://opensea.io/",farming_active:true,capital_required:0,urgency:"WATCH",notes:"Originally March 30, 2026, DELAYED indefinitely. CEO: 'market conditions are challenging.' 50% supply to community. Voyages rewards program still active. No new date announced."},
+        {id:"symbiotic_token_distribution",protocol:"Symbiotic",event:"Token Distribution to Point Holders",status:"UPCOMING",start_date:null,end_date:null,estimated_end:"Q3-Q4 2026",url:"https://app.symbiotic.fi/dashboard/",farming_active:false,capital_required:0,urgency:"WATCH",notes:"TGE occurred Nov 2024 but supply = 0. Distribution expected Q3-Q4 2026. $34.8M raised from model, Pantera. CAUTION: EIGEN crashed 96% post-launch."},
         {id:"commonware_token",protocol:"Commonware",event:"Potential Token Launch",status:"SPECULATED",start_date:null,end_date:null,estimated_end:"Q4 2026 - H1 2027",url:"https://github.com/commonwarexyz/monorepo",farming_active:false,capital_required:0,urgency:"WATCH",notes:"Convergence score 92/100 but 35-40% chance token NEVER launches. Zero farming mechanism. Profitable company, Stripe involvement. Monitor GitHub for governance/foundation code."},
         {id:"commonware_layerzero_qmdb",protocol:"Commonware / LayerZero",event:"LayerZero Zero Chain Launch (using QMDB)",status:"UPCOMING",start_date:null,end_date:null,estimated_end:"Fall 2026",url:"https://commonware.xyz/blogs/qmdb",farming_active:false,capital_required:0,urgency:"WATCH",notes:"LayerZero building Zero L1 on QMDB (fall 2026). Could trigger Commonware tokenization narrative. Monitor for foundation entity registration."},
         {id:"veda_token",protocol:"Veda",event:"Token Launch / Airdrop",status:"UPCOMING",start_date:null,end_date:null,estimated_end:"2026",url:"https://www.veda.tech/",farming_active:true,capital_required:500,urgency:"WATCH",notes:"Yield infrastructure with $1.14B TVL ($3.7B peak). Points program live. No confirmed TGE date. 100K+ depositors estimated."},

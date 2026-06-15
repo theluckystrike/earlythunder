@@ -1,13 +1,13 @@
 /** Signal scores for the 8-signal pattern filter. Each value 0-100. */
 export interface Signals {
-  readonly working_code: number;     // 20% weight — Quality
-  readonly dev_activity: number;     // 15% weight — Quality
-  readonly smart_money: number;      // 10% weight — Quality (reduced from 15%)
-  readonly community: number;        // 10% weight — Quality
-  readonly catalyst: number;         // 15% weight — Quality
-  readonly narrative: number;        // 5% weight — Quality
-  readonly valuation_gap: number;    // 15% weight — Asymmetry (NEW)
-  readonly obscurity: number;        // 10% weight — Asymmetry (NEW)
+  readonly working_code: number;     // 20% weight, Quality
+  readonly dev_activity: number;     // 15% weight, Quality
+  readonly smart_money: number;      // 10% weight, Quality (reduced from 15%)
+  readonly community: number;        // 10% weight, Quality
+  readonly catalyst: number;         // 15% weight, Quality
+  readonly narrative: number;        // 5% weight, Quality
+  readonly valuation_gap: number;    // 15% weight, Asymmetry (NEW)
+  readonly obscurity: number;        // 10% weight, Asymmetry (NEW)
 }
 
 /** Asset class categories for opportunity classification. */
@@ -153,7 +153,7 @@ export interface Opportunity {
   readonly last_github_commit?: string | null;
   readonly google_trends_interest?: string | null;
 
-  // Analysis and verdict (populated for deep-dive opportunities)
+  // Analysis and verdict (populated for analysis opportunities)
   readonly free_access?: boolean;
   readonly verdict?: string | null;
   readonly red_flags?: readonly string[] | null;

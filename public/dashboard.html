@@ -502,7 +502,7 @@ tr.row-dim td { color: var(--text-dim); }
 </head>
 <body>
 
-<!-- HEADER -->
+<!, HEADER ,>
 <div class="header">
     <div class="header-left">
         <div>
@@ -511,12 +511,12 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
     <div class="header-right">
-        <span class="last-refresh" id="lastRefresh">--</span>
+        <span class="last-refresh" id="lastRefresh">,</span>
         <button class="refresh-btn" id="refreshBtn" onclick="refreshAll()">REFRESH DATA</button>
     </div>
 </div>
 
-<!-- TAB BAR -->
+<!, TAB BAR ,>
 <div class="tab-bar">
     <button class="tab-btn active" data-tab="action">ACTION</button>
     <button class="tab-btn" data-tab="portfolio">PORTFOLIO</button>
@@ -524,9 +524,9 @@ tr.row-dim td { color: var(--text-dim); }
     <button class="tab-btn" data-tab="research">RESEARCH</button>
 </div>
 
-<!-- TAB 1: ACTION -->
+<!, TAB 1: ACTION ,>
 <div class="tab-content active" id="tab-action">
-    <!-- ALERTS -->
+    <!, ALERTS ,>
     <div class="card">
         <div class="card-title">Alerts</div>
         <div id="alertsContainer">
@@ -534,7 +534,7 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- TOP OPPORTUNITIES -->
+    <!, TOP OPPORTUNITIES ,>
     <div class="card">
         <div class="card-title">Top Opportunities</div>
         <div class="table-wrap">
@@ -557,29 +557,29 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- QUICK STATS -->
+    <!, QUICK STATS ,>
     <div class="card">
         <div class="card-title">Quick Stats</div>
         <div class="stats-grid" id="quickStats">
             <div class="stat-item">
                 <div class="stat-label">Projects Tracked</div>
-                <div class="stat-value" id="statProjects">--</div>
+                <div class="stat-value" id="statProjects">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">INVESTIGATE Signals</div>
-                <div class="stat-value gold" id="statInvestigate">--</div>
+                <div class="stat-value gold" id="statInvestigate">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Pipeline Last Run</div>
-                <div class="stat-value" id="statLastRun">--</div>
+                <div class="stat-value" id="statLastRun">,</div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- TAB 2: PORTFOLIO -->
+<!, TAB 2: PORTFOLIO ,>
 <div class="tab-content" id="tab-portfolio">
-    <!-- PORTFOLIO SUMMARY -->
+    <!, PORTFOLIO SUMMARY ,>
     <div class="card">
         <div class="card-title">Portfolio Summary</div>
         <div class="portfolio-summary" id="portfolioSummary">
@@ -602,7 +602,7 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- POSITIONS -->
+    <!, POSITIONS ,>
     <div class="card">
         <div class="card-title">Positions</div>
         <div class="table-wrap">
@@ -620,13 +620,13 @@ tr.row-dim td { color: var(--text-dim); }
                     </tr>
                 </thead>
                 <tbody id="positionsBody">
-                    <tr><td colspan="8" class="placeholder">No positions yet -- run pipeline first</td></tr>
+                    <tr><td colspan="8" class="placeholder">No positions yet, run pipeline first</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 
-    <!-- WATCHLIST -->
+    <!, WATCHLIST ,>
     <div class="card">
         <div class="card-title">Watchlist</div>
         <div class="table-wrap">
@@ -648,36 +648,36 @@ tr.row-dim td { color: var(--text-dim); }
     </div>
 </div>
 
-<!-- TAB 3: PIPELINE -->
+<!, TAB 3: PIPELINE ,>
 <div class="tab-content" id="tab-pipeline">
-    <!-- SCANNER STATUS -->
+    <!, SCANNER STATUS ,>
     <div class="card">
         <div class="card-title">Scanner Status</div>
         <div class="scanner-grid" id="scannerGrid">
-            <!-- Populated by JS -->
+            <!, Populated by JS ,>
         </div>
     </div>
 
-    <!-- CROSS-REFERENCE SUMMARY -->
+    <!, CROSS-REFERENCE SUMMARY ,>
     <div class="card">
         <div class="card-title">Cross-Reference Summary</div>
         <div class="stats-grid" id="xrefStats">
             <div class="stat-item">
                 <div class="stat-label">Projects Scored</div>
-                <div class="stat-value" id="xrefTotal">--</div>
+                <div class="stat-value" id="xrefTotal">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">INVESTIGATE</div>
-                <div class="stat-value gold" id="xrefInvestigate">--</div>
+                <div class="stat-value gold" id="xrefInvestigate">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">MONITOR</div>
-                <div class="stat-value" id="xrefMonitor">--</div>
+                <div class="stat-value" id="xrefMonitor">,</div>
             </div>
         </div>
     </div>
 
-    <!-- LATEST FINDINGS -->
+    <!, LATEST FINDINGS ,>
     <div class="card">
         <div class="card-title">Latest Findings (Top 20)</div>
         <div class="table-wrap">
@@ -700,10 +700,10 @@ tr.row-dim td { color: var(--text-dim); }
     </div>
 </div>
 
-<!-- TAB 4: RESEARCH -->
+<!, TAB 4: RESEARCH ,>
 <div class="tab-content" id="tab-research">
     <div id="researchContainer">
-        <!-- Populated by JS -->
+        <!, Populated by JS ,>
     </div>
 </div>
 
@@ -748,22 +748,22 @@ var RESEARCH_DATA = {
         score: 85,
         verdict: "DEEP_ALPHA",
         scores: { team: 95, money: 90, product: 85, timing: 80, valuation: 75 },
-        thesis: "Open-source Rust library of composable blockchain primitives (\"Anti-Framework\"). Founded by Patrick O'Grady (ex-VP Engineering Ava Labs, built HyperSDK). Team includes Roberto Bayardo (Distinguished Engineer, Coinbase Base architect, 19yr Google), Ben Clabby (OP Labs fault proofs), Andre Silva (Parity/Polkadot core). $34M raised: $9M seed (Haun + Dragonfly at $63M val), $25M strategic (Tempo/Stripe + Paradigm). Profitable with 4 enterprise customers at >$1M ARR each. Custom io_uring runtime, qmdb merkle database, Simplex BFT consensus. ~200ms blocks, ~300ms finality.",
+        thesis: "Open-source Rust library of composable blockchain primitives (\"Anti-Framework\"). Founded by Patrick O'Grady (ex-VP Engineering Ava Labs, built HyperSDK). Team includes Roberto Bayardo (Distinguished Engineer, Coinbase Base architect, 19yr Google), Ben Clabby (OP Labs fault proofs), Andre Silva (Parity/Polkadot core). $34M raised: $9M seed (Haun + Dragonfly at $63M val), $25M strategic (Tempo/Stripe + model). Profitable with 4 enterprise customers at >$1M ARR each. Custom io_uring runtime, qmdb merkle database, Simplex BFT consensus. ~200ms blocks, ~300ms finality.",
         team: "Patrick O'Grady (Founder, ex-Ava Labs VP Eng), Roberto Bayardo (ex-Google 19yr, Coinbase Base architect), Ben Clabby (ex-OP Labs), Andre Silva (ex-Parity/Polkadot), Dan Laine (ex-Ava Labs), Brendan Chou (ex-dYdX first eng, Google, Princeton)",
-        funding: "$34M total. Seed $9M (Haun + Dragonfly, $63M val, Dec 2024). Strategic $25M (Tempo = Stripe + Paradigm, Nov 2025). Angels: Kevin Sekniqi (Avalanche co-founder), Smokey the Bera, Zaki Manian, Mert Mumtaz.",
+        funding: "$34M total. Seed $9M (Haun + Dragonfly, $63M val, Dec 2024). Strategic $25M (Tempo = Stripe + model, Nov 2025). Angels: Kevin Sekniqi (Avalanche co-founder), Smokey the Bera, Zaki Manian, Mert Mumtaz.",
         risks: [
-            "No token may ever launch -- company is profitable, no structural need",
-            "Small team (7 employees) -- key-person risk on O'Grady and Bayardo",
-            "Tempo dependency -- $25M from largest customer creates concentration",
-            "Adoption risk -- Cosmos SDK and Substrate have mature ecosystems",
-            "Infrastructure value capture -- value may accrue to Tempo, not Commonware"
+            "No token may ever launch, company is profitable, no structural need",
+            "Small team (7 employees), key-person risk on O'Grady and Bayardo",
+            "Tempo dependency, $25M from largest customer creates concentration",
+            "Adoption risk, Cosmos SDK and Substrate have mature ecosystems",
+            "Infrastructure value capture, value may accrue to Tempo, not Commonware"
         ],
         action_items: [
             "Monitor GitHub (commonwarexyz/monorepo) daily for token-related changes",
             "Track Twitter (@commonwarexyz) for announcements",
             "Watch Tempo for indirect token events",
             "Alert if star count exceeds 1000 (viral growth signal)",
-            "No buy action -- pre-token monitoring only"
+            "No buy action, pre-token monitoring only"
         ]
     },
     ekubo: {
@@ -771,15 +771,15 @@ var RESEARCH_DATA = {
         score: 72,
         verdict: "DEEP_ALPHA",
         scores: { team: 90, money: 55, product: 80, timing: 70, valuation: 65 },
-        thesis: "Concentrated-liquidity DEX built by moodysalem, chief engineer behind Uniswap v3/v4. TVL ($22.8M) exceeds market cap ($4.8M) by nearly 5x -- extreme undervaluation. Fixed supply 10M tokens, no inflation. Active on StarkNet (69% TVL) and Ethereum. Price 93.7% below ATH ($7.64). DAO contract expires July 28, 2026. Recent $1.4M EVM router exploit (May 5) under investigation.",
+        thesis: "Concentrated-liquidity DEX built by moodysalem, chief engineer behind Uniswap v3/v4. TVL ($22.8M) exceeds market cap ($4.8M) by nearly 5x, extreme undervaluation. Fixed supply 10M tokens, no inflation. Active on StarkNet (69% TVL) and Ethereum. Price 93.7% below ATH ($7.64). DAO contract expires July 28, 2026. Recent $1.4M EVM router exploit (May 5) under investigation.",
         team: "moodysalem (Uniswap v3/v4 chief engineer). Extremely active: 30+ GitHub events recently across EkuboProtocol repos, OpenZeppelin, Ethereum ERCs.",
         funding: "No traditional VC funding. Token-funded protocol. Market cap $4.8M, TVL $22.8M.",
         live_data: "Price: $0.48 | MCap: $4.8M | FDV: $4.8M | TVL: $22.8M | Vol 24h: ~$25K | ATH: $7.64 | 7d: -33.3%",
         risks: [
-            "EVM router exploit ($1.4M, May 5 2026) -- smart contract risk",
-            "DAO contract expires July 28 2026 -- governance uncertainty",
-            "Low liquidity (~$25K daily volume) -- hard to enter/exit large positions",
-            "StarkNet concentration (69% TVL) -- ecosystem risk",
+            "EVM router exploit ($1.4M, May 5 2026), smart contract risk",
+            "DAO contract expires July 28 2026, governance uncertainty",
+            "Low liquidity (~$25K daily volume), hard to enter/exit large positions",
+            "StarkNet concentration (69% TVL), system risk",
             "Key-person dependency on moodysalem",
             "DEX competition (Uniswap, Curve with larger network effects)"
         ],
@@ -902,7 +902,7 @@ function renderAlerts() {
         for (var i = 0; i < state.portfolio.watchlist.length && i < MAX_LOOP; i++) {
             if (state.portfolio.watchlist[i].name === 'Commonware') {
                 cwStatus = state.portfolio.watchlist[i].status === 'pre_token'
-                    ? 'NO TOKEN -- MONITORING' : 'TOKEN DETECTED';
+                    ? 'NO TOKEN, MONITORING' : 'TOKEN DETECTED';
                 cwLevel = state.portfolio.watchlist[i].status === 'pre_token' ? 'high' : 'critical';
                 break;
             }
@@ -961,7 +961,7 @@ function renderOpportunities() {
     items.sort(function(a, b) { return b.score - a.score; });
 
     if (items.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="7" class="placeholder">No data yet -- run pipeline first</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="7" class="placeholder">No data yet, run pipeline first</td></tr>';
         return;
     }
 
@@ -980,7 +980,7 @@ function renderOpportunities() {
         html += '<td>' + scoreBarHTML(item.score) + '</td>';
         html += '<td><span class="action-badge ' + act.cls + '">' + act.text + '</span>';
         if (item.status === 'pre_token') {
-            html += '<br><span style="color:var(--orange);font-size:0.65rem;">NO TOKEN -- MONITORING</span>';
+            html += '<br><span style="color:var(--orange);font-size:0.65rem;">NO TOKEN, MONITORING</span>';
         }
         html += '</td>';
         html += '<td>' + (item.size_pct ? item.size_pct + '%' : '--') + '</td>';
@@ -1068,9 +1068,9 @@ function renderPortfolio() {
         document.getElementById('pfPnl').textContent = '$0';
         document.getElementById('pfPnlPct').textContent = '0%';
         document.getElementById('positionsBody').innerHTML =
-            '<tr><td colspan="8" class="placeholder">No data yet -- run pipeline first</td></tr>';
+            '<tr><td colspan="8" class="placeholder">No data yet, run pipeline first</td></tr>';
         document.getElementById('watchlistBody').innerHTML =
-            '<tr><td colspan="5" class="placeholder">No data yet -- run pipeline first</td></tr>';
+            '<tr><td colspan="5" class="placeholder">No data yet, run pipeline first</td></tr>';
         return;
     }
 
@@ -1126,7 +1126,7 @@ function renderPortfolio() {
             posHtml += '</tr>';
         }
     } else {
-        posHtml = '<tr><td colspan="8" class="placeholder">No positions yet -- waiting for first trade</td></tr>';
+        posHtml = '<tr><td colspan="8" class="placeholder">No positions yet, waiting for first trade</td></tr>';
     }
     document.getElementById('positionsBody').innerHTML = posHtml;
 
@@ -1198,7 +1198,7 @@ function renderPipeline() {
     }
 
     if (tokens.length === 0) {
-        fHtml = '<tr><td colspan="6" class="placeholder">No data yet -- run pipeline first</td></tr>';
+        fHtml = '<tr><td colspan="6" class="placeholder">No data yet, run pipeline first</td></tr>';
     } else {
         /* Sort by composite_score descending */
         var sorted = tokens.slice().sort(function(a, b) {

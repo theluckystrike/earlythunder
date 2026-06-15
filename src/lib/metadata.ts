@@ -163,11 +163,11 @@ export const graveyardPageMetadata: Metadata = {
 export const pricingPageMetadata: Metadata = {
   title: "Pricing",
   description:
-    "Free tier with 8-Signal Pattern Filter scores and opportunity listings. Premium unlocks full signal breakdowns, smart money flow data, catalyst timelines, and deep-dive research across 154+ protocols.",
+    "Free tier with 8-Signal Pattern Filter scores and opportunity listings. Premium unlocks full signal breakdowns, smart money flow data, catalyst timelines, and analysis research across 154+ protocols.",
   openGraph: {
     title: `Pricing | ${SITE_NAME}`,
     description:
-      "Free tier with scores and listings. Premium unlocks full signal breakdowns, smart money data, and deep-dive research.",
+      "Free tier with scores and listings. Premium unlocks full signal breakdowns, smart money data, and analysis research.",
     url: `${SITE_URL}/pricing`,
     images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Pricing | ${SITE_NAME}` }],
   },
@@ -175,7 +175,7 @@ export const pricingPageMetadata: Metadata = {
     card: "summary_large_image",
     title: `Pricing | ${SITE_NAME}`,
     description:
-      "Free tier with scores and listings. Premium unlocks full signal breakdowns and deep-dive research.",
+      "Free tier with scores and listings. Premium unlocks full signal breakdowns and analysis research.",
     images: [OG_IMAGE_URL],
     creator: TWITTER_HANDLE,
   },
@@ -242,7 +242,7 @@ export const intelligencePageMetadata: Metadata = {
 export const researchPageMetadata: Metadata = {
   title: "Research",
   description:
-    "Deep-dive research library with forensic exploit breakdowns, airdrop ROI data across 200+ distributions, tokenless protocol TVL tracking, and quantified opportunity theses with cited on-chain sources.",
+    "analysis research library with forensic exploit breakdowns, airdrop ROI data across 200+ distributions, tokenless protocol TVL tracking, and quantified opportunity theses with cited on-chain sources.",
   keywords: [
     "crypto research",
     "DeFi analysis",
@@ -256,7 +256,7 @@ export const researchPageMetadata: Metadata = {
   openGraph: {
     title: `Research | ${SITE_NAME}`,
     description:
-      "Deep-dive research library: exploit forensics, airdrop ROI data, tokenless protocol TVL, and quantified opportunity theses.",
+      "analysis research library: exploit forensics, airdrop ROI data, tokenless protocol TVL, and quantified opportunity theses.",
     url: `${SITE_URL}/research`,
     images: [{ url: OG_IMAGE_URL, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, alt: `Research | ${SITE_NAME}` }],
   },
@@ -264,7 +264,7 @@ export const researchPageMetadata: Metadata = {
     card: "summary_large_image",
     title: `Research | ${SITE_NAME}`,
     description:
-      "Deep-dive research library: exploit forensics, airdrop ROI data, tokenless protocol TVL, and quantified opportunity theses.",
+      "analysis research library: exploit forensics, airdrop ROI data, tokenless protocol TVL, and quantified opportunity theses.",
     images: [OG_IMAGE_URL],
     creator: TWITTER_HANDLE,
   },
@@ -371,7 +371,7 @@ const RESEARCH_META: Record<
   "kelp-exploit-analysis": {
     title: "Kelp Exploit Analysis",
     description:
-      "Forensic breakdown of the Kelp DeFi exploit — attack vectors, fund flows, and lessons for protocol security.",
+      "Forensic breakdown of the Kelp DeFi exploit, attack vectors, fund flows, and lessons for protocol security.",
   },
   "airdrop-performance-data": {
     title: "Airdrop Performance Data",
@@ -386,52 +386,52 @@ const RESEARCH_META: Record<
   "lqty-v2-value-break": {
     title: "LQTY v2 Value Break Analysis",
     description:
-      "Deep-dive into Liquity v2 value accrual mechanics — protocol revenue, token utility changes, and valuation gap assessment.",
+      "analysis into Liquity v2 value accrual mechanics, protocol revenue, token utility changes, and valuation gap assessment.",
   },
   "crypto-intelligence-brief-week-of-2026-05-09": {
-    title: "Crypto Intelligence Brief — Week of May 9, 2026",
+    title: "Crypto Intelligence Brief, Week of May 9, 2026",
     description:
       "Weekly intelligence brief covering market-moving signals, convergence events, and asymmetric setups for the week of May 9, 2026.",
   },
   "commonware-analysis-potential-1000x-2500x-roi-opportunity": {
     title: "Commonware Analysis: 1000x-2500x ROI Opportunity",
     description:
-      "Full-stack analysis of Commonware — architecture review, team assessment, and quantified ROI thesis for early participants.",
+      "Full-stack analysis of Commonware, architecture review, team assessment, and quantified ROI thesis for early participants.",
   },
   "gains-network-analysis-smart-money-score-86-with-40-tvl-surge": {
     title: "Gains Network: Smart Money Score 86 with 40% TVL Surge",
     description:
-      "Gains Network deep-dive — smart money score 86/100, 40% TVL surge analysis, and decentralized perpetuals market positioning.",
+      "Gains Network analysis, smart money score 86/100, 40% TVL surge analysis, and decentralized perpetuals market positioning.",
   },
   "commonware-deep-alpha": {
     title: "Commonware Deep Alpha",
     description:
-      "Extended alpha research on Commonware — technical architecture deep-dive, competitive moat analysis, and conviction-level thesis.",
+      "Extended alpha research on Commonware, technical architecture analysis, competitive moat analysis, and conviction-level thesis.",
   },
   "the-23-billion-divergence": {
     title: "The $23 Billion Divergence",
     description:
-      "Analysis of the $23B divergence between DeFi fundamentals and token valuations — where the gap is widest and how to position.",
+      "Analysis of the $23B divergence between DeFi fundamentals and token valuations, where the gap is widest and how to position.",
   },
   "genius-act-countdown": {
     title: "GENIUS Act Countdown",
     description:
-      "Regulatory intelligence on the GENIUS Act — timeline, market impact scenarios, and which crypto sectors benefit most.",
+      "Regulatory intelligence on the GENIUS Act, timeline, market impact scenarios, and which crypto sectors benefit most.",
   },
   "ai-crypto-convergence": {
     title: "AI-Crypto Convergence",
     description:
-      "Mapping the intersection of artificial intelligence and crypto — infrastructure plays, data markets, and the convergence trade thesis.",
+      "Mapping the intersection of artificial intelligence and crypto, infrastructure plays, data markets, and the convergence trade thesis.",
   },
   "rwa-tokenization-tripled": {
     title: "RWA Tokenization Tripled",
     description:
-      "Real World Asset tokenization has tripled — sector breakdown, protocol comparison, and the institutional capital pipeline driving growth.",
+      "Real World Asset tokenization has tripled, sector breakdown, protocol comparison, and the institutional capital pipeline driving growth.",
   },
   "infrastructure-monopoly-map": {
     title: "Infrastructure Monopoly Map",
     description:
-      "Visual mapping of crypto infrastructure monopolies — who controls the critical layers and where challenger opportunities exist.",
+      "Visual mapping of crypto infrastructure monopolies, who controls the critical layers and where challenger opportunities exist.",
   },
 };
 

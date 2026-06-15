@@ -38,7 +38,7 @@ function LogLine({ entry }: { readonly entry: LogEntry }) {
         {entry.lvl}
       </span>
       <span className="log-line__msg">{entry.msg}</span>
-      <span className="log-line__det">&mdash; {entry.det}</span>
+      <span className="log-line__det">, {entry.det}</span>
     </div>
   );
 }
@@ -53,7 +53,7 @@ function TerminalHead() {
         <span className="terminal__dot terminal__dot--yellow" />
         <span className="terminal__dot terminal__dot--green" />
       </div>
-      <span className="terminal__title">earlythunder.pipeline &mdash; sess_2026.05.10</span>
+      <span className="terminal__title">earlythunder.pipeline, sess_2026.05.10</span>
       <span className="terminal__status">&#9679; RUNNING</span>
     </div>
   );
@@ -93,7 +93,7 @@ export default function PipelineLog() {
     <section className="bento-section">
       <div className="section__head">
         <div>
-          <div className="section__eyebrow mono">06 &mdash; SHOW YOUR WORK</div>
+          <div className="section__eyebrow mono">06, SHOW YOUR WORK</div>
           <h2 className="section__title">The pipeline runs in public</h2>
           <p className="section__sub">
             Every score change, source addition, and convergence event is logged.

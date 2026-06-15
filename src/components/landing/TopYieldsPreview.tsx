@@ -219,7 +219,7 @@ function SectionHeader({ count, total }: { readonly count: number; readonly tota
   return (
     <div className="section__head">
       <div>
-        <div className="section__eyebrow mono">03 &mdash; EARNINGS SCANNER</div>
+        <div className="section__eyebrow mono">03, EARNINGS SCANNER</div>
         <h2 className="section__title">Protocols earning more than their market cap</h2>
         <p className="section__sub">
           Annualized revenue &divide; FDV. Sorted by yield. {count} of {total} shown.

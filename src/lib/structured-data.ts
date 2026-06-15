@@ -93,6 +93,78 @@ export function getArticleSchema(
   };
 }
 
+/** JSON-LD Article schema for a guide. */
+export function getGuideArticleSchema(
+  guide: BlogPost,
+): Record<string, unknown> {
+  if (!guide || typeof guide.slug !== "string") {
+    throw new Error("Valid guide is required for article schema.");
+  }
+  if (typeof guide.title !== "string" || guide.title.length === 0) {
+    throw new Error("Guide title is required.");
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.excerpt,
+    url: `${SITE_URL}/guides/${guide.slug}`,
+    datePublished: guide.published_at,
+    author: {
+      "@type": "Organization",
+      name: guide.author || AUTHOR_NAME,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}${OG_IMAGE_PATH}`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/guides/${guide.slug}`,
+    },
+    keywords: [...guide.tags].join(", "),
+  };
+}
+
+/** JSON-LD ItemList schema for the guides listing page. */
+export function getGuideListSchema(
+  guides: readonly BlogPost[],
+): Record<string, unknown> {
+  if (!Array.isArray(guides) || guides.length === 0) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: `${SITE_NAME} Guides`,
+      numberOfItems: 0,
+      url: `${SITE_URL}/guides`,
+      itemListElement: [],
+    };
+  }
+
+  const bounded = guides.slice(0, MAX_LIST_ITEMS);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${SITE_NAME} Guides`,
+    description:
+      "Actionable guides for crypto portfolio execution, security, DeFi strategies, and autonomous intelligence.",
+    numberOfItems: bounded.length,
+    url: `${SITE_URL}/guides`,
+    itemListElement: bounded.map((guide, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: guide.title,
+      url: `${SITE_URL}/guides/${guide.slug}`,
+    })),
+  };
+}
+
 /** JSON-LD WebApplication schema for the intelligence dashboard. */
 export function getIntelligenceDashboardSchema(): Record<string, unknown> {
   if (typeof SITE_URL !== "string" || SITE_URL.length === 0) {
@@ -146,7 +218,7 @@ export function getResearchCatalogSchema(): Record<string, unknown> {
     name: `${SITE_NAME} Research Library`,
     url: `${SITE_URL}/research`,
     description:
-      "Deep-dive research articles covering DeFi exploits, airdrop performance, tokenless protocol analysis, and asymmetric opportunity breakdowns.",
+      "analysis research articles covering DeFi exploits, airdrop performance, tokenless protocol analysis, and asymmetric opportunity breakdowns.",
     creator: {
       "@type": "Organization",
       name: SITE_NAME,
@@ -180,7 +252,7 @@ export function getResearchFAQSchema(): Record<string, unknown> {
       question:
         "What are convergence signals and how does Early Thunder track them?",
       answer:
-        "Convergence signals occur when multiple independent indicators — smart money flows, developer activity, catalyst timelines, and valuation gaps — align simultaneously on a single asset. Early Thunder's 8-Signal Pattern Filter scores each dimension 0-100 and flags assets where three or more signals converge above threshold, historically correlating with 5-50x pre-mainstream moves.",
+        "Convergence signals occur when multiple independent indicators, smart money flows, developer activity, catalyst timelines, and valuation gaps, align simultaneously on a single asset. Early Thunder's 8-Signal Pattern Filter scores each dimension 0-100 and flags assets where three or more signals converge above threshold, historically correlating with 5-50x pre-mainstream moves.",
     },
     {
       question:
@@ -198,7 +270,7 @@ export function getResearchFAQSchema(): Record<string, unknown> {
       question:
         "How often is the intelligence dashboard updated with new data?",
       answer:
-        "The intelligence dashboard refreshes convergence scores and signal data daily. Smart money flow data updates every 6 hours from on-chain sources. Catalyst timelines are maintained in real-time as governance votes, token unlocks, and protocol upgrades are announced. Research articles are published weekly with deep-dive analysis.",
+        "The intelligence dashboard refreshes convergence scores and signal data daily. Smart money flow data updates every 6 hours from on-chain sources. Catalyst timelines are maintained in real-time as governance votes, token unlocks, and protocol upgrades are announced. Research articles are published weekly with analysis analysis.",
     },
     {
       question:
@@ -281,7 +353,7 @@ export function getItemListSchema(
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `Top ${bounded.length} Asymmetric Opportunities — ${SITE_NAME}`,
+    name: `Top ${bounded.length} Asymmetric Opportunities, ${SITE_NAME}`,
     description:
       "Ranked list of pre-mainstream opportunities scored by the 8-Signal Pattern Filter across crypto, deep tech, and emerging markets.",
     numberOfItems: bounded.length,
@@ -343,7 +415,7 @@ export function getGraveyardListSchema(
     return {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      name: `${SITE_NAME} Graveyard — Failed Opportunities`,
+      name: `${SITE_NAME} Graveyard, Failed Opportunities`,
       description:
         "Transparent record of opportunities that fell below threshold, with full context on what went wrong.",
       numberOfItems: 0,
@@ -357,7 +429,7 @@ export function getGraveyardListSchema(
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `${SITE_NAME} Graveyard — Failed Opportunities`,
+    name: `${SITE_NAME} Graveyard, Failed Opportunities`,
     description:
       "Transparent record of opportunities that fell below threshold, with full context on what went wrong.",
     numberOfItems: bounded.length,

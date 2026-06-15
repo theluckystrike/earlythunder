@@ -36,7 +36,7 @@ function buildTools(total: number): readonly ToolDef[] {
     {
       name: "Deadline Tracker",
       count: "23 countdowns",
-      headline: "TGE · unlock · snapshot deadlines",
+      headline: "TGE · open · snapshot deadlines",
       href: "/deadlines/",
       size: "medium",
     },
@@ -69,7 +69,7 @@ function MiniTable(
         <div key={row.ticker} className="mini-table__row">
           <span>{String(idx + 1).padStart(2, "0")}</span>
           <span>{row.ticker}</span>
-          <span>{row.yield ?? "—"}</span>
+          <span>{row.yield ?? ", "}</span>
           <span>{row.score}</span>
         </div>
       ))}
@@ -202,7 +202,7 @@ export default function ToolsShowcase({
     <section className="bento-section">
       <div className="section__head">
         <div>
-          <div className="section__eyebrow mono">01 &mdash; TERMINAL</div>
+          <div className="section__eyebrow mono">01, TERMINAL</div>
           <h2 className="section__title">Live intelligence tools</h2>
           <p className="section__sub">
             Four interactive data terminals. Updated daily from our autonomous research pipeline.

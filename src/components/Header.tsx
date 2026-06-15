@@ -10,10 +10,12 @@ const PRIMARY_NAV = [
   { href: "/research/", label: "Research", isNextRoute: false },
   { href: "/earnings/", label: "Earnings", isNextRoute: false },
   { href: "/deadlines/", label: "Deadlines", isNextRoute: false },
+  { href: "/scorecard", label: "Scorecard", isNextRoute: true },
 ] as const;
 
 /** Secondary nav: shown only in mobile menu below a divider */
 const SECONDARY_NAV = [
+  { href: "/guides", label: "Guides", isNextRoute: true },
   { href: "/methodology", label: "Methodology", isNextRoute: true },
   { href: "/how-it-works", label: "How It Works", isNextRoute: true },
   { href: "/graveyard", label: "Graveyard", isNextRoute: true },

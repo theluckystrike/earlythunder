@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import scorecardData from "../../../data/altcoin-scorecard.json";
+import opportunitiesData from "../../../data/opportunities.json";
+
+/* Map scorecard symbols → opportunity slugs using ticker field */
+const SYMBOL_TO_SLUG: Record<string, string> = {};
+for (const opp of opportunitiesData as { ticker?: string | null; slug: string }[]) {
+  const sym = opp.ticker?.replace("$", "");
+  if (sym) SYMBOL_TO_SLUG[sym] = opp.slug;
+}
+
+const BUY_LIST = new Set(["BTC", "ETH", "GEOD", "UNI", "LINK", "HYPE"]);
 
 export const metadata: Metadata = {
   title: "Altcoin Hold/Reduce/Sell Scorecard",
@@ -12,7 +23,7 @@ const VARIABLE_LABELS: Record<string, string> = {
   revenue_trend: "Revenue Trend",
   ps_multiple: "P/S Multiple",
   supply_inflation: "Supply Inflation",
-  unlock_schedule: "Unlock Schedule",
+  unlock_schedule: "unlock schedule",
   circ_fdv_ratio: "Circ/FDV Ratio",
   buyback_burn: "Buyback/Burn",
   smart_money: "Smart Money Flows",
@@ -22,7 +33,7 @@ const VARIABLE_LABELS: Record<string, string> = {
   tvl_trend: "TVL Trend",
   active_users: "Active Users/DAU",
   developer_activity: "Developer Activity",
-  ecosystem_growth: "Ecosystem Growth",
+  ecosystem_growth: "system Growth",
   market_share: "Market Share",
   competitive_moat: "Competitive Moat",
   institutional_adoption: "Institutional Adoption",
@@ -62,7 +73,7 @@ function changeColor(change: number): string {
 }
 
 function fmtSupply(n: number | null | undefined): string {
-  if (n == null || n === 0) return "\u2014";
+  if (n == null || n === 0) return "-";
   if (n >= 1e9) return `${(n / 1e9).toFixed(1)}B`;
   if (n >= 1e6) return `${(n / 1e6).toFixed(1)}M`;
   if (n >= 1e3) return `${(n / 1e3).toFixed(1)}K`;
@@ -70,7 +81,7 @@ function fmtSupply(n: number | null | undefined): string {
 }
 
 function fmtUsd(n: number | null | undefined): string {
-  if (n == null || n === 0) return "\u2014";
+  if (n == null || n === 0) return "-";
   if (n >= 1e9) return `$${(n / 1e9).toFixed(1)}B`;
   if (n >= 1e6) return `$${(n / 1e6).toFixed(0)}M`;
   return `$${n.toLocaleString()}`;
@@ -106,7 +117,7 @@ export default function ScorecardPage() {
         Altcoin Scorecard
       </h1>
       <p className="mt-3 text-lg text-text-secondary">
-        25-variable Hold/Reduce/Sell framework &mdash; 250 tokens &mdash; 40+
+        25-variable Hold/Reduce/Sell framework, 250 tokens, 40+
         parallel research agents
       </p>
       <p className="mt-1 text-sm text-text-tertiary font-mono">
@@ -151,7 +162,25 @@ export default function ScorecardPage() {
                 return (
                 <tr key={token.symbol} className="border-b border-border/50 hover:bg-bg-card/50 transition-colors">
                   <td className="px-3 py-2.5 text-text-tertiary">{i + 1}</td>
-                  <td className="px-3 py-2.5 font-semibold text-text-primary">{token.symbol}</td>
+                  <td className="px-3 py-2.5 font-semibold text-text-primary">
+                    <span className="inline-flex items-center gap-1.5">
+                      {SYMBOL_TO_SLUG[token.symbol] ? (
+                        <Link
+                          href={`/opportunities/${SYMBOL_TO_SLUG[token.symbol]}`}
+                          className="text-blue-400 hover:text-blue-300 hover:underline"
+                        >
+                          {token.symbol}
+                        </Link>
+                      ) : (
+                        token.symbol
+                      )}
+                      {BUY_LIST.has(token.symbol) && (
+                        <span className="inline-block rounded px-1 py-px text-[9px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 leading-tight">
+                          BUY
+                        </span>
+                      )}
+                    </span>
+                  </td>
                   <td className="px-3 py-2.5">
                     <span className={`font-bold ${scoreColor(token.score / 10)}`}>{token.score}</span>
                   </td>
@@ -165,10 +194,10 @@ export default function ScorecardPage() {
                   <td className="px-3 py-2.5 text-right text-text-tertiary hidden md:table-cell">{fmtSupply(totalS)}</td>
                   <td className="px-3 py-2.5 text-center text-text-tertiary hidden md:table-cell">{maxS == null ? "\u221E" : fmtSupply(maxS)}</td>
                   <td className={`px-3 py-2.5 text-center font-semibold ${circColor(circS, totalS)}`}>
-                    {circPct != null ? `${circPct.toFixed(0)}%` : "\u2014"}
+                    {circPct != null ? `${circPct.toFixed(0)}%` : "-"}
                   </td>
                   <td className={`px-3 py-2.5 text-center ${dilColor(token.market_cap, fdvVal)}`}>
-                    {dilX != null ? `${dilX.toFixed(1)}x` : "\u2014"}
+                    {dilX != null ? `${dilX.toFixed(1)}x` : "-"}
                   </td>
                   <td className="px-3 py-2.5 text-text-secondary text-xs hidden xl:table-cell">{token.key_catalyst}</td>
                   <td className="px-3 py-2.5 text-text-secondary text-xs hidden xl:table-cell">{token.key_risk}</td>
@@ -195,6 +224,11 @@ export default function ScorecardPage() {
                 <div className="flex items-center gap-3">
                   <span className="text-lg font-bold text-text-primary">{token.symbol}</span>
                   <span className="text-sm text-text-tertiary">{token.name}</span>
+                  {BUY_LIST.has(token.symbol) && (
+                    <span className="inline-block rounded px-1.5 py-0.5 text-[10px] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                      BUY LIST
+                    </span>
+                  )}
                 </div>
                 <div className="flex items-center gap-2">
                   <span className={`font-mono font-bold text-lg ${scoreColor(token.score / 10)}`}>
@@ -244,6 +278,20 @@ export default function ScorecardPage() {
                   ))}
                 </div>
               )}
+              {SYMBOL_TO_SLUG[token.symbol] && (
+                <div className="mt-3 pt-3 border-t border-border/50">
+                  <Link
+                    href={`/opportunities/${SYMBOL_TO_SLUG[token.symbol]}`}
+                    className={`inline-flex items-center gap-1.5 text-xs font-mono font-semibold px-3 py-1.5 rounded-lg border transition-colors ${
+                      BUY_LIST.has(token.symbol)
+                        ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20"
+                        : "bg-blue-500/10 text-blue-400 border-blue-500/30 hover:bg-blue-500/20"
+                    }`}
+                  >
+                    View analysis <span aria-hidden="true">&rarr;</span>
+                  </Link>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -267,7 +315,7 @@ export default function ScorecardPage() {
             { label: "GMX -4", color: "red", detail: "Protocol revenue $14M, not $42M (3x overstatement)." },
             { label: "CRV +7", color: "green", detail: "Revenue growing. ATH distance -96%, not -99.6%." },
             { label: "ONDO +6", color: "green", detail: "Fee switch imminent H2. SEC probe CLOSED. Real partnerships." },
-            { label: "JUP +5", color: "green", detail: "Securitize equities LIVE. Ecosystem growth accelerating." },
+            { label: "JUP +5", color: "green", detail: "Securitize equities LIVE. system growth accelerating." },
             { label: "NEAR +5", color: "green", detail: "P/S is 32-38x, not 290x. AI chain abstraction thesis intact." },
             { label: "ENA +5", color: "green", detail: "Smart money entering. Institutional adoption improving." },
             { label: "KMNO +1", color: "green", detail: "Revenue understated ($8.7M\u2192$17M). V2 already live." },
@@ -382,7 +430,7 @@ export default function ScorecardPage() {
                   return n.toLocaleString();
                 };
                 const fmtUsd = (n: number | null) => {
-                  if (n == null) return "\u2014";
+                  if (n == null) return "-";
                   if (n >= 1e9) return `$${(n / 1e9).toFixed(1)}B`;
                   if (n >= 1e6) return `$${(n / 1e6).toFixed(0)}M`;
                   return `$${n.toLocaleString()}`;
@@ -408,7 +456,7 @@ export default function ScorecardPage() {
                           CMC
                         </a>
                       ) : (
-                        <span className="text-text-tertiary">&mdash;</span>
+                        <span className="text-text-tertiary">,</span>
                       )}
                     </td>
                   </tr>

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10T09:47:12Z",
+  "updated_at": "2026-06-11T11:03:08Z",
   "methodology": "25-variable framework scoring 250 altcoins across protocol revenue, tokenomics, supply metrics, institutional adoption, regulatory safety, and more. Each variable rated 1-10 by 40+ parallel DeepSeek research agents. Data hardened via 19-agent deep validation sprint. Supply data from CoinGecko. Revenue cross-referenced with DeFiLlama/Token Terminal. Live prices from Binance, Bybit, Kraken, Crypto.com.",
   "benchmark": {
     "symbol": "BTC",
@@ -10,22 +10,22 @@
     {
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 1674.01,
-      "change_24h": 0.67,
-      "market_cap": 252220320547,
+      "price": 1639.2,
+      "change_24h": -0.178,
+      "market_cap": 197800000000,
       "rank": 2,
       "ath": 4946,
-      "ath_distance_pct": -55.7,
-      "tvl": 45400000000,
+      "ath_distance_pct": -66.9,
+      "tvl": 46170000000,
       "circ_supply_pct": 100,
-      "volume_24h": 450365551,
-      "score": 199,
-      "prev_score": 82,
+      "volume_24h": 474900000,
+      "score": 187,
+      "prev_score": 199,
       "verdict": "HOLD CORE",
       "verdict_color": "green",
-      "one_liner": "Regulatory fortress + institutional monopoly. CLARITY Act digital commodity. Glamsterdam H1 2026.",
-      "key_catalyst": "Glamsterdam upgrade targeting H1 2026, CLARITY Act advancing, staking ETFs live",
-      "key_risk": "TVL dominance eroding to 53%, net-inflationary during low activity",
+      "one_liner": "Institutional settlement layer. Commodity classification. Burn collapsed but moat intact.",
+      "key_catalyst": "Glamsterdam ePBS (Q3 2026), CLARITY Act (Jul 4 target), staking ETF expansion",
+      "key_risk": "Burn collapsed (-71% post-Pectra), ETH/BTC 10mo low, 9 EF departures, identity crisis",
       "max_supply": null,
       "total_supply": 120685488.8295893,
       "circulating_supply": 120685488.8295893,
@@ -38,58 +38,88 @@
       "cmc_slug": "ethereum",
       "scores": {
         "protocol_revenue": 9,
-        "revenue_trend": 6,
+        "revenue_trend": 5,
         "ps_multiple": 5,
-        "supply_inflation": 8,
+        "supply_inflation": 7,
         "unlock_schedule": 10,
         "circ_fdv_ratio": 10,
-        "buyback_burn": 8,
+        "buyback_burn": 6,
         "smart_money": 9,
         "insider_selling": 7,
         "holder_concentration": 6,
         "staking_yield": 7,
-        "tvl_trend": 7,
+        "tvl_trend": 6,
         "active_users": 8,
-        "developer_activity": 8,
-        "ecosystem_growth": 9,
-        "market_share": 8,
+        "developer_activity": 7,
+        "ecosystem_growth": 8,
+        "market_share": 7,
         "competitive_moat": 8,
         "institutional_adoption": 10,
         "exchange_depth": 10,
         "regulatory_safety": 10,
         "catalyst_calendar": 8,
-        "btc_alpha": 6,
-        "team_execution": 7,
+        "btc_alpha": 4,
+        "team_execution": 6,
         "treasury_runway": 8,
-        "social_mindshare": 7
+        "social_mindshare": 6
       },
       "citations": [
         {
-          "claim": "Named digital commodity in CLARITY Act (Senate Banking May 14)",
-          "source": "SEC/CFTC",
+          "claim": "DeFi TVL $46.17B L1, ~$94B system (L1+L2)",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/chain/ethereum"
+        },
+        {
+          "claim": "SEC-CFTC classified ETH as digital commodity (68-page joint release, Mar 17 2026)",
+          "source": "Ropes & Gray / SEC",
+          "url": "https://www.ropesgray.com/en/insights/alerts/2026/03/sec-and-cftc-issue-landmark-joint-guidance-on-classification-of-crypto-assets"
+        },
+        {
+          "claim": "Goldman Sachs holds 288,294 ETH (~$721.8M) via SEC 424B2 filings",
+          "source": "Ainvest / SEC",
+          "url": "https://www.ainvest.com/news/ethereum-institutional-adoption-bullish-catalyst-2508/"
+        },
+        {
+          "claim": "BlackRock ETHB staking ETF launched Mar 12, 2026 on Nasdaq",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/03/12/blackrock-debuts-staked-ether-etf-as-demand-grows-for-yield-in-crypto-funds"
+        },
+        {
+          "claim": "31,869 active developers, #1 system (Electric Capital Sep 2025)",
+          "source": "Electric Capital",
+          "url": "https://www.developerreport.com/ecosystems/ethereum"
+        },
+        {
+          "claim": "ETH/BTC ratio 0.0279, 10-month low (May 12, 2026)",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/05/12/eth-btc-ratio-falls-to-10-month-low-as-ether-continues-to-underperform-bitcoin"
+        },
+        {
+          "claim": "9 senior EF departures in 2026 including Stańczak, Beiko, Monnot, Stark",
+          "source": "Memeburn / CoinDesk",
+          "url": "https://memeburn.com/ethereum-foundation-loses-9-senior-core-team-members-in-2026/"
+        },
+        {
+          "claim": "Post-Pectra burn collapsed to 3.26 ETH/day (-71%)",
+          "source": "beaconcha.in",
+          "url": "https://beaconcha.in/burn"
+        },
+        {
+          "claim": "CLARITY Act passed Senate Banking May 14, Jul 4 signing target",
+          "source": "Congress.gov / CCN",
           "url": "https://www.ccn.com/education/crypto/senate-clarity-act-vote-may-14-bitcoin-eth-xrp/"
         },
         {
-          "claim": "$14.8B ETF AUM, staking ETFs now live",
-          "source": "Bloomberg ETF data",
-          "url": "https://www.theblock.co/ethereum-etf-live-chart"
-        },
-        {
-          "claim": "Jane Street doubled ETH ETF exposure (+$82M)",
-          "source": "CoinDesk",
-          "url": "https://en.cryptonomist.ch/2026/05/14/jane-street-bitcoin-ethereum-etfs-ether-shift/"
-        },
-        {
-          "claim": "Glamsterdam upgrade targeting H1 2026 (not firmly scheduled)",
-          "source": "Ethereum Foundation",
-          "url": "https://onekey.so/blog/ecosystem/ethereum-glamsterdam-upgrade-gains-momentum-with-mainnet-activation-targeted-for-h1-2026-20260504162656/"
+          "claim": "Spot ETH ETF cumulative inflows $11.21B, AUM $9.78B",
+          "source": "Farside Investors",
+          "url": "https://farside.co.uk/eth/"
         }
       ],
-      "current_price_usd": 1674.01,
-      "price_updated_at": "2026-06-09T08:39:13Z",
+      "current_price_usd": 1639.2,
+      "price_updated_at": "2026-06-11T01:14:00Z",
       "token_standard": "Native L1",
       "chain": "Ethereum",
-      "fully_diluted_valuation": 252220320547
+      "fully_diluted_valuation": 197800000000
     },
     {
       "symbol": "HYPE",
@@ -243,7 +273,7 @@
           "url": "https://www.coinbase.com"
         },
         {
-          "claim": "Paradigm holds 19.14M HYPE tokens, whale accumulation ongoing",
+          "claim": "model holds 19.14M HYPE tokens, whale accumulation ongoing",
           "source": "Arkham Intelligence",
           "url": "https://platform.arkhamintelligence.com"
         },
@@ -253,12 +283,12 @@
           "url": "https://stats.hyperliquid.xyz"
         },
         {
-          "claim": "dYdX collapsed -97%, GMX fading — Hyperliquid is sole DEX perps survivor",
+          "claim": "dYdX collapsed -97%, GMX fading, Hyperliquid is sole DEX perps survivor",
           "source": "CoinGecko / DeFi Llama",
           "url": "https://defillama.com/protocol/dydx"
         },
         {
-          "claim": "Not on Binance Global spot — competitive rivalry with CZ ecosystem",
+          "claim": "Not on Binance Global spot, competitive rivalry with CZ system",
           "source": "Community / Exchange listings",
           "url": "https://www.binance.com"
         },
@@ -268,7 +298,7 @@
           "url": "https://hyperliquid.xyz/token"
         },
         {
-          "claim": "Zero VC allocation — entirely self-funded by Jeff Yan, no outside investors pre-launch",
+          "claim": "Zero VC allocation, entirely self-funded by Jeff Yan, no outside investors pre-launch",
           "source": "Hyperliquid Foundation",
           "url": "https://hyperliquid.xyz"
         }
@@ -295,7 +325,7 @@
       "prev_score": 158,
       "verdict": "HOLD CORE",
       "verdict_color": "green",
-      "one_liner": "Lido's wrapped staked ETH — the DeFi collateral standard with $26B TVL and native yield; dominant LST by every metric",
+      "one_liner": "Lido's wrapped staked ETH, the DeFi collateral standard with $26B TVL and native yield; dominant LST by every metric",
       "key_catalyst": "wstETH becoming default collateral across all major lending protocols; MakerDAO, Aave, Spark all natively integrated",
       "key_risk": "Lido centralization risk (32% of staked ETH); Ethereum validator concentration concerns; potential regulatory classification as security",
       "max_supply": null,
@@ -345,7 +375,7 @@
         {
           "claim": "wstETH is accepted as collateral by MakerDAO, Aave V3, Compound, Spark, and 30+ DeFi protocols",
           "source": "Lido Integrations",
-          "url": "https://lido.fi/lido-ecosystem"
+          "url": "https://lido.fi/lido-system"
         },
         {
           "claim": "Lido controls ~32% of staked ETH, raising Ethereum validator centralization concerns from the Foundation",
@@ -375,7 +405,7 @@
       "prev_score": 183,
       "verdict": "HOLD CORE",
       "verdict_color": "green",
-      "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. Unmatched store-of-value thesis with sovereign adoption accelerating.",
+      "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. unbeaten store-of-value thesis with sovereign adoption accelerating.",
       "key_catalyst": "Spot ETF inflows accelerating past $120B AUM; multiple sovereign wealth funds entering",
       "key_risk": "Regulatory crackdown on self-custody; long-term quantum computing threat",
       "max_supply": 21000000.0,
@@ -443,26 +473,26 @@
     {
       "symbol": "AAVE",
       "name": "Aave",
-      "price": 86.83,
-      "change_24h": 0.17,
-      "market_cap": 1299885959,
+      "price": 63.25,
+      "change_24h": 2.4,
+      "market_cap": 960000000,
       "rank": 45,
       "ath": 670,
-      "ath_distance_pct": -86.4,
-      "tvl": 18500000000,
-      "circ_supply_pct": 95,
-      "volume_24h": 14853704,
-      "score": 180,
-      "prev_score": 0,
-      "verdict": "HOLD CORE",
-      "verdict_color": "green",
-      "one_liner": "$140M revenue, 62% lending share, 95% circ. Buyback being CUT from $50M to $30M. KelpDAO bad debt.",
-      "key_catalyst": "$30M/yr buyback program (cut from $50M), Umbrella safety module, multi-chain dominance",
-      "key_risk": "KelpDAO $177-230M bad debt exposure, ACI/BGD Labs governance departures",
+      "ath_distance_pct": -90.6,
+      "tvl": 14490000000,
+      "circ_supply_pct": 96.3,
+      "volume_24h": 10305136,
+      "score": 156,
+      "prev_score": 180,
+      "verdict": "HOLD",
+      "verdict_color": "blue",
+      "one_liner": "KelpDAO $190-230M bad debt, 3 core team departures (ACI/BGD/Chaos), buybacks PAUSED. But $142M rev, 55-63% share, V4+Umbrella live, SEC cleared.",
+      "key_catalyst": "V4 multi-chain expansion, Grayscale/Bitwise ETF filings, CLARITY Act DeFi safe harbor, Horizon $1B target",
+      "key_risk": "KelpDAO bad debt resolution, Morpho $175M raise competitive threat, governance centralization (top 3 = 58% votes)",
       "max_supply": 16000000.0,
       "total_supply": 16000000.0,
-      "circulating_supply": 15179911.874935383,
-      "fdv": 1430000000,
+      "circulating_supply": 15408401,
+      "fdv": 1012000000,
       "where_to_buy": [
         "Binance",
         "Coinbase",
@@ -470,59 +500,114 @@
       ],
       "cmc_slug": "aave",
       "scores": {
-        "protocol_revenue": 8,
-        "revenue_trend": 7,
-        "ps_multiple": 9,
+        "protocol_revenue": 7,
+        "revenue_trend": 5,
+        "ps_multiple": 8,
         "supply_inflation": 9,
         "unlock_schedule": 9,
         "circ_fdv_ratio": 9,
-        "buyback_burn": 6,
-        "smart_money": 8,
+        "buyback_burn": 4,
+        "smart_money": 7,
         "insider_selling": 6,
-        "holder_concentration": 5,
+        "holder_concentration": 4,
         "staking_yield": 6,
-        "tvl_trend": 7,
-        "active_users": 7,
-        "developer_activity": 7,
-        "ecosystem_growth": 7,
-        "market_share": 9,
-        "competitive_moat": 8,
+        "tvl_trend": 3,
+        "active_users": 6,
+        "developer_activity": 4,
+        "ecosystem_growth": 6,
+        "market_share": 8,
+        "competitive_moat": 7,
         "institutional_adoption": 8,
         "exchange_depth": 8,
-        "regulatory_safety": 7,
-        "catalyst_calendar": 6,
-        "btc_alpha": 3,
-        "team_execution": 7,
-        "treasury_runway": 8,
-        "social_mindshare": 6
+        "regulatory_safety": 8,
+        "catalyst_calendar": 7,
+        "btc_alpha": 2,
+        "team_execution": 4,
+        "treasury_runway": 6,
+        "social_mindshare": 5
       },
       "citations": [
         {
-          "claim": "$140M annual revenue, 62% DeFi lending market share",
-          "source": "Token Terminal",
-          "url": "https://tokenterminal.com/explorer/projects/aave/metrics/revenue"
-        },
-        {
-          "claim": "95% circulating supply, near-zero dilution",
-          "source": "CoinGecko",
-          "url": "https://www.coingecko.com/en/coins/aave"
-        },
-        {
-          "claim": "Buyback being reduced from $50M to $30M/yr via governance",
-          "source": "Aave Governance",
-          "url": "https://governance.aave.com/t/arfc-buyback-program-budget-adjustment/24229"
-        },
-        {
-          "claim": "KelpDAO exploit created $177-230M bad debt risk",
+          "claim": "KelpDAO LayerZero bridge exploit: $292M hack, $190-230M bad debt on Aave, Lazarus Group attributed",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/04/20/aave-could-face-up-to-usd230-million-in-losses-after-kelp-dao-bridge-exploit-triggers-defi-chaos"
+        },
+        {
+          "claim": "DeFi United raised $160M of $200M needed; rsETH operations restored May 26, 2026",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/04/26/aave-raises-nearly-80-of-the-usd200-million-it-needs-to-cover-bad-debt-left-by-kelp-dao-exploit"
+        },
+        {
+          "claim": "ACI (61% of governance actions) departing March 2026; BGD Labs (V3 builder) departed April 2026",
+          "source": "Aave Governance Forum",
+          "url": "https://governance.aave.com/t/aci-is-leaving-aave/24205"
+        },
+        {
+          "claim": "Chaos Labs (risk manager) departed April 6, 2026, third core contributor exit",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/04/06/aave-loses-key-risk-manager-chaos-labs-amid-contributor-exodus-and-disputes"
+        },
+        {
+          "claim": "'Aave Will Win' passed 75%: 100% product revenue redirected to DAO treasury",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/04/13/aave-passes-landmark-vote-ending-months-long-fight-over-who-controls-protocol-revenue"
+        },
+        {
+          "claim": "Aave V4 live on Ethereum mainnet March 30, 2026, hub-and-spoke architecture",
+          "source": "The Defiant",
+          "url": "https://thedefiant.io/news/defi/aave-v4-launches-on-ethereum-mainnet"
+        },
+        {
+          "claim": "Umbrella safety module LIVE June 5, 2026, automated on-chain slashing",
+          "source": "CryptoSlate",
+          "url": "https://cryptoslate.com/aave-dao-activates-on-chain-slashing-mechanism-with-umbrella-launch/"
+        },
+        {
+          "claim": "$1 trillion cumulative loan volume milestone, February 2026",
+          "source": "CryptoNomist",
+          "url": "https://en.cryptonomist.ch/2026/02/26/aave-lending-1t-volume/"
+        },
+        {
+          "claim": "GHO supply ~$584M, cross-chain via Chainlink CCIP (Arb, Base, Avax)",
+          "source": "CoinMarketCap",
+          "url": "https://coinmarketcap.com/currencies/gho/"
+        },
+        {
+          "claim": "Morpho $175M raise at $2B valuation (model, a16z), fastest-growing competitor",
+          "source": "Crypto Times",
+          "url": "https://www.cryptotimes.io/2026/06/09/why-model-and-a16z-just-poured-175m-into-morpho/"
+        },
+        {
+          "claim": "Buybacks paused April 19, 2026; 205K AAVE (1.28% supply) purchased before pause",
+          "source": "Aave Governance",
+          "url": "https://governance.aave.com/t/arfc-pause-aave-buybacks/24686"
+        },
+        {
+          "claim": "Grayscale S-1 filed for spot AAVE ETF, February 2026",
+          "source": "CryptoRank",
+          "url": "https://cryptorank.io/news/feed/3d714-grayscale-aave-etf-sec-filing"
+        },
+        {
+          "claim": "CLARITY Act DeFi safe harbor, non-custodial developers get statutory SEC protection",
+          "source": "Congress.gov",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633/text"
+        },
+        {
+          "claim": "SEC closed 4-year Aave investigation without enforcement, August 2025",
+          "source": "MEXC",
+          "url": "https://www.mexc.com/news/290227"
+        },
+        {
+          "claim": "Horizon institutional RWA market: $550M deposits, targeting $1B by end 2026",
+          "source": "Aave Blog",
+          "url": "https://aave.com/blog/horizon-launch"
         }
       ],
-      "current_price_usd": 86.83,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 63.25,
+      "price_updated_at": "2026-06-11T03:33:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
-      "fully_diluted_valuation": 1370111732
+      "fully_diluted_valuation": 1012000000
     },
     {
       "symbol": "UNI",
@@ -1105,7 +1190,7 @@
           "verified": true
         },
         {
-          "claim": "P/S 9.9x on $7.3M ARR (mcap basis) — expensive vs Helium 3.1x, Trimble 4.5x",
+          "claim": "P/S 9.9x on $7.3M ARR (mcap basis), expensive vs Helium 3.1x, Trimble 4.5x",
           "source": "Derived calculation",
           "url": "https://defillama.com/protocol/geodnet",
           "verified": true
@@ -1123,7 +1208,7 @@
           "verified": true
         },
         {
-          "claim": "NRCAN RTK compliance certification (Sep 2025) — only country with formal compliance",
+          "claim": "NRCAN RTK compliance certification (Sep 2025), only country with formal compliance",
           "source": "GEODNET Substack",
           "url": "https://geodnetinfo.substack.com/p/geodnet-at-kbw-2025-nrcan-rtk-compliance",
           "verified": true
@@ -1165,7 +1250,7 @@
           "verified": true
         },
         {
-          "claim": "NVIDIA/humanoid robot connection is PURE SPECULATION — zero confirmed partnerships",
+          "claim": "NVIDIA/humanoid robot connection is PURE SPECULATION, zero confirmed partnerships",
           "source": "Research (40-agent verification)",
           "url": "https://geodnet.com/about",
           "verified": true
@@ -1195,7 +1280,7 @@
           "verified": true
         },
         {
-          "claim": "Token allocation: 35% mining, 25% team, 25% investors, 10% ecosystem, 3% vendor, 2% public",
+          "claim": "Token allocation: 35% mining, 25% team, 25% investors, 10% system, 3% vendor, 2% public",
           "source": "GEODNET Docs",
           "url": "https://docs.geodnet.com/geod-token/tokenomics",
           "verified": true
@@ -1229,9 +1314,9 @@
       "prev_score": 162,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "S38 VALIDATED: #1 Solana lending, $3.2B TVL, $14.3M rev — but ZERO value accrual to KMNO. Excellent protocol, worthless token.",
+      "one_liner": "S38 VALIDATED: #1 Solana lending, $3.2B TVL, $14.3M rev, but ZERO value accrual to KMNO. Excellent protocol, worthless token.",
       "key_catalyst": "Lend V2 live, Anchorage tri-party custody, Bitwise $259M fund, Ethena $1B+ integration",
-      "key_risk": "ZERO fee sharing, ZERO buyback, -94% ATH, 229M tokens/month unlocking, revenue declining -67%",
+      "key_risk": "ZERO fee sharing, ZERO buyback, -94% ATH, 229M tokens/month opening, revenue declining -67%",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
       "circulating_supply": 4683564427,
@@ -1306,7 +1391,7 @@
           "url": "https://governance.kamino.finance"
         },
         {
-          "claim": "229M tokens/month unlocking through Apr 2027",
+          "claim": "229M tokens/month opening through Apr 2027",
           "source": "Token Unlocks",
           "url": "https://token.unlocks.app/kamino"
         },
@@ -1351,7 +1436,7 @@
           "url": "https://defillama.com/protocol/hubble"
         },
         {
-          "claim": "P/S ratio 4.97x vs Jupiter 3.91x, Raydium 3.41x — not cheap relative to peers",
+          "claim": "P/S ratio 4.97x vs Jupiter 3.91x, Raydium 3.41x, not cheap relative to peers",
           "source": "Token Terminal",
           "url": "https://tokenterminal.com/terminal/projects/kamino"
         },
@@ -1376,7 +1461,7 @@
           "url": "https://tradingview.com"
         },
         {
-          "claim": "$167K daily volume on Binance — extremely thin liquidity",
+          "claim": "$167K daily volume on Binance, extremely thin liquidity",
           "source": "Binance",
           "url": "https://www.binance.com/en/trade/KMNO_USDT"
         },
@@ -1386,7 +1471,7 @@
           "url": "https://governance.kamino.finance"
         },
         {
-          "claim": "RWA markets $1.23B TVL — genuine institutional traction",
+          "claim": "RWA markets $1.23B TVL, genuine institutional traction",
           "source": "Kamino App",
           "url": "https://app.kamino.finance"
         }
@@ -1415,7 +1500,7 @@
       "verdict_color": "green",
       "one_liner": "$7.8B TVL on $350M mcap (22x TVL/MC). $50M buyback active. 84% circ. 250M token unlocks ahead.",
       "key_catalyst": "$50M buyback active (99% DAO approval), ETH staking ETF narrative, EtherFi Cash card",
-      "key_risk": "Token unlock to 2027, ETH price dependency, Lido competition (#1 LST)",
+      "key_risk": "token unlock to 2027, ETH price dependency, Lido competition (#1 LST)",
       "max_supply": 1000000000.0,
       "total_supply": 998535999.0,
       "circulating_supply": 880665741.0,
@@ -1578,7 +1663,7 @@
       "verdict_color": "green",
       "one_liner": "Coinbase's centralized ETH liquid staking token; simplest onramp but carries custodial risk and Coinbase counterparty exposure",
       "key_catalyst": "Coinbase institutional distribution gives cbETH unique access to TradFi investors; ETF integrations possible",
-      "key_risk": "Fully custodial — Coinbase controls withdrawal keys; regulatory risk against Coinbase directly impacts token; lower yield than competitors",
+      "key_risk": "Fully custodial, Coinbase controls withdrawal keys; regulatory risk against Coinbase directly impacts token; lower yield than competitors",
       "max_supply": null,
       "total_supply": 373334.0782232124,
       "circulating_supply": 127033.8372172721,
@@ -1628,7 +1713,7 @@
           "url": "https://defillama.com/lsd"
         },
         {
-          "claim": "cbETH carries Coinbase custodial risk — SEC enforcement actions against Coinbase remain a tail risk",
+          "claim": "cbETH carries Coinbase custodial risk, SEC enforcement actions against Coinbase remain a tail risk",
           "source": "SEC v. Coinbase",
           "url": "https://www.sec.gov/litigation/complaints/2023/comp-pr2023-102.pdf"
         }
@@ -1656,7 +1741,7 @@
       "verdict": "HOLD",
       "verdict_color": "green",
       "one_liner": "Base's dominant DEX capturing ~60% of chain volume with real fee revenue and veAERO flywheel locking supply",
-      "key_catalyst": "Base TVL growth and Coinbase ecosystem expansion driving sustained fee revenue above $1M/day peaks",
+      "key_catalyst": "Base TVL growth and Coinbase system expansion driving sustained fee revenue above $1M/day peaks",
       "key_risk": "Velodrome V3 migration on Optimism could siphon developer mindshare; token inflation from emissions remains elevated",
       "max_supply": null,
       "total_supply": 1903187204.534856,
@@ -1707,7 +1792,7 @@
           "url": "https://defillama.com/chain/Base"
         },
         {
-          "claim": "Aerodrome is the official Velodrome V2 deployment on Base, backed by Optimism ecosystem",
+          "claim": "Aerodrome is the official Velodrome V2 deployment on Base, backed by Optimism system",
           "source": "Aerodrome Docs",
           "url": "https://aerodrome.finance/docs"
         }
@@ -1734,9 +1819,9 @@
       "prev_score": 157,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Infrastructure lending protocol with $6.4B TVL and $203M annualized fees but ZERO revenue to token holders — fee switch OFF, founder opposes activation",
-      "key_catalyst": "$175M raise (Jun 9) at $2B from Paradigm/a16z/Ribbit; Apollo 9% stake; Morpho Midnight fixed-rate launch; Coinbase $1.6B integration; RWA $820M",
-      "key_risk": "Fee switch OFF with no governance proposal — $0 revenue to holders; 35% supply locked through 2028; founder opposes distribution; governance concentrated (>50% one wallet)",
+      "one_liner": "Infrastructure lending protocol with $6.4B TVL and $203M annualized fees but ZERO revenue to token holders, fee switch OFF, founder opposes activation",
+      "key_catalyst": "$175M raise (Jun 9) at $2B from model/a16z/Ribbit; Apollo 9% stake; Morpho Midnight fixed-rate launch; Coinbase $1.6B integration; RWA $820M",
+      "key_risk": "Fee switch OFF with no governance proposal, $0 revenue to holders; 35% supply locked through 2028; founder opposes distribution; governance concentrated (>50% one wallet)",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
       "circulating_supply": 646190000,
@@ -1779,7 +1864,7 @@
       },
       "citations": [
         {
-          "claim": "Morpho generates $203M annualized fees but DAO revenue is $0 — fee switch has NEVER been activated",
+          "claim": "Morpho generates $203M annualized fees but DAO revenue is $0, fee switch has NEVER been activated",
           "source": "DefiLlama",
           "url": "https://defillama.com/protocol/morpho"
         },
@@ -1794,9 +1879,9 @@
           "url": "https://defillama.com/protocol/morpho-blue"
         },
         {
-          "claim": "$175M raised June 9, 2026 led by Paradigm, a16z crypto, Ribbit Capital at ~$2B valuation",
+          "claim": "$175M raised June 9, 2026 led by model, a16z crypto, Ribbit Capital at ~$2B valuation",
           "source": "Fortune",
-          "url": "https://fortune.com/2026/06/09/morpho-fundraise-a16z-crypto-paradigm-ribbit-capital-175-million/"
+          "url": "https://fortune.com/2026/06/09/morpho-fundraise-a16z-crypto-model-ribbit-capital-175-million/"
         },
         {
           "claim": "Apollo Global acquiring up to 90M MORPHO (9% stake) over 4 years via open market + OTC",
@@ -1869,7 +1954,7 @@
           "url": "https://morpho.org/blog/morpho-app-incident-april-10-2025/"
         },
         {
-          "claim": "Apyx stablecoin depeg Jun 4, 2026 exposed leverage loop risk on Morpho. MORPHO dropped 6%.",
+          "claim": "Apyx stablecoin depeg Jun 4, 2026 exposed use loop risk on Morpho. MORPHO dropped 6%.",
           "source": "CoinMarketCap",
           "url": "https://coinmarketcap.com/top-stories/6a21f69a3b706c428ae8fe6b/"
         },
@@ -1903,22 +1988,22 @@
     {
       "symbol": "LINK",
       "name": "Chainlink",
-      "price": 9.615,
-      "change_24h": 0.99,
-      "market_cap": 6852388187,
+      "price": 7.785,
+      "change_24h": 1.21,
+      "market_cap": 5660000000,
       "rank": 18,
       "ath": 52.99,
-      "ath_distance_pct": -81.5,
+      "ath_distance_pct": -85.3,
       "tvl": 32000000000,
       "circ_supply_pct": 72.7,
-      "volume_24h": 31104608,
-      "score": 156,
-      "prev_score": 81,
+      "volume_24h": 18065131,
+      "score": 165,
+      "prev_score": 156,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "$4B migrating to CCIP (exploit-driven). DTCC $114T custody AUM integration. Oracle share 63-70%.",
-      "key_catalyst": "$4B LayerZero exodus to CCIP + DTCC integration Q4 + SOC 2 Type 2 audit",
-      "key_risk": "Treasury distributions to Binance ($500M+/yr), oracle share 63-70% not 83.7%",
+      "one_liner": "70% oracle dominance. DTCC Q4 2026. SOC 2 Type 2. $500M/yr treasury sell pressure. 2 ETFs live.",
+      "key_catalyst": "DTCC Collateral AppChain July test → Q4 production. CCIP v1.5 self-serve. Confidential Compute GA.",
+      "key_risk": "60-76M LINK/yr treasury dumps to Binance ($500M+/yr). Fees go to node ops, not LINK holders.",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
       "circulating_supply": 727099970.4255477,
@@ -1930,52 +2015,107 @@
       ],
       "cmc_slug": "chainlink",
       "scores": {
-        "protocol_revenue": 5,
+        "protocol_revenue": 6,
         "revenue_trend": 7,
-        "ps_multiple": 4,
-        "supply_inflation": 4,
-        "unlock_schedule": 5,
+        "ps_multiple": 5,
+        "supply_inflation": 3,
+        "unlock_schedule": 4,
         "circ_fdv_ratio": 6,
-        "buyback_burn": 3,
-        "smart_money": 6,
+        "buyback_burn": 4,
+        "smart_money": 8,
         "insider_selling": 3,
         "holder_concentration": 4,
-        "staking_yield": 6,
-        "tvl_trend": 5,
+        "staking_yield": 5,
+        "tvl_trend": 7,
         "active_users": 7,
         "developer_activity": 8,
-        "ecosystem_growth": 7,
-        "market_share": 7,
-        "competitive_moat": 7,
-        "institutional_adoption": 9,
+        "ecosystem_growth": 8,
+        "market_share": 8,
+        "competitive_moat": 9,
+        "institutional_adoption": 10,
         "exchange_depth": 8,
         "regulatory_safety": 9,
-        "catalyst_calendar": 8,
-        "btc_alpha": 5,
+        "catalyst_calendar": 9,
+        "btc_alpha": 4,
         "team_execution": 9,
         "treasury_runway": 7,
         "social_mindshare": 7
       },
       "citations": [
         {
-          "claim": "$4B assets migrating from LayerZero to CCIP after Kelp exploit (may not be permanent)",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/05/15/lombard-joins-layerzero-exodus-as-usd4-billion-in-assets-switch-to-chainlink-s-bridge"
+          "claim": "CCIP $18B Q1 2026 volume, +62% QoQ, +319% YoY",
+          "source": "OpenPR / Chainlink Q1 Review",
+          "url": "https://www.openpr.com/news/4464933/chainlink-link-ccip-crosses-18b-in-quarterly-transfers"
         },
         {
-          "claim": "DTCC $114T custody AUM (not direct LINK value), integration Q4 2026",
-          "source": "Chainlink",
+          "claim": "69.9% oracle market share by TVS",
+          "source": "OpenPR",
+          "url": "https://www.openpr.com/news/4476771/chainlink-link-price-prediction-69-9-oracle-market-share"
+        },
+        {
+          "claim": "$110B+ Total Value Secured (ATH)",
+          "source": "Crypto News",
+          "url": "https://crypto.news/chainlinks-ccip-stack-drives-110b-in-value-secured"
+        },
+        {
+          "claim": "DTCC Collateral AppChain Q4 2026 launch using CRE",
+          "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/05/12/dtcc-taps-chainlink-for-its-tokenized-collateral-platform-ahead-of-q4-launch"
         },
         {
-          "claim": "SOC 2 Type 2 audit completed",
-          "source": "Chainlink Security",
-          "url": "https://blog.chain.link/chainlink-achieves-iso-soc-2-certifications/"
+          "claim": "163.65M LINK (~$1.81B) transferred to Binance from team wallets 2022-2026",
+          "source": "CryptoBriefing / On-chain data",
+          "url": "https://cryptobriefing.com/chainlink-centralized-breakdown-token-distribution/"
         },
         {
-          "claim": "CCIP +213% QoQ revenue",
-          "source": "Chainlink Q1 2026 Review",
-          "url": "https://blog.chain.link/quarterly-review-q1-2026/"
+          "claim": "SOC 2 Type 2 by Deloitte completed April 21, 2026, ONLY oracle with this certification",
+          "source": "Genfinity",
+          "url": "https://genfinity.io/2026/04/21/chainlink-deloitte-soc-2-type-2-examination-ccip-data-feeds/"
+        },
+        {
+          "claim": "SVR $18.3M cumulative, 99% oracle MEV capture, but only 20.9% recapture rate",
+          "source": "Chainlink Blog / brrrdao",
+          "url": "https://blog.chain.link/chainlink-smart-value-recapture-svr/"
+        },
+        {
+          "claim": "Grayscale GLNK + Bitwise CLNK ETFs both live, $85M+ AUM",
+          "source": "Cryptopolitan / CoinGape",
+          "url": "https://www.cryptopolitan.com/sec-approves-bitwise-spot-link-etf/"
+        },
+        {
+          "claim": "805 whale wallets (100K+ LINK), record high. 33M LINK accumulated by whales",
+          "source": "Hokanews / MEXC",
+          "url": "https://www.hokanews.com/2026/05/chainlink-whale-wallets-hit-record-high.html"
+        },
+        {
+          "claim": "Chainlink Reserve ~4M LINK accumulated via Payment Abstraction, +475,930 in May 2026",
+          "source": "OpenPR / CryptoNews",
+          "url": "https://www.openpr.com/news/4545604/chainlink-link-reserve-adds-475-930-tokens-in-a-month"
+        },
+        {
+          "claim": "Staking v0.2 full at 45M LINK, v0.3 expanding to 75M. APY 4.32%. Rewards from treasury, NOT fees",
+          "source": "Chainlink Blog / Everstake",
+          "url": "https://blog.chain.link/chainlink-staking-v0-2-overview/"
+        },
+        {
+          "claim": "SEC-CFTC joint interpretation: LINK classified as digital commodity (Mar 17, 2026)",
+          "source": "BingX / OpenPR",
+          "url": "https://www.openpr.com/news/4438643/chainlink-link-classified-as-digital-commodity-under"
+        },
+        {
+          "claim": "LayerZero $292M KelpDAO exploit → $4B+ migrated to CCIP (Kraken, Solv, Lombard)",
+          "source": "Crypto News / CoinDesk",
+          "url": "https://crypto.news/chainlink-ccip-draws-4b-from-layerzero-exodus/"
+        },
+        {
+          "claim": "Nazarov appointed to CFTC Innovation Advisory Committee (Feb 2026)",
+          "source": "CFTC",
+          "url": "https://www.cftc.gov/PressRoom/PressReleases/9182-26"
+        },
+        {
+          "claim": "AWS Marketplace listing for Chainlink Data Standard (Apr 24, 2026)",
+          "source": "AWS Blog",
+          "url": "https://aws.amazon.com/blogs/web3/chainlink-data-standard-now-available-on-aws-marketplace/"
         }
       ],
       "current_price_usd": 9.615,
@@ -1987,26 +2127,26 @@
     {
       "symbol": "VIRTUAL",
       "name": "Virtuals Protocol",
-      "price": 0.7356,
-      "change_24h": -1.74,
-      "market_cap": 500310998,
+      "price": 0.6498,
+      "change_24h": "+2.7%",
+      "market_cap": 427000000,
       "rank": 95,
       "ath": 5.07,
-      "ath_distance_pct": -84.6,
-      "tvl": 45000000,
-      "circ_supply_pct": 100.0,
-      "volume_24h": 3430788,
-      "score": 151,
-      "prev_score": 122,
-      "verdict": "HOLD",
-      "verdict_color": "green",
-      "one_liner": "AI agent launchpad on Base with real revenue and fully-diluted supply; narrative leader in AI x crypto but heavily sentiment-driven",
-      "key_catalyst": "AI agent adoption wave with VIRTUAL as the primary launchpad; token fully circulating removes unlock risk",
-      "key_risk": "84.6% down from ATH; AI agent token narrative highly speculative; revenue dependent on agent launch frenzy which can fade",
+      "ath_distance_pct": "-87.2%",
+      "tvl": "$0",
+      "circ_supply_pct": 65.7,
+      "volume_24h": 69000000,
+      "score": 130,
+      "prev_score": 130,
+      "verdict": "CAUTIOUS HOLD",
+      "verdict_color": "yellow",
+      "one_liner": "AI agent launchpad on Base with 18K+ agents but revenue collapsed 96% ($225K/day peak to $8.9K/day). aGDP is vanity metric. 93% whale concentration. ERC-8183 with Ethereum Foundation is real moat signal",
+      "key_catalyst": "Grayscale Q2 2026 consideration list; ERC-8183 co-authored with Ethereum Foundation; Revenue Network ACP scaling; multi-chain expansion to Solana/Arbitrum",
+      "key_risk": "Revenue $8.9K/day (96% below peak); protocol retains only 30% of fees; 93% whale concentration; $1M/mo subsidy exceeds $428K/mo fees; top agents (AIXBT, Zerebro) left platform",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
       "circulating_supply": 656986027.2170838,
-      "fdv": 782000000,
+      "fdv": 649000000,
       "where_to_buy": [
         "Bybit",
         "Binance",
@@ -2042,26 +2182,61 @@
       },
       "citations": [
         {
-          "claim": "Virtuals Protocol generated $50M+ in protocol revenue during AI agent mania peak in late 2024 and early 2025",
-          "source": "Dune Analytics",
-          "url": "https://dune.com/defimochi/virtuals-protocol"
+          "claim": "Revenue peaked $3.9M/month Q4 2024, collapsed to $8.9K/day Jun 15 2026 (96% decline)",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/fees/virtuals-protocol"
         },
         {
-          "claim": "VIRTUAL supply is 100% circulating with no vesting or insider unlocks, unique among tokens at its market cap",
-          "source": "CoinMarketCap",
-          "url": "https://coinmarketcap.com/currencies/virtual-protocol/"
+          "claim": "18,000+ agents deployed, $470M cumulative aGDP (vanity metric: cumulative trading volume)",
+          "source": "Virtuals Protocol / PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/virtuals-protocol-launches-first-revenue-network-to-expand-agent-to-agent-ai-commerce-at-internet-scale-302686821.html"
         },
         {
-          "claim": "Virtuals is the dominant AI agent launchpad on Base with 500+ agents tokenized through its platform",
-          "source": "Virtuals Protocol",
-          "url": "https://app.virtuals.io/"
+          "claim": "93% of supply held by top 100 wallets, extreme concentration",
+          "source": "Cryptopolitan / BeInCrypto",
+          "url": "https://www.cryptopolitan.com/virtuals-protocol-controlled-by-whales/"
+        },
+        {
+          "claim": "ERC-8183 co-authored with Ethereum Foundation dAI team for on-chain AI agent commerce",
+          "source": "CryptoBriefing",
+          "url": "https://cryptobriefing.com/erc-8183-virtuals-protocol-ethereum-ai-agent-commerce/"
+        },
+        {
+          "claim": "Circulating supply 657M of 1B (65.7%); 350M in DAO treasury with 10%/yr emission cap",
+          "source": "DropsTab / Tokenomist",
+          "url": "https://dropstab.com/coins/virtual-protocol/vesting"
         }
       ],
-      "current_price_usd": 0.7374,
-      "price_updated_at": "2026-05-23T06:00:00Z",
+      "current_price_usd": 0.6498,
+      "price_updated_at": "2026-06-15T10:22:00Z",
       "token_standard": "ERC-20",
       "chain": "Base",
-      "fully_diluted_valuation": 761524565
+      "fully_diluted_valuation": 649000000,
+      "protocol_revenue": 4,
+      "revenue_trend": 3,
+      "ps_multiple": 4,
+      "supply_inflation": 7,
+      "unlock_schedule": 8,
+      "circ_fdv_ratio": 7,
+      "buyback_burn": 4,
+      "smart_money": 5,
+      "insider_selling": 6,
+      "holder_concentration": 3,
+      "staking_yield": 4,
+      "tvl_trend": 3,
+      "active_users": 5,
+      "developer_activity": 5,
+      "ecosystem_growth": 6,
+      "market_share": 6,
+      "competitive_moat": 5,
+      "institutional_adoption": 5,
+      "exchange_depth": 6,
+      "regulatory_safety": 5,
+      "catalyst_calendar": 7,
+      "btc_alpha": 5,
+      "team_execution": 6,
+      "treasury_runway": 5,
+      "social_mindshare": 6
     },
     {
       "symbol": "LQTY",
@@ -2080,7 +2255,7 @@
       "verdict": "HOLD",
       "verdict_color": "green",
       "one_liner": "V2 is RE-deployment after Jan 2025 bug (same auditors didn't catch it). 99% circ. BOLD $30M (<0.01%).",
-      "key_catalyst": "V2 mainnet relaunch May 19 (remedial, not innovative), bribe market flywheel",
+      "key_catalyst": "V2 mainnet relaunch May 19 (remedial, not new), bribe market flywheel",
       "key_risk": "V2 is relaunch after failure, BOLD <0.01% stablecoin share, no LQTY buyback/burn, FIRM unverified",
       "max_supply": 100000000.0,
       "total_supply": 100000000.0,
@@ -2150,26 +2325,26 @@
     {
       "symbol": "COW",
       "name": "CoW Protocol",
-      "price": 0.1646,
-      "change_24h": -41.21,
-      "market_cap": 93880108,
+      "price": 0.137,
+      "change_24h": -1.226,
+      "market_cap": 79460000,
       "rank": 175,
       "ath": 1.18,
-      "ath_distance_pct": -76.3,
-      "tvl": 45000000,
-      "circ_supply_pct": 59.0,
-      "volume_24h": 3200000,
-      "score": 150,
-      "prev_score": 138,
+      "ath_distance_pct": -88.4,
+      "tvl": 367283,
+      "circ_supply_pct": 58.0,
+      "volume_24h": 138298,
+      "score": 167,
+      "prev_score": 150,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "MEV-resistant batch auction DEX with proven solver network and growing intent-based trading volumes on Ethereum",
-      "key_catalyst": "Intent-based trading adoption surge; CoW Swap capturing institutional flow from MEV-sensitive traders",
-      "key_risk": "Competitive intent/solver landscape (UniswapX, 1inch Fusion); limited to EVM and low P/S at current vol levels",
+      "one_liner": "Intent-based batch auction DEX. $87B vol 2025. P/S 3.1x. Net deflationary. Vesting complete.",
+      "key_catalyst": "Burn proposal (60-85M COW), chain expansion (10 chains), Aave integration, xStocks tokenized equities",
+      "key_risk": "CoW AMM collapsed (-98% TVL), thin exchange volume ($138K/day), market share declining from peak, DNS hijack Apr 2026",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
       "circulating_supply": 578926012.263938,
-      "fdv": 280000000,
+      "fdv": 137000000,
       "where_to_buy": [
         "Binance",
         "Kraken",
@@ -2177,138 +2352,235 @@
       ],
       "cmc_slug": "cow-protocol",
       "scores": {
-        "protocol_revenue": 6,
-        "revenue_trend": 6,
-        "ps_multiple": 7,
-        "supply_inflation": 6,
-        "unlock_schedule": 6,
+        "protocol_revenue": 7,
+        "revenue_trend": 7,
+        "ps_multiple": 8,
+        "supply_inflation": 8,
+        "unlock_schedule": 9,
         "circ_fdv_ratio": 7,
-        "buyback_burn": 5,
+        "buyback_burn": 7,
         "smart_money": 7,
-        "insider_selling": 6,
+        "insider_selling": 7,
         "holder_concentration": 6,
-        "staking_yield": 5,
+        "staking_yield": 4,
         "tvl_trend": 5,
-        "active_users": 6,
+        "active_users": 7,
         "developer_activity": 7,
-        "ecosystem_growth": 6,
-        "market_share": 5,
-        "competitive_moat": 7,
-        "institutional_adoption": 6,
-        "exchange_depth": 6,
+        "ecosystem_growth": 7,
+        "market_share": 6,
+        "competitive_moat": 8,
+        "institutional_adoption": 7,
+        "exchange_depth": 5,
         "regulatory_safety": 7,
-        "catalyst_calendar": 5,
-        "btc_alpha": 4,
-        "team_execution": 7,
-        "treasury_runway": 7,
+        "catalyst_calendar": 7,
+        "btc_alpha": 3,
+        "team_execution": 8,
+        "treasury_runway": 8,
         "social_mindshare": 5
       },
       "citations": [
         {
-          "claim": "CoW Protocol processes batch auctions to eliminate MEV, averaging $1-2B monthly volume in early 2026",
-          "source": "CoW Protocol Analytics",
-          "url": "https://dune.com/cowprotocol/cowswap"
+          "claim": "$87B trading volume in 2025 (2.2x YoY from $40.2B). $202B all-time cumulative",
+          "source": "CoW DAO 2025 Review",
+          "url": "https://cow.fi/learn/cow-dao-2025-in-review"
         },
         {
-          "claim": "CoW DAO treasury holds substantial ETH and COW for multi-year runway",
-          "source": "CoW DAO Forum",
-          "url": "https://forum.cow.fi/"
+          "claim": "$26.2M annualized revenue, $42M all-time DAO revenue",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/cowswap"
         },
         {
-          "claim": "Intent-based trading via CoW Hooks expanding protocol utility beyond simple swaps",
-          "source": "CoW Protocol Blog",
-          "url": "https://cow.fi/learn/cow-hooks"
+          "claim": "Net deflationary: 78.6M COW bought back vs 66.6M emitted (-12M net, Apr 2024-May 2026)",
+          "source": "CoW DAO May 2026 Recap",
+          "url": "https://forum.cow.fi/t/cow-dao-monthly-recap-may-2026/3463"
+        },
+        {
+          "claim": "#2 DEX aggregator at 16.8% market share (behind 0x API at 18.7%)",
+          "source": "CoW DAO",
+          "url": "https://cow.fi/learn/cow-dao-2025-in-review"
+        },
+        {
+          "claim": "$1.21B surplus returned to users all-time (MEV protection metric)",
+          "source": "CoW DAO May 2026 Recap",
+          "url": "https://forum.cow.fi/t/cow-dao-monthly-recap-may-2026/3463"
+        },
+        {
+          "claim": "All vesting complete March 28, 2026. 4-year linear schedule concluded",
+          "source": "CryptoRank / CoW Docs",
+          "url": "https://cryptorank.io/price/cow-protocol/vesting"
+        },
+        {
+          "claim": "Burn proposal: 60-85M COW from 357M DAO treasury through Dec 2026",
+          "source": "CryptoTimes",
+          "url": "https://www.cryptotimes.io/2026/05/16/buybacks-burns-and-bonds-cow-dao-proposes-new-plan-for-cow/"
+        },
+        {
+          "claim": "Aave integration: all swaps on aave.com routed through CoW solvers",
+          "source": "The Block",
+          "url": "https://www.theblock.co/post/381336/aave-cow-mev-protected-swaps-intent-based-flash-loans"
         }
       ],
-      "current_price_usd": 0.1646,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 0.137,
+      "price_updated_at": "2026-06-11T01:35:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
-      "fully_diluted_valuation": 162162531
+      "fully_diluted_valuation": 137000000
     },
     {
       "symbol": "FLUID",
       "name": "Fluid (Instadapp)",
-      "price": 1.619,
-      "change_24h": -1.88,
-      "market_cap": 122043334,
-      "rank": 250,
-      "ath": 4.5,
-      "ath_distance_pct": -63.3,
-      "tvl": 982000000,
-      "circ_supply_pct": 78,
-      "volume_24h": 500000,
-      "score": 150,
-      "prev_score": 68,
-      "verdict": "HOLD",
-      "verdict_color": "green",
-      "one_liner": "OG Instadapp team (2018). $982M TVL on $250K marketing budget. 78% circ. ~22% non-circulating.",
-      "key_catalyst": "Multi-chain expansion (BNB, Solana), DEX V2 live, targeting $30M annualized revenue",
-      "key_risk": "~22% supply non-circulating (not 48%), fierce competition from Aave/Morpho",
-      "max_supply": 100000000.0,
-      "total_supply": 100000000.0,
-      "circulating_supply": 77946996.82034639,
-      "fdv": 180000000,
+      "price": 1.092,
+      "change_24h": "+2.54%",
+      "market_cap": 86400000,
+      "rank": 198,
+      "ath": 10.73,
+      "ath_distance_pct": -89.8,
+      "tvl": 726380000,
+      "circ_supply_pct": 78.7,
+      "volume_24h": 2010000,
+      "score": 138,
+      "prev_score": 143,
+      "verdict": "CAUTIOUS HOLD",
+      "verdict_color": "yellow",
+      "one_liner": "Unique Smart Collateral/Debt DeFi primitive (39x capital efficiency). $12.66M rev trailing BUT $5.6M current run rate (declining -63%). Buybacks HALTED post-Resolv ($21M bad debt). TVL -92% from peak. P/S 6.8x trailing / 15.4x current. Zero inflation, 78.7% circ. Top-tier VCs (Pantera, Naval, Coinbase). 55% stablecoin swap share.",
+      "key_catalyst": "DEX v2 (volatile pairs + cross-margin). Solana DEX launch Q3 2026. Buyback restoration when treasury recovers. Venus Flux BNB growth. Jupiter Lend expansion on Solana.",
+      "key_risk": "Revenue declining -63% ($15M peak → $5.6M run rate). Buybacks HALTED. TVL -92% from peak ($9.2B → $726M). Two security incidents in 2026 (Resolv $21M bad debt + Merkle key compromise $215K). Treasury depleted (~$5M liquid). 4-day disclosure delay on May incident. NOT on Binance.",
+      "max_supply": 100000000,
+      "total_supply": 100000000,
+      "circulating_supply": 78690000,
+      "fdv": 109790000,
       "where_to_buy": [
+        "Bybit",
+        "OKX",
         "Coinbase",
-        "Upbit",
-        "Deepcoin"
+        "MEXC",
+        "Upbit"
       ],
       "cmc_slug": "instadapp",
       "scores": {
-        "protocol_revenue": 7,
-        "revenue_trend": 8,
+        "protocol_revenue": 6,
+        "revenue_trend": 4,
         "ps_multiple": 7,
-        "supply_inflation": 6,
-        "unlock_schedule": 4,
+        "supply_inflation": 8,
+        "unlock_schedule": 8,
         "circ_fdv_ratio": 7,
-        "buyback_burn": 8,
-        "smart_money": 6,
+        "buyback_burn": 4,
+        "smart_money": 7,
         "insider_selling": 7,
         "holder_concentration": 5,
-        "staking_yield": 5,
-        "tvl_trend": 7,
+        "staking_yield": 3,
+        "tvl_trend": 5,
         "active_users": 5,
         "developer_activity": 7,
         "ecosystem_growth": 7,
-        "market_share": 5,
-        "competitive_moat": 6,
-        "institutional_adoption": 4,
+        "market_share": 7,
+        "competitive_moat": 8,
+        "institutional_adoption": 5,
         "exchange_depth": 4,
         "regulatory_safety": 5,
         "catalyst_calendar": 7,
-        "btc_alpha": 4,
-        "team_execution": 8,
-        "treasury_runway": 6,
-        "social_mindshare": 5
+        "btc_alpha": 3,
+        "team_execution": 7,
+        "treasury_runway": 5,
+        "social_mindshare": 4
       },
       "citations": [
         {
-          "claim": "$930M TVL achieved on $250K marketing budget",
-          "source": "CryptoNewsNavigator",
-          "url": "https://www.cryptonewsnavigator.com/academy/article/fluid-tvl-volume-marketing-budget"
+          "claim": "DeFiLlama: Fees $76.07M annualized, Revenue (net to protocol) $12.66M, 30d revenue $559,823",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/fluid"
         },
         {
-          "claim": "100% Ethereum mainnet revenue to FLUID buybacks (~$1.3-1.5M/mo)",
-          "source": "Fluid DAO",
-          "url": "https://blog.instadapp.io/fluid-reserve-buybacks-growth-strategy/"
+          "claim": "TVL $726.38M total (Lending $592.87M + DEX $245.04M). Down from $9.2B peak Feb 2025 (-92%)",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/fluid"
         },
         {
-          "claim": "DEX V2 live, combining lending + DEX into single composable primitive",
+          "claim": "DEX volume: $225.6B cumulative all-time, $5.13B/30d. Fastest DEX to $100B",
+          "source": "DeFiLlama DEX API",
+          "url": "https://defillama.com/protocol/fluid-dex"
+        },
+        {
+          "claim": "Stablecoin swap market share 55.5% across ETH/Base/Arb/Polygon (Aug 2025 Dune data)",
+          "source": "CoinJournal / Dune Analytics",
+          "url": "https://coinjournal.net/news/fluid-price-rallies-as-fluid-dex-dominates-stablecoin-swaps-across-ethereum-and-l2s/"
+        },
+        {
+          "claim": "Resolv bad debt: $21M absorbed (Resolv $9.7M + Fluid DAO $8.2M + team $1.5M). Buybacks halted",
+          "source": "Blockonomi / DeFiPrime",
+          "url": "https://blockonomi.com/fluid-covers-21m-bad-debt-after-resolv-exploit-outlines-recovery-plan/"
+        },
+        {
+          "claim": "Key compromise May 27: 125K FLUID + 51.9K GHO stolen. 4-day disclosure delay. Core unaffected",
+          "source": "CryptoTimes",
+          "url": "https://www.cryptotimes.io/2026/05/31/fluid-protocol-loses-125k-fluid-51-9k-gho-in-key-compromise-attack/"
+        },
+        {
+          "claim": "100M hard cap. Zero inflation. Fully unlocked since June 2025. 78.69M circulating (78.7%)",
+          "source": "Tokenomist.ai",
+          "url": "https://tokenomist.ai/instadapp/tokenomics"
+        },
+        {
+          "claim": "Seed $2.4M (Pantera, Naval, Coinbase Ventures, Robot Ventures). Series A $10M (Standard Crypto, Cronje)",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2019/10/01/instadapp-defi-site-raises-24-million-from-prominent-crypto-investors"
+        },
+        {
+          "claim": "Jupiter Lend powered by Fluid on Solana. Bitwise-curated isolated market launched May 13, 2026",
+          "source": "Unchained Crypto",
+          "url": "https://unchainedcrypto.com/jupiter-unveils-new-lending-protocol-with-fluid/"
+        },
+        {
+          "claim": "Venus Flux on BNB Chain launched Feb 26. Hit $100M market size in 6 hours",
+          "source": "CryptoAdventure",
+          "url": "https://cryptoadventure.com/venus-protocol-joins-forces-with-fluid-to-launch-venus-flux-the-first-unified-liquidity-layer-on-bnb-chain/"
+        },
+        {
+          "claim": "Smart Collateral/Debt: 39x capital efficiency at 95% LTV wstETH-ETH vault. 15% gas savings vs Uni v4",
+          "source": "Instadapp Blog / Apollo Crypto",
+          "url": "https://apollocrypto.com/understanding-fluids-innovation/"
+        },
+        {
+          "claim": "7+ audits: MixBytes, StateMind, Cantina, PeckShield, OpenZeppelin. $500K Immunefi bounty",
           "source": "Fluid Docs",
-          "url": "https://blog.instadapp.io/fluid-dex-v2/"
+          "url": "https://docs.fluid.instadapp.io/audits-and-security.html"
         },
         {
-          "claim": "Founded 2018 as Instadapp, survived multiple cycles",
-          "source": "GitHub/Instadapp",
-          "url": "https://github.com/instadapp"
+          "claim": "Token Terminal confirms 30d revenue $554.5K (matches DeFiLlama $559.8K). Revenue DECLINING",
+          "source": "Token Terminal",
+          "url": "https://tokenterminal.com/explorer/projects/instadapp/metrics/revenue"
         }
       ],
-      "current_price_usd": 1.619,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 1.091,
+      "price_updated_at": "2026-06-15T05:12:00Z",
       "token_standard": "ERC-20",
-      "chain": "Ethereum",
-      "fully_diluted_valuation": 156572208
+      "chain": "Ethereum (Multi-chain: 6+ chains)",
+      "fully_diluted_valuation": 109100000,
+      "protocol_revenue": 5,
+      "revenue_trend": 3,
+      "ps_multiple": 4,
+      "supply_inflation": 10,
+      "unlock_schedule": 10,
+      "circ_fdv_ratio": 8,
+      "buyback_burn": 2,
+      "smart_money": 8,
+      "insider_selling": 7,
+      "holder_concentration": 9,
+      "staking_yield": 1,
+      "tvl_trend": 2,
+      "active_users": 5,
+      "developer_activity": 7,
+      "ecosystem_growth": 7,
+      "market_share": 6,
+      "competitive_moat": 8,
+      "institutional_adoption": 6,
+      "exchange_depth": 4,
+      "regulatory_safety": 5,
+      "catalyst_calendar": 7,
+      "btc_alpha": 2,
+      "team_execution": 5,
+      "treasury_runway": 3,
+      "social_mindshare": 4
     },
     {
       "symbol": "JUP",
@@ -2385,7 +2657,7 @@
         {
           "claim": "93.6% aggregator market share on Solana",
           "source": "SolanaFloor",
-          "url": "https://solanafloor.com/news/jupiter-reclaims-dominance-with-93-6-market-share-in-solana-s-aggregator-landscape"
+          "url": "https://solanafloor.com/news/jupiter-reclaims-dominance-with-93-6-market-share-in-solana-s-aggregator-space"
         },
         {
           "claim": "$70M buyback spent, price fell 89%, program HALTED",
@@ -2443,7 +2715,7 @@
           "url": "https://www.coincarp.com/currencies/jup/richlist/"
         },
         {
-          "claim": "ParaFi $35M — first-ever external capital (Feb 2026)",
+          "claim": "ParaFi $35M, first-ever external capital (Feb 2026)",
           "source": "Yahoo Finance",
           "url": "https://finance.yahoo.com/news/jupiter-announces-35m-parafi-investment-084502586.html"
         },
@@ -2497,26 +2769,26 @@
     {
       "symbol": "RUNE",
       "name": "THORChain",
-      "price": 0.462,
-      "change_24h": 7.09,
-      "market_cap": 154046926,
+      "price": 0.381,
+      "change_24h": -4.03,
+      "market_cap": 128900000,
       "rank": 88,
       "ath": 20.87,
-      "ath_distance_pct": -86.6,
+      "ath_distance_pct": -98.2,
       "tvl": 380000000,
       "circ_supply_pct": 100.0,
-      "volume_24h": 78000000,
-      "score": 148,
-      "prev_score": 124,
-      "verdict": "HOLD",
-      "verdict_color": "green",
-      "one_liner": "Native cross-chain DEX with $118B+ cumulative volume. P/S of 9x with real revenue but 86% below ATH; lending pause overhang partially resolved.",
-      "key_catalyst": "THORChain lending resumption; native BTC/ETH swaps without bridges gaining institutional traction",
-      "key_risk": "Lending protocol paused due to insolvency risk in 2024; RUNE inflation mechanism; systemic liquidity risks",
-      "max_supply": 360099464.0,
-      "total_supply": 360099464.0,
-      "circulating_supply": 350133365.0,
-      "fdv": 940800000,
+      "volume_24h": 573593,
+      "score": 106,
+      "prev_score": 148,
+      "verdict": "PASS",
+      "verdict_color": "red",
+      "one_liner": "Protocol HALTED 30 days. $10.8M exploit. $200M lending default. $1.2B Lazarus laundering. -98.2% ATH. Bug bounty killed.",
+      "key_catalyst": "v3.19 restart + Monero integration + Rujira app layer + Solana volume corridor",
+      "key_risk": "OFAC sanction risk from $1.2B Lazarus laundering. Third exploit = terminal. $200M lawsuit pending. TCY 10% revenue tax.",
+      "max_supply": 360000000,
+      "total_supply": 354200000,
+      "circulating_supply": 338400000,
+      "fdv": 137200000,
       "where_to_buy": [
         "Binance",
         "OKX",
@@ -2525,47 +2797,107 @@
       ],
       "cmc_slug": "thorchain",
       "scores": {
-        "protocol_revenue": 7,
-        "revenue_trend": 6,
-        "ps_multiple": 6,
-        "supply_inflation": 5,
-        "unlock_schedule": 6,
-        "circ_fdv_ratio": 6,
-        "buyback_burn": 5,
-        "smart_money": 6,
+        "protocol_revenue": 5,
+        "revenue_trend": 3,
+        "ps_multiple": 4,
+        "supply_inflation": 7,
+        "unlock_schedule": 8,
+        "circ_fdv_ratio": 8,
+        "buyback_burn": 4,
+        "smart_money": 3,
         "insider_selling": 6,
-        "holder_concentration": 6,
-        "staking_yield": 7,
-        "tvl_trend": 6,
-        "active_users": 6,
-        "developer_activity": 7,
-        "ecosystem_growth": 6,
-        "market_share": 7,
-        "competitive_moat": 8,
-        "institutional_adoption": 4,
-        "exchange_depth": 5,
-        "regulatory_safety": 4,
-        "catalyst_calendar": 6,
-        "btc_alpha": 5,
-        "team_execution": 6,
-        "treasury_runway": 6,
-        "social_mindshare": 6
+        "holder_concentration": 5,
+        "staking_yield": 5,
+        "tvl_trend": 2,
+        "active_users": 2,
+        "developer_activity": 5,
+        "ecosystem_growth": 4,
+        "market_share": 5,
+        "competitive_moat": 6,
+        "institutional_adoption": 1,
+        "exchange_depth": 4,
+        "regulatory_safety": 1,
+        "catalyst_calendar": 5,
+        "btc_alpha": 2,
+        "team_execution": 3,
+        "treasury_runway": 4,
+        "social_mindshare": 4
       },
       "citations": [
         {
-          "claim": "THORChain processed over $118B in cumulative cross-chain swap volume",
-          "source": "THORChain Stats",
-          "url": "https://thorchain.net"
+          "claim": "Protocol HALTED since May 15, 2026. $10.8M exploit across 9 chains via GG20 TSS vulnerability",
+          "source": "TRM Labs",
+          "url": "https://www.trmlabs.com/resources/blog/thorchain-exploit-drains-usd-11m-across-at-least-nine-chains-what-trm-knows-now"
         },
         {
-          "claim": "THORChain lending paused in 2024 due to systemic insolvency risk from RUNE collateral",
-          "source": "THORChain Dev Forum",
-          "url": "https://thorchain.discourse.group"
+          "claim": "$1.2B Lazarus Group funds laundered through THORChain (Feb 2025). $5.5M fees earned.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2025/04/07/the-blockchain-fueling-north-korea-s-massive-crypto-laundering-operation"
         },
         {
-          "claim": "RUNE P/S ratio approximately 9x based on annual protocol revenue",
-          "source": "Token Terminal",
-          "url": "https://tokenterminal.com/terminal/projects/thorchain"
+          "claim": "Treasury Dept official: 'anybody making fees on Lazarus flows potentially has an OFAC issue'",
+          "source": "MIT Technology Review",
+          "url": "https://www.technologyreview.com/2026/02/18/1132587/jean-paul-thorbjornsen-dark-side-crypto-permissionless-dream/"
+        },
+        {
+          "claim": "$200M THORFi lending default (Jan 2025). Savers+Lending permanently deprecated. TCY tokens issued.",
+          "source": "The Block",
+          "url": "https://www.theblock.co/post/338442/thorchain-plans-to-tackle-200-million-debt-crisis-by-issuing-tcy-equity-tokens"
+        },
+        {
+          "claim": "Core developer 'Pluto' resigned over refusal to block Lazarus transactions (Feb 27, 2025)",
+          "source": "Crypto.news",
+          "url": "https://crypto.news/thorchain-core-dev-leaves-after-failed-vote-to-block-hacker-transactions/"
+        },
+        {
+          "claim": "Bug bounty program permanently retired Mar 2026. V12 reported critical bug Apr 28, patched silently, not paid.",
+          "source": "The Defiant",
+          "url": "https://thedefiant.io/news/hacks/v12-says-thorchain-silently-patched-its-critical-bug-then-told-researchers-the-bounty-is"
+        },
+        {
+          "claim": "TVL collapsed $329M→$50M (-85%). LPs locked during halt. Savers deprecated.",
+          "source": "DefiLlama",
+          "url": "https://defillama.com/protocol/thorchain-dex"
+        },
+        {
+          "claim": "Q1 2026 swap volume $2.82B. Jan $1.07B, Feb $882M. Revenue $11M annualized pre-halt.",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/thorchain-reports-2-82-billion-160100115.html"
+        },
+        {
+          "claim": "TCY: 200M tokens, 10% perpetual revenue share to creditors. Price ~$0.09-0.14.",
+          "source": "Cryptopolitan",
+          "url": "https://www.cryptopolitan.com/thorchain-restructures-debt-issue-tcy-token/"
+        },
+        {
+          "claim": "ADR-023 reduced max supply from 500M to 360M RUNE. Block rewards zeroed Feb 2025.",
+          "source": "THORChain Docs",
+          "url": "https://docs.thorchain.org/tokenomics-rune-tcy"
+        },
+        {
+          "claim": "ADR-17 burn: 5% of fees burned. 1.82M RUNE total burned (~$693K).",
+          "source": "THORChain Dev Docs",
+          "url": "https://dev.thorchain.org/architecture/adr-017-burn-system-income-lever.html"
+        },
+        {
+          "claim": "Chainflip: $583M monthly volume Nov 2025. JIT AMM / USDC-settlement model growing.",
+          "source": "Chainflip Blog",
+          "url": "https://blog.chainflip.io/november-2025-performance-report/"
+        },
+        {
+          "claim": "103 active nodes, 89M RUNE bonded. Solvency ratio 89.14%, under-collateralized.",
+          "source": "RUNEScan",
+          "url": "https://runescan.io/"
+        },
+        {
+          "claim": "v3.19.0 with TSS patch + ADR028 advancing. 11-step restart process. No confirmed date.",
+          "source": "CryptoTimes",
+          "url": "https://www.cryptotimes.io/2026/06/09/thorchain-advances-post-exploit-recovery-with-v3-19-0-security-upgrade/"
+        },
+        {
+          "claim": "THORFi Recovery Group (McDermott Will & Emery) pursuing $200M legal action against THORChain.",
+          "source": "Daily Hodl",
+          "url": "https://dailyhodl.com/2025/05/19/thorchain-faces-legal-action-over-200m-collapse-amid-alleged-mismanagement-and-insolvency/"
         }
       ],
       "current_price_usd": 0.462,
@@ -2590,9 +2922,9 @@
       "prev_score": 138,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Leading CLMM DEX on Sui with near-monopoly status; strong TVL growth as Sui ecosystem expansion accelerates",
+      "one_liner": "Leading CLMM DEX on Sui with near-monopoly status; strong TVL growth as Sui system expansion accelerates",
       "key_catalyst": "Sui TVL surging past $2B; CETUS as dominant liquidity layer capturing majority of Sui DEX volume",
-      "key_risk": "Sui ecosystem concentration risk; hack/exploit history (2023 $22M exploit fully recovered); competition from Turbos/Aftermath",
+      "key_risk": "Sui system concentration risk; hack/exploit history (2023 $22M exploit fully recovered); competition from Turbos/Aftermath",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
       "circulating_supply": 947826087.0,
@@ -2898,7 +3230,7 @@
       "verdict": "HOLD",
       "verdict_color": "green",
       "one_liner": "Binance exchange utility token with quarterly burns. Highly tied to Binance CEX health and regulatory outcome.",
-      "key_catalyst": "Binance regulatory settlements complete; BNB Chain ecosystem expansion into Southeast Asia",
+      "key_catalyst": "Binance regulatory settlements complete; BNB Chain system expansion into Southeast Asia",
       "key_risk": "Binance regulatory tail risk remains; CZ plea deal overhang; centralized chain perception",
       "max_supply": 200000000.0,
       "total_supply": 134784836.94,
@@ -2979,7 +3311,7 @@
       "verdict_color": "green",
       "one_liner": "Protocol revenue ~$14M (not $42M total fees). Commodity perps live ($1.18B week-1). $20.86M buybacks.",
       "key_catalyst": "24/7 commodity perps (gold/silver/oil) live April 2026, $1.18B first-week volume, RWA expansion",
-      "key_risk": "Sub-3% perp DEX share vs HYPE 70%, $90 reward unlock at $6.80 price, revenue was 3x overstated",
+      "key_risk": "Sub-3% perp DEX share vs HYPE 70%, $90 reward open at $6.80 price, revenue was 3x overstated",
       "max_supply": 13250000.0,
       "total_supply": 10399746.95501961,
       "circulating_supply": 10399746.95501961,
@@ -3063,7 +3395,7 @@
       "verdict_color": "blue",
       "one_liner": "Most active perp DEX on Solana. v3 cross-margin launching June 2026. 35% Solana perp market share.",
       "key_catalyst": "Drift v3 cross-margin launch June 20, 2026",
-      "key_risk": "VC unlock Sep 2026 (150M tokens), Solana network risk, competition from Zeta Markets",
+      "key_risk": "VC open Sep 2026 (150M tokens), Solana network risk, competition from Zeta Markets",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
       "circulating_supply": 611515824.085346,
@@ -3276,7 +3608,7 @@
       "verdict_color": "green",
       "one_liner": "Permanent data storage with one-time payment model. AO compute layer adds programmability. 65M+ items stored but token price lags data growth.",
       "key_catalyst": "AO (Actor Oriented) parallel computing layer turning Arweave into compute network",
-      "key_risk": "Storage endowment model relies on AR price assumptions; 83% below ATH; small ecosystem",
+      "key_risk": "Storage endowment model relies on AR price assumptions; 83% below ATH; small system",
       "max_supply": 66000000.0,
       "total_supply": 65652466.0,
       "circulating_supply": 65652466.0,
@@ -3356,7 +3688,7 @@
       "verdict_color": "green",
       "one_liner": "Finance-first L1 with aggressive burn mechanism and real derivatives volume. P/S ratio improving but TVL still modest vs valuation.",
       "key_catalyst": "Weekly INJ burn from protocol fees; derivatives DEX adoption from TradFi pairs",
-      "key_risk": "Small ecosystem relative to Solana; derivatives DEX market dominated by centralized venues",
+      "key_risk": "Small system relative to Solana; derivatives DEX market dominated by centralized venues",
       "max_supply": null,
       "total_supply": 100000000.0,
       "circulating_supply": 100000000.0,
@@ -3421,78 +3753,141 @@
     {
       "symbol": "SKY",
       "name": "Sky (formerly Maker)",
-      "price": 0.07052,
-      "change_24h": 0.06,
-      "market_cap": 1620091387,
+      "price": 0.0567,
+      "change_24h": 0.96,
+      "market_cap": 1318000000,
       "rank": 212,
       "ath": 0.38,
-      "ath_distance_pct": -81.4,
-      "tvl": 6200000000,
-      "circ_supply_pct": 55.0,
-      "volume_24h": 368051,
-      "score": 137,
-      "prev_score": 135,
+      "ath_distance_pct": -85.1,
+      "tvl": 6016000000,
+      "circ_supply_pct": 99.1,
+      "volume_24h": 12600000,
+      "score": 141,
+      "prev_score": 159,
       "verdict": "CAUTIOUS HOLD",
-      "verdict_color": "green",
-      "one_liner": "MakerDAO rebranded to Sky with USDS stablecoin; massive TVL but SKY token accrual mechanism remains weak vs MKR",
-      "key_catalyst": "Sky Savings Rate (SSR) driving USDS adoption; fee switch activation directing revenue to SKY holders",
-      "key_risk": "MKR-to-SKY migration confusion suppressing demand; SKY accrues far less value than MKR did per dollar of protocol revenue",
-      "max_supply": 23462665147.3,
-      "total_supply": 23462665147.36596,
-      "circulating_supply": 23244981811.569542,
-      "fdv": 137592000,
+      "verdict_color": "yellow",
+      "one_liner": "VALIDATED: DeFi revenue leader ($246M net, P/S 5.4x) but headline '$435M' is GROSS before $165M SSR payouts. Buybacks slashed 87% until ~Nov 2026. Net inflationary 4.4%/yr. TVL declining $7.5B→$6.0B. S&P B-. #3 stablecoin ($12.9B). Revenue real but token value accrual IMPAIRED.",
+      "key_catalyst": "Buyback restoration ~Nov 2026 when Solvency Reserve hits $125M (currently $70.6M). Revenue still growing (Q1 record $61M net). SSR cut improves margins. Remaining 3 Stars. S&P upgrade path. Obex Cohort 2.",
+      "key_risk": "VALIDATED RISKS: Rune SPOF (80% governance, emergency proposals bypass process). Net inflationary ~4.4%/yr at current rates. Revenue $246M net but SKY captures only $97M (holders rev). TVL declining. NOT MiCA-compliant (Jul 2026 deadline). $756M USDC in unverifiable EOA. 35% of USDS is just wrapped USDC. All financials self-reported by Sky Foundation.",
+      "max_supply": 23462665147,
+      "total_supply": 23462665147,
+      "circulating_supply": 23270089906,
+      "fdv": 1338000000,
       "where_to_buy": [
-        "Bybit",
+        "Binance",
+        "Coinbase",
+        "OKX",
         "Kraken",
-        "Uniswap"
+        "Bybit",
+        "KuCoin"
       ],
       "cmc_slug": "sky",
       "scores": {
         "protocol_revenue": 8,
-        "revenue_trend": 6,
+        "revenue_trend": 7,
         "ps_multiple": 7,
-        "supply_inflation": 4,
-        "unlock_schedule": 4,
-        "circ_fdv_ratio": 3,
-        "buyback_burn": 5,
-        "smart_money": 6,
-        "insider_selling": 5,
-        "holder_concentration": 5,
-        "staking_yield": 4,
-        "tvl_trend": 7,
-        "active_users": 6,
+        "supply_inflation": 3,
+        "unlock_schedule": 9,
+        "circ_fdv_ratio": 9,
+        "buyback_burn": 4,
+        "smart_money": 5,
+        "insider_selling": 6,
+        "holder_concentration": 3,
+        "staking_yield": 6,
+        "tvl_trend": 5,
+        "active_users": 4,
         "developer_activity": 6,
         "ecosystem_growth": 6,
         "market_share": 7,
-        "competitive_moat": 7,
-        "institutional_adoption": 6,
+        "competitive_moat": 6,
+        "institutional_adoption": 8,
         "exchange_depth": 4,
-        "regulatory_safety": 6,
+        "regulatory_safety": 4,
         "catalyst_calendar": 5,
-        "btc_alpha": 4,
+        "btc_alpha": 3,
         "team_execution": 5,
         "treasury_runway": 8,
         "social_mindshare": 3
       },
       "citations": [
         {
-          "claim": "Sky Protocol (MakerDAO) holds $6B+ TVL with USDS/DAI stablecoins, one of the largest DeFi protocols",
-          "source": "DefiLlama",
+          "claim": "DeFiLlama LIVE: Annualized Fees $411M, Revenue (net after SSR) $246M, Holders Revenue $97M. 30d fees $31.43M",
+          "source": "DeFiLlama",
           "url": "https://defillama.com/protocol/sky"
         },
         {
-          "claim": "1 MKR = 24,000 SKY conversion ratio; brand migration ongoing through 2025-2026",
-          "source": "Sky Documentation",
-          "url": "https://docs.sky.money/"
+          "claim": "Q1 2026: $123.79M GROSS, ~$61M NET, $46.04M surplus, 49.06% net margin (SFF PR Newswire)",
+          "source": "PR Newswire (Sky Frontier Foundation)",
+          "url": "https://www.prnewswire.com/news-releases/sky-protocol-achieves-record-123-79m-gross-revenue-and-46m-protocol-surplus-in-q1-2026--driven-by-surging-usds-adoption-and-expanded-sky-agent-network-302757168.html"
         },
         {
-          "claim": "Sky Savings Rate (SSR) offers yield on USDS, competing with USDC yield products",
-          "source": "Sky App",
-          "url": "https://app.sky.money/"
+          "claim": "$435M is GROSS revenue (SFF self-reported Dec 2025). Net after SSR payouts = $246M. Not audited",
+          "source": "GlobalFintechSeries (SFF PR)",
+          "url": "https://globalfintechseries.com/finance/sky-system-is-generating-435m-in-annualized-protocol-revenue-and-168m-in-annualized-protocol-profits/"
+        },
+        {
+          "claim": "$611.5M forecast is SFF's OWN projection. Requires USDS doubling to $20.6B. Current $8.44B (DeFiLlama)",
+          "source": "Chainwire (SFF PR)",
+          "url": "https://chainwire.org/2026/01/29/sky-frontier-foundation-estimates-611m-in-sky-system-gross-revenue-for-2026-with-21-billion-usds-supply/"
+        },
+        {
+          "claim": "TVL $6.016B (DeFiLlama live Jun 14). Down from $7.52B peak Mar 2026 (-20%). Spark $4.45B (not $7.9B)",
+          "source": "DeFiLlama",
+          "url": "https://defillama.com/protocol/spark"
+        },
+        {
+          "claim": "Smart Burn slashed 87%: Governance Poll 1620 (Mar 13-14, 2026). 300K→37.6K USDS/day. Reserve $70.6M of $125M",
+          "source": "CoinDesk / DL News",
+          "url": "https://www.dlnews.com/articles/defi/sky-slashes-buybacks-to-boost-reserves-of-usds-stablecoin/"
+        },
+        {
+          "claim": "Net inflationary: ~1,276M emissions/yr (600M USDS rewards + 676M staking) vs ~241M burns = 1,035M net inflation",
+          "source": "Tokenomics.com / CoinDesk",
+          "url": "https://tokenomics.com/articles/sky-tokenomics-how-the-smart-burn-engine-destroys-102m-in-sky-per-year"
+        },
+        {
+          "claim": "SSR cut from 4.75% to 3.60% on May 26, 2026 (BA Labs recommendation, SP-BEAM #30)",
+          "source": "Sky Forum",
+          "url": "https://forum.skyeco.com/t/risk-month-in-review-may-2026/27946"
+        },
+        {
+          "claim": "USDS: DeFiLlama $8.44B vs CoinGecko $10.8B (includes DAI wrappers). DAI $4.42B. Combined $12.87B = #3",
+          "source": "DeFiLlama Stablecoins API",
+          "url": "https://stablecoins.llama.fi/stablecoins"
+        },
+        {
+          "claim": "S&P B- rating Aug 11, 2025 (not Aug 7). Stablecoin Stability: 4 'constrained'. Compared to Congo bonds",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2025/08/11/s-and-p-assigns-first-ever-credit-rating-to-a-defi-protocol-rates-sky-at-b"
+        },
+        {
+          "claim": "Rune emergency vote Feb 18, 2025: GSM 30h→18h, debt ceiling 20M→45M. Critics banned. Three Sigma: 'hostile takeover'",
+          "source": "Rekt News / The Defiant",
+          "url": "https://thedefiant.io/news/defi/rune-christensen-pushes-through-sky-changes-to-prevent-irreversible-catastrophe"
+        },
+        {
+          "claim": "PSM holds $4.13B USDC (~35% of collateral). $756M USDC in EOA (Coinbase Custody MPC, keys allegedly destroyed)",
+          "source": "CoinLaw / Cointelegraph",
+          "url": "https://cointelegraph.com/news/sky-lite-psm-eoa-security-usdc-reserves"
+        },
+        {
+          "claim": "Keel: $2.5B is MANDATE, not deployed. $500M campaign launched Dec 2025. Actual Solana deployment unknown",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2025/12/11/sky-s-keel-starts-usd500m-investment-campaign-to-boost-rwas-on-solana"
+        },
+        {
+          "claim": "Grove: $1B CONFIRMED deployed into Janus Henderson Anemoy AAA CLO Strategy. Sky's own capital at risk",
+          "source": "BusinessWire / The Block",
+          "url": "https://www.businesswire.com/news/home/20250624393365/en/Grove-Announces-Launch-of-Institutional-Grade-Credit-Infrastructure-DeFi-Protocol-with-1-Billion-Allocation-to-Tokenized-Janus-Henderson-Anemoy-AAA-CLO-Strategy"
+        },
+        {
+          "claim": "SPK token: $0.0199, -89% from ATH $0.1845. $55M MCap. 300M airdrop dumped 54%. Stars fragment value from SKY",
+          "source": "CoinGecko / DL News",
+          "url": "https://www.dlnews.com/articles/defi/spark-gives-away-300-million-spk-tokens-in-first-airdrop/"
         }
       ],
-      "current_price_usd": 0.07052,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 0.0567,
+      "price_updated_at": "2026-06-14T15:07:46Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
       "fully_diluted_valuation": 1635263131
@@ -3593,7 +3988,7 @@
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "orange",
       "one_liner": "Intent-based cross-chain bridge. Highest revenue-per-dollar-bridged. 100% fee buyback to stakers.",
-      "key_catalyst": "Growing bridge volume, fee buyback mechanism, UMA ecosystem integration",
+      "key_catalyst": "Growing bridge volume, fee buyback mechanism, UMA system integration",
       "key_risk": "Intent-based competition (UniswapX), relayer centralization, low liquidity",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
@@ -3818,7 +4213,7 @@
         {
           "claim": "Hyperliquid 2025 revenue $844M (vs AVAX $8.3M full-year 2025)",
           "source": "KuCoin",
-          "url": "https://www.kucoin.com/news/articles/hyperliquid-2025-annual-report-844m-revenue-anchors-growth-amidst-256m-token-unlock-challenge"
+          "url": "https://www.kucoin.com/news/articles/hyperliquid-2025-annual-report-844m-revenue-anchors-growth-amidst-256m-token-open-challenge"
         },
         {
           "claim": "Bridge inflows net positive: $135M net Feb 2026, $2.9B 7-day Mar 2026",
@@ -3863,7 +4258,7 @@
       "prev_score": 53,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "green",
-      "one_liner": "46M MAU, $117M TVL. P/S 32-38x (not 290x — post-Intents revenue). AI Intents already live.",
+      "one_liner": "46M MAU, $117M TVL. P/S 32-38x (not 290x, post-Intents revenue). AI Intents already live.",
       "key_catalyst": "AI Confidential Intents LIVE (not Q3-Q4 future), revenue improving",
       "key_risk": "32-38x P/S still expensive, $117M TVL vs $1.9B mcap gap",
       "max_supply": null,
@@ -3994,7 +4389,7 @@
           "url": "https://dune.com/beetle/banana-gun"
         },
         {
-          "claim": "BANANA nearly fully circulating (92%+) reducing unlock risk, with daily buybacks from fee revenue",
+          "claim": "BANANA nearly fully circulating (92%+) reducing open risk, with daily buybacks from fee revenue",
           "source": "CoinMarketCap",
           "url": "https://coinmarketcap.com/currencies/banana-gun/"
         },
@@ -4171,8 +4566,8 @@
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
       "one_liner": "Solana MEV and liquid staking with $2.8B TVL; jitoSOL growing fast but JTO governance has no direct fee accrual yet.",
-      "key_catalyst": "JTO fee switch enabling staking rewards from MEV tips; Solana ecosystem continued growth",
-      "key_risk": "No direct revenue accrual to JTO token yet; 91% below ATH; concentrated Solana ecosystem risk; a16z large token holder",
+      "key_catalyst": "JTO fee switch enabling staking rewards from MEV tips; Solana system continued growth",
+      "key_risk": "No direct revenue accrual to JTO token yet; 91% below ATH; concentrated Solana system risk; a16z large token holder",
       "max_supply": null,
       "total_supply": 1000000000.0,
       "circulating_supply": 475694291.2,
@@ -4236,87 +4631,145 @@
     },
     {
       "symbol": "PENDLE",
-      "name": "Pendle",
-      "price": 1.945,
-      "change_24h": 4.29,
-      "market_cap": 322101374,
-      "rank": 120,
+      "name": "Pendle Finance",
+      "price": 1.364,
+      "change_24h": 4.28,
+      "market_cap": 232400000,
+      "rank": 140,
       "ath": 7.52,
-      "ath_distance_pct": -74.7,
-      "tvl": 1500000000,
-      "circ_supply_pct": 93,
-      "volume_24h": 6504566,
-      "score": 132,
-      "prev_score": 62,
-      "verdict": "CAUTIOUS HOLD",
+      "ath_distance_pct": -81.9,
+      "tvl": 1171000000,
+      "circ_supply_pct": 60.7,
+      "volume_24h": 31000000,
+      "score": 160,
+      "prev_score": 156,
+      "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "58% yield monopoly BUT revenue collapsed 88% ($34M→$6.6M). P/S now 47x not 9x. TVL -89%.",
-      "key_catalyst": "sPENDLE model (80% revenue to buybacks), Solana/Hyperliquid/TON expansion",
-      "key_risk": "Revenue collapsed 88%, P/S 47x (was stated as 9x), TVL -89%, team 600K PENDLE to Binance",
+      "one_liner": "DeFi's yield monopoly: 50-60% market share, $24.4M trailing rev, sPENDLE 80% buyback (9.3% yield). Fortune 2026 Innovators. Vietnam IFC w/ BlackRock/MS. 21Shares ETP live. Boros V3 $10B+ vol. All vesting complete. Net dollar-deflationary.",
+      "key_catalyst": "Solana/Hyperliquid/TON chain expansion, Fortune 2026 list, Vietnam IFC delegation, 21Shares ETP (APEN) on SIX, Boros funding rate scaling, KYC Citadels + Shariah, one-click leveraged PTs, RWA $151M growing",
+      "key_risk": "Revenue collapsed 87.6% from peak ($4.44M/mo→$552K/mo). TVL -91% from $13.4B. No max supply cap (perpetual 2% inflation). Team holds 15% circ (25.59M), consistently selling ($9.76M cumulative). Ethena 50-75% TVL concentration. Hayes partially exited.",
       "max_supply": null,
-      "total_supply": 281527448.4585314,
-      "circulating_supply": 170495157.1299099,
-      "fdv": 569000000,
+      "total_supply": 281530000,
+      "circulating_supply": 170870000,
+      "fdv": 382900000,
       "where_to_buy": [
         "Binance",
         "Coinbase",
-        "MEXC"
+        "OKX",
+        "Bybit",
+        "MEXC",
+        "KuCoin"
       ],
       "cmc_slug": "pendle",
       "scores": {
-        "protocol_revenue": 3,
-        "revenue_trend": 2,
-        "ps_multiple": 3,
-        "supply_inflation": 6,
-        "unlock_schedule": 4,
+        "protocol_revenue": 6,
+        "revenue_trend": 3,
+        "ps_multiple": 5,
+        "supply_inflation": 8,
+        "unlock_schedule": 9,
         "circ_fdv_ratio": 6,
-        "buyback_burn": 7,
+        "buyback_burn": 9,
         "smart_money": 6,
-        "insider_selling": 3,
+        "insider_selling": 4,
         "holder_concentration": 5,
-        "staking_yield": 5,
-        "tvl_trend": 3,
-        "active_users": 5,
-        "developer_activity": 7,
-        "ecosystem_growth": 4,
+        "staking_yield": 7,
+        "tvl_trend": 4,
+        "active_users": 4,
+        "developer_activity": 6,
+        "ecosystem_growth": 7,
         "market_share": 9,
-        "competitive_moat": 8,
-        "institutional_adoption": 5,
-        "exchange_depth": 6,
+        "competitive_moat": 9,
+        "institutional_adoption": 9,
+        "exchange_depth": 7,
         "regulatory_safety": 6,
-        "catalyst_calendar": 7,
+        "catalyst_calendar": 8,
         "btc_alpha": 3,
-        "team_execution": 6,
+        "team_execution": 8,
         "treasury_runway": 7,
-        "social_mindshare": 6
+        "social_mindshare": 5
       },
       "citations": [
         {
-          "claim": "$6.6M current annualized revenue (down from $34M peak), 47x P/S, 58% yield share",
-          "source": "DeFiLlama/Token Terminal",
-          "url": "https://tokenterminal.com/explorer/projects/pendle/metrics/revenue"
-        },
-        {
-          "claim": "TVL crashed 89% from $13.1B peak to $1.5B",
+          "claim": "TVL $1.171B across 11 chains (ETH $796M, Plasma $195M, Arb $139M, HyperL1 $25M, BSC $11M)",
           "source": "DeFiLlama",
           "url": "https://defillama.com/protocol/pendle"
         },
         {
-          "claim": "sPENDLE replaces vePENDLE, 80% revenue to buybacks",
-          "source": "Pendle Governance",
-          "url": "https://medium.com/pendle/introducing-spendle-8479744dfdf8"
+          "claim": "30d revenue $896,892. 30d fees $914,957. Annualized trailing $24.4M. 2025 full-year $44.6M (+134% YoY)",
+          "source": "DeFiLlama / Token Terminal",
+          "url": "https://defillama.com/protocol/pendle"
         },
         {
-          "claim": "Team deposited 600K PENDLE to Binance (sell signal)",
-          "source": "Arkham Intel",
-          "url": "https://blockchain.news/flashnews/pendle-finance-deposits-600k-tokens-binance"
+          "claim": "sPENDLE launched Jan 20, 2026. 80% revenue to PENDLE buybacks. 14-day unstake. Replaced 2-year vePENDLE locks",
+          "source": "CoinDesk / BanklessTimes",
+          "url": "https://www.coindesk.com/markets/2026/01/20/pendle-introduces-spendle-removing-the-need-for-long-lockups/"
+        },
+        {
+          "claim": "Fortune Crypto Innovators 2026 list (Jun 11), among 30 leading projects globally",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/06/11/crypto-innovators-2026-asia-europe-usa/"
+        },
+        {
+          "claim": "Vietnam IFC delegation (Mar 2026): TN Lee alongside BlackRock, Morgan Stanley, Deutsche Bank, Franklin Templeton",
+          "source": "CryptoBriefing / Benzinga",
+          "url": "https://cryptobriefing.com/pendle-joins-vietnam-ifc-delegation-alongside-blackrock-morgan-stanley-and-deutsche-bank/"
+        },
+        {
+          "claim": "Boros V3: $10B+ cumulative notional volume (Feb 2026, 2.7x faster than V2). $250M peak OI. $2.9B monthly volume",
+          "source": "Bitget / Phemex",
+          "url": "https://www.bitget.com/news/detail/12560605184810"
+        },
+        {
+          "claim": "21Shares Pendle ETP (APEN) live on SIX Swiss Exchange. Regulated PENDLE exposure for European investors",
+          "source": "CoinLaw",
+          "url": "https://coinlaw.io/pendle-etp-launch-21shares-defi-tradfi/"
+        },
+        {
+          "claim": "Team deposited 600K PENDLE to Binance May 13, 2026 ($1.27M). Cumulative $9.76M sold. 25.59M remaining (15% circ)",
+          "source": "Blockchain News / BitcoinWorld",
+          "url": "https://bitcoinworld.co.in/pendle-team-deposits-pendle-binance/"
+        },
+        {
+          "claim": "Arthur Hayes: accumulated ~$1.7M in PENDLE. Then transferred 950K PENDLE ($1.14M) to exchange Feb 2026",
+          "source": "BeInCrypto / BlockchainReporter",
+          "url": "https://blockchainreporter.net/arthur-hayes-liquidates-3-14m-in-ena-ethfi-and-pendle-holdings/"
+        },
+        {
+          "claim": "KYC Citadels: regulated access via isolated SPVs. Shariah-Compliant Citadel targeting $4.5T Islamic finance",
+          "source": "AInvest / EarnPark",
+          "url": "https://www.ainvest.com/news/pendle-dominance-chain-fixed-yield-path-institutional-adoption-2026-2512/"
+        },
+        {
+          "claim": "RWA TVL $151M across USDY, USYC, USDG (Paxos), apxUSD, apyUSD. Growing over 8 months",
+          "source": "Bitget",
+          "url": "https://www.bitget.com/news/detail/12560605395089"
+        },
+        {
+          "claim": "Terminal 2% inflation active since Apr 2026. ~3.42M PENDLE/yr. Algorithmic emissions cut ~30% vs gauge voting",
+          "source": "Pendle Docs / OAK Research",
+          "url": "https://docs.pendle.finance/pendle-v2/ProtocolMechanics/Mechanisms/Tokenomics"
+        },
+        {
+          "claim": "50-60% market share in yield tokenization. Spectra (only competitor) ~$30M TVL = ~25x smaller. Element/Yield DEAD",
+          "source": "MEXC / DeFiLlama",
+          "url": "https://www.mexc.com/news/831281"
+        },
+        {
+          "claim": "Plasma chain: $195M TVL, launched Jan 15, 2026, +$318M TVL in first 96 hours",
+          "source": "CryptoPotato",
+          "url": "https://cryptopotato.com/pendle-grows-an-additional-318-million-tvl-just-4-days-after-plasma-launch/"
+        },
+        {
+          "claim": "$7.49M in CHIPS distributed to sPENDLE holders (Apr 2026). Revenue buyback yield ~9.3% annualized at current rates",
+          "source": "Phemex",
+          "url": "https://phemex.com/news/article/pendle-distributes-749m-in-chips-to-spendle-holders-76571"
         }
       ],
-      "current_price_usd": 1.945,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 1.364,
+      "price_updated_at": "2026-06-14T08:48:18Z",
       "token_standard": "ERC-20",
-      "chain": "Ethereum",
-      "fully_diluted_valuation": 531864831
+      "chain": "Ethereum (Multi-chain: 11 chains)",
+      "fully_diluted_valuation": 333700000
     },
     {
       "symbol": "SAFE",
@@ -4740,7 +5193,7 @@
       "prev_score": 130,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "Gnosis Chain validator token and Safe ecosystem governance token with real utility and Ethereum alignment, but niche chain and high price vs fundamentals",
+      "one_liner": "Gnosis Chain validator token and Safe system governance token with real utility and Ethereum alignment, but niche chain and high price vs fundamentals",
       "key_catalyst": "Gnosis Pay card adoption and Gnosis Chain positioning as Ethereum's community L1",
       "key_risk": "Gnosis Chain has minimal DeFi activity vs Ethereum L2s; GNO value thesis relies on staking yield and Safe governance",
       "max_supply": 3000000.0,
@@ -4985,7 +5438,7 @@
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
       "one_liner": "Novel Proof-of-Liquidity L1 with highest post-launch TVL in history, but BERA token down 97.5% and PoL is untested long-term",
-      "key_catalyst": "Berachain ecosystem DeFi growth with PoL driving genuine liquidity depth; BGT/HONEY stablecoin flywheel",
+      "key_catalyst": "Berachain system DeFi growth with PoL driving genuine liquidity depth; BGT/HONEY stablecoin flywheel",
       "key_risk": "97.5% down from ATH; PoL model unproven at scale; BERA token has weak direct value accrual vs BGT governance token",
       "max_supply": null,
       "total_supply": 540788640.7467626,
@@ -5272,7 +5725,7 @@
     },
     {
       "symbol": "POL",
-      "name": "Polygon Ecosystem Token",
+      "name": "Polygon system Token",
       "price": 0.195,
       "change_24h": -0.8,
       "market_cap": 982393233,
@@ -5300,7 +5753,7 @@
         "Bybit",
         "Kraken"
       ],
-      "cmc_slug": "polygon-ecosystem-token",
+      "cmc_slug": "polygon-system-token",
       "scores": {
         "protocol_revenue": 4,
         "revenue_trend": 4,
@@ -5342,7 +5795,7 @@
         {
           "claim": "POL circulating supply 38% of total as migration from MATIC continues",
           "source": "Messari",
-          "url": "https://messari.io/asset/polygon-ecosystem-token"
+          "url": "https://messari.io/asset/polygon-system-token"
         }
       ],
       "current_price_usd": 0.3794,
@@ -5367,7 +5820,7 @@
       "prev_score": 107,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "BSC's dominant DEX with $1.5B TVL and real fee revenue; aggressive CAKE burn ongoing but BNB ecosystem dependence limits upside.",
+      "one_liner": "BSC's dominant DEX with $1.5B TVL and real fee revenue; aggressive CAKE burn ongoing but BNB system dependence limits upside.",
       "key_catalyst": "PancakeSwap v4 with concentrated liquidity; multi-chain expansion to Base, zkSync, Linea",
       "key_risk": "97% below ATH; BNB chain activity fragile; veCAKE tokenomics still inflationary net of burns; Uniswap competition intensifying on every chain",
       "max_supply": 400000000.0,
@@ -5701,26 +6154,26 @@
     {
       "symbol": "TON",
       "name": "Toncoin",
-      "price": 1.899,
-      "change_24h": 0.64,
-      "market_cap": 5086788987,
+      "price": 1.666,
+      "change_24h": -0.95,
+      "market_cap": 4490000000,
       "rank": 21,
       "ath": 8.28,
-      "ath_distance_pct": -76.6,
-      "tvl": 69000000,
-      "circ_supply_pct": 53,
-      "volume_24h": 32371854,
-      "score": 121,
-      "prev_score": 52,
-      "verdict": "CAUTIOUS HOLD",
-      "verdict_color": "yellow",
-      "one_liner": "Telegram took direct control (+7). 400ms blocks, 6x fee reduction. But $75M/mo unlocks.",
-      "key_catalyst": "Telegram validator integration, 400ms blocks, 1B users Nov 2026",
-      "key_risk": "$75M/month Believers Fund unlocks, TVL -91%, Durov criminal case",
+      "ath_distance_pct": -79.9,
+      "tvl": 56400000,
+      "circ_supply_pct": 52,
+      "volume_24h": 20040843,
+      "score": 110,
+      "prev_score": 121,
+      "verdict": "WATCH",
+      "verdict_color": "orange",
+      "one_liner": "GRAM rebrand Jun 15. Telegram 1B MAU took direct control (MTONGA). TVL collapsed -91% ($56M). $61M/month Believers unlocks through Oct 2028. 1.08B frozen TON unfreezes Feb 2027. Stars onramp real but DeFi dead.",
+      "key_catalyst": "GRAM rebrand Jun 15, TON Teleport BTC bridge, TON Pay 2.0, MTONGA steps 5-7, Stars-to-TON fiat onramp",
+      "key_risk": "Believers $61M/mo unlocks (27mo left), 1.08B frozen wallets unfreeze Feb 2027, Durov 12 charges, 85% whale concentration, zero protocol revenue",
       "max_supply": null,
-      "total_supply": 5186136995.720374,
-      "circulating_supply": 2695220993.341289,
-      "fdv": 9940000000,
+      "total_supply": 5194506740,
+      "circulating_supply": 2695220993,
+      "fdv": 8640000000,
       "where_to_buy": [
         "Binance",
         "OKX",
@@ -5730,57 +6183,112 @@
       "scores": {
         "protocol_revenue": 1,
         "revenue_trend": 2,
-        "ps_multiple": 5,
-        "supply_inflation": 4,
+        "ps_multiple": 3,
+        "supply_inflation": 3,
         "unlock_schedule": 2,
-        "circ_fdv_ratio": 5,
-        "buyback_burn": 4,
-        "smart_money": 6,
-        "insider_selling": 1,
-        "holder_concentration": 3,
+        "circ_fdv_ratio": 4,
+        "buyback_burn": 2,
+        "smart_money": 7,
+        "insider_selling": 2,
+        "holder_concentration": 2,
         "staking_yield": 5,
-        "tvl_trend": 5,
-        "active_users": 5,
-        "developer_activity": 8,
+        "tvl_trend": 2,
+        "active_users": 6,
+        "developer_activity": 7,
         "ecosystem_growth": 5,
-        "market_share": 6,
+        "market_share": 4,
         "competitive_moat": 7,
-        "institutional_adoption": 3,
+        "institutional_adoption": 5,
         "exchange_depth": 7,
-        "regulatory_safety": 4,
+        "regulatory_safety": 3,
         "catalyst_calendar": 8,
-        "btc_alpha": 4,
-        "team_execution": 8,
+        "btc_alpha": 3,
+        "team_execution": 7,
         "treasury_runway": 5,
         "social_mindshare": 8
       },
       "citations": [
         {
-          "claim": "Telegram directly replacing TON Foundation as primary driver",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/05/05/ton-jumps-36-as-messaging-giant-telegram-to-take-control-of-network-push"
+          "claim": "Toncoin renamed GRAM effective June 15, 2026, 81.22% community vote",
+          "source": "CoinCentral",
+          "url": "https://coincentral.com/toncoin-renamed-gram-after-ton-community-vote-passes-with-81-22-support/"
         },
         {
-          "claim": "400ms blocks achieved, 6x fee reduction",
-          "source": "TON Blog",
-          "url": "https://www.investing.com/news/company-news/ton-blockchain-cuts-block-times-to-400ms-reduces-fees-6x-93CH-4658794"
+          "claim": "Telegram 1B MAU March 2026, took direct control via MTONGA roadmap",
+          "source": "crypto.news",
+          "url": "https://crypto.news/telegram-takes-back-ton-inside-the-2026-takeover/"
         },
         {
-          "claim": "36.59M TON/month Believers Fund unlocks ($75M/mo)",
-          "source": "Tokenomist",
-          "url": "https://tokenomist.ai/"
+          "claim": "Telegram replaced TON Foundation as largest validator, staked 2.2M TON May 4, 2026",
+          "source": "Coinedition",
+          "url": "https://coinedition.com/telegram-replaces-ton-foundation-as-tons-largest-validator-token-surges/"
         },
         {
-          "claim": "Staking yield jumped to 16.7% annualized",
-          "source": "StakingRewards",
-          "url": "https://www.stakingrewards.com/asset/the-open-network"
+          "claim": "TVL collapsed from $650M peak to ~$56M (-91%), DeFi essentially dead",
+          "source": "DefiLlama",
+          "url": "https://defillama.com/chain/ton"
+        },
+        {
+          "claim": "Believers Fund: 37M TON/month ($61M) opening through October 2028, 27 periods remain",
+          "source": "Tonviewer",
+          "url": "https://tonviewer.com/believers.ton"
+        },
+        {
+          "claim": "1.08B TON in frozen inactive miner wallets, unfreezes February 2027",
+          "source": "Blockworks",
+          "url": "https://blockworks.co/news/ton-governance-votes-to-freeze-20-of-its-ton-supply"
+        },
+        {
+          "claim": "85% of TON supply mined by interconnected whale group during PoW phase",
+          "source": "Binance Square / WhiteRabbit",
+          "url": "https://medium.com/@whiterabbit_hq/ton-blockchain-a-group-of-related-whales-mined-85-of-ton-supply-2e3300cc93bc"
+        },
+        {
+          "claim": "Catchain 2.0: 400ms blocks, 6x fee reduction, ~1s finality (April 9, 2026)",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/ton-sub-second-finality-catchain-2"
+        },
+        {
+          "claim": "$1.13B stablecoins on TON (USDT 76%), growing while DeFi TVL collapsed",
+          "source": "DefiLlama",
+          "url": "https://defillama.com/stablecoins/ton"
+        },
+        {
+          "claim": "Telegram sold $450M TON in 2025; $400M VC round (Sequoia, Benchmark, Ribbit)",
+          "source": "BeInCrypto / Fortune",
+          "url": "https://fortune.com/crypto/2025/03/20/telegram-based-blockchain-ton-raises-400-million-from-prominent-crypto-vcs/"
+        },
+        {
+          "claim": "TONX (Verb Technology) $558M treasury, now $307M paper loss at current prices",
+          "source": "The Block",
+          "url": "https://www.theblock.co/post/365447/verb-technology-ton-treasury-ton-strategy-co"
+        },
+        {
+          "claim": "Durov: 12 charges active, travel ban lifted Nov 2025, no trial date, Russia case opened Feb 2026",
+          "source": "TechPolicy.Press",
+          "url": "https://www.techpolicy.press/pavel-durov-arrest-tracker/"
+        },
+        {
+          "claim": "Daily fees $4,847, daily minted 558K TON vs 964 burned (580:1 ratio), net inflationary ~3.6%",
+          "source": "TonStat",
+          "url": "https://www.tonstat.com/"
+        },
+        {
+          "claim": "Mini-apps dead: Hamster Kombat -96% from 300M peak, tap-to-earn model failed",
+          "source": "BeInCrypto",
+          "url": "https://beincrypto.com/hamster-kombats-user-plummets-85/"
+        },
+        {
+          "claim": "TON NOT classified as digital commodity in SEC-CFTC March 2026 ruling",
+          "source": "SEC",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-to-crypto-assets"
         }
       ],
-      "current_price_usd": 1.899,
-      "price_updated_at": "2026-05-23T14:15:00Z",
+      "current_price_usd": 1.666,
+      "price_updated_at": "2026-06-11T03:50:00Z",
       "token_standard": "Native L1",
       "chain": "TON",
-      "fully_diluted_valuation": 9787985704
+      "fully_diluted_valuation": 8640000000
     },
     {
       "symbol": "GRT",
@@ -6140,7 +6648,7 @@
       "circ_supply_pct": 7.6,
       "cmc_slug": "vertex-protocol",
       "citations": [],
-      "key_catalyst": "Vertex's cross-margin expansion to Arbitrum Orbit chain, enabling 100x leverage on BTC/ETH perps in Q2 2025.",
+      "key_catalyst": "Vertex's cross-margin expansion to Arbitrum Orbit chain, enabling 100x use on BTC/ETH perps in Q2 2025.",
       "key_risk": "dYdX v5's isolated margin vaults on Cosmos drain 60% of Vertex's open interest within 6 months.",
       "tvl": 0
     },
@@ -6244,7 +6752,7 @@
       "prev_score": 90,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "Modular DA layer with strong VC backing and developer traction; only 22% circulating means severe multi-year unlock dilution ahead.",
+      "one_liner": "Modular DA layer with strong VC backing and developer traction; only 22% circulating means severe multi-year open dilution ahead.",
       "key_catalyst": "Modular blockchain thesis gaining ground; TIA staking and DA fee revenue from rollups growing",
       "key_risk": "Only 22% supply circulating; enormous investor/team unlocks through 2027; DA revenue thin; competing with EigenDA and Avail for mindshare",
       "max_supply": null,
@@ -6467,7 +6975,7 @@
       "prev_score": 0,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Parallel TCG gaming token. Backed by Paradigm. Active player base.",
+      "one_liner": "Parallel TCG gaming token. Backed by model. Active player base.",
       "key_catalyst": "Parallel TCG expansion & AI arena launch; staking rewards from game fees",
       "key_risk": "Gaming token hype cycles; low liquidity vs. fully diluted valuation",
       "max_supply": null,
@@ -6703,7 +7211,7 @@
           "url": "https://stacks.org"
         },
         {
-          "claim": "sBTC enables decentralized Bitcoin pegging to Stacks DeFi ecosystem",
+          "claim": "sBTC enables decentralized Bitcoin pegging to Stacks DeFi system",
           "source": "Stacks Docs",
           "url": "https://docs.stacks.co"
         },
@@ -6801,7 +7309,7 @@
       "verdict_color": "yellow",
       "one_liner": "Web3 gaming ZK-rollup with major game studio partnerships; gaming L2 narrative still alive but token unlock pressure is severe",
       "key_catalyst": "Gods Unchained, Guild of Guardians, and 300+ game titles on IMX; Polygon zkEVM partnership and gaming bull cycle",
-      "key_risk": "45% supply still unlocking (team/investor vesting through 2027), gaming crypto narrative fickle, competition from Ronin and Arbitrum Orbit",
+      "key_risk": "45% supply still opening (team/investor vesting through 2027), gaming crypto narrative fickle, competition from Ronin and Arbitrum Orbit",
       "max_supply": 2000000000.0,
       "total_supply": 2000000000.0,
       "circulating_supply": 842444578.3296283,
@@ -7049,7 +7557,7 @@
       "cmc_slug": "trader-joe",
       "citations": [],
       "key_catalyst": "Avalanche liquidity incentives & Boosted Pools; launch on Ethereum L2s",
-      "key_risk": "DEX competition (Trader Joe vs. Uniswap/Aave); Avalanche ecosystem slowdown",
+      "key_risk": "DEX competition (Trader Joe vs. Uniswap/Aave); Avalanche system slowdown",
       "tvl": 0
     },
     {
@@ -7069,8 +7577,8 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Move-language L1 from ex-Meta team with solid tech but massive unlock schedule dragging price. TVL growing but token inflation brutal.",
-      "key_catalyst": "Microsoft partnership for AI on Aptos; strong Move ecosystem crossover with Sui",
-      "key_risk": "Only 27% of tokens in circulation; heavy VC and team allocations unlocking through 2028 create massive sell pressure",
+      "key_catalyst": "Microsoft partnership for AI on Aptos; strong Move system crossover with Sui",
+      "key_risk": "Only 27% of tokens in circulation; heavy VC and team allocations opening through 2028 create massive sell pressure",
       "max_supply": 2100000000.0,
       "total_supply": 1203226019.020687,
       "circulating_supply": 819551036.294811,
@@ -7297,7 +7805,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Fantom rebranded to Sonic with 10,000 TPS EVM chain; Andre Cronje back driving DeFi revival with fee monetization",
-      "key_catalyst": "Andre Cronje-led DeFi ecosystem expansion; Sonic Gateway bridge to Ethereum and fee sharing with apps going live",
+      "key_catalyst": "Andre Cronje-led DeFi system expansion; Sonic Gateway bridge to Ethereum and fee sharing with apps going live",
       "key_risk": "Heavy token unlocks (46% remaining), FTM rebrand legacy bagholders exiting, competing with mature EVM L2s",
       "max_supply": null,
       "total_supply": 3885497663.0,
@@ -7377,7 +7885,7 @@
       "verdict_color": "yellow",
       "one_liner": "$3B RWA platform but ONDO token captures $0 revenue. 57.79% in one wallet. -73% in 12mo.",
       "key_catalyst": "DTCC production trades July 2026, fee switch vote H2 2026, SEC probe closed",
-      "key_risk": "Zero token revenue, 57.79% holder concentration, relentless unlock dilution through 2028",
+      "key_risk": "Zero token revenue, 57.79% holder concentration, relentless open dilution through 2028",
       "max_supply": 10000000000.0,
       "total_supply": 10000000000.0,
       "circulating_supply": 4869330647.0,
@@ -7523,8 +8031,8 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Fastest PoW blockchain using GHOSTDAG DAG protocol; Bitcoin-aligned narrative with real hashrate growth but no smart contracts",
-      "key_catalyst": "KRC-20 token standard driving on-chain activity; Kaspa smart contracts (kSMT) roadmap could expand ecosystem significantly",
-      "key_risk": "No smart contracts or DeFi — pure PoW L1 with no fee revenue model; speculation-driven price with mining inflation",
+      "key_catalyst": "KRC-20 token standard driving on-chain activity; Kaspa smart contracts (kSMT) roadmap could expand system significantly",
+      "key_risk": "No smart contracts or DeFi, pure PoW L1 with no fee revenue model; speculation-driven price with mining inflation",
       "max_supply": 28704026601.0,
       "total_supply": 27463595669.5268,
       "circulating_supply": 27416658504.52483,
@@ -7603,7 +8111,7 @@
       "verdict_color": "yellow",
       "one_liner": "Academic-grade L1 with heavy research pedigree but minimal DeFi traction. Chang hard fork improved governance but TVL remains tiny.",
       "key_catalyst": "Midnight privacy sidechain launch; Hydra scaling reaching mainnet",
-      "key_risk": "Perpetual under-delivery on roadmap; DeFi ecosystem far behind competitors; declining developer mindshare",
+      "key_risk": "Perpetual under-delivery on roadmap; DeFi system far behind competitors; declining developer mindshare",
       "max_supply": 45000000000.0,
       "total_supply": 45000000000.0,
       "circulating_supply": 37007551099.9152,
@@ -7966,7 +8474,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "DAG-based EVM L1. Sonic upgrade for sub-second finality.",
-      "key_catalyst": "Sonic upgrade (Fantom) promises faster finality and EVM compatibility; ecosystem migration.",
+      "key_catalyst": "Sonic upgrade (Fantom) promises faster finality and EVM compatibility; system migration.",
       "key_risk": "Delays in Sonic mainnet launch; low TVL vs. rival L1s; reliance on DeFi revival.",
       "max_supply": null,
       "total_supply": 3885497663.0,
@@ -8219,7 +8727,7 @@
           "url": "https://superintelligence.io"
         },
         {
-          "claim": "FET rebranded to ASI with unified token representing merged AI ecosystem",
+          "claim": "FET rebranded to ASI with unified token representing merged AI system",
           "source": "Fetch.ai Blog",
           "url": "https://fetch.ai/blog"
         },
@@ -8397,7 +8905,7 @@
       "verdict_color": "yellow",
       "one_liner": "Decentralized GPU compute marketplace down 98.3% from ATH; real compute demand but token economics designed for insiders",
       "key_catalyst": "AI compute demand boom driving GPU marketplace utilization; IO Cloud enterprise partnerships expanding real revenue",
-      "key_risk": "Only 18% circulating; 82% supply unlock over 3 years creates structural sell pressure; competing with Akash, Render, and centralized clouds",
+      "key_risk": "Only 18% circulating; 82% supply open over 3 years creates structural sell pressure; competing with Akash, Render, and centralized clouds",
       "max_supply": 800000000.0,
       "total_supply": 799996881.285894,
       "circulating_supply": 333523714.3514058,
@@ -8442,7 +8950,7 @@
           "url": "https://io.net/"
         },
         {
-          "claim": "IO token launched at $8.88 ATH in May 2024; only 18% circulating with Multicoin/Hack VC allocations unlocking through 2027",
+          "claim": "IO token launched at $8.88 ATH in May 2024; only 18% circulating with Multicoin/Hack VC allocations opening through 2027",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/io-net"
         },
@@ -8772,7 +9280,7 @@
       "cmc_slug": "stellar",
       "citations": [],
       "key_catalyst": "Stellar's cross-border payment partnerships (e.g., MoneyGram); Soroban smart contract launch.",
-      "key_risk": "Slow payment adoption vs. XRP; limited DeFi ecosystem; regulatory uncertainty.",
+      "key_risk": "Slow payment adoption vs. XRP; limited DeFi system; regulatory uncertainty.",
       "tvl": 0
     },
     {
@@ -8791,7 +9299,7 @@
       "prev_score": 88,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Restaking pioneer with $5.8B TVL but 82% of tokens unlocking over 3 years creates extreme dilution headwind.",
+      "one_liner": "Restaking pioneer with $5.8B TVL but 82% of tokens opening over 3 years creates extreme dilution headwind.",
       "key_catalyst": "EIGEN slashing activation enabling real AVS security; programmatic incentives attracting AVS launch",
       "key_risk": "Only 18% circ/FDV; massive insider and foundation unlock schedule; restaking narrative fading; minimal fee accrual to EIGEN token",
       "max_supply": null,
@@ -8919,7 +9427,7 @@
           "url": "https://docs.pyth.network"
         },
         {
-          "claim": "PYTH token circulating supply is ~34.5% of total 10B with large foundation and publisher reserves unlocking",
+          "claim": "PYTH token circulating supply is ~34.5% of total 10B with large foundation and publisher reserves opening",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/pyth-network"
         },
@@ -8953,7 +9461,7 @@
       "verdict_color": "yellow",
       "one_liner": "Perpetual DEX on Arbitrum with low fees and deep liquidity.",
       "key_catalyst": "Vela Exchange perp DEX on Arbitrum; token buyback and burn mechanism.",
-      "key_risk": "Low trading volumes vs. GMX; reliance on Arbitrum ecosystem; token dilution.",
+      "key_risk": "Low trading volumes vs. GMX; reliance on Arbitrum system; token dilution.",
       "max_supply": 100000000,
       "total_supply": 100000000,
       "circulating_supply": 50000000,
@@ -9126,7 +9634,7 @@
           "url": "https://explorer.ssv.network"
         },
         {
-          "claim": "SSV has only 45% of total supply in circulation with significant team/ecosystem vesting remaining",
+          "claim": "SSV has only 45% of total supply in circulation with significant team/system vesting remaining",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/ssv-network"
         },
@@ -9158,9 +9666,9 @@
       "prev_score": 30,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "$292M Kelp exploit destroyed trust. $4B fleeing to CCIP. May 20 unlock = 10% of float.",
-      "key_catalyst": "Zero L1 (Citadel/DTCC/ICE) -- uncertain after exploit",
-      "key_risk": "$292M exploit, $4B exodus, May 20 unlock (10% float), LayerZero admitted fault publicly",
+      "one_liner": "$292M Kelp exploit destroyed trust. $4B fleeing to CCIP. May 20 open = 10% of float.",
+      "key_catalyst": "Zero L1 (Citadel/DTCC/ICE), uncertain after exploit",
+      "key_risk": "$292M exploit, $4B exodus, May 20 open (10% float), LayerZero admitted fault publicly",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
       "circulating_supply": 252331652.6536562,
@@ -9215,7 +9723,7 @@
           "url": "https://www.coindesk.com/business/2026/05/15/lombard-joins-layerzero-exodus-as-usd4-billion-in-assets-switch-to-chainlink-s-bridge"
         },
         {
-          "claim": "May 20 unlock: 25.71M ZRO (10% of float)",
+          "claim": "May 20 open: 25.71M ZRO (10% of float)",
           "source": "Tokenomist",
           "url": "https://tokenomist.ai/layerzero"
         }
@@ -9243,7 +9751,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Algorithmic lending/borrowing on Solana. Largest Solana lending protocol.",
-      "key_catalyst": "Solana ecosystem recovery and lending TVL growth; SLND stakers earn protocol revenue and boosted yields.",
+      "key_catalyst": "Solana system recovery and lending TVL growth; SLND stakers earn protocol revenue and boosted yields.",
       "key_risk": "Solana network outages and dependency on SOL price; competing lending protocols like Marginfi and Kamino.",
       "max_supply": 100000000.0,
       "total_supply": 100000000.0,
@@ -9449,7 +9957,7 @@
       "prev_score": 98,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Governance token for the Frax stablecoin ecosystem rebranding to frxUSD, but FXS faces dilution from veFXS migration and loss of direct fee accrual",
+      "one_liner": "Governance token for the Frax stablecoin system rebranding to frxUSD, but FXS faces dilution from veFXS migration and loss of direct fee accrual",
       "key_catalyst": "Fraxchain L2 launch and frxUSD institutional adoption",
       "key_risk": "FXS → FRAX token migration and veFXS overhaul create high dilution and uncertainty for existing holders",
       "max_supply": 100000000,
@@ -9673,7 +10181,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Meme/NFT brand token for Pudgy Penguins collection; high social proof and retail distribution via Walmart toys, but no protocol revenue and pure sentiment play",
-      "key_catalyst": "Abstract chain launch and Pudgy Penguins ecosystem expansion on Ethereum L2",
+      "key_catalyst": "Abstract chain launch and Pudgy Penguins system expansion on Ethereum L2",
       "key_risk": "Pure memecoin with zero revenue; fully diluted at launch means only speculative demand drives price",
       "max_supply": 88888888888.0,
       "total_supply": 79572204088.58537,
@@ -9724,7 +10232,7 @@
           "url": "https://www.coingecko.com/en/coins/pudgy-penguins"
         },
         {
-          "claim": "Abstract chain (EVM L2 for consumer crypto) is backed by Pudgy Penguins team as ecosystem hub",
+          "claim": "Abstract chain (EVM L2 for consumer crypto) is backed by Pudgy Penguins team as system hub",
           "source": "Abstract",
           "url": "https://abs.xyz"
         }
@@ -9815,7 +10323,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Axie Infinity sidechain. Gaming-focused EVM chain with Katana DEX.",
-      "key_catalyst": "Axie Infinity and Sky Mavis game ecosystem growth; Ronin's fast, low-cost chain attracts Web3 gaming projects.",
+      "key_catalyst": "Axie Infinity and Sky Mavis game system growth; Ronin's fast, low-cost chain attracts Web3 gaming projects.",
       "key_risk": "Centralized validator set and past bridge hack ($625M); gaming token demand tied to Axie's user retention.",
       "max_supply": 1000000000.0,
       "total_supply": 1000000000.0,
@@ -10007,7 +10515,7 @@
       "verdict_color": "yellow",
       "one_liner": "Cross-chain relay network struggling with parachain lease complexity. JAM upgrade promises unified computing but narrative has failed to stick.",
       "key_catalyst": "JAM (Join-Accumulate Machine) upgrade modernizing parachain architecture",
-      "key_risk": "Parachain auctions discontinued; ecosystem fragmented; lost developer mindshare to Cosmos and Solana",
+      "key_risk": "Parachain auctions discontinued; system fragmented; lost developer mindshare to Cosmos and Solana",
       "max_supply": 2100000000.0,
       "total_supply": 1685429601.666258,
       "circulating_supply": 1685429601.666258,
@@ -10086,7 +10594,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Curve vote-locking meta-protocol that captured the Curve Wars era but faces structural decline as veCRV yields compress and DeFi rotates away",
-      "key_catalyst": "Curve ecosystem revival if stablecoin volumes recover",
+      "key_catalyst": "Curve system revival if stablecoin volumes recover",
       "key_risk": "CVX value entirely derived from CRV bribe economics which are in secular decline; no independent utility",
       "max_supply": 100000000.0,
       "total_supply": 99969716.88212252,
@@ -10166,7 +10674,7 @@
       "verdict_color": "yellow",
       "one_liner": "Kakao-backed Korean L1. Strong Korean market adoption.",
       "key_catalyst": "Klaytn's Finschia merger creates Asia's largest public chain; Korean regulatory clarity boosts enterprise adoption.",
-      "key_risk": "Centralized governance via Ground X (Kakao); slow DeFi ecosystem growth vs. Ethereum L2s.",
+      "key_risk": "Centralized governance via Ground X (Kakao); slow DeFi system growth vs. Ethereum L2s.",
       "max_supply": null,
       "total_supply": 6327000000,
       "circulating_supply": 6327000000,
@@ -10229,7 +10737,7 @@
       "verdict_color": "yellow",
       "one_liner": "Polkadot canary network. Parachain auctions. Fast iteration testnet.",
       "key_catalyst": "Polkadot parachain auctions and cross-chain interoperability; Kusama as experimental sandbox for new dApps.",
-      "key_risk": "High inflation from parachain rewards; limited DeFi TVL and developer activity vs. Ethereum ecosystem.",
+      "key_risk": "High inflation from parachain rewards; limited DeFi TVL and developer activity vs. Ethereum system.",
       "max_supply": null,
       "total_supply": 18263426.52554164,
       "circulating_supply": 18263426.52554164,
@@ -10334,7 +10842,7 @@
       "circ_supply_pct": 100.0,
       "cmc_slug": "shadow-token",
       "citations": [],
-      "key_catalyst": "GenesysGo storage demand from Solana ecosystem growth and potential SHDW token utility expansion.",
+      "key_catalyst": "GenesysGo storage demand from Solana system growth and potential SHDW token utility expansion.",
       "key_risk": "Dependence on Solana network health and competition from other decentralized storage solutions.",
       "tvl": 0
     },
@@ -10356,7 +10864,7 @@
       "verdict_color": "yellow",
       "one_liner": "Bitcoin's silver analog with fourth halving complete. No smart contracts, no DeFi, diminishing developer interest. Payments use case losing to stablecoins.",
       "key_catalyst": "Spot LTC ETF application in pipeline; halving supply cut in August 2023",
-      "key_risk": "Zero DeFi ecosystem; payment use case obsoleted by stablecoins; declining relevance",
+      "key_risk": "Zero DeFi system; payment use case obsoleted by stablecoins; declining relevance",
       "max_supply": 84000000.0,
       "total_supply": 77210395.73347135,
       "circulating_supply": 77208645.73347135,
@@ -10402,7 +10910,7 @@
           "url": "https://litecoin.org"
         },
         {
-          "claim": "Litecoin has no DeFi ecosystem or smart contract functionality",
+          "claim": "Litecoin has no DeFi system or smart contract functionality",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Litecoin"
         },
@@ -10481,7 +10989,7 @@
           "url": "https://defillama.com/chain/Scroll"
         },
         {
-          "claim": "SCROLL token launched Oct 2024 with only 15-19% circulating supply; Polychain/Sequoia allocations unlock through 2027",
+          "claim": "SCROLL token launched Oct 2024 with only 15-19% circulating supply; Polychain/Sequoia allocations open through 2027",
           "source": "TokenUnlocks",
           "url": "https://token.unlocks.app/scroll"
         },
@@ -10513,7 +11021,7 @@
       "prev_score": 83,
       "verdict": "WATCH",
       "verdict_color": "red",
-      "one_liner": "DFINITY's on-chain cloud computing with 99.6% ATH drawdown; technically innovative but massive inflation and insider overhang persist.",
+      "one_liner": "DFINITY's on-chain cloud computing with 99.6% ATH drawdown; technically new but massive inflation and insider overhang persist.",
       "key_catalyst": "Bitcoin integration and ckBTC enabling ICP as BTC L2; AI smart contract canister adoption",
       "key_risk": "Ongoing NNS-controlled ICP minting (inflation); 53% supply not yet in circulation; 99.6% below launch price; complex tech with thin real-world adoption",
       "max_supply": null,
@@ -10594,7 +11102,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Crypto.com EVM chain. CRO staking for exchange benefits.",
-      "key_catalyst": "Crypto.com exchange user growth and staking rewards from card program and ecosystem expansion.",
+      "key_catalyst": "Crypto.com exchange user growth and staking rewards from card program and system expansion.",
       "key_risk": "Regulatory scrutiny on exchange operations and tokenomics dilution from high supply inflation.",
       "max_supply": 100000000000.0,
       "total_supply": 98661946655.5565,
@@ -10744,7 +11252,7 @@
         "Coinbase",
         "Kraken"
       ],
-      "one_liner": "Bored Ape ecosystem token. ApeChain L3. Yuga Labs governance.",
+      "one_liner": "Bored Ape system token. ApeChain L3. Yuga Labs governance.",
       "price": 0.133,
       "current_price_usd": 0.133,
       "circulating_supply": 1000000000.0,
@@ -10763,7 +11271,7 @@
       "circ_supply_pct": 100.0,
       "cmc_slug": "apecoin",
       "citations": [],
-      "key_catalyst": "Yuga Labs ecosystem expansion, including Otherside metaverse and new NFT collections driving demand.",
+      "key_catalyst": "Yuga Labs system expansion, including Otherside metaverse and new NFT collections driving demand.",
       "key_risk": "Declining NFT market sentiment and governance fragmentation among ApeCoin DAO stakeholders.",
       "tvl": 0
     },
@@ -10831,7 +11339,7 @@
           "url": "https://fil.org"
         },
         {
-          "claim": "FIL circulating supply only 43% of max with significant future miner rewards unlocking",
+          "claim": "FIL circulating supply only 43% of max with significant future miner rewards opening",
           "source": "Messari",
           "url": "https://messari.io/asset/filecoin"
         },
@@ -11086,7 +11594,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "AAA open-world RPG with NFT creatures. Unreal Engine graphics.",
-      "key_catalyst": "Illuvium game launch and cross-game asset utility within its fantasy RPG ecosystem.",
+      "key_catalyst": "Illuvium game launch and cross-game asset utility within its fantasy RPG system.",
       "key_risk": "Delayed game releases and low player retention in competitive blockchain gaming market.",
       "max_supply": null,
       "total_supply": 9597063.735779958,
@@ -11402,9 +11910,9 @@
       "prev_score": 102,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "EVM+Cosmos parallel execution chain with fast finality. Sei V2 parallel EVM showed promising benchmarks but ecosystem capture lags Solana and Base.",
+      "one_liner": "EVM+Cosmos parallel execution chain with fast finality. Sei V2 parallel EVM showed promising benchmarks but system capture lags Solana and Base.",
       "key_catalyst": "Sei V2 parallel EVM adoption; partnerships with gaming and NFT platforms",
-      "key_risk": "Only 31% of tokens circulating with large team/VC unlocks through 2027; ecosystem tiny",
+      "key_risk": "Only 31% of tokens circulating with large team/VC unlocks through 2027; system tiny",
       "max_supply": null,
       "total_supply": 10000000000.0,
       "circulating_supply": 6733333333.0,
@@ -11483,7 +11991,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Bitcoin-staking L1 using Satoshi Plus consensus (PoW + DPoS); BTC staking TVL real but token severely diluted",
-      "key_catalyst": "Non-custodial BTC staking via CORE allows BTC holders to earn yield — genuine demand driver if BTC bull continues",
+      "key_catalyst": "Non-custodial BTC staking via CORE allows BTC holders to earn yield, genuine demand driver if BTC bull continues",
       "key_risk": "Only 40% of tokens circulating with massive unlock schedule ahead; token ATH 99.6% away; speculative overhang extreme",
       "max_supply": 2100000000.0,
       "total_supply": 2100000000.0,
@@ -11828,7 +12336,7 @@
       "cmc_slug": "flare",
       "citations": [],
       "key_catalyst": "F-Assets minting launch and FTSO data feeds enabling DeFi on Flare; Google Cloud partnership.",
-      "key_risk": "Slow ecosystem growth and token inflation from ongoing airdrop distributions.",
+      "key_risk": "Slow system growth and token inflation from ongoing airdrop distributions.",
       "tvl": 0
     },
     {
@@ -11849,7 +12357,7 @@
       "verdict_color": "red",
       "one_liner": "China's only regulatory-compliant public blockchain; government backing is unique moat but adoption outside China near zero",
       "key_catalyst": "China digital economy policy tailwinds; partnerships with Shanghai government and state enterprises could drive domestic use",
-      "key_risk": "48% supply still unlocking, ecosystem entirely dependent on Chinese regulatory favor, no global DeFi adoption",
+      "key_risk": "48% supply still opening, system entirely dependent on Chinese regulatory favor, no global DeFi adoption",
       "max_supply": null,
       "total_supply": 5211547317.66,
       "circulating_supply": 5189835932.13,
@@ -11926,7 +12434,7 @@
       "prev_score": 85,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "22KB constant-size blockchain using ZK proofs; elegant tech with minimal ecosystem adoption and severe inflation from staking rewards.",
+      "one_liner": "22KB constant-size blockchain using ZK proofs; elegant tech with minimal system adoption and severe inflation from staking rewards.",
       "key_catalyst": "Mina zkApps enabling privacy-preserving dApps; ZK proof technology is hot sector tailwind",
       "key_risk": "~10% annual inflation from staking; 99% below ATH; TVL near zero; ZK developer tooling complex limiting adoption",
       "max_supply": null,
@@ -12111,7 +12619,7 @@
       "circ_supply_pct": 100.0,
       "cmc_slug": "huobi-token",
       "citations": [],
-      "key_catalyst": "HTX exchange fee discounts and burn mechanisms; potential revival from Justin Sun's ecosystem.",
+      "key_catalyst": "HTX exchange fee discounts and burn mechanisms; potential revival from Justin Sun's system.",
       "key_risk": "Regulatory overhang from Huobi's past; centralized exchange risk and low trading volume.",
       "tvl": 0
     },
@@ -12195,9 +12703,9 @@
       "prev_score": 85,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Pure PoS L1 with 4-second finality and strong academic roots; TVL thin at $180M and ecosystem activity stagnant despite tech quality.",
+      "one_liner": "Pure PoS L1 with 4-second finality and strong academic roots; TVL thin at $180M and system activity stagnant despite tech quality.",
       "key_catalyst": "ALGO as CBDC/institutional settlement layer; partnerships with FIFA and various governments",
-      "key_risk": "Ecosystem traction has failed to materialise vs competitors; 97% below ATH; significant foundation unlocks ongoing; DeFi TVL minimal",
+      "key_risk": "system traction has failed to materialise vs competitors; 97% below ATH; significant foundation unlocks ongoing; DeFi TVL minimal",
       "max_supply": 10000000000.0,
       "total_supply": 8917896185.69497,
       "circulating_supply": 8917896185.69497,
@@ -12597,7 +13105,7 @@
       "verdict_color": "red",
       "one_liner": "First BRC-20 token on Bitcoin Ordinals; fully diluted meme with cultural value but zero protocol revenue or utility",
       "key_catalyst": "Bitcoin L2 narrative revival and any new Ordinals/BRC-20 hype cycle could spark short-term pump",
-      "key_risk": "Pure speculation — no protocol, no revenue, no utility; fully diluted at 21M supply; BRC-20 standard losing to Runes protocol",
+      "key_risk": "Pure speculation, no protocol, no revenue, no utility; fully diluted at 21M supply; BRC-20 standard losing to Runes protocol",
       "max_supply": null,
       "total_supply": 21000000.0,
       "circulating_supply": 21000000.0,
@@ -12675,7 +13183,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Web3 infrastructure provider offering RPC nodes and liquid staking, but ANKR token has weak value capture vs the business revenues it supports",
-      "key_catalyst": "Ankr AppChains gaining enterprise traction on BNB Chain ecosystem",
+      "key_catalyst": "Ankr AppChains gaining enterprise traction on BNB Chain system",
       "key_risk": "ANKR token fails to capture meaningful value from RPC business; Alchemy and Infura dominate enterprise market",
       "max_supply": 10000000000.0,
       "total_supply": 10000000000.0,
@@ -12946,7 +13454,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "ZK rollup with strong tech but catastrophic tokenomics; airdrop dump destroyed community trust and TVL collapsed 90%+",
-      "key_catalyst": "ZK Stack elastic chain ecosystem expansion and ZKsync native account abstraction adoption",
+      "key_catalyst": "ZK Stack elastic chain system expansion and ZKsync native account abstraction adoption",
       "key_risk": "Only 17% circulating supply with years of heavy unlocks ahead; TVL and developer activity abandoned after airdrop controversy",
       "max_supply": 21000000000.0,
       "total_supply": 21000000000.0,
@@ -13358,7 +13866,7 @@
       "prev_score": 82,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Mobile-first L1 migrating to Ethereum L2 on OP Stack; migration complete but ecosystem traction and TVL extremely thin.",
+      "one_liner": "Mobile-first L1 migrating to Ethereum L2 on OP Stack; migration complete but system traction and TVL extremely thin.",
       "key_catalyst": "Full Ethereum L2 migration (Celo L2 live) enabling ETH composability and shared liquidity",
       "key_risk": "99%+ down from ATH; minimal TVL ($42M); mobile DeFi thesis hasn't materialized; CELO inflation from staking rewards",
       "max_supply": 1000000000.0,
@@ -13483,7 +13991,7 @@
       "cmc_slug": "moonbeam",
       "citations": [],
       "key_catalyst": "Polkadot parachain with full EVM compatibility and cross-chain integrations",
-      "key_risk": "Dependence on Polkadot ecosystem growth and DOT staking demand",
+      "key_risk": "Dependence on Polkadot system growth and DOT staking demand",
       "tvl": 0
     },
     {
@@ -13628,7 +14136,7 @@
       "prev_score": 93,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Bitcoin-compatible UTXO Layer 1 with RGB++ protocol enabling BTC-native assets; technically sound but tiny ecosystem",
+      "one_liner": "Bitcoin-compatible UTXO Layer 1 with RGB++ protocol enabling BTC-native assets; technically sound but tiny system",
       "key_catalyst": "RGB++ protocol bridges BTC assets natively to CKB; rising Bitcoin L2 narrative could drive attention",
       "key_risk": "Tiny TVL, low volume, minimal developer activity, depends entirely on Bitcoin L2 narrative which is crowded",
       "max_supply": null,
@@ -13945,9 +14453,9 @@
       "prev_score": 100,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Cosmos DEX with heavy inflation and declining TVL dominance as IBC ecosystem fragments",
+      "one_liner": "Cosmos DEX with heavy inflation and declining TVL dominance as IBC system fragments",
       "key_catalyst": "Superfluid staking and concentrated liquidity pools may attract TVL back to Cosmos hub",
-      "key_risk": "Token inflation ~25% annually crushes real returns; IBC ecosystem losing ground to Solana and L2s",
+      "key_risk": "Token inflation ~25% annually crushes real returns; IBC system losing ground to Solana and L2s",
       "max_supply": 1000000000.0,
       "total_supply": 978691368.674834,
       "circulating_supply": 774931063.176216,
@@ -13992,7 +14500,7 @@
           "url": "https://www.coingecko.com/en/coins/osmosis"
         },
         {
-          "claim": "Osmosis TVL ~$72M, declining as Cosmos ecosystem loses momentum",
+          "claim": "Osmosis TVL ~$72M, declining as Cosmos system loses momentum",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Osmosis"
         },
@@ -14153,7 +14661,7 @@
       "verdict_color": "red",
       "one_liner": "Helium subDAO token for mobile network; extremely low liquidity and no direct value accrual beyond coverage reward emissions",
       "key_catalyst": "Helium Mobile subscriber growth triggering Data Credit burn that accrues to MOBILE holders via HNT conversion",
-      "key_risk": "96% down from ATH; micro-cap with near-zero trading volume; entire value dependent on HNT ecosystem success and carrier partnerships",
+      "key_risk": "96% down from ATH; micro-cap with near-zero trading volume; entire value dependent on HNT system success and carrier partnerships",
       "max_supply": null,
       "total_supply": 230000000000.0,
       "circulating_supply": 89280000000.0,
@@ -14312,7 +14820,7 @@
       "verdict_color": "red",
       "one_liner": "Ethereum's largest meme coin at $1.6B market cap with massive liquidity; culturally entrenched but zero revenue and purely narrative-driven valuation.",
       "key_catalyst": "Ethereum bull market amplification; PEPE as ETH meme equivalent to DOGE on BTC; high CEX liquidity",
-      "key_risk": "Zero protocol revenue or utility; 6% supply still to unlock from deployer wallet; pure sentiment asset; rapid drawdowns in risk-off environments",
+      "key_risk": "Zero protocol revenue or utility; 6% supply still to open from deployer wallet; pure sentiment asset; rapid drawdowns in risk-off environments",
       "max_supply": 420690000000000.0,
       "total_supply": 420690000000000.0,
       "circulating_supply": 420690000000000.0,
@@ -14391,7 +14899,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "GameFi platform combining yield farming and NFT gaming.",
-      "key_catalyst": "Gaming ecosystem expansion on BNB Chain; new game launches and NFT staking rewards.",
+      "key_catalyst": "Gaming system expansion on BNB Chain; new game launches and NFT staking rewards.",
       "key_risk": "Play-to-earn model fatigue; user retention drops if token rewards diminish.",
       "max_supply": 1000000000.0,
       "total_supply": 550322467.0,
@@ -14561,7 +15069,7 @@
       "circ_supply_pct": 58.2,
       "cmc_slug": "status",
       "citations": [],
-      "key_catalyst": "Decentralized messenger with integrated dApp browser; Ethereum ecosystem utility.",
+      "key_catalyst": "Decentralized messenger with integrated dApp browser; Ethereum system utility.",
       "key_risk": "Competition from Signal/Telegram; slow feature updates and low daily active users.",
       "tvl": 0
     },
@@ -14581,7 +15089,7 @@
       "prev_score": 91,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Cosmos SDK #3 dev ecosystem globally but broken value accrual. $240K Hub TVL on $889M mcap. ICS revenue real but tiny ($526K/yr). Prop 848 inflation cap helps. Both cofounders gone. Named security in SEC lawsuits.",
+      "one_liner": "Cosmos SDK #3 dev system globally but broken value accrual. $240K Hub TVL on $889M mcap. ICS revenue real but tiny ($526K/yr). Prop 848 inflation cap helps. Both cofounders gone. Named security in SEC lawsuits.",
       "key_catalyst": "Tokenomics redesign RFP (9 proposals), SDK v0.54 shipping, IBC-Solana bridge Q2, PSS (ICS 2.0), Cosmoverse Nov 2026",
       "key_risk": "Neutron left ICS, Noble exiting to EVM, Sei disabled IBC, $5.4M Gravity Bridge exploit, P/S 17,637x, unlimited supply with 7% inflation, named security in SEC v Binance/Coinbase",
       "max_supply": null,
@@ -14765,7 +15273,7 @@
       "prev_score": 0,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "DeFi ecosystem of leveraged yield products. Alpha Homora.",
+      "one_liner": "DeFi system of leveraged yield products. Alpha Homora.",
       "key_catalyst": "Venture DAO funding early-stage DeFi projects; alpha access to token launches.",
       "key_risk": "High volatility from illiquid venture positions; lock-up periods limit exit.",
       "max_supply": 10000000.0,
@@ -15284,7 +15792,7 @@
           "url": "https://reuters.com/doge-department"
         },
         {
-          "claim": "Dogecoin has virtually no DeFi ecosystem or protocol revenue",
+          "claim": "Dogecoin has virtually no DeFi system or protocol revenue",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Dogecoin"
         }
@@ -15377,7 +15885,7 @@
       "verdict_color": "red",
       "one_liner": "Self-amending smart contract chain that pioneered on-chain governance; overtaken by faster-moving L1 and L2 alternatives",
       "key_catalyst": "Tezos institutional tokenization (Bond i by SocGen) and RWA focus may sustain niche enterprise use",
-      "key_risk": "No meaningful DeFi ecosystem, developer exodus, volume near all-time-lows, token has no value accrual mechanism",
+      "key_risk": "No meaningful DeFi system, developer exodus, volume near all-time-lows, token has no value accrual mechanism",
       "max_supply": null,
       "total_supply": 1105926233.080477,
       "circulating_supply": 1085941526.305075,
@@ -15417,12 +15925,12 @@
       },
       "citations": [
         {
-          "claim": "Tezos ATH $9.18 in Oct 2021; now 96% below ATH with declining ecosystem",
+          "claim": "Tezos ATH $9.18 in Oct 2021; now 96% below ATH with declining system",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/tezos"
         },
         {
-          "claim": "Societe Generale issued OFH tokens on Tezos as regulated bond — niche enterprise adoption",
+          "claim": "Societe Generale issued OFH tokens on Tezos as regulated bond, niche enterprise adoption",
           "source": "SocGen Press Release",
           "url": "https://www.societegenerale.com/en/news/press-release/societe-generale-first-digital-green-bond-blockchain"
         },
@@ -15454,7 +15962,7 @@
       "prev_score": 68,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Elon-inspired meme coin with NFT game Valhalla and token-based university; marketing-heavy but ecosystem revenue negligible vs $290M market cap.",
+      "one_liner": "Elon-inspired meme coin with NFT game Valhalla and token-based university; marketing-heavy but system revenue negligible vs $290M market cap.",
       "key_catalyst": "Valhalla P2E game launch traction; FLOKI ETF filings in Asia; aggressive marketing campaigns",
       "key_risk": "91% below ATH; Valhalla game has not achieved meaningful player base; FLOKI brand tied to Elon Musk tweet cycles; meme coins face existential narrative rotation risk",
       "max_supply": 10000000000000.0,
@@ -15536,7 +16044,7 @@
       "verdict_color": "red",
       "one_liner": "Solana's top dog meme with fully diluted supply and $200M market cap; pure meme energy with no utility, revenue, or roadmap.",
       "key_catalyst": "Solana meme season; WIF cultural staying power as top-tier Solana native meme coin",
-      "key_risk": "95% below ATH with no fundamental floor; zero utility, revenue, or burn; meme cycles short; fully diluted supply means no unlock upside",
+      "key_risk": "95% below ATH with no fundamental floor; zero utility, revenue, or burn; meme cycles short; fully diluted supply means no open upside",
       "max_supply": 998926392.0,
       "total_supply": 998926392.0,
       "circulating_supply": 998926392.0,
@@ -15615,7 +16123,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "DePIN-focused L1 on Polkadot. Machine economy infrastructure.",
-      "key_catalyst": "DePIN ecosystem growth; real-world asset tokenization partnerships.",
+      "key_catalyst": "DePIN system growth; real-world asset tokenization partnerships.",
       "key_risk": "Early-stage adoption; competition from IoT blockchains like Helium.",
       "max_supply": 5667620228.64,
       "total_supply": 4409716976.402784,
@@ -15765,7 +16273,7 @@
         "KuCoin",
         "Gate.io"
       ],
-      "one_liner": "DPoS blockchain formerly Swipe. Solar wallet and DEX ecosystem.",
+      "one_liner": "DPoS blockchain formerly Swipe. Solar wallet and DEX system.",
       "price": 0.0022,
       "current_price_usd": 0.0022,
       "circulating_supply": 673393198.71,
@@ -15785,7 +16293,7 @@
       "cmc_slug": "solar",
       "citations": [],
       "key_catalyst": "Solar blockchain upgrades; cross-chain DeFi and payment adoption.",
-      "key_risk": "Regulatory uncertainty in payments; low ecosystem TVL.",
+      "key_risk": "Regulatory uncertainty in payments; low system TVL.",
       "tvl": 0
     },
     {
@@ -15869,7 +16377,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Native yield L2 that briefly held $2B TVL via points farming but collapsed post-airdrop; tokenomics are broken",
-      "key_catalyst": "Blast Big Bang ecosystem revival if native yield products attract real users beyond yield chasers",
+      "key_catalyst": "Blast Big Bang system revival if native yield products attract real users beyond yield chasers",
       "key_risk": "98.4% down from ATH; only 25% circulating with years of unlock pressure; yield farming narrative is played out",
       "max_supply": 100000000000.0,
       "total_supply": 100000000000.0,
@@ -15920,7 +16428,7 @@
           "url": "https://www.theblock.co/post/blast-airdrop"
         },
         {
-          "claim": "Only 25% of 100B BLAST supply circulating; Tier1 VC allocations unlock through 2027",
+          "claim": "Only 25% of 100B BLAST supply circulating; Tier1 VC allocations open through 2027",
           "source": "TokenUnlocks",
           "url": "https://token.unlocks.app/blast"
         }
@@ -15963,7 +16471,7 @@
         "treasury_runway": 4,
         "social_mindshare": 3
       },
-      "category": "DeFi/Leverage",
+      "category": "DeFi/use",
       "chain": "Ethereum",
       "token_standard": "ERC-20",
       "exchanges": "Binance, Bybit, KuCoin",
@@ -15972,7 +16480,7 @@
         "Bybit",
         "KuCoin"
       ],
-      "one_liner": "Leveraged trading protocol. Composable DeFi leverage.",
+      "one_liner": "Leveraged trading protocol. Composable DeFi use.",
       "price": 0.000175,
       "current_price_usd": 0.000175,
       "circulating_supply": 35000000000,
@@ -16158,7 +16666,7 @@
         "Coinbase",
         "Gate.io"
       ],
-      "one_liner": "Loot NFT ecosystem token. Community-driven gaming DAO.",
+      "one_liner": "Loot NFT system token. Community-driven gaming DAO.",
       "price": 0.23,
       "current_price_usd": 0.23,
       "circulating_supply": 87430001.0,
@@ -16177,7 +16685,7 @@
       "circ_supply_pct": 94.2,
       "cmc_slug": "adventure-gold",
       "citations": [],
-      "key_catalyst": "Loot NFT ecosystem revival; DAO treasury management.",
+      "key_catalyst": "Loot NFT system revival; DAO treasury management.",
       "key_risk": "Niche community; limited utility beyond governance.",
       "tvl": 0
     },
@@ -16241,7 +16749,7 @@
       "cmc_slug": "canto",
       "citations": [],
       "key_catalyst": "Free public goods funding via revenue from DeFi protocols on Canto L1.",
-      "key_risk": "Low liquidity and limited dApp ecosystem relative to larger L1s.",
+      "key_risk": "Low liquidity and limited dApp system relative to larger L1s.",
       "tvl": 0
     },
     {
@@ -16262,7 +16770,7 @@
       "verdict_color": "red",
       "one_liner": "Sharded Romanian L1 that rebranded to MultiversX; narrative exhausted with no meaningful DeFi or developer traction",
       "key_catalyst": "xExchange DEX and xFabric institutional suite could generate modest fee revenue",
-      "key_risk": "99%+ ATH drawdown, tiny TVL, ecosystem relies on local Romanian community, no global developer mindshare",
+      "key_risk": "99%+ ATH drawdown, tiny TVL, system relies on local Romanian community, no global developer mindshare",
       "max_supply": null,
       "total_supply": 30009303.0,
       "circulating_supply": 30009303.0,
@@ -16312,7 +16820,7 @@
           "url": "https://defillama.com/chain/MultiversX"
         },
         {
-          "claim": "MultiversX rebranded from Elrond in 2022 to target metaverse narrative — adoption remains niche",
+          "claim": "MultiversX rebranded from Elrond in 2022 to target metaverse narrative, adoption remains niche",
           "source": "MultiversX Blog",
           "url": "https://multiversx.com/blog"
         }
@@ -16391,7 +16899,7 @@
           "url": "https://defillama.com/chain/Oasis"
         },
         {
-          "claim": "Oasis backed by Binance Labs, Andreessen Horowitz — VC support strong but user adoption weak",
+          "claim": "Oasis backed by Binance Labs, Andreessen Horowitz, VC support strong but user adoption weak",
           "source": "Oasis Network Blog",
           "url": "https://oasisprotocol.org/blog"
         }
@@ -16465,7 +16973,7 @@
           "url": "https://dune.com/hildobby/NFTs"
         },
         {
-          "claim": "BLUR only 38% circulating; Paradigm and other investors hold large locked positions with ongoing unlock schedule",
+          "claim": "BLUR only 38% circulating; model and other investors hold large locked positions with ongoing unlock schedule",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/blur"
         },
@@ -16809,7 +17317,7 @@
       },
       "citations": [
         {
-          "claim": "KAVA ATH $9.12 in Jan 2022, now $0.060 — 99.3% drawdown",
+          "claim": "KAVA ATH $9.12 in Jan 2022, now $0.060, 99.3% drawdown",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/kava"
         },
@@ -16990,7 +17498,7 @@
       "verdict_color": "red",
       "one_liner": "Ethereum ZK-rollup DEX protocol that was first to market but lost the L2 race to Arbitrum, Optimism, and Base",
       "key_catalyst": "ZK-rollup technology still valid; Loopring 3.9 improvements could improve throughput for order-book DEX use case",
-      "key_risk": "Binance delisted LRC (stale data), negligible TVL vs. competing L2s, GameStop NFT marketplace shut down, no ecosystem growth",
+      "key_risk": "Binance delisted LRC (stale data), negligible TVL vs. competing L2s, GameStop NFT marketplace shut down, no system growth",
       "max_supply": 1374513896.0,
       "total_supply": 1373873397.442457,
       "circulating_supply": 1245991468.94246,
@@ -17040,7 +17548,7 @@
           "url": "https://investor.gamestop.com"
         },
         {
-          "claim": "Loopring TVL ~$18M, down from $250M peak in 2022; market share under 0.1% of Ethereum L2 ecosystem",
+          "claim": "Loopring TVL ~$18M, down from $250M peak in 2022; market share under 0.1% of Ethereum L2 system",
           "source": "DeFiLlama",
           "url": "https://defillama.com/protocol/loopring"
         }
@@ -17067,7 +17575,7 @@
       "prev_score": 71,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "DAG-based IoT ledger that spent 6 years rebuilding its coordinator; fully diluted with no DeFi ecosystem",
+      "one_liner": "DAG-based IoT ledger that spent 6 years rebuilding its coordinator; fully diluted with no DeFi system",
       "key_catalyst": "IOTA 2.0 decentralized protocol (no coordinator) finally live; Assembly smart contract layer in development",
       "key_risk": "Zero smart contract activity, no DeFi TVL, IoT machine-economy thesis never materialized, fully diluted supply already in circulation",
       "max_supply": null,
@@ -17109,7 +17617,7 @@
       },
       "citations": [
         {
-          "claim": "IOTA ATH $5.69 in Dec 2017; 99% below ATH with no DeFi ecosystem",
+          "claim": "IOTA ATH $5.69 in Dec 2017; 99% below ATH with no DeFi system",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/iota"
         },
@@ -17247,7 +17755,7 @@
       },
       "citations": [
         {
-          "claim": "Manta Network TVL declined from $800M+ peak during new paradigm farming to under $25M by 2026",
+          "claim": "Manta Network TVL declined from $800M+ peak during new model farming to under $25M by 2026",
           "source": "DefiLlama",
           "url": "https://defillama.com/chain/Manta%20Pacific"
         },
@@ -17286,7 +17794,7 @@
       "verdict_color": "red",
       "one_liner": "Pioneer play-to-earn NFT game that spawned an entire sector but collapsed under its own Ponzi tokenomics; $625M Ronin bridge hack accelerated the death spiral",
       "key_catalyst": "Axie Infinity Origins gaining mainstream mobile adoption and classic Axie revival",
-      "key_risk": "AXS/SLP tokenomics were Ponzi-structural; 99.3% ATH drawdown reflects the paradigm was never sustainable",
+      "key_risk": "AXS/SLP tokenomics were Ponzi-structural; 99.3% ATH drawdown reflects the model was never sustainable",
       "max_supply": 270000000.0,
       "total_supply": 270000000.0,
       "circulating_supply": 173384825.001344,
@@ -17634,8 +18142,8 @@
       "prev_score": 58,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Telegram tap-to-earn game token. 100% circulating supply means no unlock overhang but zero DeFi integration and massive user base already rewarded.",
-      "key_catalyst": "TON ecosystem growth; Telegram gaming expansion",
+      "one_liner": "Telegram tap-to-earn game token. 100% circulating supply means no open overhang but zero DeFi integration and massive user base already rewarded.",
+      "key_catalyst": "TON system growth; Telegram gaming expansion",
       "key_risk": "All users already rewarded; zero utility post-game; completely dependent on TON/Telegram narrative",
       "max_supply": 102456956842.91,
       "total_supply": 102452755868.5205,
@@ -17873,7 +18381,7 @@
       "verdict_color": "red",
       "one_liner": "OP Stack L2 focused on DeFi yield aggregation; lost relevance post-airdrop with no unique differentiation from Base/Optimism",
       "key_catalyst": "AI agent integration on Mode as a DeFi coordination layer for autonomous financial agents",
-      "key_risk": "91% down from ATH; TVL declining; undifferentiated L2 in a crowded OP Stack ecosystem; heavy unlock schedule",
+      "key_risk": "91% down from ATH; TVL declining; undifferentiated L2 in a crowded OP Stack system; heavy unlock schedule",
       "max_supply": 10000000000.0,
       "total_supply": 10000000000.0,
       "circulating_supply": 7008333334.0,
@@ -18032,7 +18540,7 @@
       "verdict_color": "red",
       "one_liner": "Chinese Ethereum from 2017 with dual-token model (NEO+GAS); the 'smart economy' never materialized",
       "key_catalyst": "Neo X EVM sidechain launched to attract Solidity developers; NeoFS decentralized storage could see enterprise use",
-      "key_risk": "Developer community minimal, China crypto regulations remain hostile, ecosystem produces GAS income but no protocol value accrual",
+      "key_risk": "Developer community minimal, China crypto regulations remain hostile, system produces GAS income but no protocol value accrual",
       "max_supply": null,
       "total_supply": 100000000.0,
       "circulating_supply": 70530000.0,
@@ -18072,7 +18580,7 @@
       },
       "citations": [
         {
-          "claim": "NEO ATH $198.38 in Jan 2018; 98.5% below ATH; ecosystem activity minimal",
+          "claim": "NEO ATH $198.38 in Jan 2018; 98.5% below ATH; system activity minimal",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/neo"
         },
@@ -18174,22 +18682,22 @@
     {
       "symbol": "SAND",
       "name": "The Sandbox",
-      "price": 0.07233,
-      "change_24h": 1.77,
-      "market_cap": 188219124,
+      "price": 0.05229,
+      "change_24h": 1.2,
+      "market_cap": 139500000,
       "rank": 221,
       "ath": 8.44,
-      "ath_distance_pct": -99.1,
+      "ath_distance_pct": -99.4,
       "tvl": 0,
       "circ_supply_pct": 70.0,
-      "volume_24h": 1405915,
-      "score": 68,
-      "prev_score": 61,
+      "volume_24h": 311887,
+      "score": 58,
+      "prev_score": 68,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Metaverse land/gaming token that attracted major brand partnerships but failed to deliver player adoption; another 2021 metaverse casualty down 99%+",
-      "key_catalyst": "Major brand activations (Adidas, Snoop Dogg) driving seasonal attention spikes",
-      "key_risk": "Metaverse hype entirely evaporated; SAND land NFTs are illiquid; Animoca's financial difficulties add team risk",
+      "one_liner": "-99.4% ATH. 4,500 DAU. Founders ousted. 50% layoffs. Staking dead. $312K daily vol. Metaverse narrative buried.",
+      "key_catalyst": "Sandbox NEXT mobile (UE5) full launch + SANDchain mainnet + Animoca Nasdaq Q3 2026",
+      "key_risk": "Animoca confirmed selling SAND pre-Nasdaq. Zero revenue. Zero burn. Zero staking. 333M SAND in insider wallets.",
       "max_supply": 3000000000.0,
       "total_supply": 3000000000.0,
       "circulating_supply": 2667289212.2233224,
@@ -18201,47 +18709,107 @@
       ],
       "cmc_slug": "the-sandbox",
       "scores": {
-        "protocol_revenue": 2,
-        "revenue_trend": 2,
-        "ps_multiple": 3,
-        "supply_inflation": 4,
-        "unlock_schedule": 4,
-        "circ_fdv_ratio": 5,
+        "protocol_revenue": 1,
+        "revenue_trend": 1,
+        "ps_multiple": 2,
+        "supply_inflation": 5,
+        "unlock_schedule": 6,
+        "circ_fdv_ratio": 6,
         "buyback_burn": 1,
-        "smart_money": 2,
-        "insider_selling": 2,
-        "holder_concentration": 3,
-        "staking_yield": 2,
+        "smart_money": 1,
+        "insider_selling": 1,
+        "holder_concentration": 2,
+        "staking_yield": 1,
         "tvl_trend": 1,
-        "active_users": 2,
+        "active_users": 1,
         "developer_activity": 3,
         "ecosystem_growth": 2,
-        "market_share": 2,
+        "market_share": 1,
         "competitive_moat": 2,
-        "institutional_adoption": 3,
-        "exchange_depth": 5,
-        "regulatory_safety": 5,
-        "catalyst_calendar": 2,
-        "btc_alpha": 2,
-        "team_execution": 3,
+        "institutional_adoption": 2,
+        "exchange_depth": 4,
+        "regulatory_safety": 4,
+        "catalyst_calendar": 3,
+        "btc_alpha": 1,
+        "team_execution": 2,
         "treasury_runway": 3,
-        "social_mindshare": 3
+        "social_mindshare": 2
       },
       "citations": [
         {
-          "claim": "The Sandbox partnered with 400+ brands including Adidas, Gucci, and Snoop Dogg but DAU never exceeded 10K sustainably",
-          "source": "The Sandbox",
-          "url": "https://www.sandbox.game"
+          "claim": "On-chain DAU approximately 4,500 (May 2026)",
+          "source": "CoinMarketCap Analysis",
+          "url": "https://coinmarketcap.com/currencies/the-sandbox/"
         },
         {
-          "claim": "SAND down 99.1% from ATH of $8.44; Animoca Brands (parent) reportedly faced fundraising difficulties in 2023-2024",
-          "source": "CoinGecko",
-          "url": "https://www.coingecko.com/en/coins/the-sandbox"
+          "claim": "50%+ workforce cut (~250 employees), offices closed in Argentina, Uruguay, S. Korea, Thailand, Turkey, Lyon",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2025/08/28/the-sandbox-cuts-50-staff-restructures-as-animoca-brands-take-control"
         },
         {
-          "claim": "Metaverse virtual real estate average sale prices collapsed 90%+ from 2022 peak across Sandbox, Decentraland, and Otherside",
-          "source": "DappRadar",
-          "url": "https://dappradar.com/blog/metaverse-real-estate"
+          "claim": "Arthur Madrid removed from CEO → Non-Exec Chairman. Borget removed from COO → Global Ambassador",
+          "source": "Blockworks",
+          "url": "https://blockworks.com/news/sandbox-co-founders-ousted-layoffs"
+        },
+        {
+          "claim": "Animoca deposited 25M+ SAND ($8.65M) to Binance in November 2024",
+          "source": "Cryptopolitan",
+          "url": "https://www.cryptopolitan.com/sandbox-rallies-animoca-deposit-to-binance/"
+        },
+        {
+          "claim": "LAND floor 0.036 ETH (~$65), -98% from peak 2.86 ETH. 12 daily LAND buyers (Q1 2025 Messari)",
+          "source": "OpenSea / Messari",
+          "url": "https://messari.io/report/the-sandbox-q1-2025-brief"
+        },
+        {
+          "claim": "Alpha Season 7: 32 experiences, 650K SAND rewards ($34K). Season 5+6 combined: 144K players",
+          "source": "PlayToEarn",
+          "url": "https://playtoearn.com/news/the-sandbox-unveils-2025-year-in-review"
+        },
+        {
+          "claim": "Staking rewards TERMINATED June 26, 2025. No replacement program.",
+          "source": "Sandbox Docs",
+          "url": "https://docs.sandbox.game/en/owners/staking"
+        },
+        {
+          "claim": "Sandbox NEXT mobile playtest (UE5, extraction survival) March 26-29 + April 2-9, 2026",
+          "source": "PRNewswire",
+          "url": "https://www.prnewswire.co.uk/news-releases/the-sandbox-opens-pre-registration-for-the-sandbox-next-mobile-playtest-built-on-unreal-engine-302718085.html"
+        },
+        {
+          "claim": "SANDchain (ZKsync L2) testnet Oct 14, 2025. Mainnet target 2026, not yet launched.",
+          "source": "Caldera",
+          "url": "https://caldera.xyz/blog/sandchain-now-live-on-caldera"
+        },
+        {
+          "claim": "Animoca Nasdaq listing via reverse merger with Currenc Group, target Q3 2026",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-11-03/animoca-brands-plans-nasdaq-listing-through-reverse-merger"
+        },
+        {
+          "claim": "Meme coin launchpad pivot on Base announced Aug 2025, then walked back/denied",
+          "source": "CryptoBriefing",
+          "url": "https://cryptobriefing.com/sandbox-meme-coins-strategy-shift/"
+        },
+        {
+          "claim": "Animoca moved SAND reserves off-balance-sheet in Mar 2024. $2.9B total off-BS token reserves (Q4 2024)",
+          "source": "Animoca Brands",
+          "url": "https://www.animocabrands.com/animoca-brands-update-on-financial-position-as-of-31-march-2024"
+        },
+        {
+          "claim": "Roblox 214M MAU, Fortnite 236M users. Sandbox: hundreds of DAU. Not competitive.",
+          "source": "Various",
+          "url": "https://www.geekmetaverse.com/the-ugc-metaverse-why-roblox-and-fortnite-are-winning-the-future/"
+        },
+        {
+          "claim": "Metaverse LAND prices -95% from peak. Meta burned $90B on metaverse, retreated Mar 2026.",
+          "source": "CoinGecko Research",
+          "url": "https://www.coingecko.com/research/publications/metaverse-land-prices"
+        },
+        {
+          "claim": "Vesting fully complete Feb 2025. 88.9% circulating. 333M in insider wallets, fully liquid.",
+          "source": "Tokenomist",
+          "url": "https://tokenomist.ai/the-sandbox"
         }
       ],
       "current_price_usd": 0.07233,
@@ -18266,7 +18834,7 @@
       "prev_score": 66,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Rebranded SuperFarm gaming/NFT ecosystem with celebrity associations that never translated to user adoption; token structurally impaired",
+      "one_liner": "Rebranded SuperFarm gaming/NFT system with celebrity associations that never translated to user adoption; token structurally impaired",
       "key_catalyst": "SuperVerse metaverse game launch attracting P2E players",
       "key_risk": "Gaming/metaverse sector in prolonged bear market; no active games generating revenue; team credibility issues",
       "max_supply": 1000000000.0,
@@ -18346,7 +18914,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Move language L1 down 98.6% from ATH following market maker scandal and insider dumping; project credibility severely damaged",
-      "key_catalyst": "Move language adoption if Aptos/Sui success creates demand for Movement ecosystem",
+      "key_catalyst": "Move language adoption if Aptos/Sui success creates demand for Movement system",
       "key_risk": "Market maker manipulation scandal in 2025 destroyed community trust; one of worst token performance records in top-200; near zero TVL",
       "max_supply": 10000000000.0,
       "total_supply": 10000000000.0,
@@ -18584,7 +19152,7 @@
       "verdict_color": "red",
       "one_liner": "2018-era sharding chain that lost the scalability race; GameFi pivot failed to gain traction",
       "key_catalyst": "Zilliqa 2.0 EVM upgrade could attract some EVM developers",
-      "key_risk": "Irrelevant tech, ghost ecosystem, near-zero TVL, no institutional interest",
+      "key_risk": "Irrelevant tech, ghost system, near-zero TVL, no institutional interest",
       "max_supply": 21000000000.0,
       "total_supply": 20463283499.12714,
       "circulating_supply": 19513551525.0,
@@ -18629,7 +19197,7 @@
           "url": "https://www.coingecko.com/en/coins/zilliqa"
         },
         {
-          "claim": "ZIL TVL under $2M, ecosystem activity near zero",
+          "claim": "ZIL TVL under $2M, system activity near zero",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Zilliqa"
         },
@@ -18740,8 +19308,8 @@
       "prev_score": 52,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Telegram meme coin distributed via airdrop to community. No utility beyond speculation. Purely a TON ecosystem sentiment trade.",
-      "key_catalyst": "TON ecosystem growth; Telegram integration announcements",
+      "one_liner": "Telegram meme coin distributed via airdrop to community. No utility beyond speculation. Purely a TON system sentiment trade.",
+      "key_catalyst": "TON system growth; Telegram integration announcements",
       "key_risk": "Zero utility; airdrop recipients mostly dumped; no development activity; 74% below ATH",
       "max_supply": 550000000000.0,
       "total_supply": 550000000000.0,
@@ -18819,9 +19387,9 @@
       "prev_score": 62,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "2017-era Bitcoin UTXO + Ethereum EVM hybrid; technically obsolete and ecosystem is a ghost town",
-      "key_catalyst": "None identifiable — chain is in maintenance mode with minimal development activity",
-      "key_risk": "Effectively dead ecosystem, volume at historical lows, no institutional interest, zero DeFi innovation",
+      "one_liner": "2017-era Bitcoin UTXO + Ethereum EVM hybrid; technically obsolete and system is a ghost town",
+      "key_catalyst": "None identifiable, chain is in maintenance mode with minimal development activity",
+      "key_risk": "Effectively dead system, volume at historical lows, no institutional interest, zero DeFi innovation",
       "max_supply": null,
       "total_supply": 107822406.0,
       "circulating_supply": 106032020.75,
@@ -18861,12 +19429,12 @@
       },
       "citations": [
         {
-          "claim": "QTUM ATH $100.61 in Jan 2018; now 99.1% below ATH with ecosystem essentially dead",
+          "claim": "QTUM ATH $100.61 in Jan 2018; now 99.1% below ATH with system essentially dead",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/qtum"
         },
         {
-          "claim": "Qtum TVL under $1M — among the lowest of any named L1",
+          "claim": "Qtum TVL under $1M, among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum"
         },
@@ -18940,7 +19508,7 @@
       },
       "citations": [
         {
-          "claim": "Memecoin (MEME) has no protocol utility, revenue, or fundamental value proposition",
+          "claim": "Memecoin (MEME) has no protocol utility, revenue, or fundamental value case",
           "source": "CoinMarketCap",
           "url": "https://coinmarketcap.com/currencies/memecoin-2"
         },
@@ -19125,7 +19693,7 @@
       "prev_score": 57,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "PoW blockchain with 20-chain sharding that promised infinite scale; ecosystem is effectively dead",
+      "one_liner": "PoW blockchain with 20-chain sharding that promised infinite scale; system is effectively dead",
       "key_catalyst": "Kadena SpireKey wallet and Marmalade NFT standard could attract niche developers",
       "key_risk": "Near-zero TVL (<$500K), trading halted on Binance (data stale), PoW in 2026 is a liability not an asset",
       "max_supply": 1000000000.0,
@@ -19177,7 +19745,7 @@
           "url": "https://defillama.com/chain/Kadena"
         },
         {
-          "claim": "Kadena uses PoW with 20 parallel chains — no staking yield, high inflation from mining",
+          "claim": "Kadena uses PoW with 20 parallel chains, no staking yield, high inflation from mining",
           "source": "Kadena Docs",
           "url": "https://docs.kadena.io/build/pact/concepts"
         }
@@ -19204,8 +19772,8 @@
       "prev_score": 50,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Sharded L1 permanently damaged by the $100M Horizon bridge hack; trust destroyed, ecosystem never recovered",
-      "key_catalyst": "None — bridge hack compensation was never fully addressed; reputational damage is permanent",
+      "one_liner": "Sharded L1 permanently damaged by the $100M Horizon bridge hack; trust destroyed, system never recovered",
+      "key_catalyst": "None, bridge hack compensation was never fully addressed; reputational damage is permanent",
       "key_risk": "$100M bridge exploit in June 2022 uncompensated, developer exodus complete, TVL essentially zero",
       "max_supply": null,
       "total_supply": 14870212769.762915,
@@ -19251,7 +19819,7 @@
           "url": "https://rekt.news/harmony-rekt"
         },
         {
-          "claim": "ONE down 99.5% from ATH of $0.38; ecosystem TVL near zero",
+          "claim": "ONE down 99.5% from ATH of $0.38; system TVL near zero",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/harmony"
         },

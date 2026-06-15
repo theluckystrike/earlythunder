@@ -21,7 +21,7 @@ export const SIGNAL_DETAILS: readonly SignalDetailData[] = [
   {
     key: "smart_money",
     description:
-      "Monitors where sophisticated capital is flowing before the crowd follows. Tracks venture funding rounds, whale wallet movements, and institutional filing data.",
+      "Monitors where smart capital is flowing before the crowd follows. Tracks venture funding rounds, whale wallet movements, and institutional filing data.",
     example: "Multiple Tier 1 VCs investing in consecutive rounds with increasing valuations.",
   },
   {
@@ -51,7 +51,7 @@ export const SIGNAL_DETAILS: readonly SignalDetailData[] = [
   {
     key: "obscurity",
     description:
-      "Measures how few people know about this opportunity. Tracks Google Trends volume, social media mentions, exchange listing count, and mainstream media coverage. The highest scores go to opportunities that sophisticated investors actively dismiss or have never heard of. When your Uber driver mentions it, the asymmetry is gone.",
+      "Measures how few people know about this opportunity. Tracks Google Trends volume, social media mentions, exchange listing count, and mainstream media coverage. The highest scores go to opportunities that experienced investors actively dismiss or have never heard of. When your Uber driver mentions it, the asymmetry is gone.",
     example: "A project known only in niche Discord communities with zero mainstream coverage scores 90+. A CNBC regular discussion topic scores below 20.",
   },
 ] as const;

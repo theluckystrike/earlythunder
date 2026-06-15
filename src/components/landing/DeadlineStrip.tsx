@@ -1,4 +1,4 @@
-/* DeadlinesGrid — 4-card deadline tracker. Server Component. */
+/* DeadlinesGrid, 4-card deadline tracker. Server Component. */
 
 interface DeadlinesGridProps {
   readonly deadlines: readonly {
@@ -63,7 +63,7 @@ function DeadlineCard({
         <span className={statusClass(d.status, d.urgency)}>{d.status}</span>
       </div>
       <div className="deadline__bot">
-        <span className="deadline__days mono">{daysLeft ?? "—"}</span>
+        <span className="deadline__days mono">{daysLeft ?? ", "}</span>
         <span className="deadline__label">days left</span>
         <span className="deadline__date">{dateLabel}</span>
       </div>
@@ -88,7 +88,7 @@ export default function DeadlineStrip({ deadlines }: DeadlinesGridProps) {
     <section className="section">
       <div className="section__head">
         <div>
-          <div className="section__eyebrow mono">04 &mdash; DEADLINE TRACKER</div>
+          <div className="section__eyebrow mono">04, DEADLINE TRACKER</div>
           <h2 className="section__title">Don&apos;t miss the window</h2>
           <p className="section__sub">
             23 active countdowns across points programs, mainnet launches, and

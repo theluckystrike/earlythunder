@@ -1,2 +1,4 @@
+/opportunities/eth /opportunities/ethereum 301
+/opportunities/btc /opportunities/bitcoin 301
 /opportunities/* /opportunities/:splat 200
 /blog/* /blog/:splat 200

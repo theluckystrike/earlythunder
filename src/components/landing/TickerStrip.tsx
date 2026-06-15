@@ -1,4 +1,4 @@
-/* TickerStrip — Bloomberg-style scrolling ticker tape. Server Component. */
+/* TickerStrip, Bloomberg-style scrolling ticker tape. Server Component. */
 
 export interface TickerItem {
   readonly tag: string;

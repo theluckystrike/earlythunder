@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Pricing — Free During Open Alpha | Early Thunder",
+  title: "Pricing, Free During Open Alpha | Early Thunder",
   description:
     "All Early Thunder features are free during the open alpha. Full thesis access, 8-signal radar charts, catalyst tracking, and research reports -- no credit card required.",
   openGraph: {
-    title: "Pricing — Free During Open Alpha | Early Thunder",
+    title: "Pricing, Free During Open Alpha | Early Thunder",
     description:
       "All features free during open alpha. Full intelligence pipeline, radar charts, and research reports at no cost.",
   },

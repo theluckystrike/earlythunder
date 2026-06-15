@@ -76,8 +76,8 @@ function buildPageData() {
       c: (o.composite_score >= 85 ? "elite" : "high") as "elite" | "high",
     })),
     { tag: "YIELD", k: topYield.symbol, v: `+${topYield.earnings_yield_pct.toLocaleString()}%`, c: "pos" as const },
-    { tag: "DEADLINE", k: nearestDeadline?.protocol || "\u2014", v: "15d", c: "neg" as const },
-    { tag: "PIPELINE", k: "scan", v: `${opportunities.length}/${opportunities.length} \u2713`, c: "pos" as const },
+    { tag: "DEADLINE", k: nearestDeadline?.protocol || "-", v: "15d", c: "neg" as const },
+    { tag: "PIPELINE", k: "scan", v: `${opportunities.length}/${opportunities.length} OK`, c: "pos" as const },
   ];
 
   const topOpportunities = opportunities.slice(0, 8).map((o) => ({
@@ -139,7 +139,7 @@ export default function HomePage() {
         totalOpportunities={opportunities.length}
         topOpportunities={topOpportunities}
         nearestDeadline={{
-          protocol: nearestDeadline?.protocol || "\u2014",
+          protocol: nearestDeadline?.protocol || "-",
           daysLeft: nearestDeadline?.end_date
             ? Math.max(0, Math.ceil((new Date(nearestDeadline.end_date).getTime() - Date.now()) / 86400000))
             : 15,

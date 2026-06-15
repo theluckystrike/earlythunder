@@ -21,7 +21,7 @@ const HOW_IT_WORKS_STEPS = [
   },
   {
     name: "Score",
-    text: "Each opportunity is evaluated against the 8-Signal Pattern Filter — the same eight characteristics shared by Bitcoin at $0.001, Ethereum at $0.30, and DeFi protocols before Summer 2020. Every signal is scored 0-100 and weighted to produce a composite pattern match score.",
+    text: "Each opportunity is evaluated against the 8-Signal Pattern Filter, the same eight characteristics shared by Bitcoin at $0.001, Ethereum at $0.30, and DeFi protocols before Summer 2020. Every signal is scored 0-100 and weighted to produce a composite pattern match score.",
   },
   {
     name: "Track",

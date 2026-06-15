@@ -1,4 +1,4 @@
-/* NumbersStrip (StatsStrip) — Full-width stats bar. Server Component. */
+/* NumbersStrip (StatsStrip), Full-width stats bar. Server Component. */
 
 export interface StatsStripProps {
   readonly stats: readonly {

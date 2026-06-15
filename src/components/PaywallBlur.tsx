@@ -3,7 +3,7 @@ interface PaywallBlurProps {
   readonly bypass?: boolean;
 }
 
-/** Pass-through wrapper — paywall removed. */
+/** Pass-through wrapper, paywall removed. */
 export default function PaywallBlur({ children }: PaywallBlurProps) {
   return <>{children}</>;
 }

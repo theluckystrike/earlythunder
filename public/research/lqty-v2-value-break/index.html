@@ -28,41 +28,114 @@
   "mainEntityOfPage": "https://earlythunder.com/research/lqty-v2-value-break/"
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{background:#0a0a0f;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,sans-serif;line-height:1.8;min-height:100vh}
-a{color:#d4a017;text-decoration:none;transition:color .2s}a:hover{color:#f0c040}
-nav{background:#0d0d14;border-bottom:1px solid #1a1a2e;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;position:sticky;top:0;z-index:100}
-.nav-brand{font-size:1.25rem;font-weight:700;color:#d4a017;letter-spacing:1px}
-.nav-links{display:flex;gap:1.5rem;flex-wrap:wrap}.nav-links a{color:#a0a0b0;font-size:.9rem;font-weight:500}.nav-links a:hover,.nav-links a.active{color:#d4a017}
-.article-container{max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem}
-.article-meta{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid #1a1a2e;color:#888;font-size:.85rem}
-.article-meta .date{color:#d4a017}.article-meta .reading-time{color:#a0a0b0}.article-meta .tag{background:#1a1a2e;color:#d4a017;padding:.15rem .6rem;border-radius:3px;font-size:.75rem}
-h1{font-size:2rem;line-height:1.3;margin-bottom:1.5rem;color:#fff;font-weight:700}
-h2{font-size:1.5rem;margin-top:2.5rem;margin-bottom:1rem;color:#fff;border-left:3px solid #d4a017;padding-left:.75rem}
-h3{font-size:1.2rem;margin-top:2rem;margin-bottom:.75rem;color:#e8e8e8}
-p{margin-bottom:1.25rem;color:#d0d0d0}strong{color:#fff}em{color:#c0c0c0}
-ul,ol{margin-bottom:1.25rem;padding-left:1.5rem}li{margin-bottom:.5rem;color:#d0d0d0}
+body{background:#0A0B0F;color:#F0F0F3;font-family:'Geist',system-ui,-apple-system,sans-serif;line-height:1.8;min-height:100vh}
+a{color:#F5A623;text-decoration:none;transition:color .2s}a:hover{color:#F5A623;opacity:0.8}
+
+
+
+.article-container{max-width:900px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.article-meta{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid #2A2C38;color:#5C5E6A;font-size:.85rem}
+.article-meta .date{color:#F5A623}.article-meta .reading-time{color:#9496A1}.article-meta .tag{background:rgba(245,166,35,0.15);color:#F5A623;padding:.15rem .6rem;border-radius:3px;font-size:.75rem}
+h1{font-size:2.25rem;line-height:1.3;margin-bottom:1.5rem;color:#F0F0F3;font-weight:600;letter-spacing:-0.03em}
+h2{font-size:1.5rem;margin-top:2.5rem;margin-bottom:1rem;color:#F0F0F3;border-left:3px solid #F5A623;padding-left:.75rem}
+h3{font-size:1.2rem;margin-top:2rem;margin-bottom:.75rem;color:#F0F0F3}
+p{margin-bottom:1.25rem;color:#d0d0d5}strong{color:#fff}em{color:#c0c0c0}
+ul,ol{margin-bottom:1.25rem;padding-left:1.5rem}li{margin-bottom:.5rem;color:#d0d0d5}
 table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.85rem;overflow-x:auto;display:block}
-thead{background:#12121f}th{padding:.75rem .8rem;text-align:left;color:#d4a017;font-weight:600;border-bottom:2px solid #d4a017;white-space:nowrap}
-td{padding:.75rem .8rem;border-bottom:1px solid #1a1a2e;color:#d0d0d0}tr:hover td{background:#12121f}
-hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
-.back-links{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:3rem;padding-top:1.5rem;border-top:1px solid #1a1a2e}
-.back-links a{display:inline-flex;align-items:center;gap:.4rem;color:#d4a017;font-size:.9rem;font-weight:500}.back-links a:hover{color:#f0c040}
-.disclaimer{margin-top:2rem;padding:1rem;background:#0d0d14;border:1px solid #1a1a2e;border-radius:6px;font-size:.8rem;color:#888;font-style:italic}
+thead{background:#1A1B24}th{padding:.75rem .8rem;text-align:left;color:#F5A623;font-weight:600;border-bottom:2px solid #F5A623;white-space:nowrap}
+td{padding:.75rem .8rem;border-bottom:1px solid #2A2C38;color:#d0d0d5}tr:hover td{background:#1A1B24}
+hr{border:none;border-top:1px solid #2A2C38;margin:2rem 0}
+.back-links{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:3rem;padding-top:1.5rem;border-top:1px solid #2A2C38}
+.back-links a{display:inline-flex;align-items:center;gap:.4rem;color:#F5A623;font-size:.9rem;font-weight:500}.back-links a:hover{color:#F5A623;opacity:0.8}
+.disclaimer{margin-top:2rem;padding:1rem;background:#1A1B24;border:1px solid #2A2C38;border-radius:16px;font-size:.8rem;color:#5C5E6A;font-style:italic}
 @media(max-width:600px){h1{font-size:1.5rem}h2{font-size:1.25rem}.article-container{padding:1.25rem 1rem 3rem}nav{padding:.75rem 1rem}.nav-links{gap:1rem}table{font-size:.75rem}th,td{padding:.5rem .5rem}}
+
+/* === STANDARD NAV (matches Next.js Header) === */
+.et-nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: 56px;
+    z-index: 100;
+    background: rgba(10, 11, 15, 0.85);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    border-bottom: 1px solid #2A2C38;
+}
+.et-nav__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
+}
+.et-nav__logo {
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 600; font-size: 15px; letter-spacing: -0.01em;
+    color: #F0F0F3;
+    text-decoration: none;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__logo:hover { text-decoration: none; color: #F0F0F3; }
+.et-nav__links {
+    display: flex; gap: 28px;
+    list-style: none; margin: 0; padding: 0;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__links a {
+    color: #9496A1;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 150ms;
+}
+.et-nav__links a:hover { color: #F0F0F3; text-decoration: none; }
+.et-nav__links a.active { color: #F0F0F3; }
+.et-nav__cta {
+    display: flex; gap: 8px; align-items: center; justify-content: flex-end;
+}
+.et-nav__cta a {
+    font-size: 14px; padding: 8px 16px; border-radius: 8px;
+    text-decoration: none; transition: all 150ms;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+.et-nav__cta .et-ghost {
+    color: #9496A1; background: transparent; border: 1px solid transparent;
+}
+.et-nav__cta .et-ghost:hover { color: #F0F0F3; }
+.et-nav__cta .et-primary {
+    color: #0A0B0F; background: #F0F0F3; font-weight: 500; border: none;
+}
+.et-nav__cta .et-primary:hover { opacity: 0.9; }
+/* Push body down to account for fixed nav */
+body { padding-top: 56px; }
+@media(max-width: 720px) {
+    .et-nav__links { display: none; }
+    .et-nav__cta { display: none; }
+    .et-nav__inner { grid-template-columns: 1fr; padding: 0 24px; justify-items: center; }
+}
+
 </style>
 </head>
 <body>
-<nav>
-  <div class="nav-brand">EarlyThunder</div>
-  <div class="nav-links">
-    <a href="/">Home</a><a href="/dashboard">Opportunities</a><a href="/blog">Blog</a><a href="/intelligence/">Intelligence</a><a href="/research/" class="active">Research</a>
+<header class="et-nav">
+  <div class="et-nav__inner">
+    <a href="/" class="et-nav__logo">EarlyThunder</a>
+    <nav class="et-nav__links"><a href="/intelligence/">Intelligence</a><a href="/opportunities/">Opportunities</a><a href="/research/" class="active">Research</a><a href="/earnings/">Earnings</a><a href="/deadlines/">Deadlines</a><a href="/scorecard/">Scorecard</a></nav>
+    <div class="et-nav__cta">
+      <a href="/pricing/" class="et-ghost">Sign in</a>
+      <a href="/intelligence/" class="et-primary">Open Terminal →</a>
+    </div>
   </div>
-</nav>
+</header>
 <main class="article-container">
   <article>
-    <h1>LQTY V2 Broke Value Accrual: Why We Reduced Our Position</h1>
+    <h1>LQTY V2 Broke Value Accrual - Why We Reduced Our Position</h1>
     <div class="article-meta">
       <span class="date">May 10, 2026</span>
       <span class="reading-time">6 min read</span>
@@ -71,7 +144,7 @@ hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
       <span class="tag">DeFi</span>
     </div>
 
-    <p>We were wrong about this one. Not completely wrong -- the thesis had logic. But Liquity V2 changed the protocol's economic structure in a way that invalidated our core reason for holding.</p>
+    <p>We were wrong about this one. Not completely wrong, the thesis had logic. But Liquity V2 changed the protocol's economic structure in a way that invalidated our core reason for holding.</p>
 
     <h2>Our Original Thesis</h2>
     <p>LQTY at $0.34, down 99.5% from its April 2021 ATH of $56.94. The contrarian case:</p>
@@ -100,23 +173,23 @@ hr{border:none;border-top:1px solid #1a1a2e;margin:2rem 0}
         <tr><td>Holders</td><td>14,285 addresses</td></tr>
       </tbody>
     </table>
-    <p>V2 TVL collapsed 86% in six months. The $177M peak was incentive farmers who deposited, farmed, and left. Revenue is $471 per day -- $172K annualized on a $30M market cap. That is a 175x revenue multiple. Hyperliquid trades at roughly 15x. Even a 10x revenue increase would leave LQTY at 17.5x on $30M -- and there is no catalyst for that increase when TVL is shrinking.</p>
+    <p>V2 TVL collapsed 86% in six months. The $177M peak was incentive farmers who deposited, farmed, and left. Revenue is $471 per day, $172K annualized on a $30M market cap. That is a 175x revenue multiple. Hyperliquid trades at roughly 15x. Even a 10x revenue increase would leave LQTY at 17.5x on $30M, and there is no catalyst for that increase when TVL is shrinking.</p>
 
     <h2>The Red-Team Finding</h2>
-    <p>Our adversarial analysis assigned LQTY a 55% probability of a further 50% drawdown within 90 days -- the highest risk in the portfolio. Three findings:</p>
-    <p><strong>The V2 shift is permanent (70% probability).</strong> This is structural. The protocol was redesigned to favor BOLD depositors. No governance vote will reverse the core design philosophy.</p>
-    <p><strong>Thin liquidity amplifies downside.</strong> With 14,285 holders and $30M market cap, a single whale dumping 5% of supply could move the price 20-30%.</p>
-    <p><strong>BOLD's success is decoupled from LQTY's price.</strong> The A- rating is great for BOLD users. But BOLD does not need LQTY to succeed. You can be bullish BOLD and bearish LQTY simultaneously -- they are no longer linked.</p>
+    <p>Our adversarial analysis assigned LQTY a 55% probability of a further 50% drawdown within 90 days, the highest risk in the portfolio. Three findings:</p>
+    <p>The V2 shift is permanent (70% probability). This is structural. The protocol was redesigned to favor BOLD depositors. No governance vote will reverse the core design philosophy.</p>
+    <p>Thin liquidity amplifies downside. With 14,285 holders and $30M market cap, a single whale dumping 5% of supply could move the price 20-30%.</p>
+    <p>BOLD's success is decoupled from LQTY's price. The A- rating is great for BOLD users. But BOLD does not need LQTY to succeed. You can be bullish BOLD and bearish LQTY simultaneously, they are no longer linked.</p>
 
     <h2>Our Action</h2>
     <p>Reduced LQTY from 20% to 10% of portfolio. Sold $1,000, moved to stablecoin reserves.</p>
     <p>We kept 10% as a lottery ticket. The residual bull case: 96% of supply is circulating (no dilution), and at $30M market cap, even a modest narrative shift moves the needle. But this is no longer a conviction position.</p>
-    <p><strong>Exit triggers:</strong> V2 TVL below $15M, or BOLD supply fails to exceed $50M by Q3 2026.</p>
-    <p><strong>Re-entry criteria:</strong> V2 TVL above $100M sustained 30+ days, BOLD supply above $50M, daily revenue above $2,000. None are close to being met.</p>
+    <p>Exit triggers: V2 TVL below $15M, or BOLD supply fails to exceed $50M by Q3 2026.</p>
+    <p>Re-entry criteria: V2 TVL above $100M sustained 30+ days, BOLD supply above $50M, daily revenue above $2,000. None are close to being met.</p>
 
     <h2>The Lesson</h2>
     <p>"Down 95% from ATH" is not a buy signal. It can mean the market correctly priced in a structural change the buyer has not internalized.</p>
-    <p>LQTY at $0.34 looked like deep value through V1 economics. Fees were real, the protocol was battle-tested, and the fair-launch narrative differentiated it. But V2 changed the model. The fees are still real -- they just flow somewhere else now.</p>
+    <p>LQTY at $0.34 looked like deep value through V1 economics. Fees were real, the protocol was battle-tested, and the fair-launch narrative differentiated it. But V2 changed the model. The fees are still real, they just flow somewhere else now.</p>
     <p>The broader pattern applies to any protocol undergoing a major version upgrade. Sometimes V2 improves the protocol while breaking the token's value capture. When evaluating "down 95%" positions, the first question is not "is this cheap?" but "does the token still capture the same economic flows it captured at ATH?" If the answer is no, the drawdown is not a discount. It is a repricing.</p>
     <p>We publish this because the analytical process matters more than any single trade. A portfolio that never acknowledges errors is a portfolio that compounds them.</p>
 

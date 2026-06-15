@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-/** Routes served as standalone HTML from public/ — use <a> tags, not <Link>. */
+/** Routes served as standalone HTML from public/, use <a> tags, not <Link>. */
 const STANDALONE_ROUTES = new Set([
   "/intelligence/",
   "/earnings/",
@@ -32,6 +32,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
     title: "RESEARCH",
     links: [
       { href: "/research/", label: "Library" },
+      { href: "/guides", label: "Guides" },
       { href: "/blog", label: "Blog" },
       { href: "/graveyard", label: "Graveyard" },
       { href: "/performance", label: "Performance" },
@@ -55,7 +56,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
   },
 ];
 
-/** Render a single link — standalone <a> or Next.js <Link>. */
+/** Render a single link, standalone <a> or Next.js <Link>. */
 function FooterAnchor({ href, label }: FooterLink) {
   if (STANDALONE_ROUTES.has(href)) {
     return <a href={href}>{label}</a>;

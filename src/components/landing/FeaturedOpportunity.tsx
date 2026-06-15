@@ -32,7 +32,7 @@ const SIGNAL_SOURCES: Record<keyof Signals, string> = {
   dev_activity: "GH commits 30d",
   smart_money: "Nansen \u00B7 Arkham",
   community: "X velocity \u00B7 Discord",
-  catalyst: "Token unlock timing",
+  catalyst: "token unlock timing",
   narrative: "Mindshare delta",
   valuation_gap: "Fees/FDV ratio",
   obscurity: "DAU penetration",
@@ -152,9 +152,9 @@ function SignalCardLeft({ opportunity }: SignalCardLeftProps) {
 
   /* Placeholder metrics derived from opportunity data */
   const metrics: readonly MetricItem[] = [
-    { label: "TVL", value: "\u2014" },
-    { label: "Annualized rev", value: "\u2014" },
-    { label: "Perps share", value: "\u2014" },
+    { label: "TVL", value: "-" },
+    { label: "Annualized rev", value: "-" },
+    { label: "Perps share", value: "-" },
     { label: "Sources", value: "8" },
     { label: "Updated", value: "today" },
   ];
@@ -225,7 +225,7 @@ function SignalCard({ opportunity }: SignalCardProps) {
 /* ─── TopSignal (default export, section wrapper) ─── */
 
 /**
- * Section 02 — Top Signal. Displays the highest-conviction opportunity
+ * Section 02, Top Signal. Displays the highest-conviction opportunity
  * with full signal dimension breakdown.
  */
 export default function FeaturedOpportunity({
@@ -239,7 +239,7 @@ export default function FeaturedOpportunity({
       <div className="section__head">
         <div>
           <div className="section__eyebrow mono">
-            02 &mdash; TOP SIGNAL &middot; CONVICTION {score}
+            02, TOP SIGNAL &middot; CONVICTION {score}
           </div>
           <h2 className="section__title">Highest conviction this week</h2>
           <p className="section__sub">

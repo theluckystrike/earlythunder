@@ -681,7 +681,7 @@ tr.row-dim td { color: var(--text-dim); }
 </head>
 <body>
 
-<!-- HEADER -->
+<!, HEADER ,>
 <div class="header">
     <div class="header-left">
         <div>
@@ -690,17 +690,17 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
     <div class="header-market" id="headerMarket">
-        <span class="mkt-item">BTC <span class="mkt-val" id="hdrBtc">--</span> <span class="mkt-chg" id="hdrBtcChg">--</span></span>
-        <span class="mkt-item">ETH <span class="mkt-val" id="hdrEth">--</span> <span class="mkt-chg" id="hdrEthChg">--</span></span>
-        <span class="mkt-item">F&amp;G <span class="mkt-val" id="hdrFG">--</span></span>
+        <span class="mkt-item">BTC <span class="mkt-val" id="hdrBtc">,</span> <span class="mkt-chg" id="hdrBtcChg">,</span></span>
+        <span class="mkt-item">ETH <span class="mkt-val" id="hdrEth">,</span> <span class="mkt-chg" id="hdrEthChg">,</span></span>
+        <span class="mkt-item">F&amp;G <span class="mkt-val" id="hdrFG">,</span></span>
     </div>
     <div class="header-right">
-        <span class="last-refresh" id="lastRefresh">--</span>
+        <span class="last-refresh" id="lastRefresh">,</span>
         <button class="refresh-btn" id="refreshBtn" onclick="refreshAll()">REFRESH DATA</button>
     </div>
 </div>
 
-<!-- TAB BAR -->
+<!, TAB BAR ,>
 <div class="tab-bar">
     <button class="tab-btn active" data-tab="action">ACTION</button>
     <button class="tab-btn" data-tab="portfolio">PORTFOLIO</button>
@@ -711,9 +711,9 @@ tr.row-dim td { color: var(--text-dim); }
     <button class="tab-btn" data-tab="health">HEALTH</button>
 </div>
 
-<!-- TAB 1: ACTION (enhanced) -->
+<!, TAB 1: ACTION (enhanced) ,>
 <div class="tab-content active" id="tab-action">
-    <!-- COUNTDOWNS -->
+    <!, COUNTDOWNS ,>
     <div class="card">
         <div class="card-title">Key Countdowns</div>
         <div id="countdownContainer">
@@ -721,7 +721,7 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- ALERTS -->
+    <!, ALERTS ,>
     <div class="card">
         <div class="card-title">Alerts</div>
         <div id="alertsContainer">
@@ -729,7 +729,7 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- TOP OPPORTUNITIES -->
+    <!, TOP OPPORTUNITIES ,>
     <div class="card">
         <div class="card-title">Top Opportunities</div>
         <div class="table-wrap">
@@ -753,41 +753,41 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- QUICK STATS -->
+    <!, QUICK STATS ,>
     <div class="card">
         <div class="card-title">Quick Stats</div>
         <div class="stats-grid" id="quickStats">
             <div class="stat-item">
                 <div class="stat-label">Projects Tracked</div>
-                <div class="stat-value" id="statProjects">--</div>
+                <div class="stat-value" id="statProjects">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">INVESTIGATE Signals</div>
-                <div class="stat-value gold" id="statInvestigate">--</div>
+                <div class="stat-value gold" id="statInvestigate">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Pipeline Last Run</div>
-                <div class="stat-value" id="statLastRun">--</div>
+                <div class="stat-value" id="statLastRun">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Scanners Active</div>
-                <div class="stat-value green" id="statScanners">--</div>
+                <div class="stat-value green" id="statScanners">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Fear &amp; Greed</div>
-                <div class="stat-value" id="statFG">--</div>
+                <div class="stat-value" id="statFG">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">BTC Dominance</div>
-                <div class="stat-value" id="statBtcDom">--</div>
+                <div class="stat-value" id="statBtcDom">,</div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- TAB 2: PORTFOLIO (enhanced) -->
+<!, TAB 2: PORTFOLIO (enhanced) ,>
 <div class="tab-content" id="tab-portfolio">
-    <!-- PORTFOLIO SUMMARY -->
+    <!, PORTFOLIO SUMMARY ,>
     <div class="card">
         <div class="card-title">Portfolio Summary</div>
         <div class="portfolio-summary" id="portfolioSummary">
@@ -818,30 +818,30 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- BENCHMARK COMPARISON -->
+    <!, BENCHMARK COMPARISON ,>
     <div class="card">
         <div class="card-title">Benchmark Comparison (24h)</div>
         <div class="benchmark-grid" id="benchmarkGrid">
             <div class="bench-item">
                 <span class="bench-label">Portfolio</span>
-                <span class="bench-val" id="benchPortfolio" style="color:var(--text-dim)">--</span>
+                <span class="bench-val" id="benchPortfolio" style="color:var(,text-dim)">,</span>
             </div>
             <div class="bench-item">
                 <span class="bench-label">vs BTC</span>
-                <span class="bench-val" id="benchBtc" style="color:var(--text-dim)">--</span>
+                <span class="bench-val" id="benchBtc" style="color:var(,text-dim)">,</span>
             </div>
             <div class="bench-item">
                 <span class="bench-label">vs ETH</span>
-                <span class="bench-val" id="benchEth" style="color:var(--text-dim)">--</span>
+                <span class="bench-val" id="benchEth" style="color:var(,text-dim)">,</span>
             </div>
             <div class="bench-item">
                 <span class="bench-label">vs Market</span>
-                <span class="bench-val" id="benchMarket" style="color:var(--text-dim)">--</span>
+                <span class="bench-val" id="benchMarket" style="color:var(,text-dim)">,</span>
             </div>
         </div>
     </div>
 
-    <!-- POSITIONS -->
+    <!, POSITIONS ,>
     <div class="card">
         <div class="card-title">Positions</div>
         <div class="table-wrap">
@@ -860,13 +860,13 @@ tr.row-dim td { color: var(--text-dim); }
                     </tr>
                 </thead>
                 <tbody id="positionsBody">
-                    <tr><td colspan="9" class="placeholder">No positions yet -- run pipeline first</td></tr>
+                    <tr><td colspan="9" class="placeholder">No positions yet, run pipeline first</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 
-    <!-- WATCHLIST -->
+    <!, WATCHLIST ,>
     <div class="card">
         <div class="card-title">Watchlist</div>
         <div class="table-wrap">
@@ -887,7 +887,7 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- RISK METRICS -->
+    <!, RISK METRICS ,>
     <div class="card">
         <div class="card-title">Risk Metrics</div>
         <div class="risk-grid" id="riskGrid">
@@ -913,42 +913,42 @@ tr.row-dim td { color: var(--text-dim); }
             </div>
             <div class="risk-item">
                 <div class="rl">Cash Ratio</div>
-                <div class="rv" style="color:var(--green)" id="riskCash">100%</div>
+                <div class="rv" style="color:var(,green)" id="riskCash">100%</div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- TAB 3: PIPELINE -->
+<!, TAB 3: PIPELINE ,>
 <div class="tab-content" id="tab-pipeline">
-    <!-- SCANNER STATUS -->
+    <!, SCANNER STATUS ,>
     <div class="card">
         <div class="card-title">Scanner Status</div>
         <div class="scanner-grid" id="scannerGrid">
-            <!-- Populated by JS -->
+            <!, Populated by JS ,>
         </div>
     </div>
 
-    <!-- CROSS-REFERENCE SUMMARY -->
+    <!, CROSS-REFERENCE SUMMARY ,>
     <div class="card">
         <div class="card-title">Cross-Reference Summary</div>
         <div class="stats-grid" id="xrefStats">
             <div class="stat-item">
                 <div class="stat-label">Projects Scored</div>
-                <div class="stat-value" id="xrefTotal">--</div>
+                <div class="stat-value" id="xrefTotal">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">INVESTIGATE</div>
-                <div class="stat-value gold" id="xrefInvestigate">--</div>
+                <div class="stat-value gold" id="xrefInvestigate">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">MONITOR</div>
-                <div class="stat-value" id="xrefMonitor">--</div>
+                <div class="stat-value" id="xrefMonitor">,</div>
             </div>
         </div>
     </div>
 
-    <!-- LATEST FINDINGS -->
+    <!, LATEST FINDINGS ,>
     <div class="card">
         <div class="card-title">Latest Findings (Top 20)</div>
         <div class="table-wrap">
@@ -971,26 +971,26 @@ tr.row-dim td { color: var(--text-dim); }
     </div>
 </div>
 
-<!-- TAB 4: RESEARCH -->
+<!, TAB 4: RESEARCH ,>
 <div class="tab-content" id="tab-research">
     <div id="researchContainer">
-        <!-- Populated by JS -->
+        <!, Populated by JS ,>
     </div>
 </div>
 
-<!-- TAB 5: CATALYST CALENDAR (NEW) -->
+<!, TAB 5: CATALYST CALENDAR (NEW) ,>
 <div class="tab-content" id="tab-catalysts">
-    <!-- LEGEND -->
+    <!, LEGEND ,>
     <div class="card">
-        <div class="card-title">Catalyst Calendar -- Probability Color Code</div>
+        <div class="card-title">Catalyst Calendar, Probability Color Code</div>
         <div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.75rem;">
-            <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--green);vertical-align:middle;margin-right:0.4rem;"></span>High (8-10)</span>
-            <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--orange);vertical-align:middle;margin-right:0.4rem;"></span>Medium (5-7)</span>
-            <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--red);vertical-align:middle;margin-right:0.4rem;"></span>Low (1-4)</span>
+            <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:var(,green);vertical-align:middle;margin-right:0.4rem;"></span>High (8-10)</span>
+            <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:var(,orange);vertical-align:middle;margin-right:0.4rem;"></span>Medium (5-7)</span>
+            <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:var(,red);vertical-align:middle;margin-right:0.4rem;"></span>Low (1-4)</span>
         </div>
     </div>
 
-    <!-- TIMELINE -->
+    <!, TIMELINE ,>
     <div class="card">
         <div class="card-title">Visual Timeline</div>
         <div class="timeline-bar" id="catalystTimeline">
@@ -998,7 +998,7 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- CATALYST TABLE -->
+    <!, CATALYST TABLE ,>
     <div class="card">
         <div class="card-title">Upcoming Catalysts</div>
         <div class="table-wrap">
@@ -1021,9 +1021,9 @@ tr.row-dim td { color: var(--text-dim); }
     </div>
 </div>
 
-<!-- TAB 6: RESEARCH LIBRARY (NEW) -->
+<!, TAB 6: RESEARCH LIBRARY (NEW) ,>
 <div class="tab-content" id="tab-library">
-    <!-- MARKET INTELLIGENCE -->
+    <!, MARKET INTELLIGENCE ,>
     <div class="card">
         <div class="card-title">Market Intelligence</div>
         <div id="marketIntelContainer">
@@ -1031,23 +1031,23 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- RESEARCH BRIEFS -->
+    <!, RESEARCH BRIEFS ,>
     <div class="card">
         <div class="card-title">Research Briefs</div>
         <div id="researchBriefsContainer">
-            <!-- Populated by JS -->
+            <!, Populated by JS ,>
         </div>
     </div>
 
-    <!-- CONTRACT AUDIT RESULTS -->
+    <!, CONTRACT AUDIT RESULTS ,>
     <div class="card">
         <div class="card-title">Contract Audit Results</div>
         <div id="contractAuditContainer">
-            <div class="placeholder">No contract audits completed yet -- auditor pipeline pending</div>
+            <div class="placeholder">No contract audits completed yet, auditor pipeline pending</div>
         </div>
     </div>
 
-    <!-- WEEKLY SUMMARY -->
+    <!, WEEKLY SUMMARY ,>
     <div class="card">
         <div class="card-title">Weekly Summary</div>
         <div id="weeklySummaryContainer">
@@ -1056,40 +1056,40 @@ tr.row-dim td { color: var(--text-dim); }
     </div>
 </div>
 
-<!-- TAB 7: PIPELINE HEALTH (enhanced) -->
+<!, TAB 7: PIPELINE HEALTH (enhanced) ,>
 <div class="tab-content" id="tab-health">
-    <!-- OVERALL STATUS -->
+    <!, OVERALL STATUS ,>
     <div class="card">
         <div class="card-title">Overall Pipeline Health</div>
         <div class="stats-grid" id="healthOverview">
             <div class="stat-item">
                 <div class="stat-label">Status</div>
-                <div class="stat-value green" id="healthStatus">--</div>
+                <div class="stat-value green" id="healthStatus">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Scanners</div>
-                <div class="stat-value" id="healthScannerCount">--</div>
+                <div class="stat-value" id="healthScannerCount">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Failed</div>
-                <div class="stat-value" id="healthFailed">--</div>
+                <div class="stat-value" id="healthFailed">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Total Errors</div>
-                <div class="stat-value" id="healthErrors">--</div>
+                <div class="stat-value" id="healthErrors">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Cron Jobs</div>
-                <div class="stat-value" id="healthCronCount">--</div>
+                <div class="stat-value" id="healthCronCount">,</div>
             </div>
             <div class="stat-item">
                 <div class="stat-label">Missing Crons</div>
-                <div class="stat-value" id="healthCronMissing">--</div>
+                <div class="stat-value" id="healthCronMissing">,</div>
             </div>
         </div>
     </div>
 
-    <!-- SCANNER DETAIL LIST -->
+    <!, SCANNER DETAIL LIST ,>
     <div class="card">
         <div class="card-title">Scanner Details</div>
         <div id="healthScannerList">
@@ -1097,7 +1097,7 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- CRON JOB LIST -->
+    <!, CRON JOB LIST ,>
     <div class="card">
         <div class="card-title">Cron Jobs</div>
         <div id="healthCronList">
@@ -1105,15 +1105,15 @@ tr.row-dim td { color: var(--text-dim); }
         </div>
     </div>
 
-    <!-- MULTI-CHAIN SCANNER STATUS -->
+    <!, MULTI-CHAIN SCANNER STATUS ,>
     <div class="card">
         <div class="card-title">Multi-Chain Scanner Status</div>
         <div class="chain-grid" id="chainGrid">
-            <!-- Populated by JS -->
+            <!, Populated by JS ,>
         </div>
     </div>
 
-    <!-- ERROR LOG -->
+    <!, ERROR LOG ,>
     <div class="card">
         <div class="card-title">Recent Errors</div>
         <div id="healthErrorLog">
@@ -1124,7 +1124,7 @@ tr.row-dim td { color: var(--text-dim); }
 
 <script>
 /* ======================================================================
-   EarlyThunder Personal Dashboard -- Session 11 Enhanced
+   EarlyThunder Personal Dashboard, Session 11 Enhanced
    Pure JS, no dependencies. Loads from local/remote JSON files.
    NASA Power of 10: bounded loops (MAX_LOOP=500), no dynamic allocation
    in hot paths, all functions return, no recursion, assertions on
@@ -1190,22 +1190,22 @@ var RESEARCH_DATA = {
         score: 85,
         verdict: "DEEP_ALPHA",
         scores: { team: 95, money: 90, product: 85, timing: 80, valuation: 75 },
-        thesis: "Open-source Rust library of composable blockchain primitives (\"Anti-Framework\"). Founded by Patrick O'Grady (ex-VP Engineering Ava Labs, built HyperSDK). Team includes Roberto Bayardo (Distinguished Engineer, Coinbase Base architect, 19yr Google), Ben Clabby (OP Labs fault proofs), Andre Silva (Parity/Polkadot core). $34M raised: $9M seed (Haun + Dragonfly at $63M val), $25M strategic (Tempo/Stripe + Paradigm). Profitable with 4 enterprise customers at >$1M ARR each. Custom io_uring runtime, qmdb merkle database, Simplex BFT consensus. ~200ms blocks, ~300ms finality.",
+        thesis: "Open-source Rust library of composable blockchain primitives (\"Anti-Framework\"). Founded by Patrick O'Grady (ex-VP Engineering Ava Labs, built HyperSDK). Team includes Roberto Bayardo (Distinguished Engineer, Coinbase Base architect, 19yr Google), Ben Clabby (OP Labs fault proofs), Andre Silva (Parity/Polkadot core). $34M raised: $9M seed (Haun + Dragonfly at $63M val), $25M strategic (Tempo/Stripe + model). Profitable with 4 enterprise customers at >$1M ARR each. Custom io_uring runtime, qmdb merkle database, Simplex BFT consensus. ~200ms blocks, ~300ms finality.",
         team: "Patrick O'Grady (Founder, ex-Ava Labs VP Eng), Roberto Bayardo (ex-Google 19yr, Coinbase Base architect), Ben Clabby (ex-OP Labs), Andre Silva (ex-Parity/Polkadot), Dan Laine (ex-Ava Labs), Brendan Chou (ex-dYdX first eng, Google, Princeton)",
-        funding: "$34M total. Seed $9M (Haun + Dragonfly, $63M val, Dec 2024). Strategic $25M (Tempo = Stripe + Paradigm, Nov 2025). Angels: Kevin Sekniqi (Avalanche co-founder), Smokey the Bera, Zaki Manian, Mert Mumtaz.",
+        funding: "$34M total. Seed $9M (Haun + Dragonfly, $63M val, Dec 2024). Strategic $25M (Tempo = Stripe + model, Nov 2025). Angels: Kevin Sekniqi (Avalanche co-founder), Smokey the Bera, Zaki Manian, Mert Mumtaz.",
         risks: [
-            "No token may ever launch -- company is profitable, no structural need",
-            "Small team (7 employees) -- key-person risk on O'Grady and Bayardo",
-            "Tempo dependency -- $25M from largest customer creates concentration",
-            "Adoption risk -- Cosmos SDK and Substrate have mature ecosystems",
-            "Infrastructure value capture -- value may accrue to Tempo, not Commonware"
+            "No token may ever launch, company is profitable, no structural need",
+            "Small team (7 employees), key-person risk on O'Grady and Bayardo",
+            "Tempo dependency, $25M from largest customer creates concentration",
+            "Adoption risk, Cosmos SDK and Substrate have mature ecosystems",
+            "Infrastructure value capture, value may accrue to Tempo, not Commonware"
         ],
         action_items: [
             "Monitor GitHub (commonwarexyz/monorepo) daily for token-related changes",
             "Track Twitter (@commonwarexyz) for announcements",
             "Watch Tempo for indirect token events",
             "Alert if star count exceeds 1000 (viral growth signal)",
-            "No buy action -- pre-token monitoring only"
+            "No buy action, pre-token monitoring only"
         ]
     },
     ekubo: {
@@ -1213,15 +1213,15 @@ var RESEARCH_DATA = {
         score: 72,
         verdict: "DEEP_ALPHA",
         scores: { team: 90, money: 55, product: 80, timing: 70, valuation: 65 },
-        thesis: "Concentrated-liquidity DEX built by moodysalem, chief engineer behind Uniswap v3/v4. TVL ($22.8M) exceeds market cap ($4.8M) by nearly 5x -- extreme undervaluation. Fixed supply 10M tokens, no inflation. Active on StarkNet (69% TVL) and Ethereum. Price 93.7% below ATH ($7.64). DAO contract expires July 28, 2026. Recent $1.4M EVM router exploit (May 5) under investigation.",
+        thesis: "Concentrated-liquidity DEX built by moodysalem, chief engineer behind Uniswap v3/v4. TVL ($22.8M) exceeds market cap ($4.8M) by nearly 5x, extreme undervaluation. Fixed supply 10M tokens, no inflation. Active on StarkNet (69% TVL) and Ethereum. Price 93.7% below ATH ($7.64). DAO contract expires July 28, 2026. Recent $1.4M EVM router exploit (May 5) under investigation.",
         team: "moodysalem (Uniswap v3/v4 chief engineer). Extremely active: 30+ GitHub events recently across EkuboProtocol repos, OpenZeppelin, Ethereum ERCs.",
         funding: "No traditional VC funding. Token-funded protocol. Market cap $4.8M, TVL $22.8M.",
         live_data: "Price: $0.48 | MCap: $4.8M | FDV: $4.8M | TVL: $22.8M | Vol 24h: ~$25K | ATH: $7.64 | 7d: -33.3%",
         risks: [
-            "EVM router exploit ($1.4M, May 5 2026) -- smart contract risk",
-            "DAO contract expires July 28 2026 -- governance uncertainty",
-            "Low liquidity (~$25K daily volume) -- hard to enter/exit large positions",
-            "StarkNet concentration (69% TVL) -- ecosystem risk",
+            "EVM router exploit ($1.4M, May 5 2026), smart contract risk",
+            "DAO contract expires July 28 2026, governance uncertainty",
+            "Low liquidity (~$25K daily volume), hard to enter/exit large positions",
+            "StarkNet concentration (69% TVL), system risk",
             "Key-person dependency on moodysalem",
             "DEX competition (Uniswap, Curve with larger network effects)"
         ],
@@ -1482,7 +1482,7 @@ function renderAlerts() {
         for (var i = 0; i < state.portfolio.watchlist.length && i < MAX_LOOP; i++) {
             if (state.portfolio.watchlist[i].name === 'Commonware') {
                 cwStatus = state.portfolio.watchlist[i].status === 'pre_token'
-                    ? 'NO TOKEN -- MONITORING' : 'TOKEN DETECTED';
+                    ? 'NO TOKEN, MONITORING' : 'TOKEN DETECTED';
                 cwLevel = state.portfolio.watchlist[i].status === 'pre_token' ? 'high' : 'critical';
                 break;
             }
@@ -1555,7 +1555,7 @@ function renderOpportunities() {
     items.sort(function(a, b) { return b.score - a.score; });
 
     if (items.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="8" class="placeholder">No data yet -- run pipeline first</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="8" class="placeholder">No data yet, run pipeline first</td></tr>';
         return;
     }
 
@@ -1575,7 +1575,7 @@ function renderOpportunities() {
         html += '<td style="font-size:0.7rem;color:' + (item.conviction === 'DEEP ALPHA' ? 'var(--gold)' : item.conviction === 'MODERATE' ? 'var(--blue)' : 'var(--text-dim)') + ';">' + sanitize(item.conviction || '--') + '</td>';
         html += '<td><span class="action-badge ' + act.cls + '">' + act.text + '</span>';
         if (item.status === 'pre_token') {
-            html += '<br><span style="color:var(--orange);font-size:0.65rem;">NO TOKEN -- MONITORING</span>';
+            html += '<br><span style="color:var(--orange);font-size:0.65rem;">NO TOKEN, MONITORING</span>';
         }
         html += '</td>';
         html += '<td>' + (item.size_pct ? item.size_pct + '%' : '--') + '</td>';
@@ -1689,9 +1689,9 @@ function renderPortfolio() {
         document.getElementById('pfPosCount').textContent = '0';
         document.getElementById('pfWatchCount').textContent = '0';
         document.getElementById('positionsBody').innerHTML =
-            '<tr><td colspan="9" class="placeholder">No positions yet -- waiting for first trade</td></tr>';
+            '<tr><td colspan="9" class="placeholder">No positions yet, waiting for first trade</td></tr>';
         document.getElementById('watchlistBody').innerHTML =
-            '<tr><td colspan="5" class="placeholder">No data yet -- run pipeline first</td></tr>';
+            '<tr><td colspan="5" class="placeholder">No data yet, run pipeline first</td></tr>';
         return;
     }
 
@@ -1781,7 +1781,7 @@ function renderPortfolio() {
             posHtml += '</tr>';
         }
     } else {
-        posHtml = '<tr><td colspan="9" class="placeholder">No positions yet -- waiting for first trade</td></tr>';
+        posHtml = '<tr><td colspan="9" class="placeholder">No positions yet, waiting for first trade</td></tr>';
     }
     document.getElementById('positionsBody').innerHTML = posHtml;
 
@@ -1912,7 +1912,7 @@ function renderPipeline() {
     }
 
     if (projects.length === 0) {
-        fHtml = '<tr><td colspan="6" class="placeholder">No data yet -- run pipeline first</td></tr>';
+        fHtml = '<tr><td colspan="6" class="placeholder">No data yet, run pipeline first</td></tr>';
     } else {
         var sorted = projects.slice().sort(function(a, b) {
             return (b.total || 0) - (a.total || 0);
@@ -2138,7 +2138,7 @@ function renderLibrary() {
             miHtml += '</div>';
         }
     } else {
-        miHtml = '<div class="placeholder">No market data available -- run market scanner</div>';
+        miHtml = '<div class="placeholder">No market data available, run market scanner</div>';
     }
     miContainer.innerHTML = miHtml;
 
@@ -2311,11 +2311,11 @@ function renderHealth() {
     /* Multi-chain scanner status */
     var chains = [
         { name: 'Ethereum', active: true, note: 'Contract + DEX scanners' },
-        { name: 'Arbitrum', active: false, note: 'Planned -- Session 12+' },
-        { name: 'Optimism', active: false, note: 'Planned -- Session 12+' },
-        { name: 'Solana', active: false, note: 'Planned -- Session 12+' },
+        { name: 'Arbitrum', active: false, note: 'Planned, Session 12+' },
+        { name: 'Optimism', active: false, note: 'Planned, Session 12+' },
+        { name: 'Solana', active: false, note: 'Planned, Session 12+' },
         { name: 'StarkNet', active: true, note: 'Ekubo tracker active' },
-        { name: 'Base', active: false, note: 'Planned -- Session 12+' }
+        { name: 'Base', active: false, note: 'Planned, Session 12+' }
     ];
 
     var chainHtml = '';
@@ -2345,7 +2345,7 @@ function renderHealth() {
             }
         }
     }
-    document.getElementById('healthErrorLog').innerHTML = errorLogHtml || '<div class="placeholder">No errors -- all systems nominal</div>';
+    document.getElementById('healthErrorLog').innerHTML = errorLogHtml || '<div class="placeholder">No errors, all systems nominal</div>';
 }
 
 /* ===== RENDER ALL ===== */

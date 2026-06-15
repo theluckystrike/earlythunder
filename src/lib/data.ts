@@ -1,6 +1,7 @@
 import type { Opportunity, BlogPost } from "./types";
 import opportunitiesData from "../../data/opportunities.json";
 import blogData from "../../data/blog.json";
+import guidesData from "../../data/guides.json";
 
 /** Validate that a score is within the 0-100 range. */
 function isValidScore(score: number): boolean {
@@ -121,4 +122,27 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
   if (typeof slug !== "string" || slug.length === 0) return null;
   const all = getAllBlogPosts();
   return all.find((post) => post.slug === slug) ?? null;
+}
+
+const MAX_GUIDES = 200;
+
+/** Returns all valid guides, sorted by date descending. */
+export function getAllGuides(): readonly BlogPost[] {
+  const raw: unknown[] = Array.isArray(guidesData) ? guidesData : [];
+  const validated = raw
+    .slice(0, MAX_GUIDES)
+    .filter(isValidBlogPost);
+
+  return validated.sort(
+    (a, b) =>
+      new Date(b.published_at).getTime() -
+      new Date(a.published_at).getTime(),
+  );
+}
+
+/** Returns a single guide by slug, or null if not found. */
+export function getGuideBySlug(slug: string): BlogPost | null {
+  if (typeof slug !== "string" || slug.length === 0) return null;
+  const all = getAllGuides();
+  return all.find((guide) => guide.slug === slug) ?? null;
 }

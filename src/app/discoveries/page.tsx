@@ -63,7 +63,7 @@ function RelatedToolsSection() {
         >
           Research Library
           <span className="block mt-1 font-normal text-text-secondary">
-            Deep-dive analysis and data reports
+            analysis analysis and data reports
           </span>
         </a>
       </div>

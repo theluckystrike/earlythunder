@@ -22,7 +22,7 @@ function computeAssetClasses(): readonly AssetClassCard[] {
     {
       count: digital,
       label: "Digital Assets",
-      description: "Tokens, protocols, and on-chain opportunities in the crypto ecosystem.",
+      description: "Tokens, protocols, and on-chain opportunities in the crypto system.",
       href: "/opportunities",
       scannerHref: "/earnings/",
     },

@@ -57,7 +57,7 @@ function SystemOverview() {
         VC wallet movements, elite developer migrations, and DEX liquidity
         events in real-time. Signals from each dimension are cross-referenced
         and scored to produce a composite conviction rating. The system is
-        designed to find tokens at Phase 0-1 &mdash; before they appear on
+        designed to find tokens at Phase 0-1, before they appear on
         CoinGecko or major exchanges.
       </p>
 
@@ -72,7 +72,7 @@ function SystemOverview() {
           range="6 &ndash; 8"
           tier="INVESTIGATE"
           color="text-score-mid"
-          description="Multiple dimensions firing. Requires deep-dive research to determine if conviction is warranted."
+          description="Multiple dimensions firing. Requires analysis research to determine if conviction is warranted."
         />
         <ScoreCard
           range="9 &ndash; 12"
@@ -157,7 +157,7 @@ const SIGNALS = [
     category: "Infra",
     score: "N/A",
     verdict: "NOISE",
-    status: "Existing ecosystem. Already priced in.",
+    status: "Existing system. Already priced in.",
     badgeColor: "bg-score-low/15 text-score-low border-score-low/30",
   },
 ] as const;
@@ -168,7 +168,7 @@ function SignalHistory() {
       <SectionLabel number="02" title="Signal History" />
       <p className="mt-4 max-w-3xl text-sm leading-relaxed text-text-secondary">
         Every signal the pipeline has surfaced, investigated, and classified.
-        Transparency is non-negotiable &mdash; noise and failures are shown
+        Transparency is non-negotiable, noise and failures are shown
         alongside alpha.
       </p>
 
@@ -367,7 +367,7 @@ const SCANNER_DETAILS = [
     number: "02",
     name: "VC Wallet Tracker",
     description:
-      "Tracks on-chain movements of known venture capital wallets (a16z, Paradigm, Polychain, etc.). When smart money accumulates a position, the signal fires. On-chain data cannot be fabricated.",
+      "Tracks on-chain movements of known venture capital wallets (a16z, model, Polychain, etc.). When smart money accumulates a position, the signal fires. On-chain data cannot be fabricated.",
   },
   {
     number: "03",
@@ -425,7 +425,7 @@ function MethodologySection() {
           score (0&ndash;12) is the sum of all four dimensions. A token that
           only appears in DEX data scores low. A token deployed by a known VC
           wallet, built by an elite developer, with organic DEX liquidity
-          growing &mdash; that scores high. The cross-reference engine runs
+          growing, that scores high. The cross-reference engine runs
           after all scanners complete and produces the final watchlist ranked by
           composite conviction.
         </p>
@@ -436,7 +436,7 @@ function MethodologySection() {
           <span className="font-semibold">What makes a signal actionable?</span>{" "}
           Multiple independent dimensions must confirm. A developer migration
           alone is interesting. A developer migration plus VC accumulation plus
-          a new DEX pair with healthy metrics &mdash; that is actionable. The
+          a new DEX pair with healthy metrics, that is actionable. The
           system is designed to produce very few signals, but when it fires,
           conviction should be high.
         </p>
@@ -499,7 +499,7 @@ function ExploreMoreSection() {
           className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
         >
           <span className="text-sm font-semibold text-text-primary">Research Library</span>
-          <span className="text-xs text-text-secondary mt-1 block">Deep-dive analyses and market reports</span>
+          <span className="text-xs text-text-secondary mt-1 block">analysis analyses and market reports</span>
         </a>
       </div>
     </section>

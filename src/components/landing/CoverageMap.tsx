@@ -140,7 +140,7 @@ export default function CoverageMap({ protocols }: CoverageMapProps) {
     <section className="section">
       <div className="section__head">
         <div>
-          <div className="section__eyebrow mono">07 &mdash; COVERAGE</div>
+          <div className="section__eyebrow mono">07, COVERAGE</div>
           <h2 className="section__title">Every protocol on one screen</h2>
           <p className="section__sub">
             {bounded.length} active protocols. Each cell is a current conviction score.

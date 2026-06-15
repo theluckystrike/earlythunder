@@ -430,8 +430,8 @@ function TokenomicsSection({ data }: { readonly data: Tokenomics }) {
     { label: "Burn Mechanism", value: data.burn_mechanism },
     { label: "Treasury Size", value: data.treasury_size },
     { label: "Treasury Runway", value: data.treasury_runway },
-    { label: "Next Unlock", value: data.next_unlock_date },
-    { label: "Unlock Amount", value: data.next_unlock_amount },
+    { label: "Next unlock", value: data.next_unlock_date },
+    { label: "unlock amount", value: data.next_unlock_amount },
   ];
 
   const visible = gridMetrics.filter((m) => m.value != null);
@@ -610,7 +610,7 @@ function RiskDisclosure({
         Risk Disclosure
       </h3>
       <p>
-        <strong>{label}.</strong> {RISK_TEXT[asset_class]} Past patterns do
+        {label}. {RISK_TEXT[asset_class]} Past patterns do
         not predict future results. Always do your own research and consult a
         qualified advisor before investing.
       </p>

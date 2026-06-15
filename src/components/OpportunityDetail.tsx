@@ -6,7 +6,7 @@ interface PremiumSectionProps {
   readonly opportunity: Opportunity;
 }
 
-/** Premium content section — all signals rendered openly. */
+/** Premium content section, all signals rendered openly. */
 export function PremiumSection({ opportunity }: PremiumSectionProps) {
   if (!opportunity) return null;
 
