@@ -991,7 +991,8 @@ a:hover .arr, button:hover .arr { transform: translateX(3px); }
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .data-table {
   width: 100%;
@@ -1247,6 +1248,11 @@ a:hover .arr, button:hover .arr { transform: translateX(3px); }
 .coverage__detail-cat { font-size: 13px; max-width: 30ch; }
 .coverage__detail-score { font-size: 64px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; margin-top: 12px; }
 .coverage__detail-meta { font-size: 10px; letter-spacing: 0.12em; }
+/* Coverage map: stack grid + detail panel on tablet/mobile so the fixed
+   280px panel never forces horizontal page overflow. */
+@media (max-width: 860px) {
+  .coverage { grid-template-columns: 1fr; }
+}
 
 /* ============================================================
    Categories
@@ -1436,13 +1442,19 @@ a:hover .arr, button:hover .arr { transform: translateX(3px); }
 /* ============================================================
    Responsive -- 720px (mobile)
    ============================================================ */
-@media (max-width: 720px) {
-  .ladder__row { grid-template-columns: 22px minmax(0, 1fr) 60px 30px; }
-  .ladder__cat { display: none; }
+/* Nav collapses to hamburger early: 7 links + 2 CTAs overflow below ~960px,
+   so the toggle must engage well before the 720px mobile layout kicks in. */
+@media (max-width: 1080px) {
   .nav__links { display: none; }
   .nav__cta { display: none; }
   .nav__mobile-toggle { display: flex; }
-  .nav__inner { grid-template-columns: 1fr auto; padding: 0 24px; }
+  .nav__inner { grid-template-columns: 1fr auto; }
+}
+
+@media (max-width: 720px) {
+  .ladder__row { grid-template-columns: 22px minmax(0, 1fr) 60px 30px; }
+  .ladder__cat { display: none; }
+  .nav__inner { padding: 0 24px; }
   .hero { padding: 120px 24px 48px; }
   .section { padding: 64px 24px 0; }
   .stats__inner { padding: 24px; flex-wrap: wrap; gap: 24px; }

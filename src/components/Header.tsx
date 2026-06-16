@@ -56,7 +56,7 @@ function NavLink({ item, className, onClick }: {
 }) {
   if (item.isNextRoute) {
     return (
-      <Link href={item.href} className={className} onClick={onClick}>
+      <Link href={item.href} className={className} onClick={onClick} prefetch={false}>
         {item.label}
       </Link>
     );

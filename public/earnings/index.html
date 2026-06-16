@@ -33,7 +33,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -65,9 +65,9 @@
   --positive-bg: rgba(34, 197, 94, 0.10);
   --negative: #EF4444;
   --negative-bg: rgba(239, 68, 68, 0.10);
+  --info: #3B82F6;
   --warning: #EAB308;
   --warning-bg: rgba(234, 179, 8, 0.10);
-  --info: #3B82F6;
 
   /* ── Scores ── */
   --score-elite: var(--accent-primary);
@@ -87,6 +87,10 @@
   --nav-h: 56px;
   --row-h: 48px;
 
+  /* ── Sparkline aliases (homepage parity) ── */
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+
   /* ── Back-compat aliases (legacy local names → canonical) ── */
   --bg-card: var(--bg-secondary);
   --bg-card-hover: var(--bg-elevated);
@@ -104,267 +108,390 @@
 
 body {
     font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.6;
     background: var(--bg-primary);
     color: var(--text-primary);
     min-height: 100vh;
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
-/* ===== MAIN ===== */
-.container {
+
+/* ===== SECTION (homepage rhythm) ===== */
+.section {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: 64px 48px 0;
+    padding: 80px 48px 0;
+}
+.section--tight { padding-top: 56px; }
+
+.section__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 32px;
 }
 
-.page-eyebrow {
+.section__eyebrow {
     font-family: var(--font-mono);
     font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
     color: var(--text-tertiary);
+    text-transform: uppercase;
     margin-bottom: 12px;
+    display: block;
 }
 
-.page-title {
+.section__title {
     font-size: 32px;
     font-weight: 600;
-    letter-spacing: -0.01em;
-    color: var(--text-primary);
-    margin-bottom: 8px;
+    letter-spacing: -.02em;
+    line-height: 1.15;
+    margin: 0 0 10px;
+    text-wrap: balance;
 }
 
-.page-subtitle {
+.section__sub {
     color: var(--text-secondary);
     font-size: 15px;
-    margin-bottom: 32px;
-    max-width: 70ch;
+    margin: 0;
+    max-width: 64ch;
 }
 
-/* ===== STATS BAR ===== */
-.stats-bar {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 32px;
-    flex-wrap: wrap;
+/* ===== LIVE INDICATOR ===== */
+.live-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 999px;
+    padding: 7px 14px;
+    white-space: nowrap;
+}
+.live-pill__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--positive);
+    box-shadow: 0 0 8px var(--positive);
+    animation: live-pulse 2.4s ease-in-out infinite;
+}
+@keyframes live-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .45; }
 }
 
-.stat-box {
+/* ===== BUTTONS ===== */
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-primary);
+    color: #0A0B0F;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 150ms, transform 150ms, box-shadow 150ms;
+    font-family: inherit;
+    white-space: nowrap;
+}
+.primary-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(245,166,35,.28);
+    text-decoration: none;
+    color: #0A0B0F;
+}
+.ghost-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent-primary);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 150ms;
+}
+.ghost-btn:hover { background: var(--accent-subtle); text-decoration: none; }
+
+/* ===== STATS STRIP ===== */
+.stats-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-bottom: 36px;
+}
+.stat-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border-subtle);
     border-radius: 12px;
-    padding: 16px 20px;
-    flex: 1;
-    min-width: 130px;
-    transition: transform 200ms cubic-bezier(0.2,0.8,0.2,1), border-color 200ms;
+    padding: 16px 18px;
+    transition: border-color 200ms, transform 200ms cubic-bezier(0.2,0.8,0.2,1);
 }
-
-.stat-box:hover {
-    transform: translateY(-2px);
-    border-color: var(--border-active);
-}
-
-.stat-label {
+.stat-card:hover { border-color: var(--border-active); transform: translateY(-2px); }
+.stat-card__label {
     font-family: var(--font-mono);
     color: var(--text-tertiary);
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 8px;
+    letter-spacing: .08em;
+    margin-bottom: 10px;
 }
-
-.stat-value {
+.stat-card__value {
     font-family: var(--font-mono);
-    font-size: 28px;
+    font-feature-settings: "tnum";
+    font-size: 26px;
     font-weight: 600;
     line-height: 1;
+    color: var(--text-primary);
 }
+.stat-card__value.is-hyper { color: var(--accent-primary); }
+.stat-card__value.is-high { color: var(--positive); }
+.stat-card__value.is-mid { color: var(--info); }
+.stat-card__value.is-low { color: var(--text-tertiary); }
 
-.stat-value.hyper { color: var(--accent-primary); }
-.stat-value.high { color: var(--positive); }
-.stat-value.moderate { color: var(--info); }
-.stat-value.low { color: var(--text-tertiary); }
-.stat-value.total { color: var(--text-primary); }
-
-/* ===== FILTER ===== */
-.controls {
+/* ===== FILTERS (homepage chips) ===== */
+.table-filters {
     display: flex;
-    gap: 8px;
+    gap: 6px;
+    align-items: center;
     margin-bottom: 16px;
     flex-wrap: wrap;
-    align-items: center;
 }
-
-.filter-btn {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-subtle);
-    color: var(--text-secondary);
-    padding: 8px 14px;
-    border-radius: 8px;
+.chip {
     font-family: var(--font-primary);
     font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    border: 1px solid transparent;
     cursor: pointer;
-    transition: color 150ms, border-color 150ms, background 150ms;
+    transition: all 150ms;
 }
-
-.filter-btn:hover { color: var(--text-primary); border-color: var(--border-active); }
-.filter-btn.active {
+.chip:hover { background: var(--bg-elevated); color: var(--text-primary); }
+.chip--active {
+    background: var(--accent-subtle);
     color: var(--accent-primary);
     border-color: var(--accent-primary);
-    background: var(--accent-subtle);
 }
-
-.search-input {
+.table-search {
     background: var(--bg-tertiary);
     border: 1px solid var(--border-subtle);
     color: var(--text-primary);
-    padding: 8px 14px;
-    border-radius: 8px;
+    padding: 7px 14px;
+    border-radius: 999px;
     font-family: var(--font-primary);
     font-size: 13px;
     width: 240px;
     margin-left: auto;
     transition: border-color 150ms;
 }
+.table-search::placeholder { color: var(--text-tertiary); }
+.table-search:focus { outline: none; border-color: var(--accent-primary); }
 
-.search-input::placeholder { color: var(--text-tertiary); }
-.search-input:focus { outline: none; border-color: var(--accent-primary); }
-
-/* ===== TABLE ===== */
-.table-wrap {
-    overflow-x: auto;
-    border: 1px solid var(--border-subtle);
-    border-radius: 16px;
-    background: var(--bg-secondary);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 900px;
-}
-
-thead th {
-    background: var(--bg-tertiary);
+.results-count {
     font-family: var(--font-mono);
     color: var(--text-tertiary);
+    font-size: 12px;
+    margin-bottom: 14px;
+    letter-spacing: .02em;
+}
+
+/* ===== TABLE (homepage data-table) ===== */
+.table-scroll { overflow-x: auto; }
+.table-wrap {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.data-table {
+    width: 100%;
+    min-width: 920px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.data-table thead th {
+    background: var(--bg-tertiary);
+    font-family: var(--font-mono);
     font-size: 11px;
+    letter-spacing: .06em;
+    color: var(--text-tertiary);
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
     padding: 12px 16px;
     text-align: left;
     border-bottom: 1px solid var(--border-subtle);
     cursor: pointer;
-    white-space: nowrap;
     user-select: none;
-    position: sticky;
-    top: 56px;
-    z-index: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
     transition: color 150ms;
 }
-
-thead th:hover { color: var(--text-secondary); }
-thead th.sorted { color: var(--accent-primary); }
-thead th .arrow { margin-left: 4px; font-size: 10px; }
-
-tbody tr {
-    border-bottom: 1px dashed var(--border-subtle);
-    transition: background 150ms;
-}
-
-tbody tr:last-child { border-bottom: none; }
-tbody tr:hover { background: var(--bg-tertiary); }
-
-td {
-    padding: 12px 16px;
-    font-size: 13px;
+.data-table thead th:hover { color: var(--text-primary); }
+.data-table thead th.is-sorted { color: var(--accent-primary); }
+.data-table thead th.ra, .data-table tbody td.ra { text-align: right; }
+.data-table thead th .arrow { margin-left: 4px; font-size: 10px; }
+.data-table tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border-subtle);
+    height: var(--row-h);
+    color: var(--text-secondary);
     white-space: nowrap;
-    color: var(--text-secondary);
 }
+.data-table tbody tr { transition: background 150ms; }
+.data-table tbody tr:hover { background: var(--bg-tertiary); }
+.data-table tbody tr:last-child td { border-bottom: none; }
+.table-wrap--striped .data-table tbody tr:nth-child(even) { background: rgba(255,255,255,.012); }
 
-td.name-cell {
-    font-family: var(--font-primary);
-    font-weight: 600;
-    color: var(--text-primary);
-    white-space: normal;
-    min-width: 130px;
+.sym-cell { display: flex; align-items: center; gap: 10px; }
+.sym-cell__avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    filter: saturate(.9);
 }
-
-td.symbol-cell {
-    font-family: var(--font-mono);
-    color: var(--text-secondary);
-    font-size: 12px;
-}
-
-td.yield-cell {
-    font-family: var(--font-mono);
-    font-weight: 600;
-    text-align: right;
-}
-
-td.money-cell {
-    font-family: var(--font-mono);
-    text-align: right;
-    color: var(--text-secondary);
-    font-size: 12px;
-}
-
-td.chains-cell {
-    max-width: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.sym-cell__sym { font-weight: 500; color: var(--text-primary); }
+.sym-cell__name {
     color: var(--text-tertiary);
     font-size: 12px;
+    margin-left: 2px;
 }
+.mono { font-family: var(--font-mono); font-feature-settings: "tnum"; }
+.yield-cell { font-family: var(--font-mono); font-feature-settings: "tnum"; font-weight: 600; }
 
-.tier-badge {
+.tier-pill {
     display: inline-block;
-    padding: 3px 8px;
-    border-radius: 6px;
+    padding: 3px 9px;
+    border-radius: 999px;
     font-family: var(--font-mono);
     font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: .04em;
+    white-space: nowrap;
 }
-
-.tier-hyper { background: var(--accent-subtle); color: var(--accent-primary); }
-.tier-high { background: var(--positive-bg); color: var(--positive); }
-.tier-moderate { background: rgba(59,130,246,0.10); color: var(--info); }
-.tier-low { background: var(--bg-elevated); color: var(--text-tertiary); }
+.tier-pill.is-hyper { background: var(--accent-subtle); color: var(--accent-primary); }
+.tier-pill.is-high { background: var(--positive-bg); color: var(--positive); }
+.tier-pill.is-mid { background: rgba(59,130,246,0.10); color: var(--info); }
+.tier-pill.is-low { background: var(--bg-elevated); color: var(--text-tertiary); }
 
 .rank-cell {
     font-family: var(--font-mono);
     color: var(--text-tertiary);
     font-size: 12px;
-    text-align: center;
     width: 44px;
 }
+.mini-row { display: block; }
+
+/* ===== MONETIZATION GATEWAY ===== */
+.gateway {
+    margin: 28px auto 0;
+    max-width: var(--max-w);
+}
+.gateway__locked {
+    position: relative;
+    margin-bottom: -1px;
+}
+.gateway__locked .table-wrap {
+    border-radius: 12px 12px 0 0;
+    border-bottom: none;
+}
+.gateway__locked .data-table tbody tr {
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+.gateway__lockbadge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+    background: rgba(10,11,15,.72);
+    border: 1px solid var(--accent-primary);
+    border-radius: 999px;
+    padding: 8px 16px;
+    backdrop-filter: blur(2px);
+    white-space: nowrap;
+}
+.gateway__card {
+    background:
+        radial-gradient(120% 140% at 100% 0%, rgba(245,166,35,0.08), transparent 60%),
+        var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.gateway__copy { max-width: 60ch; }
+.gateway__eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+    margin-bottom: 12px;
+}
+.gateway__title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    margin-bottom: 10px;
+    line-height: 1.25;
+}
+.gateway__body {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+.gateway__body strong { color: var(--text-primary); font-weight: 600; }
 
 /* ===== METHODOLOGY ===== */
 .methodology {
-    margin-top: 32px;
     background: var(--bg-secondary);
     border: 1px solid var(--border-subtle);
-    border-radius: 16px;
-    padding: 24px;
+    border-radius: 12px;
+    padding: 32px;
 }
-
 .methodology h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    letter-spacing: -.01em;
 }
-
 .methodology p {
     color: var(--text-secondary);
     font-size: 14px;
     margin-bottom: 12px;
-    line-height: 1.6;
+    line-height: 1.7;
+    max-width: 80ch;
 }
-
 .formula-box {
     background: var(--term-bg);
     border: 1px solid var(--border-subtle);
@@ -376,14 +503,12 @@ td.chains-cell {
     line-height: 1.7;
     color: var(--accent-primary);
 }
-
 .tier-legend {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 12px;
-    margin-top: 16px;
+    margin-top: 18px;
 }
-
 .tier-legend-item {
     display: flex;
     align-items: center;
@@ -392,41 +517,23 @@ td.chains-cell {
     font-size: 12px;
     color: var(--text-secondary);
 }
-
 .tier-legend-item .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     flex-shrink: 0;
 }
-
 .dot-hyper { background: var(--accent-primary); }
 .dot-high { background: var(--positive); }
-.dot-moderate { background: var(--info); }
+.dot-mid { background: var(--info); }
 .dot-low { background: var(--text-tertiary); }
 
 /* ===== EXPLORE MORE ===== */
-.explore-section {
-    margin-top: 48px;
-    padding: 32px 0;
-    border-top: 1px solid var(--border-subtle);
-}
-
-.explore-section h3 {
-    font-family: var(--font-mono);
-    color: var(--text-tertiary);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 16px;
-}
-
 .explore-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 12px;
 }
-
 .explore-grid a {
     display: block;
     background: var(--bg-secondary);
@@ -439,37 +546,22 @@ td.chains-cell {
     font-weight: 600;
     transition: transform 200ms cubic-bezier(0.2,0.8,0.2,1), border-color 200ms;
 }
-
-.explore-grid a:hover {
-    transform: translateY(-2px);
-    border-color: var(--border-active);
-}
-
-.results-count {
-    font-family: var(--font-mono);
-    color: var(--text-tertiary);
-    font-size: 12px;
-    margin-bottom: 12px;
-}
+.explore-grid a:hover { transform: translateY(-2px); border-color: var(--border-active); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-    .container { padding: 48px 48px 0; }
+    .section { padding-left: 32px; padding-right: 32px; }
 }
-
 @media (max-width: 860px) {
-    .container { padding: 40px 24px 0; }
-    .stats-bar { gap: 8px; }
-    .stat-box { min-width: 100px; padding: 12px 16px; }
-    .stat-value { font-size: 22px; }
-    .search-input { width: 100%; margin-left: 0; }
-    thead th { top: 56px; }
+    .section { padding: 56px 24px 0; }
+    .section__head { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .section__title { font-size: 26px; }
+    .table-search { width: 100%; margin-left: 0; }
+    .gateway__card { padding: 24px; }
+    .gateway { padding: 0 24px; }
 }
-
 @media (max-width: 480px) {
-    .page-title { font-size: 26px; }
-    .stats-bar { flex-direction: column; }
-    .controls { flex-direction: column; align-items: stretch; }
+    .stats-strip { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 </head>
@@ -549,8 +641,8 @@ td.chains-cell {
 .et-nav__panel .et-nav__ghost{text-align:center;}
 /* Push page content below the fixed bar */
 body{padding-top:56px;}
-/* —— Responsive: collapse to hamburger below 860px —— */
-@media(max-width:860px){
+/* —— Responsive: collapse to hamburger below 1080px —— */
+@media(max-width:1080px){
   .et-nav__links{display:none;}
   .et-nav__cta{display:none;}
   .et-nav__toggle{display:flex;}
@@ -563,15 +655,15 @@ body{padding-top:56px;}
     <a href="/" class="et-nav__logo">EarlyThunder</a>
     <nav class="et-nav__links" aria-label="Primary">
       <a href="/intelligence/" data-slug="intelligence">Intelligence</a>
-      <a href="/opportunities/" data-slug="opportunities">Opportunities</a>
+      <a href="/opportunities" data-slug="opportunities">Opportunities</a>
       <a href="/research/" data-slug="research">Research</a>
       <a href="/earnings/" data-slug="earnings">Earnings</a>
       <a href="/deadlines/" data-slug="deadlines">Deadlines</a>
-      <a href="/scorecard/" data-slug="scorecard">Scorecard</a>
-      <a href="/about/" data-slug="about">About</a>
+      <a href="/scorecard" data-slug="scorecard">Scorecard</a>
+      <a href="/about" data-slug="about">About</a>
     </nav>
     <div class="et-nav__cta">
-      <a href="/pricing/" class="et-nav__ghost">Sign in</a>
+      <a href="/pricing" class="et-nav__ghost">Sign in</a>
       <a href="/intelligence/" class="et-nav__primary">Open Terminal &#8594;</a>
     </div>
     <button type="button" class="et-nav__toggle" aria-label="Toggle navigation menu"
@@ -587,14 +679,14 @@ body{padding-top:56px;}
   <div class="et-nav__panel" id="et-nav-panel" hidden>
     <nav class="et-nav__panel-links" aria-label="Mobile">
       <a href="/intelligence/" data-slug="intelligence">Intelligence</a>
-      <a href="/opportunities/" data-slug="opportunities">Opportunities</a>
+      <a href="/opportunities" data-slug="opportunities">Opportunities</a>
       <a href="/research/" data-slug="research">Research</a>
       <a href="/earnings/" data-slug="earnings">Earnings</a>
       <a href="/deadlines/" data-slug="deadlines">Deadlines</a>
-      <a href="/scorecard/" data-slug="scorecard">Scorecard</a>
-      <a href="/about/" data-slug="about">About</a>
+      <a href="/scorecard" data-slug="scorecard">Scorecard</a>
+      <a href="/about" data-slug="about">About</a>
       <div class="et-nav__panel-divider"></div>
-      <a href="/pricing/" class="et-nav__ghost">Sign in</a>
+      <a href="/pricing" class="et-nav__ghost">Sign in</a>
       <a href="/intelligence/" class="et-nav__primary">Open Terminal &#8594;</a>
     </nav>
   </div>
@@ -633,92 +725,132 @@ body{padding-top:56px;}
 })();
 </script>
 
-<main class="container">
-    <div class="page-eyebrow">EARNINGS // YIELD SCANNER</div>
-    <h1 class="page-title">DeFi Earnings Yield Scanner</h1>
-    <p class="page-subtitle">131 protocols scanned by earnings yield, annualized revenue vs. market cap. Data: May 9, 2026.</p>
+<!-- ============================================================
+     PAGE HEADER
+     ============================================================ -->
+<section class="section">
+    <div class="section__head">
+        <div>
+            <span class="section__eyebrow">EARNINGS // YIELD SCANNER</span>
+            <h1 class="section__title">Protocols earning more than their market cap</h1>
+            <p class="section__sub">Annualized protocol revenue divided by fully diluted market cap, sorted by yield. The signal: a token priced below the cash flows it actually produces. Data: May 9, 2026.</p>
+        </div>
+        <span class="live-pill"><span class="live-pill__dot"></span> Live &middot; updated daily</span>
+    </div>
 
-    <div class="stats-bar">
-        <div class="stat-box">
-            <div class="stat-label">Total Scanned</div>
-            <div class="stat-value total">131</div>
+    <div class="stats-strip">
+        <div class="stat-card">
+            <div class="stat-card__label">Total Scanned</div>
+            <div class="stat-card__value">131</div>
         </div>
-        <div class="stat-box">
-            <div class="stat-label">Hyperliquid-Grade</div>
-            <div class="stat-value hyper">24</div>
+        <div class="stat-card">
+            <div class="stat-card__label">Hyperliquid-Grade</div>
+            <div class="stat-card__value is-hyper">24</div>
         </div>
-        <div class="stat-box">
-            <div class="stat-label">High Yield</div>
-            <div class="stat-value high">19</div>
+        <div class="stat-card">
+            <div class="stat-card__label">High Yield</div>
+            <div class="stat-card__value is-high">19</div>
         </div>
-        <div class="stat-box">
-            <div class="stat-label">Moderate</div>
-            <div class="stat-value moderate">14</div>
+        <div class="stat-card">
+            <div class="stat-card__label">Moderate</div>
+            <div class="stat-card__value is-mid">14</div>
         </div>
-        <div class="stat-box">
-            <div class="stat-label">Low</div>
-            <div class="stat-value low">25</div>
+        <div class="stat-card">
+            <div class="stat-card__label">Low Yield</div>
+            <div class="stat-card__value is-low">25</div>
         </div>
     </div>
 
-    <div class="controls">
-        <button class="filter-btn active" data-filter="all" onclick="filterTier('all')">All (50)</button>
-        <button class="filter-btn" data-filter="HYPERLIQUID-GRADE" onclick="filterTier('HYPERLIQUID-GRADE')">Hyperliquid-Grade (24)</button>
-        <button class="filter-btn" data-filter="HIGH-YIELD" onclick="filterTier('HIGH-YIELD')">High (19)</button>
-        <button class="filter-btn" data-filter="MODERATE" onclick="filterTier('MODERATE')">Moderate (7)</button>
-        <input type="text" class="search-input" id="search" placeholder="Search protocol or symbol..." oninput="applyFilters()">
+    <div class="table-filters">
+        <button class="chip chip--active" data-filter="all" onclick="filterTier('all')">All</button>
+        <button class="chip" data-filter="HYPERLIQUID-GRADE" onclick="filterTier('HYPERLIQUID-GRADE')">Hyperliquid-Grade</button>
+        <button class="chip" data-filter="HIGH-YIELD" onclick="filterTier('HIGH-YIELD')">High Yield</button>
+        <button class="chip" data-filter="MODERATE" onclick="filterTier('MODERATE')">Moderate</button>
+        <input type="text" class="table-search" id="search" placeholder="Search protocol, symbol, category..." oninput="applyFilters()">
     </div>
 
     <div class="results-count" id="results-count"></div>
 
-    <div class="table-wrap">
-        <table>
-            <thead>
-                <tr>
-                    <th class="sorted" data-col="rank"># <span class="arrow">&#9660;</span></th>
-                    <th data-col="name">Protocol <span class="arrow"></span></th>
-                    <th data-col="symbol">Symbol <span class="arrow"></span></th>
-                    <th data-col="tier">Tier <span class="arrow"></span></th>
-                    <th data-col="yield">Yield % <span class="arrow"></span></th>
-                    <th data-col="category">Category <span class="arrow"></span></th>
-                    <th data-col="revenue">Ann. Revenue <span class="arrow"></span></th>
-                    <th data-col="mcap">Market Cap <span class="arrow"></span></th>
-                    <th data-col="tvl">TVL <span class="arrow"></span></th>
-                    <th data-col="chains">Chains <span class="arrow"></span></th>
-                </tr>
-            </thead>
-            <tbody id="table-body"></tbody>
-        </table>
+    <div class="table-scroll">
+        <div class="table-wrap table-wrap--striped">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th class="is-sorted" data-col="rank"># <span class="arrow">&#9660;</span></th>
+                        <th data-col="name">Protocol <span class="arrow"></span></th>
+                        <th data-col="category">Category <span class="arrow"></span></th>
+                        <th data-col="tier">Tier <span class="arrow"></span></th>
+                        <th class="ra" data-col="yield">Yield % <span class="arrow"></span></th>
+                        <th class="ra" data-col="revenue">Ann. Revenue <span class="arrow"></span></th>
+                        <th class="ra" data-col="mcap">Market Cap <span class="arrow"></span></th>
+                        <th class="ra" data-col="trend">7D <span class="arrow"></span></th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
     </div>
+</section>
 
+<!-- ============================================================
+     MONETIZATION GATEWAY
+     ============================================================ -->
+<div class="gateway">
+    <div class="gateway__locked">
+        <div class="gateway__lockbadge">&#128274; Members only</div>
+        <div class="table-wrap table-wrap--striped">
+            <table class="data-table">
+                <tbody id="locked-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="gateway__card">
+        <div class="gateway__copy">
+            <div class="gateway__eyebrow">CONVICTION TIER</div>
+            <div class="gateway__title">This is the surface. The highest-conviction calls go to members.</div>
+            <p class="gateway__body">The full scanner shows the top 50 by yield. My highest-conviction, hand-vetted findings &mdash; the ones I&rsquo;m actually positioned in &mdash; I share only with <strong>$99 lifetime members</strong>.</p>
+        </div>
+        <a href="https://zovo.one" class="primary-btn">Get lifetime access at zovo.one &#8594;</a>
+    </div>
+</div>
+
+<!-- ============================================================
+     METHODOLOGY
+     ============================================================ -->
+<section class="section">
     <div class="methodology">
         <h2>Methodology</h2>
-        <p>The Earnings Yield Scanner identifies protocols whose annualized revenue significantly exceeds their market capitalization, a signal that the token may be undervalued relative to the protocol's actual cash flows.</p>
+        <p>The Earnings Yield Scanner identifies protocols whose annualized revenue significantly exceeds their market capitalization, a signal that the token may be undervalued relative to the protocol&rsquo;s actual cash flows.</p>
         <div class="formula-box">
-            Earnings Yield % = (Annualized Revenue / Market Cap) x 100<br>
-            Annualized Revenue = 30-day Revenue x 12
+            Earnings Yield % = (Annualized Revenue / Market Cap) &times; 100<br>
+            Annualized Revenue = 30-day Revenue &times; 12
         </div>
         <p>Revenue is defined as the portion of fees that accrue to the protocol or token holders (not to liquidity providers). This is analogous to net income in traditional finance, making earnings yield comparable to an inverted P/E ratio.</p>
         <p>A yield of 20%+ (Hyperliquid-grade) means the protocol earns more than 20% of its entire market cap per year in revenue, an extreme signal of potential undervaluation, but also potentially a sign of low market confidence, smart contract risk, or unsustainable fee generation.</p>
-
         <div class="tier-legend">
             <div class="tier-legend-item"><span class="dot dot-hyper"></span>HYPERLIQUID-GRADE: 20%+ yield</div>
             <div class="tier-legend-item"><span class="dot dot-high"></span>HIGH-YIELD: 10-20% yield</div>
-            <div class="tier-legend-item"><span class="dot dot-moderate"></span>MODERATE: 5-10% yield</div>
+            <div class="tier-legend-item"><span class="dot dot-mid"></span>MODERATE: 5-10% yield</div>
             <div class="tier-legend-item"><span class="dot dot-low"></span>LOW: under 5% yield</div>
         </div>
     </div>
-    <section class="explore-section">
-        <h3>Explore More Tools</h3>
-        <div class="explore-grid">
-            <a href="/intelligence/">Intelligence Dashboard</a>
-            <a href="/deadlines/">Deadline Tracker</a>
-            <a href="/research/">Research Library</a>
-            <a href="/opportunities/">Opportunities</a>
-            <a href="/">Home</a>
-        </div>
-    </section>
-</main>
+</section>
+
+<!-- ============================================================
+     EXPLORE MORE
+     ============================================================ -->
+<section class="section">
+    <div class="section__head">
+        <div><span class="section__eyebrow">TERMINAL // MORE TOOLS</span><h2 class="section__title" style="font-size:22px;">Explore more</h2></div>
+    </div>
+    <div class="explore-grid">
+        <a href="/intelligence/">Intelligence Dashboard</a>
+        <a href="/deadlines/">Deadline Tracker</a>
+        <a href="/research/">Research Library</a>
+        <a href="/opportunities">Opportunities</a>
+        <a href="/">Home</a>
+    </div>
+</section>
 
 <!-- ============================================================
      EARLYTHUNDER CANONICAL FOOTER
@@ -791,10 +923,10 @@ body{padding-top:56px;}
       </div>
       <div class="et-footer__col">
         <div class="et-footer__head">ABOUT</div>
-        <a href="/about/">About</a>
-        <a href="/methodology/">Methodology</a>
+        <a href="/about">About</a>
+        <a href="/methodology">Methodology</a>
         <a href="/how-it-works/">How it works</a>
-        <a href="/pricing/">Pricing</a>
+        <a href="/pricing">Pricing</a>
       </div>
       <div class="et-footer__col">
         <div class="et-footer__head">LEGAL</div>
@@ -872,113 +1004,197 @@ body{padding-top:56px;}
     var currentSortCol = "rank";
     var currentSortAsc = true;
 
+    function el(id) { return document.getElementById(id); }
+
+    function escapeHtml(str) {
+        if (str === null || str === undefined) { return ""; }
+        return String(str)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+    }
+
     function formatMoney(val) {
-        if (val === 0 || val === null || val === undefined) { return "--"; }
+        if (!val || val === 0) { return "&mdash;"; }
         if (val >= 1000000000) { return "$" + (val / 1000000000).toFixed(2) + "B"; }
         if (val >= 1000000) { return "$" + (val / 1000000).toFixed(2) + "M"; }
         if (val >= 1000) { return "$" + (val / 1000).toFixed(1) + "K"; }
         return "$" + val.toFixed(0);
     }
 
-    function getTierBadgeClass(tier) {
-        if (tier === "HYPERLIQUID-GRADE") { return "tier-hyper"; }
-        if (tier === "HIGH-YIELD") { return "tier-high"; }
-        if (tier === "MODERATE") { return "tier-moderate"; }
-        return "tier-low";
+    function tierClass(tier) {
+        if (tier === "HYPERLIQUID-GRADE") { return "is-hyper"; }
+        if (tier === "HIGH-YIELD") { return "is-high"; }
+        if (tier === "MODERATE") { return "is-mid"; }
+        return "is-low";
     }
 
-    function getTierLabel(tier) {
+    function tierLabel(tier) {
         if (tier === "HYPERLIQUID-GRADE") { return "HYPER"; }
         if (tier === "HIGH-YIELD") { return "HIGH"; }
-        return tier;
+        if (tier === "MODERATE") { return "MOD"; }
+        return "LOW";
     }
 
-    function getYieldColor(pct) {
+    function yieldColor(pct) {
         if (pct >= 20) { return "var(--accent-primary)"; }
         if (pct >= 10) { return "var(--positive)"; }
         if (pct >= 5) { return "var(--info)"; }
         return "var(--text-tertiary)";
     }
 
+    function avatarHue(rank) {
+        return (rank * 47) % 360;
+    }
+
+    // Deterministic sparkline (homepage parity): seed=rank*7919, LCG, 14 pts, 78x22
+    function sparkline(rank) {
+        var seed = rank * 7919;
+        var pts = [];
+        var i = 0;
+        for (i = 0; i < 14; i++) {
+            seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+            var v = (seed % 1000) / 1000;
+            pts.push(2.0 + v * 18.0);
+        }
+        var path = "";
+        for (i = 0; i < pts.length; i++) {
+            var x = (78 / (pts.length - 1)) * i;
+            path += (i === 0 ? "M" : " L") + x.toFixed(1) + "," + pts[i].toFixed(1);
+        }
+        var up = pts[pts.length - 1] >= pts[0];
+        var stroke = up ? "var(--color-positive)" : "var(--color-negative)";
+        return '<svg class="mini-row" width="78" height="22" viewBox="0 0 78 22" fill="none">' +
+            '<path d="' + path + '" stroke="' + stroke + '" stroke-width="1.5" ' +
+            'stroke-linecap="round" stroke-linejoin="round"></path></svg>';
+    }
+
+    function rowHtml(p) {
+        var name = escapeHtml(p.name);
+        var sym = escapeHtml(p.symbol);
+        var cat = escapeHtml(p.category);
+        var html = "<tr>";
+        html += '<td class="rank-cell">' + p.rank + "</td>";
+        html += '<td><span class="sym-cell">' +
+            '<span class="sym-cell__avatar" style="background:hsl(' + avatarHue(p.rank) + ', 55%, 52%)"></span>' +
+            '<span class="sym-cell__sym">' + sym + '</span>' +
+            '<span class="sym-cell__name">' + name + '</span></span></td>';
+        html += "<td>" + cat + "</td>";
+        html += '<td><span class="tier-pill ' + tierClass(p.tier) + '">' + tierLabel(p.tier) + "</span></td>";
+        html += '<td class="ra yield-cell" style="color:' + yieldColor(p.earnings_yield_pct) + '">' +
+            p.earnings_yield_pct.toFixed(2) + "%</td>";
+        html += '<td class="ra mono">' + formatMoney(p.annualized_revenue) + "</td>";
+        html += '<td class="ra mono">' + formatMoney(p.mcap) + "</td>";
+        html += '<td class="ra">' + sparkline(p.rank) + "</td>";
+        html += "</tr>";
+        return html;
+    }
+
     function getFiltered() {
-        var search = document.getElementById("search").value.toLowerCase().trim();
+        var searchEl = el("search");
+        var search = searchEl ? searchEl.value.toLowerCase().trim() : "";
         var filtered = [];
-        for (var i = 0; i < PROTOCOLS.length; i++) {
+        var i = 0;
+        for (i = 0; i < PROTOCOLS.length; i++) {
             var p = PROTOCOLS[i];
             if (currentFilter !== "all" && p.tier !== currentFilter) { continue; }
-            if (search && p.name.toLowerCase().indexOf(search) === -1 && p.symbol.toLowerCase().indexOf(search) === -1 && p.category.toLowerCase().indexOf(search) === -1) { continue; }
+            if (search &&
+                p.name.toLowerCase().indexOf(search) === -1 &&
+                p.symbol.toLowerCase().indexOf(search) === -1 &&
+                p.category.toLowerCase().indexOf(search) === -1) { continue; }
             filtered.push(p);
         }
         return filtered;
     }
 
+    function sortValue(p) {
+        if (currentSortCol === "rank") { return p.rank; }
+        if (currentSortCol === "name") { return p.name.toLowerCase(); }
+        if (currentSortCol === "category") { return p.category.toLowerCase(); }
+        if (currentSortCol === "tier") { return TIER_ORDER[p.tier] !== undefined ? TIER_ORDER[p.tier] : 99; }
+        if (currentSortCol === "yield") { return p.earnings_yield_pct; }
+        if (currentSortCol === "revenue") { return p.annualized_revenue; }
+        if (currentSortCol === "mcap") { return p.mcap; }
+        if (currentSortCol === "trend") { return p.rank; }
+        return p.rank;
+    }
+
     function getSorted(data) {
         var sorted = data.slice();
         sorted.sort(function(a, b) {
-            var va, vb;
-            if (currentSortCol === "rank") { va = a.rank; vb = b.rank; }
-            else if (currentSortCol === "name") { va = a.name.toLowerCase(); vb = b.name.toLowerCase(); return currentSortAsc ? va.localeCompare(vb) : vb.localeCompare(va); }
-            else if (currentSortCol === "symbol") { va = a.symbol.toLowerCase(); vb = b.symbol.toLowerCase(); return currentSortAsc ? va.localeCompare(vb) : vb.localeCompare(va); }
-            else if (currentSortCol === "tier") { va = TIER_ORDER[a.tier] !== undefined ? TIER_ORDER[a.tier] : 99; vb = TIER_ORDER[b.tier] !== undefined ? TIER_ORDER[b.tier] : 99; }
-            else if (currentSortCol === "yield") { va = a.earnings_yield_pct; vb = b.earnings_yield_pct; }
-            else if (currentSortCol === "category") { va = a.category.toLowerCase(); vb = b.category.toLowerCase(); return currentSortAsc ? va.localeCompare(vb) : vb.localeCompare(va); }
-            else if (currentSortCol === "revenue") { va = a.annualized_revenue; vb = b.annualized_revenue; }
-            else if (currentSortCol === "mcap") { va = a.mcap; vb = b.mcap; }
-            else if (currentSortCol === "tvl") { va = a.tvl; vb = b.tvl; }
-            else if (currentSortCol === "chains") { va = a.chains.length; vb = b.chains.length; }
-            else { va = a.rank; vb = b.rank; }
+            var va = sortValue(a);
+            var vb = sortValue(b);
+            if (typeof va === "string") {
+                return currentSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+            }
             if (va === undefined) { va = 0; }
             if (vb === undefined) { vb = 0; }
-            return currentSortAsc ? (va > vb ? 1 : va < vb ? -1 : 0) : (va < vb ? 1 : va > vb ? -1 : 0);
+            if (va === vb) { return 0; }
+            return currentSortAsc ? (va > vb ? 1 : -1) : (va < vb ? 1 : -1);
         });
         return sorted;
     }
 
-    function renderTable() {
-        var filtered = getFiltered();
-        var sorted = getSorted(filtered);
-        var tbody = document.getElementById("table-body");
-        var html = "";
+    function updateHeaders() {
+        var ths = document.querySelectorAll(".data-table thead th[data-col]");
+        var j = 0;
+        for (j = 0; j < ths.length; j++) {
+            var col = ths[j].getAttribute("data-col");
+            ths[j].classList.toggle("is-sorted", col === currentSortCol);
+            var arrow = ths[j].querySelector(".arrow");
+            if (!arrow) { continue; }
+            arrow.innerHTML = (col === currentSortCol) ? (currentSortAsc ? "&#9660;" : "&#9650;") : "";
+        }
+    }
 
-        for (var i = 0; i < sorted.length; i++) {
-            var p = sorted[i];
+    function renderLocked() {
+        var locked = el("locked-body");
+        if (!locked) { return; }
+        var html = "";
+        var i = 0;
+        for (i = 0; i < 3; i++) {
             html += "<tr>";
-            html += '<td class="rank-cell">' + p.rank + "</td>";
-            html += '<td class="name-cell">' + p.name + "</td>";
-            html += '<td class="symbol-cell">' + p.symbol + "</td>";
-            html += '<td><span class="tier-badge ' + getTierBadgeClass(p.tier) + '">' + getTierLabel(p.tier) + "</span></td>";
-            html += '<td class="yield-cell" style="color:' + getYieldColor(p.earnings_yield_pct) + '">' + p.earnings_yield_pct.toFixed(2) + "%</td>";
-            html += "<td>" + p.category + "</td>";
-            html += '<td class="money-cell">' + formatMoney(p.annualized_revenue) + "</td>";
-            html += '<td class="money-cell">' + formatMoney(p.mcap) + "</td>";
-            html += '<td class="money-cell">' + formatMoney(p.tvl) + "</td>";
-            html += '<td class="chains-cell">' + p.chains.join(", ") + "</td>";
+            html += '<td class="rank-cell">' + (51 + i) + "</td>";
+            html += '<td><span class="sym-cell">' +
+                '<span class="sym-cell__avatar" style="background:hsl(' + avatarHue(51 + i) + ', 55%, 52%)"></span>' +
+                '<span class="sym-cell__sym">&#9679;&#9679;&#9679;&#9679;</span>' +
+                '<span class="sym-cell__name">Classified protocol</span></span></td>';
+            html += "<td>&#9679;&#9679;&#9679;</td>";
+            html += '<td><span class="tier-pill is-hyper">HYPER</span></td>';
+            html += '<td class="ra yield-cell" style="color:var(--accent-primary)">&#9679;&#9679;&#9679;%</td>';
+            html += '<td class="ra mono">$&#9679;.&#9679;M</td>';
+            html += '<td class="ra mono">$&#9679;.&#9679;M</td>';
+            html += '<td class="ra">' + sparkline(60 + i) + "</td>";
             html += "</tr>";
         }
+        locked.innerHTML = html;
+    }
 
-        tbody.innerHTML = html;
-        document.getElementById("results-count").textContent = "Showing " + sorted.length + " of " + PROTOCOLS.length + " protocols";
-
-        var ths = document.querySelectorAll("thead th");
-        for (var j = 0; j < ths.length; j++) {
-            var col = ths[j].getAttribute("data-col");
-            ths[j].classList.toggle("sorted", col === currentSortCol);
-            var arrow = ths[j].querySelector(".arrow");
-            if (arrow) {
-                if (col === currentSortCol) {
-                    arrow.textContent = currentSortAsc ? "▼" : "▲";
-                } else {
-                    arrow.textContent = "";
-                }
-            }
+    function renderTable() {
+        var tbody = el("table-body");
+        if (!tbody) { return; }
+        var sorted = getSorted(getFiltered());
+        var html = "";
+        var i = 0;
+        for (i = 0; i < sorted.length; i++) {
+            html += rowHtml(sorted[i]);
         }
+        tbody.innerHTML = html;
+        var rc = el("results-count");
+        if (rc) {
+            rc.textContent = "Showing " + sorted.length + " of " + PROTOCOLS.length + " protocols";
+        }
+        updateHeaders();
     }
 
     function filterTier(tier) {
         currentFilter = tier;
-        var buttons = document.querySelectorAll(".filter-btn");
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].classList.toggle("active", buttons[i].getAttribute("data-filter") === tier);
+        var chips = document.querySelectorAll(".chip");
+        var i = 0;
+        for (i = 0; i < chips.length; i++) {
+            chips[i].classList.toggle("chip--active", chips[i].getAttribute("data-filter") === tier);
         }
         renderTable();
     }
@@ -987,24 +1203,38 @@ body{padding-top:56px;}
         renderTable();
     }
 
-    document.querySelectorAll("thead th").forEach(function(th) {
-        th.addEventListener("click", function() {
-            var col = th.getAttribute("data-col");
-            if (!col) { return; }
-            if (currentSortCol === col) {
-                currentSortAsc = !currentSortAsc;
-            } else {
-                currentSortCol = col;
-                currentSortAsc = (col === "name" || col === "symbol" || col === "category" || col === "rank");
-            }
-            renderTable();
-        });
-    });
+    function sortTable(col, dir) {
+        if (!col) { return; }
+        currentSortCol = col;
+        currentSortAsc = (dir === "asc");
+        renderTable();
+    }
+
+    function bindHeaders() {
+        var ths = document.querySelectorAll(".section .data-table thead th[data-col]");
+        var i = 0;
+        for (i = 0; i < ths.length; i++) {
+            ths[i].addEventListener("click", function() {
+                var col = this.getAttribute("data-col");
+                if (!col) { return; }
+                if (currentSortCol === col) {
+                    currentSortAsc = !currentSortAsc;
+                } else {
+                    currentSortCol = col;
+                    currentSortAsc = (col === "name" || col === "category" || col === "rank");
+                }
+                renderTable();
+            });
+        }
+    }
 
     window.filterTier = filterTier;
     window.applyFilters = applyFilters;
+    window.sortTable = sortTable;
 
+    bindHeaders();
     renderTable();
+    renderLocked();
 })();
 </script>
 </body>

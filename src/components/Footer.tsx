@@ -62,7 +62,7 @@ function FooterAnchor({ href, label }: FooterLink) {
   if (STANDALONE_ROUTES.has(href)) {
     return <a href={href}>{label}</a>;
   }
-  return <Link href={href}>{label}</Link>;
+  return <Link href={href} prefetch={false}>{label}</Link>;
 }
 
 /** Render one column of footer links. */

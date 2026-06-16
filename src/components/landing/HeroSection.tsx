@@ -115,9 +115,9 @@ function ConvictionLadder({
       </div>
       <div className="ladder__foot">
         <span>+ {remaining} more &middot; updated daily</span>
-        <Link href="/intelligence/" className="ladder__cta">
+        <a href="/intelligence/" className="ladder__cta">
           Open Index &rarr;
-        </Link>
+        </a>
       </div>
     </div>
   );

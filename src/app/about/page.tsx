@@ -59,6 +59,13 @@ const STAT_TILES = [
   { value: "247+", label: "Protocols scanned" },
 ] as const;
 
+const MEMBER_PERKS = [
+  "Priority access to new picks — the highest-conviction findings before they show up on the public dashboard.",
+  "The deeper data behind each thesis — the full scoring breakdown, sources, and the short-seller pass I run on every call.",
+  "The calls I'm actually positioned in, flagged as such — not just the watchlist, but where my own conviction sits.",
+  "Specific-protocol requests — point the engine at something you care about and get it scored.",
+] as const;
+
 const PRINCIPLES = [
   {
     title: "Master the craft",
@@ -95,12 +102,32 @@ export default function AboutPage() {
       <Hero />
       <Story />
       <Mission />
+      <Gateway />
       <Milestones />
       <Builder />
       <Principles />
       <FindMe />
+      <ClosingCta />
       <DisclaimerLine />
     </div>
+  );
+}
+
+/* ─── Reusable amber CTA button ─────────────────────────────── */
+
+function LifetimeCta({ label }: { readonly label: string }) {
+  return (
+    <a
+      href="https://zovo.one"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="primary-btn primary-btn--lg group inline-flex items-center gap-2"
+    >
+      {label}
+      <span className="transition-transform duration-150 group-hover:translate-x-[3px]">
+        &rarr;
+      </span>
+    </a>
   );
 }
 
@@ -185,6 +212,57 @@ function Mission() {
         </Link>
       </div>
     </Section>
+  );
+}
+
+/* ─── 3b. Membership gateway ───────────────────────────────── */
+
+function Gateway() {
+  return (
+    <section className="mt-20 md:mt-24">
+      <div className="relative overflow-hidden rounded-2xl border border-accent-primary/45 bg-bg-secondary p-8 shadow-[0_0_0_1px_rgba(245,166,35,0.06)] md:p-10">
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-primary/60 to-transparent"
+        />
+        <span className="inline-flex items-center gap-2 rounded-full border border-accent-primary/40 bg-accent-subtle px-3 py-1 font-mono text-[11px] uppercase tracking-[0.08em] text-accent-primary">
+          Lifetime membership &middot; &#36;99
+        </span>
+        <h2 className="mt-5 max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-text-primary md:text-[32px]">
+          Everything is free. The calls I&rsquo;m positioned in are for members.
+        </h2>
+        <p className="mt-5 max-w-2xl text-base leading-relaxed text-text-secondary">
+          The pipeline, the scores, the misses &mdash; all free, in public, every
+          figure sourced and timestamped. But the calls I&rsquo;m actually
+          positioned in, my highest-conviction findings before they&rsquo;re
+          obvious, I share only with &#36;99 lifetime members. One payment.
+          Lifetime access. No subscription, no upsell treadmill &mdash; all
+          through Zovo.
+        </p>
+
+        <ul className="mt-7 grid max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
+          {MEMBER_PERKS.map((perk) => (
+            <li
+              key={perk}
+              className="flex gap-2.5 text-sm leading-relaxed text-text-secondary"
+            >
+              <span
+                aria-hidden="true"
+                className="mt-[7px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent-primary"
+              />
+              {perk}
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <LifetimeCta label="Get lifetime access — $99 at zovo.one" />
+          <p className="font-mono text-[12px] text-text-tertiary">
+            One payment. Lifetime access. No subscription.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -297,23 +375,19 @@ function FindMe() {
     <Section eyebrow="Find me &middot; work with me" title="Lifetime, one payment.">
       <div className="mt-6 rounded-2xl border border-border-subtle bg-bg-secondary p-8 md:p-10">
         <p className="max-w-2xl text-base leading-relaxed text-text-secondary">
-          Everything on the public site is free, forever. Deeper data, specific
-          research requests, and priority access are shared with lifetime members
-          through Zovo — one payment, no subscription, no upsell treadmill. If
-          you want the engine pointed at something specific, that is where it
-          happens.
+          Everything on the public site is free, forever. The deeper data, the
+          specific-protocol requests, and priority access to my highest-conviction
+          picks are shared with &#36;99 lifetime members through Zovo &mdash; one
+          payment, no subscription, no upsell treadmill. If you want the engine
+          pointed at something specific, that is where it happens.
         </p>
-        <a
-          href="https://zovo.one"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group mt-7 inline-flex items-center gap-2 rounded-lg bg-accent-primary px-5 py-3 text-sm font-semibold text-bg-primary transition-[background-color,transform,box-shadow] duration-150 hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
-        >
-          Get lifetime access at zovo.one
-          <span className="transition-transform duration-150 group-hover:translate-x-[3px]">
-            &rarr;
-          </span>
-        </a>
+        <p className="mt-3 max-w-2xl font-mono text-[12px] text-text-tertiary">
+          One payment. Lifetime access. Cancel anytime &mdash; there is no
+          subscription to cancel.
+        </p>
+        <div className="mt-7">
+          <LifetimeCta label="Get lifetime access — $99 at zovo.one" />
+        </div>
         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 border-t border-border-subtle pt-6">
           <FindMeLink href="https://github.com/theluckystrike" label="github.com/theluckystrike" />
           <FindMeLink href="https://michaelip.dev" label="michaelip.dev" />
@@ -337,6 +411,29 @@ function FindMeLink({ href, label }: { readonly href: string; readonly label: st
         &rarr;
       </span>
     </a>
+  );
+}
+
+/* ─── 7b. Closing CTA ──────────────────────────────────────── */
+
+function ClosingCta() {
+  return (
+    <section className="mt-20 md:mt-24">
+      <div className="flex flex-col items-start gap-5 rounded-2xl border border-accent-primary/45 bg-bg-secondary p-8 md:flex-row md:items-center md:justify-between md:p-10">
+        <div className="max-w-xl">
+          <h2 className="text-xl font-semibold tracking-tight text-text-primary md:text-2xl">
+            Want my top findings before they&rsquo;re obvious?
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+            The public site stays free. The highest-conviction calls go to
+            members &mdash; one payment, lifetime access.
+          </p>
+        </div>
+        <div className="shrink-0">
+          <LifetimeCta label="Get lifetime access — $99 at zovo.one" />
+        </div>
+      </div>
+    </section>
   );
 }
 
