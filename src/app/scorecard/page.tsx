@@ -125,12 +125,17 @@ export default function ScorecardPage() {
         &middot; Updated {new Date(updated_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
       </p>
 
-      {/* Rankings Table */}
+      {/* Rankings */}
       <section className="mt-12">
-        <h2 className="text-xl font-semibold text-text-primary mb-4">
+        <h2 className="text-xl font-semibold text-text-primary mb-1">
           Final Rankings
         </h2>
-        <div className="overflow-x-auto rounded-2xl border border-border">
+        <p className="mb-4 text-xs text-text-tertiary lg:hidden">
+          Tap a card for the full breakdown. Catalyst and risk shown on every screen.
+        </p>
+
+        {/* Desktop / tablet table (lg and up). Scrolls horizontally if needed. */}
+        <div className="hidden overflow-x-auto rounded-2xl border border-border lg:block">
           <table className="w-full text-sm font-mono">
             <thead>
               <tr className="border-b border-border bg-bg-card">
@@ -140,14 +145,14 @@ export default function ScorecardPage() {
                 <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Verdict</th>
                 <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">Price</th>
                 <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">MCap</th>
-                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider">FDV</th>
-                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider hidden md:table-cell">Circ</th>
-                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider hidden md:table-cell">Total</th>
-                <th className="px-3 py-3 text-center text-xs text-text-tertiary uppercase tracking-wider hidden md:table-cell">Max</th>
+                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider hidden 2xl:table-cell">FDV</th>
+                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider hidden 2xl:table-cell">Circ</th>
+                <th className="px-3 py-3 text-right text-xs text-text-tertiary uppercase tracking-wider hidden 2xl:table-cell">Total</th>
+                <th className="px-3 py-3 text-center text-xs text-text-tertiary uppercase tracking-wider hidden 2xl:table-cell">Max</th>
                 <th className="px-3 py-3 text-center text-xs text-text-tertiary uppercase tracking-wider">Circ%</th>
                 <th className="px-3 py-3 text-center text-xs text-text-tertiary uppercase tracking-wider">Dil.</th>
-                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider hidden xl:table-cell">Catalyst</th>
-                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider hidden xl:table-cell">Risk</th>
+                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Catalyst</th>
+                <th className="px-3 py-3 text-left text-xs text-text-tertiary uppercase tracking-wider">Risk</th>
               </tr>
             </thead>
             <tbody>
@@ -160,7 +165,7 @@ export default function ScorecardPage() {
                 const circPct = circS && totalS && totalS > 0 ? (circS / totalS) * 100 : null;
                 const dilX = token.market_cap && fdvVal && token.market_cap > 0 ? fdvVal / token.market_cap : null;
                 return (
-                <tr key={token.symbol} className="border-b border-border/50 hover:bg-bg-card/50 transition-colors">
+                <tr key={token.symbol} className="border-b border-border/50 hover:bg-bg-card/50 transition-colors align-top">
                   <td className="px-3 py-2.5 text-text-tertiary">{i + 1}</td>
                   <td className="px-3 py-2.5 font-semibold text-text-primary">
                     <span className="inline-flex items-center gap-1.5">
@@ -185,28 +190,99 @@ export default function ScorecardPage() {
                     <span className={`font-bold ${scoreColor(token.score / 10)}`}>{token.score}</span>
                   </td>
                   <td className="px-3 py-2.5">{verdictBadge(token.verdict, token.verdict_color)}</td>
-                  <td className="px-3 py-2.5 text-right text-text-primary">
+                  <td className="px-3 py-2.5 text-right text-text-primary whitespace-nowrap">
                     ${token.price < 10 ? token.price.toFixed(2) : token.price.toLocaleString()}
                   </td>
-                  <td className="px-3 py-2.5 text-right text-text-secondary">{fmtUsd(token.market_cap)}</td>
-                  <td className="px-3 py-2.5 text-right text-text-tertiary">{fmtUsd(fdvVal)}</td>
-                  <td className="px-3 py-2.5 text-right text-text-secondary hidden md:table-cell">{fmtSupply(circS)}</td>
-                  <td className="px-3 py-2.5 text-right text-text-tertiary hidden md:table-cell">{fmtSupply(totalS)}</td>
-                  <td className="px-3 py-2.5 text-center text-text-tertiary hidden md:table-cell">{maxS == null ? "\u221E" : fmtSupply(maxS)}</td>
+                  <td className="px-3 py-2.5 text-right text-text-secondary whitespace-nowrap">{fmtUsd(token.market_cap)}</td>
+                  <td className="px-3 py-2.5 text-right text-text-tertiary hidden 2xl:table-cell">{fmtUsd(fdvVal)}</td>
+                  <td className="px-3 py-2.5 text-right text-text-secondary hidden 2xl:table-cell">{fmtSupply(circS)}</td>
+                  <td className="px-3 py-2.5 text-right text-text-tertiary hidden 2xl:table-cell">{fmtSupply(totalS)}</td>
+                  <td className="px-3 py-2.5 text-center text-text-tertiary hidden 2xl:table-cell">{maxS == null ? "\u221E" : fmtSupply(maxS)}</td>
                   <td className={`px-3 py-2.5 text-center font-semibold ${circColor(circS, totalS)}`}>
                     {circPct != null ? `${circPct.toFixed(0)}%` : "-"}
                   </td>
                   <td className={`px-3 py-2.5 text-center ${dilColor(token.market_cap, fdvVal)}`}>
                     {dilX != null ? `${dilX.toFixed(1)}x` : "-"}
                   </td>
-                  <td className="px-3 py-2.5 text-text-secondary text-xs hidden xl:table-cell">{token.key_catalyst}</td>
-                  <td className="px-3 py-2.5 text-text-secondary text-xs hidden xl:table-cell">{token.key_risk}</td>
+                  <td className="px-3 py-2.5 text-text-secondary text-xs min-w-[180px] max-w-[280px] whitespace-normal leading-snug">{token.key_catalyst}</td>
+                  <td className="px-3 py-2.5 text-text-secondary text-xs min-w-[180px] max-w-[280px] whitespace-normal leading-snug">{token.key_risk}</td>
                 </tr>
                 );
               })}
             </tbody>
           </table>
         </div>
+
+        {/* Mobile / small-screen ranked cards (below lg). Risk is always visible. */}
+        <ol className="space-y-3 lg:hidden">
+          {sorted.map((token, i) => {
+            const t = token as Record<string, unknown>;
+            const circS = t.circulating_supply as number | null;
+            const totalS = t.total_supply as number | null;
+            const circPct = circS && totalS && totalS > 0 ? (circS / totalS) * 100 : null;
+            return (
+              <li
+                key={token.symbol}
+                className="rounded-xl border border-border bg-bg-card p-4"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex items-center gap-2 font-mono">
+                    <span className="text-text-tertiary text-xs">{i + 1}</span>
+                    {SYMBOL_TO_SLUG[token.symbol] ? (
+                      <Link
+                        href={`/opportunities/${SYMBOL_TO_SLUG[token.symbol]}`}
+                        className="font-semibold text-info hover:underline"
+                      >
+                        {token.symbol}
+                      </Link>
+                    ) : (
+                      <span className="font-semibold text-text-primary">{token.symbol}</span>
+                    )}
+                    {BUY_LIST.has(token.symbol) && (
+                      <span className="inline-block rounded px-1 py-px text-[9px] font-bold bg-positive-bg text-positive border border-positive/30 leading-tight">
+                        BUY
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2 font-mono">
+                    <span className={`font-bold ${scoreColor(token.score / 10)}`}>{token.score}</span>
+                    {verdictBadge(token.verdict, token.verdict_color)}
+                  </div>
+                </div>
+                <div className="mt-3 grid grid-cols-3 gap-2 font-mono text-xs">
+                  <div>
+                    <div className="text-text-tertiary">Price</div>
+                    <div className="text-text-primary">
+                      ${token.price < 10 ? token.price.toFixed(2) : token.price.toLocaleString()}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-text-tertiary">MCap</div>
+                    <div className="text-text-primary">{fmtUsd(token.market_cap)}</div>
+                  </div>
+                  <div>
+                    <div className="text-text-tertiary">Circ%</div>
+                    <div className={`font-semibold ${circColor(circS, totalS)}`}>
+                      {circPct != null ? `${circPct.toFixed(0)}%` : "-"}
+                    </div>
+                  </div>
+                </div>
+                {token.key_catalyst && (
+                  <p className="mt-3 text-xs leading-snug text-text-secondary">
+                    <span className="font-mono uppercase tracking-wider text-[10px] text-positive">Catalyst</span>{" "}
+                    {token.key_catalyst}
+                  </p>
+                )}
+                {token.key_risk && (
+                  <p className="mt-1.5 text-xs leading-snug text-text-secondary">
+                    <span className="font-mono uppercase tracking-wider text-[10px] text-negative">Risk</span>{" "}
+                    {token.key_risk}
+                  </p>
+                )}
+              </li>
+            );
+          })}
+        </ol>
       </section>
 
       {/* Token Cards */}
