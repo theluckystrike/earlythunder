@@ -11,7 +11,16 @@
 
 ---
 
-## What the QA harness found (and what I did)
+## ⚠️ THE root cause (found by testing production, not just local)
+
+### 0. Production CSP blocked Google Fonts + ALL inline scripts  ✅ FIXED
+This is why `/earnings/` looked "terrible / wrong fonts / empty table" even after the first rebuild — and it only reproduced **on the live site**, because Cloudflare applies `_headers` but local dev servers don't. The global CSP in `_headers` was:
+`script-src 'self' https://plausible.io; style-src 'self' 'unsafe-inline'; font-src 'self'`
+- **No `'unsafe-inline'` in script-src** → every inline `<script>` was refused, so the JS-rendered earnings table never populated (`renderTable()` blocked) — **and** mobile menus, countdowns, and Next.js hydration broke site-wide (home threw **34 CSP errors**).
+- **`style-src`/`font-src` didn't allow `fonts.googleapis.com` / `fonts.gstatic.com`** → Geist + JetBrains Mono were blocked, so the whole site fell back to system **serif** — exactly the "fonts not even close to the main page" complaint.
+
+**Fix:** CSP now allows `'unsafe-inline'` scripts (site is fully static, no reflected input), the Google Fonts CDNs, and the Cloudflare analytics beacon.
+**Verified on production (real browser):** `/earnings/` renders **53 rows in Geist, 0 errors, 0 empty tables**; home dropped from **34 errors → 0**.
 
 ### 1. `/earnings/` — terrible design + empty table  ✅ FIXED
 - **Root cause of "empty":** the table is 100% client-JS-rendered (`tbody#table-body` empty in HTML, filled by `renderTable()`); the old render could silently abort. The screenshot you sent was the **old production page** (old "EARLYTHUNDER YIELD SCANNER" header).
