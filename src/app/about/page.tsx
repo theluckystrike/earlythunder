@@ -48,7 +48,7 @@ const MILESTONES = [
   {
     year: "Now",
     title: "Early Thunder, in public",
-    text: "That private pipeline became four live terminals scoring 247+ protocols across 8 signal dimensions. The whole thing runs in public — sourced, timestamped, and adversarially stress-tested.",
+    text: "That private pipeline became four live terminals scoring 247+ protocols across 8 signal dimensions. The whole thing runs in public, sourced, timestamped, and adversarially stress-tested.",
   },
 ] as const;
 
@@ -60,16 +60,16 @@ const STAT_TILES = [
 ] as const;
 
 const MEMBER_PERKS = [
-  "Priority access to new picks — the highest-conviction findings before they show up on the public dashboard.",
-  "The deeper data behind each thesis — the full scoring breakdown, sources, and the short-seller pass I run on every call.",
-  "The calls I'm actually positioned in, flagged as such — not just the watchlist, but where my own conviction sits.",
-  "Specific-protocol requests — point the engine at something you care about and get it scored.",
+  "Priority access to new picks. The highest-conviction findings before they show up on the public dashboard.",
+  "The deeper data behind each thesis. The full scoring breakdown, sources, and the short-seller pass I run on every call.",
+  "The calls I'm actually positioned in, flagged as such. Not just the watchlist, but where my own conviction sits.",
+  "Specific-protocol requests. Point the engine at something you care about and get it scored.",
 ] as const;
 
 const PRINCIPLES = [
   {
     title: "Master the craft",
-    text: "Tools, scrapers, scorers, dashboards — all built by hand, end to end. No agency, no contractor. The person who designed the methodology is the person reading the data.",
+    text: "Tools, scrapers, scorers, dashboards, all built by hand, end to end. No agency, no contractor. The person who designed the methodology is the person reading the data.",
   },
   {
     title: "Fall in love with the problem",
@@ -81,11 +81,11 @@ const PRINCIPLES = [
   },
   {
     title: "Dig deep to find the gem",
-    text: "The best opportunities live in the Toy Phase — ignored, underbuilt, mislabeled as a joke. Real edge requires reading the commits, not the headlines.",
+    text: "The best opportunities live in the Toy Phase. Ignored, underbuilt, mislabeled as a joke. Real edge requires reading the commits, not the headlines.",
   },
   {
     title: "Be adversarial",
-    text: "Every bull thesis is stress-tested against a dedicated short-seller pass. The failures get published too — the Graveyard exists because 88% of airdrops lose value within 90 days.",
+    text: "Every bull thesis is stress-tested against a dedicated short-seller pass. The failures get published too. The Graveyard exists because 88% of airdrops lose value within 90 days.",
   },
   {
     title: "Ship in public",
@@ -149,7 +149,7 @@ function Hero() {
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary">
         Early Thunder is an autonomous, institution-grade research engine for
         pre-mainstream opportunities across DeFi, public equities, and private
-        markets. No team, no fund, no black box — just an engineer who built the
+        markets. No team, no fund, no black box. Just an engineer who built the
         tool he wished existed and left the doors open. Hear the storm before
         anyone else.
       </p>
@@ -165,14 +165,14 @@ function Story() {
       <div className="mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-text-secondary">
         <p>
           The opportunities that matter most are buried where almost nobody is
-          looking — a protocol in its Toy Phase, an under-followed equity before
+          looking. A protocol in its Toy Phase, an under-followed equity before
           earnings, a deadline that fires a catalyst three weeks from now. The
-          information exists. It is just scattered across on-chain data, GitHub
+          information exists. It&rsquo;s just scattered across on-chain data, GitHub
           activity, filings, funding rounds, and a hundred Discord threads.
         </p>
         <p>
           So I built a private pipeline to pull it all into one place and score
-          it the same way every time — no mood, no narrative, no fear of missing
+          it the same way every time. No mood, no narrative, no fear of missing
           out. It scanned, it ranked, it flagged the rare convergence where
           multiple signals lined up at once.
         </p>
@@ -194,11 +194,11 @@ function Mission() {
       <p className="mt-6 max-w-2xl text-base leading-relaxed text-text-secondary">
         Thousands of obscure, pre-mainstream opportunities surface every month.
         Almost all of them are noise. The mission is to compress that chaos into
-        a short list of validated, adversarially-tested ideas — every one scored
+        a short list of validated, adversarially-tested ideas. Every one scored
         across 8 equally-weighted dimensions, sourced, timestamped, and stress-
         tested against a dedicated short-seller pass before it ever reaches you.
-        And to keep the public site free, because edge that only the funded can
-        afford is not edge worth talking about.
+        And the public site stays free, because edge that only the funded can
+        afford isn&rsquo;t edge worth talking about.
       </p>
       <div className="mt-6">
         <Link
@@ -232,11 +232,11 @@ function Gateway() {
           Everything is free. The calls I&rsquo;m positioned in are for members.
         </h2>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-text-secondary">
-          The pipeline, the scores, the misses &mdash; all free, in public, every
+          The pipeline, the scores, the misses, all free, in public, every
           figure sourced and timestamped. But the calls I&rsquo;m actually
           positioned in, my highest-conviction findings before they&rsquo;re
           obvious, I share only with &#36;99 lifetime members. One payment.
-          Lifetime access. No subscription, no upsell treadmill &mdash; all
+          Lifetime access. No subscription, no upsell treadmill. All
           through Zovo.
         </p>
 
@@ -256,7 +256,7 @@ function Gateway() {
         </ul>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-          <LifetimeCta label="Get lifetime access — $99 at zovo.one" />
+          <LifetimeCta label="Get lifetime access for $99 at zovo.one" />
           <p className="font-mono text-[12px] text-text-tertiary">
             One payment. Lifetime access. No subscription.
           </p>
@@ -305,16 +305,16 @@ function Builder() {
         <div className="max-w-2xl space-y-4 text-base leading-relaxed text-text-secondary">
           <p>
             Solo developer and founder of Zovo, based in Warsaw, Poland. A
-            CTO-turned-solo-dev who ships Chrome extensions and AI tools at scale
-            — Tab Suspender Pro, BeLikeNative (13,200+ users, rated 4.63), Focus
-            Mode Pro, Session Manager Pro — twenty extensions and 50,000+ users
+            CTO-turned-solo-dev who ships Chrome extensions and AI tools at scale.
+            Tab Suspender Pro, BeLikeNative (13,200+ users, rated 4.63), Focus
+            Mode Pro, Session Manager Pro. Twenty extensions and 50,000+ users
             under the Zovo brand.
           </p>
           <p>
             Active in open source, with 140+ upstream PRs merged into projects
             including Google Chrome, axios, and NiceHash. Early Thunder applies
-            that same engineer&rsquo;s discipline to opportunity intelligence:
-            the person who wrote the scrapers is the person reading the data.
+            that same engineer&rsquo;s discipline to opportunity intelligence.
+            The person who wrote the scrapers is the person reading the data.
           </p>
           <p className="font-mono text-sm text-text-tertiary">
             github.com/theluckystrike &middot; michaelip.dev
@@ -377,16 +377,16 @@ function FindMe() {
         <p className="max-w-2xl text-base leading-relaxed text-text-secondary">
           Everything on the public site is free, forever. The deeper data, the
           specific-protocol requests, and priority access to my highest-conviction
-          picks are shared with &#36;99 lifetime members through Zovo &mdash; one
+          picks are shared with &#36;99 lifetime members through Zovo. One
           payment, no subscription, no upsell treadmill. If you want the engine
-          pointed at something specific, that is where it happens.
+          pointed at something specific, that&rsquo;s where it happens.
         </p>
         <p className="mt-3 max-w-2xl font-mono text-[12px] text-text-tertiary">
-          One payment. Lifetime access. Cancel anytime &mdash; there is no
+          One payment. Lifetime access. Cancel anytime. There&rsquo;s no
           subscription to cancel.
         </p>
         <div className="mt-7">
-          <LifetimeCta label="Get lifetime access — $99 at zovo.one" />
+          <LifetimeCta label="Get lifetime access for $99 at zovo.one" />
         </div>
         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 border-t border-border-subtle pt-6">
           <FindMeLink href="https://github.com/theluckystrike" label="github.com/theluckystrike" />
@@ -426,11 +426,11 @@ function ClosingCta() {
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-text-secondary">
             The public site stays free. The highest-conviction calls go to
-            members &mdash; one payment, lifetime access.
+            members. One payment, lifetime access.
           </p>
         </div>
         <div className="shrink-0">
-          <LifetimeCta label="Get lifetime access — $99 at zovo.one" />
+          <LifetimeCta label="Get lifetime access for $99 at zovo.one" />
         </div>
       </div>
     </section>
