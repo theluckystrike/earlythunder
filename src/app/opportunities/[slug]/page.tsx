@@ -20,7 +20,69 @@ import CitationSection from "@/components/CitationSection";
 import {
   getOpportunitySchema,
   getBreadcrumbListSchema,
+  getFaqPageSchema,
 } from "@/lib/structured-data";
+
+/* ─── Text helpers (humanized: no em dashes in generated prose) ─── */
+
+/** Strip em/en dashes and double hyphens from generated prose. */
+function sanitizeProse(s: string): string {
+  if (typeof s !== "string") return "";
+  return s.replace(/\s*[—–]\s*/g, ", ").replace(/(?<!-)--(?!-)/g, ", ").replace(/\s+/g, " ").trim();
+}
+
+/** First n sentences of a block of text. */
+function firstSentences(text: string, n: number): string {
+  if (typeof text !== "string" || n < 1) return "";
+  return text.split(/(?<=[.!?])\s+/).slice(0, n).join(" ");
+}
+
+/** Short ticker without the leading $. */
+function bareTicker(opp: Opportunity): string {
+  return opp.ticker ? opp.ticker.replace(/^\$/, "") : opp.name;
+}
+
+/** Build long-tail FAQ entries from an opportunity's real data fields. */
+function buildFaq(opp: Opportunity): { question: string; answer: string }[] {
+  console.assert(opp && typeof opp.name === "string", "buildFaq: valid opp");
+  if (!opp || typeof opp.name !== "string") return [];
+  const tk = bareTicker(opp);
+  const label = opp.ticker ? `${opp.name} (${tk})` : opp.name;
+  const faq: { question: string; answer: string }[] = [];
+  if (opp.composite_score && opp.verdict) {
+    faq.push({
+      question: `How does Early Thunder rate ${label}?`,
+      answer: sanitizeProse(`Early Thunder scores ${opp.name} ${opp.composite_score} out of 100 across eight equally weighted signal dimensions. ${firstSentences(opp.verdict, 2)}`),
+    });
+  }
+  if (opp.current_price_usd) {
+    const vol = opp.volume_24h_usd ? ` Daily volume runs near ${formatVolume(opp.volume_24h_usd)}.` : "";
+    faq.push({
+      question: `What is ${opp.name}'s price and market cap?`,
+      answer: sanitizeProse(`${label} trades near ${formatPrice(opp.current_price_usd)} with a market cap around ${formatMarketCap(opp.market_cap_usd)}.${vol} These figures refresh daily from live market data.`),
+    });
+  }
+  if (Array.isArray(opp.catalysts) && opp.catalysts.length > 0) {
+    faq.push({
+      question: `What could drive ${tk} higher?`,
+      answer: sanitizeProse(opp.catalysts.slice(0, 3).map((c) => firstSentences(c, 1)).join(" ")),
+    });
+  }
+  if (Array.isArray(opp.risks) && opp.risks.length > 0) {
+    faq.push({
+      question: `What are the main risks of holding ${tk}?`,
+      answer: sanitizeProse(opp.risks.slice(0, 3).join(" ")),
+    });
+  }
+  const valGap = (opp as unknown as Record<string, unknown>).valuation_gap_score;
+  if (typeof valGap === "number") {
+    faq.push({
+      question: `Is ${tk} undervalued?`,
+      answer: sanitizeProse(`Early Thunder's valuation gap signal puts ${opp.name} at ${valGap} out of 100, where a higher number means a wider gap between the current price and what the fundamentals suggest. The thesis and competitive sections above show the full read.`),
+    });
+  }
+  return faq;
+}
 
 interface PageProps {
   readonly params: Promise<{ slug: string }>;
@@ -35,9 +97,35 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const opp = getOpportunityBySlug(slug);
   if (!opp) return { title: "Not Found" };
+  const tk = bareTicker(opp);
+  const label = opp.ticker ? `${opp.name} (${tk})` : opp.name;
+  const priceBit = opp.current_price_usd
+    ? `${formatPrice(opp.current_price_usd)} price, ${formatMarketCap(opp.market_cap_usd)} market cap. `
+    : "";
+  const description = sanitizeProse(
+    `${label} scores ${opp.composite_score}/100 on Early Thunder. ${priceBit}${opp.one_liner}`,
+  ).slice(0, 185);
+  const keywords = [
+    opp.name,
+    tk,
+    `${opp.name} analysis`,
+    `is ${opp.name} a good investment`,
+    `${opp.name} ${opp.category}`,
+    opp.ticker ? `${tk} price` : "",
+  ].filter((k): k is string => Boolean(k));
+  const canonical = `/opportunities/${opp.slug}`;
   return {
-    title: `${opp.name} Analysis`,
-    description: opp.one_liner,
+    title: `${label} Analysis, Score ${opp.composite_score}/100`,
+    description,
+    keywords,
+    alternates: { canonical },
+    openGraph: {
+      type: "article",
+      title: `${label} Analysis and ${opp.composite_score}/100 Score`,
+      description,
+      url: canonical,
+    },
+    twitter: { card: "summary_large_image", title: `${label} Analysis`, description },
   };
 }
 
@@ -49,7 +137,8 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
     return <NotFoundFallback />;
   }
 
-  const jsonLdSchemas = buildAllJsonLd(opportunity);
+  const faqs = buildFaq(opportunity);
+  const jsonLdSchemas = buildAllJsonLd(opportunity, faqs);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
@@ -100,6 +189,7 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
       {opportunity.thesis_changers && (
         <ThesisChangersSection changers={opportunity.thesis_changers} />
       )}
+      {faqs.length > 0 && <FaqSection faqs={faqs} />}
       <RiskDisclosure
         name={opportunity.name}
         ticker={opportunity.ticker}
@@ -775,6 +865,7 @@ function buildOpportunityBreadcrumbs(
  */
 function buildAllJsonLd(
   opp: Opportunity,
+  faqs: readonly { readonly question: string; readonly answer: string }[],
 ): readonly Record<string, unknown>[] {
   if (!opp || typeof opp.slug !== "string") {
     throw new Error("Valid Opportunity is required for JSON-LD assembly.");
@@ -783,9 +874,35 @@ function buildAllJsonLd(
     throw new Error("Opportunity name is required for JSON-LD assembly.");
   }
 
-  return [
+  const schemas: Record<string, unknown>[] = [
     buildArticleJsonLd(opp),
     getOpportunitySchema(opp),
     buildOpportunityBreadcrumbs(opp),
   ];
+  const faqSchema = getFaqPageSchema(faqs);
+  if (faqSchema) schemas.push(faqSchema);
+  return schemas;
+}
+
+/* ─── FAQ section (visible long-tail content + matches FAQPage schema) ─── */
+
+function FaqSection({
+  faqs,
+}: {
+  readonly faqs: readonly { readonly question: string; readonly answer: string }[];
+}) {
+  if (!Array.isArray(faqs) || faqs.length === 0) return null;
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Common questions</h2>
+      <div className="mt-4 space-y-3">
+        {faqs.map((f) => (
+          <div key={f.question} className="rounded-xl border border-border bg-bg-card p-5">
+            <h3 className="text-sm font-semibold text-text-primary">{f.question}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-text-secondary">{f.answer}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }

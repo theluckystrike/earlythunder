@@ -294,6 +294,26 @@ export function getResearchFAQSchema(): Record<string, unknown> {
   };
 }
 
+/** JSON-LD FAQPage schema from a generated question/answer list. */
+export function getFaqPageSchema(
+  faqs: readonly { readonly question: string; readonly answer: string }[],
+): Record<string, unknown> | null {
+  if (!Array.isArray(faqs) || faqs.length === 0) return null;
+  const items = faqs
+    .filter((f) => f && f.question && f.answer)
+    .slice(0, MAX_LIST_ITEMS);
+  if (items.length === 0) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+}
+
 /** JSON-LD Product schema for an opportunity. */
 export function getOpportunitySchema(
   opp: Opportunity,
