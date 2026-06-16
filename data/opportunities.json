@@ -1234,6 +1234,7 @@
       "obscurity": 15
     },
     "catalysts": [
+      "Standard Chartered $100 UNI target by end-2030 (~40x), framing Uniswap as the RWA tokenization settlement hub (Jun 15, 2026 initiation)",
       "Bitwise spot UNI ETF, S-1 filed Feb 5, 2026, pending SEC review. If approved, opens passive fund flows similar to BTC/ETH ETF launches",
       "Fee switch expansion to all 18 V4 chains, currently 11+, each new chain adds $2-5M annualized protocol revenue",
       "BlackRock BUIDL integration deepening, Feb 2026 UniswapX integration signals institutional DeFi adoption wave",
@@ -1289,9 +1290,9 @@
         "type": "official"
       },
       {
-        "claim": "BlackRock purchased UNI + listed BUIDL on UniswapX (Feb 2026)",
-        "source": "BusinessWire",
-        "url": "https://www.businesswire.com/news/home/20260211927423/en/",
+        "claim": "BlackRock BUIDL made tradable via UniswapX (Feb 11, 2026); BlackRock disclosed a strategic Uniswap-ecosystem investment, UNI amount undisclosed",
+        "source": "Uniswap Labs blog",
+        "url": "https://blog.uniswap.org/unlocking-defi-liquidity-for-buidl",
         "type": "news"
       },
       {
@@ -1309,7 +1310,7 @@
       {
         "claim": "SEC safe harbor for DEX front-ends (Apr 13, 2026, 5yr exemption)",
         "source": "SEC.gov",
-        "url": "https://www.sec.gov/newsroom/speeches-statements",
+        "url": "https://www.marketsmedia.com/sec-staff-statement-on-interfaces/",
         "type": "official"
       },
       {
@@ -1399,8 +1400,32 @@
       {
         "claim": "Front-end fees eliminated Dec 27, 2025",
         "source": "Uniswap Blog",
-        "url": "https://blog.uniswap.org/latest-updates",
+        "url": "https://support.uniswap.org/hc/en-us/articles/20131678274957-What-are-Uniswap-Labs-fees",
         "type": "official"
+      },
+      {
+        "claim": "Standard Chartered sets $100 UNI year-end-2030 price target (~40x), Geoff Kendrick, RWA settlement-hub thesis",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/371207/wall-street-boost-uniswap-token-price-40x-2030-standard-chartered",
+        "type": "research"
+      },
+      {
+        "claim": "Proposal #96 (May 2026) expanded the protocol fee-burn to BNB Chain, Polygon and Celo, total 11 chains",
+        "source": "Uniswap Governance",
+        "url": "https://vote.uniswapfoundation.org/proposals/96",
+        "type": "official"
+      },
+      {
+        "claim": "Record 134,000 UNI burned in a single day (Jun 5, 2026)",
+        "source": "Cointribune",
+        "url": "https://www.cointribune.com/en/uniswap-burns-134000-uni-tokens-in-one-day-a-record",
+        "type": "news"
+      },
+      {
+        "claim": "Fidelity dollar stablecoin (FIDD) seeded liquidity into Uniswap and Curve pools (Jun 2026)",
+        "source": "The Defiant",
+        "url": "https://thedefiant.io/news/defi/standard-chartered-sets-uni-2030-price-target-at-40x-current-levels",
+        "type": "news"
       }
     ],
     "updated_at": "2026-06-09",
@@ -16805,7 +16830,7 @@
     "updated_at": "2026-04-13T00:00:00Z",
     "is_graveyard": false,
     "slug": "silencio",
-    "current_price_usd": 0.00003226,
+    "current_price_usd": 3.226e-05,
     "market_cap_usd": 836271,
     "volume_24h_usd": 62250,
     "citation_types": {
@@ -17278,7 +17303,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 0.00000299,
+    "current_price_usd": 2.99e-06,
     "market_cap_usd": 1259354602,
     "volume_24h_usd": 231721263,
     "citation_types": [],
@@ -17981,7 +18006,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 0.00000506,
+    "current_price_usd": 5.06e-06,
     "market_cap_usd": 2982532277,
     "volume_24h_usd": 112729144,
     "citation_types": [],
@@ -18040,7 +18065,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 0.00000484,
+    "current_price_usd": 4.84e-06,
     "market_cap_usd": 426575152,
     "volume_24h_usd": 81170929,
     "citation_types": [],
@@ -18502,7 +18527,7 @@
     "is_graveyard": false,
     "slug": "qubic",
     "related_slugs": [],
-    "current_price_usd": 4.91037e-7,
+    "current_price_usd": 4.91037e-07,
     "market_cap_usd": 68288961,
     "volume_24h_usd": 1668802,
     "citation_types": {
@@ -20702,7 +20727,7 @@
     "is_graveyard": false,
     "slug": "opulous",
     "related_slugs": [],
-    "current_price_usd": 0.00003028,
+    "current_price_usd": 3.028e-05,
     "market_cap_usd": 15141.25,
     "volume_24h_usd": 8.56,
     "citation_types": {
@@ -21607,7 +21632,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 0.0000268,
+    "current_price_usd": 2.68e-05,
     "market_cap_usd": 258930888,
     "volume_24h_usd": 28387562,
     "citation_types": [],
@@ -24762,7 +24787,7 @@
         "type": "data"
       }
     ],
-    "current_price_usd": 0.0000714,
+    "current_price_usd": 7.14e-05,
     "market_cap_usd": 393966827,
     "volume_24h_usd": 19446259,
     "citation_types": {
