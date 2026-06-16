@@ -145,27 +145,27 @@ function GraveyardRow({
 function ExploreMoreSection() {
   return (
     <section className="mt-16 border-t border-border pt-8">
-      <h3 className="text-sm font-mono uppercase tracking-wider text-text-secondary mb-4">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
         Learn From Our Research
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <a
           href="/research/"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Research Library</span>
           <span className="text-xs text-text-secondary mt-1 block">analysis analyses and market reports</span>
         </a>
         <a
           href="/intelligence/"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Intelligence Dashboard</span>
           <span className="text-xs text-text-secondary mt-1 block">Live convergence signals</span>
         </a>
         <Link
           href="/methodology"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Methodology</span>
           <span className="text-xs text-text-secondary mt-1 block">How failures refine the scoring model</span>

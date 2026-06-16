@@ -17,7 +17,7 @@ export default function NewsletterCTA() {
   return (
     <section className="section subscribe-section">
       <div className="subscribe">
-        <div className="section__eyebrow mono">, WEEKLY BRIEF</div>
+        <div className="section__eyebrow mono">08, WEEKLY BRIEF</div>
         <h2 className="subscribe__title">Free intelligence. Every Monday.</h2>
         <p className="subscribe__sub">
           Top convergence signals + upcoming deadlines. One email. No spam.

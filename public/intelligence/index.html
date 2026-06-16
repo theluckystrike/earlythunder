@@ -51,186 +51,331 @@
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#0A0B0F;--card-bg:#1A1B24;--card-border:#2A2C38;--border-hover:#3A3B48;--text:#F0F0F3;--text-muted:#9496A1;--text-tertiary:#5C5E6A;--accent:#F5A623;--accent-dim:rgba(245,166,35,0.15);--warning:#EF4444;--warning-dim:rgba(239,68,68,0.15);--amber:#F5A623;--amber-dim:rgba(245,166,35,0.15);--blue:#3B82F6;--blue-dim:rgba(59,130,246,0.15);--positive:#22C55E;--max-w:1152px}
-body{background:var(--bg);color:var(--text);font-family:'Geist',system-ui,-apple-system,sans-serif;font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
-.container{max-width:var(--max-w);margin:0 auto;padding:0 1.25rem}
+:root {
+  /* ── Backgrounds ── */
+  --bg-primary: #0A0B0F;
+  --bg-secondary: #12131A;
+  --bg-tertiary: #1A1B24;
+  --bg-elevated: #22232E;
+
+  /* ── Borders ── */
+  --border-subtle: #2A2B36;
+  --border-active: #3A3B48;
+
+  /* ── Text ── */
+  --text-primary: #F0F0F3;
+  --text-secondary: #9496A1;
+  --text-tertiary: #5C5E6A;
+  --text-disabled: #3D3F4A;
+
+  /* ── Accent (amber) ── */
+  --accent-primary: #F5A623;
+  --accent-hover: #FFBA42;
+  --accent-pressed: #D48E1A;
+  --accent-subtle: rgba(245, 166, 35, 0.12);
+
+  /* ── Semantic ── */
+  --positive: #22C55E;
+  --positive-bg: rgba(34, 197, 94, 0.10);
+  --negative: #EF4444;
+  --negative-bg: rgba(239, 68, 68, 0.10);
+  --warning: #EAB308;
+  --warning-bg: rgba(234, 179, 8, 0.10);
+  --info: #3B82F6;
+
+  /* ── Scores ── */
+  --score-elite: var(--accent-primary);
+  --score-high: var(--positive);
+  --score-mid: var(--info);
+  --score-low: #6B7280;
+
+  /* ── Terminal ── */
+  --term-bg: #08090C;
+
+  /* ── Fonts ── */
+  --font-primary: 'Geist', 'General Sans', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', ui-monospace, 'SF Mono', monospace;
+
+  /* ── Layout ── */
+  --max-w: 1280px;
+  --nav-h: 56px;
+  --row-h: 48px;
+
+  /* ── Compatibility aliases (legacy page CSS) ── */
+  --bg: var(--bg-primary);
+  --card-bg: var(--bg-secondary);
+  --card-border: var(--border-subtle);
+  --border-hover: var(--border-active);
+  --text: var(--text-primary);
+  --text-muted: var(--text-secondary);
+  --accent: var(--accent-primary);
+  --accent-dim: var(--accent-subtle);
+  --warning-dim: var(--negative-bg);
+  --amber: var(--accent-primary);
+  --amber-dim: var(--accent-subtle);
+  --blue: var(--info);
+  --blue-dim: rgba(59,130,246,0.12);
+}
+body{background:var(--bg-primary);color:var(--text-primary);font-family:var(--font-primary);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 48px}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
-
-
-
-
-
-
-.hero{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid var(--card-border)}
-.hero h1{font-size:2.5rem;font-weight:600;letter-spacing:-0.04em;color:#fff}
+.hero{text-align:center;padding:64px 24px 48px;border-bottom:1px solid var(--border-subtle)}
+.hero h1{font-size:clamp(44px,5.6vw,72px);font-weight:600;letter-spacing:-0.04em;color:var(--text-primary);line-height:1.05}
 .hero h1 span{color:var(--accent)}
-.hero .tagline{font-size:1.1rem;color:var(--text-muted);margin-top:0.5rem}
-.hero .meta-row{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-top:1.25rem;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:0.85rem;color:var(--text-muted)}
+.hero .tagline{font-size:18px;color:var(--text-secondary);margin-top:16px}
+.hero .meta-row{display:flex;justify-content:center;flex-wrap:wrap;gap:24px;margin-top:24px;font-family:var(--font-mono);font-size:13px;color:var(--text-secondary)}
 .hero .meta-row strong{color:var(--accent)}
-.last-updated{text-align:center;margin-top:0.75rem;font-size:0.78rem;color:var(--text-muted)}
-section{padding:2.5rem 0;border-bottom:1px solid var(--card-border)}
+.last-updated{text-align:center;margin-top:16px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.04em;color:var(--text-tertiary)}
+section{padding:64px 0;border-bottom:1px solid var(--border-subtle)}
 section:last-of-type{border-bottom:none}
-h2{font-size:1.8rem;font-weight:600;margin-bottom:0.75rem;color:#fff}
+h2{font-size:32px;font-weight:600;letter-spacing:-0.02em;margin-bottom:12px;color:var(--text-primary)}
 h2 .accent{color:var(--accent)}
-.section-desc{color:var(--text-muted);margin-bottom:1.5rem;max-width:700px;font-size:0.95rem}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
-.card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:1.25rem}
-.card .card-label{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:0.25rem}
-.card .card-value{font-size:1.6rem;font-weight:700;font-family:'JetBrains Mono',ui-monospace,monospace;color:#fff}
-.card .card-sub{font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem}
+.section-desc{color:var(--text-secondary);margin-bottom:32px;max-width:700px;font-size:15px;line-height:1.6}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--bg-secondary);border:1px solid var(--border-subtle);border-radius:12px;padding:24px;transition:transform 200ms cubic-bezier(0.2,0.8,0.2,1),border-color 200ms cubic-bezier(0.2,0.8,0.2,1)}
+.card:hover{transform:translateY(-2px);border-color:var(--border-active)}
+.card .card-label{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-tertiary);margin-bottom:8px}
+.card .card-value{font-size:32px;font-weight:700;font-family:var(--font-mono);color:var(--text-primary);line-height:1.1}
+.card .card-sub{font-size:13px;color:var(--text-secondary);margin-top:8px}
 .card.fear .card-value{color:var(--amber)}
-.card.risk-off .card-value{color:var(--warning)}
+.card.risk-off .card-value{color:var(--negative)}
 .card.accent-val .card-value{color:var(--accent)}
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table{width:100%;border-collapse:collapse;font-size:0.9rem}
-th{text-align:left;padding:0.6rem 0.75rem;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);border-bottom:1px solid var(--card-border);white-space:nowrap;cursor:pointer;user-select:none}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;padding:12px;font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-tertiary);border-bottom:1px solid var(--border-subtle);white-space:nowrap;cursor:pointer;user-select:none;transition:color 150ms}
 th:hover{color:var(--accent)}
-th.sorted-asc::after{content:" \25B2";font-size:0.6rem}
-th.sorted-desc::after{content:" \25BC";font-size:0.6rem}
-td{padding:0.6rem 0.75rem;border-bottom:1px solid rgba(30,30,46,0.5);white-space:nowrap}
-tr:hover td{background:rgba(245,166,35,0.04)}
-.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
-.score-bar{display:flex;align-items:center;gap:0.5rem}
+th.sorted-asc::after{content:" \25B2";font-size:9px}
+th.sorted-desc::after{content:" \25BC";font-size:9px}
+td{padding:12px;border-bottom:1px dashed var(--border-subtle);white-space:nowrap;color:var(--text-secondary)}
+td strong{color:var(--text-primary);font-weight:600}
+tr:hover td{background:var(--accent-subtle)}
+.mono{font-family:var(--font-mono)}
+.score-bar{display:flex;align-items:center;gap:8px}
 .score-bar .bar{height:6px;border-radius:3px;background:var(--accent)}
-.score-bar .val{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:0.85rem;font-weight:600;min-width:2rem}
-.pill{display:inline-block;font-size:0.7rem;padding:2px 6px;border-radius:4px;margin:1px;font-weight:600}
-.pill-tokenless{background:var(--accent-dim);color:var(--accent)}
-.pill-airdrop{background:var(--blue-dim);color:var(--blue)}
-.pill-tvl{background:rgba(160,120,255,0.15);color:#a078ff}
-.pill-dev{background:rgba(255,200,50,0.15);color:#ffc832}
-.pill-alpha{background:rgba(255,150,200,0.15);color:#ff96c8}
-.deadline-group{margin-bottom:1.5rem}
-.deadline-group h3{font-size:1rem;font-weight:700;margin-bottom:0.75rem;padding:0.4rem 0.75rem;border-radius:6px;display:inline-block}
-.deadline-group h3.critical{background:var(--warning-dim);color:var(--warning)}
-.deadline-group h3.high{background:var(--amber-dim);color:var(--amber)}
-.deadline-group h3.watch{background:var(--blue-dim);color:var(--blue)}
-.deadline-group h3.low{background:rgba(100,100,120,0.2);color:var(--text-muted)}
-.deadline-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:1rem 1.25rem;margin-bottom:0.6rem;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:0.75rem}
+.score-bar .val{font-family:var(--font-mono);font-size:13px;font-weight:600;min-width:2rem;color:var(--text-primary)}
+.pill{display:inline-block;font-family:var(--font-mono);font-size:11px;letter-spacing:0.04em;padding:2px 6px;border-radius:4px;margin:1px;font-weight:600}
+.pill-tokenless{background:var(--accent-subtle);color:var(--accent)}
+.pill-airdrop{background:rgba(59,130,246,0.12);color:var(--info)}
+.pill-tvl{background:rgba(160,120,255,0.12);color:#a078ff}
+.pill-dev{background:var(--warning-bg);color:var(--warning)}
+.pill-alpha{background:rgba(255,150,200,0.12);color:#ff96c8}
+.deadline-group{margin-bottom:24px}
+.deadline-group h3{font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;padding:6px 12px;border-radius:6px;display:inline-block}
+.deadline-group h3.critical{background:var(--negative-bg);color:var(--negative)}
+.deadline-group h3.high{background:var(--accent-subtle);color:var(--accent)}
+.deadline-group h3.watch{background:rgba(59,130,246,0.12);color:var(--info)}
+.deadline-group h3.low{background:var(--bg-tertiary);color:var(--text-tertiary)}
+.deadline-card{background:var(--bg-secondary);border:1px solid var(--border-subtle);border-radius:12px;padding:20px 24px;margin-bottom:8px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;transition:transform 200ms cubic-bezier(0.2,0.8,0.2,1),border-color 200ms cubic-bezier(0.2,0.8,0.2,1)}
+.deadline-card:hover{transform:translateY(-2px);border-color:var(--border-active)}
 .deadline-card .dl-left{flex:1;min-width:200px}
-.deadline-card .dl-name{font-weight:700;font-size:1rem;color:#fff}
-.deadline-card .dl-event{font-size:0.85rem;color:var(--text-muted);margin-top:0.15rem}
-.deadline-card .dl-notes{font-size:0.78rem;color:var(--text-muted);margin-top:0.3rem;max-width:500px;white-space:normal}
+.deadline-card .dl-name{font-weight:600;font-size:15px;color:var(--text-primary)}
+.deadline-card .dl-event{font-size:13px;color:var(--text-secondary);margin-top:4px}
+.deadline-card .dl-notes{font-size:13px;color:var(--text-tertiary);margin-top:8px;max-width:500px;white-space:normal;line-height:1.5}
 .deadline-card .dl-right{text-align:right}
-.deadline-card .countdown{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:1.15rem;font-weight:700}
-.deadline-card .countdown.critical{color:var(--warning)}
-.deadline-card .countdown.high{color:var(--amber)}
-.deadline-card .countdown.watch{color:var(--blue)}
-.deadline-card .countdown.low{color:var(--text-muted)}
-.deadline-card .dl-status{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-top:0.2rem}
-.yield-tier{font-size:0.7rem;font-weight:700;padding:2px 6px;border-radius:4px}
-.tier-hyper{background:var(--accent-dim);color:var(--accent)}
-.tier-high{background:var(--amber-dim);color:var(--amber)}
-.research-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-.research-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:1.5rem}
-.research-card h3{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.4rem}
-.research-card p{font-size:0.85rem;color:var(--text-muted);line-height:1.5}
-.pull-quote{background:var(--card-bg);border-left:3px solid var(--accent);padding:1.25rem 1.5rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
-.pull-quote .pq-stat{font-size:2rem;font-weight:800;color:var(--warning);font-family:'JetBrains Mono',ui-monospace,monospace}
-.pull-quote .pq-text{font-size:0.95rem;color:var(--text-muted);margin-top:0.25rem}
-.pull-quote .pq-source{font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;font-style:italic}
-.premium-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-bottom:1.5rem}
-.premium-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:1.5rem}
-.premium-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.3rem}
-.premium-card p{font-size:0.85rem;color:var(--text-muted)}
-.alpha-cta{background:var(--card-bg);border:1px solid var(--accent);border-radius:10px;padding:2rem;text-align:center}
-.alpha-cta h3{font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
-.alpha-cta p{color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem}
-.alpha-cta .btn{display:inline-block;background:var(--accent);color:#0A0B0F;font-weight:700;font-size:0.95rem;padding:0.7rem 2rem;border-radius:12px;border:none;cursor:pointer;transition:opacity 0.2s;text-decoration:none}
-.alpha-cta .btn:hover{opacity:0.85;text-decoration:none}
-.method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
-.method-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:1.5rem}
-.method-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
-.method-card p,.method-card ul{font-size:0.85rem;color:var(--text-muted);line-height:1.6}
-.method-card ul{padding-left:1.2rem;margin-top:0.4rem}
-.method-card li{margin-bottom:0.25rem}
-footer{padding:2rem 0 3rem;text-align:center;font-size:0.8rem;color:var(--text-muted);border-top:1px solid var(--card-border)}
-footer p{margin-bottom:0.3rem}
-footer .footer-links{margin-top:0.75rem}
-footer .footer-links a{margin:0 0.75rem}
-.back-link{display:inline-block;margin-top:1rem;font-size:0.85rem;color:var(--accent);font-weight:600}
-@media(max-width:600px){.hero h1{font-size:1.8rem}h2{font-size:1.4rem}.hero .meta-row{gap:0.75rem;font-size:0.75rem}.card .card-value{font-size:1.3rem}section{padding:1.75rem 0}.deadline-card{flex-direction:column;align-items:flex-start}.deadline-card .dl-right{text-align:left}}
-
-/* === STANDARD NAV (matches Next.js Header) === */
-.et-nav {
-    position: fixed; top: 0; left: 0; right: 0;
-    height: 56px;
-    z-index: 100;
-    background: rgba(10, 11, 15, 0.85);
-    backdrop-filter: blur(14px) saturate(160%);
-    -webkit-backdrop-filter: blur(14px) saturate(160%);
-    border-bottom: 1px solid #2A2C38;
-}
-.et-nav__inner {
-    max-width: 1280px;
-    margin: 0 auto;
-    height: 100%;
-    padding: 0 48px;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    gap: 24px;
-}
-.et-nav__logo {
-    display: flex; align-items: center; gap: 8px;
-    font-weight: 600; font-size: 15px; letter-spacing: -0.01em;
-    color: #F0F0F3;
-    text-decoration: none;
-    font-family: 'Geist', system-ui, -apple-system, sans-serif;
-}
-.et-nav__logo:hover { text-decoration: none; color: #F0F0F3; }
-.et-nav__links {
-    display: flex; gap: 28px;
-    list-style: none; margin: 0; padding: 0;
-    font-family: 'Geist', system-ui, -apple-system, sans-serif;
-}
-.et-nav__links a {
-    color: #9496A1;
-    font-size: 14px;
-    text-decoration: none;
-    transition: color 150ms;
-}
-.et-nav__links a:hover { color: #F0F0F3; text-decoration: none; }
-.et-nav__links a.active { color: #F0F0F3; }
-.et-nav__cta {
-    display: flex; gap: 8px; align-items: center; justify-content: flex-end;
-}
-.et-nav__cta a {
-    font-size: 14px; padding: 8px 16px; border-radius: 8px;
-    text-decoration: none; transition: all 150ms;
-    font-family: 'Geist', system-ui, -apple-system, sans-serif;
-}
-.et-nav__cta .et-ghost {
-    color: #9496A1; background: transparent; border: 1px solid transparent;
-}
-.et-nav__cta .et-ghost:hover { color: #F0F0F3; }
-.et-nav__cta .et-primary {
-    color: #0A0B0F; background: #F0F0F3; font-weight: 500; border: none;
-}
-.et-nav__cta .et-primary:hover { opacity: 0.9; }
-/* Push body down to account for fixed nav */
-body { padding-top: 56px; }
-@media(max-width: 720px) {
-    .et-nav__links { display: none; }
-    .et-nav__cta { display: none; }
-    .et-nav__inner { grid-template-columns: 1fr; padding: 0 24px; justify-items: center; }
-}
-
+.deadline-card .countdown{font-family:var(--font-mono);font-size:18px;font-weight:700}
+.deadline-card .countdown.critical{color:var(--negative)}
+.deadline-card .countdown.high{color:var(--accent)}
+.deadline-card .countdown.watch{color:var(--info)}
+.deadline-card .countdown.low{color:var(--text-tertiary)}
+.deadline-card .dl-status{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.06em;margin-top:8px}
+.yield-tier{font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:0.04em;padding:2px 6px;border-radius:4px}
+.tier-hyper{background:var(--accent-subtle);color:var(--accent)}
+.tier-high{background:var(--positive-bg);color:var(--positive)}
+.research-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.research-card{background:var(--bg-secondary);border:1px solid var(--border-subtle);border-radius:16px;padding:24px;transition:transform 200ms cubic-bezier(0.2,0.8,0.2,1),border-color 200ms cubic-bezier(0.2,0.8,0.2,1)}
+.research-card:hover{transform:translateY(-2px);border-color:var(--border-active)}
+.research-card h3{font-size:18px;font-weight:600;color:var(--text-primary);margin-bottom:8px}
+.research-card p{font-size:13px;color:var(--text-secondary);line-height:1.6}
+.pull-quote{background:var(--bg-secondary);border:1px solid var(--border-subtle);border-left:3px solid var(--accent);padding:24px;margin:24px 0;border-radius:0 12px 12px 0}
+.pull-quote .pq-stat{font-size:32px;font-weight:800;color:var(--negative);font-family:var(--font-mono);line-height:1.1}
+.pull-quote .pq-text{font-size:15px;color:var(--text-secondary);margin-top:8px;line-height:1.6}
+.pull-quote .pq-source{font-size:13px;color:var(--text-tertiary);margin-top:12px;font-style:italic}
+.premium-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-bottom:24px}
+.premium-card{background:var(--bg-secondary);border:1px solid var(--border-subtle);border-radius:16px;padding:24px;transition:transform 200ms cubic-bezier(0.2,0.8,0.2,1),border-color 200ms cubic-bezier(0.2,0.8,0.2,1)}
+.premium-card:hover{transform:translateY(-2px);border-color:var(--border-active)}
+.premium-card h3{font-size:18px;font-weight:600;color:var(--text-primary);margin-bottom:8px}
+.premium-card p{font-size:13px;color:var(--text-secondary);line-height:1.6}
+.alpha-cta{background:var(--bg-secondary);border:1px solid var(--accent);border-radius:16px;padding:48px 32px;text-align:center}
+.alpha-cta h3{font-size:24px;font-weight:600;letter-spacing:-0.01em;color:var(--text-primary);margin-bottom:12px}
+.alpha-cta p{color:var(--text-secondary);margin-bottom:24px;font-size:15px}
+.alpha-cta .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#0A0B0F;font-weight:600;font-size:14px;padding:12px 24px;border-radius:8px;border:none;cursor:pointer;transition:background 150ms,transform 150ms,box-shadow 150ms;text-decoration:none}
+.alpha-cta .btn:hover{background:var(--accent-hover);transform:translateY(-1px);box-shadow:0 4px 14px rgba(245,166,35,0.28);text-decoration:none}
+.method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.method-card{background:var(--bg-secondary);border:1px solid var(--border-subtle);border-radius:16px;padding:24px;transition:transform 200ms cubic-bezier(0.2,0.8,0.2,1),border-color 200ms cubic-bezier(0.2,0.8,0.2,1)}
+.method-card:hover{transform:translateY(-2px);border-color:var(--border-active)}
+.method-card h3{font-size:18px;font-weight:600;color:var(--text-primary);margin-bottom:12px}
+.method-card p,.method-card ul{font-size:13px;color:var(--text-secondary);line-height:1.6}
+.method-card ul{padding-left:20px;margin-top:8px}
+.method-card li{margin-bottom:4px}
+@media(max-width:1024px){.method-grid,.research-grid,.premium-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}}
+@media(max-width:860px){.container{padding:0 24px}}
+@media(max-width:600px){.hero h1{font-size:clamp(32px,9vw,44px)}h2{font-size:24px}.hero .meta-row{gap:12px;font-size:12px}.card .card-value{font-size:24px}section{padding:48px 0}.alpha-cta{padding:32px 24px}.deadline-card{flex-direction:column;align-items:flex-start}.deadline-card .dl-right{text-align:left}}
 </style>
 </head>
 <body>
 
-<header class="et-nav">
+<!-- ============================================================
+     EARLYTHUNDER CANONICAL HEADER — drop-in for every static HTML page.
+     ============================================================ -->
+<style>
+/* —— Fixed translucent bar (blurs/saturates on scroll) —— */
+.et-nav{position:fixed;top:0;left:0;right:0;height:56px;z-index:100;
+  background:rgba(10,11,15,0.7);
+  backdrop-filter:blur(14px) saturate(160%);
+  -webkit-backdrop-filter:blur(14px) saturate(160%);
+  border-bottom:1px solid transparent;
+  transition:border-color 200ms,background 200ms;
+  font-family:var(--font-primary,'Geist',system-ui,-apple-system,sans-serif);}
+.et-nav.et-nav--scrolled{border-bottom-color:var(--border-subtle,#2A2B36);
+  background:rgba(10,11,15,0.85);}
+.et-nav__inner{max-width:var(--max-w,1280px);margin:0 auto;height:100%;
+  padding:0 48px;display:grid;grid-template-columns:1fr auto 1fr;
+  align-items:center;gap:24px;}
+/* —— Logo —— */
+.et-nav__logo{display:flex;align-items:center;gap:8px;font-weight:600;
+  font-size:15px;letter-spacing:-0.01em;color:var(--text-primary,#F0F0F3);
+  text-decoration:none;}
+.et-nav__logo:hover{color:var(--text-primary,#F0F0F3);text-decoration:none;}
+/* —— Desktop links —— */
+.et-nav__links{display:flex;gap:28px;list-style:none;margin:0;padding:0;}
+.et-nav__links a{color:var(--text-secondary,#9496A1);font-size:14px;
+  text-decoration:none;transition:color 150ms;}
+.et-nav__links a:hover{color:var(--text-primary,#F0F0F3);text-decoration:none;}
+/* Active link driven by data-active on .et-nav */
+.et-nav[data-active="intelligence"] a[data-slug="intelligence"],
+.et-nav[data-active="opportunities"] a[data-slug="opportunities"],
+.et-nav[data-active="research"] a[data-slug="research"],
+.et-nav[data-active="earnings"] a[data-slug="earnings"],
+.et-nav[data-active="deadlines"] a[data-slug="deadlines"],
+.et-nav[data-active="scorecard"] a[data-slug="scorecard"],
+.et-nav[data-active="about"] a[data-slug="about"]{color:var(--text-primary,#F0F0F3);}
+/* —— CTAs —— */
+.et-nav__cta{display:flex;gap:8px;align-items:center;justify-content:flex-end;}
+.et-nav__ghost{color:var(--text-secondary,#9496A1);background:transparent;
+  font-weight:500;font-size:14px;padding:8px 12px;border-radius:6px;
+  text-decoration:none;transition:color 150ms,background 150ms;}
+.et-nav__ghost:hover{color:var(--text-primary,#F0F0F3);
+  background:var(--accent-subtle,rgba(245,166,35,0.12));text-decoration:none;}
+.et-nav__primary{display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent-primary,#F5A623);color:#0A0B0F;font-weight:600;
+  font-size:14px;padding:10px 18px;border-radius:8px;border:none;
+  text-decoration:none;white-space:nowrap;
+  transition:background 150ms,transform 150ms,box-shadow 150ms;}
+.et-nav__primary:hover{background:var(--accent-hover,#FFBA42);
+  transform:translateY(-1px);box-shadow:0 4px 14px rgba(245,166,35,0.28);
+  text-decoration:none;}
+/* —— Hamburger (hidden on desktop) —— */
+.et-nav__toggle{display:none;background:none;border:none;
+  color:var(--text-primary,#F0F0F3);cursor:pointer;padding:8px;
+  border-radius:6px;transition:background 150ms;}
+.et-nav__toggle:hover{background:var(--bg-tertiary,#1A1B24);}
+/* —— Mobile panel —— */
+.et-nav__panel{position:absolute;top:56px;left:0;right:0;
+  background:var(--bg-secondary,#12131A);
+  border-bottom:1px solid var(--border-subtle,#2A2B36);
+  padding:16px 24px 24px;z-index:99;}
+.et-nav__panel[hidden]{display:none;}
+.et-nav__panel-links{display:flex;flex-direction:column;gap:4px;}
+.et-nav__panel-links a{display:block;padding:12px 16px;font-size:15px;
+  color:var(--text-secondary,#9496A1);border-radius:8px;text-decoration:none;
+  transition:color 150ms,background 150ms;}
+.et-nav__panel-links a:hover{color:var(--text-primary,#F0F0F3);
+  background:var(--bg-tertiary,#1A1B24);text-decoration:none;}
+.et-nav__panel-divider{height:1px;background:var(--border-subtle,#2A2B36);
+  margin:8px 0;}
+.et-nav__panel .et-nav__primary{margin-top:12px;width:100%;
+  justify-content:center;}
+.et-nav__panel .et-nav__ghost{text-align:center;}
+/* Push page content below the fixed bar */
+body{padding-top:56px;}
+/* —— Responsive: collapse to hamburger below 860px —— */
+@media(max-width:860px){
+  .et-nav__links{display:none;}
+  .et-nav__cta{display:none;}
+  .et-nav__toggle{display:flex;}
+  .et-nav__inner{grid-template-columns:1fr auto;padding:0 24px;}
+}
+</style>
+
+<header class="et-nav" data-active="intelligence">
   <div class="et-nav__inner">
     <a href="/" class="et-nav__logo">EarlyThunder</a>
-    <nav class="et-nav__links"><a href="/intelligence/" class="active">Intelligence</a><a href="/opportunities/">Opportunities</a><a href="/research/">Research</a><a href="/earnings/">Earnings</a><a href="/deadlines/">Deadlines</a><a href="/scorecard/">Scorecard</a></nav>
+    <nav class="et-nav__links" aria-label="Primary">
+      <a href="/intelligence/" data-slug="intelligence">Intelligence</a>
+      <a href="/opportunities/" data-slug="opportunities">Opportunities</a>
+      <a href="/research/" data-slug="research">Research</a>
+      <a href="/earnings/" data-slug="earnings">Earnings</a>
+      <a href="/deadlines/" data-slug="deadlines">Deadlines</a>
+      <a href="/scorecard/" data-slug="scorecard">Scorecard</a>
+      <a href="/about/" data-slug="about">About</a>
+    </nav>
     <div class="et-nav__cta">
-      <a href="/pricing/" class="et-ghost">Sign in</a>
-      <a href="/intelligence/" class="et-primary">Open Terminal →</a>
+      <a href="/pricing/" class="et-nav__ghost">Sign in</a>
+      <a href="/intelligence/" class="et-nav__primary">Open Terminal &#8594;</a>
     </div>
+    <button type="button" class="et-nav__toggle" aria-label="Toggle navigation menu"
+            aria-expanded="false" aria-controls="et-nav-panel">
+      <svg class="et-nav__icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <svg class="et-nav__icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="display:none">
+        <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+  <div class="et-nav__panel" id="et-nav-panel" hidden>
+    <nav class="et-nav__panel-links" aria-label="Mobile">
+      <a href="/intelligence/" data-slug="intelligence">Intelligence</a>
+      <a href="/opportunities/" data-slug="opportunities">Opportunities</a>
+      <a href="/research/" data-slug="research">Research</a>
+      <a href="/earnings/" data-slug="earnings">Earnings</a>
+      <a href="/deadlines/" data-slug="deadlines">Deadlines</a>
+      <a href="/scorecard/" data-slug="scorecard">Scorecard</a>
+      <a href="/about/" data-slug="about">About</a>
+      <div class="et-nav__panel-divider"></div>
+      <a href="/pricing/" class="et-nav__ghost">Sign in</a>
+      <a href="/intelligence/" class="et-nav__primary">Open Terminal &#8594;</a>
+    </nav>
   </div>
 </header>
+
+<script>
+(function(){
+  var nav = document.querySelector('.et-nav');
+  if(!nav) return;
+  /* Scroll state — solidifies the bar border + background on scroll */
+  var onScroll = function(){
+    nav.classList.toggle('et-nav--scrolled', window.scrollY > 8);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive:true });
+  /* Mobile hamburger toggle */
+  var btn = nav.querySelector('.et-nav__toggle');
+  var panel = nav.querySelector('.et-nav__panel');
+  var iconOpen = nav.querySelector('.et-nav__icon-open');
+  var iconClose = nav.querySelector('.et-nav__icon-close');
+  if(btn && panel){
+    btn.addEventListener('click', function(){
+      var open = panel.hasAttribute('hidden');
+      if(open){ panel.removeAttribute('hidden'); } else { panel.setAttribute('hidden',''); }
+      btn.setAttribute('aria-expanded', String(open));
+      if(iconOpen)  iconOpen.style.display  = open ? 'none' : '';
+      if(iconClose) iconClose.style.display = open ? '' : 'none';
+    });
+    /* Close panel when a link is tapped */
+    panel.addEventListener('click', function(e){
+      if(e.target.closest('a')){
+        panel.setAttribute('hidden','');
+        btn.setAttribute('aria-expanded','false');
+        if(iconOpen)  iconOpen.style.display  = '';
+        if(iconClose) iconClose.style.display = 'none';
+      }
+    });
+  }
+})();
+</script>
 
 <header class="hero" role="banner">
   <div class="container">
@@ -258,7 +403,7 @@ body { padding-top: 56px; }
     </article>
     <article class="card risk-off">
       <div class="card-label">Market Regime</div>
-      <div class="card-value" style="font-size:1.2rem;">RISK-OFF</div>
+      <div class="card-value" style="font-size:20px;">RISK-OFF</div>
       <div class="card-sub">Contracting, Stablecoin outflows exceed inflows</div>
     </article>
     <article class="card accent-val">
@@ -401,7 +546,7 @@ body { padding-top: 56px; }
       </div>
       <div class="dl-right">
         <div class="countdown critical" data-deadline="2026-05-25T23:59:59Z"></div>
-        <div class="dl-status" style="color:var(--warning);">LIVE &middot; Ends May 25</div>
+        <div class="dl-status" style="color:var(--negative);">LIVE &middot; Ends May 25</div>
       </div>
     </div>
   </div>
@@ -672,7 +817,7 @@ body { padding-top: 56px; }
       </tbody>
     </table>
   </div>
-  <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.75rem;">Scan stats: 131 protocols with measurable yield &middot; 24 Hyperliquid-grade &middot; 19 High &middot; 14 Moderate &middot; 25 Low &middot; 49 Negligible. DeepSeek AI verdict on top-7: all SKIP (unsustainable yield, low liquidity).</p>
+  <p style="font-size:13px;color:var(--text-tertiary);margin-top:16px;">Scan stats: 131 protocols with measurable yield &middot; 24 Hyperliquid-grade &middot; 19 High &middot; 14 Moderate &middot; 25 Low &middot; 49 Negligible. DeepSeek AI verdict on top-7: all SKIP (unsustainable yield, low liquidity).</p>
 </section>
 
 <section id="smart-money" aria-labelledby="sm-heading">
@@ -684,11 +829,11 @@ body { padding-top: 56px; }
         <tr><th>Token</th><th>Price</th><th>Market Cap</th><th>7d Change</th><th>ATH Ratio</th><th>TVL</th><th>TVL 7d</th><th>Score</th><th>Signal</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>GMX</strong></td><td class="mono">$7.61</td><td class="mono">$79.2M</td><td class="mono" style="color:var(--accent);">+7.5%</td><td class="mono">0.084x</td><td class="mono">$316.7M</td><td class="mono" style="color:var(--accent);">+31.3%</td><td><div class="score-bar"><div class="bar" style="width:86px;"></div><span class="val">86</span></div></td><td style="color:var(--accent);font-weight:700;">INVESTIGATE</td></tr>
-        <tr><td><strong>GNS</strong></td><td class="mono">$0.585</td><td class="mono">$14.2M</td><td class="mono" style="color:var(--accent);">+9.8%</td><td class="mono">0.047x</td><td class="mono">$20.2M</td><td class="mono" style="color:var(--accent);">+39.7%</td><td><div class="score-bar"><div class="bar" style="width:86px;"></div><span class="val">86</span></div></td><td style="color:var(--accent);font-weight:700;">INVESTIGATE</td></tr>
-        <tr><td><strong>LQTY</strong></td><td class="mono">$0.341</td><td class="mono">$33.7M</td><td class="mono" style="color:var(--accent);">+11.3%</td><td class="mono">0.002x</td><td class="mono">$323.7M</td><td class="mono" style="color:var(--accent);">+15.2%</td><td><div class="score-bar"><div class="bar" style="width:83px;"></div><span class="val">83</span></div></td><td style="color:var(--accent);font-weight:700;">INVESTIGATE</td></tr>
-        <tr><td><strong>PENDLE</strong></td><td class="mono">$2.06</td><td class="mono">$349.6M</td><td class="mono" style="color:var(--accent);">+34.5%</td><td class="mono">0.275x</td><td class="mono">,</td><td class="mono">,</td><td><div class="score-bar"><div class="bar" style="width:73px;"></div><span class="val">73</span></div></td><td style="color:var(--accent);font-weight:700;">INVESTIGATE</td></tr>
-        <tr><td><strong>HYPE</strong></td><td class="mono">$43.74</td><td class="mono">$10.4B</td><td class="mono" style="color:var(--accent);">+4.9%</td><td class="mono">0.738x</td><td class="mono">$5.07B</td><td class="mono" style="color:var(--accent);">+5.5%</td><td><div class="score-bar"><div class="bar" style="width:57px;"></div><span class="val">57</span></div></td><td style="color:var(--amber);font-weight:700;">WATCH</td></tr>
+        <tr><td><strong>GMX</strong></td><td class="mono">$7.61</td><td class="mono">$79.2M</td><td class="mono" style="color:var(--positive);">+7.5%</td><td class="mono">0.084x</td><td class="mono">$316.7M</td><td class="mono" style="color:var(--positive);">+31.3%</td><td><div class="score-bar"><div class="bar" style="width:86px;"></div><span class="val">86</span></div></td><td style="color:var(--positive);font-weight:600;">INVESTIGATE</td></tr>
+        <tr><td><strong>GNS</strong></td><td class="mono">$0.585</td><td class="mono">$14.2M</td><td class="mono" style="color:var(--positive);">+9.8%</td><td class="mono">0.047x</td><td class="mono">$20.2M</td><td class="mono" style="color:var(--positive);">+39.7%</td><td><div class="score-bar"><div class="bar" style="width:86px;"></div><span class="val">86</span></div></td><td style="color:var(--positive);font-weight:600;">INVESTIGATE</td></tr>
+        <tr><td><strong>LQTY</strong></td><td class="mono">$0.341</td><td class="mono">$33.7M</td><td class="mono" style="color:var(--positive);">+11.3%</td><td class="mono">0.002x</td><td class="mono">$323.7M</td><td class="mono" style="color:var(--positive);">+15.2%</td><td><div class="score-bar"><div class="bar" style="width:83px;"></div><span class="val">83</span></div></td><td style="color:var(--positive);font-weight:600;">INVESTIGATE</td></tr>
+        <tr><td><strong>PENDLE</strong></td><td class="mono">$2.06</td><td class="mono">$349.6M</td><td class="mono" style="color:var(--positive);">+34.5%</td><td class="mono">0.275x</td><td class="mono">,</td><td class="mono">,</td><td><div class="score-bar"><div class="bar" style="width:73px;"></div><span class="val">73</span></div></td><td style="color:var(--positive);font-weight:600;">INVESTIGATE</td></tr>
+        <tr><td><strong>HYPE</strong></td><td class="mono">$43.74</td><td class="mono">$10.4B</td><td class="mono" style="color:var(--positive);">+4.9%</td><td class="mono">0.738x</td><td class="mono">$5.07B</td><td class="mono" style="color:var(--positive);">+5.5%</td><td><div class="score-bar"><div class="bar" style="width:57px;"></div><span class="val">57</span></div></td><td style="color:var(--info);font-weight:600;">WATCH</td></tr>
       </tbody>
     </table>
   </div>
@@ -698,33 +843,33 @@ body { padding-top: 56px; }
   <h2 id="sf-heading"><span class="accent">//</span> Stablecoin Flow Heatmap</h2>
   <p class="section-desc">Top stablecoin inflows and outflows by chain over 7 days. Capital follows opportunity, chains with strong inflows often signal upcoming activity.</p>
   <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
-    <div class="card" style="border-color:rgba(0,212,170,0.3);">
-      <div class="card-label" style="color:var(--accent);">Top Inflows (7d)</div>
-      <table style="margin-top:0.5rem;">
+    <div class="card" style="border-color:var(--positive-bg);">
+      <div class="card-label" style="color:var(--positive);">Top Inflows (7d)</div>
+      <table style="margin-top:8px;">
         <tbody>
-          <tr><td>Conflux</td><td class="mono" style="color:var(--accent);text-align:right;">+466.2%</td></tr>
-          <tr><td>Katana</td><td class="mono" style="color:var(--accent);text-align:right;">+167.4%</td></tr>
-          <tr><td>StarkNet</td><td class="mono" style="color:var(--accent);text-align:right;">+165.7%</td></tr>
-          <tr><td>Morph</td><td class="mono" style="color:var(--accent);text-align:right;">+80.2%</td></tr>
-          <tr><td>Citrea</td><td class="mono" style="color:var(--accent);text-align:right;">+56.1%</td></tr>
-          <tr><td>Fraxtal</td><td class="mono" style="color:var(--accent);text-align:right;">+45.1%</td></tr>
-          <tr><td>Solana</td><td class="mono" style="color:var(--accent);text-align:right;">+37.8%</td></tr>
-          <tr><td>Avalanche</td><td class="mono" style="color:var(--accent);text-align:right;">+24.0%</td></tr>
+          <tr><td>Conflux</td><td class="mono" style="color:var(--positive);text-align:right;">+466.2%</td></tr>
+          <tr><td>Katana</td><td class="mono" style="color:var(--positive);text-align:right;">+167.4%</td></tr>
+          <tr><td>StarkNet</td><td class="mono" style="color:var(--positive);text-align:right;">+165.7%</td></tr>
+          <tr><td>Morph</td><td class="mono" style="color:var(--positive);text-align:right;">+80.2%</td></tr>
+          <tr><td>Citrea</td><td class="mono" style="color:var(--positive);text-align:right;">+56.1%</td></tr>
+          <tr><td>Fraxtal</td><td class="mono" style="color:var(--positive);text-align:right;">+45.1%</td></tr>
+          <tr><td>Solana</td><td class="mono" style="color:var(--positive);text-align:right;">+37.8%</td></tr>
+          <tr><td>Avalanche</td><td class="mono" style="color:var(--positive);text-align:right;">+24.0%</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="card" style="border-color:rgba(255,107,107,0.3);">
-      <div class="card-label" style="color:var(--warning);">Top Outflows (7d)</div>
-      <table style="margin-top:0.5rem;">
+    <div class="card" style="border-color:var(--negative-bg);">
+      <div class="card-label" style="color:var(--negative);">Top Outflows (7d)</div>
+      <table style="margin-top:8px;">
         <tbody>
-          <tr><td>zkSync Lite</td><td class="mono" style="color:var(--warning);text-align:right;">-100.0%</td></tr>
-          <tr><td>Corn</td><td class="mono" style="color:var(--warning);text-align:right;">-99.8%</td></tr>
-          <tr><td>Sophon</td><td class="mono" style="color:var(--warning);text-align:right;">-96.5%</td></tr>
-          <tr><td>World Chain</td><td class="mono" style="color:var(--warning);text-align:right;">-72.1%</td></tr>
-          <tr><td>Fluent</td><td class="mono" style="color:var(--warning);text-align:right;">-71.8%</td></tr>
-          <tr><td>MANTRA</td><td class="mono" style="color:var(--warning);text-align:right;">-63.1%</td></tr>
-          <tr><td>MegaETH</td><td class="mono" style="color:var(--warning);text-align:right;">-52.7%</td></tr>
-          <tr><td>Sonic</td><td class="mono" style="color:var(--warning);text-align:right;">-30.1%</td></tr>
+          <tr><td>zkSync Lite</td><td class="mono" style="color:var(--negative);text-align:right;">-100.0%</td></tr>
+          <tr><td>Corn</td><td class="mono" style="color:var(--negative);text-align:right;">-99.8%</td></tr>
+          <tr><td>Sophon</td><td class="mono" style="color:var(--negative);text-align:right;">-96.5%</td></tr>
+          <tr><td>World Chain</td><td class="mono" style="color:var(--negative);text-align:right;">-72.1%</td></tr>
+          <tr><td>Fluent</td><td class="mono" style="color:var(--negative);text-align:right;">-71.8%</td></tr>
+          <tr><td>MANTRA</td><td class="mono" style="color:var(--negative);text-align:right;">-63.1%</td></tr>
+          <tr><td>MegaETH</td><td class="mono" style="color:var(--negative);text-align:right;">-52.7%</td></tr>
+          <tr><td>Sonic</td><td class="mono" style="color:var(--negative);text-align:right;">-30.1%</td></tr>
         </tbody>
       </table>
     </div>
@@ -805,7 +950,7 @@ body { padding-top: 56px; }
     <div class="method-card">
       <h3>Hyperliquid-Grade Earnings Yield</h3>
       <p>Named after Hyperliquid, which demonstrated that protocols earning real revenue relative to their market cap can be dramatically undervalued. The formula:</p>
-      <p style="margin-top:0.5rem;font-family:'JetBrains Mono',ui-monospace,monospace;color:#fff;">Earnings Yield = (Revenue_30d x 12) / Market Cap x 100%</p>
+      <p style="margin-top:8px;font-family:var(--font-mono);color:var(--text-primary);">Earnings Yield = (Revenue_30d x 12) / Market Cap x 100%</p>
       <p style="margin-top:0.5rem;">Tiers: Hyperliquid-Grade (&gt;100%), High (50-100%), Moderate (20-50%), Low (5-20%), Negligible (&lt;5%). Warning: extreme yields often indicate unsustainable revenue or micro-cap illiquidity.</p>
     </div>
     <div class="method-card">
@@ -824,16 +969,93 @@ body { padding-top: 56px; }
 
 </main>
 
-<footer role="contentinfo">
-  <div class="container">
-    <p>Built by an autonomous AI pipeline. Scans 154+ protocols daily.</p>
-    <p>Data refreshes at 09:00 UTC. Last scan: <time datetime="2026-05-10T09:00:00Z">May 10, 2026 09:00 UTC</time>.</p>
-    <div class="footer-links">
-      <a href="https://x.com/EarlyThunder" aria-label="Follow EarlyThunder on X (Twitter)">X / Twitter</a>
-      <a href="https://github.com/EarlyThunder" aria-label="EarlyThunder on GitHub">GitHub</a>
+<!-- ============================================================
+     EARLYTHUNDER CANONICAL FOOTER — drop-in for every static HTML page.
+     ============================================================ -->
+<style>
+.et-footer{margin-top:80px;border-top:1px solid var(--border-subtle,#2A2B36);
+  background:var(--bg-secondary,#12131A);
+  font-family:var(--font-primary,'Geist',system-ui,-apple-system,sans-serif);}
+.et-footer__top{max-width:var(--max-w,1280px);margin:0 auto;
+  padding:64px 48px 48px;display:grid;grid-template-columns:1.4fr 3fr;gap:64px;}
+.et-footer__logo{display:flex;align-items:center;gap:8px;font-weight:600;
+  font-size:15px;letter-spacing:-0.01em;color:var(--text-primary,#F0F0F3);
+  margin-bottom:16px;}
+.et-footer__tag{font-size:14px;color:var(--text-secondary,#9496A1);
+  max-width:36ch;margin:0 0 20px;line-height:1.6;}
+.et-footer__status{font-family:var(--font-mono,'JetBrains Mono',monospace);
+  font-size:11px;color:var(--text-tertiary,#5C5E6A);letter-spacing:0.04em;
+  display:flex;align-items:center;gap:8px;}
+.et-footer__status-dot{display:inline-block;width:6px;height:6px;
+  border-radius:50%;background:var(--positive,#22C55E);
+  box-shadow:0 0 8px var(--positive,#22C55E);}
+.et-footer__cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;}
+.et-footer__col{display:flex;flex-direction:column;gap:10px;}
+.et-footer__head{font-family:var(--font-mono,'JetBrains Mono',monospace);
+  font-size:11px;letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--text-tertiary,#5C5E6A);margin-bottom:6px;}
+.et-footer__col a{font-size:13px;color:var(--text-secondary,#9496A1);
+  text-decoration:none;transition:color 150ms;}
+.et-footer__col a:hover{color:var(--text-primary,#F0F0F3);text-decoration:none;}
+.et-footer__bot{max-width:var(--max-w,1280px);margin:0 auto;
+  padding:24px 48px;border-top:1px solid var(--border-subtle,#2A2B36);
+  display:flex;justify-content:space-between;gap:24px;font-size:12px;}
+.et-footer__copy{font-family:var(--font-mono,'JetBrains Mono',monospace);
+  color:var(--text-tertiary,#5C5E6A);}
+.et-footer__disc{color:var(--text-tertiary,#5C5E6A);}
+.et-footer__disc a{color:var(--accent-primary,#F5A623);text-decoration:none;}
+.et-footer__disc a:hover{color:var(--accent-hover,#FFBA42);}
+@media(max-width:1024px){.et-footer__top{grid-template-columns:1fr;gap:32px;}}
+@media(max-width:860px){
+  .et-footer__cols{grid-template-columns:repeat(2,1fr);}
+  .et-footer__top,.et-footer__bot{padding-left:24px;padding-right:24px;}
+  .et-footer__bot{flex-direction:column;gap:12px;}
+}
+</style>
+
+<footer class="et-footer">
+  <div class="et-footer__top">
+    <div class="et-footer__brand">
+      <div class="et-footer__logo">EarlyThunder</div>
+      <p class="et-footer__tag">Pre-mainstream opportunity intelligence. Hear the storm before anyone else.</p>
+      <div class="et-footer__status">
+        <span class="et-footer__status-dot"></span> Pipeline operational &middot; 154 protocols &middot; updated daily
+      </div>
     </div>
-    <a href="https://earlythunder.com/" class="back-link">&larr; Back to Main Site</a>
-    <p style="margin-top:1rem;font-size:0.7rem;">Market regime: RISK_OFF_CONTRACTING &middot; Fear &amp; Greed: 38 (Fear) &middot; Stablecoin MCap: $320.5B (-1.04% weekly)</p>
+    <div class="et-footer__cols">
+      <div class="et-footer__col">
+        <div class="et-footer__head">INTELLIGENCE</div>
+        <a href="/intelligence/">Dashboard</a>
+        <a href="/earnings/">Earnings Scanner</a>
+        <a href="/deadlines/">Deadline Tracker</a>
+        <a href="/intelligence/">Convergence Signals</a>
+      </div>
+      <div class="et-footer__col">
+        <div class="et-footer__head">RESEARCH</div>
+        <a href="/research/">Library</a>
+        <a href="/guides/">Guides</a>
+        <a href="/blog/">Blog</a>
+        <a href="/graveyard/">Graveyard</a>
+        <a href="/performance/">Performance</a>
+      </div>
+      <div class="et-footer__col">
+        <div class="et-footer__head">ABOUT</div>
+        <a href="/about/">About</a>
+        <a href="/methodology/">Methodology</a>
+        <a href="/how-it-works/">How it works</a>
+        <a href="/pricing/">Pricing</a>
+      </div>
+      <div class="et-footer__col">
+        <div class="et-footer__head">LEGAL</div>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/disclaimer/">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+  <div class="et-footer__bot">
+    <div class="et-footer__copy">&copy; 2026 AUTOM8 LLC &middot; All rights reserved</div>
+    <div class="et-footer__disc">For informational purposes only. Nothing constitutes financial advice. <a href="/disclaimer/">Read full disclaimer &rarr;</a></div>
   </div>
 </footer>
 

@@ -44,7 +44,7 @@ function computeAssetClasses(): readonly AssetClassCard[] {
 /** Single asset class card with link. */
 function AssetClassCardItem({ ac }: { readonly ac: AssetClassCard }) {
   return (
-    <div className="bg-bg-card rounded-2xl p-8 border border-border hover:border-text-tertiary transition-colors">
+    <div className="bg-bg-secondary rounded-2xl p-6 border border-border-subtle transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-border-active">
       <Link href={ac.href} className="block">
         <div className="text-5xl font-semibold text-text-primary tracking-tight">
           {ac.count}
@@ -57,7 +57,7 @@ function AssetClassCardItem({ ac }: { readonly ac: AssetClassCard }) {
       {ac.scannerHref && (
         <Link
           href={ac.scannerHref}
-          className="inline-block text-xs text-accent mt-3 hover:underline"
+          className="inline-block text-xs text-accent-primary mt-3 transition-colors hover:text-accent-hover"
         >
           View in scanner &rarr;
         </Link>
@@ -71,7 +71,7 @@ export default function AssetClassesSection() {
   const classes = computeAssetClasses();
 
   return (
-    <section className="py-20 max-w-6xl mx-auto px-6">
+    <section className="py-20 max-w-[1280px] mx-auto px-12">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {classes.map((ac) => (
           <AssetClassCardItem key={ac.label} ac={ac} />

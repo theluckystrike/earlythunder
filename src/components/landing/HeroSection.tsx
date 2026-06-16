@@ -38,9 +38,9 @@ interface ConvictionLadderProps {
 /* ─── Helpers ─── */
 
 function getScoreTier(score: number): string {
-  if (score >= 85) return "var(--color-score-elite, #3B82F6)";
-  if (score >= 70) return "var(--color-score-high, #34C759)";
-  if (score >= 50) return "var(--color-score-mid, #FF9F0A)";
+  if (score >= 85) return "var(--color-score-elite, #F5A623)";
+  if (score >= 70) return "var(--color-score-high, #22C55E)";
+  if (score >= 50) return "var(--color-score-mid, #3B82F6)";
   return "var(--color-score-low, #6B7280)";
 }
 

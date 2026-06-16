@@ -125,9 +125,9 @@ function MiniCountdown(
   const display = rows.slice(0, 3);
 
   function urgencyColor(urgency: string): string {
-    if (urgency === "critical") return "var(--color-score-low)";
-    if (urgency === "warning") return "var(--color-score-mid)";
-    return "var(--color-score-high)";
+    if (urgency === "critical") return "var(--color-negative, #EF4444)";
+    if (urgency === "warning") return "var(--color-warning, #EAB308)";
+    return "var(--color-positive, #22C55E)";
   }
 
   return (

@@ -137,7 +137,7 @@ function AlphaCard() {
         <div className="mt-auto pt-8">
           <Link
             href="/opportunities"
-            className="block rounded-full bg-amber py-3.5 text-center text-sm font-bold text-black transition-colors hover:bg-amber-hover"
+            className="block rounded-full bg-amber py-3.5 text-center text-sm font-bold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5 hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
           >
             Start Exploring
           </Link>

@@ -66,7 +66,7 @@ function PostCard({ post }: { readonly post: BlogPost }) {
   if (!post || typeof post.slug !== "string") return null;
 
   return (
-    <article className="group flex flex-col rounded-2xl border border-border bg-bg-card p-6 transition-colors hover:border-border-hover">
+    <article className="group flex flex-col rounded-2xl border border-border bg-bg-card p-6 transition-all duration-200 hover:border-border-active hover:-translate-y-0.5">
       <Link href={`/blog/${post.slug}`} className="flex flex-1 flex-col">
         <time className="text-xs text-text-tertiary">
           {formatDate(post.published_at)}
@@ -122,7 +122,7 @@ function RelatedResourcesSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <a
           href="/research/"
-          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           Research Library
           <span className="block mt-1 font-normal text-text-secondary">
@@ -131,7 +131,7 @@ function RelatedResourcesSection() {
         </a>
         <a
           href="/intelligence/"
-          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           Intelligence Dashboard
           <span className="block mt-1 font-normal text-text-secondary">

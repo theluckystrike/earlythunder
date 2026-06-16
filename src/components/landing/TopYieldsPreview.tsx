@@ -78,7 +78,7 @@ function buildSparkPath(points: number[]): string {
 function MiniRow({ rank }: { readonly rank: number }) {
   const points = useMemo(() => generatePoints(rank), [rank]);
   const trendUp = points[points.length - 1] > points[0];
-  const stroke = trendUp ? "var(--color-score-high)" : "var(--color-score-low)";
+  const stroke = trendUp ? "var(--color-positive)" : "var(--color-negative)";
   const d = buildSparkPath(points);
 
   return (

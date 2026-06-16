@@ -47,17 +47,17 @@ const VARIABLE_LABELS: Record<string, string> = {
 };
 
 function scoreColor(score: number): string {
-  if (score >= 7) return "text-emerald-400";
-  if (score >= 4) return "text-yellow-400";
-  return "text-red-400";
+  if (score >= 7) return "text-positive";
+  if (score >= 4) return "text-warning";
+  return "text-negative";
 }
 
 function verdictBadge(verdict: string, color: string) {
   const classes: Record<string, string> = {
-    green: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
-    yellow: "bg-yellow-500/10 text-yellow-400 border-yellow-500/30",
-    orange: "bg-orange-500/10 text-orange-400 border-orange-500/30",
-    red: "bg-red-500/10 text-red-400 border-red-500/30",
+    green: "bg-positive-bg text-positive border-positive/30",
+    yellow: "bg-warning-bg text-warning border-warning/30",
+    orange: "bg-warning-bg text-warning border-warning/40",
+    red: "bg-negative-bg text-negative border-negative/30",
   };
   return (
     <span
@@ -69,7 +69,7 @@ function verdictBadge(verdict: string, color: string) {
 }
 
 function changeColor(change: number): string {
-  return change >= 0 ? "text-emerald-400" : "text-red-400";
+  return change >= 0 ? "text-positive" : "text-negative";
 }
 
 function fmtSupply(n: number | null | undefined): string {
@@ -90,19 +90,19 @@ function fmtUsd(n: number | null | undefined): string {
 function circColor(circ: number | null | undefined, total: number | null | undefined): string {
   if (!circ || !total || total === 0) return "text-text-tertiary";
   const pct = (circ / total) * 100;
-  if (pct >= 90) return "text-emerald-400";
-  if (pct >= 60) return "text-yellow-400";
-  if (pct >= 30) return "text-orange-400";
-  return "text-red-400";
+  if (pct >= 90) return "text-positive";
+  if (pct >= 60) return "text-warning";
+  if (pct >= 30) return "text-warning";
+  return "text-negative";
 }
 
 function dilColor(mcap: number | null | undefined, fdv: number | null | undefined): string {
   if (!mcap || !fdv || mcap === 0) return "text-text-tertiary";
   const x = fdv / mcap;
-  if (x <= 1.1) return "text-emerald-400";
-  if (x <= 2) return "text-yellow-400";
-  if (x <= 5) return "text-orange-400";
-  return "text-red-400";
+  if (x <= 1.1) return "text-positive";
+  if (x <= 2) return "text-warning";
+  if (x <= 5) return "text-warning";
+  return "text-negative";
 }
 
 export default function ScorecardPage() {
@@ -167,7 +167,7 @@ export default function ScorecardPage() {
                       {SYMBOL_TO_SLUG[token.symbol] ? (
                         <Link
                           href={`/opportunities/${SYMBOL_TO_SLUG[token.symbol]}`}
-                          className="text-blue-400 hover:text-blue-300 hover:underline"
+                          className="text-info hover:text-info/80 hover:underline"
                         >
                           {token.symbol}
                         </Link>
@@ -175,7 +175,7 @@ export default function ScorecardPage() {
                         token.symbol
                       )}
                       {BUY_LIST.has(token.symbol) && (
-                        <span className="inline-block rounded px-1 py-px text-[9px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 leading-tight">
+                        <span className="inline-block rounded px-1 py-px text-[9px] font-bold bg-positive-bg text-positive border border-positive/30 leading-tight">
                           BUY
                         </span>
                       )}
@@ -225,7 +225,7 @@ export default function ScorecardPage() {
                   <span className="text-lg font-bold text-text-primary">{token.symbol}</span>
                   <span className="text-sm text-text-tertiary">{token.name}</span>
                   {BUY_LIST.has(token.symbol) && (
-                    <span className="inline-block rounded px-1.5 py-0.5 text-[10px] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                    <span className="inline-block rounded px-1.5 py-0.5 text-[10px] font-bold bg-positive-bg text-positive border border-positive/30">
                       BUY LIST
                     </span>
                   )}
@@ -266,7 +266,7 @@ export default function ScorecardPage() {
                           href={c.url}
                           target="_blank"
                           rel="nofollow noopener noreferrer"
-                          className="text-blue-400/70 hover:text-blue-300 hover:underline"
+                          className="text-info/70 hover:text-info hover:underline"
                         >
                           [{c.source}]
                         </a>
@@ -284,8 +284,8 @@ export default function ScorecardPage() {
                     href={`/opportunities/${SYMBOL_TO_SLUG[token.symbol]}`}
                     className={`inline-flex items-center gap-1.5 text-xs font-mono font-semibold px-3 py-1.5 rounded-lg border transition-colors ${
                       BUY_LIST.has(token.symbol)
-                        ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20"
-                        : "bg-blue-500/10 text-blue-400 border-blue-500/30 hover:bg-blue-500/20"
+                        ? "bg-positive-bg text-positive border-positive/30 hover:bg-positive/20"
+                        : "bg-[rgba(59,130,246,0.10)] text-info border-info/30 hover:bg-info/20"
                     }`}
                   >
                     View analysis <span aria-hidden="true">&rarr;</span>
@@ -324,11 +324,11 @@ export default function ScorecardPage() {
               key={i}
               className={`rounded-lg border px-3 py-2 text-xs font-mono ${
                 item.color === "red"
-                  ? "border-red-500/30 bg-red-500/5"
-                  : "border-emerald-500/30 bg-emerald-500/5"
+                  ? "border-negative/30 bg-negative-bg"
+                  : "border-positive/30 bg-positive-bg"
               }`}
             >
-              <span className={item.color === "red" ? "text-red-400 font-bold" : "text-emerald-400 font-bold"}>
+              <span className={item.color === "red" ? "text-negative font-bold" : "text-positive font-bold"}>
                 {item.label}
               </span>
               <span className="text-text-tertiary ml-2">{item.detail}</span>
@@ -451,7 +451,7 @@ export default function ScorecardPage() {
                           href={`https://coinmarketcap.com/currencies/${slug}/`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 underline"
+                          className="text-info hover:text-info/80 underline"
                         >
                           CMC
                         </a>

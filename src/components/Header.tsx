@@ -11,6 +11,7 @@ const PRIMARY_NAV = [
   { href: "/earnings/", label: "Earnings", isNextRoute: false },
   { href: "/deadlines/", label: "Deadlines", isNextRoute: false },
   { href: "/scorecard", label: "Scorecard", isNextRoute: true },
+  { href: "/about", label: "About", isNextRoute: true },
 ] as const;
 
 /** Secondary nav: shown only in mobile menu below a divider */

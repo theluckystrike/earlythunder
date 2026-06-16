@@ -42,8 +42,8 @@
   --color-term-bg: #08090C;
 
   /* Fonts */
-  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  --font-sans: 'Geist', 'General Sans', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', ui-monospace, 'SF Mono', monospace;
 
   /* Legacy aliases for existing pages */
   --color-bg: #0A0B0F;
@@ -98,9 +98,11 @@
 
   --term-bg: #08090C;
 
-  --font-primary: 'Geist', 'General Sans', 'Inter', -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', ui-monospace, monospace;
+  --font-primary: 'Geist', 'General Sans', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', ui-monospace, 'SF Mono', monospace;
 
+  --max-w: 1280px;
+  --nav-h: 56px;
   --row-h: 48px;
 }
 

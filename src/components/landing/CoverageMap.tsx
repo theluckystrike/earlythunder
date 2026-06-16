@@ -23,9 +23,9 @@ interface TierInfo {
 /* --- Helpers --- */
 
 function tierColor(score: number): string {
-  if (score >= 85) return "var(--color-score-elite, #3B82F6)";
-  if (score >= 70) return "var(--color-score-high, #34C759)";
-  if (score >= 50) return "var(--color-score-mid, #FF9F0A)";
+  if (score >= 85) return "var(--color-score-elite, #F5A623)";
+  if (score >= 70) return "var(--color-score-high, #22C55E)";
+  if (score >= 50) return "var(--color-score-mid, #3B82F6)";
   return "var(--color-score-low, #6B7280)";
 }
 
@@ -107,9 +107,9 @@ function DetailPanel({
 
 function Legend({ protocols }: { readonly protocols: readonly Protocol[] }) {
   const tiers: readonly TierInfo[] = [
-    { label: "85\u2013100", color: "var(--color-score-elite, #3B82F6)", count: protocols.filter((p) => p.score >= 85).length },
-    { label: "70\u201384", color: "var(--color-score-high, #34C759)", count: protocols.filter((p) => p.score >= 70 && p.score < 85).length },
-    { label: "50\u201369", color: "var(--color-score-mid, #FF9F0A)", count: protocols.filter((p) => p.score >= 50 && p.score < 70).length },
+    { label: "85\u2013100", color: "var(--color-score-elite, #F5A623)", count: protocols.filter((p) => p.score >= 85).length },
+    { label: "70\u201384", color: "var(--color-score-high, #22C55E)", count: protocols.filter((p) => p.score >= 70 && p.score < 85).length },
+    { label: "50\u201369", color: "var(--color-score-mid, #3B82F6)", count: protocols.filter((p) => p.score >= 50 && p.score < 70).length },
     { label: "<50", color: "var(--color-score-low, #6B7280)", count: protocols.filter((p) => p.score < 50).length },
   ];
 

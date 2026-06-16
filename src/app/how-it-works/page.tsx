@@ -208,7 +208,7 @@ function CtaSection() {
       <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
         <Link
           href="/opportunities"
-          className="rounded-full bg-text-primary px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
+          className="rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5 hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
         >
           View opportunities &rarr;
         </Link>
@@ -226,27 +226,27 @@ function CtaSection() {
 function SeeItInActionSection() {
   return (
     <section className="mt-16 border-t border-border pt-8">
-      <h3 className="text-sm font-mono uppercase tracking-wider text-text-secondary mb-4">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
         See It in Action
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <a
           href="/intelligence/"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Intelligence Dashboard</span>
           <span className="text-xs text-text-secondary mt-1 block">Live convergence signals</span>
         </a>
         <a
           href="/earnings/"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Earnings Scanner</span>
           <span className="text-xs text-text-secondary mt-1 block">Upcoming earnings catalysts</span>
         </a>
         <a
           href="/deadlines/"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Deadline Tracker</span>
           <span className="text-xs text-text-secondary mt-1 block">Key dates and regulatory milestones</span>

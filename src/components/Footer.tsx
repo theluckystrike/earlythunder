@@ -41,6 +41,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
   {
     title: "ABOUT",
     links: [
+      { href: "/about", label: "About" },
       { href: "/methodology", label: "Methodology" },
       { href: "/how-it-works", label: "How it works" },
       { href: "/pricing", label: "Pricing" },

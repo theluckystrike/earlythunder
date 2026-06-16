@@ -23,9 +23,9 @@ const LOG_ENTRIES: readonly LogEntry[] = [
 /* ─── Helpers ─── */
 
 function levelColor(lvl: LogEntry["lvl"]): string {
-  if (lvl === "OK") return "var(--color-score-high, #34C759)";
-  if (lvl === "Δ") return "var(--color-accent, #3B82F6)";
-  return "var(--color-score-mid, #FF9F0A)";
+  if (lvl === "OK") return "var(--color-positive, #22C55E)";
+  if (lvl === "Δ") return "var(--color-info, #3B82F6)";
+  return "var(--color-warning, #EAB308)";
 }
 
 /* ─── LogLine ─── */

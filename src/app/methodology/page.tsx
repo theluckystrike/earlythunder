@@ -87,7 +87,7 @@ function SeeItInActionSection() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <a
           href="/intelligence/"
-          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           Intelligence Dashboard
           <span className="block mt-1 font-normal text-text-secondary">
@@ -96,7 +96,7 @@ function SeeItInActionSection() {
         </a>
         <a
           href="/deadlines/"
-          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           Deadline Tracker
           <span className="block mt-1 font-normal text-text-secondary">
@@ -105,7 +105,7 @@ function SeeItInActionSection() {
         </a>
         <a
           href="/earnings/"
-          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-colors hover:border-border-hover"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           Earnings Scanner
           <span className="block mt-1 font-normal text-text-secondary">

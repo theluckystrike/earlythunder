@@ -17,7 +17,7 @@ export default function TopOpportunities({ opportunities }: TopOpportunitiesProp
   if (opportunities.length === 0) return null;
 
   return (
-    <section className="py-20 max-w-6xl mx-auto px-6">
+    <section className="py-20 max-w-[1280px] mx-auto px-12">
       <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-text-primary">
         Highest Conviction Opportunities
       </h2>

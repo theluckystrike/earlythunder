@@ -15,14 +15,14 @@ export interface TickerStripProps {
 function colorClass(c: TickerItem["c"]): string {
   switch (c) {
     case "elite":
-      return "text-score-high";
+      return "text-score-elite";
     case "high":
     case "pos":
       return "text-score-high";
     case "neg":
-      return "text-score-low";
+      return "text-negative";
     case "warn":
-      return "text-score-mid";
+      return "text-warning";
     default:
       return "text-text-primary";
   }

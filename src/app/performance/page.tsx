@@ -456,7 +456,7 @@ function CtaSection() {
       <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
         <Link
           href="/discoveries"
-          className="rounded-full bg-text-primary px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
+          className="rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5 hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
         >
           View discoveries &rarr;
         </Link>
@@ -476,27 +476,27 @@ function CtaSection() {
 function ExploreMoreSection() {
   return (
     <section className="mt-16 border-t border-border pt-8">
-      <h3 className="text-sm font-mono uppercase tracking-wider text-text-secondary mb-4">
+      <h3 className="text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
         Explore More
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <Link
           href="/methodology"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Methodology</span>
           <span className="text-xs text-text-secondary mt-1 block">Full scoring framework and signal weights</span>
         </Link>
         <a
           href="/intelligence/"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Intelligence Dashboard</span>
           <span className="text-xs text-text-secondary mt-1 block">Live convergence signals</span>
         </a>
         <a
           href="/research/"
-          className="block p-4 rounded-lg border border-border hover:border-accent transition-colors"
+          className="block p-6 rounded-2xl border border-border bg-bg-card transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           <span className="text-sm font-semibold text-text-primary">Research Library</span>
           <span className="text-xs text-text-secondary mt-1 block">analysis analyses and market reports</span>

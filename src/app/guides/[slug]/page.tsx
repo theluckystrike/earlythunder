@@ -156,7 +156,7 @@ function PostFooter() {
       </p>
       <Link
         href="/pricing"
-        className="mt-4 inline-block rounded-full bg-text-primary px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
+        className="mt-4 inline-block rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5 hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
       >
         Get Premium Access
       </Link>
