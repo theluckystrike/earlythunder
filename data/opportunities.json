@@ -21,12 +21,12 @@
     },
     "catalysts": [
       "Glamsterdam upgrade (EIP-7732 Enshrined PBS), targeting Q3 2026 mainnet",
-      "CLARITY Act, permanent digital commodity codification, Jul 4 signing target (59% odds)",
+      "CLARITY Act cleared the Senate Banking Committee 15 to 9 on May 14, with a full Senate vote still needed, around 51% odds of being signed in 2026",
       "Staking ETF expansion, Fidelity, VanEck, 21Shares pending Q2 2026 approval",
       "EIP-7918 blob reserve price (Fusaka), may restore meaningful ETH burn rates",
       "ETH ETF inflow reversal after 17-day outflow streak ended Jun 5",
       "Jun 27 quarterly options expiry, 24% of total OI, major volatility catalyst",
-      "RWA tokenization crossing $50B on Ethereum, BlackRock BUIDL already $2B+"
+      "Ethereum hosts about $16.6B of tokenized real-world assets, roughly 53% of the all-chain total, with BlackRock BUIDL near $2.4B; the $50B figure is a projected end-2026 milestone"
     ],
     "risks": [
       "EIP-1559 burn collapsed 71% post-Pectra, ultrasound money thesis broken at current gas levels",
@@ -135,6 +135,18 @@
         "source": "Yellow.com / CryptoDaily",
         "url": "https://yellow.com/research/real-world-asset-tokenization-20-billion-record",
         "type": "data"
+      },
+      {
+        "claim": "CLARITY Act cleared Senate Banking Committee 15-9 (May 14); ~51% signed-in-2026 odds",
+        "source": "Polymarket",
+        "url": "https://polymarket.com/event/clarity-act-signed-into-law-in-2026",
+        "type": "data"
+      },
+      {
+        "claim": "Ethereum RWA ~$16.6B (~53% of all-chain total)",
+        "source": "OpenPR",
+        "url": "https://www.openpr.com/news/4549239/ethereum-eth-tokenized-assets-reach-16-6-billion-and-52",
+        "type": "news"
       }
     ],
     "updated_at": "2026-06-11",
@@ -386,7 +398,7 @@
       "obscurity": 10
     },
     "catalysts": [
-      "U.S. Strategic Bitcoin Reserve legislation expanding to 1M BTC",
+      "U.S. Strategic Bitcoin Reserve, established by executive order in March 2025 holding forfeiture BTC, with the proposed BITCOIN Act aiming for up to 1M BTC still unpassed",
       "Additional nation-state sovereign reserve adoptions",
       "Lightning Network enabling mass commercial payment use cases"
     ],
@@ -399,7 +411,14 @@
       "ethereum",
       "solana"
     ],
-    "citations": [],
+    "citations": [
+      {
+        "claim": "Strategic Bitcoin Reserve established by executive order (March 6, 2025); 1M BTC is unpassed legislation",
+        "source": "Federal Register",
+        "url": "https://www.federalregister.gov/documents/2025/03/11/2025-03992/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile",
+        "type": "filing"
+      }
+    ],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
     "current_price_usd": 66666,
@@ -845,8 +864,9 @@
     },
     "catalysts": [
       "Firedancer client mainnet deployment targeting 1M+ TPS",
-      "SOL ETF approval by Q3 2026",
-      "DePIN sector growth driving real-world SOL fee demand"
+      "Spot SOL ETFs have traded since October 2025, so the live driver now is inflow growth and pending staking-ETF approvals, not initial approval",
+      "DePIN sector growth driving real-world SOL fee demand",
+      "Alpenglow consensus upgrade targets sub-second finality, a major 2026 performance unlock alongside Firedancer"
     ],
     "risks": [
       "Network reliability, historical outages damage institutional trust",
@@ -858,7 +878,20 @@
       "ethereum",
       "pyth-network"
     ],
-    "citations": [],
+    "citations": [
+      {
+        "claim": "Spot SOL ETFs began trading October 2025",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2025/10/30/solana-tumbles-8-erasing-all-year-over-year-gains-as-spot-etf-debuts-fail-to-boost-price",
+        "type": "news"
+      },
+      {
+        "claim": "Alpenglow consensus targets sub-second finality (2026)",
+        "source": "BlockEden",
+        "url": "https://blockeden.xyz/blog/2026/02/26/solana-firedancer-alpenglow-1m-tps/",
+        "type": "research"
+      }
+    ],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
     "current_price_usd": 75.17,
@@ -1160,7 +1193,7 @@
     },
     "catalysts": [
       "$366M/yr annualized revenue, pre-token, farming window open",
-      "Token launch will trigger retroactive distribution to early users",
+      "If a token launches, the active points and rakeback program (over $140M distributed) could fuel a retroactive airdrop, though no token is announced",
       "Solana system track record of generous airdrops (Jupiter, Jito, Tensor)",
       "Trading terminal category proven by Photon, BullX, Axiom scaling fastest"
     ],
@@ -1185,6 +1218,12 @@
         "source": "DeFi Llama",
         "url": "https://defillama.com",
         "type": "data"
+      },
+      {
+        "claim": "Active points and rakeback program, over $140M distributed; no token announced",
+        "source": "MEXC",
+        "url": "https://blog.mexc.com/axiom-trade-airdrop-2026-how-to-farm-points-on-solanas-highest-revenue-trading-terminal/",
+        "type": "news"
       }
     ],
     "updated_at": "2026-05-16T20:00:00Z",
@@ -2662,8 +2701,8 @@
     "catalysts": [
       "Lido DVT pilot expansion to full production deployment",
       "Coinbase Cloud node operator adoption signals institutional DVT demand",
-      "279x TVL/MCap ratio, identical structural mispricing to SSV",
-      "Ethereum Pectra upgrade mandating fault-tolerant validator design at scale"
+      "Roughly 670x TVL-to-market-cap ratio (about $623M TVL against a sub-$1M market cap), a wide structural gap, though not identical to SSV",
+      "Pectra's 2,048 ETH max effective balance raises the stakes of single-machine failure, strengthening the case for distributed validator technology"
     ],
     "risks": [
       "OBOL token value accrual from protocol fees not yet established",
@@ -2694,6 +2733,12 @@
         "source": "Lido Finance",
         "url": "https://lido.fi/blog",
         "type": "news"
+      },
+      {
+        "claim": "Pectra raised max effective balance to 2,048 ETH (EIP-7251)",
+        "source": "Consensys",
+        "url": "https://consensys.io/ethereum-pectra-upgrade",
+        "type": "reference"
       }
     ],
     "updated_at": "2026-05-16T16:00:00Z",
@@ -3115,7 +3160,7 @@
     "asset_class": "digital_assets",
     "tier": 2,
     "composite_score": 83,
-    "one_liner": "Base chain's dominant DEX with $800M+ TVL, $30M+ monthly fees, and ve(3,3) flywheel making Aerodrome the primary Base liquidity layer for 80+ protocols.",
+    "one_liner": "Base chain's leading DEX by volume and fees, around $310M TVL and roughly $8.6M in monthly fees, with a ve(3,3) flywheel that anchors Base liquidity for dozens of protocols.",
     "thesis": "Aerodrome is the Velodrome V2 fork deployed on Base, and it has captured Base system dominance to a degree that few DEXes achieve on any chain. With $800M-1.2B TVL and $30-50M monthly trading fees as of Q1 2026, Aerodrome commands 60%+ of Base's DEX volume. This dominance creates a compounding flywheel: major protocols (Moonwell, USDC, cbETH) direct liquidity to Aerodrome because it's where users are, and users come because liquidity is deepest.\n\nThe ve(3,3) tokenomics model is central to Aerodrome's success. veAERO (vote-locked AERO) holders direct AERO emissions to liquidity pools and receive 100% of trading fees from those pools, not as a percentage, but the entire fee. This creates a market for 'bribes' where protocols pay veAERO holders in their tokens to direct emissions toward desired pairs. The bribe marketplace generated $5-10M monthly in additional value flowing to veAERO holders, creating a second revenue stream beyond trading fees.\n\nBase's explosive growth (20M+ weekly active users by Q1 2025, driven by Coinbase distribution) is Aerodrome's primary growth driver. Every new protocol on Base, whether DeFi, GameFi, or SocialFi, needs liquidity, and Aerodrome is the default choice. Coinbase's institutional distribution capability for Base means Aerodrome's captive market is uniquely defensible. Coinbase-backed tokens (cbBTC, cbETH, USDC) have preferential liquidity on Aerodrome, deepening the integration.\n\nRisk: Aerodrome's dominance is contingent on Base's continued growth, a stumble in Base adoption flows directly to Aerodrome metrics. AERO emissions inflation is substantial in early years, the bribe economy must generate enough value to offset dilution to non-veAERO holders. Velodrome (the Optimism-deployed parent protocol) competes for developer attention and could fragment Aerodrome's team focus.",
     "signals": {
       "working_code": 82,
@@ -3128,21 +3173,40 @@
       "obscurity": 28
     },
     "catalysts": [
-      "Base system reaching $20B+ TVL, Aerodrome capturing 50%+ as central liquidity layer",
+      "Base TVL near $4.3B with Aerodrome the leading DEX by volume and fees, holding about $310M in TVL",
       "Coinbase institutional products (cbBTC, institutional staking) deepening Aerodrome integration as primary venue",
-      "Cross-chain expansion to OP Superchain enabling unified Aerodrome liquidity across Optimism + Base"
+      "Aerodrome and Velodrome merge into Aero (Dromos Labs), expanding from Base to Ethereum mainnet and Circle's Arc, broadening reach beyond a single chain"
     ],
     "risks": [
       "AERO inflation dilutes non-veAERO holders, must sustain bribe economy above emission value to be net positive",
       "Base system growth slowdown would directly impact Aerodrome volume and fee generation",
-      "Uniswap V4 hooks deployment on Base could recapture liquidity from specialized ve(3,3) model"
+      "Uniswap V4 with hooks has run on Base since January 2025 with thousands of hook pools, an ongoing competitive threat to the ve(3,3) model"
     ],
     "related_slugs": [
       "uni",
       "crv",
       "fluid"
     ],
-    "citations": [],
+    "citations": [
+      {
+        "claim": "Base TVL ~$4.3B; Aerodrome ~$310M TVL",
+        "source": "DefiLlama",
+        "url": "https://defillama.com/protocol/aerodrome",
+        "type": "data"
+      },
+      {
+        "claim": "Aerodrome and Velodrome merge into Aero, multi-chain expansion (Nov 2025)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/tech/2025/11/13/leading-base-dex-aerodrome-merges-into-aero-in-major-overhaul",
+        "type": "news"
+      },
+      {
+        "claim": "Uniswap V4 with hooks live on Base since January 2025",
+        "source": "Uniswap",
+        "url": "https://blog.uniswap.org/uniswap-v4-is-here",
+        "type": "official"
+      }
+    ],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
     "current_price_usd": 0.450564,
