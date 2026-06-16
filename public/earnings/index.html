@@ -832,6 +832,7 @@ body{padding-top:56px;}
         </div>
         <p>Revenue is defined as the portion of fees that accrue to the protocol or token holders (not to liquidity providers). This is analogous to net income in traditional finance, making earnings yield comparable to an inverted P/E ratio.</p>
         <p>A yield of 20%+ (Hyperliquid-grade) means the protocol earns more than 20% of its entire market cap per year in revenue, an extreme signal of potential undervaluation, but also potentially a sign of low market confidence, smart contract risk, or unsustainable fee generation.</p>
+        <p>Revenue and market-cap figures are sourced live from <a href="https://defillama.com" rel="noopener" target="_blank" style="color:var(--accent-primary)">DefiLlama</a> and refreshed daily. Treat them as a screening signal, not gospel: revenue accounting varies by protocol type, and for prediction markets, perps, and notional-fee venues the reported figure can run high. Always verify against primary sources before acting.</p>
         <div class="tier-legend">
             <div class="tier-legend-item"><span class="dot dot-hyper"></span>HYPERLIQUID-GRADE: 20%+ yield</div>
             <div class="tier-legend-item"><span class="dot dot-high"></span>HIGH-YIELD: 10-20% yield</div>
@@ -966,6 +967,7 @@ body{padding-top:56px;}
     function el(id) { return document.getElementById(id); }
 
     function escapeHtml(str) {
+        console.assert(str === undefined || str === null || typeof str.toString === "function", "escapeHtml: stringable");
         if (str === null || str === undefined) { return ""; }
         return String(str)
             .replace(/&/g, "&amp;")
@@ -976,7 +978,8 @@ body{padding-top:56px;}
     }
 
     function formatMoney(val) {
-        if (!val || val === 0) { return "&mdash;"; }
+        console.assert(val == null || typeof val === "number", "formatMoney: numeric");
+        if (!val || val === 0 || !isFinite(val)) { return "&mdash;"; }
         if (val >= 1000000000) { return "$" + (val / 1000000000).toFixed(2) + "B"; }
         if (val >= 1000000) { return "$" + (val / 1000000).toFixed(2) + "M"; }
         if (val >= 1000) { return "$" + (val / 1000).toFixed(1) + "K"; }
@@ -984,6 +987,8 @@ body{padding-top:56px;}
     }
 
     function tierClass(tier) {
+        console.assert(typeof tier === "string", "tierClass: string tier");
+        if (typeof tier !== "string") { return "is-low"; }
         if (tier === "HYPERLIQUID-GRADE") { return "is-hyper"; }
         if (tier === "HIGH-YIELD") { return "is-high"; }
         if (tier === "MODERATE") { return "is-mid"; }
@@ -991,6 +996,8 @@ body{padding-top:56px;}
     }
 
     function tierLabel(tier) {
+        console.assert(typeof tier === "string", "tierLabel: string tier");
+        if (typeof tier !== "string") { return "LOW"; }
         if (tier === "HYPERLIQUID-GRADE") { return "HYPER"; }
         if (tier === "HIGH-YIELD") { return "HIGH"; }
         if (tier === "MODERATE") { return "MOD"; }
@@ -998,6 +1005,8 @@ body{padding-top:56px;}
     }
 
     function yieldColor(pct) {
+        console.assert(typeof pct === "number", "yieldColor: number pct");
+        if (!isFinite(pct)) { return "var(--text-tertiary)"; }
         if (pct >= 20) { return "var(--accent-primary)"; }
         if (pct >= 10) { return "var(--positive)"; }
         if (pct >= 5) { return "var(--info)"; }
@@ -1005,11 +1014,15 @@ body{padding-top:56px;}
     }
 
     function avatarHue(rank) {
+        console.assert(typeof rank === "number", "avatarHue: number rank");
+        if (!isFinite(rank)) { return 0; }
         return (rank * 47) % 360;
     }
 
     // Deterministic sparkline (homepage parity): seed=rank*7919, LCG, 14 pts, 78x22
     function sparkline(rank) {
+        console.assert(typeof rank === "number", "sparkline: number rank");
+        if (!isFinite(rank)) { rank = 1; }
         var seed = rank * 7919;
         var pts = [];
         var i = 0;
@@ -1031,6 +1044,8 @@ body{padding-top:56px;}
     }
 
     function rowHtml(p) {
+        console.assert(p && typeof p === "object", "rowHtml: protocol object");
+        if (!p || typeof p.earnings_yield_pct !== "number") { return ""; }
         var name = escapeHtml(p.name);
         var sym = escapeHtml(p.symbol);
         var cat = escapeHtml(p.category);
@@ -1052,6 +1067,8 @@ body{padding-top:56px;}
     }
 
     function getFiltered() {
+        console.assert(Array.isArray(PROTOCOLS), "getFiltered: PROTOCOLS array");
+        if (!Array.isArray(PROTOCOLS)) { return []; }
         var searchEl = el("search");
         var search = searchEl ? searchEl.value.toLowerCase().trim() : "";
         var filtered = [];
@@ -1069,6 +1086,8 @@ body{padding-top:56px;}
     }
 
     function sortValue(p) {
+        console.assert(p && typeof p === "object", "sortValue: protocol object");
+        if (!p) { return 0; }
         if (currentSortCol === "rank") { return p.rank; }
         if (currentSortCol === "name") { return p.name.toLowerCase(); }
         if (currentSortCol === "category") { return p.category.toLowerCase(); }
@@ -1081,6 +1100,8 @@ body{padding-top:56px;}
     }
 
     function getSorted(data) {
+        console.assert(Array.isArray(data), "getSorted: array data");
+        if (!Array.isArray(data)) { return []; }
         var sorted = data.slice();
         sorted.sort(function(a, b) {
             var va = sortValue(a);
@@ -1211,6 +1232,7 @@ body{padding-top:56px;}
     }
 
     function sortTable(col, dir) {
+        console.assert(typeof col === "string" || col == null, "sortTable: string col");
         if (!col) { return; }
         currentSortCol = col;
         currentSortAsc = (dir === "asc");
