@@ -4,24 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DeFi Earnings Yield Scanner, Hyperliquid-Grade Protocols | EarlyThunder</title>
-<meta name="description" content="Scan 131 DeFi protocols by earnings yield. 24 Hyperliquid-grade opportunities with annualized revenue exceeding market cap. Data from May 9, 2026.">
+<meta name="description" content="Scan DeFi protocols by real earnings yield — annualized protocol revenue versus market cap. Live data from DefiLlama, refreshed daily. Surface tokens priced below the cash flows they produce.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://earlythunder.com/earnings/">
 <meta property="og:title" content="DeFi Earnings Yield Scanner | EarlyThunder">
-<meta property="og:description" content="Scan 131 DeFi protocols by earnings yield. 24 Hyperliquid-grade opportunities identified.">
+<meta property="og:description" content="Scan DeFi protocols by real earnings yield. Annualized revenue vs market cap, live from DefiLlama, refreshed daily.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://earlythunder.com/earnings/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DeFi Earnings Yield Scanner | EarlyThunder">
-<meta name="twitter:description" content="131 protocols scanned. 24 Hyperliquid-grade yields identified.">
+<meta name="twitter:description" content="DeFi protocols ranked by real earnings yield — live from DefiLlama, refreshed daily.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "name": "DeFi Earnings Yield Scanner, May 2026",
-  "description": "Earnings yield analysis of 131 DeFi protocols, ranking by annualized revenue relative to market capitalization.",
+  "name": "DeFi Earnings Yield Scanner",
+  "description": "Earnings yield analysis of DeFi protocols, ranking by annualized revenue relative to market capitalization. Live data from DefiLlama, refreshed daily.",
   "url": "https://earlythunder.com/earnings/",
-  "dateModified": "2026-05-09",
+  "dateModified": "2026-06-16",
   "creator": {"@type": "Organization", "name": "EarlyThunder"},
   "distribution": [{"@type": "DataDownload", "encodingFormat": "text/html", "contentUrl": "https://earlythunder.com/earnings/"}],
   "variableMeasured": [
@@ -299,6 +299,8 @@ body {
     margin-left: auto;
     transition: border-color 150ms;
 }
+.chip__count { font-variant-numeric: tabular-nums; opacity: .6; font-size: 12px; margin-left: 2px; }
+.chip--active .chip__count { opacity: .9; }
 .table-search::placeholder { color: var(--text-tertiary); }
 .table-search:focus { outline: none; border-color: var(--accent-primary); }
 
@@ -733,39 +735,42 @@ body{padding-top:56px;}
         <div>
             <span class="section__eyebrow">EARNINGS // YIELD SCANNER</span>
             <h1 class="section__title">Protocols earning more than their market cap</h1>
-            <p class="section__sub">Annualized protocol revenue divided by fully diluted market cap, sorted by yield. The signal: a token priced below the cash flows it actually produces. Data: May 9, 2026.</p>
+            <p class="section__sub">Annualized protocol revenue divided by market cap, ranked by yield. The signal: a token priced below the cash flows it actually produces. <span id="sub-meta"></span></p>
         </div>
         <span class="live-pill"><span class="live-pill__dot"></span> Live &middot; updated daily</span>
     </div>
 
+    <!-- Stat values are populated from PROTOCOLS at runtime (see computeStats). -->
     <div class="stats-strip">
         <div class="stat-card">
-            <div class="stat-card__label">Total Scanned</div>
-            <div class="stat-card__value">131</div>
+            <div class="stat-card__label">Protocols</div>
+            <div class="stat-card__value" id="stat-total">&mdash;</div>
         </div>
         <div class="stat-card">
             <div class="stat-card__label">Hyperliquid-Grade</div>
-            <div class="stat-card__value is-hyper">24</div>
+            <div class="stat-card__value is-hyper" id="stat-hyper">&mdash;</div>
         </div>
         <div class="stat-card">
             <div class="stat-card__label">High Yield</div>
-            <div class="stat-card__value is-high">19</div>
+            <div class="stat-card__value is-high" id="stat-high">&mdash;</div>
         </div>
         <div class="stat-card">
             <div class="stat-card__label">Moderate</div>
-            <div class="stat-card__value is-mid">14</div>
+            <div class="stat-card__value is-mid" id="stat-mid">&mdash;</div>
         </div>
         <div class="stat-card">
             <div class="stat-card__label">Low Yield</div>
-            <div class="stat-card__value is-low">25</div>
+            <div class="stat-card__value is-low" id="stat-low">&mdash;</div>
         </div>
     </div>
 
+    <!-- Chip counts are populated from PROTOCOLS at runtime (see computeStats). -->
     <div class="table-filters">
-        <button class="chip chip--active" data-filter="all" onclick="filterTier('all')">All</button>
-        <button class="chip" data-filter="HYPERLIQUID-GRADE" onclick="filterTier('HYPERLIQUID-GRADE')">Hyperliquid-Grade</button>
-        <button class="chip" data-filter="HIGH-YIELD" onclick="filterTier('HIGH-YIELD')">High Yield</button>
-        <button class="chip" data-filter="MODERATE" onclick="filterTier('MODERATE')">Moderate</button>
+        <button class="chip chip--active" data-filter="all" onclick="filterTier('all')">All <span class="chip__count" data-count="all"></span></button>
+        <button class="chip" data-filter="HYPERLIQUID-GRADE" onclick="filterTier('HYPERLIQUID-GRADE')">Hyperliquid-Grade <span class="chip__count" data-count="HYPERLIQUID-GRADE"></span></button>
+        <button class="chip" data-filter="HIGH-YIELD" onclick="filterTier('HIGH-YIELD')">High Yield <span class="chip__count" data-count="HIGH-YIELD"></span></button>
+        <button class="chip" data-filter="MODERATE" onclick="filterTier('MODERATE')">Moderate <span class="chip__count" data-count="MODERATE"></span></button>
+        <button class="chip" data-filter="LOW" onclick="filterTier('LOW')">Low <span class="chip__count" data-count="LOW"></span></button>
         <input type="text" class="table-search" id="search" placeholder="Search protocol, symbol, category..." oninput="applyFilters()">
     </div>
 
@@ -946,58 +951,12 @@ body{padding-top:56px;}
 (function() {
     "use strict";
 
-    var PROTOCOLS = [
-        {rank:1,name:"BabySwap",symbol:"BABY",category:"Dexs",chains:["BSC"],earnings_yield_pct:2077.2159,annualized_revenue:3112.2,mcap:149.83,tvl:1365912.01,tier:"HYPERLIQUID-GRADE"},
-        {rank:2,name:"Aark Digital",symbol:"AARK",category:"Interface",chains:["Arbitrum"],earnings_yield_pct:1395.7816,annualized_revenue:1798608,mcap:128860.27,tvl:0,tier:"HYPERLIQUID-GRADE"},
-        {rank:3,name:"HawkFi",symbol:"HAWK",category:"Liquidity Manager",chains:["Solana"],earnings_yield_pct:796.1686,annualized_revenue:134784,mcap:16929.08,tvl:8059794.38,tier:"HYPERLIQUID-GRADE"},
-        {rank:4,name:"Integral",symbol:"ITGR",category:"Dexs",chains:["Ethereum","Arbitrum"],earnings_yield_pct:528.1919,annualized_revenue:225932.4,mcap:42774.68,tvl:521845.05,tier:"HYPERLIQUID-GRADE"},
-        {rank:5,name:"Moonwell Apollo",symbol:"MFAM",category:"Lending",chains:["Moonriver"],earnings_yield_pct:452.6943,annualized_revenue:32268,mcap:7127.99,tvl:864872.37,tier:"HYPERLIQUID-GRADE"},
-        {rank:6,name:"Iron Bank",symbol:"IB",category:"Lending",chains:["Ethereum","OP Mainnet","Avalanche"],earnings_yield_pct:346.2649,annualized_revenue:92316,mcap:26660.52,tvl:226195.65,tier:"HYPERLIQUID-GRADE"},
-        {rank:7,name:"Houdini Swap",symbol:"LOCK",category:"DEX Aggregator",chains:["Ethereum"],earnings_yield_pct:232.5868,annualized_revenue:394944,mcap:169804.96,tvl:0,tier:"HYPERLIQUID-GRADE"},
-        {rank:8,name:"Streamflow",symbol:"STREAM",category:"Payments",chains:["Solana"],earnings_yield_pct:231.5881,annualized_revenue:1343712,mcap:580216.4,tvl:404912.62,tier:"HYPERLIQUID-GRADE"},
-        {rank:9,name:"Gamma",symbol:"GAMMA",category:"Liquidity Manager",chains:["BSC","OP Mainnet","Ethereum","Polygon zkEVM","Polygon","Arbitrum","Celo","Moonbeam","Avalanche","Fantom"],earnings_yield_pct:172.9664,annualized_revenue:112992,mcap:65326,tvl:4128643.6,tier:"HYPERLIQUID-GRADE"},
-        {rank:10,name:"Valas Finance",symbol:"VALAS",category:"Lending",chains:["BSC"],earnings_yield_pct:139.2103,annualized_revenue:493968,mcap:354835.74,tvl:0,tier:"HYPERLIQUID-GRADE"},
-        {rank:11,name:"Echelon Market",symbol:"ELON",category:"Lending",chains:["Aptos","Movement"],earnings_yield_pct:68.6153,annualized_revenue:651636,mcap:949694.47,tvl:20253470.37,tier:"HYPERLIQUID-GRADE"},
-        {rank:12,name:"Turbos",symbol:"TURBOS",category:"Dexs",chains:["Sui"],earnings_yield_pct:53.7612,annualized_revenue:369732,mcap:687729.91,tvl:4449666.51,tier:"HYPERLIQUID-GRADE"},
-        {rank:13,name:"mETH Protocol",symbol:"COOK",category:"Liquid Staking",chains:["Ethereum"],earnings_yield_pct:50.5853,annualized_revenue:1449960,mcap:2866367.2,tvl:538854139.47,tier:"HYPERLIQUID-GRADE"},
-        {rank:14,name:"Velora",symbol:"VLR",category:"DEX Aggregator",chains:["BSC","Ethereum","Avalanche","Polygon","Fantom","Arbitrum","OP Mainnet","Polygon zkEVM","Base"],earnings_yield_pct:47.5368,annualized_revenue:454188,mcap:955444.27,tvl:0,tier:"HYPERLIQUID-GRADE"},
-        {rank:15,name:"Quickswap Dex",symbol:"QUICK",category:"Dexs",chains:["Polygon","Base"],earnings_yield_pct:43.5863,annualized_revenue:3722832,mcap:8541283.1,tvl:465985446.77,tier:"HYPERLIQUID-GRADE"},
-        {rank:16,name:"fx Protocol",symbol:"FXN",category:"Dual-Token Stablecoin",chains:["Ethereum"],earnings_yield_pct:38.8703,annualized_revenue:961392,mcap:2473330.51,tvl:82619482.42,tier:"HYPERLIQUID-GRADE"},
-        {rank:17,name:"Vesper",symbol:"VSP",category:"Yield Aggregator",chains:["Ethereum","Base","OP Mainnet"],earnings_yield_pct:37.8605,annualized_revenue:328368,mcap:867309.93,tvl:45628624.19,tier:"HYPERLIQUID-GRADE"},
-        {rank:18,name:"CLever",symbol:"CLEV",category:"Yield",chains:["Ethereum"],earnings_yield_pct:35.9532,annualized_revenue:84084,mcap:233870.49,tvl:6707033.33,tier:"HYPERLIQUID-GRADE"},
-        {rank:19,name:"Concentrator",symbol:"CTR",category:"Yield",chains:["Ethereum"],earnings_yield_pct:32.0473,annualized_revenue:41304,mcap:128884.63,tvl:50458128.14,tier:"HYPERLIQUID-GRADE"},
-        {rank:20,name:"ODOS",symbol:"ODOS",category:"DEX Aggregator",chains:["OP Mainnet","Ethereum","Polygon zkEVM","Avalanche","Polygon","Arbitrum","Base","Fantom","BSC","ZKsync Era"],earnings_yield_pct:30.6408,annualized_revenue:549948,mcap:1794825.41,tvl:0,tier:"HYPERLIQUID-GRADE"},
-        {rank:21,name:"SideShift",symbol:"XAI",category:"Cross Chain Bridge",chains:["Ethereum"],earnings_yield_pct:25.013,annualized_revenue:3468672,mcap:13867458.5,tvl:0,tier:"HYPERLIQUID-GRADE"},
-        {rank:22,name:"Gains Network",symbol:"GNS",category:"Derivatives",chains:["Polygon","Arbitrum","Base","ApeChain","MegaETH"],earnings_yield_pct:24.0439,annualized_revenue:3308256,mcap:13759239.81,tvl:14734375.92,tier:"HYPERLIQUID-GRADE"},
-        {rank:23,name:"Dolomite",symbol:"DOLO",category:"Lending",chains:["Polygon zkEVM","Mantle","Berachain","Arbitrum","Ethereum"],earnings_yield_pct:23.1461,annualized_revenue:3977604,mcap:17184795.97,tvl:173728799.41,tier:"HYPERLIQUID-GRADE"},
-        {rank:24,name:"Beefy",symbol:"BIFI",category:"Yield Aggregator",chains:["Arbitrum","Base","Polygon","Avalanche","Fantom","OP Mainnet","BSC","Ethereum","Metis","Mantle"],earnings_yield_pct:21.4931,annualized_revenue:871248,mcap:4053626.52,tvl:125314964.89,tier:"HYPERLIQUID-GRADE"},
-        {rank:25,name:"Inverse Finance FiRM",symbol:"INV",category:"CDP",chains:["Ethereum"],earnings_yield_pct:18.9804,annualized_revenue:2076888,mcap:10942251.02,tvl:23939216.65,tier:"HIGH-YIELD"},
-        {rank:26,name:"Overtime",symbol:"OVER",category:"Prediction Market",chains:["Polygon","Arbitrum","Base","OP Mainnet"],earnings_yield_pct:18.7545,annualized_revenue:1245276,mcap:6639881.11,tvl:1829854.53,tier:"HIGH-YIELD"},
-        {rank:27,name:"FlashTrade",symbol:"FAF",category:"Derivatives",chains:["Solana"],earnings_yield_pct:18.4382,annualized_revenue:701460,mcap:3804383.72,tvl:10776142.59,tier:"HIGH-YIELD"},
-        {rank:28,name:"Geodnet",symbol:"GEOD",category:"Oracle",chains:["Polygon","Solana"],earnings_yield_pct:17.9178,annualized_revenue:10170480,mcap:56761806.38,tvl:0,tier:"HIGH-YIELD"},
-        {rank:29,name:"BaseSwap V2",symbol:"BSWAP",category:"Dexs",chains:["Base"],earnings_yield_pct:17.0942,annualized_revenue:7099.2,mcap:41529.9,tvl:663297.64,tier:"HIGH-YIELD"},
-        {rank:30,name:"Lido",symbol:"LDO",category:"Liquid Staking",chains:["Ethereum"],earnings_yield_pct:16.7403,annualized_revenue:57820272,mcap:345395409.81,tvl:20357681610.66,tier:"HIGH-YIELD"},
-        {rank:31,name:"Index Coop",symbol:"INDEX",category:"Indexes",chains:["Arbitrum","Base","Ethereum"],earnings_yield_pct:16.4679,annualized_revenue:296796,mcap:1802268.75,tvl:14800524.2,tier:"HIGH-YIELD"},
-        {rank:32,name:"Strike",symbol:"STRK",category:"Lending",chains:["Ethereum"],earnings_yield_pct:15.1481,annualized_revenue:13860,mcap:91496.91,tvl:2718.45,tier:"HIGH-YIELD"},
-        {rank:33,name:"CoWSwap",symbol:"COW",category:"DEX Aggregator",chains:["Ethereum","Gnosis","Arbitrum","Base","Polygon","Avalanche","Lens"],earnings_yield_pct:14.8936,annualized_revenue:15267660,mcap:102511815.78,tvl:0,tier:"HIGH-YIELD"},
-        {rank:34,name:"NetSwap",symbol:"NETT",category:"Dexs",chains:["Metis"],earnings_yield_pct:14.187,annualized_revenue:17532,mcap:123578.3,tvl:1449669.3,tier:"HIGH-YIELD"},
-        {rank:35,name:"Mendi Finance",symbol:"MENDI",category:"Lending",chains:["Linea"],earnings_yield_pct:13.5136,annualized_revenue:3144,mcap:23265.47,tvl:1531194.63,tier:"HIGH-YIELD"},
-        {rank:36,name:"Solarbeam",symbol:"SOLAR",category:"Dexs",chains:["Moonriver"],earnings_yield_pct:13.4175,annualized_revenue:2988,mcap:22269.42,tvl:274415.49,tier:"HIGH-YIELD"},
-        {rank:37,name:"Banana Gun",symbol:"BANANA",category:"Telegram Bot",chains:["Ethereum","Solana","Blast","Base","BSC","Sonic","Unichain"],earnings_yield_pct:12.9901,annualized_revenue:2231196,mcap:17176138.75,tvl:0,tier:"HIGH-YIELD"},
-        {rank:38,name:"Solana Name Service",symbol:"SNS",category:"Domains",chains:["Solana"],earnings_yield_pct:12.5482,annualized_revenue:398520,mcap:3175911.4,tvl:0,tier:"HIGH-YIELD"},
-        {rank:39,name:"Stride",symbol:"STRD",category:"Liquid Staking",chains:["Osmosis","CosmosHub","Stargaze","Juno","Evmos","Terra Classic","Celestia","dYdX","Dymension","Injective"],earnings_yield_pct:12.5381,annualized_revenue:104460,mcap:833138.59,tvl:8747538.15,tier:"HIGH-YIELD"},
-        {rank:40,name:"Usual USD0",symbol:"USUAL",category:"RWA",chains:["Ethereum"],earnings_yield_pct:11.5564,annualized_revenue:3412320,mcap:29527537.11,tvl:100371148.86,tier:"HIGH-YIELD"},
-        {rank:41,name:"Sonne Finance",symbol:"SONNE",category:"Lending",chains:["OP Mainnet","Base"],earnings_yield_pct:11.3129,annualized_revenue:2916,mcap:25775.84,tvl:154450.29,tier:"HIGH-YIELD"},
-        {rank:42,name:"Bifrost Liquid Staking",symbol:"BNC",category:"Liquid Staking",chains:["Bifrost"],earnings_yield_pct:10.861,annualized_revenue:132192,mcap:1217125.68,tvl:24923205.57,tier:"HIGH-YIELD"},
-        {rank:43,name:"KiloEx",symbol:"KILO",category:"Derivatives",chains:["BSC","opBNB","Manta","Taiko","BSquared","Base"],earnings_yield_pct:10.8522,annualized_revenue:138252,mcap:1273954.48,tvl:3635016.34,tier:"HIGH-YIELD"},
-        {rank:44,name:"Gearbox",symbol:"GEAR",category:"Lending",chains:["Ethereum","Arbitrum","OP Mainnet","Sonic","BSC","Hemi","Lisk","Monad"],earnings_yield_pct:9.9487,annualized_revenue:295452,mcap:2969765.49,tvl:27807504.26,tier:"MODERATE"},
-        {rank:45,name:"Indigo",symbol:"INDY",category:"CDP",chains:["Cardano"],earnings_yield_pct:9.673,annualized_revenue:284952,mcap:2945840.74,tvl:7239247.51,tier:"MODERATE"},
-        {rank:46,name:"Stake DAO",symbol:"SDT",category:"Yield",chains:["Ethereum"],earnings_yield_pct:9.5927,annualized_revenue:876540,mcap:9137592.12,tvl:161042065.36,tier:"MODERATE"},
-        {rank:47,name:"STON.fi",symbol:"STON",category:"Dexs",chains:["TON"],earnings_yield_pct:9.0595,annualized_revenue:2935164,mcap:32398728.45,tvl:40749293.52,tier:"MODERATE"},
-        {rank:48,name:"deBridge",symbol:"DBR",category:"Bridge",chains:["OP Mainnet","BSC","Ethereum","Linea","Avalanche","Polygon","Solana","Arbitrum","Base","Fantom"],earnings_yield_pct:8.5757,annualized_revenue:6273756,mcap:73157634.86,tvl:5890385.79,tier:"MODERATE"},
-        {rank:49,name:"Definitive",symbol:"EDGE",category:"DEX Aggregator",chains:["Ethereum","Base","OP Mainnet","Polygon","BSC","Arbitrum","Avalanche","Solana"],earnings_yield_pct:8.4047,annualized_revenue:2159136,mcap:25689613.96,tvl:101396.22,tier:"MODERATE"},
-        {rank:50,name:"Rocket Pool",symbol:"RPL",category:"Liquid Staking",chains:["Ethereum"],earnings_yield_pct:7.643,annualized_revenue:3507057,mcap:45886096.87,tvl:1154074976.28,tier:"MODERATE"}
-    ];
+    /*ET_DATA_START*/
+  var PROTOCOLS = [{"rank":1,"name":"Limitless Exchange","symbol":"LMTS","category":"Prediction Market","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":520.53,"annualized_revenue":61234943,"mcap":11763902},{"rank":2,"name":"Collector Crypt","symbol":"CARDS","category":"Physical TCG","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":171.01,"annualized_revenue":115376147,"mcap":67466907},{"rank":3,"name":"ORE Protocol","symbol":"ORE","category":"Gamified Mining","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":105.6,"annualized_revenue":42100828,"mcap":39867154},{"rank":4,"name":"Bankr","symbol":"BNKR","category":"Interface","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":87.43,"annualized_revenue":39997454,"mcap":45750310},{"rank":5,"name":"USD AI","symbol":"CHIP","category":"RWA Lending","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":53.01,"annualized_revenue":37563391,"mcap":70861897},{"rank":6,"name":"THORSwap","symbol":"THOR","category":"DEX Aggregator","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":39.7,"annualized_revenue":3641423,"mcap":9172305},{"rank":7,"name":"Overtime","symbol":"OVER","category":"Prediction Market","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":29.62,"annualized_revenue":2140433,"mcap":7225435},{"rank":8,"name":"Gains Network","symbol":"GNS","category":"Derivatives","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":29.25,"annualized_revenue":4188278,"mcap":14317632},{"rank":9,"name":"Inverse Finance FiRM","symbol":"INV","category":"CDP","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":28.57,"annualized_revenue":2069647,"mcap":7244673},{"rank":10,"name":"Dolomite","symbol":"DOLO","category":"Lending","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":24.63,"annualized_revenue":2952692,"mcap":11990323},{"rank":11,"name":"DEXTools","symbol":"DEXT","category":"Coins Tracker","tier":"HYPERLIQUID-GRADE","earnings_yield_pct":22.1,"annualized_revenue":1857011,"mcap":8402008},{"rank":12,"name":"Quickswap Dex","symbol":"QUICK","category":"Dexs","tier":"HIGH-YIELD","earnings_yield_pct":19.59,"annualized_revenue":1077091,"mcap":5497605},{"rank":13,"name":"CoWSwap","symbol":"COW","category":"DEX Aggregator","tier":"HIGH-YIELD","earnings_yield_pct":18.7,"annualized_revenue":17034343,"mcap":91079201},{"rank":14,"name":"Usual USD0","symbol":"USUAL","category":"RWA","tier":"HIGH-YIELD","earnings_yield_pct":18.1,"annualized_revenue":3268563,"mcap":18059857},{"rank":15,"name":"Definitive","symbol":"EDGE","category":"DEX Aggregator","tier":"HIGH-YIELD","earnings_yield_pct":16.76,"annualized_revenue":2819065,"mcap":16824044},{"rank":16,"name":"SideShift","symbol":"XAI","category":"Cross Chain Bridge","tier":"HIGH-YIELD","earnings_yield_pct":16.06,"annualized_revenue":1854164,"mcap":11546453},{"rank":17,"name":"Graphite Protocol","symbol":"GP","category":"Launchpad","tier":"HIGH-YIELD","earnings_yield_pct":15.53,"annualized_revenue":920348,"mcap":5925968},{"rank":18,"name":"Lido","symbol":"LDO","category":"Liquid Staking","tier":"HIGH-YIELD","earnings_yield_pct":14.84,"annualized_revenue":33699720,"mcap":227042437},{"rank":19,"name":"Metaplex","symbol":"MPLX","category":"Launchpad","tier":"HIGH-YIELD","earnings_yield_pct":12.88,"annualized_revenue":1309073,"mcap":10166713},{"rank":20,"name":"OPINION","symbol":"OPN","category":"Prediction Market","tier":"HIGH-YIELD","earnings_yield_pct":12.23,"annualized_revenue":1588371,"mcap":12987908},{"rank":21,"name":"deBridge","symbol":"DBR","category":"Bridge","tier":"HIGH-YIELD","earnings_yield_pct":10.94,"annualized_revenue":8424480,"mcap":76988990},{"rank":22,"name":"Geodnet","symbol":"GEOD","category":"Oracle","tier":"HIGH-YIELD","earnings_yield_pct":10.28,"annualized_revenue":10289545,"mcap":100129858},{"rank":23,"name":"Stake DAO","symbol":"SDT","category":"Yield","tier":"MODERATE","earnings_yield_pct":9.69,"annualized_revenue":730195,"mcap":7539374},{"rank":24,"name":"Aethir","symbol":"ATH","category":"Developer Tools","tier":"MODERATE","earnings_yield_pct":9.01,"annualized_revenue":8803046,"mcap":97675768},{"rank":25,"name":"AlphaLend","symbol":"BLUE","category":"Lending","tier":"MODERATE","earnings_yield_pct":8.17,"annualized_revenue":473101,"mcap":5790636},{"rank":26,"name":"STON.fi","symbol":"STON","category":"Dexs","tier":"MODERATE","earnings_yield_pct":7.83,"annualized_revenue":1718615,"mcap":21951852},{"rank":27,"name":"World Liberty Financial","symbol":"WLFI","category":"Lending","tier":"MODERATE","earnings_yield_pct":7.49,"annualized_revenue":141780345,"mcap":1892651002},{"rank":28,"name":"Convex Finance","symbol":"CVX","category":"Yield","tier":"MODERATE","earnings_yield_pct":6.91,"annualized_revenue":8511070,"mcap":123149178},{"rank":29,"name":"Yield Basis","symbol":"YB","category":"Leveraged Farming","tier":"MODERATE","earnings_yield_pct":6.08,"annualized_revenue":1165396,"mcap":19178484},{"rank":30,"name":"Tree News","symbol":"TREE","category":"SoFi","tier":"MODERATE","earnings_yield_pct":5.59,"annualized_revenue":954293,"mcap":17066733},{"rank":31,"name":"Aquarius Stellar","symbol":"AQUA","category":"Dexs","tier":"LOW","earnings_yield_pct":4.9,"annualized_revenue":709755,"mcap":14494067},{"rank":32,"name":"Pendle","symbol":"PENDLE","category":"Yield","tier":"LOW","earnings_yield_pct":4.89,"annualized_revenue":11160739,"mcap":228262414},{"rank":33,"name":"Benqi Lending","symbol":"QI","category":"Lending","tier":"LOW","earnings_yield_pct":4.44,"annualized_revenue":440300,"mcap":9916405},{"rank":34,"name":"Ekubo","symbol":"EKUBO","category":"Dexs","tier":"LOW","earnings_yield_pct":3.79,"annualized_revenue":193973,"mcap":5116154},{"rank":35,"name":"Jupiter Aggregator","symbol":"JUP","category":"DEX Aggregator","tier":"LOW","earnings_yield_pct":3.73,"annualized_revenue":23558852,"mcap":631803753},{"rank":36,"name":"SSV Network","symbol":"SSV","category":"Staking Pool","tier":"LOW","earnings_yield_pct":3.48,"annualized_revenue":1185958,"mcap":34105689},{"rank":37,"name":"Capx AI","symbol":"CAPX","category":"AI Agents","tier":"LOW","earnings_yield_pct":3.33,"annualized_revenue":527024,"mcap":15840010},{"rank":38,"name":"Hegic","symbol":"HEGIC","category":"Options","tier":"LOW","earnings_yield_pct":3.26,"annualized_revenue":474123,"mcap":14557525},{"rank":39,"name":"Treehouse Protocol","symbol":"TREE","category":"DOR","tier":"LOW","earnings_yield_pct":3.17,"annualized_revenue":230777,"mcap":7277917},{"rank":40,"name":"Banana Gun","symbol":"BANANA","category":"Telegram Bot","tier":"LOW","earnings_yield_pct":2.89,"annualized_revenue":347456,"mcap":12026165},{"rank":41,"name":"Renzo","symbol":"REZ","category":"Liquid Restaking","tier":"LOW","earnings_yield_pct":2.49,"annualized_revenue":708660,"mcap":28492268},{"rank":42,"name":"Stader","symbol":"SD","category":"Liquid Staking","tier":"LOW","earnings_yield_pct":2.39,"annualized_revenue":244587,"mcap":10245254},{"rank":43,"name":"MorpheusAI","symbol":"MOR","category":"AI Agents","tier":"LOW","earnings_yield_pct":2.28,"annualized_revenue":407474,"mcap":17866360},{"rank":44,"name":"Osmosis DEX","symbol":"OSMO","category":"Dexs","tier":"LOW","earnings_yield_pct":2.11,"annualized_revenue":751620,"mcap":35544118},{"rank":45,"name":"Railgun","symbol":"RAIL","category":"Privacy","tier":"LOW","earnings_yield_pct":2.03,"annualized_revenue":3536485,"mcap":173970828},{"rank":46,"name":"Layer3","symbol":"L3","category":"Foundation","tier":"LOW","earnings_yield_pct":1.99,"annualized_revenue":214073,"mcap":10759525},{"rank":47,"name":"Goldfinch","symbol":"GFI","category":"RWA Lending","tier":"LOW","earnings_yield_pct":1.76,"annualized_revenue":128955,"mcap":7315844},{"rank":48,"name":"Hydration DEX","symbol":"HDX","category":"Dexs","tier":"LOW","earnings_yield_pct":1.35,"annualized_revenue":321407,"mcap":23792243},{"rank":49,"name":"OpenLedger","symbol":"OPEN","category":"Decentralized AI","tier":"LOW","earnings_yield_pct":1.29,"annualized_revenue":640028,"mcap":49470619},{"rank":50,"name":"Nexus Mutual","symbol":"NXM","category":"Insurance","tier":"LOW","earnings_yield_pct":1.24,"annualized_revenue":1018533,"mcap":82216828},{"rank":51,"name":"Virtuals Protocol","symbol":"VIRTUAL","category":"AI Agents","tier":"LOW","earnings_yield_pct":1.22,"annualized_revenue":5016280,"mcap":411062772},{"rank":52,"name":"PinkSale","symbol":"PINKSALE","category":"Launchpad","tier":"LOW","earnings_yield_pct":1.2,"annualized_revenue":261060,"mcap":21798822},{"rank":53,"name":"Momentum","symbol":"MMT","category":"Dexs","tier":"LOW","earnings_yield_pct":1.09,"annualized_revenue":283410,"mcap":25941360},{"rank":54,"name":"Axie Infinity","symbol":"AXS","category":"Gaming","tier":"LOW","earnings_yield_pct":0.96,"annualized_revenue":1646442,"mcap":170719844},{"rank":55,"name":"Arbitrum","symbol":"ARB","category":"Canonical Bridge","tier":"LOW","earnings_yield_pct":0.94,"annualized_revenue":5002629,"mcap":532531161},{"rank":56,"name":"Illuvium","symbol":"ILV","category":"Gaming","tier":"LOW","earnings_yield_pct":0.7,"annualized_revenue":198341,"mcap":28399468},{"rank":57,"name":"Olympus DAO","symbol":"OHM","category":"Reserve Currency","tier":"LOW","earnings_yield_pct":0.69,"annualized_revenue":1638801,"mcap":237163232},{"rank":58,"name":"Frankencoin","symbol":"ZCHF","category":"CDP","tier":"LOW","earnings_yield_pct":0.67,"annualized_revenue":260269,"mcap":39115076},{"rank":59,"name":"ENS","symbol":"ENS","category":"Domains","tier":"LOW","earnings_yield_pct":0.66,"annualized_revenue":1404119,"mcap":213660365},{"rank":60,"name":"HumidiFi","symbol":"WET","category":"Dexs","tier":"LOW","earnings_yield_pct":0.6,"annualized_revenue":80896,"mcap":13460179}];
+  var DATA_DATE = "2026-06-16";
+  var DATA_SCANNED = 1922;
+  var DATA_QUALIFIED = 85;
+  /*ET_DATA_END*/
 
     var TIER_ORDER = { "HYPERLIQUID-GRADE": 0, "HIGH-YIELD": 1, "MODERATE": 2, "LOW": 3 };
     var currentFilter = "all";
@@ -1189,7 +1148,55 @@ body{padding-top:56px;}
         updateHeaders();
     }
 
+    // Count protocols per tier in a single bounded pass over real data.
+    function countByTier() {
+        console.assert(Array.isArray(PROTOCOLS), "PROTOCOLS must be array");
+        if (!Array.isArray(PROTOCOLS)) { return null; }
+        var c = { all: PROTOCOLS.length, "HYPERLIQUID-GRADE": 0, "HIGH-YIELD": 0, "MODERATE": 0, "LOW": 0 };
+        var i = 0;
+        for (i = 0; i < PROTOCOLS.length; i++) {
+            var t = PROTOCOLS[i] && PROTOCOLS[i].tier;
+            if (c[t] !== undefined) { c[t] += 1; }
+        }
+        console.assert(c.all === PROTOCOLS.length, "total preserved");
+        return c;
+    }
+
+    // Set element text by id, guarding against missing nodes.
+    function setText(id, value) {
+        console.assert(typeof id === "string", "id must be string");
+        var node = el(id);
+        if (node) { node.textContent = String(value); }
+        return Boolean(node);
+    }
+
+    // Populate stat cards, chip counts, and subtitle meta from real data.
+    function computeStats() {
+        console.assert(Array.isArray(PROTOCOLS) && PROTOCOLS.length > 0, "PROTOCOLS required");
+        if (!Array.isArray(PROTOCOLS) || PROTOCOLS.length === 0) { return; }
+        var c = countByTier();
+        if (!c) { return; }
+        setText("stat-total", c.all);
+        setText("stat-hyper", c["HYPERLIQUID-GRADE"]);
+        setText("stat-high", c["HIGH-YIELD"]);
+        setText("stat-mid", c["MODERATE"]);
+        setText("stat-low", c.LOW);
+        var badges = document.querySelectorAll(".chip__count");
+        var i = 0;
+        for (i = 0; i < badges.length; i++) {
+            var key = badges[i].getAttribute("data-count");
+            badges[i].textContent = (c[key] !== undefined) ? ("(" + c[key] + ")") : "";
+        }
+        var meta = el("sub-meta");
+        if (meta && typeof DATA_DATE !== "undefined") {
+            meta.textContent = "Top " + PROTOCOLS.length + " of " + DATA_QUALIFIED +
+                " DeFi protocols (>$5M cap) · " + DATA_SCANNED.toLocaleString() +
+                " scanned · DefiLlama · " + DATA_DATE;
+        }
+    }
+
     function filterTier(tier) {
+        console.assert(typeof tier === "string", "tier must be string");
         currentFilter = tier;
         var chips = document.querySelectorAll(".chip");
         var i = 0;
@@ -1233,6 +1240,7 @@ body{padding-top:56px;}
     window.sortTable = sortTable;
 
     bindHeaders();
+    computeStats();
     renderTable();
     renderLocked();
 })();
