@@ -5781,7 +5781,10 @@
       "BEAR: Durov convicted on multiple charges, Telegram CEO in prison, regulatory cascade on exchanges",
       "BEAR: Frozen wallets unfreeze Feb 2027 and original miners dump 1.08B TON ($1.8B) into thin liquidity",
       "BEAR: Apple/Google remove crypto wallet features from Telegram app, fiat onramp destroyed"
-    ]
+    ],
+    "circulating_supply": 2686473150,
+    "total_supply": 5199231919,
+    "max_supply": null
   },
   {
     "slug": "arbitrum",
