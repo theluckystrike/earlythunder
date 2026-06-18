@@ -5483,13 +5483,13 @@
   },
   {
     "slug": "toncoin",
-    "name": "Toncoin",
-    "ticker": "$TON",
+    "name": "Gram",
+    "ticker": "$GRAM",
     "category": "L1 / Messaging Blockchain",
     "asset_class": "digital_assets",
     "tier": 3,
     "composite_score": 65,
-    "one_liner": "Telegram-native L1 rebranding to GRAM (Jun 15). 1B Telegram MAU, $1.13B stablecoins, Stars fiat onramp. But TVL collapsed -91% ($56M), $61M/month sell pressure from Believers unlocks through Oct 2028, 1.08B frozen wallets unfreeze Feb 2027, 85% whale-mined supply, zero protocol revenue, Durov 12 charges active.",
+    "one_liner": "Gram (formerly Toncoin, TON), the Telegram-native L1, completed its rebrand on June 15. 1B+ Telegram users, about $0.73B in stablecoins, and the Stars fiat onramp give it real distribution, but TVL fell about 91% from a ~$778M peak to roughly $71M, Believers unlocks add about $61M a month of sell pressure through October 2028, 1.08B frozen wallets unfreeze in February 2027, and founder Pavel Durov still faces 12 charges in France.",
     "thesis": "TON is a high-conviction bet on Telegram as the crypto super-app, and nothing else. The thesis stands or falls entirely on whether 1 billion Telegram users can be converted into crypto-native participants through Stars, TON Pay, and the Wallet integration.\n\nThe distribution moat is real and unmatched: no other blockchain has native integration inside a 1B-user messaging app. Telegram Stars is quietly the largest fiat-to-crypto onramp by user count in 2026, converting ordinary in-app spending into TON demand. $1.13B in stablecoins on TON (growing) demonstrates genuine payment utility even as DeFi TVL collapsed 91% to $56M.\n\nHowever, the tokenomics are among the worst in crypto. Three overlapping supply overhangs: (1) Believers Fund opening 37M TON/month ($61M) through October 2028, 27 months of persistent sell pressure remaining. (2) 1.08 billion frozen miner wallet TON unfreezing in February 2027, a potential $1.8B supply shock. (3) 85% of all TON was mined by an interconnected whale group, creating extreme concentration. The burn mechanism is broken: 964 TON burned/day vs 558,918 minted (580:1 ratio). Circulating supply will nearly double from 2.7B to 5.2B by end of 2028.\n\nTelegram's takeover via MTONGA is a double-edged sword. On one hand, Catchain 2.0 delivered 400ms blocks and 6x fee reduction. On the other, Telegram is now the largest validator (~25% stake), controls the brand, the roadmap, and the sole distribution channel. This is not decentralization, it's a corporate blockchain with a community wrapper. Durov's 12 criminal charges in France (no trial date, 10yr max per charge) represent existential single-point-of-failure risk.\n\nThe GRAM rebrand (effective June 15) is pure marketing, a name change doesn't fix $4,847/day in protocol revenue or 91% TVL collapse. The thesis requires: (1) Stars-to-TON flows overwhelming $61M/month unlock pressure, (2) TON Teleport BTC bridge attracting external liquidity, and (3) Durov avoiding conviction. All three are uncertain.",
     "signals": {
       "working_code": 82,
@@ -5502,20 +5502,20 @@
       "obscurity": 20
     },
     "catalysts": [
-      "GRAM rebrand effective June 15, marketing catalyst, revives original 2018 Telegram white paper name",
-      "TON Teleport Bitcoin bridge, potential to attract BTC liquidity into TON DeFi",
-      "TON Pay 2.0 (Layer 2) scheduled Q2 2026, sub-cent settlement for 1B users",
+      "Gram rebrand completed June 15, reviving the original 2018 Telegram white paper name as a marketing reset",
+      "TON Teleport BTC bridge mints 1:1-backed tgBTC, a path for Bitcoin liquidity into TON DeFi",
+      "TON Pay payments layer launched February 2026, near-instant sub-cent fees for Telegram users",
       "MTONGA steps 5-7 (undisclosed), remaining Durov roadmap items",
       "Stars-to-TON pipeline scaling as Telegram approaches 1.1B MAU",
-      "Institutional validation: Sequoia, Benchmark, Coinbase Ventures committed $400M+"
+      "Institutional backing: Sequoia and Benchmark were among VCs that bought about $400M in TON tokens (March 2025)"
     ],
     "risks": [
       "Believers Fund: 37M TON/month ($61M) sell pressure through October 2028, 27 months remaining",
       "Frozen miner wallets: 1.08B TON ($1.8B) unfreezing February 2027, potential supply shock",
-      "85% of supply mined by interconnected whale group, extreme ownership concentration",
-      "Durov: 12 criminal charges in France, Russia case opened, 10yr max per charge, existential risk",
-      "TVL collapsed -91% ($650M→$56M), DeFi system essentially dead",
-      "Net inflationary: 558K TON minted/day vs 964 burned (580:1), circulating doubles by 2028",
+      "A 2023 study found about 85% of supply was mined by interconnected whale clusters, extreme concentration (partly frozen since)",
+      "Durov: 12 criminal charges in France (one carries a 10-year maximum, up to about 20 years cumulative) plus a Russian case, existential risk",
+      "TVL collapsed about 91% (roughly $778M peak to about $71M), DeFi activity essentially dead",
+      "Net inflationary, daily mint vastly exceeds burn (on the order of 1,000:1 per tonstat), diluting holders",
       "NOT classified as digital commodity by SEC, regulatory gray zone"
     ],
     "related_slugs": [
@@ -5613,13 +5613,61 @@
         "source": "BeInCrypto",
         "url": "https://beincrypto.com/hamster-kombats-user-plummets-85/",
         "type": "primary"
+      },
+      {
+        "claim": "Toncoin rebranded to Gram (GRAM) on June 15, 2026 after a community vote",
+        "source": "Phemex",
+        "url": "https://phemex.com/news/article/toncoin-to-rebrand-as-gram-on-june-15-following-community-vote-88779",
+        "type": "news"
+      },
+      {
+        "claim": "Gram (GRAM) market data, ~$1.65 price, ~$4.44B market cap",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/gram",
+        "type": "data"
+      },
+      {
+        "claim": "TON chain TVL down ~91% from a ~$778M peak to ~$71M",
+        "source": "DefiLlama",
+        "url": "https://defillama.com/chain/TON",
+        "type": "data"
+      },
+      {
+        "claim": "Telegram surpassed 1 billion monthly active users",
+        "source": "The Block",
+        "url": "https://www.theblock.co/post/348630/telegram-surpasses-1-billion-monthly-active-users-fueling-bombies-rise-as-the-top-earning-game-on-the-ton-ecosystem",
+        "type": "news"
+      },
+      {
+        "claim": "TON Pay payments layer launched Feb 2026 (a payments layer, not a Layer 2)",
+        "source": "TON",
+        "url": "https://ton.org/en/ton-pay-a-new-payments-layer",
+        "type": "official"
+      },
+      {
+        "claim": "~1.08B TON of frozen miner wallets unfreeze February 2027",
+        "source": "Coincu",
+        "url": "https://coincu.com/75-validators-freezing-1b-ton-tokens/",
+        "type": "news"
+      },
+      {
+        "claim": "Pavel Durov: 12 criminal charges in France (Aug 2024), separate Russian case",
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Arrest_and_indictment_of_Pavel_Durov",
+        "type": "reference"
+      },
+      {
+        "claim": "TON/GRAM not classified as a digital commodity by the SEC",
+        "source": "Genfinity",
+        "url": "https://genfinity.io/2026/03/17/sec-cftc-final-rule-digital-commodities-xrp-hbar-sol-eth-btc/",
+        "type": "news"
       }
     ],
     "updated_at": "2026-06-11",
     "is_graveyard": false,
-    "current_price_usd": 1.63,
-    "market_cap_usd": 4387990100,
-    "volume_24h_usd": 67804857,
+    "current_price_usd": 1.65,
+    "market_cap_usd": 4439509753,
+    "volume_24h_usd": 72289860,
     "citation_types": [
       "primary",
       "primary",
@@ -16894,7 +16942,7 @@
     "updated_at": "2026-04-13T00:00:00Z",
     "is_graveyard": false,
     "slug": "silencio",
-    "current_price_usd": 0.00003109,
+    "current_price_usd": 3.109e-05,
     "market_cap_usd": 806080,
     "volume_24h_usd": 69600,
     "citation_types": {
@@ -17367,7 +17415,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 0.00000293,
+    "current_price_usd": 2.93e-06,
     "market_cap_usd": 1233651783,
     "volume_24h_usd": 150761386,
     "citation_types": [],
@@ -18070,7 +18118,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 0.00000493,
+    "current_price_usd": 4.93e-06,
     "market_cap_usd": 2904716240,
     "volume_24h_usd": 56716576,
     "citation_types": [],
@@ -18129,7 +18177,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 0.00000472,
+    "current_price_usd": 4.72e-06,
     "market_cap_usd": 415164735,
     "volume_24h_usd": 29597135,
     "citation_types": [],
@@ -18591,7 +18639,7 @@
     "is_graveyard": false,
     "slug": "qubic",
     "related_slugs": [],
-    "current_price_usd": 4.87264e-7,
+    "current_price_usd": 4.87264e-07,
     "market_cap_usd": 67542971,
     "volume_24h_usd": 1589369,
     "citation_types": {
@@ -21696,7 +21744,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 0.00002618,
+    "current_price_usd": 2.618e-05,
     "market_cap_usd": 252716699,
     "volume_24h_usd": 21370433,
     "citation_types": [],
@@ -24851,7 +24899,7 @@
         "type": "data"
       }
     ],
-    "current_price_usd": 0.00007304,
+    "current_price_usd": 7.304e-05,
     "market_cap_usd": 402813818,
     "volume_24h_usd": 30073673,
     "citation_types": {
