@@ -5503,6 +5503,7 @@
     },
     "catalysts": [
       "Gram rebrand completed June 15, reviving the original 2018 Telegram white paper name as a marketing reset",
+      "Telegram’s ~1B users are GRAM’s native distribution rail, the closest large consumer app to a public chain, though that reach converts to token demand only indirectly",
       "TON Teleport BTC bridge mints 1:1-backed tgBTC, a path for Bitcoin liquidity into TON DeFi",
       "TON Pay payments layer launched February 2026, near-instant sub-cent fees for Telegram users",
       "MTONGA steps 5-7 (undisclosed), remaining Durov roadmap items",
@@ -5515,7 +5516,7 @@
       "A 2023 study found about 85% of supply was mined by interconnected whale clusters, extreme concentration (partly frozen since)",
       "Durov: 12 criminal charges in France (one carries a 10-year maximum, up to about 20 years cumulative) plus a Russian case, existential risk",
       "TVL collapsed about 91% (roughly $778M peak to about $71M), DeFi activity essentially dead",
-      "Net inflationary, daily mint vastly exceeds burn (on the order of 1,000:1 per tonstat), diluting holders",
+      "No hard cap and net inflationary through proof-of-stake emissions, but the rate is modest, around 0.5% a year, partly offset by a 50% fee burn",
       "NOT classified as digital commodity by SEC, regulatory gray zone"
     ],
     "related_slugs": [
@@ -5661,6 +5662,12 @@
         "source": "Genfinity",
         "url": "https://genfinity.io/2026/03/17/sec-cftc-final-rule-digital-commodities-xrp-hbar-sol-eth-btc/",
         "type": "news"
+      },
+      {
+        "claim": "TON net inflationary via proof-of-stake emissions, ~0.5%/yr with a fee burn",
+        "source": "TON Docs",
+        "url": "https://docs.ton.org/v3/documentation/infra/nodes/validation/staking-incentives",
+        "type": "official"
       }
     ],
     "updated_at": "2026-06-11",
