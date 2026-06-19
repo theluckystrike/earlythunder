@@ -830,6 +830,7 @@
       "HIP-3 RWA expansion into $5T daily traditional derivatives = massive optionality"
     ],
     "edge_data": [
+      "Past week (Jun 2026): about $12.2M revenue with roughly 100% returned to HYPE holders through the Assistance Fund open-market buyback",
       "Team claims only ~3% of theoretical vesting unlocks, actual dilution far lower than schedule suggests",
       "Kinetiq kHYPE ($960M TVL, 85% LST share) locks supply, reducing effective float",
       "Not on Binance = competitive rivalry, but potential listing would be massive catalyst",
@@ -3138,6 +3139,7 @@
       "Jupiter Lend $2B+ TVL in <10 months"
     ],
     "edge_data": [
+      "Past week (Jun 2026): about $1.08M revenue, roughly $541K (50%) buying back JUP into the 3-year locked Litterbox Trust",
       "Revenue run-rate $129M (not $280M as commonly cited), actual protocol revenue per DeFiLlama",
       "40-50% of volume is atomic arbitrage, organic volume only $7-9B/month",
       "Jupnet is testnet only with zero live volume, scorecard claimed 'LIVE'",
@@ -3229,7 +3231,10 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "edge_data": [
+      "Past week (Jun 2026): about $967K in trading fees, 100% routed to veAERO lockers"
+    ]
   },
   {
     "slug": "commonware",
@@ -7299,7 +7304,7 @@
       "obscurity": 18
     },
     "catalysts": [
-      "Fee switch activation distributing $150M+ annually to LDO stakers",
+      "Lido buyback adapter has returned some revenue to LDO (about $1.95M over a recent 30-day window) but it is intermittent and was zero in the past week; most of the 10% staking fee still goes to node operators and the DAO treasury, not LDO holders",
       "DVT implementation via Obol/SSV addressing centralization concerns from Ethereum devs",
       "stETH integration in BlackRock/Fidelity ETH ETF products as yield-bearing component"
     ],
@@ -7314,7 +7319,14 @@
       "pendle",
       "aave"
     ],
-    "citations": [],
+    "citations": [
+      {
+        "claim": "Lido 7d revenue ~$477K but $0 to LDO holders (fees to node operators + DAO treasury)",
+        "source": "DefiLlama",
+        "url": "https://defillama.com/protocol/lido",
+        "type": "data"
+      }
+    ],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
     "current_price_usd": 0.274132,
@@ -25306,6 +25318,7 @@
       "Circle USDC partnership: $30-40M/year + $920M USDC commitment"
     ],
     "edge_data": [
+      "Past week (Jun 2026): about $585K revenue, roughly $556K (~95%) funding open-market LIT buybacks",
       "Dec 2026 cliff is 6 months away, position before market prices in 500M token overhang, or wait for post-cliff compression",
       "Bankless 'Hyperliquid beta play' thesis: if HYPE re-rates, LIT follows at higher beta",
       "Revenue-to-mcap ratio ($77-101M / $375M) is 5-7x better than HYPE's ($800M-1.3B / $18.6B)",
