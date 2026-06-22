@@ -67,6 +67,16 @@ export default function RootLayout({
                 "@type": "Organization",
                 name: "AUTOM8 LLC",
                 url: "https://earlythunder.com",
+                knowsAbout: [
+                  "cryptocurrency research",
+                  "DeFi protocol analysis",
+                  "earnings yield",
+                  "protocol revenue and token buybacks",
+                  "tokenomics",
+                  "airdrop opportunities",
+                  "pre-mainstream crypto opportunities",
+                  "on-chain analysis",
+                ],
               },
               potentialAction: {
                 "@type": "SearchAction",
