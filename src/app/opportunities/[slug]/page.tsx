@@ -156,7 +156,10 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
         <a href="/disclaimer" className="text-text-secondary underline hover:text-text-primary">Full disclaimer</a>
       </div>
       <NameBlock opportunity={opportunity} />
-      <div className="mt-4 max-w-3xl text-xl leading-relaxed text-text-secondary">
+      <div
+        className="qas mt-4 max-w-3xl text-xl leading-relaxed text-text-secondary"
+        data-keyword={`${opportunity.name} analysis`}
+      >
         {opportunity.one_liner}
       </div>
       <QuickDataStrip opportunity={opportunity} />
@@ -878,6 +881,15 @@ function buildAllJsonLd(
     buildArticleJsonLd(opp),
     getOpportunitySchema(opp),
     buildOpportunityBreadcrumbs(opp),
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      url: `https://earlythunder.com/opportunities/${opp.slug}`,
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".qas", "h1"],
+      },
+    },
   ];
   const faqSchema = getFaqPageSchema(faqs);
   if (faqSchema) schemas.push(faqSchema);

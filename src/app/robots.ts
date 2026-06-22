@@ -12,11 +12,33 @@ export default function robots(): MetadataRoute.Robots {
     throw new Error("SITE_URL constant is not configured.");
   }
 
+  // Explicitly allow every known AI / answer-engine crawler so Early Thunder
+  // stays in the retrieval pool for GEO (AI citations), not just classic search.
+  const aiCrawlers = [
+    "GPTBot",
+    "OAI-SearchBot",
+    "ChatGPT-User",
+    "Google-Extended",
+    "PerplexityBot",
+    "Perplexity-User",
+    "ClaudeBot",
+    "Claude-User",
+    "anthropic-ai",
+    "Applebot-Extended",
+    "cohere-ai",
+    "Bytespider",
+    "Meta-ExternalAgent",
+    "Amazonbot",
+    "DuckAssistBot",
+    "YouBot",
+    "CCBot",
+  ];
+
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
+    rules: [
+      { userAgent: "*", allow: "/" },
+      ...aiCrawlers.map((userAgent) => ({ userAgent, allow: "/" })),
+    ],
     sitemap: [
       `${SITE_URL}/sitemap.xml`,
       `${SITE_URL}/sitemap-research.xml`,

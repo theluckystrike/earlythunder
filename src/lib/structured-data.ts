@@ -327,6 +327,19 @@ export function getOpportunitySchema(
     throw new Error("Opportunity name is required.");
   }
 
+  // isBasedOn links every claim to a primary source (the GEO differentiator:
+  // AI engines can verify the source chain). Built from the opportunity's citations.
+  const isBasedOn = Array.isArray(opp.citations)
+    ? opp.citations
+        .filter((c) => c && typeof c.url === "string" && c.url.length > 0)
+        .slice(0, MAX_LIST_ITEMS)
+        .map((c) => ({
+          "@type": "CreativeWork",
+          name: c.source || c.claim || "Source",
+          url: c.url,
+        }))
+    : [];
+
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -334,6 +347,7 @@ export function getOpportunitySchema(
     description: opp.one_liner,
     url: `${SITE_URL}/opportunities/${opp.slug}`,
     category: opp.category,
+    ...(isBasedOn.length > 0 ? { isBasedOn } : {}),
     brand: {
       "@type": "Organization",
       name: SITE_NAME,
