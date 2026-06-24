@@ -30,9 +30,10 @@ export const metadata: Metadata = {
     title: "Early Thunder",
     description: "Pre-mainstream opportunity intelligence.",
   },
-  alternates: {
-    canonical: "https://earlythunder.com",
-  },
+  // NOTE: no site-wide canonical here. A canonical set in the root layout is
+  // inherited by every page that does not override it, which made guides, blog,
+  // and listing pages canonicalize to the homepage (Google then treats them as
+  // homepage duplicates). Each page sets its own self-canonical instead.
 };
 
 export default function RootLayout({

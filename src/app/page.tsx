@@ -126,6 +126,10 @@ function buildPageData() {
   };
 }
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 export default function HomePage() {
   const {
     opportunities, featured, topYield, deadlines, nearestDeadline,
