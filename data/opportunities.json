@@ -17695,32 +17695,33 @@
     "category": "Institutional On-Chain Credit",
     "asset_class": "digital_assets",
     "tier": 2,
-    "composite_score": 61.3,
-    "one_liner": "The clearest institutional play in on-chain private credit. Roughly $2B in active loans, a live buyback that routes 25% of revenue back to the token, and a Bitwise allocation, all set against a fresh Cayman injunction and a credit-default history that still caps the multiple.",
-    "thesis": "Maple has done something most 2022 casualties never managed. It rebuilt. After the FTX contagion blew a $36M hole in its loan book through the Orthogonal Trading default, the protocol rewrote its underwriting, moved credit decisions to vetted off-chain experts while keeping enforcement and accounting on-chain, and grew assets under management roughly 767% across 2025 to a multi-billion dollar book. By mid-2026 it sits as the largest institutional private-credit venue in DeFi, with active loans near $2B and a marquee allocation from Bitwise as proof that regulated capital will route through it.\n\nThe token thesis turns on a single mechanism that most screeners price wrong. SYRUP trades around 1.1x its annualized gross interest revenue, the interest that borrowers actually pay across the loan book, but closer to 6x the protocol's own net take-rate revenue, which is running near a $25M annualized rate. The bull case is that the net number compounds toward management's $100M ARR target for 2026, and that 25% of every dollar of that revenue is now committed to open-market SYRUP buybacks under the Syrup Strategic Fund. The first execution in November 2025 bought back 2M tokens. If revenue scales, the buyback becomes a structural bid.\n\nThe two things holding it back are real and specific, not vibes. First, credit risk is not theoretical here, it already detonated once, and the market still discounts the book for it. Second, in November 2025 the Core Foundation won a Cayman Islands injunction blocking Maple from completing syrupBTC or dealing in CORE tokens pending arbitration, after a court found a serious issue to be tried over alleged misuse of confidential information. That order directly freezes one of Maple's headline 2026 growth products. Add a roughly 38% drawdown over the past month and you have a fundamentally strengthening protocol whose token is being repriced by litigation and liquidity, not by deteriorating fundamentals. That gap is the entire reason it screens as a HOLD rather than a sell.",
+    "composite_score": 62,
+    "one_liner": "The institutional private-credit leader in DeFi, and a real valuation puzzle. Active loans just set a record near $2B and the business keeps compounding, yet the token sits near its annual low around a $180M cap. The catch is what the token actually earns. Gross fees run about $104M a year, but most of that pays lenders, so the protocol keeps closer to $13M, and that is the number a buyer is really paying for.",
+    "thesis": "Maple did what most 2022 casualties never managed. It rebuilt. After the FTX contagion blew a $36M hole in its loan book through the Orthogonal Trading default, the team rewrote underwriting, moved credit decisions to vetted off-chain experts, and kept enforcement and accounting on-chain. By mid-2026 it's the largest institutional private-credit venue in DeFi, and the loan book just printed a record near $2B, with DefiLlama showing about $2.1B borrowed against roughly $2.5B in deposits. Bitwise routed its first institutional DeFi allocation through Maple in March 2025, and the distribution kept widening from there.\n\nHere's where the popular bull case overreaches. You'll see SYRUP called cheap at roughly 1.6x price-to-fees, since trailing gross fees are about $104M against a market cap near $180M. But that gross number is interest borrowers pay to lenders, and only a thin slice reaches the protocol. DefiLlama puts Maple's own revenue near $1M a month lately, so about $12-13M annualized after fees cooled in May and June. On the revenue the token actually captures, SYRUP trades closer to 14x, not 1.6x. Cheap on gross fees, ordinary on real earnings. That distinction is the whole argument.\n\nWhat the token does capture flows through one mechanism. 25% of protocol revenue funds open-market SYRUP buybacks under the Syrup Strategic Fund, and staking was retired under MIP-019, so buybacks are now the only value-accrual path. That makes SYRUP a fairly direct claim on protocol revenue growing. The 2026 distribution wins help that case. Maple closed a fully on-chain warehouse facility with Kraken on June 25, third-party Proof of Reserves went live for syrupUSDC and syrupUSDT on May 7, and SYRUP listed on Revolut on April 30, though trading there is UK and EU only, not the full 70M-user footprint some posts imply.\n\nTwo overhangs are real and specific. Credit risk already detonated once, and the market still discounts the book for it. And in November 2025 the Core Foundation won a Cayman Islands injunction blocking Maple from finishing syrupBTC or dealing in CORE tokens, pending arbitration, after a court found a serious issue to be tried. That freezes a headline 2026 product. So you get a genuinely strengthening business with a record loan book, priced near annual lows at about 14x the revenue it keeps, held down by litigation and a credit scar rather than by falling fundamentals. That gap is why it reads as a HOLD, not a sell, and not the screaming buy the viral math suggests.",
     "signals": {
       "working_code": 78,
       "dev_activity": 55,
       "smart_money": 70,
       "community": 45,
-      "catalyst": 62,
+      "catalyst": 66,
       "narrative": 72,
-      "valuation_gap": 60,
+      "valuation_gap": 55,
       "obscurity": 48
     },
     "catalysts": [
-      "$100M ARR target for 2026 against a roughly $25M annualized net revenue run-rate exiting 2025. The re-rate case is simply this number compounding.",
-      "Buyback flywheel now live: 25% of protocol revenue funds open-market SYRUP buybacks (Syrup Strategic Fund), with the first 2M-token execution in November 2025.",
-      "Bitwise (>$12B AUM) made its first institutional DeFi allocation via Maple in March 2025, a template other regulated allocators can follow.",
-      "Product expansion into syrupBTC and BNB Chain lending, though syrupBTC is currently frozen by the Core Foundation injunction.",
-      "Kraken integrated an on-chain lending warehouse facility routed through Maple, widening the institutional distribution surface."
+      "Record loan book: active loans near a $2B all-time high, with DefiLlama showing about $2.1B borrowed. Revenue tends to follow loans, so a sustained book supports the buyback.",
+      "Kraken on-chain warehouse facility (June 25, 2026), a new distribution channel for digital-asset-backed loans.",
+      "Revolut listing (April 30, 2026), live for UK and EU users, adding a regulated retail on-ramp.",
+      "Proof of Reserves live for syrupUSDC and syrupUSDT (May 7, 2026), a credibility step for institutional lenders.",
+      "The 25% revenue buyback (Syrup Strategic Fund) compounds if protocol revenue grows from the current ~$12-13M run-rate.",
+      "Bitwise's first institutional DeFi allocation via Maple (March 2025), a template other regulated allocators can follow."
     ],
     "risks": [
-      "Core Foundation won a Cayman Islands injunction in November 2025 blocking Maple from completing syrupBTC or dealing in CORE tokens pending arbitration, with the court finding a serious issue to be tried over alleged misuse of confidential data.",
-      "Credit-default history is real, not hypothetical: Orthogonal Trading defaulted on $36M across eight loans in December 2022 (about 30% of the active book then, roughly an 80% loss for the M11 USDC pool), following Babel Finance's default that June.",
-      "The $100M ARR headline is a forward target. Net protocol revenue is running closer to a $25M annualized rate, so the token is expensive on realized net earnings.",
-      "SYRUP is down roughly 38% over the past month with thin exchange depth, so the price is liquidity-sensitive and can move on small flows.",
-      "SYRUP staking was discontinued under MIP-019, so value now accrues only through buybacks. That concentrates the entire token thesis on sustained, growing revenue."
+      "The token captures only protocol revenue (~$12-13M annualized), not the ~$104M gross fees, so on realized earnings it trades near 14x, not the 1.6x price-to-fees the bull posts headline.",
+      "Core Foundation won a Cayman Islands injunction in November 2025 blocking Maple from finishing syrupBTC or dealing in CORE tokens pending arbitration, with the court finding a serious issue to be tried.",
+      "Credit-default history is real, not hypothetical: Orthogonal Trading defaulted on $36M in December 2022, about 30% of the active book then, after misrepresenting its FTX exposure.",
+      "Protocol revenue cooled in May and June 2026, so the buyback is currently running against a smaller base, not a growing one.",
+      "SYRUP is down about 57% year-to-date, and staking was discontinued under MIP-019, so buybacks are the sole value-accrual path and nothing softens a revenue miss."
     ],
     "related_slugs": [
       "ondo-finance",
@@ -17728,99 +17729,146 @@
       "concrete",
       "upshift"
     ],
-    "updated_at": "2026-06-29T00:00:00Z",
+    "updated_at": "2026-07-02T00:00:00Z",
     "is_graveyard": false,
     "citations": [
       {
-        "claim": "SYRUP live price near $0.137 and market cap near $159M (2026-06-29)",
+        "claim": "SYRUP ~$0.156, market cap ~$181M, down ~57% YTD (2026-07-02)",
         "source": "CoinGecko",
-        "url": "https://www.coingecko.com/en/coins/maple-finance",
+        "url": "https://www.coingecko.com/en/coins/syrup",
         "type": "data"
       },
       {
-        "claim": "Maple TVL, fees and revenue tracked on-chain",
+        "claim": "SYRUP total supply ~1.24B, circulating ~93%",
+        "source": "CoinMarketCap",
+        "url": "https://coinmarketcap.com/currencies/maple-finance/",
+        "type": "data"
+      },
+      {
+        "claim": "Maple TVL ~$2.5B, borrowed ~$2.1B, gross fees ~$104M trailing, protocol revenue far smaller, fees cooled May-June",
         "source": "DefiLlama",
-        "url": "https://defillama.com/protocol/syrup",
+        "url": "https://defillama.com/protocol/maple-finance",
         "type": "data"
       },
       {
-        "claim": "767% AUM growth across 2025",
-        "source": "Maple Finance 2025 Data Review",
-        "url": "https://maple.finance/insights/2025-data-review",
-        "type": "official"
-      },
-      {
-        "claim": "SYRUP tokenomics: 1 MPL to 100 SYRUP conversion, supply and value accrual",
-        "source": "Maple Docs",
-        "url": "https://docs.maple.finance/maple-for-token-holders/syrup-tokenomics",
-        "type": "official"
-      },
-      {
-        "claim": "25% of protocol revenue funds SYRUP buybacks, first 2M-token execution Nov 2025",
-        "source": "The Defiant",
-        "url": "https://thedefiant.io/news/tokens/maple-reveals-2m-syrup-token-buyback",
+        "claim": "Maple loan book / AUM at all-time highs near $2B loans in 2026",
+        "source": "CryptoBriefing",
+        "url": "https://cryptobriefing.com/maple-finance-ath-2b-loans-5b-aum/",
         "type": "news"
       },
       {
-        "claim": "Core Foundation wins Cayman injunction against Maple over alleged confidentiality breach (Nov 2025)",
+        "claim": "Maple closed a fully on-chain warehouse facility with Kraken (June 25, 2026)",
+        "source": "Kraken",
+        "url": "https://blog.kraken.com/news/maple-onchain-warehouse-facility",
+        "type": "official"
+      },
+      {
+        "claim": "Proof of Reserves live for syrupUSDC and syrupUSDT (May 2026)",
+        "source": "Maple",
+        "url": "https://maple.finance/insights/syrupusdc-and-syrupusdt-built-for-scale",
+        "type": "official"
+      },
+      {
+        "claim": "SYRUP listed on Revolut for UK and EU users (April 30, 2026)",
+        "source": "The Defiant",
+        "url": "https://thedefiant.io/news/defi/maple-finance-syrup-revolut-uk-eu-launch-dib9ob",
+        "type": "news"
+      },
+      {
+        "claim": "25% of revenue funds SYRUP buybacks; staking ended under MIP-019",
+        "source": "crypto.news",
+        "url": "https://crypto.news/maple-finance-end-syrup-staking-mip-019-vote-2025/",
+        "type": "news"
+      },
+      {
+        "claim": "stSYRUP holders voted to end staking and launch the Syrup Strategic Fund",
+        "source": "The Defiant",
+        "url": "https://thedefiant.io/news/defi/stsyrup-holders-vote-to-end-staking-rewards-launch-syrup-strategic-fund",
+        "type": "news"
+      },
+      {
+        "claim": "MPL to SYRUP conversion final window closed May 21, 2025 (MIP-017)",
+        "source": "Maple Governance",
+        "url": "https://community.maple.finance/t/mip-017-final-mpl-conversion-window-and-strategic-use-of-unconverted-tokens/398",
+        "type": "official"
+      },
+      {
+        "claim": "Core Foundation won a Cayman injunction against Maple (Nov 2025)",
         "source": "CoinDesk",
         "url": "https://www.coindesk.com/policy/2025/11/20/core-foundation-wins-injunction-against-maple-finance-on-alleged-confidentiality-breach",
         "type": "news"
       },
       {
-        "claim": "Injunction blocks syrupBTC and CORE dealings pending arbitration",
-        "source": "The Block",
-        "url": "https://www.theblock.co/post/379601/core-foundation-maple-finance-injunction",
-        "type": "news"
-      },
-      {
-        "claim": "Orthogonal Trading defaults on $36M after misrepresenting FTX exposure (Dec 2022)",
+        "claim": "Orthogonal Trading defaulted on $36M on Maple after misrepresenting FTX exposure (Dec 2022)",
         "source": "CoinDesk",
         "url": "https://www.coindesk.com/markets/2022/12/05/maple-finance-severs-ties-with-orthogonal-trading-alleging-it-misrepresented-financial-position",
         "type": "news"
       },
       {
-        "claim": "SYRUP project fundamentals and institutional adoption",
-        "source": "Messari",
-        "url": "https://messari.io/project/syrup",
+        "claim": "Bitwise made its first institutional DeFi allocation via Maple (March 2025)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2025/03/06/crypto-asset-manager-bitwise-deploys-on-defi-platform-with-maple-finance-partnership",
+        "type": "news"
+      },
+      {
+        "claim": "Sidney Powell, CEO and co-founder, ex-National Australia Bank",
+        "source": "GEF",
+        "url": "https://www.thegeforum.com/speakers/sidney-powell",
+        "type": "official"
+      },
+      {
+        "claim": "Maple is the largest institutional private-credit hub in DeFi",
+        "source": "Oak Research",
+        "url": "https://oakresearch.io/en/reports/protocols/maple-finance-complete-overview-hub-on-chain-institutional-lending",
         "type": "research"
       },
       {
-        "claim": "Sidney Powell, CEO and co-founder, ex-National Australia Bank, Consensus 2026 speaker",
-        "source": "Consensus / CoinDesk",
-        "url": "https://consensus.coindesk.com/agenda/speaker/-sidney-powell",
+        "claim": "Aave and Morpho carry much larger market caps than SYRUP",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/aave",
+        "type": "data"
+      },
+      {
+        "claim": "syrupUSDC and syrupUSDT yield-bearing stablecoin products",
+        "source": "Maple",
+        "url": "https://maple.finance/",
         "type": "official"
       }
     ],
-    "current_price_usd": 0.136818,
-    "market_cap_usd": 159163931,
-    "volume_24h_usd": 18126238,
+    "current_price_usd": 0.155795,
+    "market_cap_usd": 181688286,
+    "volume_24h_usd": 21825662,
     "citation_types": {
-      "data": 2,
-      "official": 3,
-      "news": 4,
+      "data": 4,
+      "news": 7,
+      "official": 5,
       "research": 1
     },
     "valuation_gap_score": 60,
     "obscurity_score": 48,
     "on_chain": {
-      "tvl": "~$2.0B active loans",
-      "revenue_30d": "~$2M (≈$25M annualized net run-rate)",
-      "fees_30d": "Gross borrower interest annualizes near $200M across the book",
-      "holder_count": "~30K+ SYRUP holders",
-      "whale_accumulation": "Institutional inflows led by Bitwise allocation (Mar 2025)",
+      "tvl": "~$2.5B deposits, ~$2.1B borrowed (DefiLlama); active loans near a $2B record",
+      "fees_30d": "~$8.8M/mo gross (~$104M trailing), most of which pays lenders",
+      "revenue_30d": "~$1M/mo protocol revenue (~$12-13M annualized), cooled in May and June",
+      "whale_accumulation": "Institutional inflows led by the Bitwise allocation (Mar 2025)",
       "sources": [
         {
-          "metric": "TVL / active loans",
+          "metric": "TVL / borrowed / fees / revenue",
           "source": "DefiLlama",
-          "url": "https://defillama.com/protocol/syrup",
-          "date": "2026-06-29"
+          "url": "https://defillama.com/protocol/maple-finance",
+          "date": "2026-07-02"
         },
         {
-          "metric": "Revenue run-rate",
-          "source": "Maple 2025 Data Review",
-          "url": "https://maple.finance/insights/2025-data-review",
-          "date": "2026-01-15"
+          "metric": "Price / market cap",
+          "source": "CoinGecko",
+          "url": "https://www.coingecko.com/en/coins/syrup",
+          "date": "2026-07-02"
+        },
+        {
+          "metric": "Kraken on-chain warehouse",
+          "source": "Kraken",
+          "url": "https://blog.kraken.com/news/maple-onchain-warehouse-facility",
+          "date": "2026-06-25"
         }
       ]
     },
@@ -17853,77 +17901,75 @@
       "circulating_pct": "93%",
       "fdv": "$170M",
       "mcap_to_fdv_ratio": "0.93",
-      "inflation_rate": "Low. MPL to SYRUP conversion (1:100, no dilution) closed April 30, 2025.",
-      "burn_mechanism": "No burn. Instead, 25% of protocol revenue funds open-market SYRUP buybacks via the Syrup Strategic Fund.",
-      "staking_yield": "Staking discontinued under MIP-019. Early stakers earned roughly 9% APY in the first 90 days; value now accrues only through buybacks.",
-      "next_unlock_date": "No material cliff unlock outstanding"
+      "inflation_rate": "Low. MPL to SYRUP conversion (1:100, no dilution) closed with a final window on May 21, 2025 (MIP-017).",
+      "burn_mechanism": "No burn. 25% of protocol revenue funds open-market SYRUP buybacks via the Syrup Strategic Fund.",
+      "staking_yield": "Staking discontinued under MIP-019. Value now accrues only through buybacks.",
+      "next_unlock_date": "No material cliff unlock outstanding",
+      "treasury_size": "Ongoing protocol revenue near $12-13M annualized (cooled in May and June)",
+      "treasury_runway": "Funded from protocol revenue; the 25% buyback scales with that revenue"
     },
     "competitive": {
       "competitors": [
         {
-          "name": "Centrifuge",
-          "ticker": "CFG",
-          "comparison": "RWA-native, broader asset types, smaller institutional loan book than Maple."
+          "name": "Aave",
+          "ticker": "AAVE",
+          "comparison": "A far larger money-market protocol with a multi-billion market cap. Different model (pooled over-collateralized lending), but the size gap is what bulls point to as SYRUP's room to grow."
         },
         {
-          "name": "Goldfinch",
-          "ticker": "GFI",
-          "comparison": "Emerging-market private credit, more retail-LP oriented, less institutional borrower depth."
+          "name": "Morpho",
+          "ticker": "MORPHO",
+          "comparison": "Larger market cap and a curated-vault lending model. Overlaps with Maple on institutional lenders, though Maple's book is private credit rather than money-market."
+        },
+        {
+          "name": "Centrifuge",
+          "ticker": "CFG",
+          "comparison": "RWA-native, broader asset types, a smaller institutional loan book than Maple."
         },
         {
           "name": "Clearpool",
           "ticker": "CPOOL",
-          "comparison": "Permissionless institutional lending pools, direct competitor on borrower side, smaller scale."
-        },
-        {
-          "name": "Ondo Finance",
-          "ticker": "ONDO",
-          "comparison": "Tokenized treasuries and yield, adjacent rather than head-to-head on private credit."
-        },
-        {
-          "name": "TrueFi",
-          "ticker": "TRU",
-          "comparison": "Earlier uncollateralized lending pioneer, lost share after sector defaults."
+          "comparison": "Permissionless institutional lending pools, a direct competitor on the borrower side but at smaller scale."
         }
       ],
-      "moat": "Vetted institutional borrower relationships plus off-chain underwriting with on-chain enforcement. The largest institutional private-credit book in DeFi and the first to land a major regulated allocator (Bitwise). Trust, once rebuilt, is the moat.",
-      "market_size": "Global private credit TAM exceeds $1.5T",
-      "current_penetration": "A fraction of a percent. The on-chain slice of private credit is still nascent."
+      "moat": "Vetted institutional borrower relationships plus off-chain underwriting with on-chain enforcement. The largest institutional private-credit book in DeFi, and the first to land a major regulated allocator (Bitwise). Trust, once rebuilt, is the moat.",
+      "market_size": "Global private credit runs well over $1.5T; the on-chain slice is still tiny",
+      "current_penetration": "A fraction of a percent of private credit is on-chain today"
     },
-    "fdv": "$170M",
+    "fdv": "$194M",
     "circulating_pct": "93%",
-    "tvl": "$2.0B",
-    "fees_30d": null,
-    "holders": "~30K+",
+    "tvl": "~$2.1B borrowed",
+    "fees_30d": "~$8.8M/mo gross",
+    "holders": null,
     "github_stars": null,
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
     "free_access": true,
-    "verdict": "HOLD. Maple is a fundamentally strengthening protocol, the institutional on-chain credit leader, with a live revenue-to-buyback flywheel and returning regulated capital. But the token is caught between two specific overhangs: a Cayman injunction that freezes its syrupBTC growth product, and a credit-default history that keeps the loan book discounted. The price has already absorbed roughly 38% of downside in a month, which is why the read is hold-and-watch rather than sell. The thesis re-rates if net revenue compounds toward the $100M ARR target and the Core arbitration resolves without material liability.",
+    "verdict": "HOLD. Maple is the institutional on-chain credit leader and the business is genuinely strengthening, with a record loan book near $2B and real distribution wins in Kraken and Revolut. But the viral undervaluation take leans on gross fees. The token captures protocol revenue of about $12-13M a year, so it trades near 14x that, not the 1.6x price-to-fees some posts quote. Fair, not free. Add the Cayman injunction freezing syrupBTC and a credit-default scar the market hasn't forgotten, and a token near annual lows starts to look like a discount for real risk rather than a pure gift. It re-rates if revenue compounds with the loan book and the Core arbitration clears without material liability. Watch the monthly protocol revenue, because that's the number the buyback and the whole thesis actually run on.",
     "red_flags": [
+      "On the revenue it actually keeps (~$12-13M/yr), SYRUP trades near 14x, so the 1.6x price-to-fees undervaluation pitch overstates the case.",
       "Active Cayman Islands injunction (Nov 2025) blocking syrupBTC and CORE token dealings pending arbitration, with a court finding a serious issue to be tried.",
-      "Documented credit-default history: $36M Orthogonal default in 2022 plus the earlier Babel default. The loan book carries real, demonstrated tail risk.",
-      "Net protocol revenue (~$25M run-rate) is far below the $100M ARR headline, so the token is expensive on realized net earnings.",
-      "Thin exchange depth and a ~38% one-month drawdown make the price liquidity-fragile.",
-      "Staking discontinued (MIP-019) removes the yield carrot and leaves buybacks as the sole value-accrual path."
+      "Documented credit-default history: the $36M Orthogonal default in 2022. The loan book carries real, demonstrated tail risk.",
+      "Protocol revenue cooled in May and June 2026, running the buyback against a smaller base.",
+      "Down about 57% YTD; staking discontinued (MIP-019) leaves buybacks as the only value-accrual path."
     ],
     "conviction_signals": [
-      "Roughly 767% AUM growth across 2025 to a multi-billion dollar institutional loan book.",
-      "Bitwise (>$12B AUM) made its first institutional DeFi allocation via Maple, validating the regulated-capital thesis.",
-      "Live 25% revenue buyback (Syrup Strategic Fund), first 2M-token execution November 2025.",
-      "CEO Sidney Powell brings genuine institutional fixed-income pedigree (ex-NAB, ~$3B bonds structured).",
-      "Survived and rebuilt from the 2022 crisis rather than winding down, the hardest test a credit protocol can pass."
+      "Record loan book near $2B and the largest institutional private-credit venue in DeFi.",
+      "Real 2026 distribution wins: a Kraken on-chain warehouse facility (June 25) and a Revolut listing (April 30, UK and EU).",
+      "Bitwise's first institutional DeFi allocation via Maple (March 2025).",
+      "Live 25% revenue buyback (Syrup Strategic Fund), with Proof of Reserves live for syrupUSDC and syrupUSDT.",
+      "CEO Sidney Powell brings institutional fixed-income pedigree (ex-NAB), with Joe Flanagan as co-founder.",
+      "Rebuilt from the 2022 default rather than winding down, the hardest test a credit protocol can pass."
     ],
     "edge_data": [
-      "The valuation looks cheap or rich depending on which revenue you use. SYRUP is about 1.1x annualized gross borrower interest across the book, but roughly 6x the protocol's net take-rate revenue. Most screeners quote the cheap number.",
-      "The widely cited $4.59B AUM peak and DefiLlama's ~$2B TVL measure different things. AUM counts all managed assets, TVL counts on-chain deposits, so headline growth and on-chain TVL can diverge sharply.",
-      "Because staking was discontinued, buybacks are now the only value-accrual mechanism. The token is effectively a levered claim on sustained protocol revenue, nothing softens a revenue miss.",
-      "syrupBTC, one of the headline 2026 growth vectors, is the exact product the Core injunction freezes. The litigation does not just create legal risk, it directly caps a growth lever the bull case relies on."
+      "The 1.6x price-to-fees undervaluation take is technically sourced and materially misleading. That multiple divides the whole market cap by gross fees, most of which pay lenders. On the revenue the protocol keeps (~$12-13M/yr), SYRUP trades near 14x. Cheap headline, ordinary business multiple.",
+      "The record-loan-book claim is real, the viral magnitudes are not. Public data supports an all-time high near $2B (DefiLlama borrowed ~$2.1B), but the widely shared $1.725B ATH, $772.9M April bottom and 123.2% rebound appear in no source, and that self-consistent trio reads more like a fabricated pair than reported figures.",
+      "Since staking was retired (MIP-019), SYRUP is a direct claim on protocol revenue. With fees cooling in May and June, the buyback is currently working against a shrinking base, the opposite of the compounding the bull case assumes.",
+      "The Revolut listing is real but smaller than advertised. It went live April 30 for UK and EU users, not the full 70M-user, 39-country Revolut footprint that often gets quoted as SYRUP's reach."
     ],
     "thesis_changers": {
-      "bull_breaks_if": "Net protocol revenue stalls well below the $100M ARR target, or a new borrower default in the post-2022 book reopens the credit-trust question, proving the turnaround was cyclical rather than structural.",
-      "bear_breaks_if": "Maple clears the Core arbitration without material liability and ships syrupBTC plus BNB expansion, while the 25% buyback compounds against a rising revenue base and re-rates SYRUP toward its institutional-credit-leader positioning."
+      "bull_breaks_if": "Protocol revenue stays near the cooled ~$12-13M run-rate, or falls, even as the loan book grows, showing that borrower growth doesn't convert into token cash flow and leaving SYRUP fairly valued near 14x rather than cheap.",
+      "bear_breaks_if": "Protocol revenue re-accelerates with the record loan book and the Kraken and Revolut channels, while the Core arbitration clears, so the 25% buyback compounds against a rising base and SYRUP re-rates toward the money-market leaders it's compared to."
     }
   },
   {

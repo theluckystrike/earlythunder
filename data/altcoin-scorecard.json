@@ -1015,26 +1015,26 @@
     {
       "symbol": "SYRUP",
       "name": "Maple Finance",
-      "price": 0.136818,
-      "change_24h": -5.2,
-      "market_cap": 159159938,
+      "price": 0.155795,
+      "change_24h": 7.4,
+      "market_cap": 181688286,
       "rank": 190,
       "ath": 0.6532,
       "ath_distance_pct": -79.1,
-      "tvl": 2030000000,
+      "tvl": 2500000000,
       "circ_supply_pct": 93.5,
-      "volume_24h": 18126238,
+      "volume_24h": 21825662,
       "score": 168,
       "prev_score": 75,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Institutional on-chain credit leader. ~$2B active loans after 767% AUM growth in 2025. 25% of revenue funds SYRUP buybacks. $100M ARR is a 2026 target, not achieved. Core Foundation injunction unresolved.",
+      "one_liner": "Institutional private-credit leader with a record ~$2B loan book, a Kraken on-chain warehouse (Jun 25) and a Revolut listing (Apr 30, UK/EU). But the 1.6x price-to-fees pitch uses gross fees; the token keeps ~$12-13M revenue, so it trades ~14x. Core Foundation injunction unresolved.",
       "key_catalyst": "$100M ARR target 2026, 25% revenue buybacks, institutional DeFi lending leader",
       "key_risk": "Credit default risk (2022 FTX/Alameda losses), Core Foundation injunction unresolved, ARR is projection not achieved",
       "max_supply": null,
       "total_supply": 1244677492,
       "circulating_supply": 1163296772,
-      "fdv": 170294285,
+      "fdv": 193914530,
       "where_to_buy": [
         "Binance",
         "Coinbase",
@@ -1088,13 +1088,28 @@
           "claim": "Sidney Powell (CEO, ex-NAB $3B bonds), Consensus 2026 speaker",
           "source": "CoinDesk",
           "url": "https://consensus.coindesk.com/agenda/speaker/-sidney-powell"
+        },
+        {
+          "claim": "Maple TVL ~$2.5B / borrowed ~$2.1B; fees vs revenue",
+          "source": "DefiLlama",
+          "url": "https://defillama.com/protocol/maple-finance"
+        },
+        {
+          "claim": "Kraken on-chain warehouse facility (Jun 25 2026)",
+          "source": "Kraken",
+          "url": "https://blog.kraken.com/news/maple-onchain-warehouse-facility"
+        },
+        {
+          "claim": "SYRUP on Revolut, UK and EU (Apr 30 2026)",
+          "source": "The Defiant",
+          "url": "https://thedefiant.io/news/defi/maple-finance-syrup-revolut-uk-eu-launch-dib9ob"
         }
       ],
-      "current_price_usd": 0.136818,
-      "price_updated_at": "2026-06-29T00:00:00Z",
+      "current_price_usd": 0.155795,
+      "price_updated_at": "2026-07-02T00:00:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
-      "fully_diluted_valuation": 170294285
+      "fully_diluted_valuation": 193914530
     },
     {
       "symbol": "GEOD",
