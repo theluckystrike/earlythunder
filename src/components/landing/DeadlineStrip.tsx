@@ -33,11 +33,14 @@ function statusClass(status: string, urgency: string): string {
   return "status status--ok";
 }
 
-/** Sort comparator: CRITICAL first, then HIGH, then others. */
-function urgencyRank(u: string): number {
-  if (u === "CRITICAL") return 0;
-  if (u === "HIGH") return 1;
-  return 2;
+/** Effective time (ms) for a deadline: firm date, else estimate, else far future. */
+function effectiveTime(d: {
+  readonly end_date: string | null;
+  readonly estimated_end: string | null;
+}): number {
+  const s = d.end_date ?? d.estimated_end ?? "2100-01-01";
+  const t = new Date(s).getTime();
+  return isNaN(t) ? Number.MAX_SAFE_INTEGER : t;
 }
 
 /* ─── DeadlineCard ─── */
@@ -77,10 +80,10 @@ function DeadlineCard({
 /* ─── Main Export ─── */
 
 export default function DeadlineStrip({ deadlines }: DeadlinesGridProps) {
-  const visible = deadlines
+  const upcoming = deadlines
     .filter((d) => d.status !== "ENDED")
-    .sort((a, b) => urgencyRank(a.urgency) - urgencyRank(b.urgency))
-    .slice(0, 4);
+    .sort((a, b) => effectiveTime(a) - effectiveTime(b));
+  const visible = upcoming.slice(0, 4);
 
   if (visible.length === 0) return null;
 
@@ -91,8 +94,8 @@ export default function DeadlineStrip({ deadlines }: DeadlinesGridProps) {
           <div className="section__eyebrow mono">04, DEADLINE TRACKER</div>
           <h2 className="section__title">Don&apos;t miss the window</h2>
           <p className="section__sub">
-            23 active countdowns across points programs, mainnet launches, and
-            governance votes.
+            {upcoming.length} active countdowns across token unlocks, ETF
+            rulings, mainnet launches, and governance votes.
           </p>
         </div>
         <a className="ghost-btn" href="/deadlines/">Track all deadlines <span className="arr">&rarr;</span></a>

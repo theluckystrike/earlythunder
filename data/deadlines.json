@@ -1,27 +1,13 @@
 [
   {
-    "protocol": "Ethereum",
-    "event": "Glamsterdam upgrade live on mainnet (EIP-7732, EIP-7691)",
-    "end_date": "2026-08-15",
+    "protocol": "EU Regulation",
+    "event": "MiCA transitional period ends, EU-wide CASP grandfathering window closes (ESMA confirmed no extension)",
+    "end_date": "2026-07-01",
     "estimated_end": null,
-    "urgency": "HIGH",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "Solana",
-    "event": "Firedancer validator client mainnet launch (Jump Crypto)",
-    "end_date": "2026-09-01",
-    "estimated_end": null,
-    "urgency": "HIGH",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "Arbitrum",
-    "event": "ARB token unlock (1.12B tokens, ~$1.2B at current prices)",
-    "end_date": "2026-09-16",
-    "estimated_end": null,
-    "urgency": "HIGH",
-    "status": "UPCOMING"
+    "urgency": "CRITICAL",
+    "status": "UPCOMING",
+    "note": "Last day of the 18-month grandfathering period. From this date any crypto-asset service provider operating on legacy national registration without a MiCA authorisation loses transitional cover anywhere in the EU. Several states (Germany, Ireland, Netherlands, Poland) closed theirs earlier.",
+    "source": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
   },
   {
     "protocol": "Aptos",
@@ -29,62 +15,6 @@
     "end_date": "2026-07-12",
     "estimated_end": null,
     "urgency": "HIGH",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "Optimism",
-    "event": "OP token unlock (24.2M tokens, ~$100M)",
-    "end_date": "2026-08-30",
-    "estimated_end": null,
-    "urgency": "MEDIUM",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "Uniswap",
-    "event": "Fee switch activation vote (UNI stakers earn protocol fees)",
-    "end_date": "2026-10-15",
-    "estimated_end": null,
-    "urgency": "HIGH",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "EU Regulation",
-    "event": "MiCA full implementation deadline (stablecoin & CASP rules)",
-    "end_date": "2026-06-30",
-    "estimated_end": null,
-    "urgency": "HIGH",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "SEC",
-    "event": "SEC ruling on spot Solana ETF (final deadline)",
-    "end_date": "2026-07-31",
-    "estimated_end": null,
-    "urgency": "HIGH",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "SEC",
-    "event": "SEC ruling on spot XRP ETF (final deadline)",
-    "end_date": "2026-10-15",
-    "estimated_end": null,
-    "urgency": "HIGH",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "Binance",
-    "event": "Binance Launchpad IEO (project TBD, typically quarterly)",
-    "end_date": "2026-09-15",
-    "estimated_end": null,
-    "urgency": "MEDIUM",
-    "status": "UPCOMING"
-  },
-  {
-    "protocol": "Coinbase",
-    "event": "Coinbase listing for major token (likely L2 or DeFi protocol)",
-    "end_date": "2026-11-01",
-    "estimated_end": null,
-    "urgency": "MEDIUM",
     "status": "UPCOMING"
   },
   {
@@ -96,9 +26,36 @@
     "status": "UPCOMING"
   },
   {
-    "protocol": "StarkNet",
-    "event": "STRK token unlock (1.2B tokens, ~$1.5B)",
-    "end_date": "2026-12-01",
+    "protocol": "Ethereum",
+    "event": "Glamsterdam upgrade live on mainnet (EIP-7732, EIP-7691)",
+    "end_date": "2026-08-15",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "SEC / Solana",
+    "event": "Staking Solana ETF decisions pending (spot SOL ETFs live since Oct 28 2025; VanEck JitoSOL and other staking variants awaiting SEC sign-off)",
+    "end_date": null,
+    "estimated_end": "2026-08-15",
+    "urgency": "MEDIUM",
+    "status": "UPCOMING",
+    "note": "Spot Solana ETFs already trade with staking built in (Bitwise BSOL, Grayscale, Fidelity, 21Shares and others). The open catalyst is approval of staking-focused variants such as VanEck JitoSOL, noticed by the SEC in March 2026. Date is estimated under the new ~75-day generic listing standard.",
+    "source": "https://www.coindesk.com/markets/2025/10/09/jpmorgan-sees-modest-inflows-for-solana-etfs-despite-likely-sec-approval",
+    "is_estimated": true
+  },
+  {
+    "protocol": "Optimism",
+    "event": "OP token unlock (24.2M tokens, ~$100M)",
+    "end_date": "2026-08-30",
+    "estimated_end": null,
+    "urgency": "MEDIUM",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Solana",
+    "event": "Firedancer validator client mainnet launch (Jump Crypto)",
+    "end_date": "2026-09-01",
     "estimated_end": null,
     "urgency": "HIGH",
     "status": "UPCOMING"
@@ -112,9 +69,57 @@
     "status": "UPCOMING"
   },
   {
+    "protocol": "Binance",
+    "event": "Binance Launchpad IEO (project TBD, typically quarterly)",
+    "end_date": "2026-09-15",
+    "estimated_end": null,
+    "urgency": "MEDIUM",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Arbitrum",
+    "event": "ARB token unlock (1.12B tokens, ~$1.2B at current prices)",
+    "end_date": "2026-09-16",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
     "protocol": "dYdX",
     "event": "dYdX v4 mainnet launch (Cosmos-based perpetuals DEX)",
     "end_date": "2026-10-01",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Uniswap",
+    "event": "Fee switch activation vote (UNI stakers earn protocol fees)",
+    "end_date": "2026-10-15",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "SEC",
+    "event": "SEC ruling on spot XRP ETF (final deadline)",
+    "end_date": "2026-10-15",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "Coinbase",
+    "event": "Coinbase listing for major token (likely L2 or DeFi protocol)",
+    "end_date": "2026-11-01",
+    "estimated_end": null,
+    "urgency": "MEDIUM",
+    "status": "UPCOMING"
+  },
+  {
+    "protocol": "StarkNet",
+    "event": "STRK token unlock (1.2B tokens, ~$1.5B)",
+    "end_date": "2026-12-01",
     "estimated_end": null,
     "urgency": "HIGH",
     "status": "UPCOMING"

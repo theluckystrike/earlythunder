@@ -419,11 +419,11 @@
         "type": "filing"
       }
     ],
-    "updated_at": "2026-05-23",
+    "updated_at": "2026-06-29T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 62282,
-    "market_cap_usd": 1247394365184,
-    "volume_24h_usd": 29594284345,
+    "current_price_usd": 59767,
+    "market_cap_usd": 1198345835425,
+    "volume_24h_usd": 21137702521,
     "citation_types": [],
     "valuation_gap_score": 60,
     "obscurity_score": 10,
@@ -441,7 +441,18 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "verdict": "HOLD CORE. Bitcoin in 2026 is no longer a retail-driven momentum trade, it is an institutionally-held reserve asset whose marginal price is now set by ETF and corporate-treasury flows rather than by miners or speculators. That maturation lowers volatility and raises the floor, but it also means the next leg depends on whether those flows keep compounding. With a fixed 21M cap, established ETF rails, and an emerging sovereign-reserve bid, the structural case is intact even through drawdowns. This is the anchor position, not the asymmetric bet.",
+    "edge_data": [
+      "The marginal buyer has changed. Price is now set far more by daily ETF and treasury net flows than by on-chain HODL waves, so flow data is the leading indicator most retail dashboards still ignore.",
+      "Sovereign reserve adoption is reflexive. Each nation-state or large treasury that adds BTC lowers the political and career cost of the next one doing the same, which is why a single large adopter can re-rate the whole asset.",
+      "The real long-tail risk is not price, it is the post-halving miner economy. Block subsidy keeps halving while a durable fee market has not yet formed, and security budget ultimately has to come from somewhere.",
+      "BTC's correlation regime flips. In risk-off shocks it trades like a high-beta tech asset, not digital gold, which is the gap between the narrative and the current market structure."
+    ],
+    "thesis_changers": {
+      "bull_breaks_if": "ETF and corporate-treasury net flows turn persistently negative and sovereign adoption stalls, revealing the 2024-2025 institutional bid was a one-time repricing rather than a structural, compounding source of demand.",
+      "bear_breaks_if": "The BITCOIN Act or equivalent passes and multiple sovereigns formalize BTC reserves, structurally removing supply from the float and cementing Bitcoin as a recognized reserve asset alongside gold."
+    }
   },
   {
     "slug": "hyperliquid",
@@ -893,11 +904,11 @@
         "type": "research"
       }
     ],
-    "updated_at": "2026-05-23",
+    "updated_at": "2026-06-29T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 68.66,
-    "market_cap_usd": 39801720155,
-    "volume_24h_usd": 2662821376,
+    "current_price_usd": 72.42,
+    "market_cap_usd": 42051817610,
+    "volume_24h_usd": 2421219485,
     "citation_types": [],
     "valuation_gap_score": 75,
     "obscurity_score": 12,
@@ -915,7 +926,18 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "verdict": "HOLD. Solana is the throughput and consumer-activity leader among L1s, with real fees, a live spot ETF, and the deepest pipeline of performance upgrades (Firedancer, Alpenglow). The tension is durability: a large share of its fee revenue is reflexive memecoin and MEV activity that can evaporate, and its outage history still shadows institutional trust. Own it as the high-beta execution-layer bet, sized for the volatility that comes with revenue tied to speculative cycles.",
+    "edge_data": [
+      "Headline fee revenue overstates durable demand. A large slice is memecoin and MEV activity (Pump.fun alone generated $500M+ in cumulative fees), which is cyclical and narratively fragile, so the right question is what fees survive a speculative winter.",
+      "Firedancer is a resilience story as much as a TPS story. A second independent validator client removes the single-client failure mode behind Solana's past outages, which matters more to institutions than the raw 1M-TPS headline.",
+      "The ETF catalyst already happened. Spot SOL ETFs have traded since October 2025, so the live driver is now inflow growth and pending staking-ETF approval, not initial listing, a distinction many theses still get wrong.",
+      "SOL still carries meaningful issuance, so 'real economic value' per token has to be read net of inflation, not on gross fees alone."
+    ],
+    "thesis_changers": {
+      "bull_breaks_if": "Consumer and memecoin activity fades and fee revenue collapses to a fraction of current levels, exposing the valuation as throughput in search of durable, non-speculative demand.",
+      "bear_breaks_if": "Firedancer ships with a clean no-outage record, ETF inflows compound, and DePIN plus payments generate non-speculative fee demand, proving Solana's economics are structural rather than cyclical."
+    }
   },
   {
     "slug": "aave",
@@ -4274,8 +4296,8 @@
     "asset_class": "digital_assets",
     "tier": 1,
     "composite_score": 81,
-    "one_liner": "Decentralized borrowing protocol with $323.7M TVL growing +15.2% weekly, trading 99.8% below ATH at $0.34 with smart money score 83/100 (INVESTIGATE signal).",
-    "thesis": "Liquity is a decentralized borrowing protocol that allows users to draw interest-free loans against ETH collateral. LQTY trades at $0.34 with a $33.7M market cap, an astonishing 99.8% below its $146.94 ATH. Despite the price collapse, the protocol's TVL stands at $323.7M with +15.2% weekly growth, creating one of the most extreme usage-price disconnects in DeFi.\n\nThe smart money score is 83/100 (INVESTIGATE signal), with maximum scores on ATH value gap (25/25) and TVL momentum (20/20). The TVL-to-volume ratio of 68.22 indicates mild accumulation. Liquity V2 represents a major protocol upgrade with novel interest rate mechanisms and enhanced capital efficiency.\n\nThe 99.8% decline from ATH combined with growing TVL and strong smart money signals creates a deep value setup. The protocol generates real revenue from borrowing fees and liquidations, making it fundamentally sound. The key question is whether V2 can reignite narrative interest and attract new capital.\n\nRisk: The extreme ATH decline may reflect structural tokenomics issues rather than just market cycle dynamics. Competition from Aave, Compound, and newer lending protocols is intense.",
+    "one_liner": "A pure real-yield bet on the most decentralized stablecoin in DeFi. Liquity pays 100% of fees to users with zero emissions, yet trades at an $18M market cap while V2's BOLD adoption is still early. The token is priced as if BOLD never scales.",
+    "thesis": "Liquity is the cleanest expression of the real-yield thesis in DeFi, and the market is treating it like an afterthought. V1 pioneered interest-free, governance-free borrowing against ETH with the LUSD stablecoin and fully immutable contracts. V2, live since 2025, replaces that with BOLD, a stablecoin where borrowers set their own interest rates across three isolated collateral branches (WETH, wstETH, rETH), and where 100% of protocol revenue flows back to users with no token emissions and no lockups.\n\nThe token mechanics are unusually honest. Stability Pool depositors earn 75% of protocol revenue as sustainable yield, and LQTY stakers direct the remaining 25% through the Protocol Incentivized Liquidity system. There is no inflation funding these payouts, it is all real fee revenue. Supply is already roughly 96% circulating, so FDV (around $27M) sits close to market cap. There is almost no unlock overhang, which is rare for a token this old.\n\nThe entire debate reduces to one variable: does BOLD demand inflect. Lifetime fees across V1 and V2 exceed $12M, and V2 alone earned about $500K in its first three months back. But direct V2 TVL is still only around $24M against a multi-billion dollar CDP-stablecoin opportunity owned today by DAI, USDS, crvUSD and GHO. Bluechip rates BOLD A-, above both USDC and DAI, which says the design is sound. What is unproven is distribution. At $18M the token is priced for failure of that distribution. If BOLD scales even modestly, the real-yield math re-rates it fast. If it does not, immutability cuts both ways, there is no team able to pivot the parameters.",
     "signals": {
       "working_code": 85,
       "dev_activity": 75,
@@ -4287,14 +4309,16 @@
       "obscurity": 70
     },
     "catalysts": [
-      "99.8% below ATH with $323.7M TVL growing +15.2% weekly, extreme usage-price disconnect",
-      "Smart money score 83/100 (INVESTIGATE) with maximum ATH value gap and TVL momentum scores",
-      "Liquity V2 upgrade with novel interest rate mechanisms and enhanced capital efficiency"
+      "V2 BOLD scaling: lifetime protocol fees exceed $12M and V2 earned about $500K in its first three months, with 100% of revenue flowing to users and zero emissions.",
+      "Bluechip rates BOLD A-, above USDC and DAI, a credibility signal for a fully decentralized stablecoin that most screeners ignore.",
+      "Clean supply structure: roughly 96% of LQTY already circulating, FDV near $27M sits close to market cap, so there is minimal unlock overhang to absorb.",
+      "Real-yield rotation: in a market rewarding sustainable fee revenue over emissions, Liquity is one of the few protocols that pays out 100% real cash flow."
     ],
     "risks": [
-      "99.8% ATH decline may reflect structural tokenomics issues, not just market cycle",
-      "Competition from Aave, Compound, and newer lending protocols is intense",
-      "Small market cap ($33.7M) creates liquidity risk for larger positions"
+      "V2 BOLD adoption is still small (around $24M direct TVL) against entrenched competitors (DAI, USDS, crvUSD, GHO). The entire thesis depends on demand inflecting.",
+      "Immutability cuts both ways. With governance minimized and contracts fixed, there is no team able to tune parameters or respond if the peg or branches come under stress.",
+      "Tiny $18M market cap with thin liquidity makes LQTY volatile and easy to push on small flows.",
+      "Peg and redemption mechanics depend on arbitrageurs and Stability Pool depth. A sharp ETH or LST drawdown stresses all three collateral branches at once."
     ],
     "related_slugs": [
       "maple-finance",
@@ -4302,49 +4326,162 @@
     ],
     "citations": [
       {
-        "claim": "Price $0.34, mcap $33.7M, rank #663, ATH $146.94, -99.77% from ATH",
-        "source": "EarlyThunder Smart Money Scanner",
-        "url": "",
+        "claim": "LQTY live price near $0.184, market cap near $18M (2026-06-29)",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/liquity",
         "type": "data"
       },
       {
-        "claim": "TVL $323.7M with +15.2% 7d growth; smart money score 83 (INVESTIGATE)",
-        "source": "EarlyThunder Smart Money Scanner",
-        "url": "",
+        "claim": "Liquity V2 is live: BOLD, user-set interest rates, three collateral branches",
+        "source": "Liquity",
+        "url": "https://www.liquity.org/blog/liquity-v2-is-live",
+        "type": "official"
+      },
+      {
+        "claim": "BOLD is overcollateralized, decentralized, backed only by WETH, wstETH, rETH",
+        "source": "Liquity",
+        "url": "https://www.liquity.org/bold",
+        "type": "official"
+      },
+      {
+        "claim": "Stability Pool earns 75% of revenue, LQTY stakers direct 25% via PIL, no emissions",
+        "source": "Liquity Docs",
+        "url": "https://docs.liquity.org/v2-faq/bold-and-earn",
+        "type": "official"
+      },
+      {
+        "claim": "LQTY supply ~96% circulating, FDV ~$27M, 100M max supply",
+        "source": "Tokenomist",
+        "url": "https://tokenomist.ai/liquity",
         "type": "data"
       },
       {
-        "claim": "Deep value signal: true; TVL-to-volume ratio 68.22 (mild accumulation)",
-        "source": "EarlyThunder Smart Money Scanner",
-        "url": "",
+        "claim": "Liquity TVL and fees tracked on-chain",
+        "source": "DefiLlama",
+        "url": "https://defillama.com/protocol/liquity-v2",
         "type": "data"
       }
     ],
-    "updated_at": "2026-05-16T16:00:00Z",
+    "updated_at": "2026-06-29T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 0.185263,
-    "market_cap_usd": 18144558,
-    "volume_24h_usd": 4128985,
+    "current_price_usd": 0.183902,
+    "market_cap_usd": 18147027,
+    "volume_24h_usd": 2537438,
     "citation_types": {
-      "data": 3
+      "data": 3,
+      "official": 3
     },
     "valuation_gap_score": 95,
     "obscurity_score": 70,
-    "on_chain": null,
+    "on_chain": {
+      "tvl": "~$24M direct V2 TVL (peak cross-chain ~$177M Nov 2025)",
+      "fees_30d": "100% of fees redistributed to users (no protocol skim)",
+      "revenue_30d": "V2 ~$500K in first 3 months back; >$12M lifetime fees V1+V2",
+      "whale_accumulation": "Real-yield allocators; thin float concentrates moves",
+      "sources": [
+        {
+          "metric": "TVL / fees",
+          "source": "DefiLlama",
+          "url": "https://defillama.com/protocol/liquity-v2",
+          "date": "2026-06-29"
+        },
+        {
+          "metric": "Lifetime fees",
+          "source": "Liquity",
+          "url": "https://www.liquity.org/blog/liquity-v2-is-live",
+          "date": "2025-01-01"
+        }
+      ]
+    },
     "insider_activity": null,
-    "team": null,
-    "tokenomics": null,
-    "competitive": null,
-    "fdv": null,
-    "circulating_pct": null,
-    "tvl": "$323.7M",
+    "team": {
+      "key_members": [
+        {
+          "name": "Robert Lauko",
+          "role": "Founder",
+          "background": "Former researcher at DFINITY before founding Liquity to build a decentralized, governance-minimized stablecoin.",
+          "notable": "Designed Liquity's immutable, admin-key-free architecture."
+        },
+        {
+          "name": "Rick Pardoe",
+          "role": "Co-Founder, Lead Engineer",
+          "background": "Physics and software background; co-architect of the Liquity protocol contracts.",
+          "notable": "Led the V2 BOLD contract design."
+        }
+      ],
+      "team_track_record": "Shipped a fully immutable V1 that survived multiple market crashes with its peg intact, then delivered V2 with user-set rates. Track record is conservatism and decentralization over growth-at-all-costs.",
+      "anon_team": false
+    },
+    "tokenomics": {
+      "total_supply": "100M LQTY (fixed)",
+      "circulating_supply": "~95.6M LQTY",
+      "circulating_pct": "96%",
+      "fdv": "$27M",
+      "mcap_to_fdv_ratio": "0.67",
+      "inflation_rate": "Zero. No emissions fund yield; all payouts are real fee revenue.",
+      "burn_mechanism": "No burn. 100% of protocol fees flow to Stability Pool depositors (75%) and LQTY-directed PIL (25%).",
+      "staking_yield": "LQTY staking earns a share of real protocol revenue via the PIL system, no inflationary rewards.",
+      "next_unlock_date": "Negligible overhang, ~96% already circulating"
+    },
+    "competitive": {
+      "competitors": [
+        {
+          "name": "MakerDAO / Sky",
+          "ticker": "SKY",
+          "comparison": "Far larger DAI/USDS book but more centralized (RWA, governance). Liquity is smaller and more decentralized."
+        },
+        {
+          "name": "Curve (crvUSD)",
+          "ticker": "CRV",
+          "comparison": "LLAMMA soft-liquidations, deep Curve liquidity. More features, less minimalism than BOLD."
+        },
+        {
+          "name": "Aave (GHO)",
+          "ticker": "AAVE",
+          "comparison": "GHO leverages Aave's liquidity and governance. Liquity trades that backing for full immutability."
+        },
+        {
+          "name": "Frax",
+          "ticker": "FRAX",
+          "comparison": "Hybrid model with broader product suite. Liquity stays narrow and purely overcollateralized."
+        }
+      ],
+      "moat": "Maximal decentralization and immutability. No admin keys, no governance to capture, no emissions. BOLD's Bluechip A- rating (above USDC and DAI) validates the design. The moat is credibility and censorship resistance, not scale.",
+      "market_size": "Decentralized stablecoin market measured in tens of billions",
+      "current_penetration": "Tiny. BOLD is a rounding error against DAI/USDS today."
+    },
+    "fdv": "$27M",
+    "circulating_pct": "96%",
+    "tvl": "~$24M (V2)",
     "fees_30d": null,
     "holders": null,
     "github_stars": null,
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "verdict": "HOLD with an asymmetric tilt. Liquity is the purest real-yield, maximally decentralized stablecoin in DeFi, with clean supply and 100% of fees paid to users. At an $18M market cap it is priced as if V2's BOLD never gains distribution. The asymmetry is real, but so is the dependency: this is a single-variable bet on BOLD demand inflecting, and immutability means there is no team that can engineer that demand if the market does not provide it. Hold-and-watch BOLD's TVL trend as the one number that matters.",
+    "red_flags": [
+      "V2 BOLD adoption is still tiny (~$24M direct TVL). The valuation case collapses if BOLD never scales.",
+      "Immutable contracts mean no parameter tuning or emergency response if a collateral branch or the peg comes under stress.",
+      "$18M market cap with thin liquidity makes the token highly volatile on small order flow."
+    ],
+    "conviction_signals": [
+      "100% of protocol fees flow to users with zero token emissions, the cleanest real-yield design in the category.",
+      "Roughly 96% of supply already circulating with FDV near market cap, almost no dilution risk.",
+      "Bluechip rates BOLD A-, above both USDC and DAI.",
+      ">$12M in lifetime fees across V1 and V2, all redistributed, proving the fee engine works."
+    ],
+    "edge_data": [
+      "LQTY is one of very few tokens where reported yield is 100% real fee revenue with no emissions subsidy. Most real-yield claims in DeFi are partly inflation in disguise.",
+      "Supply is already ~96% circulating and FDV (~$27M) sits near market cap, so there is no large unlock waiting to dilute holders, unusual for a token launched in 2021.",
+      "The thesis is genuinely single-variable: track BOLD's direct TVL trend. Everything else (immutability, A- rating, zero emissions) is already known and priced.",
+      "Immutability is sold as a pure positive, but it is double-edged: there is no governance to capture and no team to bail out a stressed branch. The same property that makes it trustless makes it brittle to design errors."
+    ],
+    "thesis_changers": {
+      "bull_breaks_if": "BOLD's direct TVL stays stuck in the low tens of millions through 2026, confirming the stablecoin has product credibility but no distribution, leaving LQTY a real-yield claim on revenue that never scales.",
+      "bear_breaks_if": "BOLD TVL inflects into the hundreds of millions as real-yield rotation and the Bluechip A- rating pull deposits, compounding fee revenue that flows entirely to a near-fully-circulating, $18M-cap token."
+    }
   },
   {
     "slug": "ekubo-protocol",
@@ -5178,11 +5315,11 @@
       "ethereum"
     ],
     "citations": [],
-    "updated_at": "2026-05-23",
+    "updated_at": "2026-07-02T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 0.68128,
-    "market_cap_usd": 2735463662,
-    "volume_24h_usd": 422068480,
+    "current_price_usd": 0.739085,
+    "market_cap_usd": 2994831659,
+    "volume_24h_usd": 283633082,
     "citation_types": [],
     "valuation_gap_score": 68,
     "obscurity_score": 22,
@@ -5200,7 +5337,18 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "verdict": "HOLD. Sui is the most technically differentiated new L1 of the cycle: the object model and parallel execution are real advantages for state-independent workloads. But the token carries two heavy weights the tech does not fix. First, a decade-long supply schedule (roughly 80M SUI per year unlocking through 2034) is a persistent bid-absorption tax few L1s bear. Second, the bull case leans on consumer and gaming catalysts that remain announcements rather than shipped, revenue-generating products, and the ecosystem is concentrated enough that a single exploit (Cetus, 2025) is systemic rather than contained. Great engineering in search of durable demand.",
+    "edge_data": [
+      "Sui's supply is a decade-long headwind: roughly 80M SUI/year unlocks through 2034. The chain can grow and the token still fights a persistent absorption tax that most L1 comparisons ignore.",
+      "Ecosystem concentration makes exploits systemic. With liquidity clustered in a few venues (Cetus, DeepBook), the 2025 Cetus exploit was an ecosystem event, not a contained one.",
+      "Parallel execution is a real edge only for state-independent transactions. Much of DeFi contends for shared state, so the headline TPS overstates the advantage for the workloads that actually matter.",
+      "The bull case is almost entirely forward-dated: AAA gaming and consumer onboarding are catalysts that have been promised more than shipped. Price already embeds optimism about conversion."
+    ],
+    "thesis_changers": {
+      "bull_breaks_if": "Consumer and gaming stay vaporware while the unlock schedule keeps hitting the market, confirming Sui as superior technology without the demand to absorb its own supply.",
+      "bear_breaks_if": "A genuinely popular consumer or gaming app ships and retains users, broadening the ecosystem beyond a few venues and proving the parallel-execution edge in production against the unlocks."
+    }
   },
   {
     "name": "Form Energy",
@@ -5462,11 +5610,11 @@
       "morpho"
     ],
     "citations": [],
-    "updated_at": "2026-05-23",
+    "updated_at": "2026-07-02T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 0.323108,
-    "market_cap_usd": 299347406,
-    "volume_24h_usd": 27390757,
+    "current_price_usd": 0.333961,
+    "market_cap_usd": 309695026,
+    "volume_24h_usd": 23418417,
     "citation_types": [],
     "valuation_gap_score": 82,
     "obscurity_score": 35,
@@ -5484,7 +5632,18 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "verdict": "HOLD. Ether.fi is the clear liquid restaking leader, but the category's original thesis has quietly weakened: EigenLayer AVS reward flows have underdelivered against the 2024 hype, so eETH's much-marketed multi-yield stack is, for now, mostly ordinary ETH staking yield plus extra smart-contract surface. What actually differentiates ether.fi today is the Cash card and neobank push, a genuine consumer product rather than a yield wrapper. ETHFI token value still depends on the fee switch converting protocol revenue into holder value; until that is durable, the token captures little of the $8B+ it secures. Own it as the best horse in restaking, but underwrite the neobank, not the AVS dream.",
+    "edge_data": [
+      "The restaking thesis changed underneath the token: AVS fee demand on EigenLayer has stayed thin, so eETH's extra yield over stETH is small. If AVS fees stay near zero, eETH is stETH with more moving parts.",
+      "Ether.fi's real optionality is the Cash card / neobank, not restaking. That is the product that could justify the token, and it is a distribution bet, not a yield bet.",
+      "mcap ~$310M against $8B+ TVL looks tiny, but TVL is depositors' ETH, not equity. Value accrual runs entirely through the fee switch, which is the number to watch.",
+      "LRT competition (Renzo, Kelp) commoditizes the wrapper. The moat has to be product and integrations, because the yield itself is not differentiated."
+    ],
+    "thesis_changers": {
+      "bull_breaks_if": "The EigenLayer AVS fee market never materializes and the fee switch stalls, leaving ETHFI a governance token over custodied yield that any competitor can replicate.",
+      "bear_breaks_if": "The Cash card and neobank scale to real recurring users while the fee switch turns protocol revenue into token value, making ETHFI a claim on a consumer business rather than a yield wrapper."
+    }
   },
   {
     "slug": "toncoin",
@@ -7327,11 +7486,11 @@
         "type": "data"
       }
     ],
-    "updated_at": "2026-05-23",
+    "updated_at": "2026-07-02T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 0.254581,
-    "market_cap_usd": 214213554,
-    "volume_24h_usd": 35426242,
+    "current_price_usd": 0.252713,
+    "market_cap_usd": 212949006,
+    "volume_24h_usd": 25242328,
     "citation_types": [],
     "valuation_gap_score": 78,
     "obscurity_score": 18,
@@ -7349,7 +7508,18 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "verdict": "HOLD, with eyes open. Lido runs the best product in the category: stETH is the most integrated liquid staking token and a DeFi collateral standard, and the protocol prints real cash on 9M+ ETH staked. The problem is that LDO barely touches that cash. The 10% staking fee flows to node operators and the DAO treasury, and the buyback has been intermittent (recently zero). So you are holding a governance token over a cash flow it does not receive, in a protocol whose very dominance invites Ethereum-level social pressure to shrink. Best product, weakest token linkage.",
+    "edge_data": [
+      "Lido's dominance is its biggest liability. Ethereum core devs pressure any single staking entity to stay under the 33% finality threshold, so commercial success is politically capped in a way competitors are not.",
+      "LDO is a bet on a business that pays others: the 10% fee splits to operators and the DAO, and the buyback adapter is intermittent (about $1.95M in one recent 30-day window, zero in a recent week). Owning LDO is not owning the staking cash flow.",
+      "Restaking (EigenLayer) and the growth of LRTs erode the plain-staking premium that underpins Lido's fee base.",
+      "DVT via Obol and SSV is the pressure-release valve: it decentralizes operators and answers the social-layer critique, but it does not by itself route revenue to LDO."
+    ],
+    "thesis_changers": {
+      "bull_breaks_if": "The buyback stays intermittent and restaking keeps chipping at staking share, leaving LDO a perpetual claim on cash flow it never receives.",
+      "bear_breaks_if": "A durable fee switch or programmatic buyback routes staking revenue to LDO while stETH cements itself as the ETF and DeFi collateral standard, finally linking token to cash flow."
+    }
   },
   {
     "slug": "bnb",
@@ -17521,84 +17691,240 @@
   {
     "slug": "maple-finance",
     "name": "Maple Finance",
-    "ticker": "MPL",
-    "category": "RWA Tokenization",
+    "ticker": "SYRUP",
+    "category": "Institutional On-Chain Credit",
     "asset_class": "digital_assets",
     "tier": 2,
-    "composite_score": 59.2,
-    "one_liner": "Institutional DeFi lending platform with $780M in active loans, successfully pivoted from its 2022 bad-debt crisis.",
-    "thesis": "Maple successfully pivoted from its 2022 bad-debt crisis to institutional-grade credit products with $780M in active loans. The combination of DeFi capital efficiency with TradFi risk management is a strong value proposition for institutional borrowers and lenders.\n\nThe platform targets a specific niche. Institutional borrowers who need larger loan sizes and customized terms that AMM-based lending protocols cannot provide. This positions Maple as the bridge between TradFi credit markets and DeFi liquidity.\n\nWeakness. Past default history weighs heavily on reputation. Community engagement is lower than DeFi peers, and the lending model carries inherent credit risk. At ~$150M market cap, Maple is priced as a turnaround story that needs continued execution to re-rate.",
+    "composite_score": 61.3,
+    "one_liner": "The clearest institutional play in on-chain private credit. Roughly $2B in active loans, a live buyback that routes 25% of revenue back to the token, and a Bitwise allocation, all set against a fresh Cayman injunction and a credit-default history that still caps the multiple.",
+    "thesis": "Maple has done something most 2022 casualties never managed. It rebuilt. After the FTX contagion blew a $36M hole in its loan book through the Orthogonal Trading default, the protocol rewrote its underwriting, moved credit decisions to vetted off-chain experts while keeping enforcement and accounting on-chain, and grew assets under management roughly 767% across 2025 to a multi-billion dollar book. By mid-2026 it sits as the largest institutional private-credit venue in DeFi, with active loans near $2B and a marquee allocation from Bitwise as proof that regulated capital will route through it.\n\nThe token thesis turns on a single mechanism that most screeners price wrong. SYRUP trades around 1.1x its annualized gross interest revenue, the interest that borrowers actually pay across the loan book, but closer to 6x the protocol's own net take-rate revenue, which is running near a $25M annualized rate. The bull case is that the net number compounds toward management's $100M ARR target for 2026, and that 25% of every dollar of that revenue is now committed to open-market SYRUP buybacks under the Syrup Strategic Fund. The first execution in November 2025 bought back 2M tokens. If revenue scales, the buyback becomes a structural bid.\n\nThe two things holding it back are real and specific, not vibes. First, credit risk is not theoretical here, it already detonated once, and the market still discounts the book for it. Second, in November 2025 the Core Foundation won a Cayman Islands injunction blocking Maple from completing syrupBTC or dealing in CORE tokens pending arbitration, after a court found a serious issue to be tried over alleged misuse of confidential information. That order directly freezes one of Maple's headline 2026 growth products. Add a roughly 38% drawdown over the past month and you have a fundamentally strengthening protocol whose token is being repriced by litigation and liquidity, not by deteriorating fundamentals. That gap is the entire reason it screens as a HOLD rather than a sell.",
     "signals": {
-      "working_code": 75,
+      "working_code": 78,
+      "dev_activity": 55,
+      "smart_money": 70,
       "community": 45,
-      "dev_activity": 50,
-      "smart_money": 65,
-      "narrative": 70,
-      "catalyst": 60,
-      "valuation_gap": 55,
-      "obscurity": 50
+      "catalyst": 62,
+      "narrative": 72,
+      "valuation_gap": 60,
+      "obscurity": 48
     },
     "catalysts": [
-      "$780M in active loans showing product-market fit",
-      "Institutional-grade credit products attracting TradFi capital",
-      "Growing RWA tokenization trend benefiting the platform",
-      "Potential partnerships with traditional financial institutions"
+      "$100M ARR target for 2026 against a roughly $25M annualized net revenue run-rate exiting 2025. The re-rate case is simply this number compounding.",
+      "Buyback flywheel now live: 25% of protocol revenue funds open-market SYRUP buybacks (Syrup Strategic Fund), with the first 2M-token execution in November 2025.",
+      "Bitwise (>$12B AUM) made its first institutional DeFi allocation via Maple in March 2025, a template other regulated allocators can follow.",
+      "Product expansion into syrupBTC and BNB Chain lending, though syrupBTC is currently frozen by the Core Foundation injunction.",
+      "Kraken integrated an on-chain lending warehouse facility routed through Maple, widening the institutional distribution surface."
     ],
     "risks": [
-      "2022 bad-debt crisis damaged reputation and trust",
-      "Inherent credit risk in institutional lending model",
-      "Lower community engagement than DeFi peers",
-      "Competition from Centrifuge, Goldfinch, and TradFi entrants"
+      "Core Foundation won a Cayman Islands injunction in November 2025 blocking Maple from completing syrupBTC or dealing in CORE tokens pending arbitration, with the court finding a serious issue to be tried over alleged misuse of confidential data.",
+      "Credit-default history is real, not hypothetical: Orthogonal Trading defaulted on $36M across eight loans in December 2022 (about 30% of the active book then, roughly an 80% loss for the M11 USDC pool), following Babel Finance's default that June.",
+      "The $100M ARR headline is a forward target. Net protocol revenue is running closer to a $25M annualized rate, so the token is expensive on realized net earnings.",
+      "SYRUP is down roughly 38% over the past month with thin exchange depth, so the price is liquidity-sensitive and can move on small flows.",
+      "SYRUP staking was discontinued under MIP-019, so value now accrues only through buybacks. That concentrates the entire token thesis on sustained, growing revenue."
     ],
     "related_slugs": [
-      "ondo-finance"
+      "ondo-finance",
+      "grove-finance",
+      "concrete",
+      "upshift"
     ],
-    "updated_at": "2026-04-13T00:00:00Z",
+    "updated_at": "2026-06-29T00:00:00Z",
     "is_graveyard": false,
     "citations": [
       {
-        "claim": "Maple Finance official website",
-        "source": "canonical",
-        "url": "https://www.maple.finance",
-        "type": "official"
-      },
-      {
-        "claim": "Maple Finance market data",
-        "source": "canonical",
+        "claim": "SYRUP live price near $0.137 and market cap near $159M (2026-06-29)",
+        "source": "CoinGecko",
         "url": "https://www.coingecko.com/en/coins/maple-finance",
         "type": "data"
       },
       {
-        "claim": "RWA lending space tracked on Dune dashboard",
-        "source": "Dune Analytics",
-        "url": "https://dune.com/impossiblefinance/rwa-lending-space",
+        "claim": "Maple TVL, fees and revenue tracked on-chain",
+        "source": "DefiLlama",
+        "url": "https://defillama.com/protocol/syrup",
         "type": "data"
+      },
+      {
+        "claim": "767% AUM growth across 2025",
+        "source": "Maple Finance 2025 Data Review",
+        "url": "https://maple.finance/insights/2025-data-review",
+        "type": "official"
+      },
+      {
+        "claim": "SYRUP tokenomics: 1 MPL to 100 SYRUP conversion, supply and value accrual",
+        "source": "Maple Docs",
+        "url": "https://docs.maple.finance/maple-for-token-holders/syrup-tokenomics",
+        "type": "official"
+      },
+      {
+        "claim": "25% of protocol revenue funds SYRUP buybacks, first 2M-token execution Nov 2025",
+        "source": "The Defiant",
+        "url": "https://thedefiant.io/news/tokens/maple-reveals-2m-syrup-token-buyback",
+        "type": "news"
+      },
+      {
+        "claim": "Core Foundation wins Cayman injunction against Maple over alleged confidentiality breach (Nov 2025)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/policy/2025/11/20/core-foundation-wins-injunction-against-maple-finance-on-alleged-confidentiality-breach",
+        "type": "news"
+      },
+      {
+        "claim": "Injunction blocks syrupBTC and CORE dealings pending arbitration",
+        "source": "The Block",
+        "url": "https://www.theblock.co/post/379601/core-foundation-maple-finance-injunction",
+        "type": "news"
+      },
+      {
+        "claim": "Orthogonal Trading defaults on $36M after misrepresenting FTX exposure (Dec 2022)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2022/12/05/maple-finance-severs-ties-with-orthogonal-trading-alleging-it-misrepresented-financial-position",
+        "type": "news"
+      },
+      {
+        "claim": "SYRUP project fundamentals and institutional adoption",
+        "source": "Messari",
+        "url": "https://messari.io/project/syrup",
+        "type": "research"
+      },
+      {
+        "claim": "Sidney Powell, CEO and co-founder, ex-National Australia Bank, Consensus 2026 speaker",
+        "source": "Consensus / CoinDesk",
+        "url": "https://consensus.coindesk.com/agenda/speaker/-sidney-powell",
+        "type": "official"
       }
     ],
-    "current_price_usd": 0.133783,
-    "market_cap_usd": 159286750,
-    "volume_24h_usd": 5180693,
+    "current_price_usd": 0.136818,
+    "market_cap_usd": 159163931,
+    "volume_24h_usd": 18126238,
     "citation_types": {
-      "official": 1,
-      "data": 2
+      "data": 2,
+      "official": 3,
+      "news": 4,
+      "research": 1
     },
-    "valuation_gap_score": 55,
-    "obscurity_score": 50,
-    "on_chain": null,
-    "insider_activity": null,
-    "team": null,
-    "tokenomics": null,
-    "competitive": null,
-    "fdv": null,
-    "circulating_pct": null,
-    "tvl": null,
+    "valuation_gap_score": 60,
+    "obscurity_score": 48,
+    "on_chain": {
+      "tvl": "~$2.0B active loans",
+      "revenue_30d": "~$2M (≈$25M annualized net run-rate)",
+      "fees_30d": "Gross borrower interest annualizes near $200M across the book",
+      "holder_count": "~30K+ SYRUP holders",
+      "whale_accumulation": "Institutional inflows led by Bitwise allocation (Mar 2025)",
+      "sources": [
+        {
+          "metric": "TVL / active loans",
+          "source": "DefiLlama",
+          "url": "https://defillama.com/protocol/syrup",
+          "date": "2026-06-29"
+        },
+        {
+          "metric": "Revenue run-rate",
+          "source": "Maple 2025 Data Review",
+          "url": "https://maple.finance/insights/2025-data-review",
+          "date": "2026-01-15"
+        }
+      ]
+    },
+    "insider_activity": {
+      "insider_sentiment": "accumulating",
+      "token_unlocks_next_90d": "Minimal. MPL to SYRUP conversion closed April 30, 2025; circulating supply already ~93% of total.",
+      "vesting_schedule": "Conversion-based supply, no large cliff unlocks outstanding post-migration."
+    },
+    "team": {
+      "key_members": [
+        {
+          "name": "Sidney Powell",
+          "role": "CEO and Co-Founder",
+          "background": "Former National Australia Bank, structured roughly $3B in corporate bonds before founding Maple.",
+          "notable": "Consensus 2026 speaker. Institutional credit pedigree is central to Maple's borrower-side credibility."
+        },
+        {
+          "name": "Joe Flanagan",
+          "role": "Co-Founder",
+          "background": "Co-founded Maple in 2021 to bring institutional fixed-income style lending on-chain.",
+          "notable": "Helped steer the protocol through the 2022 default crisis and the pivot to vetted off-chain underwriting."
+        }
+      ],
+      "team_track_record": "The team rebuilt the protocol after the 2022 Orthogonal default rather than winding down, replacing the open delegate model with a tighter underwriting process. That recovery is the core of the bull case and the reason institutional allocators returned.",
+      "anon_team": false
+    },
+    "tokenomics": {
+      "total_supply": "1.245B SYRUP",
+      "circulating_supply": "1.163B SYRUP",
+      "circulating_pct": "93%",
+      "fdv": "$170M",
+      "mcap_to_fdv_ratio": "0.93",
+      "inflation_rate": "Low. MPL to SYRUP conversion (1:100, no dilution) closed April 30, 2025.",
+      "burn_mechanism": "No burn. Instead, 25% of protocol revenue funds open-market SYRUP buybacks via the Syrup Strategic Fund.",
+      "staking_yield": "Staking discontinued under MIP-019. Early stakers earned roughly 9% APY in the first 90 days; value now accrues only through buybacks.",
+      "next_unlock_date": "No material cliff unlock outstanding"
+    },
+    "competitive": {
+      "competitors": [
+        {
+          "name": "Centrifuge",
+          "ticker": "CFG",
+          "comparison": "RWA-native, broader asset types, smaller institutional loan book than Maple."
+        },
+        {
+          "name": "Goldfinch",
+          "ticker": "GFI",
+          "comparison": "Emerging-market private credit, more retail-LP oriented, less institutional borrower depth."
+        },
+        {
+          "name": "Clearpool",
+          "ticker": "CPOOL",
+          "comparison": "Permissionless institutional lending pools, direct competitor on borrower side, smaller scale."
+        },
+        {
+          "name": "Ondo Finance",
+          "ticker": "ONDO",
+          "comparison": "Tokenized treasuries and yield, adjacent rather than head-to-head on private credit."
+        },
+        {
+          "name": "TrueFi",
+          "ticker": "TRU",
+          "comparison": "Earlier uncollateralized lending pioneer, lost share after sector defaults."
+        }
+      ],
+      "moat": "Vetted institutional borrower relationships plus off-chain underwriting with on-chain enforcement. The largest institutional private-credit book in DeFi and the first to land a major regulated allocator (Bitwise). Trust, once rebuilt, is the moat.",
+      "market_size": "Global private credit TAM exceeds $1.5T",
+      "current_penetration": "A fraction of a percent. The on-chain slice of private credit is still nascent."
+    },
+    "fdv": "$170M",
+    "circulating_pct": "93%",
+    "tvl": "$2.0B",
     "fees_30d": null,
-    "holders": null,
+    "holders": "~30K+",
     "github_stars": null,
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "verdict": "HOLD. Maple is a fundamentally strengthening protocol, the institutional on-chain credit leader, with a live revenue-to-buyback flywheel and returning regulated capital. But the token is caught between two specific overhangs: a Cayman injunction that freezes its syrupBTC growth product, and a credit-default history that keeps the loan book discounted. The price has already absorbed roughly 38% of downside in a month, which is why the read is hold-and-watch rather than sell. The thesis re-rates if net revenue compounds toward the $100M ARR target and the Core arbitration resolves without material liability.",
+    "red_flags": [
+      "Active Cayman Islands injunction (Nov 2025) blocking syrupBTC and CORE token dealings pending arbitration, with a court finding a serious issue to be tried.",
+      "Documented credit-default history: $36M Orthogonal default in 2022 plus the earlier Babel default. The loan book carries real, demonstrated tail risk.",
+      "Net protocol revenue (~$25M run-rate) is far below the $100M ARR headline, so the token is expensive on realized net earnings.",
+      "Thin exchange depth and a ~38% one-month drawdown make the price liquidity-fragile.",
+      "Staking discontinued (MIP-019) removes the yield carrot and leaves buybacks as the sole value-accrual path."
+    ],
+    "conviction_signals": [
+      "Roughly 767% AUM growth across 2025 to a multi-billion dollar institutional loan book.",
+      "Bitwise (>$12B AUM) made its first institutional DeFi allocation via Maple, validating the regulated-capital thesis.",
+      "Live 25% revenue buyback (Syrup Strategic Fund), first 2M-token execution November 2025.",
+      "CEO Sidney Powell brings genuine institutional fixed-income pedigree (ex-NAB, ~$3B bonds structured).",
+      "Survived and rebuilt from the 2022 crisis rather than winding down, the hardest test a credit protocol can pass."
+    ],
+    "edge_data": [
+      "The valuation looks cheap or rich depending on which revenue you use. SYRUP is about 1.1x annualized gross borrower interest across the book, but roughly 6x the protocol's net take-rate revenue. Most screeners quote the cheap number.",
+      "The widely cited $4.59B AUM peak and DefiLlama's ~$2B TVL measure different things. AUM counts all managed assets, TVL counts on-chain deposits, so headline growth and on-chain TVL can diverge sharply.",
+      "Because staking was discontinued, buybacks are now the only value-accrual mechanism. The token is effectively a levered claim on sustained protocol revenue, nothing softens a revenue miss.",
+      "syrupBTC, one of the headline 2026 growth vectors, is the exact product the Core injunction freezes. The litigation does not just create legal risk, it directly caps a growth lever the bull case relies on."
+    ],
+    "thesis_changers": {
+      "bull_breaks_if": "Net protocol revenue stalls well below the $100M ARR target, or a new borrower default in the post-2022 book reopens the credit-trust question, proving the turnaround was cyclical rather than structural.",
+      "bear_breaks_if": "Maple clears the Core arbitration without material liability and ships syrupBTC plus BNB expansion, while the 25% buyback compounds against a rising revenue base and re-rates SYRUP toward its institutional-credit-leader positioning."
+    }
   },
   {
     "name": "EZKL",
@@ -24952,38 +25278,37 @@
     "category": "Perpetual DEX (ZK Rollup)",
     "asset_class": "digital_assets",
     "tier": 3,
-    "composite_score": 66,
-    "one_liner": "ZK rollup perp DEX with $77-101M annualized revenue, $89M from Founders Fund/Ribbit/Haun, and custom Plonky2 STARK tech. But 83% volume collapse from TGE peak, Stage 0 centralization, only 4,420 holders, and a Dec 2026 cliff opening 500M tokens (50% supply).",
-    "thesis": "Lighter is the #3 on-chain perpetual futures exchange, running on a custom ZK rollup built with Plonky2 STARK + Gnark Plonk/BN254 circuits that enforce price-time priority at the proof level, genuine cryptographic innovation, not a marketing claim. Revenue runs $77-101M annualized (DeFi Llama), with a P/S ratio of just 3.7-4.9x at $375M market cap, cheap by any DeFi standard.\n\nThe investor lineup is exceptional: $89M raised from Founders Fund (Peter Thiel), Ribbit Capital ($68M Series B at $1.5B valuation), Haun Ventures, Robinhood Ventures, Dragonfly, and Craft Ventures. Vlad Tenev (Robinhood CEO) serves as advisor. The founder, Vladimir Novakovski, entered Harvard at 16, was recruited by Ken Griffin to Citadel, and pivoted from Lunchclub to build Lighter.\n\nThe ZK technology is real and differentiated, open-sourced December 2025, audited by zkSecurity (who found and helped fix critical Fiat-Shamir and second-preimage bugs) and Nethermind, with L2BEAT verifying desert mode circuits. The Telegram Wallet integration (April 2026) gives access to 150M+ registered users, and the Circle USDC partnership adds $30-40M/year in additional revenue.\n\nHowever, the red flags are significant. Volume collapsed 83% from the $232B/month TGE peak (December 2025) to $39-45B/month, the majority of peak activity was incentive-farmed. Only 4,420 addresses hold LIT, extreme concentration for a top-100 token. Justin Sun accumulated 14.89M LIT ($39.8M) then withdrew $152M from LPs, cratering revenue from $1.5M/day to $100-120K/day. Five interconnected wallets dumped $7.18M post-TGE. L2BEAT rates it Stage 0, a 4/7 multisig can bypass the 21-day upgrade delay instantly, the sequencer is centralized, and Stork oracle signatures go unverified.\n\nThe existential risk is the December 2026 cliff: 500M tokens (50% of total supply), held by team (26%) and investors (24%), begin opening, with ~13.5M LIT/month entering circulation over 3 years. At current buyback rates ($17.9M cumulative), the protocol cannot absorb this supply pressure without significant volume recovery.\n\nThe bull case requires Lighter EVM (Q2-Q3 2026) driving system growth, Telegram actually converting users to traders, and the CFTC license materializing. The bear case is that Hyperliquid's 70%+ dominance is insurmountable, incentivized volume never returns organically, and the December cliff triggers a supply avalanche.",
+    "composite_score": 62,
+    "one_liner": "The number three ZK perp DEX, up sharply this week to a $534M cap. But that rally sits on a hard truth. Farming revenue fell roughly 70% as monthly perp volume dropped from about $232B to $39B, so LIT now trades near 18-20x sales. A brand new July 2026 buyback-and-burn plus a 6% staking target is the fresh token sink, set against a 50%-of-supply insider cliff that starts vesting in December 2026.",
+    "thesis": "Lighter is the number three on-chain perpetual futures exchange. It runs a custom ZK rollup built with Plonky2 STARK and Gnark Plonk circuits that enforce price-time priority at the proof level, real cryptographic work, not a slogan. The code was open-sourced in December 2025 and audited by zkSecurity, who found and helped fix Fiat-Shamir and second-preimage bugs. The cap table is strong. Lighter raised about $89M, with Founders Fund and Ribbit co-leading a $68M round at roughly a $1.5B valuation, alongside Haun, Robinhood Ventures and Dragonfly. Founder Vladimir Novakovski entered Harvard at 16 and was recruited by Ken Griffin to Citadel.\n\nThe valuation story has flipped, and the rally is papering over it. At the farming peak, DefiLlama put annualized revenue above $100M, around $10M a month, and the token looked cheap near 4x sales. Then volume collapsed about 83% from the $232B monthly TGE peak to roughly $39B as Season 2 incentives ended, and revenue fell with it to a $26-30M annualized run-rate, about $585K a week lately. Against a $534M market cap after a 15% single-day pop, that is 18-20x sales. LIT isn't a cheap top-three perp DEX anymore. It's a richly priced one whose earnings shrank while its price climbed.\n\nThe genuinely new part is the token sink. On July 1, 2026 the team changed tokenomics so buyback purchases now permanently burn LIT, about 15.5M bought back, roughly 6.3% of circulating, and added a 6% staking yield target. Both go straight at the token's weak spot, value accrual. Circle also named USDC the default stablecoin across Lighter's stack in 2026, a credibility win. But that is a stablecoin integration, not the reserve-yield revenue share some coverage implied, and Hyperliquid already struck the bigger USDC-yield-to-buyback deal, so the model isn't unique to Lighter.\n\nThe red flags still dominate the near term. Only a few thousand addresses hold LIT, about 5,000 per CoinMarketCap, so demand is thin and reflexive. Justin Sun accumulated 14.89M LIT, roughly 5.32% of circulating, then pulled about $152M from LPs. Daily revenue now runs near $100-120K, down from peak daily fees around $1.3M, and it was already sliding before Sun left. L2BEAT rates the chain Stage 0, a 4/7 multisig can bypass the 21-day upgrade delay instantly, and the sequencer is centralized. The defining event is the December 2026 cliff, when 50% of supply held by team and investors starts vesting. It arrives as a bleed of about 13.9M LIT a month, roughly 5.6% of circulating, not a single 500M dump. The burn has to outrun that bleed.",
     "signals": {
       "working_code": 72,
       "dev_activity": 68,
-      "smart_money": 65,
+      "smart_money": 62,
       "community": 45,
       "catalyst": 78,
       "narrative": 70,
-      "valuation_gap": 65,
+      "valuation_gap": 48,
       "obscurity": 55
     },
     "catalysts": [
-      "Lighter EVM mainnet (Q2-Q3 2026), app-specific ZK rollup expanding to general-purpose",
-      "Telegram Wallet integration, 150M+ registered users, 25M active wallet users",
-      "CFTC perpetual futures license, would be first regulated on-chain perp exchange",
-      "Season 3 points program, incentivizing volume recovery",
-      "RWA perpetuals expansion, equities, commodities, FX",
-      "Potential Binance spot listing, currently NOT listed on Binance",
-      "Circle USDC partnership, $30-40M/year revenue + $920M USDC commitment",
-      "Bankless endorsement driving 'Hyperliquid beta play' narrative"
+      "July 1, 2026 tokenomics change: buybacks now permanently burn LIT, plus a 6% staking yield target",
+      "Lighter EVM rollup went live on January 31, 2026, built with Axiom and OpenVM. Adoption and Q4 2026 sequencer decentralization are the next steps",
+      "Circle named USDC the default stablecoin across Lighter's stack, a distribution and credibility signal",
+      "Telegram Wallet integration reaching 150M+ registered users, with conversion to active traders still unproven",
+      "Season 3 points program aimed at winning back the volume lost after Season 2",
+      "Coinbase has listed the LIT token; a Binance spot listing has not happened yet",
+      "RWA perpetuals expansion into equities, commodities and FX"
     ],
     "risks": [
-      "Dec 2026 cliff: 500M tokens (50% supply) begin opening, team 26% + investors 24%",
-      "83% volume collapse from $232B/mo peak to $39-45B, majority was incentive-farmed",
-      "Only 4,420 LIT holders, extreme concentration for a top-100 token",
-      "L2BEAT Stage 0: 4/7 multisig bypass, centralized sequencer, unverified oracle signatures",
-      "Justin Sun $152M LP withdrawal crashed revenue from $1.5M/day to $100-120K/day",
-      "$7.18M coordinated dump from 5 interconnected wallets post-TGE",
-      "October 2025 outage: 5 hours downtime from 79.8x volume surge, database corruption",
-      "Hyperliquid has 70%+ DEX perps market share, dominant incumbent"
+      "Valuation re-rated to about 18-20x sales as revenue fell to a $26-30M annualized run-rate while price rallied to a $534M cap",
+      "December 2026 cliff: 50% of supply (team 26% + investors 24%) starts vesting at about 13.9M LIT a month for roughly three years, around 5.6% of circulating monthly",
+      "About 83% volume collapse from a $232B monthly peak to roughly $39B, and most of that peak activity was incentive-farmed and hasn't returned",
+      "Only a few thousand LIT holders, about 5,000, so demand is thin and concentrated",
+      "L2BEAT Stage 0: a 4/7 multisig can bypass the upgrade delay instantly, the sequencer is centralized, and Stork oracle signatures aren't verified on-chain",
+      "Justin Sun's roughly $152M LP withdrawal coincided with daily revenue near $100-120K, though revenue was already declining before he left",
+      "October 2025 outage: about five hours of downtime from a 79.8x volume surge and database corruption",
+      "Hyperliquid holds 70%+ of on-chain perp DEX volume, a dominant and better-capitalized incumbent"
     ],
     "related_slugs": [
       "hyperliquid",
@@ -24992,196 +25317,177 @@
     ],
     "citations": [
       {
-        "claim": "$77-101M annualized revenue, $505M TVL, $44.96B 30d perp volume",
-        "source": "DeFi Llama",
-        "url": "https://defillama.com/protocol/lighter",
-        "type": "data"
-      },
-      {
-        "claim": "$89M raised: Series A $21M (Haun/Craft), Series B $68M at $1.5B (Founders Fund/Ribbit)",
-        "source": "Lighter Blog",
-        "url": "https://lighter.xyz/blog",
-        "type": "official"
-      },
-      {
-        "claim": "Custom Plonky2 STARK + Gnark Plonk/BN254 ZK circuits, open-sourced Dec 2025",
-        "source": "elliottech GitHub",
-        "url": "https://github.com/elliottech",
-        "type": "github"
-      },
-      {
-        "claim": "Audited by zkSecurity (critical Fiat-Shamir/second-preimage bugs found+fixed) and Nethermind",
-        "source": "zkSecurity",
-        "url": "https://www.zksecurity.xyz",
-        "type": "research"
-      },
-      {
-        "claim": "L2BEAT Stage 0: 4/7 multisig can bypass 21-day delay, centralized sequencer",
-        "source": "L2BEAT",
-        "url": "https://l2beat.com/scaling/projects/lighter",
-        "type": "data"
-      },
-      {
-        "claim": "83% volume collapse from $232B/mo peak to $39-45B after TGE incentives ended",
-        "source": "CryptoRank",
-        "url": "https://cryptorank.io/news/feed/fab94-lighter-trading-volume-plummet-analysis",
-        "type": "data"
-      },
-      {
-        "claim": "Justin Sun accumulated 14.89M LIT ($39.8M, 5.32% circ), withdrew $152M from LP",
-        "source": "Arkham Intelligence",
-        "url": "https://platform.arkhamintelligence.com",
-        "type": "data"
-      },
-      {
-        "claim": "$7.18M coordinated dump from 5 interconnected wallets post-TGE",
-        "source": "Arkham Intelligence",
-        "url": "https://platform.arkhamintelligence.com",
-        "type": "data"
-      },
-      {
-        "claim": "Telegram Wallet integration for 150M+ users (25M active wallet users)",
-        "source": "The Block",
-        "url": "https://www.theblock.co/post/396228/telegram-wallet-integrates-lighter-to-roll-out-in-app-perpetual-futures-trading-to-150m-users",
-        "type": "news"
-      },
-      {
-        "claim": "Circle USDC partnership: $30-40M/year revenue, $920M USDC commitment",
-        "source": "Circle/Lighter",
-        "url": "https://lighter.xyz",
-        "type": "official"
-      },
-      {
-        "claim": "Vlad Novakovski: Harvard at 16, graduated 18, recruited by Ken Griffin to Citadel",
-        "source": "Lighter/LinkedIn",
-        "url": "https://lighter.xyz",
-        "type": "official"
-      },
-      {
-        "claim": "Vlad Tenev (Robinhood CEO) is advisor, Robinhood Ventures invested",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com",
-        "type": "news"
-      },
-      {
-        "claim": "Delaware C-corp (Elliot Technologies Inc), pursuing CFTC license",
-        "source": "Lighter/Corporate filings",
-        "url": "https://lighter.xyz",
-        "type": "filing"
-      },
-      {
-        "claim": "$17.9M cumulative LIT buybacks ($14.6M in Q1 2026), 50% of fees to buyback",
-        "source": "Token Terminal / On-chain",
-        "url": "https://tokenterminal.com/explorer/projects/lighter",
-        "type": "data"
-      },
-      {
-        "claim": "Bankless endorsement (Jun 3 2026) drove +31% price spike, 'Hyperliquid beta play'",
-        "source": "Bankless",
-        "url": "https://www.bankless.com",
-        "type": "news"
-      },
-      {
-        "claim": "October 2025 outage: 5 hours downtime, 79.8x volume surge, database corruption",
-        "source": "Lighter Post-mortem",
-        "url": "https://lighter.xyz/blog",
-        "type": "official"
-      },
-      {
-        "claim": "ZK does NOT prevent MEV/front-running per Stanford Blockchain Review #77",
-        "source": "Stanford Blockchain Review",
-        "url": "https://stanfordblockchainreview.substack.com",
-        "type": "research"
-      },
-      {
-        "claim": "#3 perp DEX behind Hyperliquid (70%+ share) and Aster",
-        "source": "DeFi Llama",
-        "url": "https://defillama.com/protocols/Derivatives",
-        "type": "data"
-      },
-      {
-        "claim": "11,095 active addresses/24h, 544 new addresses/24h, 2M daily transactions",
-        "source": "DeFi Llama",
-        "url": "https://defillama.com/protocol/lighter",
-        "type": "data"
-      },
-      {
-        "claim": "Only 4,420 LIT token holders, extreme concentration for top-100 token",
-        "source": "Etherscan",
-        "url": "https://etherscan.io/token/0xligher",
-        "type": "data"
-      },
-      {
-        "claim": "1B fixed supply, 250M circulating (25%), Team 26% + Investors 24% = 50% insider",
-        "source": "Lighter Tokenomics",
-        "url": "https://lighter.xyz/token",
-        "type": "official"
-      },
-      {
-        "claim": "1-year cliff (Dec 2026), 3-year linear vest, ~13.5M LIT/month from Dec 2026",
-        "source": "Lighter Tokenomics",
-        "url": "https://lighter.xyz/token",
-        "type": "official"
-      },
-      {
-        "claim": "ATH $4.04 (Dec 30, 2025), ATL $0.78 (Mar 31, 2026)",
+        "claim": "LIT ~$2.14, ~$534M market cap, 1B supply / 250M circulating, ~5,000 holders",
         "source": "CoinMarketCap",
         "url": "https://coinmarketcap.com/currencies/lighter/",
         "type": "data"
       },
       {
-        "claim": "Cumulative $1.67T perp volume since launch (Oct 2025)",
-        "source": "DeFi Llama",
-        "url": "https://defillama.com/protocol/lighter",
+        "claim": "Lighter TVL ~$519.5M and market data",
+        "source": "CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/lighter",
+        "type": "data"
+      },
+      {
+        "claim": "Lighter revenue run-rate (fees/revenue)",
+        "source": "DefiLlama",
+        "url": "https://api.llama.fi/summary/fees/lighter",
+        "type": "data"
+      },
+      {
+        "claim": "Lighter is the #3 on-chain perp DEX by volume",
+        "source": "21Shares",
+        "url": "https://www.21shares.com/en-eu/insights/the-perpetual-dex-wars-hyperliquid-aster-and-lighter-in-focus",
+        "type": "research"
+      },
+      {
+        "claim": "Monthly perp volume fell from ~$232B (Dec 2025) to ~$39B; peak revenue above $100M annualized",
+        "source": "MEXC News",
+        "url": "https://www.mexc.com/news/349265",
+        "type": "news"
+      },
+      {
+        "claim": "July 1, 2026: buybacks now permanently burn LIT",
+        "source": "Crypto Times",
+        "url": "https://www.cryptotimes.io/2026/07/01/lighter-updates-tokenomics-with-lit-burns-and-6-staking-target/",
+        "type": "news"
+      },
+      {
+        "claim": "July 2026 update introduced a 6% staking yield target",
+        "source": "CoinCu",
+        "url": "https://coincu.com/lighter-updates-tokenomics-future-repurchased-lit-permanently-burned/",
+        "type": "news"
+      },
+      {
+        "claim": "Token allocation: team 26%, investor 24%, airdrop 25%, growth and community reserve 25%",
+        "source": "CoinMarketCap Academy",
+        "url": "https://coinmarketcap.com/academy/article/lighter-launches-lit-token-allocates-ecosystem-airdrop",
+        "type": "research"
+      },
+      {
+        "claim": "1-year cliff, ~13.9M LIT/month vesting from ~Dec 2026",
+        "source": "Datawallet",
+        "url": "https://www.datawallet.com/crypto/lighter-explained",
+        "type": "research"
+      },
+      {
+        "claim": "$89M raised; Founders Fund and Ribbit co-led $68M at ~$1.5B; Novakovski Harvard at 16",
+        "source": "Fortune",
+        "url": "https://fortune.com/2025/11/11/lighter-fundraise-founders-fund-ribbit-capital-haun-ventures-robinhood-vladimir-novakovski/",
+        "type": "news"
+      },
+      {
+        "claim": "Novakovski ex-Citadel, ex-Quora, ex-Addepar; Vlad Tenev advisor",
+        "source": "IQ.wiki",
+        "url": "https://iq.wiki/wiki/vlad-novakovski",
+        "type": "research"
+      },
+      {
+        "claim": "L2BEAT Stage 0: 4/7 multisig upgrade bypass, centralized sequencer, unverified Stork oracle",
+        "source": "L2BEAT",
+        "url": "https://l2beat.com/scaling/projects/lighter",
+        "type": "research"
+      },
+      {
+        "claim": "Custom ZK rollup using Plonky2 STARK and Gnark Plonk circuits",
+        "source": "L2BEAT ZK Catalog",
+        "url": "https://l2beat.com/zk-catalog/lighterprover",
+        "type": "research"
+      },
+      {
+        "claim": "zkSecurity audit of Lighter zkLighter circuits (Fiat-Shamir, second-preimage)",
+        "source": "zkSecurity",
+        "url": "https://blog.zksecurity.xyz/2024-lighter-zklighter-report.pdf",
+        "type": "research"
+      },
+      {
+        "claim": "October 2025 outage: ~5h downtime from a 79.8x volume surge",
+        "source": "PANews",
+        "url": "https://www.panewslab.com/en/articles/95ed5301-276e-411d-84c0-b2d63c7121bc",
+        "type": "news"
+      },
+      {
+        "claim": "Justin Sun accumulated 14.89M LIT (~5.32%) then withdrew ~$152M from LPs",
+        "source": "crypto.news",
+        "url": "https://crypto.news/justin-sun-buys-lit-5-percent-circulating-supply-2026/",
+        "type": "news"
+      },
+      {
+        "claim": "Telegram Wallet integration reaching 150M+ registered users",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/wallet-in-telegram-perpetual-future-lighter-dex",
+        "type": "news"
+      },
+      {
+        "claim": "Circle named USDC the default stablecoin across Lighter's stack",
+        "source": "The Defiant",
+        "url": "https://thedefiant.io/news/defi/lighter-names-usdc-as-preferred-stablecoin-in-new-circle-partnership",
+        "type": "news"
+      },
+      {
+        "claim": "Hyperliquid's earlier, larger USDC reserve-yield-to-buyback deal (AQAv2)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2026/05/18/hyperliquid-s-usdc-deal-could-supercharge-hype-pressure-circle-coinbase-margins-analysts-say",
+        "type": "news"
+      },
+      {
+        "claim": "Aster (Astherus + APX merger) is distinct from Aevo (the Ribbon Finance pivot)",
+        "source": "Blockworks",
+        "url": "https://blockworks.co/news/ribbon-finance-governance-approves-aevo-brand-merger",
+        "type": "news"
+      },
+      {
+        "claim": "Lighter EVM rollup went live Jan 31, 2026 (Axiom / OpenVM)",
+        "source": "Coindoo",
+        "url": "https://coindoo.com/lighter-unveils-evm-rollup-to-open-trading-liquidity-to-defi/",
+        "type": "news"
+      },
+      {
+        "claim": "LIT not listed on Binance spot",
+        "source": "Binance",
+        "url": "https://www.binance.com/en/price/lighter",
         "type": "data"
       }
     ],
-    "updated_at": "2026-06-10T09:47:12Z",
+    "updated_at": "2026-07-02T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 1.51,
-    "market_cap_usd": 372501412,
-    "volume_24h_usd": 44281816,
+    "current_price_usd": 2.14,
+    "market_cap_usd": 534398146,
+    "volume_24h_usd": 153663815,
     "citation_types": {
-      "data": 10,
-      "official": 5,
-      "news": 3,
-      "research": 2,
-      "github": 1,
-      "filing": 1
+      "data": 4,
+      "research": 7,
+      "news": 11
     },
     "valuation_gap_score": 65,
     "obscurity_score": 55,
     "on_chain": {
-      "tvl": "$505M",
-      "tvl_change_30d": "-64% from $1.4B peak (TGE), recovering with Telegram",
-      "daily_active_addresses": "11,095",
-      "daa_change_30d": "+35% (Telegram integration recovery)",
-      "daily_transactions": "~2M",
-      "tx_change_30d": "Recovering from post-TGE lows",
-      "fees_30d": "$6.5-8.4M (annualizing to $77-101M)",
-      "revenue_30d": "$6.5-8.4M (50% to buyback)",
-      "token_velocity": "Low, 4,420 holders, large LP lockups",
-      "holder_count": "4,420",
-      "top_10_holders_pct": "Very high (Justin Sun alone 5.32% of circ)",
-      "whale_accumulation": "Justin Sun 14.89M LIT ($39.8M), but withdrew LP; anonymous whale buying at $2.52-$2.96 (underwater)",
+      "tvl": "$519.5M",
+      "tvl_change_30d": "Recovered from post-TGE lows, still well below the $1.4B TGE peak",
+      "fees_30d": "~$2.2-2.5M/mo, annualizing near $26-30M, down from a farming-peak run-rate above $100M",
+      "revenue_30d": "~$2.2-2.5M/mo, now funding buyback-and-burn",
+      "holder_count": "~5,000 (CoinMarketCap)",
+      "top_10_holders_pct": "Very high; Justin Sun alone about 5.32% of circulating",
+      "whale_accumulation": "Justin Sun accumulated 14.89M LIT (~5.32%) then withdrew about $152M from LPs; token up ~15% on the day of this update",
+      "token_velocity": "Low; a few thousand holders and large LP lockups",
       "sources": [
         {
-          "metric": "TVL/Volume/Revenue",
-          "source": "DeFi Llama",
-          "url": "https://defillama.com/protocol/lighter",
-          "date": "2026-06-10"
+          "metric": "Price / supply / holders",
+          "source": "CoinMarketCap",
+          "url": "https://coinmarketcap.com/currencies/lighter/",
+          "date": "2026-07-02"
         },
         {
-          "metric": "Active addresses",
-          "source": "DeFi Llama",
-          "url": "https://defillama.com/protocol/lighter",
-          "date": "2026-06-10"
+          "metric": "TVL",
+          "source": "CoinGecko",
+          "url": "https://www.coingecko.com/en/coins/lighter",
+          "date": "2026-07-02"
         },
         {
-          "metric": "Whale tracking",
-          "source": "Arkham Intelligence",
-          "url": "https://platform.arkhamintelligence.com",
-          "date": "2026-06-10"
+          "metric": "Revenue run-rate",
+          "source": "DefiLlama",
+          "url": "https://api.llama.fi/summary/fees/lighter",
+          "date": "2026-07-02"
         }
       ]
     },
@@ -25227,108 +25533,103 @@
         {
           "name": "Vladimir 'Vlad' Novakovski",
           "role": "Founder & CEO",
-          "background": "Entered Harvard at 16, graduated 18. Recruited by Ken Griffin to Citadel. Ex-Quora engineer, ex-Addepar. Co-founded Lunchclub (AI networking, pivoted to Lighter)",
-          "twitter": "@ABlockOfCheese",
-          "notable": "Youngest Harvard admit in his year. Built Lighter's ZK architecture from scratch. Raised $89M from elite VCs"
+          "background": "Entered Harvard at 16. Recruited by Ken Griffin to Citadel. Ex-Quora engineer, ex-Addepar. Co-founded Lunchclub before pivoting to Lighter.",
+          "twitter": "@vnovakovski",
+          "notable": "Built Lighter's ZK architecture and raised about $89M from Founders Fund, Ribbit, Haun, Robinhood Ventures and Dragonfly."
         }
       ],
       "team_size": "15-19 employees",
       "anon_team": false,
-      "team_track_record": "Vlad's pedigree is elite (Citadel/Harvard) but Lighter is his first crypto project. October 2025 outage (5h) and 83% volume collapse post-TGE are execution concerns, though the ZK tech itself is genuine innovation",
+      "team_track_record": "Novakovski's pedigree is strong (Citadel, Harvard) but Lighter is his first crypto project. The October 2025 outage and the 83% post-TGE volume collapse are execution concerns, though the ZK engineering itself is real.",
       "advisors": [
         "Vlad Tenev (Robinhood CEO)",
-        "Robinhood Ventures (investor)",
-        "Coinbase Ventures (endorsement)"
+        "Robinhood Ventures (investor)"
       ]
     },
     "tokenomics": {
       "total_supply": "1,000,000,000 (fixed)",
       "circulating_supply": "250,000,000 (25%)",
       "circulating_pct": "25%",
-      "inflation_rate": "None, fixed supply, no inflation mechanism beyond vesting unlocks",
-      "burn_mechanism": "50% of protocol fees used for open-market LIT buybacks. $17.9M cumulative ($14.6M in Q1 2026)",
-      "staking_yield": "None for LIT token directly",
-      "fdv": "$1.5B at current price",
+      "inflation_rate": "None beyond scheduled vesting; fixed 1B supply",
+      "burn_mechanism": "As of July 1, 2026, protocol-revenue buybacks permanently burn LIT, about 15.5M bought back, roughly 6.3% of circulating. Before that, buyback-only with no burn.",
+      "staking_yield": "A 6% staking yield target introduced in the July 1, 2026 update, previously none.",
+      "fdv": "$2.14B at current price (1B total supply)",
       "mcap_to_fdv_ratio": "0.25 (25% circulating)",
-      "next_unlock_date": "Dec 30, 2026 (1-year cliff)",
-      "next_unlock_amount": "500M tokens (50% of supply) begin vesting, ~13.5M LIT/month",
-      "treasury_size": "$89M raised + ongoing revenue ($77-101M annualized)",
-      "treasury_runway": "Strong, revenue + Circle USDC deal ($30-40M/year) sustain operations"
+      "next_unlock_date": "Dec 2026 (1-year cliff begins)",
+      "next_unlock_amount": "50% of supply (team 26% + investors 24%) starts vesting at about 13.9M LIT/month (team ~7.2M, VC ~6.7M)",
+      "treasury_size": "$89M raised plus ongoing revenue (~$26-30M annualized)",
+      "treasury_runway": "Well funded from the raise and protocol revenue"
     },
     "competitive": {
       "competitors": [
         {
           "name": "Hyperliquid",
           "ticker": "HYPE",
-          "mcap": "~$18.6B",
-          "comparison": "Dominant #1 with 70%+ share. Closed-source but massive revenue ($800M-$1.3B). Lighter positions as 'ZK alternative' but fraction of volume"
+          "mcap": "~$15.8B",
+          "comparison": "The number one perp DEX with 70%+ of on-chain volume and about $887M TTM revenue. Lighter runs a fraction of its volume."
         },
         {
-          "name": "Aster (formerly Aevo)",
+          "name": "Aster",
           "ticker": "ASTER",
           "mcap": "~$150M",
-          "comparison": "#2 perp DEX. Ribbon Finance pivot. Similar incentive-driven volume concerns"
+          "comparison": "Formed from the Astherus and APX Finance merger, YZi Labs backed, TGE September 2025. A separate protocol from Aevo, which is the actual Ribbon Finance pivot."
         },
         {
           "name": "dYdX",
           "ticker": "DYDX",
           "mcap": "~$200M",
-          "comparison": "Former #1, collapsed -97% from ATH. Cosmos migration failed. Cautionary tale"
+          "comparison": "Down about 96% from its ATH on competition and unlocks. The dYdX Chain migration shipped; only the Ethereum bridge was later closed."
         },
         {
           "name": "Paradex",
-          "ticker": "N/A",
-          "mcap": "N/A (pre-token)",
-          "comparison": "ZK competitor on StarkNet. Much smaller but similar tech narrative"
+          "ticker": "DIME",
+          "mcap": "post-token",
+          "comparison": "ZK perp DEX on a Starknet appchain. Its DIME token launched March 2026, so it's no longer pre-token."
         }
       ],
-      "moat": "Custom ZK rollup with circuit-level price-time priority (only DEX with this). App-specific optimization. But Stage 0 centralization undermines trust claims",
-      "market_size": "On-chain perp DEX market: ~$100B+/month. Hyperliquid dominates at 70%+",
-      "current_penetration": "#3 with ~$45B/month (significant but distant from #1)"
+      "moat": "A custom ZK rollup with circuit-level price-time priority, plus app-specific tuning. But Stage 0 centralization still undercuts the trustless claims.",
+      "market_size": "On-chain perp DEX volume runs about $100B+/month, and Hyperliquid takes 70%+ of it",
+      "current_penetration": "Number three, at roughly $39B/month, well behind number one"
     },
-    "fdv": "$1.5B",
+    "fdv": "$2.14B",
     "circulating_pct": "25%",
-    "tvl": "$505M",
-    "fees_30d": "$6.5-8.4M",
-    "holders": "4,420",
+    "tvl": "$519.5M",
+    "fees_30d": "~$2.2-2.5M/mo",
+    "holders": "~5,000",
     "github_stars": "Open-sourced Dec 2025 (elliottech)",
     "github_contributors": "15-19 team members",
     "last_github_commit": "Active (Lighter EVM in development)",
     "google_trends_interest": "Moderate, Bankless spike Jun 3 (+31%)",
     "free_access": true,
-    "verdict": "WATCH. Lighter has genuine ZK technology differentiation (custom Plonky2 STARK proofs, circuit-level enforcement, audited by zkSecurity) and an elite investor lineup ($89M from Founders Fund, Ribbit Capital, Robinhood). The P/S ratio of 3.7-4.9x on $77-101M annualized revenue is objectively cheap for a top-3 perp DEX.\n\nBut the red flags dominate the near-term picture: 83% volume collapse reveals most TGE activity was mercenary farming, only 4,420 holders suggests razor-thin organic demand, Justin Sun's $152M LP withdrawal cratered daily revenue from $1.5M to $100-120K, and L2BEAT Stage 0 means the team can instantly upgrade contracts via 4/7 multisig, undermining the 'trustless ZK' narrative.\n\nThe Dec 2026 cliff is the existential event: 500M tokens (50% of supply) begin opening for team (26%) and investors (24%). At ~13.5M LIT/month, this represents 5.4% of circulating supply entering the market every month for 3 years. Current buyback volume ($17.9M cumulative) cannot absorb this pressure without massive volume recovery.\n\nThe Telegram integration (150M users) and CFTC license pursuit are high-optionality catalysts, but neither is guaranteed to convert. Position sizing should reflect the binary nature of outcomes: if Lighter EVM + Telegram deliver, the P/S re-rates significantly upward; if the Dec cliff hits without volume recovery, this is a -50-70% drawdown candidate.",
+    "verdict": "WATCH, and the math has changed since spring. The old bull anchor, a cheap 4x sales multiple, is gone. Revenue fell roughly 70% to a $26-30M run-rate as farming ended, and a 15% single-day rally to a $534M cap pushed the multiple to about 18-20x. What replaces it is a real value-accrual upgrade, the July 1, 2026 buyback-and-burn plus a 6% staking target. The Circle deal helps on credibility by making USDC the default stablecoin, but it's an integration, not the reserve-yield revenue share some coverage implied, and Hyperliquid already did the bigger version of that.\n\nThe near-term risks are heavy and unchanged. A few thousand holders, Stage 0 centralization, and daily revenue down near $100-120K. The defining event is still the December 2026 cliff, when 50% of supply starts vesting at about 13.9M LIT a month, roughly 5.6% of circulating. The thesis now reduces to one race. Can the burn plus real volume recovery outrun that supply bleed. Buy the technology and the new token sink only if you also believe volume comes back. Otherwise the rich multiple and the cliff point the other way. Outcomes here are binary, so size accordingly.",
     "red_flags": [
-      "Dec 2026 cliff: 500M tokens (50% supply) open for team+investors, ~13.5M LIT/month for 3 years",
-      "83% volume collapse from $232B/mo peak to $39-45B, most activity was incentive-farmed",
-      "Only 4,420 LIT holders, extreme concentration, razor-thin organic demand",
-      "L2BEAT Stage 0: 4/7 multisig instant upgrade bypass, centralized sequencer, unverified oracle",
-      "Justin Sun $152M LP withdrawal cratered daily revenue from $1.5M to $100-120K",
-      "$7.18M coordinated insider dump from 5 interconnected wallets post-TGE",
-      "Oct 2025 outage: 5h downtime from 79.8x volume surge, database corruption",
-      "ZK does NOT prevent MEV/front-running (Stanford Blockchain Review #77)"
+      "Valuation re-rated to about 18-20x sales: revenue fell ~70% to a $26-30M run-rate while price rallied to a $534M cap",
+      "December 2026 cliff: 50% of supply (team + investors) starts vesting at about 13.9M LIT a month, roughly 5.6% of circulating for about three years",
+      "About 83% volume collapse from a $232B monthly peak to roughly $39B, and most of it was incentive-farmed",
+      "Only a few thousand LIT holders, about 5,000, thin and concentrated demand",
+      "L2BEAT Stage 0: 4/7 multisig instant-upgrade bypass, centralized sequencer, unverified Stork oracle signatures",
+      "Justin Sun's ~$152M LP withdrawal coincided with daily revenue near $100-120K, though revenue was already sliding",
+      "The new burn has to outrun the December supply bleed to be net positive for holders"
     ],
     "conviction_signals": [
-      "P/S 3.7-4.9x on $77-101M annualized revenue, objectively cheap for top-3 perp DEX",
-      "Elite VC backing: Founders Fund, Ribbit Capital, Haun, Robinhood, Dragonfly ($89M raised)",
-      "Genuine ZK innovation: custom Plonky2 STARK, circuit-level price-time priority, open-sourced",
-      "Vlad Novakovski pedigree: Harvard at 16, ex-Citadel, recruited by Ken Griffin",
-      "Telegram Wallet integration: 150M users, 25M active, massive distribution if it converts",
-      "CFTC license pursuit, would be first regulated on-chain perp exchange globally",
-      "50% of fees to buyback: $17.9M cumulative, structural buy pressure",
-      "Circle USDC partnership: $30-40M/year + $920M USDC commitment"
+      "Real ZK engineering: a custom Plonky2 STARK design with circuit-level price-time priority, open-sourced and audited by zkSecurity",
+      "July 1, 2026 tokenomics upgrade adds a genuine token sink, buyback-and-burn plus a 6% staking yield target",
+      "About 15.5M LIT, roughly 6.3% of circulating, already bought back and now converting to permanent burns",
+      "Strong cap table: Founders Fund and Ribbit co-led a $68M round at about $1.5B, with Haun, Robinhood Ventures and Dragonfly, $89M raised in total",
+      "Founder pedigree: Vladimir Novakovski, Harvard at 16, ex-Citadel, with Robinhood CEO Vlad Tenev as an advisor",
+      "Circle named USDC the default stablecoin across Lighter's stack, a credibility and distribution signal",
+      "Telegram Wallet distribution reaching 150M+ registered users if trader conversion actually happens"
     ],
     "edge_data": [
-      "Past week (Jun 2026): about $585K revenue, roughly $556K (~95%) funding open-market LIT buybacks",
-      "Dec 2026 cliff is 6 months away, position before market prices in 500M token overhang, or wait for post-cliff compression",
-      "Bankless 'Hyperliquid beta play' thesis: if HYPE re-rates, LIT follows at higher beta",
-      "Revenue-to-mcap ratio ($77-101M / $375M) is 5-7x better than HYPE's ($800M-1.3B / $18.6B)",
-      "Telegram has 800M+ monthly users but only 150M wallet registrations, conversion rate is the key unknown",
-      "Only 4,420 holders means any institutional accumulation moves the price significantly",
-      "Vlad Tenev (Robinhood CEO) as advisor suggests potential Robinhood listing catalyst"
+      "The rally hides a valuation trap. Revenue fell about 70% as farming ended while price rose, so the sales multiple went from roughly 4x to 18-20x. LIT got more expensive as the business got smaller.",
+      "The Circle deal is a stablecoin integration, not the reserve-yield revenue share some outlets claimed. That USDC-yield-to-buyback model was done first, and at a bigger scale, by Hyperliquid, so Lighter isn't first or unique here.",
+      "The December cliff is a monthly bleed, not a one-day dump. About 13.9M LIT a month, roughly 5.6% of circulating, for three years. The real question is whether the new burn can absorb that pace.",
+      "Recent weekly revenue is about $585K, near $30M annualized. That's the number the 18-20x multiple has to be judged against, not the old farming-peak figure above $100M.",
+      "With only a few thousand holders, price is reflexive. Modest real inflows, or the 15% up day, move it hard in both directions."
     ],
     "thesis_changers": {
-      "bull_breaks_if": "Lighter EVM launches successfully Q2-Q3, Telegram converts >1M active traders, or CFTC grants license, any would 3-5x re-rate the P/S multiple",
-      "bear_breaks_if": "Dec 2026 cliff triggers sustained insider selling, volume fails to recover above $100B/mo, or a security exploit hits the Stage 0 contracts, any could -50-70% from here"
+      "bull_breaks_if": "Volume stays near the $39B monthly post-farming base and revenue holds at $26-30M, leaving LIT stranded near 18-20x just as the December cliff starts adding about 5.6% of supply a month.",
+      "bear_breaks_if": "The live EVM rollup and Telegram convert into durable organic volume that lifts revenue, while the July buyback-and-burn plus 6% staking sink absorbs the cliff supply, turning LIT into a real cash-flow claim."
     }
   }
 ]
