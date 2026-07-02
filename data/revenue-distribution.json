@@ -12,7 +12,8 @@
       "status": "verified",
       "claim": "Post claimed 100%, 18.3x",
       "note": "One of the strongest value-accrual designs in crypto. Token Terminal shows about 16.7x, so the low multiple is genuinely not misleading here.",
-      "source": "https://crypto.news/why-hype-is-different-inside-hyperliquids-buyback/"
+      "source": "https://crypto.news/why-hype-is-different-inside-hyperliquids-buyback/",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "AERO",
@@ -25,7 +26,8 @@
       "status": "verified",
       "claim": "Post claimed 100%, 7.9x",
       "note": "The 7.9x reflects a recently depressed 30-day run-rate. On trailing-year revenue (~$129M) it is closer to 3.5x.",
-      "source": "https://defillama.com/protocol/aerodrome"
+      "source": "https://defillama.com/protocol/aerodrome",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "UNI",
@@ -38,7 +40,8 @@
       "status": "verified",
       "claim": "Post claimed 99.7%, 30x",
       "note": "The 99.7% is fair on a revenue basis, but the revenue is a thin 17% slice of swap fees; the rest goes to LPs. The multiple is sensitive to whether you use cumulative or run-rate revenue.",
-      "source": "https://cryptobriefing.com/uniswap-23m-revenue-fee-switch/"
+      "source": "https://cryptobriefing.com/uniswap-23m-revenue-fee-switch/",
+      "equity_structure": "dual_token_equity"
     },
     {
       "ticker": "LIT",
@@ -51,7 +54,8 @@
       "status": "verified",
       "claim": "Post claimed 96.6%, 11.8x",
       "note": "Recent run-rate passthrough is ~97%, but the full year is nearer 41% since buybacks ramped after TGE, and the burn is brand new with the first burn still pending.",
-      "source": "https://defillama.com/protocol/lighter"
+      "source": "https://defillama.com/protocol/lighter",
+      "equity_structure": "dual_token_equity"
     },
     {
       "ticker": "RAY",
@@ -64,7 +68,8 @@
       "status": "verified",
       "claim": "Post claimed 80.5%, 19.1x",
       "note": "The 80.5% is the buyback share of protocol revenue, not of total fees. About $196M cumulative buybacks, ~26% of supply.",
-      "source": "https://docs.raydium.io/raydium/protocol/the-ray-token/ray-buybacks"
+      "source": "https://docs.raydium.io/raydium/protocol/the-ray-token/ray-buybacks",
+      "equity_structure": "unclear"
     },
     {
       "ticker": "CAKE",
@@ -77,7 +82,8 @@
       "status": "verified",
       "claim": "Post claimed 65.1%, 10.2x",
       "note": "DefiLlama puts the buyback share at 65.0%, matching the claim. On trailing-year revenue the multiple is nearer 4.4x.",
-      "source": "https://defillama.com/protocol/pancakeswap"
+      "source": "https://defillama.com/protocol/pancakeswap",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "JUP",
@@ -90,7 +96,8 @@
       "status": "verified",
       "claim": "Post claimed 50%, 12.5x",
       "note": "Over 113M JUP accumulated in the Litterbox. A governance proposal to lift the buyback to 70% is under debate.",
-      "source": "https://cryptoslate.com/jupiter-to-buyback-jup-tokens-with-50-of-fees-starting-next-week/"
+      "source": "https://cryptoslate.com/jupiter-to-buyback-jup-tokens-with-50-of-fees-starting-next-week/",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "PUMP",
@@ -103,7 +110,8 @@
       "status": "verified",
       "claim": "Post claimed 45.8%, 1.4x",
       "note": "A rare case where a very low multiple is genuinely backed by revenue reaching the token. Over $218M bought back, about 36% of supply burned.",
-      "source": "https://www.coindesk.com/markets/2026/04/29/pump-fun-burns-36-of-pump-supply-in-usd370-million-wipe-locks-50-revenue-into-ongoing-buybacks"
+      "source": "https://www.coindesk.com/markets/2026/04/29/pump-fun-burns-36-of-pump-supply-in-usd370-million-wipe-locks-50-revenue-into-ongoing-buybacks",
+      "equity_structure": "dual_token_equity"
     },
     {
       "ticker": "AAVE",
@@ -116,7 +124,8 @@
       "status": "corrected",
       "claim": "Post filed AAVE under non-continuous, 13.7%, 20x",
       "note": "The share reaching the token is low, near 14%, but the mechanism is now continuous and automatic, so the post's non-continuous label is out of date.",
-      "source": "https://thedefiant.io/news/defi/aave-confirms-aavenomics-3-0-live-buybacks-dao-spending-cut"
+      "source": "https://thedefiant.io/news/defi/aave-confirms-aavenomics-3-0-live-buybacks-dao-spending-cut",
+      "equity_structure": "dual_token_equity"
     },
     {
       "ticker": "SKY",
@@ -129,7 +138,8 @@
       "status": "verified",
       "claim": "Post claimed 8.8%, 8.1x",
       "note": "Honest framing. The 8.1x looks cheap, but with under 9% reaching the token, most of the revenue never touches SKY.",
-      "source": "https://defillama.com/protocol/sky"
+      "source": "https://defillama.com/protocol/sky",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "PENDLE",
@@ -142,7 +152,8 @@
       "status": "verified",
       "claim": "Not in the post (user holding)",
       "note": "A genuine high-passthrough case, so the multiple is not misleadingly low. Passive holders capture less than sPENDLE stakers, and revenue has been softening.",
-      "source": "https://docs.pendle.finance/pendle-v2/ProtocolMechanics/Mechanisms/sPENDLE"
+      "source": "https://docs.pendle.finance/pendle-v2/ProtocolMechanics/Mechanisms/sPENDLE",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "LINK",
@@ -155,7 +166,8 @@
       "status": "verified",
       "claim": "Not in the post (user holding)",
       "note": "Real revenue capture, but the multiple is the opposite of cheap. DefiLlama shows about 100x price-to-onchain-revenue, so the token is priced well ahead of the cash flow it captures.",
-      "source": "https://defillama.com/protocol/chainlink"
+      "source": "https://defillama.com/protocol/chainlink",
+      "equity_structure": "dual_token_equity"
     },
     {
       "ticker": "ETHFI",
@@ -168,7 +180,8 @@
       "status": "corrected",
       "claim": "Post said withdrawal-revenue buybacks paused, 9.7x",
       "note": "The paused premise is false. The multiple checks out at roughly 9.4 to 10x.",
-      "source": "https://etherfi.gitbook.io/gov/ethfi-buyback-program"
+      "source": "https://etherfi.gitbook.io/gov/ethfi-buyback-program",
+      "equity_structure": "dual_token_equity"
     },
     {
       "ticker": "MET",
@@ -181,7 +194,8 @@
       "status": "verified",
       "claim": "Post claimed discretionary buybacks active, 3.6x",
       "note": "Active for now, but discretionary and revenue is softening, so the pace may not hold. The 2.3% per quarter roughly offsets tokens that vest.",
-      "source": "https://cryptobriefing.com/met-token-buyback-value-growth/"
+      "source": "https://cryptobriefing.com/met-token-buyback-value-growth/",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "LDO",
@@ -194,7 +208,8 @@
       "status": "corrected",
       "claim": "Post claimed 90.3%, 8.3x",
       "note": "The 90.3% is fabricated. At most about 10% of DAO revenue touches the token, and only under conditions. On 2025 DAO revenue the multiple is nearer 5x than 8.3x.",
-      "source": "https://research.lido.fi/t/liquid-buybacks-nest-execution-with-ldo-wsteth-liquidity/10894"
+      "source": "https://research.lido.fi/t/liquid-buybacks-nest-execution-with-ldo-wsteth-liquidity/10894",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "COW",
@@ -207,7 +222,8 @@
       "status": "corrected",
       "claim": "Not in the post (user holding)",
       "note": "The buyback is real but roughly neutralizes emissions, so net value reaching holders is near zero today. The 4.7x on market cap looks cheap only if you ignore that.",
-      "source": "https://forum.cow.fi/t/cow-token-buyback-an-update-on-1-year-of-execution/3168"
+      "source": "https://forum.cow.fi/t/cow-token-buyback-an-update-on-1-year-of-execution/3168",
+      "equity_structure": "single_token"
     },
     {
       "ticker": "WLFI",
@@ -220,7 +236,8 @@
       "status": "corrected",
       "claim": "Post said no tracked mechanism, 13.7x",
       "note": "A mechanism does exist, so the no-mechanism claim is wrong, but it only routes POL fees. Grayscale puts the multiple nearer 17x than 13.7x.",
-      "source": "https://cointelegraph.com/news/wlfi-buyback-burn-41-percent-price-drop"
+      "source": "https://cointelegraph.com/news/wlfi-buyback-burn-41-percent-price-drop",
+      "equity_structure": "dual_token_equity"
     },
     {
       "ticker": "CARDS",
@@ -233,7 +250,22 @@
       "status": "corrected",
       "claim": "Post said CARDS 0%, 0.4x",
       "note": "CARDS here is Collector Crypt, not Cardstarter. Both post numbers are off. The 0.4x uses inflated gross revenue; on net revenue the FDV multiple is about 7x, and a small buyback does exist.",
-      "source": "https://www.htx.com/news/cards-brutal-truth-of-535m-fdv-only-43m-net-revenue-profit-m-NAJ9rmS2/"
+      "source": "https://www.htx.com/news/cards-brutal-truth-of-535m-fdv-only-43m-net-revenue-profit-m-NAJ9rmS2/",
+      "equity_structure": "dual_token_equity"
+    },
+    {
+      "ticker": "MORPHO",
+      "name": "Morpho",
+      "slug": "morpho",
+      "category": "non_continuous",
+      "distribution": "0%",
+      "multiple": "no revenue",
+      "mechanism": "The fee switch is off, so the protocol takes no revenue for itself. MORPHO earns nothing today, even though the markets generate about $21M a month in interest that all goes to lenders.",
+      "status": "verified",
+      "equity_structure": "single_token",
+      "claim": "Triple-checked at a reader request",
+      "note": "DefiLlama shows $0 protocol revenue and $0 holders revenue. Morpho Labs folded 100% into a nonprofit in 2025, so no equity class sits above the token, but with the fee switch off the token still captures nothing. A rare case where the structure is clean and the accrual is zero.",
+      "source": "https://defillama.com/protocol/morpho"
     }
   ]
 }

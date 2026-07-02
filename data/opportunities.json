@@ -2139,7 +2139,7 @@
     "asset_class": "digital_assets",
     "tier": 1,
     "composite_score": 78,
-    "one_liner": "Permissionless lending infrastructure with $6.4B TVL, $203M annualized fees, immutable Morpho Blue core, institutional adoption by Coinbase/Apollo/model, but ZERO revenue to MORPHO token holders.",
+    "one_liner": "Permissionless lending infrastructure with about $6.8B TVL and roughly $256M in annualized fees, all of it flowing to lenders. The fee switch is off, so MORPHO earns nothing today. No equity class sits above the token, the accrual is simply switched off.",
     "thesis": "Morpho has evolved into the foundational infrastructure layer for DeFi lending, analogous to what Uniswap is to DEXes. Morpho Blue, a 650-line immutable smart contract, enables anyone to permissionlessly create isolated lending markets with hardcoded parameters. This eliminates governance risk per market, unlike Aave where parameter changes require DAO votes.\n\nMetaMorpho vaults, the curated layer on top, allow risk managers (Gauntlet, Steakhouse, Block Analitica, RE7 Labs, Bitwise) to create managed lending strategies. Coinbase launched crypto-backed loans through Morpho, managing $1.6B+ in collateral on Base. Apollo Global Management acquired a 9% governance stake (90M tokens over 4 years). The protocol just raised $175M on June 9, 2026 from model, a16z, and Ribbit Capital at ~$2B valuation, the largest DeFi funding round ever.\n\nTVL reached $6.4B across Ethereum ($3.3B) and Base ($2.5B), making Morpho the #2 DeFi lending protocol with 21% market share. RWA deposits scaled from $1.5M to $820M+ in 2025-2026. Morpho Midnight, a fixed-rate lending protocol, launched June 8, 2026.\n\nCRITICAL STRUCTURAL ISSUE: The fee switch is built into the contract (capped at 25% of borrower interest) but has NEVER been activated. Despite $203M in annualized fees and $256M+ cumulative fees, the DAO captures ZERO revenue. Not one governance proposal to activate the fee switch has ever been submitted. Founder Paul Frambot actively opposes distribution, comparing it to a startup paying dividends during growth phase. Legal and tax work remains incomplete since February 2025.\n\nMORPHO is therefore a governance-only token with zero cash flow accrual. At $1.2B market cap ($1.9B FDV), investors are paying entirely for: (1) optionality on future fee switch activation, (2) governance influence over $6.4B in lending infrastructure, and (3) Apollo's institutional validation. The bull case requires fee switch activation that the protocol's leadership explicitly opposes.",
     "signals": {
       "working_code": 95,
@@ -2174,6 +2174,12 @@
       "compound"
     ],
     "citations": [
+      {
+        "claim": "Morpho protocol revenue and holders revenue both $0 (fee switch off) vs ~$21M/mo fees to lenders",
+        "source": "DefiLlama",
+        "url": "https://api.llama.fi/summary/fees/morpho",
+        "type": "data"
+      },
       {
         "claim": "$203M annualized fees, $0 DAO revenue. Fee switch never activated.",
         "source": "DefiLlama",
@@ -2307,23 +2313,23 @@
         "type": "data"
       }
     ],
-    "updated_at": "2026-06-10",
+    "updated_at": "2026-07-02T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 2.1,
-    "market_cap_usd": 1365623918,
+    "current_price_usd": 2.12,
+    "market_cap_usd": 1379799217,
     "volume_24h_usd": 45489217,
     "citation_types": [],
     "valuation_gap_score": 83,
     "obscurity_score": 38,
     "on_chain": {
-      "tvl": "$6.4B",
+      "tvl": "$6.8B",
       "tvl_change_30d": "-5%",
       "daily_active_addresses": "1.4M+ total users",
       "daa_change_30d": "stable",
       "daily_transactions": "200+ active markets",
       "tx_change_30d": "growing",
-      "fees_30d": "$19.76M",
-      "revenue_30d": "$0 (fee switch OFF)",
+      "fees_30d": "$21.3M ($256M annualized, all to lenders)",
+      "revenue_30d": "$0 (fee switch OFF, triple-checked on DefiLlama 2026-07-02)",
       "token_velocity": "moderate",
       "holder_count": "~20,194",
       "top_10_holders_pct": ">60%",
@@ -2332,20 +2338,14 @@
         {
           "metric": "TVL",
           "source": "DefiLlama",
-          "url": "https://defillama.com/protocol/morpho-blue",
-          "date": "2026-06-10"
-        },
-        {
-          "metric": "Fees",
-          "source": "DefiLlama",
           "url": "https://defillama.com/protocol/morpho",
-          "date": "2026-06-10"
+          "date": "2026-07-02"
         },
         {
-          "metric": "Holders",
-          "source": "Etherscan",
-          "url": "https://etherscan.io/token/0x58d97b57bb95320f9a05dc918aef65434969c2b2",
-          "date": "2026-06-10"
+          "metric": "Fees / $0 revenue",
+          "source": "DefiLlama",
+          "url": "https://api.llama.fi/summary/fees/morpho",
+          "date": "2026-07-02"
         }
       ]
     },
@@ -2483,7 +2483,7 @@
     "last_github_commit": "2026-06-09",
     "google_trends_interest": "rising (French unicorn + $175M raise)",
     "free_access": true,
-    "verdict": "HOLD, Tier-1 institutional infrastructure with elite smart money ($175M model/a16z, Apollo 9%). But ZERO revenue accrual to token holders. You're buying governance optionality over $6.4B in lending infrastructure at $2B FDV. The bull case REQUIRES fee switch activation that the founder explicitly opposes. Massive unlock pressure (~567K tokens/day) through 2028. Superior to Aave on architecture but inferior on tokenomics.",
+    "verdict": "HOLD, and know exactly what you are buying. Morpho is Tier-1 lending infrastructure with about $6.8B TVL and elite backing, but it pays the token nothing. Protocol revenue and holders revenue are both $0 because the fee switch is off. The structure is clean, Morpho Labs folded into a nonprofit and the $175M round bought tokens, not equity, so there is no senior equity class skimming value. The problem is simpler and more stubborn than that. You are buying governance optionality on a fee switch the founder has opposed turning on, plus real token vesting pressure through 2028. Superior to Aave on architecture, behind it on what the token actually earns.",
     "red_flags": [
       "Fee switch OFF since launch, $203M annualized fees, $0 to holders. No governance proposal ever submitted.",
       "Founder Paul Frambot actively opposes fee distribution, philosophical block, not just legal delay",
@@ -2502,6 +2502,8 @@
       "RWA deposits $1.5M→$820M in 12 months, fastest RWA adoption in DeFi"
     ],
     "edge_data": [
+      "Triple-checked on DefiLlama, 2026-07-02: Morpho protocol revenue and holders revenue are both $0, against about $21M a month in fees that all flow to lenders. The token earns nothing until governance flips the fee switch.",
+      "This is the clean version of the value-accrual problem. Morpho Labs folded 100% into a nonprofit in June 2025, and the June 2026 $175M round was a token purchase, not equity, so no privileged equity class sits above MORPHO. The catch is not equity dilution, it is that the fee switch has never been turned on.",
       "Fee switch capacity: 25% of borrower interest = ~$50M/yr at current volume. If activated at 10%, ~$20M → P/S 100x on mcap.",
       "$175M raise at $2B = investors pricing in fee switch activation despite founder opposition",
       "Apollo's 4-year purchase program = guaranteed buy pressure of ~1.9M tokens/month through 2030",
@@ -17031,7 +17033,7 @@
     "updated_at": "2026-04-13T00:00:00Z",
     "is_graveyard": false,
     "slug": "silencio",
-    "current_price_usd": 3.296e-05,
+    "current_price_usd": 0.00003296,
     "market_cap_usd": 854363,
     "volume_24h_usd": 61005,
     "citation_types": {
@@ -17504,7 +17506,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 2.38e-06,
+    "current_price_usd": 0.00000238,
     "market_cap_usd": 999098030,
     "volume_24h_usd": 170735630,
     "citation_types": [],
@@ -18409,7 +18411,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 4.29e-06,
+    "current_price_usd": 0.00000429,
     "market_cap_usd": 2527619842,
     "volume_24h_usd": 61276528,
     "citation_types": [],
@@ -18468,7 +18470,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 4.26e-06,
+    "current_price_usd": 0.00000426,
     "market_cap_usd": 374450756,
     "volume_24h_usd": 27960322,
     "citation_types": [],
@@ -18930,7 +18932,7 @@
     "is_graveyard": false,
     "slug": "qubic",
     "related_slugs": [],
-    "current_price_usd": 4.11733e-07,
+    "current_price_usd": 4.11733e-7,
     "market_cap_usd": 57396121,
     "volume_24h_usd": 2883658,
     "citation_types": {
@@ -22035,7 +22037,7 @@
     "citations": [],
     "updated_at": "2026-05-23",
     "is_graveyard": false,
-    "current_price_usd": 2.18e-05,
+    "current_price_usd": 0.0000218,
     "market_cap_usd": 210367361,
     "volume_24h_usd": 14424325,
     "citation_types": [],
@@ -25150,7 +25152,7 @@
         "type": "data"
       }
     ],
-    "current_price_usd": 5.995e-05,
+    "current_price_usd": 0.00005995,
     "market_cap_usd": 331363328,
     "volume_24h_usd": 12454087,
     "citation_types": {

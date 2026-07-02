@@ -14,6 +14,7 @@ interface Row {
   readonly multiple: string;
   readonly mechanism: string;
   readonly status: "verified" | "corrected" | "unverifiable";
+  readonly equity_structure: "single_token" | "dual_token_equity" | "unclear";
   readonly claim: string;
   readonly note: string;
   readonly source: string;
@@ -78,6 +79,24 @@ function statusChip(status: Row["status"]) {
   );
 }
 
+function equityChip(structure: Row["equity_structure"]) {
+  const map: Record<Row["equity_structure"], string> = {
+    single_token: "border-positive/40 bg-positive-bg text-positive",
+    dual_token_equity: "border-negative/40 bg-negative-bg text-negative",
+    unclear: "border-border bg-bg-card text-text-tertiary",
+  };
+  const label: Record<Row["equity_structure"], string> = {
+    single_token: "single token",
+    dual_token_equity: "token + equity",
+    unclear: "structure unclear",
+  };
+  return (
+    <span className={`inline-block rounded border px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest ${map[structure]}`}>
+      {label[structure]}
+    </span>
+  );
+}
+
 function TokenName({ r }: { readonly r: Row }) {
   const label = `${r.name} (${r.ticker})`;
   if (r.slug) {
@@ -122,7 +141,13 @@ export default function RevenueDistributionPage() {
       <p className="mt-3 max-w-3xl text-sm leading-relaxed text-text-tertiary">
         Distribution reaches the token through buyback, burn, or a fee-earning lock. Revenue that
         goes to a DAO treasury, to liquidity providers, or to node operators does not reach it.
-        Figures verified as of {DATA.updated_at}.
+      </p>
+      <p className="mt-3 max-w-3xl text-sm leading-relaxed text-text-tertiary">
+        There is a second axis, marked on each row. A single-token protocol has no private company
+        holding equity above the token. A token-plus-equity protocol has a company that raised
+        venture equity, so equity holders are a separate, senior claim, and the token can be diluted
+        or emitted while enterprise value flows to equity. Both axes are checked against real sources,
+        verified as of {DATA.updated_at}.
       </p>
 
       {GROUPS.map((g) => {
@@ -140,6 +165,7 @@ export default function RevenueDistributionPage() {
                       <div className="flex flex-wrap items-center gap-2">
                         <TokenName r={r} />
                         {statusChip(r.status)}
+                        {equityChip(r.equity_structure)}
                       </div>
                       <p className="mt-2 text-sm leading-relaxed text-text-secondary">{r.mechanism}</p>
                       {r.note && (
