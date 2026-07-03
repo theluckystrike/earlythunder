@@ -81,6 +81,23 @@ function buildFaq(opp: Opportunity): { question: string; answer: string }[] {
       answer: sanitizeProse(`Early Thunder's valuation gap signal puts ${opp.name} at ${valGap} out of 100, where a higher number means a wider gap between the current price and what the fundamentals suggest. The thesis and competitive sections above show the full read.`),
     });
   }
+  if (opp.value_accrual) {
+    const va = opp.value_accrual;
+    faq.push({
+      question: `Does ${opp.name} earn revenue for token holders?`,
+      answer: sanitizeProse(`About ${va.distribution} of protocol revenue reaches ${tk}, at roughly a ${va.revenue_multiple} revenue multiple. ${va.mechanism}`),
+    });
+    const eqAnswer =
+      va.equity_structure === "single_token"
+        ? `${opp.name} is a single-token structure, with no private company holding equity above the token.`
+        : va.equity_structure === "dual_token_equity"
+          ? `${opp.name} is a token-plus-equity structure. A private company raised venture equity, so equity holders are a separate, senior claim above ${tk}.`
+          : `The equity structure behind ${opp.name} is not fully clear from public sources.`;
+    faq.push({
+      question: `Does ${opp.name} have a dual token and equity structure?`,
+      answer: sanitizeProse(eqAnswer),
+    });
+  }
   return faq;
 }
 
@@ -172,6 +189,7 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
       {opportunity.team && <TeamSection data={opportunity.team} />}
       {opportunity.tokenomics && <TokenomicsSection data={opportunity.tokenomics} />}
       {opportunity.competitive && <CompetitiveSection data={opportunity.competitive} />}
+      {opportunity.value_accrual && <ValueAccrualSection data={opportunity.value_accrual} name={opportunity.name} />}
       <p className="mt-8 text-xs text-text-tertiary">
         Last updated {formatDate(opportunity.updated_at)}
       </p>
@@ -612,6 +630,65 @@ function CompetitiveSection({ data }: { readonly data: CompetitivePosition }) {
           </table>
         </div>
       )}
+    </section>
+  );
+}
+
+const EQUITY_LABEL: Record<string, string> = {
+  single_token: "Single token",
+  dual_token_equity: "Token plus equity",
+  unclear: "Structure unclear",
+};
+
+function equityTone(structure: string): string {
+  if (structure === "single_token") return "text-score-high";
+  if (structure === "dual_token_equity") return "text-score-low";
+  return "text-text-secondary";
+}
+
+function ValueAccrualSection({
+  data,
+  name,
+}: {
+  readonly data: NonNullable<Opportunity["value_accrual"]>;
+  readonly name: string;
+}) {
+  return (
+    <section className="mt-12">
+      <h2 className="text-lg font-semibold text-text-primary">Value accrual</h2>
+      <p className="mt-1 text-xs text-text-tertiary">
+        How much revenue reaches the token, and whether an equity class sits above it
+      </p>
+      <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div className="rounded-xl border border-border bg-bg-card p-4">
+          <div className="text-[10px] uppercase tracking-widest text-text-tertiary">Revenue to token</div>
+          <div className="mt-1 font-mono text-lg font-semibold text-text-primary">{data.distribution}</div>
+        </div>
+        <div className="rounded-xl border border-border bg-bg-card p-4">
+          <div className="text-[10px] uppercase tracking-widest text-text-tertiary">Revenue multiple</div>
+          <div className="mt-1 font-mono text-lg font-semibold text-text-primary">{data.revenue_multiple}</div>
+        </div>
+        <div className="rounded-xl border border-border bg-bg-card p-4">
+          <div className="text-[10px] uppercase tracking-widest text-text-tertiary">Structure</div>
+          <div className={`mt-1 font-mono text-lg font-semibold ${equityTone(data.equity_structure)}`}>
+            {EQUITY_LABEL[data.equity_structure] ?? data.equity_structure}
+          </div>
+        </div>
+      </div>
+      <p className="mt-4 text-sm leading-relaxed text-text-secondary">{data.mechanism}</p>
+      {data.note && (
+        <p className="mt-2 text-xs leading-relaxed text-text-tertiary">{data.note}</p>
+      )}
+      <div className="mt-3 flex flex-wrap gap-x-4 text-xs">
+        <Link href="/revenue-distribution" className="text-text-secondary underline hover:text-text-primary">
+          Compare {name} on the revenue distribution tracker
+        </Link>
+        {data.source && (
+          <a href={data.source} target="_blank" rel="noopener noreferrer" className="font-mono text-text-tertiary underline hover:text-text-secondary">
+            Source
+          </a>
+        )}
+      </div>
     </section>
   );
 }

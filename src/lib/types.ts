@@ -163,6 +163,16 @@ export interface Opportunity {
     readonly bull_breaks_if: string;
     readonly bear_breaks_if: string;
   } | null;
+
+  // Value accrual dimension (does protocol revenue reach the token, and is there equity above it)
+  readonly value_accrual?: {
+    readonly distribution: string;
+    readonly revenue_multiple: string;
+    readonly equity_structure: "single_token" | "dual_token_equity" | "unclear";
+    readonly mechanism: string;
+    readonly note: string;
+    readonly source: string;
+  } | null;
 }
 
 /** Blog post data model. */

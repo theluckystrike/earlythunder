@@ -852,6 +852,14 @@
     "thesis_changers": {
       "bull_breaks_if": "Closed-source code is audited/open-sourced, Binance lists HYPE spot, or HIP-3 RWA volume exceeds $500B/mo, any of these could 3-5x from here",
       "bear_breaks_if": "Major exploit hits (JELLY-scale but with fund losses), SEC enforcement action on perp DEXs, or Season 3 airdrop dumps 428M HYPE at once, any could -50-70%"
+    },
+    "value_accrual": {
+      "distribution": "~99%",
+      "revenue_multiple": "~17x",
+      "equity_structure": "single_token",
+      "mechanism": "Nearly all protocol fees route to the Assistance Fund, which continuously buys HYPE on the open market and burns it. Holder revenue is effectively the whole take.",
+      "note": "One of the strongest value-accrual designs in crypto. Token Terminal shows about 16.7x, so the low multiple is genuinely not misleading here.",
+      "source": "https://crypto.news/why-hype-is-different-inside-hyperliquids-buyback/"
     }
   },
   {
@@ -1192,7 +1200,15 @@
       "BEAR: Morpho crosses $15B TVL with institutional vault architecture, market share flip risk",
       "BEAR: Second bad debt event on V3 legacy collateral before full V4 migration",
       "BEAR: ACI successor fails to sustain GHO growth, stablecoin revenue line flatlines"
-    ]
+    ],
+    "value_accrual": {
+      "distribution": "~14%",
+      "revenue_multiple": "~20x",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "Aavenomics 3.0 went live in 2026 as an immutable, non-discretionary buyback that routes protocol and GHO revenue to AAVE. The budget was cut from about $50M to $30M a year.",
+      "note": "The share reaching the token is low, near 14%, but the mechanism is now continuous and automatic, so the post's non-continuous label is out of date.",
+      "source": "https://thedefiant.io/news/defi/aave-confirms-aavenomics-3-0-live-buybacks-dao-spending-cut"
+    }
   },
   {
     "slug": "axiom-trade",
@@ -1699,6 +1715,14 @@
     "thesis_changers": {
       "bull_breaks_if": "Fee switch revenue exceeds $100M annualized (compresses P/S to <25x), Bitwise ETF approved, or Unichain TVL sustainably crosses $500M",
       "bear_breaks_if": "Fee switch revenue stalls below $30M, major new insider selling wave, Fluid/competitor captures >30% of Uniswap's non-stablecoin volume, or governance attack exploiting 50.81% concentration"
+    },
+    "value_accrual": {
+      "distribution": "~100% of the take",
+      "revenue_multiple": "~30x+",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "The fee switch went live December 28, 2025. About 17% of swap fees become protocol revenue, and effectively all of that flows to a burn jar where UNI holders redeem tokens against the fees. Roughly 100M UNI was burned.",
+      "note": "The 99.7% is fair on a revenue basis, but the revenue is a thin 17% slice of swap fees; the rest goes to LPs. The multiple is sensitive to whether you use cumulative or run-rate revenue.",
+      "source": "https://cryptobriefing.com/uniswap-23m-revenue-fee-switch/"
     }
   },
   {
@@ -1849,7 +1873,15 @@
       "BEAR: DTCC goes white-label / LINK-free → proves protocol value doesn't accrue to token → existential for investment thesis",
       "BEAR: Treasury dumps accelerate from 19M/quarter to 30M+/quarter → price compression below $5 → retail capitulation",
       "BEAR: Pyth + RedStone + Chronicle three-front squeeze captures 50%+ TVS → Chainlink loses pricing power → revenue declines"
-    ]
+    ],
+    "value_accrual": {
+      "distribution": "revenue to reserve",
+      "revenue_multiple": "~100x",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "The Chainlink Reserve uses Payment Abstraction to convert onchain and enterprise revenue into LINK, then holds it in a strategic reserve rather than burning or paying it out.",
+      "note": "Real revenue capture, but the multiple is the opposite of cheap. DefiLlama shows about 100x price-to-onchain-revenue, so the token is priced well ahead of the cash flow it captures.",
+      "source": "https://defillama.com/protocol/chainlink"
+    }
   },
   {
     "slug": "pendle",
@@ -2049,7 +2081,15 @@
       "BEAR: Ethena failure/depegs → 50%+ TVL outflow, revenue collapse accelerates below sustainability",
       "BEAR: Team accelerates selling from 25.59M remaining, dumps full position over 12 months",
       "BEAR: Major exchange (Binance/Coinbase) builds native yield tokenization, commoditizing Pendle's moat"
-    ]
+    ],
+    "value_accrual": {
+      "distribution": "~80-100%",
+      "revenue_multiple": "~9-11x",
+      "equity_structure": "single_token",
+      "mechanism": "Around 80% of Pendle V2 fees buy back PENDLE, with up to all of the repurchased tokens paid to active sPENDLE stakers.",
+      "note": "A genuine high-passthrough case, so the multiple is not misleadingly low. Passive holders capture less than sPENDLE stakers, and revenue has been softening.",
+      "source": "https://docs.pendle.finance/pendle-v2/ProtocolMechanics/Mechanisms/sPENDLE"
+    }
   },
   {
     "name": "Celo",
@@ -2515,6 +2555,14 @@
     "thesis_changers": {
       "bull_breaks_if": "Fee switch activated, even at 10% take rate, $20M revenue at 20x multiple = $400M value add. Apollo + model could force governance vote.",
       "bear_breaks_if": "Fee switch never activates AND Aave V4 captures institutional flow, MORPHO becomes expensive governance token with declining relevance."
+    },
+    "value_accrual": {
+      "distribution": "0%",
+      "revenue_multiple": "no revenue",
+      "equity_structure": "single_token",
+      "mechanism": "The fee switch is off, so the protocol takes no revenue for itself. MORPHO earns nothing today, even though the markets generate about $21M a month in interest that all goes to lenders.",
+      "note": "DefiLlama shows $0 protocol revenue and $0 holders revenue. Morpho Labs folded 100% into a nonprofit in 2025, so no equity class sits above the token, but with the fee switch off the token still captures nothing. A rare case where the structure is clean and the accrual is zero.",
+      "source": "https://defillama.com/protocol/morpho"
     }
   },
   {
@@ -3112,6 +3160,14 @@
     "thesis_changers": {
       "bull_breaks_if": "Revenue stabilizes or grows for 2 consecutive quarters AND (buyback restarts OR fee-sharing to stakers implemented). Combined with completed vesting and 3.9x P/S, this would make JUP a compelling buy. Jupnet mainnet launch would be transformative.",
       "bear_breaks_if": "Revenue continues declining below $50M annualized, OR DFlow/Titan permanently capture >30% aggregator share, OR LIBRA investigation reveals Meow's involvement, OR Solana loses significant DeFi market share to competing L1s."
+    },
+    "value_accrual": {
+      "distribution": "50%",
+      "revenue_multiple": "12.5x",
+      "equity_structure": "single_token",
+      "mechanism": "50% of protocol revenue buys back JUP into the Litterbox trust, locked for three years. The other 50% funds the team treasury in SOL and USDC.",
+      "note": "Over 113M JUP accumulated in the Litterbox. A governance proposal to lift the buyback to 70% is under debate.",
+      "source": "https://cryptoslate.com/jupiter-to-buyback-jup-tokens-with-50-of-fees-starting-next-week/"
     }
   },
   {
@@ -3194,7 +3250,15 @@
     "free_access": true,
     "edge_data": [
       "Past week (Jun 2026): about $967K in trading fees, 100% routed to veAERO lockers"
-    ]
+    ],
+    "value_accrual": {
+      "distribution": "~100%",
+      "revenue_multiple": "7.9x",
+      "equity_structure": "single_token",
+      "mechanism": "Trading fees flow to veAERO lockers who vote for the fee pools, a direct dividend. The team keeps nothing from fees; passive holders get nothing, only lockers who vote.",
+      "note": "The 7.9x reflects a recently depressed 30-day run-rate. On trailing-year revenue (~$129M) it is closer to 3.5x.",
+      "source": "https://defillama.com/protocol/aerodrome"
+    }
   },
   {
     "slug": "commonware",
@@ -4224,7 +4288,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~80%",
+      "revenue_multiple": "19.1x",
+      "equity_structure": "unclear",
+      "mechanism": "12% of all trading fees buy back RAY. Of the revenue Raydium keeps (buyback plus a 4% treasury cut), roughly 80% goes to the buyback.",
+      "note": "The 80.5% is the buyback share of protocol revenue, not of total fees. About $196M cumulative buybacks, ~26% of supply.",
+      "source": "https://docs.raydium.io/raydium/protocol/the-ray-token/ray-buybacks"
+    }
   },
   {
     "slug": "liquity",
@@ -5541,6 +5613,14 @@
     "thesis_changers": {
       "bull_breaks_if": "The EigenLayer AVS fee market never materializes and the fee switch stalls, leaving ETHFI a governance token over custodied yield that any competitor can replicate.",
       "bear_breaks_if": "The Cash card and neobank scale to real recurring users while the fee switch turns protocol revenue into token value, making ETHFI a claim on a consumer business rather than a yield wrapper."
+    },
+    "value_accrual": {
+      "distribution": "active",
+      "revenue_multiple": "9.7x",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "Buybacks are active, not paused. 100% of eETH withdrawal fees buy ETHFI weekly and pay it to sETHFI stakers, plus a share of broader revenue.",
+      "note": "The paused premise is false. The multiple checks out at roughly 9.4 to 10x.",
+      "source": "https://etherfi.gitbook.io/gov/ethfi-buyback-program"
     }
   },
   {
@@ -6589,6 +6669,14 @@
     "thesis_changers": {
       "bull_breaks_if": "Buybacks restore Nov 2026 → $109M/yr burns → net deflationary → violent reprice at P/S 5.4x | USDS grows to $15B organically → net revenue scales to $400M+ → P/S compresses below 3x | S&P upgrades above B- → unlocks institutional capital. sUSDS becomes institutional standard",
       "bear_breaks_if": "Buybacks never fully restore. Governance prioritizes reserves permanently. SKY stays value trap | MiCA enforcement forces EU delistings → USDS supply contracts → revenue drops → surplus shrinks | Rune exits or governance attack succeeds → protocol stalls → USDS integrations unwind"
+    },
+    "value_accrual": {
+      "distribution": "8.8%",
+      "revenue_multiple": "8.1x",
+      "equity_structure": "single_token",
+      "mechanism": "A buyback plus staking rewards route about 8.8% of protocol revenue to SKY holders. DefiLlama confirms holders revenue of $1.11M against $12.66M revenue over 30 days.",
+      "note": "Honest framing. The 8.1x looks cheap, but with under 9% reaching the token, most of the revenue never touches SKY.",
+      "source": "https://defillama.com/protocol/sky"
     }
   },
   {
@@ -7417,6 +7505,14 @@
     "thesis_changers": {
       "bull_breaks_if": "The buyback stays intermittent and restaking keeps chipping at staking share, leaving LDO a perpetual claim on cash flow it never receives.",
       "bear_breaks_if": "A durable fee switch or programmatic buyback routes staking revenue to LDO while stETH cements itself as the ETF and DeFi collateral standard, finally linking token to cash flow."
+    },
+    "value_accrual": {
+      "distribution": "~10%",
+      "revenue_multiple": "~5x",
+      "equity_structure": "single_token",
+      "mechanism": "Lido's 10% staking fee splits roughly evenly between node operators and the DAO treasury. Only a conditional buyback capped at $10M a year, and only when ETH is above $3,000 and revenue above $40M, reaches LDO, and it lands in a DAO-owned LP rather than being burned.",
+      "note": "The 90.3% is fabricated. At most about 10% of DAO revenue touches the token, and only under conditions. On 2025 DAO revenue the multiple is nearer 5x than 8.3x.",
+      "source": "https://research.lido.fi/t/liquid-buybacks-nest-execution-with-ldo-wsteth-liquidity/10894"
     }
   },
   {
@@ -13741,6 +13837,14 @@
     "thesis_changers": {
       "bull_breaks_if": "Market share continues declining below 10%. Revenue stops covering emissions (currently net negative at -12M). Burn proposal fails governance vote. Another security incident erodes trust. Solver network consolidates to <5 active solvers (centralization risk).",
       "bear_breaks_if": "Burn proposal passes + buyback mandate activated (three-vector supply squeeze). Market share stabilizes above 15% on 10+ chains. Revenue grows with volume recovery to $5B+/month. Safe AI agent integration drives autonomous order flow. P/S ratio re-rates from 3.1x to 10x+ (MCap $260M+ at current revenue)."
+    },
+    "value_accrual": {
+      "distribution": "~0% net",
+      "revenue_multiple": "4.7x mcap",
+      "equity_structure": "single_token",
+      "mechanism": "A CIP-38 buyback converts fees to COW, but it is sized to offset solver emissions rather than to distribute value. DefiLlama logs zero holders revenue.",
+      "note": "The buyback is real but roughly neutralizes emissions, so net value reaching holders is near zero today. The 4.7x on market cap looks cheap only if you ignore that.",
+      "source": "https://forum.cow.fi/t/cow-token-buyback-an-update-on-1-year-of-execution/3168"
     }
   },
   {
@@ -25535,6 +25639,14 @@
     "thesis_changers": {
       "bull_breaks_if": "Volume stays near the $39B monthly post-farming base and revenue holds at $26-30M, leaving LIT stranded near 18-20x just as the December cliff starts adding about 5.6% of supply a month.",
       "bear_breaks_if": "The live EVM rollup and Telegram convert into durable organic volume that lifts revenue, while the July buyback-and-burn plus 6% staking sink absorbs the cliff supply, turning LIT into a real cash-flow claim."
+    },
+    "value_accrual": {
+      "distribution": "~96.6%",
+      "revenue_multiple": "11.8x",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "Essentially all protocol revenue funds open-market LIT buybacks, with a burn leg added July 1, 2026.",
+      "note": "Recent run-rate passthrough is ~97%, but the full year is nearer 41% since buybacks ramped after TGE, and the burn is brand new with the first burn still pending.",
+      "source": "https://defillama.com/protocol/lighter"
     }
   }
 ]
