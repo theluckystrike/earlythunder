@@ -197,6 +197,13 @@ export default function RevenueDistributionPage() {
       })}
 
       <p className="mt-12 text-xs leading-relaxed text-text-tertiary">
+        Method. Revenue multiples are price to trailing 30-day protocol revenue, annualized, from
+        DefiLlama, cross-checked on {DATA.updated_at}. These are run-rate figures, so they move with
+        volume and can differ from a trailing-year multiple. Distribution share is holders revenue
+        over protocol revenue. For L1s, the value-to-token mechanism is fee burn versus issuance, not
+        a buyback.
+      </p>
+      <p className="mt-3 text-xs leading-relaxed text-text-tertiary">
         Distribution share and multiples move with price and governance. A &quot;corrected&quot; tag
         means the popular figure did not match the sourced reality. Research, not investment
         advice. {" "}

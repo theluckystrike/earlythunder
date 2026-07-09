@@ -863,7 +863,7 @@
     },
     "value_accrual": {
       "distribution": "~99%",
-      "revenue_multiple": "~17x",
+      "revenue_multiple": "~26x",
       "equity_structure": "single_token",
       "mechanism": "Nearly all protocol fees route to the Assistance Fund, which continuously buys HYPE on the open market and burns it. Holder revenue is effectively the whole take.",
       "note": "One of the strongest value-accrual designs in crypto. Token Terminal shows about 16.7x, so the low multiple is genuinely not misleading here.",
@@ -1219,7 +1219,7 @@
     ],
     "value_accrual": {
       "distribution": "~14%",
-      "revenue_multiple": "~20x",
+      "revenue_multiple": "~28x",
       "equity_structure": "dual_token_equity",
       "mechanism": "Aavenomics 3.0 went live in 2026 as an immutable, non-discretionary buyback that routes protocol and GHO revenue to AAVE. The budget was cut from about $50M to $30M a year.",
       "note": "The share reaching the token is low, near 14%, but the mechanism is now continuous and automatic, so the post's non-continuous label is out of date.",
@@ -1734,7 +1734,7 @@
     },
     "value_accrual": {
       "distribution": "~100% of the take",
-      "revenue_multiple": "~30x+",
+      "revenue_multiple": "~42x",
       "equity_structure": "dual_token_equity",
       "mechanism": "The fee switch went live December 28, 2025. About 17% of swap fees become protocol revenue, and effectively all of that flows to a burn jar where UNI holders redeem tokens against the fees. Roughly 100M UNI was burned.",
       "note": "The 99.7% is fair on a revenue basis, but the revenue is a thin 17% slice of swap fees; the rest goes to LPs. The multiple is sensitive to whether you use cumulative or run-rate revenue.",
@@ -2100,7 +2100,7 @@
     ],
     "value_accrual": {
       "distribution": "~80-100%",
-      "revenue_multiple": "~9-11x",
+      "revenue_multiple": "~27x",
       "equity_structure": "single_token",
       "mechanism": "Around 80% of Pendle V2 fees buy back PENDLE, with up to all of the repurchased tokens paid to active sPENDLE stakers.",
       "note": "A genuine high-passthrough case, so the multiple is not misleadingly low. Passive holders capture less than sPENDLE stakers, and revenue has been softening.",
@@ -3179,7 +3179,7 @@
     },
     "value_accrual": {
       "distribution": "50%",
-      "revenue_multiple": "12.5x",
+      "revenue_multiple": "~11x",
       "equity_structure": "single_token",
       "mechanism": "50% of protocol revenue buys back JUP into the Litterbox trust, locked for three years. The other 50% funds the team treasury in SOL and USDC.",
       "note": "Over 113M JUP accumulated in the Litterbox. A governance proposal to lift the buyback to 70% is under debate.",
@@ -3269,10 +3269,10 @@
     ],
     "value_accrual": {
       "distribution": "~100%",
-      "revenue_multiple": "7.9x",
+      "revenue_multiple": "~43x",
       "equity_structure": "single_token",
       "mechanism": "Trading fees flow to veAERO lockers who vote for the fee pools, a direct dividend. The team keeps nothing from fees; passive holders get nothing, only lockers who vote.",
-      "note": "The 7.9x reflects a recently depressed 30-day run-rate. On trailing-year revenue (~$129M) it is closer to 3.5x.",
+      "note": "The earlier 7.9x was stale. On trailing 30-day revenue Aerodrome is nearer 43x, since fee revenue cooled while the veAERO dividend still takes essentially all of it.",
       "source": "https://defillama.com/protocol/aerodrome"
     }
   },
@@ -4307,7 +4307,7 @@
     "free_access": true,
     "value_accrual": {
       "distribution": "~80%",
-      "revenue_multiple": "19.1x",
+      "revenue_multiple": "~21x",
       "equity_structure": "unclear",
       "mechanism": "12% of all trading fees buy back RAY. Of the revenue Raydium keeps (buyback plus a 4% treasury cut), roughly 80% goes to the buyback.",
       "note": "The 80.5% is the buyback share of protocol revenue, not of total fees. About $196M cumulative buybacks, ~26% of supply.",
@@ -4510,7 +4510,7 @@
     },
     "value_accrual": {
       "distribution": "small direct",
-      "revenue_multiple": "~155x on direct",
+      "revenue_multiple": "~30x",
       "equity_structure": "single_token",
       "mechanism": "Liquity pays 100% of fees to users, but in V2 most of that goes to Stability Pool depositors and PIL, not directly to LQTY stakers. Direct LQTY holder revenue is now small.",
       "note": "The 100%-to-users line is true, but it does not all go to LQTY stakers. The direct LQTY fee stream is a residual V1 flow, about $115K a year.",
@@ -5648,10 +5648,10 @@
     },
     "value_accrual": {
       "distribution": "active",
-      "revenue_multiple": "9.7x",
+      "revenue_multiple": "~12x",
       "equity_structure": "dual_token_equity",
       "mechanism": "Buybacks are active, not paused. 100% of eETH withdrawal fees buy ETHFI weekly and pay it to sETHFI stakers, plus a share of broader revenue.",
-      "note": "The paused premise is false. The multiple checks out at roughly 9.4 to 10x.",
+      "note": "Per ether.fi docs the sETHFI buyback is active, but DefiLlama has logged no holders revenue over the past 30 days, so recent flow to the token is not visible on-chain even though revenue runs near $33M a year.",
       "source": "https://etherfi.gitbook.io/gov/ethfi-buyback-program"
     }
   },
@@ -6875,7 +6875,7 @@
     "free_access": true,
     "value_accrual": {
       "distribution": "~100% of net",
-      "revenue_multiple": "~31x",
+      "revenue_multiple": "~20x",
       "equity_structure": "single_token",
       "mechanism": "Half of Curve's trading fees plus most crvUSD interest go to veCRV lockers as a weekly crvUSD dividend. The other half of trading fees is LP revenue, so gross fees overstate what the token captures.",
       "note": "You have to lock CRV into veCRV to earn, and unlocked CRV earns nothing. The multiple is on the roughly 50% net revenue, not gross fees.",
@@ -7572,10 +7572,10 @@
     },
     "value_accrual": {
       "distribution": "~10%",
-      "revenue_multiple": "~5x",
+      "revenue_multiple": "~11x",
       "equity_structure": "single_token",
       "mechanism": "Lido's 10% staking fee splits roughly evenly between node operators and the DAO treasury. Only a conditional buyback capped at $10M a year, and only when ETH is above $3,000 and revenue above $40M, reaches LDO, and it lands in a DAO-owned LP rather than being burned.",
-      "note": "The 90.3% is fabricated. At most about 10% of DAO revenue touches the token, and only under conditions. On 2025 DAO revenue the multiple is nearer 5x than 8.3x.",
+      "note": "DefiLlama logs about $2.5M a month of holders revenue, but that is the conditional buyback landing in a DAO-owned LP, not a direct distribution to LDO. Most Lido value still goes to stakers and node operators.",
       "source": "https://research.lido.fi/t/liquid-buybacks-nest-execution-with-ldo-wsteth-liquidity/10894"
     }
   },
@@ -8031,7 +8031,7 @@
     "free_access": true,
     "value_accrual": {
       "distribution": "~75%",
-      "revenue_multiple": "~30-40x",
+      "revenue_multiple": "~60x",
       "equity_structure": "single_token",
       "mechanism": "Since a November 2025 vote, 75% of net protocol fees buy DYDX on the market and stake it. Most value reaches the token, but total revenue is small, near $4M a year.",
       "note": "High pass-through on a tiny revenue base, so the multiple stays high even though most of the revenue reaches the token.",
@@ -13952,7 +13952,7 @@
     },
     "value_accrual": {
       "distribution": "~0% net",
-      "revenue_multiple": "4.7x mcap",
+      "revenue_multiple": "~6x",
       "equity_structure": "single_token",
       "mechanism": "A CIP-38 buyback converts fees to COW, but it is sized to offset solver emissions rather than to distribute value. DefiLlama logs zero holders revenue.",
       "note": "The buyback is real but roughly neutralizes emissions, so net value reaching holders is near zero today. The 4.7x on market cap looks cheap only if you ignore that.",
