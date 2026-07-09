@@ -4186,6 +4186,14 @@
     "thesis_changers": {
       "bull_breaks_if": "DEX v2 launches and revenue recovers to $15M+ annualized → buybacks resume → P/S compresses to 5x at current MCap. Solana DEX captures Jupiter volume → multi-chain revenue diversifies risk. Binance listing unlocks liquidity → re-rating from $86M MCap toward $250M+ FDV at 10x P/S on recovered revenue.",
       "bear_breaks_if": "Revenue continues declining below $5M annualized → P/S expands above 20x → value trap. Treasury fails to recover → buybacks never resume → token has ZERO value accrual mechanism. Third security incident → institutional trust permanently destroyed. Uniswap v4 hooks replicate Smart Collateral → moat erodes."
+    },
+    "value_accrual": {
+      "distribution": "paused (~0% now)",
+      "revenue_multiple": "~13x",
+      "equity_structure": "single_token",
+      "mechanism": "Fluid's on-chain buyback used up to 100% of protocol revenue to buy FLUID into a reserve, where governance decides what to do with it. It is not a direct dividend.",
+      "note": "The buyback has been paused since a March 2026 exploit left the DAO rebuilding its treasury, so revenue currently goes to the treasury, not the token. On DefiLlama revenue the multiple is about 13x.",
+      "source": "https://blog.instadapp.io/fluid-reserve-buybacks-growth-strategy/"
     }
   },
   {
@@ -4593,7 +4601,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~77% (discretionary)",
+      "revenue_multiple": "~33x",
+      "equity_structure": "single_token",
+      "mechanism": "The DAO can direct swap and withdrawal fees to on-chain EKUBO buybacks, then optionally hand the tokens to stakers. Real buybacks have happened, but the flow is discretionary.",
+      "note": "Ekubo Inc currently favors spending revenue on growth until the protocol is self-sustaining, so live flow to the token can run below the buyback share. Gross fees are far larger than the protocol take.",
+      "source": "https://docs.ekubo.org/user-guides/governance/ekubo-token"
+    }
   },
   {
     "slug": "bittensor",
@@ -10097,7 +10113,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~0% today",
+      "revenue_multiple": "n.a.",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "Huma earns borrower fees on receivable financing, but value accrual to the token is still being explored and is not live.",
+      "note": "Explainer sites present a 50% fee buy-and-burn as if it were active. Huma's own blog says it is not confirmed. Huma raised venture equity.",
+      "source": "https://blog.huma.finance/introducing-huma-powering-the-future-of-payfi"
+    }
   },
   {
     "slug": "sei",
@@ -11707,7 +11731,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~9% (new)",
+      "revenue_multiple": "n.a.",
+      "equity_structure": "single_token",
+      "mechanism": "Rocket Pool was pure node-operator collateral until the Saturn One upgrade in February 2026 added a Voter Share, routing about 9% of ETH commission to staked RPL.",
+      "note": "The share is new and small, and DefiLlama still logs $0 protocol revenue for the token because its fee adapter does not track it yet, so treat the flow as early.",
+      "source": "https://rpips.rocketpool.net/tokenomics-explainers/003-rework-foundation"
+    }
   },
   {
     "slug": "stader",
@@ -12237,7 +12269,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "0%",
+      "revenue_multiple": "n.a.",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "Borrower interest funds each market's reserves, a governance-controlled backstop. None of it reaches COMP holders. COMP is a pure governance token.",
+      "note": "A stCOMP staking product that would share reserves is proposed but not confirmed live. The DefiLlama revenue figure is reserves retained by the DAO, not value to the token. Compound Labs raised venture equity.",
+      "source": "https://defillama.com/protocol/compound-finance"
+    }
   },
   {
     "name": "Bio Protocol",
@@ -13414,7 +13454,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "0%",
+      "revenue_multiple": "n.a.",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "GFI is a governance and staking-incentive token. Lending interest goes to liquidity providers and reserve fees to the treasury, with nothing routed to GFI holders.",
+      "note": "GFI does not capture RWA lending revenue, a common misread. Warbler Labs raised venture equity above the token.",
+      "source": "https://defillama.com/protocol/goldfinch"
+    }
   },
   {
     "slug": "eigenlayer",
@@ -13513,7 +13561,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~0%",
+      "revenue_multiple": "n.a.",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "EigenLayer's fees are earned by stakers, operators and AVSs. DefiLlama logs protocol revenue of $0, so nothing reaches the EIGEN token today.",
+      "note": "A big gross-versus-net trap. Fees run near $90M a year, but the protocol take to the token is zero, and Eigen Labs raised large venture equity.",
+      "source": "https://defillama.com/protocol/eigencloud"
+    }
   },
   {
     "name": "Lightmatter",
@@ -14525,7 +14581,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~15% + bribes",
+      "revenue_multiple": "~11x",
+      "equity_structure": "single_token",
+      "mechanism": "Convex takes a 17% cut of the CRV rewards its users earn. Most of that goes to cvxCRV and vlCVX stakers, and vote-locked CVX also collects external vote bribes.",
+      "note": "The 11x is on Convex's DefiLlama revenue and leaves out Votium vote bribes, which are often the larger flow to vlCVX, so real value to the token is understated.",
+      "source": "https://docs.convexfinance.com/convexfinance/faq/fees"
+    }
   },
   {
     "slug": "euler-v2",
@@ -14585,7 +14649,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~0% (30d)",
+      "revenue_multiple": "n.a.",
+      "equity_structure": "dual_token_equity",
+      "mechanism": "Euler's Fee Flow auctions accrued fees for EUL, which lands in the DAO treasury, not with holders. Governance then decides whether to burn or spend it.",
+      "note": "DefiLlama shows $0 holders revenue over 30 days, about $2.5M over a year, so the flow is intermittent. The widely quoted $33M annual EUL buyback is a projection, not actuals. Euler Labs raised venture equity.",
+      "source": "https://docs.euler.finance/EUL/fee-flow/"
+    }
   },
   {
     "name": "Cyclic Materials",
@@ -15413,7 +15485,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~90% (stYFI)",
+      "revenue_multiple": "~165x",
+      "equity_structure": "single_token",
+      "mechanism": "Since YIP-88 in October 2025, 90% of Yearn revenue is auctioned into yield-bearing stablecoins and streamed to stYFI stakers as a continuous dividend. 10% goes to the DAO.",
+      "note": "The old buyback-and-burn is retired. Value now reaches the token as a real dividend, but revenue is small, so the multiple is high near 165x.",
+      "source": "https://gov.yearn.fi/t/yip-88-governance-overhaul-styfi/14552"
+    }
   },
   {
     "name": "Redwire",
@@ -16367,7 +16447,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~50%",
+      "revenue_multiple": "~20x",
+      "equity_structure": "single_token",
+      "mechanism": "Users lock CETUS into xCETUS to earn a weekly fee dividend paid in SUI, CETUS and USDC. About half of net protocol profit goes to xCETUS, the other half services a Sui Foundation loan.",
+      "note": "The other half of profit repays the loan taken after the 2025 exploit, so the token's share is temporarily capped. Gross swap fees are far larger than the protocol take.",
+      "source": "https://cetus-1.gitbook.io/cetus-docs/tokenomics/xcetus"
+    }
   },
   {
     "slug": "immutable-x",
@@ -16485,7 +16573,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~100%",
+      "revenue_multiple": "~85x",
+      "equity_structure": "single_token",
+      "mechanism": "Protocol yield from Frax's products goes to veFXS lockers and buybacks, so nearly all captured revenue reaches the token.",
+      "note": "Note the ticker. FXS was renamed to FRAX one-to-one in January 2026 under the North Star hardfork, so this is now the single FRAX token. Revenue is small against the cap, so about 85x.",
+      "source": "https://defillama.com/protocol/frax-finance"
+    }
   },
   {
     "slug": "quickswap",
@@ -16544,7 +16640,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "~40% (burn)",
+      "revenue_multiple": "~5x",
+      "equity_structure": "single_token",
+      "mechanism": "Under DragonFi 2.0, QuickSwap uses about 40% of protocol revenue to buy back and burn QUICK. The rest funds LP farming and treasury.",
+      "note": "The old dQUICK fee share is largely deprecated. On the roughly 40% the token captures, the multiple is near 5x.",
+      "source": "https://defillama.com/protocol/quickswap"
+    }
   },
   {
     "slug": "navi-protocol",
@@ -17801,7 +17905,15 @@
     "github_contributors": null,
     "last_github_commit": null,
     "google_trends_interest": null,
-    "free_access": true
+    "free_access": true,
+    "value_accrual": {
+      "distribution": "0%",
+      "revenue_multiple": "n.a.",
+      "equity_structure": "single_token",
+      "mechanism": "1inch charges no protocol fee on standard aggregator swaps, so there is no ongoing revenue routed to the token. Staking is governance only, through Unicorn Power.",
+      "note": "DefiLlama has no fees module for 1inch. Resolver rewards go to whitelisted resolvers, not to passive 1INCH holders.",
+      "source": "https://help.1inch.com/en/articles/6909554-how-to-stake-1inch-tokens-delegate-unicorn-power-and-maximize-resolver-apy"
+    }
   },
   {
     "slug": "maple-finance",
