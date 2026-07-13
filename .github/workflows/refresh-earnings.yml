@@ -23,6 +23,7 @@ jobs:
           node-version: '20'
       # Pipeline has zero npm dependencies (node: builtins + global fetch).
       - run: node scripts/fetch-earnings.mjs
+      - run: git pull --rebase --autostash origin main
       - uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: 'data: daily earnings-yield refresh (DefiLlama)'

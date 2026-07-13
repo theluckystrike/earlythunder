@@ -18,6 +18,7 @@ jobs:
       - run: pip install requests yfinance
       - run: python scripts/update-prices.py
       - run: python scripts/validate-data.py
+      - run: git pull --rebase --autostash origin main
       - uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: 'data: daily price update'

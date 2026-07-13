@@ -15,6 +15,7 @@ jobs:
           python-version: '3.12'
       - run: pip install requests
       - run: python scripts/scout-scan.py
+      - run: git pull --rebase --autostash origin main
       - uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: 'scout: weekly candidate scan'
