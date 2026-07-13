@@ -17,13 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: '20'
       # Pipeline has zero npm dependencies (node: builtins + global fetch).
       - run: node scripts/fetch-earnings.mjs
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: 'data: daily earnings-yield refresh (DefiLlama)'
           file_pattern: public/earnings/index.html public/earnings/data.json

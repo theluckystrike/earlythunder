@@ -36,6 +36,7 @@ const OVERRIDE = {
   "arkreen": "arkreen-token", "researchhub": "researchcoin", "dogwifhat": "dogwifcoin",
   "zora-attention-markets": "zora", "gala-games": "gala", "kamino-finance": "kamino",
   "scallop-lend": "scallop-2", "story-protocol": "story-2", "dolo": "dolomite", "ftx-alameda": "ftx-token",
+  "jupiter": "jupiter-exchange-solana", "meth-protocol": "mantle-staked-ether", "opulous": "opulous",
 };
 
 const norm = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]/g, "");

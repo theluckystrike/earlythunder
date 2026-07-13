@@ -26,6 +26,8 @@ const JSON_PATH = join(REPO, "public", "earnings", "data.json");
 const FEES_URL =
   "https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyRevenue";
 const PROTOCOLS_URL = "https://api.llama.fi/protocols";
+const MCAPS_URL = "https://coins.llama.fi/mcaps";
+const MCAPS_CHUNK = 100; // coins per POST (bounded request size)
 const MCAP_FLOOR = 5_000_000; // ignore sub-$5M caps (illiquid / noise)
 const REV30_FLOOR = 1_000; // ignore dust revenue
 const MAX_YIELD = 2000; // drop absurd outliers (bad mcap data)
@@ -49,17 +51,59 @@ async function fetchJson(url) {
   return data;
 }
 
-/** Build slug -> {mcap, category, symbol} index from /protocols. */
-function buildMcapIndex(protocols) {
+/** POST JSON with explicit success + shape checks. */
+async function postJson(url, body) {
+  console.assert(typeof url === "string" && url.length > 0, "url required");
+  console.assert(body && typeof body === "object", "body object required");
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "content-type": "application/json", accept: "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res || !res.ok) throw new Error(`post failed ${url}: ${res && res.status}`);
+  const data = await res.json();
+  if (!data || typeof data !== "object") throw new Error(`bad json ${url}`);
+  return data;
+}
+
+/** Fetch market caps for gecko ids from coins.llama.fi (chunked, bounded). */
+async function fetchMcaps(geckoIds) {
+  console.assert(Array.isArray(geckoIds), "geckoIds array required");
+  if (!Array.isArray(geckoIds) || geckoIds.length === 0) throw new Error("no gecko ids");
+  const out = {};
+  const n = Math.min(geckoIds.length, SCAN_CAP);
+  for (let i = 0; i < n; i += MCAPS_CHUNK) {
+    const coins = geckoIds.slice(i, i + MCAPS_CHUNK).map((g) => `coingecko:${g}`);
+    const chunk = await postJson(MCAPS_URL, { coins });
+    Object.assign(out, chunk);
+  }
+  console.assert(Object.keys(out).length > 0, "mcaps empty");
+  if (Object.keys(out).length === 0) throw new Error("no mcaps returned");
+  return out;
+}
+
+/** Build slug -> {mcap, category, symbol} index from /protocols + coins mcaps. */
+async function buildMcapIndex(protocols) {
   console.assert(Array.isArray(protocols), "protocols array required");
   if (!Array.isArray(protocols)) throw new Error("protocols not array");
-  const index = new Map();
+  // /protocols stopped populating `mcap` (all-null since 2026-07-10);
+  // join each protocol's own gecko_id against coins.llama.fi/mcaps instead.
+  const tagged = [];
   const n = Math.min(protocols.length, SCAN_CAP);
   for (let i = 0; i < n; i += 1) {
     const p = protocols[i];
-    if (!p || !p.slug || !p.mcap) continue;
+    if (!p || !p.slug || !p.gecko_id) continue;
+    tagged.push(p);
+  }
+  const mcaps = await fetchMcaps(tagged.map((p) => p.gecko_id));
+  const index = new Map();
+  for (let i = 0; i < tagged.length; i += 1) {
+    const p = tagged[i];
+    const entry = mcaps[`coingecko:${p.gecko_id}`];
+    const mcap = entry ? Number(entry.mcap) : 0;
+    if (!Number.isFinite(mcap) || mcap <= 0) continue;
     index.set(p.slug, {
-      mcap: Number(p.mcap),
+      mcap,
       category: p.category || "DeFi",
       symbol: p.symbol && p.symbol !== "-" ? String(p.symbol) : "",
     });
@@ -173,7 +217,7 @@ async function main() {
   console.assert(Array.isArray(fees) && Array.isArray(protocols), "api shapes");
   if (!Array.isArray(fees)) throw new Error("fees.protocols missing");
 
-  const index = buildMcapIndex(protocols);
+  const index = await buildMcapIndex(protocols);
   const records = computeRecords(fees, index);
   const rows = rankAndCap(records);
   const counts = tierCounts(rows);
