@@ -125,14 +125,14 @@
   ],
   "validated": "Every holding was independently validated against raw DefiLlama data, official docs and primary sources, most recently on 2026-07-14. All remain valid with no exploit, depeg, or solvency flag, and each carries its live watch items in the notes above.",
   "method": "Every pick is the output of the 250-variable scorecard and per-token adversarial validation, where independent agents check each holding value accrual and red flags against raw DefiLlama data, official docs and primary sources. Research, not vibes, and the opposite of a random basket.",
-  "how_to_10_intro": "A crypto-only portfolio has a ceiling as a full investment plan, no matter how good the picks. Here is what would close the gap to a genuinely top-tier plan.",
+  "how_to_10_intro": "A crypto-only portfolio cannot be a 10 out of 10 investment portfolio. The ceiling is the asset class, and this sleeve is already near its own data-quality ceiling. Here is what would close the gap.",
   "how_to_10": [
     "Diversify beyond crypto. A 10 out of 10 plan holds uncorrelated assets too, broad equities, bonds, some gold and cash, so one bad crypto year does not sink everything. Crypto becomes one sleeve, not the whole thing.",
     "Size it as a satellite. Most planners cap crypto near 5 to 15 percent of total net worth. The money here should be that slice, not your savings.",
     "Add rules, not guesses. A rebalancing band and a multi-year horizon keep risk contained, and averaging your entry over time cuts timing risk, even if a lucky lump sum can still beat it on raw return.",
     "Own your keys. Self-custody and cold storage remove the exchange as a single point of failure."
   ],
-  "how_to_10_close": "Do those four, and this crypto sleeve, already near its own ceiling on data quality, sits inside a genuinely 10 out of 10 plan.",
+  "how_to_10_close": "Do those four, and this becomes the crypto sleeve of a genuinely top-tier plan.",
   "limits": "The honest limit is the asset class. Crypto-only means no diversification across uncorrelated markets, and even blue-chip crypto can fall 50 to 70 percent in a downturn. Sixty percent sits in the liquid anchors and a cash buffer holds dry powder, which is the sensible way to run a crypto sleeve. But a crypto sleeve should be one part of a broader plan, not the whole thing.",
   "cadence": "Refreshed weekly with live prices and fresh per-token validation."
 }
