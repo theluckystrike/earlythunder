@@ -30,18 +30,21 @@ interface Portfolio {
   readonly how_to_10_intro?: string;
   readonly how_to_10?: readonly string[];
   readonly how_to_10_close?: string;
+  readonly maker_note?: string;
+  readonly support_ask?: string;
+  readonly tip_addresses?: readonly { label: string; ticker: string; address: string }[];
   readonly holdings: readonly Holding[];
 }
 
 const P = portfolio as Portfolio;
 
 export const metadata: Metadata = {
-  title: "The $10,000 Conviction Crypto Portfolio, Scored and Validated",
+  title: "The $100,000 Conviction Crypto Portfolio, Scored and Validated",
   description:
-    "A high-conviction $10,000 crypto portfolio built from a 250-point scorecard and validated token by token against raw data, weighted toward names that actually return revenue to the holder. Rated honestly, with sources. Not financial advice.",
+    "A high-conviction $100,000 crypto portfolio built from a 250-point scorecard and validated token by token against raw data, weighted toward names that actually return revenue to the holder. Rated honestly, with sources. Not financial advice.",
   keywords: [
     "high conviction crypto portfolio",
-    "$10000 crypto portfolio",
+    "$100000 crypto portfolio",
     "how to build a crypto portfolio",
     "crypto portfolio allocation",
     "data-driven crypto portfolio",
@@ -50,14 +53,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/portfolio" },
   openGraph: {
     type: "website",
-    title: "The $10,000 Conviction Crypto Portfolio, Scored and Validated",
+    title: "The $100,000 Conviction Crypto Portfolio, Scored and Validated",
     description:
       "A high-conviction crypto portfolio built from the scorecard and validated per token, weighted toward tokens that actually pay the holder. Rated honestly. Not financial advice.",
     url: "/portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The $10,000 Conviction Crypto Portfolio",
+    title: "The $100,000 Conviction Crypto Portfolio",
     description: "Built from the scorecard, validated per token, weighted toward real value accrual. Not financial advice.",
   },
 };
@@ -220,6 +223,28 @@ export default function PortfolioPage() {
           <p className="mt-3 text-sm leading-relaxed text-text-tertiary">{P.validated}</p>
         )}
       </section>
+
+      {P.maker_note && (
+        <section className="mt-12 rounded-2xl border border-border bg-bg-card p-6">
+          <h2 className="text-lg font-semibold text-text-primary">From the maker</h2>
+          <p className="mt-3 text-sm leading-relaxed text-text-secondary">{P.maker_note}</p>
+          {P.support_ask && (
+            <p className="mt-3 text-sm leading-relaxed text-text-secondary">{P.support_ask}</p>
+          )}
+          {P.tip_addresses && P.tip_addresses.length > 0 && (
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              {P.tip_addresses.map((t) => (
+                <div key={t.ticker} className="rounded-xl border border-border bg-bg-subtle p-4">
+                  <div className="text-[10px] uppercase tracking-widest text-text-tertiary">
+                    {t.label} ({t.ticker})
+                  </div>
+                  <div className="mt-1 break-all font-mono text-xs text-text-secondary">{t.address}</div>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      )}
 
       <p className="mt-10 text-xs leading-relaxed text-text-tertiary">
         Educational example, not a recommendation and not financial advice. Allocations are illustrative and
