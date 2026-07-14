@@ -1314,9 +1314,9 @@
     "category": "DEX / AMM",
     "asset_class": "digital_assets",
     "tier": 1,
-    "composite_score": 85,
-    "one_liner": "Dominant DEX (55% market share) with fee switch live on 11+ chains, BlackRock integration, and SEC safe harbor, but P/S 57-73x and net inflationary tokenomics temper upside.",
-    "thesis": "Uniswap commands ~55% of global DEX volume ($37.5B/month) across 18 chains via V4's singleton architecture. The UNIfication governance proposal (Dec 2025, 99.9% approval) activated the protocol fee switch, a 17% cut on swap fees, and burned 100M UNI ($596M). Protocol revenue has expanded to $26-61M annualized as the fee switch deploys across 11+ chains.\n\nHowever, the bull case must be sized honestly. At $2.5B FDV, UNI trades at 57-73x P/S on actual protocol revenue, NOT the \"$1B fees\" narrative (that's total LP fees, not protocol revenue). Even at full expansion across all chains, protocol revenue would need to 4-5x for UNI to reach peer multiples. The token is also net inflationary at +1.43%/yr: the 20M UNI annual growth budget to Labs exceeds the ~4.4M UNI burned annually via Firepit.\n\nThe institutional thesis strengthened materially in early 2026: BlackRock purchased UNI tokens and integrated BUIDL into UniswapX (Feb 2026), Bitwise filed the first spot UNI ETF (Feb 5, 2026), and Fireblocks deployed $6B via institutional channels. a16z retains 41.5-55M UNI and actively votes in governance. The SEC granted a 5-year safe harbor for DEX front-ends (Apr 2026) and the Risley class action was dismissed with prejudice (Mar 2026).\n\nThe bear case centers on: (1) P/S still very expensive vs DeFi peers, (2) $200M+ insider/VC selling in 2025 from dormant wallets, (3) top 10 holders control 50.81% of supply, (4) Fluid captured 55% of stablecoin DEX volume, (5) Unichain TVL collapsed 86% to $17.8-29.6M after incentive-driven peak. UNI is a blue-chip DeFi position with real institutional backing, but at current multiples it prices in significant fee switch expansion that hasn't materialized yet.",
+    "composite_score": 83,
+    "one_liner": "The dominant DEX by a wide margin, doing roughly 36% of all on-chain spot volume, more than the next several protocols combined, with a live continuous burn that turns protocol fees into UNI destruction. The catch is how much the token captures. Fees run past $5M a day, but only about 17% is protocol revenue, so UNI still trades near 47x that on a $2.25B cap.",
+    "thesis": "Uniswap is the clear number one in on-chain trading. It does roughly 36% of all spot DEX volume, with Uniswap v4 the single largest venue, and on a strong day it out-trades the next several protocols combined. The December 2025 UNIfication did two things. It burned a one-time 100M UNI, about $596M, and it switched on a continuous mechanism where protocol fees accumulate on-chain and can only be claimed by burning UNI. That continuous burn, the first sustained burn in Uniswap's history, has been live for about six months and has already hit record daily burns.\n\nThe mid-2026 headlines about buybacks and burns beginning are behind the facts. The burn is already running. What is happening now is expansion. Hayden Adams confirmed on July 12 that fees are live and can only be claimed by burning UNI, and governance is voting to extend the fee-and-burn system to Uniswap v4 pools and to Robinhood Chain, plus a separate bridge cleanup that migrates cross-chain messaging for Avalanche and MegaETH to Wormhole and modernizes contract ownership on Soneium and X Layer. Robinhood's own public chain, live since early July, is the fresh volume driver, adding more than $1B in Uniswap flow.\n\nNow size it honestly. The fee headline is real and large, past $5M a day, more than almost any protocol except the USDC and USDT issuers. But UNI captures only the protocol slice, about 17% of swap fees, so protocol revenue runs near $48M a year, not the billions the fee number implies. Against a $2.25B market cap that is about 47x revenue. The burn is a genuine and growing sink, and dominance plus Robinhood Chain give it a real growth vector, but the token is priced for a lot of that growth to arrive.\n\nRemember the structure too. Uniswap Labs is a venture-backed company with equity senior to the token, and UNI supply is still net inflationary from vesting, so the burn has to outrun both before holders come out ahead.",
     "signals": {
       "working_code": 96,
       "dev_activity": 90,
@@ -1328,17 +1328,15 @@
       "obscurity": 15
     },
     "catalysts": [
-      "Standard Chartered $100 UNI target by end-2030 (~40x), framing Uniswap as the RWA tokenization settlement hub (Jun 15, 2026 initiation)",
-      "Bitwise spot UNI ETF, S-1 filed Feb 5, 2026, pending SEC review. If approved, opens passive fund flows similar to BTC/ETH ETF launches",
-      "Fee switch expansion to all 18 V4 chains, currently 11+, each new chain adds $2-5M annualized protocol revenue",
-      "BlackRock BUIDL integration deepening, Feb 2026 UniswapX integration signals institutional DeFi adoption wave",
-      "V4 hooks marketplace, 2,500+ hooks deployed, enabling new revenue streams from custom pool logic",
-      "CLARITY Act advancement, would formally classify UNI as digital commodity, removing securities overhang permanently",
-      "Coinbase-Deribit merger (Starbase Jul 20, INTX Aug 17), CeFi-DeFi bridge could route institutional flow through Uniswap infrastructure",
-      "Unichain UVN validator launch, enables UNI staking for chain security, adding yield utility"
+      "Fee-and-burn expansion: governance is voting to extend protocol fees and the UNI burn to v4 pools and to Robinhood Chain (Temp Checks, July 2026).",
+      "Robinhood Chain, live since early July 2026, added over $1B in Uniswap volume and is the fresh growth driver behind the fee spike.",
+      "Fees running past $5M a day, more than nearly every protocol outside the USDC and USDT issuers, all feeding the burn.",
+      "Bitwise spot UNI ETF, S-1 filed February 5 2026, pending SEC review.",
+      "Standard Chartered $100 UNI target by end-2030, framing Uniswap as an RWA settlement hub.",
+      "Fee-and-burn already deployed on 11+ chains, with each new chain adding to protocol revenue."
     ],
     "risks": [
-      "P/S 57-73x on $26-61M actual protocol revenue, requires 4-5x revenue expansion to reach DeFi peer multiples",
+      "P/S near 47x on about $48M of actual protocol revenue, since UNI captures only the roughly 17% protocol slice of swap fees, not the multi-hundred-million LP fee total",
       "$200M+ insider/VC selling from dormant 2020 wallets throughout 2025, including $75M dump during UNIfication pump",
       "Net inflationary +1.43%/yr, 20M UNI annual growth budget to Labs exceeds ~4.4M UNI annual Firepit burns",
       "Top 10 holders control 50.81% of supply, governance centralization risk, a16z has effective veto power",
@@ -1354,7 +1352,7 @@
     ],
     "citations": [
       {
-        "claim": "55% DEX market share by volume, $37.5B monthly",
+        "claim": "Uniswap leads DEX volume with about a 36% share (DefiLlama, July 2026)",
         "source": "CoinLaw / CoinGecko",
         "url": "https://coinlaw.io/decentralized-exchanges-dex-statistics/",
         "type": "data"
@@ -1520,19 +1518,62 @@
         "source": "The Defiant",
         "url": "https://thedefiant.io/news/defi/standard-chartered-sets-uni-2030-price-target-at-40x-current-levels",
         "type": "news"
+      },
+      {
+        "claim": "Hayden Adams confirms fees live, claimable only by burning UNI, plus governance votes (July 12 2026)",
+        "source": "cryptonews",
+        "url": "https://cryptonews.com/news/uniswap-uni-crypto-buybacks-burns-protocol-fees/",
+        "type": "news"
+      },
+      {
+        "claim": "Uniswap daily fees hit $5.2M as Robinhood Chain volume soars",
+        "source": "Blockonomi",
+        "url": "https://blockonomi.com/uniswap-daily-fees-hit-5-2m-as-robinhood-chain-volume-soars",
+        "type": "news"
+      },
+      {
+        "claim": "Temp Check to expand protocol fees and burn to Robinhood Chain",
+        "source": "Uniswap Governance",
+        "url": "https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-robinhood-chain/26168",
+        "type": "official"
+      },
+      {
+        "claim": "Temp Check to activate Uniswap v4 protocol fees",
+        "source": "Uniswap Governance",
+        "url": "https://gov.uniswap.org/t/temp-check-activate-v4-protocol-fees/26162",
+        "type": "official"
+      },
+      {
+        "claim": "Cross-chain governance cleanup for Avalanche, MegaETH, Soneium, X Layer (bridge/messaging migration)",
+        "source": "Uniswap Governance",
+        "url": "https://gov.uniswap.org/t/rfc-update-crosschain-governance-parameters-for-avalanche-megaeth-soneium-and-x-layer/26127",
+        "type": "official"
+      },
+      {
+        "claim": "UNIfication: fee switch activation and one-time 100M UNI burn (Dec 2025)",
+        "source": "DL News",
+        "url": "https://www.dlnews.com/articles/defi/uniswap-dao-to-activate-fee-switch-and-burn-100m-uni-tokens/",
+        "type": "news"
+      },
+      {
+        "claim": "Robinhood rolls out public blockchain (July 1 2026)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/07/01/robinhood-rolls-out-public-blockchain-as-it-expands-deeper-into-crypto",
+        "type": "news"
       }
     ],
-    "updated_at": "2026-07-13T00:00:00Z",
+    "updated_at": "2026-07-14T00:00:00Z",
     "is_graveyard": false,
-    "current_price_usd": 3.56,
-    "market_cap_usd": 2209578412,
+    "current_price_usd": 3.63,
+    "market_cap_usd": 2253374459,
     "volume_24h_usd": 151429902,
-    "citation_types": [
-      "official",
-      "news",
-      "data",
-      "filing"
-    ],
+    "citation_types": {
+      "data": 10,
+      "official": 10,
+      "news": 12,
+      "filing": 2,
+      "research": 1
+    },
     "valuation_gap_score": 72,
     "obscurity_score": 15,
     "on_chain": {
@@ -1705,9 +1746,9 @@
     "last_github_commit": "2026-06-08",
     "google_trends_interest": "Moderate, peaks on governance events and price spikes",
     "free_access": true,
-    "verdict": "HOLD, Blue-chip DeFi with real institutional momentum (BlackRock, Bitwise ETF) and regulatory clarity (SEC safe harbor, lawsuits dismissed). Fee switch expansion is the key catalyst. However, P/S 57-73x prices in significant revenue growth that hasn't materialized. Net inflationary tokenomics and heavy insider selling in 2025 are headwinds. Position sizing should reflect the expensive valuation relative to current fundamentals.",
+    "verdict": "HOLD. Uniswap is the blue-chip of on-chain trading, the clear volume leader with a live and growing burn that finally links protocol fees to the token. The December 2025 fee switch turned on a continuous burn, and the July 2026 votes extend it to v4 and to Robinhood Chain, the new volume engine. That is a real, compounding sink. But the token still captures only the roughly 17% protocol slice of fees, so near $48M a year, which puts it around 47x revenue on a $2.25B cap even after the burn. Add venture equity senior to the token and supply that is still net inflationary, and you get a genuinely strengthening business whose token is priced for the growth to keep arriving. Own it as the category leader, size it for the multiple.",
     "red_flags": [
-      "P/S 57-73x on actual protocol revenue, common narrative uses total LP fees ($880M-$1B) instead of protocol revenue ($26-61M)",
+      "P/S near 47x on about $48M of actual protocol revenue, since the common narrative uses total LP fees instead of the roughly 17% protocol take",
       "$200M+ insider/VC selling from dormant 2020 wallets throughout 2025, distribution, not accumulation",
       "Top 10 holders control 50.81%, effective governance centralization despite 'decentralized' branding",
       "Unichain TVL collapsed 86% ($532M→$17.8-29.6M) after incentives ended, organic demand questionable",
@@ -1722,23 +1763,22 @@
       "V4 on 18 chains with 2,500+ hooks, most deployed DeFi infrastructure in existence"
     ],
     "edge_data": [
-      "Firepit contract: 0x0D5Cd355e2aBEB8fb1552F56c965B867346d6721, immutable, fees can only exit by burning UNI",
-      "TokenJar contract: 0xf38521f130fcCF29dB1961597bc5d2B60F995f85, protocol fees accumulate here",
-      "134,000 UNI burned single day (Jun 5, 2026) = record, suggests fee switch revenue accelerating",
-      "Growth budget actually issued: 3.5M UNI in first 5 months (annualized 8.4M) vs budgeted 20M, Labs drawing slower than max",
-      "Fireblocks $6B deployed via institutional channel, quietly becoming institutional DeFi on-ramp"
+      "The buyback-and-burn is not new, it is expanding. The continuous burn went live in December 2025 and has run for about six months, so the mid-2026 set-to-begin framing is behind the facts. The July votes extend it to v4 and Robinhood Chain.",
+      "The $5M-a-day fee headline overstates what the token earns. UNI captures only about 17% of swap fees as protocol revenue, near $48M a year, so on a $2.25B cap it trades near 47x, not the low single digits the raw fee number suggests.",
+      "Dominance is real but smaller than the viral number. Live DefiLlama data puts Uniswap near 36% of DEX volume, not the 45 to 55% often quoted. It is still the clear number one, more than the next several protocols combined.",
+      "Robinhood Chain is the new swing factor. Robinhood's public chain went live in early July 2026 and added over $1B in Uniswap volume, which is what pushed daily fees past $5M."
     ],
     "thesis_changers": {
       "bull_breaks_if": "Fee switch revenue exceeds $100M annualized (compresses P/S to <25x), Bitwise ETF approved, or Unichain TVL sustainably crosses $500M",
       "bear_breaks_if": "Fee switch revenue stalls below $30M, major new insider selling wave, Fluid/competitor captures >30% of Uniswap's non-stablecoin volume, or governance attack exploiting 50.81% concentration"
     },
     "value_accrual": {
-      "distribution": "~100% of the take",
-      "revenue_multiple": "~42x",
+      "distribution": "~100% of the take (burn)",
+      "revenue_multiple": "~47x",
       "equity_structure": "dual_token_equity",
-      "mechanism": "The fee switch went live December 28, 2025. About 17% of swap fees become protocol revenue, and effectively all of that flows to a burn jar where UNI holders redeem tokens against the fees. Roughly 100M UNI was burned.",
-      "note": "The 99.7% is fair on a revenue basis, but the revenue is a thin 17% slice of swap fees; the rest goes to LPs. The multiple is sensitive to whether you use cumulative or run-rate revenue.",
-      "source": "https://cryptobriefing.com/uniswap-23m-revenue-fee-switch/"
+      "mechanism": "Since the December 2025 UNIfication, protocol fees accumulate on-chain and can only be claimed by burning UNI, the first sustained burn in Uniswap history. It is live on 11+ chains, with votes underway to extend it to v4 pools and Robinhood Chain.",
+      "note": "Fees run past $5M a day, but UNI captures only the roughly 17% protocol slice, near $48M a year, so it trades about 47x that despite the huge fee headline. Uniswap Labs also holds venture equity above the token.",
+      "source": "https://blockonomi.com/uniswap-daily-fees-hit-5-2m-as-robinhood-chain-volume-soars"
     }
   },
   {

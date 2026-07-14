@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09",
+  "updated_at": "2026-07-14",
   "rows": [
     {
       "ticker": "HYPE",
@@ -35,12 +35,12 @@
       "slug": "uniswap",
       "category": "continuous",
       "distribution": "~100% of the take",
-      "multiple": "~42x",
-      "mechanism": "The fee switch went live December 28, 2025. About 17% of swap fees become protocol revenue, and effectively all of that flows to a burn jar where UNI holders redeem tokens against the fees. Roughly 100M UNI was burned.",
-      "status": "verified",
+      "multiple": "~47x",
+      "mechanism": "Since the December 2025 UNIfication, protocol fees accumulate on-chain and can only be claimed by burning UNI, the first sustained burn in Uniswap history. Votes are underway to extend it to v4 and Robinhood Chain.",
+      "status": "corrected",
       "claim": "Post claimed 99.7%, 30x",
-      "note": "The 99.7% is fair on a revenue basis, but the revenue is a thin 17% slice of swap fees; the rest goes to LPs. The multiple is sensitive to whether you use cumulative or run-rate revenue.",
-      "source": "https://cryptobriefing.com/uniswap-23m-revenue-fee-switch/",
+      "note": "Fees run past $5M a day, but UNI captures only the roughly 17% protocol slice, near $48M a year, so it trades about 47x that. Live DEX share is near 36%, not the 45 to 55% often quoted.",
+      "source": "https://blockonomi.com/uniswap-daily-fees-hit-5-2m-as-robinhood-chain-volume-soars",
       "equity_structure": "dual_token_equity"
     },
     {
