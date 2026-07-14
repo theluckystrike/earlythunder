@@ -1343,7 +1343,8 @@
       "Fluid captured 55% stablecoin DEX market share, Uniswap losing ground in highest-volume trading pair category",
       "Unichain TVL collapsed 86% from $532M to $17.8-29.6M after incentive program ended",
       "Aggregators route 50%+ of Ethereum DEX volume, direct interface usage declining as solver/intent layers abstract away DEXs",
-      "MEV extraction from Uniswap LPs, academic studies show majority of V3 LPs lose money vs holding"
+      "MEV extraction from Uniswap LPs, academic studies show majority of V3 LPs lose money vs holding",
+      "Fee durability is unproven. Much of the July 2026 spike came from Robinhood Chain memecoin trading (CASHCAT), huge volume on thin liquidity, subsidized by a 90-day fee waiver, and already down from its launch peak. If that activity fades with the memecoin cycle and the subsidy, the $5M-a-day run-rate can drop."
     ],
     "related_slugs": [
       "ethereum",
@@ -1560,6 +1561,24 @@
         "source": "CoinDesk",
         "url": "https://www.coindesk.com/business/2026/07/01/robinhood-rolls-out-public-blockchain-as-it-expands-deeper-into-crypto",
         "type": "news"
+      },
+      {
+        "claim": "Robinhood Chain did $570M volume on $21M liquidity, a launch-week memecoin churn autopsy",
+        "source": "crypto.news",
+        "url": "https://crypto.news/robinhood-chain-did-570m-volume-on-21m-of-liquidity-the-launch-week-autopsy/",
+        "type": "news"
+      },
+      {
+        "claim": "Robinhood built a blockchain for tokenized stocks, memecoins took over (RWAs only ~$12.8M)",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/tech/2026/07/13/robinhood-built-a-blockchain-for-tokenized-stocks-memecoins-took-over",
+        "type": "news"
+      },
+      {
+        "claim": "Robinhood Chain hit $500M in a day, then volume fell to millions",
+        "source": "Coinpaprika",
+        "url": "https://coinpaprika.com/news/robinhood-chain-hit-500m-day-volume-fell/",
+        "type": "news"
       }
     ],
     "updated_at": "2026-07-14T00:00:00Z",
@@ -1746,7 +1765,7 @@
     "last_github_commit": "2026-06-08",
     "google_trends_interest": "Moderate, peaks on governance events and price spikes",
     "free_access": true,
-    "verdict": "HOLD. Uniswap is the blue-chip of on-chain trading, the clear volume leader with a live and growing burn that finally links protocol fees to the token. The December 2025 fee switch turned on a continuous burn, and the July 2026 votes extend it to v4 and to Robinhood Chain, the new volume engine. That is a real, compounding sink. But the token still captures only the roughly 17% protocol slice of fees, so near $48M a year, which puts it around 47x revenue on a $2.25B cap even after the burn. Add venture equity senior to the token and supply that is still net inflationary, and you get a genuinely strengthening business whose token is priced for the growth to keep arriving. Own it as the category leader, size it for the multiple.",
+    "verdict": "HOLD. Uniswap is the blue-chip of on-chain trading, the clear volume leader with a live and growing burn that finally links protocol fees to the token. The December 2025 fee switch turned on a continuous burn, and the July 2026 votes extend it to v4 and to Robinhood Chain, the new volume engine. That is a real, compounding sink. But the token still captures only the roughly 17% protocol slice of fees, so near $48M a year, which puts it around 47x revenue on a $2.25B cap even after the burn. Add venture equity senior to the token and supply that is still net inflationary, and you get a genuinely strengthening business whose token is priced for the growth to keep arriving. Own it as the category leader, but underwrite the durable Ethereum and Base volume, not the subsidized Robinhood Chain memecoin peak, and size it for the multiple.",
     "red_flags": [
       "P/S near 47x on about $48M of actual protocol revenue, since the common narrative uses total LP fees instead of the roughly 17% protocol take",
       "$200M+ insider/VC selling from dormant 2020 wallets throughout 2025, distribution, not accumulation",
@@ -1763,6 +1782,7 @@
       "V4 on 18 chains with 2,500+ hooks, most deployed DeFi infrastructure in existence"
     ],
     "edge_data": [
+      "Be realistic about the fee spike. A large part of the surge past $5M a day rode Robinhood Chain memecoin trading, led by CASHCAT, which posted about $570M of volume on only $21M of liquidity, the thin wash-adjacent churn a launch produces. Robinhood is also waiving network fees for the first 90 days, which flatters the numbers, and volume there has already fallen from a $500M peak toward the tens of millions. Uniswap's durable base is its Ethereum, Base and Arbitrum volume, not the Robinhood Chain blip.",
       "The buyback-and-burn is not new, it is expanding. The continuous burn went live in December 2025 and has run for about six months, so the mid-2026 set-to-begin framing is behind the facts. The July votes extend it to v4 and Robinhood Chain.",
       "The $5M-a-day fee headline overstates what the token earns. UNI captures only about 17% of swap fees as protocol revenue, near $48M a year, so on a $2.25B cap it trades near 47x, not the low single digits the raw fee number suggests.",
       "Dominance is real but smaller than the viral number. Live DefiLlama data puts Uniswap near 36% of DEX volume, not the 45 to 55% often quoted. It is still the clear number one, more than the next several protocols combined.",
