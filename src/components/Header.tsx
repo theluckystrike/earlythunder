@@ -11,6 +11,7 @@ const PRIMARY_NAV = [
   { href: "/earnings/", label: "Earnings", isNextRoute: false },
   { href: "/deadlines/", label: "Deadlines", isNextRoute: false },
   { href: "/scorecard", label: "Scorecard", isNextRoute: true },
+  { href: "/portfolio", label: "Portfolio", isNextRoute: true },
   { href: "/about", label: "About", isNextRoute: true },
 ] as const;
 

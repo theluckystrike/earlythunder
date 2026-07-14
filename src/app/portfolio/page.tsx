@@ -23,55 +23,53 @@ interface Portfolio {
   readonly total_usd: number;
   readonly rule: string;
   readonly data_advantage: string;
-  readonly rating: number;
-  readonly rating_max: number;
-  readonly rating_reason: string;
+  readonly limits: string;
+  readonly cadence?: string;
+  readonly validated?: string;
+  readonly method?: string;
+  readonly how_to_10_intro?: string;
+  readonly how_to_10?: readonly string[];
+  readonly how_to_10_close?: string;
   readonly holdings: readonly Holding[];
 }
 
 const P = portfolio as Portfolio;
 
 export const metadata: Metadata = {
-  title: "The $10,000 Starter Crypto Portfolio, Scored and Honest",
+  title: "The $10,000 Conviction Crypto Portfolio, Scored and Validated",
   description:
-    "A $10,000 beginner crypto portfolio built only from tokens rating 120+ on our 250-point scorecard, weighted toward names that actually return revenue to the token. Rated honestly, with sources. Not financial advice.",
+    "A high-conviction $10,000 crypto portfolio built from a 250-point scorecard and validated token by token against raw data, weighted toward names that actually return revenue to the holder. Rated honestly, with sources. Not financial advice.",
   keywords: [
-    "best crypto portfolio for beginners",
+    "high conviction crypto portfolio",
     "$10000 crypto portfolio",
     "how to build a crypto portfolio",
     "crypto portfolio allocation",
     "data-driven crypto portfolio",
-    "crypto starter portfolio 2026",
+    "validated crypto portfolio 2026",
   ],
   alternates: { canonical: "/portfolio" },
   openGraph: {
     type: "website",
-    title: "The $10,000 Starter Crypto Portfolio, Scored and Honest",
+    title: "The $10,000 Conviction Crypto Portfolio, Scored and Validated",
     description:
-      "A beginner crypto portfolio built from the scorecard, weighted toward tokens that actually pay the holder. Rated honestly. Not financial advice.",
+      "A high-conviction crypto portfolio built from the scorecard and validated per token, weighted toward tokens that actually pay the holder. Rated honestly. Not financial advice.",
     url: "/portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The $10,000 Starter Crypto Portfolio",
-    description: "Built from the scorecard, weighted toward real value accrual. Not financial advice.",
+    title: "The $10,000 Conviction Crypto Portfolio",
+    description: "Built from the scorecard, validated per token, weighted toward real value accrual. Not financial advice.",
   },
 };
 
 const TIERS: { key: Holding["tier"]; title: string; blurb: string }[] = [
-  { key: "anchor", title: "Anchors", blurb: "The liquid core an amateur should hold first and largest." },
+  { key: "anchor", title: "Anchors", blurb: "The liquid core to hold first and largest." },
   { key: "defi", title: "Value-accrual DeFi", blurb: "High-scoring tokens that return real revenue to the holder." },
   { key: "cash", title: "Cash buffer", blurb: "Dry powder for dips, not a bet." },
 ];
 
 function usd(n: number): string {
   return "$" + n.toLocaleString("en-US");
-}
-
-function ratingTone(r: number): string {
-  if (r >= 7.5) return "text-score-high";
-  if (r >= 5.5) return "text-score-mid";
-  return "text-score-low";
 }
 
 export default function PortfolioPage() {
@@ -97,21 +95,18 @@ export default function PortfolioPage() {
       </div>
 
       <h1 className="mt-8 text-4xl font-semibold tracking-tighter text-text-primary md:text-5xl">
-        The {usd(P.total_usd)} starter portfolio
+        The {usd(P.total_usd)} conviction portfolio
       </h1>
       <p className="mt-4 max-w-2xl text-lg leading-relaxed text-text-secondary">
-        A beginner-friendly crypto mix built straight from the scorecard, with one hard rule and one edge.
+        A high-conviction crypto mix built straight from the scorecard, with one hard rule and one edge.
         The rule, only tokens rating 120 or higher qualify. The edge, the picks are weighted toward names
         that actually return revenue to the token, not just ones that score well.
       </p>
+      {P.method && (
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-text-tertiary">{P.method}</p>
+      )}
 
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
-        <div className="rounded-xl border border-border bg-bg-card p-5">
-          <div className="text-[10px] uppercase tracking-widest text-text-tertiary">Honest rating</div>
-          <div className={`mt-1 font-mono text-3xl font-semibold ${ratingTone(P.rating)}`}>
-            {P.rating}<span className="text-lg text-text-tertiary">/{P.rating_max}</span>
-          </div>
-        </div>
         <div className="rounded-xl border border-border bg-bg-card p-5">
           <div className="text-[10px] uppercase tracking-widest text-text-tertiary">Positions</div>
           <div className="mt-1 font-mono text-3xl font-semibold text-text-primary">{P.holdings.length}</div>
@@ -120,7 +115,16 @@ export default function PortfolioPage() {
           <div className="text-[10px] uppercase tracking-widest text-text-tertiary">Qualifying rule</div>
           <div className="mt-1 font-mono text-3xl font-semibold text-text-primary">120+</div>
         </div>
+        <div className="rounded-xl border border-border bg-bg-card p-5">
+          <div className="text-[10px] uppercase tracking-widest text-text-tertiary">Refreshed</div>
+          <div className="mt-1 font-mono text-3xl font-semibold text-text-primary">Weekly</div>
+        </div>
       </div>
+      {P.cadence && (
+        <p className="mt-3 font-mono text-xs text-text-tertiary">
+          {P.cadence} Last update {P.updated_at}.
+        </p>
+      )}
 
       <section className="mt-10">
         <h2 className="text-lg font-semibold text-text-primary">The data advantage</h2>
@@ -177,9 +181,29 @@ export default function PortfolioPage() {
       })}
 
       <section className="mt-10">
-        <h2 className="text-lg font-semibold text-text-primary">Why this rating and not higher</h2>
-        <p className="mt-3 text-sm leading-relaxed text-text-secondary">{P.rating_reason}</p>
+        <h2 className="text-lg font-semibold text-text-primary">The honest limits</h2>
+        <p className="mt-3 text-sm leading-relaxed text-text-secondary">{P.limits}</p>
       </section>
+
+      {P.how_to_10 && P.how_to_10.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-lg font-semibold text-text-primary">What would make this a 10 out of 10</h2>
+          {P.how_to_10_intro && (
+            <p className="mt-3 text-sm leading-relaxed text-text-secondary">{P.how_to_10_intro}</p>
+          )}
+          <div className="mt-4 space-y-3">
+            {P.how_to_10.map((step, i) => (
+              <div key={i} className="flex items-start gap-3 rounded-xl border border-border bg-bg-card p-4">
+                <span className="mt-0.5 font-mono text-sm font-semibold text-text-tertiary">{i + 1}</span>
+                <p className="text-sm leading-relaxed text-text-secondary">{step}</p>
+              </div>
+            ))}
+          </div>
+          {P.how_to_10_close && (
+            <p className="mt-4 text-sm leading-relaxed text-text-secondary">{P.how_to_10_close}</p>
+          )}
+        </section>
+      )}
 
       <section className="mt-10">
         <h2 className="text-lg font-semibold text-text-primary">How it was built</h2>
@@ -192,6 +216,9 @@ export default function PortfolioPage() {
           nowhere. Prices are live as of {P.updated_at}. Weights lean on liquidity and conviction, with the
           anchors largest and the higher-risk DeFi sleeve sized small.
         </p>
+        {P.validated && (
+          <p className="mt-3 text-sm leading-relaxed text-text-tertiary">{P.validated}</p>
+        )}
       </section>
 
       <p className="mt-10 text-xs leading-relaxed text-text-tertiary">
