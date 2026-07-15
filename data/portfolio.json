@@ -135,7 +135,7 @@
   "how_to_10_close": "Do those four, and this becomes the crypto sleeve of a genuinely top-tier plan.",
   "limits": "The honest limit is the asset class. Crypto-only means no diversification across uncorrelated markets, and even blue-chip crypto can fall 50 to 70 percent in a downturn. Sixty percent sits in the liquid anchors and a cash buffer holds dry powder, which is the sensible way to run a crypto sleeve. But a crypto sleeve should be one part of a broader plan, not the whole thing.",
   "cadence": "Refreshed weekly with live prices and fresh per-token validation.",
-  "maker_note": "I build Early Thunder solo. Over 5,000 hours and more than $5,000 of my own AI token budget went into researching and validating this site, and I plan to keep updating it after this cycle. The research here stays free, with no ads and no paywall.",
+  "maker_note": "I am Michael Lip, the one person behind Early Thunder. Before this I shipped 20 browser extensions to more than 50,000 users, all solo, including BeLikeNative at over 13,200 users and a 4.63 rating. Then I got obsessed with finding asymmetric crypto bets before the crowd, and built this research engine by hand to dig the signal out of obscure protocols, airdrop threads and filings. Over 5,000 hours and more than $5,000 of my own AI token budget went into it, and I keep updating it after each cycle. It stays free, with no ads and no paywall.",
   "support_ask": "If any of it helped you, and especially if it helped you make real money, a tip would mean a lot and keeps the work going. It is completely optional, and thank you either way. I am not promising returns and none of this is financial advice, just an honest ask from the person who made it.",
   "tip_addresses": [
     {
@@ -153,5 +153,7 @@
       "ticker": "HYPE",
       "address": "0x918fE5F4c8827b6e3e5D13943b1700D4ccbb5430"
     }
-  ]
+  ],
+  "maker_name": "Michael Lip",
+  "maker_photo": "/maker-michael-lip.jpg"
 }

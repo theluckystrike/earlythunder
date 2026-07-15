@@ -30,6 +30,8 @@ interface Portfolio {
   readonly how_to_10_intro?: string;
   readonly how_to_10?: readonly string[];
   readonly how_to_10_close?: string;
+  readonly maker_name?: string;
+  readonly maker_photo?: string;
   readonly maker_note?: string;
   readonly support_ask?: string;
   readonly tip_addresses?: readonly { label: string; ticker: string; address: string }[];
@@ -226,8 +228,27 @@ export default function PortfolioPage() {
 
       {P.maker_note && (
         <section className="mt-12 rounded-2xl border border-border bg-bg-card p-6">
-          <h2 className="text-lg font-semibold text-text-primary">From the maker</h2>
-          <p className="mt-3 text-sm leading-relaxed text-text-secondary">{P.maker_note}</p>
+          <div className="flex items-center gap-4">
+            {P.maker_photo && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={P.maker_photo}
+                alt={P.maker_name ? `${P.maker_name}, maker of Early Thunder` : "The maker of Early Thunder"}
+                width={72}
+                height={72}
+                loading="lazy"
+                className="h-18 w-18 shrink-0 rounded-full border border-border object-cover grayscale"
+                style={{ height: 72, width: 72 }}
+              />
+            )}
+            <div>
+              <h2 className="text-lg font-semibold text-text-primary">From the maker</h2>
+              {P.maker_name && (
+                <div className="font-mono text-xs uppercase tracking-widest text-text-tertiary">{P.maker_name}</div>
+              )}
+            </div>
+          </div>
+          <p className="mt-4 text-sm leading-relaxed text-text-secondary">{P.maker_note}</p>
           {P.support_ask && (
             <p className="mt-3 text-sm leading-relaxed text-text-secondary">{P.support_ask}</p>
           )}
