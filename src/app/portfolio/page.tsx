@@ -77,6 +77,20 @@ function usd(n: number): string {
   return "$" + n.toLocaleString("en-US");
 }
 
+/** Format a live token price: commas above 1, more decimals below 1. */
+function price(n: number): string {
+  if (n >= 1000) return "$" + n.toLocaleString("en-US", { maximumFractionDigits: 0 });
+  if (n >= 1) return "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 4 });
+}
+
+/** Human date like "July 15, 2026" from an ISO-ish YYYY-MM-DD string. */
+function niceDate(s: string): string {
+  const d = new Date(s + "T00:00:00Z");
+  if (isNaN(d.getTime())) return s;
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+}
+
 export default function PortfolioPage() {
   const breadcrumb = getBreadcrumbListSchema([
     { name: "Home", path: "/" },
@@ -125,11 +139,9 @@ export default function PortfolioPage() {
           <div className="mt-1 font-mono text-3xl font-semibold text-text-primary">Weekly</div>
         </div>
       </div>
-      {P.cadence && (
-        <p className="mt-3 font-mono text-xs text-text-tertiary">
-          {P.cadence} Last update {P.updated_at}.
-        </p>
-      )}
+      <p className="mt-3 font-mono text-xs text-text-tertiary">
+        Prices as of {niceDate(P.updated_at)}.{P.cadence ? ` ${P.cadence}` : ""}
+      </p>
 
       <section className="mt-10">
         <h2 className="text-lg font-semibold text-text-primary">The data advantage</h2>
@@ -164,6 +176,11 @@ export default function PortfolioPage() {
                         <span className="rounded border border-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-text-tertiary">
                           {h.verdict}
                         </span>
+                        {h.tier !== "cash" && (
+                          <span className="rounded border border-border bg-bg-subtle px-2 py-0.5 font-mono text-[10px] tracking-wide text-text-secondary">
+                            {price(h.price)}
+                          </span>
+                        )}
                       </div>
                       <p className="mt-2 text-sm leading-relaxed text-text-secondary">{h.rationale}</p>
                       <p className="mt-2 text-xs leading-relaxed text-text-tertiary">
