@@ -19,6 +19,12 @@ const ranked = [...opps].sort(
   (a, b) => (b.composite_score || 0) - (a.composite_score || 0),
 );
 
+// Drop deadlines already in the past; a paid calendar must not sell expired dates.
+const today = new Date().toISOString().slice(0, 10);
+const liveDeadlines = deadlines.filter(
+  (d) => !d.end_date || d.end_date >= today,
+);
+
 const scores = ranked.map((o) => ({
   slug: o.slug,
   name: o.name,
@@ -48,24 +54,28 @@ for (const o of ranked) {
 const payloads = {
   scores: {
     updated_at: score.updated_at,
+    generated_at: new Date().toISOString(),
     count: scores.length,
     source: "EarlyThunder Research, https://earlythunder.com/methodology",
     items: scores,
   },
   theses: {
     updated_at: score.updated_at,
+    generated_at: new Date().toISOString(),
     count: ranked.length,
     source: "EarlyThunder Research, https://earlythunder.com/methodology",
     bySlug: theses,
   },
   catalysts: {
     updated_at: score.updated_at,
-    count: deadlines.length,
+    generated_at: new Date().toISOString(),
+    count: liveDeadlines.length,
     source: "EarlyThunder Research, https://earlythunder.com/deadlines",
-    items: deadlines,
+    items: liveDeadlines,
   },
   scorecard: {
     updated_at: score.updated_at,
+    generated_at: new Date().toISOString(),
     methodology: score.methodology,
     benchmark: score.benchmark,
     count: (score.tokens || []).length,
@@ -73,6 +83,7 @@ const payloads = {
   },
   earnings: {
     updated_at: score.updated_at,
+    generated_at: new Date().toISOString(),
     count: earnings.length,
     source: "EarlyThunder Research",
     items: earnings,

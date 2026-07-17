@@ -66,6 +66,62 @@ const CATALOG = {
   ],
 };
 
+// Bazaar-style discovery metadata injected into 402 responses post-middleware.
+// The SDK's declareDiscoveryExtension cannot run on Workers (its ajv schema
+// validation needs runtime code generation, which workerd forbids), so the
+// same shape is emitted statically for crawlers that parse 402 challenges.
+const INPUT_SCHEMA_BASE = {
+  $schema: "https://json-schema.org/draft/2020-12/schema",
+  type: "object",
+  properties: {
+    input: {
+      type: "object",
+      properties: {
+        type: { const: "http" },
+        method: { type: "string" },
+      },
+      required: ["type", "method"],
+    },
+    output: { type: "object" },
+  },
+  required: ["input"],
+};
+
+function bazaarExt(example: unknown, queryParams?: Record<string, string>) {
+  const input: Record<string, unknown> = { type: "http", method: "GET" };
+  if (queryParams) input.queryParams = queryParams;
+  return {
+    bazaar: {
+      info: { input, output: { type: "json", example } },
+      schema: INPUT_SCHEMA_BASE,
+    },
+  };
+}
+
+const DISCOVERY_EXT: Record<string, unknown> = {
+  "/api/x402/v1/scores": bazaarExt({
+    updated_at: "2026-06-11T11:03:08Z",
+    count: 259,
+    items: [{ slug: "bitcoin", name: "Bitcoin", ticker: "$BTC", tier: 1, composite_score: 94, one_liner: "Digital store of value." }],
+  }),
+  "/api/x402/v1/thesis": bazaarExt(
+    { slug: "ethereum", name: "Ethereum", tier: 1, composite_score: 82, thesis: "Full cited deep-value thesis text." },
+    { slug: "ethereum" },
+  ),
+  "/api/x402/v1/catalysts": bazaarExt({
+    count: 13,
+    items: [{ protocol: "EU Regulation", event: "MiCA milestone", end_date: "2026-08-01", urgency: "HIGH", source: "ESMA" }],
+  }),
+  "/api/x402/v1/scorecard": bazaarExt({
+    count: 251,
+    tokens: [{ symbol: "ETH", price: 3500, market_cap: 420000000000, score: 82, verdict: "ACCUMULATE" }],
+  }),
+  "/api/x402/v1/earnings": bazaarExt({
+    count: 15,
+    items: [{ protocol: "Aave", ticker: "AAVE", yield_pct: 4.5, risk: "LOW" }],
+  }),
+};
+
 let cached: ReturnType<typeof handle> | null = null;
 
 function buildApp(env: Env) {
@@ -80,6 +136,31 @@ function buildApp(env: Env) {
     await next();
     c.header("Cache-Control", "no-store");
     c.header("Access-Control-Expose-Headers", "PAYMENT-REQUIRED, PAYMENT-RESPONSE, X-PAYMENT-RESPONSE");
+    if (c.res.status === 402) {
+      const prHeader = c.res.headers.get("PAYMENT-REQUIRED");
+      const path = new URL(c.req.url).pathname;
+      const ext = DISCOVERY_EXT[path];
+      if (prHeader && ext) {
+        try {
+          const pr = JSON.parse(atob(prHeader));
+          pr.extensions = { ...(pr.extensions || {}), ...(ext as Record<string, unknown>) };
+          const enriched = btoa(JSON.stringify(pr));
+          const body = JSON.stringify({
+            error: "Payment required",
+            paymentRequired: pr,
+            catalog: "https://earlythunder.com/api/x402/v1/index",
+          });
+          c.res = new Response(body, {
+            status: 402,
+            headers: new Headers(c.res.headers),
+          });
+          c.res.headers.set("PAYMENT-REQUIRED", enriched);
+          c.res.headers.set("Content-Type", "application/json");
+        } catch {
+          // leave the original 402 untouched on any parse failure
+        }
+      }
+    }
   });
 
   app.options("*", (c) => {
