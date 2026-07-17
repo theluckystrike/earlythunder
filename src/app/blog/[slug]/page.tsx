@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/data";
 import { formatDate } from "@/lib/format";
@@ -133,18 +134,116 @@ function PostHeader({
   );
 }
 
+const URL_PATTERN = /(https?:\/\/[^\s)]+)/g;
+const BOLD_PATTERN = /\*\*([^*]+)\*\*/g;
+
+/** Renders inline markdown: **bold** and bare https links. */
+function InlineText({ text }: { readonly text: string }) {
+  const nodes: ReactNode[] = [];
+  const segments = text.split(BOLD_PATTERN);
+
+  segments.forEach((segment, i) => {
+    const isBold = i % 2 === 1;
+    const parts = segment.split(URL_PATTERN);
+    const rendered = parts.map((part, j) => {
+      if (URL_PATTERN.test(part)) {
+        URL_PATTERN.lastIndex = 0;
+        const label = part.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+        return (
+          <a
+            key={`${i}-${j}`}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber underline decoration-amber/40 underline-offset-2 hover:decoration-amber break-words"
+          >
+            {label}
+          </a>
+        );
+      }
+      URL_PATTERN.lastIndex = 0;
+      return part;
+    });
+    if (isBold) {
+      nodes.push(
+        <strong key={i} className="font-semibold text-text-primary">
+          {rendered}
+        </strong>,
+      );
+    } else {
+      nodes.push(...rendered);
+    }
+  });
+
+  return <>{nodes}</>;
+}
+
+function isListBlock(block: string): boolean {
+  const lines = block.split("\n");
+  return lines.length > 0 && lines.every((l) => /^(- |\d+\. )/.test(l.trim()));
+}
+
 function PostContent({ content }: { readonly content: string }) {
   if (typeof content !== "string" || content.length === 0) return null;
 
-  const paragraphs = content.split("\n\n").slice(0, 100);
+  const blocks = content.split("\n\n").slice(0, 100);
 
   return (
-    <div className="mt-8 space-y-6">
-      {paragraphs.map((para, i) => (
-        <p key={i} className="text-base leading-relaxed text-text-secondary">
-          {para}
-        </p>
-      ))}
+    <div className="mt-10">
+      {blocks.map((block, i) => {
+        const trimmed = block.trim();
+
+        if (trimmed.startsWith("### ")) {
+          return (
+            <h3
+              key={i}
+              className="mt-10 mb-4 text-lg font-semibold tracking-tight text-text-primary"
+            >
+              <InlineText text={trimmed.slice(4)} />
+            </h3>
+          );
+        }
+
+        if (trimmed.startsWith("## ")) {
+          return (
+            <h2
+              key={i}
+              className="mt-12 mb-4 text-2xl font-semibold tracking-tight text-text-primary"
+            >
+              <InlineText text={trimmed.slice(3)} />
+            </h2>
+          );
+        }
+
+        if (isListBlock(trimmed)) {
+          const items = trimmed.split("\n").map((l) => l.trim());
+          const ordered = /^\d+\. /.test(items[0]);
+          const ListTag = ordered ? "ol" : "ul";
+          return (
+            <ListTag
+              key={i}
+              className={`my-5 space-y-2.5 pl-5 text-[1.0625rem] leading-relaxed text-text-secondary ${
+                ordered ? "list-decimal" : "list-disc"
+              } marker:text-text-tertiary`}
+            >
+              {items.map((item, j) => (
+                <li key={j} className="pl-1">
+                  <InlineText text={item.replace(/^(- |\d+\. )/, "")} />
+                </li>
+              ))}
+            </ListTag>
+          );
+        }
+
+        return (
+          <p
+            key={i}
+            className="my-5 text-[1.0625rem] leading-[1.8] text-text-secondary"
+          >
+            <InlineText text={trimmed} />
+          </p>
+        );
+      })}
     </div>
   );
 }
