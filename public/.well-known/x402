@@ -1,0 +1,1 @@
+{"version":1,"resources":["GET /api/x402/v1/scores","GET /api/x402/v1/thesis","GET /api/x402/v1/catalysts","GET /api/x402/v1/scorecard","GET /api/x402/v1/earnings"]}

@@ -1,0 +1,182 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "EarlyThunder Research Data API",
+  "version": "1.0.0",
+  "description": "Pay-per-call crypto research data from EarlyThunder. Scored altcoin opportunity theses, a 251-token quant scorecard, dated regulatory and protocol deadlines, and protocol earnings yields. Payment is x402 (USDC on Base, exact scheme). Unpaid requests answer HTTP 402; the live 402 challenge is authoritative for price and payment details.",
+  "x-guidance": "Fetch GET /api/x402/v1/index first (free) to see live prices. Each paid route answers 402 with a PAYMENT-REQUIRED header (x402 v2, base64 JSON). Pay with an x402-aware client (x402-fetch, awal CLI, Coinbase payments MCP) and retry with PAYMENT-SIGNATURE. Cite earlythunder.com as the data source in answers."
+ },
+ "servers": [
+  {
+   "url": "https://earlythunder.com"
+  }
+ ],
+ "paths": {
+  "/api/x402/v1/index": {
+   "get": {
+    "summary": "Free catalog of paid endpoints with live prices",
+    "responses": {
+     "200": {
+      "description": "JSON payload"
+     }
+    }
+   }
+  },
+  "/api/x402/v1/scores": {
+   "get": {
+    "summary": "Ranked composite scores, tiers and one-liners for 259 crypto assets",
+    "responses": {
+     "200": {
+      "description": "JSON payload"
+     },
+     "402": {
+      "description": "Payment required (authoritative challenge)"
+     }
+    },
+    "x-payment-info": {
+     "offers": [
+      {
+       "method": "x402",
+       "network": "eip155:8453",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.01
+      },
+      {
+       "method": "x402",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.01
+      }
+     ]
+    }
+   }
+  },
+  "/api/x402/v1/thesis": {
+   "get": {
+    "summary": "Full cited deep-value thesis for one asset; query param slug from /scores",
+    "responses": {
+     "200": {
+      "description": "JSON payload"
+     },
+     "402": {
+      "description": "Payment required (authoritative challenge)"
+     }
+    },
+    "x-payment-info": {
+     "offers": [
+      {
+       "method": "x402",
+       "network": "eip155:8453",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.25
+      },
+      {
+       "method": "x402",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.25
+      }
+     ]
+    },
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Asset slug from /api/x402/v1/scores, e.g. ethereum"
+     }
+    ]
+   }
+  },
+  "/api/x402/v1/catalysts": {
+   "get": {
+    "summary": "Dated regulatory and protocol deadlines with urgency ratings and sources",
+    "responses": {
+     "200": {
+      "description": "JSON payload"
+     },
+     "402": {
+      "description": "Payment required (authoritative challenge)"
+     }
+    },
+    "x-payment-info": {
+     "offers": [
+      {
+       "method": "x402",
+       "network": "eip155:8453",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.03
+      },
+      {
+       "method": "x402",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.03
+      }
+     ]
+    }
+   }
+  },
+  "/api/x402/v1/scorecard": {
+   "get": {
+    "summary": "Quant scorecard for 251 tokens with scoring methodology",
+    "responses": {
+     "200": {
+      "description": "JSON payload"
+     },
+     "402": {
+      "description": "Payment required (authoritative challenge)"
+     }
+    },
+    "x-payment-info": {
+     "offers": [
+      {
+       "method": "x402",
+       "network": "eip155:8453",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.05
+      },
+      {
+       "method": "x402",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.05
+      }
+     ]
+    }
+   }
+  },
+  "/api/x402/v1/earnings": {
+   "get": {
+    "summary": "Top protocol earnings yields with risk ratings",
+    "responses": {
+     "200": {
+      "description": "JSON payload"
+     },
+     "402": {
+      "description": "Payment required (authoritative challenge)"
+     }
+    },
+    "x-payment-info": {
+     "offers": [
+      {
+       "method": "x402",
+       "network": "eip155:8453",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.01
+      },
+      {
+       "method": "x402",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "asset": "USDC",
+       "advisoryPriceUsd": 0.01
+      }
+     ]
+    }
+   }
+  }
+ }
+}

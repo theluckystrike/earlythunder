@@ -54,3 +54,6 @@ next-env.d.ts
 # os
 .DS_Store
 Thumbs.db
+
+# generated x402 paid-API payload snapshots (rebuilt at deploy)
+functions/api/x402/v1/_*.json

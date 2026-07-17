@@ -1,3 +1,9 @@
 name = "earlythunder"
 compatibility_date = "2026-04-13"
 pages_build_output_dir = "out"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+PAY_TO_EVM = "0xe369ec56Eb52F1C698EEb69012E694338c0F30b9"
+PAY_TO_SVM = "9uZrHXS1T7kV1b7MKSS9ognUMTHCTSjP7mmur3yg3dN7"
+FACILITATOR_URL = "https://facilitator.payai.network"
