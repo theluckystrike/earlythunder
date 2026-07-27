@@ -1,7 +1,7 @@
 [
   {
     "slug": "what-is-the-clarity-act",
-    "h1": "What the CLARITY Act actually does",
+    "h1": "What the CLARITY Act does",
     "title": "What Is the CLARITY Act? Crypto Market Structure Explained",
     "description": "The CLARITY Act splits crypto oversight between the SEC and CFTC. What the bill does in plain language, with each provision labelled by version.",
     "keywords": [
@@ -42,7 +42,8 @@
       {
         "h2": "What changes for an ordinary holder",
         "body": [
-          "Exchanges get a registration path that does not require them to guess which of their listings is a security, which is why delisting anything ambiguous has been the default risk-management move since 2023. Banks and brokerages get a rulebook they can hand to a compliance committee, which is the actual gate on institutional distribution. Issuers get disclosure obligations that scale rather than a binary registered-or-illegal choice. And developers who never take custody get a safe harbour confirming they are not money transmitters, folded in from the Blockchain Regulatory Certainty Act.",
+          "Four things change, and none of them are about price.",
+          "- Exchanges get a registration path that does not require guessing which listing is a security. Delisting anything ambiguous has been the default risk move since 2023.\n- Banks and brokerages get a rulebook they can hand to a compliance committee. That committee is the actual gate on institutional distribution.\n- Issuers get disclosure obligations that scale, rather than a binary registered-or-illegal choice.\n- Developers who never take custody get a safe harbour confirming they are not money transmitters.",
           "What it does not do is make any token a good investment. A clean classification says the venue is legal. It says nothing about whether the protocol earns anything."
         ]
       }
@@ -99,7 +100,7 @@
   },
   {
     "slug": "clarity-act-status-timeline",
-    "h1": "Where the CLARITY Act stands right now",
+    "h1": "Where the CLARITY Act stands",
     "title": "CLARITY Act Status and Timeline, July 2026",
     "description": "Every dated milestone from introduction to the 616-page merged Senate text, with the real vote counts and what still has to happen before the bill becomes law.",
     "keywords": [
@@ -277,8 +278,8 @@
   },
   {
     "slug": "who-supports-the-clarity-act",
-    "h1": "Who is backing the CLARITY Act, and what their numbers really mean",
-    "title": "Who Supports the CLARITY Act? The $30 Trillion Claim, Checked",
+    "h1": "Who is backing the CLARITY Act",
+    "title": "Who Supports the CLARITY Act? $30T Claim Checked",
     "description": "BlackRock, Schwab, Fidelity and Goldman get named as backers. The $30 trillion figure adds three kinds of assets, and two never endorsed the bill.",
     "keywords": [
       "who supports the clarity act",
@@ -312,16 +313,19 @@
           "Fidelity is the clean case. It publicly urged the Senate to pass the bill, saying the time is now for clear rules of the road that are essential to strengthening investor confidence, providing certainty for market participants, and reinforcing US leadership in global digital asset markets.",
           "Goldman is a CEO statement. David Solomon said on July 23 that he is very supportive of moving the Clarity Act forward so we can get some market structure in place, while conceding the bill is not perfect.",
           "BlackRock is thinner. What we could find is favourable research commentary on tokenised assets, not a policy endorsement of this bill.",
-          "Schwab is the one worth flagging. The line quoted everywhere, calling the bill a really important fundamental catalyst that needs to pass, traces to a single crypto outlet that names no speaker, cites no interview and links no press release. Other coverage attributes the comment to Jim Ferraioli, Director of Digital Currencies Research and Strategy at the Schwab Center for Financial Research, whose published wording is that this is a critical moment for the long-awaited Clarity Act. That is one strategist's research note, not a corporate position. The same note estimated that CLARITY passage odds explained about 4.3 percent of bitcoin's daily price change, which argues against the catalyst framing built on top of it.",
-          "None of these firms issued a joint statement. The coalition is a construct of the coverage."
+          "Schwab is the one worth flagging. The line quoted everywhere, calling the bill a really important fundamental catalyst that needs to pass, traces to a single crypto outlet. That outlet names no speaker, cites no interview and links no press release.",
+          "Other coverage attributes the comment to Jim Ferraioli, Director of Digital Currencies Research and Strategy at the Schwab Center for Financial Research. His published wording is different, that this is a critical moment for the long-awaited Clarity Act. That is one strategist's research note, not a corporate position.",
+          "The same note estimated that CLARITY passage odds explained about 4.3 percent of bitcoin's daily price change, which argues against the catalyst framing built on top of it. None of these firms issued a joint statement. The coalition is a construct of the coverage."
         ]
       },
       {
         "h2": "The one disclosure worth more than all of it",
         "body": [
           "Schwab's useful contribution is not its balance sheet. It is a share figure. Schwab has said its clients hold roughly 20 percent of all US crypto ETP assets.",
-          "Apply that to the market. US spot bitcoin ETPs held about $80 billion and spot ether ETPs about $10.5 billion around July 21 2026. A fifth of that is roughly $18 billion of crypto ETP exposure sitting in Schwab accounts before any legislation passes. Schwab's own stated dollar figure, given on a summer 2025 call, was approximately $25 billion, so treat $18 billion as a floor. These are client-owned custodial holdings, the share figure is an undated self-report covering spot products only, and ETP totals swung from about $72.5 billion to $80.9 billion to $78.8 billion inside a single month.",
-          "Even with all those caveats the point holds. Advised and retail money reached crypto through the ETP wrapper without waiting for market structure legislation. The constraint CLARITY would remove is not appetite and it is not capital. It is the set of products a compliance committee will approve, which is a narrower and more specific thing than $30 trillion of firepower."
+          "Apply that to the market. US spot bitcoin ETPs held about $80 billion and spot ether ETPs about $10.5 billion around July 21 2026, so a fifth of that is roughly $18 billion sitting in Schwab accounts before any legislation passes.",
+          "Four caveats, all of which matter.",
+          "- Schwab's own stated dollar figure, given on a summer 2025 call, was approximately $25 billion. Treat $18 billion as a floor.\n- These are client-owned custodial holdings, not Schwab assets under management.\n- The 20 percent share is an undated self-report covering spot products only.\n- ETP totals swung from about $72.5 billion to $80.9 billion to $78.8 billion inside a single month.",
+          "Even with all that, the point holds. Advised and retail money reached crypto through the ETP wrapper without waiting for market structure legislation. The constraint CLARITY would remove is not appetite and it is not capital. It is the set of products a compliance committee will approve."
         ]
       }
     ],
@@ -381,7 +385,7 @@
   },
   {
     "slug": "sec-vs-cftc-crypto-jurisdiction",
-    "h1": "How the CLARITY Act divides the SEC and the CFTC",
+    "h1": "SEC and CFTC, who gets what",
     "title": "SEC vs CFTC Crypto Jurisdiction Under the CLARITY Act",
     "description": "The bill gives the CFTC spot market authority over digital commodities and leaves securities with the SEC. The split is messier than the headline version suggests.",
     "keywords": [
@@ -463,7 +467,7 @@
   },
   {
     "slug": "mature-blockchain-system-test",
-    "h1": "The maturity test and the two 20 percent thresholds",
+    "h1": "The maturity test, and the 20 percent rules",
     "title": "Mature Blockchain System Test, the CLARITY Act 20% Rules",
     "description": "The CLARITY Act has two separate 20 percent thresholds and neither works the way the popular summary says. One is about voting power, the other about insider supply.",
     "keywords": [
@@ -551,7 +555,7 @@
   },
   {
     "slug": "clarity-act-token-classification-risk",
-    "h1": "Which tokens are exposed if the CLARITY Act passes",
+    "h1": "Which tokens are exposed",
     "title": "CLARITY Act Token Classification Risk, 251 Tokens Scored",
     "description": "We scored 251 tokens against the variables the CLARITY Act cares about. Six clear the top band, and $138B of market cap sits in the most exposed one.",
     "keywords": [
@@ -569,7 +573,8 @@
         "body": [
           "Early Thunder maintains a 251-token scorecard rating each asset across 25 variables from 1 to 10. Three map onto what the CLARITY Act cares about. Regulatory safety captures existing enforcement exposure and jurisdictional posture. Holder concentration captures how much supply sits with insiders. Institutional adoption captures whether regulated venues already touch the asset.",
           "We combined them into a readiness score out of 100, weighting regulatory safety at 50 percent, holder concentration at 30 percent, and institutional adoption at 20 percent.",
-          "Be clear about what the concentration variable is doing. The bill's ownership test asks whether the issuer, related persons and affiliated persons together hold 20 percent or more of total units, with affiliation triggered by acquiring 5 percent or more from the issuer. Our holder concentration score is a research proxy for insider-heavy cap tables. It is not that statutory calculation, which needs cap-table data most projects have never published. Treat this as our own heuristic, not a legal opinion and not a prediction of any regulator's decision."
+          "Be clear about what the concentration variable is doing. The bill's ownership test asks whether the issuer, related persons and affiliated persons together hold 20 percent or more of total units, with affiliation triggered by acquiring 5 percent or more from the issuer.",
+          "Our holder concentration score is a research proxy for insider-heavy cap tables. It is not that statutory calculation, which needs cap-table data most projects have never published. Treat this as our own heuristic, not a legal opinion and not a prediction of any regulator's decision."
         ]
       },
       {
@@ -636,7 +641,7 @@
   },
   {
     "slug": "clarity-act-passage-odds",
-    "h1": "The floor-time arithmetic behind CLARITY Act passage",
+    "h1": "Will the CLARITY Act pass in 2026",
     "title": "Will the CLARITY Act Pass in 2026? The Calendar Math",
     "description": "Passage hinges on floor days and one ethics fight, not on endorsements. Counting the Senate's remaining 2026 session time shows exactly how narrow the window is.",
     "keywords": [

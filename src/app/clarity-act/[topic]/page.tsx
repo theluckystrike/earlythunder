@@ -19,6 +19,7 @@ import {
   getBreadcrumbListSchema,
   getFaqPageSchema,
 } from "@/lib/structured-data";
+import { PageHeader, EyebrowLabel, CardLink, Section } from "@/components/PageChrome";
 
 interface PageProps {
   readonly params: Promise<{ topic: string }>;
@@ -113,7 +114,11 @@ export default async function ClarityTopicPage({ params }: PageProps) {
       >
         CLARITY Act
       </Link>
-      <TopicHeader topic={topic} updatedAt={meta.updated_at} />
+      <PageHeader
+        title={topic.h1}
+        lead={topic.tldr}
+        meta={`${AUTHOR_NAME}. Updated ${meta.updated_at.slice(0, 10)}.`}
+      />
       <TopicBody sections={topic.sections} />
       <FaqBlock faqs={topic.faqs} />
       <SourceList sources={topic.sources} />
@@ -153,47 +158,19 @@ function TopicSchemas({
   );
 }
 
-function TopicHeader({
-  topic,
-  updatedAt,
-}: {
-  readonly topic: ClarityTopic;
-  readonly updatedAt: string;
-}) {
-  console.assert(typeof updatedAt === "string", "TopicHeader: updatedAt required");
-  if (!topic || typeof updatedAt !== "string") return null;
-
-  return (
-    <header className="mt-6">
-      <h1 className="text-4xl font-semibold leading-tight tracking-tighter text-text-primary">
-        {topic.h1}
-      </h1>
-      <p className="mt-5 text-[1.0625rem] leading-relaxed text-text-secondary">{topic.tldr}</p>
-      <div className="mt-6 flex flex-wrap items-center gap-3 text-xs font-mono text-text-tertiary">
-        <span>{AUTHOR_NAME}</span>
-        <span className="text-border">|</span>
-        <span>Updated {updatedAt.slice(0, 10)}</span>
-      </div>
-      <div className="divider mt-8" />
-    </header>
-  );
-}
-
 function TopicBody({ sections }: { readonly sections: ClarityTopic["sections"] }) {
   console.assert(Array.isArray(sections), "TopicBody: sections array required");
   if (!Array.isArray(sections) || sections.length === 0) return null;
 
   return (
-    <div className="mt-10">
+    <div className="mt-16">
       {sections.map((section) => (
-        <section key={section.h2}>
-          <h2 className="mt-12 mb-4 text-2xl font-semibold tracking-tight text-text-primary">
+        <section key={section.h2} className="mt-14 first:mt-0">
+          <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
             {section.h2}
           </h2>
           {section.body.map((para: string, i: number) => (
-            <p key={i} className="my-5 text-[1.0625rem] leading-[1.8] text-text-secondary">
-              {para}
-            </p>
+            <Block key={i} text={para} />
           ))}
         </section>
       ))}
@@ -201,15 +178,49 @@ function TopicBody({ sections }: { readonly sections: ClarityTopic["sections"] }
   );
 }
 
+/** Bounded so a malformed data entry can never render an unbounded list. */
+const MAX_LIST_ITEMS = 12;
+
+/**
+ * Renders a body block. A block whose lines all start with "- " becomes a
+ * list, which reads far better than the same content packed into one
+ * long paragraph.
+ */
+function Block({ text }: { readonly text: string }) {
+  console.assert(typeof text === "string", "Block: text must be a string");
+  if (typeof text !== "string" || text.length === 0) return null;
+
+  const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+  const isList = lines.length > 1 && lines.every((l) => l.startsWith("- "));
+
+  if (!isList) {
+    return (
+      <p className="mt-5 text-[1.0625rem] leading-[1.75] text-text-secondary">
+        {text}
+      </p>
+    );
+  }
+
+  return (
+    <ul className="mt-5 space-y-3 border-l border-border pl-5">
+      {lines.slice(0, MAX_LIST_ITEMS).map((l, i) => (
+        <li key={i} className="text-[1.0625rem] leading-[1.75] text-text-secondary">
+          {l.slice(2)}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function TopicFooter() {
   return (
-    <div className="mt-16 border-t border-border pt-8 text-center">
-      <p className="text-sm text-text-tertiary">
-        Research and analysis. Not investment or legal advice.
+    <div className="mt-16 border-t border-border pt-10 text-center">
+      <p className="mx-auto max-w-xl text-sm leading-relaxed text-text-tertiary">
+        Research and analysis, not investment or legal advice.
       </p>
       <Link
         href="/scorecard"
-        className="mt-4 inline-block rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5"
+        className="mt-5 inline-block rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:-translate-y-0.5 hover:bg-amber-hover hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
       >
         See the 251-token scorecard
       </Link>
@@ -221,23 +232,23 @@ function FaqBlock({ faqs }: { readonly faqs: readonly { question: string; answer
   if (!Array.isArray(faqs) || faqs.length === 0) return null;
 
   return (
-    <section className="mt-16 border-t border-border pt-10">
+    <Section divider>
       <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
         Common questions
       </h2>
-      <dl className="mt-6 space-y-7">
+      <dl className="mt-8 space-y-8">
         {faqs.map((faq) => (
           <div key={faq.question}>
             <dt className="text-base font-semibold text-text-primary">
               {faq.question}
             </dt>
-            <dd className="mt-2 text-[1.0625rem] leading-[1.8] text-text-secondary">
+            <dd className="mt-3 text-[1.0625rem] leading-[1.75] text-text-secondary">
               {faq.answer}
             </dd>
           </div>
         ))}
       </dl>
-    </section>
+    </Section>
   );
 }
 
@@ -245,11 +256,9 @@ function SourceList({ sources }: { readonly sources: readonly { label: string; u
   if (!Array.isArray(sources) || sources.length === 0) return null;
 
   return (
-    <section className="mt-14 border-t border-border pt-8">
-      <h2 className="text-xs font-mono uppercase tracking-wider text-text-tertiary">
-        Sources
-      </h2>
-      <ul className="mt-4 space-y-2">
+    <Section divider>
+      <EyebrowLabel>Sources</EyebrowLabel>
+      <ul className="space-y-2.5">
         {sources.map((s) => (
           <li key={s.url} className="text-sm leading-relaxed">
             <a
@@ -263,7 +272,7 @@ function SourceList({ sources }: { readonly sources: readonly { label: string; u
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 }
 
@@ -271,24 +280,18 @@ function RelatedTopics({ topics }: { readonly topics: readonly ClarityTopic[] })
   if (!Array.isArray(topics) || topics.length === 0) return null;
 
   return (
-    <nav aria-label="Related CLARITY Act analysis" className="mt-14 border-t border-border pt-8">
-      <h2 className="text-xs font-mono uppercase tracking-wider text-text-tertiary">
-        Keep reading
-      </h2>
-      <ul className="mt-5 space-y-5">
+    <nav aria-label="Related CLARITY Act analysis" className="mt-16 border-t border-border pt-10">
+      <EyebrowLabel>Keep reading</EyebrowLabel>
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {topics.map((t) => (
-          <li key={t.slug}>
-            <Link href={`/clarity-act/${t.slug}`} className="group block">
-              <span className="text-base font-semibold leading-snug text-text-primary group-hover:text-amber">
-                {t.h1}
-              </span>
-              <span className="mt-1 block text-sm leading-relaxed text-text-tertiary">
-                {t.description}
-              </span>
-            </Link>
-          </li>
+          <CardLink
+            key={t.slug}
+            href={`/clarity-act/${t.slug}`}
+            title={t.h1}
+            description={t.description}
+          />
         ))}
-      </ul>
+      </div>
     </nav>
   );
 }

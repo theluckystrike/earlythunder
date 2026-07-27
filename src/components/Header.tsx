@@ -10,7 +10,7 @@ const PRIMARY_NAV = [
   { href: "/research/", label: "Research", isNextRoute: false },
   { href: "/earnings/", label: "Earnings", isNextRoute: false },
   { href: "/deadlines/", label: "Deadlines", isNextRoute: false },
-  { href: "/clarity-act", label: "CLARITY Act", isNextRoute: true },
+  { href: "/clarity-act", label: "CLARITY", isNextRoute: true },
   { href: "/scorecard", label: "Scorecard", isNextRoute: true },
   { href: "/portfolio", label: "Portfolio", isNextRoute: true },
   { href: "/about", label: "About", isNextRoute: true },

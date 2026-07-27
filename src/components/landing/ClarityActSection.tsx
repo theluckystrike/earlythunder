@@ -133,11 +133,11 @@ function SectionHeading({ meta }: { readonly meta: ReturnType<typeof getClarityM
           </span>
         )}
       </div>
-      <h2 className="mt-5 max-w-3xl text-4xl font-semibold leading-tight tracking-tighter text-text-primary">
+      <h2 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tighter text-text-primary md:text-4xl">
         The CLARITY Act is the biggest open catalyst in US crypto, and most of
         the market is reading it backwards
       </h2>
-      <p className="mt-5 max-w-3xl text-lg leading-relaxed text-text-secondary">
+      <p className="mt-4 max-w-2xl text-xl leading-relaxed text-text-secondary">
         {meta.one_liner}
       </p>
     </>
@@ -149,12 +149,12 @@ function LatestUpdate({ entry }: { readonly entry: ClarityTimelineEntry }) {
   if (!entry || typeof entry.date !== "string") return null;
 
   return (
-    <div className="mt-8 rounded-lg border border-border bg-bg-card p-5">
+    <div className="mt-8 max-w-3xl rounded-2xl border border-border bg-bg-card p-6">
       <div className="text-xs font-mono uppercase tracking-wider text-text-tertiary">
         Latest update, {entry.date}
       </div>
       <div className="mt-2 text-base font-semibold text-text-primary">{entry.title}</div>
-      <p className="mt-2 text-[1.0625rem] leading-relaxed text-text-secondary">{entry.detail}</p>
+      <p className="mt-2.5 text-[1.0625rem] leading-[1.75] text-text-secondary">{entry.detail}</p>
     </div>
   );
 }
@@ -164,9 +164,9 @@ function StatGrid({ stats }: { readonly stats: readonly StatCell[] }) {
   if (!Array.isArray(stats) || stats.length === 0) return null;
 
   return (
-    <dl className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+    <dl className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
       {stats.map((s) => (
-        <div key={s.label} className="bg-bg-card p-5">
+        <div key={s.label} className="bg-bg-card p-6">
           <dd className="text-3xl font-semibold tracking-tighter text-text-primary">{s.value}</dd>
           <dt className="mt-2 text-sm font-medium text-text-secondary">{s.label}</dt>
           <p className="mt-1 text-xs leading-relaxed text-text-tertiary">{s.sub}</p>
@@ -181,11 +181,11 @@ function InsightGrid({ insights }: { readonly insights: readonly Insight[] }) {
   if (!Array.isArray(insights) || insights.length === 0) return null;
 
   return (
-    <div className="mt-12 grid gap-8 md:grid-cols-2">
+    <div className="mt-14 grid gap-10 md:grid-cols-2">
       {insights.map((ins) => (
         <div key={ins.heading}>
           <h3 className="text-lg font-semibold tracking-tight text-text-primary">{ins.heading}</h3>
-          <p className="mt-2 text-[1.0625rem] leading-[1.8] text-text-secondary">{ins.body}</p>
+          <p className="mt-3 max-w-prose text-[1.0625rem] leading-[1.75] text-text-secondary">{ins.body}</p>
         </div>
       ))}
     </div>
@@ -197,7 +197,7 @@ function SectionActions() {
     <div className="mt-12 flex flex-wrap items-center gap-4">
       <Link
         href="/clarity-act"
-        className="rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5"
+        className="rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:-translate-y-0.5 hover:bg-amber-hover hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
       >
         Open the tracker
       </Link>

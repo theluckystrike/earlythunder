@@ -34,6 +34,14 @@ import {
   getBreadcrumbListSchema,
   getFaqPageSchema,
 } from "@/lib/structured-data";
+import {
+  PageHeader,
+  SectionLabel,
+  Prose,
+  EyebrowLabel,
+  CardLink,
+  Section,
+} from "@/components/PageChrome";
 
 const PAGE_TITLE = "CLARITY Act Tracker, Status and Latest Updates";
 const PAGE_DESCRIPTION =
@@ -113,25 +121,31 @@ type Calendar = ReturnType<typeof getClarityCalendar>;
 /**
  * CLARITY Act hub. Composition only, so each section stays independently
  * reviewable and every function stays under the 60-line ceiling.
+ * Layout primitives come from PageChrome so this matches the crafted pages.
  */
 export default function ClarityActHubPage() {
   const meta = getClarityMeta();
   const bill = getClarityBill();
-  const readiness = getClarityReadiness();
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-20">
+    <div className="mx-auto max-w-6xl px-6 py-20">
       <HubSchemas bill={bill} />
-      <HubHeader meta={meta} />
+      <PageHeader
+        eyebrow={meta.status}
+        title="The CLARITY Act tracker"
+        lead={meta.one_liner}
+        meta={`${AUTHOR_NAME}. Updated ${meta.updated_at.slice(0, 10)}. Every figure carries a primary source.`}
+      />
       <BillSnapshot bill={bill} />
       <TopicIndex topics={getAllClarityTopics()} />
       <BackersTable backers={getClarityBackers()} totals={getBackerTotals()} />
-      <ReadinessTable readiness={readiness} />
+      <ReadinessTable readiness={getClarityReadiness()} />
       <BlockersList blockers={getClarityBlockers()} />
       <CalendarBlock calendar={getClarityCalendar()} />
       <TimelineList timeline={getClarityTimeline()} />
       <ProvisionsList provisions={getClarityProvisions()} />
       <HubFaq />
+      <ExploreMore />
       <HubFooter />
     </div>
   );
@@ -173,52 +187,31 @@ function HubSchemas({ bill }: { readonly bill: Bill }) {
   );
 }
 
-function HubHeader({ meta }: { readonly meta: Meta }) {
-  console.assert(meta && typeof meta.status === "string", "HubHeader: meta required");
-  if (!meta || typeof meta.updated_at !== "string") return null;
-
-  return (
-    <header>
-      <div className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-3 py-1 text-xs font-mono uppercase tracking-wider text-amber">
-        {meta.status}
-      </div>
-      <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-tighter text-text-primary">
-        The CLARITY Act tracker
-      </h1>
-      <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary">
-        {meta.one_liner}
-      </p>
-      <p className="mt-4 text-sm text-text-tertiary">
-        {AUTHOR_NAME}. Updated {meta.updated_at.slice(0, 10)}. {meta.disclaimer}
-      </p>
-    </header>
-  );
-}
-
 function BillSnapshot({ bill }: { readonly bill: Bill }) {
   console.assert(bill && typeof bill.house_vote === "string", "BillSnapshot: bill required");
   if (!bill || typeof bill.house_vote !== "string") return null;
 
   return (
-    <section className="mt-14">
-      <h2 className="text-xs font-mono uppercase tracking-wider text-text-tertiary">
-        Bill snapshot
-      </h2>
-      <dl className="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-4">
+    <Section>
+      <SectionLabel number="01" title="Where the bill stands" />
+      <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-4">
         <Snapshot label="Bill" value={bill.house_number} />
         <Snapshot label="House vote" value={bill.house_vote} />
         <Snapshot label="Senate committee" value={bill.senate_committee_vote} />
-        <Snapshot label="Votes needed" value={String(bill.votes_needed)} />
+        <Snapshot label="Votes to end debate" value={String(bill.votes_needed)} />
       </dl>
-      <p className="mt-4 text-sm leading-relaxed text-text-tertiary">
-        {bill.house_title}. Introduced {bill.introduced} by {bill.sponsor}. House
-        passage {bill.house_passed}, {bill.house_vote_detail} Senate Banking
-        reported it {bill.senate_committee_date} and it now sits at{" "}
-        {bill.senate_calendar_number}. Any final text also has to be reconciled
-        with {bill.companion_bill}. {bill.votes_needed_note}{" "}
-        {bill.precedent_note}
-      </p>
-    </section>
+      <Prose>
+        {bill.house_title}, introduced {bill.introduced} by {bill.sponsor}. The
+        House passed it {bill.house_passed}. {bill.house_vote_detail}
+      </Prose>
+      <Prose>
+        Senate Banking reported it {bill.senate_committee_date} and it now sits
+        at {bill.senate_calendar_number}. Any final text also has to be
+        reconciled with {bill.companion_bill}.
+      </Prose>
+      <Prose>{bill.votes_needed_note}</Prose>
+      <Prose>{bill.precedent_note}</Prose>
+    </Section>
   );
 }
 
@@ -227,28 +220,23 @@ function TopicIndex({ topics }: { readonly topics: readonly ClarityTopic[] }) {
   if (!Array.isArray(topics) || topics.length === 0) return null;
 
   return (
-    <section className="mt-16">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
-        The analysis
-      </h2>
-      <ul className="mt-6 grid gap-4 sm:grid-cols-2">
+    <Section>
+      <SectionLabel number="02" title="The analysis" />
+      <Prose>
+        Eight pages, each answering one question with its own sources. Start
+        anywhere.
+      </Prose>
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
         {topics.map((t) => (
-          <li key={t.slug}>
-            <Link
-              href={`/clarity-act/${t.slug}`}
-              className="group block h-full rounded-lg border border-border bg-bg-card p-5 transition-colors hover:border-amber/50"
-            >
-              <span className="block text-base font-semibold leading-snug text-text-primary group-hover:text-amber">
-                {t.h1}
-              </span>
-              <span className="mt-2 block text-sm leading-relaxed text-text-tertiary">
-                {t.description}
-              </span>
-            </Link>
-          </li>
+          <CardLink
+            key={t.slug}
+            href={`/clarity-act/${t.slug}`}
+            title={t.h1}
+            description={t.description}
+          />
         ))}
-      </ul>
-    </section>
+      </div>
+    </Section>
   );
 }
 
@@ -263,26 +251,26 @@ function BackersTable({
   if (!Array.isArray(backers) || backers.length === 0) return null;
 
   return (
-    <section className="mt-16">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
-        Who is backing it, and what their numbers measure
-      </h2>
-      <p className="mt-4 text-[1.0625rem] leading-[1.8] text-text-secondary">
-        The four largest named backers report {formatUsdScale(totals.headline_usd)}{" "}
-        between them. Only {formatUsdScale(totals.discretionary_usd)} of that is
-        discretionary, meaning capital the firm itself allocates. The rest is
-        custody and supervision, which is a different thing and rarely labelled
-        as such in coverage. Only one of the four issued an explicit public
-        statement urging passage.
-      </p>
-      <div className="mt-6 overflow-x-auto">
+    <Section>
+      <SectionLabel number="03" title="Who is backing it" />
+      <Prose>
+        Coverage puts more than $30 trillion behind the bill. The four largest
+        named backers report {formatUsdScale(totals.headline_usd)} between them.
+      </Prose>
+      <Prose>
+        Only {formatUsdScale(totals.discretionary_usd)} of that is discretionary,
+        meaning capital the firm itself allocates. The rest is custody and
+        supervision. Only one of the four issued a public statement urging
+        passage.
+      </Prose>
+      <div className="mt-8 overflow-x-auto">
         <table className="w-full min-w-[820px] border-collapse text-sm">
           <thead>
-            <tr className="border-b border-border text-left text-xs font-mono uppercase tracking-wider text-text-tertiary">
+            <tr className="border-b border-border text-left font-mono text-xs uppercase tracking-wider text-text-tertiary">
               <th className="py-3 pr-4 font-medium">Firm</th>
               <th className="py-3 pr-4 font-medium">Figure</th>
               <th className="py-3 pr-4 font-medium">What it measures</th>
-              <th className="py-3 pr-4 font-medium">How strong the support is</th>
+              <th className="py-3 pr-4 font-medium">Strength of support</th>
               <th className="py-3 font-medium">As of</th>
             </tr>
           </thead>
@@ -291,14 +279,14 @@ function BackersTable({
               <tr key={b.firm} className="border-b border-border/60 align-top">
                 <td className="py-4 pr-4 font-semibold text-text-primary">{b.firm}</td>
                 <td className="py-4 pr-4 font-mono text-text-primary">{b.headline_label}</td>
-                <td className="py-4 pr-4 text-text-secondary">
+                <td className="py-4 pr-4 leading-relaxed text-text-secondary">
                   {b.what_it_measures}
                   {!b.discretionary && (
-                    <span className="mt-1 block text-xs text-text-tertiary">Not discretionary</span>
+                    <span className="mt-1.5 block text-xs text-text-tertiary">Not discretionary</span>
                   )}
                 </td>
-                <td className="py-4 pr-4 text-text-secondary">{b.support_strength ?? "-"}</td>
-                <td className="py-4 font-mono text-text-tertiary">{b.as_of}</td>
+                <td className="py-4 pr-4 leading-relaxed text-text-secondary">{b.support_strength ?? "-"}</td>
+                <td className="py-4 font-mono text-xs text-text-tertiary">{b.as_of}</td>
               </tr>
             ))}
           </tbody>
@@ -306,11 +294,11 @@ function BackersTable({
       </div>
       <Link
         href="/clarity-act/who-supports-the-clarity-act"
-        className="mt-5 inline-block text-sm text-amber hover:underline"
+        className="mt-6 inline-block text-sm text-amber hover:underline"
       >
         Full breakdown of the $30 trillion claim
       </Link>
-    </section>
+    </Section>
   );
 }
 
@@ -319,22 +307,22 @@ function ReadinessTable({ readiness }: { readonly readiness: ClarityReadiness })
   if (!readiness || !Array.isArray(readiness.bands) || readiness.bands.length === 0) return null;
 
   return (
-    <section className="mt-16">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
-        {readiness.total_tokens} tokens scored against the bill
-      </h2>
-      <p className="mt-4 text-[1.0625rem] leading-[1.8] text-text-secondary">
-        Early Thunder scores every token on its scorecard for regulatory safety,
-        holder concentration, and institutional adoption. Those three variables
-        approximate what the bill measures, so we combined them into a readiness
-        score out of 100. The median across {readiness.total_tokens} tokens is{" "}
-        {readiness.median}, which is a weaker distribution than the market
-        narrative implies. Treat it as our own heuristic, not a legal opinion.
-      </p>
-      <div className="mt-6 overflow-x-auto">
+    <Section>
+      <SectionLabel number="04" title={`${readiness.total_tokens} tokens scored against the bill`} />
+      <Prose>
+        We score every token on the scorecard for regulatory safety, holder
+        concentration and institutional adoption. Those three approximate what
+        the bill measures, so we combined them into a readiness score out of 100.
+      </Prose>
+      <Prose>
+        The median across {readiness.total_tokens} tokens is {readiness.median}.
+        That is a weaker distribution than the market narrative implies. Treat it
+        as our own heuristic, not a legal opinion.
+      </Prose>
+      <div className="mt-8 overflow-x-auto">
         <table className="w-full min-w-[520px] border-collapse text-sm">
           <thead>
-            <tr className="border-b border-border text-left text-xs font-mono uppercase tracking-wider text-text-tertiary">
+            <tr className="border-b border-border text-left font-mono text-xs uppercase tracking-wider text-text-tertiary">
               <th className="py-3 pr-4 font-medium">Band</th>
               <th className="py-3 pr-4 font-medium">Score</th>
               <th className="py-3 pr-4 font-medium">Tokens</th>
@@ -344,10 +332,10 @@ function ReadinessTable({ readiness }: { readonly readiness: ClarityReadiness })
           <tbody>
             {readiness.bands.map((band) => (
               <tr key={band.band} className="border-b border-border/60">
-                <td className="py-3 pr-4 font-semibold text-text-primary">{band.label}</td>
-                <td className="py-3 pr-4 font-mono text-text-tertiary">{band.range}</td>
-                <td className="py-3 pr-4 font-mono text-text-primary">{band.count}</td>
-                <td className="py-3 font-mono text-text-primary">{formatUsdScale(band.market_cap_usd)}</td>
+                <td className="py-3.5 pr-4 font-semibold text-text-primary">{band.label}</td>
+                <td className="py-3.5 pr-4 font-mono text-xs text-text-tertiary">{band.range}</td>
+                <td className="py-3.5 pr-4 font-mono text-text-primary">{band.count}</td>
+                <td className="py-3.5 font-mono text-text-primary">{formatUsdScale(band.market_cap_usd)}</td>
               </tr>
             ))}
           </tbody>
@@ -355,11 +343,11 @@ function ReadinessTable({ readiness }: { readonly readiness: ClarityReadiness })
       </div>
       <Link
         href="/clarity-act/clarity-act-token-classification-risk"
-        className="mt-5 inline-block text-sm text-amber hover:underline"
+        className="mt-6 inline-block text-sm text-amber hover:underline"
       >
         Which tokens sit in the exposed band
       </Link>
-    </section>
+    </Section>
   );
 }
 
@@ -368,20 +356,20 @@ function BlockersList({ blockers }: { readonly blockers: readonly ClarityBlocker
   if (!Array.isArray(blockers) || blockers.length === 0) return null;
 
   return (
-    <section className="mt-16">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
-        What is blocking it
-      </h2>
-      <div className="mt-6 space-y-6">
+    <Section>
+      <SectionLabel number="05" title="What is blocking it" />
+      <div className="mt-8 space-y-4">
         {blockers.map((b) => (
-          <div key={b.id} className="rounded-lg border border-border bg-bg-card p-5">
+          <div key={b.id} className="rounded-2xl border border-border bg-bg-card p-6">
             <h3 className="text-base font-semibold text-text-primary">{b.title}</h3>
-            <p className="mt-2 text-[1.0625rem] leading-[1.8] text-text-secondary">{b.detail}</p>
-            <p className="mt-3 text-xs font-mono text-text-tertiary">{b.who}</p>
+            <p className="mt-3 max-w-3xl text-[1.0625rem] leading-[1.75] text-text-secondary">
+              {b.detail}
+            </p>
+            <p className="mt-4 font-mono text-xs text-text-tertiary">{b.who}</p>
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
 
@@ -390,22 +378,21 @@ function CalendarBlock({ calendar }: { readonly calendar: Calendar }) {
   if (!calendar || typeof calendar.return_date !== "string") return null;
 
   return (
-    <section className="mt-16">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
-        The floor-time problem
-      </h2>
-      <p className="mt-4 text-[1.0625rem] leading-[1.8] text-text-secondary">
+    <Section>
+      <SectionLabel number="06" title="The floor-time problem" />
+      <Prose>
         {calendar.august_window} It returns {calendar.return_date}.{" "}
-        {calendar.october} Election Day is {calendar.election_day}.{" "}
-        {calendar.post_election_detail} {calendar.note}
-      </p>
+        {calendar.october} Election Day is {calendar.election_day}.
+      </Prose>
+      <Prose>{calendar.post_election_detail}</Prose>
+      <Prose>{calendar.note}</Prose>
       <Link
         href="/clarity-act/clarity-act-passage-odds"
-        className="mt-4 inline-block text-sm text-amber hover:underline"
+        className="mt-6 inline-block text-sm text-amber hover:underline"
       >
         The full calendar arithmetic
       </Link>
-    </section>
+    </Section>
   );
 }
 
@@ -414,27 +401,27 @@ function TimelineList({ timeline }: { readonly timeline: readonly ClarityTimelin
   if (!Array.isArray(timeline) || timeline.length === 0) return null;
 
   return (
-    <section className="mt-16">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary">Timeline</h2>
-      <ol className="mt-6 space-y-7 border-l border-border pl-6">
+    <Section>
+      <SectionLabel number="07" title="Timeline" />
+      <ol className="mt-8 max-w-3xl space-y-8 border-l border-border pl-7">
         {timeline.map((entry) => (
           <li key={`${entry.date}-${entry.title}`} className="relative">
-            <span className="absolute -left-[1.6875rem] top-1.5 h-2 w-2 rounded-full bg-amber" />
-            <time className="text-xs font-mono text-text-tertiary">{entry.date}</time>
-            <h3 className="mt-1 text-base font-semibold text-text-primary">{entry.title}</h3>
-            <p className="mt-2 text-[1.0625rem] leading-[1.8] text-text-secondary">{entry.detail}</p>
+            <span className="absolute -left-[1.9375rem] top-2 h-2 w-2 rounded-full bg-amber" />
+            <time className="font-mono text-xs text-text-tertiary">{entry.date}</time>
+            <h3 className="mt-1.5 text-base font-semibold text-text-primary">{entry.title}</h3>
+            <p className="mt-2.5 text-[1.0625rem] leading-[1.75] text-text-secondary">{entry.detail}</p>
             <a
               href={entry.source}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-block text-xs text-amber/80 hover:text-amber hover:underline"
+              className="mt-3 inline-block font-mono text-xs text-amber/80 hover:text-amber hover:underline"
             >
               Source
             </a>
           </li>
         ))}
       </ol>
-    </section>
+    </Section>
   );
 }
 
@@ -443,55 +430,81 @@ function ProvisionsList({ provisions }: { readonly provisions: readonly ClarityP
   if (!Array.isArray(provisions) || provisions.length === 0) return null;
 
   return (
-    <section className="mt-16">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
-        The definitions that decide everything
-      </h2>
-      <dl className="mt-6 space-y-6">
+    <Section>
+      <SectionLabel number="08" title="The definitions that decide everything" />
+      <dl className="mt-8 max-w-3xl space-y-8">
         {provisions.map((p) => (
           <div key={p.id}>
             <dt className="text-base font-semibold text-text-primary">{p.title}</dt>
             {p.document && (
-              <div className="mt-1 text-xs font-mono text-text-tertiary">{p.document}</div>
+              <div className="mt-1.5 font-mono text-xs text-text-tertiary">{p.document}</div>
             )}
-            <dd className="mt-2 text-[1.0625rem] leading-[1.8] text-text-secondary">
-              {p.plain_english} {p.why_it_matters}
+            <dd className="mt-3 text-[1.0625rem] leading-[1.75] text-text-secondary">
+              {p.plain_english}
+            </dd>
+            <dd className="mt-3 text-[1.0625rem] leading-[1.75] text-text-secondary">
+              {p.why_it_matters}
             </dd>
           </div>
         ))}
       </dl>
-    </section>
+    </Section>
   );
 }
 
 function HubFaq() {
   return (
-    <section className="mt-16 border-t border-border pt-10">
+    <Section divider>
       <h2 className="text-2xl font-semibold tracking-tight text-text-primary">
         Common questions
       </h2>
-      <dl className="mt-6 space-y-7">
+      <dl className="mt-8 max-w-3xl space-y-8">
         {HUB_FAQS.map((faq) => (
           <div key={faq.question}>
             <dt className="text-base font-semibold text-text-primary">{faq.question}</dt>
-            <dd className="mt-2 text-[1.0625rem] leading-[1.8] text-text-secondary">{faq.answer}</dd>
+            <dd className="mt-3 text-[1.0625rem] leading-[1.75] text-text-secondary">{faq.answer}</dd>
           </div>
         ))}
       </dl>
-    </section>
+    </Section>
+  );
+}
+
+function ExploreMore() {
+  return (
+    <Section divider>
+      <EyebrowLabel>Explore more</EyebrowLabel>
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+        <CardLink
+          href="/scorecard"
+          title="Altcoin scorecard"
+          description="All 251 tokens across 25 variables, the dataset behind the readiness bands"
+        />
+        <CardLink
+          href="/deadlines"
+          title="Deadlines"
+          description="Every dated catalyst we track, including the Senate floor windows"
+        />
+        <CardLink
+          href="/research/"
+          title="Research library"
+          description="Longer breakdowns, including the GENIUS Act countdown"
+          external
+        />
+      </div>
+    </Section>
   );
 }
 
 function HubFooter() {
   return (
-    <div className="mt-16 border-t border-border pt-8 text-center">
-      <p className="text-sm text-text-tertiary">
-        Every figure on this page carries a primary source. Research and
-        analysis, not investment or legal advice.
+    <div className="mt-16 border-t border-border pt-10 text-center">
+      <p className="mx-auto max-w-xl text-sm leading-relaxed text-text-tertiary">
+        Research and analysis, not investment or legal advice.
       </p>
       <Link
         href="/deadlines"
-        className="mt-4 inline-block rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5"
+        className="mt-5 inline-block rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:-translate-y-0.5 hover:bg-amber-hover hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
       >
         See every catalyst deadline
       </Link>
@@ -504,9 +517,9 @@ function Snapshot({ label, value }: { readonly label: string; readonly value: st
   if (typeof label !== "string" || typeof value !== "string") return null;
 
   return (
-    <div className="bg-bg-card p-4">
-      <dt className="text-xs font-mono uppercase tracking-wider text-text-tertiary">{label}</dt>
-      <dd className="mt-1 text-xl font-semibold tracking-tight text-text-primary">{value}</dd>
+    <div className="bg-bg-card p-5">
+      <dt className="font-mono text-xs uppercase tracking-wider text-text-tertiary">{label}</dt>
+      <dd className="mt-2 text-xl font-semibold tracking-tight text-text-primary">{value}</dd>
     </div>
   );
 }

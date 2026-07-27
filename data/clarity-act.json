@@ -25,11 +25,26 @@
     "precedent_note": "Not the first market structure bill to clear a chamber. FIT21 (H.R. 4763) passed the House 279-136 on 2024-05-22 in the 118th Congress with the same SEC and CFTC split. The CLARITY Act is the furthest one has advanced, since it has also cleared a Senate committee.",
     "companion_bill": "S. 3755, Digital Commodity Intermediaries Act (Senate Agriculture Committee), which must be reconciled with the Banking text",
     "sources": [
-      { "label": "Congress.gov, H.R. 3633", "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633" },
-      { "label": "House Clerk roll call 199, July 17 2025", "url": "https://clerk.house.gov/evs/2025/roll199.xml" },
-      { "label": "GovInfo, H.R. 3633 Senate-reported text, Calendar No. 423", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633rs/html/BILLS-119hr3633rs.htm" },
-      { "label": "GovInfo, FIT21 (H.R. 4763) bill status, 118th Congress", "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118hr4763.xml" },
-      { "label": "Latham & Watkins US Crypto Policy Tracker", "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments" }
+      {
+        "label": "Congress.gov, H.R. 3633",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633"
+      },
+      {
+        "label": "House Clerk roll call 199, July 17 2025",
+        "url": "https://clerk.house.gov/evs/2025/roll199.xml"
+      },
+      {
+        "label": "GovInfo, H.R. 3633 Senate-reported text, Calendar No. 423",
+        "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633rs/html/BILLS-119hr3633rs.htm"
+      },
+      {
+        "label": "GovInfo, FIT21 (H.R. 4763) bill status, 118th Congress",
+        "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118hr4763.xml"
+      },
+      {
+        "label": "Latham & Watkins US Crypto Policy Tracker",
+        "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+      }
     ]
   },
   "timeline": [
@@ -224,7 +239,7 @@
       "id": "mature-blockchain-system",
       "title": "Mature blockchain system",
       "document": "House-passed text, July 2025",
-      "plain_english": "The core definition is short. A mature blockchain system is a blockchain system, together with its related digital commodity, that is not controlled by any person or group of persons under common control. The operational test lives separately in the certification criteria added as Exchange Act Section 42, which cover whether the system is functional, open source, running on pre-established transparent rules, free of anyone holding unilateral authority to materially alter it, and distributed in ownership.",
+      "plain_english": "The core definition is short. A mature blockchain system is a blockchain system, together with its related digital commodity, that is not controlled by any person or group of persons under common control. The operational test lives separately, in the certification criteria added as Exchange Act Section 42. Those cover whether the system is functional, open source, running on pre-established transparent rules, free of anyone holding unilateral authority to materially alter it, and distributed in ownership.",
       "why_it_matters": "Maturity is the concept the whole framework turns on. It is also the part that moved most between the House text and the Senate substitute, so any analysis that does not say which document it is reading is not telling you much."
     },
     {

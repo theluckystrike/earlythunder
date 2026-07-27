@@ -220,12 +220,23 @@ a:hover .arr, button:hover .arr { transform: translateX(3px); }
 .nav__link {
   color: var(--text-secondary);
   font-size: 14px;
+  white-space: nowrap;
   transition: color 150ms;
 }
 .nav__links a:hover,
 .nav__link:hover { color: var(--text-primary); }
 .nav__cta { display: flex; gap: 8px; align-items: center; justify-content: flex-end; }
-.nav__signin { font-size: 14px; padding: 8px 12px; }
+.nav__signin { font-size: 14px; padding: 8px 12px; white-space: nowrap; }
+.nav__cta .primary-btn { white-space: nowrap; }
+
+/* Tighten link spacing before the CTA group starts getting squeezed. */
+@media (max-width: 1340px) {
+  .nav__links { gap: 20px; }
+}
+@media (max-width: 1180px) {
+  .nav__links { gap: 14px; }
+  .nav__links a, .nav__link { font-size: 13px; }
+}
 
 /* Nav mobile toggle */
 .nav__mobile-toggle {
