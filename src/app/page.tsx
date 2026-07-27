@@ -9,6 +9,7 @@ import ToolsShowcase from "@/components/landing/ToolsShowcase";
 import FeaturedOpportunity from "@/components/landing/FeaturedOpportunity";
 import TopYieldsPreview from "@/components/landing/TopYieldsPreview";
 import DeadlineStrip from "@/components/landing/DeadlineStrip";
+import ClarityActSection from "@/components/landing/ClarityActSection";
 import SignalsSection from "@/components/landing/SignalsSection";
 import PipelineLog from "@/components/landing/PipelineLog";
 import CoverageMap from "@/components/landing/CoverageMap";
@@ -152,6 +153,7 @@ export default function HomePage() {
       />
       <TickerStrip items={tickerItems} />
       <NumbersStrip stats={stats} />
+      <ClarityActSection />
       <ToolsShowcase
         topScores={topScores}
         topDeadlines={topDeadlines}

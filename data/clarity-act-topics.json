@@ -3,37 +3,38 @@
     "slug": "what-is-the-clarity-act",
     "h1": "What the CLARITY Act actually does",
     "title": "What Is the CLARITY Act? Crypto Market Structure Explained",
-    "description": "The CLARITY Act splits crypto oversight between the SEC and CFTC using a maturity test. Here is what the bill does, in plain language, with sources.",
-    "keywords": ["what is the clarity act", "clarity act crypto", "digital asset market clarity act", "crypto market structure bill", "h.r. 3633"],
+    "description": "The CLARITY Act splits crypto oversight between the SEC and CFTC. Here is what the bill does in plain language, with each provision labelled by which version it comes from.",
+    "keywords": ["what is the clarity act", "what does the clarity act do", "clarity act explained", "clarity act meaning", "clarity act summary", "clarity act crypto", "digital asset market clarity act"],
     "question": "What is the CLARITY Act and what would it change?",
-    "tldr": "H.R. 3633 draws a line between digital commodities and digital securities, hands the commodity side to the CFTC, and leaves the securities side with the SEC. The line is drawn by a maturity test rather than by asset type.",
+    "tldr": "H.R. 3633 draws a line between digital commodities and digital securities, hands the commodity side to the CFTC, and leaves the securities side with the SEC. Where exactly the line sits depends on which version of the bill you read, and there are three of them in circulation.",
     "sections": [
       {
         "h2": "The problem it was written to solve",
         "body": [
           "For a decade, the question of whether a token is a security has been answered one enforcement action at a time. The SEC applied the Howey test case by case. The CFTC claimed bitcoin and ether as commodities. Nobody wrote down a rule that told a builder in advance which regulator they answered to.",
-          "The CLARITY Act writes that rule down. It is the first market structure framework to pass a chamber of Congress, and it does something the earlier attempts avoided. It stops arguing about whether a token is a security and starts asking whether the network underneath it is finished."
+          "The CLARITY Act writes that rule down. It is not the first attempt. FIT21 passed the House 279-136 in May 2024 with the same two-regulator architecture and then died in the Senate. What makes this one different is that it has also cleared a Senate committee, which FIT21 never did."
         ]
       },
       {
-        "h2": "The maturity test, not the asset test",
+        "h2": "Read the version number before you read the analysis",
         "body": [
-          "The bill's central move is to look past the token and at the blockchain. A system counts as mature when four things are true at once. It works, meaning you can transact, access services, or take part in validation or governance. It runs on open-source code. It operates under pre-established, transparent rules. And no single person or affiliated group controls it, where holding 20 percent or more of the tokens counts as control.",
-          "Pass that test and the asset is a digital commodity, regulated by the CFTC. Fail it and you stay under SEC jurisdiction. The test is about the network's independence from its founders, which is a better proxy for investor risk than asking whether the word 'token' appeared in a pitch deck.",
-          "Early Thunder ran the 20 percent control threshold against our own 251-token scorecard. The result is uncomfortable for most of the market, and we published the full distribution."
+          "Three documents get quoted as though they were one. The House-passed text of July 2025. The Senate Banking substitute reported on June 1 2026, which is an amendment in the nature of a substitute and therefore a different bill in the same wrapper. And the 616-page merged text Senator Lummis released on July 22 2026.",
+          "Definitions moved between them. A large share of the explainers circulating right now quote a 2025 Senate discussion draft that no longer governs anything. If a summary tells you what the CLARITY Act says without telling you which text it read, it is not reliable, and that includes summaries that sound confident."
         ]
       },
       {
-        "h2": "The ancillary asset carve-out",
+        "h2": "Maturity, and the insider test underneath it",
         "body": [
-          "There is a second definition doing quiet work. An ancillary asset is an intangible, commercially fungible asset distributed alongside the sale of a security through an investment contract.",
-          "Read that twice. It means the fundraising can have been a securities offering while the token itself trades as something else. The contract was the security. The token was attached to it. That separation is what lets a 2021 seed round with a SAFT survive contact with the new framework instead of tainting the asset forever."
+          "The core definition in the House text is short. A mature blockchain system is a blockchain system, together with its related digital commodity, that is not controlled by any person or group of persons under common control.",
+          "The working test sits separately, in the certification criteria added as Exchange Act Section 42. Those cover whether the system is functional, built on open-source code, running on pre-established transparent rules, free of anyone with unilateral authority to materially alter it, and distributed in ownership.",
+          "Two different 20 percent thresholds live in there, and neither is the rule most people repeat. One caps any single person at 20 percent of outstanding voting power. The other says the issuer, related persons and affiliated persons together must not beneficially own 20 percent or more of total units. Affiliated-person status keys off acquiring 5 percent or more from the issuer, related-person status off 1 percent.",
+          "So an unaffiliated whale holding 25 percent does not defeat maturity. Insider supply does. That distinction changes which tokens are actually at risk, and we ran it across our own 251-token scorecard."
         ]
       },
       {
         "h2": "What changes for an ordinary holder",
         "body": [
-          "Three practical things. Exchanges get a registration path that does not require them to guess which of their listings is a security, which is why delistings have been the default risk-management move since 2023. Banks and brokerages get a rulebook they can hand to a compliance committee, which is the actual gate on institutional distribution. And issuers get disclosure obligations that scale with maturity rather than a binary registered-or-illegal choice.",
+          "Exchanges get a registration path that does not require them to guess which of their listings is a security, which is why delisting anything ambiguous has been the default risk-management move since 2023. Banks and brokerages get a rulebook they can hand to a compliance committee, which is the actual gate on institutional distribution. Issuers get disclosure obligations that scale rather than a binary registered-or-illegal choice. And developers who never take custody get a safe harbour confirming they are not money transmitters, folded in from the Blockchain Regulatory Certainty Act.",
           "What it does not do is make any token a good investment. A clean classification says the venue is legal. It says nothing about whether the protocol earns anything."
         ]
       }
@@ -44,6 +45,10 @@
         "answer": "No. It passed the House 294-134 on July 17 2025 and cleared the Senate Banking Committee 15-9 on May 14 2026. It sits on the Senate Legislative Calendar as Calendar No. 423 with no floor vote scheduled and no cloture motion filed."
       },
       {
+        "question": "Was the CLARITY Act the first crypto market structure bill to pass a chamber of Congress?",
+        "answer": "No, and this is widely misreported. FIT21, H.R. 4763, passed the House 279-136 on May 22 2024 in the 118th Congress using the same SEC and CFTC split. It then died in the Senate. The CLARITY Act is the furthest such a bill has advanced, because it has also cleared a Senate committee."
+      },
+      {
         "question": "What is the difference between the CLARITY Act and the GENIUS Act?",
         "answer": "The GENIUS Act governs stablecoin issuance, reserves, and redemption. The CLARITY Act governs everything else, meaning which regulator oversees trading, custody, and disclosure for non-stablecoin digital assets. They are separate bills solving separate problems."
       },
@@ -52,53 +57,56 @@
         "answer": "Rep. French Hill (R-AR), chairman of the House Financial Services Committee, introduced H.R. 3633 on May 29 2025. The Senate rewrite has been led by Senator Tim Scott, Senator Cynthia Lummis, and Senator Bernie Moreno."
       },
       {
-        "question": "Does the CLARITY Act cover DeFi and self-custody?",
-        "answer": "Partly. Section 10307 of the Senate text mentions self-hosted wallets under a financial inclusion heading inside the anti-terrorism framework. That is an acknowledgement rather than the affirmative safe harbour self-custody advocates asked for, and it remains one of the live disputes."
+        "question": "Does the CLARITY Act protect self-custody and DeFi?",
+        "answer": "Only partly. The merged text confirms that non-custodial developers are not money transmitters, which is a real protection for people writing code. Self-hosted wallets appear in the Senate text as one item among the considerations Treasury must weigh in an illicit-finance strategy, alongside fraud, cybersecurity and identity-verification risk. That is an acknowledgement, not the affirmative safe harbour self-custody advocates asked for."
       }
     ],
     "related": ["mature-blockchain-system-test", "sec-vs-cftc-crypto-jurisdiction", "clarity-act-status-timeline"],
     "sources": [
       { "label": "Congress.gov, H.R. 3633", "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633" },
-      { "label": "House Financial Services section-by-section summary", "url": "https://financialservices.house.gov/uploadedfiles/2025-07-10_-_sbs_-_clarity_act_of_2025_final.pdf" },
-      { "label": "Latham & Watkins US Crypto Policy Tracker", "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments" }
+      { "label": "GovInfo, House-passed engrossed text", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm" },
+      { "label": "GovInfo, Senate-reported text, Calendar No. 423", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633rs/html/BILLS-119hr3633rs.htm" },
+      { "label": "GovInfo, FIT21 bill status, 118th Congress", "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118hr4763.xml" },
+      { "label": "The Block on the 616-page merged text", "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029" }
     ]
   },
   {
     "slug": "clarity-act-status-timeline",
     "h1": "Where the CLARITY Act stands right now",
     "title": "CLARITY Act Status and Timeline, July 2026",
-    "description": "Every dated milestone from introduction to the 600-page Senate text, with the vote counts and what still has to happen before the bill becomes law.",
-    "keywords": ["clarity act status", "has the clarity act passed", "clarity act timeline", "clarity act senate vote", "clarity act 2026"],
+    "description": "Every dated milestone from introduction to the 616-page merged Senate text, with the real vote counts and what still has to happen before the bill becomes law.",
+    "keywords": ["clarity act status", "has the clarity act passed", "clarity act timeline", "clarity act senate", "clarity act passed senate", "clarity act update", "clarity act 2026"],
     "question": "Has the CLARITY Act passed, and what is the current status?",
-    "tldr": "Passed the House. Cleared Senate Banking. On the calendar since June 1 2026 with no floor vote scheduled. Needs 60 Senate votes and a merge with a separate Agriculture Committee bill before it can reach the President.",
+    "tldr": "Passed the House. Cleared Senate Banking. On the calendar since June 1 2026 with no floor vote scheduled and no cloture motion filed. It needs 60 votes to end debate and a merge with a separate Agriculture Committee bill before it can reach the President.",
     "sections": [
       {
         "h2": "Three gates, one cleared and a half",
         "body": [
           "A bill becomes law by passing both chambers in identical form. The CLARITY Act has cleared one chamber and one committee of the second. That sounds close. It is not, because the hard part in the Senate has never been the committee.",
-          "The House vote on July 17 2025 was 294-134, with every voting Republican and 78 Democrats in favour. That margin matters as a signal. It means the concept has bipartisan support when the text is not carrying a fight about the current administration.",
-          "The Senate Banking Committee vote on May 14 2026 was 15-9. Two Democrats crossed over, and both said plainly that a committee vote did not commit them on the floor."
+          "The House vote on July 17 2025 was 294-134. Breaking that down matters. 216 Republicans and 78 Democrats voted yes, four Republicans did not vote, and no Republican who voted opposed it. That is the ceiling on bipartisan support, reached before the text started carrying a fight about the current administration.",
+          "The Senate Banking Committee vote on May 14 2026 was 15-9. Ruben Gallego and Angela Alsobrooks joined all 13 Republicans, and both said a committee vote did not commit them on the floor. Both later signed the July 22 letter saying the bill falls short."
         ]
       },
       {
         "h2": "What being on the calendar does and does not mean",
         "body": [
-          "The bill became Calendar No. 423 on June 1 2026. Placement on the Senate Legislative Calendar means the bill is eligible for floor consideration. It does not schedule anything.",
-          "The step that actually matters is a cloture motion, which is how the majority leader forces a vote on proceeding. None has been filed. Until one is, the count of supportive senators is a poll, not a whip count."
+          "Senator Scott reported the bill on June 1 2026 with an amendment in the nature of a substitute, and it became Calendar No. 423. Calendar placement makes a bill eligible for floor consideration. It schedules nothing.",
+          "The step that matters is a cloture motion, which is how the majority leader forces a vote on proceeding. None has been filed. Until one is, any count of supportive senators is a poll rather than a whip count. Note also that the 60-vote number is the cloture threshold under Rule XXII. Final passage itself is a simple majority, so cloture is the real gate."
         ]
       },
       {
         "h2": "The second bill nobody talks about",
         "body": [
-          "Senate Agriculture has its own vehicle, S. 3755, the Digital Commodity Intermediaries Act. Because the CLARITY framework gives the CFTC the commodity side, and the CFTC answers to the Agriculture committees, the Banking text and the Agriculture text have to be reconciled before either moves.",
-          "That is a second negotiation stacked on top of the first, between two committees that do not have to agree. It is the least covered obstacle and one of the more durable ones."
+          "Senate Agriculture has its own vehicle, S. 3755, the Digital Commodity Intermediaries Act, which cleared that committee 12-11 on a party-line vote on January 29 2026 and sits at Calendar No. 312. Because the CLARITY framework gives the CFTC the commodity side, and the CFTC answers to the Agriculture committees, the two texts have to be reconciled before either moves.",
+          "Agriculture Democrats voted no on the same ethics grounds now stalling the Banking bill. So this is not two obstacles. It is one obstacle showing up in two committees."
         ]
       },
       {
         "h2": "The July 2026 text",
         "body": [
-          "Senators Lummis and Moreno released the full 600-page Senate text on July 24 2026, two days after announcing negotiated ethics language with the White House. Seven Democratic senators said the same day that the bill falls short on ethics for elected officials, consumer protection, and illicit finance.",
-          "Lummis framed the stakes without hedging. The coming weeks, she said, are likely the last real chance we will have for years to get this right."
+          "The sequence ran tighter than most coverage suggests. Sponsors and the White House announced negotiated ethics language on Tuesday July 21. The 616-page merged text incorporating it landed on July 22. Seven Democratic senators said the same day that it falls short on ethics for elected officials, consumer protection, illicit finance, conflicts of interest and market integrity.",
+          "So the industry had roughly one day between the deal and the rejection. A lot of reporting places both events on July 24, which is a publication date rather than an event date.",
+          "Lummis put the stakes plainly. The coming weeks, she said, are likely the last real chance we will have for years to get this right."
         ]
       }
     ],
@@ -109,79 +117,85 @@
       },
       {
         "question": "How many votes does the CLARITY Act need in the Senate?",
-        "answer": "Sixty, to overcome a filibuster. With a Republican majority, that means seven to nine Democratic votes depending on the exact caucus count and attendance."
+        "answer": "Sixty to invoke cloture and end debate, which with a Republican majority means roughly seven to nine Democratic votes. Passage itself is then a simple majority of senators voting, so cloture is the binding constraint."
       },
       {
         "question": "What happens if the CLARITY Act does not pass in 2026?",
-        "answer": "The bill dies with the 119th Congress and has to be reintroduced from scratch in the next one. Midterm elections on November 3 2026 mean the reintroduced bill would face a Senate with a different composition and different committee leadership."
+        "answer": "The bill dies with the 119th Congress and has to be reintroduced from scratch. That Congress runs until January 3 2027, so a lame-duck vote after the November 3 midterms remains possible. What it would not survive is the turn of the Congress, and a reintroduced bill would face a Senate reshaped by the elections."
       }
     ],
     "related": ["why-the-clarity-act-is-stalled", "clarity-act-passage-odds", "what-is-the-clarity-act"],
     "sources": [
-      { "label": "GovTrack, House Vote 199", "url": "https://www.govtrack.us/congress/votes/119-2025/h199" },
-      { "label": "Senate Banking Committee, May 14 2026 markup", "url": "https://www.banking.senate.gov/newsroom/majority/chairman-scott-senate-banking-committee-advance-clarity-act-in-historic-bipartisan-vote" },
-      { "label": "CoinDesk, July 23 2026", "url": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says" },
-      { "label": "Forbes, July 24 2026", "url": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/" }
+      { "label": "House Clerk roll call 199, July 17 2025", "url": "https://clerk.house.gov/evs/2025/roll199.xml" },
+      { "label": "GovInfo, H.R. 3633 bill status", "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr3633.xml" },
+      { "label": "CoinDesk, seven Democrats say the bill falls short, July 22 2026", "url": "https://www.coindesk.com/policy/2026/07/22/key-democratic-lawmakers-say-crypto-clarity-act-falls-short-on-ethics-other-issues" },
+      { "label": "The Block on the 616-page merged text", "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029" },
+      { "label": "CoinDesk, Thune on the closing window", "url": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says" }
     ]
   },
   {
     "slug": "why-the-clarity-act-is-stalled",
     "h1": "Why the CLARITY Act is stuck",
-    "title": "Why the CLARITY Act Is Stalled in the Senate",
-    "description": "Four disputes are blocking the CLARITY Act, and only one is about market structure. Ethics language, stablecoin yield, AML reporting, and a committee turf fight.",
-    "keywords": ["why is the clarity act stalled", "clarity act blocked senate", "clarity act ethics provision", "clarity act stablecoin yield", "clarity act democrats"],
+    "title": "Why the CLARITY Act Is Delayed in the Senate",
+    "description": "Five disputes are blocking the CLARITY Act, and the loudest one is about three specific gaps in the ethics section rather than about market structure.",
+    "keywords": ["clarity act delayed", "clarity act stalled", "crypto bill senate", "clarity act ethics provision", "clarity act stablecoin"],
     "question": "Why has the CLARITY Act not passed the Senate?",
-    "tldr": "Four separate fights, and the loudest one has nothing to do with crypto market structure. Ethics language about elected officials is doing more to hold up the bill than any disagreement about the SEC and CFTC.",
+    "tldr": "The ethics section covers less than most people assume, and the three things it leaves out are the whole fight. Stablecoin yield, CFTC authority, illicit finance and a committee turf war fill in the rest.",
     "sections": [
       {
-        "h2": "The ethics fight is not a market structure fight",
+        "h2": "The ethics fight is about three specific gaps",
         "body": [
-          "The provision restricting elected officials and their families from issuing or promoting digital assets is the reason the bill has not moved. Sponsors negotiated language with the White House and announced it on July 22 2026. Democrats called it insufficient within 48 hours, and seven of them put that in writing on July 24.",
-          "Worth separating out, because it means the bill's fate is only partly a function of crypto policy. A framework that both parties largely agree on is being held hostage to a dispute about the conduct of one administration. That has two consequences. It makes the odds harder to model from policy fundamentals. And it means a change in political circumstance could move the bill faster than any amount of industry lobbying."
+          "Section 13152 of the merged text bars covered officials, employees and their spouses from issuing or sponsoring a digital asset in exchange for consideration. Read what that leaves out. Promoting or endorsing an asset is not restricted. Dependent children are not covered. And the entire section expires at noon on January 20 2029.",
+          "Those three gaps are the dispute. Democrats have been asking for promotion to be covered, for children to be included, and for the sunset to go. Coverage that describes the provision as banning officials and their families from issuing or promoting crypto is describing what advocates wanted, not what the text says.",
+          "Seven Democratic senators put their objection in writing on July 22, one day after the deal was announced. Alsobrooks, Booker, Cortez Masto, Gallego, Hickenlooper, Warner and Warnock. Two of them are the same Democrats who voted the bill out of committee in May, which tells you how little the committee vote committed."
         ]
       },
       {
-        "h2": "Banks versus crypto on stablecoin yield",
+        "h2": "What Coinbase actually objected to",
         "body": [
-          "The banking lobby argued that letting stablecoin issuers pay yield to holders would pull deposits out of community banks and into tokenised dollars. A bipartisan group added limits.",
-          "Coinbase walked. Brian Armstrong pulled the company's support in January 2026, and the markup slipped. Stablecoins were close to 20 percent of Coinbase revenue at $355M in Q3 2025, so the objection was not abstract.",
-          "The split runs through Wall Street too. Goldman's David Solomon says he is very supportive of moving the Clarity Act forward. JPMorgan's Jamie Dimon and the Bank Policy Institute are on the other side of the yield question. When the two largest US banks disagree in public about a provision, that provision does not get quietly dropped."
+          "Brian Armstrong pulled Coinbase's support on January 14 2026, the night before a scheduled markup. The markup slipped.",
+          "Most coverage reduces this to stablecoin yield. That inverts the record. Armstrong led with erosion of CFTC authority that would leave it subservient to the SEC, a de facto ban on tokenised equities, SEC disclosure and sale restrictions on network tokens, and DeFi constraints that could push blockchains toward permissioned designs. Stablecoin rewards came last in every contemporaneous account.",
+          "That matters for handicapping the bill. A dispute about yield is a clause you can trade away. A dispute about which regulator ends up on top is the architecture."
         ]
       },
       {
-        "h2": "Illicit finance and the self-custody question",
+        "h2": "Banks against crypto, and banks against banks",
         "body": [
-          "Law enforcement groups and several Banking Democrats want stronger reporting obligations on intermediaries before they supply floor votes. The Senate text handles self-hosted wallets in Section 10307, under a financial inclusion heading inside the anti-terrorism framework.",
-          "That placement tells you the drafters knew they had to say something about self-custody and had not agreed what. It acknowledges the practice without protecting it. Neither side is satisfied, which is usually a sign the language will be rewritten again."
+          "The banking lobby argued that letting stablecoin issuers pay holders would drain community bank deposits. Jamie Dimon has been the most vocal opponent of paying yield.",
+          "Goldman's David Solomon said on July 23 that he is very supportive of moving the bill forward while conceding it is not perfect. He has not taken a public position on the yield provision, so the split between the two largest US banks is about whether to advance the bill, not about this clause. Worth being precise on, because plenty of coverage puts them head to head on stablecoin yield and neither has actually said that."
         ]
       },
       {
-        "h2": "Two committees, one CFTC",
+        "h2": "Illicit finance, and a committee that was not asked",
         "body": [
-          "Senate Agriculture oversees the CFTC and has its own bill, S. 3755. Since the CLARITY framework hands the commodity side of the market to the CFTC, Agriculture has a legitimate claim on the text and no obligation to defer to Banking.",
-          "Merging the two is a negotiation between committees, not between parties. It generates no headlines and it has to finish before floor time is worth requesting."
+          "The merged text answers law enforcement concerns with 25 new sections. Democrats still call it insufficient, and want state attorneys general involved in enforcing the ethics provision rather than leaving it to the Justice Department alone.",
+          "Underneath all of it, Senate Agriculture oversees the CFTC and has its own bill, S. 3755. Merging the two is a negotiation between committees rather than between parties. It generates no headlines and it has to finish before floor time is worth requesting."
         ]
       }
     ],
     "faqs": [
       {
         "question": "Which senators are blocking the CLARITY Act?",
-        "answer": "Seven Democratic senators stated on July 24 2026 that the bill falls short on ethics for elected officials, consumer protection, and illicit finance. The two Democrats who voted for it in committee on May 14 both said their committee votes did not commit them on the floor."
+        "answer": "Seven Democratic senators stated on July 22 2026 that the bill falls short on ethics for elected officials, consumer protection, illicit finance, conflicts of interest and market integrity. They are Alsobrooks, Booker, Cortez Masto, Gallego, Hickenlooper, Warner and Warnock. Gallego and Alsobrooks are the two who voted it out of committee in May."
+      },
+      {
+        "question": "What does the CLARITY Act ethics provision actually ban?",
+        "answer": "Section 13152 bars covered officials, employees and their spouses from issuing or sponsoring a digital asset in exchange for consideration. It does not restrict promoting or endorsing one, it does not cover dependent children, and it has no force after noon on January 20 2029."
       },
       {
         "question": "Why did Coinbase withdraw support for the CLARITY Act?",
-        "answer": "In January 2026, over Senate language limiting yield paid to stablecoin holders. Coinbase argued the stablecoin and banking provisions would let large banks restrict competition and reduce incentives for crypto-native payment products."
+        "answer": "Brian Armstrong withdrew support on January 14 2026. His stated objections led with erosion of CFTC authority relative to the SEC, a de facto ban on tokenised equities, SEC disclosure and sale restrictions on network tokens, and DeFi constraints. Limits on stablecoin yield were on the list but came last, not first."
       },
       {
         "question": "Is the CLARITY Act dead?",
-        "answer": "No, but the 2026 window is narrow. The bill remains on the Senate calendar. The realistic paths are a floor vote in the first week of August or in the short September session before the chamber leaves to campaign."
+        "answer": "No. It remains on the Senate calendar. The realistic paths are a floor vote in the first week of August, the September session, or a lame duck after the midterms, since the 119th Congress runs to January 3 2027."
       }
     ],
     "related": ["clarity-act-passage-odds", "clarity-act-status-timeline", "who-supports-the-clarity-act"],
     "sources": [
-      { "label": "Forbes, July 24 2026", "url": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/" },
-      { "label": "Fortune, Coinbase and a16z split", "url": "https://fortune.com/2026/01/21/coinbase-andreessen-horowitz-clarity-act-senate-banking-agriculture-bill-draft-crypto/" },
-      { "label": "CryptoSlate on the stablecoin yield fight and Coinbase revenue mix", "url": "https://cryptoslate.com/banks-pushed-congress-to-kill-stablecoin-yield-with-clarity-act-coinbase-may-have-found-the-loophole/" },
+      { "label": "CoinDesk, seven Democrats say the bill falls short", "url": "https://www.coindesk.com/policy/2026/07/22/key-democratic-lawmakers-say-crypto-clarity-act-falls-short-on-ethics-other-issues" },
+      { "label": "CoinDesk on why Coinbase soured on the bill", "url": "https://www.coindesk.com/news-analysis/2026/01/18/here-s-why-coinbase-and-other-companies-soured-on-major-crypto-bill" },
+      { "label": "The Block on the ethics provision and 2029 sunset", "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029" },
       { "label": "CoinDesk, Goldman Sachs CEO backs the bill", "url": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules" }
     ]
   },
@@ -189,249 +203,267 @@
     "slug": "who-supports-the-clarity-act",
     "h1": "Who is backing the CLARITY Act, and what their numbers really mean",
     "title": "Who Supports the CLARITY Act? The $30 Trillion Claim, Checked",
-    "description": "BlackRock, Schwab, Fidelity and Goldman back the bill. The widely quoted $30 trillion figure adds together three different kinds of assets. Here is the breakdown.",
-    "keywords": ["who supports the clarity act", "clarity act blackrock schwab fidelity", "clarity act 30 trillion", "schwab clarity act catalyst", "institutional support crypto bill"],
+    "description": "BlackRock, Schwab, Fidelity and Goldman get named as backers. The $30 trillion figure adds three different kinds of assets, and two of the four never issued a corporate endorsement.",
+    "keywords": ["who supports the clarity act", "clarity act news", "clarity act blackrock schwab fidelity", "institutional support crypto bill"],
     "question": "Which institutions support the CLARITY Act and how much money do they actually control?",
-    "tldr": "The headline number circulating is that firms with more than $30 trillion back the bill. The four largest backers report $39.6 trillion between them, but only about $22 trillion of that is discretionary. The rest is custody and supervision, which is a different thing.",
+    "tldr": "The four largest named backers report $39.56 trillion between them, and only $22.44 trillion of that is discretionary. More importantly, only Fidelity has issued anything resembling a corporate endorsement. There was no joint statement.",
     "sections": [
       {
         "h2": "The number everybody is quoting",
         "body": [
-          "Coverage of the July 2026 push settled on a figure. Firms controlling north of $30 trillion have lined up behind the bill, with some estimates closer to $50 trillion depending on how you count. That parenthetical is doing an enormous amount of work, and almost nobody follows it up.",
-          "So we did. Four firms carry most of the weight, and each reports a different kind of number."
+          "Coverage of the July push settled on a figure. Firms controlling north of $30 trillion have lined up behind the bill, with some estimates closer to $50 trillion depending on how you count. That parenthetical does an enormous amount of work, and the $50 trillion version traces back to a viral social post rather than to any filing.",
+          "Two problems sit underneath it. The assets are not the same kind of assets. And the support is not the same kind of support."
         ]
       },
       {
         "h2": "Three accounting categories, added together",
         "body": [
           "BlackRock reported $15.34 trillion in assets under management at June 30 2026, a record, up from $12.53 trillion a year earlier on $192 billion of quarterly net inflows. That is discretionary. BlackRock decides where it goes.",
-          "Charles Schwab reported $13.08 trillion in total client assets for the same quarter. That is custody. The money belongs to Schwab's clients and Schwab does not allocate it. Adding it to BlackRock's AUM as though both represent capital that can be pointed at an asset class is a category error.",
-          "Fidelity's figure moves depending on the article. The $7.1 trillion number is discretionary managed assets as of the end of 2025. The $18 trillion number is everything Fidelity administers. Both appear in coverage, usually without a label.",
-          "Goldman Sachs reported $4.041 trillion in assets under supervision at June 30 2026, a record after $91 billion of long-term net inflows. Assets under supervision is broader than AUM and includes advisory relationships Goldman does not direct.",
-          "Add the headline figures and you get $39.6 trillion. Add only the discretionary pools and you get roughly $22.4 trillion. Neither is the number of dollars that would move into digital assets if the bill passed, and that is the point."
+          "Charles Schwab reported $13.08 trillion in total client assets for the same quarter. That is mostly custody, money that belongs to Schwab's clients. Roughly $1.6 trillion of the total does sit in Schwab's own funds and ETFs, so calling the firm a pure custodian overstates it, but treating $13 trillion as capital Schwab can point at an asset class is a category error.",
+          "Fidelity's figure moves depending on the article. The $7.1 trillion number is discretionary managed assets as of the end of 2025. The $18 trillion number is everything Fidelity administers. Both appear in coverage, usually without a label telling you which one you are looking at.",
+          "Goldman Sachs reported a record $4.04 trillion in assets under supervision at June 30 2026, up from $3.29 trillion a year earlier after $91 billion of long-term net inflows. Assets under supervision is broader than AUM and includes advisory relationships Goldman does not direct.",
+          "Add the headline figures and you get $39.56 trillion. Add only the discretionary pools and you get $22.44 trillion. Neither is the number of dollars that would move into digital assets if the bill passed."
+        ]
+      },
+      {
+        "h2": "Two of the four never actually endorsed it",
+        "body": [
+          "Fidelity is the clean case. It publicly urged the Senate to pass the bill, saying the time is now for clear rules of the road that are essential to strengthening investor confidence, providing certainty for market participants, and reinforcing US leadership in global digital asset markets.",
+          "Goldman is a CEO statement. David Solomon said on July 23 that he is very supportive of moving the Clarity Act forward so we can get some market structure in place, while conceding the bill is not perfect.",
+          "BlackRock is thinner. What we could find is favourable research commentary on tokenised assets, not a policy endorsement of this bill.",
+          "Schwab is the one worth flagging. The line quoted everywhere, calling the bill a really important fundamental catalyst that needs to pass, traces to a single crypto outlet that names no speaker, cites no interview and links no press release. Other coverage attributes the comment to Jim Ferraioli, Director of Digital Currencies Research and Strategy at the Schwab Center for Financial Research, whose published wording is that this is a critical moment for the long-awaited Clarity Act. That is one strategist's research note, not a corporate position. The same note estimated that CLARITY passage odds explained about 4.3 percent of bitcoin's daily price change, which argues against the catalyst framing built on top of it.",
+          "None of these firms issued a joint statement. The coalition is a construct of the coverage."
         ]
       },
       {
         "h2": "The one disclosure worth more than all of it",
         "body": [
-          "Schwab's useful contribution is not its balance sheet. It is a share figure. Schwab has said its clients already hold roughly 20 percent of all US crypto ETP assets.",
-          "Apply that to the market. US spot bitcoin ETPs held about $80 billion and spot ether ETPs $10.48 billion around July 21 2026. A fifth of that is roughly $18 billion to $19 billion of crypto ETP exposure sitting in Schwab accounts already, before any legislation passes. Treat it as an order of magnitude, since ETP assets move with price.",
-          "That number tells you something the trillions do not. Retail and advised money reached crypto through the ETP wrapper without waiting for market structure legislation. The constraint that CLARITY would remove is not appetite. It is the set of products a compliance committee will approve, which is a narrower and more specific thing than $30 trillion of firepower."
-        ]
-      },
-      {
-        "h2": "Why they want it anyway",
-        "body": [
-          "Schwab called the bill a really important fundamental catalyst that needs to pass, and launched crypto trading this year. Fidelity said the time is now for clear rules of the road. Goldman's CEO said he is very supportive of moving it forward while conceding the bill is not perfect.",
-          "Read those together and the motivation is consistent. None of these firms is asking for permission to buy tokens. They are asking for a rulebook that lets them build products, custody assets, and answer a regulator's question without hiring outside counsel first. Rules reduce legal cost. That is the trade, and it is a smaller and more believable claim than a $30 trillion wall of money."
+          "Schwab's useful contribution is not its balance sheet. It is a share figure. Schwab has said its clients hold roughly 20 percent of all US crypto ETP assets.",
+          "Apply that to the market. US spot bitcoin ETPs held about $80 billion and spot ether ETPs about $10.5 billion around July 21 2026. A fifth of that is roughly $18 billion of crypto ETP exposure sitting in Schwab accounts before any legislation passes. Schwab's own stated dollar figure, given on a summer 2025 call, was approximately $25 billion, so treat $18 billion as a floor. These are client-owned custodial holdings, the share figure is an undated self-report covering spot products only, and ETP totals swung from about $72.5 billion to $80.9 billion to $78.8 billion inside a single month.",
+          "Even with all those caveats the point holds. Advised and retail money reached crypto through the ETP wrapper without waiting for market structure legislation. The constraint CLARITY would remove is not appetite and it is not capital. It is the set of products a compliance committee will approve, which is a narrower and more specific thing than $30 trillion of firepower."
         ]
       }
     ],
     "faqs": [
       {
         "question": "Does BlackRock support the CLARITY Act?",
-        "answer": "Yes. BlackRock is named among the financial firms backing the Digital Asset Market Clarity Act alongside Goldman Sachs, Fidelity, Charles Schwab, and Grayscale."
+        "answer": "BlackRock is named among backers in press coverage, but we could not locate a formal corporate endorsement of the bill. What exists is favourable research commentary on tokenised assets. Of the four largest firms named, only Fidelity has issued an explicit public statement urging passage."
+      },
+      {
+        "question": "Did Charles Schwab endorse the CLARITY Act?",
+        "answer": "Not as a company, on the evidence available. The widely quoted line calling the bill a fundamental catalyst that needs to pass traces to one crypto outlet naming no speaker. Other coverage attributes the comment to Jim Ferraioli of the Schwab Center for Financial Research, whose published wording is that this is a critical moment for the long-awaited Clarity Act. That is research commentary rather than a corporate policy position."
       },
       {
         "question": "How much are Schwab clients holding in crypto ETPs?",
-        "answer": "Schwab has said its clients hold roughly 20 percent of all US crypto ETP assets. Against US spot bitcoin ETP assets of about $80 billion and ether ETP assets of $10.48 billion as of July 21 2026, that implies roughly $18 billion to $19 billion. Early Thunder derived that figure, Schwab did not disclose it, and it moves with price."
+        "answer": "Schwab has said its clients hold roughly 20 percent of all US crypto ETP assets. Against US spot bitcoin ETP assets of about $80 billion and ether ETP assets of about $10.5 billion as of July 21 2026, that implies roughly $18 billion. Schwab's own stated figure on a summer 2025 call was approximately $25 billion. Both are client-owned custodial assets, not Schwab AUM."
       },
       {
         "question": "Is the $30 trillion supporting the CLARITY Act real money for crypto?",
-        "answer": "No. The figure aggregates discretionary assets under management, custodial client assets, and assets under supervision, which are three different things. Only the discretionary portion represents capital the firms themselves allocate, and none of it is earmarked for digital assets."
+        "answer": "No. The figure aggregates discretionary assets under management, custodial client assets, and assets under supervision, which are three different things. Only the discretionary portion represents capital the firms themselves allocate, none of it is earmarked for digital assets, and the $50 trillion variant traces to a social post rather than any filing."
       }
     ],
     "related": ["clarity-act-passage-odds", "why-the-clarity-act-is-stalled", "clarity-act-token-classification-risk"],
     "sources": [
-      { "label": "BlackRock Q2 2026 results", "url": "https://finance.yahoo.com/markets/stocks/articles/blackrock-q2-2026-earnings-beat-122032470.html" },
-      { "label": "Charles Schwab Q2 2026 earnings release", "url": "https://content.schwab.com/web/retail/public/about-schwab/schwab_q2_2026_earnings_release.pdf" },
-      { "label": "Schwab calls the bill a fundamental catalyst", "url": "https://news.bitcoin.com/schwab-clarity-act-catalyst-white-house-thune/" },
+      { "label": "BlackRock Q2 2026 earnings release, SEC EDGAR", "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526304013/blk-ex99_1.htm" },
+      { "label": "Charles Schwab Q2 2026 8-K exhibit, SEC EDGAR", "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000027/a2q26exhibit991.htm" },
+      { "label": "The Schwab comment as published", "url": "https://news.bitcoin.com/schwab-clarity-act-catalyst-white-house-thune/" },
       { "label": "Fidelity backs the bill", "url": "https://bitcoinmagazine.com/news/fidelity-backs-crypto-clarity-act" },
-      { "label": "Goldman Sachs Q2 2026 assets under supervision", "url": "https://www.wealthbriefing.com/html/article.php/goldman-sachs'asset,-wealth-revenues-in-q2-2026-rise-20-per-cent-vs-year-ago" },
+      { "label": "CoinDesk, Goldman Sachs CEO backs the bill", "url": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules" },
       { "label": "US spot bitcoin ETP assets above $80B", "url": "https://news.bitcoin.com/bitcoin-etfs-add-203-million-as-assets-climb-above-80-billion/" },
-      { "label": "Crypto Briefing on the combined-AUM coalition claim", "url": "https://cryptobriefing.com/blackrock-goldman-fidelity-back-clarity-act/" }
+      { "label": "Ledger Insights on Schwab's stated crypto ETP figure", "url": "https://www.ledgerinsights.com/charles-schwab-leans-into-crypto-stablecoins-tokenization-not-so-much/" }
     ]
   },
   {
     "slug": "sec-vs-cftc-crypto-jurisdiction",
     "h1": "How the CLARITY Act divides the SEC and the CFTC",
     "title": "SEC vs CFTC Crypto Jurisdiction Under the CLARITY Act",
-    "description": "The bill sends digital commodities to the CFTC and digital securities to the SEC. What decides which side an asset lands on, and what each regulator gets.",
-    "keywords": ["sec vs cftc crypto", "clarity act jurisdiction", "who regulates crypto", "digital commodity cftc", "crypto securities sec"],
+    "description": "The bill gives the CFTC spot market authority over digital commodities and leaves securities with the SEC. The split is messier than the headline version suggests.",
+    "keywords": ["sec vs cftc", "which crypto are securities", "clarity act sec cftc", "digital commodity cftc"],
     "question": "Under the CLARITY Act, does the SEC or the CFTC regulate a given crypto asset?",
-    "tldr": "The CFTC gets spot market oversight of digital commodities, which is new authority it has asked for repeatedly. The SEC keeps assets whose networks have not reached maturity, plus the fundraising contracts that created them.",
+    "tldr": "The CFTC gets spot market oversight of digital commodities, authority it has asked for since 2018. The SEC keeps the investment contracts regardless. The popular summary that maturity decides which regulator you get is not what the text does.",
     "sections": [
       {
         "h2": "What each regulator ends up holding",
         "body": [
-          "The CFTC gets registration, trading, and market conduct for digital commodities, meaning assets tied to a mature blockchain system. That authority is genuinely new. The CFTC has had derivatives authority over bitcoin futures for years while having no direct writ over the spot market, a gap it has complained about since 2018.",
-          "The SEC keeps assets that fail the maturity test and keeps the investment contracts through which tokens were originally sold. It also keeps disclosure obligations for issuers, which is where most ongoing compliance cost lives."
+          "The CFTC gets registration, trading and market conduct for digital commodities. That is genuinely new authority. The CFTC has had derivatives jurisdiction over bitcoin futures for years while having no direct writ over the spot market, a gap it has complained about since 2018.",
+          "The SEC keeps issuer disclosure and, importantly, keeps authority over the investment contract through which a token was sold. That does not go away because a network later decentralises."
         ]
       },
       {
-        "h2": "The line is drawn once, not permanently",
+        "h2": "Maturity is not the classification switch",
         "body": [
-          "The design that separates this bill from earlier attempts is that classification can change. A network that is founder-controlled at launch sits under the SEC. If it decentralises to the point of passing the maturity test, the asset moves.",
-          "That is a better model than the alternatives, and it creates a specific incentive. Distributing supply and giving up control now has a regulatory payoff, not just a rhetorical one. Whether teams will actually give up 20 percent-plus positions to get it is an open question, and the current supply distribution across the market suggests most have not started."
+          "Here is where most explainers go wrong, including ours in an earlier version of this page. Digital commodity status does not turn on whether a blockchain system is mature. It turns on whether the asset is intrinsically linked to a blockchain system and derives value from it.",
+          "Maturity governs how transactions in the asset are treated, not what the asset is. The exemption reaches issuers who merely intend to reach maturity within roughly four years, so a pre-maturity asset is not automatically a security policed by the SEC. And CFTC exclusivity attaches to registered exchanges, brokers and dealers rather than to the asset in the abstract.",
+          "The clean binary of mature equals CFTC and immature equals SEC is a summary artifact. It is easier to explain than the statute and it will mislead anyone trying to price classification risk off it."
         ]
       },
       {
         "h2": "Why two committees make this harder",
         "body": [
-          "The CFTC answers to the Agriculture committees, not Banking. So a bill written in Senate Banking that hands new authority to the CFTC needs Senate Agriculture to agree, and Agriculture has its own bill, S. 3755, the Digital Commodity Intermediaries Act.",
-          "Any final text is a merge of the two. That is why the jurisdictional split, which sounds like the settled part of the bill, is still an active negotiation."
+          "The CFTC answers to the Agriculture committees, not Banking. So a bill written in Senate Banking that hands new authority to the CFTC needs Senate Agriculture to agree, and Agriculture has its own bill, S. 3755, already reported at Calendar No. 312.",
+          "Any final text is a merge of the two. That is why the jurisdictional split, which sounds like the settled part of the bill, is still an open negotiation."
         ]
       },
       {
         "h2": "What it means for exchanges",
         "body": [
           "Today a US exchange listing a token carries the risk that the SEC later calls it an unregistered security. The rational response has been to delist anything ambiguous, which is why the US listed universe is narrower than the global one.",
-          "With a written test, that risk becomes assessable in advance. An exchange can run the maturity test, document the conclusion, and register with the appropriate regulator. It does not remove judgement calls at the margin. It moves them from after the fact to before."
+          "With a written framework that risk becomes assessable in advance. An exchange can run the test, document the conclusion, and register with the appropriate regulator. It does not remove judgement calls at the margin. It moves them from after the fact to before."
         ]
       }
     ],
     "faqs": [
       {
         "question": "Would bitcoin be regulated by the CFTC under the CLARITY Act?",
-        "answer": "Bitcoin comfortably satisfies the mature blockchain system criteria as written. It is functional, open source, rule-based, and has no entity holding 20 percent or more of supply. That places it on the digital commodity side, under CFTC oversight."
+        "answer": "Bitcoin sits about as comfortably on the digital commodity side as any asset can. It is functional, open source, rule-based, and has no issuer or affiliated group holding a meaningful share of supply. Spot market oversight would move to the CFTC."
       },
       {
         "question": "Does the SEC lose power under the CLARITY Act?",
-        "answer": "It loses spot market oversight of assets that pass the maturity test. It keeps everything else, including all investment contracts, issuer disclosure, and every asset whose network remains controlled. Given how few tokens clear the control threshold, the practical reduction in SEC reach is smaller than the framing suggests."
+        "answer": "Less than the framing suggests. It loses spot market oversight of assets that qualify as digital commodities. It keeps issuer disclosure and it keeps authority over the investment contracts through which tokens were sold, which does not lapse when a network decentralises."
       },
       {
-        "question": "Can an asset move from SEC to CFTC oversight over time?",
-        "answer": "Yes. That is the design. Classification follows the state of the network, so an asset that decentralises past the control threshold can transition from the securities side to the commodity side."
+        "question": "Does an asset move from SEC to CFTC oversight as it decentralises?",
+        "answer": "Not as a simple switch. Maturity affects how transactions are treated rather than reclassifying the asset itself, and the framework contemplates issuers who intend to reach maturity within roughly four years. Treat claims of an automatic handover with suspicion."
       }
     ],
     "related": ["mature-blockchain-system-test", "what-is-the-clarity-act", "clarity-act-token-classification-risk"],
     "sources": [
+      { "label": "GovInfo, House-passed engrossed text", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm" },
       { "label": "Congress.gov CRS overview of H.R. 3633", "url": "https://www.congress.gov/crs-product/IN12583" },
       { "label": "Arnold & Porter advisory on the CLARITY Act", "url": "https://www.arnoldporter.com/en/perspectives/advisories/2025/08/clarifying-the-clarity-act" },
-      { "label": "Latham & Watkins US Crypto Policy Tracker", "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments" }
+      { "label": "Congress.gov, S. 3755", "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3755/text" }
     ]
   },
   {
     "slug": "mature-blockchain-system-test",
-    "h1": "The mature blockchain system test and the 20 percent rule",
-    "title": "Mature Blockchain System Test, the CLARITY Act 20% Rule",
-    "description": "Four conditions decide whether a network is mature under the CLARITY Act. The one that disqualifies most tokens is the 20 percent control threshold.",
-    "keywords": ["mature blockchain system", "clarity act 20 percent control", "digital commodity definition", "decentralization test crypto", "clarity act token classification"],
-    "question": "What is a mature blockchain system under the CLARITY Act and what is the 20 percent threshold?",
-    "tldr": "Four conditions, all required. Functional, open source, rule-based, and not controlled by any person or group. Holding 20 percent or more of tokens counts as control, and that clause does more filtering than the other three combined.",
+    "h1": "The maturity test and the two 20 percent thresholds",
+    "title": "Mature Blockchain System Test, the CLARITY Act 20% Rules",
+    "description": "The CLARITY Act has two separate 20 percent thresholds and neither works the way the popular summary says. One is about voting power, the other about insider supply.",
+    "keywords": ["mature blockchain system", "ancillary asset", "clarity act 20 percent control", "clarity act token classification"],
+    "question": "What is a mature blockchain system under the CLARITY Act and how does the 20 percent threshold work?",
+    "tldr": "A mature blockchain system is one not controlled by any person or group under common control. The operational test adds two different 20 percent limits. One caps voting power for any single person. The other caps aggregate insider ownership, which is a much narrower and more interesting rule.",
     "sections": [
       {
-        "h2": "The four conditions",
+        "h2": "The definition is short. The test is not.",
         "body": [
-          "A blockchain system qualifies as mature when it is functional for executing transactions, accessing services, or taking part in validation or decentralised governance. It has to be composed of open-source code. It has to operate on pre-established, transparent rules. And it cannot be subject to the control of a single person or group, including by holding 20 percent or more of the tokens.",
-          "The first three are close to free. Nearly every serious protocol is functional, open source, and rule-based. Those conditions screen out vapourware, not real projects. The fourth is where the framework actually bites."
+          "The statutory definition in the House-passed text is one sentence. A mature blockchain system is a blockchain system, together with its related digital commodity, that is not controlled by any person or group of persons under common control.",
+          "Everything operational sits in the certification criteria added as Exchange Act Section 42. Those cover whether the system is functional, whether the code is open source, whether it runs on pre-established transparent rules, whether anyone holds unilateral authority to materially alter it, and how ownership is distributed. The first few are close to free for any serious protocol. The ownership conditions are where the framework bites."
         ]
       },
       {
-        "h2": "Why 20 percent is a harder bar than it sounds",
+        "h2": "Two thresholds, and the popular version is wrong",
         "body": [
-          "Twenty percent is not an unusual founding allocation. It is close to the median one. A typical 2021 to 2023 token launch reserved something like 15 to 25 percent for the team, another 15 to 20 percent for investors, and a further slice for a foundation treasury.",
-          "The question that decides classification is whether those buckets get counted together. A foundation, a founding team, and the investors from a single round can plausibly be read as an affiliated group. If they are, the arithmetic disqualifies a large share of the market. If each is assessed separately, far fewer tokens fail. The bill text sets the threshold without resolving the aggregation question, and that ambiguity is doing a lot of unacknowledged work.",
-          "Early Thunder ran the concentration question across our 251-token scorecard to see how much of the market sits near the line. The distribution is published in full."
+          "You will read everywhere that holding 20 percent of a token defeats maturity. That is not what the text says, and the error matters.",
+          "The first threshold is about governance. No person may have unilateral authority to control or materially alter the system, or control 20 percent or more of the outstanding voting power. Voting power is not the same as tokens held, particularly on chains where most supply never votes.",
+          "The second is about insiders. The digital commodity issuer, related persons and affiliated persons must not beneficially own, in aggregate, 20 percent or more of total units. Affiliated-person status keys off acquiring 5 percent or more from the issuer. Related-person status keys off 1 percent.",
+          "So an unaffiliated whale holding 25 percent does not break the test. A founding team, its foundation and its seed investors adding up to 21 percent does. The rule targets the cap table, not the rich list, and that flips which tokens should actually worry."
         ]
       },
       {
-        "h2": "The incentive it creates",
+        "h2": "Why 20 percent of insider supply is a hard bar",
         "body": [
-          "Read as policy rather than as law, the threshold is a lever. It tells teams that giving up control has a defined payoff, which is CFTC oversight instead of SEC oversight, and with it a workable listing and custody path.",
-          "That is a real incentive and it points the right way. The catch is timing. Distributing supply below 20 percent is slow, involves vesting schedules written years ago, and dilutes the people making the decision. Expect announcements about decentralisation to outrun actual changes in supply distribution by a wide margin."
+          "Because it is close to the median founding allocation. A typical 2021 to 2023 launch reserved roughly 15 to 25 percent for the team, another 15 to 20 percent for investors, and a further slice for a foundation treasury. Counted in aggregate, as the text requires, a large share of the market fails on arithmetic alone.",
+          "The live question is who counts as affiliated. The 5 percent and 1 percent triggers are broad enough to sweep in most early backers, which is what makes the aggregate test bite. Early Thunder ran insider concentration across our 251-token scorecard to size the exposure, and the distribution is published in full."
         ]
       },
       {
-        "h2": "What it does not measure",
+        "h2": "What the test does not measure",
         "body": [
-          "The test says nothing about whether governance is meaningful, whether a multisig can pause the chain, or whether validator sets are concentrated. A protocol could distribute tokens broadly while five entities run the sequencers.",
-          "So treat the maturity test as a supply-distribution screen with a decentralisation label on it. It is a defensible place to draw a legal line because supply is measurable. It is not the same as being decentralised, and it would be a mistake to read a passing grade as one."
+          "It says nothing about whether governance is meaningful, whether a multisig can pause the chain, or whether validator and sequencer sets are concentrated. A protocol could pass on distributed ownership while five entities run the infrastructure.",
+          "Treat maturity as a supply and governance-power screen with a decentralisation label on it. It is a defensible place to draw a legal line because both are measurable. It is not the same as being decentralised, and a passing grade should not be read as one.",
+          "One more caution. Definitions in this area moved between the House text, the Senate substitute reported on June 1 2026, and the merged text of July 22 2026. Anything you read about this test should tell you which document it is describing."
         ]
       }
     ],
     "faqs": [
       {
-        "question": "What counts as control under the CLARITY Act?",
-        "answer": "Control includes holding 20 percent or more of a network's tokens, along with the general condition that the system is not subject to the control of a single person or group. The bill sets the numeric threshold without fully settling how affiliated holders are aggregated."
+        "question": "Does holding 20 percent of a token make a blockchain fail the CLARITY Act maturity test?",
+        "answer": "Not by itself, and this is the most common misreading. The 20 percent ownership limit applies to the issuer, related persons and affiliated persons in aggregate. An unaffiliated holder with 25 percent does not defeat maturity. A separate 20 percent limit applies to outstanding voting power controlled by any single person."
       },
       {
-        "question": "Which tokens pass the mature blockchain system test?",
-        "answer": "Bitcoin and Ethereum clear it comfortably on every published criterion. Beyond those, it depends heavily on how team, foundation, and investor allocations are aggregated. Early Thunder's scan of 251 tokens found that 194 of them score in the lower half of our holder concentration measure."
+        "question": "What counts as an affiliated person under the CLARITY Act?",
+        "answer": "In the House-passed text, a digital commodity affiliated person includes anyone who acquires or has the right to acquire 5 percent or more of total outstanding units from the issuer. A related person threshold sits lower, at 1 percent. Those triggers are what make the aggregate 20 percent insider test bite."
+      },
+      {
+        "question": "Which tokens pass the maturity test?",
+        "answer": "Bitcoin and Ethereum clear it comfortably on every published criterion. Beyond those it depends on aggregate insider supply rather than on any single large holder. Early Thunder's scan of 251 tokens found 194 sitting in the lower half of our holder concentration measure, which is a proxy for insider-heavy cap tables rather than a statutory calculation."
       },
       {
         "question": "Does a token have to be fully decentralised to be a digital commodity?",
-        "answer": "No. The test is specific and narrower than decentralisation in the general sense. A network can pass on supply distribution while remaining concentrated in validators, sequencers, or governance participation."
+        "answer": "No. Digital commodity status turns on intrinsic linkage to a blockchain system and value derivation, not on maturity. Maturity affects how transactions in the asset are treated. The two get conflated constantly."
       }
     ],
     "related": ["clarity-act-token-classification-risk", "sec-vs-cftc-crypto-jurisdiction", "what-is-the-clarity-act"],
     "sources": [
+      { "label": "GovInfo, House-passed engrossed text", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm" },
+      { "label": "GovInfo, Senate-reported text, Calendar No. 423", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633rs/html/BILLS-119hr3633rs.htm" },
       { "label": "House Financial Services section-by-section summary", "url": "https://financialservices.house.gov/uploadedfiles/2025-07-10_-_sbs_-_clarity_act_of_2025_final.pdf" },
-      { "label": "Congress.gov, H.R. 3633 text", "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633/text" },
-      { "label": "crypto.news reader's guide to the bill", "url": "https://crypto.news/what-the-clarity-act-actually-says-a-readers-guide/" }
+      { "label": "Tally on whether a protocol is a mature blockchain system", "url": "https://blog.tally.xyz/is-your-protocol-a-mature-blockchain-system-under-the-clarity-act" }
     ]
   },
   {
     "slug": "clarity-act-token-classification-risk",
     "h1": "Which tokens are exposed if the CLARITY Act passes",
     "title": "CLARITY Act Token Classification Risk, 251 Tokens Scored",
-    "description": "We scored 251 tokens against the CLARITY Act's control and regulatory tests. Only six clear the top band, and $138B of market cap sits in the most exposed one.",
-    "keywords": ["which crypto are securities", "clarity act token classification", "crypto regulatory risk ranking", "digital commodity list", "token concentration 20 percent"],
+    "description": "We scored 251 tokens against the variables the CLARITY Act cares about. Six clear the top band, and $138B of market cap sits in the most exposed one.",
+    "keywords": ["which crypto are securities", "clarity act altcoins", "clarity act impact on crypto", "clarity act token classification", "clarity act bitcoin ethereum"],
     "question": "Which crypto assets are most exposed to classification risk under the CLARITY Act?",
-    "tldr": "Six of 251 tokens score in our top readiness band. Median score is 45 out of 100. Excluding bitcoin and ether, 32 percent of tracked altcoin market cap sits in the most exposed band, and BNB and TRON alone account for most of it.",
+    "tldr": "Six of 251 tokens score in our top readiness band. Median is 45 out of 100. Excluding bitcoin and ether, 32 percent of tracked altcoin market cap sits in the most exposed band, and BNB and TRON carry most of it.",
     "sections": [
       {
         "h2": "What we measured and how",
         "body": [
-          "Early Thunder maintains a 251-token scorecard rating each asset across 25 variables from 1 to 10. Three of those variables map directly onto what the CLARITY Act cares about. Regulatory safety captures existing enforcement exposure and jurisdictional posture. Holder concentration captures how much supply sits with insiders, which is the variable that speaks to the 20 percent control threshold. Institutional adoption captures whether regulated venues already touch the asset.",
-          "We combined them into a readiness score out of 100, weighting regulatory safety at 50 percent, holder concentration at 30 percent, and institutional adoption at 20 percent. Regulatory safety carries the most weight because it reflects the position an asset is already in. Concentration comes second because it is the mechanical test. Treat it as our own heuristic, derived from our own research. It is not a legal opinion and not a prediction of any regulator's decision."
+          "Early Thunder maintains a 251-token scorecard rating each asset across 25 variables from 1 to 10. Three map onto what the CLARITY Act cares about. Regulatory safety captures existing enforcement exposure and jurisdictional posture. Holder concentration captures how much supply sits with insiders. Institutional adoption captures whether regulated venues already touch the asset.",
+          "We combined them into a readiness score out of 100, weighting regulatory safety at 50 percent, holder concentration at 30 percent, and institutional adoption at 20 percent.",
+          "Be clear about what the concentration variable is doing. The bill's ownership test asks whether the issuer, related persons and affiliated persons together hold 20 percent or more of total units, with affiliation triggered by acquiring 5 percent or more from the issuer. Our holder concentration score is a research proxy for insider-heavy cap tables. It is not that statutory calculation, which needs cap-table data most projects have never published. Treat this as our own heuristic, not a legal opinion and not a prediction of any regulator's decision."
         ]
       },
       {
         "h2": "The distribution is worse than the narrative",
         "body": [
-          "Six tokens out of 251 score 70 or above. Ethereum leads at 88, bitcoin at 83, then Avalanche, Chainlink, Uniswap, and Maker. Seventy-three tokens land between 50 and 69. One hundred and fifty-three sit between 35 and 49. Nineteen fall below 35.",
-          "The median is 45 out of 100. That is the headline. The market talks about the CLARITY Act as a rising tide, and for the assets already on the right side of the line it probably is. For the median token in a broad altcoin portfolio, a written classification test is not obviously good news. It converts an unresolved question into a documented answer, and the answer is not guaranteed to be favourable.",
-          "The concentration numbers explain most of it. Of 251 tokens, 194 score four or below on holder concentration, and 55 score three or below. Insider-heavy supply is the norm, not the exception, and it is the exact characteristic the 20 percent control threshold is written to catch."
+          "Six tokens out of 251 score 70 or above. Ethereum leads at 88, bitcoin at 83, then Avalanche, Chainlink, Uniswap and Maker. Seventy-three land between 50 and 69. One hundred and fifty-three sit between 35 and 49. Nineteen fall below 35.",
+          "The median is 45 out of 100. That is the headline. The market talks about the CLARITY Act as a rising tide, and for assets already on the right side of the line it probably is. For the median token in a broad altcoin portfolio, a written classification framework is not obviously good news. It converts an unresolved question into a documented answer, and the answer is not guaranteed to be favourable.",
+          "The concentration numbers explain most of it. Of 251 tokens, 194 score four or below on holder concentration and 55 score three or below. Insider-heavy supply is the norm, not the exception, and aggregate insider ownership is exactly what the bill's 20 percent test measures."
         ]
       },
       {
         "h2": "Where the money actually sits",
         "body": [
-          "Aggregate market cap tells a sharper story than token counts. The top band holds $1.74 trillion, but that is bitcoin and ether doing nearly all the work. Strip those two out and the picture inverts.",
-          "Of the $429 billion of remaining tracked market cap, $138 billion sits in the most exposed band. That is 32 percent. Two names carry most of it. BNB scores 29 against $88.7 billion of market cap, and TRON scores 25 against $35.5 billion. Both are penalised on the same two axes, low regulatory safety and concentrated supply, and both are large enough that their treatment would move the market's sense of what the framework means in practice.",
-          "The rest of the exposed band is a mix of privacy assets, exchange tokens, and gaming or meme names. Monero at 29 is a category of its own, since the issue there is not supply distribution but whether a privacy-preserving asset fits any of the bill's boxes."
+          "Aggregate market cap tells a sharper story than token counts. The top band holds $1.74 trillion, but that is bitcoin and ether doing nearly all of the work. Strip those two out and the picture inverts.",
+          "Of the $429 billion of remaining tracked market cap, $138 billion sits in the most exposed band. That is 32 percent. Two names carry most of it. BNB scores 29 against $88.7 billion of market cap, and TRON scores 25 against $35.5 billion. Both are penalised on the same two axes, low regulatory safety and concentrated supply, and both are large enough that their treatment would set the market's read on what the framework means in practice.",
+          "The rest of the exposed band mixes privacy assets, exchange tokens, and gaming or meme names. Monero at 29 is its own category, since the issue there is not supply distribution but whether a privacy-preserving asset fits any of the bill's boxes at all."
         ]
       },
       {
         "h2": "How to use this",
         "body": [
-          "Not as a buy or sell list. Classification readiness is one input, and it says nothing about whether a protocol earns money or has users. A high readiness score on an asset with no revenue is still an asset with no revenue.",
-          "What it is good for is sizing an unhedged exposure. If a portfolio is concentrated in names from the bottom band, then a bill passing is a risk event rather than a catalyst, and that is the opposite of the position most holders think they are in. Reading the score alongside a protocol's actual revenue is the more useful exercise, and both live on the same scorecard."
+          "Not as a buy or sell list. Classification readiness is one input and it says nothing about whether a protocol earns money or has users. A high readiness score on an asset with no revenue is still an asset with no revenue.",
+          "What it is good for is sizing an unhedged exposure. If a portfolio is concentrated in names from the bottom band, then passage is a risk event rather than a catalyst, which is the opposite of the position most holders think they hold. Reading the score alongside a protocol's actual revenue is the more useful exercise, and both live on the same scorecard."
         ]
       }
     ],
     "faqs": [
       {
         "question": "Which tokens score best on CLARITY Act readiness?",
-        "answer": "Ethereum at 88 and bitcoin at 83 lead, followed by Avalanche at 78, Chainlink at 77, Uniswap at 76, and Maker at 71. Those six are the only assets of 251 scoring 70 or above on Early Thunder's readiness composite."
+        "answer": "Ethereum at 88 and bitcoin at 83 lead, followed by Avalanche at 78, Chainlink at 77, Uniswap at 76 and Maker at 71. Those six are the only assets of 251 scoring 70 or above on Early Thunder's readiness composite."
       },
       {
         "question": "Which large-cap tokens are most exposed to classification risk?",
-        "answer": "By market cap in the lowest band, BNB at $88.7 billion scores 29, TRON at $35.5 billion scores 25, and Monero at $7.0 billion scores 29. Together the lowest band holds $138 billion, which is 32 percent of tracked market cap excluding bitcoin and ether."
+        "answer": "By market cap in the lowest band, BNB at $88.7 billion scores 29, TRON at $35.5 billion scores 25, and Monero at $7.0 billion scores 29. The lowest band holds $138 billion in total, which is 32 percent of tracked market cap excluding bitcoin and ether."
       },
       {
         "question": "Is a low readiness score a prediction that a token will be ruled a security?",
-        "answer": "No. It is Early Thunder's own composite of three research variables that map onto what the bill measures. Regulators, courts, and the final text will decide actual classifications, and the bill is not law."
+        "answer": "No. It is Early Thunder's own composite of three research variables that approximate what the bill measures. It is not the statutory insider-ownership calculation, which requires cap-table data most projects have never published. Regulators, courts and the final text will decide actual treatment, and the bill is not law."
       },
       {
-        "question": "How many tokens fail the concentration test?",
-        "answer": "Of the 251 tokens scored, 194 sit at four or below on our holder concentration measure and 55 sit at three or below. Concentrated insider supply is the market norm, and it is the characteristic the 20 percent control threshold targets."
+        "question": "How many tokens have insider-heavy supply?",
+        "answer": "Of the 251 tokens scored, 194 sit at four or below on our holder concentration measure and 55 sit at three or below. Concentrated insider supply is the market norm, and aggregate insider ownership is what the bill's 20 percent threshold targets."
       }
     ],
     "related": ["mature-blockchain-system-test", "sec-vs-cftc-crypto-jurisdiction", "who-supports-the-clarity-act"],
     "sources": [
       { "label": "Early Thunder 251-token altcoin scorecard", "url": "https://earlythunder.com/scorecard" },
+      { "label": "GovInfo, House-passed engrossed text", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm" },
       { "label": "House Financial Services section-by-section summary", "url": "https://financialservices.house.gov/uploadedfiles/2025-07-10_-_sbs_-_clarity_act_of_2025_final.pdf" }
     ]
   },
@@ -439,61 +471,69 @@
     "slug": "clarity-act-passage-odds",
     "h1": "The floor-time arithmetic behind CLARITY Act passage",
     "title": "Will the CLARITY Act Pass in 2026? The Calendar Math",
-    "description": "Passage does not hinge on support, it hinges on floor days. Counting the Senate's remaining 2026 session time shows how narrow the window really is.",
-    "keywords": ["will the clarity act pass", "clarity act odds 2026", "clarity act senate floor vote", "crypto bill passage 2026", "senate calendar crypto"],
+    "description": "Passage hinges on floor days and one ethics fight, not on endorsements. Counting the Senate's remaining 2026 session time shows exactly how narrow the window is.",
+    "keywords": ["will the clarity act pass", "clarity act 2026", "clarity act delayed", "clarity act senate", "crypto regulation 2026"],
     "question": "What are the odds the CLARITY Act passes in 2026?",
-    "tldr": "Two windows remain. The first week of August, and a short stretch after the Senate returns on September 14. October is gone to campaigning and Election Day is November 3. Support is not the binding constraint. Floor time is.",
+    "tldr": "Three windows remain. The first week of August, a short September stretch, and roughly 22 post-election session days running to December 18. Support is not the binding constraint. Floor time and the ethics language are.",
     "sections": [
       {
         "h2": "Count the days, not the endorsements",
         "body": [
           "Most coverage measures momentum in endorsements. A better measure is how many days the Senate is physically in session with floor time available for a bill that is not must-pass.",
-          "The chamber sits for the first week of August and then leaves. It returns on September 14. Senators are then scheduled out of Washington for nearly all of October and the first week of November, with Election Day on November 3. That leaves two windows, and the second is competing with appropriations, nominations, and every other item that accumulated over a five-week recess.",
-          "A market structure bill is not must-pass. It has no funding cliff and no expiring authority forcing action. Bills without a deadline lose to bills with one, every time floor time is scarce."
+          "The chamber sits for the first week of August and then leaves. It returns on September 14. Senators are then out for nearly all of October and the first week of November, with Election Day on November 3.",
+          "The part usually left out is what comes after. Roughly 22 scheduled session days remain post-election, across November 9 to 10, November 16 to 20, and November 30 to December 18, and the 119th Congress does not end until January 3 2027. So September is the last extended pre-election window, not the last chance. A lame-duck vote is calendar-feasible.",
+          "It is also a worse environment. A market structure bill has no funding cliff forcing action, so it loses every scheduling contest to bills that do, and lame-duck sessions are when members who just lost re-election are casting votes."
         ]
       },
       {
         "h2": "The steps still required",
         "body": [
-          "Reaching a floor vote is not one step. The Banking text has to be reconciled with Senate Agriculture's S. 3755. A cloture motion has to be filed, which the majority leader will not do without a count. Cloture itself takes floor time, and post-cloture debate takes more. Then, assuming Senate passage, the House and Senate versions have to be reconciled, and the House would need to take up the result.",
-          "Each of those consumes days that the calendar does not have. Which is why Senate Majority Leader John Thune said on July 23 that he would like to at least get Clarity started and would see where the votes are. That is the language of a leader managing a queue, not one scheduling a win. White House crypto adviser Patrick Witt said he was perplexed by it and pointed to the first week of August."
+          "Reaching a floor vote is not one step. The Banking text has to be reconciled with Senate Agriculture's S. 3755. A cloture motion has to be filed, which the majority leader will not do without a count. Cloture takes floor time and post-cloture debate takes more. Then, assuming Senate passage, the House and Senate versions have to be reconciled and the House has to take up the result.",
+          "Each of those consumes days the calendar does not have much of. Which is why Thune said on July 23 that he would like to at least get Clarity started and would see where the votes are. That is the language of a leader managing a queue, not one scheduling a win. Patrick Witt said he was perplexed by it and pointed to the first week of August."
         ]
       },
       {
         "h2": "What would actually move it",
         "body": [
-          "One thing. A deal on the ethics language that seven Senate Democrats can sign. Every other dispute in this bill has a technical fix that lobbyists and committee staff can draft. The ethics provision is about the conduct of a sitting administration, which means it is resolved politically or not at all.",
-          "That makes the odds unusually reflexive. Industry support, and the $22 trillion of genuinely discretionary capital behind it, does not move a senator whose objection is about presidential conflicts of interest. Watch the ethics negotiation, not the endorsement count.",
-          "Lummis put the stakes plainly on July 24. The coming weeks, she said, are likely the last real chance we will have for years to get this right. She is describing the calendar, not being dramatic. A bill that does not pass this Congress starts over in a Senate reshaped by the midterms."
+          "One thing. Agreement on three specific gaps in the ethics section. As written it bars covered officials, employees and their spouses from issuing or sponsoring a digital asset for consideration, while leaving promotion and endorsement untouched, leaving dependent children out, and expiring at noon on January 20 2029. Democrats want all three changed.",
+          "Every other dispute in this bill has a technical fix that committee staff can draft. The ethics gaps are about the conduct of a sitting administration, which means they get resolved politically or not at all.",
+          "That makes the odds unusually reflexive. Industry support, and the $22.44 trillion of genuinely discretionary capital behind it, does not move a senator whose objection is about presidential conflicts of interest. Watch the ethics negotiation, not the endorsement count.",
+          "One base rate worth holding onto. FIT21 passed the House 279-136 in May 2024 with the same architecture and never reached a Senate floor vote. Clearing a chamber is not predictive of clearing the Senate."
         ]
       },
       {
         "h2": "How to position around it",
         "body": [
-          "Two things follow from the calendar. First, headline risk is asymmetric in the near term. Passage is a real possibility in a narrow window, and failure is the base case simply because the days are not there. Anything priced as though passage is scheduled is priced ahead of the facts.",
-          "Second, and less obvious, passage is not uniformly bullish across the market. Our classification work found that 32 percent of tracked altcoin market cap outside bitcoin and ether sits in the most exposed readiness band. For those assets a written test is a resolution risk rather than a catalyst. The tokens with the most to gain are the ones that already had the least classification uncertainty."
+          "Two things follow. Near-term headline risk is asymmetric. Passage is possible in a narrow window and failure is the base case, simply because the days are scarce and the blocking issue is political. Anything priced as though passage is scheduled is priced ahead of the facts.",
+          "Second, and less obvious, passage is not uniformly bullish. Our classification work found 32 percent of tracked altcoin market cap outside bitcoin and ether sitting in the most exposed readiness band. For those assets a written framework is a resolution risk rather than a catalyst. The tokens with the most to gain are the ones that already had the least classification uncertainty.",
+          "It is also worth keeping the size of the effect in proportion. Schwab's own research desk estimated that CLARITY passage odds explained roughly 4.3 percent of bitcoin's daily price change. Real, and nowhere near the dominant driver."
         ]
       }
     ],
     "faqs": [
       {
         "question": "When is the last realistic chance for the CLARITY Act in 2026?",
-        "answer": "The first week of August, then the September session after the Senate returns on the 14th. The chamber is scheduled out for nearly all of October ahead of the November 3 midterms, which effectively closes the year."
+        "answer": "The first week of August, then the September session after the Senate returns on the 14th, then roughly 22 post-election session days running from November 9 to December 18. The 119th Congress ends January 3 2027, so anything not enacted by then restarts from scratch."
       },
       {
         "question": "What single factor decides whether the CLARITY Act passes?",
-        "answer": "The ethics provision covering elected officials and their families. Every other open dispute has a technical fix available. That one is political, and it is what seven Senate Democrats cited on July 24 2026."
+        "answer": "The ethics section, and specifically three gaps in it. Promotion and endorsement are not covered, dependent children are not covered, and the whole section sunsets in January 2029. Every other open dispute has a technical fix available."
       },
       {
         "question": "Would the CLARITY Act be bullish for crypto if it passed?",
-        "answer": "Not evenly. Assets that already sit on the commodity side of the line gain a clear listing and custody path. Assets with concentrated supply and existing enforcement exposure face a documented answer to a question that is currently unresolved. Early Thunder's scan puts 32 percent of tracked altcoin market cap outside bitcoin and ether in the most exposed band."
+        "answer": "Not evenly. Assets already on the commodity side gain a clear listing and custody path. Assets with concentrated insider supply and existing enforcement exposure face a documented answer to a currently unresolved question. Early Thunder's scan puts 32 percent of tracked altcoin market cap outside bitcoin and ether in the most exposed band."
+      },
+      {
+        "question": "Has a crypto market structure bill ever passed a chamber before?",
+        "answer": "Yes. FIT21, H.R. 4763, passed the House 279-136 on May 22 2024 with the same SEC and CFTC split, then died without a Senate floor vote. That is the most relevant base rate for handicapping the CLARITY Act."
       }
     ],
     "related": ["why-the-clarity-act-is-stalled", "clarity-act-token-classification-risk", "clarity-act-status-timeline"],
     "sources": [
-      { "label": "Roll Call, Senate releases its 2026 calendar", "url": "https://rollcall.com/2025/11/19/senate-calendar-2026-midterm-election/" },
+      { "label": "US Senate 2026 legislative schedule", "url": "https://www.senate.gov/legislative/2026_schedule.htm" },
       { "label": "CoinDesk, Thune on the closing window", "url": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says" },
-      { "label": "Forbes, July 24 2026 text release", "url": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/" }
+      { "label": "The Block on the ethics provision and 2029 sunset", "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029" },
+      { "label": "GovInfo, FIT21 bill status, 118th Congress", "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118hr4763.xml" }
     ]
   }
 ]

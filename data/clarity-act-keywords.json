@@ -1,0 +1,830 @@
+{
+  "_provenance": {
+    "source": "DataForSEO Google Ads search_volume live endpoint",
+    "endpoint": "/v3/keywords_data/google_ads/search_volume/live",
+    "location_code": 2840,
+    "location": "United States",
+    "language": "en",
+    "retrieved_at": "2026-07-27T03:29:27Z",
+    "api_cost_usd": 0.09,
+    "note": "Real measured volume. Nothing here is estimated or inferred. Keywords returning null volume are recorded as null, not zero, because Google Ads reports no data rather than confirming zero demand."
+  },
+  "keywords": [
+    {
+      "keyword": "clarity act",
+      "search_volume": 90500,
+      "competition": "LOW",
+      "competition_index": 1,
+      "cpc": 2.72,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 201000
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 301000
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 165000
+        }
+      ]
+    },
+    {
+      "keyword": "genius act",
+      "search_volume": 49500,
+      "competition": "LOW",
+      "competition_index": 3,
+      "cpc": 3.61,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 8100
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 12100
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 14800
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act news",
+      "search_volume": 40500,
+      "competition": "LOW",
+      "competition_index": 1,
+      "cpc": 2.21,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 74000
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 135000
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 90500
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act update",
+      "search_volume": 9900,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": 4.13,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 22200
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 27100
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 22200
+        }
+      ]
+    },
+    {
+      "keyword": "what is the clarity act",
+      "search_volume": 8100,
+      "competition": "LOW",
+      "competition_index": 4,
+      "cpc": 1.32,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 33100
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 22200
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 6600
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act crypto",
+      "search_volume": 6600,
+      "competition": "LOW",
+      "competition_index": 1,
+      "cpc": 0.09,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 3600
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 9900
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 6600
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act status",
+      "search_volume": 1900,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": 4.26,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 2900
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 3600
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 2900
+        }
+      ]
+    },
+    {
+      "keyword": "crypto market structure bill",
+      "search_volume": 1900,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 590
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 1000
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 1000
+        }
+      ]
+    },
+    {
+      "keyword": "digital asset market clarity act",
+      "search_volume": 1300,
+      "competition": "LOW",
+      "competition_index": 4,
+      "cpc": 4.11,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 390
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 720
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 9900
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act 2026",
+      "search_volume": 1000,
+      "competition": "LOW",
+      "competition_index": 1,
+      "cpc": 1.35,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 1600
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 1900
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 1900
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act senate",
+      "search_volume": 880,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": 0.51,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 1300
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 1000
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 880
+        }
+      ]
+    },
+    {
+      "keyword": "will the clarity act pass",
+      "search_volume": 720,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": 1.18,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 2400
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 2400
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 1300
+        }
+      ]
+    },
+    {
+      "keyword": "has the clarity act passed",
+      "search_volume": 480,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 720
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 1300
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 1000
+        }
+      ]
+    },
+    {
+      "keyword": "hr 3633",
+      "search_volume": 480,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 390
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 390
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act timeline",
+      "search_volume": 480,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": 5.58,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 590
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 720
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 390
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act summary",
+      "search_volume": 260,
+      "competition": "LOW",
+      "competition_index": 3,
+      "cpc": 0.13,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 320
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 480
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 170
+        }
+      ]
+    },
+    {
+      "keyword": "what does the clarity act do",
+      "search_volume": 210,
+      "competition": "LOW",
+      "competition_index": 6,
+      "cpc": 0.29,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 480
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 590
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 170
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act delayed",
+      "search_volume": 140,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 50
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 110
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act explained",
+      "search_volume": 110,
+      "competition": "LOW",
+      "competition_index": 4,
+      "cpc": 2.29,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 210
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 390
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 110
+        }
+      ]
+    },
+    {
+      "keyword": "crypto bill senate",
+      "search_volume": 110,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 30
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act meaning",
+      "search_volume": 90,
+      "competition": "LOW",
+      "competition_index": 1,
+      "cpc": 0.04,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 170
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 320
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 110
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act passed senate",
+      "search_volume": 70,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 50
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 260
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 90
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act stablecoin",
+      "search_volume": 70,
+      "competition": "LOW",
+      "competition_index": 4,
+      "cpc": 0.02,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 50
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 170
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 70
+        }
+      ]
+    },
+    {
+      "keyword": "sec vs cftc",
+      "search_volume": 50,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 110
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act defi",
+      "search_volume": 20,
+      "competition": "LOW",
+      "competition_index": 3,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 20
+        }
+      ]
+    },
+    {
+      "keyword": "ancillary asset",
+      "search_volume": 20,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act stalled",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 1,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 20
+        }
+      ]
+    },
+    {
+      "keyword": "which crypto are securities",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act impact on crypto",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 3,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 40
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 20
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act altcoins",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 6,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 0
+        }
+      ]
+    },
+    {
+      "keyword": "clarity act self custody",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "who supports the clarity act",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 1,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "mature blockchain system",
+      "search_volume": 10,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 0
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 0
+        }
+      ]
+    },
+    {
+      "keyword": "crypto regulation 2026",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2026,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 4,
+          "search_volume": 10
+        }
+      ]
+    }
+  ]
+}

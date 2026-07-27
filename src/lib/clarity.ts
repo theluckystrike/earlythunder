@@ -24,6 +24,7 @@ export interface ClarityBacker {
   readonly as_of: string;
   readonly discretionary: boolean;
   readonly note: string;
+  readonly support_strength?: string;
   readonly quote?: string;
   readonly quote_attribution?: string;
   readonly source: string;
@@ -40,6 +41,8 @@ export interface ClarityBlocker {
 export interface ClarityProvision {
   readonly id: string;
   readonly title: string;
+  /** Which version of the bill this provision text comes from. */
+  readonly document?: string;
   readonly plain_english: string;
   readonly why_it_matters: string;
   readonly source?: string;

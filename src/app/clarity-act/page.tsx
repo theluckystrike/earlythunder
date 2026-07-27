@@ -27,21 +27,24 @@ import {
   getFaqPageSchema,
 } from "@/lib/structured-data";
 
-const PAGE_TITLE = "CLARITY Act Tracker";
+const PAGE_TITLE = "CLARITY Act Tracker, Status and Latest Updates";
 const PAGE_DESCRIPTION =
-  "Live tracker for the Digital Asset Market Clarity Act. Dated timeline, who is backing it and what their AUM figures really measure, and 251 tokens scored against the bill's control test.";
+  "Live CLARITY Act tracker with every dated update, the real capital behind the bill, and 251 tokens scored against its 20 percent control test.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
   keywords: [
     "clarity act",
-    "clarity act tracker",
-    "digital asset market clarity act",
+    "clarity act news",
+    "clarity act update",
+    "clarity act crypto",
+    "clarity act 2026",
+    "clarity act senate",
     "crypto market structure bill",
-    "h.r. 3633",
-    "sec cftc crypto jurisdiction",
-    "clarity act senate vote",
+    "digital asset market clarity act",
+    "hr 3633",
+    "clarity act tracker",
   ],
   openGraph: {
     title: `${PAGE_TITLE} | ${SITE_NAME}`,
@@ -76,17 +79,22 @@ const HUB_FAQS = [
   {
     question: "What does the CLARITY Act do?",
     answer:
-      "It splits US digital asset oversight between the CFTC and the SEC. Assets tied to a mature blockchain system become digital commodities under CFTC jurisdiction. Everything else stays with the SEC. A system counts as mature when it is functional, open source, rule-based, and not controlled by any person or group holding 20 percent or more of the tokens.",
+      "It gives the CFTC spot market oversight of digital commodities and leaves securities regulation with the SEC. A mature blockchain system is one not controlled by any person or group under common control, and the operational criteria add two separate 20 percent limits. One caps any single person at 20 percent of voting power. The other caps the issuer, related persons and affiliated persons at 20 percent of total units in aggregate, so insider supply is what the rule targets rather than any large holder.",
   },
   {
     question: "Who supports the CLARITY Act?",
     answer:
-      "BlackRock, Charles Schwab, Fidelity, Goldman Sachs, and Grayscale are among the firms backing it. Press coverage aggregates their assets into a figure above $30 trillion, but that number mixes discretionary assets under management with custodial client assets and assets under supervision.",
+      "Press coverage names BlackRock, Charles Schwab, Fidelity, Goldman Sachs and Grayscale, and aggregates their assets into a figure above $30 trillion. Two things are wrong with that. The number mixes discretionary assets under management with custodial client assets and assets under supervision, and only Fidelity issued an explicit public statement urging passage. There was no joint endorsement.",
+  },
+  {
+    question: "Was the CLARITY Act the first crypto market structure bill to pass a chamber?",
+    answer:
+      "No. FIT21, H.R. 4763, passed the House 279-136 on May 22 2024 in the 118th Congress with the same SEC and CFTC split, then died without a Senate floor vote. The CLARITY Act has gone furthest because it also cleared a Senate committee.",
   },
   {
     question: "Which tokens are most exposed if the CLARITY Act passes?",
     answer:
-      "Early Thunder scored 251 tokens against the bill's control and regulatory tests. Six clear the top band. Excluding bitcoin and ether, 32 percent of tracked altcoin market cap sits in the most exposed band, led by BNB and TRON.",
+      "Early Thunder scored 251 tokens on the research variables that approximate what the bill measures. Six clear the top band and the median is 45 of 100. Excluding bitcoin and ether, 32 percent of tracked altcoin market cap sits in the most exposed band, led by BNB and TRON.",
   },
 ];
 
@@ -154,16 +162,16 @@ export default function ClarityActHubPage() {
         </p>
       </header>
 
-      {/* Bill vitals */}
+      {/* Bill snapshot */}
       <section className="mt-14">
         <h2 className="text-xs font-mono uppercase tracking-wider text-text-tertiary">
-          Bill vitals
+          Bill snapshot
         </h2>
         <dl className="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-4">
-          <Vital label="Bill" value={bill.house_number} />
-          <Vital label="House vote" value={bill.house_vote} />
-          <Vital label="Senate committee" value={bill.senate_committee_vote} />
-          <Vital label="Votes needed" value={String(bill.votes_needed)} />
+          <Snapshot label="Bill" value={bill.house_number} />
+          <Snapshot label="House vote" value={bill.house_vote} />
+          <Snapshot label="Senate committee" value={bill.senate_committee_vote} />
+          <Snapshot label="Votes needed" value={String(bill.votes_needed)} />
         </dl>
         <p className="mt-4 text-sm leading-relaxed text-text-tertiary">
           {bill.house_title}. Introduced {bill.introduced} by {bill.sponsor}.
@@ -211,12 +219,13 @@ export default function ClarityActHubPage() {
           labelled as such in coverage.
         </p>
         <div className="mt-6 overflow-x-auto">
-          <table className="w-full min-w-[640px] border-collapse text-sm">
+          <table className="w-full min-w-[820px] border-collapse text-sm">
             <thead>
               <tr className="border-b border-border text-left text-xs font-mono uppercase tracking-wider text-text-tertiary">
                 <th className="py-3 pr-4 font-medium">Firm</th>
                 <th className="py-3 pr-4 font-medium">Figure</th>
                 <th className="py-3 pr-4 font-medium">What it measures</th>
+                <th className="py-3 pr-4 font-medium">How strong the support is</th>
                 <th className="py-3 font-medium">As of</th>
               </tr>
             </thead>
@@ -236,6 +245,9 @@ export default function ClarityActHubPage() {
                         Not discretionary
                       </span>
                     )}
+                  </td>
+                  <td className="py-4 pr-4 text-text-secondary">
+                    {b.support_strength ?? "-"}
                   </td>
                   <td className="py-4 font-mono text-text-tertiary">{b.as_of}</td>
                 </tr>
@@ -331,7 +343,7 @@ export default function ClarityActHubPage() {
         <p className="mt-4 text-[1.0625rem] leading-[1.8] text-text-secondary">
           {calendar.august_window} It returns {calendar.return_date}.{" "}
           {calendar.october} Election Day is {calendar.election_day}.{" "}
-          {calendar.note}
+          {calendar.post_election_detail} {calendar.note}
         </p>
         <Link
           href="/clarity-act/clarity-act-passage-odds"
@@ -383,6 +395,11 @@ export default function ClarityActHubPage() {
               <dt className="text-base font-semibold text-text-primary">
                 {p.title}
               </dt>
+              {p.document && (
+                <div className="mt-1 text-xs font-mono text-text-tertiary">
+                  {p.document}
+                </div>
+              )}
               <dd className="mt-2 text-[1.0625rem] leading-[1.8] text-text-secondary">
                 {p.plain_english} {p.why_it_matters}
               </dd>
@@ -426,7 +443,7 @@ export default function ClarityActHubPage() {
   );
 }
 
-function Vital({ label, value }: { readonly label: string; readonly value: string }) {
+function Snapshot({ label, value }: { readonly label: string; readonly value: string }) {
   return (
     <div className="bg-bg-card p-4">
       <dt className="text-xs font-mono uppercase tracking-wider text-text-tertiary">
