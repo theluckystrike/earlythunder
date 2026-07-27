@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/data";
+import { getAllBlogPosts, getBlogPostBySlug, getRelatedArticles } from "@/lib/data";
 import { formatDate } from "@/lib/format";
+import { getBlogPostMetadata } from "@/lib/metadata";
 import { getArticleSchema, getBreadcrumbListSchema } from "@/lib/structured-data";
+import RelatedArticles from "@/components/RelatedArticles";
 
 interface PageProps {
   readonly params: Promise<{ slug: string }>;
@@ -19,11 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getBlogPostBySlug(slug);
   if (!post) return { title: "Not Found" };
 
-  return {
-    title: post.title,
-    description: post.excerpt,
-    alternates: { canonical: `/blog/${slug}` },
-  };
+  return getBlogPostMetadata(post);
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
@@ -59,6 +57,11 @@ export default async function BlogPostPage({ params }: PageProps) {
         tags={post.tags}
       />
       <PostContent content={post.content} />
+      <RelatedArticles
+        items={getRelatedArticles(post, getAllBlogPosts())}
+        basePath="/blog"
+        heading="Related research"
+      />
       <PostFooter />
     </article>
   );

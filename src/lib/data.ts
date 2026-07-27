@@ -146,3 +146,49 @@ export function getGuideBySlug(slug: string): BlogPost | null {
   const all = getAllGuides();
   return all.find((guide) => guide.slug === slug) ?? null;
 }
+
+/** Upper bound on related-article suggestions rendered per page. */
+const MAX_RELATED_ARTICLES = 4;
+
+/**
+ * Ranks articles from `pool` by shared tags with `current`, most overlap first.
+ * Falls back to recency so every article gets internal links even with no tag hits.
+ */
+export function getRelatedArticles(
+  current: BlogPost,
+  pool: readonly BlogPost[],
+  limit: number = MAX_RELATED_ARTICLES,
+): readonly BlogPost[] {
+  console.assert(current && typeof current.slug === "string", "getRelatedArticles: valid current");
+  if (!current || typeof current.slug !== "string") return [];
+  if (!Array.isArray(pool) || pool.length === 0) return [];
+
+  const bounded = Math.max(0, Math.min(limit, MAX_RELATED_ARTICLES));
+  if (bounded === 0) return [];
+
+  const ownTags = new Set(
+    (Array.isArray(current.tags) ? current.tags : []).map((t) => String(t).toLowerCase()),
+  );
+
+  const scored = pool
+    .filter((item) => item.slug !== current.slug)
+    .map((item) => {
+      const tags = Array.isArray(item.tags) ? item.tags : [];
+      const overlap = tags.reduce(
+        (count: number, tag: string) =>
+          ownTags.has(String(tag).toLowerCase()) ? count + 1 : count,
+        0,
+      );
+      return { item, overlap };
+    });
+
+  scored.sort((a, b) => {
+    if (b.overlap !== a.overlap) return b.overlap - a.overlap;
+    return (
+      new Date(b.item.published_at).getTime() -
+      new Date(a.item.published_at).getTime()
+    );
+  });
+
+  return scored.slice(0, bounded).map((entry) => entry.item);
+}

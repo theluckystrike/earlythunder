@@ -8,8 +8,10 @@ import {
   GUIDE_PRIORITY,
   RESEARCH_SLUGS,
   RESEARCH_ARTICLE_PRIORITY,
+  CLARITY_TOPIC_PRIORITY,
 } from "@/lib/constants";
 import { getAllOpportunities, getAllBlogPosts, getAllGuides } from "@/lib/data";
+import { getAllClarityTopics } from "@/lib/clarity";
 
 export const dynamic = "force-static";
 
@@ -17,7 +19,7 @@ const DEFAULT_PRIORITY = 0.5;
 const MAX_ENTRIES = 50000;
 
 /** Pages that update daily (interactive dashboards, live data). */
-const DAILY_PAGES = new Set(["/", "/intelligence", "/deadlines", "/earnings", "/opportunities", "/discoveries", "/scorecard"]);
+const DAILY_PAGES = new Set(["/", "/intelligence", "/deadlines", "/earnings", "/opportunities", "/discoveries", "/scorecard", "/clarity-act"]);
 
 /** Returns the appropriate changeFrequency for a static page path. */
 function getChangeFrequency(
@@ -91,11 +93,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
+  const clarityEntries: MetadataRoute.Sitemap = getAllClarityTopics().map(
+    (topic) => ({
+      url: `${SITE_URL}/clarity-act/${topic.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: CLARITY_TOPIC_PRIORITY,
+    }),
+  );
+
   return [
     ...staticEntries,
     ...opportunityEntries,
     ...blogEntries,
     ...guideEntries,
     ...researchEntries,
+    ...clarityEntries,
   ];
 }

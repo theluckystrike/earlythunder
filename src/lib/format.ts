@@ -63,6 +63,18 @@ export function formatMarketCap(cap: number | null): string {
   return `$${cap.toFixed(0)}`;
 }
 
+/**
+ * Format a USD amount that can reach trillions (e.g. $15.34T, $138.3B).
+ * formatMarketCap tops out at billions, which reads badly for AUM figures.
+ */
+export function formatUsdScale(amount: number | null): string {
+  if (amount === null || typeof amount !== "number" || isNaN(amount)) return "-";
+  if (amount >= 1_000_000_000_000) return `$${(amount / 1_000_000_000_000).toFixed(2)}T`;
+  if (amount >= 1_000_000_000) return `$${(amount / 1_000_000_000).toFixed(1)}B`;
+  if (amount >= 1_000_000) return `$${(amount / 1_000_000).toFixed(1)}M`;
+  return `$${amount.toFixed(0)}`;
+}
+
 /** Format a 24h volume value for display (e.g. $45.2M). */
 export function formatVolume(vol: number | null): string {
   if (vol === null || typeof vol !== "number" || isNaN(vol)) return "-";

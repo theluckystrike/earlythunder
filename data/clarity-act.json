@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "updated_at": "2026-07-27T00:00:00Z",
+    "status": "AWAITING SENATE FLOOR VOTE",
+    "one_liner": "The Digital Asset Market Clarity Act passed the House in July 2025 and cleared Senate Banking in May 2026. It still has no floor vote scheduled, and the Senate calendar leaves very little room before the midterms.",
+    "disclaimer": "Research and analysis, not investment or legal advice. Every figure below carries a primary source. Classification readings are Early Thunder's own reading of published bill text, not a legal opinion."
+  },
+  "bill": {
+    "house_number": "H.R. 3633",
+    "house_title": "Digital Asset Market Clarity Act of 2025",
+    "sponsor": "Rep. French Hill (R-AR), Chairman, House Financial Services Committee",
+    "introduced": "2025-05-29",
+    "house_passed": "2025-07-17",
+    "house_vote": "294-134",
+    "house_vote_detail": "Every voting Republican plus 78 Democrats.",
+    "senate_committee_vote": "15-9",
+    "senate_committee_date": "2026-05-14",
+    "senate_calendar_number": "Calendar No. 423",
+    "senate_text_length_pages": 600,
+    "senate_text_date": "2026-07-24",
+    "votes_needed": 60,
+    "companion_bill": "S. 3755, Digital Commodity Intermediaries Act (Senate Agriculture Committee), which must be reconciled with the Banking text",
+    "sources": [
+      { "label": "Congress.gov, H.R. 3633", "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633" },
+      { "label": "GovTrack, House Vote 199, July 17 2025", "url": "https://www.govtrack.us/congress/votes/119-2025/h199" },
+      { "label": "Latham & Watkins US Crypto Policy Tracker", "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments" }
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-05-29",
+      "title": "Bill introduced in the House",
+      "detail": "House Financial Services Chairman French Hill introduces H.R. 3633, splitting digital asset oversight between the SEC and the CFTC.",
+      "source": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    },
+    {
+      "date": "2025-06-10",
+      "title": "Dual committee markup",
+      "detail": "House Financial Services and House Agriculture both mark up and advance the bill, an unusual joint path that reflects the two-regulator design.",
+      "source": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    },
+    {
+      "date": "2025-07-17",
+      "title": "House passes 294-134",
+      "detail": "The widest bipartisan margin any crypto market structure bill has ever drawn in a chamber of Congress. Every voting Republican and 78 Democrats vote yes.",
+      "source": "https://www.govtrack.us/congress/votes/119-2025/h199"
+    },
+    {
+      "date": "2025-07-22",
+      "title": "Senate discussion draft",
+      "detail": "Senator Tim Scott and Senator Cynthia Lummis release the Senate Banking version for comment. The Senate rewrite begins here, and it is the reason the bill still is not law a year later.",
+      "source": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    },
+    {
+      "date": "2025-09-05",
+      "title": "182-page Responsible Financial Innovation Act draft",
+      "detail": "Senate Banking publishes a second, longer draft under a different name. Two competing frameworks now exist in the Senate.",
+      "source": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    },
+    {
+      "date": "2026-01-21",
+      "title": "Coinbase pulls its support",
+      "detail": "Brian Armstrong withdraws Coinbase from the coalition backing the bill, citing Senate language limiting yield paid to stablecoin holders. Stablecoins ran close to 20 percent of Coinbase revenue, roughly $355M in Q3 2025. The markup slips.",
+      "source": "https://fortune.com/2026/01/21/coinbase-andreessen-horowitz-clarity-act-senate-banking-agriculture-bill-draft-crypto/"
+    },
+    {
+      "date": "2026-01-12",
+      "title": "278-page draft with stablecoin yield limits",
+      "detail": "The banking lobby wins language restricting yield-bearing stablecoins, arguing that paying holders would pull deposits out of community banks.",
+      "source": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    },
+    {
+      "date": "2026-01-29",
+      "title": "Senate Agriculture advances its own bill 12-11",
+      "detail": "Chairman John Boozman's Digital Commodity Intermediaries Act, S. 3755, clears Agriculture on a party-line vote and lands at Calendar No. 312. Committee Democrats objected to the absence of restrictions on federal officials issuing or endorsing digital assets, the same objection now holding up the Banking text.",
+      "source": "https://www.congress.gov/bill/119th-congress/senate-bill/3755/text"
+    },
+    {
+      "date": "2026-05-12",
+      "title": "309-page compromise text",
+      "detail": "Senate Banking publishes compromise language two days before the markup.",
+      "source": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    },
+    {
+      "date": "2026-05-14",
+      "title": "Senate Banking advances 15-9",
+      "detail": "Two Democrats cross over. Both note that a committee vote does not commit them on the floor while ethics, illicit finance, and consumer protection remain open.",
+      "source": "https://www.banking.senate.gov/newsroom/majority/chairman-scott-senate-banking-committee-advance-clarity-act-in-historic-bipartisan-vote"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "Placed on the Senate Legislative Calendar",
+      "detail": "The bill becomes Calendar No. 423. Being on the calendar is not the same as being scheduled. No cloture motion has been filed.",
+      "source": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    },
+    {
+      "date": "2026-07-22",
+      "title": "Ethics agreement announced",
+      "detail": "Sponsors and the White House announce negotiated ethics language covering elected officials and their families issuing or promoting digital assets. Democrats call it insufficient within 48 hours.",
+      "source": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/"
+    },
+    {
+      "date": "2026-07-23",
+      "title": "Thune signals the window is closing",
+      "detail": "Senate Majority Leader John Thune says he would like to at least get Clarity started, and that they will see where the votes are. White House crypto adviser Patrick Witt says he is perplexed by that and would not count out the first week of August.",
+      "source": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says"
+    },
+    {
+      "date": "2026-07-24",
+      "title": "600-page full text released",
+      "detail": "Lummis and Moreno publish the complete Senate text. Seven Democratic senators respond the same day that it falls short on ethics for elected officials, consumer protection, and illicit finance.",
+      "source": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/"
+    }
+  ],
+  "backers": [
+    {
+      "firm": "BlackRock",
+      "headline_figure_usd": 15340000000000,
+      "headline_label": "$15.34T",
+      "what_it_measures": "Discretionary assets under management",
+      "as_of": "2026-06-30",
+      "discretionary": true,
+      "note": "Record AUM reported in Q2 2026 results, up from $12.53T a year earlier on $192B of quarterly net inflows.",
+      "source": "https://finance.yahoo.com/markets/stocks/articles/blackrock-q2-2026-earnings-beat-122032470.html"
+    },
+    {
+      "firm": "Charles Schwab",
+      "headline_figure_usd": 13080000000000,
+      "headline_label": "$13.08T",
+      "what_it_measures": "Total client assets held in custody",
+      "as_of": "2026-06-30",
+      "discretionary": false,
+      "note": "Custodial, not managed. Schwab does not allocate this money. The number that actually matters for crypto is Schwab's own disclosure that its clients hold roughly 20 percent of all US crypto ETP assets.",
+      "quote": "a really important fundamental catalyst that needs to pass",
+      "source": "https://news.bitcoin.com/schwab-clarity-act-catalyst-white-house-thune/"
+    },
+    {
+      "firm": "Fidelity Investments",
+      "headline_figure_usd": 7100000000000,
+      "headline_label": "$7.1T",
+      "what_it_measures": "Discretionary managed assets. A separate $18T figure covers everything Fidelity administers.",
+      "as_of": "2025-12-31",
+      "discretionary": true,
+      "note": "Press coverage moves between the $7.1T managed figure and the $18T administered figure without flagging the switch.",
+      "quote": "The time is now for clear rules of the road that are essential to strengthening investor confidence, providing certainty for market participants, and reinforcing U.S. leadership in global digital asset markets.",
+      "source": "https://bitcoinmagazine.com/news/fidelity-backs-crypto-clarity-act"
+    },
+    {
+      "firm": "Goldman Sachs",
+      "headline_figure_usd": 4041000000000,
+      "headline_label": "$4.04T",
+      "what_it_measures": "Assets under supervision",
+      "as_of": "2026-06-30",
+      "discretionary": false,
+      "note": "Assets under supervision is a broader category than AUM and includes advisory relationships Goldman does not direct.",
+      "quote": "I'm very supportive of moving the Clarity Act forward, so we can get some market structure in place.",
+      "quote_attribution": "David Solomon, CEO, July 23 2026",
+      "source": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "ethics",
+      "title": "Ethics language for elected officials",
+      "detail": "The negotiated provision restricts elected officials and their immediate families from issuing or promoting digital assets. Seven Senate Democrats called the July 24 version insufficient. It is the single loudest objection, and the one most tied to the current administration rather than to market structure.",
+      "who": "Senate Democrats",
+      "source": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/"
+    },
+    {
+      "id": "stablecoin-yield",
+      "title": "Yield paid to stablecoin holders",
+      "detail": "Banks argued that letting stablecoin issuers pay holders would drain community bank deposits. The resulting limits cost the bill Coinbase's support in January 2026 and still split the industry from the banking lobby. JPMorgan's Jamie Dimon is on the opposite side of this from Goldman's David Solomon.",
+      "who": "Bank Policy Institute, community banks, versus crypto-native firms",
+      "source": "https://cryptoslate.com/banks-pushed-congress-to-kill-stablecoin-yield-with-clarity-act-coinbase-may-have-found-the-loophole/"
+    },
+    {
+      "id": "illicit-finance",
+      "title": "Illicit finance and AML reporting",
+      "detail": "Law enforcement and several Banking Committee Democrats want stronger reporting obligations on intermediaries and clearer treatment of self-hosted wallets before they will supply floor votes.",
+      "who": "Senate Democrats, law enforcement groups",
+      "source": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/"
+    },
+    {
+      "id": "jurisdiction",
+      "title": "Reconciling two Senate committees",
+      "detail": "Senate Agriculture has its own vehicle, S. 3755, the Digital Commodity Intermediaries Act, which cleared that committee 12-11 on a party-line vote in January 2026 and sits at Calendar No. 312. The Banking text and the Agriculture text have to be merged before anything reaches the floor, which is a second negotiation on top of the first. Note that Agriculture Democrats voted no on the same ethics grounds now stalling the Banking bill, so the two disputes are one dispute.",
+      "who": "Senate Banking and Senate Agriculture",
+      "source": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    }
+  ],
+  "provisions": [
+    {
+      "id": "mature-blockchain-system",
+      "title": "Mature blockchain system",
+      "plain_english": "A blockchain qualifies as mature when it is functional for transactions or validation, built on open-source code, running on pre-established transparent rules, and not controlled by any single person or group. Holding 20 percent or more of the tokens counts as control.",
+      "why_it_matters": "That test is the gate. Assets tied to a mature system are digital commodities under CFTC oversight. Assets that fail the test stay in SEC securities territory."
+    },
+    {
+      "id": "ancillary-asset",
+      "title": "Ancillary asset",
+      "plain_english": "An intangible, commercially fungible asset distributed alongside the sale of a security through an investment contract. The token is the ancillary asset. The contract around it is the security.",
+      "why_it_matters": "It lets a token trade as a commodity even though the fundraising that created it was a securities offering. That separation is the legal move the whole bill rests on."
+    },
+    {
+      "id": "twenty-percent-control",
+      "title": "The 20 percent control threshold",
+      "plain_english": "If one person or affiliated group holds a fifth or more of the token supply, the system is treated as controlled and fails the maturity test.",
+      "why_it_matters": "Most tokens outside the top few fail here. Foundation treasuries, team allocations, and unvested investor tranches are usually counted together, and they routinely exceed 20 percent."
+    },
+    {
+      "id": "self-custody",
+      "title": "Self-hosted wallets",
+      "plain_english": "Section 10307 of the Senate text references self-hosted wallets under a financial inclusion heading inside the anti-terrorism framework.",
+      "why_it_matters": "It is a placement, not yet a protection. The section acknowledges self-custody without granting it the affirmative safe harbour advocates asked for.",
+      "source": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/"
+    }
+  ],
+  "calendar_math": {
+    "as_of": "2026-07-27",
+    "august_window": "The Senate is in session the first week of August, then leaves.",
+    "return_date": "2026-09-14",
+    "october": "Senators are scheduled out of Washington for nearly all of October and the first week of November.",
+    "election_day": "2026-11-03",
+    "note": "Floor time in September is the practical last stop. After that the chamber is campaigning, and a bill that slips past the midterms restarts against a different Senate.",
+    "source": "https://rollcall.com/2025/11/19/senate-calendar-2026-midterm-election/"
+  },
+  "market_context": {
+    "us_spot_btc_etf_net_assets_usd": 80000000000,
+    "us_spot_btc_etf_label": "about $80B",
+    "us_spot_eth_etf_net_assets_usd": 10480000000,
+    "us_spot_eth_etf_label": "$10.48B",
+    "as_of": "2026-07-21",
+    "schwab_etp_share_pct": 20,
+    "derived_schwab_etp_exposure_label": "roughly $18B to $19B",
+    "derivation": "Early Thunder estimate. Schwab's stated 20 percent share applied to US spot bitcoin and ether ETP net assets as of July 21 2026. ETP asset totals move with price, so treat this as an order of magnitude rather than a precise balance.",
+    "source": "https://news.bitcoin.com/bitcoin-etfs-add-203-million-as-assets-climb-above-80-billion/"
+  }
+}

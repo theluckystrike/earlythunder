@@ -500,10 +500,12 @@ export function getBlogPostMetadata(post: BlogPost): Metadata {
 
   const url = `${SITE_URL}/blog/${post.slug}`;
   const description = post.excerpt;
+  const tags = Array.isArray(post.tags) ? [...post.tags] : [];
 
   return {
     title: post.title,
     description,
+    keywords: tags,
     authors: [{ name: post.author }],
     openGraph: {
       title: `${post.title} | ${SITE_NAME}`,
@@ -512,12 +514,65 @@ export function getBlogPostMetadata(post: BlogPost): Metadata {
       type: "article",
       publishedTime: post.published_at,
       authors: [post.author],
-      tags: [...post.tags],
+      tags,
+      images: [
+        {
+          url: OG_IMAGE_URL,
+          width: OG_IMAGE_WIDTH,
+          height: OG_IMAGE_HEIGHT,
+          alt: post.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${post.title} | ${SITE_NAME}`,
       description,
+      images: [OG_IMAGE_URL],
+      creator: TWITTER_HANDLE,
+    },
+    alternates: { canonical: url },
+  };
+}
+
+/** Generate metadata for an individual guide page. */
+export function getGuideMetadata(guide: BlogPost): Metadata {
+  if (!guide || typeof guide.slug !== "string") {
+    return { title: "Guide Not Found" };
+  }
+
+  const url = `${SITE_URL}/guides/${guide.slug}`;
+  const description = guide.excerpt;
+  const tags = Array.isArray(guide.tags) ? [...guide.tags] : [];
+
+  return {
+    title: guide.title,
+    description,
+    keywords: tags,
+    authors: [{ name: guide.author }],
+    openGraph: {
+      title: `${guide.title} | ${SITE_NAME}`,
+      description,
+      url,
+      type: "article",
+      publishedTime: guide.published_at,
+      authors: [guide.author],
+      tags,
+      images: [
+        {
+          url: OG_IMAGE_URL,
+          width: OG_IMAGE_WIDTH,
+          height: OG_IMAGE_HEIGHT,
+          alt: guide.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${guide.title} | ${SITE_NAME}`,
+      description,
+      images: [OG_IMAGE_URL],
+      creator: TWITTER_HANDLE,
     },
     alternates: { canonical: url },
   };

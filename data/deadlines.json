@@ -5,7 +5,7 @@
     "end_date": "2026-07-01",
     "estimated_end": null,
     "urgency": "CRITICAL",
-    "status": "UPCOMING",
+    "status": "ENDED",
     "note": "Last day of the 18-month grandfathering period. From this date any crypto-asset service provider operating on legacy national registration without a MiCA authorisation loses transitional cover anywhere in the EU. Several states (Germany, Ireland, Netherlands, Poland) closed theirs earlier.",
     "source": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
   },
@@ -15,7 +15,7 @@
     "end_date": "2026-07-12",
     "estimated_end": null,
     "urgency": "HIGH",
-    "status": "UPCOMING"
+    "status": "ENDED"
   },
   {
     "protocol": "zkSync",
@@ -24,6 +24,16 @@
     "estimated_end": null,
     "urgency": "HIGH",
     "status": "UPCOMING"
+  },
+  {
+    "protocol": "US Senate",
+    "event": "CLARITY Act, last pre-recess floor window before the Senate leaves for August recess",
+    "end_date": "2026-08-07",
+    "estimated_end": null,
+    "urgency": "CRITICAL",
+    "status": "UPCOMING",
+    "note": "The Senate sits the first week of August. Majority Leader John Thune said on July 23 he would like to at least get Clarity started and would see where the votes are. No cloture motion has been filed and the bill still has to be reconciled with Senate Agriculture's S. 3755.",
+    "source": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says"
   },
   {
     "protocol": "Ethereum",
@@ -67,6 +77,16 @@
     "estimated_end": null,
     "urgency": "HIGH",
     "status": "UPCOMING"
+  },
+  {
+    "protocol": "US Senate",
+    "event": "Senate returns from August recess, final practical floor window for the CLARITY Act in 2026",
+    "end_date": "2026-09-14",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING",
+    "note": "Senators are then scheduled out of Washington for nearly all of October ahead of the November 3 midterms. September floor time competes with appropriations and nominations, and a market structure bill carries no funding cliff to force action.",
+    "source": "https://rollcall.com/2025/11/19/senate-calendar-2026-midterm-election/"
   },
   {
     "protocol": "Binance",
@@ -115,6 +135,16 @@
     "estimated_end": null,
     "urgency": "MEDIUM",
     "status": "UPCOMING"
+  },
+  {
+    "protocol": "US Congress",
+    "event": "Midterm elections, CLARITY Act dies with the 119th Congress if not enacted",
+    "end_date": "2026-11-03",
+    "estimated_end": null,
+    "urgency": "HIGH",
+    "status": "UPCOMING",
+    "note": "Any bill not enacted by the end of this Congress must be reintroduced from scratch, into a Senate with different composition and committee leadership. Senator Lummis called the coming weeks likely the last real chance for years.",
+    "source": "https://www.forbes.com/sites/digital-assets/2026/07/24/mixed-reactions-to-new-crypto-clarity-act-text--ethics-clause/"
   },
   {
     "protocol": "StarkNet",

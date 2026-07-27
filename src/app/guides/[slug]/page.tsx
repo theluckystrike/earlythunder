@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllGuides, getGuideBySlug } from "@/lib/data";
+import { getAllGuides, getGuideBySlug, getRelatedArticles } from "@/lib/data";
 import { formatDate } from "@/lib/format";
+import { getGuideMetadata } from "@/lib/metadata";
 import { getGuideArticleSchema, getBreadcrumbListSchema } from "@/lib/structured-data";
+import RelatedArticles from "@/components/RelatedArticles";
 
 interface PageProps {
   readonly params: Promise<{ slug: string }>;
@@ -18,11 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const guide = getGuideBySlug(slug);
   if (!guide) return { title: "Not Found" };
 
-  return {
-    title: guide.title,
-    description: guide.excerpt,
-    alternates: { canonical: `/guides/${slug}` },
-  };
+  return getGuideMetadata(guide);
 }
 
 export default async function GuidePage({ params }: PageProps) {
@@ -58,6 +56,11 @@ export default async function GuidePage({ params }: PageProps) {
         tags={guide.tags}
       />
       <PostContent content={guide.content} />
+      <RelatedArticles
+        items={getRelatedArticles(guide, getAllGuides())}
+        basePath="/guides"
+        heading="Related guides"
+      />
       <PostFooter />
     </article>
   );
