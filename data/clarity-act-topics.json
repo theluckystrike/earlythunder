@@ -3,8 +3,16 @@
     "slug": "what-is-the-clarity-act",
     "h1": "What the CLARITY Act actually does",
     "title": "What Is the CLARITY Act? Crypto Market Structure Explained",
-    "description": "The CLARITY Act splits crypto oversight between the SEC and CFTC. Here is what the bill does in plain language, with each provision labelled by which version it comes from.",
-    "keywords": ["what is the clarity act", "what does the clarity act do", "clarity act explained", "clarity act meaning", "clarity act summary", "clarity act crypto", "digital asset market clarity act"],
+    "description": "The CLARITY Act splits crypto oversight between the SEC and CFTC. What the bill does in plain language, with each provision labelled by version.",
+    "keywords": [
+      "what is the clarity act",
+      "what does the clarity act do",
+      "clarity act explained",
+      "clarity act meaning",
+      "clarity act summary",
+      "clarity act crypto",
+      "digital asset market clarity act"
+    ],
     "question": "What is the CLARITY Act and what would it change?",
     "tldr": "H.R. 3633 draws a line between digital commodities and digital securities, hands the commodity side to the CFTC, and leaves the securities side with the SEC. Where exactly the line sits depends on which version of the bill you read, and there are three of them in circulation.",
     "sections": [
@@ -61,13 +69,32 @@
         "answer": "Only partly. The merged text confirms that non-custodial developers are not money transmitters, which is a real protection for people writing code. Self-hosted wallets appear in the Senate text as one item among the considerations Treasury must weigh in an illicit-finance strategy, alongside fraud, cybersecurity and identity-verification risk. That is an acknowledgement, not the affirmative safe harbour self-custody advocates asked for."
       }
     ],
-    "related": ["mature-blockchain-system-test", "sec-vs-cftc-crypto-jurisdiction", "clarity-act-status-timeline"],
+    "related": [
+      "mature-blockchain-system-test",
+      "sec-vs-cftc-crypto-jurisdiction",
+      "clarity-act-status-timeline"
+    ],
     "sources": [
-      { "label": "Congress.gov, H.R. 3633", "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633" },
-      { "label": "GovInfo, House-passed engrossed text", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm" },
-      { "label": "GovInfo, Senate-reported text, Calendar No. 423", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633rs/html/BILLS-119hr3633rs.htm" },
-      { "label": "GovInfo, FIT21 bill status, 118th Congress", "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118hr4763.xml" },
-      { "label": "The Block on the 616-page merged text", "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029" }
+      {
+        "label": "Congress.gov, H.R. 3633",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633"
+      },
+      {
+        "label": "GovInfo, House-passed engrossed text",
+        "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm"
+      },
+      {
+        "label": "GovInfo, Senate-reported text, Calendar No. 423",
+        "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633rs/html/BILLS-119hr3633rs.htm"
+      },
+      {
+        "label": "GovInfo, FIT21 bill status, 118th Congress",
+        "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118hr4763.xml"
+      },
+      {
+        "label": "The Block on the 616-page merged text",
+        "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029"
+      }
     ]
   },
   {
@@ -75,7 +102,15 @@
     "h1": "Where the CLARITY Act stands right now",
     "title": "CLARITY Act Status and Timeline, July 2026",
     "description": "Every dated milestone from introduction to the 616-page merged Senate text, with the real vote counts and what still has to happen before the bill becomes law.",
-    "keywords": ["clarity act status", "has the clarity act passed", "clarity act timeline", "clarity act senate", "clarity act passed senate", "clarity act update", "clarity act 2026"],
+    "keywords": [
+      "clarity act status",
+      "has the clarity act passed",
+      "clarity act timeline",
+      "clarity act senate",
+      "clarity act passed senate",
+      "clarity act update",
+      "clarity act 2026"
+    ],
     "question": "Has the CLARITY Act passed, and what is the current status?",
     "tldr": "Passed the House. Cleared Senate Banking. On the calendar since June 1 2026 with no floor vote scheduled and no cloture motion filed. It needs 60 votes to end debate and a merge with a separate Agriculture Committee bill before it can reach the President.",
     "sections": [
@@ -124,13 +159,32 @@
         "answer": "The bill dies with the 119th Congress and has to be reintroduced from scratch. That Congress runs until January 3 2027, so a lame-duck vote after the November 3 midterms remains possible. What it would not survive is the turn of the Congress, and a reintroduced bill would face a Senate reshaped by the elections."
       }
     ],
-    "related": ["why-the-clarity-act-is-stalled", "clarity-act-passage-odds", "what-is-the-clarity-act"],
+    "related": [
+      "why-the-clarity-act-is-stalled",
+      "clarity-act-passage-odds",
+      "what-is-the-clarity-act"
+    ],
     "sources": [
-      { "label": "House Clerk roll call 199, July 17 2025", "url": "https://clerk.house.gov/evs/2025/roll199.xml" },
-      { "label": "GovInfo, H.R. 3633 bill status", "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr3633.xml" },
-      { "label": "CoinDesk, seven Democrats say the bill falls short, July 22 2026", "url": "https://www.coindesk.com/policy/2026/07/22/key-democratic-lawmakers-say-crypto-clarity-act-falls-short-on-ethics-other-issues" },
-      { "label": "The Block on the 616-page merged text", "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029" },
-      { "label": "CoinDesk, Thune on the closing window", "url": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says" }
+      {
+        "label": "House Clerk roll call 199, July 17 2025",
+        "url": "https://clerk.house.gov/evs/2025/roll199.xml"
+      },
+      {
+        "label": "GovInfo, H.R. 3633 bill status",
+        "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr3633.xml"
+      },
+      {
+        "label": "CoinDesk, seven Democrats say the bill falls short, July 22 2026",
+        "url": "https://www.coindesk.com/policy/2026/07/22/key-democratic-lawmakers-say-crypto-clarity-act-falls-short-on-ethics-other-issues"
+      },
+      {
+        "label": "The Block on the 616-page merged text",
+        "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029"
+      },
+      {
+        "label": "CoinDesk, Thune on the closing window",
+        "url": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says"
+      }
     ]
   },
   {
@@ -138,7 +192,13 @@
     "h1": "Why the CLARITY Act is stuck",
     "title": "Why the CLARITY Act Is Delayed in the Senate",
     "description": "Five disputes are blocking the CLARITY Act, and the loudest one is about three specific gaps in the ethics section rather than about market structure.",
-    "keywords": ["clarity act delayed", "clarity act stalled", "crypto bill senate", "clarity act ethics provision", "clarity act stablecoin"],
+    "keywords": [
+      "clarity act delayed",
+      "clarity act stalled",
+      "crypto bill senate",
+      "clarity act ethics provision",
+      "clarity act stablecoin"
+    ],
     "question": "Why has the CLARITY Act not passed the Senate?",
     "tldr": "The ethics section covers less than most people assume, and the three things it leaves out are the whole fight. Stablecoin yield, CFTC authority, illicit finance and a committee turf war fill in the rest.",
     "sections": [
@@ -191,20 +251,41 @@
         "answer": "No. It remains on the Senate calendar. The realistic paths are a floor vote in the first week of August, the September session, or a lame duck after the midterms, since the 119th Congress runs to January 3 2027."
       }
     ],
-    "related": ["clarity-act-passage-odds", "clarity-act-status-timeline", "who-supports-the-clarity-act"],
+    "related": [
+      "clarity-act-passage-odds",
+      "clarity-act-status-timeline",
+      "who-supports-the-clarity-act"
+    ],
     "sources": [
-      { "label": "CoinDesk, seven Democrats say the bill falls short", "url": "https://www.coindesk.com/policy/2026/07/22/key-democratic-lawmakers-say-crypto-clarity-act-falls-short-on-ethics-other-issues" },
-      { "label": "CoinDesk on why Coinbase soured on the bill", "url": "https://www.coindesk.com/news-analysis/2026/01/18/here-s-why-coinbase-and-other-companies-soured-on-major-crypto-bill" },
-      { "label": "The Block on the ethics provision and 2029 sunset", "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029" },
-      { "label": "CoinDesk, Goldman Sachs CEO backs the bill", "url": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules" }
+      {
+        "label": "CoinDesk, seven Democrats say the bill falls short",
+        "url": "https://www.coindesk.com/policy/2026/07/22/key-democratic-lawmakers-say-crypto-clarity-act-falls-short-on-ethics-other-issues"
+      },
+      {
+        "label": "CoinDesk on why Coinbase soured on the bill",
+        "url": "https://www.coindesk.com/news-analysis/2026/01/18/here-s-why-coinbase-and-other-companies-soured-on-major-crypto-bill"
+      },
+      {
+        "label": "The Block on the ethics provision and 2029 sunset",
+        "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029"
+      },
+      {
+        "label": "CoinDesk, Goldman Sachs CEO backs the bill",
+        "url": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules"
+      }
     ]
   },
   {
     "slug": "who-supports-the-clarity-act",
     "h1": "Who is backing the CLARITY Act, and what their numbers really mean",
     "title": "Who Supports the CLARITY Act? The $30 Trillion Claim, Checked",
-    "description": "BlackRock, Schwab, Fidelity and Goldman get named as backers. The $30 trillion figure adds three different kinds of assets, and two of the four never issued a corporate endorsement.",
-    "keywords": ["who supports the clarity act", "clarity act news", "clarity act blackrock schwab fidelity", "institutional support crypto bill"],
+    "description": "BlackRock, Schwab, Fidelity and Goldman get named as backers. The $30 trillion figure adds three kinds of assets, and two never endorsed the bill.",
+    "keywords": [
+      "who supports the clarity act",
+      "clarity act news",
+      "clarity act blackrock schwab fidelity",
+      "institutional support crypto bill"
+    ],
     "question": "Which institutions support the CLARITY Act and how much money do they actually control?",
     "tldr": "The four largest named backers report $39.56 trillion between them, and only $22.44 trillion of that is discretionary. More importantly, only Fidelity has issued anything resembling a corporate endorsement. There was no joint statement.",
     "sections": [
@@ -262,15 +343,40 @@
         "answer": "No. The figure aggregates discretionary assets under management, custodial client assets, and assets under supervision, which are three different things. Only the discretionary portion represents capital the firms themselves allocate, none of it is earmarked for digital assets, and the $50 trillion variant traces to a social post rather than any filing."
       }
     ],
-    "related": ["clarity-act-passage-odds", "why-the-clarity-act-is-stalled", "clarity-act-token-classification-risk"],
+    "related": [
+      "clarity-act-passage-odds",
+      "why-the-clarity-act-is-stalled",
+      "clarity-act-token-classification-risk"
+    ],
     "sources": [
-      { "label": "BlackRock Q2 2026 earnings release, SEC EDGAR", "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526304013/blk-ex99_1.htm" },
-      { "label": "Charles Schwab Q2 2026 8-K exhibit, SEC EDGAR", "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000027/a2q26exhibit991.htm" },
-      { "label": "The Schwab comment as published", "url": "https://news.bitcoin.com/schwab-clarity-act-catalyst-white-house-thune/" },
-      { "label": "Fidelity backs the bill", "url": "https://bitcoinmagazine.com/news/fidelity-backs-crypto-clarity-act" },
-      { "label": "CoinDesk, Goldman Sachs CEO backs the bill", "url": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules" },
-      { "label": "US spot bitcoin ETP assets above $80B", "url": "https://news.bitcoin.com/bitcoin-etfs-add-203-million-as-assets-climb-above-80-billion/" },
-      { "label": "Ledger Insights on Schwab's stated crypto ETP figure", "url": "https://www.ledgerinsights.com/charles-schwab-leans-into-crypto-stablecoins-tokenization-not-so-much/" }
+      {
+        "label": "BlackRock Q2 2026 earnings release, SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526304013/blk-ex99_1.htm"
+      },
+      {
+        "label": "Charles Schwab Q2 2026 8-K exhibit, SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000027/a2q26exhibit991.htm"
+      },
+      {
+        "label": "The Schwab comment as published",
+        "url": "https://news.bitcoin.com/schwab-clarity-act-catalyst-white-house-thune/"
+      },
+      {
+        "label": "Fidelity backs the bill",
+        "url": "https://bitcoinmagazine.com/news/fidelity-backs-crypto-clarity-act"
+      },
+      {
+        "label": "CoinDesk, Goldman Sachs CEO backs the bill",
+        "url": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules"
+      },
+      {
+        "label": "US spot bitcoin ETP assets above $80B",
+        "url": "https://news.bitcoin.com/bitcoin-etfs-add-203-million-as-assets-climb-above-80-billion/"
+      },
+      {
+        "label": "Ledger Insights on Schwab's stated crypto ETP figure",
+        "url": "https://www.ledgerinsights.com/charles-schwab-leans-into-crypto-stablecoins-tokenization-not-so-much/"
+      }
     ]
   },
   {
@@ -278,7 +384,12 @@
     "h1": "How the CLARITY Act divides the SEC and the CFTC",
     "title": "SEC vs CFTC Crypto Jurisdiction Under the CLARITY Act",
     "description": "The bill gives the CFTC spot market authority over digital commodities and leaves securities with the SEC. The split is messier than the headline version suggests.",
-    "keywords": ["sec vs cftc", "which crypto are securities", "clarity act sec cftc", "digital commodity cftc"],
+    "keywords": [
+      "sec vs cftc",
+      "which crypto are securities",
+      "clarity act sec cftc",
+      "digital commodity cftc"
+    ],
     "question": "Under the CLARITY Act, does the SEC or the CFTC regulate a given crypto asset?",
     "tldr": "The CFTC gets spot market oversight of digital commodities, authority it has asked for since 2018. The SEC keeps the investment contracts regardless. The popular summary that maturity decides which regulator you get is not what the text does.",
     "sections": [
@@ -326,12 +437,28 @@
         "answer": "Not as a simple switch. Maturity affects how transactions are treated rather than reclassifying the asset itself, and the framework contemplates issuers who intend to reach maturity within roughly four years. Treat claims of an automatic handover with suspicion."
       }
     ],
-    "related": ["mature-blockchain-system-test", "what-is-the-clarity-act", "clarity-act-token-classification-risk"],
+    "related": [
+      "mature-blockchain-system-test",
+      "what-is-the-clarity-act",
+      "clarity-act-token-classification-risk"
+    ],
     "sources": [
-      { "label": "GovInfo, House-passed engrossed text", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm" },
-      { "label": "Congress.gov CRS overview of H.R. 3633", "url": "https://www.congress.gov/crs-product/IN12583" },
-      { "label": "Arnold & Porter advisory on the CLARITY Act", "url": "https://www.arnoldporter.com/en/perspectives/advisories/2025/08/clarifying-the-clarity-act" },
-      { "label": "Congress.gov, S. 3755", "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3755/text" }
+      {
+        "label": "GovInfo, House-passed engrossed text",
+        "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm"
+      },
+      {
+        "label": "Congress.gov CRS overview of H.R. 3633",
+        "url": "https://www.congress.gov/crs-product/IN12583"
+      },
+      {
+        "label": "Arnold & Porter advisory on the CLARITY Act",
+        "url": "https://www.arnoldporter.com/en/perspectives/advisories/2025/08/clarifying-the-clarity-act"
+      },
+      {
+        "label": "Congress.gov, S. 3755",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3755/text"
+      }
     ]
   },
   {
@@ -339,7 +466,12 @@
     "h1": "The maturity test and the two 20 percent thresholds",
     "title": "Mature Blockchain System Test, the CLARITY Act 20% Rules",
     "description": "The CLARITY Act has two separate 20 percent thresholds and neither works the way the popular summary says. One is about voting power, the other about insider supply.",
-    "keywords": ["mature blockchain system", "ancillary asset", "clarity act 20 percent control", "clarity act token classification"],
+    "keywords": [
+      "mature blockchain system",
+      "ancillary asset",
+      "clarity act 20 percent control",
+      "clarity act token classification"
+    ],
     "question": "What is a mature blockchain system under the CLARITY Act and how does the 20 percent threshold work?",
     "tldr": "A mature blockchain system is one not controlled by any person or group under common control. The operational test adds two different 20 percent limits. One caps voting power for any single person. The other caps aggregate insider ownership, which is a much narrower and more interesting rule.",
     "sections": [
@@ -393,12 +525,28 @@
         "answer": "No. Digital commodity status turns on intrinsic linkage to a blockchain system and value derivation, not on maturity. Maturity affects how transactions in the asset are treated. The two get conflated constantly."
       }
     ],
-    "related": ["clarity-act-token-classification-risk", "sec-vs-cftc-crypto-jurisdiction", "what-is-the-clarity-act"],
+    "related": [
+      "clarity-act-token-classification-risk",
+      "sec-vs-cftc-crypto-jurisdiction",
+      "what-is-the-clarity-act"
+    ],
     "sources": [
-      { "label": "GovInfo, House-passed engrossed text", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm" },
-      { "label": "GovInfo, Senate-reported text, Calendar No. 423", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633rs/html/BILLS-119hr3633rs.htm" },
-      { "label": "House Financial Services section-by-section summary", "url": "https://financialservices.house.gov/uploadedfiles/2025-07-10_-_sbs_-_clarity_act_of_2025_final.pdf" },
-      { "label": "Tally on whether a protocol is a mature blockchain system", "url": "https://blog.tally.xyz/is-your-protocol-a-mature-blockchain-system-under-the-clarity-act" }
+      {
+        "label": "GovInfo, House-passed engrossed text",
+        "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm"
+      },
+      {
+        "label": "GovInfo, Senate-reported text, Calendar No. 423",
+        "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633rs/html/BILLS-119hr3633rs.htm"
+      },
+      {
+        "label": "House Financial Services section-by-section summary",
+        "url": "https://financialservices.house.gov/uploadedfiles/2025-07-10_-_sbs_-_clarity_act_of_2025_final.pdf"
+      },
+      {
+        "label": "Tally on whether a protocol is a mature blockchain system",
+        "url": "https://blog.tally.xyz/is-your-protocol-a-mature-blockchain-system-under-the-clarity-act"
+      }
     ]
   },
   {
@@ -406,7 +554,13 @@
     "h1": "Which tokens are exposed if the CLARITY Act passes",
     "title": "CLARITY Act Token Classification Risk, 251 Tokens Scored",
     "description": "We scored 251 tokens against the variables the CLARITY Act cares about. Six clear the top band, and $138B of market cap sits in the most exposed one.",
-    "keywords": ["which crypto are securities", "clarity act altcoins", "clarity act impact on crypto", "clarity act token classification", "clarity act bitcoin ethereum"],
+    "keywords": [
+      "which crypto are securities",
+      "clarity act altcoins",
+      "clarity act impact on crypto",
+      "clarity act token classification",
+      "clarity act bitcoin ethereum"
+    ],
     "question": "Which crypto assets are most exposed to classification risk under the CLARITY Act?",
     "tldr": "Six of 251 tokens score in our top readiness band. Median is 45 out of 100. Excluding bitcoin and ether, 32 percent of tracked altcoin market cap sits in the most exposed band, and BNB and TRON carry most of it.",
     "sections": [
@@ -460,11 +614,24 @@
         "answer": "Of the 251 tokens scored, 194 sit at four or below on our holder concentration measure and 55 sit at three or below. Concentrated insider supply is the market norm, and aggregate insider ownership is what the bill's 20 percent threshold targets."
       }
     ],
-    "related": ["mature-blockchain-system-test", "sec-vs-cftc-crypto-jurisdiction", "who-supports-the-clarity-act"],
+    "related": [
+      "mature-blockchain-system-test",
+      "sec-vs-cftc-crypto-jurisdiction",
+      "who-supports-the-clarity-act"
+    ],
     "sources": [
-      { "label": "Early Thunder 251-token altcoin scorecard", "url": "https://earlythunder.com/scorecard" },
-      { "label": "GovInfo, House-passed engrossed text", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm" },
-      { "label": "House Financial Services section-by-section summary", "url": "https://financialservices.house.gov/uploadedfiles/2025-07-10_-_sbs_-_clarity_act_of_2025_final.pdf" }
+      {
+        "label": "Early Thunder 251-token altcoin scorecard",
+        "url": "https://earlythunder.com/scorecard"
+      },
+      {
+        "label": "GovInfo, House-passed engrossed text",
+        "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr3633eh/html/BILLS-119hr3633eh.htm"
+      },
+      {
+        "label": "House Financial Services section-by-section summary",
+        "url": "https://financialservices.house.gov/uploadedfiles/2025-07-10_-_sbs_-_clarity_act_of_2025_final.pdf"
+      }
     ]
   },
   {
@@ -472,7 +639,13 @@
     "h1": "The floor-time arithmetic behind CLARITY Act passage",
     "title": "Will the CLARITY Act Pass in 2026? The Calendar Math",
     "description": "Passage hinges on floor days and one ethics fight, not on endorsements. Counting the Senate's remaining 2026 session time shows exactly how narrow the window is.",
-    "keywords": ["will the clarity act pass", "clarity act 2026", "clarity act delayed", "clarity act senate", "crypto regulation 2026"],
+    "keywords": [
+      "will the clarity act pass",
+      "clarity act 2026",
+      "clarity act delayed",
+      "clarity act senate",
+      "crypto regulation 2026"
+    ],
     "question": "What are the odds the CLARITY Act passes in 2026?",
     "tldr": "Three windows remain. The first week of August, a short September stretch, and roughly 22 post-election session days running to December 18. Support is not the binding constraint. Floor time and the ethics language are.",
     "sections": [
@@ -528,12 +701,28 @@
         "answer": "Yes. FIT21, H.R. 4763, passed the House 279-136 on May 22 2024 with the same SEC and CFTC split, then died without a Senate floor vote. That is the most relevant base rate for handicapping the CLARITY Act."
       }
     ],
-    "related": ["why-the-clarity-act-is-stalled", "clarity-act-token-classification-risk", "clarity-act-status-timeline"],
+    "related": [
+      "why-the-clarity-act-is-stalled",
+      "clarity-act-token-classification-risk",
+      "clarity-act-status-timeline"
+    ],
     "sources": [
-      { "label": "US Senate 2026 legislative schedule", "url": "https://www.senate.gov/legislative/2026_schedule.htm" },
-      { "label": "CoinDesk, Thune on the closing window", "url": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says" },
-      { "label": "The Block on the ethics provision and 2029 sunset", "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029" },
-      { "label": "GovInfo, FIT21 bill status, 118th Congress", "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118hr4763.xml" }
+      {
+        "label": "US Senate 2026 legislative schedule",
+        "url": "https://www.senate.gov/legislative/2026_schedule.htm"
+      },
+      {
+        "label": "CoinDesk, Thune on the closing window",
+        "url": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says"
+      },
+      {
+        "label": "The Block on the ethics provision and 2029 sunset",
+        "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029"
+      },
+      {
+        "label": "GovInfo, FIT21 bill status, 118th Congress",
+        "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118hr4763.xml"
+      }
     ]
   }
 ]

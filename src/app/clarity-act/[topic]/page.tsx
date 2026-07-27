@@ -100,7 +100,41 @@ export default async function ClarityTopicPage({ params }: PageProps) {
   if (!topic) return <NotFoundFallback />;
 
   const meta = getClarityMeta();
-  const articleSchema = buildArticleSchema(topic, meta.updated_at);
+  const related = topic.related
+    .map((s) => getClarityTopicBySlug(s))
+    .filter((t): t is ClarityTopic => t !== null);
+
+  return (
+    <article className="mx-auto max-w-3xl px-6 py-20">
+      <TopicSchemas topic={topic} updatedAt={meta.updated_at} />
+      <Link
+        href="/clarity-act"
+        className="text-xs font-mono text-text-tertiary hover:text-text-secondary"
+      >
+        CLARITY Act
+      </Link>
+      <TopicHeader topic={topic} updatedAt={meta.updated_at} />
+      <TopicBody sections={topic.sections} />
+      <FaqBlock faqs={topic.faqs} />
+      <SourceList sources={topic.sources} />
+      <RelatedTopics topics={related} />
+      <TopicFooter />
+    </article>
+  );
+}
+
+/** Article, FAQ and breadcrumb JSON-LD for a topic page. */
+function TopicSchemas({
+  topic,
+  updatedAt,
+}: {
+  readonly topic: ClarityTopic;
+  readonly updatedAt: string;
+}) {
+  console.assert(topic && typeof topic.slug === "string", "TopicSchemas: topic required");
+  if (!topic || typeof topic.slug !== "string") return null;
+
+  const articleSchema = buildArticleSchema(topic, updatedAt);
   const faqSchema = getFaqPageSchema(topic.faqs);
   const breadcrumbSchema = getBreadcrumbListSchema([
     { name: "Home", path: "/" },
@@ -108,83 +142,78 @@ export default async function ClarityTopicPage({ params }: PageProps) {
     { name: topic.h1, path: `/clarity-act/${topic.slug}` },
   ]);
 
-  const related = topic.related
-    .map((s) => getClarityTopicBySlug(s))
-    .filter((t): t is ClarityTopic => t !== null);
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    </>
+  );
+}
+
+function TopicHeader({
+  topic,
+  updatedAt,
+}: {
+  readonly topic: ClarityTopic;
+  readonly updatedAt: string;
+}) {
+  console.assert(typeof updatedAt === "string", "TopicHeader: updatedAt required");
+  if (!topic || typeof updatedAt !== "string") return null;
 
   return (
-    <article className="mx-auto max-w-3xl px-6 py-20">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+    <header className="mt-6">
+      <h1 className="text-4xl font-semibold leading-tight tracking-tighter text-text-primary">
+        {topic.h1}
+      </h1>
+      <p className="mt-5 text-[1.0625rem] leading-relaxed text-text-secondary">{topic.tldr}</p>
+      <div className="mt-6 flex flex-wrap items-center gap-3 text-xs font-mono text-text-tertiary">
+        <span>{AUTHOR_NAME}</span>
+        <span className="text-border">|</span>
+        <span>Updated {updatedAt.slice(0, 10)}</span>
+      </div>
+      <div className="divider mt-8" />
+    </header>
+  );
+}
 
+function TopicBody({ sections }: { readonly sections: ClarityTopic["sections"] }) {
+  console.assert(Array.isArray(sections), "TopicBody: sections array required");
+  if (!Array.isArray(sections) || sections.length === 0) return null;
+
+  return (
+    <div className="mt-10">
+      {sections.map((section) => (
+        <section key={section.h2}>
+          <h2 className="mt-12 mb-4 text-2xl font-semibold tracking-tight text-text-primary">
+            {section.h2}
+          </h2>
+          {section.body.map((para: string, i: number) => (
+            <p key={i} className="my-5 text-[1.0625rem] leading-[1.8] text-text-secondary">
+              {para}
+            </p>
+          ))}
+        </section>
+      ))}
+    </div>
+  );
+}
+
+function TopicFooter() {
+  return (
+    <div className="mt-16 border-t border-border pt-8 text-center">
+      <p className="text-sm text-text-tertiary">
+        Research and analysis. Not investment or legal advice.
+      </p>
       <Link
-        href="/clarity-act"
-        className="text-xs font-mono text-text-tertiary hover:text-text-secondary"
+        href="/scorecard"
+        className="mt-4 inline-block rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5"
       >
-        CLARITY Act
+        See the 251-token scorecard
       </Link>
-
-      <header className="mt-6">
-        <h1 className="text-4xl font-semibold leading-tight tracking-tighter text-text-primary">
-          {topic.h1}
-        </h1>
-        <p className="mt-5 text-[1.0625rem] leading-relaxed text-text-secondary">
-          {topic.tldr}
-        </p>
-        <div className="mt-6 flex flex-wrap items-center gap-3 text-xs font-mono text-text-tertiary">
-          <span>{AUTHOR_NAME}</span>
-          <span className="text-border">|</span>
-          <span>Updated {meta.updated_at.slice(0, 10)}</span>
-        </div>
-        <div className="divider mt-8" />
-      </header>
-
-      <div className="mt-10">
-        {topic.sections.map((section) => (
-          <section key={section.h2}>
-            <h2 className="mt-12 mb-4 text-2xl font-semibold tracking-tight text-text-primary">
-              {section.h2}
-            </h2>
-            {section.body.map((para, i) => (
-              <p
-                key={i}
-                className="my-5 text-[1.0625rem] leading-[1.8] text-text-secondary"
-              >
-                {para}
-              </p>
-            ))}
-          </section>
-        ))}
-      </div>
-
-      <FaqBlock faqs={topic.faqs} />
-      <SourceList sources={topic.sources} />
-      <RelatedTopics topics={related} />
-
-      <div className="mt-16 border-t border-border pt-8 text-center">
-        <p className="text-sm text-text-tertiary">
-          Research and analysis. Not investment or legal advice.
-        </p>
-        <Link
-          href="/scorecard"
-          className="mt-4 inline-block rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5"
-        >
-          See the 251-token scorecard
-        </Link>
-      </div>
-    </article>
+    </div>
   );
 }
 

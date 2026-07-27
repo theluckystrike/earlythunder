@@ -10,6 +10,8 @@ import FeaturedOpportunity from "@/components/landing/FeaturedOpportunity";
 import TopYieldsPreview from "@/components/landing/TopYieldsPreview";
 import DeadlineStrip from "@/components/landing/DeadlineStrip";
 import ClarityActSection from "@/components/landing/ClarityActSection";
+import JsonLd from "@/components/JsonLd";
+import { getOrganizationSchema } from "@/lib/structured-data";
 import SignalsSection from "@/components/landing/SignalsSection";
 import PipelineLog from "@/components/landing/PipelineLog";
 import CoverageMap from "@/components/landing/CoverageMap";
@@ -140,6 +142,7 @@ export default function HomePage() {
 
   return (
     <>
+      <JsonLd data={getOrganizationSchema()} />
       <HeroSection
         totalOpportunities={opportunities.length}
         topOpportunities={topOpportunities}

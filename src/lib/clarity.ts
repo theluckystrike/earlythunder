@@ -123,6 +123,8 @@ export function getClarityBill() {
 
 export function getClarityTimeline(): readonly ClarityTimelineEntry[] {
   const raw = clarityData.timeline;
+  console.assert(Array.isArray(raw), "getClarityTimeline: timeline must be an array");
+  console.assert(!Array.isArray(raw) || raw.length > 0, "getClarityTimeline: timeline is empty");
   if (!Array.isArray(raw)) return [];
   return [...raw].sort(
     (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
@@ -131,6 +133,8 @@ export function getClarityTimeline(): readonly ClarityTimelineEntry[] {
 
 export function getClarityBackers(): readonly ClarityBacker[] {
   const raw = clarityData.backers;
+  console.assert(Array.isArray(raw), "getClarityBackers: backers must be an array");
+  console.assert(!Array.isArray(raw) || raw.length > 0, "getClarityBackers: backers is empty");
   if (!Array.isArray(raw)) return [];
   return [...raw].sort(
     (a, b) => b.headline_figure_usd - a.headline_figure_usd,
@@ -159,6 +163,8 @@ export function getBackerTotals(): {
   readonly discretionary_usd: number;
 } {
   const backers = getClarityBackers();
+  console.assert(backers.length > 0, "getBackerTotals: no backers, totals will be zero");
+  console.assert(backers.every((b) => Number.isFinite(b.headline_figure_usd)), "getBackerTotals: non-finite headline figure");
   const headline = backers.reduce((sum, b) => sum + b.headline_figure_usd, 0);
   const discretionary = backers
     .filter((b) => b.discretionary)
@@ -168,11 +174,15 @@ export function getBackerTotals(): {
 
 export function getAllClarityTopics(): readonly ClarityTopic[] {
   const raw: unknown = clarityTopics;
+  console.assert(Array.isArray(raw), "getAllClarityTopics: topics must be an array");
+  console.assert(!Array.isArray(raw) || raw.length <= MAX_TOPICS, "getAllClarityTopics: topic count exceeds MAX_TOPICS, list is being truncated");
   if (!Array.isArray(raw)) return [];
   return raw.slice(0, MAX_TOPICS) as ClarityTopic[];
 }
 
 export function getClarityTopicBySlug(slug: string): ClarityTopic | null {
+  console.assert(typeof slug === "string", "getClarityTopicBySlug: slug must be a string");
+  console.assert(typeof slug !== "string" || slug.length > 0, "getClarityTopicBySlug: slug must not be empty");
   if (typeof slug !== "string" || slug.length === 0) return null;
   return getAllClarityTopics().find((t) => t.slug === slug) ?? null;
 }
@@ -233,6 +243,8 @@ const BAND_LABELS: Readonly<Record<ReadinessBand, { label: string; range: string
 /** Every scorecard token scored against the three CLARITY-relevant variables. */
 export function getReadinessTokens(): readonly ReadinessToken[] {
   const raw: unknown = (scorecardData as { tokens?: unknown }).tokens;
+  console.assert(Array.isArray(raw), "getReadinessTokens: scorecard tokens must be an array");
+  console.assert(WEIGHT_REGULATORY + WEIGHT_CONCENTRATION + WEIGHT_INSTITUTIONAL === 10, "getReadinessTokens: weights must sum to 10 so readiness lands on 0-100");
   if (!Array.isArray(raw)) return [];
 
   const rows: ReadinessToken[] = [];
@@ -271,6 +283,8 @@ export function getReadinessTokens(): readonly ReadinessToken[] {
 /** Aggregate view used by the hub and the classification-risk page. */
 export function getClarityReadiness(): ClarityReadiness {
   const tokens = getReadinessTokens();
+  console.assert(tokens.length > 0, "getClarityReadiness: no scorecard tokens parsed, readiness table will render empty");
+  console.assert(tokens.every((t) => t.readiness >= 0 && t.readiness <= 100), "getClarityReadiness: readiness score outside 0-100");
   const bandOrder: readonly ReadinessBand[] = ["clear", "probable", "contested", "exposed"];
 
   const bands: ReadinessBandSummary[] = bandOrder.map((band) => {
