@@ -1,0 +1,27 @@
+name: Check citation links
+on:
+  schedule:
+    - cron: '15 5 * * 1'  # Mondays 05:15 UTC
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: citation-links
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      # Resolves all 725 citation URLs. Anything returning a hard 404 loses its
+      # hyperlink on the token pages and is dropped from the JSON-LD isBasedOn,
+      # so a rotted source can never keep looking like evidence.
+      - run: node scripts/check-citation-urls.mjs
+      - run: node scripts/build-scorecard-analytics.mjs
+      - run: git pull --rebase --autostash origin main
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: 'data: weekly citation link check'
+          file_pattern: 'data/citation-url-report.json data/scorecard-analytics.json'
