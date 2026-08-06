@@ -273,7 +273,7 @@
           "url": "https://www.coinbase.com"
         },
         {
-          "claim": "model holds 19.14M HYPE tokens, whale accumulation ongoing",
+          "claim": "Paradigm holds 19.14M HYPE tokens, whale accumulation ongoing",
           "source": "Arkham Intelligence",
           "url": "https://platform.arkhamintelligence.com"
         },
@@ -573,9 +573,9 @@
           "url": "https://coinmarketcap.com/currencies/gho/"
         },
         {
-          "claim": "Morpho $175M raise at $2B valuation (model, a16z), fastest-growing competitor",
+          "claim": "Morpho $175M raise at $2B valuation (Paradigm, a16z), fastest-growing competitor",
           "source": "Crypto Times",
-          "url": "https://www.cryptotimes.io/2026/06/09/why-model-and-a16z-just-poured-175m-into-morpho/"
+          "url": "https://www.cryptotimes.io/2026/06/09/why-paradigm-and-a16z-just-poured-175m-into-morpho/"
         },
         {
           "claim": "Buybacks paused April 19, 2026; 205K AAVE (1.28% supply) purchased before pause",
@@ -1835,7 +1835,7 @@
       "verdict": "HOLD",
       "verdict_color": "green",
       "one_liner": "Infrastructure lending protocol with $6.4B TVL and $203M annualized fees but ZERO revenue to token holders, fee switch OFF, founder opposes activation",
-      "key_catalyst": "$175M raise (Jun 9) at $2B from model/a16z/Ribbit; Apollo 9% stake; Morpho Midnight fixed-rate launch; Coinbase $1.6B integration; RWA $820M",
+      "key_catalyst": "$175M raise (Jun 9) at $2B from Paradigm/a16z/Ribbit; Apollo 9% stake; Morpho Midnight fixed-rate launch; Coinbase $1.6B integration; RWA $820M",
       "key_risk": "Fee switch OFF with no governance proposal, $0 revenue to holders; 35% supply locked through 2028; founder opposes distribution; governance concentrated (>50% one wallet)",
       "max_supply": 1000000000,
       "total_supply": 1000000000,
@@ -1894,9 +1894,9 @@
           "url": "https://defillama.com/protocol/morpho-blue"
         },
         {
-          "claim": "$175M raised June 9, 2026 led by model, a16z crypto, Ribbit Capital at ~$2B valuation",
+          "claim": "$175M raised June 9, 2026 led by Paradigm, a16z crypto, Ribbit Capital at ~$2B valuation",
           "source": "Fortune",
-          "url": "https://fortune.com/2026/06/09/morpho-fundraise-a16z-crypto-model-ribbit-capital-175-million/"
+          "url": "https://fortune.com/2026/06/09/morpho-fundraise-a16z-crypto-paradigm-ribbit-capital-175-million/"
         },
         {
           "claim": "Apollo Global acquiring up to 90M MORPHO (9% stake) over 4 years via open market + OTC",
@@ -6848,7 +6848,7 @@
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "orange",
       "one_liner": "Sports fan token platform. Socios.com with 100+ sports teams.",
-      "key_catalyst": "Chiliz Chain 2.0 partnership with FIFA for 2026 World Cup fan tokens, minting 50+ new club tokens.",
+      "key_catalyst": "Chiliz Chain 2.0 and national-team fan tokens on Socios. Chiliz is not a FIFA partner, FIFA's official crypto exchange supporter is Kraken, and the 2026 tournament has finished.",
       "key_risk": "Socios.com losing top-5 football club partnerships (Barcelona, PSG) to rival platform like Sorare.",
       "max_supply": null,
       "total_supply": 10381257736,
@@ -6890,7 +6890,13 @@
         "treasury_runway": 5,
         "social_mindshare": 5
       },
-      "citations": [],
+      "citations": [
+        {
+          "claim": "Kraken, not Chiliz, is FIFA's Official Crypto Exchange Supporter for the 2026 World Cup, announced 9 June 2026.",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/fifa-world-cup-2026-kraken-chiliz-fan-tokens/"
+        }
+      ],
       "current_price_usd": 0.0356,
       "fully_diluted_valuation": 370467802
     },
@@ -6990,7 +6996,7 @@
       "prev_score": 0,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Parallel TCG gaming token. Backed by model. Active player base.",
+      "one_liner": "Parallel TCG gaming token. Backed by Paradigm. Active player base.",
       "key_catalyst": "Parallel TCG expansion & AI arena launch; staking rewards from game fees",
       "key_risk": "Gaming token hype cycles; low liquidity vs. fully diluted valuation",
       "max_supply": null,
@@ -12719,7 +12725,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Pure PoS L1 with 4-second finality and strong academic roots; TVL thin at $180M and network activity stagnant despite tech quality.",
-      "key_catalyst": "ALGO as CBDC/institutional settlement layer; partnerships with FIFA and various governments",
+      "key_catalyst": "ALGO as CBDC/institutional settlement layer with government partnerships. The FIFA deal ended in May 2025 and FIFA Collect moved to its own Avalanche chain, so it is no longer a forward catalyst.",
       "key_risk": "network traction has failed to materialise vs competitors; 97% below ATH; significant foundation releases ongoing; DeFi TVL minimal",
       "max_supply": 10000000000,
       "total_supply": 8917896185.69497,
@@ -12774,6 +12780,11 @@
           "claim": "ALGO ATH $3.56 reached June 2019; 97% below peak despite multiple market cycles",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/algorand"
+        },
+        {
+          "claim": "FIFA ended its Algorand partnership and selected Avalanche in May 2025, migrating FIFA Collect to its own EVM-compatible chain.",
+          "source": "The Block",
+          "url": "https://www.theblock.co/post/355366/fifa-avalanche"
         }
       ],
       "current_price_usd": 0.1118,
@@ -15899,7 +15910,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Self-amending smart contract chain that pioneered on-chain governance; overtaken by faster-moving L1 and L2 alternatives",
-      "key_catalyst": "Tezos institutional tokenization (Bond i by SocGen) and RWA focus may sustain niche enterprise use",
+      "key_catalyst": "Tezos institutional tokenization and RWA focus may sustain niche enterprise use",
       "key_risk": "No meaningful DeFi network, developer exodus, volume near all-time-lows, token has no value accrual mechanism",
       "max_supply": null,
       "total_supply": 1105926233.080477,
@@ -15945,14 +15956,14 @@
           "url": "https://www.coingecko.com/en/coins/tezos"
         },
         {
-          "claim": "Societe Generale issued OFH tokens on Tezos as regulated bond, niche enterprise adoption",
-          "source": "SocGen Press Release",
-          "url": "https://www.societegenerale.com/en/news/press-release/societe-generale-first-digital-green-bond-blockchain"
-        },
-        {
           "claim": "Tezos TVL ~$22M, DeFi activity minimal vs. competing L1s",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Tezos"
+        },
+        {
+          "claim": "bond-i, the first blockchain bond, was issued by the World Bank and arranged by Commonwealth Bank of Australia on a private Ethereum chain in August 2018, raising A$110M. It was not a Tezos or Societe Generale issuance.",
+          "source": "World Bank",
+          "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million"
         }
       ],
       "current_price_usd": 0.3374,
@@ -16988,7 +16999,7 @@
           "url": "https://dune.com/hildobby/NFTs"
         },
         {
-          "claim": "BLUR only 38% circulating; model and other investors hold large locked positions with ongoing vesting schedule",
+          "claim": "BLUR only 38% circulating; Paradigm and other investors hold large locked positions with ongoing vesting schedule",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/blur"
         },

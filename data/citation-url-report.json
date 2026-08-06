@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-06T15:36:36.370Z",
-  "total": 725,
-  "ok": 555,
+  "checked_at": "2026-08-06T15:55:12.849Z",
+  "total": 727,
+  "ok": 552,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -25,14 +25,6 @@
       "source": "Lido Integrations",
       "cited_by": [
         "WSTETH"
-      ]
-    },
-    {
-      "url": "https://www.cryptotimes.io/2026/06/09/why-model-and-a16z-just-poured-175m-into-morpho/",
-      "status": 404,
-      "source": "Crypto Times",
-      "cited_by": [
-        "AAVE"
       ]
     },
     {
@@ -60,14 +52,6 @@
       ]
     },
     {
-      "url": "https://fortune.com/2026/06/09/morpho-fundraise-a16z-crypto-model-ribbit-capital-175-million/",
-      "status": 404,
-      "source": "Fortune",
-      "cited_by": [
-        "MORPHO"
-      ]
-    },
-    {
       "url": "https://solanafloor.com/news/jupiter-reclaims-dominance-with-93-6-market-share-in-solana-s-aggregator-space",
       "status": 404,
       "source": "SolanaFloor",
@@ -87,6 +71,14 @@
       "url": "https://globalfintechseries.com/finance/sky-system-is-generating-435m-in-annualized-protocol-revenue-and-168m-in-annualized-protocol-profits/",
       "status": 404,
       "source": "GlobalFintechSeries (SFF PR)",
+      "cited_by": [
+        "SKY"
+      ]
+    },
+    {
+      "url": "https://chainwire.org/2026/01/29/sky-frontier-foundation-estimates-611m-in-sky-system-gross-revenue-for-2026-with-21-billion-usds-supply/",
+      "status": 404,
+      "source": "Chainwire (SFF PR)",
       "cited_by": [
         "SKY"
       ]
@@ -161,6 +153,14 @@
       "source": "PancakeSwap Blog",
       "cited_by": [
         "CAKE"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-to-crypto-assets",
+      "status": 404,
+      "source": "SEC",
+      "cited_by": [
+        "TON"
       ]
     },
     {
@@ -308,11 +308,11 @@
       ]
     },
     {
-      "url": "https://www.societegenerale.com/en/news/press-release/societe-generale-first-digital-green-bond-blockchain",
+      "url": "https://defillama.com/chain/Dogecoin",
       "status": 404,
-      "source": "SocGen Press Release",
+      "source": "DeFiLlama",
       "cited_by": [
-        "XTZ"
+        "DOGE"
       ]
     },
     {
@@ -321,6 +321,22 @@
       "source": "CoinDesk",
       "cited_by": [
         "FLOKI"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Manta%20Pacific",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "MANTA"
+      ]
+    },
+    {
+      "url": "https://dune.com/ilemi/solana-memecoins",
+      "status": 404,
+      "source": "Dune Analytics",
+      "cited_by": [
+        "POPCAT"
       ]
     },
     {
@@ -380,7 +396,7 @@
       ]
     }
   ],
-  "blocked": 99,
+  "blocked": 104,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -441,13 +457,6 @@
       ]
     },
     {
-      "url": "https://chainwire.org/2026/01/29/sky-frontier-foundation-estimates-611m-in-sky-system-gross-revenue-for-2026-with-21-billion-usds-supply/",
-      "error": "timeout",
-      "cited_by": [
-        "SKY"
-      ]
-    },
-    {
       "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/",
       "error": "timeout",
       "cited_by": [
@@ -459,13 +468,6 @@
       "error": "fetch failed",
       "cited_by": [
         "AVAX"
-      ]
-    },
-    {
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-to-crypto-assets",
-      "error": "timeout",
-      "cited_by": [
-        "TON"
       ]
     },
     {
