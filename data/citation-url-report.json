@@ -1,0 +1,500 @@
+{
+  "checked_at": "2026-08-06T15:36:36.370Z",
+  "total": 725,
+  "ok": 555,
+  "dead": [
+    {
+      "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
+      "status": 404,
+      "source": "Fortune",
+      "cited_by": [
+        "HYPE"
+      ]
+    },
+    {
+      "url": "https://github.com/nicola/hyperliquid-decentralization",
+      "status": 404,
+      "source": "Electric Capital / Community Audits",
+      "cited_by": [
+        "HYPE"
+      ]
+    },
+    {
+      "url": "https://lido.fi/lido-system",
+      "status": 404,
+      "source": "Lido Integrations",
+      "cited_by": [
+        "WSTETH"
+      ]
+    },
+    {
+      "url": "https://www.cryptotimes.io/2026/06/09/why-model-and-a16z-just-poured-175m-into-morpho/",
+      "status": 404,
+      "source": "Crypto Times",
+      "cited_by": [
+        "AAVE"
+      ]
+    },
+    {
+      "url": "https://consensus.coindesk.com/agenda/speaker/-sidney-powell",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "SYRUP"
+      ]
+    },
+    {
+      "url": "https://twitter.com/GEODNET_",
+      "status": 404,
+      "source": "Social media / CES",
+      "cited_by": [
+        "GEOD"
+      ]
+    },
+    {
+      "url": "https://defillama.com/protocol/aerodrome-finance",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "AERO"
+      ]
+    },
+    {
+      "url": "https://fortune.com/2026/06/09/morpho-fundraise-a16z-crypto-model-ribbit-capital-175-million/",
+      "status": 404,
+      "source": "Fortune",
+      "cited_by": [
+        "MORPHO"
+      ]
+    },
+    {
+      "url": "https://solanafloor.com/news/jupiter-reclaims-dominance-with-93-6-market-share-in-solana-s-aggregator-space",
+      "status": 404,
+      "source": "SolanaFloor",
+      "cited_by": [
+        "JUP"
+      ]
+    },
+    {
+      "url": "https://stakingrewards.com/earn/injective",
+      "status": 404,
+      "source": "Staking Rewards",
+      "cited_by": [
+        "INJ"
+      ]
+    },
+    {
+      "url": "https://globalfintechseries.com/finance/sky-system-is-generating-435m-in-annualized-protocol-revenue-and-168m-in-annualized-protocol-profits/",
+      "status": 404,
+      "source": "GlobalFintechSeries (SFF PR)",
+      "cited_by": [
+        "SKY"
+      ]
+    },
+    {
+      "url": "https://tokenterminal.com/terminal/projects/ens",
+      "status": 404,
+      "source": "Token Terminal",
+      "cited_by": [
+        "ENS"
+      ]
+    },
+    {
+      "url": "https://docs.raydium.io/raydium/protocol/the-ray-token/ray-buybacks",
+      "status": 404,
+      "source": "Raydium Docs",
+      "cited_by": [
+        "RAY"
+      ]
+    },
+    {
+      "url": "https://www.stakingrewards.com/earn/akash-network/",
+      "status": 404,
+      "source": "Staking Rewards",
+      "cited_by": [
+        "AKT"
+      ]
+    },
+    {
+      "url": "https://bittensor.com/blog",
+      "status": 404,
+      "source": "Bittensor Blog",
+      "cited_by": [
+        "TAO"
+      ]
+    },
+    {
+      "url": "https://docs.berachain.com/learn/berachain-101/",
+      "status": 404,
+      "source": "Berachain Docs",
+      "cited_by": [
+        "BERA"
+      ]
+    },
+    {
+      "url": "https://sec.gov/tron-justin-sun",
+      "status": 404,
+      "source": "SEC",
+      "cited_by": [
+        "TRX"
+      ]
+    },
+    {
+      "url": "https://optimism.io/superchain",
+      "status": 404,
+      "source": "Optimism Foundation",
+      "cited_by": [
+        "OP"
+      ]
+    },
+    {
+      "url": "https://polygon.technology/blog/pol-has-arrived",
+      "status": 404,
+      "source": "Polygon Blog",
+      "cited_by": [
+        "POL"
+      ]
+    },
+    {
+      "url": "https://pancakeswap.finance/blog",
+      "status": 404,
+      "source": "PancakeSwap Blog",
+      "cited_by": [
+        "CAKE"
+      ]
+    },
+    {
+      "url": "https://defillama.com/protocol/velodrome-finance",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "VELO"
+      ]
+    },
+    {
+      "url": "https://www.immutable.com/blog/immutable-polygon-zkEVM",
+      "status": 404,
+      "source": "Immutable Blog",
+      "cited_by": [
+        "IMX"
+      ]
+    },
+    {
+      "url": "https://atomicwallet.io/academy/articles/perpetual-dexs-2025",
+      "status": 404,
+      "source": "Atomic Wallet Academy",
+      "cited_by": [
+        "GNS"
+      ]
+    },
+    {
+      "url": "https://docs.soniclabs.com/sonic/migration",
+      "status": 404,
+      "source": "Sonic Migration Docs",
+      "cited_by": [
+        "S"
+      ]
+    },
+    {
+      "url": "https://research.kas.pa/t/ghostdag-informal-specification/166",
+      "status": 404,
+      "source": "Kaspa Research",
+      "cited_by": [
+        "KAS"
+      ]
+    },
+    {
+      "url": "https://polygon.technology/blog/pol-migration",
+      "status": 404,
+      "source": "Polygon Blog",
+      "cited_by": [
+        "MATIC"
+      ]
+    },
+    {
+      "url": "https://www.theverge.com/2023/9/26/23890262/pudgy-penguins-nft-toy-walmart",
+      "status": 404,
+      "source": "The Verge",
+      "cited_by": [
+        "PENGU"
+      ]
+    },
+    {
+      "url": "https://parity.io/jam",
+      "status": 404,
+      "source": "Parity Technologies",
+      "cited_by": [
+        "DOT"
+      ]
+    },
+    {
+      "url": "https://www.coindesk.com/policy/2023/09/zcash-delistings",
+      "status": 404,
+      "source": "Coindesk",
+      "cited_by": [
+        "ZEC"
+      ]
+    },
+    {
+      "url": "https://algorand.com/technology",
+      "status": 404,
+      "source": "Algorand Whitepaper",
+      "cited_by": [
+        "ALGO"
+      ]
+    },
+    {
+      "url": "https://starknet.io/content/starknet-token-provisions-paper/",
+      "status": 404,
+      "source": "Starknet Tokenomics",
+      "cited_by": [
+        "STRK"
+      ]
+    },
+    {
+      "url": "https://docs.osmosis.zone/osmosis-core/tokenomics",
+      "status": 404,
+      "source": "Osmosis Docs",
+      "cited_by": [
+        "OSMO"
+      ]
+    },
+    {
+      "url": "https://docs.helium.com/mobile/",
+      "status": 404,
+      "source": "Helium Documentation",
+      "cited_by": [
+        "MOBILE"
+      ]
+    },
+    {
+      "url": "https://wormhole.com/token",
+      "status": 404,
+      "source": "Wormhole Token Docs",
+      "cited_by": [
+        "W"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/rules/exorders/2026/33-11412.pdf",
+      "status": 404,
+      "source": "SEC Release 33-11412",
+      "cited_by": [
+        "ATOM"
+      ]
+    },
+    {
+      "url": "https://interchain.io/reports",
+      "status": 404,
+      "source": "ICF Transparency Report",
+      "cited_by": [
+        "ATOM"
+      ]
+    },
+    {
+      "url": "https://www.coinglass.com/WhaleIndicator",
+      "status": 404,
+      "source": "Coinglass whale data",
+      "cited_by": [
+        "ATOM"
+      ]
+    },
+    {
+      "url": "https://www.coingecko.com/en/coins/worldcoin-org",
+      "status": 404,
+      "source": "CoinGecko",
+      "cited_by": [
+        "WLD"
+      ]
+    },
+    {
+      "url": "https://www.societegenerale.com/en/news/press-release/societe-generale-first-digital-green-bond-blockchain",
+      "status": 404,
+      "source": "SocGen Press Release",
+      "cited_by": [
+        "XTZ"
+      ]
+    },
+    {
+      "url": "https://www.coindesk.com/markets/2025/floki-etf-asia",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "FLOKI"
+      ]
+    },
+    {
+      "url": "https://www.mode.network/blog",
+      "status": 404,
+      "source": "Mode Network Blog",
+      "cited_by": [
+        "MODE"
+      ]
+    },
+    {
+      "url": "https://www.jasmy.co.jp/en",
+      "status": 404,
+      "source": "Jasmy Corp",
+      "cited_by": [
+        "JASMY"
+      ]
+    },
+    {
+      "url": "https://www.coindesk.com/tech/2022/10/07/decentralands-metaverse-reportedly-has-only-38-active-users-in-24-hours",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "MANA"
+      ]
+    },
+    {
+      "url": "https://www.coindesk.com/business/2022/01/27/0xsifu-is-michael-patryn-co-founder-of-collapsed-crypto-exchange-quadrigacx",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "SPELL"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Qtum",
+      "status": 404,
+      "source": "DeFiLlama",
+      "cited_by": [
+        "QTUM"
+      ]
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/memecoin-2",
+      "status": 404,
+      "source": "CoinMarketCap",
+      "cited_by": [
+        "MEME"
+      ]
+    },
+    {
+      "url": "https://www.coindesk.com/business/2023/05/05/gala-games-co-founder-sues-partner-over-130m-in-stolen-tokens",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "GALA"
+      ]
+    }
+  ],
+  "blocked": 99,
+  "unreachable": [
+    {
+      "url": "https://felix.hyperliquid.xyz",
+      "error": "fetch failed",
+      "cited_by": [
+        "HYPE"
+      ]
+    },
+    {
+      "url": "https://courses.ems.psu.edu/geog862/node/1845",
+      "error": "fetch failed",
+      "cited_by": [
+        "GEOD"
+      ]
+    },
+    {
+      "url": "https://www.vaneck.com/us/en/blogs/digital-assets/matthew-sigel-geodnet-why-were-bullish/",
+      "error": "timeout",
+      "cited_by": [
+        "GEOD"
+      ]
+    },
+    {
+      "url": "https://governance.kamino.finance",
+      "error": "fetch failed",
+      "cited_by": [
+        "KMNO",
+        "KMNO",
+        "KMNO"
+      ]
+    },
+    {
+      "url": "https://finance.yahoo.com/news/jupiter-announces-35m-parafi-investment-084502586.html",
+      "error": "fetch failed",
+      "cited_by": [
+        "JUP"
+      ]
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/crypto/articles/thorchain-reports-2-82-billion-160100115.html",
+      "error": "fetch failed",
+      "cited_by": [
+        "RUNE"
+      ]
+    },
+    {
+      "url": "https://ao.arweave.dev",
+      "error": "fetch failed",
+      "cited_by": [
+        "AR"
+      ]
+    },
+    {
+      "url": "https://analytics.injective.network",
+      "error": "fetch failed",
+      "cited_by": [
+        "INJ"
+      ]
+    },
+    {
+      "url": "https://chainwire.org/2026/01/29/sky-frontier-foundation-estimates-611m-in-sky-system-gross-revenue-for-2026-with-21-billion-usds-supply/",
+      "error": "timeout",
+      "cited_by": [
+        "SKY"
+      ]
+    },
+    {
+      "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/",
+      "error": "timeout",
+      "cited_by": [
+        "AVAX"
+      ]
+    },
+    {
+      "url": "https://avax-one.com/avax-one-reports-first-quarter-2026-financial-and-operating-results/",
+      "error": "fetch failed",
+      "cited_by": [
+        "AVAX"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-to-crypto-assets",
+      "error": "timeout",
+      "cited_by": [
+        "TON"
+      ]
+    },
+    {
+      "url": "https://canarycapital.com",
+      "error": "fetch failed",
+      "cited_by": [
+        "LTC"
+      ]
+    },
+    {
+      "url": "https://metrics.z.cash",
+      "error": "fetch failed",
+      "cited_by": [
+        "ZEC"
+      ]
+    },
+    {
+      "url": "https://blog.helium.com/helium-mobile-subdao",
+      "error": "timeout",
+      "cited_by": [
+        "MOBILE"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/litigation/complaints",
+      "error": "fetch failed",
+      "cited_by": [
+        "ATOM"
+      ]
+    }
+  ]
+}

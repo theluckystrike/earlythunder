@@ -22,6 +22,8 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const REPO = join(HERE, "..");
 const SRC_PATH = join(REPO, "data", "altcoin-scorecard.json");
 const OPP_PATH = join(REPO, "data", "opportunities.json");
+const MARKET_PATH = join(REPO, "data", "scorecard-market.json");
+const URL_REPORT_PATH = join(REPO, "data", "citation-url-report.json");
 const OUT_PATH = join(REPO, "data", "scorecard-analytics.json");
 
 // ---- Tunable, audited constants (NASA Rule 2/3: explicit bounds) ----------
@@ -166,6 +168,66 @@ function loadOpportunityLinks() {
     }
   }
   return map;
+}
+
+/**
+ * Reads the live CoinGecko snapshot written by fetch-scorecard-market.mjs.
+ * This is the only accepted source for anything price-derived.
+ */
+function loadMarket() {
+  const raw = readFileSync(MARKET_PATH, "utf8");
+  if (typeof raw !== "string" || raw.length === 0) throw new Error("market file empty");
+  const parsed = JSON.parse(raw);
+  if (!parsed || typeof parsed.tokens !== "object" || parsed.tokens === null) {
+    throw new Error("market.tokens missing");
+  }
+  if (typeof parsed.fetched_at !== "string") throw new Error("market.fetched_at missing");
+  return parsed;
+}
+
+/**
+ * Reads the citation link report and returns the set of URLs that returned a
+ * hard 404 or 410. Missing report means every link is treated as unverified
+ * rather than silently assumed good.
+ */
+function loadDeadUrls() {
+  let raw = "";
+  try {
+    raw = readFileSync(URL_REPORT_PATH, "utf8");
+  } catch {
+    return { dead: new Set(), checked_at: null };
+  }
+  if (typeof raw !== "string" || raw.length === 0) return { dead: new Set(), checked_at: null };
+  const parsed = JSON.parse(raw);
+  if (!parsed || !Array.isArray(parsed.dead)) return { dead: new Set(), checked_at: null };
+  const dead = new Set();
+  for (let i = 0; i < parsed.dead.length && i < MAX_TOKENS * 10; i += 1) {
+    if (parsed.dead[i] && typeof parsed.dead[i].url === "string") dead.add(parsed.dead[i].url);
+  }
+  return { dead, checked_at: parsed.checked_at ?? null };
+}
+
+/**
+ * Annotates citations with whether their link actually resolves. A citation
+ * pointing at a 404 must not render as a clickable source or appear in the
+ * structured data, because a broken link reads as evidence until it is clicked.
+ */
+function annotateCitations(citations, deadUrls) {
+  if (!Array.isArray(citations)) return [];
+  if (citations.length === 0) return [];
+  const out = [];
+  for (let i = 0; i < citations.length && i < 50; i += 1) {
+    const citation = citations[i];
+    if (!citation || typeof citation.claim !== "string") continue;
+    const url = typeof citation.url === "string" ? citation.url : null;
+    out.push({
+      claim: citation.claim,
+      source: citation.source ?? "Source",
+      url,
+      link_ok: url === null ? false : !deadUrls.has(url),
+    });
+  }
+  return out;
 }
 
 /**
@@ -348,16 +410,19 @@ function findNeighbours(token, tokens, vectors) {
  * total (or max) supply over circulating supply is the trustworthy basis.
  * `fdv` is retained only as a cross-check and is never the headline number.
  */
-function buildDilution(token) {
+function buildDilution(token, live) {
   if (!token) throw new Error("no token");
   if (typeof token.symbol !== "string") throw new Error("no symbol");
-  const mcap = Number.isFinite(token.market_cap) ? token.market_cap : null;
-  const circ = Number.isFinite(token.circulating_supply) ? token.circulating_supply : null;
-  const total = Number.isFinite(token.total_supply) ? token.total_supply : null;
-  const maxSupply = Number.isFinite(token.max_supply) ? token.max_supply : null;
-  const fdvComputed = Number.isFinite(token.fully_diluted_valuation)
-    ? token.fully_diluted_valuation
-    : null;
+  // Supply counts come from the live snapshot when we have one. The scorecard's
+  // own counts are months old and drift as tokens vest.
+  const src = live ?? token;
+  const mcap = Number.isFinite(src.market_cap) ? src.market_cap : null;
+  const circ = Number.isFinite(src.circulating_supply) ? src.circulating_supply : null;
+  const total = Number.isFinite(src.total_supply) ? src.total_supply : null;
+  const maxSupply = Number.isFinite(src.max_supply) ? src.max_supply : null;
+  const fdvComputed = live
+    ? (Number.isFinite(live.fdv) ? live.fdv : null)
+    : (Number.isFinite(token.fully_diluted_valuation) ? token.fully_diluted_valuation : null);
   const eventual = maxSupply !== null && total !== null ? Math.max(maxSupply, total) : maxSupply ?? total;
 
   const base = {
@@ -390,18 +455,24 @@ function buildDilution(token) {
  * multiple required to return to it. The recovery multiple is the number most
  * holders get wrong, so it is stated explicitly.
  */
-function buildDrawdown(token) {
+function buildDrawdown(token, live) {
   if (!token) throw new Error("no token");
   if (typeof token.symbol !== "string") throw new Error("no symbol");
-  const distance = Number.isFinite(token.ath_distance_pct) ? token.ath_distance_pct : null;
-  if (distance === null || distance >= 0 || distance <= -100) {
-    return { ath: token.ath ?? null, distance_pct: distance, recovery_x: null };
+  // The scorecard's stored ath_distance_pct was computed at the scoring-pass
+  // price and has drifted badly since. Worse, several stored all-time highs are
+  // themselves wrong (BTC was carried at $111,814 against a real $126,080).
+  // Without a live row we publish nothing rather than a stale contradiction.
+  if (!live) return { ath: null, ath_date: null, distance_pct: null, recovery_x: null };
+  const distance = Number.isFinite(live.ath_change_pct) ? live.ath_change_pct : null;
+  const ath = Number.isFinite(live.ath) ? live.ath : null;
+  if (distance === null || ath === null || distance >= 0 || distance <= -100) {
+    return { ath, ath_date: live.ath_date ?? null, distance_pct: round(distance, 1), recovery_x: null };
   }
-  const recovery = 100 / (100 + distance);
   return {
-    ath: Number.isFinite(token.ath) ? token.ath : null,
+    ath,
+    ath_date: live.ath_date ?? null,
     distance_pct: round(distance, 1),
-    recovery_x: round(recovery, 1),
+    recovery_x: round(100 / (100 + distance), 1),
   };
 }
 
@@ -414,33 +485,89 @@ function buildDrawdown(token) {
  * is repriced daily by CI and is preferred. Everything else is returned as
  * explicitly dated, so the page can label it rather than imply it is current.
  */
-function buildMarket(token, link) {
+function buildMarket(token, live, fetchedAt) {
   if (!token || typeof token.symbol !== "string") throw new Error("bad token");
-  if (link !== undefined && link !== null && typeof link !== "object") {
-    throw new Error("bad link");
-  }
-  if (link && Number.isFinite(link.price) && link.price > 0) {
+  if (typeof fetchedAt !== "string" || fetchedAt.length === 0) throw new Error("bad fetchedAt");
+  // No live row means no published price. The scorecard's own prices are stamped
+  // May and June 2026, and 101 carry no stamp at all, so showing one would be
+  // presenting a months-old number next to live-looking analysis.
+  if (!live) {
     return {
-      price: link.price,
-      market_cap: Number.isFinite(link.market_cap) ? link.market_cap : token.market_cap ?? null,
-      as_of: link.as_of,
-      source: "daily",
+      price: null,
+      market_cap: null,
+      volume_24h: null,
+      change_24h: null,
+      market_cap_rank: null,
+      renamed_to: null,
+      coingecko_id: null,
+      as_of: null,
+      source: "unavailable",
     };
   }
   return {
-    price: Number.isFinite(token.price) ? token.price : null,
-    market_cap: Number.isFinite(token.market_cap) ? token.market_cap : null,
-    as_of: token.price_updated_at ?? null,
-    source: "scorecard",
+    price: live.price,
+    market_cap: live.market_cap,
+    volume_24h: live.volume_24h,
+    change_24h: live.change_24h,
+    market_cap_rank: live.market_cap_rank,
+    renamed_to: live.renamed_to ?? null,
+    coingecko_id: live.coingecko_id,
+    as_of: fetchedAt,
+    source: "coingecko",
   };
 }
 
+const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+
+/**
+ * Detects whether a catalyst string is anchored to a date that has already
+ * passed. These render under a "Next catalyst" heading, so an expired one tells
+ * a reader something is ahead when it is behind. LTC carried "halving supply cut
+ * in August 2023" as its next catalyst.
+ *
+ * Only reports what it can parse. An unparseable string is treated as current,
+ * because guessing would relabel good data as stale.
+ */
+function findExpiredDates(text, today) {
+  if (typeof text !== "string" || text.length === 0) return [];
+  if (!(today instanceof Date)) throw new Error("today must be a Date");
+  const found = [];
+
+  const quarters = text.matchAll(/\bQ([1-4])\s*(20\d\d)\b/g);
+  for (const match of quarters) {
+    const end = new Date(Date.UTC(Number(match[2]), Number(match[1]) * 3 - 1, 28));
+    if (end < today) found.push(match[0]);
+  }
+
+  const monthYears = text.matchAll(/\b([A-Z][a-z]{2,8})\s+(20\d\d)\b/g);
+  for (const match of monthYears) {
+    const index = MONTHS.indexOf(match[1].slice(0, 3).toLowerCase());
+    if (index < 0) continue;
+    const end = new Date(Date.UTC(Number(match[2]), index, 28));
+    if (end < today) found.push(match[0]);
+  }
+
+  const bareDates = text.matchAll(/\b([A-Z][a-z]{2})\s+(\d{1,2})\b(?!\s*,?\s*20)/g);
+  for (const match of bareDates) {
+    const index = MONTHS.indexOf(match[1].toLowerCase());
+    if (index < 0) continue;
+    const day = Number(match[2]);
+    if (day < 1 || day > 31) continue;
+    const when = new Date(Date.UTC(today.getUTCFullYear(), index, day));
+    if (when < today) found.push(match[0]);
+  }
+
+  return [...new Set(found)];
+}
+
 /** Market cap per dollar of TVL. Only meaningful where TVL is published. */
-function buildTvlRatio(token) {
+function buildTvlRatio(token, live) {
   if (!token) throw new Error("no token");
   if (typeof token.symbol !== "string") throw new Error("no symbol");
   const tvl = Number.isFinite(token.tvl) ? token.tvl : null;
-  const mcap = Number.isFinite(token.market_cap) ? token.market_cap : null;
+  // Ratio must use the live market cap, otherwise it mixes a current cap with a
+  // months-old one and reads as a precise number that means nothing.
+  const mcap = live && Number.isFinite(live.market_cap) ? live.market_cap : null;
   if (tvl === null || mcap === null || tvl <= 0) return { tvl, mcap_per_tvl: null };
   return { tvl, mcap_per_tvl: round(mcap / tvl, 2) };
 }
@@ -482,7 +609,8 @@ function splitHighlights(varEntries) {
 function buildTokenRecord(token, context) {
   if (!token || typeof token.symbol !== "string") throw new Error("bad token");
   if (!context || !context.varStats) throw new Error("bad context");
-  const { varStats, varRanks, scoreRanks, universe, vectors, tokens, oppLinks } = context;
+  const { varStats, varRanks, scoreRanks, universe, vectors, tokens, oppLinks, market } = context;
+  const live = market[token.symbol.toUpperCase()] ?? null;
 
   const variables = VARIABLES.map((meta) => {
     const value = token.scores[meta.key];
@@ -519,17 +647,18 @@ function buildTokenRecord(token, context) {
     token_standard: token.token_standard ?? null,
     one_liner: token.one_liner ?? null,
     key_catalyst: token.key_catalyst ?? null,
+    catalyst_expired_dates: findExpiredDates(token.key_catalyst, context.today),
     key_risk: token.key_risk ?? null,
     variables,
     strengths,
     weaknesses,
-    dilution: buildDilution(token),
-    drawdown: buildDrawdown(token),
-    tvl: buildTvlRatio(token),
-    market: buildMarket(token, link),
+    dilution: buildDilution(token, live),
+    drawdown: buildDrawdown(token, live),
+    tvl: buildTvlRatio(token, live),
+    market: buildMarket(token, live, context.marketFetchedAt),
     where_to_buy: Array.isArray(token.where_to_buy) ? token.where_to_buy : [],
     cmc_slug: typeof token.cmc_slug === "string" ? token.cmc_slug : null,
-    citations: Array.isArray(token.citations) ? token.citations : [],
+    citations: annotateCitations(token.citations, context.deadUrls),
     neighbours: findNeighbours(token, tokens, vectors),
     opportunity_slug: link ? link.slug : null,
   };
@@ -604,6 +733,8 @@ function groupBy(records, selector, kind, minSize) {
 function main() {
   const source = loadScorecard();
   const oppLinks = loadOpportunityLinks();
+  const market = loadMarket();
+  const urlReport = loadDeadUrls();
   const tokens = selectScorable(source.tokens);
   if (tokens.length < 100) {
     throw new Error(`only ${tokens.length} tokens carry a complete 25-variable vector`);
@@ -631,6 +762,10 @@ function main() {
     vectors,
     tokens,
     oppLinks,
+    market: market.tokens,
+    marketFetchedAt: market.fetched_at,
+    deadUrls: urlReport.dead,
+    today: new Date(),
   };
 
   const records = tokens.map((token) => buildTokenRecord(token, context));
@@ -653,6 +788,17 @@ function main() {
   const output = {
     generated_at: new Date().toISOString(),
     source_updated_at: source.updated_at ?? null,
+    citation_links: {
+      checked_at: urlReport.checked_at,
+      dead_count: urlReport.dead.size,
+    },
+    market_data: {
+      source: market.source,
+      source_url: market.source_url,
+      fetched_at: market.fetched_at,
+      covered: market.covered,
+      unresolved: market.unresolved,
+    },
     methodology: source.methodology ?? null,
     universe_size: records.length,
     max_score: VARIABLES.length * MAX_VAR_SCORE,
@@ -664,6 +810,9 @@ function main() {
 
   writeFileSync(OUT_PATH, `${JSON.stringify(output, null, 2)}\n`, "utf8");
   const withDeepDive = records.filter((r) => r.opportunity_slug !== null).length;
+  const withMarket = records.filter((r) => r.market.source === "coingecko").length;
+  const deadCites = records.reduce((sum, r) => sum + r.citations.filter((c) => !c.link_ok).length, 0);
+  const expiredCats = records.filter((r) => r.catalyst_expired_dates.length > 0).length;
   process.stdout.write(
     [
       `universe          ${records.length} tokens`,
@@ -671,6 +820,9 @@ function main() {
       `verdict hubs      ${verdictGroups.length}`,
       `chain hubs        ${chainGroups.length}`,
       `deep-dive links   ${withDeepDive}`,
+      `live market rows  ${withMarket}`,
+      `dead cite links   ${deadCites} suppressed`,
+      `expired catalysts ${expiredCats} relabelled`,
       `written           ${OUT_PATH}`,
       "",
     ].join("\n"),

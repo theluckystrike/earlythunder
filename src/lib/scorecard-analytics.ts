@@ -36,6 +36,7 @@ export interface Dilution {
 
 export interface Drawdown {
   readonly ath: number | null;
+  readonly ath_date: string | null;
   readonly distance_pct: number | null;
   readonly recovery_x: number | null;
 }
@@ -43,8 +44,14 @@ export interface Drawdown {
 export interface MarketSnapshot {
   readonly price: number | null;
   readonly market_cap: number | null;
+  readonly volume_24h: number | null;
+  readonly change_24h: number | null;
+  readonly market_cap_rank: number | null;
+  /** New ticker when the token renamed after the scoring pass, else null. */
+  readonly renamed_to: string | null;
+  readonly coingecko_id: string | null;
   readonly as_of: string | null;
-  /** "daily" when repriced by CI, "scorecard" when frozen at the sprint date. */
+  /** "coingecko" when a live row was matched, "unavailable" when none was. */
   readonly source: string;
 }
 
@@ -59,7 +66,9 @@ export interface Neighbour {
 export interface Citation {
   readonly claim: string;
   readonly source: string;
-  readonly url?: string;
+  readonly url: string | null;
+  /** False when the URL returned a hard 404 or 410 at the last link check. */
+  readonly link_ok: boolean;
 }
 
 export interface ScorecardToken {
@@ -79,6 +88,8 @@ export interface ScorecardToken {
   readonly token_standard: string | null;
   readonly one_liner: string | null;
   readonly key_catalyst: string | null;
+  /** Dates inside key_catalyst that have already passed. Empty when current. */
+  readonly catalyst_expired_dates: readonly string[];
   readonly key_risk: string | null;
   readonly variables: readonly ScoredVariable[];
   readonly strengths: readonly ScoredVariable[];
@@ -133,9 +144,24 @@ export interface VariableSummary {
   readonly histogram: readonly number[];
 }
 
+export interface CitationLinkMeta {
+  readonly checked_at: string | null;
+  readonly dead_count: number;
+}
+
+export interface MarketDataMeta {
+  readonly source: string;
+  readonly source_url: string;
+  readonly fetched_at: string;
+  readonly covered: number;
+  readonly unresolved: readonly string[];
+}
+
 interface AnalyticsFile {
   readonly generated_at: string;
   readonly source_updated_at: string | null;
+  readonly citation_links: CitationLinkMeta;
+  readonly market_data: MarketDataMeta;
   readonly methodology: string | null;
   readonly universe_size: number;
   readonly max_score: number;
@@ -162,6 +188,8 @@ export function getScorecardMeta() {
     generated_at: ANALYTICS.generated_at,
     source_updated_at: ANALYTICS.source_updated_at,
     methodology: ANALYTICS.methodology,
+    citation_links: ANALYTICS.citation_links,
+    market_data: ANALYTICS.market_data,
     universe_size: ANALYTICS.universe_size,
     max_score: ANALYTICS.max_score,
     score_range: ANALYTICS.score_range,

@@ -191,7 +191,7 @@ export function buildFindings(token: ScorecardToken): readonly Finding[] {
   }
 
   const { mcap_per_tvl: perTvl, tvl } = token.tvl;
-  if (perTvl !== null && tvl !== null) {
+  if (perTvl !== null && tvl !== null && tvl > 0) {
     const reading =
       perTvl < 1
         ? `The token is capitalised below the value locked in the protocol`
@@ -281,9 +281,14 @@ export function buildFaqs(token: ScorecardToken): readonly Faq[] {
   }
 
   if (token.key_catalyst) {
+    const expired = token.catalyst_expired_dates.length > 0;
     faqs.push({
-      question: `What is the next catalyst for ${token.symbol}?`,
-      answer: `${token.key_catalyst}`,
+      question: expired
+        ? `What catalyst was ${token.symbol} scored against?`
+        : `What is the next catalyst for ${token.symbol}?`,
+      answer: expired
+        ? `${token.key_catalyst} This was written as forward-looking when the scoring pass ran. The ${token.catalyst_expired_dates.join(" and ")} item has since passed, so read that part as history. Anything else listed may still be ahead.`
+        : `${token.key_catalyst}`,
     });
   }
 

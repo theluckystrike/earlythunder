@@ -286,8 +286,20 @@ export default function ScorecardGroupHub({
       </Section>
 
       <p className="mt-16 max-w-3xl text-xs leading-relaxed text-text-tertiary">
-        This is research and analysis, not investment advice. {SITE_NAME} scores are one framework
-        applied consistently across {meta.universe_size} tokens, not a prediction of price.
+        Market caps from{" "}
+        <a
+          href={meta.market_data.source_url}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          className="text-info hover:underline"
+        >
+          CoinGecko
+        </a>
+        , fetched {formatDate(meta.market_data.fetched_at)}. Scores come from the research pass
+        dated {formatDate(meta.source_updated_at)}. Research and analysis, not investment advice.
+        {" "}
+        {SITE_NAME} scores are one framework applied consistently across {meta.universe_size}{" "}
+        tokens, not a prediction of price.
       </p>
     </div>
   );

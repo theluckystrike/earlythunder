@@ -179,7 +179,10 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
   const faqs = buildFaqs(token);
   const summary = buildSummary(token);
   const url = `${SITE_URL}/scorecard/${token.slug}`;
-  const priceIsStale = token.market.source !== "daily";
+  const hasMarket = token.market.source === "coingecko";
+  const marketAsOf = formatDate(meta.market_data.fetched_at);
+  const deadLinks = token.citations.filter((c) => !c.link_ok).length;
+  const catalystExpired = token.catalyst_expired_dates.length > 0;
 
   const breadcrumbs = getBreadcrumbListSchema([
     { name: "Home", path: "/" },
@@ -203,14 +206,31 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
       maxValue: 10,
       minValue: 1,
     })),
-    ...(token.citations.length > 0
+    ...(hasMarket
       ? {
-          isBasedOn: token.citations
-            .filter((c) => typeof c.url === "string" && c.url.length > 0)
-            .slice(0, MAX_CITATIONS)
-            .map((c) => ({ "@type": "CreativeWork", name: c.source, url: c.url })),
+          temporalCoverage: meta.market_data.fetched_at,
+          distribution: {
+            "@type": "DataDownload",
+            contentUrl: `https://www.coingecko.com/en/coins/${token.market.coingecko_id}`,
+            encodingFormat: "text/html",
+          },
         }
       : {}),
+    isBasedOn: [
+      ...(hasMarket
+        ? [
+            {
+              "@type": "CreativeWork",
+              name: "CoinGecko market data",
+              url: `https://www.coingecko.com/en/coins/${token.market.coingecko_id}`,
+            },
+          ]
+        : []),
+      ...token.citations
+        .filter((c) => c.link_ok && typeof c.url === "string" && c.url.length > 0)
+        .slice(0, MAX_CITATIONS)
+        .map((c) => ({ "@type": "CreativeWork", name: c.source, url: c.url })),
+    ],
   };
 
   return (
@@ -324,8 +344,18 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {token.key_catalyst && (
               <div className="rounded-2xl border border-border bg-bg-card p-6">
-                <EyebrowLabel>Next catalyst</EyebrowLabel>
+                <EyebrowLabel>{catalystExpired ? "Catalyst on the scorecard" : "Next catalyst"}</EyebrowLabel>
                 <p className="text-[0.95rem] leading-relaxed text-text-secondary">{token.key_catalyst}</p>
+                {catalystExpired && (
+                  <p className="mt-3 text-xs leading-relaxed text-warning">
+                    {token.catalyst_expired_dates.length === 1
+                      ? `The ${token.catalyst_expired_dates[0]} item has already passed.`
+                      : `These items have already passed: ${token.catalyst_expired_dates.join(", ")}.`}{" "}
+                    This was written as forward-looking at the {formatDate(meta.source_updated_at)}{" "}
+                    scoring pass, so read those parts as history. Anything else listed may still be
+                    ahead.
+                  </p>
+                )}
               </div>
             )}
             {token.key_risk && (
@@ -340,6 +370,13 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
 
       <Section>
         <SectionLabel number="04" title="Market and supply" />
+        {token.market.renamed_to && (
+          <Prose>
+            {token.symbol} now trades as {token.market.renamed_to}. The scoring pass ran under the
+            old ticker, so the scores below are filed under {token.symbol} while the market figures
+            track {token.market.renamed_to}.
+          </Prose>
+        )}
         <div className="mt-6 overflow-x-auto rounded-2xl border border-border">
           <table className="w-full font-mono text-sm">
             <tbody>
@@ -353,8 +390,26 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
                 <td className="px-4 py-3 text-text-tertiary">Market cap</td>
                 <td className="px-4 py-3 text-right text-text-primary">
                   {formatUsd(token.market.market_cap)}
+                  {token.market.market_cap_rank !== null && (
+                    <span className="ml-2 text-text-tertiary">
+                      rank {token.market.market_cap_rank}
+                    </span>
+                  )}
                 </td>
               </tr>
+              {token.drawdown.ath !== null && (
+                <tr className="border-b border-border/50">
+                  <td className="px-4 py-3 text-text-tertiary">All-time high</td>
+                  <td className="px-4 py-3 text-right text-text-primary">
+                    {formatPrice(token.drawdown.ath)}
+                    {token.drawdown.ath_date && (
+                      <span className="ml-2 text-text-tertiary">
+                        {formatDate(token.drawdown.ath_date)}
+                      </span>
+                    )}
+                  </td>
+                </tr>
+              )}
               <tr className="border-b border-border/50">
                 <td className="px-4 py-3 text-text-tertiary">Circulating supply</td>
                 <td className="px-4 py-3 text-right text-text-primary">
@@ -383,7 +438,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
                   {token.dilution.dilution_x === null ? "n/a" : `${token.dilution.dilution_x}x`}
                 </td>
               </tr>
-              {token.tvl.tvl !== null && (
+              {token.tvl.tvl !== null && token.tvl.tvl > 0 && (
                 <tr className="border-b border-border/50">
                   <td className="px-4 py-3 text-text-tertiary">Total value locked</td>
                   <td className="px-4 py-3 text-right text-text-primary">{formatUsd(token.tvl.tvl)}</td>
@@ -401,9 +456,28 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
           </table>
         </div>
         <p className="mt-3 max-w-3xl text-xs leading-relaxed text-text-tertiary">
-          {priceIsStale
-            ? `Price and market cap above are the values recorded in the scoring pass on ${formatDate(token.market.as_of) || "the sprint date"}, not a live quote. Supply figures, scores and ranks do not move with price.`
-            : `Price and market cap repriced ${formatDate(token.market.as_of)}. Supply figures, scores and ranks do not move with price.`}
+          {hasMarket ? (
+            <>
+              Price, market cap, supply and all-time high from{" "}
+              <a
+                href={`https://www.coingecko.com/en/coins/${token.market.coingecko_id}`}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="text-info hover:underline"
+              >
+                CoinGecko
+              </a>
+              , fetched {marketAsOf}. The 25 scores come from the research pass dated{" "}
+              {formatDate(meta.source_updated_at)} and don&apos;t move with price.
+            </>
+          ) : (
+            <>
+              We couldn&apos;t match {token.symbol} to a live market row, so no price, market cap or
+              all-time high is shown. Publishing the figure recorded at the scoring pass would mean
+              putting a months-old number next to analysis that looks current. The 25 scores below
+              stand on their own.
+            </>
+          )}
         </p>
       </Section>
 
@@ -446,7 +520,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
           <ul className="mt-6 space-y-3">
             {token.citations.slice(0, MAX_CITATIONS).map((citation, index) => (
               <li key={index} className="text-sm leading-relaxed text-text-secondary">
-                {citation.url ? (
+                {citation.url && citation.link_ok ? (
                   <a
                     href={citation.url}
                     target="_blank"
@@ -459,9 +533,23 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
                   <span className="font-mono text-xs text-text-tertiary">[{citation.source}]</span>
                 )}{" "}
                 {citation.claim}
+                {!citation.link_ok && (
+                  <span className="ml-1 font-mono text-[11px] text-warning">
+                    link dead, claim unverified
+                  </span>
+                )}
               </li>
             ))}
           </ul>
+          {deadLinks > 0 && (
+            <p className="mt-4 max-w-3xl text-xs leading-relaxed text-text-tertiary">
+              {deadLinks === 1
+                ? "One source link above no longer resolves, so we stripped the hyperlink rather than leave something that looks like evidence until you click it."
+                : `${deadLinks} of the source links above no longer resolve, so we stripped those hyperlinks rather than leave something that looks like evidence until you click it.`}{" "}
+              The claims stay visible because they are part of the research record, but treat them as
+              unverified. Every link was rechecked {formatDate(meta.citation_links.checked_at)}.
+            </p>
+          )}
         </Section>
       )}
 
@@ -523,7 +611,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
       </Section>
 
       <p className="mt-16 max-w-3xl text-xs leading-relaxed text-text-tertiary">
-        This is research and analysis, not investment advice. Scores are one framework applied
+        Research and analysis, not investment advice. Scores are one framework applied
         consistently across {token.universe_size} tokens, not a prediction of price.
       </p>
     </div>

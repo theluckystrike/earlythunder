@@ -67,7 +67,12 @@ export default function ScorecardPage() {
     {
       question: "How current is the data?",
       answer:
-        `The scoring pass is dated ${formatDate(meta.source_updated_at)}. Scores, ranks, supply counts and vesting maths do not change with price. Prices and market caps shown alongside them are labelled with the date they were recorded, and are refreshed daily only for the tokens that also carry a full research note.`,
+        `Two clocks run here. The 25 scores come from the research pass dated ${formatDate(meta.source_updated_at)} and don't move with price. Everything price-derived, meaning price, market cap, supply, all-time high and the dilution arithmetic, is refetched from CoinGecko and was last pulled ${formatDate(meta.market_data.fetched_at)}, covering ${meta.market_data.covered} of ${meta.universe_size} tokens. The ${meta.market_data.unresolved.length} we couldn't match to a live market row show no price at all rather than a stale one.`,
+    },
+    {
+      question: "Where does the dilution figure come from?",
+      answer:
+        `Eventual supply divided by circulating supply, both from CoinGecko. It is deliberately not derived from a fully diluted valuation, because an FDV figure carries a price inside it and goes stale the moment the price moves. A 1x reading means the float is already complete.`,
     },
   ];
 
@@ -336,8 +341,19 @@ export default function ScorecardPage() {
           {meta.methodology}
         </p>
         <p className="mt-6 max-w-3xl text-xs leading-relaxed text-text-tertiary">
-          This is research and analysis, not investment advice. Scores are one framework applied
-          consistently across {meta.universe_size} tokens, not a prediction of price.
+          Market data from{" "}
+          <a
+            href={meta.market_data.source_url}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="text-info hover:underline"
+          >
+            CoinGecko
+          </a>
+          , fetched {formatDate(meta.market_data.fetched_at)} for {meta.market_data.covered} of{" "}
+          {meta.universe_size} tokens. Research and analysis, not investment advice. Scores are one
+          framework applied consistently across {meta.universe_size} tokens, not a prediction of
+          price.
         </p>
       </Section>
     </div>
