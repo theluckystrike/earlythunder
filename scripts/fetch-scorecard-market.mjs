@@ -236,22 +236,13 @@ function buildRecord(token, row) {
   };
 }
 
-async function main() {
-  const raw = readFileSync(SRC_PATH, "utf8");
-  if (typeof raw !== "string" || raw.length === 0) throw new Error("scorecard empty");
-  const parsed = JSON.parse(raw);
-  if (!parsed || !Array.isArray(parsed.tokens)) throw new Error("tokens missing");
-  const tokens = parsed.tokens;
-
-  process.stdout.write("resolving CoinGecko ids\n");
-  const coinList = await fetchJson(`${CG}/coins/list`);
-  const idMap = resolveIds(tokens, coinList);
-  const idList = [...new Set(Object.values(idMap))];
-  process.stdout.write(`  resolved ${Object.keys(idMap).length} of ${tokens.length} symbols to ${idList.length} ids\n`);
-
-  process.stdout.write("fetching markets\n");
-  const rows = await fetchMarkets(idList);
-
+/**
+ * Walks every token, keeps the rows that pass the symbol guard, and sorts the
+ * rest into unresolved (no match) or rejected (matched a different asset).
+ */
+function assemble(tokens, idMap, rows) {
+  if (!Array.isArray(tokens) || tokens.length === 0) throw new Error("tokens required");
+  if (!idMap || !(rows instanceof Map)) throw new Error("idMap and rows required");
   const out = Object.create(null);
   const rejected = [];
   const unresolved = [];
@@ -275,6 +266,26 @@ async function main() {
     }
     out[symbol] = record;
   }
+  return { out, rejected, unresolved };
+}
+
+async function main() {
+  const raw = readFileSync(SRC_PATH, "utf8");
+  if (typeof raw !== "string" || raw.length === 0) throw new Error("scorecard empty");
+  const parsed = JSON.parse(raw);
+  if (!parsed || !Array.isArray(parsed.tokens)) throw new Error("tokens missing");
+  const tokens = parsed.tokens;
+
+  process.stdout.write("resolving CoinGecko ids\n");
+  const coinList = await fetchJson(`${CG}/coins/list`);
+  const idMap = resolveIds(tokens, coinList);
+  const idList = [...new Set(Object.values(idMap))];
+  process.stdout.write(`  resolved ${Object.keys(idMap).length} of ${tokens.length} symbols to ${idList.length} ids\n`);
+
+  process.stdout.write("fetching markets\n");
+  const rows = await fetchMarkets(idList);
+
+  const { out, rejected, unresolved } = assemble(tokens, idMap, rows);
 
   const payload = {
     fetched_at: new Date().toISOString(),

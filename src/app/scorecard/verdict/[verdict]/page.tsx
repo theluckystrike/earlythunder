@@ -80,7 +80,6 @@ export default async function VerdictHubPage({ params }: PageParams) {
     <ScorecardGroupHub
       group={group}
       kindPath="verdict"
-      kindLabel="Verdict"
       title={`Tokens rated ${group.name}`}
       lead={`Every token the 25-variable framework rated ${group.name}, ranked by composite score against the full ${meta.universe_size}-token universe.`}
       intro={intro}

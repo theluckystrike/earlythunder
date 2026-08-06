@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T15:56:02.707Z",
+  "generated_at": "2026-08-06T16:37:46.882Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "citation_links": {
     "checked_at": "2026-08-06T15:55:12.849Z",
@@ -1930,7 +1930,7 @@
       "verdict_color": "green",
       "chain": "Bitcoin",
       "token_standard": "Native L1",
-      "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. unbeaten store-of-value thesis with sovereign adoption accelerating.",
+      "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. Unbeaten store-of-value thesis with sovereign adoption accelerating.",
       "key_catalyst": "Spot ETF inflows accelerating past $120B AUM; multiple sovereign wealth funds entering",
       "catalyst_expired_dates": [],
       "key_risk": "Regulatory crackdown on self-custody; long-term quantum computing threat",
@@ -106034,7 +106034,7 @@
             "rank_overall": 4,
             "verdict": "HOLD CORE",
             "verdict_color": "green",
-            "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. unbeaten store-of-value thesis with sovereign adoption accelerating.",
+            "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. Unbeaten store-of-value thesis with sovereign adoption accelerating.",
             "market_cap": 1298116831750,
             "dilution_x": 1.05,
             "chain": "Bitcoin"

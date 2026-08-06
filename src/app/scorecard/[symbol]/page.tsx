@@ -71,18 +71,6 @@ function scoreTone(value: number): string {
   return "text-negative";
 }
 
-/** Colour for a verdict badge, keyed off the verdict_color in the dataset. */
-function verdictTone(color: string): string {
-  const map: Record<string, string> = {
-    green: "border-positive/30 bg-positive-bg text-positive",
-    blue: "border-info/30 bg-[rgba(59,130,246,0.10)] text-info",
-    yellow: "border-warning/30 bg-warning-bg text-warning",
-    orange: "border-warning/40 bg-warning-bg text-warning",
-    red: "border-negative/30 bg-negative-bg text-negative",
-  };
-  return map[color] ?? map.yellow;
-}
-
 /** A single headline statistic. */
 function Stat({
   label,
@@ -111,8 +99,8 @@ function VariableRow({ variable, universe }: { readonly variable: ScoredVariable
 
   return (
     <tr className="border-b border-border/40">
-      <td className="py-2.5 pr-3 text-sm text-text-secondary">{variable.label}</td>
-      <td className="w-full py-2.5 pr-3">
+      <td className="w-52 whitespace-nowrap py-3 pr-6 text-sm text-text-secondary">{variable.label}</td>
+      <td className="w-full py-3 pr-6">
         <div className="relative h-2 rounded-full bg-bg-base">
           <div
             className={`h-2 rounded-full ${variable.value >= 7 ? "bg-positive" : variable.value >= 4 ? "bg-warning" : "bg-negative"}`}
@@ -127,10 +115,10 @@ function VariableRow({ variable, universe }: { readonly variable: ScoredVariable
           )}
         </div>
       </td>
-      <td className={`py-2.5 pr-4 text-right font-mono text-sm font-semibold ${scoreTone(variable.value)}`}>
+      <td className={`py-3 pr-4 text-right font-mono text-sm font-semibold ${scoreTone(variable.value)}`}>
         {variable.value}
       </td>
-      <td className="whitespace-nowrap py-2.5 text-right font-mono text-xs text-text-tertiary">
+      <td className="whitespace-nowrap py-3 text-right font-mono text-xs text-text-tertiary">
         {ordinal(variable.rank)} of {universe}
       </td>
     </tr>
@@ -140,7 +128,7 @@ function VariableRow({ variable, universe }: { readonly variable: ScoredVariable
 /** The 25-variable breakdown, split into its six themes. */
 function Breakdown({ token }: { readonly token: ScorecardToken }) {
   return (
-    <div className="mt-6 space-y-8">
+    <div className="mt-8 max-w-3xl space-y-9">
       {GROUP_ORDER.map((group) => {
         const rows = token.variables.filter((v) => v.group === group);
         if (rows.length === 0) return null;
@@ -234,7 +222,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-20">
+    <div className="mx-auto max-w-6xl px-6 py-20">
       <JsonLd data={breadcrumbs} />
       <JsonLd data={datasetSchema} />
       {faqSchema && <JsonLd data={faqSchema} />}
@@ -286,12 +274,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
             note={token.drawdown.recovery_x === null ? undefined : `${token.drawdown.recovery_x}x to recover`}
           />
         </div>
-        <div className="mt-4 flex flex-wrap items-center gap-3">
-          <span
-            className={`inline-block rounded border px-2.5 py-1 font-mono text-xs font-semibold ${verdictTone(token.verdict_color)}`}
-          >
-            {token.verdict}
-          </span>
+        <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
           {token.chain && (
             <Link
               href={`/scorecard/chain/${token.chain.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
@@ -316,14 +299,14 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
 
       <Section>
         <SectionLabel number="01" title="What the numbers say" />
-        <div className="mt-6 space-y-6">
+        <div className="mt-8 max-w-3xl space-y-7">
           {findings.map((finding) => (
-            <div key={finding.label}>
-              <EyebrowLabel>{finding.label}</EyebrowLabel>
-              <p className="max-w-3xl text-[1.0625rem] leading-[1.75] text-text-secondary">
-                {finding.text}
-              </p>
-            </div>
+            <p
+              key={finding.label}
+              className="text-[1.0625rem] leading-[1.8] text-text-secondary"
+            >
+              {finding.text}
+            </p>
           ))}
         </div>
       </Section>
@@ -378,17 +361,17 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
           </Prose>
         )}
         <div className="mt-6 overflow-x-auto rounded-2xl border border-border">
-          <table className="w-full font-mono text-sm">
+          <table className="w-full text-sm">
             <tbody>
               <tr className="border-b border-border/50">
-                <td className="px-4 py-3 text-text-tertiary">Price</td>
-                <td className="px-4 py-3 text-right text-text-primary">
+                <td className="px-5 py-3.5 text-text-tertiary">Price</td>
+                <td className="px-5 py-3.5 text-right font-mono text-text-primary">
                   {formatPrice(token.market.price)}
                 </td>
               </tr>
               <tr className="border-b border-border/50">
-                <td className="px-4 py-3 text-text-tertiary">Market cap</td>
-                <td className="px-4 py-3 text-right text-text-primary">
+                <td className="px-5 py-3.5 text-text-tertiary">Market cap</td>
+                <td className="px-5 py-3.5 text-right font-mono text-text-primary">
                   {formatUsd(token.market.market_cap)}
                   {token.market.market_cap_rank !== null && (
                     <span className="ml-2 text-text-tertiary">
@@ -399,8 +382,8 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
               </tr>
               {token.drawdown.ath !== null && (
                 <tr className="border-b border-border/50">
-                  <td className="px-4 py-3 text-text-tertiary">All-time high</td>
-                  <td className="px-4 py-3 text-right text-text-primary">
+                  <td className="px-5 py-3.5 text-text-tertiary">All-time high</td>
+                  <td className="px-5 py-3.5 text-right font-mono text-text-primary">
                     {formatPrice(token.drawdown.ath)}
                     {token.drawdown.ath_date && (
                       <span className="ml-2 text-text-tertiary">
@@ -411,8 +394,8 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
                 </tr>
               )}
               <tr className="border-b border-border/50">
-                <td className="px-4 py-3 text-text-tertiary">Circulating supply</td>
-                <td className="px-4 py-3 text-right text-text-primary">
+                <td className="px-5 py-3.5 text-text-tertiary">Circulating supply</td>
+                <td className="px-5 py-3.5 text-right font-mono text-text-primary">
                   {token.dilution.circulating_supply === null
                     ? "not published"
                     : token.dilution.circulating_supply.toLocaleString("en-US", {
@@ -421,10 +404,10 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
                 </td>
               </tr>
               <tr className="border-b border-border/50">
-                <td className="px-4 py-3 text-text-tertiary">
+                <td className="px-5 py-3.5 text-text-tertiary">
                   Eventual supply ({token.dilution.basis.replace("_", " ")})
                 </td>
-                <td className="px-4 py-3 text-right text-text-primary">
+                <td className="px-5 py-3.5 text-right font-mono text-text-primary">
                   {token.dilution.eventual_supply === null
                     ? "uncapped"
                     : token.dilution.eventual_supply.toLocaleString("en-US", {
@@ -433,21 +416,21 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
                 </td>
               </tr>
               <tr className="border-b border-border/50">
-                <td className="px-4 py-3 text-text-tertiary">Dilution to full supply</td>
-                <td className="px-4 py-3 text-right text-text-primary">
+                <td className="px-5 py-3.5 text-text-tertiary">Dilution to full supply</td>
+                <td className="px-5 py-3.5 text-right font-mono text-text-primary">
                   {token.dilution.dilution_x === null ? "n/a" : `${token.dilution.dilution_x}x`}
                 </td>
               </tr>
               {token.tvl.tvl !== null && token.tvl.tvl > 0 && (
                 <tr className="border-b border-border/50">
-                  <td className="px-4 py-3 text-text-tertiary">Total value locked</td>
-                  <td className="px-4 py-3 text-right text-text-primary">{formatUsd(token.tvl.tvl)}</td>
+                  <td className="px-5 py-3.5 text-text-tertiary">Total value locked</td>
+                  <td className="px-5 py-3.5 text-right font-mono text-text-primary">{formatUsd(token.tvl.tvl)}</td>
                 </tr>
               )}
               {token.where_to_buy.length > 0 && (
                 <tr>
-                  <td className="px-4 py-3 text-text-tertiary">Listed on</td>
-                  <td className="px-4 py-3 text-right text-text-secondary">
+                  <td className="px-5 py-3.5 text-text-tertiary">Listed on</td>
+                  <td className="px-5 py-3.5 text-right font-mono text-text-secondary">
                     {token.where_to_buy.join(", ")}
                   </td>
                 </tr>
@@ -468,7 +451,8 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
                 CoinGecko
               </a>
               , fetched {marketAsOf}. The 25 scores come from the research pass dated{" "}
-              {formatDate(meta.source_updated_at)} and don&apos;t move with price.
+              {formatDate(meta.source_updated_at)}{" "}
+              and don&apos;t move with price.
             </>
           ) : (
             <>
@@ -571,7 +555,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
 
       <Section divider>
         <EyebrowLabel>Keep reading</EyebrowLabel>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {token.opportunity_slug && (
             <Link
               href={`/opportunities/${token.opportunity_slug}`}

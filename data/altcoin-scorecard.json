@@ -405,7 +405,7 @@
       "prev_score": 183,
       "verdict": "HOLD CORE",
       "verdict_color": "green",
-      "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. unbeaten store-of-value thesis with sovereign adoption accelerating.",
+      "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. Unbeaten store-of-value thesis with sovereign adoption accelerating.",
       "key_catalyst": "Spot ETF inflows accelerating past $120B AUM; multiple sovereign wealth funds entering",
       "key_risk": "Regulatory crackdown on self-custody; long-term quantum computing threat",
       "max_supply": 21000000,
@@ -14386,11 +14386,11 @@
     {
       "symbol": "BONK",
       "name": "Bonk",
-      "price": 0.000006042,
+      "price": 6.042e-06,
       "change_24h": -2.99,
       "market_cap": 524452751,
       "rank": 65,
-      "ath": 0.0000594,
+      "ath": 5.94e-05,
       "ath_distance_pct": -89.55,
       "tvl": 0,
       "circ_supply_pct": 68,
@@ -14457,7 +14457,7 @@
           "url": "https://www.coingecko.com/en/coins/bonk"
         }
       ],
-      "current_price_usd": 0.0000059,
+      "current_price_usd": 5.9e-06,
       "price_updated_at": "2026-05-23T14:15:00Z",
       "token_standard": "SPL",
       "chain": "Solana",
@@ -14831,11 +14831,11 @@
     {
       "symbol": "PEPE",
       "name": "Pepe",
-      "price": 0.000003658,
+      "price": 3.658e-06,
       "change_24h": -3.79,
       "market_cap": 1489476076,
       "rank": 30,
-      "ath": 0.0000278,
+      "ath": 2.78e-05,
       "ath_distance_pct": -86.44,
       "tvl": 0,
       "circ_supply_pct": 94,
@@ -14902,7 +14902,7 @@
           "url": "https://etherscan.io/token/0x6982508145454ce325ddbe47a25d4ec3d2311933"
         }
       ],
-      "current_price_usd": 0.00000354,
+      "current_price_usd": 3.54e-06,
       "price_updated_at": "2026-05-23T14:15:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
@@ -15975,7 +15975,7 @@
     {
       "symbol": "FLOKI",
       "name": "FLOKI",
-      "price": 0.00002929,
+      "price": 2.929e-05,
       "change_24h": -4.5,
       "market_cap": 280830217,
       "rank": 103,
@@ -16046,7 +16046,7 @@
           "url": "https://www.coindesk.com/markets/2025/floki-etf-asia"
         }
       ],
-      "current_price_usd": 0.00002871,
+      "current_price_usd": 2.871e-05,
       "price_updated_at": "2026-05-23T14:15:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
@@ -16364,8 +16364,8 @@
         "Gate.io"
       ],
       "one_liner": "Decentralized mobile data marketplace. eSIM and data trading.",
-      "price": 0.000038,
-      "current_price_usd": 0.000038,
+      "price": 3.8e-05,
+      "current_price_usd": 3.8e-05,
       "circulating_supply": 95654960452.73587,
       "total_supply": 100000000000,
       "max_supply": null,
@@ -17923,8 +17923,8 @@
         "KuCoin"
       ],
       "one_liner": "Decentralized file sharing incentive token on TRON/BitTorrent network.",
-      "price": 5e-7,
-      "current_price_usd": 5e-7,
+      "price": 5e-07,
+      "current_price_usd": 5e-07,
       "circulating_supply": 987037885840674.8,
       "total_supply": 990000000000000,
       "max_supply": 990000000000000,
@@ -17932,7 +17932,7 @@
       "fully_diluted_valuation": 317404127,
       "verdict_color": "red",
       "prev_score": 0,
-      "ath": 0.00000343,
+      "ath": 3.43e-06,
       "ath_distance_pct": -90.7,
       "change_24h": 0.2,
       "volume_24h": 6814436,
@@ -18471,11 +18471,11 @@
     {
       "symbol": "SHIB",
       "name": "Shiba Inu",
-      "price": 0.0000135,
+      "price": 1.35e-05,
       "change_24h": 0.5,
       "market_cap": 3252397157,
       "rank": 25,
-      "ath": 0.00008845,
+      "ath": 8.845e-05,
       "ath_distance_pct": -84.7,
       "tvl": 28000000,
       "circ_supply_pct": 100,
@@ -18542,7 +18542,7 @@
           "url": "https://defillama.com"
         }
       ],
-      "current_price_usd": 0.00000558,
+      "current_price_usd": 5.58e-06,
       "price_updated_at": "2026-05-23T14:15:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",
@@ -19391,7 +19391,7 @@
           "url": "https://coingecko.com/en/coins/dogs"
         }
       ],
-      "current_price_usd": 0.0000511,
+      "current_price_usd": 5.11e-05,
       "price_updated_at": "2026-05-23T14:15:00Z",
       "token_standard": "TON",
       "chain": "TON",
@@ -19618,7 +19618,7 @@
           "url": "https://coingecko.com/en/coins/neiro"
         }
       ],
-      "current_price_usd": 0.0000937,
+      "current_price_usd": 9.37e-05,
       "price_updated_at": "2026-05-23T14:15:00Z",
       "token_standard": "ERC-20",
       "chain": "Ethereum",

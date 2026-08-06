@@ -730,6 +730,42 @@ function groupBy(records, selector, kind, minSize) {
 
 // ---- Main -----------------------------------------------------------------
 
+/**
+ * Computes every universe-wide statistic a token record needs: per-variable
+ * distributions, per-variable ranks, composite ranks and the mean-centred
+ * similarity vectors. Split out of main to keep each function inside the
+ * 60-line rule.
+ */
+function buildContext(tokens, extras) {
+  if (!Array.isArray(tokens) || tokens.length === 0) throw new Error("tokens required");
+  if (!extras || typeof extras !== "object") throw new Error("extras required");
+
+  const varStats = buildVariableStats(tokens);
+  const varRanks = Object.create(null);
+  for (let v = 0; v < VARIABLES.length; v += 1) {
+    varRanks[VARIABLES[v].key] = rankByVariable(tokens, VARIABLES[v].key);
+  }
+  const vectors = Object.create(null);
+  for (let i = 0; i < tokens.length && i < MAX_TOKENS; i += 1) {
+    vectors[tokens[i].symbol] = centredVector(tokens[i]);
+  }
+
+  return {
+    varStats,
+    varRanks,
+    scoreRanks: rankByScore(tokens),
+    scoresAsc: tokens.map((t) => t.score).sort((a, b) => a - b),
+    universe: tokens.length,
+    vectors,
+    tokens,
+    oppLinks: extras.oppLinks,
+    market: extras.market.tokens,
+    marketFetchedAt: extras.market.fetched_at,
+    deadUrls: extras.urlReport.dead,
+    today: new Date(),
+  };
+}
+
 function main() {
   const source = loadScorecard();
   const oppLinks = loadOpportunityLinks();
@@ -740,39 +776,22 @@ function main() {
     throw new Error(`only ${tokens.length} tokens carry a complete 25-variable vector`);
   }
 
-  const varStats = buildVariableStats(tokens);
-  const varRanks = Object.create(null);
-  for (let v = 0; v < VARIABLES.length; v += 1) {
-    varRanks[VARIABLES[v].key] = rankByVariable(tokens, VARIABLES[v].key);
-  }
-  const scoreRanks = rankByScore(tokens);
-  const scoresAsc = tokens.map((t) => t.score).sort((a, b) => a - b);
-
-  const vectors = Object.create(null);
-  for (let i = 0; i < tokens.length && i < MAX_TOKENS; i += 1) {
-    vectors[tokens[i].symbol] = centredVector(tokens[i]);
-  }
-
-  const context = {
-    varStats,
-    varRanks,
-    scoreRanks,
-    scoresAsc,
-    universe: tokens.length,
-    vectors,
-    tokens,
-    oppLinks,
-    market: market.tokens,
-    marketFetchedAt: market.fetched_at,
-    deadUrls: urlReport.dead,
-    today: new Date(),
-  };
-
+  const context = buildContext(tokens, { oppLinks, market, urlReport });
+  const scoresAsc = context.scoresAsc;
+  const varStats = context.varStats;
   const records = tokens.map((token) => buildTokenRecord(token, context));
   records.sort((a, b) => a.rank_overall - b.rank_overall);
 
-  const verdictGroups = groupBy(records, (r) => r.verdict, "verdict", 1);
-  const chainGroups = groupBy(records, (r) => r.chain ?? "", "chain", 3);
+  const output = buildOutput({ source, market, urlReport, records, varStats, scoresAsc });
+  writeFileSync(OUT_PATH, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+  report(records);
+}
+
+/** Assembles the published file. Split out of main for the 60-line rule. */
+function buildOutput(parts) {
+  if (!parts || !Array.isArray(parts.records)) throw new Error("records required");
+  if (!parts.varStats || !Array.isArray(parts.scoresAsc)) throw new Error("stats required");
+  const { source, market, urlReport, records, varStats, scoresAsc } = parts;
 
   const publishedVars = VARIABLES.map((meta) => ({
     key: meta.key,
@@ -785,7 +804,7 @@ function main() {
     histogram: varStats[meta.key].histogram,
   }));
 
-  const output = {
+  return {
     generated_at: new Date().toISOString(),
     source_updated_at: source.updated_at ?? null,
     citation_links: {
@@ -805,10 +824,17 @@ function main() {
     score_range: { min: scoresAsc[0], max: scoresAsc[scoresAsc.length - 1] },
     variables: publishedVars,
     tokens: records,
-    groups: { verdict: verdictGroups, chain: chainGroups },
+    groups: {
+      verdict: groupBy(records, (r) => r.verdict, "verdict", 1),
+      chain: groupBy(records, (r) => r.chain ?? "", "chain", 3),
+    },
   };
+}
 
-  writeFileSync(OUT_PATH, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+/** Prints the build summary. */
+function report(records) {
+  if (!Array.isArray(records)) throw new Error("records required");
+  if (records.length === 0) throw new Error("records empty");
   const withDeepDive = records.filter((r) => r.opportunity_slug !== null).length;
   const withMarket = records.filter((r) => r.market.source === "coingecko").length;
   const deadCites = records.reduce((sum, r) => sum + r.citations.filter((c) => !c.link_ok).length, 0);
@@ -816,9 +842,9 @@ function main() {
   process.stdout.write(
     [
       `universe          ${records.length} tokens`,
-      `variables         ${publishedVars.length}`,
-      `verdict hubs      ${verdictGroups.length}`,
-      `chain hubs        ${chainGroups.length}`,
+      `variables         ${VARIABLES.length}`,
+      `verdict hubs      ${new Set(records.map((r) => r.verdict)).size}`,
+      `chain hubs        ${groupBy(records, (r) => r.chain ?? "", "chain", 3).length}`,
       `deep-dive links   ${withDeepDive}`,
       `live market rows  ${withMarket}`,
       `dead cite links   ${deadCites} suppressed`,

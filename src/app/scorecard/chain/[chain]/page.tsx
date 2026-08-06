@@ -63,7 +63,6 @@ export default async function ChainHubPage({ params }: PageParams) {
     <ScorecardGroupHub
       group={group}
       kindPath="chain"
-      kindLabel="Chain"
       title={`${group.name} tokens by fundamentals`}
       lead={`The ${group.count} ${group.name} tokens carrying a full 25-variable score, ranked against the whole ${meta.universe_size}-token universe.`}
       intro={intro}

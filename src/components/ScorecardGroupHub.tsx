@@ -14,8 +14,6 @@ interface Props {
   readonly group: ScorecardGroup;
   /** Path segment under /scorecard, either "verdict" or "chain". */
   readonly kindPath: string;
-  /** Human label for the breadcrumb, e.g. "Verdict". */
-  readonly kindLabel: string;
   /** Page title, e.g. "Tokens rated PASS". */
   readonly title: string;
   /** One-sentence lead under the title. */
@@ -44,7 +42,6 @@ function verdictTone(color: string): string {
 export default function ScorecardGroupHub({
   group,
   kindPath,
-  kindLabel,
   title,
   lead,
   intro,
@@ -92,9 +89,7 @@ export default function ScorecardGroupHub({
           Scorecard
         </Link>
         <span className="px-2">/</span>
-        <span className="text-text-secondary">
-          {kindLabel}: {group.name}
-        </span>
+        <span className="text-text-secondary">{group.name}</span>
       </nav>
 
       <PageHeader
