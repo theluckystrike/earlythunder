@@ -51,6 +51,13 @@ export function formatPrice(value: number | null | undefined): string {
   return `$${value.toFixed(6)}`;
 }
 
+/** Recovery multiple with a thousands separator. "1.9x", "25,000x". */
+export function formatMultiple(value: number | null | undefined): string {
+  if (value === null || value === undefined || !Number.isFinite(value)) return "n/a";
+  if (value >= 1000) return `${Math.round(value).toLocaleString("en-US")}x`;
+  return `${value}x`;
+}
+
 /** ISO date rendered as "27 Jul 2026". Empty string when unparseable. */
 export function formatDate(iso: string | null | undefined): string {
   if (typeof iso !== "string" || iso.length < 10) return "";
@@ -166,7 +173,7 @@ export function buildFindings(token: ScorecardToken): readonly Finding[] {
       label: "Distance from the high",
       text:
         `${token.symbol} trades ${Math.abs(distance)}% below its all-time high of ${formatPrice(ath)}. ` +
-        `Recovering that level is a ${recovery}x move, not a ${Math.abs(distance)}% one, which is the ` +
+        `Recovering that level is a ${formatMultiple(recovery)} move, not a ${Math.abs(distance)}% one, which is the ` +
         `arithmetic most drawdown charts hide.`,
     });
   } else if (distance !== null && recovery !== null) {
@@ -174,7 +181,7 @@ export function buildFindings(token: ScorecardToken): readonly Finding[] {
       label: "Distance from the high",
       text:
         `${token.symbol} is ${Math.abs(distance)}% off its all-time high of ${formatPrice(ath)}, ` +
-        `a ${recovery}x round trip from here.`,
+        `a ${formatMultiple(recovery)} round trip from here.`,
     });
   }
 
@@ -266,7 +273,7 @@ export function buildFaqs(token: ScorecardToken): readonly Faq[] {
       question: `How far is ${token.symbol} from its all-time high?`,
       answer:
         `${token.symbol} trades ${Math.abs(distance)}% below its all-time high of ${formatPrice(ath)}. ` +
-        `Returning to that high requires a ${recovery}x move from the level used in this scoring pass.`,
+        `Returning to that high requires a ${formatMultiple(recovery)} move from the level used in this scoring pass.`,
     });
   }
 

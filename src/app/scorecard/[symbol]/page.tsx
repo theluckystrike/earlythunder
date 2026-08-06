@@ -19,6 +19,7 @@ import {
   formatUsd,
   formatPrice,
   formatDate,
+  formatMultiple,
 } from "@/lib/scorecard-insight";
 import { getBreadcrumbListSchema, getFaqPageSchema } from "@/lib/structured-data";
 
@@ -271,7 +272,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
           <Stat
             label="Off all-time high"
             value={token.drawdown.distance_pct === null ? "n/a" : `${token.drawdown.distance_pct}%`}
-            note={token.drawdown.recovery_x === null ? undefined : `${token.drawdown.recovery_x}x to recover`}
+            note={token.drawdown.recovery_x === null ? undefined : `${formatMultiple(token.drawdown.recovery_x)} to recover`}
           />
         </div>
         <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">

@@ -463,16 +463,27 @@ function buildDrawdown(token, live) {
   // themselves wrong (BTC was carried at $111,814 against a real $126,080).
   // Without a live row we publish nothing rather than a stale contradiction.
   if (!live) return { ath: null, ath_date: null, distance_pct: null, recovery_x: null };
-  const distance = Number.isFinite(live.ath_change_pct) ? live.ath_change_pct : null;
+  const raw = Number.isFinite(live.ath_change_pct) ? live.ath_change_pct : null;
   const ath = Number.isFinite(live.ath) ? live.ath : null;
-  if (distance === null || ath === null || distance >= 0 || distance <= -100) {
-    return { ath, ath_date: live.ath_date ?? null, distance_pct: round(distance, 1), recovery_x: null };
+  if (raw === null || ath === null || raw >= 0 || raw <= -100) {
+    return { ath, ath_date: live.ath_date ?? null, distance_pct: round(raw, 1), recovery_x: null };
+  }
+  // Deep drawdowns need more precision than one decimal. A token down 99.9959%
+  // rounds to a flat -100%, which reads as "worth nothing" and, worse, made the
+  // recovery multiple derived from the raw value look unrelated to the figure
+  // printed beside it. Both numbers are now taken from the same rounded value,
+  // so the page can never state a drawdown its own multiple contradicts.
+  const places = raw <= -99.9 ? 3 : raw <= -99 ? 2 : 1;
+  const distance = round(raw, places);
+  const remaining = 100 + distance;
+  if (remaining <= 0) {
+    return { ath, ath_date: live.ath_date ?? null, distance_pct: distance, recovery_x: null };
   }
   return {
     ath,
     ath_date: live.ath_date ?? null,
-    distance_pct: round(distance, 1),
-    recovery_x: round(100 / (100 + distance), 1),
+    distance_pct: distance,
+    recovery_x: round(100 / remaining, 1),
   };
 }
 

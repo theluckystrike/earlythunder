@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T16:37:46.882Z",
+  "generated_at": "2026-08-06T16:46:16.573Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "citation_links": {
     "checked_at": "2026-08-06T15:55:12.849Z",
@@ -4348,7 +4348,7 @@
         "ath": 44.92,
         "ath_date": "2021-05-02T21:25:04.000Z",
         "distance_pct": -90.8,
-        "recovery_x": 10.8
+        "recovery_x": 10.9
       },
       "tvl": {
         "tvl": 2770000000,
@@ -4892,7 +4892,7 @@
         "ath": 2.22,
         "ath_date": "2022-03-28T08:24:17.000Z",
         "distance_pct": -95.3,
-        "recovery_x": 21.1
+        "recovery_x": 21.3
       },
       "tvl": {
         "tvl": 367283,
@@ -5798,7 +5798,7 @@
         "ath": 8.53,
         "ath_date": "2024-03-27T15:14:46.000Z",
         "distance_pct": -95.8,
-        "recovery_x": 23.6
+        "recovery_x": 23.8
       },
       "tvl": {
         "tvl": 7800000000,
@@ -9224,8 +9224,8 @@
       "drawdown": {
         "ath": 146.94,
         "ath_date": "2021-04-05T13:48:37.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 803.4
+        "distance_pct": -99.88,
+        "recovery_x": 833.3
       },
       "tvl": {
         "tvl": 88300000,
@@ -9640,7 +9640,7 @@
         "ath": 2,
         "ath_date": "2024-01-31T07:02:47.000Z",
         "distance_pct": -90.9,
-        "recovery_x": 10.9
+        "recovery_x": 11
       },
       "tvl": {
         "tvl": 2940000000,
@@ -10154,7 +10154,7 @@
         "ath": 0.487663,
         "ath_date": "2024-11-09T20:55:48.000Z",
         "distance_pct": -96.4,
-        "recovery_x": 27.9
+        "recovery_x": 27.8
       },
       "tvl": {
         "tvl": 380000000,
@@ -10959,7 +10959,7 @@
         "ath": 7.3,
         "ath_date": "2021-08-20T00:35:20.000Z",
         "distance_pct": -96,
-        "recovery_x": 24.7
+        "recovery_x": 25
       },
       "tvl": {
         "tvl": 21500000000,
@@ -11354,7 +11354,7 @@
         "ath": 24.4,
         "ath_date": "2021-06-16T12:02:32.000Z",
         "distance_pct": -95.1,
-        "recovery_x": 20.3
+        "recovery_x": 20.4
       },
       "tvl": {
         "tvl": 726380000,
@@ -13016,8 +13016,8 @@
       "drawdown": {
         "ath": 2.6,
         "ath_date": "2024-11-08T17:41:24.000Z",
-        "distance_pct": -99.5,
-        "recovery_x": 215.9
+        "distance_pct": -99.54,
+        "recovery_x": 217.4
       },
       "tvl": {
         "tvl": 520000000,
@@ -14281,7 +14281,7 @@
         "ath": 15.37,
         "ath_date": "2020-08-13T16:00:00.000Z",
         "distance_pct": -98.6,
-        "recovery_x": 72
+        "recovery_x": 71.4
       },
       "tvl": {
         "tvl": 3200000000,
@@ -14685,7 +14685,7 @@
         "ath": 89.24,
         "ath_date": "2021-11-04T20:14:42.000Z",
         "distance_pct": -98,
-        "recovery_x": 49.4
+        "recovery_x": 50
       },
       "tvl": {
         "tvl": 65000000000,
@@ -15074,7 +15074,7 @@
         "ath": 52.62,
         "ath_date": "2024-03-14T07:06:22.000Z",
         "distance_pct": -91.2,
-        "recovery_x": 11.3
+        "recovery_x": 11.4
       },
       "tvl": {
         "tvl": 95000000,
@@ -15473,7 +15473,7 @@
         "ath": 0.247842,
         "ath_date": "2024-12-15T08:45:25.000Z",
         "distance_pct": -92.6,
-        "recovery_x": 13.4
+        "recovery_x": 13.5
       },
       "tvl": {
         "tvl": 3200000000,
@@ -16008,7 +16008,7 @@
         "ath": 144.96,
         "ath_date": "2021-11-21T06:18:56.000Z",
         "distance_pct": -95.6,
-        "recovery_x": 22.5
+        "recovery_x": 22.7
       },
       "tvl": {
         "tvl": 479700000,
@@ -16566,7 +16566,7 @@
         "ath": 83.4,
         "ath_date": "2021-11-10T18:20:01.000Z",
         "distance_pct": -94.9,
-        "recovery_x": 19.8
+        "recovery_x": 19.6
       },
       "tvl": {
         "tvl": 0,
@@ -16964,7 +16964,7 @@
         "ath": 1.69,
         "ath_date": "2024-12-06T05:25:33.000Z",
         "distance_pct": -97.7,
-        "recovery_x": 43.2
+        "recovery_x": 43.5
       },
       "tvl": {
         "tvl": 180000000,
@@ -17339,7 +17339,7 @@
         "ath": 20.44,
         "ath_date": "2022-01-16T14:09:45.000Z",
         "distance_pct": -91.8,
-        "recovery_x": 12.1
+        "recovery_x": 12.2
       },
       "tvl": {
         "tvl": 117000000,
@@ -17752,7 +17752,7 @@
         "ath": 78.62,
         "ath_date": "2024-07-19T23:01:55.000Z",
         "distance_pct": -95.5,
-        "recovery_x": 22.4
+        "recovery_x": 22.2
       },
       "tvl": {
         "tvl": 0,
@@ -18530,7 +18530,7 @@
         "ath": 2.39,
         "ath_date": "2024-01-12T04:29:59.000Z",
         "distance_pct": -96.7,
-        "recovery_x": 30.4
+        "recovery_x": 30.3
       },
       "tvl": {
         "tvl": 2200000000,
@@ -18930,7 +18930,7 @@
         "ath": 6.01,
         "ath_date": "2023-12-07T08:04:48.000Z",
         "distance_pct": -91.9,
-        "recovery_x": 12.4
+        "recovery_x": 12.3
       },
       "tvl": {
         "tvl": 2800000000,
@@ -19356,7 +19356,7 @@
         "ath": 3.56,
         "ath_date": "2024-04-22T23:10:17.000Z",
         "distance_pct": -97.5,
-        "recovery_x": 40.6
+        "recovery_x": 40
       },
       "tvl": {
         "tvl": 110000000000,
@@ -19780,8 +19780,8 @@
       "drawdown": {
         "ath": 28.53,
         "ath_date": "2021-02-13T17:12:38.000Z",
-        "distance_pct": -99.2,
-        "recovery_x": 132.9
+        "distance_pct": -99.25,
+        "recovery_x": 133.3
       },
       "tvl": {
         "tvl": 210000000,
@@ -20185,7 +20185,7 @@
         "ath": 16.83,
         "ath_date": "2021-09-12T12:20:23.000Z",
         "distance_pct": -96.3,
-        "recovery_x": 27.2
+        "recovery_x": 27
       },
       "tvl": {
         "tvl": 1000000000,
@@ -20579,7 +20579,7 @@
         "ath": 8.47,
         "ath_date": "2024-01-02T22:34:54.000Z",
         "distance_pct": -99.7,
-        "recovery_x": 329.8
+        "recovery_x": 333.3
       },
       "tvl": {
         "tvl": 28000000,
@@ -20967,7 +20967,7 @@
         "ath": 8.07,
         "ath_date": "2021-04-06T10:59:48.000Z",
         "distance_pct": -93.9,
-        "recovery_x": 16.5
+        "recovery_x": 16.4
       },
       "tvl": {
         "tvl": 0,
@@ -22640,7 +22640,7 @@
         "ath": 14.83,
         "ath_date": "2025-02-06T06:16:01.000Z",
         "distance_pct": -98.9,
-        "recovery_x": 92.4
+        "recovery_x": 90.9
       },
       "tvl": {
         "tvl": 850000000,
@@ -24351,7 +24351,7 @@
         "ath": 4.84,
         "ath_date": "2024-03-06T00:35:50.000Z",
         "distance_pct": -98.2,
-        "recovery_x": 55.7
+        "recovery_x": 55.6
       },
       "tvl": {
         "tvl": 780000000,
@@ -25169,7 +25169,7 @@
         "ath": 43.96,
         "ath_date": "2021-04-30T02:08:22.000Z",
         "distance_pct": -96.8,
-        "recovery_x": 31.4
+        "recovery_x": 31.2
       },
       "tvl": {
         "tvl": 1500000000,
@@ -25560,7 +25560,7 @@
         "ath": 99.03,
         "ath_date": "2021-11-09T08:58:44.000Z",
         "distance_pct": -98.7,
-        "recovery_x": 77.7
+        "recovery_x": 76.9
       },
       "tvl": {
         "tvl": 0,
@@ -26309,7 +26309,7 @@
         "ath": 20.33,
         "ath_date": "2021-10-02T12:14:11.000Z",
         "distance_pct": -94.7,
-        "recovery_x": 18.8
+        "recovery_x": 18.9
       },
       "tvl": {
         "tvl": 0,
@@ -26687,8 +26687,8 @@
       "drawdown": {
         "ath": 54.88,
         "ath_date": "2021-11-12T15:08:25.000Z",
-        "distance_pct": -99.7,
-        "recovery_x": 301
+        "distance_pct": -99.67,
+        "recovery_x": 303
       },
       "tvl": {
         "tvl": 0,
@@ -27085,8 +27085,8 @@
       "drawdown": {
         "ath": 2.84,
         "ath_date": "2021-02-11T23:28:45.000Z",
-        "distance_pct": -99.5,
-        "recovery_x": 196.3
+        "distance_pct": -99.49,
+        "recovery_x": 196.1
       },
       "tvl": {
         "tvl": 0,
@@ -27902,7 +27902,7 @@
         "ath": 0.407515,
         "ath_date": "2024-12-13T00:25:28.000Z",
         "distance_pct": -95.6,
-        "recovery_x": 22.6
+        "recovery_x": 22.7
       },
       "tvl": {
         "tvl": 180000000,
@@ -28292,7 +28292,7 @@
         "ath": 0.804715,
         "ath_date": "2024-03-02T15:15:27.000Z",
         "distance_pct": -99,
-        "recovery_x": 96.7
+        "recovery_x": 100
       },
       "tvl": {
         "tvl": 0,
@@ -29069,7 +29069,7 @@
         "ath": 1.52,
         "ath_date": "2024-04-11T05:15:15.000Z",
         "distance_pct": -93.9,
-        "recovery_x": 16.5
+        "recovery_x": 16.4
       },
       "tvl": {
         "tvl": 4200000000,
@@ -29500,7 +29500,7 @@
         "ath": 20.85,
         "ath_date": "2024-02-10T06:30:02.000Z",
         "distance_pct": -98.4,
-        "recovery_x": 63
+        "recovery_x": 62.5
       },
       "tvl": {
         "tvl": 0,
@@ -29889,7 +29889,7 @@
         "ath": 0.878633,
         "ath_date": "2021-03-13T00:04:21.000Z",
         "distance_pct": -98.5,
-        "recovery_x": 67.7
+        "recovery_x": 66.7
       },
       "tvl": {
         "tvl": 0,
@@ -30275,7 +30275,7 @@
         "ath": 854.45,
         "ath_date": "2021-05-11T16:00:00.000Z",
         "distance_pct": -98.1,
-        "recovery_x": 52.5
+        "recovery_x": 52.6
       },
       "tvl": {
         "tvl": 1900000000,
@@ -30664,7 +30664,7 @@
         "ath": 28,
         "ath_date": "2024-03-17T21:26:22.000Z",
         "distance_pct": -99.1,
-        "recovery_x": 110.6
+        "recovery_x": 111.1
       },
       "tvl": {
         "tvl": 0,
@@ -31033,7 +31033,7 @@
         "ath": 1.64,
         "ath_date": "2021-10-08T16:00:00.000Z",
         "distance_pct": -98.9,
-        "recovery_x": 88.1
+        "recovery_x": 90.9
       },
       "tvl": {
         "tvl": 0,
@@ -31789,7 +31789,7 @@
         "ath": 3.86,
         "ath_date": "2024-04-01T04:34:58.000Z",
         "distance_pct": -96.6,
-        "recovery_x": 29.1
+        "recovery_x": 29.4
       },
       "tvl": {
         "tvl": 42000000,
@@ -32177,8 +32177,8 @@
       "drawdown": {
         "ath": 1.78,
         "ath_date": "2021-11-15T05:44:18.000Z",
-        "distance_pct": -99.4,
-        "recovery_x": 157.3
+        "distance_pct": -99.36,
+        "recovery_x": 156.2
       },
       "tvl": {
         "tvl": 0,
@@ -32575,7 +32575,7 @@
         "ath": 9.52,
         "ath_date": "2021-11-25T17:03:01.000Z",
         "distance_pct": -98.8,
-        "recovery_x": 85.7
+        "recovery_x": 83.3
       },
       "tvl": {
         "tvl": 52000000,
@@ -33360,7 +33360,7 @@
         "ath": 4.14,
         "ath_date": "2022-04-01T16:00:00.000Z",
         "distance_pct": -96.9,
-        "recovery_x": 32.7
+        "recovery_x": 32.3
       },
       "tvl": {
         "tvl": 0,
@@ -33729,7 +33729,7 @@
         "ath": 5.09,
         "ath_date": "2021-11-21T06:27:00.000Z",
         "distance_pct": -99.5,
-        "recovery_x": 200.6
+        "recovery_x": 200
       },
       "tvl": {
         "tvl": 0,
@@ -34135,7 +34135,7 @@
         "ath": 19.92,
         "ath_date": "2023-01-26T06:25:17.000Z",
         "distance_pct": -97,
-        "recovery_x": 33.8
+        "recovery_x": 33.3
       },
       "tvl": {
         "tvl": 890000000,
@@ -35362,7 +35362,7 @@
         "ath": 1.029,
         "ath_date": "2025-01-04T13:35:44.000Z",
         "distance_pct": -97.9,
-        "recovery_x": 46.5
+        "recovery_x": 47.6
       },
       "tvl": {
         "tvl": 185000000,
@@ -36589,7 +36589,7 @@
         "ath": 0.207411,
         "ath_date": "2024-07-31T16:40:47.000Z",
         "distance_pct": -87.7,
-        "recovery_x": 8.2
+        "recovery_x": 8.1
       },
       "tvl": {
         "tvl": 0,
@@ -37404,7 +37404,7 @@
         "ath": 0.569229,
         "ath_date": "2021-09-15T02:40:28.000Z",
         "distance_pct": -87.9,
-        "recovery_x": 8.2
+        "recovery_x": 8.3
       },
       "tvl": {
         "tvl": 0,
@@ -37783,7 +37783,7 @@
         "ath": 2.23,
         "ath_date": "2024-04-08T07:35:40.000Z",
         "distance_pct": -98.6,
-        "recovery_x": 72.3
+        "recovery_x": 71.4
       },
       "tvl": {
         "tvl": 0,
@@ -38983,8 +38983,8 @@
       "drawdown": {
         "ath": 3.46,
         "ath_date": "2021-10-27T21:19:39.000Z",
-        "distance_pct": -99.2,
-        "recovery_x": 119.7
+        "distance_pct": -99.16,
+        "recovery_x": 119
       },
       "tvl": {
         "tvl": 0,
@@ -40250,7 +40250,7 @@
         "ath": 5.7,
         "ath_date": "2022-04-28T16:29:36.000Z",
         "distance_pct": -98.2,
-        "recovery_x": 55.5
+        "recovery_x": 55.6
       },
       "tvl": {
         "tvl": 0,
@@ -40656,7 +40656,7 @@
         "ath": 3.45,
         "ath_date": "2024-03-28T09:21:18.000Z",
         "distance_pct": -96,
-        "recovery_x": 25.3
+        "recovery_x": 25
       },
       "tvl": {
         "tvl": 0,
@@ -41073,7 +41073,7 @@
         "ath": 4.52,
         "ath_date": "2024-03-07T14:19:11.000Z",
         "distance_pct": -97.4,
-        "recovery_x": 38.9
+        "recovery_x": 38.5
       },
       "tvl": {
         "tvl": 380000000,
@@ -41461,8 +41461,8 @@
       "drawdown": {
         "ath": 21.45,
         "ath_date": "2021-12-01T18:18:45.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 573.4
+        "distance_pct": -99.83,
+        "recovery_x": 588.2
       },
       "tvl": {
         "tvl": 0,
@@ -41868,7 +41868,7 @@
         "ath": 6.43,
         "ath_date": "2024-06-12T13:14:55.000Z",
         "distance_pct": -98.1,
-        "recovery_x": 52.3
+        "recovery_x": 52.6
       },
       "tvl": {
         "tvl": 0,
@@ -42255,8 +42255,8 @@
       "drawdown": {
         "ath": 24.4,
         "ath_date": "2021-08-30T07:06:09.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 1245.2
+        "distance_pct": -99.92,
+        "recovery_x": 1250
       },
       "tvl": {
         "tvl": 0,
@@ -42625,7 +42625,7 @@
         "ath": 3.81,
         "ath_date": "2021-03-27T17:39:34.000Z",
         "distance_pct": -98.8,
-        "recovery_x": 83.8
+        "recovery_x": 83.3
       },
       "tvl": {
         "tvl": 0,
@@ -43003,8 +43003,8 @@
       "drawdown": {
         "ath": 2066.2,
         "ath_date": "2021-03-20T11:33:19.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 1051.7
+        "distance_pct": -99.905,
+        "recovery_x": 1052.6
       },
       "tvl": {
         "tvl": 0,
@@ -44185,7 +44185,7 @@
         "ath": 5.65,
         "ath_date": "2024-12-16T19:45:30.000Z",
         "distance_pct": -96.8,
-        "recovery_x": 31.4
+        "recovery_x": 31.2
       },
       "tvl": {
         "tvl": 5800000000,
@@ -44611,7 +44611,7 @@
         "ath": 1.2,
         "ath_date": "2024-03-15T23:01:15.000Z",
         "distance_pct": -96.7,
-        "recovery_x": 30.6
+        "recovery_x": 30.3
       },
       "tvl": {
         "tvl": 0,
@@ -45397,8 +45397,8 @@
       "drawdown": {
         "ath": 4.21,
         "ath_date": "2021-11-29T20:32:06.000Z",
-        "distance_pct": -100,
-        "recovery_x": 4847.3
+        "distance_pct": -99.979,
+        "recovery_x": 4761.9
       },
       "tvl": {
         "tvl": 0,
@@ -45804,7 +45804,7 @@
         "ath": 20.87,
         "ath_date": "2021-05-18T16:30:09.000Z",
         "distance_pct": -97.9,
-        "recovery_x": 46.9
+        "recovery_x": 47.6
       },
       "tvl": {
         "tvl": 380000000,
@@ -46302,7 +46302,7 @@
         "ath": 65.82,
         "ath_date": "2024-03-24T21:21:25.000Z",
         "distance_pct": -96.9,
-        "recovery_x": 32.4
+        "recovery_x": 32.3
       },
       "tvl": {
         "tvl": 3200000000,
@@ -47131,7 +47131,7 @@
       "drawdown": {
         "ath": 16.65,
         "ath_date": "2021-11-07T10:55:10.000Z",
-        "distance_pct": -99.1,
+        "distance_pct": -99.13,
         "recovery_x": 114.9
       },
       "tvl": {
@@ -47510,8 +47510,8 @@
       "drawdown": {
         "ath": 22.37,
         "ath_date": "2021-11-26T16:00:00.000Z",
-        "distance_pct": -99.6,
-        "recovery_x": 267.4
+        "distance_pct": -99.63,
+        "recovery_x": 270.3
       },
       "tvl": {
         "tvl": 0,
@@ -47907,8 +47907,8 @@
       "drawdown": {
         "ath": 15.72,
         "ath_date": "2021-04-16T05:15:11.000Z",
-        "distance_pct": -99.1,
-        "recovery_x": 115.4
+        "distance_pct": -99.13,
+        "recovery_x": 114.9
       },
       "tvl": {
         "tvl": 0,
@@ -48306,8 +48306,8 @@
       "drawdown": {
         "ath": 42.8,
         "ath_date": "2022-01-12T07:22:27.000Z",
-        "distance_pct": -99.3,
-        "recovery_x": 138.2
+        "distance_pct": -99.28,
+        "recovery_x": 138.9
       },
       "tvl": {
         "tvl": 600000000,
@@ -48695,7 +48695,7 @@
         "ath": 0.229794,
         "ath_date": "2022-05-05T01:44:15.000Z",
         "distance_pct": -96.4,
-        "recovery_x": 28.1
+        "recovery_x": 27.8
       },
       "tvl": {
         "tvl": 0,
@@ -49064,7 +49064,7 @@
         "ath": 61.9,
         "ath_date": "2023-04-16T11:20:19.000Z",
         "distance_pct": -97.5,
-        "recovery_x": 40.1
+        "recovery_x": 40
       },
       "tvl": {
         "tvl": 1100000000,
@@ -49896,8 +49896,8 @@
       "drawdown": {
         "ath": 0.585268,
         "ath_date": "2022-09-16T06:56:05.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 1257.7
+        "distance_pct": -99.92,
+        "recovery_x": 1250
       },
       "tvl": {
         "tvl": 0,
@@ -50266,7 +50266,7 @@
         "ath": 4.45,
         "ath_date": "2024-03-25T21:12:38.000Z",
         "distance_pct": -98.9,
-        "recovery_x": 87
+        "recovery_x": 90.9
       },
       "tvl": {
         "tvl": 0,
@@ -51014,7 +51014,7 @@
         "ath": 0.117424,
         "ath_date": "2021-04-16T09:45:02.000Z",
         "distance_pct": -99,
-        "recovery_x": 95.5
+        "recovery_x": 100
       },
       "tvl": {
         "tvl": 0,
@@ -51420,7 +51420,7 @@
         "ath": 54.98,
         "ath_date": "2021-11-04T06:10:09.000Z",
         "distance_pct": -98.5,
-        "recovery_x": 66.8
+        "recovery_x": 66.7
       },
       "tvl": {
         "tvl": 220000000,
@@ -51809,7 +51809,7 @@
         "ath": 60.09,
         "ath_date": "2022-01-01T10:04:03.000Z",
         "distance_pct": -97.5,
-        "recovery_x": 39.6
+        "recovery_x": 40
       },
       "tvl": {
         "tvl": 850000000,
@@ -52196,8 +52196,8 @@
       "drawdown": {
         "ath": 4.34,
         "ath_date": "2021-03-29T19:44:28.000Z",
-        "distance_pct": -99.4,
-        "recovery_x": 162.8
+        "distance_pct": -99.39,
+        "recovery_x": 163.9
       },
       "tvl": {
         "tvl": 0,
@@ -52566,7 +52566,7 @@
         "ath": 621.71,
         "ath_date": "2021-05-17T21:04:41.000Z",
         "distance_pct": -99.5,
-        "recovery_x": 198.5
+        "recovery_x": 200
       },
       "tvl": {
         "tvl": 0,
@@ -52944,8 +52944,8 @@
       "drawdown": {
         "ath": 2.82,
         "ath_date": "2022-01-04T17:24:14.000Z",
-        "distance_pct": -99.4,
-        "recovery_x": 176.5
+        "distance_pct": -99.43,
+        "recovery_x": 175.4
       },
       "tvl": {
         "tvl": 0,
@@ -53779,7 +53779,7 @@
         "ath": 1.43,
         "ath_date": "2024-12-12T22:35:38.000Z",
         "distance_pct": -98.6,
-        "recovery_x": 71.9
+        "recovery_x": 71.4
       },
       "tvl": {
         "tvl": 115000000,
@@ -54204,7 +54204,7 @@
         "ath": 700.65,
         "ath_date": "2021-05-10T08:05:53.000Z",
         "distance_pct": -99.7,
-        "recovery_x": 334.7
+        "recovery_x": 333.3
       },
       "tvl": {
         "tvl": 110000000,
@@ -54603,7 +54603,7 @@
         "ath": 0.891544,
         "ath_date": "2021-11-23T16:00:00.000Z",
         "distance_pct": -94,
-        "recovery_x": 16.5
+        "recovery_x": 16.7
       },
       "tvl": {
         "tvl": 0,
@@ -54971,8 +54971,8 @@
       "drawdown": {
         "ath": 1.017,
         "ath_date": "2021-08-12T03:49:51.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 1200.8
+        "distance_pct": -99.917,
+        "recovery_x": 1204.8
       },
       "tvl": {
         "tvl": 0,
@@ -55351,7 +55351,7 @@
         "ath": 26.7,
         "ath_date": "2022-04-28T13:44:21.000Z",
         "distance_pct": -99.5,
-        "recovery_x": 200.1
+        "recovery_x": 200
       },
       "tvl": {
         "tvl": 0,
@@ -55756,8 +55756,8 @@
       "drawdown": {
         "ath": 236.84,
         "ath_date": "2021-04-01T05:29:41.000Z",
-        "distance_pct": -99.7,
-        "recovery_x": 340.1
+        "distance_pct": -99.71,
+        "recovery_x": 344.8
       },
       "tvl": {
         "tvl": 48000000,
@@ -56582,7 +56582,7 @@
         "ath": 0.280991,
         "ath_date": "2021-04-18T17:08:21.000Z",
         "distance_pct": -98.3,
-        "recovery_x": 60
+        "recovery_x": 58.8
       },
       "tvl": {
         "tvl": 8000000,
@@ -56998,7 +56998,7 @@
         "ath": 0.118536,
         "ath_date": "2024-06-12T02:00:49.000Z",
         "distance_pct": -96.6,
-        "recovery_x": 29.1
+        "recovery_x": 29.4
       },
       "tvl": {
         "tvl": 0,
@@ -57376,8 +57376,8 @@
       "drawdown": {
         "ath": 1911.26,
         "ath_date": "2021-11-30T07:18:57.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 631.6
+        "distance_pct": -99.84,
+        "recovery_x": 625
       },
       "tvl": {
         "tvl": 0,
@@ -58125,7 +58125,7 @@
         "ath": 1493.59,
         "ath_date": "2017-12-19T16:00:00.000Z",
         "distance_pct": -98,
-        "recovery_x": 49.1
+        "recovery_x": 50
       },
       "tvl": {
         "tvl": 0,
@@ -58493,8 +58493,8 @@
       "drawdown": {
         "ath": 4.11,
         "ath_date": "2022-04-27T19:29:53.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 606.2
+        "distance_pct": -99.84,
+        "recovery_x": 625
       },
       "tvl": {
         "tvl": 0,
@@ -58872,8 +58872,8 @@
       "drawdown": {
         "ath": 4.95,
         "ath_date": "2021-03-27T07:45:35.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 403.6
+        "distance_pct": -99.75,
+        "recovery_x": 400
       },
       "tvl": {
         "tvl": 0,
@@ -59279,7 +59279,7 @@
         "ath": 1.14,
         "ath_date": "2024-03-15T18:30:23.000Z",
         "distance_pct": -96.3,
-        "recovery_x": 27.3
+        "recovery_x": 27
       },
       "tvl": {
         "tvl": 128000000,
@@ -59704,8 +59704,8 @@
       "drawdown": {
         "ath": 6.14,
         "ath_date": "2023-02-08T04:55:39.000Z",
-        "distance_pct": -99.7,
-        "recovery_x": 303.1
+        "distance_pct": -99.67,
+        "recovery_x": 303
       },
       "tvl": {
         "tvl": 65000000,
@@ -60093,7 +60093,7 @@
         "ath": 89.08,
         "ath_date": "2021-02-08T17:03:21.000Z",
         "distance_pct": -99.6,
-        "recovery_x": 248.6
+        "recovery_x": 250
       },
       "tvl": {
         "tvl": 0,
@@ -60498,8 +60498,8 @@
       "drawdown": {
         "ath": 1.61,
         "ath_date": "2024-12-19T22:22:16.000Z",
-        "distance_pct": -99.5,
-        "recovery_x": 188.6
+        "distance_pct": -99.47,
+        "recovery_x": 188.7
       },
       "tvl": {
         "tvl": 350000000,
@@ -60887,7 +60887,7 @@
         "ath": 10.3,
         "ath_date": "2021-04-06T22:54:35.000Z",
         "distance_pct": -98.2,
-        "recovery_x": 54.2
+        "recovery_x": 55.6
       },
       "tvl": {
         "tvl": 0,
@@ -61691,7 +61691,7 @@
         "ath": 1.7,
         "ath_date": "2021-03-26T19:43:35.000Z",
         "distance_pct": -97.7,
-        "recovery_x": 43.4
+        "recovery_x": 43.5
       },
       "tvl": {
         "tvl": 12000000,
@@ -62115,8 +62115,8 @@
       "drawdown": {
         "ath": 9.09,
         "ath_date": "2021-05-31T17:42:37.000Z",
-        "distance_pct": -99.6,
-        "recovery_x": 222.4
+        "distance_pct": -99.55,
+        "recovery_x": 222.2
       },
       "tvl": {
         "tvl": 12000000,
@@ -62515,7 +62515,7 @@
         "ath": 93.15,
         "ath_date": "2021-05-16T02:29:06.000Z",
         "distance_pct": -90.7,
-        "recovery_x": 10.7
+        "recovery_x": 10.8
       },
       "tvl": {
         "tvl": 0,
@@ -62911,8 +62911,8 @@
       "drawdown": {
         "ath": 39.66,
         "ath_date": "2021-05-12T06:42:21.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 452.4
+        "distance_pct": -99.78,
+        "recovery_x": 454.5
       },
       "tvl": {
         "tvl": 0,
@@ -63278,8 +63278,8 @@
       "drawdown": {
         "ath": 0.255593,
         "ath_date": "2021-11-13T08:54:18.000Z",
-        "distance_pct": -99.1,
-        "recovery_x": 113.3
+        "distance_pct": -99.12,
+        "recovery_x": 113.6
       },
       "tvl": {
         "tvl": 0,
@@ -63687,7 +63687,7 @@
         "ath": 3.56,
         "ath_date": "2019-06-20T06:51:19.000Z",
         "distance_pct": -97.5,
-        "recovery_x": 40.5
+        "recovery_x": 40
       },
       "tvl": {
         "tvl": 180000000,
@@ -64082,7 +64082,7 @@
         "ath": 0.668634,
         "ath_date": "2021-09-29T03:39:21.000Z",
         "distance_pct": -97.8,
-        "recovery_x": 44.7
+        "recovery_x": 45.5
       },
       "tvl": {
         "tvl": 0,
@@ -64451,7 +64451,7 @@
         "ath": 1.22,
         "ath_date": "2021-03-11T21:14:18.000Z",
         "distance_pct": -99.7,
-        "recovery_x": 338.4
+        "recovery_x": 333.3
       },
       "tvl": {
         "tvl": 0,
@@ -64830,7 +64830,7 @@
         "ath": 0.198666,
         "ath_date": "2021-08-06T08:39:58.000Z",
         "distance_pct": -97.7,
-        "recovery_x": 44.3
+        "recovery_x": 43.5
       },
       "tvl": {
         "tvl": 0,
@@ -65586,8 +65586,8 @@
       "drawdown": {
         "ath": 27.61,
         "ath_date": "2021-04-15T15:53:08.000Z",
-        "distance_pct": -99.3,
-        "recovery_x": 134
+        "distance_pct": -99.25,
+        "recovery_x": 133.3
       },
       "tvl": {
         "tvl": 0,
@@ -66418,7 +66418,7 @@
         "ath": 0.213513,
         "ath_date": "2021-04-16T11:44:04.000Z",
         "distance_pct": -98.4,
-        "recovery_x": 61.1
+        "recovery_x": 62.5
       },
       "tvl": {
         "tvl": 0,
@@ -66815,8 +66815,8 @@
       "drawdown": {
         "ath": 53.98,
         "ath_date": "2021-02-19T20:38:40.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 1629.2
+        "distance_pct": -99.939,
+        "recovery_x": 1639.3
       },
       "tvl": {
         "tvl": 0,
@@ -67184,8 +67184,8 @@
       "drawdown": {
         "ath": 456.44,
         "ath_date": "2020-07-03T04:23:19.000Z",
-        "distance_pct": -100,
-        "recovery_x": 21692
+        "distance_pct": -99.995,
+        "recovery_x": 20000
       },
       "tvl": {
         "tvl": 0,
@@ -67554,7 +67554,7 @@
         "ath": 1.74,
         "ath_date": "2021-05-08T16:43:41.000Z",
         "distance_pct": -98.1,
-        "recovery_x": 51.6
+        "recovery_x": 52.6
       },
       "tvl": {
         "tvl": 0,
@@ -67960,7 +67960,7 @@
         "ath": 43.84,
         "ath_date": "2021-09-19T16:00:00.000Z",
         "distance_pct": -96.9,
-        "recovery_x": 32.5
+        "recovery_x": 32.3
       },
       "tvl": {
         "tvl": 240000,
@@ -68487,7 +68487,7 @@
         "ath": 0.320983,
         "ath_date": "2024-06-16T23:44:40.000Z",
         "distance_pct": -97.5,
-        "recovery_x": 39.9
+        "recovery_x": 40
       },
       "tvl": {
         "tvl": 95000000,
@@ -68884,8 +68884,8 @@
       "drawdown": {
         "ath": 74.45,
         "ath_date": "2021-05-04T05:35:02.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 680
+        "distance_pct": -99.85,
+        "recovery_x": 666.7
       },
       "tvl": {
         "tvl": 750000000,
@@ -69300,8 +69300,8 @@
       "drawdown": {
         "ath": 8.78,
         "ath_date": "2021-03-05T16:42:02.000Z",
-        "distance_pct": -100,
-        "recovery_x": 14684.3
+        "distance_pct": -99.993,
+        "recovery_x": 14285.7
       },
       "tvl": {
         "tvl": 0,
@@ -69679,8 +69679,8 @@
       "drawdown": {
         "ath": 11.17,
         "ath_date": "2021-11-20T08:49:03.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 596.7
+        "distance_pct": -99.83,
+        "recovery_x": 588.2
       },
       "tvl": {
         "tvl": 0,
@@ -70085,8 +70085,8 @@
       "drawdown": {
         "ath": 2075.09,
         "ath_date": "2021-03-06T16:55:13.000Z",
-        "distance_pct": -99.6,
-        "recovery_x": 224
+        "distance_pct": -99.55,
+        "recovery_x": 222.2
       },
       "tvl": {
         "tvl": 0,
@@ -70465,7 +70465,7 @@
         "ath": 0.748771,
         "ath_date": "2024-03-31T13:30:42.000Z",
         "distance_pct": -95.6,
-        "recovery_x": 23
+        "recovery_x": 22.7
       },
       "tvl": {
         "tvl": 0,
@@ -70861,8 +70861,8 @@
       "drawdown": {
         "ath": 9.82,
         "ath_date": "2021-08-30T06:25:09.000Z",
-        "distance_pct": -99.4,
-        "recovery_x": 160.7
+        "distance_pct": -99.38,
+        "recovery_x": 161.3
       },
       "tvl": {
         "tvl": 42000000,
@@ -71250,8 +71250,8 @@
       "drawdown": {
         "ath": 19.5,
         "ath_date": "2022-01-11T06:57:46.000Z",
-        "distance_pct": -100,
-        "recovery_x": 2289.4
+        "distance_pct": -99.956,
+        "recovery_x": 2272.7
       },
       "tvl": {
         "tvl": 0,
@@ -71630,7 +71630,7 @@
         "ath": 15.51,
         "ath_date": "2021-05-10T09:59:51.000Z",
         "distance_pct": -98.2,
-        "recovery_x": 56.1
+        "recovery_x": 55.6
       },
       "tvl": {
         "tvl": 0,
@@ -72431,7 +72431,7 @@
         "ath": 0.04370633,
         "ath_date": "2021-03-31T09:08:59.000Z",
         "distance_pct": -98.1,
-        "recovery_x": 52.3
+        "recovery_x": 52.6
       },
       "tvl": {
         "tvl": 4000000,
@@ -72855,8 +72855,8 @@
       "drawdown": {
         "ath": 4.41,
         "ath_date": "2024-02-20T04:05:13.000Z",
-        "distance_pct": -99.4,
-        "recovery_x": 169
+        "distance_pct": -99.41,
+        "recovery_x": 169.5
       },
       "tvl": {
         "tvl": 70000000,
@@ -73262,8 +73262,8 @@
       "drawdown": {
         "ath": 8.65,
         "ath_date": "2021-10-27T00:24:54.000Z",
-        "distance_pct": -99,
-        "recovery_x": 103.5
+        "distance_pct": -99.03,
+        "recovery_x": 103.1
       },
       "tvl": {
         "tvl": 0,
@@ -73688,7 +73688,7 @@
         "ath": 0.00005825,
         "ath_date": "2024-11-19T20:01:06.000Z",
         "distance_pct": -95.3,
-        "recovery_x": 21.1
+        "recovery_x": 21.3
       },
       "tvl": {
         "tvl": 0,
@@ -74113,8 +74113,8 @@
       "drawdown": {
         "ath": 11.25,
         "ath_date": "2022-03-03T21:12:18.000Z",
-        "distance_pct": -99.7,
-        "recovery_x": 396.2
+        "distance_pct": -99.75,
+        "recovery_x": 400
       },
       "tvl": {
         "tvl": 72000000,
@@ -74521,7 +74521,7 @@
         "ath": 5.15,
         "ath_date": "2018-01-04T16:00:00.000Z",
         "distance_pct": -93.2,
-        "recovery_x": 14.6
+        "recovery_x": 14.7
       },
       "tvl": {
         "tvl": 0,
@@ -74917,8 +74917,8 @@
       "drawdown": {
         "ath": 628.46,
         "ath_date": "2020-09-01T16:00:00.000Z",
-        "distance_pct": -99.2,
-        "recovery_x": 120.9
+        "distance_pct": -99.17,
+        "recovery_x": 120.5
       },
       "tvl": {
         "tvl": 0,
@@ -75323,8 +75323,8 @@
       "drawdown": {
         "ath": 0.00777336,
         "ath_date": "2023-12-18T22:39:20.000Z",
-        "distance_pct": -99.3,
-        "recovery_x": 135.3
+        "distance_pct": -99.26,
+        "recovery_x": 135.1
       },
       "tvl": {
         "tvl": 0,
@@ -75749,7 +75749,7 @@
         "ath": 1.66,
         "ath_date": "2024-04-03T03:46:35.000Z",
         "distance_pct": -99.5,
-        "recovery_x": 199.4
+        "recovery_x": 200
       },
       "tvl": {
         "tvl": 0,
@@ -76564,8 +76564,8 @@
       "drawdown": {
         "ath": 15.44,
         "ath_date": "2021-11-30T21:07:30.000Z",
-        "distance_pct": -100,
-        "recovery_x": 24213.1
+        "distance_pct": -99.996,
+        "recovery_x": 25000
       },
       "tvl": {
         "tvl": 0,
@@ -76944,7 +76944,7 @@
         "ath": 0.951533,
         "ath_date": "2021-03-29T16:00:00.000Z",
         "distance_pct": -98.7,
-        "recovery_x": 77.8
+        "recovery_x": 76.9
       },
       "tvl": {
         "tvl": 0,
@@ -77349,8 +77349,8 @@
       "drawdown": {
         "ath": 0.684918,
         "ath_date": "2018-01-02T16:00:00.000Z",
-        "distance_pct": -99.2,
-        "recovery_x": 120.6
+        "distance_pct": -99.17,
+        "recovery_x": 120.5
       },
       "tvl": {
         "tvl": 0,
@@ -77737,8 +77737,8 @@
       "drawdown": {
         "ath": 2.93,
         "ath_date": "2021-02-05T08:37:55.000Z",
-        "distance_pct": -100,
-        "recovery_x": 5750.4
+        "distance_pct": -99.983,
+        "recovery_x": 5882.4
       },
       "tvl": {
         "tvl": 0,
@@ -78106,8 +78106,8 @@
       "drawdown": {
         "ath": 0.323362,
         "ath_date": "2020-12-21T15:37:33.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 440.7
+        "distance_pct": -99.77,
+        "recovery_x": 434.8
       },
       "tvl": {
         "tvl": 0,
@@ -78504,7 +78504,7 @@
         "ath": 593.09,
         "ath_date": "2023-12-31T14:15:07.000Z",
         "distance_pct": -97.7,
-        "recovery_x": 43.3
+        "recovery_x": 43.5
       },
       "tvl": {
         "tvl": 0,
@@ -78883,7 +78883,7 @@
         "ath": 0.194843,
         "ath_date": "2021-09-25T22:49:04.000Z",
         "distance_pct": -99.1,
-        "recovery_x": 111.6
+        "recovery_x": 111.1
       },
       "tvl": {
         "tvl": 0,
@@ -79289,7 +79289,7 @@
         "ath": 33.69,
         "ath_date": "2018-01-01T16:00:00.000Z",
         "distance_pct": -98.8,
-        "recovery_x": 84.6
+        "recovery_x": 83.3
       },
       "tvl": {
         "tvl": 0,
@@ -79695,7 +79695,7 @@
         "ath": 167.09,
         "ath_date": "2021-05-06T10:34:22.000Z",
         "distance_pct": -96.2,
-        "recovery_x": 26.1
+        "recovery_x": 26.3
       },
       "tvl": {
         "tvl": 0,
@@ -80101,7 +80101,7 @@
         "ath": 11.74,
         "ath_date": "2024-03-09T16:10:42.000Z",
         "distance_pct": -97.4,
-        "recovery_x": 38.6
+        "recovery_x": 38.5
       },
       "tvl": {
         "tvl": 0,
@@ -80913,7 +80913,7 @@
         "ath": 40.93,
         "ath_date": "2021-03-15T00:54:21.000Z",
         "distance_pct": -99.7,
-        "recovery_x": 334.4
+        "recovery_x": 333.3
       },
       "tvl": {
         "tvl": 0,
@@ -81319,7 +81319,7 @@
         "ath": 9.12,
         "ath_date": "2021-10-03T16:41:18.000Z",
         "distance_pct": -97.8,
-        "recovery_x": 44.9
+        "recovery_x": 45.5
       },
       "tvl": {
         "tvl": 22000000,
@@ -82170,7 +82170,7 @@
         "ath": 4.83,
         "ath_date": "2024-03-31T01:34:58.000Z",
         "distance_pct": -97.1,
-        "recovery_x": 34.4
+        "recovery_x": 34.5
       },
       "tvl": {
         "tvl": 0,
@@ -82965,8 +82965,8 @@
       "drawdown": {
         "ath": 38.42,
         "ath_date": "2021-12-16T21:14:33.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 1732.8
+        "distance_pct": -99.942,
+        "recovery_x": 1724.1
       },
       "tvl": {
         "tvl": 0,
@@ -83371,8 +83371,8 @@
       "drawdown": {
         "ath": 5.79,
         "ath_date": "2021-05-03T07:29:39.000Z",
-        "distance_pct": -100,
-        "recovery_x": 2313.2
+        "distance_pct": -99.957,
+        "recovery_x": 2325.6
       },
       "tvl": {
         "tvl": 0,
@@ -83768,8 +83768,8 @@
       "drawdown": {
         "ath": 0.1006,
         "ath_date": "2018-01-08T16:00:00.000Z",
-        "distance_pct": -100,
-        "recovery_x": 3738.3
+        "distance_pct": -99.973,
+        "recovery_x": 3703.7
       },
       "tvl": {
         "tvl": 0,
@@ -84174,8 +84174,8 @@
       "drawdown": {
         "ath": 0.02917956,
         "ath_date": "2024-06-26T16:20:41.000Z",
-        "distance_pct": -99.2,
-        "recovery_x": 120.6
+        "distance_pct": -99.17,
+        "recovery_x": 120.5
       },
       "tvl": {
         "tvl": 280000000,
@@ -84970,7 +84970,7 @@
         "ath": 7.83,
         "ath_date": "2024-03-06T11:15:02.000Z",
         "distance_pct": -96.7,
-        "recovery_x": 30.4
+        "recovery_x": 30.3
       },
       "tvl": {
         "tvl": 0,
@@ -85357,8 +85357,8 @@
       "drawdown": {
         "ath": 2.78,
         "ath_date": "2021-12-21T18:06:34.000Z",
-        "distance_pct": -100,
-        "recovery_x": 2428.4
+        "distance_pct": -99.959,
+        "recovery_x": 2439
       },
       "tvl": {
         "tvl": 0,
@@ -85764,7 +85764,7 @@
         "ath": 7.7,
         "ath_date": "2021-09-03T03:41:40.000Z",
         "distance_pct": -98,
-        "recovery_x": 49.7
+        "recovery_x": 50
       },
       "tvl": {
         "tvl": 0,
@@ -86151,8 +86151,8 @@
       "drawdown": {
         "ath": 0.764501,
         "ath_date": "2023-02-07T10:11:01.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 867.2
+        "distance_pct": -99.88,
+        "recovery_x": 833.3
       },
       "tvl": {
         "tvl": 0,
@@ -86557,8 +86557,8 @@
       "drawdown": {
         "ath": 545.64,
         "ath_date": "2021-11-23T02:33:26.000Z",
-        "distance_pct": -99.5,
-        "recovery_x": 194.7
+        "distance_pct": -99.49,
+        "recovery_x": 196.1
       },
       "tvl": {
         "tvl": 25000000,
@@ -86982,8 +86982,8 @@
       "drawdown": {
         "ath": 0.597347,
         "ath_date": "2022-01-14T19:31:11.000Z",
-        "distance_pct": -99,
-        "recovery_x": 104.3
+        "distance_pct": -99.04,
+        "recovery_x": 104.2
       },
       "tvl": {
         "tvl": 7500000,
@@ -87407,8 +87407,8 @@
       "drawdown": {
         "ath": 5.02,
         "ath_date": "2023-02-14T09:33:55.000Z",
-        "distance_pct": -99.7,
-        "recovery_x": 359.4
+        "distance_pct": -99.72,
+        "recovery_x": 357.1
       },
       "tvl": {
         "tvl": 0,
@@ -87832,8 +87832,8 @@
       "drawdown": {
         "ath": 180.47,
         "ath_date": "2021-04-21T08:13:43.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 895
+        "distance_pct": -99.89,
+        "recovery_x": 909.1
       },
       "tvl": {
         "tvl": 0,
@@ -88220,8 +88220,8 @@
       "drawdown": {
         "ath": 41.45,
         "ath_date": "2021-02-24T09:42:44.000Z",
-        "distance_pct": -99.1,
-        "recovery_x": 115.7
+        "distance_pct": -99.14,
+        "recovery_x": 116.3
       },
       "tvl": {
         "tvl": 0,
@@ -88645,8 +88645,8 @@
       "drawdown": {
         "ath": 185.69,
         "ath_date": "2020-10-26T16:36:32.000Z",
-        "distance_pct": -100,
-        "recovery_x": 5980.9
+        "distance_pct": -99.983,
+        "recovery_x": 5882.4
       },
       "tvl": {
         "tvl": 0,
@@ -89033,8 +89033,8 @@
       "drawdown": {
         "ath": 2.77,
         "ath_date": "2018-01-08T16:00:00.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 719.2
+        "distance_pct": -99.86,
+        "recovery_x": 714.3
       },
       "tvl": {
         "tvl": 0,
@@ -89439,8 +89439,8 @@
       "drawdown": {
         "ath": 9.12,
         "ath_date": "2021-08-30T03:10:02.000Z",
-        "distance_pct": -99.6,
-        "recovery_x": 225.4
+        "distance_pct": -99.56,
+        "recovery_x": 227.3
       },
       "tvl": {
         "tvl": 38000000,
@@ -89837,8 +89837,8 @@
       "drawdown": {
         "ath": 0.736957,
         "ath_date": "2024-04-22T02:16:47.000Z",
-        "distance_pct": -99.2,
-        "recovery_x": 120.4
+        "distance_pct": -99.17,
+        "recovery_x": 120.5
       },
       "tvl": {
         "tvl": 0,
@@ -90243,8 +90243,8 @@
       "drawdown": {
         "ath": 42.4,
         "ath_date": "2021-04-05T05:49:10.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 1565.2
+        "distance_pct": -99.936,
+        "recovery_x": 1562.5
       },
       "tvl": {
         "tvl": 28000000,
@@ -90668,8 +90668,8 @@
       "drawdown": {
         "ath": 3.75,
         "ath_date": "2021-11-10T06:59:53.000Z",
-        "distance_pct": -99.7,
-        "recovery_x": 360.6
+        "distance_pct": -99.72,
+        "recovery_x": 357.1
       },
       "tvl": {
         "tvl": 18000000,
@@ -91093,8 +91093,8 @@
       "drawdown": {
         "ath": 5.25,
         "ath_date": "2017-12-18T16:00:00.000Z",
-        "distance_pct": -99.3,
-        "recovery_x": 153.6
+        "distance_pct": -99.35,
+        "recovery_x": 153.8
       },
       "tvl": {
         "tvl": 2500000,
@@ -91519,7 +91519,7 @@
         "ath": 0.937763,
         "ath_date": "2021-09-08T00:54:22.000Z",
         "distance_pct": -99.9,
-        "recovery_x": 962.8
+        "recovery_x": 1000
       },
       "tvl": {
         "tvl": 0,
@@ -91907,7 +91907,7 @@
         "ath": 4.05,
         "ath_date": "2024-03-12T12:01:54.000Z",
         "distance_pct": -98.6,
-        "recovery_x": 69.1
+        "recovery_x": 71.4
       },
       "tvl": {
         "tvl": 22000000,
@@ -92313,8 +92313,8 @@
       "drawdown": {
         "ath": 164.9,
         "ath_date": "2021-11-06T11:29:29.000Z",
-        "distance_pct": -99.5,
-        "recovery_x": 184.9
+        "distance_pct": -99.46,
+        "recovery_x": 185.2
       },
       "tvl": {
         "tvl": 0,
@@ -93118,7 +93118,7 @@
         "ath": 68.36,
         "ath_date": "2021-10-16T20:14:51.000Z",
         "distance_pct": -96.9,
-        "recovery_x": 32.2
+        "recovery_x": 32.3
       },
       "tvl": {
         "tvl": 0,
@@ -93486,8 +93486,8 @@
       "drawdown": {
         "ath": 23.38,
         "ath_date": "2021-03-13T15:44:36.000Z",
-        "distance_pct": -99.3,
-        "recovery_x": 141.3
+        "distance_pct": -99.29,
+        "recovery_x": 140.8
       },
       "tvl": {
         "tvl": 320000000,
@@ -93894,7 +93894,7 @@
         "ath": 0.285218,
         "ath_date": "2021-02-20T03:19:07.000Z",
         "distance_pct": -98.7,
-        "recovery_x": 79.8
+        "recovery_x": 76.9
       },
       "tvl": {
         "tvl": 0,
@@ -94300,7 +94300,7 @@
         "ath": 0.02836145,
         "ath_date": "2024-06-02T10:00:38.000Z",
         "distance_pct": -98.8,
-        "recovery_x": 80.3
+        "recovery_x": 83.3
       },
       "tvl": {
         "tvl": 0,
@@ -94698,7 +94698,7 @@
         "ath": 22.83,
         "ath_date": "2021-04-15T04:04:11.000Z",
         "distance_pct": -99.3,
-        "recovery_x": 142.1
+        "recovery_x": 142.9
       },
       "tvl": {
         "tvl": 0,
@@ -95123,7 +95123,7 @@
         "ath": 2.05,
         "ath_date": "2024-11-17T07:50:59.000Z",
         "distance_pct": -97.9,
-        "recovery_x": 47.2
+        "recovery_x": 47.6
       },
       "tvl": {
         "tvl": 0,
@@ -95529,8 +95529,8 @@
       "drawdown": {
         "ath": 0.147725,
         "ath_date": "2024-05-07T03:05:57.000Z",
-        "distance_pct": -100,
-        "recovery_x": 3449.5
+        "distance_pct": -99.971,
+        "recovery_x": 3448.3
       },
       "tvl": {
         "tvl": 35000000,
@@ -95946,7 +95946,7 @@
         "ath": 0.00008616,
         "ath_date": "2021-10-27T19:54:55.000Z",
         "distance_pct": -94.5,
-        "recovery_x": 18.3
+        "recovery_x": 18.2
       },
       "tvl": {
         "tvl": 28000000,
@@ -96371,8 +96371,8 @@
       "drawdown": {
         "ath": 198.38,
         "ath_date": "2018-01-14T16:00:00.000Z",
-        "distance_pct": -99.1,
-        "recovery_x": 107
+        "distance_pct": -99.07,
+        "recovery_x": 107.5
       },
       "tvl": {
         "tvl": 5000000,
@@ -96759,8 +96759,8 @@
       "drawdown": {
         "ath": 5.54,
         "ath_date": "2021-10-07T14:30:49.000Z",
-        "distance_pct": -99.7,
-        "recovery_x": 287.9
+        "distance_pct": -99.65,
+        "recovery_x": 285.7
       },
       "tvl": {
         "tvl": 40000000,
@@ -97147,7 +97147,7 @@
         "ath": 4.74,
         "ath_date": "2021-03-30T23:38:55.000Z",
         "distance_pct": -98.2,
-        "recovery_x": 55.9
+        "recovery_x": 55.6
       },
       "tvl": {
         "tvl": 0,
@@ -97553,8 +97553,8 @@
       "drawdown": {
         "ath": 1.45,
         "ath_date": "2024-12-09T20:05:51.000Z",
-        "distance_pct": -99.5,
-        "recovery_x": 192.5
+        "distance_pct": -99.48,
+        "recovery_x": 192.3
       },
       "tvl": {
         "tvl": 18000000,
@@ -97960,8 +97960,8 @@
       "drawdown": {
         "ath": 4.79,
         "ath_date": "2021-02-15T19:53:32.000Z",
-        "distance_pct": -99.9,
-        "recovery_x": 1160.2
+        "distance_pct": -99.914,
+        "recovery_x": 1162.8
       },
       "tvl": {
         "tvl": 0,
@@ -98359,7 +98359,7 @@
         "ath": 5.85,
         "ath_date": "2021-11-25T02:04:18.000Z",
         "distance_pct": -98.9,
-        "recovery_x": 88.4
+        "recovery_x": 90.9
       },
       "tvl": {
         "tvl": 0,
@@ -98784,7 +98784,7 @@
         "ath": 0.255376,
         "ath_date": "2021-05-06T09:33:45.000Z",
         "distance_pct": -99,
-        "recovery_x": 98.2
+        "recovery_x": 100
       },
       "tvl": {
         "tvl": 1200000,
@@ -99171,8 +99171,8 @@
       "drawdown": {
         "ath": 0.03506357,
         "ath_date": "2021-11-02T00:44:42.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 444.2
+        "distance_pct": -99.77,
+        "recovery_x": 434.8
       },
       "tvl": {
         "tvl": 85000000,
@@ -99588,7 +99588,7 @@
         "ath": 0.00163299,
         "ath_date": "2024-08-28T02:10:46.000Z",
         "distance_pct": -97.8,
-        "recovery_x": 46.1
+        "recovery_x": 45.5
       },
       "tvl": {
         "tvl": 0,
@@ -100003,7 +100003,7 @@
       "drawdown": {
         "ath": 100.22,
         "ath_date": "2018-01-05T16:00:00.000Z",
-        "distance_pct": -99.3,
+        "distance_pct": -99.35,
         "recovery_x": 153.8
       },
       "tvl": {
@@ -100410,8 +100410,8 @@
       "drawdown": {
         "ath": 8.4,
         "ath_date": "2021-11-24T22:04:40.000Z",
-        "distance_pct": -99.5,
-        "recovery_x": 203.7
+        "distance_pct": -99.51,
+        "recovery_x": 204.1
       },
       "tvl": {
         "tvl": 0,
@@ -100889,8 +100889,8 @@
       "drawdown": {
         "ath": 0.056324,
         "ath_date": "2024-03-04T09:30:21.000Z",
-        "distance_pct": -99.1,
-        "recovery_x": 112.5
+        "distance_pct": -99.11,
+        "recovery_x": 112.4
       },
       "tvl": {
         "tvl": 0,
@@ -101291,7 +101291,7 @@
         "ath": 0.00301761,
         "ath_date": "2024-11-12T00:05:49.000Z",
         "distance_pct": -97.9,
-        "recovery_x": 47.8
+        "recovery_x": 47.6
       },
       "tvl": {
         "tvl": 0,
@@ -101672,8 +101672,8 @@
       "drawdown": {
         "ath": 0.824837,
         "ath_date": "2021-11-25T17:03:48.000Z",
-        "distance_pct": -99.8,
-        "recovery_x": 463.3
+        "distance_pct": -99.78,
+        "recovery_x": 454.5
       },
       "tvl": {
         "tvl": 0,
@@ -102070,8 +102070,8 @@
       "drawdown": {
         "ath": 27.64,
         "ath_date": "2021-11-11T05:22:45.000Z",
-        "distance_pct": -100,
-        "recovery_x": 6934.8
+        "distance_pct": -99.986,
+        "recovery_x": 7142.9
       },
       "tvl": {
         "tvl": 300000,
@@ -102468,8 +102468,8 @@
       "drawdown": {
         "ath": 0.37902,
         "ath_date": "2021-10-26T01:28:49.000Z",
-        "distance_pct": -99.7,
-        "recovery_x": 305.2
+        "distance_pct": -99.67,
+        "recovery_x": 303
       },
       "tvl": {
         "tvl": 1500000,
