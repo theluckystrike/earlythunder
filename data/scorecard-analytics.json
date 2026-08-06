@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T11:15:37.221Z",
+  "generated_at": "2026-08-06T11:20:39.987Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "methodology": "25-variable framework scoring 250 altcoins across protocol revenue, tokenomics, supply metrics, institutional adoption, regulatory safety, and more. Each variable rated 1-10 by 40+ parallel DeepSeek research agents. Data hardened via 19-agent deep validation sprint. Supply data from CoinGecko. Revenue cross-referenced with DeFiLlama/Token Terminal. Live prices from Binance, Bybit, Kraken, Crypto.com.",
   "universe_size": 251,
@@ -859,9 +859,9 @@
         "mcap_per_tvl": 2.1
       },
       "market": {
-        "price": 60.28,
-        "market_cap": 13406256949,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 55.61,
+        "market_cap": 12370058651,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -1346,9 +1346,9 @@
         "mcap_per_tvl": 4.28
       },
       "market": {
-        "price": 1966.89,
-        "market_cap": 237368124347,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1904.55,
+        "market_cap": 229850211886,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -2166,9 +2166,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 65305,
-        "market_cap": 1310139062896,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 64605,
+        "market_cap": 1296280541814,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -2546,7 +2546,7 @@
         "mcap_per_tvl": 0.22
       },
       "market": {
-        "price": 1333.15,
+        "price": 1302.55,
         "market_cap": 1590000000,
         "as_of": "2026-05-23",
         "source": "daily"
@@ -2929,9 +2929,9 @@
         "mcap_per_tvl": 5.73
       },
       "market": {
-        "price": 76.54,
-        "market_cap": 44627107558,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 73.24,
+        "market_cap": 42572432706,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -3309,9 +3309,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.317441,
-        "market_cap": 144336345,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.180179,
+        "market_cap": 81825444,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -3810,9 +3810,9 @@
         "mcap_per_tvl": 0.07
       },
       "market": {
-        "price": 0.173456,
-        "market_cap": 215876959,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.155263,
+        "market_cap": 193214929,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -4218,9 +4218,9 @@
         "mcap_per_tvl": 0.57
       },
       "market": {
-        "price": 3.9,
-        "market_cap": 2435736486,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 4.01,
+        "market_cap": 2506763793,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -4755,9 +4755,9 @@
         "mcap_per_tvl": 216.35
       },
       "market": {
-        "price": 0.135518,
-        "market_cap": 78169088,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.106263,
+        "market_cap": 61112610,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -5186,9 +5186,9 @@
         "mcap_per_tvl": 0.18
       },
       "market": {
-        "price": 8.8,
-        "market_cap": 6582962898,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 8.09,
+        "market_cap": 6051534256,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -5624,9 +5624,9 @@
         "mcap_per_tvl": 0.04
       },
       "market": {
-        "price": 0.429789,
-        "market_cap": 418400517,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.354302,
+        "market_cap": 344594393,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -6007,9 +6007,9 @@
         "mcap_per_tvl": 0.2
       },
       "market": {
-        "price": 1.56,
-        "market_cap": 267626920,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.35,
+        "market_cap": 233051623,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -7204,9 +7204,9 @@
         "mcap_per_tvl": 0.49
       },
       "market": {
-        "price": 0.437046,
-        "market_cap": 425757308,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.422508,
+        "market_cap": 411179287,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -7601,9 +7601,9 @@
         "mcap_per_tvl": 0.19
       },
       "market": {
-        "price": 1.96,
-        "market_cap": 1282424164,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.9,
+        "market_cap": 1242889210,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -8092,9 +8092,9 @@
         "mcap_per_tvl": 0.07
       },
       "market": {
-        "price": 101.46,
-        "market_cap": 1564315455,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 88.12,
+        "market_cap": 1359315845,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -8530,9 +8530,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.607129,
-        "market_cap": 399197720,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.569529,
+        "market_cap": 374527144,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -8918,9 +8918,9 @@
         "mcap_per_tvl": 0.28
       },
       "market": {
-        "price": 0.193144,
-        "market_cap": 19076437,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.184075,
+        "market_cap": 18179815,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -9320,9 +9320,9 @@
         "mcap_per_tvl": 0.17
       },
       "market": {
-        "price": 0.191228,
-        "market_cap": 634854569,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.182892,
+        "market_cap": 607108154,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -9803,9 +9803,9 @@
         "mcap_per_tvl": 0.06
       },
       "market": {
-        "price": 0.01820237,
-        "market_cap": 17403348,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.01744625,
+        "market_cap": 16700852,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -10209,9 +10209,9 @@
         "mcap_per_tvl": 1.96
       },
       "market": {
-        "price": 0.718021,
-        "market_cap": 2909309749,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.674728,
+        "market_cap": 2750434670,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -10588,9 +10588,9 @@
         "mcap_per_tvl": 0.01
       },
       "market": {
-        "price": 0.401309,
-        "market_cap": 335726648,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.294095,
+        "market_cap": 245876543,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -10974,7 +10974,7 @@
       "market": {
         "price": 1.092,
         "market_cap": 86400000,
-        "as_of": "2026-07-27T00:00:00Z",
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -11783,9 +11783,9 @@
         "mcap_per_tvl": 17.05
       },
       "market": {
-        "price": 572.96,
-        "market_cap": 76299673349,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 594.23,
+        "market_cap": 79121070381,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -12172,9 +12172,9 @@
         "mcap_per_tvl": 0.08
       },
       "market": {
-        "price": 6.95,
-        "market_cap": 72594575,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 6.33,
+        "market_cap": 66132490,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -13359,9 +13359,9 @@
         "mcap_per_tvl": 0.22
       },
       "market": {
-        "price": 0.057596,
-        "market_cap": 1345176602,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.056427,
+        "market_cap": 1319936511,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -13810,9 +13810,9 @@
         "mcap_per_tvl": 0.1
       },
       "market": {
-        "price": 0.210842,
-        "market_cap": 324832070,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.2095,
+        "market_cap": 323617938,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -14203,9 +14203,9 @@
         "mcap_per_tvl": 0
       },
       "market": {
-        "price": 1.87,
-        "market_cap": 122945429,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.8,
+        "market_cap": 117988794,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -14582,9 +14582,9 @@
         "mcap_per_tvl": 5.93
       },
       "market": {
-        "price": 4.94,
-        "market_cap": 493468603,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 4.65,
+        "market_cap": 465365729,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -14971,9 +14971,9 @@
         "mcap_per_tvl": 0.02
       },
       "market": {
-        "price": 0.01800721,
-        "market_cap": 92808869,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.01804407,
+        "market_cap": 94388519,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -15473,9 +15473,9 @@
         "mcap_per_tvl": 6.07
       },
       "market": {
-        "price": 6.64,
-        "market_cap": 2866547322,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 6.48,
+        "market_cap": 2796941306,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -15996,9 +15996,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 4.57,
-        "market_cap": 187538377,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 4.19,
+        "market_cap": 171958384,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -16751,9 +16751,9 @@
         "mcap_per_tvl": 30.61
       },
       "market": {
-        "price": 1.84,
-        "market_cap": 2397621989,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.68,
+        "market_cap": 2192750735,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -17153,9 +17153,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 3.77,
-        "market_cap": 15122456,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 3.51,
+        "market_cap": 14085782,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -17912,9 +17912,9 @@
         "mcap_per_tvl": 0.31
       },
       "market": {
-        "price": 0.08221,
-        "market_cap": 543777313,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.077891,
+        "market_cap": 515167523,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -18718,9 +18718,9 @@
         "mcap_per_tvl": 0
       },
       "market": {
-        "price": 0.091332,
-        "market_cap": 69346906,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.087626,
+        "market_cap": 67182952,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -19133,9 +19133,9 @@
         "mcap_per_tvl": 0.52
       },
       "market": {
-        "price": 0.219084,
-        "market_cap": 127303375,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.21363,
+        "market_cap": 124083624,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -19526,9 +19526,9 @@
         "mcap_per_tvl": 0.2
       },
       "market": {
-        "price": 0.633951,
-        "market_cap": 170719316,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.612564,
+        "market_cap": 164968571,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -19909,9 +19909,9 @@
         "mcap_per_tvl": 0.26
       },
       "market": {
-        "price": 0.02681609,
-        "market_cap": 7244261,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.02553156,
+        "market_cap": 7445666,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -20287,9 +20287,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.468952,
-        "market_cap": 138922905,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.485357,
+        "market_cap": 143989184,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -21100,9 +21100,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 198.69,
-        "market_cap": 1906980715,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 193.33,
+        "market_cap": 1855775221,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -21512,9 +21512,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 1.48,
-        "market_cap": 770217747,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.32,
+        "market_cap": 684692040,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -21919,9 +21919,9 @@
         "mcap_per_tvl": 0.12
       },
       "market": {
-        "price": 0.177421,
-        "market_cap": 53396865,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.158961,
+        "market_cap": 50122846,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -23130,9 +23130,9 @@
         "mcap_per_tvl": 1.03
       },
       "market": {
-        "price": 2.28,
-        "market_cap": 570775228,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 2.16,
+        "market_cap": 540167053,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -23584,9 +23584,9 @@
         "mcap_per_tvl": 0.35
       },
       "market": {
-        "price": 0.094739,
-        "market_cap": 216626944,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.087051,
+        "market_cap": 198932708,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -25866,9 +25866,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.194024,
-        "market_cap": 35253030,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.181234,
+        "market_cap": 32892524,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -26254,9 +26254,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.01600862,
-        "market_cap": 172890823,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.01441102,
+        "market_cap": 155597151,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -26670,9 +26670,9 @@
         "mcap_per_tvl": 872.58
       },
       "market": {
-        "price": 1.11,
-        "market_cap": 69257312577,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.044,
+        "market_cap": 65274633507,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -28189,9 +28189,9 @@
         "mcap_per_tvl": 0.21
       },
       "market": {
-        "price": 0.090404,
-        "market_cap": 864360010,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.091192,
+        "market_cap": 896231868,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -28609,9 +28609,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.35032,
-        "market_cap": 332186558,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.327565,
+        "market_cap": 311943143,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -29360,9 +29360,9 @@
         "mcap_per_tvl": 0.1
       },
       "market": {
-        "price": 17.16,
-        "market_cap": 171621573,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 16.22,
+        "market_cap": 162266881,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -30843,9 +30843,9 @@
         "mcap_per_tvl": 10.69
       },
       "market": {
-        "price": 0.142077,
-        "market_cap": 263446338,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.132618,
+        "market_cap": 246138507,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -31612,9 +31612,9 @@
         "mcap_per_tvl": 2.66
       },
       "market": {
-        "price": 0.126466,
-        "market_cap": 252908764,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.110209,
+        "market_cap": 220363599,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -33141,9 +33141,9 @@
         "mcap_per_tvl": 0.88
       },
       "market": {
-        "price": 0.625922,
-        "market_cap": 529027617,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.590576,
+        "market_cap": 499347335,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -33557,9 +33557,9 @@
         "mcap_per_tvl": 0.23
       },
       "market": {
-        "price": 0.531971,
-        "market_cap": 12691240,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.492129,
+        "market_cap": 11750102,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -34755,9 +34755,9 @@
         "mcap_per_tvl": 0.68
       },
       "market": {
-        "price": 0.41498,
-        "market_cap": 2022936781,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.369771,
+        "market_cap": 1800104419,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -35934,9 +35934,9 @@
         "mcap_per_tvl": 23.45
       },
       "market": {
-        "price": 0.165518,
-        "market_cap": 6173630211,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.188793,
+        "market_cap": 7057844939,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -37103,9 +37103,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.350501,
-        "market_cap": 221533509,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.306318,
+        "market_cap": 200578614,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -37500,9 +37500,9 @@
         "mcap_per_tvl": 0.22
       },
       "market": {
-        "price": 2113.76,
-        "market_cap": 75732152,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 2077.09,
+        "market_cap": 74819514,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -39502,9 +39502,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.156049,
-        "market_cap": 349606503,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.139261,
+        "market_cap": 310684233,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -39909,9 +39909,9 @@
         "mcap_per_tvl": 0.33
       },
       "market": {
-        "price": 0.125232,
+        "price": 0.11451,
         "market_cap": 662651,
-        "as_of": "2026-07-27T00:00:00Z",
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -40687,9 +40687,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.151136,
-        "market_cap": 55204228,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.123477,
+        "market_cap": 46685502,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -42959,9 +42959,9 @@
         "mcap_per_tvl": 0.03
       },
       "market": {
-        "price": 0.211841,
-        "market_cap": 157057748,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.180809,
+        "market_cap": 134005201,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -43375,9 +43375,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.04492835,
-        "market_cap": 353798448,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.03981661,
+        "market_cap": 313553087,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -44544,9 +44544,9 @@
         "mcap_per_tvl": 0.34
       },
       "market": {
-        "price": 0.432706,
-        "market_cap": 146117715,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.445462,
+        "market_cap": 150641530,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -45020,8 +45020,8 @@
         "mcap_per_tvl": 0.01
       },
       "market": {
-        "price": 2.3,
-        "market_cap": 33743294,
+        "price": 2.05,
+        "market_cap": 30191605,
         "as_of": "2026-05-16T22:00:00Z",
         "source": "daily"
       },
@@ -46591,9 +46591,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.136129,
-        "market_cap": 136127110,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.135064,
+        "market_cap": 135047491,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -46980,9 +46980,9 @@
         "mcap_per_tvl": 0.14
       },
       "market": {
-        "price": 0.269328,
-        "market_cap": 25216057,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.291773,
+        "market_cap": 27314419,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -47358,9 +47358,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.00796786,
-        "market_cap": 5298104,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.00813341,
+        "market_cap": 5386468,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -47720,9 +47720,9 @@
         "mcap_per_tvl": 0.03
       },
       "market": {
-        "price": 1.7,
-        "market_cap": 38455461,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.54,
+        "market_cap": 35022509,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -50028,9 +50028,9 @@
         "mcap_per_tvl": 9.54
       },
       "market": {
-        "price": 0.811948,
-        "market_cap": 1376521299,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.826384,
+        "market_cap": 1401897074,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -50407,9 +50407,9 @@
         "mcap_per_tvl": 0.17
       },
       "market": {
-        "price": 1.4,
-        "market_cap": 139675651,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.51,
+        "market_cap": 150808388,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -52749,9 +52749,9 @@
         "mcap_per_tvl": 13.19
       },
       "market": {
-        "price": 2.19,
-        "market_cap": 1214537680,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 2.08,
+        "market_cap": 1155849308,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -54271,9 +54271,9 @@
         "mcap_per_tvl": 15.91
       },
       "market": {
-        "price": 0.740788,
-        "market_cap": 598432022,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.6898,
+        "market_cap": 562707128,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -57721,9 +57721,9 @@
         "mcap_per_tvl": 3.28
       },
       "market": {
-        "price": 0.04544581,
-        "market_cap": 306012526,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.04096905,
+        "market_cap": 275814316,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -60494,9 +60494,9 @@
         "mcap_per_tvl": 5.98
       },
       "market": {
-        "price": 0.04401306,
-        "market_cap": 57053079,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.04063927,
+        "market_cap": 52569470,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -62032,9 +62032,9 @@
         "mcap_per_tvl": 5.53
       },
       "market": {
-        "price": 0.083371,
-        "market_cap": 747742255,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.087237,
+        "market_cap": 786742673,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -66213,9 +66213,9 @@
         "mcap_per_tvl": 3705.97
       },
       "market": {
-        "price": 1.39,
-        "market_cap": 723382707,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 1.33,
+        "market_cap": 696182440,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -67121,9 +67121,9 @@
         "mcap_per_tvl": 0.01
       },
       "market": {
-        "price": 0.125059,
-        "market_cap": 9050923,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.111001,
+        "market_cap": 8033129,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -69060,9 +69060,9 @@
         "mcap_per_tvl": 1.11
       },
       "market": {
-        "price": 0.065778,
-        "market_cap": 39713945,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.060792,
+        "market_cap": 36848781,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -71410,9 +71410,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.087404,
-        "market_cap": 122833418,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.08326,
+        "market_cap": 117014794,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -71825,9 +71825,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.00000309,
-        "market_cap": 272048085,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.00000276,
+        "market_cap": 243076264,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -74258,9 +74258,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.00000296,
-        "market_cap": 1246377350,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.00000278,
+        "market_cap": 1170598222,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -78111,9 +78111,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.347925,
-        "market_cap": 1306574535,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.304161,
+        "market_cap": 1089231992,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -78532,9 +78532,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.072655,
-        "market_cap": 11279827652,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.069009,
+        "market_cap": 10725687401,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -79716,9 +79716,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.00002203,
-        "market_cap": 212518205,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.00002055,
+        "market_cap": 198211216,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -80132,9 +80132,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.153924,
-        "market_cap": 153777767,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.138553,
+        "market_cap": 138355940,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -85267,9 +85267,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.01511883,
-        "market_cap": 43126858,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.0140017,
+        "market_cap": 39979721,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -90068,9 +90068,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.880063,
-        "market_cap": 153306505,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.89269,
+        "market_cap": 155602288,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -91217,9 +91217,9 @@
         "mcap_per_tvl": 0.17
       },
       "market": {
-        "price": 0.165622,
-        "market_cap": 48324938,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.166851,
+        "market_cap": 48647115,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -93619,9 +93619,9 @@
         "mcap_per_tvl": 116.16
       },
       "market": {
-        "price": 0.000005,
-        "market_cap": 2945333786,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.00000474,
+        "market_cap": 2790695400,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -95972,9 +95972,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.068159,
-        "market_cap": 133505954,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.066326,
+        "market_cap": 129898390,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -97974,9 +97974,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.04497482,
-        "market_cap": 134931913,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.04100863,
+        "market_cap": 122955482,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -99196,9 +99196,9 @@
         "mcap_per_tvl": null
       },
       "market": {
-        "price": 0.0019647,
-        "market_cap": 96396022,
-        "as_of": "2026-07-27T00:00:00Z",
+        "price": 0.00177969,
+        "market_cap": 87660783,
+        "as_of": "2026-08-06T00:00:00Z",
         "source": "daily"
       },
       "where_to_buy": [
@@ -100102,7 +100102,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Protocol HALTED 30 days. $10.8M exploit. $200M lending default. $1.2B Lazarus laundering. -98.2% ATH. Bug bounty killed.",
-            "market_cap": 146117715,
+            "market_cap": 150641530,
             "dilution_x": 1.06,
             "chain": "THORChain"
           },
@@ -100167,7 +100167,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "22KB constant-size blockchain using ZK proofs; elegant tech with minimal network adoption and severe inflation from staking rewards.",
-            "market_cap": 57053079,
+            "market_cap": 52569470,
             "dilution_x": 1,
             "chain": "Mina"
           },
@@ -100219,7 +100219,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Pure PoS L1 with 4-second finality and strong academic roots; TVL thin at $180M and network activity stagnant despite tech quality.",
-            "market_cap": 747742255,
+            "market_cap": 786742673,
             "dilution_x": 1.12,
             "chain": "Algorand"
           },
@@ -100362,7 +100362,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Cosmos SDK #3 dev network globally but broken value accrual. $240K Hub TVL on $889M mcap. ICS revenue real but tiny ($526K/yr). Prop 848 inflation cap helps. Both cofounders gone. Named security in SEC lawsuits.",
-            "market_cap": 723382707,
+            "market_cap": 696182440,
             "dilution_x": 1,
             "chain": "Cosmos"
           },
@@ -100388,7 +100388,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Pioneer AMM with weighted pools and boosted pools, but hemorrhaging TVL to Uniswap V4 and newer competitors while BAL token has severe value accrual problems",
-            "market_cap": 9050923,
+            "market_cap": 8033129,
             "dilution_x": 1.49,
             "chain": "Ethereum"
           },
@@ -100453,7 +100453,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Mobile-first L1 migrating to Ethereum L2 on OP Stack; migration complete but network traction and TVL extremely thin.",
-            "market_cap": 39713945,
+            "market_cap": 36848781,
             "dilution_x": 1.66,
             "chain": "Celo"
           },
@@ -100531,7 +100531,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "DEX aggregator that pioneered intent-based routing but now faces commoditization from 0x, Paraswap, and native DEX aggregation within wallets",
-            "market_cap": 122833418,
+            "market_cap": 117014794,
             "dilution_x": 1.07,
             "chain": "Ethereum"
           },
@@ -100544,7 +100544,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Solana's original dog meme coin with $480M market cap; massive community but zero fundamental revenue and pure sentiment-driven price action.",
-            "market_cap": 272048085,
+            "market_cap": 243076264,
             "dilution_x": 1,
             "chain": "Solana"
           },
@@ -100622,7 +100622,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Ethereum's largest meme coin at $1.6B market cap with massive liquidity; culturally entrenched but zero revenue and purely narrative-driven valuation.",
-            "market_cap": 1246377350,
+            "market_cap": 1170598222,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -100752,7 +100752,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Sam Altman-backed proof-of-personhood with global orb rollout but only 16.5% circulating; massive insider dilution incoming.",
-            "market_cap": 1306574535,
+            "market_cap": 1089231992,
             "dilution_x": 2.93,
             "chain": "Ethereum"
           },
@@ -100765,7 +100765,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Meme coin with infinite inflation and zero protocol revenue. Pure sentiment vehicle; Elon tweet exposure is both catalyst and risk.",
-            "market_cap": 11279827652,
+            "market_cap": 10725687401,
             "dilution_x": 1,
             "chain": "Dogecoin"
           },
@@ -100804,7 +100804,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Elon-inspired meme coin with NFT game Valhalla and token-based university; marketing-heavy but network revenue negligible vs $290M market cap.",
-            "market_cap": 212518205,
+            "market_cap": 198211216,
             "dilution_x": 1.04,
             "chain": "Ethereum"
           },
@@ -100817,7 +100817,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Solana's top dog meme with fully diluted supply and $200M market cap; pure meme energy with no utility, revenue, or roadmap.",
-            "market_cap": 153777767,
+            "market_cap": 138355940,
             "dilution_x": 1,
             "chain": "Solana"
           },
@@ -100986,7 +100986,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "NFT marketplace token that temporarily dominated OpenSea via airdrop-fueled volume incentives, but NFT market collapse and massive releases destroy the setup",
-            "market_cap": 43126858,
+            "market_cap": 39979721,
             "dilution_x": 1.07,
             "chain": "Ethereum"
           },
@@ -101142,7 +101142,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Pioneer play-to-earn NFT game that spawned an entire sector but collapsed under its own Ponzi tokenomics; $625M Ronin bridge hack accelerated the death spiral",
-            "market_cap": 153306505,
+            "market_cap": 155602288,
             "dilution_x": 1.56,
             "chain": "Ethereum"
           },
@@ -101181,7 +101181,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Once-prominent fork DEX that lost its narrative, its developers, and its users; no credible recovery path for the token",
-            "market_cap": 48324938,
+            "market_cap": 48647115,
             "dilution_x": 1.07,
             "chain": "Ethereum"
           },
@@ -101259,7 +101259,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Meme coin with quadrillions of tokens and negligible DeFi. Shibarium L2 launched but sees minimal usage. Pure sentiment and retail speculation.",
-            "market_cap": 2945333786,
+            "market_cap": 2790695400,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -101337,7 +101337,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Pioneer decentralized metaverse with DAO governance that peaked in 2021 hype; now averages under 1,000 concurrent users despite $165M market cap",
-            "market_cap": 133505954,
+            "market_cap": 129898390,
             "dilution_x": 1.13,
             "chain": "Ethereum"
           },
@@ -101402,7 +101402,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "-99.4% ATH. 4,500 DAU. Founders ousted. 50% layoffs. Staking dead. $312K daily vol. Metaverse narrative buried.",
-            "market_cap": 134931913,
+            "market_cap": 122955482,
             "dilution_x": 1.12,
             "chain": "Ethereum"
           },
@@ -101441,7 +101441,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Gaming platform token down 99.6% from ATH; wracked by internal fraud allegations, token supply manipulation, and a gaming sector with no mass-market hits",
-            "market_cap": 96396022,
+            "market_cap": 87660783,
             "dilution_x": 1.04,
             "chain": "Ethereum"
           },
@@ -101526,7 +101526,7 @@
             "verdict": "WATCH",
             "verdict_color": "orange",
             "one_liner": "ZK perp DEX, up sharply this week to a $534M cap. But farming revenue fell ~70% to ~$26-30M annualized, so P/S re-rated to a rich ~18-20x. New Jul 2026 buyback-and-burn + 6% staking target vs a Dec 2026 cliff that vests 50% of supply at ~13.9M LIT/month.",
-            "market_cap": 570775228,
+            "market_cap": 540167053,
             "dilution_x": 4,
             "chain": "Ethereum"
           },
@@ -101539,7 +101539,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "OG DeFi lender with real protocol revenue but P/S ~112x makes valuation deeply stretched at current price.",
-            "market_cap": 171621573,
+            "market_cap": 162266881,
             "dilution_x": 1.03,
             "chain": "Ethereum"
           },
@@ -101591,7 +101591,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Bitcoin L2 enabling smart contracts on Bitcoin. Nakamoto upgrade improved finality but TVL tiny and developer adoption slow vs Ethereum L2s.",
-            "market_cap": 263446338,
+            "market_cap": 246138507,
             "dilution_x": 1,
             "chain": "Stacks"
           },
@@ -101617,7 +101617,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Web3 gaming ZK-rollup with major game studio partnerships; gaming L2 narrative still alive but token vesting pressure is severe",
-            "market_cap": 252908764,
+            "market_cap": 220363599,
             "dilution_x": 2.37,
             "chain": "Ethereum"
           },
@@ -101669,7 +101669,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Move-language L1 from ex-Meta team with solid tech but massive vesting schedule dragging price. TVL growing but token inflation brutal.",
-            "market_cap": 529027617,
+            "market_cap": 499347335,
             "dilution_x": 2.56,
             "chain": "Aptos"
           },
@@ -101682,7 +101682,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "1.16x P/S but losing DEX war. 14-15M tokens burned (38%+ of initial). 97% circ/total. $113K volume.",
-            "market_cap": 12691240,
+            "market_cap": 11750102,
             "dilution_x": 1,
             "chain": "Arbitrum"
           },
@@ -101721,7 +101721,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "$3B RWA platform but ONDO token captures $0 revenue. 57.79% in one wallet. -73% in 12mo.",
-            "market_cap": 2022936781,
+            "market_cap": 1800104419,
             "dilution_x": 2.05,
             "chain": "Ethereum"
           },
@@ -101760,7 +101760,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Academic-grade L1 with heavy research pedigree but minimal DeFi traction. Chang hard fork improved governance but TVL remains tiny.",
-            "market_cap": 6173630211,
+            "market_cap": 7057844939,
             "dilution_x": 1.22,
             "chain": "Cardano"
           },
@@ -101799,7 +101799,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Web scraping bandwidth marketplace that monetizes idle internet connections; interesting model but heavy vesting schedule and speculative revenue",
-            "market_cap": 221533509,
+            "market_cap": 200578614,
             "dilution_x": 1.7,
             "chain": "Ethereum"
           },
@@ -101812,7 +101812,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "DeFi yield aggregator OG with real protocol revenue, but YFI buybacks alone cannot support a $91M market cap as yields compress and competition intensifies",
-            "market_cap": 75732152,
+            "market_cap": 74819514,
             "dilution_x": 1.03,
             "chain": "Ethereum"
           },
@@ -101877,7 +101877,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "ASI Alliance merger token (FET+AGIX+OCEAN). AI agent narrative intact but protocol revenue minimal and merger synergies unclear.",
-            "market_cap": 349606503,
+            "market_cap": 310684233,
             "dilution_x": 1.2,
             "chain": "Ethereum"
           },
@@ -101916,7 +101916,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Decentralized GPU compute marketplace down 98.3% from ATH; real compute demand but token economics designed for insiders",
-            "market_cap": 55204228,
+            "market_cap": 46685502,
             "dilution_x": 2.4,
             "chain": "Ethereum"
           },
@@ -101994,7 +101994,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Restaking pioneer with $5.8B TVL but 82% of tokens opening over 3 years creates extreme dilution headwind.",
-            "market_cap": 157057748,
+            "market_cap": 134005201,
             "dilution_x": 2.46,
             "chain": "Ethereum"
           },
@@ -102007,7 +102007,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Cross-chain oracle with 500+ price feeds used by $100B+ DeFi TVL; but only 34.5% circulating and token value accrual to PYTH minimal.",
-            "market_cap": 353798448,
+            "market_cap": 313553087,
             "dilution_x": 1.27,
             "chain": "Solana"
           },
@@ -102046,7 +102046,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "DVT infrastructure for ETH staking with $3.2B validators secured; heavy vesting pressure and weak token accrual are red flags.",
-            "market_cap": 33743294,
+            "market_cap": 30191605,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -102098,7 +102098,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Decentralized video CDN with Samsung and Google as validators. Real infrastructure but 93% below ATH reflects faded narrative and low token utility.",
-            "market_cap": 136127110,
+            "market_cap": 135047491,
             "dilution_x": 1,
             "chain": "Theta"
           },
@@ -102111,7 +102111,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Governance token for the Frax stablecoin system rebranding to frxUSD, but FXS faces dilution from veFXS migration and loss of direct fee accrual",
-            "market_cap": 25216057,
+            "market_cap": 27314419,
             "dilution_x": 1.19,
             "chain": "Ethereum"
           },
@@ -102124,7 +102124,7 @@
             "verdict": "WATCH",
             "verdict_color": "orange",
             "one_liner": "Dominant DEX on Polygon. Fork of Uniswap V3 with concentrated liquidity.",
-            "market_cap": 5298104,
+            "market_cap": 5386468,
             "dilution_x": 1.31,
             "chain": "Polygon"
           },
@@ -102137,7 +102137,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Decentralized ETH staking with ~$1.1B TVL but catastrophic price collapse; tokenomics restructure eliminated RPL value accrual.",
-            "market_cap": 38455461,
+            "market_cap": 35022509,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -102215,7 +102215,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Cross-chain relay network struggling with parachain lease complexity. JAM upgrade promises unified computing but narrative has failed to stick.",
-            "market_cap": 1376521299,
+            "market_cap": 1401897074,
             "dilution_x": 1.25,
             "chain": "Polkadot"
           },
@@ -102228,7 +102228,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Curve vote-locking meta-protocol that captured the Curve Wars era but faces structural decline as veCRV yields compress and DeFi rotates away",
-            "market_cap": 139675651,
+            "market_cap": 150808388,
             "dilution_x": 1.11,
             "chain": "Ethereum"
           },
@@ -102306,7 +102306,7 @@
             "verdict": "WATCH",
             "verdict_color": "red",
             "one_liner": "DFINITY's on-chain cloud computing with 99.6% ATH drawdown; technically new but massive inflation and insider overhang persist.",
-            "market_cap": 1214537680,
+            "market_cap": 1155849308,
             "dilution_x": 1,
             "chain": "Internet Computer"
           },
@@ -102358,7 +102358,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Decentralized storage with real utilization but massive FDV overhang. Storage demand growing but token price suppressed by large future releases.",
-            "market_cap": 598432022,
+            "market_cap": 562707128,
             "dilution_x": 2.5,
             "chain": "Filecoin"
           },
@@ -102475,7 +102475,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "EVM+Cosmos parallel execution chain with fast finality. Sei V2 parallel EVM showed promising benchmarks but network capture lags Solana and Base.",
-            "market_cap": 306012526,
+            "market_cap": 275814316,
             "dilution_x": 1.49,
             "chain": "Sei"
           },
@@ -102560,7 +102560,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "AI agent launchpad on Base with 18K+ agents but revenue collapsed 96% ($225K/day peak to $8.9K/day). aGDP is vanity metric. 93% whale concentration. ERC-8183 with Ethereum Foundation is real moat signal",
-            "market_cap": 399197720,
+            "market_cap": 374527144,
             "dilution_x": 1.52,
             "chain": "Base"
           },
@@ -102586,7 +102586,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "VALIDATED: DeFi revenue leader ($246M net, P/S 5.4x) but headline '$435M' is GROSS before $165M SSR payouts. Buybacks slashed 87% until ~Nov 2026. Net inflationary 4.4%/yr. TVL declining $7.5B→$6.0B. S&P B-. #3 stablecoin ($12.9B). Revenue real but token value accrual IMPAIRED.",
-            "market_cap": 1345176602,
+            "market_cap": 1319936511,
             "dilution_x": 1.01,
             "chain": "Ethereum"
           },
@@ -102599,7 +102599,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "green",
             "one_liner": "Finance-first L1 with aggressive burn mechanism and real derivatives volume. P/S ratio improving but TVL still modest vs valuation.",
-            "market_cap": 493468603,
+            "market_cap": 465365729,
             "dilution_x": 1,
             "chain": "Injective"
           },
@@ -102612,7 +102612,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "S38 VALIDATED: #1 Solana lending, $3.2B TVL, $14.3M rev, but ZERO value accrual to KMNO. Excellent protocol, worthless token.",
-            "market_cap": 92808869,
+            "market_cap": 94388519,
             "dilution_x": 2.14,
             "chain": "Solana"
           },
@@ -102625,7 +102625,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Best institutional traction among alt-L1s (3 ETFs, BlackRock BUIDL $475M, SEC commodity, FIFA World Cup, CME futures). Revenue weakness real ($767K/yr current vs HYPE $694M = 905x gap). Subnet L1s complement, not cannibalize.",
-            "market_cap": 2866547322,
+            "market_cap": 2796941306,
             "dilution_x": 1.67,
             "chain": "Avalanche"
           },
@@ -102638,7 +102638,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "green",
             "one_liner": "Ethereum's dominant naming system with $2M+ monthly protocol revenue and a fee switch already enabled",
-            "market_cap": 187538377,
+            "market_cap": 171958384,
             "dilution_x": 2.47,
             "chain": "Ethereum"
           },
@@ -102664,7 +102664,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "green",
             "one_liner": "46M MAU, $117M TVL. P/S 32-38x (not 290x, post-Intents revenue). AI Intents already live.",
-            "market_cap": 2397621989,
+            "market_cap": 2192750735,
             "dilution_x": 1,
             "chain": "NEAR"
           },
@@ -102677,7 +102677,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Telegram trading bot with real revenue and buyback mechanism but entirely dependent on on-chain trading volume cycles",
-            "market_cap": 15122456,
+            "market_cap": 14085782,
             "dilution_x": 2.49,
             "chain": "Solana"
           },
@@ -102703,7 +102703,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "green",
             "one_liner": "Largest Ethereum L2 by TVL with Arbitrum One and Nova chains. Real DeFi hub but token governance hasn't yet captured protocol value effectively.",
-            "market_cap": 543777313,
+            "market_cap": 515167523,
             "dilution_x": 1.6,
             "chain": "Arbitrum"
           },
@@ -102729,7 +102729,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Token for the dominant smart-contract wallet securing $100B+ in assets, but governance token with minimal direct value accrual so far",
-            "market_cap": 69346906,
+            "market_cap": 67182952,
             "dilution_x": 1.35,
             "chain": "Ethereum"
           },
@@ -102742,7 +102742,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Best tokenomics (zero inflation, 100% fee buyback, 99.7% circ) but losing perps war. sUSD at $0.74.",
-            "market_cap": 127303375,
+            "market_cap": 124083624,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -102755,7 +102755,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Cyclical memecoin infrastructure. Revenue collapsed 76% from peak. PumpSwap forking the model.",
-            "market_cap": 170719316,
+            "market_cap": 164968571,
             "dilution_x": 2.06,
             "chain": "Solana"
           },
@@ -102768,7 +102768,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Autonomous AI agent infrastructure with multi-chain deployment; technically deep but lost to Virtuals on narrative and accessibility",
-            "market_cap": 7244261,
+            "market_cap": 7445666,
             "dilution_x": 2,
             "chain": "Ethereum"
           },
@@ -102781,7 +102781,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Decentralized GPU cloud marketplace with real revenue; GPU demand tailwind but AKT P/S stretched vs actual compute revenue.",
-            "market_cap": 138922905,
+            "market_cap": 143989184,
             "dilution_x": 1.33,
             "chain": "Akash"
           },
@@ -102807,7 +102807,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Decentralized AI network with 64 subnets; narrative-driven but real compute marketplace emerging; BTC-like emission schedule.",
-            "market_cap": 1906980715,
+            "market_cap": 1855775221,
             "dilution_x": 2.19,
             "chain": "Bittensor"
           },
@@ -102820,7 +102820,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Decentralized GPU rendering marketplace at ATH correlation with AI hype cycle. Real utility but valuation stretched vs actual render job revenue.",
-            "market_cap": 770217747,
+            "market_cap": 684692040,
             "dilution_x": 1.24,
             "chain": "Ethereum"
           },
@@ -102833,7 +102833,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Novel Proof-of-Liquidity L1 with highest post-launch TVL in history, but BERA token down 97.5% and PoL is untested long-term",
-            "market_cap": 53396865,
+            "market_cap": 50122846,
             "dilution_x": 2.07,
             "chain": "Berachain"
           },
@@ -102872,7 +102872,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Ethereum L2 with Superchain vision and OP Stack powering Coinbase Base. Real sequencer revenue but massive token vesting schedule is the key headwind.",
-            "market_cap": 216626944,
+            "market_cap": 198932708,
             "dilution_x": 2,
             "chain": "Optimism"
           },
@@ -102950,7 +102950,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Pioneer decentralized wireless network with real Solana migration complete; MOBILE/IOT subDAOs growing but HNT value accrual thin",
-            "market_cap": 35253030,
+            "market_cap": 32892524,
             "dilution_x": 1.22,
             "chain": "Solana"
           },
@@ -102963,7 +102963,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Web3 data indexing with 700+ subgraphs; real query fee revenue but P/S elevated and token inflation from indexer rewards dilutes holders.",
-            "market_cap": 172890823,
+            "market_cap": 155597151,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -102976,7 +102976,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Ripple's payment token with SEC case mostly resolved. Institutional cross-border payment rails narrative intact but XRPL DeFi negligible.",
-            "market_cap": 69257312577,
+            "market_cap": 65274633507,
             "dilution_x": 1.62,
             "chain": "XRP Ledger"
           },
@@ -103028,7 +103028,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "USDe supply crashed 65% from $12B peak. BaFin banned under MiCA. Brutal vesting schedule.",
-            "market_cap": 864360010,
+            "market_cap": 896231868,
             "dilution_x": 1.66,
             "chain": "Ethereum"
           },
@@ -103041,7 +103041,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Modular DA layer with strong VC backing and developer traction; only 22% circulating means severe multi-year open dilution ahead.",
-            "market_cap": 332186558,
+            "market_cap": 311943143,
             "dilution_x": 1.27,
             "chain": "Celestia"
           },
@@ -103113,7 +103113,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "High-throughput L1 with dominant DEX volume and meme coin launchpad traction. Network reliability improved significantly post-2023.",
-            "market_cap": 44627107558,
+            "market_cap": 42572432706,
             "dilution_x": 1.08,
             "chain": "Solana"
           },
@@ -103126,7 +103126,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Revenue NOT declining: Q2 2026 $1.93M (+10% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
-            "market_cap": 144336345,
+            "market_cap": 81825444,
             "dilution_x": 2.25,
             "chain": "Solana"
           },
@@ -103139,7 +103139,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Institutional private-credit leader with a record ~$2B loan book, a Kraken on-chain warehouse (Jun 25) and a Revolut listing (Apr 30, UK/EU). But the 1.6x price-to-fees pitch uses gross fees; the token keeps ~$12-13M revenue, so it trades ~14x. Core Foundation injunction unresolved.",
-            "market_cap": 215876959,
+            "market_cap": 193214929,
             "dilution_x": 1.07,
             "chain": "Ethereum"
           },
@@ -103152,7 +103152,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Fee switch live on 11+ chains. Protocol revenue $26-61M (P/S 57-73x). V4 on 18 chains, 2500+ hooks. 100M UNI burned but NET INFLATIONARY (+1.43%/yr). BlackRock entered Feb 2026. a16z holds 41.5-55M UNI. $200M+ insider selling 2025. Unichain TVL $17.8-29.6M (not $532M). SEC safe harbor Apr 2026.",
-            "market_cap": 2435736486,
+            "market_cap": 2506763793,
             "dilution_x": 1.57,
             "chain": "Ethereum"
           },
@@ -103165,7 +103165,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Intent-based batch auction DEX. $87B vol 2025. P/S 3.1x. Net deflationary. Vesting complete.",
-            "market_cap": 78169088,
+            "market_cap": 61112610,
             "dilution_x": 1.73,
             "chain": "Ethereum"
           },
@@ -103178,7 +103178,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "70% oracle dominance. DTCC Q4 2026. SOC 2 Type 2. $500M/yr treasury sell pressure. 2 ETFs live.",
-            "market_cap": 6582962898,
+            "market_cap": 6051534256,
             "dilution_x": 1.38,
             "chain": "Ethereum"
           },
@@ -103191,7 +103191,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "$7.8B TVL on $350M mcap (22x TVL/MC). $50M buyback active. 84% circ. 250M token releases ahead.",
-            "market_cap": 418400517,
+            "market_cap": 344594393,
             "dilution_x": 1.14,
             "chain": "Ethereum"
           },
@@ -103204,7 +103204,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "DeFi's yield monopoly: 50-60% market share, $24.4M trailing rev, sPENDLE 80% buyback (9.3% yield). Fortune 2026 Innovators. Vietnam IFC w/ BlackRock/MS. 21Shares ETP live. Boros V3 $10B+ vol. All vesting complete. Net dollar-deflationary.",
-            "market_cap": 267626920,
+            "market_cap": 233051623,
             "dilution_x": 1.65,
             "chain": "Ethereum"
           },
@@ -103243,7 +103243,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Base's dominant DEX capturing ~60% of chain volume with real fee revenue and veAERO flywheel locking supply",
-            "market_cap": 425757308,
+            "market_cap": 411179287,
             "dilution_x": 2.02,
             "chain": "Base"
           },
@@ -103256,7 +103256,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Infrastructure lending protocol with $6.4B TVL and $203M annualized fees but ZERO revenue to token holders, fee switch OFF, founder opposes activation",
-            "market_cap": 1282424164,
+            "market_cap": 1242889210,
             "dilution_x": 1.55,
             "chain": "Ethereum"
           },
@@ -103269,7 +103269,7 @@
             "verdict": "HOLD",
             "verdict_color": "blue",
             "one_liner": "KelpDAO $190-230M bad debt, 3 core team departures (ACI/BGD/Chaos), buybacks PAUSED. But $142M rev, 55-63% share, V4+Umbrella live, SEC cleared.",
-            "market_cap": 1564315455,
+            "market_cap": 1359315845,
             "dilution_x": 1.04,
             "chain": "Ethereum"
           },
@@ -103282,7 +103282,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "V2 is RE-deployment after Jan 2025 bug (same auditors didn't catch it). 99% circ. BOLD $30M (<0.01%).",
-            "market_cap": 19076437,
+            "market_cap": 18179815,
             "dilution_x": 1.01,
             "chain": "Ethereum"
           },
@@ -103295,7 +103295,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "S39 VALIDATED: Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
-            "market_cap": 634854569,
+            "market_cap": 607108154,
             "dilution_x": 2.11,
             "chain": "Solana"
           },
@@ -103308,7 +103308,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Leading CLMM DEX on Sui with near-monopoly status; strong TVL growth as Sui network expansion accelerates",
-            "market_cap": 17403348,
+            "market_cap": 16700852,
             "dilution_x": 1.06,
             "chain": "Sui"
           },
@@ -103321,7 +103321,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Move-language L1 with best TVL growth trajectory in 2025-2026. Near ATH with strong DeFi traction but heavy vesting schedule is key risk.",
-            "market_cap": 2909309749,
+            "market_cap": 2750434670,
             "dilution_x": 2.5,
             "chain": "Sui"
           },
@@ -103334,7 +103334,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Dominant LST protocol at $21B TVL with real staking revenue; fee switch vote pending but token accrual still weak.",
-            "market_cap": 335726648,
+            "market_cap": 245876543,
             "dilution_x": 1.18,
             "chain": "Ethereum"
           },
@@ -103360,7 +103360,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Binance exchange utility token with quarterly burns. Highly tied to Binance CEX health and regulatory outcome.",
-            "market_cap": 76299673349,
+            "market_cap": 79121070381,
             "dilution_x": 1.48,
             "chain": "BNB Chain"
           },
@@ -103373,7 +103373,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Protocol revenue ~$14M (not $42M total fees). Commodity perps live ($1.18B week-1). $20.86M buybacks.",
-            "market_cap": 72594575,
+            "market_cap": 66132490,
             "dilution_x": 1.27,
             "chain": "Arbitrum"
           },
@@ -103412,7 +103412,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "44% of ETH DEX fee revenue is extraordinary. veCRV/Convex lock-in. ATH -96% (not -99.6%, illiquid spike).",
-            "market_cap": 324832070,
+            "market_cap": 323617938,
             "dilution_x": 2,
             "chain": "Ethereum"
           },
@@ -103425,7 +103425,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Permanent data storage with one-time payment model. AO compute layer adds programmability. 65M+ items stored but token price lags data growth.",
-            "market_cap": 122945429,
+            "market_cap": 117988794,
             "dilution_x": 1.01,
             "chain": "Arweave"
           }
@@ -103484,7 +103484,7 @@
             "verdict": "HOLD CORE",
             "verdict_color": "green",
             "one_liner": "3 ETFs live (THYP, BHYP, HYPG ~$160M AUM). $800M-$1.3B rev, 97-99% to buyback/burn. 70%+ DEX perps share. But closed-source, FCA warning, 22% circ.",
-            "market_cap": 13406256949,
+            "market_cap": 12370058651,
             "dilution_x": 4.5,
             "chain": "Hyperliquid"
           },
@@ -103497,7 +103497,7 @@
             "verdict": "HOLD CORE",
             "verdict_color": "green",
             "one_liner": "Institutional settlement layer. Commodity classification. Burn collapsed but moat intact.",
-            "market_cap": 237368124347,
+            "market_cap": 229850211886,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -103523,7 +103523,7 @@
             "verdict": "HOLD CORE",
             "verdict_color": "green",
             "one_liner": "Digital gold with spot ETF inflows and 94.5% supply mined. unbeaten store-of-value thesis with sovereign adoption accelerating.",
-            "market_cap": 1310139062896,
+            "market_cap": 1296280541814,
             "dilution_x": 1.05,
             "chain": "Bitcoin"
           },
@@ -103597,7 +103597,7 @@
             "verdict": "HOLD CORE",
             "verdict_color": "green",
             "one_liner": "Institutional settlement layer. Commodity classification. Burn collapsed but moat intact.",
-            "market_cap": 237368124347,
+            "market_cap": 229850211886,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -103636,7 +103636,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Institutional private-credit leader with a record ~$2B loan book, a Kraken on-chain warehouse (Jun 25) and a Revolut listing (Apr 30, UK/EU). But the 1.6x price-to-fees pitch uses gross fees; the token keeps ~$12-13M revenue, so it trades ~14x. Core Foundation injunction unresolved.",
-            "market_cap": 215876959,
+            "market_cap": 193214929,
             "dilution_x": 1.07,
             "chain": "Ethereum"
           },
@@ -103649,7 +103649,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Fee switch live on 11+ chains. Protocol revenue $26-61M (P/S 57-73x). V4 on 18 chains, 2500+ hooks. 100M UNI burned but NET INFLATIONARY (+1.43%/yr). BlackRock entered Feb 2026. a16z holds 41.5-55M UNI. $200M+ insider selling 2025. Unichain TVL $17.8-29.6M (not $532M). SEC safe harbor Apr 2026.",
-            "market_cap": 2435736486,
+            "market_cap": 2506763793,
             "dilution_x": 1.57,
             "chain": "Ethereum"
           },
@@ -103662,7 +103662,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Intent-based batch auction DEX. $87B vol 2025. P/S 3.1x. Net deflationary. Vesting complete.",
-            "market_cap": 78169088,
+            "market_cap": 61112610,
             "dilution_x": 1.73,
             "chain": "Ethereum"
           },
@@ -103675,7 +103675,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "70% oracle dominance. DTCC Q4 2026. SOC 2 Type 2. $500M/yr treasury sell pressure. 2 ETFs live.",
-            "market_cap": 6582962898,
+            "market_cap": 6051534256,
             "dilution_x": 1.38,
             "chain": "Ethereum"
           },
@@ -103688,7 +103688,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "$7.8B TVL on $350M mcap (22x TVL/MC). $50M buyback active. 84% circ. 250M token releases ahead.",
-            "market_cap": 418400517,
+            "market_cap": 344594393,
             "dilution_x": 1.14,
             "chain": "Ethereum"
           },
@@ -103701,7 +103701,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "DeFi's yield monopoly: 50-60% market share, $24.4M trailing rev, sPENDLE 80% buyback (9.3% yield). Fortune 2026 Innovators. Vietnam IFC w/ BlackRock/MS. 21Shares ETP live. Boros V3 $10B+ vol. All vesting complete. Net dollar-deflationary.",
-            "market_cap": 267626920,
+            "market_cap": 233051623,
             "dilution_x": 1.65,
             "chain": "Ethereum"
           },
@@ -103740,7 +103740,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Infrastructure lending protocol with $6.4B TVL and $203M annualized fees but ZERO revenue to token holders, fee switch OFF, founder opposes activation",
-            "market_cap": 1282424164,
+            "market_cap": 1242889210,
             "dilution_x": 1.55,
             "chain": "Ethereum"
           },
@@ -103753,7 +103753,7 @@
             "verdict": "HOLD",
             "verdict_color": "blue",
             "one_liner": "KelpDAO $190-230M bad debt, 3 core team departures (ACI/BGD/Chaos), buybacks PAUSED. But $142M rev, 55-63% share, V4+Umbrella live, SEC cleared.",
-            "market_cap": 1564315455,
+            "market_cap": 1359315845,
             "dilution_x": 1.04,
             "chain": "Ethereum"
           },
@@ -103766,7 +103766,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "V2 is RE-deployment after Jan 2025 bug (same auditors didn't catch it). 99% circ. BOLD $30M (<0.01%).",
-            "market_cap": 19076437,
+            "market_cap": 18179815,
             "dilution_x": 1.01,
             "chain": "Ethereum"
           },
@@ -103779,7 +103779,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Dominant LST protocol at $21B TVL with real staking revenue; fee switch vote pending but token accrual still weak.",
-            "market_cap": 335726648,
+            "market_cap": 245876543,
             "dilution_x": 1.18,
             "chain": "Ethereum"
           },
@@ -103818,7 +103818,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "VALIDATED: DeFi revenue leader ($246M net, P/S 5.4x) but headline '$435M' is GROSS before $165M SSR payouts. Buybacks slashed 87% until ~Nov 2026. Net inflationary 4.4%/yr. TVL declining $7.5B→$6.0B. S&P B-. #3 stablecoin ($12.9B). Revenue real but token value accrual IMPAIRED.",
-            "market_cap": 1345176602,
+            "market_cap": 1319936511,
             "dilution_x": 1.01,
             "chain": "Ethereum"
           },
@@ -103831,7 +103831,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "44% of ETH DEX fee revenue is extraordinary. veCRV/Convex lock-in. ATH -96% (not -99.6%, illiquid spike).",
-            "market_cap": 324832070,
+            "market_cap": 323617938,
             "dilution_x": 2,
             "chain": "Ethereum"
           },
@@ -103844,7 +103844,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "green",
             "one_liner": "Ethereum's dominant naming system with $2M+ monthly protocol revenue and a fee switch already enabled",
-            "market_cap": 187538377,
+            "market_cap": 171958384,
             "dilution_x": 2.47,
             "chain": "Ethereum"
           },
@@ -103883,7 +103883,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Token for the dominant smart-contract wallet securing $100B+ in assets, but governance token with minimal direct value accrual so far",
-            "market_cap": 69346906,
+            "market_cap": 67182952,
             "dilution_x": 1.35,
             "chain": "Ethereum"
           },
@@ -103896,7 +103896,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Best tokenomics (zero inflation, 100% fee buyback, 99.7% circ) but losing perps war. sUSD at $0.74.",
-            "market_cap": 127303375,
+            "market_cap": 124083624,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -103909,7 +103909,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Autonomous AI agent infrastructure with multi-chain deployment; technically deep but lost to Virtuals on narrative and accessibility",
-            "market_cap": 7244261,
+            "market_cap": 7445666,
             "dilution_x": 2,
             "chain": "Ethereum"
           },
@@ -103935,7 +103935,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Decentralized GPU rendering marketplace at ATH correlation with AI hype cycle. Real utility but valuation stretched vs actual render job revenue.",
-            "market_cap": 770217747,
+            "market_cap": 684692040,
             "dilution_x": 1.24,
             "chain": "Ethereum"
           },
@@ -103961,7 +103961,7 @@
             "verdict": "WATCH",
             "verdict_color": "orange",
             "one_liner": "ZK perp DEX, up sharply this week to a $534M cap. But farming revenue fell ~70% to ~$26-30M annualized, so P/S re-rated to a rich ~18-20x. New Jul 2026 buyback-and-burn + 6% staking target vs a Dec 2026 cliff that vests 50% of supply at ~13.9M LIT/month.",
-            "market_cap": 570775228,
+            "market_cap": 540167053,
             "dilution_x": 4,
             "chain": "Ethereum"
           },
@@ -104000,7 +104000,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Web3 data indexing with 700+ subgraphs; real query fee revenue but P/S elevated and token inflation from indexer rewards dilutes holders.",
-            "market_cap": 172890823,
+            "market_cap": 155597151,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -104026,7 +104026,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "USDe supply crashed 65% from $12B peak. BaFin banned under MiCA. Brutal vesting schedule.",
-            "market_cap": 864360010,
+            "market_cap": 896231868,
             "dilution_x": 1.66,
             "chain": "Ethereum"
           },
@@ -104039,7 +104039,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "OG DeFi lender with real protocol revenue but P/S ~112x makes valuation deeply stretched at current price.",
-            "market_cap": 171621573,
+            "market_cap": 162266881,
             "dilution_x": 1.03,
             "chain": "Ethereum"
           },
@@ -104078,7 +104078,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Web3 gaming ZK-rollup with major game studio partnerships; gaming L2 narrative still alive but token vesting pressure is severe",
-            "market_cap": 252908764,
+            "market_cap": 220363599,
             "dilution_x": 2.37,
             "chain": "Ethereum"
           },
@@ -104117,7 +104117,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "$3B RWA platform but ONDO token captures $0 revenue. 57.79% in one wallet. -73% in 12mo.",
-            "market_cap": 2022936781,
+            "market_cap": 1800104419,
             "dilution_x": 2.05,
             "chain": "Ethereum"
           },
@@ -104130,7 +104130,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Web scraping bandwidth marketplace that monetizes idle internet connections; interesting model but heavy vesting schedule and speculative revenue",
-            "market_cap": 221533509,
+            "market_cap": 200578614,
             "dilution_x": 1.7,
             "chain": "Ethereum"
           },
@@ -104143,7 +104143,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "DeFi yield aggregator OG with real protocol revenue, but YFI buybacks alone cannot support a $91M market cap as yields compress and competition intensifies",
-            "market_cap": 75732152,
+            "market_cap": 74819514,
             "dilution_x": 1.03,
             "chain": "Ethereum"
           },
@@ -104169,7 +104169,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "ASI Alliance merger token (FET+AGIX+OCEAN). AI agent narrative intact but protocol revenue minimal and merger synergies unclear.",
-            "market_cap": 349606503,
+            "market_cap": 310684233,
             "dilution_x": 1.2,
             "chain": "Ethereum"
           },
@@ -104208,7 +104208,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Decentralized GPU compute marketplace down 98.3% from ATH; real compute demand but token economics designed for insiders",
-            "market_cap": 55204228,
+            "market_cap": 46685502,
             "dilution_x": 2.4,
             "chain": "Ethereum"
           },
@@ -104247,7 +104247,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Restaking pioneer with $5.8B TVL but 82% of tokens opening over 3 years creates extreme dilution headwind.",
-            "market_cap": 157057748,
+            "market_cap": 134005201,
             "dilution_x": 2.46,
             "chain": "Ethereum"
           },
@@ -104273,7 +104273,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "DVT infrastructure for ETH staking with $3.2B validators secured; heavy vesting pressure and weak token accrual are red flags.",
-            "market_cap": 33743294,
+            "market_cap": 30191605,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -104312,7 +104312,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Governance token for the Frax stablecoin system rebranding to frxUSD, but FXS faces dilution from veFXS migration and loss of direct fee accrual",
-            "market_cap": 25216057,
+            "market_cap": 27314419,
             "dilution_x": 1.19,
             "chain": "Ethereum"
           },
@@ -104325,7 +104325,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Decentralized ETH staking with ~$1.1B TVL but catastrophic price collapse; tokenomics restructure eliminated RPL value accrual.",
-            "market_cap": 38455461,
+            "market_cap": 35022509,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -104364,7 +104364,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Curve vote-locking meta-protocol that captured the Curve Wars era but faces structural decline as veCRV yields compress and DeFi rotates away",
-            "market_cap": 139675651,
+            "market_cap": 150808388,
             "dilution_x": 1.11,
             "chain": "Ethereum"
           },
@@ -104572,7 +104572,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Pioneer AMM with weighted pools and boosted pools, but hemorrhaging TVL to Uniswap V4 and newer competitors while BAL token has severe value accrual problems",
-            "market_cap": 9050923,
+            "market_cap": 8033129,
             "dilution_x": 1.49,
             "chain": "Ethereum"
           },
@@ -104637,7 +104637,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "DEX aggregator that pioneered intent-based routing but now faces commoditization from 0x, Paraswap, and native DEX aggregation within wallets",
-            "market_cap": 122833418,
+            "market_cap": 117014794,
             "dilution_x": 1.07,
             "chain": "Ethereum"
           },
@@ -104676,7 +104676,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Ethereum's largest meme coin at $1.6B market cap with massive liquidity; culturally entrenched but zero revenue and purely narrative-driven valuation.",
-            "market_cap": 1246377350,
+            "market_cap": 1170598222,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -104767,7 +104767,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Sam Altman-backed proof-of-personhood with global orb rollout but only 16.5% circulating; massive insider dilution incoming.",
-            "market_cap": 1306574535,
+            "market_cap": 1089231992,
             "dilution_x": 2.93,
             "chain": "Ethereum"
           },
@@ -104793,7 +104793,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Elon-inspired meme coin with NFT game Valhalla and token-based university; marketing-heavy but network revenue negligible vs $290M market cap.",
-            "market_cap": 212518205,
+            "market_cap": 198211216,
             "dilution_x": 1.04,
             "chain": "Ethereum"
           },
@@ -104845,7 +104845,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "NFT marketplace token that temporarily dominated OpenSea via airdrop-fueled volume incentives, but NFT market collapse and massive releases destroy the setup",
-            "market_cap": 43126858,
+            "market_cap": 39979721,
             "dilution_x": 1.07,
             "chain": "Ethereum"
           },
@@ -104923,7 +104923,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Pioneer play-to-earn NFT game that spawned an entire sector but collapsed under its own Ponzi tokenomics; $625M Ronin bridge hack accelerated the death spiral",
-            "market_cap": 153306505,
+            "market_cap": 155602288,
             "dilution_x": 1.56,
             "chain": "Ethereum"
           },
@@ -104936,7 +104936,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Once-prominent fork DEX that lost its narrative, its developers, and its users; no credible recovery path for the token",
-            "market_cap": 48324938,
+            "market_cap": 48647115,
             "dilution_x": 1.07,
             "chain": "Ethereum"
           },
@@ -104962,7 +104962,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Meme coin with quadrillions of tokens and negligible DeFi. Shibarium L2 launched but sees minimal usage. Pure sentiment and retail speculation.",
-            "market_cap": 2945333786,
+            "market_cap": 2790695400,
             "dilution_x": 1,
             "chain": "Ethereum"
           },
@@ -105014,7 +105014,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Pioneer decentralized metaverse with DAO governance that peaked in 2021 hype; now averages under 1,000 concurrent users despite $165M market cap",
-            "market_cap": 133505954,
+            "market_cap": 129898390,
             "dilution_x": 1.13,
             "chain": "Ethereum"
           },
@@ -105040,7 +105040,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "-99.4% ATH. 4,500 DAU. Founders ousted. 50% layoffs. Staking dead. $312K daily vol. Metaverse narrative buried.",
-            "market_cap": 134931913,
+            "market_cap": 122955482,
             "dilution_x": 1.12,
             "chain": "Ethereum"
           },
@@ -105079,7 +105079,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Gaming platform token down 99.6% from ATH; wracked by internal fraud allegations, token supply manipulation, and a gaming sector with no mass-market hits",
-            "market_cap": 96396022,
+            "market_cap": 87660783,
             "dilution_x": 1.04,
             "chain": "Ethereum"
           }
@@ -105138,7 +105138,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "High-throughput L1 with dominant DEX volume and meme coin launchpad traction. Network reliability improved significantly post-2023.",
-            "market_cap": 44627107558,
+            "market_cap": 42572432706,
             "dilution_x": 1.08,
             "chain": "Solana"
           },
@@ -105151,7 +105151,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Revenue NOT declining: Q2 2026 $1.93M (+10% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
-            "market_cap": 144336345,
+            "market_cap": 81825444,
             "dilution_x": 2.25,
             "chain": "Solana"
           },
@@ -105164,7 +105164,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "S39 VALIDATED: Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
-            "market_cap": 634854569,
+            "market_cap": 607108154,
             "dilution_x": 2.11,
             "chain": "Solana"
           },
@@ -105190,7 +105190,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "S38 VALIDATED: #1 Solana lending, $3.2B TVL, $14.3M rev, but ZERO value accrual to KMNO. Excellent protocol, worthless token.",
-            "market_cap": 92808869,
+            "market_cap": 94388519,
             "dilution_x": 2.14,
             "chain": "Solana"
           },
@@ -105203,7 +105203,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Telegram trading bot with real revenue and buyback mechanism but entirely dependent on on-chain trading volume cycles",
-            "market_cap": 15122456,
+            "market_cap": 14085782,
             "dilution_x": 2.49,
             "chain": "Solana"
           },
@@ -105229,7 +105229,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Cyclical memecoin infrastructure. Revenue collapsed 76% from peak. PumpSwap forking the model.",
-            "market_cap": 170719316,
+            "market_cap": 164968571,
             "dilution_x": 2.06,
             "chain": "Solana"
           },
@@ -105255,7 +105255,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Pioneer decentralized wireless network with real Solana migration complete; MOBILE/IOT subDAOs growing but HNT value accrual thin",
-            "market_cap": 35253030,
+            "market_cap": 32892524,
             "dilution_x": 1.22,
             "chain": "Solana"
           },
@@ -105294,7 +105294,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Cross-chain oracle with 500+ price feeds used by $100B+ DeFi TVL; but only 34.5% circulating and token value accrual to PYTH minimal.",
-            "market_cap": 353798448,
+            "market_cap": 313553087,
             "dilution_x": 1.27,
             "chain": "Solana"
           },
@@ -105372,7 +105372,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Solana's original dog meme coin with $480M market cap; massive community but zero fundamental revenue and pure sentiment-driven price action.",
-            "market_cap": 272048085,
+            "market_cap": 243076264,
             "dilution_x": 1,
             "chain": "Solana"
           },
@@ -105411,7 +105411,7 @@
             "verdict": "PASS",
             "verdict_color": "red",
             "one_liner": "Solana's top dog meme with fully diluted supply and $200M market cap; pure meme energy with no utility, revenue, or roadmap.",
-            "market_cap": 153777767,
+            "market_cap": 138355940,
             "dilution_x": 1,
             "chain": "Solana"
           },
@@ -105509,7 +105509,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Protocol revenue ~$14M (not $42M total fees). Commodity perps live ($1.18B week-1). $20.86M buybacks.",
-            "market_cap": 72594575,
+            "market_cap": 66132490,
             "dilution_x": 1.27,
             "chain": "Arbitrum"
           },
@@ -105522,7 +105522,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "green",
             "one_liner": "Largest Ethereum L2 by TVL with Arbitrum One and Nova chains. Real DeFi hub but token governance hasn't yet captured protocol value effectively.",
-            "market_cap": 543777313,
+            "market_cap": 515167523,
             "dilution_x": 1.6,
             "chain": "Arbitrum"
           },
@@ -105548,7 +105548,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "1.16x P/S but losing DEX war. 14-15M tokens burned (38%+ of initial). 97% circ/total. $113K volume.",
-            "market_cap": 12691240,
+            "market_cap": 11750102,
             "dilution_x": 1,
             "chain": "Arbitrum"
           },
@@ -105659,7 +105659,7 @@
             "verdict": "HOLD",
             "verdict_color": "green",
             "one_liner": "Binance exchange utility token with quarterly burns. Highly tied to Binance CEX health and regulatory outcome.",
-            "market_cap": 76299673349,
+            "market_cap": 79121070381,
             "dilution_x": 1.48,
             "chain": "BNB Chain"
           },
@@ -105770,7 +105770,7 @@
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
             "one_liner": "Ethereum L2 with Superchain vision and OP Stack powering Coinbase Base. Real sequencer revenue but massive token vesting schedule is the key headwind.",
-            "market_cap": 216626944,
+            "market_cap": 198932708,
             "dilution_x": 2,
             "chain": "Optimism"
           },
@@ -105881,7 +105881,7 @@
             "verdict": "WATCH",
             "verdict_color": "orange",
             "one_liner": "Dominant DEX on Polygon. Fork of Uniswap V3 with concentrated liquidity.",
-            "market_cap": 5298104,
+            "market_cap": 5386468,
             "dilution_x": 1.31,
             "chain": "Polygon"
           }
@@ -105953,7 +105953,7 @@
             "verdict": "WATCH",
             "verdict_color": "yellow",
             "one_liner": "Cross-chain relay network struggling with parachain lease complexity. JAM upgrade promises unified computing but narrative has failed to stick.",
-            "market_cap": 1376521299,
+            "market_cap": 1401897074,
             "dilution_x": 1.25,
             "chain": "Polkadot"
           },

@@ -15,11 +15,18 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - run: pip install requests yfinance
       - run: python scripts/update-prices.py
       - run: python scripts/validate-data.py
+      # The scorecard pages read prices through the derived analytics layer,
+      # which cross-fills from opportunities.json. Rebuild it in the same job
+      # so those pages cannot drift behind the daily reprice.
+      - run: node scripts/build-scorecard-analytics.mjs
       - run: git pull --rebase --autostash origin main
       - uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: 'data: daily price update'
-          file_pattern: data/opportunities.json
+          file_pattern: 'data/opportunities.json data/scorecard-analytics.json'
