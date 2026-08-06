@@ -65,7 +65,7 @@
       },
       "citations": [
         {
-          "claim": "DeFi TVL $46.17B L1, ~$94B system (L1+L2)",
+          "claim": "DeFi TVL $46.17B L1, ~$94B network (L1+L2)",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/ethereum"
         },
@@ -85,7 +85,7 @@
           "url": "https://www.coindesk.com/markets/2026/03/12/blackrock-debuts-staked-ether-etf-as-demand-grows-for-yield-in-crypto-funds"
         },
         {
-          "claim": "31,869 active developers, #1 system (Electric Capital Sep 2025)",
+          "claim": "31,869 active developers, #1 network (Electric Capital Sep 2025)",
           "source": "Electric Capital",
           "url": "https://www.developerreport.com/ecosystems/ethereum"
         },
@@ -288,7 +288,7 @@
           "url": "https://defillama.com/protocol/dydx"
         },
         {
-          "claim": "Not on Binance Global spot, competitive rivalry with CZ system",
+          "claim": "Not on Binance Global spot, competitive rivalry with CZ network",
           "source": "Community / Exchange listings",
           "url": "https://www.binance.com"
         },
@@ -949,7 +949,7 @@
       "verdict_color": "green",
       "one_liner": "High-throughput L1 with dominant DEX volume and meme coin launchpad traction. Network reliability improved significantly post-2023.",
       "key_catalyst": "Spot SOL ETF approval pipeline; Firedancer client going live increases throughput 10x",
-      "key_risk": "Continued VC unlock pressure; centralization concerns with validator concentration",
+      "key_risk": "Continued VC vesting pressure; centralization concerns with validator concentration",
       "max_supply": null,
       "total_supply": 627137872.5901288,
       "circulating_supply": 578217008.6682509,
@@ -1129,7 +1129,7 @@
       "verdict_color": "green",
       "one_liner": "Revenue NOT declining: Q2 2026 $1.93M (+10% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
       "key_catalyst": "Jun 30 2026 halving (12→6 GEOD/day) accelerates deflationary crossover, Japan/Iceland StableHex expansion (Jun 8), Binance listing 12-18mo (40-55% probability), humanoid robot positioning (Multicoin $8M thesis), GEODASH ag drone JV (Q3 2026 commercial)",
-      "key_risk": "P/S 9.9-14.4x expensive vs Helium (3.1x) and Trimble (4.5x), FCC licensing gap for distributed RTK radio (individual operator licenses needed), no formal 99.9% SLA for enterprise customers, NVIDIA/humanoid robot connection is pure speculation (zero confirmed partnerships), 37.7% supply still locked with ongoing investor unlocks through 2029",
+      "key_risk": "P/S 9.9-14.4x expensive vs Helium (3.1x) and Trimble (4.5x), FCC licensing gap for distributed RTK radio (individual operator licenses needed), no formal 99.9% SLA for enterprise customers, NVIDIA/humanoid robot connection is pure speculation (zero confirmed partnerships), 37.7% supply still locked with ongoing investor releases through 2029",
       "max_supply": 1000000000,
       "total_supply": 965606567.618101,
       "circulating_supply": 444583902.618101,
@@ -1295,7 +1295,7 @@
           "verified": true
         },
         {
-          "claim": "Token allocation: 35% mining, 25% team, 25% investors, 10% system, 3% vendor, 2% public",
+          "claim": "Token allocation: 35% mining, 25% team, 25% investors, 10% network, 3% vendor, 2% public",
           "source": "GEODNET Docs",
           "url": "https://docs.geodnet.com/geod-token/tokenomics",
           "verified": true
@@ -1513,9 +1513,9 @@
       "prev_score": 70,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "$7.8B TVL on $350M mcap (22x TVL/MC). $50M buyback active. 84% circ. 250M token unlocks ahead.",
+      "one_liner": "$7.8B TVL on $350M mcap (22x TVL/MC). $50M buyback active. 84% circ. 250M token releases ahead.",
       "key_catalyst": "$50M buyback active (99% DAO approval), ETH staking ETF narrative, EtherFi Cash card",
-      "key_risk": "token unlock to 2027, ETH price dependency, Lido competition (#1 LST)",
+      "key_risk": "token release to 2027, ETH price dependency, Lido competition (#1 LST)",
       "max_supply": 1000000000,
       "total_supply": 998535999,
       "circulating_supply": 880665741,
@@ -1756,7 +1756,7 @@
       "verdict": "HOLD",
       "verdict_color": "green",
       "one_liner": "Base's dominant DEX capturing ~60% of chain volume with real fee revenue and veAERO flywheel locking supply",
-      "key_catalyst": "Base TVL growth and Coinbase system expansion driving sustained fee revenue above $1M/day peaks",
+      "key_catalyst": "Base TVL growth and Coinbase network expansion driving sustained fee revenue above $1M/day peaks",
       "key_risk": "Velodrome V3 migration on Optimism could siphon developer mindshare; token inflation from emissions remains elevated",
       "max_supply": null,
       "total_supply": 1903187204.534856,
@@ -1807,7 +1807,7 @@
           "url": "https://defillama.com/chain/Base"
         },
         {
-          "claim": "Aerodrome is the official Velodrome V2 deployment on Base, backed by Optimism system",
+          "claim": "Aerodrome is the official Velodrome V2 deployment on Base, backed by Optimism network",
           "source": "Aerodrome Docs",
           "url": "https://aerodrome.finance/docs"
         }
@@ -2321,7 +2321,7 @@
           "url": "https://www.liquity.org/blog/licensing-liquity-v2-may-the-fork-be-with-you"
         },
         {
-          "claim": "99% circ supply, no cliff unlocks, $27M mcap on $2.55M annualized V2 fees",
+          "claim": "99% circ supply, no cliff releases, $27M mcap on $2.55M annualized V2 fees",
           "source": "DeFiLlama",
           "url": "https://defillama.com/unlocks/liquity"
         },
@@ -2531,7 +2531,7 @@
           "url": "https://www.cryptotimes.io/2026/05/31/fluid-protocol-loses-125k-fluid-51-9k-gho-in-key-compromise-attack/"
         },
         {
-          "claim": "100M hard cap. Zero inflation. Fully unlocked since June 2025. 78.69M circulating (78.7%)",
+          "claim": "100M hard cap. Zero inflation. Fully released since June 2025. 78.69M circulating (78.7%)",
           "source": "Tokenomist.ai",
           "url": "https://tokenomist.ai/instadapp/tokenomics"
         },
@@ -2937,9 +2937,9 @@
       "prev_score": 138,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Leading CLMM DEX on Sui with near-monopoly status; strong TVL growth as Sui system expansion accelerates",
+      "one_liner": "Leading CLMM DEX on Sui with near-monopoly status; strong TVL growth as Sui network expansion accelerates",
       "key_catalyst": "Sui TVL surging past $2B; CETUS as dominant liquidity layer capturing majority of Sui DEX volume",
-      "key_risk": "Sui system concentration risk; hack/exploit history (2023 $22M exploit fully recovered); competition from Turbos/Aftermath",
+      "key_risk": "Sui network concentration risk; hack/exploit history (2023 $22M exploit fully recovered); competition from Turbos/Aftermath",
       "max_supply": 1000000000,
       "total_supply": 1000000000,
       "circulating_supply": 947826087,
@@ -3016,9 +3016,9 @@
       "prev_score": 137,
       "verdict": "HOLD",
       "verdict_color": "green",
-      "one_liner": "Move-language L1 with best TVL growth trajectory in 2025-2026. Near ATH with strong DeFi traction but heavy unlock schedule is key risk.",
+      "one_liner": "Move-language L1 with best TVL growth trajectory in 2025-2026. Near ATH with strong DeFi traction but heavy vesting schedule is key risk.",
       "key_catalyst": "Dominant DEX volume growth; zkLogin adoption driving user onboarding; CETUS liquidity monopoly",
-      "key_risk": "Only 33% of tokens in circulation; Mysten Labs/VC unlocks through 2028 create structural sell pressure",
+      "key_risk": "Only 33% of tokens in circulation; Mysten Labs/VC releases through 2028 create structural sell pressure",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
       "circulating_supply": 4005418369.566699,
@@ -3064,7 +3064,7 @@
           "url": "https://defillama.com/chain/Sui"
         },
         {
-          "claim": "Sui circulating supply only 33% of total with major unlocks through 2028",
+          "claim": "Sui circulating supply only 33% of total with major releases through 2028",
           "source": "Messari",
           "url": "https://messari.io/asset/sui"
         },
@@ -3245,7 +3245,7 @@
       "verdict": "HOLD",
       "verdict_color": "green",
       "one_liner": "Binance exchange utility token with quarterly burns. Highly tied to Binance CEX health and regulatory outcome.",
-      "key_catalyst": "Binance regulatory settlements complete; BNB Chain system expansion into Southeast Asia",
+      "key_catalyst": "Binance regulatory settlements complete; BNB Chain network expansion into Southeast Asia",
       "key_risk": "Binance regulatory tail risk remains; CZ plea deal overhang; centralized chain perception",
       "max_supply": 200000000,
       "total_supply": 134784836.94,
@@ -3623,7 +3623,7 @@
       "verdict_color": "green",
       "one_liner": "Permanent data storage with one-time payment model. AO compute layer adds programmability. 65M+ items stored but token price lags data growth.",
       "key_catalyst": "AO (Actor Oriented) parallel computing layer turning Arweave into compute network",
-      "key_risk": "Storage endowment model relies on AR price assumptions; 83% below ATH; small system",
+      "key_risk": "Storage endowment model relies on AR price assumptions; 83% below ATH; small network",
       "max_supply": 66000000,
       "total_supply": 65652466,
       "circulating_supply": 65652466,
@@ -3703,7 +3703,7 @@
       "verdict_color": "green",
       "one_liner": "Finance-first L1 with aggressive burn mechanism and real derivatives volume. P/S ratio improving but TVL still modest vs valuation.",
       "key_catalyst": "Weekly INJ burn from protocol fees; derivatives DEX adoption from TradFi pairs",
-      "key_risk": "Small system relative to Solana; derivatives DEX market dominated by centralized venues",
+      "key_risk": "Small network relative to Solana; derivatives DEX market dominated by centralized venues",
       "max_supply": null,
       "total_supply": 100000000,
       "circulating_supply": 100000000,
@@ -4003,7 +4003,7 @@
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "orange",
       "one_liner": "Intent-based cross-chain bridge. Highest revenue-per-dollar-bridged. 100% fee buyback to stakers.",
-      "key_catalyst": "Growing bridge volume, fee buyback mechanism, UMA system integration",
+      "key_catalyst": "Growing bridge volume, fee buyback mechanism, UMA network integration",
       "key_risk": "Intent-based competition (UniswapX), relayer centralization, low liquidity",
       "max_supply": 1000000000,
       "total_supply": 1000000000,
@@ -4501,7 +4501,7 @@
       "verdict_color": "green",
       "one_liner": "Largest Ethereum L2 by TVL with Arbitrum One and Nova chains. Real DeFi hub but token governance hasn't yet captured protocol value effectively.",
       "key_catalyst": "BOLD dispute resolution upgrade; Stylus enabling Rust/C++ smart contracts expanding developer base",
-      "key_risk": "42% circulating with significant investor unlocks remaining; sequencer revenue not well-accrued to ARB token holders",
+      "key_risk": "42% circulating with significant investor releases remaining; sequencer revenue not well-accrued to ARB token holders",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
       "circulating_supply": 6255821492,
@@ -4553,7 +4553,7 @@
           "url": "https://arbitrum.io/stylus"
         },
         {
-          "claim": "ARB circulating supply 42% of total with investor unlocks through 2027",
+          "claim": "ARB circulating supply 42% of total with investor releases through 2027",
           "source": "Messari",
           "url": "https://messari.io/asset/arbitrum"
         }
@@ -4581,8 +4581,8 @@
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
       "one_liner": "Solana MEV and liquid staking with $2.8B TVL; jitoSOL growing fast but JTO governance has no direct fee accrual yet.",
-      "key_catalyst": "JTO fee switch enabling staking rewards from MEV tips; Solana system continued growth",
-      "key_risk": "No direct revenue accrual to JTO token yet; 91% below ATH; concentrated Solana system risk; a16z large token holder",
+      "key_catalyst": "JTO fee switch enabling staking rewards from MEV tips; Solana network continued growth",
+      "key_risk": "No direct revenue accrual to JTO token yet; 91% below ATH; concentrated Solana network risk; a16z large token holder",
       "max_supply": null,
       "total_supply": 1000000000,
       "circulating_supply": 475694291.2,
@@ -4849,7 +4849,7 @@
           "url": "https://safe.global"
         },
         {
-          "claim": "Only 22% of SAFE token supply is circulating; large unlocks scheduled through 2027",
+          "claim": "Only 22% of SAFE token supply is circulating; large releases scheduled through 2027",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/safe"
         },
@@ -5208,7 +5208,7 @@
       "prev_score": 130,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "Gnosis Chain validator token and Safe system governance token with real utility and Ethereum alignment, but niche chain and high price vs fundamentals",
+      "one_liner": "Gnosis Chain validator token and Safe network governance token with real utility and Ethereum alignment, but niche chain and high price vs fundamentals",
       "key_catalyst": "Gnosis Pay card adoption and Gnosis Chain positioning as Ethereum's community L1",
       "key_risk": "Gnosis Chain has minimal DeFi activity vs Ethereum L2s; GNO value thesis relies on staking yield and Safe governance",
       "max_supply": 3000000,
@@ -5453,7 +5453,7 @@
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
       "one_liner": "Novel Proof-of-Liquidity L1 with highest post-launch TVL in history, but BERA token down 97.5% and PoL is untested long-term",
-      "key_catalyst": "Berachain system DeFi growth with PoL driving genuine liquidity depth; BGT/HONEY stablecoin flywheel",
+      "key_catalyst": "Berachain network DeFi growth with PoL driving genuine liquidity depth; BGT/HONEY stablecoin flywheel",
       "key_risk": "97.5% down from ATH; PoL model unproven at scale; BERA token has weak direct value accrual vs BGT governance token",
       "max_supply": null,
       "total_supply": 540788640.7467626,
@@ -5673,9 +5673,9 @@
       "prev_score": 118,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "Ethereum L2 with Superchain vision and OP Stack powering Coinbase Base. Real sequencer revenue but massive token unlock schedule is the key headwind.",
+      "one_liner": "Ethereum L2 with Superchain vision and OP Stack powering Coinbase Base. Real sequencer revenue but massive token vesting schedule is the key headwind.",
       "key_catalyst": "Superchain interoperability connecting Base, Optimism, Zora; sequencer revenue growing",
-      "key_risk": "Only 30% circulating; OP Foundation and investor unlocks through 2027 create persistent sell pressure",
+      "key_risk": "Only 30% circulating; OP Foundation and investor releases through 2027 create persistent sell pressure",
       "max_supply": 4294967296,
       "total_supply": 4294967296,
       "circulating_supply": 2150875957,
@@ -5754,7 +5754,7 @@
       "prev_score": 115,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "Polygon's new staking and gas token replacing MATIC. AggLayer cross-chain aggregation is the core thesis but token unlock schedule is heavy.",
+      "one_liner": "Polygon's new staking and gas token replacing MATIC. AggLayer cross-chain aggregation is the core thesis but token vesting schedule is heavy.",
       "key_catalyst": "AggLayer connecting all Polygon CDK chains into unified liquidity layer; ETH Foundation alignment",
       "key_risk": "Only 38% circulating; MATIC migration not fully complete; AggLayer adoption slower than expected",
       "max_supply": null,
@@ -5835,7 +5835,7 @@
       "prev_score": 107,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "BSC's dominant DEX with $1.5B TVL and real fee revenue; aggressive CAKE burn ongoing but BNB system dependence limits upside.",
+      "one_liner": "BSC's dominant DEX with $1.5B TVL and real fee revenue; aggressive CAKE burn ongoing but BNB network dependence limits upside.",
       "key_catalyst": "PancakeSwap v4 with concentrated liquidity; multi-chain expansion to Base, zkSync, Linea",
       "key_risk": "97% below ATH; BNB chain activity fragile; veCAKE tokenomics still inflationary net of burns; Uniswap competition intensifying on every chain",
       "max_supply": 400000000,
@@ -5883,7 +5883,7 @@
           "url": "https://defillama.com/protocol/pancakeswap"
         },
         {
-          "claim": "PancakeSwap v4 launched with concentrated liquidity and hooks system for custom pool logic",
+          "claim": "PancakeSwap v4 launched with concentrated liquidity and hooks network for custom pool logic",
           "source": "PancakeSwap Blog",
           "url": "https://pancakeswap.finance/blog"
         },
@@ -6182,9 +6182,9 @@
       "prev_score": 121,
       "verdict": "WATCH",
       "verdict_color": "orange",
-      "one_liner": "GRAM rebrand Jun 15. Telegram 1B MAU took direct control (MTONGA). TVL collapsed -91% ($56M). $61M/month Believers unlocks through Oct 2028. 1.08B frozen TON unfreezes Feb 2027. Stars onramp real but DeFi dead.",
+      "one_liner": "GRAM rebrand Jun 15. Telegram 1B MAU took direct control (MTONGA). TVL collapsed -91% ($56M). $61M/month Believers releases through Oct 2028. 1.08B frozen TON unfreezes Feb 2027. Stars onramp real but DeFi dead.",
       "key_catalyst": "GRAM rebrand Jun 15, TON Teleport BTC bridge, TON Pay 2.0, MTONGA steps 5-7, Stars-to-TON fiat onramp",
-      "key_risk": "Believers $61M/mo unlocks (27mo left), 1.08B frozen wallets unfreeze Feb 2027, Durov 12 charges, 85% whale concentration, zero protocol revenue",
+      "key_risk": "Believers $61M/mo releases (27mo left), 1.08B frozen wallets unfreeze Feb 2027, Durov 12 charges, 85% whale concentration, zero protocol revenue",
       "max_supply": null,
       "total_supply": 5194506740,
       "circulating_supply": 2695220993,
@@ -6403,7 +6403,7 @@
       "verdict_color": "yellow",
       "one_liner": "Ripple's payment token with SEC case mostly resolved. Institutional cross-border payment rails narrative intact but XRPL DeFi negligible.",
       "key_catalyst": "Spot XRP ETF approvals in US; RLUSD stablecoin adoption by banks",
-      "key_risk": "50% of supply still held by Ripple Labs with monthly escrow unlocks diluting holders",
+      "key_risk": "50% of supply still held by Ripple Labs with monthly escrow releases diluting holders",
       "max_supply": 100000000000,
       "total_supply": 99985662685,
       "circulating_supply": 61858321245,
@@ -6683,7 +6683,7 @@
       "prev_score": 47,
       "verdict": "CAUTIOUS HOLD",
       "verdict_color": "yellow",
-      "one_liner": "USDe supply crashed 65% from $12B peak. BaFin banned under MiCA. Brutal unlock schedule.",
+      "one_liner": "USDe supply crashed 65% from $12B peak. BaFin banned under MiCA. Brutal vesting schedule.",
       "key_catalyst": "Grayscale 13.59% allocation, Arthur Hayes $1.97M investment, BlackRock UStb",
       "key_risk": "S&P 1,250% Basel III risk weight, BaFin ban, only 55% circ, -93% from ATH",
       "max_supply": 15000000000,
@@ -6769,7 +6769,7 @@
       "verdict_color": "yellow",
       "one_liner": "Modular DA layer with strong VC backing and developer traction; only 22% circulating means severe multi-year open dilution ahead.",
       "key_catalyst": "Modular blockchain thesis gaining ground; TIA staking and DA fee revenue from rollups growing",
-      "key_risk": "Only 22% supply circulating; enormous investor/team unlocks through 2027; DA revenue thin; competing with EigenDA and Avail for mindshare",
+      "key_risk": "Only 22% supply circulating; enormous investor/team releases through 2027; DA revenue thin; competing with EigenDA and Avail for mindshare",
       "max_supply": null,
       "total_supply": 1169053773.23602,
       "circulating_supply": 922024550.878258,
@@ -6815,7 +6815,7 @@
           "url": "https://blog.celestia.org"
         },
         {
-          "claim": "TIA has only 22% of supply circulating with large team and investor unlocks continuing through 2027",
+          "claim": "TIA has only 22% of supply circulating with large team and investor releases continuing through 2027",
           "source": "Messari",
           "url": "https://messari.io/asset/celestia/profile"
         },
@@ -7226,7 +7226,7 @@
           "url": "https://stacks.org"
         },
         {
-          "claim": "sBTC enables decentralized Bitcoin pegging to Stacks DeFi system",
+          "claim": "sBTC enables decentralized Bitcoin pegging to Stacks DeFi network",
           "source": "Stacks Docs",
           "url": "https://docs.stacks.co"
         },
@@ -7303,7 +7303,7 @@
       "cmc_slug": "woo-network",
       "citations": [],
       "key_catalyst": "WOO X exchange expansion & zero-fee model; staking yield from rebates",
-      "key_risk": "Low trading volume vs. Binance/Bybit; token unlock dilution from treasury",
+      "key_risk": "Low trading volume vs. Binance/Bybit; token release dilution from treasury",
       "tvl": 0
     },
     {
@@ -7322,7 +7322,7 @@
       "prev_score": 112,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Web3 gaming ZK-rollup with major game studio partnerships; gaming L2 narrative still alive but token unlock pressure is severe",
+      "one_liner": "Web3 gaming ZK-rollup with major game studio partnerships; gaming L2 narrative still alive but token vesting pressure is severe",
       "key_catalyst": "Gods Unchained, Guild of Guardians, and 300+ game titles on IMX; Polygon zkEVM partnership and gaming bull cycle",
       "key_risk": "45% supply still opening (team/investor vesting through 2027), gaming crypto narrative fickle, competition from Ronin and Arbitrum Orbit",
       "max_supply": 2000000000,
@@ -7572,7 +7572,7 @@
       "cmc_slug": "trader-joe",
       "citations": [],
       "key_catalyst": "Avalanche liquidity incentives & Boosted Pools; launch on Ethereum L2s",
-      "key_risk": "DEX competition (Trader Joe vs. Uniswap/Aave); Avalanche system slowdown",
+      "key_risk": "DEX competition (Trader Joe vs. Uniswap/Aave); Avalanche network slowdown",
       "tvl": 0
     },
     {
@@ -7591,8 +7591,8 @@
       "prev_score": 112,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Move-language L1 from ex-Meta team with solid tech but massive unlock schedule dragging price. TVL growing but token inflation brutal.",
-      "key_catalyst": "Microsoft partnership for AI on Aptos; strong Move system crossover with Sui",
+      "one_liner": "Move-language L1 from ex-Meta team with solid tech but massive vesting schedule dragging price. TVL growing but token inflation brutal.",
+      "key_catalyst": "Microsoft partnership for AI on Aptos; strong Move network crossover with Sui",
       "key_risk": "Only 27% of tokens in circulation; heavy VC and team allocations opening through 2028 create massive sell pressure",
       "max_supply": 2100000000,
       "total_supply": 1203226019.020687,
@@ -7639,7 +7639,7 @@
           "url": "https://defillama.com/chain/Aptos"
         },
         {
-          "claim": "Aptos circulating supply only 27% of total with unlocks continuing through 2028",
+          "claim": "Aptos circulating supply only 27% of total with releases continuing through 2028",
           "source": "Messari",
           "url": "https://messari.io/asset/aptos"
         },
@@ -7820,8 +7820,8 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Fantom rebranded to Sonic with 10,000 TPS EVM chain; Andre Cronje back driving DeFi revival with fee monetization",
-      "key_catalyst": "Andre Cronje-led DeFi system expansion; Sonic Gateway bridge to Ethereum and fee sharing with apps going live",
-      "key_risk": "Heavy token unlocks (46% remaining), FTM rebrand legacy bagholders exiting, competing with mature EVM L2s",
+      "key_catalyst": "Andre Cronje-led DeFi network expansion; Sonic Gateway bridge to Ethereum and fee sharing with apps going live",
+      "key_risk": "Heavy token releases (46% remaining), FTM rebrand legacy bagholders exiting, competing with mature EVM L2s",
       "max_supply": null,
       "total_supply": 3885497663,
       "circulating_supply": 3784775845,
@@ -8046,7 +8046,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Fastest PoW blockchain using GHOSTDAG DAG protocol; Bitcoin-aligned narrative with real hashrate growth but no smart contracts",
-      "key_catalyst": "KRC-20 token standard driving on-chain activity; Kaspa smart contracts (kSMT) roadmap could expand system significantly",
+      "key_catalyst": "KRC-20 token standard driving on-chain activity; Kaspa smart contracts (kSMT) roadmap could expand network significantly",
       "key_risk": "No smart contracts or DeFi, pure PoW L1 with no fee revenue model; speculation-driven price with mining inflation",
       "max_supply": 28704026601,
       "total_supply": 27463595669.5268,
@@ -8126,7 +8126,7 @@
       "verdict_color": "yellow",
       "one_liner": "Academic-grade L1 with heavy research pedigree but minimal DeFi traction. Chang hard fork improved governance but TVL remains tiny.",
       "key_catalyst": "Midnight privacy sidechain launch; Hydra scaling reaching mainnet",
-      "key_risk": "Perpetual under-delivery on roadmap; DeFi system far behind competitors; declining developer mindshare",
+      "key_risk": "Perpetual under-delivery on roadmap; DeFi network far behind competitors; declining developer mindshare",
       "max_supply": 45000000000,
       "total_supply": 45000000000,
       "circulating_supply": 37007551099.9152,
@@ -8330,9 +8330,9 @@
       "prev_score": 94,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Web scraping bandwidth marketplace that monetizes idle internet connections; interesting model but heavy unlock schedule and speculative revenue",
+      "one_liner": "Web scraping bandwidth marketplace that monetizes idle internet connections; interesting model but heavy vesting schedule and speculative revenue",
       "key_catalyst": "AI data demand driving bandwidth purchases; Grass Layer 2 network launch creating structured data products for AI training",
-      "key_risk": "89.2% down from ATH; only 38% circulating with heavy VC/team unlocks; business model legality of bandwidth resale uncertain",
+      "key_risk": "89.2% down from ATH; only 38% circulating with heavy VC/team releases; business model legality of bandwidth resale uncertain",
       "max_supply": 1000000000,
       "total_supply": 1000000000,
       "circulating_supply": 587143499,
@@ -8489,7 +8489,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "DAG-based EVM L1. Sonic upgrade for sub-second finality.",
-      "key_catalyst": "Sonic upgrade (Fantom) promises faster finality and EVM compatibility; system migration.",
+      "key_catalyst": "Sonic upgrade (Fantom) promises faster finality and EVM compatibility; network migration.",
       "key_risk": "Delays in Sonic mainnet launch; low TVL vs. rival L1s; reliance on DeFi revival.",
       "max_supply": null,
       "total_supply": 3885497663,
@@ -8742,7 +8742,7 @@
           "url": "https://superintelligence.io"
         },
         {
-          "claim": "FET rebranded to ASI with unified token representing merged AI system",
+          "claim": "FET rebranded to ASI with unified token representing merged AI network",
           "source": "Fetch.ai Blog",
           "url": "https://fetch.ai/blog"
         },
@@ -8774,7 +8774,7 @@
       "prev_score": 92,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Leading perp DEX migrated to its own Cosmos chain; real $380M TVL and daily volume but token accrual to stakers unclear and unlocks persist.",
+      "one_liner": "Leading perp DEX migrated to its own Cosmos chain; real $380M TVL and daily volume but token accrual to stakers unclear and releases persist.",
       "key_catalyst": "dYdX v4 fee distribution to stakers; multi-asset perp expansion; institutional market maker onboarding",
       "key_risk": "99.5% below ATH; only 52% circulating with multi-year vesting ongoing; Hyperliquid and GMX eating market share; dYdX chain bootstrapping uncertain",
       "max_supply": 1000000000,
@@ -9295,7 +9295,7 @@
       "cmc_slug": "stellar",
       "citations": [],
       "key_catalyst": "Stellar's cross-border payment partnerships (e.g., MoneyGram); Soroban smart contract launch.",
-      "key_risk": "Slow payment adoption vs. XRP; limited DeFi system; regulatory uncertainty.",
+      "key_risk": "Slow payment adoption vs. XRP; limited DeFi network; regulatory uncertainty.",
       "tvl": 0
     },
     {
@@ -9316,7 +9316,7 @@
       "verdict_color": "yellow",
       "one_liner": "Restaking pioneer with $5.8B TVL but 82% of tokens opening over 3 years creates extreme dilution headwind.",
       "key_catalyst": "EIGEN slashing activation enabling real AVS security; programmatic incentives attracting AVS launch",
-      "key_risk": "Only 18% circ/FDV; massive insider and foundation unlock schedule; restaking narrative fading; minimal fee accrual to EIGEN token",
+      "key_risk": "Only 18% circ/FDV; massive insider and foundation vesting schedule; restaking narrative fading; minimal fee accrual to EIGEN token",
       "max_supply": null,
       "total_supply": 1822946853.685264,
       "circulating_supply": 741228566.6979554,
@@ -9362,7 +9362,7 @@
           "url": "https://defillama.com/protocol/eigenlayer"
         },
         {
-          "claim": "EIGEN token has only 18% circulating supply with large foundation and investor unlocks ongoing through 2028",
+          "claim": "EIGEN token has only 18% circulating supply with large foundation and investor releases ongoing through 2028",
           "source": "EigenLayer Token Overview",
           "url": "https://www.eigenlayer.xyz/token"
         },
@@ -9396,7 +9396,7 @@
       "verdict_color": "yellow",
       "one_liner": "Cross-chain oracle with 500+ price feeds used by $100B+ DeFi TVL; but only 34.5% circulating and token value accrual to PYTH minimal.",
       "key_catalyst": "PYTH used as fee token for Pyth Entropy; expansion into real-world asset price feeds",
-      "key_risk": "Only 34.5% circulating; Pyth Foundation holds enormous unlocked reserves; oracle services mostly free creating no PYTH demand; Chainlink still dominant",
+      "key_risk": "Only 34.5% circulating; Pyth Foundation holds enormous released reserves; oracle services mostly free creating no PYTH demand; Chainlink still dominant",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
       "circulating_supply": 7874982014.124455,
@@ -9476,7 +9476,7 @@
       "verdict_color": "yellow",
       "one_liner": "Perpetual DEX on Arbitrum with low fees and deep liquidity.",
       "key_catalyst": "Vela Exchange perp DEX on Arbitrum; token buyback and burn mechanism.",
-      "key_risk": "Low trading volumes vs. GMX; reliance on Arbitrum system; token dilution.",
+      "key_risk": "Low trading volumes vs. GMX; reliance on Arbitrum network; token dilution.",
       "max_supply": 100000000,
       "total_supply": 100000000,
       "circulating_supply": 50000000,
@@ -9601,7 +9601,7 @@
       "prev_score": 94,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "DVT infrastructure for ETH staking with $3.2B validators secured; heavy unlock pressure and weak token accrual are red flags.",
+      "one_liner": "DVT infrastructure for ETH staking with $3.2B validators secured; heavy vesting pressure and weak token accrual are red flags.",
       "key_catalyst": "Ethereum mainnet DVT adoption acceleration; SSV becoming required middleware for institutional stakers",
       "key_risk": "Only 45% of supply circulating with multi-year vesting; SSV fee revenue extremely thin relative to token market cap",
       "max_supply": null,
@@ -9649,7 +9649,7 @@
           "url": "https://explorer.ssv.network"
         },
         {
-          "claim": "SSV has only 45% of total supply in circulation with significant team/system vesting remaining",
+          "claim": "SSV has only 45% of total supply in circulation with significant team/network vesting remaining",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/ssv-network"
         },
@@ -9766,7 +9766,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Algorithmic lending/borrowing on Solana. Largest Solana lending protocol.",
-      "key_catalyst": "Solana system recovery and lending TVL growth; SLND stakers earn protocol revenue and boosted yields.",
+      "key_catalyst": "Solana network recovery and lending TVL growth; SLND stakers earn protocol revenue and boosted yields.",
       "key_risk": "Solana network outages and dependency on SOL price; competing lending protocols like Marginfi and Kamino.",
       "max_supply": 100000000,
       "total_supply": 100000000,
@@ -10196,7 +10196,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Meme/NFT brand token for Pudgy Penguins collection; high social proof and retail distribution via Walmart toys, but no protocol revenue and pure sentiment play",
-      "key_catalyst": "Abstract chain launch and Pudgy Penguins system expansion on Ethereum L2",
+      "key_catalyst": "Abstract chain launch and Pudgy Penguins network expansion on Ethereum L2",
       "key_risk": "Pure memecoin with zero revenue; fully diluted at launch means only speculative demand drives price",
       "max_supply": 88888888888,
       "total_supply": 79572204088.58537,
@@ -10247,7 +10247,7 @@
           "url": "https://www.coingecko.com/en/coins/pudgy-penguins"
         },
         {
-          "claim": "Abstract chain (EVM L2 for consumer crypto) is backed by Pudgy Penguins team as system hub",
+          "claim": "Abstract chain (EVM L2 for consumer crypto) is backed by Pudgy Penguins team as network hub",
           "source": "Abstract",
           "url": "https://abs.xyz"
         }
@@ -10338,7 +10338,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Axie Infinity sidechain. Gaming-focused EVM chain with Katana DEX.",
-      "key_catalyst": "Axie Infinity and Sky Mavis game system growth; Ronin's fast, low-cost chain attracts Web3 gaming projects.",
+      "key_catalyst": "Axie Infinity and Sky Mavis game network growth; Ronin's fast, low-cost chain attracts Web3 gaming projects.",
       "key_risk": "Centralized validator set and past bridge hack ($625M); gaming token demand tied to Axie's user retention.",
       "max_supply": 1000000000,
       "total_supply": 1000000000,
@@ -10530,7 +10530,7 @@
       "verdict_color": "yellow",
       "one_liner": "Cross-chain relay network struggling with parachain lease complexity. JAM upgrade promises unified computing but narrative has failed to stick.",
       "key_catalyst": "JAM (Join-Accumulate Machine) upgrade modernizing parachain architecture",
-      "key_risk": "Parachain auctions discontinued; system fragmented; lost developer mindshare to Cosmos and Solana",
+      "key_risk": "Parachain auctions discontinued; network fragmented; lost developer mindshare to Cosmos and Solana",
       "max_supply": 2100000000,
       "total_supply": 1685429601.666258,
       "circulating_supply": 1685429601.666258,
@@ -10609,7 +10609,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Curve vote-locking meta-protocol that captured the Curve Wars era but faces structural decline as veCRV yields compress and DeFi rotates away",
-      "key_catalyst": "Curve system revival if stablecoin volumes recover",
+      "key_catalyst": "Curve network revival if stablecoin volumes recover",
       "key_risk": "CVX value entirely derived from CRV bribe economics which are in secular decline; no independent utility",
       "max_supply": 100000000,
       "total_supply": 99969716.88212252,
@@ -10689,7 +10689,7 @@
       "verdict_color": "yellow",
       "one_liner": "Kakao-backed Korean L1. Strong Korean market adoption.",
       "key_catalyst": "Klaytn's Finschia merger creates Asia's largest public chain; Korean regulatory clarity boosts enterprise adoption.",
-      "key_risk": "Centralized governance via Ground X (Kakao); slow DeFi system growth vs. Ethereum L2s.",
+      "key_risk": "Centralized governance via Ground X (Kakao); slow DeFi network growth vs. Ethereum L2s.",
       "max_supply": null,
       "total_supply": 6327000000,
       "circulating_supply": 6327000000,
@@ -10752,7 +10752,7 @@
       "verdict_color": "yellow",
       "one_liner": "Polkadot canary network. Parachain auctions. Fast iteration testnet.",
       "key_catalyst": "Polkadot parachain auctions and cross-chain interoperability; Kusama as experimental sandbox for new dApps.",
-      "key_risk": "High inflation from parachain rewards; limited DeFi TVL and developer activity vs. Ethereum system.",
+      "key_risk": "High inflation from parachain rewards; limited DeFi TVL and developer activity vs. Ethereum network.",
       "max_supply": null,
       "total_supply": 18263426.52554164,
       "circulating_supply": 18263426.52554164,
@@ -10857,7 +10857,7 @@
       "circ_supply_pct": 100,
       "cmc_slug": "shadow-token",
       "citations": [],
-      "key_catalyst": "GenesysGo storage demand from Solana system growth and potential SHDW token utility expansion.",
+      "key_catalyst": "GenesysGo storage demand from Solana network growth and potential SHDW token utility expansion.",
       "key_risk": "Dependence on Solana network health and competition from other decentralized storage solutions.",
       "tvl": 0
     },
@@ -10879,7 +10879,7 @@
       "verdict_color": "yellow",
       "one_liner": "Bitcoin's silver analog with fourth halving complete. No smart contracts, no DeFi, diminishing developer interest. Payments use case losing to stablecoins.",
       "key_catalyst": "Spot LTC ETF application in pipeline; halving supply cut in August 2023",
-      "key_risk": "Zero DeFi system; payment use case obsoleted by stablecoins; declining relevance",
+      "key_risk": "Zero DeFi network; payment use case obsoleted by stablecoins; declining relevance",
       "max_supply": 84000000,
       "total_supply": 77210395.73347135,
       "circulating_supply": 77208645.73347135,
@@ -10925,7 +10925,7 @@
           "url": "https://litecoin.org"
         },
         {
-          "claim": "Litecoin has no DeFi system or smart contract functionality",
+          "claim": "Litecoin has no DeFi network or smart contract functionality",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Litecoin"
         },
@@ -10957,7 +10957,7 @@
       "prev_score": 95,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "EVM-equivalent ZK rollup with strong technical credibility but token launch timing terrible; massive unlocks ahead",
+      "one_liner": "EVM-equivalent ZK rollup with strong technical credibility but token launch timing terrible; massive releases ahead",
       "key_catalyst": "ZK proof generation cost reductions enabling Scroll to undercut Arbitrum/Optimism on fees at scale",
       "key_risk": "Only 19% circulating; EVM-equivalence not enough to differentiate; TVL stagnant vs Base which dominates mindshare",
       "max_supply": 1000000000,
@@ -11117,7 +11117,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "Crypto.com EVM chain. CRO staking for exchange benefits.",
-      "key_catalyst": "Crypto.com exchange user growth and staking rewards from card program and system expansion.",
+      "key_catalyst": "Crypto.com exchange user growth and staking rewards from card program and network expansion.",
       "key_risk": "Regulatory scrutiny on exchange operations and tokenomics dilution from high supply inflation.",
       "max_supply": 100000000000,
       "total_supply": 98661946655.5565,
@@ -11267,7 +11267,7 @@
         "Coinbase",
         "Kraken"
       ],
-      "one_liner": "Bored Ape system token. ApeChain L3. Yuga Labs governance.",
+      "one_liner": "Bored Ape network token. ApeChain L3. Yuga Labs governance.",
       "price": 0.133,
       "current_price_usd": 0.133,
       "circulating_supply": 1000000000,
@@ -11286,7 +11286,7 @@
       "circ_supply_pct": 100,
       "cmc_slug": "apecoin",
       "citations": [],
-      "key_catalyst": "Yuga Labs system expansion, including Otherside metaverse and new NFT collections driving demand.",
+      "key_catalyst": "Yuga Labs network expansion, including Otherside metaverse and new NFT collections driving demand.",
       "key_risk": "Declining NFT market sentiment and governance fragmentation among ApeCoin DAO stakeholders.",
       "tvl": 0
     },
@@ -11306,9 +11306,9 @@
       "prev_score": 98,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "Decentralized storage with real utilization but massive FDV overhang. Storage demand growing but token price suppressed by large future unlocks.",
+      "one_liner": "Decentralized storage with real utilization but massive FDV overhang. Storage demand growing but token price suppressed by large future releases.",
       "key_catalyst": "AI data storage demand; Filecoin Virtual Machine (FEVM) DeFi expansion",
-      "key_risk": "FDV is 2x+ circulating cap with large future unlocks; centralized alternatives cheaper; slow user growth",
+      "key_risk": "FDV is 2x+ circulating cap with large future releases; centralized alternatives cheaper; slow user growth",
       "max_supply": null,
       "total_supply": 1957763039,
       "circulating_supply": 783722963,
@@ -11609,7 +11609,7 @@
       "verdict": "WATCH",
       "verdict_color": "yellow",
       "one_liner": "AAA open-world RPG with NFT creatures. Unreal Engine graphics.",
-      "key_catalyst": "Illuvium game launch and cross-game asset utility within its fantasy RPG system.",
+      "key_catalyst": "Illuvium game launch and cross-game asset utility within its fantasy RPG network.",
       "key_risk": "Delayed game releases and low player retention in competitive blockchain gaming market.",
       "max_supply": null,
       "total_supply": 9597063.735779958,
@@ -11925,9 +11925,9 @@
       "prev_score": 102,
       "verdict": "WATCH",
       "verdict_color": "yellow",
-      "one_liner": "EVM+Cosmos parallel execution chain with fast finality. Sei V2 parallel EVM showed promising benchmarks but system capture lags Solana and Base.",
+      "one_liner": "EVM+Cosmos parallel execution chain with fast finality. Sei V2 parallel EVM showed promising benchmarks but network capture lags Solana and Base.",
       "key_catalyst": "Sei V2 parallel EVM adoption; partnerships with gaming and NFT platforms",
-      "key_risk": "Only 31% of tokens circulating with large team/VC unlocks through 2027; system tiny",
+      "key_risk": "Only 31% of tokens circulating with large team/VC releases through 2027; network tiny",
       "max_supply": null,
       "total_supply": 10000000000,
       "circulating_supply": 6733333333,
@@ -11973,7 +11973,7 @@
           "url": "https://sei.io"
         },
         {
-          "claim": "Sei circulating supply only 31% with large unlocks through 2027",
+          "claim": "Sei circulating supply only 31% with large releases through 2027",
           "source": "Messari",
           "url": "https://messari.io/asset/sei"
         },
@@ -12007,7 +12007,7 @@
       "verdict_color": "yellow",
       "one_liner": "Bitcoin-staking L1 using Satoshi Plus consensus (PoW + DPoS); BTC staking TVL real but token severely diluted",
       "key_catalyst": "Non-custodial BTC staking via CORE allows BTC holders to earn yield, genuine demand driver if BTC bull continues",
-      "key_risk": "Only 40% of tokens circulating with massive unlock schedule ahead; token ATH 99.6% away; speculative overhang extreme",
+      "key_risk": "Only 40% of tokens circulating with massive vesting schedule ahead; token ATH 99.6% away; speculative overhang extreme",
       "max_supply": 2100000000,
       "total_supply": 2100000000,
       "circulating_supply": 1082145927.744283,
@@ -12052,7 +12052,7 @@
           "url": "https://coredao.org"
         },
         {
-          "claim": "CORE ATH $9.45 in Feb 2023; 60% of supply still locked with unlock schedule through 2028",
+          "claim": "CORE ATH $9.45 in Feb 2023; 60% of supply still locked with vesting schedule through 2028",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/coredaoorg"
         },
@@ -12351,7 +12351,7 @@
       "cmc_slug": "flare",
       "citations": [],
       "key_catalyst": "F-Assets minting launch and FTSO data feeds enabling DeFi on Flare; Google Cloud partnership.",
-      "key_risk": "Slow system growth and token inflation from ongoing airdrop distributions.",
+      "key_risk": "Slow network growth and token inflation from ongoing airdrop distributions.",
       "tvl": 0
     },
     {
@@ -12372,7 +12372,7 @@
       "verdict_color": "red",
       "one_liner": "China's only regulatory-compliant public blockchain; government backing is unique moat but adoption outside China near zero",
       "key_catalyst": "China digital economy policy tailwinds; partnerships with Shanghai government and state enterprises could drive domestic use",
-      "key_risk": "48% supply still opening, system entirely dependent on Chinese regulatory favor, no global DeFi adoption",
+      "key_risk": "48% supply still opening, network entirely dependent on Chinese regulatory favor, no global DeFi adoption",
       "max_supply": null,
       "total_supply": 5211547317.66,
       "circulating_supply": 5189835932.13,
@@ -12422,7 +12422,7 @@
           "url": "https://medium.com/conflux-network"
         },
         {
-          "claim": "CFX ATH $0.9864 in Jan 2023; significant unlock schedule with 48% supply remaining",
+          "claim": "CFX ATH $0.9864 in Jan 2023; significant vesting schedule with 48% supply remaining",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/conflux-token"
         }
@@ -12449,7 +12449,7 @@
       "prev_score": 85,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "22KB constant-size blockchain using ZK proofs; elegant tech with minimal system adoption and severe inflation from staking rewards.",
+      "one_liner": "22KB constant-size blockchain using ZK proofs; elegant tech with minimal network adoption and severe inflation from staking rewards.",
       "key_catalyst": "Mina zkApps enabling privacy-preserving dApps; ZK proof technology is hot sector tailwind",
       "key_risk": "~10% annual inflation from staking; 99% below ATH; TVL near zero; ZK developer tooling complex limiting adoption",
       "max_supply": null,
@@ -12634,7 +12634,7 @@
       "circ_supply_pct": 100,
       "cmc_slug": "huobi-token",
       "citations": [],
-      "key_catalyst": "HTX exchange fee discounts and burn mechanisms; potential revival from Justin Sun's system.",
+      "key_catalyst": "HTX exchange fee discounts and burn mechanisms; potential revival from Justin Sun's network.",
       "key_risk": "Regulatory overhang from Huobi's past; centralized exchange risk and low trading volume.",
       "tvl": 0
     },
@@ -12718,9 +12718,9 @@
       "prev_score": 85,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Pure PoS L1 with 4-second finality and strong academic roots; TVL thin at $180M and system activity stagnant despite tech quality.",
+      "one_liner": "Pure PoS L1 with 4-second finality and strong academic roots; TVL thin at $180M and network activity stagnant despite tech quality.",
       "key_catalyst": "ALGO as CBDC/institutional settlement layer; partnerships with FIFA and various governments",
-      "key_risk": "system traction has failed to materialise vs competitors; 97% below ATH; significant foundation unlocks ongoing; DeFi TVL minimal",
+      "key_risk": "network traction has failed to materialise vs competitors; 97% below ATH; significant foundation releases ongoing; DeFi TVL minimal",
       "max_supply": 10000000000,
       "total_supply": 8917896185.69497,
       "circulating_supply": 8917896185.69497,
@@ -13198,7 +13198,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Web3 infrastructure provider offering RPC nodes and liquid staking, but ANKR token has weak value capture vs the business revenues it supports",
-      "key_catalyst": "Ankr AppChains gaining enterprise traction on BNB Chain system",
+      "key_catalyst": "Ankr AppChains gaining enterprise traction on BNB Chain network",
       "key_risk": "ANKR token fails to capture meaningful value from RPC business; Alchemy and Infura dominate enterprise market",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
@@ -13469,8 +13469,8 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "ZK rollup with strong tech but catastrophic tokenomics; airdrop dump destroyed community trust and TVL collapsed 90%+",
-      "key_catalyst": "ZK Stack elastic chain system expansion and ZKsync native account abstraction adoption",
-      "key_risk": "Only 17% circulating supply with years of heavy unlocks ahead; TVL and developer activity abandoned after airdrop controversy",
+      "key_catalyst": "ZK Stack elastic chain network expansion and ZKsync native account abstraction adoption",
+      "key_risk": "Only 17% circulating supply with years of heavy releases ahead; TVL and developer activity abandoned after airdrop controversy",
       "max_supply": 21000000000,
       "total_supply": 21000000000,
       "circulating_supply": 9703425807,
@@ -13520,7 +13520,7 @@
           "url": "https://defillama.com/chain/zkSync%20Era"
         },
         {
-          "claim": "Only 17% of ZK supply circulating; massive unlock schedule through 2028 guarantees sustained sell pressure",
+          "claim": "Only 17% of ZK supply circulating; massive vesting schedule through 2028 guarantees sustained sell pressure",
           "source": "TokenUnlocks",
           "url": "https://token.unlocks.app/zksync"
         }
@@ -13881,7 +13881,7 @@
       "prev_score": 82,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Mobile-first L1 migrating to Ethereum L2 on OP Stack; migration complete but system traction and TVL extremely thin.",
+      "one_liner": "Mobile-first L1 migrating to Ethereum L2 on OP Stack; migration complete but network traction and TVL extremely thin.",
       "key_catalyst": "Full Ethereum L2 migration (Celo L2 live) enabling ETH composability and shared liquidity",
       "key_risk": "99%+ down from ATH; minimal TVL ($42M); mobile DeFi thesis hasn't materialized; CELO inflation from staking rewards",
       "max_supply": 1000000000,
@@ -14006,7 +14006,7 @@
       "cmc_slug": "moonbeam",
       "citations": [],
       "key_catalyst": "Polkadot parachain with full EVM compatibility and cross-chain integrations",
-      "key_risk": "Dependence on Polkadot system growth and DOT staking demand",
+      "key_risk": "Dependence on Polkadot network growth and DOT staking demand",
       "tvl": 0
     },
     {
@@ -14151,7 +14151,7 @@
       "prev_score": 93,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Bitcoin-compatible UTXO Layer 1 with RGB++ protocol enabling BTC-native assets; technically sound but tiny system",
+      "one_liner": "Bitcoin-compatible UTXO Layer 1 with RGB++ protocol enabling BTC-native assets; technically sound but tiny network",
       "key_catalyst": "RGB++ protocol bridges BTC assets natively to CKB; rising Bitcoin L2 narrative could drive attention",
       "key_risk": "Tiny TVL, low volume, minimal developer activity, depends entirely on Bitcoin L2 narrative which is crowded",
       "max_supply": null,
@@ -14230,9 +14230,9 @@
       "prev_score": 85,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Technically superior ZK-STARK rollup but worst tokenomics in L2 sector; 98.9% down from ATH with years of unlocks remaining",
+      "one_liner": "Technically superior ZK-STARK rollup but worst tokenomics in L2 sector; 98.9% down from ATH with years of releases remaining",
       "key_catalyst": "Starknet v0.13+ performance upgrades reducing fees; Cairo language adoption for AI and gaming use cases",
-      "key_risk": "Only 20% circulating; StarkWare holds massive allocation being unlocked; TVL and activity near zero relative to potential",
+      "key_risk": "Only 20% circulating; StarkWare holds massive allocation being released; TVL and activity near zero relative to potential",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
       "circulating_supply": 6289850275.348971,
@@ -14277,7 +14277,7 @@
           "url": "https://www.coingecko.com/en/coins/starknet"
         },
         {
-          "claim": "StarkWare and Starknet Foundation hold 80%+ of STRK supply with unlocks through 2027",
+          "claim": "StarkWare and Starknet Foundation hold 80%+ of STRK supply with releases through 2027",
           "source": "Starknet Tokenomics",
           "url": "https://starknet.io/content/starknet-token-provisions-paper/"
         },
@@ -14468,9 +14468,9 @@
       "prev_score": 100,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Cosmos DEX with heavy inflation and declining TVL dominance as IBC system fragments",
+      "one_liner": "Cosmos DEX with heavy inflation and declining TVL dominance as IBC network fragments",
       "key_catalyst": "Superfluid staking and concentrated liquidity pools may attract TVL back to Cosmos hub",
-      "key_risk": "Token inflation ~25% annually crushes real returns; IBC system losing ground to Solana and L2s",
+      "key_risk": "Token inflation ~25% annually crushes real returns; IBC network losing ground to Solana and L2s",
       "max_supply": 1000000000,
       "total_supply": 978691368.674834,
       "circulating_supply": 774931063.176216,
@@ -14515,7 +14515,7 @@
           "url": "https://www.coingecko.com/en/coins/osmosis"
         },
         {
-          "claim": "Osmosis TVL ~$72M, declining as Cosmos system loses momentum",
+          "claim": "Osmosis TVL ~$72M, declining as Cosmos network loses momentum",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Osmosis"
         },
@@ -14676,7 +14676,7 @@
       "verdict_color": "red",
       "one_liner": "Helium subDAO token for mobile network; extremely low liquidity and no direct value accrual beyond coverage reward emissions",
       "key_catalyst": "Helium Mobile subscriber growth triggering Data Credit burn that accrues to MOBILE holders via HNT conversion",
-      "key_risk": "96% down from ATH; micro-cap with near-zero trading volume; entire value dependent on HNT system success and carrier partnerships",
+      "key_risk": "96% down from ATH; micro-cap with near-zero trading volume; entire value dependent on HNT network success and carrier partnerships",
       "max_supply": null,
       "total_supply": 230000000000,
       "circulating_supply": 89280000000,
@@ -14753,7 +14753,7 @@
       "prev_score": 79,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Cross-chain messaging with $45B+ cumulative bridge volume; only 18% circulating with devastating unlock schedule and no protocol revenue to token.",
+      "one_liner": "Cross-chain messaging with $45B+ cumulative bridge volume; only 18% circulating with devastating vesting schedule and no protocol revenue to token.",
       "key_catalyst": "W as fee token for Wormhole messaging; NTT standard adoption by top protocols",
       "key_risk": "Only 18% circulating (FDV ~$1.1B vs $200M market cap); massive insider dilution coming; bridge revenue does not accrue to W token holders",
       "max_supply": 10000000000,
@@ -14914,7 +14914,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "GameFi platform combining yield farming and NFT gaming.",
-      "key_catalyst": "Gaming system expansion on BNB Chain; new game launches and NFT staking rewards.",
+      "key_catalyst": "Gaming network expansion on BNB Chain; new game launches and NFT staking rewards.",
       "key_risk": "Play-to-earn model fatigue; user retention drops if token rewards diminish.",
       "max_supply": 1000000000,
       "total_supply": 550322467,
@@ -15084,7 +15084,7 @@
       "circ_supply_pct": 58.2,
       "cmc_slug": "status",
       "citations": [],
-      "key_catalyst": "Decentralized messenger with integrated dApp browser; Ethereum system utility.",
+      "key_catalyst": "Decentralized messenger with integrated dApp browser; Ethereum network utility.",
       "key_risk": "Competition from Signal/Telegram; slow feature updates and low daily active users.",
       "tvl": 0
     },
@@ -15104,7 +15104,7 @@
       "prev_score": 91,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Cosmos SDK #3 dev system globally but broken value accrual. $240K Hub TVL on $889M mcap. ICS revenue real but tiny ($526K/yr). Prop 848 inflation cap helps. Both cofounders gone. Named security in SEC lawsuits.",
+      "one_liner": "Cosmos SDK #3 dev network globally but broken value accrual. $240K Hub TVL on $889M mcap. ICS revenue real but tiny ($526K/yr). Prop 848 inflation cap helps. Both cofounders gone. Named security in SEC lawsuits.",
       "key_catalyst": "Tokenomics redesign RFP (9 proposals), SDK v0.54 shipping, IBC-Solana bridge Q2, PSS (ICS 2.0), Cosmoverse Nov 2026",
       "key_risk": "Neutron left ICS, Noble exiting to EVM, Sei disabled IBC, $5.4M Gravity Bridge exploit, P/S 17,637x, unlimited supply with 7% inflation, named security in SEC v Binance/Coinbase",
       "max_supply": null,
@@ -15288,7 +15288,7 @@
       "prev_score": 0,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "DeFi system of leveraged yield products. Alpha Homora.",
+      "one_liner": "DeFi network of leveraged yield products. Alpha Homora.",
       "key_catalyst": "Venture DAO funding early-stage DeFi projects; alpha access to token launches.",
       "key_risk": "High volatility from illiquid venture positions; lock-up periods limit exit.",
       "max_supply": 10000000,
@@ -15671,7 +15671,7 @@
       "verdict_color": "red",
       "one_liner": "Sam Altman-backed proof-of-personhood with global orb rollout but only 16.5% circulating; massive insider dilution incoming.",
       "key_catalyst": "World App user growth; WLD as identity layer for AI agent verification",
-      "key_risk": "Only 16.5% circulating with huge team/investor unlocks; biometric data privacy lawsuits in EU/Korea; zero protocol revenue; FDV ~$3.1B",
+      "key_risk": "Only 16.5% circulating with huge team/investor releases; biometric data privacy lawsuits in EU/Korea; zero protocol revenue; FDV ~$3.1B",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
       "circulating_supply": 3414545758.127662,
@@ -15717,7 +15717,7 @@
           "url": "https://worldcoin.org/blog"
         },
         {
-          "claim": "WLD circulating supply is only ~17% of total with massive team/foundation unlocks through 2028",
+          "claim": "WLD circulating supply is only ~17% of total with massive team/foundation releases through 2028",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/worldcoin-org"
         },
@@ -15807,7 +15807,7 @@
           "url": "https://reuters.com/doge-department"
         },
         {
-          "claim": "Dogecoin has virtually no DeFi system or protocol revenue",
+          "claim": "Dogecoin has virtually no DeFi network or protocol revenue",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Dogecoin"
         }
@@ -15900,7 +15900,7 @@
       "verdict_color": "red",
       "one_liner": "Self-amending smart contract chain that pioneered on-chain governance; overtaken by faster-moving L1 and L2 alternatives",
       "key_catalyst": "Tezos institutional tokenization (Bond i by SocGen) and RWA focus may sustain niche enterprise use",
-      "key_risk": "No meaningful DeFi system, developer exodus, volume near all-time-lows, token has no value accrual mechanism",
+      "key_risk": "No meaningful DeFi network, developer exodus, volume near all-time-lows, token has no value accrual mechanism",
       "max_supply": null,
       "total_supply": 1105926233.080477,
       "circulating_supply": 1085941526.305075,
@@ -15940,7 +15940,7 @@
       },
       "citations": [
         {
-          "claim": "Tezos ATH $9.18 in Oct 2021; now 96% below ATH with declining system",
+          "claim": "Tezos ATH $9.18 in Oct 2021; now 96% below ATH with declining network",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/tezos"
         },
@@ -15977,7 +15977,7 @@
       "prev_score": 68,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Elon-inspired meme coin with NFT game Valhalla and token-based university; marketing-heavy but system revenue negligible vs $290M market cap.",
+      "one_liner": "Elon-inspired meme coin with NFT game Valhalla and token-based university; marketing-heavy but network revenue negligible vs $290M market cap.",
       "key_catalyst": "Valhalla P2E game launch traction; FLOKI ETF filings in Asia; aggressive marketing campaigns",
       "key_risk": "91% below ATH; Valhalla game has not achieved meaningful player base; FLOKI brand tied to Elon Musk tweet cycles; meme coins face existential narrative rotation risk",
       "max_supply": 10000000000000,
@@ -16138,7 +16138,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "DePIN-focused L1 on Polkadot. Machine economy infrastructure.",
-      "key_catalyst": "DePIN system growth; real-world asset tokenization partnerships.",
+      "key_catalyst": "DePIN network growth; real-world asset tokenization partnerships.",
       "key_risk": "Early-stage adoption; competition from IoT blockchains like Helium.",
       "max_supply": 5667620228.64,
       "total_supply": 4409716976.402784,
@@ -16288,7 +16288,7 @@
         "KuCoin",
         "Gate.io"
       ],
-      "one_liner": "DPoS blockchain formerly Swipe. Solar wallet and DEX system.",
+      "one_liner": "DPoS blockchain formerly Swipe. Solar wallet and DEX network.",
       "price": 0.0022,
       "current_price_usd": 0.0022,
       "circulating_supply": 673393198.71,
@@ -16308,7 +16308,7 @@
       "cmc_slug": "solar",
       "citations": [],
       "key_catalyst": "Solar blockchain upgrades; cross-chain DeFi and payment adoption.",
-      "key_risk": "Regulatory uncertainty in payments; low system TVL.",
+      "key_risk": "Regulatory uncertainty in payments; low network TVL.",
       "tvl": 0
     },
     {
@@ -16392,8 +16392,8 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Native yield L2 that briefly held $2B TVL via points farming but collapsed post-airdrop; tokenomics are broken",
-      "key_catalyst": "Blast Big Bang system revival if native yield products attract real users beyond yield chasers",
-      "key_risk": "98.4% down from ATH; only 25% circulating with years of unlock pressure; yield farming narrative is played out",
+      "key_catalyst": "Blast Big Bang network revival if native yield products attract real users beyond yield chasers",
+      "key_risk": "98.4% down from ATH; only 25% circulating with years of vesting pressure; yield farming narrative is played out",
       "max_supply": 100000000000,
       "total_supply": 100000000000,
       "circulating_supply": 62145106618.3568,
@@ -16681,7 +16681,7 @@
         "Coinbase",
         "Gate.io"
       ],
-      "one_liner": "Loot NFT system token. Community-driven gaming DAO.",
+      "one_liner": "Loot NFT network token. Community-driven gaming DAO.",
       "price": 0.23,
       "current_price_usd": 0.23,
       "circulating_supply": 87430001,
@@ -16700,7 +16700,7 @@
       "circ_supply_pct": 94.2,
       "cmc_slug": "adventure-gold",
       "citations": [],
-      "key_catalyst": "Loot NFT system revival; DAO treasury management.",
+      "key_catalyst": "Loot NFT network revival; DAO treasury management.",
       "key_risk": "Niche community; limited utility beyond governance.",
       "tvl": 0
     },
@@ -16764,7 +16764,7 @@
       "cmc_slug": "canto",
       "citations": [],
       "key_catalyst": "Free public goods funding via revenue from DeFi protocols on Canto L1.",
-      "key_risk": "Low liquidity and limited dApp system relative to larger L1s.",
+      "key_risk": "Low liquidity and limited dApp network relative to larger L1s.",
       "tvl": 0
     },
     {
@@ -16785,7 +16785,7 @@
       "verdict_color": "red",
       "one_liner": "Sharded Romanian L1 that rebranded to MultiversX; narrative exhausted with no meaningful DeFi or developer traction",
       "key_catalyst": "xExchange DEX and xFabric institutional suite could generate modest fee revenue",
-      "key_risk": "99%+ ATH drawdown, tiny TVL, system relies on local Romanian community, no global developer mindshare",
+      "key_risk": "99%+ ATH drawdown, tiny TVL, network relies on local Romanian community, no global developer mindshare",
       "max_supply": null,
       "total_supply": 30009303,
       "circulating_supply": 30009303,
@@ -16941,9 +16941,9 @@
       "prev_score": 82,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "NFT marketplace token that temporarily dominated OpenSea via airdrop-fueled volume incentives, but NFT market collapse and massive unlocks destroy the setup",
+      "one_liner": "NFT marketplace token that temporarily dominated OpenSea via airdrop-fueled volume incentives, but NFT market collapse and massive releases destroy the setup",
       "key_catalyst": "NFT market revival in a bull cycle could briefly spike BLUR trading volumes",
-      "key_risk": "Only 38% circulating with massive team/investor unlock schedule; NFT volumes down 90%+ from 2022 peak",
+      "key_risk": "Only 38% circulating with massive team/investor vesting schedule; NFT volumes down 90%+ from 2022 peak",
       "max_supply": 3000000000,
       "total_supply": 3000000000,
       "circulating_supply": 2806813588.327625,
@@ -16988,7 +16988,7 @@
           "url": "https://dune.com/hildobby/NFTs"
         },
         {
-          "claim": "BLUR only 38% circulating; model and other investors hold large locked positions with ongoing unlock schedule",
+          "claim": "BLUR only 38% circulating; model and other investors hold large locked positions with ongoing vesting schedule",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/blur"
         },
@@ -17086,7 +17086,7 @@
       "verdict_color": "red",
       "one_liner": "Browser extension for decentralized social media features that never achieved mainstream adoption; token has no revenue model",
       "key_catalyst": "X (Twitter) and Farcaster integrations driving decentralized social narrative",
-      "key_risk": "Product-market fit never proven; large outstanding supply unlocks from team and investors",
+      "key_risk": "Product-market fit never proven; large outstanding supply releases from team and investors",
       "max_supply": 100000000,
       "total_supply": 100000000,
       "circulating_supply": 100000000,
@@ -17513,7 +17513,7 @@
       "verdict_color": "red",
       "one_liner": "Ethereum ZK-rollup DEX protocol that was first to market but lost the L2 race to Arbitrum, Optimism, and Base",
       "key_catalyst": "ZK-rollup technology still valid; Loopring 3.9 improvements could improve throughput for order-book DEX use case",
-      "key_risk": "Binance delisted LRC (stale data), negligible TVL vs. competing L2s, GameStop NFT marketplace shut down, no system growth",
+      "key_risk": "Binance delisted LRC (stale data), negligible TVL vs. competing L2s, GameStop NFT marketplace shut down, no network growth",
       "max_supply": 1374513896,
       "total_supply": 1373873397.442457,
       "circulating_supply": 1245991468.94246,
@@ -17563,7 +17563,7 @@
           "url": "https://investor.gamestop.com"
         },
         {
-          "claim": "Loopring TVL ~$18M, down from $250M peak in 2022; market share under 0.1% of Ethereum L2 system",
+          "claim": "Loopring TVL ~$18M, down from $250M peak in 2022; market share under 0.1% of Ethereum L2 network",
           "source": "DeFiLlama",
           "url": "https://defillama.com/protocol/loopring"
         }
@@ -17590,7 +17590,7 @@
       "prev_score": 71,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "DAG-based IoT ledger that spent 6 years rebuilding its coordinator; fully diluted with no DeFi system",
+      "one_liner": "DAG-based IoT ledger that spent 6 years rebuilding its coordinator; fully diluted with no DeFi network",
       "key_catalyst": "IOTA 2.0 decentralized protocol (no coordinator) finally live; Assembly smart contract layer in development",
       "key_risk": "Zero smart contract activity, no DeFi TVL, IoT machine-economy thesis never materialized, fully diluted supply already in circulation",
       "max_supply": null,
@@ -17632,7 +17632,7 @@
       },
       "citations": [
         {
-          "claim": "IOTA ATH $5.69 in Dec 2017; 99% below ATH with no DeFi system",
+          "claim": "IOTA ATH $5.69 in Dec 2017; 99% below ATH with no DeFi network",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/iota"
         },
@@ -17859,7 +17859,7 @@
           "url": "https://dappradar.com/dapp/axie-infinity"
         },
         {
-          "claim": "AXS is down 99.3% from its $164.90 ATH with only 51% circulating supply; remaining unlocks will pressure price",
+          "claim": "AXS is down 99.3% from its $164.90 ATH with only 51% circulating supply; remaining releases will pressure price",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/axie-infinity"
         }
@@ -18158,7 +18158,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Telegram tap-to-earn game token. 100% circulating supply means no open overhang but zero DeFi integration and massive user base already rewarded.",
-      "key_catalyst": "TON system growth; Telegram gaming expansion",
+      "key_catalyst": "TON network growth; Telegram gaming expansion",
       "key_risk": "All users already rewarded; zero utility post-game; completely dependent on TON/Telegram narrative",
       "max_supply": 102456956842.91,
       "total_supply": 102452755868.5205,
@@ -18204,7 +18204,7 @@
           "url": "https://notco.in"
         },
         {
-          "claim": "NOT token has 100% circulating supply with no future unlock pressure",
+          "claim": "NOT token has 100% circulating supply with no future vesting pressure",
           "source": "CoinMarketCap",
           "url": "https://coinmarketcap.com/currencies/notcoin"
         },
@@ -18396,7 +18396,7 @@
       "verdict_color": "red",
       "one_liner": "OP Stack L2 focused on DeFi yield aggregation; lost relevance post-airdrop with no unique differentiation from Base/Optimism",
       "key_catalyst": "AI agent integration on Mode as a DeFi coordination layer for autonomous financial agents",
-      "key_risk": "91% down from ATH; TVL declining; undifferentiated L2 in a crowded OP Stack system; heavy unlock schedule",
+      "key_risk": "91% down from ATH; TVL declining; undifferentiated L2 in a crowded OP Stack network; heavy vesting schedule",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
       "circulating_supply": 7008333334,
@@ -18555,7 +18555,7 @@
       "verdict_color": "red",
       "one_liner": "Chinese Ethereum from 2017 with dual-token model (NEO+GAS); the 'smart economy' never materialized",
       "key_catalyst": "Neo X EVM sidechain launched to attract Solidity developers; NeoFS decentralized storage could see enterprise use",
-      "key_risk": "Developer community minimal, China crypto regulations remain hostile, system produces GAS income but no protocol value accrual",
+      "key_risk": "Developer community minimal, China crypto regulations remain hostile, network produces GAS income but no protocol value accrual",
       "max_supply": null,
       "total_supply": 100000000,
       "circulating_supply": 70530000,
@@ -18595,7 +18595,7 @@
       },
       "citations": [
         {
-          "claim": "NEO ATH $198.38 in Jan 2018; 98.5% below ATH; system activity minimal",
+          "claim": "NEO ATH $198.38 in Jan 2018; 98.5% below ATH; network activity minimal",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/neo"
         },
@@ -18849,7 +18849,7 @@
       "prev_score": 66,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Rebranded SuperFarm gaming/NFT system with celebrity associations that never translated to user adoption; token structurally impaired",
+      "one_liner": "Rebranded SuperFarm gaming/NFT network with celebrity associations that never translated to user adoption; token structurally impaired",
       "key_catalyst": "SuperVerse metaverse game launch attracting P2E players",
       "key_risk": "Gaming/metaverse sector in prolonged bear market; no active games generating revenue; team credibility issues",
       "max_supply": 1000000000,
@@ -18929,7 +18929,7 @@
       "verdict": "PASS",
       "verdict_color": "red",
       "one_liner": "Move language L1 down 98.6% from ATH following market maker scandal and insider dumping; project credibility severely damaged",
-      "key_catalyst": "Move language adoption if Aptos/Sui success creates demand for Movement system",
+      "key_catalyst": "Move language adoption if Aptos/Sui success creates demand for Movement network",
       "key_risk": "Market maker manipulation scandal in 2025 destroyed community trust; one of worst token performance records in top-200; near zero TVL",
       "max_supply": 10000000000,
       "total_supply": 10000000000,
@@ -19009,7 +19009,7 @@
       "verdict_color": "red",
       "one_liner": "Japanese IoT data sovereignty project with Sony/NTT connections but zero DeFi integration, minimal real-world adoption, and 99.9% ATH drawdown",
       "key_catalyst": "Japanese regulatory clarity and domestic retail FOMO given Binance Japan listing",
-      "key_risk": "No on-chain revenue, no DeFi utility, massive remaining supply unlocks; purely narrative-driven with fading Japan narrative",
+      "key_risk": "No on-chain revenue, no DeFi utility, massive remaining supply releases; purely narrative-driven with fading Japan narrative",
       "max_supply": 50000000000,
       "total_supply": 50000000000,
       "circulating_supply": 49444999677.59027,
@@ -19167,7 +19167,7 @@
       "verdict_color": "red",
       "one_liner": "2018-era sharding chain that lost the scalability race; GameFi pivot failed to gain traction",
       "key_catalyst": "Zilliqa 2.0 EVM upgrade could attract some EVM developers",
-      "key_risk": "Irrelevant tech, ghost system, near-zero TVL, no institutional interest",
+      "key_risk": "Irrelevant tech, ghost network, near-zero TVL, no institutional interest",
       "max_supply": 21000000000,
       "total_supply": 20463283499.12714,
       "circulating_supply": 19513551525,
@@ -19212,7 +19212,7 @@
           "url": "https://www.coingecko.com/en/coins/zilliqa"
         },
         {
-          "claim": "ZIL TVL under $2M, system activity near zero",
+          "claim": "ZIL TVL under $2M, network activity near zero",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Zilliqa"
         },
@@ -19323,8 +19323,8 @@
       "prev_score": 52,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Telegram meme coin distributed via airdrop to community. No utility beyond speculation. Purely a TON system sentiment trade.",
-      "key_catalyst": "TON system growth; Telegram integration announcements",
+      "one_liner": "Telegram meme coin distributed via airdrop to community. No utility beyond speculation. Purely a TON network sentiment trade.",
+      "key_catalyst": "TON network growth; Telegram integration announcements",
       "key_risk": "Zero utility; airdrop recipients mostly dumped; no development activity; 74% below ATH",
       "max_supply": 550000000000,
       "total_supply": 550000000000,
@@ -19402,9 +19402,9 @@
       "prev_score": 62,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "2017-era Bitcoin UTXO + Ethereum EVM hybrid; technically obsolete and system is a ghost town",
+      "one_liner": "2017-era Bitcoin UTXO + Ethereum EVM hybrid; technically obsolete and network is a ghost town",
       "key_catalyst": "None identifiable, chain is in maintenance mode with minimal development activity",
-      "key_risk": "Effectively dead system, volume at historical lows, no institutional interest, zero DeFi innovation",
+      "key_risk": "Effectively dead network, volume at historical lows, no institutional interest, zero DeFi innovation",
       "max_supply": null,
       "total_supply": 107822406,
       "circulating_supply": 106032020.75,
@@ -19444,7 +19444,7 @@
       },
       "citations": [
         {
-          "claim": "QTUM ATH $100.61 in Jan 2018; now 99.1% below ATH with system essentially dead",
+          "claim": "QTUM ATH $100.61 in Jan 2018; now 99.1% below ATH with network essentially dead",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/qtum"
         },
@@ -19708,7 +19708,7 @@
       "prev_score": 57,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "PoW blockchain with 20-chain sharding that promised infinite scale; system is effectively dead",
+      "one_liner": "PoW blockchain with 20-chain sharding that promised infinite scale; network is effectively dead",
       "key_catalyst": "Kadena SpireKey wallet and Marmalade NFT standard could attract niche developers",
       "key_risk": "Near-zero TVL (<$500K), trading halted on Binance (data stale), PoW in 2026 is a liability not an asset",
       "max_supply": 1000000000,
@@ -19787,7 +19787,7 @@
       "prev_score": 50,
       "verdict": "PASS",
       "verdict_color": "red",
-      "one_liner": "Sharded L1 permanently damaged by the $100M Horizon bridge hack; trust destroyed, system never recovered",
+      "one_liner": "Sharded L1 permanently damaged by the $100M Horizon bridge hack; trust destroyed, network never recovered",
       "key_catalyst": "None, bridge hack compensation was never fully addressed; reputational damage is permanent",
       "key_risk": "$100M bridge exploit in June 2022 uncompensated, developer exodus complete, TVL essentially zero",
       "max_supply": null,
@@ -19834,7 +19834,7 @@
           "url": "https://rekt.news/harmony-rekt"
         },
         {
-          "claim": "ONE down 99.5% from ATH of $0.38; system TVL near zero",
+          "claim": "ONE down 99.5% from ATH of $0.38; network TVL near zero",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/harmony"
         },
@@ -19868,7 +19868,7 @@
       "verdict_color": "orange",
       "one_liner": "ZK perp DEX, up sharply this week to a $534M cap. But farming revenue fell ~70% to ~$26-30M annualized, so P/S re-rated to a rich ~18-20x. New Jul 2026 buyback-and-burn + 6% staking target vs a Dec 2026 cliff that vests 50% of supply at ~13.9M LIT/month.",
       "key_catalyst": "Lighter EVM Q2-Q3 2026, Telegram Wallet 150M users, CFTC license pursuit, potential Binance listing",
-      "key_risk": "Dec 2026 cliff unlocks 500M tokens (50% supply), 83% volume collapse from TGE peak, only 4,420 holders, L2BEAT Stage 0",
+      "key_risk": "Dec 2026 cliff releases 500M tokens (50% supply), 83% volume collapse from TGE peak, only 4,420 holders, L2BEAT Stage 0",
       "max_supply": 1000000000,
       "total_supply": 1000000000,
       "circulating_supply": 250000000,

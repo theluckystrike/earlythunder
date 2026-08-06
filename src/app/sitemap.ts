@@ -9,9 +9,16 @@ import {
   RESEARCH_SLUGS,
   RESEARCH_ARTICLE_PRIORITY,
   CLARITY_TOPIC_PRIORITY,
+  SCORECARD_TOKEN_PRIORITY,
+  SCORECARD_HUB_PRIORITY,
 } from "@/lib/constants";
 import { getAllOpportunities, getAllBlogPosts, getAllGuides } from "@/lib/data";
 import { getAllClarityTopics } from "@/lib/clarity";
+import {
+  getAllScorecardTokens,
+  getScorecardGroups,
+  getScorecardMeta,
+} from "@/lib/scorecard-analytics";
 
 export const dynamic = "force-static";
 
@@ -102,6 +109,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
+  // Scorecard leaves change only when a scoring pass runs, so they carry the
+  // pass date rather than the build date and a monthly change frequency.
+  const scorecardMeta = getScorecardMeta();
+  const passDate = scorecardMeta.source_updated_at
+    ? new Date(scorecardMeta.source_updated_at)
+    : now;
+
+  const scorecardTokenEntries: MetadataRoute.Sitemap = getAllScorecardTokens()
+    .slice(0, MAX_ENTRIES)
+    .map((token) => ({
+      url: `${SITE_URL}/scorecard/${token.slug}`,
+      lastModified: passDate,
+      changeFrequency: "monthly" as const,
+      priority: SCORECARD_TOKEN_PRIORITY,
+    }));
+
+  const scorecardHubEntries: MetadataRoute.Sitemap = [
+    ...getScorecardGroups("verdict").map((group) => ({
+      url: `${SITE_URL}/scorecard/verdict/${group.slug}`,
+      lastModified: passDate,
+      changeFrequency: "monthly" as const,
+      priority: SCORECARD_HUB_PRIORITY,
+    })),
+    ...getScorecardGroups("chain").map((group) => ({
+      url: `${SITE_URL}/scorecard/chain/${group.slug}`,
+      lastModified: passDate,
+      changeFrequency: "monthly" as const,
+      priority: SCORECARD_HUB_PRIORITY,
+    })),
+  ];
+
   return [
     ...staticEntries,
     ...opportunityEntries,
@@ -109,5 +147,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guideEntries,
     ...researchEntries,
     ...clarityEntries,
+    ...scorecardHubEntries,
+    ...scorecardTokenEntries,
   ];
 }

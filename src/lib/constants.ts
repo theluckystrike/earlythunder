@@ -89,4 +89,9 @@ export const BLOG_POST_PRIORITY = 0.7 as const;
 export const GUIDE_PRIORITY = 0.8 as const;
 export const CLARITY_TOPIC_PRIORITY = 0.8 as const;
 
+/** Per-token scorecard leaves. Below opportunity notes, which go deeper. */
+export const SCORECARD_TOKEN_PRIORITY = 0.7 as const;
+/** Verdict and chain hubs, which are the crawl path into the leaves. */
+export const SCORECARD_HUB_PRIORITY = 0.8 as const;
+
 export const AUTHOR_NAME = 'Early Thunder Research' as const;

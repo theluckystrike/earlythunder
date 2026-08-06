@@ -1,0 +1,531 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
+import { PageHeader, SectionLabel, Prose, EyebrowLabel, Section } from "@/components/PageChrome";
+import { SITE_URL, SITE_NAME } from "@/lib/constants";
+import {
+  getAllScorecardTokens,
+  getScorecardToken,
+  getScorecardMeta,
+  type ScorecardToken,
+  type ScoredVariable,
+} from "@/lib/scorecard-analytics";
+import {
+  buildFindings,
+  buildFaqs,
+  buildSummary,
+  ordinal,
+  formatUsd,
+  formatPrice,
+  formatDate,
+} from "@/lib/scorecard-insight";
+import { getBreadcrumbListSchema, getFaqPageSchema } from "@/lib/structured-data";
+
+/** Variables are grouped into these six themes on the breakdown table. */
+const GROUP_ORDER = ["Cash flow", "Supply", "Ownership", "Traction", "Position", "Risk"] as const;
+
+const MAX_CITATIONS = 12;
+
+interface PageParams {
+  readonly params: Promise<{ readonly symbol: string }>;
+}
+
+/** One static route per rated token. */
+export function generateStaticParams(): { symbol: string }[] {
+  const tokens = getAllScorecardTokens();
+  if (tokens.length === 0) return [];
+  return tokens.map((token) => ({ symbol: token.slug }));
+}
+
+export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
+  const { symbol } = await params;
+  const token = getScorecardToken(symbol);
+  if (token === null) return { title: "Token Not Found" };
+
+  const title = `${token.name} (${token.symbol}) Score and Fundamentals`;
+  const description = buildSummary(token).slice(0, 300);
+  const url = `${SITE_URL}/scorecard/${token.slug}`;
+
+  return {
+    title,
+    description,
+    keywords: [
+      `${token.symbol} score`,
+      `${token.name} fundamentals`,
+      `is ${token.symbol} a good investment`,
+      `${token.symbol} tokenomics`,
+      `${token.symbol} vesting schedule`,
+      `${token.symbol} all time high`,
+    ],
+    openGraph: { title: `${title} | ${SITE_NAME}`, description, url, type: "article" },
+    twitter: { card: "summary_large_image", title: `${title} | ${SITE_NAME}`, description },
+    alternates: { canonical: url },
+  };
+}
+
+/** Colour for a 1-10 variable score. */
+function scoreTone(value: number): string {
+  if (value >= 7) return "text-positive";
+  if (value >= 4) return "text-warning";
+  return "text-negative";
+}
+
+/** Colour for a verdict badge, keyed off the verdict_color in the dataset. */
+function verdictTone(color: string): string {
+  const map: Record<string, string> = {
+    green: "border-positive/30 bg-positive-bg text-positive",
+    blue: "border-info/30 bg-[rgba(59,130,246,0.10)] text-info",
+    yellow: "border-warning/30 bg-warning-bg text-warning",
+    orange: "border-warning/40 bg-warning-bg text-warning",
+    red: "border-negative/30 bg-negative-bg text-negative",
+  };
+  return map[color] ?? map.yellow;
+}
+
+/** A single headline statistic. */
+function Stat({
+  label,
+  value,
+  note,
+  tone,
+}: {
+  readonly label: string;
+  readonly value: string;
+  readonly note?: string;
+  readonly tone?: string;
+}) {
+  return (
+    <div className="rounded-2xl border border-border bg-bg-card p-5">
+      <div className="font-mono text-xs uppercase tracking-wider text-text-tertiary">{label}</div>
+      <div className={`mt-2 font-mono text-2xl font-semibold ${tone ?? "text-text-primary"}`}>{value}</div>
+      {note && <div className="mt-1 text-xs leading-snug text-text-tertiary">{note}</div>}
+    </div>
+  );
+}
+
+/** Horizontal bar showing a variable's 1-10 value against the universe median. */
+function VariableRow({ variable, universe }: { readonly variable: ScoredVariable; readonly universe: number }) {
+  const width = Math.max(2, (variable.value / 10) * 100);
+  const medianLeft = variable.universe_median !== null ? (variable.universe_median / 10) * 100 : null;
+
+  return (
+    <tr className="border-b border-border/40">
+      <td className="py-2.5 pr-3 text-sm text-text-secondary">{variable.label}</td>
+      <td className="w-full py-2.5 pr-3">
+        <div className="relative h-2 rounded-full bg-bg-base">
+          <div
+            className={`h-2 rounded-full ${variable.value >= 7 ? "bg-positive" : variable.value >= 4 ? "bg-warning" : "bg-negative"}`}
+            style={{ width: `${width}%` }}
+          />
+          {medianLeft !== null && (
+            <span
+              className="absolute top-[-3px] h-[14px] w-px bg-text-tertiary/70"
+              style={{ left: `${medianLeft}%` }}
+              aria-hidden="true"
+            />
+          )}
+        </div>
+      </td>
+      <td className={`py-2.5 pr-4 text-right font-mono text-sm font-semibold ${scoreTone(variable.value)}`}>
+        {variable.value}
+      </td>
+      <td className="whitespace-nowrap py-2.5 text-right font-mono text-xs text-text-tertiary">
+        {ordinal(variable.rank)} of {universe}
+      </td>
+    </tr>
+  );
+}
+
+/** The 25-variable breakdown, split into its six themes. */
+function Breakdown({ token }: { readonly token: ScorecardToken }) {
+  return (
+    <div className="mt-6 space-y-8">
+      {GROUP_ORDER.map((group) => {
+        const rows = token.variables.filter((v) => v.group === group);
+        if (rows.length === 0) return null;
+        return (
+          <div key={group}>
+            <EyebrowLabel>{group}</EyebrowLabel>
+            <table className="w-full table-auto">
+              <caption className="sr-only">
+                {group} variables for {token.symbol}, scored 1 to 10 and ranked against{" "}
+                {token.universe_size} tokens
+              </caption>
+              <tbody>
+                {rows.map((variable) => (
+                  <VariableRow key={variable.key} variable={variable} universe={token.universe_size} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+      })}
+      <p className="text-xs leading-relaxed text-text-tertiary">
+        The vertical tick on each bar marks the median score across all {token.universe_size} rated
+        tokens, so a bar ending left of the tick is below the universe on that variable.
+      </p>
+    </div>
+  );
+}
+
+export default async function ScorecardTokenPage({ params }: PageParams) {
+  const { symbol } = await params;
+  const token = getScorecardToken(symbol);
+  if (token === null) notFound();
+
+  const meta = getScorecardMeta();
+  const findings = buildFindings(token);
+  const faqs = buildFaqs(token);
+  const summary = buildSummary(token);
+  const url = `${SITE_URL}/scorecard/${token.slug}`;
+  const priceIsStale = token.market.source !== "daily";
+
+  const breadcrumbs = getBreadcrumbListSchema([
+    { name: "Home", path: "/" },
+    { name: "Scorecard", path: "/scorecard" },
+    { name: `${token.name} (${token.symbol})`, path: `/scorecard/${token.slug}` },
+  ]);
+  const faqSchema = getFaqPageSchema(faqs);
+
+  const datasetSchema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: `${token.name} (${token.symbol}) 25-variable fundamental scorecard`,
+    description: summary,
+    url,
+    creator: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    isAccessibleForFree: true,
+    variableMeasured: token.variables.map((v) => ({
+      "@type": "PropertyValue",
+      name: v.label,
+      value: v.value,
+      maxValue: 10,
+      minValue: 1,
+    })),
+    ...(token.citations.length > 0
+      ? {
+          isBasedOn: token.citations
+            .filter((c) => typeof c.url === "string" && c.url.length > 0)
+            .slice(0, MAX_CITATIONS)
+            .map((c) => ({ "@type": "CreativeWork", name: c.source, url: c.url })),
+        }
+      : {}),
+  };
+
+  return (
+    <div className="mx-auto max-w-4xl px-6 py-20">
+      <JsonLd data={breadcrumbs} />
+      <JsonLd data={datasetSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
+
+      <nav aria-label="Breadcrumb" className="mb-8 font-mono text-xs text-text-tertiary">
+        <Link href="/" className="hover:text-text-secondary">
+          Home
+        </Link>
+        <span className="px-2">/</span>
+        <Link href="/scorecard" className="hover:text-text-secondary">
+          Scorecard
+        </Link>
+        <span className="px-2">/</span>
+        <span className="text-text-secondary">{token.symbol}</span>
+      </nav>
+
+      <PageHeader
+        eyebrow={token.verdict}
+        title={`${token.name} (${token.symbol})`}
+        lead={token.one_liner ?? summary}
+        meta={`Ranked ${ordinal(token.rank_overall)} of ${token.universe_size} rated tokens. Scoring pass ${formatDate(meta.source_updated_at)}.`}
+      />
+
+      <Section>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+          <Stat
+            label="Score"
+            value={`${token.score}/${token.max_score}`}
+            note={`${ordinal(token.rank_overall)} of ${token.universe_size}`}
+            tone={scoreTone(token.score / 25)}
+          />
+          <Stat
+            label="Percentile"
+            value={token.percentile_overall === null ? "n/a" : `${token.percentile_overall}%`}
+            note="of the rated universe"
+          />
+          <Stat
+            label="Circulating"
+            value={token.dilution.circ_pct === null ? "n/a" : `${token.dilution.circ_pct}%`}
+            note={
+              token.dilution.overhang_pct === null
+                ? "supply data not published"
+                : `${token.dilution.overhang_pct}% of value still to vest`
+            }
+          />
+          <Stat
+            label="Off all-time high"
+            value={token.drawdown.distance_pct === null ? "n/a" : `${token.drawdown.distance_pct}%`}
+            note={token.drawdown.recovery_x === null ? undefined : `${token.drawdown.recovery_x}x to recover`}
+          />
+        </div>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <span
+            className={`inline-block rounded border px-2.5 py-1 font-mono text-xs font-semibold ${verdictTone(token.verdict_color)}`}
+          >
+            {token.verdict}
+          </span>
+          {token.chain && (
+            <Link
+              href={`/scorecard/chain/${token.chain.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+              className="font-mono text-xs text-info hover:underline"
+            >
+              {token.chain}
+            </Link>
+          )}
+          {token.token_standard && (
+            <span className="font-mono text-xs text-text-tertiary">{token.token_standard}</span>
+          )}
+          {token.score_delta !== null && token.score_delta !== 0 && (
+            <span
+              className={`font-mono text-xs ${token.score_delta > 0 ? "text-positive" : "text-negative"}`}
+            >
+              {token.score_delta > 0 ? "+" : ""}
+              {token.score_delta} since last pass
+            </span>
+          )}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionLabel number="01" title="What the numbers say" />
+        <div className="mt-6 space-y-6">
+          {findings.map((finding) => (
+            <div key={finding.label}>
+              <EyebrowLabel>{finding.label}</EyebrowLabel>
+              <p className="max-w-3xl text-[1.0625rem] leading-[1.75] text-text-secondary">
+                {finding.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionLabel number="02" title="25-variable breakdown" />
+        <Prose>
+          Each variable is scored 1 to 10 and ranked against every other rated token, so a 7 that
+          ranks {ordinal(20)} means something different from a 7 that ranks {ordinal(180)}. The rank
+          is the part that is hard to get anywhere else.
+        </Prose>
+        <Breakdown token={token} />
+      </Section>
+
+      {(token.key_catalyst || token.key_risk) && (
+        <Section>
+          <SectionLabel number="03" title="Catalyst and risk" />
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {token.key_catalyst && (
+              <div className="rounded-2xl border border-border bg-bg-card p-6">
+                <EyebrowLabel>Next catalyst</EyebrowLabel>
+                <p className="text-[0.95rem] leading-relaxed text-text-secondary">{token.key_catalyst}</p>
+              </div>
+            )}
+            {token.key_risk && (
+              <div className="rounded-2xl border border-border bg-bg-card p-6">
+                <EyebrowLabel>Principal risk</EyebrowLabel>
+                <p className="text-[0.95rem] leading-relaxed text-text-secondary">{token.key_risk}</p>
+              </div>
+            )}
+          </div>
+        </Section>
+      )}
+
+      <Section>
+        <SectionLabel number="04" title="Market and supply" />
+        <div className="mt-6 overflow-x-auto rounded-2xl border border-border">
+          <table className="w-full font-mono text-sm">
+            <tbody>
+              <tr className="border-b border-border/50">
+                <td className="px-4 py-3 text-text-tertiary">Price</td>
+                <td className="px-4 py-3 text-right text-text-primary">
+                  {formatPrice(token.market.price)}
+                </td>
+              </tr>
+              <tr className="border-b border-border/50">
+                <td className="px-4 py-3 text-text-tertiary">Market cap</td>
+                <td className="px-4 py-3 text-right text-text-primary">
+                  {formatUsd(token.market.market_cap)}
+                </td>
+              </tr>
+              <tr className="border-b border-border/50">
+                <td className="px-4 py-3 text-text-tertiary">Circulating supply</td>
+                <td className="px-4 py-3 text-right text-text-primary">
+                  {token.dilution.circulating_supply === null
+                    ? "not published"
+                    : token.dilution.circulating_supply.toLocaleString("en-US", {
+                        maximumFractionDigits: 0,
+                      })}
+                </td>
+              </tr>
+              <tr className="border-b border-border/50">
+                <td className="px-4 py-3 text-text-tertiary">
+                  Eventual supply ({token.dilution.basis.replace("_", " ")})
+                </td>
+                <td className="px-4 py-3 text-right text-text-primary">
+                  {token.dilution.eventual_supply === null
+                    ? "uncapped"
+                    : token.dilution.eventual_supply.toLocaleString("en-US", {
+                        maximumFractionDigits: 0,
+                      })}
+                </td>
+              </tr>
+              <tr className="border-b border-border/50">
+                <td className="px-4 py-3 text-text-tertiary">Dilution to full supply</td>
+                <td className="px-4 py-3 text-right text-text-primary">
+                  {token.dilution.dilution_x === null ? "n/a" : `${token.dilution.dilution_x}x`}
+                </td>
+              </tr>
+              {token.tvl.tvl !== null && (
+                <tr className="border-b border-border/50">
+                  <td className="px-4 py-3 text-text-tertiary">Total value locked</td>
+                  <td className="px-4 py-3 text-right text-text-primary">{formatUsd(token.tvl.tvl)}</td>
+                </tr>
+              )}
+              {token.where_to_buy.length > 0 && (
+                <tr>
+                  <td className="px-4 py-3 text-text-tertiary">Listed on</td>
+                  <td className="px-4 py-3 text-right text-text-secondary">
+                    {token.where_to_buy.join(", ")}
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 max-w-3xl text-xs leading-relaxed text-text-tertiary">
+          {priceIsStale
+            ? `Price and market cap above are the values recorded in the scoring pass on ${formatDate(token.market.as_of) || "the sprint date"}, not a live quote. Supply figures, scores and ranks do not move with price.`
+            : `Price and market cap repriced ${formatDate(token.market.as_of)}. Supply figures, scores and ranks do not move with price.`}
+        </p>
+      </Section>
+
+      {token.neighbours.length > 0 && (
+        <Section>
+          <SectionLabel number="05" title="Tokens with a similar profile" />
+          <Prose>
+            These are the closest matches to {token.symbol} measured on the shape of all 25 variables
+            after removing overall quality, so what they share is a pattern of strengths and
+            weaknesses rather than a similar size or price.
+          </Prose>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {token.neighbours.map((neighbour) => (
+              <Link
+                key={neighbour.symbol}
+                href={`/scorecard/${neighbour.symbol.toLowerCase()}`}
+                className="block rounded-2xl border border-border bg-bg-card p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-sm font-semibold text-text-primary">
+                    {neighbour.symbol}
+                  </span>
+                  <span className="font-mono text-xs text-text-tertiary">
+                    {neighbour.score}/{token.max_score}
+                  </span>
+                </div>
+                <div className="mt-1 text-xs text-text-secondary">{neighbour.name}</div>
+                <div className="mt-2 font-mono text-[11px] text-text-tertiary">
+                  {neighbour.verdict} &middot; profile match {Math.round(neighbour.similarity * 100)}%
+                </div>
+              </Link>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {token.citations.length > 0 && (
+        <Section>
+          <SectionLabel number="06" title="Sources" />
+          <ul className="mt-6 space-y-3">
+            {token.citations.slice(0, MAX_CITATIONS).map((citation, index) => (
+              <li key={index} className="text-sm leading-relaxed text-text-secondary">
+                {citation.url ? (
+                  <a
+                    href={citation.url}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="font-mono text-xs text-info hover:underline"
+                  >
+                    [{citation.source}]
+                  </a>
+                ) : (
+                  <span className="font-mono text-xs text-text-tertiary">[{citation.source}]</span>
+                )}{" "}
+                {citation.claim}
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      {faqs.length > 0 && (
+        <Section>
+          <SectionLabel number="07" title="Common questions" />
+          <dl className="mt-6 space-y-6">
+            {faqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="text-[1.0625rem] font-semibold text-text-primary">{faq.question}</dt>
+                <dd className="mt-2 max-w-3xl text-[1.0625rem] leading-[1.75] text-text-secondary">
+                  {faq.answer}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </Section>
+      )}
+
+      <Section divider>
+        <EyebrowLabel>Keep reading</EyebrowLabel>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {token.opportunity_slug && (
+            <Link
+              href={`/opportunities/${token.opportunity_slug}`}
+              className="block rounded-2xl border border-border bg-bg-card p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
+            >
+              <span className="block text-sm font-semibold text-text-primary">
+                {token.name} full research note
+              </span>
+              <span className="mt-1.5 block text-xs leading-relaxed text-text-secondary">
+                On-chain detail, team, tokenomics, competitive position and the standing verdict.
+              </span>
+            </Link>
+          )}
+          <Link
+            href={`/scorecard/verdict/${token.verdict.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+            className="block rounded-2xl border border-border bg-bg-card p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
+          >
+            <span className="block text-sm font-semibold text-text-primary">
+              Every token rated {token.verdict}
+            </span>
+            <span className="mt-1.5 block text-xs leading-relaxed text-text-secondary">
+              The full band ranked by score, with what the group is collectively strong and weak on.
+            </span>
+          </Link>
+          <Link
+            href="/scorecard"
+            className="block rounded-2xl border border-border bg-bg-card p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
+          >
+            <span className="block text-sm font-semibold text-text-primary">
+              All {token.universe_size} rated tokens
+            </span>
+            <span className="mt-1.5 block text-xs leading-relaxed text-text-secondary">
+              The full ranking table and the method behind the 25 variables.
+            </span>
+          </Link>
+        </div>
+      </Section>
+
+      <p className="mt-16 max-w-3xl text-xs leading-relaxed text-text-tertiary">
+        This is research and analysis, not investment advice. Scores are one framework applied
+        consistently across {token.universe_size} tokens, not a prediction of price.
+      </p>
+    </div>
+  );
+}
