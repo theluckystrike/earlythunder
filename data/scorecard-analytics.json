@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T16:46:16.573Z",
+  "generated_at": "2026-08-06T16:56:02.411Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "citation_links": {
     "checked_at": "2026-08-06T15:55:12.849Z",
@@ -10258,7 +10258,7 @@
       "verdict_color": "green",
       "chain": "Sui",
       "token_standard": "Native L1",
-      "one_liner": "Move-language L1 with best TVL growth trajectory in 2025-2026. Near ATH with strong DeFi traction but heavy vesting schedule is key risk.",
+      "one_liner": "Move-language L1 with best TVL growth trajectory in 2025-2026. Strong DeFi traction but heavy vesting schedule is key risk.",
       "key_catalyst": "Dominant DEX volume growth; zkLogin adoption driving user onboarding; CETUS liquidity monopoly",
       "catalyst_expired_dates": [],
       "key_risk": "Only 33% of tokens in circulation; Mysten Labs/VC releases through 2028 create structural sell pressure",
@@ -21911,7 +21911,7 @@
       "verdict_color": "yellow",
       "chain": "Ethereum",
       "token_standard": "ERC-20",
-      "one_liner": "Decentralized GPU rendering marketplace at ATH correlation with AI hype cycle. Real utility but valuation stretched vs actual render job revenue.",
+      "one_liner": "Decentralized GPU rendering marketplace correlated with the AI hype cycle. Real utility but valuation stretched vs actual render job revenue.",
       "key_catalyst": "AI inference demand for GPU compute; Solana migration reducing fees and increasing throughput",
       "catalyst_expired_dates": [],
       "key_risk": "Actual render network revenue tiny vs market cap; heavy dependence on AI narrative; centralized competitors cheaper",
@@ -105331,7 +105331,7 @@
             "rank_overall": 51,
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
-            "one_liner": "Decentralized GPU rendering marketplace at ATH correlation with AI hype cycle. Real utility but valuation stretched vs actual render job revenue.",
+            "one_liner": "Decentralized GPU rendering marketplace correlated with the AI hype cycle. Real utility but valuation stretched vs actual render job revenue.",
             "market_cap": 694430172,
             "dilution_x": 1.24,
             "chain": "Ethereum"
@@ -105832,7 +105832,7 @@
             "rank_overall": 23,
             "verdict": "HOLD",
             "verdict_color": "green",
-            "one_liner": "Move-language L1 with best TVL growth trajectory in 2025-2026. Near ATH with strong DeFi traction but heavy vesting schedule is key risk.",
+            "one_liner": "Move-language L1 with best TVL growth trajectory in 2025-2026. Strong DeFi traction but heavy vesting schedule is key risk.",
             "market_cap": 2747566552,
             "dilution_x": 2.45,
             "chain": "Sui"
@@ -106446,7 +106446,7 @@
             "rank_overall": 51,
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
-            "one_liner": "Decentralized GPU rendering marketplace at ATH correlation with AI hype cycle. Real utility but valuation stretched vs actual render job revenue.",
+            "one_liner": "Decentralized GPU rendering marketplace correlated with the AI hype cycle. Real utility but valuation stretched vs actual render job revenue.",
             "market_cap": 694430172,
             "dilution_x": 1.24,
             "chain": "Ethereum"
