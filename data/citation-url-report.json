@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-06T15:55:12.849Z",
+  "checked_at": "2026-08-10T06:22:49.879Z",
   "total": 727,
-  "ok": 552,
+  "ok": 533,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -89,6 +89,14 @@
       "source": "Token Terminal",
       "cited_by": [
         "ENS"
+      ]
+    },
+    {
+      "url": "https://build.avax.network/docs/acps/77-reinventing-subnets",
+      "status": 404,
+      "source": "Avalanche Builder Hub",
+      "cited_by": [
+        "AVAX"
       ]
     },
     {
@@ -324,14 +332,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/chain/Manta%20Pacific",
-      "status": 404,
-      "source": "DefiLlama",
-      "cited_by": [
-        "MANTA"
-      ]
-    },
-    {
       "url": "https://dune.com/ilemi/solana-memecoins",
       "status": 404,
       "source": "Dune Analytics",
@@ -372,14 +372,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/chain/Qtum",
-      "status": 404,
-      "source": "DeFiLlama",
-      "cited_by": [
-        "QTUM"
-      ]
-    },
-    {
       "url": "https://coinmarketcap.com/currencies/memecoin-2",
       "status": 404,
       "source": "CoinMarketCap",
@@ -396,7 +388,7 @@
       ]
     }
   ],
-  "blocked": 104,
+  "blocked": 127,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -406,15 +398,8 @@
       ]
     },
     {
-      "url": "https://courses.ems.psu.edu/geog862/node/1845",
-      "error": "fetch failed",
-      "cited_by": [
-        "GEOD"
-      ]
-    },
-    {
       "url": "https://www.vaneck.com/us/en/blogs/digital-assets/matthew-sigel-geodnet-why-were-bullish/",
-      "error": "timeout",
+      "error": "fetch failed",
       "cited_by": [
         "GEOD"
       ]
@@ -458,13 +443,6 @@
     },
     {
       "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/",
-      "error": "timeout",
-      "cited_by": [
-        "AVAX"
-      ]
-    },
-    {
-      "url": "https://avax-one.com/avax-one-reports-first-quarter-2026-financial-and-operating-results/",
       "error": "fetch failed",
       "cited_by": [
         "AVAX"

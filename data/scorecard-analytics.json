@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-09T09:11:48.809Z",
+  "generated_at": "2026-08-10T06:22:49.996Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "citation_links": {
-    "checked_at": "2026-08-06T15:55:12.849Z",
-    "dead_count": 49
+    "checked_at": "2026-08-10T06:22:49.879Z",
+    "dead_count": 48
   },
   "market_data": {
     "source": "CoinGecko",
@@ -16097,7 +16097,7 @@
           "claim": "Avalanche9000 Etna upgrade Dec 16 2024: L1 costs reduced 99.9%, ACP-77 removes 2K AVAX requirement",
           "source": "Avalanche Builder Hub",
           "url": "https://build.avax.network/docs/acps/77-reinventing-subnets",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "TVL $476.31M (DeFiLlama), peak was $11.4B Nov 2021 (not $2.3B as previously claimed)",
@@ -91935,7 +91935,7 @@
           "claim": "Manta Network TVL declined from $800M+ peak during new model farming to under $25M by 2026",
           "source": "DefiLlama",
           "url": "https://defillama.com/chain/Manta%20Pacific",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "MANTA down 97%+ from ATH as liquidity mining incentives dried up and genuine users didn't materialize",
@@ -100038,7 +100038,7 @@
           "claim": "Qtum TVL under $1M, among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "Qtum GitHub activity near zero; no major protocol updates since 2022",
