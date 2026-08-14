@@ -34,7 +34,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
       { href: "/scorecard", label: "All rated tokens" },
       { href: "/scorecard/signal", label: "Ranked by variable" },
       { href: "/scorecard/compare", label: "Head to head" },
-      { href: "/scorecard/verdict/hold-core", label: "Rated Hold Core" },
+      { href: "/scorecard/size/small-cap", label: "Best small caps" },
     ],
   },
   {

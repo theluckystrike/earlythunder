@@ -10,6 +10,7 @@ import {
 } from "@/lib/scorecard-analytics";
 import { formatUsd, formatDate, ordinal } from "@/lib/scorecard-insight";
 import { signalSlug } from "@/lib/scorecard-signals";
+import { getAllTiers, tierRange } from "@/lib/scorecard-tiers";
 import { getBreadcrumbListSchema, getFaqPageSchema } from "@/lib/structured-data";
 
 /** Bounded so the index cannot grow unbounded as the universe expands. */
@@ -183,7 +184,31 @@ export default function ScorecardPage() {
       </Section>
 
       <Section>
-        <SectionLabel number="03" title="How the universe scores on each variable" />
+        <SectionLabel number="03" title="Read it by size" />
+        <Prose>
+          Score falls with size across the whole universe, which surprises nobody. What is worth
+          knowing is that inside a single band it stops falling: fix the size bracket and market
+          capitalisation says almost nothing about how a token scores.
+        </Prose>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          {getAllTiers().map((tier) => (
+            <Link
+              key={tier.slug}
+              href={`/scorecard/size/${tier.slug}`}
+              className="block rounded-2xl border border-border bg-bg-card p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
+            >
+              <div className="text-sm font-semibold text-text-primary">{tier.name}</div>
+              <div className="mt-1 font-mono text-xs text-text-tertiary">{tierRange(tier)}</div>
+              <div className="mt-2 font-mono text-xs text-text-secondary">
+                {tier.count} tokens &middot; median {tier.median_score}
+              </div>
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionLabel number="04" title="How the universe scores on each variable" />
         <Prose>
           Median and mean across all {meta.universe_size} rated tokens. The variables with the
           lowest medians are where the asset class as a whole is weak, not where any single token is
@@ -242,7 +267,7 @@ export default function ScorecardPage() {
       </Section>
 
       <Section>
-        <SectionLabel number="04" title="Two other ways in" />
+        <SectionLabel number="05" title="Two other ways in" />
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           <Link
             href="/scorecard/signal"
@@ -273,7 +298,7 @@ export default function ScorecardPage() {
       </Section>
 
       <Section>
-        <SectionLabel number="05" title={`All ${meta.universe_size} rated tokens`} />
+        <SectionLabel number="06" title={`All ${meta.universe_size} rated tokens`} />
         <Prose>
           Ranked by composite score. Every symbol links to its own page carrying the full
           25-variable breakdown, the rank it holds on each variable, its vesting arithmetic and the
@@ -361,7 +386,7 @@ export default function ScorecardPage() {
       </Section>
 
       <Section>
-        <SectionLabel number="06" title="Common questions" />
+        <SectionLabel number="07" title="Common questions" />
         <dl className="mt-6 space-y-6">
           {faqs.map((faq) => (
             <div key={faq.question}>

@@ -32,6 +32,7 @@ const REPO = join(HERE, "..");
 const ANALYTICS_PATH = join(REPO, "data", "scorecard-analytics.json");
 const SIGNALS_OUT = join(REPO, "data", "scorecard-signals.json");
 const PAIRS_OUT = join(REPO, "data", "scorecard-pairs.json");
+const TIERS_OUT = join(REPO, "data", "scorecard-tiers.json");
 
 // ---- Audited bounds -------------------------------------------------------
 const MAX_TOKENS = 2000;
@@ -320,6 +321,122 @@ function buildPairs(tokens) {
   return all.slice(0, MAX_PAIRS);
 }
 
+// ---- Size-tier layer ------------------------------------------------------
+
+/**
+ * Market-capitalisation bands. Boundaries are the round numbers the market
+ * itself talks in, not quantiles of this universe, so a token does not change
+ * tier because the set it is measured against changed.
+ */
+const TIERS = [
+  { slug: "mega-cap", name: "Mega cap", min: 1e10, max: Infinity },
+  { slug: "large-cap", name: "Large cap", min: 1e9, max: 1e10 },
+  { slug: "mid-cap", name: "Mid cap", min: 2.5e8, max: 1e9 },
+  { slug: "small-cap", name: "Small cap", min: 5e7, max: 2.5e8 },
+  { slug: "micro-cap", name: "Micro cap", min: 0, max: 5e7 },
+];
+
+/** Mean of a numeric list, rounded. Null when the list is empty. */
+function meanOf(values) {
+  if (!Array.isArray(values)) throw new Error("meanOf: array required");
+  if (values.length === 0) return null;
+  let sum = 0;
+  for (let i = 0; i < values.length && i < MAX_TOKENS; i += 1) sum += values[i];
+  return round(sum / values.length, 2);
+}
+
+/** Median of a numeric list. Null when the list is empty. */
+function medianOf(values) {
+  if (!Array.isArray(values)) throw new Error("medianOf: array required");
+  if (values.length === 0) return null;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 === 0 ? round((sorted[mid - 1] + sorted[mid]) / 2, 1) : sorted[mid];
+}
+
+/** Per-variable means for a tier, strongest first. */
+function tierVariableMeans(members) {
+  if (!Array.isArray(members) || members.length === 0) throw new Error("tierVariableMeans: members required");
+  const out = [];
+  const template = members[0].variables;
+  for (let v = 0; v < template.length && v < MAX_VARIABLES; v += 1) {
+    const key = template[v].key;
+    const values = members
+      .map((m) => {
+        const found = m.variables.find((x) => x.key === key);
+        return found === undefined ? null : found.value;
+      })
+      .filter((x) => x !== null);
+    out.push({ key, label: template[v].label, mean: meanOf(values) });
+  }
+  out.sort((a, b) => b.mean - a.mean);
+  return out;
+}
+
+/**
+ * One size band, shaped exactly like the verdict and chain groups so the same
+ * hub component renders it. Carries the extra figure a size band exists to
+ * answer: whether score and size actually move together inside the band.
+ */
+function buildTier(tier, members) {
+  if (!tier || typeof tier.slug !== "string") throw new Error("buildTier: bad tier");
+  if (!Array.isArray(members) || members.length === 0) throw new Error("buildTier: empty tier");
+  const ordered = [...members].sort((a, b) => b.score - a.score);
+  const scores = ordered.map((m) => m.score);
+  const varMeans = tierVariableMeans(ordered);
+
+  return {
+    kind: "size",
+    name: tier.name,
+    slug: tier.slug,
+    count: ordered.length,
+    floor: tier.min,
+    ceiling: Number.isFinite(tier.max) ? tier.max : null,
+    median_score: medianOf(scores),
+    mean_score: meanOf(scores),
+    top_score: scores[0],
+    bottom_score: scores[scores.length - 1],
+    /** Does score track size inside the band, or is the band flat? */
+    score_size_rho: spearman(
+      ordered.map((m) => m.score),
+      ordered.map((m) => m.market.market_cap),
+    ),
+    strongest_variables: varMeans.slice(0, 3),
+    weakest_variables: varMeans.slice(-3).reverse(),
+    members: ordered.map((m) => ({
+      symbol: m.symbol,
+      slug: m.slug,
+      name: m.name,
+      score: m.score,
+      rank_overall: m.rank_overall,
+      verdict: m.verdict,
+      verdict_color: m.verdict_color,
+      one_liner: m.one_liner,
+      market_cap: m.market.market_cap,
+      dilution_x: m.dilution.dilution_x,
+      chain: m.chain,
+    })),
+  };
+}
+
+/** Every size band that has members, largest band first. */
+function buildTiers(tokens) {
+  if (!Array.isArray(tokens) || tokens.length === 0) throw new Error("buildTiers: tokens required");
+  const priced = tokens.filter(
+    (t) => t.market && Number.isFinite(t.market.market_cap) && t.market.market_cap > 0,
+  );
+  const out = [];
+  for (let i = 0; i < TIERS.length; i += 1) {
+    const tier = TIERS[i];
+    const members = priced.filter(
+      (t) => t.market.market_cap >= tier.min && t.market.market_cap < tier.max,
+    );
+    if (members.length === 0) continue;
+    out.push(buildTier(tier, members));
+  }
+  return out;
+}
+
 // ---- Main -----------------------------------------------------------------
 
 function main() {
@@ -332,6 +449,7 @@ function main() {
   if (signals.length === 0) throw new Error("no signals built");
 
   const pairs = buildPairs(tokens);
+  const tiers = buildTiers(tokens);
 
   const stamp = {
     generated_at: new Date().toISOString(),
@@ -343,6 +461,7 @@ function main() {
 
   writeFileSync(SIGNALS_OUT, `${JSON.stringify({ ...stamp, signals }, null, 0)}\n`);
   writeFileSync(PAIRS_OUT, `${JSON.stringify({ ...stamp, pairs }, null, 0)}\n`);
+  writeFileSync(TIERS_OUT, `${JSON.stringify({ ...stamp, tiers }, null, 0)}\n`);
 
   const byReason = pairs.reduce((acc, p) => {
     acc[p.reason] = (acc[p.reason] ?? 0) + 1;
@@ -351,7 +470,8 @@ function main() {
 
   process.stdout.write(
     `signals ${signals.length} -> ${SIGNALS_OUT}\n` +
-      `pairs ${pairs.length} (${Object.entries(byReason).map(([k, v]) => `${k} ${v}`).join(", ")}) -> ${PAIRS_OUT}\n`,
+      `pairs ${pairs.length} (${Object.entries(byReason).map(([k, v]) => `${k} ${v}`).join(", ")}) -> ${PAIRS_OUT}\n` +
+      `tiers ${tiers.length} (${tiers.map((t) => `${t.slug} ${t.count}`).join(", ")}) -> ${TIERS_OUT}\n`,
   );
 }
 

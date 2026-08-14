@@ -23,6 +23,7 @@ import {
 } from "@/lib/scorecard-analytics";
 import { getAllSignals, signalSlug } from "@/lib/scorecard-signals";
 import { getAllPairs } from "@/lib/scorecard-pairs";
+import { getAllTiers } from "@/lib/scorecard-tiers";
 
 export const dynamic = "force-static";
 
@@ -152,6 +153,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: SCORECARD_SIGNAL_PRIORITY,
   }));
 
+  const tierEntries: MetadataRoute.Sitemap = getAllTiers().map((tier) => ({
+    url: `${SITE_URL}/scorecard/size/${tier.slug}`,
+    lastModified: passDate,
+    changeFrequency: "monthly" as const,
+    priority: SCORECARD_HUB_PRIORITY,
+  }));
+
   const compareEntries: MetadataRoute.Sitemap = getAllPairs()
     .slice(0, MAX_ENTRIES)
     .map((pair) => ({
@@ -169,6 +177,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...researchEntries,
     ...clarityEntries,
     ...scorecardHubEntries,
+    ...tierEntries,
     ...signalEntries,
     ...scorecardTokenEntries,
     ...compareEntries,

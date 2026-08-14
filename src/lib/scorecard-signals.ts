@@ -1,4 +1,5 @@
 import signalsData from "../../data/scorecard-signals.json";
+import type { ScorecardToken, ScoredVariable } from "./scorecard-analytics";
 import { ordinal } from "./scorecard-insight";
 
 /**
@@ -311,4 +312,143 @@ export function buildSignalFaqs(signal: SignalRecord, universe: number): readonl
   }
 
   return out;
+}
+
+// ---- Per-token reading of the pricing layer -------------------------------
+
+/** A token scores well on a variable at or above this. */
+const TOKEN_STRENGTH = 7;
+/** And badly at or below this. */
+const TOKEN_WEAKNESS = 3;
+const MAX_LISTED = 4;
+
+/** Rank correlation with market cap, per variable key. */
+function pricingByKey(): ReadonlyMap<string, number> {
+  const out = new Map<string, number>();
+  const all = getAllSignals();
+  for (let i = 0; i < all.length && i < MAX_SIGNALS; i += 1) {
+    if (all[i].mcap_rho === null) continue;
+    out.set(all[i].key, all[i].mcap_rho as number);
+  }
+  return out;
+}
+
+/** Variable labels as readable prose, truncated with a remainder count. */
+function labelList(items: readonly ScoredVariable[]): string {
+  if (!Array.isArray(items) || items.length === 0) return "";
+  const labels = items.map((v) => v.label);
+  if (labels.length === 1) return labels[0];
+  // Truncating to save one item reads worse than just listing it.
+  if (labels.length <= MAX_LISTED + 1) {
+    return `${labels.slice(0, -1).join(", ")} and ${labels[labels.length - 1]}`;
+  }
+  return `${labels.slice(0, MAX_LISTED).join(", ")} and ${labels.length - MAX_LISTED} more`;
+}
+
+/** Splits a token's variables into what the market pays for and what it ignores. */
+function splitByPricing(token: ScorecardToken, floor: number, isStrength: boolean) {
+  const pricing = pricingByKey();
+  const picked = token.variables.filter((v) =>
+    isStrength ? v.value >= floor : v.value <= floor,
+  );
+  return {
+    priced: picked.filter((v) => (pricing.get(v.key) ?? 0) >= PRICED_RHO),
+    ignored: picked.filter((v) => (pricing.get(v.key) ?? 1) <= IGNORED_RHO),
+    all: picked,
+  };
+}
+
+/** Highest-scoring variables a token has, best first. */
+function topVariables(token: ScorecardToken, count: number): readonly ScoredVariable[] {
+  const sorted = [...token.variables].sort((a, b) => b.value - a.value || a.rank - b.rank);
+  return sorted.slice(0, count);
+}
+
+/**
+ * For the 113 tokens that clear 7 on nothing at all. Saying "no strengths" and
+ * stopping is true but useless, so this reads their best three against the same
+ * pricing question the stronger tokens get.
+ */
+function bestOfABadHandSentence(token: ScorecardToken): string {
+  const pricing = pricingByKey();
+  const best = topVariables(token, 3);
+  const rendered = best.map((v) => `${v.label} at ${v.value}`).join(", ");
+  const ignored = best.filter((v) => (pricing.get(v.key) ?? 1) <= IGNORED_RHO);
+  const priced = best.filter((v) => (pricing.get(v.key) ?? 0) >= PRICED_RHO);
+  const opener =
+    `${token.symbol} clears ${TOKEN_STRENGTH} of 10 on none of the 25 variables. Its best three are ` +
+    `${rendered}.`;
+  if (priced.length > 0 && ignored.length === 0) {
+    return `${opener} The market does pay for ${labelList(priced)}, so even the little that works here is already in the price.`;
+  }
+  if (ignored.length > 0 && priced.length === 0) {
+    return `${opener} The market prices none of those, so there is nothing here it is failing to notice either. This is a low score on things nobody is bidding for.`;
+  }
+  return `${opener} That is a thin hand whichever way the market prices it, and the ranking is the honest reading.`;
+}
+
+/** The sentence about strengths, which differs by how the split falls. */
+function strengthSentence(token: ScorecardToken): string {
+  const s = splitByPricing(token, TOKEN_STRENGTH, true);
+  if (s.all.length === 0) return bestOfABadHandSentence(token);
+  if (s.ignored.length > 0 && s.priced.length === 0) {
+    return (
+      `Every variable ${token.symbol} scores ${TOKEN_STRENGTH} or better on is one the market does ` +
+      `not currently charge for: ${labelList(s.ignored)}. On the evidence, none of what this token ` +
+      `is good at is reflected in what it costs, which is the entire case for owning it and the ` +
+      `entire reason it may stay cheap.`
+    );
+  }
+  if (s.priced.length > 0 && s.ignored.length === 0) {
+    return (
+      `${token.symbol} is strong on ${labelList(s.priced)}, and those are variables the market ` +
+      `demonstrably pays for across the rated universe. Most of that quality is already in the price.`
+    );
+  }
+  if (s.priced.length > 0 && s.ignored.length > 0) {
+    return (
+      `${token.symbol}'s strengths split in two. ${labelList(s.priced)} are variables the market ` +
+      `already pays up for, so that part of the score is priced. ${labelList(s.ignored)} are ` +
+      `variables it does not price at all, and that is where holding this token is a disagreement ` +
+      `with the market rather than an agreement with it.`
+    );
+  }
+  return (
+    `${token.symbol} is strong on ${labelList(s.all)}. The market prices those variables only ` +
+    `partly, so the score is neither fully reflected in the price nor fully ignored by it.`
+  );
+}
+
+/** The sentence about weaknesses, only where there is something to say. */
+function weaknessSentence(token: ScorecardToken): string {
+  const w = splitByPricing(token, TOKEN_WEAKNESS, false);
+  if (w.all.length === 0) return "";
+  if (w.priced.length > 0) {
+    return (
+      ` It is weak on ${labelList(w.priced)}, which the market does price, so that damage is ` +
+      `already done and visible in the valuation.`
+    );
+  }
+  if (w.ignored.length > 0) {
+    return (
+      ` Its weaknesses sit in ${labelList(w.ignored)}, none of which the market is currently ` +
+      `punishing. A risk nobody is charging for is still a risk.`
+    );
+  }
+  return "";
+}
+
+/**
+ * How a token's own scores line up against what the market pays for. This is
+ * the one reading a single-token page cannot produce on its own: it needs the
+ * correlation of every variable against market capitalisation across the whole
+ * rated universe, which is what the signal layer computes.
+ */
+export function buildTokenPricingFinding(token: ScorecardToken): SignalFinding | null {
+  if (!token || !Array.isArray(token.variables) || token.variables.length === 0) return null;
+  if (getAllSignals().length === 0) return null;
+  return {
+    label: "Priced or unpriced",
+    text: `${strengthSentence(token)}${weaknessSentence(token)}`,
+  };
 }

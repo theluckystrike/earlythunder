@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { PageHeader, SectionLabel, Prose, EyebrowLabel, Section } from "@/components/PageChrome";
@@ -20,6 +21,8 @@ interface Props {
   readonly lead: string;
   /** Opening paragraph explaining what the group means. */
   readonly intro: string;
+  /** Optional extra paragraphs a specific hub kind can add under the intro. */
+  readonly insight?: ReactNode;
 }
 
 /** Colour for a verdict badge, keyed off the verdict_color in the dataset. */
@@ -45,6 +48,7 @@ export default function ScorecardGroupHub({
   title,
   lead,
   intro,
+  insight,
 }: Props) {
   if (!group || !Array.isArray(group.members) || group.members.length === 0) return null;
 
@@ -133,6 +137,7 @@ export default function ScorecardGroupHub({
       <Section>
         <SectionLabel number="01" title="What this group has in common" />
         <Prose>{intro}</Prose>
+        {insight}
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border border-border bg-bg-card p-6">
             <EyebrowLabel>Collectively strongest on</EyebrowLabel>

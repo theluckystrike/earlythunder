@@ -8,6 +8,7 @@ import {
   getAllScorecardTokens,
   getScorecardToken,
   getScorecardMeta,
+  getScorecardGroups,
   type ScorecardToken,
   type ScoredVariable,
 } from "@/lib/scorecard-analytics";
@@ -22,8 +23,9 @@ import {
   formatMultiple,
 } from "@/lib/scorecard-insight";
 import { getBreadcrumbListSchema, getFaqPageSchema } from "@/lib/structured-data";
-import { signalSlug } from "@/lib/scorecard-signals";
+import { signalSlug, buildTokenPricingFinding } from "@/lib/scorecard-signals";
 import { getPairsFor } from "@/lib/scorecard-pairs";
+import { getAllTiers } from "@/lib/scorecard-tiers";
 
 /** Variables are grouped into these six themes on the breakdown table. */
 const GROUP_ORDER = ["Cash flow", "Supply", "Ownership", "Traction", "Position", "Risk"] as const;
@@ -48,7 +50,9 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
   const token = getScorecardToken(symbol);
   if (token === null) return { title: "Token Not Found" };
 
-  const title = `${token.name} (${token.symbol}) Score and Fundamentals`;
+  // Long token names push the rendered title past what a result page shows.
+  const named = `${token.name} (${token.symbol}) Score and Fundamentals`;
+  const title = named.length <= 52 ? named : `${token.name} (${token.symbol}) Score`;
   const description = buildSummary(token).slice(0, 300);
   const url = `${SITE_URL}/scorecard/${token.slug}`;
 
@@ -172,7 +176,8 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
   if (token === null) notFound();
 
   const meta = getScorecardMeta();
-  const findings = buildFindings(token);
+  const pricingFinding = buildTokenPricingFinding(token);
+  const findings = [...buildFindings(token), ...(pricingFinding === null ? [] : [pricingFinding])];
   const faqs = buildFaqs(token);
   const summary = buildSummary(token);
   const url = `${SITE_URL}/scorecard/${token.slug}`;
@@ -181,6 +186,19 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
   const deadLinks = token.citations.filter((c) => !c.link_ok).length;
   const catalystExpired = token.catalyst_expired_dates.length > 0;
   const comparisons = getPairsFor(token.slug, MAX_COMPARISONS);
+  // Chain hubs exist only for chains with enough rated tokens to aggregate, so
+  // linking every chain unconditionally pointed 86 token pages at a 404.
+  const chainSlug =
+    token.chain === null ? null : token.chain.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  const chainHubSlug =
+    chainSlug === null
+      ? null
+      : (getScorecardGroups("chain").find((g) => g.slug === chainSlug)?.slug ?? null);
+  const cap = token.market.market_cap;
+  const sizeTier =
+    cap === null || !Number.isFinite(cap)
+      ? null
+      : (getAllTiers().find((t) => cap >= t.floor && (t.ceiling === null || cap < t.ceiling)) ?? null);
 
   const breadcrumbs = getBreadcrumbListSchema([
     { name: "Home", path: "/" },
@@ -285,12 +303,23 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
           />
         </div>
         <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
-          {token.chain && (
+          {token.chain &&
+            (chainHubSlug === null ? (
+              <span className="font-mono text-xs text-text-tertiary">{token.chain}</span>
+            ) : (
+              <Link
+                href={`/scorecard/chain/${chainHubSlug}`}
+                className="font-mono text-xs text-info hover:underline"
+              >
+                {token.chain}
+              </Link>
+            ))}
+          {sizeTier !== null && (
             <Link
-              href={`/scorecard/chain/${token.chain.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+              href={`/scorecard/size/${sizeTier.slug}`}
               className="font-mono text-xs text-info hover:underline"
             >
-              {token.chain}
+              {sizeTier.name}
             </Link>
           )}
           {token.token_standard && (

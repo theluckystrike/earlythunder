@@ -24,6 +24,7 @@ Unpaid requests answer HTTP 402 with authoritative price and payment details in 
 - /scorecard/signal                The 25 variables ranked by how strongly each correlates with market capitalisation.
 - /scorecard/signal/<variable>     Every rated token ranked on one variable, with its distribution and correlations.
 - /scorecard/compare/<a>-vs-<b>    Two tokens head to head on all 25 variables, plus market cap, dilution and drawdown.
+- /scorecard/size/<band>           Every rated token in one market-cap band, ranked by fundamentals.
 - /scorecard/verdict/<band>        Every token in one verdict band.
 - /scorecard/chain/<chain>         Every rated token on one network.
 
