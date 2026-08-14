@@ -1,0 +1,84 @@
+{
+ "tool": "nasa-audit",
+ "spec": "~/Desktop/prompts/sprint-goal-hardening-nasa-power-of-10.md",
+ "domain": "earlythunder.com",
+ "commit": "4c7ca90",
+ "date": "2026-08-14",
+ "budget": {
+  "critical": 0,
+  "high": 3
+ },
+ "counts": {
+  "critical": 0,
+  "high": 0,
+  "moderate": 0,
+  "low": 3,
+  "waived": 1
+ },
+ "verdict": "PASS",
+ "phases": {
+  "0_smoke": {
+   "checks": 8,
+   "passed": 8,
+   "failed": 0,
+   "ssl_days_left": 85
+  },
+  "1_nasa_code": {
+   "eslint_max_lines_violations": 0,
+   "unbounded_loops": 0,
+   "empty_catch_blocks": 0,
+   "unhandled_then": 0,
+   "json_parse_unnamed": 0,
+   "banned_constructs": 0,
+   "files_scanned": 13
+  },
+  "5_cdn": {
+   "trailing_slash_redirect": "308 to no-slash",
+   "all_sampled_200": true
+  },
+  "6_security": {
+   "hsts": true,
+   "x_frame_options": true,
+   "nosniff": true,
+   "referrer_policy": true,
+   "csp": true,
+   "permissions_policy": true
+  },
+  "8_seo": {
+   "pages": 1735,
+   "sitemap_urls": 1728,
+   "unique_titles": 1318,
+   "unique_descriptions": 1318,
+   "unique_canonicals": 1318,
+   "broken_internal_links": 0,
+   "internal_links": 1445,
+   "jsonld_blocks": 4258,
+   "jsonld_parse_failures": 0,
+   "orphan_pages": 0
+  },
+  "10_content": {
+   "humanize_hard_failures": 0,
+   "humanize_soft": 102,
+   "em_dashes_rendered": 0,
+   "title_colons": 2,
+   "citations": 777,
+   "dead_citation_links_suppressed": 47
+  }
+ },
+ "deploy": {
+  "platform": "cloudflare-pages",
+  "trigger": "git push to main",
+  "build_command": "npm run build",
+  "output_files": 16555,
+  "file_ceiling": 20000,
+  "headroom_files": 3445
+ },
+ "low_findings": [
+  "15 tokens unaudited after three audit agents failed: LINK ETHFI PENDLE RETH CBETH AERO MORPHO AAVE VIRTUAL LQTY JUP CETUS SUI LDO FLUID",
+  "209 tokens below the top 42 have never been source-checked",
+  "66 this-is sentence openers remain in long-form articles"
+ ],
+ "waived": [
+  "banned_words paradigm on scorecard pages, documented in HUMANIZE-EXEMPTIONS.md, Paradigm is the venture firm"
+ ]
+}
