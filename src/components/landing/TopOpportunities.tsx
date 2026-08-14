@@ -22,7 +22,7 @@ export default function TopOpportunities({ opportunities }: TopOpportunitiesProp
         Highest Conviction Opportunities
       </h2>
       <p className="text-text-secondary text-lg mt-3 max-w-2xl">
-        Scored by our 8-signal pattern filter. All analysis unlocked.
+        Scored by our 8-signal pattern filter. Every analysis is open.
       </p>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {opportunities.map((opp) => (

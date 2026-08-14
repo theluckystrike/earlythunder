@@ -41,7 +41,7 @@ export function generateMetadata(): Metadata {
     `sit at ${IGNORED_RHO} or below, meaning the market does not price them at all.`;
 
   return {
-    title: "Crypto Fundamentals Ranked by What the Market Pays For",
+    title: "Which crypto fundamentals the market actually pays for",
     description,
     keywords: [
       "which crypto fundamentals matter",

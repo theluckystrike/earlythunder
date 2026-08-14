@@ -21,7 +21,7 @@ interface Deadline {
 const DEADLINES = deadlinesData as readonly Deadline[];
 
 export const metadata: Metadata = {
-  title: "Crypto Deadline Tracker 2026: Token Unlocks, ETF Rulings, Mainnet Launches",
+  title: "Crypto deadline tracker 2026, vesting cliffs, ETF rulings and mainnet launches",
   description:
     "Live countdown tracker for the crypto deadlines that move markets: token unlocks, SEC ETF decisions, mainnet upgrades, governance votes, and the MiCA regulation deadline. Sorted by date, with sources.",
   keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/deadlines" },
   openGraph: {
     type: "website",
-    title: "Crypto Deadline Tracker 2026: Unlocks, ETF Rulings, Mainnet Launches",
+    title: "Crypto deadline tracker 2026, vesting cliffs, ETF rulings and mainnet launches",
     description:
       "Live countdown to the crypto deadlines that move markets, sorted by date with sources.",
     url: "/deadlines",

@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
   if (tier === null) return { title: "Size Band Not Found" };
 
   const meta = getScorecardMeta();
-  const title = `Best ${tier.name} Crypto by Fundamentals`;
+  const title = `Best ${tier.name.toLowerCase()} crypto by fundamentals`;
   const description =
     `All ${tier.count} rated tokens valued ${tierRange(tier)}, scored on the same 25 fundamental ` +
     `variables and ranked against each other. Median ${tier.median_score} of ${meta.max_score}, ` +

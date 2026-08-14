@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pricing, Free During Open Alpha | Early Thunder",
   description:
-    "All Early Thunder features are free during the open alpha. Full thesis access, 8-signal radar charts, catalyst tracking, and research reports -- no credit card required.",
+    "All Early Thunder features are free during the open alpha. Full thesis access, 8-signal radar charts, catalyst tracking, and research reports, no credit card required.",
   openGraph: {
     title: "Pricing, Free During Open Alpha | Early Thunder",
     description:
@@ -71,7 +71,7 @@ const FAQ_ITEMS = [
   {
     question: "What kind of signal quality can I expect?",
     answer:
-      "You receive curated, research-backed signals -- not social media noise. Every signal includes the full thesis, risk factors, catalyst timeline, and radar chart breakdown. We prioritize quality over quantity: typically 3-5 actionable signals per week, each backed by our systematic methodology.",
+      "You receive curated, research-backed signals, not social media noise. Every signal includes the full thesis, risk factors, catalyst timeline, and radar chart breakdown. We prioritize quality over quantity: typically 3-5 actionable signals per week, each backed by our systematic methodology.",
   },
   {
     question: "What asset classes do you cover?",
@@ -110,7 +110,7 @@ function PageHeader() {
       <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary">
         All features are currently free while we build in public. Full
         intelligence pipeline, 8-signal radar charts, deep briefs, and
-        research reports -- no credit card, no limits. Premium tiers
+        research reports, no credit card, no limits. Premium tiers
         coming later.
       </p>
     </div>
@@ -131,7 +131,7 @@ function AlphaCard() {
         </h2>
         <AlphaPrice />
         <p className="mt-2 text-sm text-text-secondary">
-          Full intelligence pipeline -- every feature, no restrictions
+          Full intelligence pipeline, every feature, no restrictions
         </p>
         <FeatureList features={ALPHA_FEATURES} />
         <div className="mt-auto pt-8">

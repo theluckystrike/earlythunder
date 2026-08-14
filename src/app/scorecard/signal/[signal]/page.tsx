@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
   const meta = getSignalsMeta();
   const definition = getSignalDefinition(signal.key);
   const top = signal.leaders.slice(0, 3).map((l) => l.symbol).join(", ");
-  const title = `${signal.label}: All ${meta.universe_size} Tokens Ranked`;
+  const title = `${signal.label}, all ${meta.universe_size} tokens ranked`;
   const description =
     `Every one of ${meta.universe_size} rated tokens ranked on ${signal.label}, scored 1 to 10. ` +
     `${top} lead. Median ${signal.median}/10` +

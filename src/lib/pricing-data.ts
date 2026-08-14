@@ -1,6 +1,6 @@
 /**
  * All features available during the open alpha period.
- * Previously split into free/premium tiers -- now everything is open.
+ * Previously split into free/premium tiers, now everything is open.
  */
 export const ALPHA_FEATURES = [
   "Browse all opportunities",
@@ -17,7 +17,7 @@ export const ALPHA_FEATURES = [
   "Early access to new opportunities",
 ] as const;
 
-/** Feature matrix rows -- all features available during open alpha. */
+/** Feature matrix rows, all features available during open alpha. */
 export const MATRIX_ROWS = [
   { feature: "Opportunity Directory", included: true },
   { feature: "Composite Scores", included: true },
@@ -37,7 +37,7 @@ export const MATRIX_ROWS = [
 export const FAQ_ITEMS = [
   {
     q: "Is everything really free right now?",
-    a: "Yes. During the open alpha period, every feature on Early Thunder is completely free -- no credit card, no trial limits, no paywalls. We are building in public and want early users to experience the full platform. Premium tiers will be introduced later, but alpha users get everything at no cost.",
+    a: "Yes. During the open alpha period, every feature on Early Thunder is completely free, no credit card, no trial limits, no paywalls. We are building in public and want early users to experience the full platform. Premium tiers will be introduced later, but alpha users get everything at no cost.",
   },
   {
     q: "Is this financial advice?",

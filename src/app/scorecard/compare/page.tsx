@@ -33,7 +33,7 @@ const REASONS = [
 const TITLE = "Crypto head-to-head comparisons";
 
 export const metadata: Metadata = {
-  title: "Crypto Token Comparisons: Head to Head on 25 Variables",
+  title: "Compare any two crypto tokens on 25 variables",
   description:
     "Curated head-to-head comparisons across the rated universe. Two tokens, 25 fundamental variables, every gap between them, with market cap, dilution and drawdown side by side.",
   keywords: [

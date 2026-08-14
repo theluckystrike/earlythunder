@@ -50,8 +50,8 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
   const leader = a.score >= b.score ? a : b;
   // The name form reads better, but a long pair of names pushes the rendered
   // title past what a result page shows, so it falls back to the ticker form.
-  const named = `${a.symbol} vs ${b.symbol}: ${a.name} or ${b.name}`;
-  const title = named.length <= 52 ? named : `${a.symbol} vs ${b.symbol} Compared on 25 Variables`;
+  const named = `${a.symbol} vs ${b.symbol}, ${a.name} or ${b.name}`;
+  const title = named.length <= 52 ? named : `${a.symbol} vs ${b.symbol} compared on 25 variables`;
   const description =
     `${a.symbol} scores ${a.score} of ${a.max_score} against ${b.score} for ${b.symbol} across 25 ` +
     `fundamental variables. ${a.symbol} wins ${h2h.aWins}, ${b.symbol} wins ${h2h.bWins}. ` +
@@ -298,7 +298,7 @@ export default async function ComparePage({ params }: PageParams) {
           />
           <Stat
             label="Variables won"
-            value={`${h2h.aWins} – ${h2h.bWins}`}
+            value={`${h2h.aWins} to ${h2h.bWins}`}
             note={`${h2h.ties} level of ${h2h.duels.length}`}
           />
           <Stat

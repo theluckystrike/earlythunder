@@ -19,7 +19,7 @@ const SIGNALS: readonly Signal[] = [
   { n: "05", name: "Smart Money", desc: "Capital inflows", source: "Nansen smart wallets net flow 14d" },
   { n: "06", name: "Narrative", desc: "Viral story potential", source: "Tier-1 founder mentions, mindshare delta" },
   { n: "07", name: "Earnings Yield", desc: "Revenue vs market cap", source: "Annualized fees / FDV >= 25%" },
-  { n: "08", name: "Catalyst", desc: "Near-term triggers", source: "token unlock, mainnet, governance vote" },
+  { n: "08", name: "Catalyst", desc: "Near-term triggers", source: "token release, mainnet, governance vote" },
 ] as const;
 
 /* ─── SignalCell ─── */

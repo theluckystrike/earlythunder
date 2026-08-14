@@ -32,7 +32,7 @@ const SIGNAL_SOURCES: Record<keyof Signals, string> = {
   dev_activity: "GH commits 30d",
   smart_money: "Nansen \u00B7 Arkham",
   community: "X velocity \u00B7 Discord",
-  catalyst: "token unlock timing",
+  catalyst: "token release timing",
   narrative: "Mindshare delta",
   valuation_gap: "Fees/FDV ratio",
   obscurity: "DAU penetration",
