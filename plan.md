@@ -104,6 +104,36 @@ per paragraph.
 - Re-run `build-scorecard-analytics.mjs` then `build-longtail-layer.mjs` after
   any scorecard data change. The second reads the first.
 
+## Phase 2 (2026-08-14) — SHIPPED, commit 68672ad
+
+Phase 2 was referenced in three consecutive briefs and its content was never
+supplied. Rather than stall a fourth time it was defined here, explicitly as an
+assumption, as the next iteration of the same programme. Two constraints set the
+shape, both measured in this session: the Cloudflare file ceiling leaves roughly
+389 pages of headroom, and phase 1 produced a universe-level finding that no
+page applied to an individual token. So phase 2 deepens rather than multiplies.
+
+- [x] `buildTokenPricingFinding()` gives all 251 token pages a reading of their
+      own scores against what the market pays for. Seven branches fire across
+      the universe, the largest covering 63 pages. The 113 tokens clearing 7 on
+      nothing get their best three read against the same question rather than a
+      dead end, which was added after measuring that the naive version left 45%
+      of pages saying nothing useful.
+- [x] `/scorecard/size/[tier]` x5, through the existing hub component and a new
+      optional insight slot. Bands are round market numbers, not quantiles, so a
+      token cannot change tier because the universe changed.
+- [x] The finding those pages exist to carry: score tracks size across bands
+      (median 157 mega, 121 large, 120 mid, 104 small, 95 micro) and stops
+      tracking it inside one (rho -0.11, 0.03, -0.03). The two smallest bands
+      fall under the n=30 floor and say so rather than printing a number.
+
+### Defect found by widening the QA, shipped in sprint 3
+Token pages linked their chain hub unconditionally, but chain hubs exist only
+for chains with enough rated members: 8 of 89. **86 token pages across 81 chains
+linked to a 404.** The link now renders as plain text where no hub exists. The
+lesson is to run the link check over every page a change touches, not only the
+pages it creates.
+
 ## Not done
-Phase 2 was referenced in the first brief and again in the third. Its content
-has never been supplied, so nothing has been assumed about it.
+Nothing outstanding from any supplied brief. If phase 2 was meant to be
+something other than the above, it still has to be written down somewhere.
