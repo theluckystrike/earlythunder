@@ -134,6 +134,63 @@ linked to a 404.** The link now renders as plain text where no hub exists. The
 lesson is to run the link check over every page a change touches, not only the
 pages it creates.
 
+## Validation sprint (2026-08-14) — SHIPPED, commits 5e91878 + 302b398
+
+The scorecard text was written by LLM research agents and had never been checked
+against sources. This sprint checked it and found the failure rate is real.
+
+### Method
+Eight parallel auditors received the EXACT published strings for the 42
+highest-visibility tokens, never a paraphrase, because paraphrase checking
+produced false flags on this dataset before. Independent agents then tried to
+refute every finding, defaulting to refuted when they could not confirm the
+defect against a loading source. Survivors were confirmed by hand.
+
+74 candidates, 9 killed at the refute stage, 65 confirmed, 64 corrections
+written. The refute stage earned its place: it killed a claim about Hyperliquid
+perp share where the sources measure different venue universes, and a Sky USDS
+reading where the auditor had cherry-picked a peak.
+
+### What was wrong, and it was not mostly invention
+Stale figures published as current, 40 of 74. Dated events advertised as
+forthcoming after they had happened, 12. Claims the cited source does not make,
+6. Outright fabrication, 9.
+
+Worst of them, all live until this sprint:
+- DRIFT was described as the most active perp DEX on Solana with a June 2026
+  launch ahead of it. It was exploited for $286M on 1 April 2026 through a
+  compromised admin key and has been offline since. The principal risk field did
+  not mention the exploit at all.
+- LTC claimed a fourth halving. Litecoin has had three.
+- BNB claimed a 2.3M token quarterly burn against an actual 1,371,803.77.
+- XMR listed a mandatory ring signatures upgrade in 2025. RingCT has been
+  mandatory since September 2017.
+- BTC advertised accelerating ETF inflows during record outflows.
+- MKR published a 10.7% Sky migration when about 81% had converted.
+
+### How corrections ship
+`data/audit-corrections.json` holds every correction with the URL that
+establishes it. `scripts/apply-audit-corrections.mjs` matches exact substrings
+and aborts rather than silently no-op when a target is missing, which is how the
+one genuinely ambiguous case surfaced. Idempotent. 20 evidence citations added,
+all verified to resolve. Citations 757 to 777.
+
+### Coverage is partial and the gaps are named
+Three of the eight audit agents died, so LINK, ETHFI, PENDLE, RETH, CBETH, AERO,
+MORPHO, AAVE, VIRTUAL, LQTY, JUP, CETUS, SUI, LDO and FLUID were never checked.
+The 209 tokens outside the top 42 were out of scope. Two confirmed findings were
+left unfixed because no loading source settled them.
+
+### Prose rules applied site wide
+Em dashes in rendered prose 743 to 0. Title colons 1,125 to 2, both the Next 404
+string. Hard gate failures 8 to 0 across 134 scanned pages.
+`scripts/reword-content-prose.mjs` carries the vesting rewriter vocabulary into
+the blog and guides. Two words are guarded rather than replaced and the script
+says why: every use of leverage here is the financial term, and capitalised
+Paradigm is the venture firm a blind pass once turned into "model".
+
 ## Not done
-Nothing outstanding from any supplied brief. If phase 2 was meant to be
-something other than the above, it still has to be written down somewhere.
+- 15 tokens the failed audit agents never reached, listed above.
+- The 209 tokens below the top 42 have never been source-checked.
+- 66 "this is" sentence openers remain across long-form articles. Soft tells,
+  and mechanical rewriting risks the meaning for little gain.
