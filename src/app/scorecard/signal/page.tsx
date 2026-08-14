@@ -194,10 +194,10 @@ export default function SignalIndexPage() {
         </Prose>
         <Prose>
           {strongest.label} is the most priced variable in the set at {strongest.mcap_rho}, and{" "}
-          {weakest.label} the least at {weakest.mcap_rho}. Only {priced.length} of {signals.length}{" "}
-          variables clear {IGNORED_RHO}, which leaves {ignored.length} the market shows no consistent
-          preference for at all. Read down the bottom of this table and you are looking at every
-          input the market is currently not charging for.
+          {weakest.label} the least at {weakest.mcap_rho}. {priced.length} of {signals.length}{" "}
+          variables clear {IGNORED_RHO}; the other {ignored.length} show no consistent preference at
+          all. Read down the bottom of this table and you are looking at every input the market is
+          currently not charging for.
         </Prose>
         <div className="mt-8 grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
           {themeMeans.map((theme) => (
