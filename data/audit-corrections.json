@@ -1,0 +1,420 @@
+{
+ "audited_at": "2026-08-14",
+ "method": "Eight parallel auditors checked the exact published strings for 42 tokens against primary sources, then independent agents tried to refute every finding, then the survivors were confirmed by hand. Six findings were killed at the refute stage and are not listed here. Every correction below carries the URL that establishes it.",
+ "hand_verified": [
+  "BNB",
+  "XMR",
+  "LTC",
+  "DRIFT"
+ ],
+ "corrections": [
+  {
+   "symbol": "DRIFT",
+   "field": "one_liner",
+   "find": "Most active perp DEX on Solana. v3 cross-margin launching June 2026. 35% Solana perp market share.",
+   "replace": "Exploited for $286M on 1 April 2026 through a compromised admin key and offline since. TVL fell from about $550M to under $250M. Held roughly 35% of Solana perp DEX volume before the attack.",
+   "why": "The page described a protocol that has been down for four months as the most active perp DEX on Solana.",
+   "cite": {
+    "claim": "Drift Protocol exploited for $286M on 1 April 2026, TVL fell from about $550M to under $250M, the largest DeFi hack of 2026 to date",
+    "source": "Elliptic",
+    "url": "https://www.elliptic.co/blog/drift-protocol-exploited-for-286-million-in-suspected-dprk-linked-attack"
+   }
+  },
+  {
+   "symbol": "DRIFT",
+   "field": "key_catalyst",
+   "find": "Drift v3 cross-margin launch June 20, 2026",
+   "replace": "Relaunch after the 1 April 2026 exploit, no confirmed date",
+   "why": "A June 2026 launch date advertised as forthcoming in August 2026, for a protocol that was offline."
+  },
+  {
+   "symbol": "DRIFT",
+   "field": "key_risk",
+   "find": "VC open Sep 2026 (150M tokens), Solana network risk, competition from Zeta Markets",
+   "replace": "Exploited for $286M on 1 April 2026 via a compromised admin key, deposits and withdrawals suspended. VC vesting Sep 2026 (150M tokens), Solana network risk, competition from Zeta Markets",
+   "why": "The principal risk field omitted the realised $286M exploit entirely."
+  },
+  {
+   "symbol": "LTC",
+   "field": "one_liner",
+   "find": "fourth halving complete",
+   "replace": "third halving complete",
+   "why": "Litecoin has had three halvings. August 2023 was the third, cutting the subsidy from 12.5 LTC to 6.25 LTC.",
+   "cite": {
+    "claim": "The August 2023 Litecoin halving was the third, reducing the block subsidy from 12.5 LTC to 6.25 LTC",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/tech/2023/08/02/litecoin-undergoes-third-halving-in-milestone-for-12-year-old-blockchain"
+   }
+  },
+  {
+   "symbol": "LTC",
+   "field": "key_catalyst",
+   "find": "halving supply cut in August 2023",
+   "replace": "third halving supply cut in August 2023",
+   "why": "Same halving-count error in the catalyst field."
+  },
+  {
+   "symbol": "LTC",
+   "field": "citation",
+   "find": "Litecoin completed its fourth halving in August 2023 reducing block reward to 6.25 LTC",
+   "replace": "Litecoin completed its third halving in August 2023, reducing the block reward from 12.5 LTC to 6.25 LTC",
+   "why": "The citation claim itself carried the wrong halving number."
+  },
+  {
+   "symbol": "BNB",
+   "field": "citation",
+   "find": "Binance burned over 2.3M BNB in Q1 2026 quarterly burn",
+   "replace": "Binance burned 1,371,803.77 BNB, about $1.277B, in the 34th quarterly burn on 15 January 2026",
+   "why": "The published figure overstated the burn by about 68%.",
+   "cite": {
+    "claim": "34th quarterly BNB burn on 15 January 2026 destroyed 1,371,803.77 BNB worth about $1.277B",
+    "source": "BNB Chain",
+    "url": "https://www.bnbchain.org/en/blog/34th-bnb-burn"
+   }
+  },
+  {
+   "symbol": "XMR",
+   "field": "key_catalyst",
+   "find": "mandatory ring signatures upgrade in 2025",
+   "replace": "pending FCMP++ hard fork, which replaces ring signatures with full-chain membership proofs",
+   "why": "No such 2025 upgrade exists. Ring signatures and RingCT became mandatory for all Monero transactions after September 2017.",
+   "cite": {
+    "claim": "RingCT became mandatory for all Monero transactions after September 2017",
+    "source": "Monero project",
+    "url": "https://www.getmonero.org/resources/moneropedia/ringCT.html"
+   }
+  },
+  {
+   "symbol": "MKR",
+   "field": "one_liner",
+   "find": "Sky rebrand: 10.7% migration",
+   "replace": "Sky rebrand: about 81% of MKR already upgraded to SKY",
+   "why": "The migration figure was stale by an order of magnitude, which inverted the reading of the rebrand.",
+   "cite": {
+    "claim": "Most MKR supply has converted to SKY and Sky governance opened a vote on a delayed-upgrade penalty for holdouts",
+    "source": "The Block",
+    "url": "https://www.theblock.co/post/371401/sky-opens-vote-to-penalize-stragglers-delaying-mkr-to-sky-token-conversion"
+   }
+  },
+  {
+   "symbol": "TRX",
+   "field": "key_risk",
+   "find": "Justin Sun SEC fraud charges pending",
+   "replace": "SEC fraud claims against Justin Sun dismissed with prejudice in March 2026",
+   "why": "The case was resolved five months before publication and was still listed as a pending charge.",
+   "cite": {
+    "claim": "SEC and Justin Sun reached a settlement resolving the Tron lawsuit in March 2026",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/policy/2026/03/05/sec-justin-sun-reach-settlement-over-tron-lawsuit"
+   }
+  },
+  {
+   "symbol": "DOGE",
+   "field": "key_catalyst",
+   "find": "Elon Musk DOGE government department association",
+   "replace": "No live government tie, Musk left the DOGE department in May 2025",
+   "why": "Presented as a current catalyst more than a year after it ended."
+  },
+  {
+   "symbol": "BTC",
+   "field": "key_catalyst",
+   "find": "Spot ETF inflows accelerating past $120B AUM; multiple sovereign wealth funds entering",
+   "replace": "Spot ETF AUM about $78B after record 2026 outflows, down from a $169.5B peak in October 2025",
+   "why": "Published as accelerating inflows during a period of record outflows, which reverses the meaning.",
+   "cite": {
+    "claim": "Bitcoin ETFs are no bigger today than when Trump won the election, after record 2026 outflows",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/markets/2026/06/10/bitcoin-etfs-are-no-bigger-today-than-when-trump-won-the-election"
+   }
+  },
+  {
+   "symbol": "ETH",
+   "field": "key_catalyst",
+   "find": "CLARITY Act (Jul 4 target)",
+   "replace": "CLARITY Act (the 4 July 2026 signing target was missed, the bill stalled in the Senate)",
+   "why": "A signing target six weeks in the past was still presented as forthcoming."
+  },
+  {
+   "symbol": "WSTETH",
+   "field": "one_liner",
+   "find": "the DeFi collateral standard with $26B TVL and native yield",
+   "replace": "the DeFi collateral standard with about $17.7B TVL and native yield",
+   "why": "TVL overstated by roughly a third against the live DefiLlama figure.",
+   "cite": {
+    "claim": "Lido TVL",
+    "source": "DefiLlama",
+    "url": "https://defillama.com/protocol/lido"
+   }
+  },
+  {
+   "symbol": "SOL",
+   "field": "key_catalyst",
+   "find": "Spot SOL ETF approval pipeline; Firedancer client going live increases throughput 10x",
+   "replace": "Spot SOL ETFs live since October 2025, so the open question is flows rather than approval; Firedancer live on mainnet with stake-weighted adoption still ramping",
+   "why": "Both halves were presented as pending after they had happened."
+  },
+  {
+   "symbol": "XRP",
+   "field": "key_catalyst",
+   "find": "Spot XRP ETF approvals in US",
+   "replace": "Spot XRP ETF flows, with US funds trading since November 2025",
+   "why": "Approval was presented as forthcoming nine months after the first US spot XRP ETF began trading.",
+   "cite": {
+    "claim": "The first US spot XRP ETF opened for trade in November 2025",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/markets/2025/11/13/first-xrp-spot-etf-opens-for-trade-with-canary-capital-s-xrpc"
+   }
+  },
+  {
+   "symbol": "XRP",
+   "field": "key_risk",
+   "find": "50% of supply still held by Ripple Labs with monthly escrow releases diluting holders",
+   "replace": "About 38% of supply still held by Ripple, most of it in escrow, with monthly releases diluting holders",
+   "why": "The holding share was overstated."
+  },
+  {
+   "symbol": "OKB",
+   "field": "key_catalyst",
+   "find": "Q2 2025 OKX Layer 2 mainnet launch with OKB as gas token, driving buyback/burn utility.",
+   "replace": "X Layer, the OKB-gas zkEVM, has been live since April 2024, and the August 2025 burn fixed supply at 21M.",
+   "why": "A mainnet launch dated a year after it happened, presented as a forthcoming catalyst.",
+   "cite": {
+    "claim": "OKX launched X Layer mainnet, its zkEVM Layer 2, in April 2024",
+    "source": "The Block",
+    "url": "https://www.theblock.co/post/288372/okx-launches-new-layer-2-mainnet-x-layer"
+   }
+  },
+  {
+   "symbol": "AVAX",
+   "field": "one_liner",
+   "find": "BlackRock BUIDL $475M",
+   "replace": "BlackRock BUIDL over $900M",
+   "why": "The BUIDL figure roughly doubled after the scoring pass.",
+   "cite": {
+    "claim": "BlackRock BUIDL passed $900M on Avalanche in July 2026",
+    "source": "FinanceFeeds",
+    "url": "https://financefeeds.com/blackrocks-buidl-tops-900-million-on-avalanche-doubling-in-a-week/"
+   }
+  },
+  {
+   "symbol": "AVAX",
+   "field": "one_liner",
+   "find": "vs HYPE $694M = 905x gap",
+   "replace": "against Hyperliquid's roughly $844M 2025 revenue",
+   "why": "The comparison figure was wrong and the derived multiple rested on it."
+  },
+  {
+   "symbol": "AVAX",
+   "field": "key_catalyst",
+   "find": "FIFA World Cup Jun 11 (60K+ blockchain txns already), Progmat $2B migration by end-Jun, ",
+   "replace": "The 2026 World Cup ran to 19 July and the Progmat migration completed, so both are history rather than catalysts. Ahead: ",
+   "why": "Two events that had already finished were listed as forthcoming catalysts."
+  },
+  {
+   "symbol": "SYRUP",
+   "field": "one_liner",
+   "find": "Core Foundation injunction unresolved.",
+   "replace": "Core Foundation dispute settled in May 2026.",
+   "why": "Settled three months before publication and still published as unresolved."
+  },
+  {
+   "symbol": "SYRUP",
+   "field": "key_risk",
+   "find": "Core Foundation injunction unresolved, ",
+   "replace": "Core Foundation dispute settled May 2026, ",
+   "why": "Same stale litigation status in the risk field."
+  },
+  {
+   "symbol": "UNI",
+   "field": "citation",
+   "find": "DEX market share ~55% by volume, $37.5B monthly",
+   "replace": "DEX market share about 25% by volume, about $47B monthly",
+   "why": "Share overstated by more than double against the live DefiLlama figure.",
+   "cite": {
+    "claim": "Uniswap DEX volume and market share",
+    "source": "DefiLlama",
+    "url": "https://defillama.com/dexs"
+   }
+  },
+  {
+   "symbol": "GEOD",
+   "field": "key_catalyst",
+   "find": "Jun 30 2026 halving (12→6 GEOD/day) accelerates deflationary crossover",
+   "replace": "The 30 June 2026 halving has already taken effect (12 to 6 GEOD/day), so the open question is whether burn now exceeds issuance",
+   "why": "A halving that had already happened was published as a forthcoming catalyst.",
+   "cite": {
+    "claim": "GEOD emission halving schedule",
+    "source": "GEODNET docs",
+    "url": "https://docs.geodnet.com/geod-token/tokenomics"
+   }
+  },
+  {
+   "symbol": "PAXG",
+   "field": "key_catalyst",
+   "find": "Gold price rally above $2,500/oz in 2025 due to Fed rate cuts and geopolitical demand.",
+   "replace": "Gold near $4,380/oz in August 2026 after a record high in January 2026, with continued central-bank buying.",
+   "why": "A 2025 price level published as the current rally, roughly 43% below the actual gold price."
+  },
+  {
+   "symbol": "PAXG",
+   "field": "key_risk",
+   "find": "loss of NYDFS BitLicense",
+   "replace": "loss of its NYDFS trust charter",
+   "why": "Paxos holds a New York limited purpose trust charter, not a BitLicense."
+  },
+  {
+   "symbol": "MKR",
+   "field": "one_liner",
+   "find": "$96M buyback (in SKY, not MKR)",
+   "replace": "buyback allocation cut from 75% to 7.5% of surplus in Mar 2026 to fund a $150M Solvency Reserve",
+   "why": "The buyback was restructured five months before publication and the old programme size was still published.",
+   "cite": {
+    "claim": "Sky Governance cut the buyback allocation from 75% to 7.5% of protocol surplus on 14 March 2026 to build a $150M Solvency Reserve",
+    "source": "PR Newswire / Sky",
+    "url": "https://www.prnewswire.com/news-releases/sky-protocol-achieves-record-123-79m-gross-revenue-and-46m-protocol-surplus-in-q1-2026--driven-by-surging-usds-adoption-and-expanded-sky-agent-network-302757168.html"
+   }
+  },
+  {
+   "symbol": "MKR",
+   "field": "citation",
+   "find": "$96M buyback program in SKY tokens (not MKR), ~$114.5M projected",
+   "replace": "Buyback allocation reduced from 75% to 7.5% of protocol surplus on 14 March 2026, superseding the earlier $114.5M projection",
+   "why": "Projection superseded by the March 2026 restructuring."
+  },
+  {
+   "symbol": "MKR",
+   "field": "citation",
+   "find": "TVL $7.17B (+24.5% YTD), targeting USDS doubling",
+   "replace": "TVL about $5.7B, down roughly 3% year to date from $5.9B on 1 January 2026",
+   "why": "The published figure reversed the direction of travel and overstated the level by about 20%.",
+   "cite": {
+    "claim": "Sky protocol TVL",
+    "source": "DefiLlama",
+    "url": "https://defillama.com/protocol/sky"
+   }
+  },
+  {
+   "symbol": "HYPE",
+   "field": "one_liner",
+   "find": "70%+ DEX perps share",
+   "replace": "about 32% to 37% DEX perps share, down from roughly 70% in 2025",
+   "why": "Share had roughly halved since the scoring pass.",
+   "cite": {
+    "claim": "Hyperliquid holds about 31.9% of perpetual DEX volume on a 30-day snapshot",
+    "source": "Datawallet",
+    "url": "https://www.datawallet.com/crypto/hyperliquid-statistics"
+   }
+  },
+  {
+   "symbol": "HYPE",
+   "field": "one_liner",
+   "find": "3 ETFs live (THYP, BHYP, HYPG ~$160M AUM)",
+   "replace": "3 ETFs live (THYP, BHYP, HYPG, about $253M combined AUM)",
+   "why": "Combined AUM understated by about 37%."
+  },
+  {
+   "symbol": "HYPE",
+   "field": "citation",
+   "find": "HYPG (Grayscale May 20), combined ~$160M AUM",
+   "replace": "HYPG (Grayscale, Nasdaq, 3 Jun 2026), combined about $253M AUM",
+   "why": "Grayscale launched HYPG on 3 June 2026, not 20 May.",
+   "cite": {
+    "claim": "Grayscale launched the Hyperliquid Staking ETF (HYPG) on Nasdaq on 3 June 2026",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/markets/2026/06/03/grayscale-launches-lowest-fee-u-s-hyperliquid-etf-as-competition-heats-up-around-hype"
+   }
+  },
+  {
+   "symbol": "HYPE",
+   "field": "citation",
+   "find": "ATH $75.51 (Jun 2, 2026)",
+   "replace": "ATH $76.87 (16 Jun 2026)",
+   "why": "The 2 June level was surpassed two weeks later.",
+   "cite": {
+    "claim": "HYPE all-time high $76.87 on 16 June 2026",
+    "source": "CoinGecko",
+    "url": "https://www.coingecko.com/en/coins/hyperliquid"
+   }
+  },
+  {
+   "symbol": "HYPE",
+   "field": "one_liner",
+   "find": "$800M-$1.3B rev, 97-99% to buyback/burn",
+   "replace": "about $600M annualised revenue after four straight quarterly declines, with builder fees now taking 18% of gross before buybacks",
+   "why": "Revenue had fallen for four consecutive quarters and the share reaching the Assistance Fund had dropped.",
+   "cite": {
+    "claim": "Hyperliquid revenue fell for four consecutive quarters and builder fee sharing raised cost of revenue to 18% of gross",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype"
+   }
+  },
+  {
+   "symbol": "OKB",
+   "field": "one_liner",
+   "find": "Quarterly buyback & burn from gas fees.",
+   "replace": "Supply permanently fixed at 21M since the August 2025 burn, with mint and burn functions disabled.",
+   "why": "The quarterly burn programme ended when supply was fixed.",
+   "cite": {
+    "claim": "OKX burned OKB supply down to a permanently fixed 21M in August 2025",
+    "source": "The Block",
+    "url": "https://www.theblock.co/post/367090/okx-okb-token-burn"
+   }
+  },
+  {
+   "symbol": "ZEC",
+   "field": "key_catalyst",
+   "find": "ECC focus on proof-of-stake transition",
+   "replace": "Shielding growth and the Crosslink hybrid finality work led by Shielded Labs, not the Electric Coin Company",
+   "why": "Attributed the staking work to the wrong organisation."
+  },
+  {
+   "symbol": "HBAR",
+   "field": "one_liner",
+   "find": "Enterprise governance council (Google, IBM, Boeing).",
+   "replace": "Enterprise governance council (Google, IBM, Dell, FedEx, Accenture). Boeing exited in Feb 2025.",
+   "why": "Named a council member that had left 18 months earlier."
+  },
+  {
+   "symbol": "XLM",
+   "field": "key_catalyst",
+   "find": "Soroban smart contract launch",
+   "replace": "Soroban smart contract adoption, live on mainnet since early 2024",
+   "why": "A mainnet launch from 2024 presented as a forthcoming catalyst."
+  },
+  {
+   "symbol": "ADA",
+   "field": "key_catalyst",
+   "find": "Midnight privacy sidechain launch",
+   "replace": "Midnight privacy sidechain traction, federated mainnet live since 31 March 2026",
+   "why": "Launched four months before publication and still listed as pending."
+  },
+  {
+   "symbol": "ADA",
+   "field": "citation",
+   "find": "Cardano staking yields approximately 3-4% annually",
+   "replace": "Cardano staking yields approximately 2.2% annually",
+   "why": "Yield overstated against the current published rate."
+  },
+  {
+   "symbol": "MKR",
+   "field": "one_liner",
+   "find": "(~6.7x net). buyback allocation cut",
+   "replace": "(~6.7x net). Buyback allocation cut",
+   "why": "Sentence case after a mid-string replacement."
+  },
+  {
+   "symbol": "HYPE",
+   "field": "one_liner",
+   "find": "combined AUM). about $600M annualised",
+   "replace": "combined AUM). About $600M annualised",
+   "why": "Sentence case after a mid-string replacement."
+  },
+  {
+   "symbol": "BTC",
+   "field": "one_liner",
+   "find": "Digital gold with spot ETF inflows and 94.5% supply mined. Unbeaten store-of-value thesis with sovereign adoption accelerating.",
+   "replace": "Digital gold with a large spot ETF complex and 94.5% supply mined. Store-of-value thesis intact, though ETF assets fell through 2026.",
+   "why": "The one_liner claimed accelerating inflows beside a corrected catalyst reporting record outflows, so the page contradicted itself."
+  }
+ ]
+}

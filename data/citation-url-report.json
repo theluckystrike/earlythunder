@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-10T06:22:49.879Z",
-  "total": 727,
-  "ok": 533,
+  "checked_at": "2026-08-14T15:21:22.567Z",
+  "total": 741,
+  "ok": 392,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -36,6 +36,14 @@
       ]
     },
     {
+      "url": "https://courses.ems.psu.edu/geog862/node/1845",
+      "status": 404,
+      "source": "Penn State / FCC",
+      "cited_by": [
+        "GEOD"
+      ]
+    },
+    {
       "url": "https://twitter.com/GEODNET_",
       "status": 404,
       "source": "Social media / CES",
@@ -44,11 +52,11 @@
       ]
     },
     {
-      "url": "https://defillama.com/protocol/aerodrome-finance",
-      "status": 404,
-      "source": "DefiLlama",
+      "url": "https://www.openpr.com/news/4438643/chainlink-link-classified-as-digital-commodity-under",
+      "status": 410,
+      "source": "BingX / OpenPR",
       "cited_by": [
-        "AERO"
+        "LINK"
       ]
     },
     {
@@ -89,14 +97,6 @@
       "source": "Token Terminal",
       "cited_by": [
         "ENS"
-      ]
-    },
-    {
-      "url": "https://build.avax.network/docs/acps/77-reinventing-subnets",
-      "status": 404,
-      "source": "Avalanche Builder Hub",
-      "cited_by": [
-        "AVAX"
       ]
     },
     {
@@ -172,14 +172,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/protocol/velodrome-finance",
-      "status": 404,
-      "source": "DefiLlama",
-      "cited_by": [
-        "VELO"
-      ]
-    },
-    {
       "url": "https://www.immutable.com/blog/immutable-polygon-zkEVM",
       "status": 404,
       "source": "Immutable Blog",
@@ -209,6 +201,14 @@
       "source": "Kaspa Research",
       "cited_by": [
         "KAS"
+      ]
+    },
+    {
+      "url": "https://www.getgrass.io/blog",
+      "status": 404,
+      "source": "Grass Blog",
+      "cited_by": [
+        "GRASS"
       ]
     },
     {
@@ -284,6 +284,14 @@
       ]
     },
     {
+      "url": "https://noble.xyz/blog",
+      "status": 404,
+      "source": "Noble announcement",
+      "cited_by": [
+        "ATOM"
+      ]
+    },
+    {
       "url": "https://www.sec.gov/rules/exorders/2026/33-11412.pdf",
       "status": 404,
       "source": "SEC Release 33-11412",
@@ -308,19 +316,11 @@
       ]
     },
     {
-      "url": "https://www.coingecko.com/en/coins/worldcoin-org",
+      "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million",
       "status": 404,
-      "source": "CoinGecko",
+      "source": "World Bank",
       "cited_by": [
-        "WLD"
-      ]
-    },
-    {
-      "url": "https://defillama.com/chain/Dogecoin",
-      "status": 404,
-      "source": "DeFiLlama",
-      "cited_by": [
-        "DOGE"
+        "XTZ"
       ]
     },
     {
@@ -329,14 +329,6 @@
       "source": "CoinDesk",
       "cited_by": [
         "FLOKI"
-      ]
-    },
-    {
-      "url": "https://dune.com/ilemi/solana-memecoins",
-      "status": 404,
-      "source": "Dune Analytics",
-      "cited_by": [
-        "POPCAT"
       ]
     },
     {
@@ -388,7 +380,7 @@
       ]
     }
   ],
-  "blocked": 127,
+  "blocked": 282,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -399,7 +391,7 @@
     },
     {
       "url": "https://www.vaneck.com/us/en/blogs/digital-assets/matthew-sigel-geodnet-why-were-bullish/",
-      "error": "fetch failed",
+      "error": "timeout",
       "cited_by": [
         "GEOD"
       ]
@@ -443,7 +435,7 @@
     },
     {
       "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/",
-      "error": "fetch failed",
+      "error": "timeout",
       "cited_by": [
         "AVAX"
       ]
@@ -460,6 +452,13 @@
       "error": "fetch failed",
       "cited_by": [
         "ZEC"
+      ]
+    },
+    {
+      "url": "https://dao.api3.org",
+      "error": "timeout",
+      "cited_by": [
+        "API3"
       ]
     },
     {
