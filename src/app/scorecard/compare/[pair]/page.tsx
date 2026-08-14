@@ -233,6 +233,9 @@ export default async function ComparePage({ params }: PageParams) {
   const findings = buildPairFindings(h2h);
   const faqs = buildPairFaqs(h2h);
   const leader = a.score >= b.score ? a : b;
+  const renamed = [a, b].filter(
+    (token) => typeof token.market.renamed_to === "string" && token.market.renamed_to.length > 0,
+  );
   const related = [...getPairsFor(a.slug, RELATED_LIMIT), ...getPairsFor(b.slug, RELATED_LIMIT)]
     .filter((p) => p.slug !== ref.slug)
     .slice(0, RELATED_LIMIT);
@@ -393,6 +396,15 @@ export default async function ComparePage({ params }: PageParams) {
             </tbody>
           </table>
         </div>
+        {renamed.length > 0 && (
+          <p className="mt-4 max-w-3xl text-[0.95rem] leading-relaxed text-warning">
+            {renamed
+              .map((t) => `${t.symbol} now trades as ${t.market.renamed_to}`)
+              .join(", and ")}
+            . The scoring pass ran under the old {renamed.length === 1 ? "ticker" : "tickers"}, so the
+            scores above are filed there while the market figures track the new one.
+          </p>
+        )}
         <p className="mt-3 max-w-3xl text-xs leading-relaxed text-text-tertiary">
           Price, market cap and all-time high from the CoinGecko snapshot fetched{" "}
           {formatDate(meta.market_data.fetched_at)}. Supply shares are derived from circulating and
