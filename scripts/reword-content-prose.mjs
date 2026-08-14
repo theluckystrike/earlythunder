@@ -35,6 +35,9 @@ const REPO = join(HERE, "..");
 const TARGETS = ["blog.json", "guides.json"];
 
 const MAX_NODES = 200000;
+const MAX_RULES = 200;
+const MAX_TARGETS = 20;
+const MAX_KEYS = 500;
 const MAX_DEPTH = 12;
 
 /** Keys whose values are identifiers or links, never prose. */
@@ -107,7 +110,7 @@ function reword(text) {
   if (typeof text !== "string") return text;
   if (text.length === 0) return text;
   let out = text;
-  for (let i = 0; i < RULES.length; i += 1) {
+  for (let i = 0; i < RULES.length && i < MAX_RULES; i += 1) {
     out = out.replace(RULES[i][0], RULES[i][1]);
   }
   return out;
@@ -131,7 +134,9 @@ function walk(node, key, depth, counter) {
   }
   if (node !== null && typeof node === "object") {
     const out = {};
-    for (const [k, v] of Object.entries(node)) {
+    const entries = Object.entries(node);
+    for (let i = 0; i < entries.length && i < MAX_KEYS; i += 1) {
+      const [k, v] = entries[i];
       out[k] = walk(v, k, depth + 1, counter);
     }
     return out;
@@ -156,11 +161,16 @@ function residue(serialised) {
 
 function main() {
   const dry = process.argv.includes("--dry");
-  for (let i = 0; i < TARGETS.length; i += 1) {
+  for (let i = 0; i < TARGETS.length && i < MAX_TARGETS; i += 1) {
     const path = join(REPO, "data", TARGETS[i]);
     const raw = readFileSync(path, "utf8");
     if (raw.length === 0) throw new Error(`${TARGETS[i]} is empty`);
-    const parsed = JSON.parse(raw);
+    let parsed;
+    try {
+      parsed = JSON.parse(raw);
+    } catch (error) {
+      throw new Error(`${path} is not valid JSON: ${error.message}`);
+    }
     const counter = { changed: 0, visited: 0 };
     const out = walk(parsed, null, 0, counter);
     const after = JSON.stringify(out, null, 1);

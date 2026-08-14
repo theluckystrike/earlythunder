@@ -36,7 +36,12 @@ const TEXT_FIELDS = new Set(["one_liner", "key_catalyst", "key_risk"]);
 function loadScorecard() {
   const raw = readFileSync(SRC_PATH, "utf8");
   if (raw.length === 0) throw new Error("scorecard is empty");
-  const parsed = JSON.parse(raw);
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch (error) {
+    throw new Error(`${SRC_PATH} is not valid JSON: ${error.message}`);
+  }
   if (!Array.isArray(parsed.tokens) || parsed.tokens.length === 0) {
     throw new Error("scorecard carries no tokens");
   }
@@ -47,7 +52,12 @@ function loadScorecard() {
 function loadCorrections() {
   const raw = readFileSync(FIX_PATH, "utf8");
   if (raw.length === 0) throw new Error("corrections file is empty");
-  const parsed = JSON.parse(raw);
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch (error) {
+    throw new Error(`${FIX_PATH} is not valid JSON: ${error.message}`);
+  }
   if (!Array.isArray(parsed.corrections)) throw new Error("corrections must be an array");
   if (parsed.corrections.length > MAX_FIXES) throw new Error("too many corrections");
   return parsed;
@@ -117,6 +127,14 @@ function applyOne(tokens, fix) {
   }
   if (typeof fix.replace !== "string") {
     throw new Error(`${fix.symbol}: correction needs replace`);
+  }
+  // A find string contained in its own replacement re-matches on every run and
+  // compounds. One correction shipped "third third third halving" that way.
+  if (fix.replace.includes(fix.find)) {
+    throw new Error(
+      `${fix.symbol}.${fix.field}: find is a substring of replace, so the correction ` +
+        `would compound on re-run. Anchor find on surrounding text.`,
+    );
   }
 
   const done =

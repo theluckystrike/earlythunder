@@ -49,9 +49,9 @@
   {
    "symbol": "LTC",
    "field": "key_catalyst",
-   "find": "halving supply cut in August 2023",
-   "replace": "third halving supply cut in August 2023",
-   "why": "Same halving-count error in the catalyst field."
+   "find": "pipeline; halving supply cut in August 2023",
+   "replace": "pipeline; third halving supply cut in August 2023",
+   "why": "Same halving-count error in the catalyst field. Anchored on the preceding words so the replacement cannot match its own find string."
   },
   {
    "symbol": "LTC",

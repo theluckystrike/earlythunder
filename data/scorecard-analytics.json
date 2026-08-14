@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T15:26:54.162Z",
+  "generated_at": "2026-08-14T15:47:06.020Z",
   "source_updated_at": "2026-08-14T15:25:18.659Z",
   "citation_links": {
     "checked_at": "2026-08-14T15:26:54.080Z",
@@ -53165,7 +53165,7 @@
       "chain": "Litecoin",
       "token_standard": "Native L1",
       "one_liner": "Bitcoin's silver analog with third halving complete. No smart contracts, no DeFi, diminishing developer interest. Payments use case losing to stablecoins.",
-      "key_catalyst": "Spot LTC ETF application in pipeline; third third third halving supply cut in August 2023",
+      "key_catalyst": "Spot LTC ETF application in pipeline; third halving supply cut in August 2023",
       "catalyst_expired_dates": [
         "August 2023"
       ],

@@ -110,9 +110,14 @@ export default function SignalIndexPage() {
 
   const priced = byPricing.filter((s) => (s.mcap_rho ?? 0) > IGNORED_RHO);
   const ignored = byPricing.filter((s) => (s.mcap_rho ?? 1) <= IGNORED_RHO);
+  // Every figure below reads from these two lists. If a data pass ever produced
+  // no measurable correlations the page would render nothing rather than crash
+  // the whole build.
+  if (byPricing.length === 0 || signals.length === 0) return null;
   const strongest = byPricing[0];
   const weakest = byPricing[byPricing.length - 1];
   const themeMeans = buildThemeMeans(byPricing);
+  if (themeMeans.length === 0) return null;
 
   const faqs = [
     {
@@ -317,7 +322,8 @@ export default function SignalIndexPage() {
                           {definition ? definition.question : `Every token ranked on ${signal.label}.`}
                         </span>
                         <span className="mt-3 block font-mono text-[11px] text-text-tertiary">
-                          median {signal.median}/10 &middot; {signal.leaders[0].symbol} leads
+                          median {signal.median}/10
+                          {signal.leaders.length > 0 && ` · ${signal.leaders[0].symbol} leads`}
                         </span>
                       </Link>
                     );

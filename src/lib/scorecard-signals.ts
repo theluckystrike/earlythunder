@@ -166,7 +166,8 @@ export interface SignalFinding {
 }
 
 /** Where the universe sits on this variable, and who leads it. */
-function distributionFinding(signal: SignalRecord): SignalFinding {
+function distributionFinding(signal: SignalRecord): SignalFinding | null {
+  if (!signal || !Array.isArray(signal.leaders) || signal.leaders.length === 0) return null;
   const rated = signal.leaders.length;
   const top = signal.leaders[0];
   const high = signal.extremes.at_nine_or_ten;

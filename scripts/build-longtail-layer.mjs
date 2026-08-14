@@ -45,6 +45,9 @@ const CHAIN_HEAD = 8; // top members of a chain paired with each other
 const CORRELATION_PEERS = 3; // co-moving variables surfaced per signal page
 /** Below this many rated tokens a correlation is not worth publishing. */
 const MIN_CORRELATION_N = 30;
+/** Hard ceilings on the group walks, so a malformed universe cannot run away. */
+const MAX_CHAINS = 500;
+const MAX_TIERS = 20;
 
 // ---- Small helpers --------------------------------------------------------
 
@@ -95,9 +98,11 @@ function toRanks(values) {
   indexed.sort((a, b) => a.value - b.value);
   const ranks = new Array(indexed.length);
   let i = 0;
-  while (i < indexed.length) {
+  let guard = 0;
+  while (i < indexed.length && guard < MAX_TOKENS) {
+    guard += 1;
     let j = i;
-    while (j + 1 < indexed.length && indexed[j + 1].value === indexed[i].value) j += 1;
+    while (j + 1 < indexed.length && j < MAX_TOKENS && indexed[j + 1].value === indexed[i].value) j += 1;
     const shared = (i + j) / 2 + 1;
     for (let k = i; k <= j; k += 1) ranks[indexed[k].index] = shared;
     i = j + 1;
@@ -117,7 +122,12 @@ function spearman(xs, ys) {
 function loadAnalytics() {
   const raw = readFileSync(ANALYTICS_PATH, "utf8");
   if (raw.length === 0) throw new Error("analytics file is empty");
-  const parsed = JSON.parse(raw);
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch (error) {
+    throw new Error(`${ANALYTICS_PATH} is not valid JSON: ${error.message}`);
+  }
   if (!Array.isArray(parsed.tokens) || parsed.tokens.length === 0) {
     throw new Error("analytics file carries no tokens");
   }
@@ -280,8 +290,8 @@ function pairsByMarketCap(tokens, into) {
     .filter((t) => t.market && Number.isFinite(t.market.market_cap) && t.market.market_cap > 0)
     .sort((a, b) => b.market.market_cap - a.market.market_cap)
     .slice(0, MCAP_HEAD);
-  for (let i = 0; i < head.length; i += 1) {
-    for (let j = i + 1; j < head.length && j <= i + MCAP_SPAN; j += 1) {
+  for (let i = 0; i < head.length && i < MCAP_HEAD; i += 1) {
+    for (let j = i + 1; j < head.length && j < MCAP_HEAD && j <= i + MCAP_SPAN; j += 1) {
       addPair(into, head[i].slug, head[j].slug, "market-cap");
     }
   }
@@ -298,10 +308,13 @@ function pairsByChain(tokens, into) {
     if (!buckets.has(chain)) buckets.set(chain, []);
     buckets.get(chain).push(tokens[i]);
   }
+  let chains = 0;
   for (const members of buckets.values()) {
+    if (chains >= MAX_CHAINS) break;
+    chains += 1;
     const head = [...members].sort((a, b) => b.score - a.score).slice(0, CHAIN_HEAD);
-    for (let i = 0; i < head.length; i += 1) {
-      for (let j = i + 1; j < head.length; j += 1) {
+    for (let i = 0; i < head.length && i < CHAIN_HEAD; i += 1) {
+      for (let j = i + 1; j < head.length && j < CHAIN_HEAD; j += 1) {
         addPair(into, head[i].slug, head[j].slug, "chain");
       }
     }
@@ -426,7 +439,7 @@ function buildTiers(tokens) {
     (t) => t.market && Number.isFinite(t.market.market_cap) && t.market.market_cap > 0,
   );
   const out = [];
-  for (let i = 0; i < TIERS.length; i += 1) {
+  for (let i = 0; i < TIERS.length && i < MAX_TIERS; i += 1) {
     const tier = TIERS[i];
     const members = priced.filter(
       (t) => t.market.market_cap >= tier.min && t.market.market_cap < tier.max,

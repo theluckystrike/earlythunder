@@ -135,6 +135,8 @@ export default async function SignalPage({ params }: PageParams) {
   const meta = getSignalsMeta();
   const definition = getSignalDefinition(signal.key);
   const leaders = getSignalLeaders(signal).slice(0, MAX_ROWS);
+  // The page is a leaderboard. With no rows there is nothing to publish.
+  if (leaders.length === 0) notFound();
   const findings = buildSignalFindings(signal);
   const faqs = buildSignalFaqs(signal, meta.universe_size);
   const url = `${SITE_URL}/scorecard/signal/${signalSlug(signal.key)}`;

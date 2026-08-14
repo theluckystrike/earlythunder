@@ -100,6 +100,115 @@ export interface Finding {
   readonly text: string;
 }
 
+/** Where the token sits against the whole rated set. */
+function standingFinding(token: ScorecardToken): Finding {
+  return {
+    label: "Standing",
+    text:
+      `${token.symbol} scores ${token.score} of ${token.max_score} across the 25-variable framework, ` +
+      `which places it ${ordinal(token.rank_overall)} of ${token.universe_size} rated tokens and inside the ` +
+      `${band(token.percentile_overall)} of the set. The framework verdict is ${token.verdict}.`,
+  };
+}
+
+/** The variables holding the score up, if any clear the strength threshold. */
+function strengthsFinding(token: ScorecardToken): Finding | null {
+  if (token.strengths.length === 0) return null;
+  const cited = token.strengths.map((v) => citeVariable(v, token.universe_size));
+  const leader = token.strengths.filter((v) => v.rank <= TOP_RANK);
+  const lead =
+    leader.length > 0
+      ? `${token.symbol} is a top-${TOP_RANK} name in the set on ${leader.length === 1 ? "one variable" : `${leader.length} variables`}. `
+      : "";
+  return { label: "Carrying the score", text: `${lead}The score rests on ${joinProse(cited)}.` };
+}
+
+/** The variables dragging it down, if any fall below the weakness threshold. */
+function weaknessesFinding(token: ScorecardToken): Finding | null {
+  if (token.weaknesses.length === 0) return null;
+  const cited = token.weaknesses.map((v) => citeVariable(v, token.universe_size));
+  return {
+    label: "Dragging the score",
+    text:
+      `Against the same universe, ${token.symbol} sits in the bottom third on ` +
+      `${joinProse(cited)}. These are the variables that would have to move for the verdict to change.`,
+  };
+}
+
+/** Vesting arithmetic, phrased by whether the overhang is material. */
+function supplyFinding(token: ScorecardToken): Finding | null {
+  const { overhang_pct: overhang, dilution_x: dilutionX, circ_pct: circPct, basis } = token.dilution;
+  if (overhang !== null && dilutionX !== null && overhang >= MATERIAL_OVERHANG_PCT) {
+    const supplyWord = basis === "max_supply" ? "maximum supply" : "total supply";
+    const severity =
+      overhang >= HEAVY_OVERHANG_PCT
+        ? "That is a heavy overhang: most of the eventual supply has not reached the market yet"
+        : "That is a real but manageable overhang";
+    return {
+      label: "Supply still to come",
+      text:
+        `Only ${circPct}% of ${token.symbol}'s ${supplyWord} is in circulation, so ${dilutionX}x the current ` +
+        `float is still scheduled to arrive. Holding price per token flat while the rest enters circulation ` +
+        `implies ${overhang}% of the fully diluted value sitting ahead of today's holders. ${severity}.`,
+    };
+  }
+  if (overhang !== null && overhang < MATERIAL_OVERHANG_PCT && circPct !== null) {
+    return {
+      label: "Supply still to come",
+      text:
+        `${circPct}% of eventual supply is already circulating, so vesting is not a live risk for ${token.symbol}. ` +
+        `Price has to be justified by demand rather than absorbed against a cliff.`,
+    };
+  }
+  return null;
+}
+
+/** Distance from the high, stated as the move needed rather than the fall taken. */
+function drawdownFinding(token: ScorecardToken): Finding | null {
+  const { distance_pct: distance, recovery_x: recovery, ath } = token.drawdown;
+  if (distance === null || recovery === null) return null;
+  if (distance <= DEEP_DRAWDOWN_PCT) {
+    return {
+      label: "Distance from the high",
+      text:
+        `${token.symbol} trades ${Math.abs(distance)}% below its all-time high of ${formatPrice(ath)}. ` +
+        `Recovering that level is a ${formatMultiple(recovery)} move, not a ${Math.abs(distance)}% one, which is the ` +
+        `arithmetic most drawdown charts hide.`,
+    };
+  }
+  return {
+    label: "Distance from the high",
+    text:
+      `${token.symbol} is ${Math.abs(distance)}% off its all-time high of ${formatPrice(ath)}, ` +
+      `a ${formatMultiple(recovery)} round trip from here.`,
+  };
+}
+
+/** Only rendered when the score moved materially against the previous pass. */
+function revisionFinding(token: ScorecardToken): Finding | null {
+  const delta = token.score_delta;
+  if (delta === null || Math.abs(delta) < MATERIAL_SCORE_MOVE) return null;
+  const direction = delta > 0 ? "gained" : "lost";
+  return {
+    label: "Score revision",
+    text:
+      `The framework score ${direction} ${Math.abs(delta)} points against the previous pass ` +
+      `(${token.prev_score} to ${token.score}). Revisions of this size follow a change in the underlying ` +
+      `variables, not a change in price.`,
+  };
+}
+
+/** Market cap against value locked, where the protocol reports any. */
+function capitalFinding(token: ScorecardToken): Finding | null {
+  const { mcap_per_tvl: perTvl, tvl } = token.tvl;
+  if (perTvl === null || tvl === null || tvl <= 0) return null;
+  const reading =
+    perTvl < 1
+      ? `The token is capitalised below the value locked in the protocol`
+      : `Each dollar of value locked carries ${perTvl.toFixed(2)} dollars of token market cap`;
+  return { label: "Capital backing", text: `${formatUsd(tvl)} sits in the protocol. ${reading}.` };
+}
+
 /**
  * The ranked findings for a token. Order is deliberate: standing first, then
  * what the score is built on, then what is dragging it, then the balance-sheet
@@ -109,107 +218,17 @@ export function buildFindings(token: ScorecardToken): readonly Finding[] {
   if (!token || typeof token.symbol !== "string") return [];
   if (!Array.isArray(token.variables) || token.variables.length === 0) return [];
 
-  const findings: Finding[] = [];
-  const universe = token.universe_size;
-  const pct = token.percentile_overall;
-
-  findings.push({
-    label: "Standing",
-    text:
-      `${token.symbol} scores ${token.score} of ${token.max_score} across the 25-variable framework, ` +
-      `which places it ${ordinal(token.rank_overall)} of ${universe} rated tokens and inside the ` +
-      `${band(pct)} of the set. The framework verdict is ${token.verdict}.`,
-  });
-
-  if (token.strengths.length > 0) {
-    const cited = token.strengths.map((v) => citeVariable(v, universe));
-    const leader = token.strengths.filter((v) => v.rank <= TOP_RANK);
-    const lead =
-      leader.length > 0
-        ? `${token.symbol} is a top-${TOP_RANK} name in the set on ${leader.length === 1 ? "one variable" : `${leader.length} variables`}. `
-        : "";
-    findings.push({
-      label: "Carrying the score",
-      text: `${lead}The score rests on ${joinProse(cited)}.`,
-    });
-  }
-
-  if (token.weaknesses.length > 0) {
-    const cited = token.weaknesses.map((v) => citeVariable(v, universe));
-    findings.push({
-      label: "Dragging the score",
-      text:
-        `Against the same universe, ${token.symbol} sits in the bottom third on ` +
-        `${joinProse(cited)}. These are the variables that would have to move for the verdict to change.`,
-    });
-  }
-
-  const { overhang_pct: overhang, dilution_x: dilutionX, circ_pct: circPct, basis } = token.dilution;
-  if (overhang !== null && dilutionX !== null && overhang >= MATERIAL_OVERHANG_PCT) {
-    const supplyWord = basis === "max_supply" ? "maximum supply" : "total supply";
-    const severity =
-      overhang >= HEAVY_OVERHANG_PCT
-        ? "That is a heavy overhang: most of the eventual supply has not reached the market yet"
-        : "That is a real but manageable overhang";
-    findings.push({
-      label: "Supply still to come",
-      text:
-        `Only ${circPct}% of ${token.symbol}'s ${supplyWord} is in circulation, so ${dilutionX}x the current ` +
-        `float is still scheduled to arrive. Holding price per token flat while the rest enters circulation ` +
-        `implies ${overhang}% of the fully diluted value sitting ahead of today's holders. ${severity}.`,
-    });
-  } else if (overhang !== null && overhang < MATERIAL_OVERHANG_PCT && circPct !== null) {
-    findings.push({
-      label: "Supply still to come",
-      text:
-        `${circPct}% of eventual supply is already circulating, so vesting is not a live risk for ${token.symbol}. ` +
-        `Price has to be justified by demand rather than absorbed against a cliff.`,
-    });
-  }
-
-  const { distance_pct: distance, recovery_x: recovery, ath } = token.drawdown;
-  if (distance !== null && recovery !== null && distance <= DEEP_DRAWDOWN_PCT) {
-    findings.push({
-      label: "Distance from the high",
-      text:
-        `${token.symbol} trades ${Math.abs(distance)}% below its all-time high of ${formatPrice(ath)}. ` +
-        `Recovering that level is a ${formatMultiple(recovery)} move, not a ${Math.abs(distance)}% one, which is the ` +
-        `arithmetic most drawdown charts hide.`,
-    });
-  } else if (distance !== null && recovery !== null) {
-    findings.push({
-      label: "Distance from the high",
-      text:
-        `${token.symbol} is ${Math.abs(distance)}% off its all-time high of ${formatPrice(ath)}, ` +
-        `a ${formatMultiple(recovery)} round trip from here.`,
-    });
-  }
-
-  const delta = token.score_delta;
-  if (delta !== null && Math.abs(delta) >= MATERIAL_SCORE_MOVE) {
-    const direction = delta > 0 ? "gained" : "lost";
-    findings.push({
-      label: "Score revision",
-      text:
-        `The framework score ${direction} ${Math.abs(delta)} points against the previous pass ` +
-        `(${token.prev_score} to ${token.score}). Revisions of this size follow a change in the underlying ` +
-        `variables, not a change in price.`,
-    });
-  }
-
-  const { mcap_per_tvl: perTvl, tvl } = token.tvl;
-  if (perTvl !== null && tvl !== null && tvl > 0) {
-    const reading =
-      perTvl < 1
-        ? `The token is capitalised below the value locked in the protocol`
-        : `Each dollar of value locked carries ${perTvl.toFixed(2)} dollars of token market cap`;
-    findings.push({
-      label: "Capital backing",
-      text: `${formatUsd(tvl)} sits in the protocol. ${reading}.`,
-    });
-  }
-
-  return findings.slice(0, MAX_FINDINGS);
+  return [
+    standingFinding(token),
+    strengthsFinding(token),
+    weaknessesFinding(token),
+    supplyFinding(token),
+    drawdownFinding(token),
+    revisionFinding(token),
+    capitalFinding(token),
+  ]
+    .filter((finding): finding is Finding => finding !== null)
+    .slice(0, MAX_FINDINGS);
 }
 
 export interface Faq {
@@ -222,43 +241,12 @@ export interface Faq {
  * fundamentals. Answers are assembled from the same computed values as the
  * findings, so the visible page and the structured data cannot drift apart.
  */
-export function buildFaqs(token: ScorecardToken): readonly Faq[] {
-  if (!token || typeof token.symbol !== "string") return [];
-  if (!Array.isArray(token.variables) || token.variables.length === 0) return [];
-
-  const universe = token.universe_size;
-  const faqs: Faq[] = [
-    {
-      question: `What is the Early Thunder score for ${token.name} (${token.symbol})?`,
-      answer:
-        `${token.symbol} scores ${token.score} out of ${token.max_score} on the 25-variable framework, ` +
-        `ranking ${ordinal(token.rank_overall)} of ${universe} rated tokens (${band(token.percentile_overall)}). ` +
-        `The framework verdict is ${token.verdict}.`,
-    },
-  ];
-
-  if (token.strengths.length > 0) {
-    faqs.push({
-      question: `What are ${token.symbol}'s strongest fundamentals?`,
-      answer:
-        `${token.symbol} ranks highest on ${joinProse(token.strengths.map((v) => citeVariable(v, universe)))}. ` +
-        `Ranks are measured against all ${universe} tokens in the same scoring pass.`,
-    });
-  }
-
-  if (token.weaknesses.length > 0) {
-    faqs.push({
-      question: `What are the weakest parts of the ${token.symbol} thesis?`,
-      answer:
-        `${token.symbol} scores in the bottom third of the universe on ` +
-        `${joinProse(token.weaknesses.map((v) => citeVariable(v, universe)))}.` +
-        (token.key_risk ? ` The single risk carried on the scorecard is: ${token.key_risk}` : ""),
-    });
-  }
-
+/** Supply, drawdown and neighbour questions, each rendered only when the data supports it. */
+function factualFaqs(token: ScorecardToken): Faq[] {
+  const out: Faq[] = [];
   const { circ_pct: circPct, overhang_pct: overhang, dilution_x: dilutionX } = token.dilution;
   if (circPct !== null && overhang !== null && dilutionX !== null) {
-    faqs.push({
+    out.push({
       question: `How much ${token.symbol} supply is still to enter circulation?`,
       answer:
         `${circPct}% of eventual ${token.symbol} supply is circulating today, leaving ${dilutionX}x the ` +
@@ -266,19 +254,17 @@ export function buildFaqs(token: ScorecardToken): readonly Faq[] {
         `value ahead of current holders.`,
     });
   }
-
   const { distance_pct: distance, recovery_x: recovery, ath } = token.drawdown;
   if (distance !== null && recovery !== null) {
-    faqs.push({
+    out.push({
       question: `How far is ${token.symbol} from its all-time high?`,
       answer:
         `${token.symbol} trades ${Math.abs(distance)}% below its all-time high of ${formatPrice(ath)}. ` +
         `Returning to that high requires a ${formatMultiple(recovery)} move from the level used in this scoring pass.`,
     });
   }
-
   if (token.neighbours.length > 0) {
-    faqs.push({
+    out.push({
       question: `Which tokens have a similar profile to ${token.symbol}?`,
       answer:
         `Measured on the shape of all 25 scored variables rather than on price, the closest matches to ` +
@@ -286,19 +272,64 @@ export function buildFaqs(token: ScorecardToken): readonly Faq[] {
         `Similarity here means the same pattern of strengths and weaknesses, not a similar market cap.`,
     });
   }
+  return out;
+}
 
-  if (token.key_catalyst) {
-    const expired = token.catalyst_expired_dates.length > 0;
-    faqs.push({
-      question: expired
-        ? `What catalyst was ${token.symbol} scored against?`
-        : `What is the next catalyst for ${token.symbol}?`,
-      answer: expired
-        ? `${token.key_catalyst} This was written as forward-looking when the scoring pass ran. The ${token.catalyst_expired_dates.join(" and ")} item has since passed, so read that part as history. Anything else listed may still be ahead.`
-        : `${token.key_catalyst}`,
+/** Strength and weakness questions, which depend on the highlight thresholds. */
+function highlightFaqs(token: ScorecardToken): Faq[] {
+  const universe = token.universe_size;
+  const out: Faq[] = [];
+  if (token.strengths.length > 0) {
+    out.push({
+      question: `What are ${token.symbol}'s strongest fundamentals?`,
+      answer:
+        `${token.symbol} ranks highest on ${joinProse(token.strengths.map((v) => citeVariable(v, universe)))}. ` +
+        `Ranks are measured against all ${universe} tokens in the same scoring pass.`,
     });
   }
+  if (token.weaknesses.length > 0) {
+    out.push({
+      question: `What are the weakest parts of the ${token.symbol} thesis?`,
+      answer:
+        `${token.symbol} scores in the bottom third of the universe on ` +
+        `${joinProse(token.weaknesses.map((v) => citeVariable(v, universe)))}.` +
+        (token.key_risk ? ` The single risk carried on the scorecard is: ${token.key_risk}` : ""),
+    });
+  }
+  return out;
+}
 
+/** The catalyst question, whose wording changes once a dated item has passed. */
+function catalystFaq(token: ScorecardToken): Faq | null {
+  if (!token.key_catalyst) return null;
+  const expired = token.catalyst_expired_dates.length > 0;
+  return {
+    question: expired
+      ? `What catalyst was ${token.symbol} scored against?`
+      : `What is the next catalyst for ${token.symbol}?`,
+    answer: expired
+      ? `${token.key_catalyst} This was written as forward-looking when the scoring pass ran. The ${token.catalyst_expired_dates.join(" and ")} item has since passed, so read that part as history. Anything else listed may still be ahead.`
+      : `${token.key_catalyst}`,
+  };
+}
+
+export function buildFaqs(token: ScorecardToken): readonly Faq[] {
+  if (!token || typeof token.symbol !== "string") return [];
+  if (!Array.isArray(token.variables) || token.variables.length === 0) return [];
+
+  const catalyst = catalystFaq(token);
+  const faqs: Faq[] = [
+    {
+      question: `What is the Early Thunder score for ${token.name} (${token.symbol})?`,
+      answer:
+        `${token.symbol} scores ${token.score} out of ${token.max_score} on the 25-variable framework, ` +
+        `ranking ${ordinal(token.rank_overall)} of ${token.universe_size} rated tokens (${band(token.percentile_overall)}). ` +
+        `The framework verdict is ${token.verdict}.`,
+    },
+    ...highlightFaqs(token),
+    ...factualFaqs(token),
+    ...(catalyst === null ? [] : [catalyst]),
+  ];
   return faqs;
 }
 
