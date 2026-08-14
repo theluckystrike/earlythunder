@@ -1381,7 +1381,7 @@ a:hover .arr, button:hover .arr { transform: translateX(3px); }
 }
 .footer__cols {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 32px;
 }
 .footer__cols > div { display: flex; flex-direction: column; gap: 10px; }

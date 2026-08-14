@@ -22,11 +22,15 @@ import {
   formatMultiple,
 } from "@/lib/scorecard-insight";
 import { getBreadcrumbListSchema, getFaqPageSchema } from "@/lib/structured-data";
+import { signalSlug } from "@/lib/scorecard-signals";
+import { getPairsFor } from "@/lib/scorecard-pairs";
 
 /** Variables are grouped into these six themes on the breakdown table. */
 const GROUP_ORDER = ["Cash flow", "Supply", "Ownership", "Traction", "Position", "Risk"] as const;
 
 const MAX_CITATIONS = 12;
+/** Head-to-head pages surfaced from a token page. */
+const MAX_COMPARISONS = 8;
 
 interface PageParams {
   readonly params: Promise<{ readonly symbol: string }>;
@@ -100,7 +104,11 @@ function VariableRow({ variable, universe }: { readonly variable: ScoredVariable
 
   return (
     <tr className="border-b border-border/40">
-      <td className="w-52 whitespace-nowrap py-3 pr-6 text-sm text-text-secondary">{variable.label}</td>
+      <td className="w-52 whitespace-nowrap py-3 pr-6 text-sm text-text-secondary">
+        <Link href={`/scorecard/signal/${signalSlug(variable.key)}`} className="hover:text-info">
+          {variable.label}
+        </Link>
+      </td>
       <td className="w-full py-3 pr-6">
         <div className="relative h-2 rounded-full bg-bg-base">
           <div
@@ -172,6 +180,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
   const marketAsOf = formatDate(meta.market_data.fetched_at);
   const deadLinks = token.citations.filter((c) => !c.link_ok).length;
   const catalystExpired = token.catalyst_expired_dates.length > 0;
+  const comparisons = getPairsFor(token.slug, MAX_COMPARISONS);
 
   const breadcrumbs = getBreadcrumbListSchema([
     { name: "Home", path: "/" },
@@ -499,9 +508,33 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
         </Section>
       )}
 
+      {comparisons.length > 0 && (
+        <Section>
+          <SectionLabel number="06" title={`${token.symbol} compared head to head`} />
+          <Prose>
+            Both sides of each comparison were scored by the same framework in the same pass, so the
+            gap between them is a measurement rather than two readings taken with different rulers.
+          </Prose>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {comparisons.map((pair) => {
+              const other = pair.a === token.slug ? pair.b : pair.a;
+              return (
+                <Link
+                  key={pair.slug}
+                  href={`/scorecard/compare/${pair.slug}`}
+                  className="block rounded-xl border border-border bg-bg-card px-5 py-4 font-mono text-sm text-text-secondary transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active hover:text-text-primary"
+                >
+                  {token.symbol} vs {other.toUpperCase()}
+                </Link>
+              );
+            })}
+          </div>
+        </Section>
+      )}
+
       {token.citations.length > 0 && (
         <Section>
-          <SectionLabel number="06" title="Sources" />
+          <SectionLabel number="07" title="Sources" />
           <ul className="mt-6 space-y-3">
             {token.citations.slice(0, MAX_CITATIONS).map((citation, index) => (
               <li key={index} className="text-sm leading-relaxed text-text-secondary">
@@ -540,7 +573,7 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
 
       {faqs.length > 0 && (
         <Section>
-          <SectionLabel number="07" title="Common questions" />
+          <SectionLabel number="08" title="Common questions" />
           <dl className="mt-6 space-y-6">
             {faqs.map((faq) => (
               <div key={faq.question}>

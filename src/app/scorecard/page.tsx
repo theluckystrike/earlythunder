@@ -9,6 +9,7 @@ import {
   getScorecardMeta,
 } from "@/lib/scorecard-analytics";
 import { formatUsd, formatDate, ordinal } from "@/lib/scorecard-insight";
+import { signalSlug } from "@/lib/scorecard-signals";
 import { getBreadcrumbListSchema, getFaqPageSchema } from "@/lib/structured-data";
 
 /** Bounded so the index cannot grow unbounded as the universe expands. */
@@ -186,7 +187,7 @@ export default function ScorecardPage() {
         <Prose>
           Median and mean across all {meta.universe_size} rated tokens. The variables with the
           lowest medians are where the asset class as a whole is weak, not where any single token is
-          failing.
+          failing. Each variable name links to its own ranking of the full universe.
         </Prose>
         <div className="mt-6 overflow-x-auto rounded-2xl border border-border">
           <table className="w-full font-mono text-sm">
@@ -217,7 +218,14 @@ export default function ScorecardPage() {
                 .sort((a, b) => (b.median ?? 0) - (a.median ?? 0))
                 .map((variable) => (
                   <tr key={variable.key} className="border-b border-border/40 hover:bg-bg-card/50">
-                    <td className="px-3 py-2.5 text-text-primary">{variable.label}</td>
+                    <td className="px-3 py-2.5 text-text-primary">
+                      <Link
+                        href={`/scorecard/signal/${signalSlug(variable.key)}`}
+                        className="hover:text-info"
+                      >
+                        {variable.label}
+                      </Link>
+                    </td>
                     <td className="px-3 py-2.5 text-text-tertiary">{variable.group}</td>
                     <td className="px-3 py-2.5 text-right font-semibold text-text-primary">
                       {variable.median}
@@ -234,7 +242,38 @@ export default function ScorecardPage() {
       </Section>
 
       <Section>
-        <SectionLabel number="04" title={`All ${meta.universe_size} rated tokens`} />
+        <SectionLabel number="04" title="Two other ways in" />
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <Link
+            href="/scorecard/signal"
+            className="block rounded-2xl border border-border bg-bg-card p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
+          >
+            <span className="block text-sm font-semibold text-text-primary">
+              Read it one variable at a time
+            </span>
+            <span className="mt-1.5 block text-xs leading-relaxed text-text-secondary">
+              Every variable has its own ranking of all {meta.universe_size} tokens, plus how strongly
+              it correlates with the composite and with market capitalisation. That second number
+              says whether the market is already paying for it.
+            </span>
+          </Link>
+          <Link
+            href="/scorecard/compare"
+            className="block rounded-2xl border border-border bg-bg-card p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
+          >
+            <span className="block text-sm font-semibold text-text-primary">
+              Read it two tokens at a time
+            </span>
+            <span className="mt-1.5 block text-xs leading-relaxed text-text-secondary">
+              Curated head-to-head pages: all 25 variables side by side, the gap on each one called,
+              with market cap, dilution and drawdown next to them.
+            </span>
+          </Link>
+        </div>
+      </Section>
+
+      <Section>
+        <SectionLabel number="05" title={`All ${meta.universe_size} rated tokens`} />
         <Prose>
           Ranked by composite score. Every symbol links to its own page carrying the full
           25-variable breakdown, the rank it holds on each variable, its vesting arithmetic and the
@@ -322,7 +361,7 @@ export default function ScorecardPage() {
       </Section>
 
       <Section>
-        <SectionLabel number="05" title="Common questions" />
+        <SectionLabel number="06" title="Common questions" />
         <dl className="mt-6 space-y-6">
           {faqs.map((faq) => (
             <div key={faq.question}>

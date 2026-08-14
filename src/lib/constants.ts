@@ -26,6 +26,8 @@ export const STATIC_PAGES = [
   '/performance',
   '/discoveries',
   '/scorecard',
+  '/scorecard/signal',
+  '/scorecard/compare',
   '/revenue-distribution',
   '/portfolio',
   '/blog',
@@ -71,6 +73,8 @@ export const PRIORITY_MAP: Readonly<Record<string, number>> = {
   '/performance': 0.6,
   '/discoveries': 0.7,
   '/scorecard': 0.9,
+  '/scorecard/signal': 0.9,
+  '/scorecard/compare': 0.9,
   '/revenue-distribution': 0.8,
   '/portfolio': 0.9,
   '/blog': 0.7,
@@ -93,5 +97,9 @@ export const CLARITY_TOPIC_PRIORITY = 0.8 as const;
 export const SCORECARD_TOKEN_PRIORITY = 0.7 as const;
 /** Verdict and chain hubs, which are the crawl path into the leaves. */
 export const SCORECARD_HUB_PRIORITY = 0.8 as const;
+/** Per-variable leaderboards. One page per scored variable, whole universe ranked. */
+export const SCORECARD_SIGNAL_PRIORITY = 0.8 as const;
+/** Curated head-to-head comparisons. Below the token leaves they draw from. */
+export const SCORECARD_COMPARE_PRIORITY = 0.6 as const;
 
 export const AUTHOR_NAME = 'Early Thunder Research' as const;

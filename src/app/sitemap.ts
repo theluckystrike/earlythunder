@@ -11,6 +11,8 @@ import {
   CLARITY_TOPIC_PRIORITY,
   SCORECARD_TOKEN_PRIORITY,
   SCORECARD_HUB_PRIORITY,
+  SCORECARD_SIGNAL_PRIORITY,
+  SCORECARD_COMPARE_PRIORITY,
 } from "@/lib/constants";
 import { getAllOpportunities, getAllBlogPosts, getAllGuides } from "@/lib/data";
 import { getAllClarityTopics } from "@/lib/clarity";
@@ -19,6 +21,8 @@ import {
   getScorecardGroups,
   getScorecardMeta,
 } from "@/lib/scorecard-analytics";
+import { getAllSignals, signalSlug } from "@/lib/scorecard-signals";
+import { getAllPairs } from "@/lib/scorecard-pairs";
 
 export const dynamic = "force-static";
 
@@ -140,6 +144,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
+  // Per-variable leaderboards move with the scoring pass, comparisons with it too.
+  const signalEntries: MetadataRoute.Sitemap = getAllSignals().map((signal) => ({
+    url: `${SITE_URL}/scorecard/signal/${signalSlug(signal.key)}`,
+    lastModified: passDate,
+    changeFrequency: "monthly" as const,
+    priority: SCORECARD_SIGNAL_PRIORITY,
+  }));
+
+  const compareEntries: MetadataRoute.Sitemap = getAllPairs()
+    .slice(0, MAX_ENTRIES)
+    .map((pair) => ({
+      url: `${SITE_URL}/scorecard/compare/${pair.slug}`,
+      lastModified: passDate,
+      changeFrequency: "monthly" as const,
+      priority: SCORECARD_COMPARE_PRIORITY,
+    }));
+
   return [
     ...staticEntries,
     ...opportunityEntries,
@@ -148,6 +169,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...researchEntries,
     ...clarityEntries,
     ...scorecardHubEntries,
+    ...signalEntries,
     ...scorecardTokenEntries,
+    ...compareEntries,
   ];
 }

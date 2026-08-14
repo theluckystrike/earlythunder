@@ -29,6 +29,15 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
     ],
   },
   {
+    title: "SCORECARD",
+    links: [
+      { href: "/scorecard", label: "All rated tokens" },
+      { href: "/scorecard/signal", label: "Ranked by variable" },
+      { href: "/scorecard/compare", label: "Head to head" },
+      { href: "/scorecard/verdict/hold-core", label: "Rated Hold Core" },
+    ],
+  },
+  {
     title: "RESEARCH",
     links: [
       { href: "/research/", label: "Library" },

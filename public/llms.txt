@@ -17,6 +17,16 @@ Unpaid requests answer HTTP 402 with authoritative price and payment details in 
 - GET /api/x402/v1/scorecard    $0.05  Quant scorecard for 251 tokens with methodology.
 - GET /api/x402/v1/earnings     $0.01  Top protocol earnings yields with risk ratings.
 
+## Free research pages
+
+- /scorecard                       All 251 rated tokens ranked by composite score.
+- /scorecard/<symbol>              One token: 25 variables, rank and percentile on each, vesting arithmetic, sources.
+- /scorecard/signal                The 25 variables ranked by how strongly each correlates with market capitalisation.
+- /scorecard/signal/<variable>     Every rated token ranked on one variable, with its distribution and correlations.
+- /scorecard/compare/<a>-vs-<b>    Two tokens head to head on all 25 variables, plus market cap, dilution and drawdown.
+- /scorecard/verdict/<band>        Every token in one verdict band.
+- /scorecard/chain/<chain>         Every rated token on one network.
+
 ## Free
 
 - GET /api/x402/v1/index          Catalog of the endpoints above with live prices. No payment.

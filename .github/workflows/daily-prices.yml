@@ -27,8 +27,11 @@ jobs:
       # numbers while looking current.
       - run: node scripts/fetch-scorecard-market.mjs
       - run: node scripts/build-scorecard-analytics.mjs
+      # Per-variable leaderboards and the curated comparison list are derived
+      # from the analytics layer, so they go stale the moment it moves.
+      - run: node scripts/build-longtail-layer.mjs
       - run: git pull --rebase --autostash origin main
       - uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: 'data: daily price update'
-          file_pattern: 'data/opportunities.json data/scorecard-analytics.json data/scorecard-market.json'
+          file_pattern: 'data/opportunities.json data/scorecard-analytics.json data/scorecard-market.json data/scorecard-signals.json data/scorecard-pairs.json'
