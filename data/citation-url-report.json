@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-08-14T15:21:22.567Z",
-  "total": 741,
+  "checked_at": "2026-08-14T15:26:54.080Z",
+  "total": 743,
   "ok": 392,
   "dead": [
     {
@@ -380,7 +380,7 @@
       ]
     }
   ],
-  "blocked": 282,
+  "blocked": 283,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -466,13 +466,6 @@
       "error": "timeout",
       "cited_by": [
         "MOBILE"
-      ]
-    },
-    {
-      "url": "https://www.sec.gov/litigation/complaints",
-      "error": "fetch failed",
-      "cited_by": [
-        "ATOM"
       ]
     }
   ]

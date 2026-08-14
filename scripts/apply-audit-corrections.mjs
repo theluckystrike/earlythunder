@@ -129,8 +129,10 @@ function applyOne(tokens, fix) {
     return "applied";
   }
 
-  const serialised = JSON.stringify(token);
-  if (serialised.includes(fix.replace)) return "already";
+  // A later correction may have re-cased the replacement, so the idempotency
+  // check ignores case. It still fails loudly when the text is simply absent.
+  const serialised = JSON.stringify(token).toLowerCase();
+  if (serialised.includes(fix.replace.toLowerCase())) return "already";
   throw new Error(`${fix.symbol}.${fix.field}: target string not found -> ${fix.find.slice(0, 70)}`);
 }
 

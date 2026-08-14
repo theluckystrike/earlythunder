@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-14T15:19:24.021Z",
+ "updated_at": "2026-08-14T15:25:18.659Z",
  "methodology": "25-variable framework scoring 250 altcoins across protocol revenue, tokenomics, supply metrics, institutional adoption, regulatory safety, and more. Each variable rated 1-10 by 40+ parallel DeepSeek research agents. Data hardened via 19-agent deep validation sprint. Supply data from CoinGecko. Revenue cross-referenced with DeFiLlama/Token Terminal. Live prices from Binance, Bybit, Kraken, Crypto.com.",
  "benchmark": {
   "symbol": "BTC",
@@ -105,7 +105,7 @@
      "url": "https://beaconcha.in/burn"
     },
     {
-     "claim": "CLARITY Act passed Senate Banking May 14, Jul 4 signing target",
+     "claim": "CLARITY Act passed Senate Banking 15-9 on 14 May 2026, but the 4 July signing target lapsed and the bill stalled",
      "source": "Congress.gov / CCN",
      "url": "https://www.ccn.com/education/crypto/senate-clarity-act-vote-may-14-bitcoin-eth-xrp/"
     },
@@ -347,7 +347,7 @@
    "verdict_color": "green",
    "one_liner": "Lido's wrapped staked ETH, the DeFi collateral standard with about $17.7B TVL and native yield; dominant LST by every metric",
    "key_catalyst": "wstETH becoming default collateral across all major lending protocols; MakerDAO, Aave, Spark all natively integrated",
-   "key_risk": "Lido centralization risk (32% of staked ETH); Ethereum validator concentration concerns; potential regulatory classification as security",
+   "key_risk": "Lido centralization risk (about 24% of staked ETH, down from a 32% peak in 2023); Ethereum validator concentration concerns; potential regulatory classification as security",
    "max_supply": null,
    "total_supply": 3417400.894266878,
    "circulating_supply": 3417400.894266878,
@@ -398,7 +398,7 @@
      "url": "https://lido.fi/lido-system"
     },
     {
-     "claim": "Lido controls ~32% of staked ETH, raising Ethereum validator centralization concerns from the Foundation",
+     "claim": "Lido controls about 24% of staked ETH, raising Ethereum validator centralization concerns from the Foundation",
      "source": "Ethereum Foundation Blog",
      "url": "https://notes.ethereum.org/@djrtwo/risks-of-lsd"
     },
@@ -474,7 +474,7 @@
    },
    "citations": [
     {
-     "claim": "Bitcoin spot ETFs surpassed $120B AUM by Q1 2026",
+     "claim": "Bitcoin spot ETF AUM peaked at $169.5B in October 2025 and fell to about $77.6B by June 2026",
      "source": "Bloomberg",
      "url": "https://bloomberg.com/crypto/bitcoin-etf"
     },
@@ -484,7 +484,7 @@
      "url": "https://bitcoinblockhalf.com"
     },
     {
-     "claim": "MicroStrategy holds over 550,000 BTC on corporate balance sheet",
+     "claim": "Strategy, formerly MicroStrategy, holds 840,447 BTC as of 9 August 2026",
      "source": "MicroStrategy IR",
      "url": "https://www.microstrategy.com/en/investor-relations"
     },
@@ -865,7 +865,7 @@
      "verified": true
     },
     {
-     "claim": "CLARITY Act passed House Committee, designates UNI as digital commodity",
+     "claim": "CLARITY Act passed the full House on 17 July 2025 and Senate Banking on 14 May 2026, designates UNI as digital commodity",
      "source": "Congress.gov",
      "url": "https://www.congress.gov/bill/119th-congress/house-bill/clarity",
      "verified": true
@@ -1051,7 +1051,7 @@
      "url": "https://jumpcrypto.com/firedancer"
     },
     {
-     "claim": "Solana staking yield approximately 6-7% annually",
+     "claim": "Solana staking yield approximately 5.0% to 5.3% annually",
      "source": "Staking Rewards",
      "url": "https://stakingrewards.com/earn/solana"
     }
@@ -1177,7 +1177,7 @@
    "prev_score": 166,
    "verdict": "HOLD",
    "verdict_color": "green",
-   "one_liner": "Revenue NOT declining: Q2 2026 $1.93M (+10% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
+   "one_liner": "Revenue NOT declining: Q2 2026 $2.59M (+48% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
    "key_catalyst": "The 30 June 2026 halving has already taken effect (12 to 6 GEOD/day), so the open question is whether burn now exceeds issuance, Japan/Iceland StableHex expansion (Jun 8), Binance listing 12-18mo (40-55% probability), humanoid robot positioning (Multicoin $8M thesis), GEODASH ag drone JV (Q3 2026 commercial)",
    "key_risk": "P/S 9.9-14.4x expensive vs Helium (3.1x) and Trimble (4.5x), FCC licensing gap for distributed RTK radio (individual operator licenses needed), no formal 99.9% SLA for enterprise customers, NVIDIA/humanoid robot connection is pure speculation (zero confirmed partnerships), 37.7% supply still locked with ongoing investor releases through 2029",
    "max_supply": 1000000000,
@@ -1231,7 +1231,7 @@
      "verified": true
     },
     {
-     "claim": "Annualized fees $9.5M (DeFiLlama), ARR $7.3M (Dec 2025)",
+     "claim": "Annualized fees about $11.3M (DefiLlama trailing 30d), up from $7.3M ARR in Dec 2025",
      "source": "DeFiLlama / Messari",
      "url": "https://defillama.com/protocol/geodnet",
      "verified": true
@@ -2410,7 +2410,7 @@
    "verdict_color": "green",
    "one_liner": "Intent-based batch auction DEX. $87B vol 2025. P/S 3.1x. Net deflationary. Vesting complete.",
    "key_catalyst": "Burn proposal (60-85M COW), chain expansion (10 chains), Aave integration, xStocks tokenized equities",
-   "key_risk": "CoW AMM collapsed (-98% TVL), thin exchange volume ($138K/day), market share declining from peak, DNS hijack Apr 2026",
+   "key_risk": "CoW AMM collapsed (-98% TVL), thin exchange volume (about $1.3M to $1.7M a day), market share declining from peak, DNS hijack Apr 2026",
    "max_supply": 1000000000,
    "total_supply": 1000000000,
    "circulating_supply": 578926012.263938,
@@ -2455,7 +2455,7 @@
      "url": "https://cow.fi/learn/cow-dao-2025-in-review"
     },
     {
-     "claim": "$26.2M annualized revenue, $42M all-time DAO revenue",
+     "claim": "$26.2M trailing twelve month revenue, about $7.5M annualised at the current run rate, $42M all-time DAO revenue",
      "source": "DeFiLlama",
      "url": "https://defillama.com/protocol/cowswap"
     },
@@ -3312,7 +3312,7 @@
    "verdict_color": "green",
    "one_liner": "Binance exchange utility token with quarterly burns. Highly tied to Binance CEX health and regulatory outcome.",
    "key_catalyst": "Binance regulatory settlements complete; BNB Chain network expansion into Southeast Asia",
-   "key_risk": "Binance regulatory tail risk remains; CZ plea deal overhang; centralized chain perception",
+   "key_risk": "Binance regulatory tail risk remains; CZ pardoned in Oct 2025, which removed the plea-deal overhang but drew political scrutiny; centralized chain perception",
    "max_supply": 200000000,
    "total_supply": 134784836.94,
    "circulating_supply": 134784836.94,
@@ -3520,7 +3520,7 @@
    },
    "citations": [
     {
-     "claim": "35% Solana perp DEX market share",
+     "claim": "Held roughly 35% of Solana perp DEX volume before the 1 April 2026 exploit",
      "source": "DeFiLlama Derivatives",
      "url": "https://defillama.com/protocol/drift"
     },
@@ -4202,7 +4202,7 @@
      "url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets"
     },
     {
-     "claim": "BlackRock BUIDL $474.92M on Avalanche (4th largest chain, total $3B+)",
+     "claim": "BlackRock BUIDL over $900M on Avalanche as of July 2026, second only to Ethereum among the chains it runs on",
      "source": "DeFiLlama",
      "url": "https://defillama.com/protocol/blackrock-buidl"
     },
@@ -5613,7 +5613,7 @@
    "verdict": "CAUTIOUS HOLD",
    "verdict_color": "orange",
    "one_liner": "Bitfinex/iFinex exchange token. Monthly buyback & burn from profits.",
-   "key_catalyst": "Bitfinex share buyback program using 27% of LEO revenue pool, accelerating token burn from Q3 2025.",
+   "key_catalyst": "Continuous LEO token buyback and burn funded by at least 27% of iFinex consolidated gross revenue, accelerating token burn from Q3 2025.",
    "key_risk": "DOJ indictment of Bitfinex/Tether executives for bank fraud or sanctions violations.",
    "max_supply": null,
    "total_supply": 985239504,
@@ -5727,7 +5727,7 @@
      "url": "https://sec.gov/tron-justin-sun"
     },
     {
-     "claim": "TRON TVL exceeded $11B driven by USDD and USDT stablecoin usage",
+     "claim": "TRON DeFi TVL about $4.8B, down from a peak above $14B in late 2024",
      "source": "DeFiLlama",
      "url": "https://defillama.com/chain/Tron"
     },
@@ -5735,6 +5735,11 @@
      "claim": "SEC and Justin Sun reached a settlement resolving the Tron lawsuit in March 2026",
      "source": "CoinDesk",
      "url": "https://www.coindesk.com/policy/2026/03/05/sec-justin-sun-reach-settlement-over-tron-lawsuit"
+    },
+    {
+     "claim": "TRON chain TVL",
+     "source": "DefiLlama",
+     "url": "https://defillama.com/chain/tron"
     }
    ],
    "current_price_usd": 0.3726,
@@ -6536,12 +6541,12 @@
      "url": "https://ripple.com/xrp/market-performance"
     },
     {
-     "claim": "SEC vs Ripple case largely resolved in 2024 with partial win for Ripple",
+     "claim": "SEC v. Ripple fully concluded on 7 August 2025 when both sides dropped their appeals, a partial win for Ripple",
      "source": "CoinDesk",
      "url": "https://coindesk.com/ripple-sec"
     },
     {
-     "claim": "Multiple spot XRP ETF applications filed with SEC in 2025",
+     "claim": "Spot XRP ETFs began trading in the US from 13 November 2025, with about seven funds now live",
      "source": "Bloomberg ETF",
      "url": "https://bloomberg.com/xrp-etf"
     },
@@ -10981,7 +10986,7 @@
    "verdict": "WATCH",
    "verdict_color": "yellow",
    "one_liner": "Bitcoin's silver analog with third halving complete. No smart contracts, no DeFi, diminishing developer interest. Payments use case losing to stablecoins.",
-   "key_catalyst": "Spot LTC ETF application in pipeline; third third halving supply cut in August 2023",
+   "key_catalyst": "Spot LTC ETF application in pipeline; third third third halving supply cut in August 2023",
    "key_risk": "Zero DeFi network; payment use case obsoleted by stablecoins; declining relevance",
    "max_supply": 84000000,
    "total_supply": 77210395.73347135,
@@ -11494,7 +11499,7 @@
    "prev_score": 95,
    "verdict": "WATCH",
    "verdict_color": "yellow",
-   "one_liner": "Pioneer privacy coin with strong cryptography; Zcash halving occurred 2024 but Deshielding activity and regulatory pressure weigh heavily.",
+   "one_liner": "Pioneer privacy coin with strong cryptography; Zcash halving occurred 2024 but Shielded supply has tripled since early 2024 to roughly 30%, though regulatory pressure and delistings persist.",
    "key_catalyst": "ZEC halving reduced miner emissions; Shielding growth and the Crosslink hybrid finality work led by Shielded Labs, not the Electric Coin Company and shielded transaction growth",
    "key_risk": "Regulatory delistings accelerating; most ZEC transactions are transparent not shielded; Monero preferred by privacy community; ECC funding concerns",
    "max_supply": 21000000,
@@ -11542,7 +11547,7 @@
      "url": "https://z.cash/halving"
     },
     {
-     "claim": "Only ~20% of ZEC transactions use shielded addresses despite that being the privacy feature",
+     "claim": "Shielded transaction adoption peaked at 59.3% in February 2026 and about 30% of supply now sits in shielded pools despite that being the privacy feature",
      "source": "Zcash Metrics",
      "url": "https://metrics.z.cash"
     },
@@ -11550,6 +11555,11 @@
      "claim": "Multiple exchanges including Binance delisted ZEC in various regions due to regulatory pressure on privacy coins",
      "source": "Coindesk",
      "url": "https://www.coindesk.com/policy/2023/09/zcash-delistings"
+    },
+    {
+     "claim": "Zcash shielded supply growth",
+     "source": "Coin Metrics",
+     "url": "https://coinmetrics.substack.com/p/state-of-the-network-issue-338"
     }
    ],
    "current_price_usd": 588.67,

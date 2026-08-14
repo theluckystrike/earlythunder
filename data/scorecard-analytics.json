@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-14T15:22:58.077Z",
-  "source_updated_at": "2026-08-14T15:19:24.021Z",
+  "generated_at": "2026-08-14T15:26:54.162Z",
+  "source_updated_at": "2026-08-14T15:25:18.659Z",
   "citation_links": {
-    "checked_at": "2026-08-14T15:21:22.567Z",
+    "checked_at": "2026-08-14T15:26:54.080Z",
     "dead_count": 47
   },
   "market_data": {
@@ -1492,7 +1492,7 @@
           "link_ok": true
         },
         {
-          "claim": "CLARITY Act passed Senate Banking May 14, Jul 4 signing target",
+          "claim": "CLARITY Act passed Senate Banking 15-9 on 14 May 2026, but the 4 July signing target lapsed and the bill stalled",
           "source": "Congress.gov / CCN",
           "url": "https://www.ccn.com/education/crypto/senate-clarity-act-vote-may-14-bitcoin-eth-xrp/",
           "link_ok": true
@@ -1568,7 +1568,7 @@
       "one_liner": "Lido's wrapped staked ETH, the DeFi collateral standard with about $17.7B TVL and native yield; dominant LST by every metric",
       "key_catalyst": "wstETH becoming default collateral across all major lending protocols; MakerDAO, Aave, Spark all natively integrated",
       "catalyst_expired_dates": [],
-      "key_risk": "Lido centralization risk (32% of staked ETH); Ethereum validator concentration concerns; potential regulatory classification as security",
+      "key_risk": "Lido centralization risk (about 24% of staked ETH, down from a 32% peak in 2023); Ethereum validator concentration concerns; potential regulatory classification as security",
       "variables": [
         {
           "key": "protocol_revenue",
@@ -1887,7 +1887,7 @@
           "link_ok": false
         },
         {
-          "claim": "Lido controls ~32% of staked ETH, raising Ethereum validator centralization concerns from the Foundation",
+          "claim": "Lido controls about 24% of staked ETH, raising Ethereum validator centralization concerns from the Foundation",
           "source": "Ethereum Foundation Blog",
           "url": "https://notes.ethereum.org/@djrtwo/risks-of-lsd",
           "link_ok": true
@@ -2301,7 +2301,7 @@
       "cmc_slug": "bitcoin",
       "citations": [
         {
-          "claim": "Bitcoin spot ETFs surpassed $120B AUM by Q1 2026",
+          "claim": "Bitcoin spot ETF AUM peaked at $169.5B in October 2025 and fell to about $77.6B by June 2026",
           "source": "Bloomberg",
           "url": "https://bloomberg.com/crypto/bitcoin-etf",
           "link_ok": true
@@ -2313,7 +2313,7 @@
           "link_ok": true
         },
         {
-          "claim": "MicroStrategy holds over 550,000 BTC on corporate balance sheet",
+          "claim": "Strategy, formerly MicroStrategy, holds 840,447 BTC as of 9 August 2026",
           "source": "MicroStrategy IR",
           "url": "https://www.microstrategy.com/en/investor-relations",
           "link_ok": true
@@ -3123,7 +3123,7 @@
           "link_ok": true
         },
         {
-          "claim": "Solana staking yield approximately 6-7% annually",
+          "claim": "Solana staking yield approximately 5.0% to 5.3% annually",
           "source": "Staking Rewards",
           "url": "https://stakingrewards.com/earn/solana",
           "link_ok": true
@@ -3190,7 +3190,7 @@
       "verdict_color": "green",
       "chain": "Solana",
       "token_standard": "SPL / ERC-20",
-      "one_liner": "Revenue NOT declining: Q2 2026 $1.93M (+10% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
+      "one_liner": "Revenue NOT declining: Q2 2026 $2.59M (+48% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
       "key_catalyst": "The 30 June 2026 halving has already taken effect (12 to 6 GEOD/day), so the open question is whether burn now exceeds issuance, Japan/Iceland StableHex expansion (Jun 8), Binance listing 12-18mo (40-55% probability), humanoid robot positioning (Multicoin $8M thesis), GEODASH ag drone JV (Q3 2026 commercial)",
       "catalyst_expired_dates": [
         "June 2026",
@@ -3514,7 +3514,7 @@
           "link_ok": true
         },
         {
-          "claim": "Annualized fees $9.5M (DeFiLlama), ARR $7.3M (Dec 2025)",
+          "claim": "Annualized fees about $11.3M (DefiLlama trailing 30d), up from $7.3M ARR in Dec 2025",
           "source": "DeFiLlama / Messari",
           "url": "https://defillama.com/protocol/geodnet",
           "link_ok": true
@@ -4606,7 +4606,7 @@
           "link_ok": true
         },
         {
-          "claim": "CLARITY Act passed House Committee, designates UNI as digital commodity",
+          "claim": "CLARITY Act passed the full House on 17 July 2025 and Senate Banking on 14 May 2026, designates UNI as digital commodity",
           "source": "Congress.gov",
           "url": "https://www.congress.gov/bill/119th-congress/house-bill/clarity",
           "link_ok": true
@@ -4682,7 +4682,7 @@
       "one_liner": "Intent-based batch auction DEX. $87B vol 2025. P/S 3.1x. Net deflationary. Vesting complete.",
       "key_catalyst": "Burn proposal (60-85M COW), chain expansion (10 chains), Aave integration, xStocks tokenized equities",
       "catalyst_expired_dates": [],
-      "key_risk": "CoW AMM collapsed (-98% TVL), thin exchange volume ($138K/day), market share declining from peak, DNS hijack Apr 2026",
+      "key_risk": "CoW AMM collapsed (-98% TVL), thin exchange volume (about $1.3M to $1.7M a day), market share declining from peak, DNS hijack Apr 2026",
       "variables": [
         {
           "key": "protocol_revenue",
@@ -4994,7 +4994,7 @@
           "link_ok": true
         },
         {
-          "claim": "$26.2M annualized revenue, $42M all-time DAO revenue",
+          "claim": "$26.2M trailing twelve month revenue, about $7.5M annualised at the current run rate, $42M all-time DAO revenue",
           "source": "DeFiLlama",
           "url": "https://defillama.com/protocol/cowswap",
           "link_ok": true
@@ -11979,7 +11979,7 @@
       "one_liner": "Binance exchange utility token with quarterly burns. Highly tied to Binance CEX health and regulatory outcome.",
       "key_catalyst": "Binance regulatory settlements complete; BNB Chain network expansion into Southeast Asia",
       "catalyst_expired_dates": [],
-      "key_risk": "Binance regulatory tail risk remains; CZ plea deal overhang; centralized chain perception",
+      "key_risk": "Binance regulatory tail risk remains; CZ pardoned in Oct 2025, which removed the plea-deal overhang but drew political scrutiny; centralized chain perception",
       "variables": [
         {
           "key": "protocol_revenue",
@@ -13134,7 +13134,7 @@
       "cmc_slug": "drift-protocol",
       "citations": [
         {
-          "claim": "35% Solana perp DEX market share",
+          "claim": "Held roughly 35% of Solana perp DEX volume before the 1 April 2026 exploit",
           "source": "DeFiLlama Derivatives",
           "url": "https://defillama.com/protocol/drift",
           "link_ok": true
@@ -16151,7 +16151,7 @@
           "link_ok": true
         },
         {
-          "claim": "BlackRock BUIDL $474.92M on Avalanche (4th largest chain, total $3B+)",
+          "claim": "BlackRock BUIDL over $900M on Avalanche as of July 2026, second only to Ethereum among the chains it runs on",
           "source": "DeFiLlama",
           "url": "https://defillama.com/protocol/blackrock-buidl",
           "link_ok": true
@@ -22850,7 +22850,7 @@
       "chain": "Ethereum",
       "token_standard": "ERC-20",
       "one_liner": "Bitfinex/iFinex exchange token. Monthly buyback & burn from profits.",
-      "key_catalyst": "Bitfinex share buyback program using 27% of LEO revenue pool, accelerating token burn from Q3 2025.",
+      "key_catalyst": "Continuous LEO token buyback and burn funded by at least 27% of iFinex consolidated gross revenue, accelerating token burn from Q3 2025.",
       "catalyst_expired_dates": [
         "Q3 2025"
       ],
@@ -23597,7 +23597,7 @@
           "link_ok": false
         },
         {
-          "claim": "TRON TVL exceeded $11B driven by USDD and USDT stablecoin usage",
+          "claim": "TRON DeFi TVL about $4.8B, down from a peak above $14B in late 2024",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Tron",
           "link_ok": true
@@ -23606,6 +23606,12 @@
           "claim": "SEC and Justin Sun reached a settlement resolving the Tron lawsuit in March 2026",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/03/05/sec-justin-sun-reach-settlement-over-tron-lawsuit",
+          "link_ok": true
+        },
+        {
+          "claim": "TRON chain TVL",
+          "source": "DefiLlama",
+          "url": "https://defillama.com/chain/tron",
           "link_ok": true
         }
       ],
@@ -27658,13 +27664,13 @@
           "link_ok": true
         },
         {
-          "claim": "SEC vs Ripple case largely resolved in 2024 with partial win for Ripple",
+          "claim": "SEC v. Ripple fully concluded on 7 August 2025 when both sides dropped their appeals, a partial win for Ripple",
           "source": "CoinDesk",
           "url": "https://coindesk.com/ripple-sec",
           "link_ok": true
         },
         {
-          "claim": "Multiple spot XRP ETF applications filed with SEC in 2025",
+          "claim": "Spot XRP ETFs began trading in the US from 13 November 2025, with about seven funds now live",
           "source": "Bloomberg ETF",
           "url": "https://bloomberg.com/xrp-etf",
           "link_ok": true
@@ -53159,7 +53165,7 @@
       "chain": "Litecoin",
       "token_standard": "Native L1",
       "one_liner": "Bitcoin's silver analog with third halving complete. No smart contracts, no DeFi, diminishing developer interest. Payments use case losing to stablecoins.",
-      "key_catalyst": "Spot LTC ETF application in pipeline; third third halving supply cut in August 2023",
+      "key_catalyst": "Spot LTC ETF application in pipeline; third third third halving supply cut in August 2023",
       "catalyst_expired_dates": [
         "August 2023"
       ],
@@ -55996,7 +56002,7 @@
       "verdict_color": "yellow",
       "chain": "Zcash",
       "token_standard": "Native L1",
-      "one_liner": "Pioneer privacy coin with strong cryptography; Zcash halving occurred 2024 but Deshielding activity and regulatory pressure weigh heavily.",
+      "one_liner": "Pioneer privacy coin with strong cryptography; Zcash halving occurred 2024 but Shielded supply has tripled since early 2024 to roughly 30%, though regulatory pressure and delistings persist.",
       "key_catalyst": "ZEC halving reduced miner emissions; Shielding growth and the Crosslink hybrid finality work led by Shielded Labs, not the Electric Coin Company and shielded transaction growth",
       "catalyst_expired_dates": [],
       "key_risk": "Regulatory delistings accelerating; most ZEC transactions are transparent not shielded; Monero preferred by privacy community; ECC funding concerns",
@@ -56340,7 +56346,7 @@
           "link_ok": true
         },
         {
-          "claim": "Only ~20% of ZEC transactions use shielded addresses despite that being the privacy feature",
+          "claim": "Shielded transaction adoption peaked at 59.3% in February 2026 and about 30% of supply now sits in shielded pools despite that being the privacy feature",
           "source": "Zcash Metrics",
           "url": "https://metrics.z.cash",
           "link_ok": true
@@ -56350,6 +56356,12 @@
           "source": "Coindesk",
           "url": "https://www.coindesk.com/policy/2023/09/zcash-delistings",
           "link_ok": false
+        },
+        {
+          "claim": "Zcash shielded supply growth",
+          "source": "Coin Metrics",
+          "url": "https://coinmetrics.substack.com/p/state-of-the-network-issue-338",
+          "link_ok": true
         }
       ],
       "neighbours": [
@@ -105018,7 +105030,7 @@
             "rank_overall": 135,
             "verdict": "WATCH",
             "verdict_color": "yellow",
-            "one_liner": "Pioneer privacy coin with strong cryptography; Zcash halving occurred 2024 but Deshielding activity and regulatory pressure weigh heavily.",
+            "one_liner": "Pioneer privacy coin with strong cryptography; Zcash halving occurred 2024 but Shielded supply has tripled since early 2024 to roughly 30%, though regulatory pressure and delistings persist.",
             "market_cap": 8143918292,
             "dilution_x": 1.24,
             "chain": "Zcash"
@@ -105773,7 +105785,7 @@
             "rank_overall": 7,
             "verdict": "HOLD",
             "verdict_color": "green",
-            "one_liner": "Revenue NOT declining: Q2 2026 $1.93M (+10% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
+            "one_liner": "Revenue NOT declining: Q2 2026 $2.59M (+48% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
             "market_cap": 85534896,
             "dilution_x": 2.19,
             "chain": "Solana"
@@ -107798,7 +107810,7 @@
             "rank_overall": 7,
             "verdict": "HOLD",
             "verdict_color": "green",
-            "one_liner": "Revenue NOT declining: Q2 2026 $1.93M (+10% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
+            "one_liner": "Revenue NOT declining: Q2 2026 $2.59M (+48% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
             "market_cap": 85534896,
             "dilution_x": 2.19,
             "chain": "Solana"

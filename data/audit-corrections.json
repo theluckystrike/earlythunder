@@ -415,6 +415,156 @@
    "find": "Digital gold with spot ETF inflows and 94.5% supply mined. Unbeaten store-of-value thesis with sovereign adoption accelerating.",
    "replace": "Digital gold with a large spot ETF complex and 94.5% supply mined. Store-of-value thesis intact, though ETF assets fell through 2026.",
    "why": "The one_liner claimed accelerating inflows beside a corrected catalyst reporting record outflows, so the page contradicted itself."
+  },
+  {
+   "symbol": "DRIFT",
+   "field": "citation",
+   "find": "35% Solana perp DEX market share",
+   "replace": "Held roughly 35% of Solana perp DEX volume before the 1 April 2026 exploit",
+   "why": "Presented as current share for a protocol that has been offline since April."
+  },
+  {
+   "symbol": "TRX",
+   "field": "citation",
+   "find": "TRON TVL exceeded $11B driven by USDD and USDT stablecoin usage",
+   "replace": "TRON DeFi TVL about $4.8B, down from a peak above $14B in late 2024",
+   "why": "TVL overstated by more than double against the live figure.",
+   "cite": {
+    "claim": "TRON chain TVL",
+    "source": "DefiLlama",
+    "url": "https://defillama.com/chain/tron"
+   }
+  },
+  {
+   "symbol": "ZEC",
+   "field": "one_liner",
+   "find": "Deshielding activity and regulatory pressure weigh heavily",
+   "replace": "Shielded supply has tripled since early 2024 to roughly 30%, though regulatory pressure and delistings persist",
+   "why": "The published claim pointed the opposite way to the shielding data.",
+   "cite": {
+    "claim": "Zcash shielded supply growth",
+    "source": "Coin Metrics",
+    "url": "https://coinmetrics.substack.com/p/state-of-the-network-issue-338"
+   }
+  },
+  {
+   "symbol": "ZEC",
+   "field": "citation",
+   "find": "Only ~20% of ZEC transactions use shielded addresses",
+   "replace": "Shielded transaction adoption peaked at 59.3% in February 2026 and about 30% of supply now sits in shielded pools",
+   "why": "Shielding adoption understated by roughly a third."
+  },
+  {
+   "symbol": "AVAX",
+   "field": "citation",
+   "find": "BlackRock BUIDL $474.92M on Avalanche (4th largest chain, total $3B+)",
+   "replace": "BlackRock BUIDL over $900M on Avalanche as of July 2026, second only to Ethereum among the chains it runs on",
+   "why": "The BUIDL figure roughly doubled after the scoring pass."
+  },
+  {
+   "symbol": "WSTETH",
+   "field": "key_risk",
+   "find": "Lido centralization risk (32% of staked ETH)",
+   "replace": "Lido centralization risk (about 24% of staked ETH, down from a 32% peak in 2023)",
+   "why": "Share overstated against the current figure."
+  },
+  {
+   "symbol": "WSTETH",
+   "field": "citation",
+   "find": "Lido controls ~32% of staked ETH",
+   "replace": "Lido controls about 24% of staked ETH",
+   "why": "Same overstated share in the citation."
+  },
+  {
+   "symbol": "BTC",
+   "field": "citation",
+   "find": "Bitcoin spot ETFs surpassed $120B AUM by Q1 2026",
+   "replace": "Bitcoin spot ETF AUM peaked at $169.5B in October 2025 and fell to about $77.6B by June 2026",
+   "why": "Published as a level reached and held, when assets had roughly halved since."
+  },
+  {
+   "symbol": "BTC",
+   "field": "citation",
+   "find": "MicroStrategy holds over 550,000 BTC on corporate balance sheet",
+   "replace": "Strategy, formerly MicroStrategy, holds 840,447 BTC as of 9 August 2026",
+   "why": "Holdings understated by more than 290,000 BTC."
+  },
+  {
+   "symbol": "ETH",
+   "field": "citation",
+   "find": "CLARITY Act passed Senate Banking May 14, Jul 4 signing target",
+   "replace": "CLARITY Act passed Senate Banking 15-9 on 14 May 2026, but the 4 July signing target lapsed and the bill stalled",
+   "why": "The signing target had passed without enactment."
+  },
+  {
+   "symbol": "SOL",
+   "field": "citation",
+   "find": "Solana staking yield approximately 6-7% annually",
+   "replace": "Solana staking yield approximately 5.0% to 5.3% annually",
+   "why": "Yield overstated against the current rate."
+  },
+  {
+   "symbol": "UNI",
+   "field": "citation",
+   "find": "CLARITY Act passed House Committee, designates UNI as digital co",
+   "replace": "CLARITY Act passed the full House on 17 July 2025 and Senate Banking on 14 May 2026, designates UNI as digital co",
+   "why": "Understated the bill's progress."
+  },
+  {
+   "symbol": "COW",
+   "field": "key_risk",
+   "find": "thin exchange volume ($138K/day)",
+   "replace": "thin exchange volume (about $1.3M to $1.7M a day)",
+   "why": "Volume understated by roughly an order of magnitude."
+  },
+  {
+   "symbol": "COW",
+   "field": "citation",
+   "find": "$26.2M annualized revenue, $42M all-time DAO revenue",
+   "replace": "$26.2M trailing twelve month revenue, about $7.5M annualised at the current run rate, $42M all-time DAO revenue",
+   "why": "A trailing total inflated by a single month spike was published as an annualised rate."
+  },
+  {
+   "symbol": "GEOD",
+   "field": "one_liner",
+   "find": "Q2 2026 $1.93M (+10% QoQ)",
+   "replace": "Q2 2026 $2.59M (+48% QoQ)",
+   "why": "Revenue understated and the growth rate with it."
+  },
+  {
+   "symbol": "GEOD",
+   "field": "citation",
+   "find": "Annualized fees $9.5M (DeFiLlama), ARR $7.3M (Dec 2025)",
+   "replace": "Annualized fees about $11.3M (DefiLlama trailing 30d), up from $7.3M ARR in Dec 2025",
+   "why": "Fee run rate stale."
+  },
+  {
+   "symbol": "BNB",
+   "field": "key_risk",
+   "find": "CZ plea deal overhang",
+   "replace": "CZ pardoned in Oct 2025, which removed the plea-deal overhang but drew political scrutiny",
+   "why": "An overhang that had been removed ten months earlier."
+  },
+  {
+   "symbol": "XRP",
+   "field": "citation",
+   "find": "SEC vs Ripple case largely resolved in 2024 with partial win for",
+   "replace": "SEC v. Ripple fully concluded on 7 August 2025 when both sides dropped their appeals, a partial win for",
+   "why": "The case concluded a year after the date published."
+  },
+  {
+   "symbol": "XRP",
+   "field": "citation",
+   "find": "Multiple spot XRP ETF applications filed with SEC in 2025",
+   "replace": "Spot XRP ETFs began trading in the US from 13 November 2025, with about seven funds now live",
+   "why": "Applications published as pending after the funds launched."
+  },
+  {
+   "symbol": "LEO",
+   "field": "key_catalyst",
+   "find": "Bitfinex share buyback program using 27% of LEO revenue pool",
+   "replace": "Continuous LEO token buyback and burn funded by at least 27% of iFinex consolidated gross revenue",
+   "why": "Described as a share buyback drawing on a revenue pool. It is a token buyback funded from group revenue."
   }
  ]
 }
