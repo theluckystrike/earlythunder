@@ -619,6 +619,8 @@ const MIN_BAND_SIZE = 12;
  * ranking and the count is disclosed on the page.
  */
 const LOW_CONFIDENCE_FRACTION = 0.7;
+/** At or above this score, an unresolved market row is reported rather than ignored. */
+const UNRESOLVED_ALERT_SCORE = 120;
 
 /**
  * Ranks tokens on fundamentals and on market capitalisation INSIDE each size
@@ -733,6 +735,22 @@ function main() {
     }
     eligible.push(t);
   }
+  // SYRUP scored 168, the second highest of any token under $500M, and was
+  // missing from every screen for weeks because its CoinGecko override pointed
+  // at a 404. A silent omission at that score is a defect, so it fails loudly.
+  const unresolvedStrong = tokens.filter(
+    (t) =>
+      t.score >= UNRESOLVED_ALERT_SCORE &&
+      !isImpaired(t) &&
+      (!t.market || !Number.isFinite(t.market.market_cap) || t.market.market_cap <= 0),
+  );
+  if (unresolvedStrong.length > 0) {
+    process.stdout.write(
+      `WARNING ${unresolvedStrong.length} token(s) scoring ${UNRESOLVED_ALERT_SCORE}+ have no live ` +
+        `market row and are absent from every screen: ${unresolvedStrong.map((t) => `${t.symbol} (${t.score})`).join(", ")}\n`,
+    );
+  }
+
   const screens = buildScreens(tokens, eligible);
   const mispricing = buildMispricing(eligible, tiers);
 

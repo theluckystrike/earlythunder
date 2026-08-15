@@ -79,7 +79,7 @@ const OVERRIDE = {
   IOTA: "iota", EGLD: "elrond-erd-2", CKB: "nervos-network",
   DASH: "dash", XTZ: "tezos", CRO: "crypto-com-chain", OKB: "okb",
   LEO: "leo-token", BGB: "bitget-token", HT: "huobi-token", KLAY: "klay-token",
-  FTM: "fantom", S: "sonic-3", USUAL: "usual", SYRUP: "maple",
+  FTM: "fantom", S: "sonic-3", USUAL: "usual", SYRUP: "syrup",
   MORPHO: "morpho", SKY: "sky", SPK: "spark-2", RSR: "reserve-rights-token",
   PYTH: "pyth-network", JASMY: "jasmycoin", MASK: "mask-network",
   GEOD: "geodnet", MOBILE: "helium-mobile", SHDW: "genesysgo-shadow",
