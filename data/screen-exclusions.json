@@ -1,0 +1,20 @@
+{
+ "purpose": "Tokens held out of the screens and the mispricing ranking because an event after the 11 June 2026 scoring pass invalidated the scores those pages filter on. The scorecard cannot know about them, so they are recorded here with the evidence that settled each one.",
+ "reviewed_at": "2026-08-15",
+ "exclusions": [
+  {
+   "symbol": "ACX",
+   "reason": "Across Protocol has booked zero revenue in every month from April 2026 onward, against a scorecard that rates it on protocol revenue and price to sales. It was appearing on a screen headlined real revenue.",
+   "evidence": "DefiLlama fees/across dailyRevenue: total24h 0, total30d 0, total1y 0, and $0 in each of April, May, June, July and August 2026.",
+   "evidence_url": "https://api.llama.fi/summary/fees/across?dataType=dailyRevenue",
+   "confirmed_by": "primary data, checked by hand 15 Aug 2026"
+  },
+  {
+   "symbol": "BANANA",
+   "reason": "Banana Gun is a trading bot with no TVL, so fee revenue is the whole fundamental. Revenue fell 97% between the scoring pass and today, which the June scores do not reflect. It was ranked 15th most underpriced and carried on the buyback screen.",
+   "evidence": "DefiLlama fees/banana-gun dailyRevenue by month: April 2026 $154,632, May $66,832, June $24,992, July $8,984, August $4,058. total24h $88.",
+   "evidence_url": "https://api.llama.fi/summary/fees/banana-gun?dataType=dailyRevenue",
+   "confirmed_by": "primary data, checked by hand 15 Aug 2026"
+  }
+ ]
+}

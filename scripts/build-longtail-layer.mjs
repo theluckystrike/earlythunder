@@ -34,6 +34,7 @@ const SIGNALS_OUT = join(REPO, "data", "scorecard-signals.json");
 const PAIRS_OUT = join(REPO, "data", "scorecard-pairs.json");
 const TIERS_OUT = join(REPO, "data", "scorecard-tiers.json");
 const SCREENS_OUT = join(REPO, "data", "scorecard-screens.json");
+const EXCLUSIONS_PATH = join(REPO, "data", "screen-exclusions.json");
 
 // ---- Audited bounds -------------------------------------------------------
 const MAX_TOKENS = 2000;
@@ -117,6 +118,24 @@ function spearman(xs, ys) {
   if (xs.length !== ys.length) throw new Error("spearman: length mismatch");
   if (xs.length < MIN_CORRELATION_N) return null;
   return pearson(toRanks(xs), toRanks(ys));
+}
+
+/**
+ * Symbols held out because an event after the scoring pass invalidated the
+ * scores the screens filter on. The text guard cannot catch these, because the
+ * data predates the event. Each carries evidence in the file.
+ */
+function loadExclusions() {
+  const raw = readFileSync(EXCLUSIONS_PATH, "utf8");
+  if (raw.length === 0) throw new Error("exclusions file is empty");
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch (error) {
+    throw new Error(`${EXCLUSIONS_PATH} is not valid JSON: ${error.message}`);
+  }
+  if (!Array.isArray(parsed.exclusions)) throw new Error("exclusions must be an array");
+  return new Set(parsed.exclusions.map((e) => e.symbol));
 }
 
 /** Reads and validates the analytics file this layer derives from. */
@@ -699,11 +718,13 @@ function main() {
   //   impaired   DRIFT passed five screens while offline with no revenue.
   //   no market  MKR and FTM are retired tickers with no live capitalisation.
   //   duplicate  POL and MATIC resolve to one CoinGecko id and were counted twice.
+  const excluded = loadExclusions();
   const seenIds = new Set();
   const eligible = [];
   for (let i = 0; i < tokens.length && i < MAX_TOKENS; i += 1) {
     const t = tokens[i];
     if (isImpaired(t)) continue;
+    if (excluded.has(t.symbol)) continue;
     if (!t.market || !Number.isFinite(t.market.market_cap) || t.market.market_cap <= 0) continue;
     const id = t.market.coingecko_id;
     if (typeof id === "string" && id.length > 0) {
@@ -737,7 +758,7 @@ function main() {
     `signals ${signals.length} -> ${SIGNALS_OUT}\n` +
       `pairs ${pairs.length} (${Object.entries(byReason).map(([k, v]) => `${k} ${v}`).join(", ")}) -> ${PAIRS_OUT}\n` +
       `tiers ${tiers.length} (${tiers.map((t) => `${t.slug} ${t.count}`).join(", ")}) -> ${TIERS_OUT}\n` +
-      `eligible ${eligible.length} of ${tokens.length} after impaired, no-market and duplicate filters\n` +
+      `eligible ${eligible.length} of ${tokens.length} after impaired, excluded, no-market and duplicate filters\n` +
       `screens ${screens.length}, mispricing ${mispricing ? `${mispricing.underpriced_total} under / ${mispricing.overpriced_total} over, excluded ${mispricing.excluded_impaired.join(",") || "none"}` : "n/a"} -> ${SCREENS_OUT}\n`,
   );
 }
