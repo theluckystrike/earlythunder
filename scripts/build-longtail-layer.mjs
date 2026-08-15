@@ -517,8 +517,12 @@ function scoreOf(token, key) {
 const SCREENS = [
   { slug: "real-revenue-cheap", name: "Real revenue, cheap multiple",
     test: (t) => scoreOf(t, "protocol_revenue") >= 6 && scoreOf(t, "ps_multiple") >= 6 },
+  // The scores alone let three tokens through whose own supply counts disagree,
+  // CBETH at 44% circulating carrying a 10. The derived share is the reliable
+  // figure, so the page's promise is enforced from supply, not from the band.
   { slug: "no-vesting-overhang", name: "No vesting overhang left",
-    test: (t) => scoreOf(t, "circ_fdv_ratio") >= 9 && scoreOf(t, "unlock_schedule") >= 8 },
+    test: (t) => scoreOf(t, "circ_fdv_ratio") >= 9 && scoreOf(t, "unlock_schedule") >= 8 &&
+      t.dilution.circ_pct !== null && t.dilution.circ_pct >= 90 },
   { slug: "buyback-and-burn", name: "Returns cash to holders",
     test: (t) => scoreOf(t, "buyback_burn") >= 7 },
   { slug: "real-staking-yield", name: "Staking yield that is not issuance",

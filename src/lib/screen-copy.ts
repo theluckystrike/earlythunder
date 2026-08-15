@@ -61,9 +61,9 @@ export const SCREEN_COPY: readonly ScreenCopy[] = [
   },
   {
     slug: "regulatory-safe-harbour",
-    question: "Which crypto tokens are safest from regulation?",
+    question: "Which crypto tokens are least exposed to regulation?",
     rule: "Regulatory Safety 8 or better.",
-    why: "Regulatory outcomes are binary and they do not respect fundamentals. No other variable can zero a position outright, which is why this one is worth screening on alone.",
+    why: "Regulatory outcomes are binary and they do not respect fundamentals. No other variable can zero a position outright, which is why this one is worth screening on alone. Read it as the least exposed of the rated set rather than as a safe harbour: some scores rest on sources published by the project itself, and a regulatory position can change with a single filing.",
   },
   {
     slug: "survivors-deep-drawdown",
