@@ -50,136 +50,104 @@ function getChangeFrequency(
  * Generates the sitemap.xml at build time.
  * Reads opportunity, blog, and research data to produce dynamic entries.
  */
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+/** Static routes, priced from the priority map. */
+function staticEntries(now: Date): MetadataRoute.Sitemap {
+  return STATIC_PAGES.map((page) => ({
+    url: `${SITE_URL}${page === "/" ? "" : page}`,
+    lastModified: now,
+    changeFrequency: getChangeFrequency(page),
+    priority: PRIORITY_MAP[page] ?? DEFAULT_PRIORITY,
+  }));
+}
 
-  const staticEntries: MetadataRoute.Sitemap = STATIC_PAGES.map(
-    (page) => ({
-      url: `${SITE_URL}${page === "/" ? "" : page}`,
-      lastModified: now,
-      changeFrequency: getChangeFrequency(page),
-      priority: PRIORITY_MAP[page] ?? DEFAULT_PRIORITY,
-    }),
-  );
-
-  const opportunities = getAllOpportunities();
-  const opportunityEntries: MetadataRoute.Sitemap = opportunities
-    .slice(0, MAX_ENTRIES)
-    .map((opp) => ({
+/** Long-form content: opportunity notes, blog posts, guides, research. */
+function contentEntries(now: Date): MetadataRoute.Sitemap {
+  return [
+    ...getAllOpportunities().slice(0, MAX_ENTRIES).map((opp) => ({
       url: `${SITE_URL}/opportunities/${opp.slug}`,
       lastModified: opp.updated_at ? new Date(opp.updated_at) : now,
       changeFrequency: "weekly" as const,
       priority: OPPORTUNITY_PRIORITY,
-    }));
-
-  const blogPosts = getAllBlogPosts();
-  const blogEntries: MetadataRoute.Sitemap = blogPosts
-    .slice(0, MAX_ENTRIES)
-    .map((post) => ({
+    })),
+    ...getAllBlogPosts().slice(0, MAX_ENTRIES).map((post) => ({
       url: `${SITE_URL}/blog/${post.slug}`,
-      lastModified: post.published_at
-        ? new Date(post.published_at)
-        : now,
+      lastModified: post.published_at ? new Date(post.published_at) : now,
       changeFrequency: "monthly" as const,
       priority: BLOG_POST_PRIORITY,
-    }));
-
-  const guides = getAllGuides();
-  const guideEntries: MetadataRoute.Sitemap = guides
-    .slice(0, MAX_ENTRIES)
-    .map((guide) => ({
+    })),
+    ...getAllGuides().slice(0, MAX_ENTRIES).map((guide) => ({
       url: `${SITE_URL}/guides/${guide.slug}`,
-      lastModified: guide.published_at
-        ? new Date(guide.published_at)
-        : now,
+      lastModified: guide.published_at ? new Date(guide.published_at) : now,
       changeFrequency: "monthly" as const,
       priority: GUIDE_PRIORITY,
-    }));
-
-  const researchEntries: MetadataRoute.Sitemap = RESEARCH_SLUGS.map(
-    (slug) => ({
+    })),
+    ...RESEARCH_SLUGS.map((slug) => ({
       url: `${SITE_URL}/research/${slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: RESEARCH_ARTICLE_PRIORITY,
-    }),
-  );
-
-  const clarityEntries: MetadataRoute.Sitemap = getAllClarityTopics().map(
-    (topic) => ({
+    })),
+    ...getAllClarityTopics().map((topic) => ({
       url: `${SITE_URL}/clarity-act/${topic.slug}`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: CLARITY_TOPIC_PRIORITY,
-    }),
-  );
-
-  // Scorecard leaves change only when a scoring pass runs, so they carry the
-  // pass date rather than the build date and a monthly change frequency.
-  const scorecardMeta = getScorecardMeta();
-  const passDate = scorecardMeta.source_updated_at
-    ? new Date(scorecardMeta.source_updated_at)
-    : now;
-
-  const scorecardTokenEntries: MetadataRoute.Sitemap = getAllScorecardTokens()
-    .slice(0, MAX_ENTRIES)
-    .map((token) => ({
-      url: `${SITE_URL}/scorecard/${token.slug}`,
-      lastModified: passDate,
-      changeFrequency: "monthly" as const,
-      priority: SCORECARD_TOKEN_PRIORITY,
-    }));
-
-  const scorecardHubEntries: MetadataRoute.Sitemap = [
-    ...getScorecardGroups("verdict").map((group) => ({
-      url: `${SITE_URL}/scorecard/verdict/${group.slug}`,
-      lastModified: passDate,
-      changeFrequency: "monthly" as const,
-      priority: SCORECARD_HUB_PRIORITY,
-    })),
-    ...getScorecardGroups("chain").map((group) => ({
-      url: `${SITE_URL}/scorecard/chain/${group.slug}`,
-      lastModified: passDate,
-      changeFrequency: "monthly" as const,
-      priority: SCORECARD_HUB_PRIORITY,
     })),
   ];
+}
 
-  // Per-variable leaderboards move with the scoring pass, comparisons with it too.
-  const signalEntries: MetadataRoute.Sitemap = getAllSignals().map((signal) => ({
+/**
+ * Everything derived from a scoring pass. These carry the pass date rather than
+ * the build date, so a rebuild does not claim the research changed.
+ */
+function scorecardEntries(passDate: Date): MetadataRoute.Sitemap {
+  const hubs = [
+    ...getScorecardGroups("verdict").map((g) => `/scorecard/verdict/${g.slug}`),
+    ...getScorecardGroups("chain").map((g) => `/scorecard/chain/${g.slug}`),
+    ...getAllTiers().map((t) => `/scorecard/size/${t.slug}`),
+  ].map((path) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: passDate,
+    changeFrequency: "monthly" as const,
+    priority: SCORECARD_HUB_PRIORITY,
+  }));
+
+  const signals = getAllSignals().map((signal) => ({
     url: `${SITE_URL}/scorecard/signal/${signalSlug(signal.key)}`,
     lastModified: passDate,
     changeFrequency: "monthly" as const,
     priority: SCORECARD_SIGNAL_PRIORITY,
   }));
 
-  const tierEntries: MetadataRoute.Sitemap = getAllTiers().map((tier) => ({
-    url: `${SITE_URL}/scorecard/size/${tier.slug}`,
+  const tokens = getAllScorecardTokens().slice(0, MAX_ENTRIES).map((token) => ({
+    url: `${SITE_URL}/scorecard/${token.slug}`,
     lastModified: passDate,
     changeFrequency: "monthly" as const,
-    priority: SCORECARD_HUB_PRIORITY,
+    priority: SCORECARD_TOKEN_PRIORITY,
   }));
 
-  const compareEntries: MetadataRoute.Sitemap = getAllPairs()
-    .slice(0, MAX_ENTRIES)
-    .map((pair) => ({
-      url: `${SITE_URL}/scorecard/compare/${pair.slug}`,
-      lastModified: passDate,
-      changeFrequency: "monthly" as const,
-      priority: SCORECARD_COMPARE_PRIORITY,
-    }));
+  const compares = getAllPairs().slice(0, MAX_ENTRIES).map((pair) => ({
+    url: `${SITE_URL}/scorecard/compare/${pair.slug}`,
+    lastModified: passDate,
+    changeFrequency: "monthly" as const,
+    priority: SCORECARD_COMPARE_PRIORITY,
+  }));
+
+  return [...hubs, ...signals, ...tokens, ...compares];
+}
+
+/**
+ * Generates the sitemap.xml at build time.
+ * Reads opportunity, blog, and research data to produce dynamic entries.
+ */
+export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+  const meta = getScorecardMeta();
+  const passDate = meta.source_updated_at ? new Date(meta.source_updated_at) : now;
 
   return [
-    ...staticEntries,
-    ...opportunityEntries,
-    ...blogEntries,
-    ...guideEntries,
-    ...researchEntries,
-    ...clarityEntries,
-    ...scorecardHubEntries,
-    ...tierEntries,
-    ...signalEntries,
-    ...scorecardTokenEntries,
-    ...compareEntries,
+    ...staticEntries(now),
+    ...contentEntries(now),
+    ...scorecardEntries(passDate),
   ];
 }

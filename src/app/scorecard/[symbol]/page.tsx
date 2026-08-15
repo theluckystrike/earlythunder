@@ -16,6 +16,7 @@ import {
   buildFindings,
   buildFaqs,
   buildSummary,
+  splitLead,
   ordinal,
   formatUsd,
   formatPrice,
@@ -186,6 +187,9 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
   const deadLinks = token.citations.filter((c) => !c.link_ok).length;
   const catalystExpired = token.catalyst_expired_dates.length > 0;
   const comparisons = getPairsFor(token.slug, MAX_COMPARISONS);
+  // A long one-liner is a stack of fragments. The opening sits under the title
+  // and the remainder follows it, so the page keeps every fact without a wall.
+  const headline = splitLead(token.one_liner ?? summary);
   // Chain hubs exist only for chains with enough rated tokens to aggregate, so
   // linking every chain unconditionally pointed 86 token pages at a 404.
   const chainSlug =
@@ -270,7 +274,8 @@ export default async function ScorecardTokenPage({ params }: PageParams) {
       <PageHeader
         eyebrow={token.verdict}
         title={`${token.name} (${token.symbol})`}
-        lead={token.one_liner ?? summary}
+        lead={headline.lead || summary}
+        sub={headline.rest || undefined}
         meta={`Ranked ${ordinal(token.rank_overall)} of ${token.universe_size} rated tokens. Scoring pass ${formatDate(meta.source_updated_at)}.`}
       />
 

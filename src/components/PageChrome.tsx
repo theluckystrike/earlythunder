@@ -13,6 +13,8 @@ const PROSE_MEASURE = "max-w-3xl";
 interface PageHeaderProps {
   readonly title: string;
   readonly lead: string;
+  /** Continuation of a long lead, rendered under it and above the stamp. */
+  readonly sub?: string;
   /** Small uppercase status pill shown above the title. */
   readonly eyebrow?: string;
   /** Byline and updated stamp, rendered small under the lead. */
@@ -20,7 +22,7 @@ interface PageHeaderProps {
 }
 
 /** Page title block. Matches the h1 scale and lead measure used site-wide. */
-export function PageHeader({ title, lead, eyebrow, meta }: PageHeaderProps) {
+export function PageHeader({ title, lead, sub, eyebrow, meta }: PageHeaderProps) {
   console.assert(typeof title === "string" && title.length > 0, "PageHeader: title required");
   console.assert(typeof lead === "string", "PageHeader: lead required");
   if (typeof title !== "string" || title.length === 0) return null;
@@ -38,6 +40,11 @@ export function PageHeader({ title, lead, eyebrow, meta }: PageHeaderProps) {
       <p className="mt-4 max-w-2xl text-xl leading-relaxed text-text-secondary">
         {lead}
       </p>
+      {sub && (
+        <p className="mt-4 max-w-2xl text-[1.0625rem] leading-[1.7] text-text-tertiary">
+          {sub}
+        </p>
+      )}
       {meta && (
         <p className="mt-5 max-w-2xl font-mono text-xs leading-relaxed text-text-tertiary">
           {meta}

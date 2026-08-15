@@ -95,6 +95,39 @@ function joinProse(parts: readonly string[]): string {
   return `${parts.slice(0, -1).join(", ")} and ${parts[parts.length - 1]}`;
 }
 
+/** A lead longer than this reads as a wall under a 48px heading. */
+const MAX_LEAD_CHARS = 165;
+
+export interface SplitLead {
+  /** The opening sentences, short enough to sit under the title. */
+  readonly lead: string;
+  /** Everything after them, or empty when the whole string fits. */
+  readonly rest: string;
+}
+
+/**
+ * Splits a scorecard one-liner at a sentence boundary so a long one does not
+ * render as a wall of fragments under the page title. Nothing is dropped: the
+ * remainder is returned for the caller to render underneath.
+ */
+export function splitLead(text: string | null | undefined): SplitLead {
+  if (typeof text !== "string" || text.length === 0) return { lead: "", rest: "" };
+  if (text.length <= MAX_LEAD_CHARS) return { lead: text, rest: "" };
+
+  const parts = text.split(/(?<=[.!?])\s+/);
+  if (parts.length < 2) return { lead: text, rest: "" };
+
+  let lead = "";
+  let i = 0;
+  for (; i < parts.length && i < 20; i += 1) {
+    const next = lead.length === 0 ? parts[i] : `${lead} ${parts[i]}`;
+    if (lead.length > 0 && next.length > MAX_LEAD_CHARS) break;
+    lead = next;
+  }
+  if (lead.length === 0) return { lead: text, rest: "" };
+  return { lead, rest: parts.slice(i).join(" ") };
+}
+
 export interface Finding {
   readonly label: string;
   readonly text: string;

@@ -98,7 +98,9 @@ function DuelRow({ duel, aSymbol, bSymbol }: {
   const winner = duel.diff > 0 ? aSymbol : duel.diff < 0 ? bSymbol : null;
   return (
     <tr className="border-b border-border/40">
-      <td className="w-52 py-3 pr-4 text-sm text-text-secondary">{duel.label}</td>
+      <td className="w-56 py-3 pr-5 text-sm leading-snug text-text-secondary md:whitespace-nowrap">
+        {duel.label}
+      </td>
       <td className={`w-14 py-3 text-right font-mono text-sm font-semibold ${scoreTone(duel.a)}`}>
         {duel.a}
       </td>
@@ -187,7 +189,7 @@ function Stat({ label, value, note }: {
 /** The 25-variable table, split into its six themes. */
 function DuelTable({ h2h }: { readonly h2h: HeadToHead }) {
   return (
-    <div className="mt-8 max-w-4xl space-y-9">
+    <div className="mt-8 max-w-5xl space-y-9">
       {GROUP_ORDER.map((group) => {
         const rows = h2h.duels.filter((d) => d.group === group);
         if (rows.length === 0) return null;
@@ -311,12 +313,18 @@ export default async function ComparePage({ params }: PageParams) {
             }
           />
         </div>
-        <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-xs">
-          <Link href={`/scorecard/${a.slug}`} className="text-info hover:underline">
-            {a.name} full scorecard
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <Link
+            href={`/scorecard/${a.slug}`}
+            className="rounded-full border border-border px-4 py-1.5 font-mono text-xs text-text-secondary transition-colors duration-200 hover:border-border-active hover:text-text-primary"
+          >
+            {a.name} scorecard
           </Link>
-          <Link href={`/scorecard/${b.slug}`} className="text-info hover:underline">
-            {b.name} full scorecard
+          <Link
+            href={`/scorecard/${b.slug}`}
+            className="rounded-full border border-border px-4 py-1.5 font-mono text-xs text-text-secondary transition-colors duration-200 hover:border-border-active hover:text-text-primary"
+          >
+            {b.name} scorecard
           </Link>
         </div>
       </Section>

@@ -298,7 +298,7 @@ export default async function SignalPage({ params }: PageParams) {
                     </Link>
                     <span className="ml-2 text-xs text-text-tertiary">{leader.name}</span>
                     {index < NARRATED_ROWS && leader.one_liner && (
-                      <span className="mt-1 block max-w-md text-xs leading-snug text-text-secondary">
+                      <span className="mt-1.5 line-clamp-2 max-w-md font-sans text-xs leading-relaxed text-text-secondary">
                         {leader.one_liner}
                       </span>
                     )}

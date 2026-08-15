@@ -241,8 +241,10 @@ export default function ScorecardGroupHub({
                   <td className="px-3 py-2.5 text-right text-text-secondary">
                     {member.dilution_x === null ? "-" : `${member.dilution_x}x`}
                   </td>
-                  <td className="hidden max-w-md whitespace-normal px-3 py-2.5 text-xs leading-snug text-text-secondary lg:table-cell">
-                    {member.one_liner}
+                  <td className="hidden max-w-md px-3 py-2.5 align-top lg:table-cell">
+                    <span className="line-clamp-2 font-sans text-xs leading-relaxed text-text-secondary">
+                      {member.one_liner}
+                    </span>
                   </td>
                 </tr>
               ))}

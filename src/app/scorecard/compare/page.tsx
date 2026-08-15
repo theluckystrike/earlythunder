@@ -53,9 +53,19 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/scorecard/compare` },
 };
 
-/** Uppercased pair label, "ETH vs SOL". */
-function pairLabel(pair: PairRef): string {
-  return `${pair.a.toUpperCase()} vs ${pair.b.toUpperCase()}`;
+/**
+ * Buckets pairs under their first token so 1,034 links read as a directory
+ * rather than one undifferentiated wall. Every pair still appears exactly once.
+ */
+function groupByLead(pairs: readonly PairRef[]): [string, PairRef[]][] {
+  const buckets = new Map<string, PairRef[]>();
+  for (let i = 0; i < pairs.length && i < 2000; i += 1) {
+    const lead = pairs[i].a;
+    const list = buckets.get(lead) ?? [];
+    list.push(pairs[i]);
+    buckets.set(lead, list);
+  }
+  return [...buckets.entries()].sort((x, y) => x[0].localeCompare(y[0]));
 }
 
 export default function CompareIndexPage() {
@@ -145,27 +155,41 @@ export default function CompareIndexPage() {
           <Section key={reason.key}>
             <SectionLabel number={`0${index + 2}`} title={`${reason.title} (${members.length})`} />
             <Prose>{reason.blurb}</Prose>
-            <div className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-              {members.map((pair) => {
-                const a = getScorecardToken(pair.a);
-                const b = getScorecardToken(pair.b);
-                return (
-                  <Link
-                    key={pair.slug}
-                    href={`/scorecard/compare/${pair.slug}`}
-                    className="block rounded-xl border border-border bg-bg-card px-4 py-3 transition-all duration-200 hover:border-border-active"
-                  >
-                    <span className="block font-mono text-sm text-text-primary">
-                      {pairLabel(pair)}
-                    </span>
-                    {a !== null && b !== null && (
-                      <span className="mt-0.5 block font-mono text-[11px] text-text-tertiary">
-                        {a.score} against {b.score}
-                      </span>
-                    )}
-                  </Link>
-                );
-              })}
+            <div className="mt-8 space-y-7">
+              {groupByLead(members).map(([lead, group]) => (
+                <div key={lead}>
+                  <h3 className="mb-2.5 flex items-baseline gap-3 font-mono text-xs uppercase tracking-wider text-text-tertiary">
+                    <span className="text-text-secondary">{lead.toUpperCase()}</span>
+                    <span className="h-px flex-1 bg-border" aria-hidden="true" />
+                    <span>{group.length}</span>
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {group.map((pair) => {
+                      const a = getScorecardToken(pair.a);
+                      const b = getScorecardToken(pair.b);
+                      const other = pair.a === lead ? pair.b : pair.a;
+                      const leadScore = pair.a === lead ? a?.score : b?.score;
+                      const otherScore = pair.a === lead ? b?.score : a?.score;
+                      const otherWins =
+                        leadScore !== undefined && otherScore !== undefined && otherScore > leadScore;
+                      return (
+                        <Link
+                          key={pair.slug}
+                          href={`/scorecard/compare/${pair.slug}`}
+                          className="inline-flex items-baseline gap-2 rounded-full border border-border bg-bg-card px-3.5 py-1.5 font-mono text-xs text-text-secondary transition-colors duration-200 hover:border-border-active hover:text-text-primary"
+                        >
+                          <span>vs {other.toUpperCase()}</span>
+                          {otherScore !== undefined && (
+                            <span className={otherWins ? "text-positive" : "text-text-tertiary"}>
+                              {otherScore}
+                            </span>
+                          )}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
             </div>
           </Section>
         );

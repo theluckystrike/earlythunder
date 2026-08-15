@@ -49,6 +49,22 @@ const RULES = [
   // 79 strings, leaving "Solana system growth" and "system tiny". "network" is
   // the word the site uses for this and is not gate-banned. PRESERVE_SYSTEM
   // guards the handful of places where "system" was always the right word.
+  // Shouted English words read as a press release, not research. Only these
+  // exact words are lowered. Every other run of capitals in this data is a
+  // ticker or an acronym (BOLD is a stablecoin, DAG and IBC are real terms),
+  // so a heuristic would corrupt them.
+  [/\bVALIDATED\b/g, "validated"],
+  [/\bNET\b/g, "net"],
+  [/\bZERO\b/g, "zero"],
+  [/\bHALTED\b/g, "halted"],
+  [/\bPAUSED\b/g, "paused"],
+  [/\bINFLATIONARY\b/g, "inflationary"],
+  [/\bGROSS\b/g, "gross"],
+  [/\bNOT\b/g, "not"],
+  [/\bBUT\b/g, "but"],
+  [/\bLIVE\b/g, "live"],
+  [/\bOFF\b/g, "off"],
+
   [/\bsystem\b/g, "network"],
   [/\bsystems\b/g, "networks"],
 ];
@@ -60,6 +76,13 @@ const RULES = [
 const PRESERVE_SYSTEM = ["naming network", "stablecoin network"];
 const PRESERVE_RESTORE = ["naming system", "stablecoin system"];
 
+/** Restores the opening capital a lowering rule may have removed. */
+function capitaliseFirst(text) {
+  if (typeof text !== "string") throw new Error("capitaliseFirst: string required");
+  if (text.length === 0) return text;
+  return text[0].toUpperCase() + text.slice(1);
+}
+
 /** Applies every rule in order. Returns the rewritten string. */
 function reword(text) {
   if (typeof text !== "string") return text;
@@ -68,6 +91,7 @@ function reword(text) {
   for (let i = 0; i < RULES.length; i += 1) {
     out = out.replace(RULES[i][0], RULES[i][1]);
   }
+  out = capitaliseFirst(out);
   for (let i = 0; i < PRESERVE_SYSTEM.length; i += 1) {
     out = out.split(PRESERVE_SYSTEM[i]).join(PRESERVE_RESTORE[i]);
   }
