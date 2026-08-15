@@ -704,6 +704,29 @@ function buildMispricing(tokens, tiers) {
 
 // ---- Main -----------------------------------------------------------------
 
+/**
+ * SYRUP scored 168, the second highest of any token under $500M, and was missing
+ * from every screen because its CoinGecko override pointed at a 404. A silent
+ * omission at that score is a defect, so the build says so.
+ */
+function reportUnresolvedStrong(tokens) {
+  if (!Array.isArray(tokens)) throw new Error("reportUnresolvedStrong: tokens required");
+  if (tokens.length === 0) return 0;
+  const missing = tokens.filter(
+    (t) =>
+      t.score >= UNRESOLVED_ALERT_SCORE &&
+      !isImpaired(t) &&
+      (!t.market || !Number.isFinite(t.market.market_cap) || t.market.market_cap <= 0),
+  );
+  if (missing.length > 0) {
+    process.stdout.write(
+      `WARNING ${missing.length} token(s) scoring ${UNRESOLVED_ALERT_SCORE}+ have no live market row ` +
+        `and are absent from every screen: ${missing.map((t) => `${t.symbol} (${t.score})`).join(", ")}\n`,
+    );
+  }
+  return missing.length;
+}
+
 function main() {
   const analytics = loadAnalytics();
   const tokens = analytics.tokens.slice(0, MAX_TOKENS);
@@ -735,21 +758,7 @@ function main() {
     }
     eligible.push(t);
   }
-  // SYRUP scored 168, the second highest of any token under $500M, and was
-  // missing from every screen for weeks because its CoinGecko override pointed
-  // at a 404. A silent omission at that score is a defect, so it fails loudly.
-  const unresolvedStrong = tokens.filter(
-    (t) =>
-      t.score >= UNRESOLVED_ALERT_SCORE &&
-      !isImpaired(t) &&
-      (!t.market || !Number.isFinite(t.market.market_cap) || t.market.market_cap <= 0),
-  );
-  if (unresolvedStrong.length > 0) {
-    process.stdout.write(
-      `WARNING ${unresolvedStrong.length} token(s) scoring ${UNRESOLVED_ALERT_SCORE}+ have no live ` +
-        `market row and are absent from every screen: ${unresolvedStrong.map((t) => `${t.symbol} (${t.score})`).join(", ")}\n`,
-    );
-  }
+  reportUnresolvedStrong(tokens);
 
   const screens = buildScreens(tokens, eligible);
   const mispricing = buildMispricing(eligible, tiers);
