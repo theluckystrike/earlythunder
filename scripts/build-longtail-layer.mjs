@@ -515,7 +515,7 @@ function scoreOf(token, key) {
  * of everything or a list of nothing.
  */
 const SCREENS = [
-  { slug: "real-revenue-cheap", name: "Real revenue, cheap multiple",
+  { slug: "real-revenue-cheap", name: "Real revenue, low price to sales band",
     test: (t) => scoreOf(t, "protocol_revenue") >= 6 && scoreOf(t, "ps_multiple") >= 6 },
   // The scores alone let three tokens through whose own supply counts disagree,
   // CBETH at 44% circulating carrying a 10. The derived share is the reliable
