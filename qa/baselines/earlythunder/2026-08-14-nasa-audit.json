@@ -2,7 +2,7 @@
  "tool": "nasa-audit",
  "spec": "~/Desktop/prompts/sprint-goal-hardening-nasa-power-of-10.md",
  "domain": "earlythunder.com",
- "commit": "4c7ca90",
+ "commit": "7e3b439",
  "date": "2026-08-14",
  "budget": {
   "critical": 0,
@@ -30,7 +30,8 @@
    "unhandled_then": 0,
    "json_parse_unnamed": 0,
    "banned_constructs": 0,
-   "files_scanned": 13
+   "files_scanned": 65,
+   "scope": "length rule on logic files, all other rules on markup too, documented in qa/eslint-nasa.mjs"
   },
   "5_cdn": {
    "trailing_slash_redirect": "308 to no-slash",
@@ -63,6 +64,19 @@
    "title_colons": 2,
    "citations": 777,
    "dead_citation_links_suppressed": 47
+  },
+  "3_visual": {
+   "method": "real Chrome at 1440, 768 and 390 wide",
+   "design_tokens_match_crafted_pages": true,
+   "horizontal_overflow_any_width": 0,
+   "console_or_network_errors_live": 0,
+   "fixes": [
+    "comparison index regrouped from 1,034 flat cards into a per-token pill directory",
+    "hub and leaderboard thesis columns moved to the prose face and clamped to two lines",
+    "head-to-head labels stopped wrapping to three lines",
+    "long token leads split at a sentence boundary through a new PageHeader slot",
+    "38 shouted capital runs lowered with an explicit word list"
+   ]
   }
  },
  "deploy": {
@@ -76,7 +90,8 @@
  "low_findings": [
   "15 tokens unaudited after three audit agents failed: LINK ETHFI PENDLE RETH CBETH AERO MORPHO AAVE VIRTUAL LQTY JUP CETUS SUI LDO FLUID",
   "209 tokens below the top 42 have never been source-checked",
-  "66 this-is sentence openers remain in long-form articles"
+  "66 this-is sentence openers remain in long-form articles",
+  "comparison index is still 26,988px tall, inherent to listing 1,034 links in one directory"
  ],
  "waived": [
   "banned_words paradigm on scorecard pages, documented in HUMANIZE-EXEMPTIONS.md, Paradigm is the venture firm"
