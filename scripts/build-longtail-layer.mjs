@@ -33,6 +33,7 @@ const ANALYTICS_PATH = join(REPO, "data", "scorecard-analytics.json");
 const SIGNALS_OUT = join(REPO, "data", "scorecard-signals.json");
 const PAIRS_OUT = join(REPO, "data", "scorecard-pairs.json");
 const TIERS_OUT = join(REPO, "data", "scorecard-tiers.json");
+const SCREENS_OUT = join(REPO, "data", "scorecard-screens.json");
 
 // ---- Audited bounds -------------------------------------------------------
 const MAX_TOKENS = 2000;
@@ -450,6 +451,232 @@ function buildTiers(tokens) {
   return out;
 }
 
+// ---- Screen layer ---------------------------------------------------------
+
+/**
+ * A score is a snapshot of the scoring pass. When a later event impairs a
+ * protocol the score does not know, so any page that reads a high score as a
+ * buy signal has to exclude it. DRIFT is the live example: it scores 142 and
+ * ranks 24th, and it has been offline since a $286M exploit on 1 April 2026.
+ */
+const IMPAIRED = [
+  /\boffline\b/i,
+  /\bexploited for\b/i,
+  /\bwound down\b/i,
+  /\binsolvent\b/i,
+  /\bwithdrawals suspended\b/i,
+  /\bceased operations\b/i,
+];
+
+/**
+ * Every DeFi token carries "smart contract exploit risk" and many carry an
+ * "exploit history (fully recovered)". Neither invalidates a score. Only a
+ * current impaired state does, so the patterns match the state and not the
+ * hazard. Matching the bare noun wrongly excluded CETUS, INV and FARM.
+ */
+function isImpaired(token) {
+  if (!token) throw new Error("isImpaired: token required");
+  const text = `${token.one_liner ?? ""} ${token.key_risk ?? ""}`;
+  if (text.length === 0) return false;
+  for (let i = 0; i < IMPAIRED.length && i < 20; i += 1) {
+    if (IMPAIRED[i].test(text)) return true;
+  }
+  return false;
+}
+
+/** Share of the 25 variables sitting on 4 or 5, the no-information band. */
+function midBandFraction(token) {
+  if (!token || !Array.isArray(token.variables)) throw new Error("midBandFraction: bad token");
+  if (token.variables.length === 0) return 1;
+  let mid = 0;
+  for (let i = 0; i < token.variables.length && i < 60; i += 1) {
+    const v = token.variables[i].value;
+    if (v === 4 || v === 5) mid += 1;
+  }
+  return mid / token.variables.length;
+}
+
+/** True when the vector carries too little signal to rank against researched peers. */
+function isLowConfidence(token) {
+  if (!token) throw new Error("isLowConfidence: token required");
+  return midBandFraction(token) >= LOW_CONFIDENCE_FRACTION;
+}
+
+/** Score for one variable key, or 0 when the token is not scored on it. */
+function scoreOf(token, key) {
+  if (!token || !Array.isArray(token.variables)) throw new Error("scoreOf: bad token");
+  const found = token.variables.find((v) => v.key === key);
+  return found === undefined ? 0 : found.value;
+}
+
+/**
+ * The published screens. Each is a filter a reader could state as a question,
+ * with thresholds chosen so the result is a real shortlist rather than a list
+ * of everything or a list of nothing.
+ */
+const SCREENS = [
+  { slug: "real-revenue-cheap", name: "Real revenue, cheap multiple",
+    test: (t) => scoreOf(t, "protocol_revenue") >= 6 && scoreOf(t, "ps_multiple") >= 6 },
+  { slug: "no-vesting-overhang", name: "No vesting overhang left",
+    test: (t) => scoreOf(t, "circ_fdv_ratio") >= 9 && scoreOf(t, "unlock_schedule") >= 8 },
+  { slug: "buyback-and-burn", name: "Returns cash to holders",
+    test: (t) => scoreOf(t, "buyback_burn") >= 7 },
+  { slug: "real-staking-yield", name: "Staking yield that is not issuance",
+    test: (t) => scoreOf(t, "staking_yield") >= 7 },
+  { slug: "builder-momentum", name: "Builders are still arriving",
+    test: (t) => scoreOf(t, "developer_activity") >= 7 && scoreOf(t, "ecosystem_growth") >= 7 },
+  { slug: "cash-generating", name: "Revenue that is still growing",
+    test: (t) => scoreOf(t, "protocol_revenue") >= 7 && scoreOf(t, "revenue_trend") >= 6 },
+  { slug: "moat-and-share", name: "Leads its category and can defend it",
+    test: (t) => scoreOf(t, "competitive_moat") >= 7 && scoreOf(t, "market_share") >= 7 },
+  { slug: "regulatory-safe-harbour", name: "Least exposed to regulation",
+    test: (t) => scoreOf(t, "regulatory_safety") >= 8 },
+  { slug: "survivors-deep-drawdown", name: "Down hard, still scoring well",
+    test: (t) => t.drawdown.distance_pct !== null && t.drawdown.distance_pct <= -85 && t.score >= 110 },
+  { slug: "small-cap-quality", name: "Small caps that clear the framework",
+    test: (t) => t.market && Number.isFinite(t.market.market_cap) &&
+      t.market.market_cap > 0 && t.market.market_cap < 5e8 && t.score >= 120 },
+];
+
+const MIN_SCREEN_MEMBERS = 8;
+const MAX_SCREENS = 40;
+
+/** One row on a screen page. Narrow on purpose, these files ship to the browser. */
+function screenRow(token) {
+  return {
+    symbol: token.symbol, slug: token.slug, name: token.name,
+    score: token.score, rank_overall: token.rank_overall,
+    verdict: token.verdict, verdict_color: token.verdict_color,
+    one_liner: token.one_liner, chain: token.chain,
+    market_cap: token.market ? token.market.market_cap : null,
+    market_cap_rank: token.market ? token.market.market_cap_rank : null,
+    dilution_x: token.dilution.dilution_x,
+    drawdown_pct: token.drawdown.distance_pct,
+    impaired: isImpaired(token),
+  };
+}
+
+/** Builds every screen that clears the minimum member count. */
+function buildScreens(tokens, eligible) {
+  if (!Array.isArray(tokens) || tokens.length === 0) throw new Error("buildScreens: tokens required");
+  if (!Array.isArray(eligible)) throw new Error("buildScreens: eligible required");
+  const out = [];
+  for (let i = 0; i < SCREENS.length && i < MAX_SCREENS; i += 1) {
+    const spec = SCREENS[i];
+    const members = eligible.filter(spec.test).sort((a, b) => b.score - a.score).map(screenRow);
+    if (members.length < MIN_SCREEN_MEMBERS) continue;
+    const scores = members.map((m) => m.score);
+    out.push({
+      slug: spec.slug, name: spec.name, count: members.length,
+      universe: tokens.length,
+      median_score: medianOf(scores), top_score: scores[0],
+      bottom_score: scores[scores.length - 1],
+      impaired_count: 0,
+      members,
+    });
+  }
+  return out;
+}
+
+/**
+ * A raw rank gap is not comparable across bands, because a 109-member band
+ * allows a gap of 108 and a 28-member band allows 27. The gap is therefore
+ * expressed in percentile points of its own band, and this is the threshold in
+ * those points.
+ */
+const MISPRICE_MIN_GAP = 25;
+const MISPRICE_LIST = 30;
+/** Below this a band has too few members for a rank gap to mean anything. */
+const MIN_BAND_SIZE = 12;
+/**
+ * A vector sitting mostly on 4 and 5 is what an analyst produces with no
+ * information, not a measurement. WOO scores 4 or 5 on all 25 variables and
+ * still reaches 118 and rank 75. Ranking those against researched tokens turns
+ * missing research into a buy signal, so they are held out of the mispricing
+ * ranking and the count is disclosed on the page.
+ */
+const LOW_CONFIDENCE_FRACTION = 0.7;
+
+/**
+ * Ranks tokens on fundamentals and on market capitalisation INSIDE each size
+ * band, then reports the gap.
+ *
+ * Ranking across the whole universe does not work and the numbers say why. A
+ * composite runs 0 to 250 while market capitalisation spans five orders of
+ * magnitude, so a small token that scores decently always ranks far higher on
+ * fundamentals than on size. Measured globally the "underpriced" list came out
+ * entirely below $100M with a median of $14.7M, and the "overpriced" list had a
+ * median of $211.7M. That is a restatement of size, not a mispricing.
+ *
+ * Inside a band it works, because score and capitalisation are uncorrelated
+ * there (rho -0.11 to 0.03). Comparing like with like is what makes the gap
+ * mean anything.
+ */
+function buildMispricing(tokens, tiers) {
+  if (!Array.isArray(tokens)) throw new Error("buildMispricing: tokens required");
+  if (!Array.isArray(tiers) || tiers.length === 0) throw new Error("buildMispricing: tiers required");
+
+  const ranked = tokens.filter((t) => !isLowConfidence(t));
+  const bySymbol = new Map(ranked.map((t) => [t.symbol, t]));
+  const under = [];
+  const over = [];
+  const excluded = [];
+  const lowConfidence = tokens.filter(isLowConfidence).map((t) => t.symbol);
+  let covered = 0;
+
+  for (let i = 0; i < tiers.length && i < MAX_TIERS; i += 1) {
+    const tier = tiers[i];
+    const members = tier.members
+      .map((m) => bySymbol.get(m.symbol))
+      .filter((t) => t && t.market && Number.isFinite(t.market.market_cap) && t.market.market_cap > 0);
+    if (members.length < MIN_BAND_SIZE) continue;
+    covered += members.length;
+
+    const byScore = [...members].sort((a, b) => b.score - a.score);
+    const scoreRank = new Map(byScore.map((t, n) => [t.symbol, n + 1]));
+    const byCap = [...members].sort((a, b) => b.market.market_cap - a.market.market_cap);
+    const capRank = new Map(byCap.map((t, n) => [t.symbol, n + 1]));
+
+    for (let k = 0; k < members.length && k < MAX_TOKENS; k += 1) {
+      const t = members[k];
+      const row = {
+        ...screenRow(t),
+        band: tier.name,
+        band_slug: tier.slug,
+        band_size: members.length,
+        fundamental_rank: scoreRank.get(t.symbol),
+        cap_rank: capRank.get(t.symbol),
+        rank_gap: capRank.get(t.symbol) - scoreRank.get(t.symbol),
+        gap: Math.round(
+          ((capRank.get(t.symbol) - scoreRank.get(t.symbol)) / members.length) * 100,
+        ),
+      };
+      if (row.gap >= MISPRICE_MIN_GAP) {
+        if (row.impaired) excluded.push(t.symbol);
+        else under.push(row);
+      } else if (row.gap <= -MISPRICE_MIN_GAP) {
+        over.push(row);
+      }
+    }
+  }
+
+  under.sort((a, b) => b.gap - a.gap || b.score - a.score);
+  over.sort((a, b) => a.gap - b.gap || a.score - b.score);
+
+  return {
+    method: "within size band",
+    universe: covered,
+    bands: tiers.length,
+    min_gap: MISPRICE_MIN_GAP,
+    excluded_impaired: excluded,
+    excluded_low_confidence: lowConfidence.length,
+    underpriced_total: under.length,
+    overpriced_total: over.length,
+    underpriced: under.slice(0, MISPRICE_LIST),
+    overpriced: over.slice(0, MISPRICE_LIST),
+  };
+}
+
 // ---- Main -----------------------------------------------------------------
 
 function main() {
@@ -463,6 +690,26 @@ function main() {
 
   const pairs = buildPairs(tokens);
   const tiers = buildTiers(tokens);
+  // A screen is a shortlist, so a row has to be a live, distinct, tradeable
+  // asset. Three filters, each of which the audit proved necessary:
+  //   impaired   DRIFT passed five screens while offline with no revenue.
+  //   no market  MKR and FTM are retired tickers with no live capitalisation.
+  //   duplicate  POL and MATIC resolve to one CoinGecko id and were counted twice.
+  const seenIds = new Set();
+  const eligible = [];
+  for (let i = 0; i < tokens.length && i < MAX_TOKENS; i += 1) {
+    const t = tokens[i];
+    if (isImpaired(t)) continue;
+    if (!t.market || !Number.isFinite(t.market.market_cap) || t.market.market_cap <= 0) continue;
+    const id = t.market.coingecko_id;
+    if (typeof id === "string" && id.length > 0) {
+      if (seenIds.has(id)) continue;
+      seenIds.add(id);
+    }
+    eligible.push(t);
+  }
+  const screens = buildScreens(tokens, eligible);
+  const mispricing = buildMispricing(eligible, tiers);
 
   const stamp = {
     generated_at: new Date().toISOString(),
@@ -475,6 +722,7 @@ function main() {
   writeFileSync(SIGNALS_OUT, `${JSON.stringify({ ...stamp, signals }, null, 0)}\n`);
   writeFileSync(PAIRS_OUT, `${JSON.stringify({ ...stamp, pairs }, null, 0)}\n`);
   writeFileSync(TIERS_OUT, `${JSON.stringify({ ...stamp, tiers }, null, 0)}\n`);
+  writeFileSync(SCREENS_OUT, `${JSON.stringify({ ...stamp, screens, mispricing }, null, 0)}\n`);
 
   const byReason = pairs.reduce((acc, p) => {
     acc[p.reason] = (acc[p.reason] ?? 0) + 1;
@@ -484,7 +732,9 @@ function main() {
   process.stdout.write(
     `signals ${signals.length} -> ${SIGNALS_OUT}\n` +
       `pairs ${pairs.length} (${Object.entries(byReason).map(([k, v]) => `${k} ${v}`).join(", ")}) -> ${PAIRS_OUT}\n` +
-      `tiers ${tiers.length} (${tiers.map((t) => `${t.slug} ${t.count}`).join(", ")}) -> ${TIERS_OUT}\n`,
+      `tiers ${tiers.length} (${tiers.map((t) => `${t.slug} ${t.count}`).join(", ")}) -> ${TIERS_OUT}\n` +
+      `eligible ${eligible.length} of ${tokens.length} after impaired, no-market and duplicate filters\n` +
+      `screens ${screens.length}, mispricing ${mispricing ? `${mispricing.underpriced_total} under / ${mispricing.overpriced_total} over, excluded ${mispricing.excluded_impaired.join(",") || "none"}` : "n/a"} -> ${SCREENS_OUT}\n`,
   );
 }
 

@@ -169,7 +169,10 @@ function main() {
   }
 
   if (!dry) {
-    scorecard.updated_at = new Date().toISOString();
+    // updated_at is the date the RESEARCH ran and every page prints it. Stamping
+    // it with the correction run made 1,331 pages claim the scoring pass was two
+    // months newer than it was. Corrections get their own field.
+    scorecard.corrections_applied_at = new Date().toISOString();
     writeFileSync(SRC_PATH, `${JSON.stringify(scorecard, null, 1)}\n`);
   }
   process.stdout.write(

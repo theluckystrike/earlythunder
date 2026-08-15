@@ -28,6 +28,8 @@ export const STATIC_PAGES = [
   '/scorecard',
   '/scorecard/signal',
   '/scorecard/compare',
+  '/scorecard/screen',
+  '/scorecard/mispriced',
   '/revenue-distribution',
   '/portfolio',
   '/blog',
@@ -75,6 +77,8 @@ export const PRIORITY_MAP: Readonly<Record<string, number>> = {
   '/scorecard': 0.9,
   '/scorecard/signal': 0.9,
   '/scorecard/compare': 0.9,
+  '/scorecard/screen': 0.9,
+  '/scorecard/mispriced': 0.9,
   '/revenue-distribution': 0.8,
   '/portfolio': 0.9,
   '/blog': 0.7,
@@ -101,5 +105,7 @@ export const SCORECARD_HUB_PRIORITY = 0.8 as const;
 export const SCORECARD_SIGNAL_PRIORITY = 0.8 as const;
 /** Curated head-to-head comparisons. Below the token leaves they draw from. */
 export const SCORECARD_COMPARE_PRIORITY = 0.6 as const;
+/** Screens are shortlists with commercial intent, so they sit with the hubs. */
+export const SCORECARD_SCREEN_PRIORITY = 0.8 as const;
 
 export const AUTHOR_NAME = 'Early Thunder Research' as const;

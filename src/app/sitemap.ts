@@ -13,6 +13,7 @@ import {
   SCORECARD_HUB_PRIORITY,
   SCORECARD_SIGNAL_PRIORITY,
   SCORECARD_COMPARE_PRIORITY,
+  SCORECARD_SCREEN_PRIORITY,
 } from "@/lib/constants";
 import { getAllOpportunities, getAllBlogPosts, getAllGuides } from "@/lib/data";
 import { getAllClarityTopics } from "@/lib/clarity";
@@ -24,6 +25,7 @@ import {
 import { getAllSignals, signalSlug } from "@/lib/scorecard-signals";
 import { getAllPairs } from "@/lib/scorecard-pairs";
 import { getAllTiers } from "@/lib/scorecard-tiers";
+import { getAllScreens } from "@/lib/scorecard-screens";
 
 export const dynamic = "force-static";
 
@@ -112,6 +114,13 @@ function scorecardEntries(passDate: Date): MetadataRoute.Sitemap {
     priority: SCORECARD_HUB_PRIORITY,
   }));
 
+  const screens = getAllScreens().map((screen) => ({
+    url: `${SITE_URL}/scorecard/screen/${screen.slug}`,
+    lastModified: passDate,
+    changeFrequency: "monthly" as const,
+    priority: SCORECARD_SCREEN_PRIORITY,
+  }));
+
   const signals = getAllSignals().map((signal) => ({
     url: `${SITE_URL}/scorecard/signal/${signalSlug(signal.key)}`,
     lastModified: passDate,
@@ -133,7 +142,7 @@ function scorecardEntries(passDate: Date): MetadataRoute.Sitemap {
     priority: SCORECARD_COMPARE_PRIORITY,
   }));
 
-  return [...hubs, ...signals, ...tokens, ...compares];
+  return [...hubs, ...screens, ...signals, ...tokens, ...compares];
 }
 
 /**
