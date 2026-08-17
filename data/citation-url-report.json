@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-14T15:26:54.080Z",
+  "checked_at": "2026-08-17T05:49:42.234Z",
   "total": 743,
-  "ok": 392,
+  "ok": 548,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -52,11 +52,11 @@
       ]
     },
     {
-      "url": "https://www.openpr.com/news/4438643/chainlink-link-classified-as-digital-commodity-under",
-      "status": 410,
-      "source": "BingX / OpenPR",
+      "url": "https://defillama.com/protocol/aerodrome-finance",
+      "status": 404,
+      "source": "DefiLlama",
       "cited_by": [
-        "LINK"
+        "AERO"
       ]
     },
     {
@@ -169,6 +169,14 @@
       "source": "SEC",
       "cited_by": [
         "TON"
+      ]
+    },
+    {
+      "url": "https://defillama.com/protocol/velodrome-finance",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "VELO"
       ]
     },
     {
@@ -316,6 +324,14 @@
       ]
     },
     {
+      "url": "https://www.coingecko.com/en/coins/worldcoin-org",
+      "status": 404,
+      "source": "CoinGecko",
+      "cited_by": [
+        "WLD"
+      ]
+    },
+    {
       "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million",
       "status": 404,
       "source": "World Bank",
@@ -329,6 +345,22 @@
       "source": "CoinDesk",
       "cited_by": [
         "FLOKI"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Manta%20Pacific",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "MANTA"
+      ]
+    },
+    {
+      "url": "https://dune.com/ilemi/solana-memecoins",
+      "status": 404,
+      "source": "Dune Analytics",
+      "cited_by": [
+        "POPCAT"
       ]
     },
     {
@@ -364,6 +396,14 @@
       ]
     },
     {
+      "url": "https://defillama.com/chain/Qtum",
+      "status": 404,
+      "source": "DeFiLlama",
+      "cited_by": [
+        "QTUM"
+      ]
+    },
+    {
       "url": "https://coinmarketcap.com/currencies/memecoin-2",
       "status": 404,
       "source": "CoinMarketCap",
@@ -380,7 +420,7 @@
       ]
     }
   ],
-  "blocked": 283,
+  "blocked": 123,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -391,7 +431,7 @@
     },
     {
       "url": "https://www.vaneck.com/us/en/blogs/digital-assets/matthew-sigel-geodnet-why-were-bullish/",
-      "error": "timeout",
+      "error": "fetch failed",
       "cited_by": [
         "GEOD"
       ]
@@ -435,7 +475,7 @@
     },
     {
       "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/",
-      "error": "timeout",
+      "error": "fetch failed",
       "cited_by": [
         "AVAX"
       ]
@@ -466,6 +506,13 @@
       "error": "timeout",
       "cited_by": [
         "MOBILE"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/litigation/complaints",
+      "error": "fetch failed",
+      "cited_by": [
+        "ATOM"
       ]
     }
   ]

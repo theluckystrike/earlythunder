@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-16T08:56:42.989Z",
+  "generated_at": "2026-08-17T05:49:42.355Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "citation_links": {
-    "checked_at": "2026-08-14T15:26:54.080Z",
-    "dead_count": 47
+    "checked_at": "2026-08-17T05:49:42.234Z",
+    "dead_count": 52
   },
   "market_data": {
     "source": "CoinGecko",
@@ -5502,7 +5502,7 @@
           "claim": "SEC-CFTC joint interpretation: LINK classified as digital commodity (Mar 17, 2026)",
           "source": "BingX / OpenPR",
           "url": "https://www.openpr.com/news/4438643/chainlink-link-classified-as-digital-commodity-under",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "LayerZero $292M KelpDAO exploit → $4B+ migrated to CCIP (Kraken, Solv, Lombard)",
@@ -7529,7 +7529,7 @@
           "claim": "Aerodrome generated over $1M in daily fees at peak, dominant on Base chain with ~60% DEX market share",
           "source": "DefiLlama",
           "url": "https://defillama.com/protocol/aerodrome-finance",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "VeAERO locking mechanism reduces circulating supply pressure; TVL consistently above $800M in Q1 2026",
@@ -28054,7 +28054,7 @@
           "claim": "Velodrome TVL dropped from $500M+ peak to ~$180M as Aerodrome captured Base chain volume",
           "source": "DefiLlama",
           "url": "https://defillama.com/protocol/velodrome-finance",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Velodrome V3 with concentrated liquidity announced for 2025-2026, key catalyst for TVL recovery",
@@ -80281,7 +80281,7 @@
           "claim": "WLD circulating supply is only ~17% of total with massive team/foundation releases through 2028",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/worldcoin-org",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "EU regulators and South Korea suspended Worldcoin data collection over GDPR biometric data concerns",
@@ -92082,7 +92082,7 @@
           "claim": "Manta Network TVL declined from $800M+ peak during new model farming to under $25M by 2026",
           "source": "DefiLlama",
           "url": "https://defillama.com/chain/Manta%20Pacific",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "MANTA down 97%+ from ATH as liquidity mining incentives dried up and genuine users didn't materialize",
@@ -95310,7 +95310,7 @@
           "claim": "Solana memecoin trading volume collapsed 80%+ from Nov 2024 peak by Q2 2025",
           "source": "Dune Analytics",
           "url": "https://dune.com/ilemi/solana-memecoins",
-          "link_ok": true
+          "link_ok": false
         }
       ],
       "neighbours": [
@@ -100185,7 +100185,7 @@
           "claim": "Qtum TVL under $1M, among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Qtum GitHub activity near zero; no major protocol updates since 2022",
