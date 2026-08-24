@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-17T05:49:42.234Z",
+  "checked_at": "2026-08-24T05:53:43.575Z",
   "total": 743,
-  "ok": 548,
+  "ok": 523,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -25,6 +25,14 @@
       "source": "Lido Integrations",
       "cited_by": [
         "WSTETH"
+      ]
+    },
+    {
+      "url": "https://bloomberg.com/crypto/bitcoin-etf",
+      "status": 404,
+      "source": "Bloomberg",
+      "cited_by": [
+        "BTC"
       ]
     },
     {
@@ -100,6 +108,14 @@
       ]
     },
     {
+      "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html",
+      "status": 404,
+      "source": "CME Group",
+      "cited_by": [
+        "AVAX"
+      ]
+    },
+    {
       "url": "https://docs.raydium.io/raydium/protocol/the-ray-token/ray-buybacks",
       "status": 404,
       "source": "Raydium Docs",
@@ -172,19 +188,11 @@
       ]
     },
     {
-      "url": "https://defillama.com/protocol/velodrome-finance",
+      "url": "https://bloomberg.com/xrp-etf",
       "status": 404,
-      "source": "DefiLlama",
+      "source": "Bloomberg ETF",
       "cited_by": [
-        "VELO"
-      ]
-    },
-    {
-      "url": "https://www.immutable.com/blog/immutable-polygon-zkEVM",
-      "status": 404,
-      "source": "Immutable Blog",
-      "cited_by": [
-        "IMX"
+        "XRP"
       ]
     },
     {
@@ -241,14 +249,6 @@
       "source": "Parity Technologies",
       "cited_by": [
         "DOT"
-      ]
-    },
-    {
-      "url": "https://www.coindesk.com/policy/2023/09/zcash-delistings",
-      "status": 404,
-      "source": "Coindesk",
-      "cited_by": [
-        "ZEC"
       ]
     },
     {
@@ -340,14 +340,6 @@
       ]
     },
     {
-      "url": "https://www.coindesk.com/markets/2025/floki-etf-asia",
-      "status": 404,
-      "source": "CoinDesk",
-      "cited_by": [
-        "FLOKI"
-      ]
-    },
-    {
       "url": "https://defillama.com/chain/Manta%20Pacific",
       "status": 404,
       "source": "DefiLlama",
@@ -380,22 +372,6 @@
       ]
     },
     {
-      "url": "https://www.coindesk.com/tech/2022/10/07/decentralands-metaverse-reportedly-has-only-38-active-users-in-24-hours",
-      "status": 404,
-      "source": "CoinDesk",
-      "cited_by": [
-        "MANA"
-      ]
-    },
-    {
-      "url": "https://www.coindesk.com/business/2022/01/27/0xsifu-is-michael-patryn-co-founder-of-collapsed-crypto-exchange-quadrigacx",
-      "status": 404,
-      "source": "CoinDesk",
-      "cited_by": [
-        "SPELL"
-      ]
-    },
-    {
       "url": "https://defillama.com/chain/Qtum",
       "status": 404,
       "source": "DeFiLlama",
@@ -410,17 +386,9 @@
       "cited_by": [
         "MEME"
       ]
-    },
-    {
-      "url": "https://www.coindesk.com/business/2023/05/05/gala-games-co-founder-sues-partner-over-130m-in-stolen-tokens",
-      "status": 404,
-      "source": "CoinDesk",
-      "cited_by": [
-        "GALA"
-      ]
     }
   ],
-  "blocked": 123,
+  "blocked": 152,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",

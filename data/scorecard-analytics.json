@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T08:58:06.998Z",
+  "generated_at": "2026-08-24T05:53:43.699Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "citation_links": {
-    "checked_at": "2026-08-17T05:49:42.234Z",
-    "dead_count": 52
+    "checked_at": "2026-08-24T05:53:43.575Z",
+    "dead_count": 48
   },
   "market_data": {
     "source": "CoinGecko",
@@ -2303,7 +2303,7 @@
           "claim": "Bitcoin spot ETF AUM peaked at $169.5B in October 2025 and fell to about $77.6B by June 2026",
           "source": "Bloomberg",
           "url": "https://bloomberg.com/crypto/bitcoin-etf",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Mining reward halved to 3.125 BTC per block in April 2024",
@@ -16183,7 +16183,7 @@
           "claim": "CME AVAX futures launched May 4-5, 2026; 24/7 trading from May 29",
           "source": "CME Group",
           "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "100% of tx fees (base+priority) burned; validators paid only from staking emissions",
@@ -27672,7 +27672,7 @@
           "claim": "Spot XRP ETFs began trading in the US from 13 November 2025, with about seven funds now live",
           "source": "Bloomberg ETF",
           "url": "https://bloomberg.com/xrp-etf",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "The first US spot XRP ETF opened for trade in November 2025",
@@ -28054,7 +28054,7 @@
           "claim": "Velodrome TVL dropped from $500M+ peak to ~$180M as Aerodrome captured Base chain volume",
           "source": "DefiLlama",
           "url": "https://defillama.com/protocol/velodrome-finance",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "Velodrome V3 with concentrated liquidity announced for 2025-2026, key catalyst for TVL recovery",
@@ -32739,7 +32739,7 @@
           "claim": "Immutable partnered with Polygon for zkEVM technology, gaining ZK-proof security for gaming transactions",
           "source": "Immutable Blog",
           "url": "https://www.immutable.com/blog/immutable-polygon-zkEVM",
-          "link_ok": false
+          "link_ok": true
         }
       ],
       "neighbours": [
@@ -56354,7 +56354,7 @@
           "claim": "Multiple exchanges including Binance delisted ZEC in various regions due to regulatory pressure on privacy coins",
           "source": "Coindesk",
           "url": "https://www.coindesk.com/policy/2023/09/zcash-delistings",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "Zcash shielded supply growth",
@@ -81932,7 +81932,7 @@
           "claim": "FLOKI filed for ETF products with regulators in multiple Asian jurisdictions in 2025",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2025/floki-etf-asia",
-          "link_ok": false
+          "link_ok": true
         }
       ],
       "neighbours": [
@@ -98534,7 +98534,7 @@
           "claim": "Decentraland's peak concurrent user count in 2025 estimated at 300-800 users despite $165M market cap",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2022/10/07/decentralands-metaverse-reportedly-has-only-38-active-users-in-24-hours",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "MANA down 98.5% from ATH of $5.85 set November 2021; Decentraland DAO controls large MANA treasury",
@@ -99347,7 +99347,7 @@
           "claim": "Wonderland DAO (TIME/MEM) CFO exposed as 0xSifu (Michael Patryn, QuadrigaCX co-founder) in Jan 2022, triggering SPELL collapse",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2022/01/27/0xsifu-is-michael-patryn-co-founder-of-collapsed-crypto-exchange-quadrigacx",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "SPELL token is down 99.5% from ATH; Abracadabra TVL fell from $5B+ to ~$85M",
@@ -101848,7 +101848,7 @@
           "claim": "Gala Games co-founder Eric Schiermeyer sued Wright Thurston for unauthorized minting of $130M worth of GALA tokens in 2023",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2023/05/05/gala-games-co-founder-sues-partner-over-130m-in-stolen-tokens",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "GALA is down 99.6% from ATH of $0.8367; only 32% of total supply is circulating with massive future dilution",
