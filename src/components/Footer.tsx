@@ -44,6 +44,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
     links: [
       { href: "/research/", label: "Library" },
       { href: "/guides", label: "Guides" },
+      { href: "/crypto-profit-calculator", label: "Profit calculator" },
       { href: "/blog", label: "Blog" },
       { href: "/graveyard", label: "Graveyard" },
       { href: "/performance", label: "Performance" },

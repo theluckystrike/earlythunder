@@ -1,6 +1,7 @@
 // NASA Power of 10 gate for the CLARITY Act code. Run:
 //   npx eslint --no-config-lookup --config qa/eslint-nasa.mjs <paths>
 import tsparser from "@typescript-eslint/parser";
+import nextPlugin from "@next/eslint-plugin-next";
 
 // SCOPE. The function-length rule targets control-flow complexity, which is a
 // property of logic, not of markup. A React render function is one declarative
@@ -9,9 +10,9 @@ import tsparser from "@typescript-eslint/parser";
 // and always have. Logic files carry the rule at full strength and sit at zero.
 // Every other rule below applies to both.
 const LOGIC = ["src/lib/**/*.ts", "scripts/**/*.mjs", "src/app/**/*.ts"];
-const MARKUP = ["src/app/**/*.tsx", "src/components/**/*.tsx"];
+const MARKUP = ["src/app/**/*.tsx", "src/components/**/*.{tsx,jsx}"];
 
-export default [
+const nasaConfig = [
   {
     files: LOGIC,
     languageOptions: {
@@ -31,6 +32,7 @@ export default [
   },
   {
     files: MARKUP,
+    plugins: { "@next/next": nextPlugin },
     languageOptions: {
       parser: tsparser,
       parserOptions: { ecmaVersion: "latest", sourceType: "module", ecmaFeatures: { jsx: true } },
@@ -46,3 +48,5 @@ export default [
     },
   },
 ];
+
+export default nasaConfig;

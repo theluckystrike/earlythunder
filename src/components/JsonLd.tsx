@@ -18,7 +18,7 @@ export default function JsonLd({ data }: JsonLdProps) {
     return null;
   }
 
-  const jsonString = JSON.stringify(data);
+  const jsonString = JSON.stringify(data).replace(/</g, "\\u003c");
 
   if (jsonString.length > MAX_JSON_LENGTH) {
     console.warn("JSON-LD data exceeds maximum length; skipping render.");

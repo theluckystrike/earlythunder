@@ -119,8 +119,17 @@ function RelatedResourcesSection() {
       <h3 className="text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
         Also Explore
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <a
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <Link
+          href="/crypto-profit-calculator"
+          className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
+        >
+          Crypto Profit Calculator
+          <span className="block mt-1 font-normal text-text-secondary">
+            Fee-aware returns and drawdown recovery math
+          </span>
+        </Link>
+        <Link
           href="/scorecard"
           className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
@@ -128,17 +137,17 @@ function RelatedResourcesSection() {
           <span className="block mt-1 font-normal text-text-secondary">
             25-variable scoring framework results
           </span>
-        </a>
+        </Link>
         <a
           href="/research/"
           className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
           Research Library
           <span className="block mt-1 font-normal text-text-secondary">
-            analysis analysis and data reports
+            Analysis and data reports
           </span>
         </a>
-        <a
+        <Link
           href="/blog"
           className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
         >
@@ -146,7 +155,7 @@ function RelatedResourcesSection() {
           <span className="block mt-1 font-normal text-text-secondary">
             Research notes and methodology updates
           </span>
-        </a>
+        </Link>
       </div>
     </section>
   );

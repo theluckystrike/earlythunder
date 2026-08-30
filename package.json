@@ -7,7 +7,9 @@
     "prebuild": "node scripts/build-x402-payloads.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "tsx --test test/*.test.ts",
+    "nasa": "eslint --no-config-lookup --config qa/eslint-nasa.mjs src/app/crypto-profit-calculator/page.tsx src/components/CryptoProfitCalculator.tsx src/lib/bitcoin-snapshot.ts src/lib/crypto-calculator.ts"
   },
   "dependencies": {
     "@solana/kit": "^7.0.0",
@@ -18,10 +20,9 @@
     "@x402/hono": "^2.18.0",
     "@x402/svm": "^2.18.0",
     "hono": "^4.12.30",
-    "next": "16.2.3",
+    "next": "16.3.3",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "x402-fetch": "^1.2.0"
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -29,8 +30,9 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.3",
+    "eslint-config-next": "16.3.3",
     "tailwindcss": "^4",
+    "tsx": "4.23.13",
     "typescript": "^5"
   }
 }

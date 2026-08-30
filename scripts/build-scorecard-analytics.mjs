@@ -30,7 +30,6 @@ const OUT_PATH = join(REPO, "data", "scorecard-analytics.json");
 const MAX_TOKENS = 2000; // hard ceiling on universe size
 const NEIGHBOUR_COUNT = 6; // similar-profile tokens surfaced per page
 const HIGHLIGHT_COUNT = 4; // strengths / weaknesses surfaced per page
-const PEER_COUNT = 8; // verdict + chain peers surfaced per page
 const MIN_VAR_SCORE = 1;
 const MAX_VAR_SCORE = 10;
 const STRENGTH_PCTL = 70; // percentile above which a variable reads as a strength
@@ -125,13 +124,23 @@ function mean(values) {
 
 // ---- Loading and validation ----------------------------------------------
 
+function parseJson(raw, label) {
+  if (typeof raw !== "string" || raw.length === 0) throw new Error(`${label} file is empty`);
+  try {
+    return JSON.parse(raw);
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : "unknown parse error";
+    throw new Error(`${label} contains invalid JSON: ${reason}`, { cause: error });
+  }
+}
+
 /** Reads and shape-checks the source scorecard. Throws on malformed input. */
 function loadScorecard() {
   const raw = readFileSync(SRC_PATH, "utf8");
   if (typeof raw !== "string" || raw.length === 0) {
     throw new Error("scorecard file empty");
   }
-  const parsed = JSON.parse(raw);
+  const parsed = parseJson(raw, "scorecard");
   if (!parsed || !Array.isArray(parsed.tokens)) {
     throw new Error("scorecard.tokens is not an array");
   }
@@ -147,7 +156,7 @@ function loadOpportunityLinks() {
   if (typeof raw !== "string" || raw.length === 0) {
     throw new Error("opportunities file empty");
   }
-  const parsed = JSON.parse(raw);
+  const parsed = parseJson(raw, "opportunities");
   if (!Array.isArray(parsed)) throw new Error("opportunities is not an array");
   const map = Object.create(null);
   for (let i = 0; i < parsed.length && i < MAX_TOKENS * 2; i += 1) {
@@ -177,7 +186,7 @@ function loadOpportunityLinks() {
 function loadMarket() {
   const raw = readFileSync(MARKET_PATH, "utf8");
   if (typeof raw !== "string" || raw.length === 0) throw new Error("market file empty");
-  const parsed = JSON.parse(raw);
+  const parsed = parseJson(raw, "market");
   if (!parsed || typeof parsed.tokens !== "object" || parsed.tokens === null) {
     throw new Error("market.tokens missing");
   }
@@ -198,7 +207,7 @@ function loadDeadUrls() {
     return { dead: new Set(), checked_at: null };
   }
   if (typeof raw !== "string" || raw.length === 0) return { dead: new Set(), checked_at: null };
-  const parsed = JSON.parse(raw);
+  const parsed = parseJson(raw, "citation link report");
   if (!parsed || !Array.isArray(parsed.dead)) return { dead: new Set(), checked_at: null };
   const dead = new Set();
   for (let i = 0; i < parsed.dead.length && i < MAX_TOKENS * 10; i += 1) {

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /* ─── Types ─── */
 
 interface ToolsBentoProps {
@@ -223,6 +225,11 @@ export default function ToolsShowcase({
         <ToolCard tool={tools[3]}>
           <MiniResearch rows={topResearch} />
         </ToolCard>
+      </div>
+      <div className="mt-5 flex justify-end">
+        <Link href="/crypto-profit-calculator" className="ghost-btn">
+          Open crypto profit calculator <span className="arr">&rarr;</span>
+        </Link>
       </div>
     </section>
   );

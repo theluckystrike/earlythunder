@@ -12,7 +12,6 @@ const TITLE = "Where the market and the fundamentals disagree";
 
 export function generateMetadata(): Metadata {
   const m = getMispricing();
-  const meta = getScreensMeta();
   if (m === null) return { title: "Mispricing" };
   const top = m.underpriced.slice(0, 3).map((r) => r.symbol).join(", ");
   const description =

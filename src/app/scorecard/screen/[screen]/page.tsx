@@ -69,7 +69,6 @@ export default async function ScreenPage({ params }: PageParams) {
 
   const meta = getScreensMeta();
   const copy = getScreenCopy(screen.slug);
-  const url = `${SITE_URL}/scorecard/screen/${screen.slug}`;
   const passRate = Math.round((screen.count / screen.universe) * 100);
   const withCap = members.filter((m) => m.market_cap !== null);
   const smallest = withCap.length > 0 ? withCap[withCap.length - 1] : null;

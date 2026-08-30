@@ -114,7 +114,6 @@ const HUB_FAQS = [
   },
 ];
 
-type Meta = ReturnType<typeof getClarityMeta>;
 type Bill = ReturnType<typeof getClarityBill>;
 type Calendar = ReturnType<typeof getClarityCalendar>;
 

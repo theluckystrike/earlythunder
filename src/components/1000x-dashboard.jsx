@@ -772,17 +772,18 @@ function Dashboard1000x(props) {
   });
   var loading = loadingState[0];
   var setLoading = loadingState[1];
+  var sampleData = props && props.sampleData;
 
   // If sample data is injected via props, use it directly
   React.useEffect(function() {
-    if (props && props.sampleData) {
-      setData(props.sampleData);
+    if (sampleData) {
+      setData(sampleData);
       setLoading({ discovery: false, vc: false, dev: false, contracts: false, alpha: false });
       return;
     }
     // Otherwise attempt to load from /data/ endpoints
     loadAllData(setData, setLoading);
-  }, []);
+  }, [sampleData, setData, setLoading]);
 
   return React.createElement('div', {
     style: {

@@ -126,10 +126,9 @@ function ConvictionLadder({
 /* ─── RegimeStrip ─── */
 
 function RegimeStrip({
-  totalOpportunities,
   nearestDeadline,
   topYield,
-}: RegimeStripProps) {
+}: Omit<RegimeStripProps, "totalOpportunities">) {
   return (
     <div className="regime">
       <div className="regime__item">
@@ -201,7 +200,6 @@ function HeroLeft({
       </div>
 
       <RegimeStrip
-        totalOpportunities={totalOpportunities}
         nearestDeadline={nearestDeadline}
         topYield={topYield}
       />

@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { Opportunity } from "@/lib/types";
-import { getAssetClassLabel, formatPrice, formatMarketCap, formatVolume } from "@/lib/format";
+import { formatPrice, formatMarketCap, formatVolume } from "@/lib/format";
 import TierBadge from "./TierBadge";
 import FilterBar, { type FilterState } from "./FilterBar";
 
@@ -20,13 +20,14 @@ const DEFAULT_FILTERS: FilterState = {
 };
 
 const MAX_DISPLAY = 200;
+const EMPTY_OPPORTUNITIES: readonly Opportunity[] = [];
 
 /** Filterable, sortable table of all opportunities. */
 export default function OpportunityTable({
   opportunities,
 }: OpportunityTableProps) {
   const [filters, setFilters] = useState<FilterState>(DEFAULT_FILTERS);
-  const safeOpportunities = Array.isArray(opportunities) ? opportunities : [];
+  const safeOpportunities = Array.isArray(opportunities) ? opportunities : EMPTY_OPPORTUNITIES;
   const filtered = useFilteredOpportunities(safeOpportunities, filters);
 
   const hasMarketData = useMemo(

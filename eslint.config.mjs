@@ -5,6 +5,12 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  {
+    // The App Router root layout owns these site-wide font links. The rule only
+    // understands the legacy pages/_document location.
+    files: ["src/app/layout.tsx"],
+    rules: { "@next/next/no-page-custom-font": "off" },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:

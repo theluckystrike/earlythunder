@@ -18,6 +18,8 @@ import CoverageMap from "@/components/landing/CoverageMap";
 import CategoryRow from "@/components/landing/CategoryRow";
 import NewsletterCTA from "@/components/landing/NewsletterCTA";
 
+const BUILD_NOW_MS = Date.now();
+
 /** Normalize raw deadline JSON entries to the Deadline shape (null, not undefined). */
 function normalizeDeadlines(raw: typeof deadlinesData) {
   return raw.map((d) => ({
@@ -40,7 +42,7 @@ function wordCount(content: string): string {
 /** Format a deadline's time remaining as a short string. */
 function formatDaysLeft(d: { end_date: string | null; estimated_end?: string | null }): string {
   if (d.end_date) {
-    const days = Math.max(0, Math.ceil((new Date(d.end_date).getTime() - Date.now()) / 86400000));
+    const days = Math.max(0, Math.ceil((new Date(d.end_date).getTime() - BUILD_NOW_MS) / 86400000));
     return `${days}d left`;
   }
   if (d.estimated_end) return String(d.estimated_end);
@@ -149,7 +151,7 @@ export default function HomePage() {
         nearestDeadline={{
           protocol: nearestDeadline?.protocol || "-",
           daysLeft: nearestDeadline?.end_date
-            ? Math.max(0, Math.ceil((new Date(nearestDeadline.end_date).getTime() - Date.now()) / 86400000))
+            ? Math.max(0, Math.ceil((new Date(nearestDeadline.end_date).getTime() - BUILD_NOW_MS) / 86400000))
             : 15,
         }}
         topYield={{ name: topYield.name, value: `${topYield.earnings_yield_pct.toLocaleString()}%` }}
