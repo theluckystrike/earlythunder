@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-30T13:55:02.791Z",
+  "generated_at": "2026-08-31T11:36:11.727Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "citation_links": {
-    "checked_at": "2026-08-24T05:53:43.575Z",
-    "dead_count": 48
+    "checked_at": "2026-08-31T11:36:11.584Z",
+    "dead_count": 43
   },
   "market_data": {
     "source": "CoinGecko",
@@ -2303,7 +2303,7 @@
           "claim": "Bitcoin spot ETF AUM peaked at $169.5B in October 2025 and fell to about $77.6B by June 2026",
           "source": "Bloomberg",
           "url": "https://bloomberg.com/crypto/bitcoin-etf",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "Mining reward halved to 3.125 BTC per block in April 2024",
@@ -16184,7 +16184,7 @@
           "claim": "CME AVAX futures launched May 4-5, 2026; 24/7 trading from May 29",
           "source": "CME Group",
           "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "100% of tx fees (base+priority) burned; validators paid only from staking emissions",
@@ -27673,7 +27673,7 @@
           "claim": "Spot XRP ETFs began trading in the US from 13 November 2025, with about seven funds now live",
           "source": "Bloomberg ETF",
           "url": "https://bloomberg.com/xrp-etf",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "The first US spot XRP ETF opened for trade in November 2025",
@@ -28055,7 +28055,7 @@
           "claim": "Velodrome TVL dropped from $500M+ peak to ~$180M as Aerodrome captured Base chain volume",
           "source": "DefiLlama",
           "url": "https://defillama.com/protocol/velodrome-finance",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Velodrome V3 with concentrated liquidity announced for 2025-2026, key catalyst for TVL recovery",
@@ -80282,7 +80282,7 @@
           "claim": "WLD circulating supply is only ~17% of total with massive team/foundation releases through 2028",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/worldcoin-org",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "EU regulators and South Korea suspended Worldcoin data collection over GDPR biometric data concerns",
@@ -92083,7 +92083,7 @@
           "claim": "Manta Network TVL declined from $800M+ peak during new model farming to under $25M by 2026",
           "source": "DefiLlama",
           "url": "https://defillama.com/chain/Manta%20Pacific",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "MANTA down 97%+ from ATH as liquidity mining incentives dried up and genuine users didn't materialize",
@@ -100186,7 +100186,7 @@
           "claim": "Qtum TVL under $1M, among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "Qtum GitHub activity near zero; no major protocol updates since 2022",
