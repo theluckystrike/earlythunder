@@ -2,6 +2,7 @@ import { getActiveOpportunities, getAllBlogPosts } from "@/lib/data";
 import deadlinesData from "../../data/deadlines.json";
 import earningsData from "../../data/earnings-top.json";
 
+import WorkbenchCTA from "@/components/WorkbenchCTA";
 import HeroSection from "@/components/landing/HeroSection";
 import TickerStrip from "@/components/landing/TickerStrip";
 import NumbersStrip from "@/components/landing/NumbersStrip";
@@ -158,6 +159,7 @@ export default function HomePage() {
       />
       <TickerStrip items={tickerItems} />
       <NumbersStrip stats={stats} />
+      <WorkbenchCTA placement="homepage" />
       <ClarityActSection />
       <ToolsShowcase
         topScores={topScores}

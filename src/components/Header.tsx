@@ -13,11 +13,12 @@ const PRIMARY_NAV = [
   { href: "/clarity-act", label: "CLARITY", isNextRoute: true },
   { href: "/scorecard", label: "Scorecard", isNextRoute: true },
   { href: "/portfolio", label: "Portfolio", isNextRoute: true },
-  { href: "/about", label: "About", isNextRoute: true },
+  { href: "https://workbench.earlythunder.com/workbench/", label: "Workbench", isNextRoute: false },
 ] as const;
 
 /** Secondary nav: shown only in mobile menu below a divider */
 const SECONDARY_NAV = [
+  { href: "/about", label: "About", isNextRoute: true },
   { href: "/guides", label: "Guides", isNextRoute: true },
   { href: "/methodology", label: "Methodology", isNextRoute: true },
   { href: "/how-it-works", label: "How It Works", isNextRoute: true },
@@ -134,8 +135,8 @@ function CtaGroup() {
       <Link href="/pricing" className="ghost-btn nav__signin">
         Sign in
       </Link>
-      <a href="/intelligence/" className="primary-btn">
-        Open Terminal {"\u2192"}
+      <a href="https://workbench.earlythunder.com/workbench/?utm_source=earlythunder&amp;utm_medium=website&amp;utm_content=header" className="primary-btn">
+        Get Workbench · $29 {"\u2192"}
       </a>
     </div>
   );
@@ -169,11 +170,11 @@ function MobileNav({ onClose }: { readonly onClose: () => void }) {
 
         {/* Mobile CTA */}
         <a
-          href="/intelligence/"
+          href="https://workbench.earlythunder.com/workbench/?utm_source=earlythunder&amp;utm_medium=website&amp;utm_content=mobile-menu"
           onClick={onClose}
           className="primary-btn nav__mobile-cta"
         >
-          Open Terminal {"\u2192"}
+          Get Workbench · $29 {"\u2192"}
         </a>
       </nav>
     </div>

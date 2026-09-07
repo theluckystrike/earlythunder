@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-24T05:53:43.575Z",
+  "checked_at": "2026-08-31T11:36:11.584Z",
   "total": 743,
-  "ok": 523,
+  "ok": 509,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -25,14 +25,6 @@
       "source": "Lido Integrations",
       "cited_by": [
         "WSTETH"
-      ]
-    },
-    {
-      "url": "https://bloomberg.com/crypto/bitcoin-etf",
-      "status": 404,
-      "source": "Bloomberg",
-      "cited_by": [
-        "BTC"
       ]
     },
     {
@@ -108,14 +100,6 @@
       ]
     },
     {
-      "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html",
-      "status": 404,
-      "source": "CME Group",
-      "cited_by": [
-        "AVAX"
-      ]
-    },
-    {
       "url": "https://docs.raydium.io/raydium/protocol/the-ray-token/ray-buybacks",
       "status": 404,
       "source": "Raydium Docs",
@@ -188,11 +172,11 @@
       ]
     },
     {
-      "url": "https://bloomberg.com/xrp-etf",
+      "url": "https://defillama.com/protocol/velodrome-finance",
       "status": 404,
-      "source": "Bloomberg ETF",
+      "source": "DefiLlama",
       "cited_by": [
-        "XRP"
+        "VELO"
       ]
     },
     {
@@ -324,27 +308,11 @@
       ]
     },
     {
-      "url": "https://www.coingecko.com/en/coins/worldcoin-org",
-      "status": 404,
-      "source": "CoinGecko",
-      "cited_by": [
-        "WLD"
-      ]
-    },
-    {
       "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million",
       "status": 404,
       "source": "World Bank",
       "cited_by": [
         "XTZ"
-      ]
-    },
-    {
-      "url": "https://defillama.com/chain/Manta%20Pacific",
-      "status": 404,
-      "source": "DefiLlama",
-      "cited_by": [
-        "MANTA"
       ]
     },
     {
@@ -372,14 +340,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/chain/Qtum",
-      "status": 404,
-      "source": "DeFiLlama",
-      "cited_by": [
-        "QTUM"
-      ]
-    },
-    {
       "url": "https://coinmarketcap.com/currencies/memecoin-2",
       "status": 404,
       "source": "CoinMarketCap",
@@ -388,7 +348,7 @@
       ]
     }
   ],
-  "blocked": 152,
+  "blocked": 169,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -470,6 +430,13 @@
       ]
     },
     {
+      "url": "https://defillama.com/chain/Osmosis",
+      "error": "timeout",
+      "cited_by": [
+        "OSMO"
+      ]
+    },
+    {
       "url": "https://blog.helium.com/helium-mobile-subdao",
       "error": "timeout",
       "cited_by": [
@@ -481,6 +448,13 @@
       "error": "fetch failed",
       "cited_by": [
         "ATOM"
+      ]
+    },
+    {
+      "url": "https://dappradar.com/blog/gaming",
+      "error": "timeout",
+      "cited_by": [
+        "SUPER"
       ]
     }
   ]
