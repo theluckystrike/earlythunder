@@ -192,6 +192,16 @@ function ToolCard(
 
 /* ─── ToolsBento (main export) ─── */
 
+const CALCULATOR_LINKS = [
+  { href: "/altcoin-season-index", label: "Altcoin season index" },
+  { href: "/crypto-profit-calculator", label: "Profit calculator" },
+  { href: "/crypto-market-cap-calculator", label: "Market cap calculator" },
+  { href: "/crypto-staking-calculator", label: "Staking calculator" },
+  { href: "/impermanent-loss-calculator", label: "Impermanent loss calculator" },
+  { href: "/crypto-liquidation-price-calculator", label: "Liquidation price calculator" },
+  { href: "/crypto-compound-interest-calculator", label: "Compound interest calculator" },
+] as const;
+
 export default function ToolsShowcase({
   topScores,
   topDeadlines,
@@ -226,10 +236,12 @@ export default function ToolsShowcase({
           <MiniResearch rows={topResearch} />
         </ToolCard>
       </div>
-      <div className="mt-5 flex justify-end">
-        <Link href="/crypto-profit-calculator" className="ghost-btn">
-          Open crypto profit calculator <span className="arr">&rarr;</span>
-        </Link>
+      <div className="mt-5 flex flex-wrap justify-start gap-2 sm:justify-end">
+        {CALCULATOR_LINKS.map((tool) => (
+          <Link key={tool.href} href={tool.href} className="ghost-btn">
+            {tool.label} <span className="arr">&rarr;</span>
+          </Link>
+        ))}
       </div>
     </section>
   );

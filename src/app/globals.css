@@ -1381,7 +1381,7 @@ a:hover .arr, button:hover .arr { transform: translateX(3px); }
 }
 .footer__cols {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 32px;
 }
 .footer__cols > div { display: flex; flex-direction: column; gap: 10px; }
@@ -1462,6 +1462,10 @@ a:hover .arr, button:hover .arr { transform: translateX(3px); }
   .nav__inner { grid-template-columns: 1fr auto; }
 }
 
+@media (max-width: 1100px) {
+  .footer__cols { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 28px; }
+}
+
 @media (max-width: 720px) {
   .ladder__row { grid-template-columns: 22px minmax(0, 1fr) 60px 30px; }
   .ladder__cat { display: none; }
@@ -1476,6 +1480,6 @@ a:hover .arr, button:hover .arr { transform: translateX(3px); }
   .signals { grid-template-columns: 1fr; }
   .signal-card__metrics { grid-template-columns: repeat(2, 1fr); }
   .metric { border-right: none; border-bottom: 1px solid var(--border-subtle); padding: 12px 0 !important; }
-  .footer__cols { grid-template-columns: repeat(2, 1fr); }
+  .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer__top, .footer__bot { padding-left: 24px; padding-right: 24px; }
 }

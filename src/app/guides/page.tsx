@@ -113,6 +113,15 @@ function EmptyState() {
   );
 }
 
+const CALCULATOR_LINKS = [
+  { href: "/altcoin-season-index", label: "Altcoin Season Index", note: "Breadth against Bitcoin over five measured windows" },
+  { href: "/crypto-market-cap-calculator", label: "Market Cap Calculator", note: "Implied price with a fully diluted correction" },
+  { href: "/crypto-staking-calculator", label: "Staking Calculator", note: "Nominal APY next to inflation adjusted real yield" },
+  { href: "/impermanent-loss-calculator", label: "Impermanent Loss Calculator", note: "Divergence measured on real pairs, not hypotheticals" },
+  { href: "/crypto-liquidation-price-calculator", label: "Liquidation Price Calculator", note: "Liquidation distance against moves the asset has made" },
+  { href: "/crypto-compound-interest-calculator", label: "Compound Interest Calculator", note: "Token balance and dollar value modelled separately" },
+] as const;
+
 function RelatedResourcesSection() {
   return (
     <section className="mt-16 border-t border-border pt-8">
@@ -156,6 +165,21 @@ function RelatedResourcesSection() {
             Research notes and methodology updates
           </span>
         </Link>
+      </div>
+      <h3 className="mt-12 text-sm font-mono uppercase tracking-wider text-text-tertiary mb-4">
+        Calculators And Indices
+      </h3>
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {CALCULATOR_LINKS.map((tool) => (
+          <Link
+            key={tool.href}
+            href={tool.href}
+            className="rounded-2xl border border-border bg-bg-card p-6 text-sm font-semibold text-text-primary transition-all duration-200 hover:border-border-active hover:-translate-y-0.5"
+          >
+            {tool.label}
+            <span className="block mt-1 font-normal text-text-secondary">{tool.note}</span>
+          </Link>
+        ))}
       </div>
     </section>
   );

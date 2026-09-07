@@ -44,10 +44,21 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
     links: [
       { href: "/research/", label: "Library" },
       { href: "/guides", label: "Guides" },
-      { href: "/crypto-profit-calculator", label: "Profit calculator" },
       { href: "/blog", label: "Blog" },
       { href: "/graveyard", label: "Graveyard" },
       { href: "/performance", label: "Performance" },
+    ],
+  },
+  {
+    title: "TOOLS",
+    links: [
+      { href: "/altcoin-season-index", label: "Altcoin season index" },
+      { href: "/crypto-profit-calculator", label: "Profit calculator" },
+      { href: "/crypto-market-cap-calculator", label: "Market cap calculator" },
+      { href: "/crypto-staking-calculator", label: "Staking calculator" },
+      { href: "/impermanent-loss-calculator", label: "Impermanent loss calculator" },
+      { href: "/crypto-liquidation-price-calculator", label: "Liquidation price calculator" },
+      { href: "/crypto-compound-interest-calculator", label: "Compound interest calculator" },
     ],
   },
   {
