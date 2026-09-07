@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WorkbenchCTA from "./WorkbenchCTA";
 
 /** Routes served as standalone HTML from public/, use <a> tags, not <Link>. */
 const STANDALONE_ROUTES = new Set([
@@ -42,6 +43,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
   {
     title: "RESEARCH",
     links: [
+      { href: "https://workbench.earlythunder.com/workbench/", label: "Token Evidence Workbench · $29" },
       { href: "/research/", label: "Library" },
       { href: "/guides", label: "Guides" },
       { href: "/crypto-profit-calculator", label: "Profit calculator" },
@@ -71,7 +73,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
 
 /** Render a single link, standalone <a> or Next.js <Link>. */
 function FooterAnchor({ href, label }: FooterLink) {
-  if (STANDALONE_ROUTES.has(href)) {
+  if (href.startsWith("https://") || STANDALONE_ROUTES.has(href)) {
     return <a href={href}>{label}</a>;
   }
   return <Link href={href} prefetch={false}>{label}</Link>;
@@ -91,6 +93,8 @@ function FooterColumn({ section }: { section: FooterSection }) {
 
 export default function Footer() {
   return (
+    <>
+    <WorkbenchCTA placement="footer" />
     <footer className="footer">
       <div className="footer__top">
         <div className="footer__brand">
@@ -116,5 +120,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
