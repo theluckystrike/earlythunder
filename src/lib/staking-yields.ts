@@ -112,7 +112,18 @@ function toRow(raw: unknown): YieldRow | null {
   };
 }
 
+let inFlight: Promise<YieldSnapshot> | null = null;
+
+/** One 11 MB pool fetch per build process, shared by every page that reads it. */
 export async function getYieldSnapshot(): Promise<YieldSnapshot> {
+  if (inFlight === null) {
+    inFlight = fetchYieldSnapshot();
+    inFlight.catch(() => { inFlight = null; });
+  }
+  return inFlight;
+}
+
+async function fetchYieldSnapshot(): Promise<YieldSnapshot> {
   const fetchedAt = new Date();
   const raw = await requestJson(YIELD_ENDPOINT);
   if (!raw || typeof raw !== "object" || Array.isArray(raw)) throw new TypeError("Yield response must be an object.");

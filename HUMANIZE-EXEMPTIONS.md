@@ -37,3 +37,30 @@ project is literally named Ecosystem, it is exempt on the same grounds.
    always wrong.
 3. Re-run `node scripts/check-citation-urls.mjs` afterwards. A rewritten URL
    shows up there as a fresh 404.
+
+## Sprint 2 tool pages, 2026-09-07
+
+`leverage` on `/crypto-liquidation-price-calculator` and `/impermanent-loss-calculator`.
+The scanner bans it as the AI verb, "leverage our platform". On these two pages it is the
+noun that names the thing being calculated. A 10x leveraged position has a leverage ratio,
+and there is no synonym for it in derivatives. Leave it.
+
+`unlock` on `/crypto-market-cap-calculator`. A token unlock schedule is the vesting release
+calendar. The scorecard's own sub score is literally named `unlock_schedule`. The banned
+phrase is "unlock the power", which does not appear. Leave it.
+
+`in today's` on `/crypto-market-cap-calculator`. The sentence is "treat the rank as a position
+in today's frozen list rather than a place the token would land". The banned phrase is
+"in today's fast paced world". The scanner substring matches the first three words. The
+sentence is doing real work and states a real limitation of the implied rank calculation.
+Leave it.
+
+`Infinity` on `/crypto-liquidation-price-calculator`. A render defect scan flags the string.
+The match is "Axie Infinity", a token in the picker list. Leave it.
+
+## One fix applied to another workstream's file
+
+`src/components/WorkbenchCTA.tsx` shipped "Get the Workbench — $29" with an em dash. That
+component renders in the footer of every page, so a single character was failing the strict
+humanize gate site wide, on 1,747 pages, including pages that had previously passed it. It was
+changed to the middle dot that `Header.tsx` and `Footer.tsx` already use for the same offer.

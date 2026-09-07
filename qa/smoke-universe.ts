@@ -1,3 +1,11 @@
+// Dev instrument. Runs the shared build time loaders outside Next.
+// `server-only` is a bundler alias inside Next and is not a real package, so
+// running this under tsx needs a local no-op stub:
+//   mkdir -p node_modules/server-only
+//   printf 'module.exports = {};' > node_modules/server-only/index.js
+//   printf '{"name":"server-only","version":"0.0.0-local","main":"index.js"}' > node_modules/server-only/package.json
+// node_modules is gitignored, so the stub never reaches a build or a deploy.
+
 import { getMarketUniverse } from "../src/lib/market-universe";
 import { getYieldSnapshot } from "../src/lib/staking-yields";
 

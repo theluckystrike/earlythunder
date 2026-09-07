@@ -45,12 +45,15 @@ const PAGE_SIZE = 250;
 const CHANGE_WINDOWS = "24h,7d,30d,200d,1y";
 const REQUEST_TIMEOUT_MS = 20_000;
 const MAX_RESPONSE_BYTES = 16_000_000;
-const MAX_ATTEMPTS = 3;
+const MAX_ATTEMPTS = 5;
 const MAX_URL_LENGTH = 400;
 const PRICE_SPREAD_TOLERANCE = 0.05;
 const MIN_CROSS_CHECKED = 60;
 const MAX_ROWS = 400;
 const MAX_DROPPED_SHARE = 0.1;
+const TRANSPORT_BACKOFF_MS = 600;
+const RATE_LIMIT_BACKOFF_MS = 20_000;
+const MAX_BACKOFF_MS = 60_000;
 
 function optionalFinite(value: unknown): number | null {
   if (value === null || value === undefined) return null;
@@ -80,7 +83,8 @@ function requestOnce(url: string): Promise<unknown> {
       const status = res.statusCode ?? 0;
       if (status < 200 || status >= 300) {
         res.resume();
-        reject(new Error(`Universe endpoint returned HTTP ${status}: ${url}`));
+        const error = new Error(`Universe endpoint returned HTTP ${status}: ${url}`);
+        reject(status === 429 ? Object.assign(error, { rateLimited: true }) : error);
         return;
       }
       res.on("data", (chunk: Buffer) => {
@@ -97,6 +101,12 @@ function requestOnce(url: string): Promise<unknown> {
   });
 }
 
+/**
+ * CoinGecko's free tier rate limits aggressively and answers 429. A 600 ms
+ * backoff does not clear that window, so a rate limited attempt waits far
+ * longer than a transport error does. The wait is bounded and the attempt
+ * count is fixed, so this cannot spin.
+ */
 async function requestJson(url: string): Promise<unknown> {
   let lastError = new Error(`Universe request failed: ${url}`);
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt += 1) {
@@ -104,7 +114,10 @@ async function requestJson(url: string): Promise<unknown> {
       return await requestOnce(url);
     } catch (error) {
       lastError = error instanceof Error ? error : lastError;
-      if (attempt + 1 < MAX_ATTEMPTS) await new Promise((resolve) => setTimeout(resolve, 600 * (attempt + 1)));
+      const limited = typeof error === "object" && error !== null && "rateLimited" in error;
+      if (attempt + 1 >= MAX_ATTEMPTS) break;
+      const wait = limited ? RATE_LIMIT_BACKOFF_MS * (attempt + 1) : TRANSPORT_BACKOFF_MS * (attempt + 1);
+      await new Promise((resolve) => setTimeout(resolve, Math.min(wait, MAX_BACKOFF_MS)));
     }
   }
   throw lastError;
@@ -220,7 +233,25 @@ function crossCheck(rows: readonly UniverseRow[], paprika: ReadonlyMap<string, n
   return { checked, worst };
 }
 
+let inFlight: Promise<MarketUniverse> | null = null;
+
+/**
+ * One fetch per build process. Six pages read this universe, and each read
+ * would otherwise cost three upstream calls, which is enough to trip
+ * CoinGecko's free tier rate limit part way through a build and fail the whole
+ * thing. The promise is cached, not the value, so concurrent callers share the
+ * single in flight request. A rejection clears the cache so a later caller can
+ * retry rather than inherit a dead promise.
+ */
 export async function getMarketUniverse(): Promise<MarketUniverse> {
+  if (inFlight === null) {
+    inFlight = fetchMarketUniverse();
+    inFlight.catch(() => { inFlight = null; });
+  }
+  return inFlight;
+}
+
+async function fetchMarketUniverse(): Promise<MarketUniverse> {
   if (PAGE_SIZE < 50 || PAGE_SIZE > 250) throw new Error("Universe page size is out of bounds.");
   const fetchedAt = new Date();
   const marketsUrl = `${UNIVERSE_ENDPOINTS["CoinGecko markets"]}?vs_currency=usd&order=market_cap_desc&per_page=${PAGE_SIZE}&page=1&sparkline=false&price_change_percentage=${CHANGE_WINDOWS}`;

@@ -11,7 +11,7 @@ export default function WorkbenchCTA({ placement = "footer" }: { placement?: str
         <p className="workbench-offer__details">$29 USD once · Version 1 ZIP · No subscription</p>
       </div>
       <div className="workbench-offer__actions">
-        <a className="workbench-offer__buy" href={PRODUCT_URL + tracking}>Get the Workbench — $29 <span aria-hidden="true">→</span></a>
+        <a className="workbench-offer__buy" href={PRODUCT_URL + tracking}>Get the Workbench · $29 <span aria-hidden="true">→</span></a>
         <a className="workbench-offer__preview" href={PRODUCT_URL + "preview/" + tracking}>Try the free preview <span aria-hidden="true">↗</span></a>
         <span className="workbench-offer__note">Your data stays in your browser.</span>
       </div>

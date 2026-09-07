@@ -41,7 +41,10 @@ const ENDPOINTS = {
 
 const REQUEST_TIMEOUT_MS = 10_000;
 const MAX_RESPONSE_BYTES = 1_000_000;
-const MAX_ATTEMPTS = 3;
+const MAX_ATTEMPTS = 5;
+const TRANSPORT_BACKOFF_MS = 250;
+const RATE_LIMIT_BACKOFF_MS = 20_000;
+const MAX_BACKOFF_MS = 60_000;
 const MAX_FUTURE_MS = 5 * 60 * 1000;
 const MAX_AGE_MS = 6 * 60 * 60 * 1000;
 
@@ -94,7 +97,8 @@ function requestOnce(url: string): Promise<unknown> {
       const status = res.statusCode ?? 0;
       if (status < 200 || status >= 300) {
         res.resume();
-        reject(new Error(`Snapshot endpoint returned HTTP ${status}: ${url}`));
+        const failure = new Error(`Snapshot endpoint returned HTTP ${status}: ${url}`);
+        reject(status === 429 ? Object.assign(failure, { rateLimited: true }) : failure);
         return;
       }
       res.on("data", (chunk: Buffer) => {
@@ -111,6 +115,12 @@ function requestOnce(url: string): Promise<unknown> {
   });
 }
 
+/**
+ * CoinGecko's free tier answers 429 once a build makes several calls close
+ * together, and a 250 ms backoff does not clear that window. A rate limited
+ * attempt now waits far longer than a transport error does. Attempts and wait
+ * are both bounded, so this cannot spin.
+ */
 async function requestJson(url: string): Promise<unknown> {
   let lastError = new Error(`Snapshot request failed: ${url}`);
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt += 1) {
@@ -118,9 +128,10 @@ async function requestJson(url: string): Promise<unknown> {
       return await requestOnce(url);
     } catch (error) {
       lastError = error instanceof Error ? error : lastError;
-      if (attempt + 1 < MAX_ATTEMPTS) {
-        await new Promise((resolve) => setTimeout(resolve, 250 * (attempt + 1)));
-      }
+      const limited = typeof error === "object" && error !== null && "rateLimited" in error;
+      if (attempt + 1 >= MAX_ATTEMPTS) break;
+      const wait = limited ? RATE_LIMIT_BACKOFF_MS * (attempt + 1) : TRANSPORT_BACKOFF_MS * (attempt + 1);
+      await new Promise((resolve) => setTimeout(resolve, Math.min(wait, MAX_BACKOFF_MS)));
     }
   }
   throw lastError;
