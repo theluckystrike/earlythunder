@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-31T11:36:11.584Z",
+  "checked_at": "2026-09-07T10:16:30.358Z",
   "total": 743,
-  "ok": 509,
+  "ok": 511,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -76,14 +76,6 @@
       ]
     },
     {
-      "url": "https://globalfintechseries.com/finance/sky-system-is-generating-435m-in-annualized-protocol-revenue-and-168m-in-annualized-protocol-profits/",
-      "status": 404,
-      "source": "GlobalFintechSeries (SFF PR)",
-      "cited_by": [
-        "SKY"
-      ]
-    },
-    {
       "url": "https://chainwire.org/2026/01/29/sky-frontier-foundation-estimates-611m-in-sky-system-gross-revenue-for-2026-with-21-billion-usds-supply/",
       "status": 404,
       "source": "Chainwire (SFF PR)",
@@ -97,6 +89,22 @@
       "source": "Token Terminal",
       "cited_by": [
         "ENS"
+      ]
+    },
+    {
+      "url": "https://dune.com/beetle/banana-gun",
+      "status": 404,
+      "source": "Dune Analytics",
+      "cited_by": [
+        "BANANA"
+      ]
+    },
+    {
+      "url": "https://bitcoinworld.co.in/pendle-team-deposits-pendle-binance/",
+      "status": 404,
+      "source": "Blockchain News / BitcoinWorld",
+      "cited_by": [
+        "PENDLE"
       ]
     },
     {
@@ -204,14 +212,6 @@
       ]
     },
     {
-      "url": "https://www.getgrass.io/blog",
-      "status": 404,
-      "source": "Grass Blog",
-      "cited_by": [
-        "GRASS"
-      ]
-    },
-    {
       "url": "https://polygon.technology/blog/pol-migration",
       "status": 404,
       "source": "Polygon Blog",
@@ -308,11 +308,35 @@
       ]
     },
     {
+      "url": "https://www.coingecko.com/en/coins/worldcoin-org",
+      "status": 404,
+      "source": "CoinGecko",
+      "cited_by": [
+        "WLD"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Dogecoin",
+      "status": 404,
+      "source": "DeFiLlama",
+      "cited_by": [
+        "DOGE"
+      ]
+    },
+    {
       "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million",
       "status": 404,
       "source": "World Bank",
       "cited_by": [
         "XTZ"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Manta%20Pacific",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "MANTA"
       ]
     },
     {
@@ -340,6 +364,14 @@
       ]
     },
     {
+      "url": "https://defillama.com/chain/Qtum",
+      "status": 404,
+      "source": "DeFiLlama",
+      "cited_by": [
+        "QTUM"
+      ]
+    },
+    {
       "url": "https://coinmarketcap.com/currencies/memecoin-2",
       "status": 404,
       "source": "CoinMarketCap",
@@ -348,7 +380,7 @@
       ]
     }
   ],
-  "blocked": 169,
+  "blocked": 162,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -371,6 +403,27 @@
         "KMNO",
         "KMNO",
         "KMNO"
+      ]
+    },
+    {
+      "url": "https://www.openpr.com/news/4464933/chainlink-link-ccip-crosses-18b-in-quarterly-transfers",
+      "error": "fetch failed",
+      "cited_by": [
+        "LINK"
+      ]
+    },
+    {
+      "url": "https://www.openpr.com/news/4476771/chainlink-link-price-prediction-69-9-oracle-market-share",
+      "error": "fetch failed",
+      "cited_by": [
+        "LINK"
+      ]
+    },
+    {
+      "url": "https://www.openpr.com/news/4545604/chainlink-link-reserve-adds-475-930-tokens-in-a-month",
+      "error": "fetch failed",
+      "cited_by": [
+        "LINK"
       ]
     },
     {
@@ -402,6 +455,13 @@
       ]
     },
     {
+      "url": "https://globalfintechseries.com/finance/sky-system-is-generating-435m-in-annualized-protocol-revenue-and-168m-in-annualized-protocol-profits/",
+      "error": "fetch failed",
+      "cited_by": [
+        "SKY"
+      ]
+    },
+    {
       "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/",
       "error": "fetch failed",
       "cited_by": [
@@ -423,20 +483,6 @@
       ]
     },
     {
-      "url": "https://dao.api3.org",
-      "error": "timeout",
-      "cited_by": [
-        "API3"
-      ]
-    },
-    {
-      "url": "https://defillama.com/chain/Osmosis",
-      "error": "timeout",
-      "cited_by": [
-        "OSMO"
-      ]
-    },
-    {
       "url": "https://blog.helium.com/helium-mobile-subdao",
       "error": "timeout",
       "cited_by": [
@@ -448,13 +494,6 @@
       "error": "fetch failed",
       "cited_by": [
         "ATOM"
-      ]
-    },
-    {
-      "url": "https://dappradar.com/blog/gaming",
-      "error": "timeout",
-      "cited_by": [
-        "SUPER"
       ]
     }
   ]

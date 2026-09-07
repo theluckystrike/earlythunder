@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-06T12:15:15.607Z",
+  "generated_at": "2026-09-07T10:16:30.476Z",
   "source_updated_at": "2026-06-11T11:03:08Z",
   "citation_links": {
-    "checked_at": "2026-08-31T11:36:11.584Z",
-    "dead_count": 43
+    "checked_at": "2026-09-07T10:16:30.358Z",
+    "dead_count": 47
   },
   "market_data": {
     "source": "CoinGecko",
@@ -6335,7 +6335,7 @@
           "claim": "Team deposited 600K PENDLE to Binance May 13, 2026 ($1.27M). Cumulative $9.76M sold. 25.59M remaining (15% circ)",
           "source": "Blockchain News / BitcoinWorld",
           "url": "https://bitcoinworld.co.in/pendle-team-deposits-pendle-binance/",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Arthur Hayes: accumulated ~$1.7M in PENDLE. Then transferred 950K PENDLE ($1.14M) to exchange Feb 2026",
@@ -13952,7 +13952,7 @@
           "claim": "$435M is gross revenue (SFF self-reported Dec 2025). Net after SSR payouts = $246M. Not audited",
           "source": "GlobalFintechSeries (SFF PR)",
           "url": "https://globalfintechseries.com/finance/sky-system-is-generating-435m-in-annualized-protocol-revenue-and-168m-in-annualized-protocol-profits/",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "$611.5M forecast is SFF's OWN projection. Requires USDS doubling to $20.6B. Current $8.44B (DeFiLlama)",
@@ -17885,7 +17885,7 @@
           "claim": "Banana Gun generated ~$30M in protocol revenue in 2024 via 1% fee on all Telegram bot trades with buyback",
           "source": "Dune Analytics",
           "url": "https://dune.com/beetle/banana-gun",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "BANANA nearly fully circulating (92%+) reducing open risk, with daily buybacks from fee revenue",
@@ -38363,7 +38363,7 @@
           "claim": "Grass Layer 2 announced to structure scraped web data into datasets for AI training companies",
           "source": "Grass Blog",
           "url": "https://www.getgrass.io/blog",
-          "link_ok": false
+          "link_ok": true
         }
       ],
       "neighbours": [
@@ -80282,7 +80282,7 @@
           "claim": "WLD circulating supply is only ~17% of total with massive team/foundation releases through 2028",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/worldcoin-org",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "EU regulators and South Korea suspended Worldcoin data collection over GDPR biometric data concerns",
@@ -80722,7 +80722,7 @@
           "claim": "Dogecoin has virtually no DeFi network or protocol revenue",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Dogecoin",
-          "link_ok": true
+          "link_ok": false
         }
       ],
       "neighbours": [
@@ -92083,7 +92083,7 @@
           "claim": "Manta Network TVL declined from $800M+ peak during new model farming to under $25M by 2026",
           "source": "DefiLlama",
           "url": "https://defillama.com/chain/Manta%20Pacific",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "MANTA down 97%+ from ATH as liquidity mining incentives dried up and genuine users didn't materialize",
@@ -100186,7 +100186,7 @@
           "claim": "Qtum TVL under $1M, among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Qtum GitHub activity near zero; no major protocol updates since 2022",
