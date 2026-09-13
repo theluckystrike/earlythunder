@@ -48,12 +48,12 @@ function percent(value: number): string {
 
 function Field({ label, value, onChange, prefix, suffix, min = 0, max, step = "any", integer = false }: FieldProps) {
   return (
-    <label className="block">
+    <label className="block min-w-0">
       <span className="mb-2 block text-sm font-medium text-text-primary">{label}</span>
-      <span className="flex min-h-12 items-center rounded-xl border border-border-subtle bg-bg-primary px-4 focus-within:border-amber">
+      <span className="flex min-h-12 w-full min-w-0 max-w-full items-center rounded-xl border border-border-subtle bg-bg-primary px-4 focus-within:border-amber">
         {prefix ? <span className="mr-2 font-mono text-sm text-text-secondary">{prefix}</span> : null}
         <input
-          className="min-w-0 flex-1 bg-transparent py-3 font-mono text-base text-text-primary outline-none"
+          className="w-0 min-w-0 flex-1 bg-transparent py-3 font-mono text-base text-text-primary outline-none"
           type="number"
           inputMode="decimal"
           min={min}
@@ -84,7 +84,7 @@ function CalculatorShell({ children, results }: { readonly children: React.React
     <section className="mt-12 grid gap-6 rounded-2xl border border-border-subtle bg-bg-card p-5 shadow-sm md:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]" aria-label="Interactive calculator">
       <div className="min-w-0">
         <h2 className="text-xl font-semibold text-text-primary">Your inputs</h2>
-        <div className="mt-6 grid gap-5">{children}</div>
+        <div className="mt-6 grid min-w-0 grid-cols-[minmax(0,1fr)] gap-5">{children}</div>
         <p className="mt-5 text-xs leading-relaxed text-text-secondary">Inputs and results stay in this browser. Values are capped to keep calculations finite and responsive.</p>
       </div>
       <div className="min-w-0 rounded-2xl bg-bg-secondary p-5 md:p-6" aria-live="polite" aria-atomic="true">
