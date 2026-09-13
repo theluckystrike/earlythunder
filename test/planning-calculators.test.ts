@@ -1,0 +1,50 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { bounded, calculateApy, calculateAveragePrice, calculateDca, calculateFees, calculatePositionSize, MAX_MONEY } from "../src/lib/planning-calculators";
+
+test("calculates DCA units along a bounded path", () => {
+  const result = calculateDca({ contribution: 100, periods: 2, startPrice: 10, endPrice: 20, feePercent: 0 });
+  assert.equal(result.invested, 200);
+  assert.equal(result.units, 15);
+  assert.equal(result.value, 300);
+  assert.equal(result.average, 200 / 15);
+});
+
+test("calculates a fee-aware weighted average", () => {
+  const result = calculateAveragePrice({ firstUnits: 1.25, firstPrice: 42000, secondUnits: 0.75, secondPrice: 58000, feePercent: 0.2 });
+  assert.equal(result.totalUnits, 2);
+  assert.equal(result.grossCost, 96000);
+  assert.equal(result.totalCost, 96192);
+  assert.equal(result.average, 48096);
+});
+
+test("adds explicit, spread, and fixed costs", () => {
+  const result = calculateFees({ amount: 10000, buyFeePercent: 0.4, sellFeePercent: 0.4, spreadPercent: 0.15, fixedCost: 8 });
+  assert.equal(result.total, 103);
+  assert.equal(result.rate, 1.03);
+});
+
+test("converts APR and discounts token inflation", () => {
+  const result = calculateApy({ principal: 10000, aprPercent: 12, compoundsPerYear: 365, years: 2, inflationPercent: 4 });
+  assert.ok(result.apy > 12.74 && result.apy < 12.76);
+  assert.ok(result.ending > 12700 && result.ending < 12720);
+  assert.ok(result.realEnding < result.ending);
+});
+
+test("sizes a position from fee-aware stop risk", () => {
+  const result = calculatePositionSize({ account: 25000, riskPercent: 1, entryPrice: 100, stopPrice: 92, feePercent: 0.2 });
+  assert.equal(result.riskBudget, 250);
+  assert.ok(Math.abs(result.riskPerUnit - 8.384) < 1e-10);
+  assert.ok(result.units > 29.81 && result.units < 29.83);
+});
+
+test("bounds invalid and hostile inputs", () => {
+  assert.equal(bounded(-1, 100), 0);
+  assert.equal(bounded(Number.NaN, 100), 0);
+  assert.equal(bounded(Number.POSITIVE_INFINITY, 100), 0);
+  assert.equal(bounded(MAX_MONEY * 2, MAX_MONEY), MAX_MONEY);
+  const dca = calculateDca({ contribution: 10, periods: 0, startPrice: 0, endPrice: 0, feePercent: 1000 });
+  assert.equal(dca.count, 1);
+  assert.equal(dca.units, 0);
+  assert.equal(dca.average, 0);
+});

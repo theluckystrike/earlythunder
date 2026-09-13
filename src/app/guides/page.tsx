@@ -120,6 +120,11 @@ const CALCULATOR_LINKS = [
   { href: "/impermanent-loss-calculator", label: "Impermanent Loss Calculator", note: "Divergence measured on real pairs, not hypotheticals" },
   { href: "/crypto-liquidation-price-calculator", label: "Liquidation Price Calculator", note: "Liquidation distance against moves the asset has made" },
   { href: "/crypto-compound-interest-calculator", label: "Compound Interest Calculator", note: "Token balance and dollar value modelled separately" },
+  { href: "/crypto-dca-calculator", label: "DCA Calculator", note: "Recurring purchases, fees, and path-dependent average cost" },
+  { href: "/crypto-average-price-calculator", label: "Average Price Calculator", note: "Weighted cost basis across differently sized purchases" },
+  { href: "/crypto-fee-calculator", label: "Crypto Fee Calculator", note: "Round-trip fees, spread, and fixed network costs" },
+  { href: "/crypto-apy-calculator", label: "Crypto APY Calculator", note: "APR conversion with token inflation adjustment" },
+  { href: "/crypto-position-size-calculator", label: "Position Size Calculator", note: "Fee-aware size from account risk and stop distance" },
 ] as const;
 
 function RelatedResourcesSection() {

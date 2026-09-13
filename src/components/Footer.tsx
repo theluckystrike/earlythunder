@@ -61,6 +61,11 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
       { href: "/impermanent-loss-calculator", label: "Impermanent loss calculator" },
       { href: "/crypto-liquidation-price-calculator", label: "Liquidation price calculator" },
       { href: "/crypto-compound-interest-calculator", label: "Compound interest calculator" },
+      { href: "/crypto-dca-calculator", label: "DCA calculator" },
+      { href: "/crypto-average-price-calculator", label: "Average price calculator" },
+      { href: "/crypto-fee-calculator", label: "Fee calculator" },
+      { href: "/crypto-apy-calculator", label: "APY calculator" },
+      { href: "/crypto-position-size-calculator", label: "Position size calculator" },
     ],
   },
   {
