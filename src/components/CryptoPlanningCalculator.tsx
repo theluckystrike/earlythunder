@@ -82,12 +82,12 @@ function Metric({ label, value, note }: MetricProps) {
 function CalculatorShell({ children, results }: { readonly children: React.ReactNode; readonly results: React.ReactNode }) {
   return (
     <section className="mt-12 grid gap-6 rounded-2xl border border-border-subtle bg-bg-card p-5 shadow-sm md:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]" aria-label="Interactive calculator">
-      <div>
+      <div className="min-w-0">
         <h2 className="text-xl font-semibold text-text-primary">Your inputs</h2>
         <div className="mt-6 grid gap-5">{children}</div>
         <p className="mt-5 text-xs leading-relaxed text-text-secondary">Inputs and results stay in this browser. Values are capped to keep calculations finite and responsive.</p>
       </div>
-      <div className="rounded-2xl bg-bg-secondary p-5 md:p-6">
+      <div className="min-w-0 rounded-2xl bg-bg-secondary p-5 md:p-6" aria-live="polite" aria-atomic="true">
         <h2 className="text-xl font-semibold text-text-primary">Calculated result</h2>
         <dl className="mt-6 grid gap-4 sm:grid-cols-2">{results}</dl>
       </div>
