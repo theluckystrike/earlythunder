@@ -39,8 +39,9 @@ test("sizes a position from fee-aware stop risk", () => {
   assert.ok(Math.abs(result.riskPerUnit - 8.384) < 1e-10);
   assert.ok(result.units > 29.81 && result.units < 29.83);
   const cashCapped = calculatePositionSize({ account: 25000, riskPercent: 1, entryPrice: 100, stopPrice: 100, feePercent: 0.2 });
-  assert.equal(cashCapped.notional, 25000);
-  assert.equal(cashCapped.allocation, 100);
+  assert.ok(cashCapped.notional < 25000);
+  assert.ok(Math.abs(cashCapped.cashRequired - 25000) < 1e-9);
+  assert.ok(cashCapped.allocation < 100);
 });
 
 test("bounds invalid and hostile inputs", () => {

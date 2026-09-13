@@ -7,7 +7,7 @@ export const MAX_FEE_PERCENT = 99.99;
 
 export function bounded(raw: string | number, max: number): number {
   const parsed = Number(raw);
-  if (!Number.isFinite(parsed) || parsed < 0) return 0;
+  if (Number.isFinite(parsed) === false || parsed < 0) return 0;
   return Math.min(parsed, max);
 }
 
@@ -75,8 +75,10 @@ export function calculatePositionSize(input: { account: number; riskPercent: num
   const feeRate = bounded(input.feePercent, MAX_FEE_PERCENT) / 100;
   const riskPerUnit = Math.abs(entryPrice - stopPrice) + entryPrice * feeRate + stopPrice * feeRate;
   const riskSizedUnits = riskPerUnit > 0 ? riskBudget / riskPerUnit : 0;
-  const cashSizedUnits = entryPrice > 0 ? balance / entryPrice : 0;
+  const cashSizedUnits = entryPrice > 0 ? balance / (entryPrice * (1 + feeRate)) : 0;
   const units = Math.min(riskSizedUnits, cashSizedUnits);
   const notional = units * entryPrice;
-  return { riskBudget, riskPerUnit, units, notional, allocation: balance > 0 ? notional / balance * 100 : 0, stopDistance: entryPrice > 0 ? Math.abs(entryPrice - stopPrice) / entryPrice * 100 : 0 };
+  const entryFee = notional * feeRate;
+  const cashRequired = notional + entryFee;
+  return { riskBudget, riskPerUnit, units, notional, entryFee, cashRequired, allocation: balance > 0 ? notional / balance * 100 : 0, stopDistance: entryPrice > 0 ? Math.abs(entryPrice - stopPrice) / entryPrice * 100 : 0 };
 }
