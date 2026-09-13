@@ -14,14 +14,15 @@ test("calculates a fee-aware weighted average", () => {
   const result = calculateAveragePrice({ firstUnits: 1.25, firstPrice: 42000, secondUnits: 0.75, secondPrice: 58000, feePercent: 0.2 });
   assert.equal(result.totalUnits, 2);
   assert.equal(result.grossCost, 96000);
-  assert.equal(result.totalCost, 96192);
-  assert.equal(result.average, 48096);
+  assert.equal(result.totalCost, 96087);
+  assert.equal(result.average, 48043.5);
 });
 
 test("adds explicit, spread, and fixed costs", () => {
   const result = calculateFees({ amount: 10000, buyFeePercent: 0.4, sellFeePercent: 0.4, spreadPercent: 0.15, fixedCost: 8 });
-  assert.equal(result.total, 103);
-  assert.equal(result.rate, 1.03);
+  assert.ok(Math.abs(result.total - 103.41365461847389) < 1e-9);
+  assert.ok(result.rate !== null && Math.abs(result.rate - 1.0341365461847389) < 1e-9);
+  assert.equal(calculateFees({ amount: 0, buyFeePercent: 0.4, sellFeePercent: 0.4, spreadPercent: 0.15, fixedCost: 8 }).rate, null);
 });
 
 test("converts APR and discounts token inflation", () => {
@@ -29,6 +30,7 @@ test("converts APR and discounts token inflation", () => {
   assert.ok(result.apy > 12.74 && result.apy < 12.76);
   assert.ok(result.ending > 12700 && result.ending < 12720);
   assert.ok(result.realEnding < result.ending);
+  assert.ok(Number.isFinite(calculateApy({ principal: 1e12, aprPercent: 1e9, compoundsPerYear: 1e9, years: 1e9, inflationPercent: 0 }).ending));
 });
 
 test("sizes a position from fee-aware stop risk", () => {
@@ -36,6 +38,9 @@ test("sizes a position from fee-aware stop risk", () => {
   assert.equal(result.riskBudget, 250);
   assert.ok(Math.abs(result.riskPerUnit - 8.384) < 1e-10);
   assert.ok(result.units > 29.81 && result.units < 29.83);
+  const cashCapped = calculatePositionSize({ account: 25000, riskPercent: 1, entryPrice: 100, stopPrice: 100, feePercent: 0.2 });
+  assert.equal(cashCapped.notional, 25000);
+  assert.equal(cashCapped.allocation, 100);
 });
 
 test("bounds invalid and hostile inputs", () => {
@@ -44,7 +49,8 @@ test("bounds invalid and hostile inputs", () => {
   assert.equal(bounded(Number.POSITIVE_INFINITY, 100), 0);
   assert.equal(bounded(MAX_MONEY * 2, MAX_MONEY), MAX_MONEY);
   const dca = calculateDca({ contribution: 10, periods: 0, startPrice: 0, endPrice: 0, feePercent: 1000 });
-  assert.equal(dca.count, 1);
+  assert.equal(dca.count, 0);
+  assert.equal(dca.invested, 0);
   assert.equal(dca.units, 0);
   assert.equal(dca.average, 0);
 });
