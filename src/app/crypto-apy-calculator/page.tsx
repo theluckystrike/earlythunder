@@ -21,7 +21,7 @@ const spec: CalculatorPageSpec = {
     { question: "Does token inflation predict price loss?", answer: "No. It measures supply dilution under a simplified assumption. Market price depends on supply and demand together." },
   ],
   sources: [
-    { title: "CFPB Regulation DD APY appendix", href: "https://www.consumerfinance.gov/rules-policy/regulations/1030/a/", note: "Defines APY as an annualized rate that reflects compounding and provides the federal APY formulas used as the mathematical reference." },
+    { title: "CFPB Regulation DD APY appendix", href: "https://www.consumerfinance.gov/rules-policy/regulations/1030/a/", note: "Provides the compounding formula used as a mathematical reference. Regulation DD covers deposit accounts, not crypto products." },
     { title: "SEC bulletin on crypto interest accounts", href: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/investor-bulletin-crypto-asset-interest-bearing-accounts", note: "Lists custody, liquidity, failure, fraud, and technical risks that a compound-interest formula cannot measure." },
   ],
 };

@@ -21,7 +21,7 @@ const spec: CalculatorPageSpec = {
     { question: "Does this calculator handle borrowed capital?", answer: "No. It sizes units from entry-to-stop risk and fees. It does not calculate maintenance margin or liquidation, which vary by venue and contract." },
   ],
   sources: [
-    { title: "FINRA stop-order risk guidance", href: "https://www.finra.org/investors/insights/stop-orders-factors-consider-during-volatile-markets", note: "Explains that a stop price is not a guaranteed execution price and that fast markets can produce a markedly different fill." },
+    { title: "FINRA stop-order risk guidance", href: "https://www.finra.org/investors/insights/stop-orders-factors-consider-during-volatile-markets", note: "Explains in the securities context that a stop price is not a guaranteed execution price. Crypto venue rules still need a separate check." },
     { title: "CFTC virtual currency risk advisory", href: "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/understand_risks_of_virtual_currency.html", note: "Covers volatility, market oversight, platform, fraud, and borrowing risks that position-size arithmetic does not remove." },
   ],
 };
