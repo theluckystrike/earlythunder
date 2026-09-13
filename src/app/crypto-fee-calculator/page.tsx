@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import CryptoCalculatorPage, { type CalculatorPageSpec } from "@/components/CryptoCalculatorPage";
 
-const title = "Crypto Fee Calculator for Round-Trip Costs";
+const title = "Crypto fee calculator for round-trip costs";
 const description = "Estimate crypto buy fees, sell fees, spread, network costs, total round-trip cost, and the approximate price gain needed to break even.";
 export const metadata: Metadata = { title: { absolute: title }, description, alternates: { canonical: "https://earlythunder.com/crypto-fee-calculator" }, robots: { index: true, follow: true }, openGraph: { type: "article", title, description, url: "https://earlythunder.com/crypto-fee-calculator" }, twitter: { card: "summary_large_image", title, description } };
 
@@ -19,6 +19,10 @@ const spec: CalculatorPageSpec = {
     { question: "Does a zero-fee crypto trade really cost nothing?", answer: "Not necessarily. A venue can earn through spread, price markup, withdrawal charges, or other costs even when the explicit commission is zero." },
     { question: "What is a maker versus taker fee?", answer: "A maker order adds resting liquidity to the order book, while a taker order executes against existing liquidity. Many venues charge different rates for them." },
     { question: "Is the break-even gain exact?", answer: "It exactly solves the entered percentage and fixed costs under this model. Real break-even can differ because the estimated spread, slippage, fee tier, and network cost can change before exit." },
+  ],
+  sources: [
+    { title: "Investor.gov bid and ask glossary", href: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ask-price", note: "Defines the spread as the difference between the highest bid and lowest ask." },
+    { title: "SEC bulletin on investment fees", href: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated", note: "Explains transaction charges and recommends checking fee schedules, statements, and trade confirmations." },
   ],
 };
 

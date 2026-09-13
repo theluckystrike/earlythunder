@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import CryptoCalculatorPage, { type CalculatorPageSpec } from "@/components/CryptoCalculatorPage";
 
-const title = "Crypto DCA Calculator with Fees";
+const title = "Crypto DCA calculator with fees";
 const description = "Model recurring crypto purchases across a rising or falling price path, including trading fees, average cost, units accumulated, and ending value.";
 export const metadata: Metadata = { title: { absolute: title }, description, alternates: { canonical: "https://earlythunder.com/crypto-dca-calculator" }, robots: { index: true, follow: true }, openGraph: { type: "article", title, description, url: "https://earlythunder.com/crypto-dca-calculator" }, twitter: { card: "summary_large_image", title, description } };
 
@@ -19,6 +19,10 @@ const spec: CalculatorPageSpec = {
     { question: "Does this DCA calculator predict future crypto prices?", answer: "No. The entered start and end prices define a straight scenario path. They are assumptions supplied by you, not a forecast from Early Thunder." },
     { question: "Are fees included in the average cost?", answer: "Yes. Total cash contributions are divided by the units received after the entered purchase fee, so the average cost reflects that fee." },
     { question: "Why can two DCA plans with the same start and end price differ?", answer: "The prices between the endpoints determine how many units each contribution buys. This model uses evenly spaced prices, while a real price history can follow a different path." },
+  ],
+  sources: [
+    { title: "Investor.gov dollar-cost averaging glossary", href: "https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging", note: "Defines equal purchases at regular intervals and explains why a fixed amount buys more units at lower prices." },
+    { title: "SEC bulletin on investment fees", href: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated", note: "Explains that transaction fees reduce the money left in an investment and should be checked against account records." },
   ],
 };
 

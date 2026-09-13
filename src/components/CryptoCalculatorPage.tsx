@@ -13,6 +13,11 @@ export interface CalculatorPageSpec {
   readonly sections: readonly { readonly heading: string; readonly paragraphs: readonly string[] }[];
   readonly example: { readonly heading: string; readonly body: string };
   readonly faqs: readonly { readonly question: string; readonly answer: string }[];
+  readonly sources: readonly {
+    readonly title: string;
+    readonly href: string;
+    readonly note: string;
+  }[];
 }
 
 const AUTHOR = { "@type": "Person", name: "Michael Lip", url: "https://earlythunder.com/about", sameAs: ["https://github.com/theluckystrike"] };
@@ -65,6 +70,7 @@ export default function CryptoCalculatorPage({ spec }: { readonly spec: Calculat
         <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tighter text-text-primary md:text-6xl">{spec.title}</h1>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-secondary">{spec.description}</p>
         <p className="mt-4 max-w-3xl text-base leading-relaxed text-text-secondary">{spec.intro}</p>
+        <p className="mt-5 inline-flex max-w-3xl rounded-xl border border-border-subtle bg-bg-secondary px-4 py-3 font-mono text-xs leading-relaxed text-text-secondary">No market feed is used. Every price, rate, fee, and balance comes from the values you enter.</p>
       </header>
       <CryptoPlanningCalculator kind={spec.kind} />
       <section className="mt-20 border-t border-border-subtle pt-12">
@@ -73,7 +79,15 @@ export default function CryptoCalculatorPage({ spec }: { readonly spec: Calculat
       </section>
       {spec.sections.map((section) => <section key={section.heading} className="mt-20 border-t border-border-subtle pt-12"><h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">{section.heading}</h2><div className="mt-6 max-w-3xl space-y-4 text-[1.0625rem] leading-[1.75] text-text-secondary">{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></section>)}
       <section className="mt-20 rounded-2xl border border-amber/30 bg-bg-secondary p-6 md:p-8"><span className="font-mono text-xs uppercase tracking-wider text-amber">Worked example</span><h2 className="mt-3 text-2xl font-semibold text-text-primary">{spec.example.heading}</h2><p className="mt-4 max-w-3xl text-base leading-relaxed text-text-secondary">{spec.example.body}</p></section>
-      <section className="mt-20 border-t border-border-subtle pt-12"><h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Frequently asked questions</h2><div className="mt-8 grid gap-4">{spec.faqs.map((faq) => <details key={faq.question} className="rounded-xl border border-border-subtle bg-bg-card p-5"><summary className="cursor-pointer font-semibold text-text-primary">{faq.question}</summary><p className="mt-3 max-w-3xl leading-relaxed text-text-secondary">{faq.answer}</p></details>)}</div></section>
+      <section className="mt-20 border-t border-border-subtle pt-12"><h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Questions and answers</h2><div className="mt-8 grid gap-4">{spec.faqs.map((faq) => <details key={faq.question} className="rounded-xl border border-border-subtle bg-bg-card p-5"><summary className="cursor-pointer font-semibold text-text-primary">{faq.question}</summary><p className="mt-3 max-w-3xl leading-relaxed text-text-secondary">{faq.answer}</p></details>)}</div></section>
+      <section className="mt-20 border-t border-border-subtle pt-12">
+        <span className="font-mono text-xs uppercase tracking-wider text-text-secondary">Primary references</span>
+        <h2 className="mt-2 text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Method and sources</h2>
+        <p className="mt-5 max-w-3xl text-base leading-relaxed text-text-secondary">The formulas run only on your inputs. These references support the definitions and risk notes on this page. They do not supply prices or predict a result.</p>
+        <ol className="mt-6 grid gap-4 md:grid-cols-2">
+          {spec.sources.map((source) => <li key={source.href} className="rounded-xl border border-border-subtle bg-bg-card p-5"><a className="font-medium text-amber hover:text-accent-hover" href={source.href}>{source.title}<span aria-hidden="true"> ↗</span></a><p className="mt-2 text-sm leading-relaxed text-text-secondary">{source.note}</p></li>)}
+        </ol>
+      </section>
       <section className="mt-20 border-t border-border-subtle pt-12"><h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Related calculators</h2><div className="mt-6 flex flex-wrap gap-3">{RELATED.filter((item) => item.href !== `/${spec.slug}`).map((item) => <Link key={item.href} href={item.href} className="ghost-btn">{item.label}<span className="arr">&rarr;</span></Link>)}</div></section>
       <section className="mt-20 rounded-2xl border border-border-subtle bg-bg-secondary p-6"><h2 className="text-xl font-semibold text-text-primary">Research and risk disclosure</h2><p className="mt-4 max-w-3xl text-sm leading-relaxed text-text-secondary">This calculator is an educational planning model, not investment, tax, or trading advice. It does not predict returns or execution. Crypto assets can lose their entire value. Confirm actual fills, fee schedules, funding, taxes, and account balances with the relevant provider before acting.</p><p className="mt-4 text-sm text-text-secondary">Built and checked by <Link className="text-amber hover:text-accent-hover" href="/about">Michael Lip</Link>. Method assumptions are stated on this page so the result can be reproduced independently.</p></section>
     </div>

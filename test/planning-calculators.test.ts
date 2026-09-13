@@ -54,3 +54,18 @@ test("bounds invalid and hostile inputs", () => {
   assert.equal(dca.units, 0);
   assert.equal(dca.average, 0);
 });
+
+test("locks the five published worked examples", () => {
+  const dca = calculateDca({ contribution: 250, periods: 24, startPrice: 50000, endPrice: 80000, feePercent: 0.25 });
+  assert.equal(dca.invested, 6000);
+  assert.ok(Math.abs(dca.average - 63885.674235932165) < 1e-8);
+  const average = calculateAveragePrice({ firstUnits: 1.25, firstPrice: 42000, secondUnits: 0.75, secondPrice: 58000, feePercent: 0.2 });
+  assert.equal(average.totalCost, 96087);
+  assert.equal(average.average, 48043.5);
+  const fees = calculateFees({ amount: 10000, buyFeePercent: 0.4, sellFeePercent: 0.4, spreadPercent: 0.15, fixedCost: 8 });
+  assert.ok(Math.abs((fees.rate ?? 0) - 1.0341365461847389) < 1e-9);
+  const apy = calculateApy({ principal: 10000, aprPercent: 12, compoundsPerYear: 365, years: 2, inflationPercent: 4 });
+  assert.ok(Math.abs(apy.ending - 12711.990089089582) < 1e-8);
+  const position = calculatePositionSize({ account: 25000, riskPercent: 1, entryPrice: 100, stopPrice: 92, feePercent: 0.2 });
+  assert.ok(Math.abs(position.notional - 2981.870229007634) < 1e-9);
+});

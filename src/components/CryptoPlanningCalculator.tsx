@@ -28,7 +28,7 @@ interface MetricProps {
 }
 
 function money(value: number): string {
-  if (!Number.isFinite(value)) return "$0.00";
+  if (Number.isFinite(value) === false) return "$0.00";
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -37,12 +37,12 @@ function money(value: number): string {
 }
 
 function number(value: number, digits = 4): string {
-  if (!Number.isFinite(value)) return "0";
+  if (Number.isFinite(value) === false) return "0";
   return new Intl.NumberFormat("en-US", { maximumFractionDigits: digits }).format(value);
 }
 
 function percent(value: number): string {
-  if (!Number.isFinite(value)) return "0.00%";
+  if (Number.isFinite(value) === false) return "0.00%";
   return `${number(value, 2)}%`;
 }
 
@@ -112,7 +112,7 @@ function AveragePriceCalculator() {
   const [secondPrice, setSecondPrice] = useState("58000");
   const [fee, setFee] = useState("0.2");
   const result = useMemo(() => calculateAveragePrice({ firstUnits: Number(firstUnits), firstPrice: Number(firstPrice), secondUnits: Number(secondUnits), secondPrice: Number(secondPrice), feePercent: Number(fee) }), [firstUnits, firstPrice, secondUnits, secondPrice, fee]);
-  return <CalculatorShell results={<><Metric label="Weighted average price" value={money(result.average)} /><Metric label="Total units" value={number(result.totalUnits, 8)} /><Metric label="Gross combined cost" value={money(result.grossCost)} /><Metric label="Fee on new purchase" value={money(result.fees)} /><Metric label="Total cost basis" value={money(result.totalCost)} /><Metric label="Break-even before sell fee" value={money(result.average)} /></>}><Field label="Existing units" value={firstUnits} onChange={setFirstUnits} max={MAX_MONEY} /><Field label="Existing average cost per unit" value={firstPrice} onChange={setFirstPrice} prefix="$" max={MAX_MONEY} /><Field label="Units in new purchase" value={secondUnits} onChange={setSecondUnits} max={MAX_MONEY} /><Field label="Price in new purchase" value={secondPrice} onChange={setSecondPrice} prefix="$" max={MAX_MONEY} /><Field label="Fee on new purchase" value={fee} onChange={setFee} suffix="%" max={MAX_FEE_PERCENT} /></CalculatorShell>;
+  return <CalculatorShell results={<><Metric label="Weighted average price" value={money(result.average)} /><Metric label="Total units" value={number(result.totalUnits, 8)} /><Metric label="Gross combined cost" value={money(result.grossCost)} /><Metric label="Fee on new purchase" value={money(result.fees)} /><Metric label="Total modeled cost" value={money(result.totalCost)} /><Metric label="Break-even before sell fee" value={money(result.average)} /></>}><Field label="Existing units" value={firstUnits} onChange={setFirstUnits} max={MAX_MONEY} /><Field label="Existing average cost per unit" value={firstPrice} onChange={setFirstPrice} prefix="$" max={MAX_MONEY} /><Field label="Units in new purchase" value={secondUnits} onChange={setSecondUnits} max={MAX_MONEY} /><Field label="Price in new purchase" value={secondPrice} onChange={setSecondPrice} prefix="$" max={MAX_MONEY} /><Field label="Fee on new purchase" value={fee} onChange={setFee} suffix="%" max={MAX_FEE_PERCENT} /></CalculatorShell>;
 }
 
 function FeeCalculator() {
@@ -142,7 +142,7 @@ function PositionSizeCalculator() {
   const [stop, setStop] = useState("92");
   const [fee, setFee] = useState("0.2");
   const result = useMemo(() => calculatePositionSize({ account: Number(account), riskPercent: Number(risk), entryPrice: Number(entry), stopPrice: Number(stop), feePercent: Number(fee) }), [account, risk, entry, stop, fee]);
-  return <CalculatorShell results={<><Metric label="Cash-capped position size" value={money(result.notional)} /><Metric label="Asset units" value={number(result.units, 8)} /><Metric label="Risk budget" value={money(result.riskBudget)} /><Metric label="Risk per unit" value={money(result.riskPerUnit)} /><Metric label="Portfolio allocation" value={percent(result.allocation)} /><Metric label="Stop distance" value={percent(result.stopDistance)} /></>}><Field label="Trading account value" value={account} onChange={setAccount} prefix="$" /><Field label="Maximum account risk" value={risk} onChange={setRisk} suffix="%" /><Field label="Planned entry price" value={entry} onChange={setEntry} prefix="$" /><Field label="Stop price" value={stop} onChange={setStop} prefix="$" /><Field label="Fee each side" value={fee} onChange={setFee} suffix="%" /></CalculatorShell>;
+  return <CalculatorShell results={<><Metric label="Cash-capped position size" value={money(result.notional)} /><Metric label="Asset units" value={number(result.units, 8)} /><Metric label="Risk budget" value={money(result.riskBudget)} /><Metric label="Risk per unit" value={money(result.riskPerUnit)} /><Metric label="Portfolio allocation" value={percent(result.allocation)} /><Metric label="Stop distance" value={percent(result.stopDistance)} /></>}><Field label="Trading account value" value={account} onChange={setAccount} prefix="$" max={MAX_MONEY} /><Field label="Maximum account risk" value={risk} onChange={setRisk} suffix="%" max={100} /><Field label="Planned entry price" value={entry} onChange={setEntry} prefix="$" max={MAX_MONEY} /><Field label="Stop price" value={stop} onChange={setStop} prefix="$" max={MAX_MONEY} /><Field label="Fee each side" value={fee} onChange={setFee} suffix="%" max={MAX_FEE_PERCENT} /></CalculatorShell>;
 }
 
 export default function CryptoPlanningCalculator({ kind }: Props) {
