@@ -192,19 +192,20 @@ export function feeDragAgainstBaseline(
 export function datasetDisclosure(dataset: PriceDataset): readonly string[] {
   const published = dataset.rows.length;
   const window = dataset.counts?.window ?? 365;
-  const dropped = dataset.dropped ?? [];
+  const start = new Date((dataset.rows[0]?.date ?? dataset.window.start) + "T00:00:00Z").toLocaleDateString("en-US", { timeZone: "UTC", month: "long", day: "numeric", year: "numeric" });
+  const end = new Date((dataset.rows[dataset.rows.length - 1]?.date ?? dataset.window.end) + "T00:00:00Z").toLocaleDateString("en-US", { timeZone: "UTC", month: "long", day: "numeric", year: "numeric" });
+  const tolerance = dataset.cross_check.tolerance_percent ?? 1;
   const lines: string[] = [
-    `Published readings: ${published} of ${window} days in the window, from ${dataset.rows[0]?.date ?? dataset.window.start} to ${dataset.rows[dataset.rows.length - 1]?.date ?? dataset.window.end}.`,
-    `Prices pulled ${dataset.fetched_at} from ${dataset.primary.name} and cross-checked against ${dataset.cross_check.name} at a ${dataset.cross_check.tolerance_percent ?? 1}% tolerance.`,
+    `Published readings: ${published} of ${window} days, ${start} through ${end}.`,
+    `Prices pulled from ${dataset.primary.name} and cross-checked against ${dataset.cross_check.name}, with a ${tolerance}% tolerance between the two sources.`,
   ];
+  const dropped = dataset.dropped ?? [];
   if (dropped.length === 0) {
-    lines.push(`No readings were dropped: every day in the window passed the ${dataset.cross_check.tolerance_percent ?? 1}% cross-check.`);
+    lines.push(`No readings were dropped: every day in the window passed the ${tolerance}% cross-check.`);
   } else {
-    lines.push(
-      `${dropped.length} day${dropped.length === 1 ? "" : "s"} dropped: ${dropped
-        .map((entry) => `${entry.date} (${entry.reason})`)
-        .join("; ")}.`,
-    );
+    for (const entry of dropped) {
+      lines.push(`Readings for ${entry.date} were dropped: ${entry.reason}.`);
+    }
   }
   return lines;
 }
@@ -215,7 +216,13 @@ export function comparisonSummary(dca: DcaPlan, lump: LumpSumPlan): string {
   const difference = dca.finalValue - lump.finalValue;
   const cheaper = dca.averageCost < lump.buyPrice;
   const direction = difference >= 0 ? "more" : "less";
-  return `Deploying $${dca.cash.toFixed(0)} the same way either as ${dca.contributions} scheduled buys or as one purchase on ${lump.buyDate} left ${Math.abs(difference).toFixed(2)} dollars ${direction} in the schedule. The scheduled buys averaged $${dca.averageCost.toFixed(2)} per coin against a first-day price of $${lump.buyPrice.toFixed(2)}, so the schedule paid ${cheaper ? "less" : "more"} than the single entry.`;
+  const fmt = (n: number) => "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const buyDate = new Date(lump.buyDate + "T00:00:00Z").toLocaleDateString("en-US", { timeZone: "UTC", month: "long", day: "numeric", year: "numeric" });
+  return `Over the same year, the weekly schedule ended up ${fmt(Math.abs(difference))} ${direction} than investing all ${fmt(dca.cash)} at once on ${buyDate}. The weekly buys averaged ${fmt(dca.averageCost)} per coin, below the ${fmt(lump.buyPrice)} a single entry paid on day one, so spreading the purchases caught dips the lump sum never saw.`;
+}
+
+export function formatHumanDate(iso: string): string {
+  return new Date(iso + "T00:00:00Z").toLocaleDateString("en-US", { timeZone: "UTC", month: "short", day: "numeric", year: "numeric" });
 }
 
 export function formatUsd(value: number): string {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import CryptoCalculatorPage, { type CalculatorPageSpec } from "@/components/CryptoCalculatorPage";
-import { runDcaPlan, runLumpSumPlan, buildFeeDragTable, datasetDisclosure, comparisonSummary, formatUsd, formatUnits, formatPercent, type PriceDataset } from "@/lib/dca-backtest";
+import { runDcaPlan, runLumpSumPlan, buildFeeDragTable, datasetDisclosure, comparisonSummary, formatUsd, formatUnits, formatPercent, formatHumanDate, type PriceDataset } from "@/lib/dca-backtest";
 import dataset from "../../../data/btc-daily-365.json";
 
 const title = "Crypto DCA calculator with fees";
@@ -19,7 +19,7 @@ const comparison = comparisonSummary(dca, lump);
 
 const spec: CalculatorPageSpec = {
   kind: "dca", slug: "crypto-dca-calculator", eyebrow: "Recurring purchase model", title, description,
-  intro: "The calculator uses a transparent linear price path between your starting and ending prices. It is a scenario tool, not a forecast, so you can isolate how purchase timing and fees change the result. Below the calculator, a backtest section replays the same math against 364 dated daily Bitcoin prices.",
+  intro: "Enter a starting price, an ending price, and a fee. The calculator walks a straight path between them and shows what a fixed schedule of buys would accumulate. It is a scenario tool, not a forecast. Below it, a backtest replays the same math against 364 real daily Bitcoin prices.",
   formulas: ["Units each period = contribution × (1 − fee rate) ÷ period price", "Average cost = total cash invested ÷ total units", "Ending value = accumulated units × ending price", "Gain or loss = ending value − total cash invested"],
   sections: [
     { heading: "What dollar cost averaging changes", paragraphs: ["Dollar cost averaging divides one allocation into repeated purchases. When prices fall, a fixed contribution buys more units. When prices rise, it buys fewer. The result is a weighted average cost determined by the complete path, not simply the midpoint between the first and last price.", "This model spaces prices evenly along the path you enter. Real markets do not move in a straight line, so two histories with the same endpoints can produce different accumulated units. Use several scenarios rather than treating one output as a prediction."] },
@@ -42,10 +42,10 @@ const spec: CalculatorPageSpec = {
 function BacktestSection() {
   return (
     <section className="mt-20 border-t border-border-subtle pt-12">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Backtest of $100 every 7 days against real Bitcoin prices</h2>
-      <p className="mt-4 max-w-3xl text-[1.0625rem] leading-[1.75] text-text-secondary">The scenario calculator above is a straight path between two prices. To show how the same formulas behave on a real market path, the table below replays a $100 weekly purchase, at a {FEE_PERCENT}% fee, against {rows.length} published daily Bitcoin prices.</p>
+      <h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Backtest of $100 every week for a year</h2>
+      <p className="mt-4 max-w-3xl text-[1.0625rem] leading-[1.75] text-text-secondary">The calculator above runs on a straight line between two prices. Real markets do not move that way. So below, the same math runs against {rows.length} dated daily Bitcoin prices, $100 every week at a {FEE_PERCENT}% fee.</p>
       <div className="mt-6 grid gap-4 md:grid-cols-3">
-        <div className="rounded-2xl border border-border-subtle bg-bg-secondary p-6"><p className="font-mono text-xs uppercase tracking-wider text-text-secondary">Cash invested</p><p className="mt-2 text-2xl font-semibold text-text-primary">{formatUsd(dca.cash)}</p><p className="mt-1 text-sm text-text-secondary">{dca.contributions} weekly purchases, {dca.firstDate} to {dca.lastDate}</p></div>
+        <div className="rounded-2xl border border-border-subtle bg-bg-secondary p-6"><p className="font-mono text-xs uppercase tracking-wider text-text-secondary">Cash invested</p><p className="mt-2 text-2xl font-semibold text-text-primary">{formatUsd(dca.cash)}</p><p className="mt-1 text-sm text-text-secondary">{dca.contributions} weekly purchases, {formatHumanDate(dca.firstDate)} to {formatHumanDate(dca.lastDate)}</p></div>
         <div className="rounded-2xl border border-border-subtle bg-bg-secondary p-6"><p className="font-mono text-xs uppercase tracking-wider text-text-secondary">Average cost</p><p className="mt-2 text-2xl font-semibold text-text-primary">{formatUsd(dca.averageCost)}</p><p className="mt-1 text-sm text-text-secondary">against a final price of {formatUsd(dca.finalPrice)}</p></div>
         <div className="rounded-2xl border border-border-subtle bg-bg-secondary p-6"><p className="font-mono text-xs uppercase tracking-wider text-text-secondary">Ending value</p><p className="mt-2 text-2xl font-semibold text-text-primary">{formatUsd(dca.finalValue)}</p><p className="mt-1 text-sm text-text-secondary">{formatUnits(dca.units)} units, {formatPercent(dca.roiPercent)} ROI</p></div>
       </div>
