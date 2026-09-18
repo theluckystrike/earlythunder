@@ -5,7 +5,7 @@ import dataset from "../../../data/btc-daily-365.json";
 
 const title = "Crypto DCA calculator with fees";
 const description = "Model recurring crypto purchases with trading fees, average cost, and a 364-day real Bitcoin price backtest cross-checked across two exchanges.";
-export const metadata: Metadata = { title: { absolute: title }, description, alternates: { canonical: "https://earlythunder.com/crypto-dca-calculator" }, robots: { index: true, follow: true }, openGraph: { type: "article", title, description, url: "https://earlythunder.com/crypto-dca-calculator" }, twitter: { card: "summary_large_image", title, description } };
+export const metadata: Metadata = { title: { absolute: title }, description, alternates: { canonical: "https://earlythunder.com/crypto-dca-calculator" }, robots: { index: true, follow: true }, openGraph: { type: "article", title, description, url: "https://earlythunder.com/crypto-dca-calculator", images: [{ url: "/og-default.png", width: 1200, height: 630 }] }, twitter: { card: "summary_large_image", title, description, images: ["/og-default.png"] } };
 
 const rows = (dataset as PriceDataset).rows;
 const CONTRIBUTION = 100;
@@ -42,7 +42,7 @@ const spec: CalculatorPageSpec = {
 function BacktestSection() {
   return (
     <section className="mt-20 border-t border-border-subtle pt-12">
-      <h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Backtest: $100 every 7 days against real Bitcoin prices</h2>
+      <h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Backtest of $100 every 7 days against real Bitcoin prices</h2>
       <p className="mt-4 max-w-3xl text-[1.0625rem] leading-[1.75] text-text-secondary">The scenario calculator above is a straight path between two prices. To show how the same formulas behave on a real market path, the table below replays a $100 weekly purchase, at a {FEE_PERCENT}% fee, against {rows.length} published daily Bitcoin prices.</p>
       <div className="mt-6 grid gap-4 md:grid-cols-3">
         <div className="rounded-2xl border border-border-subtle bg-bg-secondary p-6"><p className="font-mono text-xs uppercase tracking-wider text-text-secondary">Cash invested</p><p className="mt-2 text-2xl font-semibold text-text-primary">{formatUsd(dca.cash)}</p><p className="mt-1 text-sm text-text-secondary">{dca.contributions} weekly purchases, {dca.firstDate} to {dca.lastDate}</p></div>

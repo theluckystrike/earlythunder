@@ -38,10 +38,6 @@ function schemas(spec: CalculatorPageSpec): readonly Record<string, unknown>[] {
       datePublished: "2026-09-13", dateModified: "2026-09-13", author: AUTHOR, publisher: PUBLISHER,
     },
     {
-      "@context": "https://schema.org", "@type": "FAQPage",
-      mainEntity: spec.faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })),
-    },
-    {
       "@context": "https://schema.org", "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://earlythunder.com/" },
