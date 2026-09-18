@@ -45,6 +45,10 @@ function schemas(): readonly Record<string, unknown>[] {
       datePublished: "2026-09-18", dateModified: "2026-09-18", author: AUTHOR, publisher: PUBLISHER,
     },
     {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      mainEntity: FAQS.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })),
+    },
+    {
       "@context": "https://schema.org", "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://earlythunder.com/" },
