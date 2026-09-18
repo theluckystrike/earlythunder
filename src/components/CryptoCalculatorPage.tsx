@@ -54,6 +54,8 @@ const RELATED = [
   { href: "/crypto-apy-calculator", label: "APY calculator" },
   { href: "/crypto-position-size-calculator", label: "Position size calculator" },
   { href: "/crypto-profit-calculator", label: "Profit calculator" },
+  { href: "/crypto-investment-calculator", label: "Investment calculator" },
+  { href: "/crypto-buy-the-dip-calculator", label: "Buy the dip calculator" },
 ] as const;
 
 export default function CryptoCalculatorPage({ spec }: { readonly spec: CalculatorPageSpec }) {
