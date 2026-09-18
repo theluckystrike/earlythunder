@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-06-11T11:03:08Z",
+ "updated_at": "2026-09-18T14:30:00Z",
  "methodology": "25-variable framework scoring 250 altcoins across protocol revenue, tokenomics, supply metrics, institutional adoption, regulatory safety, and more. Each variable rated 1-10 by 40+ parallel DeepSeek research agents. Data hardened via 19-agent deep validation sprint. Supply data from CoinGecko. Revenue cross-referenced with DeFiLlama/Token Terminal. Live prices from Binance, Bybit, Kraken, Crypto.com.",
  "benchmark": {
   "symbol": "BTC",
@@ -4341,26 +4341,26 @@
   {
    "symbol": "NEAR",
    "name": "NEAR Protocol",
-   "price": 2.657,
-   "change_24h": 27.5,
-   "market_cap": 3581147517,
-   "rank": 39,
+   "price": 3.59,
+   "change_24h": 25.1,
+   "market_cap": 4681788936,
+   "rank": 24,
    "ath": 20.44,
-   "ath_distance_pct": -92.4,
-   "tvl": 117000000,
+   "ath_distance_pct": -82.4,
+   "tvl": 184915293,
    "circ_supply_pct": 100,
-   "volume_24h": 181554308,
+   "volume_24h": 2136441496,
    "score": 135,
    "prev_score": 53,
    "verdict": "CAUTIOUS HOLD",
    "verdict_color": "green",
-   "one_liner": "46M MAU, $117M TVL. P/S 32-38x (not 290x, post-Intents revenue). AI Intents already live.",
-   "key_catalyst": "AI Confidential Intents live (not Q3-Q4 future), revenue improving",
-   "key_risk": "32-38x P/S still expensive, $117M TVL vs $1.9B mcap gap",
+   "one_liner": "43.7% of supply staked across 417 validators. TVL $185M (+58% since June). Buyback-issuance crossover claimed at revenue.near.org, gas fees still tiny.",
+   "key_catalyst": "nearcore 2.9.0 halving upgrade (max inflation 5%->2.5%), Agent Market 2.0 Q3, Bitwise NEAR Strategy ETF S-1 filed",
+   "key_risk": "Chain gas fees ~$2-3.2k/day vs $4.7B mcap; TVL/mcap ratio 4%; buyback crossover still protocol-claimed not audited",
    "max_supply": null,
-   "total_supply": 1296483854,
-   "circulating_supply": 1296483846,
-   "fdv": 1930000000,
+   "total_supply": 1306651055,
+   "circulating_supply": 1306651055,
+   "fdv": 4681789015,
    "where_to_buy": [
     "Binance",
     "Coinbase",
@@ -4396,31 +4396,46 @@
    },
    "citations": [
     {
-     "claim": "1M TPS achieved in public test",
-     "source": "NEAR Protocol blog",
-     "url": "https://www.near.org/blog/near-protocol-achieves-1-million-tps"
+     "claim": "Price $3.59, mcap $4.68B, rank 24, supply 1.3067B (2026-09-18)",
+     "source": "CoinGecko API",
+     "url": "https://api.coingecko.com/api/v3/coins/near"
     },
     {
-     "claim": "$117M TVL",
-     "source": "DeFiLlama",
-     "url": "https://defillama.com/chain/near"
+     "claim": "Chain TVL $184.9M",
+     "source": "DefiLlama",
+     "url": "https://api.llama.fi/v2/historicalChainTvl/NEAR"
     },
     {
-     "claim": "32-38x P/S post-Intents (not 290x, which was pre-Intents stale data)",
-     "source": "Token Terminal",
-     "url": "https://tokenterminal.com/explorer/projects/near-protocol/nearintents"
+     "claim": "417 validators, 571.4M NEAR staked (43.7% of circulating)",
+     "source": "NEARBlocks + NEAR mainnet RPC validator stake queries",
+     "url": "https://api.nearblocks.io/v1/stats"
     },
     {
-     "claim": "AI Confidential Intents already live, revenue improving",
+     "claim": "Chain gas fees ~$2-3.2k/day, $58k/30d",
+     "source": "DefiLlama fees",
+     "url": "https://api.llama.fi/summary/fees/near"
+    },
+    {
+     "claim": "Halving upgrade: max inflation 5% -> 2.5%",
      "source": "NEAR Foundation",
-     "url": "https://www.coindesk.com/markets/2026/03/02/near-token-jumps-17-after-confidential-intents-launch-outpaces-privacy-tokens-sector"
+     "url": "https://www.near.org/blog/supporting-community-proposals-to-upgrade-near-tokenomics-halving-inflation-and-introducing-rewards-to-support-small-validators-and-venear-holders"
+    },
+    {
+     "claim": "Buybacks via near.com fees, approaching issuance crossover",
+     "source": "NEAR revenue dashboard",
+     "url": "https://revenue.near.org"
+    },
+    {
+     "claim": "Bitwise NEAR Staking ETP, 3.08% net staking yield",
+     "source": "SVRN / Bitwise",
+     "url": "https://svrn.net/news/near-protocol-report"
     }
    ],
-   "current_price_usd": 2.657,
-   "price_updated_at": "2026-05-23T14:15:00Z",
+   "current_price_usd": 3.59,
+   "price_updated_at": "2026-09-18T13:14:30Z",
    "token_standard": "Native L1",
    "chain": "NEAR",
-   "fully_diluted_valuation": 3581147539
+   "fully_diluted_valuation": 4681789015
   },
   {
    "symbol": "BANANA",

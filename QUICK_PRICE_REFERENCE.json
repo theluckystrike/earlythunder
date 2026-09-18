@@ -1,0 +1,1759 @@
+{
+  "metadata": {
+    "total_tokens": 250,
+    "snapshot_date": "2026-05-26",
+    "purpose": "Live price update reference - all old prices from May 26, 2026"
+  },
+  "tokens_by_symbol": {
+    "ETH": {
+      "old_price": 2128.56,
+      "verdict": "HOLD CORE",
+      "score": 199,
+      "exchange": "Unknown",
+      "trading_pair": "ETH/USDT"
+    },
+    "HYPE": {
+      "old_price": 62.82,
+      "verdict": "HOLD CORE",
+      "score": 185,
+      "exchange": "Unknown",
+      "trading_pair": "HYPE/USDT"
+    },
+    "WSTETH": {
+      "old_price": 2560.0,
+      "verdict": "HOLD CORE",
+      "score": 185,
+      "exchange": "Unknown",
+      "trading_pair": "WSTETH/USDT"
+    },
+    "BTC": {
+      "old_price": 75744.55,
+      "verdict": "HOLD CORE",
+      "score": 183,
+      "exchange": "Unknown",
+      "trading_pair": "BTC/USDT"
+    },
+    "AAVE": {
+      "old_price": 86.83,
+      "verdict": "HOLD CORE",
+      "score": 180,
+      "exchange": "Unknown",
+      "trading_pair": "AAVE/USDT"
+    },
+    "UNI": {
+      "old_price": 3.375,
+      "verdict": "HOLD CORE",
+      "score": 178,
+      "exchange": "Unknown",
+      "trading_pair": "UNI/USDT"
+    },
+    "MKR": {
+      "old_price": 1813.7,
+      "verdict": "HOLD CORE",
+      "score": 177,
+      "exchange": "Unknown",
+      "trading_pair": "MKR/USDT"
+    },
+    "SOL": {
+      "old_price": 86.21,
+      "verdict": "HOLD",
+      "score": 170,
+      "exchange": "Unknown",
+      "trading_pair": "SOL/USDT"
+    },
+    "SYRUP": {
+      "old_price": 0.216,
+      "verdict": "HOLD",
+      "score": 168,
+      "exchange": "Unknown",
+      "trading_pair": "SYRUP/USDT"
+    },
+    "GEOD": {
+      "old_price": 0.1357,
+      "verdict": "HOLD",
+      "score": 166,
+      "exchange": "Unknown",
+      "trading_pair": "GEOD/USDT"
+    },
+    "KMNO": {
+      "old_price": 0.0204,
+      "verdict": "HOLD",
+      "score": 162,
+      "exchange": "Unknown",
+      "trading_pair": "KMNO/USDT"
+    },
+    "ETHFI": {
+      "old_price": 0.38,
+      "verdict": "HOLD",
+      "score": 162,
+      "exchange": "Unknown",
+      "trading_pair": "ETHFI/USDT"
+    },
+    "RETH": {
+      "old_price": 2316.5,
+      "verdict": "HOLD",
+      "score": 159,
+      "exchange": "Unknown",
+      "trading_pair": "RETH/USDT"
+    },
+    "CBETH": {
+      "old_price": 2395.82,
+      "verdict": "HOLD",
+      "score": 158,
+      "exchange": "Unknown",
+      "trading_pair": "CBETH/USDT"
+    },
+    "AERO": {
+      "old_price": 0.4342,
+      "verdict": "HOLD",
+      "score": 157,
+      "exchange": "Unknown",
+      "trading_pair": "AERO/USDT"
+    },
+    "MORPHO": {
+      "old_price": 2.337,
+      "verdict": "HOLD",
+      "score": 157,
+      "exchange": "Unknown",
+      "trading_pair": "MORPHO/USDT"
+    },
+    "LINK": {
+      "old_price": 9.615,
+      "verdict": "HOLD",
+      "score": 156,
+      "exchange": "Unknown",
+      "trading_pair": "LINK/USDT"
+    },
+    "VIRTUAL": {
+      "old_price": 0.7356,
+      "verdict": "HOLD",
+      "score": 151,
+      "exchange": "Unknown",
+      "trading_pair": "VIRTUAL/USDT"
+    },
+    "LQTY": {
+      "old_price": 0.254,
+      "verdict": "HOLD",
+      "score": 151,
+      "exchange": "Unknown",
+      "trading_pair": "LQTY/USDT"
+    },
+    "COW": {
+      "old_price": 0.1646,
+      "verdict": "HOLD",
+      "score": 150,
+      "exchange": "Unknown",
+      "trading_pair": "COW/USDT"
+    },
+    "FLUID": {
+      "old_price": 1.619,
+      "verdict": "HOLD",
+      "score": 150,
+      "exchange": "Unknown",
+      "trading_pair": "FLUID/USDT"
+    },
+    "JUP": {
+      "old_price": 0.2036,
+      "verdict": "HOLD",
+      "score": 150,
+      "exchange": "Unknown",
+      "trading_pair": "JUP/USDT"
+    },
+    "RUNE": {
+      "old_price": 0.462,
+      "verdict": "HOLD",
+      "score": 148,
+      "exchange": "Unknown",
+      "trading_pair": "RUNE/USDT"
+    },
+    "CETUS": {
+      "old_price": 0.0256,
+      "verdict": "HOLD",
+      "score": 147,
+      "exchange": "Unknown",
+      "trading_pair": "CETUS/USDT"
+    },
+    "SUI": {
+      "old_price": 1.0537,
+      "verdict": "HOLD",
+      "score": 146,
+      "exchange": "Unknown",
+      "trading_pair": "SUI/USDT"
+    },
+    "LDO": {
+      "old_price": 0.3509,
+      "verdict": "HOLD",
+      "score": 146,
+      "exchange": "Unknown",
+      "trading_pair": "LDO/USDT"
+    },
+    "OKB": {
+      "old_price": 52.5,
+      "verdict": "HOLD",
+      "score": 145,
+      "exchange": "Unknown",
+      "trading_pair": "OKB/USDT"
+    },
+    "BNB": {
+      "old_price": 670.1,
+      "verdict": "HOLD",
+      "score": 144,
+      "exchange": "Unknown",
+      "trading_pair": "BNB/USDT"
+    },
+    "GMX": {
+      "old_price": 6.73,
+      "verdict": "HOLD",
+      "score": 143,
+      "exchange": "Unknown",
+      "trading_pair": "GMX/USDT"
+    },
+    "DRIFT": {
+      "old_price": 0.03409,
+      "verdict": "HOLD",
+      "score": 142,
+      "exchange": "Unknown",
+      "trading_pair": "DRIFT/USDT"
+    },
+    "PAXG": {
+      "old_price": 4537.0,
+      "verdict": "HOLD",
+      "score": 141,
+      "exchange": "Unknown",
+      "trading_pair": "PAXG/USDT"
+    },
+    "CRV": {
+      "old_price": 0.2277,
+      "verdict": "HOLD",
+      "score": 140,
+      "exchange": "Unknown",
+      "trading_pair": "CRV/USDT"
+    },
+    "AR": {
+      "old_price": 14.5,
+      "verdict": "HOLD",
+      "score": 140,
+      "exchange": "Unknown",
+      "trading_pair": "AR/USDT"
+    },
+    "INJ": {
+      "old_price": 5.697,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 139,
+      "exchange": "Unknown",
+      "trading_pair": "INJ/USDT"
+    },
+    "SKY": {
+      "old_price": 0.07052,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 137,
+      "exchange": "Unknown",
+      "trading_pair": "SKY/USDT"
+    },
+    "ENS": {
+      "old_price": 6.4,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 137,
+      "exchange": "Unknown",
+      "trading_pair": "ENS/USDT"
+    },
+    "ACX": {
+      "old_price": 0.0414,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 137,
+      "exchange": "Unknown",
+      "trading_pair": "ACX/USDT"
+    },
+    "AVAX": {
+      "old_price": 9.457,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 136,
+      "exchange": "Unknown",
+      "trading_pair": "AVAX/USDT"
+    },
+    "NEAR": {
+      "old_price": 2.657,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 135,
+      "exchange": "Unknown",
+      "trading_pair": "NEAR/USDT"
+    },
+    "BANANA": {
+      "old_price": 3.879,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 135,
+      "exchange": "Unknown",
+      "trading_pair": "BANANA/USDT"
+    },
+    "BGB": {
+      "old_price": 5.2,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 135,
+      "exchange": "Unknown",
+      "trading_pair": "BGB/USDT"
+    },
+    "ARB": {
+      "old_price": 0.1092,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 134,
+      "exchange": "Unknown",
+      "trading_pair": "ARB/USDT"
+    },
+    "JTO": {
+      "old_price": 0.503,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 134,
+      "exchange": "Unknown",
+      "trading_pair": "JTO/USDT"
+    },
+    "PENDLE": {
+      "old_price": 1.945,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 132,
+      "exchange": "Unknown",
+      "trading_pair": "PENDLE/USDT"
+    },
+    "SAFE": {
+      "old_price": 0.1456,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 132,
+      "exchange": "Unknown",
+      "trading_pair": "SAFE/USDT"
+    },
+    "SNX": {
+      "old_price": 0.324,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 130,
+      "exchange": "Unknown",
+      "trading_pair": "SNX/USDT"
+    },
+    "RAY": {
+      "old_price": 0.764,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 129,
+      "exchange": "Unknown",
+      "trading_pair": "RAY/USDT"
+    },
+    "OLAS": {
+      "old_price": 0.78,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 129,
+      "exchange": "Unknown",
+      "trading_pair": "OLAS/USDT"
+    },
+    "AKT": {
+      "old_price": 0.8803,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 129,
+      "exchange": "Unknown",
+      "trading_pair": "AKT/USDT"
+    },
+    "GNO": {
+      "old_price": 117.82,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 128,
+      "exchange": "Unknown",
+      "trading_pair": "GNO/USDT"
+    },
+    "TAO": {
+      "old_price": 270.5,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 128,
+      "exchange": "Unknown",
+      "trading_pair": "TAO/USDT"
+    },
+    "RENDER": {
+      "old_price": 2.208,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 127,
+      "exchange": "Unknown",
+      "trading_pair": "RENDER/USDT"
+    },
+    "BERA": {
+      "old_price": 0.3821,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 127,
+      "exchange": "Unknown",
+      "trading_pair": "BERA/USDT"
+    },
+    "LEO": {
+      "old_price": 8.85,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 126,
+      "exchange": "Unknown",
+      "trading_pair": "LEO/USDT"
+    },
+    "TRX": {
+      "old_price": 0.3726,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 125,
+      "exchange": "Unknown",
+      "trading_pair": "TRX/USDT"
+    },
+    "OP": {
+      "old_price": 0.1306,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 123,
+      "exchange": "Unknown",
+      "trading_pair": "OP/USDT"
+    },
+    "POL": {
+      "old_price": 0.195,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 123,
+      "exchange": "Unknown",
+      "trading_pair": "POL/USDT"
+    },
+    "CAKE": {
+      "old_price": 1.422,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 123,
+      "exchange": "Unknown",
+      "trading_pair": "CAKE/USDT"
+    },
+    "LPT": {
+      "old_price": 2.301,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 123,
+      "exchange": "Unknown",
+      "trading_pair": "LPT/USDT"
+    },
+    "GT": {
+      "old_price": 22.5,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 123,
+      "exchange": "Unknown",
+      "trading_pair": "GT/USDT"
+    },
+    "ORCA": {
+      "old_price": 1.392,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 123,
+      "exchange": "Unknown",
+      "trading_pair": "ORCA/USDT"
+    },
+    "HNT": {
+      "old_price": 0.7775,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 122,
+      "exchange": "Unknown",
+      "trading_pair": "HNT/USDT"
+    },
+    "TON": {
+      "old_price": 1.899,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 121,
+      "exchange": "Unknown",
+      "trading_pair": "TON/USDT"
+    },
+    "GRT": {
+      "old_price": 0.0269,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 121,
+      "exchange": "Unknown",
+      "trading_pair": "GRT/USDT"
+    },
+    "XRP": {
+      "old_price": 1.3603,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 121,
+      "exchange": "Unknown",
+      "trading_pair": "XRP/USDT"
+    },
+    "VELO": {
+      "old_price": 0.003958,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 121,
+      "exchange": "Unknown",
+      "trading_pair": "VELO/USDT"
+    },
+    "MAV": {
+      "old_price": 0.01343,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 121,
+      "exchange": "Unknown",
+      "trading_pair": "MAV/USDT"
+    },
+    "VRTX": {
+      "old_price": 0.015,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 121,
+      "exchange": "Unknown",
+      "trading_pair": "VRTX/USDT"
+    },
+    "ENA": {
+      "old_price": 0.101,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 120,
+      "exchange": "Unknown",
+      "trading_pair": "ENA/USDT"
+    },
+    "TIA": {
+      "old_price": 0.4477,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 120,
+      "exchange": "Unknown",
+      "trading_pair": "TIA/USDT"
+    },
+    "CHZ": {
+      "old_price": 0.0356,
+      "verdict": "CAUTIOUS HOLD",
+      "score": 120,
+      "exchange": "Unknown",
+      "trading_pair": "CHZ/USDT"
+    },
+    "COMP": {
+      "old_price": 19.61,
+      "verdict": "WATCH",
+      "score": 119,
+      "exchange": "Unknown",
+      "trading_pair": "COMP/USDT"
+    },
+    "PRIME": {
+      "old_price": 0.3747,
+      "verdict": "WATCH",
+      "score": 119,
+      "exchange": "Unknown",
+      "trading_pair": "PRIME/USDT"
+    },
+    "MNDE": {
+      "old_price": 0.04,
+      "verdict": "WATCH",
+      "score": 119,
+      "exchange": "Unknown",
+      "trading_pair": "MNDE/USDT"
+    },
+    "KCS": {
+      "old_price": 10.5,
+      "verdict": "WATCH",
+      "score": 119,
+      "exchange": "Unknown",
+      "trading_pair": "KCS/USDT"
+    },
+    "STX": {
+      "old_price": 0.2451,
+      "verdict": "WATCH",
+      "score": 118,
+      "exchange": "Unknown",
+      "trading_pair": "STX/USDT"
+    },
+    "WOO": {
+      "old_price": 0.0173,
+      "verdict": "WATCH",
+      "score": 118,
+      "exchange": "Unknown",
+      "trading_pair": "WOO/USDT"
+    },
+    "IMX": {
+      "old_price": 0.1708,
+      "verdict": "WATCH",
+      "score": 117,
+      "exchange": "Unknown",
+      "trading_pair": "IMX/USDT"
+    },
+    "XMR": {
+      "old_price": 118.7,
+      "verdict": "WATCH",
+      "score": 117,
+      "exchange": "Unknown",
+      "trading_pair": "XMR/USDT"
+    },
+    "STG": {
+      "old_price": 0.1662,
+      "verdict": "WATCH",
+      "score": 117,
+      "exchange": "Unknown",
+      "trading_pair": "STG/USDT"
+    },
+    "JOE": {
+      "old_price": 0.0416,
+      "verdict": "WATCH",
+      "score": 117,
+      "exchange": "Unknown",
+      "trading_pair": "JOE/USDT"
+    },
+    "APT": {
+      "old_price": 0.953,
+      "verdict": "WATCH",
+      "score": 116,
+      "exchange": "Unknown",
+      "trading_pair": "APT/USDT"
+    },
+    "GNS": {
+      "old_price": 0.524,
+      "verdict": "WATCH",
+      "score": 116,
+      "exchange": "Unknown",
+      "trading_pair": "GNS/USDT"
+    },
+    "QNT": {
+      "old_price": 79.68,
+      "verdict": "WATCH",
+      "score": 116,
+      "exchange": "Unknown",
+      "trading_pair": "QNT/USDT"
+    },
+    "S": {
+      "old_price": 0.04779,
+      "verdict": "WATCH",
+      "score": 115,
+      "exchange": "Unknown",
+      "trading_pair": "S/USDT"
+    },
+    "ONDO": {
+      "old_price": 0.4382,
+      "verdict": "WATCH",
+      "score": 115,
+      "exchange": "Unknown",
+      "trading_pair": "ONDO/USDT"
+    },
+    "CFG": {
+      "old_price": 0.2835,
+      "verdict": "WATCH",
+      "score": 115,
+      "exchange": "Unknown",
+      "trading_pair": "CFG/USDT"
+    },
+    "KAS": {
+      "old_price": 0.03389,
+      "verdict": "WATCH",
+      "score": 114,
+      "exchange": "Unknown",
+      "trading_pair": "KAS/USDT"
+    },
+    "ADA": {
+      "old_price": 0.246,
+      "verdict": "WATCH",
+      "score": 113,
+      "exchange": "Unknown",
+      "trading_pair": "ADA/USDT"
+    },
+    "HBAR": {
+      "old_price": 0.0871,
+      "verdict": "WATCH",
+      "score": 112,
+      "exchange": "Unknown",
+      "trading_pair": "HBAR/USDT"
+    },
+    "TNSR": {
+      "old_price": 0.0382,
+      "verdict": "WATCH",
+      "score": 112,
+      "exchange": "Unknown",
+      "trading_pair": "TNSR/USDT"
+    },
+    "GRASS": {
+      "old_price": 0.4042,
+      "verdict": "WATCH",
+      "score": 111,
+      "exchange": "Unknown",
+      "trading_pair": "GRASS/USDT"
+    },
+    "YFI": {
+      "old_price": 2513.0,
+      "verdict": "WATCH",
+      "score": 111,
+      "exchange": "Unknown",
+      "trading_pair": "YFI/USDT"
+    },
+    "FTM": {
+      "old_price": 0.6994,
+      "verdict": "WATCH",
+      "score": 111,
+      "exchange": "Unknown",
+      "trading_pair": "FTM/USDT"
+    },
+    "MATIC": {
+      "old_price": 0.32,
+      "verdict": "WATCH",
+      "score": 110,
+      "exchange": "Unknown",
+      "trading_pair": "MATIC/USDT"
+    },
+    "KNC": {
+      "old_price": 0.146,
+      "verdict": "WATCH",
+      "score": 110,
+      "exchange": "Unknown",
+      "trading_pair": "KNC/USDT"
+    },
+    "FET": {
+      "old_price": 0.2239,
+      "verdict": "WATCH",
+      "score": 109,
+      "exchange": "Unknown",
+      "trading_pair": "FET/USDT"
+    },
+    "DYDX": {
+      "old_price": 0.15407,
+      "verdict": "WATCH",
+      "score": 109,
+      "exchange": "Unknown",
+      "trading_pair": "DYDX/USDT"
+    },
+    "BICO": {
+      "old_price": 0.0265,
+      "verdict": "WATCH",
+      "score": 109,
+      "exchange": "Unknown",
+      "trading_pair": "BICO/USDT"
+    },
+    "IO": {
+      "old_price": 0.1527,
+      "verdict": "WATCH",
+      "score": 108,
+      "exchange": "Unknown",
+      "trading_pair": "IO/USDT"
+    },
+    "PERP": {
+      "old_price": 0.125,
+      "verdict": "WATCH",
+      "score": 108,
+      "exchange": "Unknown",
+      "trading_pair": "PERP/USDT"
+    },
+    "STORJ": {
+      "old_price": 0.0993,
+      "verdict": "WATCH",
+      "score": 108,
+      "exchange": "Unknown",
+      "trading_pair": "STORJ/USDT"
+    },
+    "ALCX": {
+      "old_price": 5.5,
+      "verdict": "WATCH",
+      "score": 108,
+      "exchange": "Unknown",
+      "trading_pair": "ALCX/USDT"
+    },
+    "OM": {
+      "old_price": 0.5,
+      "verdict": "WATCH",
+      "score": 108,
+      "exchange": "Unknown",
+      "trading_pair": "OM/USDT"
+    },
+    "XLM": {
+      "old_price": 0.1481,
+      "verdict": "WATCH",
+      "score": 108,
+      "exchange": "Unknown",
+      "trading_pair": "XLM/USDT"
+    },
+    "EIGEN": {
+      "old_price": 0.2012,
+      "verdict": "WATCH",
+      "score": 107,
+      "exchange": "Unknown",
+      "trading_pair": "EIGEN/USDT"
+    },
+    "PYTH": {
+      "old_price": 0.0402,
+      "verdict": "WATCH",
+      "score": 107,
+      "exchange": "Unknown",
+      "trading_pair": "PYTH/USDT"
+    },
+    "VELA": {
+      "old_price": 0.015,
+      "verdict": "WATCH",
+      "score": 107,
+      "exchange": "Unknown",
+      "trading_pair": "VELA/USDT"
+    },
+    "GEL": {
+      "old_price": 0.02,
+      "verdict": "WATCH",
+      "score": 107,
+      "exchange": "Unknown",
+      "trading_pair": "GEL/USDT"
+    },
+    "SSV": {
+      "old_price": 2.646,
+      "verdict": "WATCH",
+      "score": 106,
+      "exchange": "Unknown",
+      "trading_pair": "SSV/USDT"
+    },
+    "ZRO": {
+      "old_price": 1.3,
+      "verdict": "WATCH",
+      "score": 106,
+      "exchange": "Unknown",
+      "trading_pair": "ZRO/USDT"
+    },
+    "SLND": {
+      "old_price": 0.15,
+      "verdict": "WATCH",
+      "score": 106,
+      "exchange": "Unknown",
+      "trading_pair": "SLND/USDT"
+    },
+    "GTC": {
+      "old_price": 0.096,
+      "verdict": "WATCH",
+      "score": 106,
+      "exchange": "Unknown",
+      "trading_pair": "GTC/USDT"
+    },
+    "THETA": {
+      "old_price": 1.02,
+      "verdict": "WATCH",
+      "score": 105,
+      "exchange": "Unknown",
+      "trading_pair": "THETA/USDT"
+    },
+    "FXS": {
+      "old_price": 0.812,
+      "verdict": "WATCH",
+      "score": 105,
+      "exchange": "Unknown",
+      "trading_pair": "FXS/USDT"
+    },
+    "QUICK": {
+      "old_price": 0.00803,
+      "verdict": "WATCH",
+      "score": 105,
+      "exchange": "Unknown",
+      "trading_pair": "QUICK/USDT"
+    },
+    "RPL": {
+      "old_price": 1.71,
+      "verdict": "WATCH",
+      "score": 104,
+      "exchange": "Unknown",
+      "trading_pair": "RPL/USDT"
+    },
+    "PENGU": {
+      "old_price": 0.008907,
+      "verdict": "WATCH",
+      "score": 104,
+      "exchange": "Unknown",
+      "trading_pair": "PENGU/USDT"
+    },
+    "RDNT": {
+      "old_price": 0.00328,
+      "verdict": "WATCH",
+      "score": 104,
+      "exchange": "Unknown",
+      "trading_pair": "RDNT/USDT"
+    },
+    "RON": {
+      "old_price": 0.85,
+      "verdict": "WATCH",
+      "score": 104,
+      "exchange": "Unknown",
+      "trading_pair": "RON/USDT"
+    },
+    "MLN": {
+      "old_price": 1.98,
+      "verdict": "WATCH",
+      "score": 104,
+      "exchange": "Unknown",
+      "trading_pair": "MLN/USDT"
+    },
+    "RSR": {
+      "old_price": 0.001648,
+      "verdict": "WATCH",
+      "score": 104,
+      "exchange": "Unknown",
+      "trading_pair": "RSR/USDT"
+    },
+    "DOT": {
+      "old_price": 1.28,
+      "verdict": "WATCH",
+      "score": 103,
+      "exchange": "Unknown",
+      "trading_pair": "DOT/USDT"
+    },
+    "CVX": {
+      "old_price": 1.71,
+      "verdict": "WATCH",
+      "score": 103,
+      "exchange": "Unknown",
+      "trading_pair": "CVX/USDT"
+    },
+    "KLAY": {
+      "old_price": 0.1255,
+      "verdict": "WATCH",
+      "score": 103,
+      "exchange": "Unknown",
+      "trading_pair": "KLAY/USDT"
+    },
+    "KSM": {
+      "old_price": 4.74,
+      "verdict": "WATCH",
+      "score": 103,
+      "exchange": "Unknown",
+      "trading_pair": "KSM/USDT"
+    },
+    "SHDW": {
+      "old_price": 0.1,
+      "verdict": "WATCH",
+      "score": 103,
+      "exchange": "Unknown",
+      "trading_pair": "SHDW/USDT"
+    },
+    "LTC": {
+      "old_price": 53.37,
+      "verdict": "WATCH",
+      "score": 102,
+      "exchange": "Unknown",
+      "trading_pair": "LTC/USDT"
+    },
+    "SCROLL": {
+      "old_price": 0.32,
+      "verdict": "WATCH",
+      "score": 102,
+      "exchange": "Unknown",
+      "trading_pair": "SCROLL/USDT"
+    },
+    "ICP": {
+      "old_price": 2.669,
+      "verdict": "WATCH",
+      "score": 102,
+      "exchange": "Unknown",
+      "trading_pair": "ICP/USDT"
+    },
+    "CRO": {
+      "old_price": 0.06805,
+      "verdict": "WATCH",
+      "score": 102,
+      "exchange": "Unknown",
+      "trading_pair": "CRO/USDT"
+    },
+    "TRU": {
+      "old_price": 0.0023,
+      "verdict": "WATCH",
+      "score": 102,
+      "exchange": "Unknown",
+      "trading_pair": "TRU/USDT"
+    },
+    "APE": {
+      "old_price": 0.133,
+      "verdict": "WATCH",
+      "score": 102,
+      "exchange": "Unknown",
+      "trading_pair": "APE/USDT"
+    },
+    "FIL": {
+      "old_price": 0.984,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "FIL/USDT"
+    },
+    "ZEC": {
+      "old_price": 627.05,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "ZEC/USDT"
+    },
+    "VET": {
+      "old_price": 0.006685,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "VET/USDT"
+    },
+    "ATH": {
+      "old_price": 0.005995,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "ATH/USDT"
+    },
+    "ILV": {
+      "old_price": 4.26,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "ILV/USDT"
+    },
+    "MC": {
+      "old_price": 0.12,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "MC/USDT"
+    },
+    "DASH": {
+      "old_price": 43.69,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "DASH/USDT"
+    },
+    "GMT": {
+      "old_price": 0.01098,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "GMT/USDT"
+    },
+    "AUDIO": {
+      "old_price": 0.01932,
+      "verdict": "WATCH",
+      "score": 101,
+      "exchange": "Unknown",
+      "trading_pair": "AUDIO/USDT"
+    },
+    "SEI": {
+      "old_price": 0.06141,
+      "verdict": "WATCH",
+      "score": 100,
+      "exchange": "Unknown",
+      "trading_pair": "SEI/USDT"
+    },
+    "CORE": {
+      "old_price": 0.03634,
+      "verdict": "WATCH",
+      "score": 100,
+      "exchange": "Unknown",
+      "trading_pair": "CORE/USDT"
+    },
+    "BADGER": {
+      "old_price": 0.8,
+      "verdict": "WATCH",
+      "score": 100,
+      "exchange": "Unknown",
+      "trading_pair": "BADGER/USDT"
+    },
+    "USUAL": {
+      "old_price": 0.065,
+      "verdict": "PASS",
+      "score": 99,
+      "exchange": "Unknown",
+      "trading_pair": "USUAL/USDT"
+    },
+    "API3": {
+      "old_price": 0.3361,
+      "verdict": "PASS",
+      "score": 99,
+      "exchange": "Unknown",
+      "trading_pair": "API3/USDT"
+    },
+    "FLR": {
+      "old_price": 0.008221,
+      "verdict": "PASS",
+      "score": 99,
+      "exchange": "Unknown",
+      "trading_pair": "FLR/USDT"
+    },
+    "CFX": {
+      "old_price": 0.05863,
+      "verdict": "PASS",
+      "score": 98,
+      "exchange": "Unknown",
+      "trading_pair": "CFX/USDT"
+    },
+    "MINA": {
+      "old_price": 0.05692,
+      "verdict": "PASS",
+      "score": 98,
+      "exchange": "Unknown",
+      "trading_pair": "MINA/USDT"
+    },
+    "NMR": {
+      "old_price": 8.16,
+      "verdict": "PASS",
+      "score": 98,
+      "exchange": "Unknown",
+      "trading_pair": "NMR/USDT"
+    },
+    "HT": {
+      "old_price": 0.35,
+      "verdict": "PASS",
+      "score": 98,
+      "exchange": "Unknown",
+      "trading_pair": "HT/USDT"
+    },
+    "IOTX": {
+      "old_price": 0.00415,
+      "verdict": "PASS",
+      "score": 98,
+      "exchange": "Unknown",
+      "trading_pair": "IOTX/USDT"
+    },
+    "ALGO": {
+      "old_price": 0.1131,
+      "verdict": "PASS",
+      "score": 97,
+      "exchange": "Unknown",
+      "trading_pair": "ALGO/USDT"
+    },
+    "COTI": {
+      "old_price": 0.01226,
+      "verdict": "PASS",
+      "score": 97,
+      "exchange": "Unknown",
+      "trading_pair": "COTI/USDT"
+    },
+    "SKL": {
+      "old_price": 0.00607,
+      "verdict": "PASS",
+      "score": 97,
+      "exchange": "Unknown",
+      "trading_pair": "SKL/USDT"
+    },
+    "ACH": {
+      "old_price": 0.00643,
+      "verdict": "PASS",
+      "score": 97,
+      "exchange": "Unknown",
+      "trading_pair": "ACH/USDT"
+    },
+    "REQ": {
+      "old_price": 0.0638,
+      "verdict": "PASS",
+      "score": 97,
+      "exchange": "Unknown",
+      "trading_pair": "REQ/USDT"
+    },
+    "RAD": {
+      "old_price": 0.4,
+      "verdict": "PASS",
+      "score": 97,
+      "exchange": "Unknown",
+      "trading_pair": "RAD/USDT"
+    },
+    "ORDI": {
+      "old_price": 4.115,
+      "verdict": "PASS",
+      "score": 96,
+      "exchange": "Unknown",
+      "trading_pair": "ORDI/USDT"
+    },
+    "ANKR": {
+      "old_price": 0.0047,
+      "verdict": "PASS",
+      "score": 96,
+      "exchange": "Unknown",
+      "trading_pair": "ANKR/USDT"
+    },
+    "POOL": {
+      "old_price": 0.15,
+      "verdict": "PASS",
+      "score": 96,
+      "exchange": "Unknown",
+      "trading_pair": "POOL/USDT"
+    },
+    "FLUX": {
+      "old_price": 0.0795,
+      "verdict": "PASS",
+      "score": 96,
+      "exchange": "Unknown",
+      "trading_pair": "FLUX/USDT"
+    },
+    "CTSI": {
+      "old_price": 0.02927,
+      "verdict": "PASS",
+      "score": 96,
+      "exchange": "Unknown",
+      "trading_pair": "CTSI/USDT"
+    },
+    "ZK": {
+      "old_price": 0.01539,
+      "verdict": "PASS",
+      "score": 95,
+      "exchange": "Unknown",
+      "trading_pair": "ZK/USDT"
+    },
+    "BAL": {
+      "old_price": 0.967,
+      "verdict": "PASS",
+      "score": 95,
+      "exchange": "Unknown",
+      "trading_pair": "BAL/USDT"
+    },
+    "ALPACA": {
+      "old_price": 0.2244,
+      "verdict": "PASS",
+      "score": 95,
+      "exchange": "Unknown",
+      "trading_pair": "ALPACA/USDT"
+    },
+    "YGG": {
+      "old_price": 0.03785,
+      "verdict": "PASS",
+      "score": 95,
+      "exchange": "Unknown",
+      "trading_pair": "YGG/USDT"
+    },
+    "INV": {
+      "old_price": 15.0,
+      "verdict": "PASS",
+      "score": 95,
+      "exchange": "Unknown",
+      "trading_pair": "INV/USDT"
+    },
+    "POLYX": {
+      "old_price": 0.03,
+      "verdict": "PASS",
+      "score": 95,
+      "exchange": "Unknown",
+      "trading_pair": "POLYX/USDT"
+    },
+    "CELO": {
+      "old_price": 0.08277,
+      "verdict": "PASS",
+      "score": 94,
+      "exchange": "Unknown",
+      "trading_pair": "CELO/USDT"
+    },
+    "GLMR": {
+      "old_price": 0.013,
+      "verdict": "PASS",
+      "score": 94,
+      "exchange": "Unknown",
+      "trading_pair": "GLMR/USDT"
+    },
+    "RLC": {
+      "old_price": 0.4324,
+      "verdict": "PASS",
+      "score": 94,
+      "exchange": "Unknown",
+      "trading_pair": "RLC/USDT"
+    },
+    "MX": {
+      "old_price": 2.8,
+      "verdict": "PASS",
+      "score": 94,
+      "exchange": "Unknown",
+      "trading_pair": "MX/USDT"
+    },
+    "CKB": {
+      "old_price": 0.001429,
+      "verdict": "PASS",
+      "score": 93,
+      "exchange": "Unknown",
+      "trading_pair": "CKB/USDT"
+    },
+    "STRK": {
+      "old_price": 0.04272,
+      "verdict": "PASS",
+      "score": 93,
+      "exchange": "Unknown",
+      "trading_pair": "STRK/USDT"
+    },
+    "1INCH": {
+      "old_price": 0.0924,
+      "verdict": "PASS",
+      "score": 93,
+      "exchange": "Unknown",
+      "trading_pair": "1INCH/USDT"
+    },
+    "BONK": {
+      "old_price": 6.042e-06,
+      "verdict": "PASS",
+      "score": 93,
+      "exchange": "Unknown",
+      "trading_pair": "BONK/USDT"
+    },
+    "OSMO": {
+      "old_price": 0.062,
+      "verdict": "PASS",
+      "score": 93,
+      "exchange": "Unknown",
+      "trading_pair": "OSMO/USDT"
+    },
+    "PROP": {
+      "old_price": 0.35,
+      "verdict": "PASS",
+      "score": 93,
+      "exchange": "Unknown",
+      "trading_pair": "PROP/USDT"
+    },
+    "FARM": {
+      "old_price": 6.58,
+      "verdict": "PASS",
+      "score": 93,
+      "exchange": "Unknown",
+      "trading_pair": "FARM/USDT"
+    },
+    "MOBILE": {
+      "old_price": 0.0001106,
+      "verdict": "PASS",
+      "score": 92,
+      "exchange": "Unknown",
+      "trading_pair": "MOBILE/USDT"
+    },
+    "W": {
+      "old_price": 0.0122,
+      "verdict": "PASS",
+      "score": 92,
+      "exchange": "Unknown",
+      "trading_pair": "W/USDT"
+    },
+    "PEPE": {
+      "old_price": 3.658e-06,
+      "verdict": "PASS",
+      "score": 92,
+      "exchange": "Unknown",
+      "trading_pair": "PEPE/USDT"
+    },
+    "MBOX": {
+      "old_price": 0.0111,
+      "verdict": "PASS",
+      "score": 92,
+      "exchange": "Unknown",
+      "trading_pair": "MBOX/USDT"
+    },
+    "HOPR": {
+      "old_price": 0.03,
+      "verdict": "PASS",
+      "score": 92,
+      "exchange": "Unknown",
+      "trading_pair": "HOPR/USDT"
+    },
+    "SNT": {
+      "old_price": 0.0272,
+      "verdict": "PASS",
+      "score": 92,
+      "exchange": "Unknown",
+      "trading_pair": "SNT/USDT"
+    },
+    "ATOM": {
+      "old_price": 2.137,
+      "verdict": "PASS",
+      "score": 91,
+      "exchange": "Unknown",
+      "trading_pair": "ATOM/USDT"
+    },
+    "ALPHA": {
+      "old_price": 0.0097,
+      "verdict": "PASS",
+      "score": 91,
+      "exchange": "Unknown",
+      "trading_pair": "ALPHA/USDT"
+    },
+    "POND": {
+      "old_price": 0.00257,
+      "verdict": "PASS",
+      "score": 91,
+      "exchange": "Unknown",
+      "trading_pair": "POND/USDT"
+    },
+    "TRB": {
+      "old_price": 17.39,
+      "verdict": "PASS",
+      "score": 90,
+      "exchange": "Unknown",
+      "trading_pair": "TRB/USDT"
+    },
+    "CELR": {
+      "old_price": 0.002459,
+      "verdict": "PASS",
+      "score": 90,
+      "exchange": "Unknown",
+      "trading_pair": "CELR/USDT"
+    },
+    "NANO": {
+      "old_price": 0.35,
+      "verdict": "PASS",
+      "score": 90,
+      "exchange": "Unknown",
+      "trading_pair": "NANO/USDT"
+    },
+    "ETC": {
+      "old_price": 8.83,
+      "verdict": "PASS",
+      "score": 90,
+      "exchange": "Unknown",
+      "trading_pair": "ETC/USDT"
+    },
+    "WLD": {
+      "old_price": 0.2815,
+      "verdict": "PASS",
+      "score": 89,
+      "exchange": "Unknown",
+      "trading_pair": "WLD/USDT"
+    },
+    "DOGE": {
+      "old_price": 0.10315,
+      "verdict": "PASS",
+      "score": 89,
+      "exchange": "Unknown",
+      "trading_pair": "DOGE/USDT"
+    },
+    "ALICE": {
+      "old_price": 0.1,
+      "verdict": "PASS",
+      "score": 89,
+      "exchange": "Unknown",
+      "trading_pair": "ALICE/USDT"
+    },
+    "XTZ": {
+      "old_price": 0.348,
+      "verdict": "PASS",
+      "score": 88,
+      "exchange": "Unknown",
+      "trading_pair": "XTZ/USDT"
+    },
+    "FLOKI": {
+      "old_price": 2.929e-05,
+      "verdict": "PASS",
+      "score": 88,
+      "exchange": "Unknown",
+      "trading_pair": "FLOKI/USDT"
+    },
+    "WIF": {
+      "old_price": 0.1939,
+      "verdict": "PASS",
+      "score": 88,
+      "exchange": "Unknown",
+      "trading_pair": "WIF/USDT"
+    },
+    "PEAQ": {
+      "old_price": 0.004,
+      "verdict": "PASS",
+      "score": 88,
+      "exchange": "Unknown",
+      "trading_pair": "PEAQ/USDT"
+    },
+    "HIGH": {
+      "old_price": 0.162,
+      "verdict": "PASS",
+      "score": 88,
+      "exchange": "Unknown",
+      "trading_pair": "HIGH/USDT"
+    },
+    "SXP": {
+      "old_price": 0.0022,
+      "verdict": "PASS",
+      "score": 88,
+      "exchange": "Unknown",
+      "trading_pair": "SXP/USDT"
+    },
+    "DENT": {
+      "old_price": 3.8e-05,
+      "verdict": "PASS",
+      "score": 88,
+      "exchange": "Unknown",
+      "trading_pair": "DENT/USDT"
+    },
+    "BLAST": {
+      "old_price": 0.0004682,
+      "verdict": "PASS",
+      "score": 87,
+      "exchange": "Unknown",
+      "trading_pair": "BLAST/USDT"
+    },
+    "LEVER": {
+      "old_price": 0.000175,
+      "verdict": "PASS",
+      "score": 87,
+      "exchange": "Unknown",
+      "trading_pair": "LEVER/USDT"
+    },
+    "NOS": {
+      "old_price": 0.08,
+      "verdict": "PASS",
+      "score": 86,
+      "exchange": "Unknown",
+      "trading_pair": "NOS/USDT"
+    },
+    "GOG": {
+      "old_price": 0.02,
+      "verdict": "PASS",
+      "score": 86,
+      "exchange": "Unknown",
+      "trading_pair": "GOG/USDT"
+    },
+    "AGLD": {
+      "old_price": 0.23,
+      "verdict": "PASS",
+      "score": 86,
+      "exchange": "Unknown",
+      "trading_pair": "AGLD/USDT"
+    },
+    "CANTO": {
+      "old_price": 0.01,
+      "verdict": "PASS",
+      "score": 86,
+      "exchange": "Unknown",
+      "trading_pair": "CANTO/USDT"
+    },
+    "EGLD": {
+      "old_price": 4.05,
+      "verdict": "PASS",
+      "score": 85,
+      "exchange": "Unknown",
+      "trading_pair": "EGLD/USDT"
+    },
+    "ROSE": {
+      "old_price": 0.0102,
+      "verdict": "PASS",
+      "score": 84,
+      "exchange": "Unknown",
+      "trading_pair": "ROSE/USDT"
+    },
+    "BLUR": {
+      "old_price": 0.0221,
+      "verdict": "PASS",
+      "score": 84,
+      "exchange": "Unknown",
+      "trading_pair": "BLUR/USDT"
+    },
+    "FORTH": {
+      "old_price": 0.237,
+      "verdict": "PASS",
+      "score": 84,
+      "exchange": "Unknown",
+      "trading_pair": "FORTH/USDT"
+    },
+    "MASK": {
+      "old_price": 0.467,
+      "verdict": "PASS",
+      "score": 82,
+      "exchange": "Unknown",
+      "trading_pair": "MASK/USDT"
+    },
+    "BOND": {
+      "old_price": 2.152,
+      "verdict": "PASS",
+      "score": 82,
+      "exchange": "Unknown",
+      "trading_pair": "BOND/USDT"
+    },
+    "WAXP": {
+      "old_price": 0.00618,
+      "verdict": "PASS",
+      "score": 81,
+      "exchange": "Unknown",
+      "trading_pair": "WAXP/USDT"
+    },
+    "KAVA": {
+      "old_price": 0.06,
+      "verdict": "PASS",
+      "score": 80,
+      "exchange": "Unknown",
+      "trading_pair": "KAVA/USDT"
+    },
+    "PRCL": {
+      "old_price": 0.02,
+      "verdict": "PASS",
+      "score": 80,
+      "exchange": "Unknown",
+      "trading_pair": "PRCL/USDT"
+    },
+    "FLOW": {
+      "old_price": 0.0351,
+      "verdict": "PASS",
+      "score": 78,
+      "exchange": "Unknown",
+      "trading_pair": "FLOW/USDT"
+    },
+    "LRC": {
+      "old_price": 0.01879,
+      "verdict": "PASS",
+      "score": 78,
+      "exchange": "Unknown",
+      "trading_pair": "LRC/USDT"
+    },
+    "IOTA": {
+      "old_price": 0.0581,
+      "verdict": "PASS",
+      "score": 78,
+      "exchange": "Unknown",
+      "trading_pair": "IOTA/USDT"
+    },
+    "IDEX": {
+      "old_price": 0.003,
+      "verdict": "PASS",
+      "score": 77,
+      "exchange": "Unknown",
+      "trading_pair": "IDEX/USDT"
+    },
+    "MANTA": {
+      "old_price": 0.08065,
+      "verdict": "PASS",
+      "score": 76,
+      "exchange": "Unknown",
+      "trading_pair": "MANTA/USDT"
+    },
+    "AXS": {
+      "old_price": 1.165,
+      "verdict": "PASS",
+      "score": 76,
+      "exchange": "Unknown",
+      "trading_pair": "AXS/USDT"
+    },
+    "BTT": {
+      "old_price": 5e-07,
+      "verdict": "PASS",
+      "score": 76,
+      "exchange": "Unknown",
+      "trading_pair": "BTT/USDT"
+    },
+    "MCB": {
+      "old_price": 0.1,
+      "verdict": "PASS",
+      "score": 76,
+      "exchange": "Unknown",
+      "trading_pair": "MCB/USDT"
+    },
+    "SUSHI": {
+      "old_price": 0.2057,
+      "verdict": "PASS",
+      "score": 74,
+      "exchange": "Unknown",
+      "trading_pair": "SUSHI/USDT"
+    },
+    "RVN": {
+      "old_price": 0.00541,
+      "verdict": "PASS",
+      "score": 74,
+      "exchange": "Unknown",
+      "trading_pair": "RVN/USDT"
+    },
+    "NOT": {
+      "old_price": 0.00485,
+      "verdict": "PASS",
+      "score": 73,
+      "exchange": "Unknown",
+      "trading_pair": "NOT/USDT"
+    },
+    "BAND": {
+      "old_price": 0.212,
+      "verdict": "PASS",
+      "score": 73,
+      "exchange": "Unknown",
+      "trading_pair": "BAND/USDT"
+    },
+    "POPCAT": {
+      "old_price": 0.05706,
+      "verdict": "PASS",
+      "score": 73,
+      "exchange": "Unknown",
+      "trading_pair": "POPCAT/USDT"
+    },
+    "MODE": {
+      "old_price": 0.011,
+      "verdict": "PASS",
+      "score": 72,
+      "exchange": "Unknown",
+      "trading_pair": "MODE/USDT"
+    },
+    "SHIB": {
+      "old_price": 1.35e-05,
+      "verdict": "PASS",
+      "score": 71,
+      "exchange": "Unknown",
+      "trading_pair": "SHIB/USDT"
+    },
+    "NEO": {
+      "old_price": 2.899,
+      "verdict": "PASS",
+      "score": 68,
+      "exchange": "Unknown",
+      "trading_pair": "NEO/USDT"
+    },
+    "RBN": {
+      "old_price": 0.065,
+      "verdict": "PASS",
+      "score": 68,
+      "exchange": "Unknown",
+      "trading_pair": "RBN/USDT"
+    },
+    "SAND": {
+      "old_price": 0.07233,
+      "verdict": "PASS",
+      "score": 68,
+      "exchange": "Unknown",
+      "trading_pair": "SAND/USDT"
+    },
+    "SUPER": {
+      "old_price": 0.1151,
+      "verdict": "PASS",
+      "score": 67,
+      "exchange": "Unknown",
+      "trading_pair": "SUPER/USDT"
+    },
+    "MOVE": {
+      "old_price": 0.01604,
+      "verdict": "PASS",
+      "score": 67,
+      "exchange": "Unknown",
+      "trading_pair": "MOVE/USDT"
+    },
+    "JASMY": {
+      "old_price": 0.005534,
+      "verdict": "PASS",
+      "score": 67,
+      "exchange": "Unknown",
+      "trading_pair": "JASMY/USDT"
+    },
+    "MANA": {
+      "old_price": 0.0879,
+      "verdict": "PASS",
+      "score": 66,
+      "exchange": "Unknown",
+      "trading_pair": "MANA/USDT"
+    },
+    "ZIL": {
+      "old_price": 0.00401,
+      "verdict": "PASS",
+      "score": 63,
+      "exchange": "Unknown",
+      "trading_pair": "ZIL/USDT"
+    },
+    "SPELL": {
+      "old_price": 0.0001598,
+      "verdict": "PASS",
+      "score": 63,
+      "exchange": "Unknown",
+      "trading_pair": "SPELL/USDT"
+    },
+    "DOGS": {
+      "old_price": 0.000485,
+      "verdict": "PASS",
+      "score": 62,
+      "exchange": "Unknown",
+      "trading_pair": "DOGS/USDT"
+    },
+    "QTUM": {
+      "old_price": 0.926,
+      "verdict": "PASS",
+      "score": 61,
+      "exchange": "Unknown",
+      "trading_pair": "QTUM/USDT"
+    },
+    "MEME": {
+      "old_price": 0.0062,
+      "verdict": "PASS",
+      "score": 57,
+      "exchange": "Unknown",
+      "trading_pair": "MEME/USDT"
+    },
+    "NEIRO": {
+      "old_price": 0.00062,
+      "verdict": "PASS",
+      "score": 56,
+      "exchange": "Unknown",
+      "trading_pair": "NEIRO/USDT"
+    },
+    "GALA": {
+      "old_price": 0.003285,
+      "verdict": "PASS",
+      "score": 53,
+      "exchange": "Unknown",
+      "trading_pair": "GALA/USDT"
+    },
+    "KDA": {
+      "old_price": 0.006,
+      "verdict": "PASS",
+      "score": 50,
+      "exchange": "Unknown",
+      "trading_pair": "KDA/USDT"
+    },
+    "ONE": {
+      "old_price": 0.00203,
+      "verdict": "PASS",
+      "score": 48,
+      "exchange": "Unknown",
+      "trading_pair": "ONE/USDT"
+    }
+  }
+}

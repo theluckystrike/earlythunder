@@ -1,0 +1,388 @@
+=== idx 42 JTO | Jito | price 0.503 cur 0.4904 mc 237028271 ath 6 athd -91.5 circ 475694291.2 total 1000000000 max None fdv 510000000 / 498278569 slug jito-governance-token
+ ONE: Solana MEV and liquid staking with $2.8B TVL; jitoSOL growing fast but JTO governance has no direct fee accrual yet.
+ CAT: JTO fee switch enabling staking rewards from MEV tips; Solana network continued growth
+ RISK: No direct revenue accrual to JTO token yet; 91% below ATH; concentrated Solana network risk; a16z large token holder
+  * Jito's jitoSOL holds $2.8B in assets making it one of Solana's largest liquid staking protocols
+    @ DeFiLlama :: https://defillama.com/protocol/jito
+  * Jito MEV infrastructure processes ~60-70% of Solana blocks capturing MEV tips for stakers
+    @ Jito Labs Blog :: https://www.jito.wtf/blog
+  * JTO ATH $6.00 reached January 2024 shortly after TGE airdrop to jitoSOL holders
+    @ CoinGecko :: https://www.coingecko.com/en/coins/jito-governance-token
+=== idx 43 PENDLE | Pendle Finance | price 1.364 cur 1.364 mc 232400000 ath 7.52 athd -81.9 circ 170870000 total 281530000 max None fdv 382900000 / 333700000 slug pendle
+ ONE: DeFi's yield monopoly: 50-60% market share, $24.4M trailing rev, sPENDLE 80% buyback (9.3% yield). Fortune 2026 Innovators. Vietnam IFC w/ BlackRock/MS. 21Shares ETP live. Boros V3 $10B+ vol. All vesting complete. Net dollar-deflationary.
+ CAT: Solana/Hyperliquid/TON chain expansion, Fortune 2026 list, Vietnam IFC delegation, 21Shares ETP (APEN) on SIX, Boros funding rate scaling, KYC Citadels + Shariah, one-click leveraged PTs, RWA $151M growing
+ RISK: Revenue collapsed 87.6% from peak ($4.44M/mo→$552K/mo). TVL -91% from $13.4B. No max supply cap (perpetual 2% inflation). Team holds 15% circ (25.59M), consistently selling ($9.76M cumulative). Ethena 50-75% TVL concentration. Hayes partially exited.
+  * TVL $1.171B across 11 chains (ETH $796M, Plasma $195M, Arb $139M, HyperL1 $25M, BSC $11M)
+    @ DeFiLlama :: https://defillama.com/protocol/pendle
+  * 30d revenue $896,892. 30d fees $914,957. Annualized trailing $24.4M. 2025 full-year $44.6M (+134% YoY)
+    @ DeFiLlama / Token Terminal :: https://defillama.com/protocol/pendle
+  * sPENDLE launched Jan 20, 2026. 80% revenue to PENDLE buybacks. 14-day unstake. Replaced 2-year vePENDLE locks
+    @ CoinDesk / BanklessTimes :: https://www.coindesk.com/markets/2026/01/20/pendle-introduces-spendle-removing-the-need-for-long-lockups/
+  * Fortune Crypto Innovators 2026 list (Jun 11), among 30 leading projects globally
+    @ Fortune :: https://fortune.com/2026/06/11/crypto-innovators-2026-asia-europe-usa/
+  * Vietnam IFC delegation (Mar 2026): TN Lee alongside BlackRock, Morgan Stanley, Deutsche Bank, Franklin Templeton
+    @ CryptoBriefing / Benzinga :: https://cryptobriefing.com/pendle-joins-vietnam-ifc-delegation-alongside-blackrock-morgan-stanley-and-deutsche-bank/
+  * Boros V3: $10B+ cumulative notional volume (Feb 2026, 2.7x faster than V2). $250M peak OI. $2.9B monthly volume
+    @ Bitget / Phemex :: https://www.bitget.com/news/detail/12560605184810
+  * 21Shares Pendle ETP (APEN) live on SIX Swiss Exchange. Regulated PENDLE exposure for European investors
+    @ CoinLaw :: https://coinlaw.io/pendle-etp-launch-21shares-defi-tradfi/
+  * Team deposited 600K PENDLE to Binance May 13, 2026 ($1.27M). Cumulative $9.76M sold. 25.59M remaining (15% circ)
+    @ Blockchain News / BitcoinWorld :: https://bitcoinworld.co.in/pendle-team-deposits-pendle-binance/
+  * Arthur Hayes: accumulated ~$1.7M in PENDLE. Then transferred 950K PENDLE ($1.14M) to exchange Feb 2026
+    @ BeInCrypto / BlockchainReporter :: https://blockchainreporter.net/arthur-hayes-liquidates-3-14m-in-ena-ethfi-and-pendle-holdings/
+  * KYC Citadels: regulated access via isolated SPVs. Shariah-Compliant Citadel targeting $4.5T Islamic finance
+    @ AInvest / EarnPark :: https://www.ainvest.com/news/pendle-dominance-chain-fixed-yield-path-institutional-adoption-2026-2512/
+  * RWA TVL $151M across USDY, USYC, USDG (Paxos), apxUSD, apyUSD. Growing over 8 months
+    @ Bitget :: https://www.bitget.com/news/detail/12560605395089
+  * Terminal 2% inflation active since Apr 2026. ~3.42M PENDLE/yr. Algorithmic emissions cut ~30% vs gauge voting
+    @ Pendle Docs / OAK Research :: https://docs.pendle.finance/pendle-v2/ProtocolMechanics/Mechanisms/Tokenomics
+  * 50-60% market share in yield tokenization. Spectra (only competitor) ~$30M TVL = ~25x smaller. Element/Yield DEAD
+    @ MEXC / DeFiLlama :: https://www.mexc.com/news/831281
+  * Plasma chain: $195M TVL, launched Jan 15, 2026, +$318M TVL in first 96 hours
+    @ CryptoPotato :: https://cryptopotato.com/pendle-grows-an-additional-318-million-tvl-just-4-days-after-plasma-launch/
+  * $7.49M in CHIPS distributed to sPENDLE holders (Apr 2026). Revenue buyback yield ~9.3% annualized at current rates
+    @ Phemex :: https://phemex.com/news/article/pendle-distributes-749m-in-chips-to-spendle-holders-76571
+=== idx 44 SAFE | Safe (formerly Gnosis Safe) | price 0.1456 cur 0.1489 mc 104188202 ath 1.95 athd -92.2 circ 740405982 total 1000000000 max 1000000000 fdv 151800000 / 140717667 slug safe
+ ONE: Token for the dominant smart-contract wallet securing $100B+ in assets, but governance token with minimal direct value accrual so far
+ CAT: Fee switch or protocol revenue share activation by Safe DAO
+ RISK: Token has no clear value accrual mechanism; Safe protocol revenues flow to contributors not token holders
+  * Safe wallets collectively hold over $100B in assets across 40+ chains as of 2025
+    @ Safe Global :: https://safe.global
+  * Only 22% of SAFE token supply is circulating; large releases scheduled through 2027
+    @ CoinGecko :: https://www.coingecko.com/en/coins/safe
+  * Safe DAO launched with $1B+ treasury but token has no direct fee share yet
+    @ Safe Forum :: https://forum.safe.global
+=== idx 45 SNX | Synthetix | price 0.324 cur 0.324 mc 109209122 ath 28.77 athd -98.9 circ 344516234.4572882 total 344939867.5556631 max 344939867 fdv 106000000 / 109343410 slug synthetix
+ ONE: Best tokenomics (zero inflation, 100% fee buyback, 99.7% circ) but losing perps war. sUSD at $0.74.
+ CAT: sUSD repeg in ~6 weeks triggers 100% SNX buybacks, ETH mainnet CLOB launch
+ RISK: Hyperliquid 70-80% market share dominance, $210M TVL vs HYPE $6.2B, broken sUSD peg
+  * Inflation permanently ended via SIP 2043, 99.7% circulating
+    @ Synthetix Blog :: https://blog.synthetix.io/the-end-of-synthetix-token-inflation/
+  * 100% trading fees go to SNX buybacks
+    @ Synthetix Q2 Roadmap :: https://blog.synthetix.io/2026-roadmap/
+  * Hyperliquid 70-80% perps market share vs SNX negligible
+    @ Blockworks Research :: https://blockworks.co/news/perps-competition
+  * sUSD peg still broken, $5M estimated restoration cost
+    @ Synthetix Blog :: https://blog.synthetix.io/rebuilding-susd/
+=== idx 46 RAY | Raydium | price 0.764 cur 0.764 mc 203916440 ath 16.93 athd -91.7 circ 268977952.317238 total 555000000 max 555000000 fdv 443000000 / 420754279 slug raydium
+ ONE: Cyclical memecoin infrastructure. Revenue collapsed 76% from peak. PumpSwap forking the model.
+ CAT: Solana memecoin cycle revival could 3-5x volume overnight
+ RISK: PumpSwap directly forked revenue model, anonymous team, Q1 2026 revenue -76% from Q3 2025
+  * Q1 2026 revenue $5.79M (-76% from Q3 2025 peak $24.3M)
+    @ Blockworks :: https://blockworks.com/analytics/raydium
+  * 25% of trading fees fund RAY buybacks, $196M cumulative
+    @ Raydium Docs :: https://docs.raydium.io/raydium/protocol/the-ray-token/ray-buybacks
+  * PumpSwap directly forked Raydium's liquidity model
+    @ Cointelegraph :: https://cointelegraph.com/news/pump-fun-launches-own-dex-dropping-raydium
+  * Anonymous team, no public roadmap or regular communication
+    @ CryptoSlate :: https://cryptoslate.com/companies/raydium/
+=== idx 47 OLAS | Olas (Autonolas) | price 0.78 cur 0.35 mc 7333047 ath 9.33 athd -91.6 circ 236969237.5453377 total 473475201.3587778 max None fdv 780000000 / 14651758 slug autonolas
+ ONE: Autonomous AI agent infrastructure with multi-chain deployment; technically deep but lost to Virtuals on narrative and accessibility
+ CAT: Olas Predict and Mechs gaining traction; first-mover in programmable AI agent services vs simple chatbot agents
+ RISK: 91.6% down from ATH; Virtuals captured mainstream AI agent narrative; OLAS staking/locking mechanics complex for retail
+  * Autonolas (OLAS) builds autonomous agent services across Gnosis, Ethereum and other chains with staking/locking for operators
+    @ Autonolas Docs :: https://docs.autonolas.network/
+  * Olas Predict (prediction market agents) and Mechs (AI task execution) are live products generating protocol activity
+    @ Olas Blog :: https://olas.network/blog
+  * OLAS down 91.6% from $9.33 ATH; lost AI agent narrative race to Virtuals Protocol despite being earlier to market
+    @ CoinGecko :: https://www.coingecko.com/en/coins/autonolas
+=== idx 48 AKT | Akash Network | price 0.8803 cur 0.8803 mc 266467318 ath 8.08 athd -89.61 circ 292078878.414427 total 294139319.260747 max 388539008 fdv 252700000 / 268345906 slug akash-network
+ ONE: Decentralized GPU cloud marketplace with real revenue; GPU demand tailwind but AKT P/S stretched vs actual compute revenue.
+ CAT: GPU leasing demand from AI startups; confidential compute and persistent storage launches
+ RISK: Actual AKT-denominated revenue remains modest; centralized clouds (AWS, Lambda) competing aggressively on price; token not required for marketplace use
+  * Akash Network GPU marketplace hosts thousands of GPUs including H100s from independent providers
+    @ Akash Network Stats :: https://stats.akash.network
+  * AKT staking yield ~15-20% APY with Cosmos SDK validator set
+    @ Staking Rewards :: https://www.stakingrewards.com/earn/akash-network/
+  * AKT ATH $8.08 reached March 2024 on AI/GPU compute narrative
+    @ CoinGecko :: https://www.coingecko.com/en/coins/akash-network
+=== idx 49 GNO | Gnosis | price 117.82 cur 117.82 mc 309221575 ath 639.24 athd -81.5 circ 2639589 total 3000000 max 3000000 fdv 1181700000 / 351442867 slug gnosis
+ ONE: Gnosis Chain validator token and Safe network governance token with real utility and Ethereum alignment, but niche chain and high price vs fundamentals
+ CAT: Gnosis Pay card adoption and Gnosis Chain positioning as Ethereum's community L1
+ RISK: Gnosis Chain has minimal DeFi activity vs Ethereum L2s; GNO value thesis relies on staking yield and Safe governance
+  * Gnosis Chain uses a dual-token model where GNO is staked to validate; ~$600M in bridged TVL
+    @ DeFiLlama :: https://defillama.com/chain/Gnosis
+  * Gnosis Pay launched a Visa debit card backed by crypto, targeting European crypto-native users
+    @ Gnosis Pay :: https://gnosispay.com
+  * GNO provides governance over both Gnosis Chain and Safe DAO treasury, one of the largest DAO treasuries in DeFi
+    @ GnosisDAO :: https://forum.gnosis.io
+=== idx 50 TAO | Bittensor | price 270.5 cur 265 mc 2679110748 ath 775 athd -63.79 circ 9597491 total 21000000 max 21000000 fdv 5892600000 / 5862086841 slug bittensor
+ ONE: Decentralized AI network with 64 subnets; narrative-driven but real compute marketplace emerging; BTC-like emission schedule.
+ CAT: Dtao subnet tokenization enabling sub-token economies; AI compute demand structurally growing
+ RISK: No real revenue accrual to TAO; subnet quality highly variable; BTC-correlated with extra volatility; 44% supply still to emit
+  * Bittensor has 64 active subnets covering AI inference, image generation, text mining as of May 2026
+    @ Taostats :: https://taostats.io
+  * TAO has BTC-like emission schedule with 21M max supply; currently ~7.4M TAO in circulation
+    @ CoinGecko :: https://www.coingecko.com/en/coins/bittensor
+  * dTAO upgrade enabled subnet-specific tokens creating sub-economies within Bittensor network
+    @ Bittensor Blog :: https://bittensor.com/blog
+  * TAO ATH $775 reached November 2024 on AI narrative peak
+    @ CoinMarketCap :: https://coinmarketcap.com/currencies/bittensor/
+=== idx 51 RENDER | Render Network | price 2.208 cur 2.208 mc 1161657394 ath 13.6 athd -72.1 circ 518743261.0140742 total 533503434.2940742 max 644245094 fdv 2040600000 / 1194710863 slug render-token
+ ONE: Decentralized GPU rendering marketplace at ATH correlation with AI hype cycle. Real utility but valuation stretched vs actual render job revenue.
+ CAT: AI inference demand for GPU compute; Solana migration reducing fees and increasing throughput
+ RISK: Actual render network revenue tiny vs market cap; heavy dependence on AI narrative; centralized competitors cheaper
+  * Render Network migrated from Ethereum to Solana in late 2023
+    @ Render Foundation :: https://rendernetwork.com
+  * AI GPU compute demand driving DePIN narrative across crypto markets
+    @ Messari :: https://messari.io/report/depin
+  * Render Network processes over 1M rendering jobs monthly
+    @ Render Dashboard :: https://renderfoundation.com
+=== idx 52 BERA | Berachain | price 0.3821 cur 0.369 mc 98123484 ath 15.76 athd -97.5 circ 261868111.5763819 total 540788640.7467626 max None fdv 197400000 / 202636608 slug berachain
+ ONE: Novel Proof-of-Liquidity L1 with highest post-launch TVL in history, but BERA token down 97.5% and PoL is untested long-term
+ CAT: Berachain network DeFi growth with PoL driving genuine liquidity depth; BGT/HONEY stablecoin flywheel
+ RISK: 97.5% down from ATH; PoL model unproven at scale; BERA token has weak direct value accrual vs BGT governance token
+  * Berachain launched in Feb 2025 with record $3B+ TVL at launch via Proof-of-Liquidity incentives
+    @ DefiLlama :: https://defillama.com/chain/Berachain
+  * BERA crashed from $15+ launch price to under $0.40 as PoL rewards diluted and early holders exited
+    @ CoinGecko :: https://www.coingecko.com/en/coins/berachain
+  * Berachain's tri-token model (BERA/BGT/HONEY) is novel but creates governance complexity and unclear value accrual for BERA holders
+    @ Berachain Docs :: https://docs.berachain.com/learn/berachain-101/
+=== idx 53 LEO | UNUS SED LEO | price 8.85 cur 8.85 mc 9202554432 ath 10.57 athd -5.4 circ 920542696.9 total 985239504 max None fdv 9849320617 / 9849320617 slug leo
+ ONE: Bitfinex/iFinex exchange token. Monthly buyback & burn from profits.
+ CAT: Bitfinex share buyback program using 27% of LEO revenue pool, accelerating token burn from Q3 2025.
+ RISK: DOJ indictment of Bitfinex/Tether executives for bank fraud or sanctions violations.
+=== idx 54 TRX | TRON | price 0.3726 cur 0.3726 mc 35457295582 ath 0.3004 athd -10.8 circ 94809014988.2461 total 94809867458.0615 max None fdv 23273000000 / 35457614395 slug tron
+ ONE: USDT settlement network with massive stablecoin volume. Real revenue but Justin Sun legal issues and centralized governance are persistent overhangs.
+ CAT: Growing USDT-TRC20 adoption in emerging markets; fee revenue near historical highs
+ RISK: Justin Sun SEC fraud charges pending; extreme centralization; reputational damage from FTX era associations
+  * TRON network processes over $20B daily USDT-TRC20 volume
+    @ Tronscan :: https://tronscan.org
+  * Justin Sun charged with SEC fraud and market manipulation in 2023
+    @ SEC :: https://sec.gov/tron-justin-sun
+  * TRON TVL exceeded $11B driven by USDD and USDT stablecoin usage
+    @ DeFiLlama :: https://defillama.com/chain/Tron
+=== idx 55 OP | Optimism | price 0.1306 cur 0.1306 mc 274930587 ath 4.84 athd -83.1 circ 2150875957 total 4294967296 max 4294967296 fdv 3521000000 / 548993947 slug optimism
+ ONE: Ethereum L2 with Superchain vision and OP Stack powering Coinbase Base. Real sequencer revenue but massive token vesting schedule is the key headwind.
+ CAT: Superchain interoperability connecting Base, Optimism, Zora; sequencer revenue growing
+ RISK: Only 30% circulating; OP Foundation and investor releases through 2027 create persistent sell pressure
+  * OP Stack powers Coinbase Base, Zora and dozens of Superchain rollups
+    @ Optimism Foundation :: https://optimism.io/superchain
+  * Optimism sequencer revenue exceeded $50M in 2025
+    @ Token Terminal :: https://tokenterminal.com/terminal/projects/optimism
+  * OP circulating supply only 30% of total as of May 2026
+    @ Messari :: https://messari.io/asset/optimism
+=== idx 56 POL | Polygon system Token | price 0.195 cur 0.3794 mc 982393233 ath 0.68 athd -71.3 circ 10649775802.65383 total 10649775802.65383 max None fdv 1950000000 / 982393233 slug polygon-system-token
+ ONE: Polygon's new staking and gas token replacing MATIC. AggLayer cross-chain aggregation is the core thesis but token vesting schedule is heavy.
+ CAT: AggLayer connecting all Polygon CDK chains into unified liquidity layer; ETH Foundation alignment
+ RISK: Only 38% circulating; MATIC migration not fully complete; AggLayer adoption slower than expected
+  * POL replaced MATIC as Polygon's native gas and staking token in 2024
+    @ Polygon Blog :: https://polygon.technology/blog/pol-has-arrived
+  * AggLayer v1 launched connecting Polygon chains with unified cross-chain liquidity
+    @ Polygon Labs :: https://polygon.technology/agglayer
+  * POL circulating supply 38% of total as migration from MATIC continues
+    @ Messari :: https://messari.io/asset/polygon-system-token
+=== idx 57 CAKE | PancakeSwap | price 1.422 cur 1.391 mc 466907513 ath 43.96 athd -96.69 circ 325479264.6168511 total 337906003.4500047 max 400000000 fdv 655800000 / 484733957 slug pancakeswap-token
+ ONE: BSC's dominant DEX with $1.5B TVL and real fee revenue; aggressive CAKE burn ongoing but BNB network dependence limits upside.
+ CAT: PancakeSwap v4 with concentrated liquidity; multi-chain expansion to Base, zkSync, Linea
+ RISK: 97% below ATH; BNB chain activity fragile; veCAKE tokenomics still inflationary net of burns; Uniswap competition intensifying on every chain
+  * PancakeSwap maintains $1.5B TVL across BSC, Ethereum, and 6+ additional chains as of May 2026
+    @ DeFiLlama :: https://defillama.com/protocol/pancakeswap
+  * PancakeSwap v4 launched with concentrated liquidity and hooks network for custom pool logic
+    @ PancakeSwap Blog :: https://pancakeswap.finance/blog
+  * CAKE weekly burn rate consistently reduces circulating supply via kitchen buyback-and-burn mechanism
+    @ PancakeSwap Kitchen :: https://pancakeswap.finance/cake-staking
+=== idx 58 LPT | Livepeer | price 2.301 cur 2.301 mc 114727594 ath 99.03 athd -97.7 circ 49688954.55 total 49688954.55 max None fdv 114727594 / 114727594 slug lpt
+ ONE: Decentralized video transcoding network. Real compute demand from video platforms.
+ CAT: AI video inference demand on Livepeer network, with 300+ new orchestrators onboarded by April 2025.
+ RISK: Competition from Render Network's video pipeline or AWS MediaConvert capturing 80%+ market share.
+=== idx 59 GT | GateToken | price 22.5 cur 22.5 mc 758800931 ath 25.38 athd -72 circ 106483509.17747103 total 121304804.66747102 max 121304804.66747102 fdv 864417406 / 864417406 slug gt
+ ONE: Gate.io exchange token. Quarterly buyback & burn.
+ CAT: Gate.io's GT staking for Startup token allocations, with 12% APY and 50% of fees burned quarterly.
+ RISK: Gate.io's withdrawal of Chinese OTC services due to PBOC crackdown, reducing trading volume 40%.
+=== idx 60 ORCA | Orca | price 1.392 cur 1.392 mc 84405582 ath 20.33 athd -93.2 circ 60798787.794933 total 74999556.132072 max 100000000 fdv 104120188 / 104120188 slug orca
+ ONE: Concentrated liquidity DEX on Solana. Whirlpools with user-friendly UX.
+ CAT: Orca's concentrated liquidity v3 launch on Solana mainnet in March 2025, targeting 2x TVL growth.
+ RISK: Solana network outage lasting >4 hours (as in Feb 2023) halts all Orca trading and liquidity.
+=== idx 61 HNT | Helium | price 0.7775 cur 0.7796 mc 141083135 ath 55.22 athd -98.5 circ 182999728.3931957 total 182999728.3931957 max 223000000 fdv 178780000 / 141083135 slug helium
+ ONE: Pioneer decentralized wireless network with real Solana migration complete; MOBILE/IOT subDAOs growing but HNT value accrual thin
+ CAT: Helium Mobile hitting 100K+ subscribers; carrier partnerships driving genuine data offload revenue to HNT burn
+ RISK: 98.5% down from ATH; HNT value accrual requires Data Credits burn which is still tiny vs inflation; competition from 5G rollout
+  * Helium completed migration to Solana in 2023 and launched Helium Mobile as a crypto-native carrier in the US
+    @ Helium Blog :: https://blog.helium.com/
+  * Helium Mobile surpassed 50,000 subscribers by end of 2024 with plans to grow via T-Mobile network integration
+    @ Helium Mobile :: https://hellohelium.com/
+  * HNT value accrual tied to Data Credit burn; burn rate still orders of magnitude below HNT mining emission rate
+    @ Helium Network Explorer :: https://explorer.helium.com/
+=== idx 62 TON | Toncoin | price 1.666 cur 1.666 mc 4490000000 ath 8.28 athd -79.9 circ 2695220993 total 5194506740 max None fdv 8640000000 / 8640000000 slug toncoin
+ ONE: GRAM rebrand Jun 15. Telegram 1B MAU took direct control (MTONGA). TVL collapsed -91% ($56M). $61M/month Believers releases through Oct 2028. 1.08B frozen TON unfreezes Feb 2027. Stars onramp real but DeFi dead.
+ CAT: GRAM rebrand Jun 15, TON Teleport BTC bridge, TON Pay 2.0, MTONGA steps 5-7, Stars-to-TON fiat onramp
+ RISK: Believers $61M/mo releases (27mo left), 1.08B frozen wallets unfreeze Feb 2027, Durov 12 charges, 85% whale concentration, zero protocol revenue
+  * Toncoin renamed GRAM effective June 15, 2026, 81.22% community vote
+    @ CoinCentral :: https://coincentral.com/toncoin-renamed-gram-after-ton-community-vote-passes-with-81-22-support/
+  * Telegram 1B MAU March 2026, took direct control via MTONGA roadmap
+    @ crypto.news :: https://crypto.news/telegram-takes-back-ton-inside-the-2026-takeover/
+  * Telegram replaced TON Foundation as largest validator, staked 2.2M TON May 4, 2026
+    @ Coinedition :: https://coinedition.com/telegram-replaces-ton-foundation-as-tons-largest-validator-token-surges/
+  * TVL collapsed from $650M peak to ~$56M (-91%), DeFi essentially dead
+    @ DefiLlama :: https://defillama.com/chain/ton
+  * Believers Fund: 37M TON/month ($61M) opening through October 2028, 27 periods remain
+    @ Tonviewer :: https://tonviewer.com/believers.ton
+  * 1.08B TON in frozen inactive miner wallets, unfreezes February 2027
+    @ Blockworks :: https://blockworks.co/news/ton-governance-votes-to-freeze-20-of-its-ton-supply
+  * 85% of TON supply mined by interconnected whale group during PoW phase
+    @ Binance Square / WhiteRabbit :: https://medium.com/@whiterabbit_hq/ton-blockchain-a-group-of-related-whales-mined-85-of-ton-supply-2e3300cc93bc
+  * Catchain 2.0: 400ms blocks, 6x fee reduction, ~1s finality (April 9, 2026)
+    @ CoinTelegraph :: https://cointelegraph.com/news/ton-sub-second-finality-catchain-2
+  * $1.13B stablecoins on TON (USDT 76%), growing while DeFi TVL collapsed
+    @ DefiLlama :: https://defillama.com/stablecoins/ton
+  * Telegram sold $450M TON in 2025; $400M VC round (Sequoia, Benchmark, Ribbit)
+    @ BeInCrypto / Fortune :: https://fortune.com/crypto/2025/03/20/telegram-based-blockchain-ton-raises-400-million-from-prominent-crypto-vcs/
+  * TONX (Verb Technology) $558M treasury, now $307M paper loss at current prices
+    @ The Block :: https://www.theblock.co/post/365447/verb-technology-ton-treasury-ton-strategy-co
+  * Durov: 12 charges active, travel ban lifted Nov 2025, no trial date, Russia case opened Feb 2026
+    @ TechPolicy.Press :: https://www.techpolicy.press/pavel-durov-arrest-tracker/
+  * Daily fees $4,847, daily minted 558K TON vs 964 burned (580:1 ratio), net inflationary ~3.6%
+    @ TonStat :: https://www.tonstat.com/
+  * Mini-apps dead: Hamster Kombat -96% from 300M peak, tap-to-earn model failed
+    @ BeInCrypto :: https://beincrypto.com/hamster-kombats-user-plummets-85/
+  * TON NOT classified as digital commodity in SEC-CFTC March 2026 ruling
+    @ SEC :: https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-to-crypto-assets
+=== idx 63 GRT | The Graph | price 0.0269 cur 0.0269 mc 294058763 ath 2.84 athd -99.07 circ 10799867657.47347 total 10800262816.04821 max 10800262823.318213 fdv 264900000 / 294069523 slug the-graph
+ ONE: Web3 data indexing with 700+ subgraphs; real query fee revenue but P/S elevated and token inflation from indexer rewards dilutes holders.
+ CAT: GRT as default indexing layer for AI agents querying blockchain data; Arbitrum and L2 growth
+ RISK: Continuous token inflation from indexer/curator rewards; 99% down from ATH; query fees growing slowly vs token emissions
+  * The Graph indexes 700+ subgraphs across 40+ blockchain networks with $3M+ annualized query fees
+    @ The Graph Network Stats :: https://network.thegraph.com/network
+  * GRT ATH $2.84 reached February 2021; currently 99% below all-time high
+    @ CoinGecko :: https://www.coingecko.com/en/coins/the-graph
+  * Indexer rewards continuously emit new GRT creating ongoing inflation pressure for token holders
+    @ Token Terminal :: https://tokenterminal.com/terminal/projects/the-graph
+=== idx 64 XRP | XRP | price 1.3603 cur 1.3603 mc 82895435501 ath 3.84 athd -36.2 circ 61858321245 total 99985662685 max 100000000000 fdv 245000000000 / 133989330544 slug xrp
+ ONE: Ripple's payment token with SEC case mostly resolved. Institutional cross-border payment rails narrative intact but XRPL DeFi negligible.
+ CAT: Spot XRP ETF approvals in US; RLUSD stablecoin adoption by banks
+ RISK: 50% of supply still held by Ripple Labs with monthly escrow releases diluting holders
+  * Ripple releases 1B XRP monthly from escrow lockup
+    @ Ripple Escrow Dashboard :: https://ripple.com/xrp/market-performance
+  * SEC vs Ripple case largely resolved in 2024 with partial win for Ripple
+    @ CoinDesk :: https://coindesk.com/ripple-sec
+  * Multiple spot XRP ETF applications filed with SEC in 2025
+    @ Bloomberg ETF :: https://bloomberg.com/xrp-etf
+=== idx 65 VELO | Velodrome Finance | price 0.003958 cur 0.003698 mc 68015436 ath 0.132 athd -97 circ 17563876115 total 23999758357.0624 max None fdv 190000000 / 92938142 slug velodrome-finance
+ ONE: Optimism's native DEX being cannibalized by Aerodrome on Base; V3 migration is make-or-break inflection
+ CAT: Velodrome V3 launch with concentrated liquidity and cross-chain expansion beyond OP Mainnet
+ RISK: AERO is eating VELO's narrative and liquidity; OP Mainnet TVL stagnant while Base dominates Superchain
+  * Velodrome TVL dropped from $500M+ peak to ~$180M as Aerodrome captured Base chain volume
+    @ DefiLlama :: https://defillama.com/protocol/velodrome-finance
+  * Velodrome V3 with concentrated liquidity announced for 2025-2026, key catalyst for TVL recovery
+    @ Velodrome Blog :: https://velodrome.finance/blog
+  * VELO down 97% from ATH, severely underperforming AERO which launched as its Base counterpart
+    @ CoinMarketCap :: https://coinmarketcap.com/currencies/velodrome-finance/
+=== idx 66 MAV | Maverick Protocol | price 0.01343 cur 0.01343 mc 12439666 ath 0.804715 athd -98.3 circ 928872657.1811638 total 2000000000 max 2000000000 fdv 26784438 / 26784438 slug mav
+ ONE: Concentrated liquidity AMM with directional LP. Gas-efficient automated LP strategies.
+ CAT: Maverick's dynamic fee AMM integration with zkSync Era, boosting daily volume to $50M by May 2025.
+ RISK: Uniswap v4 hooks on L2s (Arbitrum/Optimism) capture 90% of Maverick's targeted liquidity provision.
+=== idx 67 VRTX | Vertex Protocol | price 0.015 cur 0.015 mc 1140000 ath None athd None circ 76000000 total 1000000000 max 1000000000 fdv 15000000 / 15000000 slug vertex-protocol
+ ONE: Hybrid DEX combining spot, perps, and money markets on Arbitrum.
+ CAT: Vertex's cross-margin expansion to Arbitrum Orbit chain, enabling 100x use on BTC/ETH perps in Q2 2025.
+ RISK: dYdX v5's isolated margin vaults on Cosmos drain 60% of Vertex's open interest within 6 months.
+=== idx 68 ENA | Ethena | price 0.101 cur 0.101 mc 885219024 ath 1.52 athd -92.9 circ 9026562500 total 15000000000 max 15000000000 fdv 1610000000 / 1471023477 slug ethena
+ ONE: USDe supply crashed 65% from $12B peak. BaFin banned under MiCA. Brutal vesting schedule.
+ CAT: Grayscale 13.59% allocation, Arthur Hayes $1.97M investment, BlackRock UStb
+ RISK: S&P 1,250% Basel III risk weight, BaFin ban, only 55% circ, -93% from ATH
+  * USDe supply crashed 65% from $12B peak, Q1 revenue -32% QoQ
+    @ Token Terminal :: https://tokenterminal.com/explorer/projects/ethena
+  * S&P assigned 1,250% Basel III risk weighting
+    @ S&P Global :: https://www.dlnews.com/articles/defi/why-ethena-usde-got-a-high-risk-weighting-in-sp-global-sky-credit-rating/
+  * BaFin barred USDe under MiCA in Germany
+    @ CoinDesk :: https://www.coindesk.com/business/2025/03/21/german-regulator-identifies-deficiencies-in-ethena-s-usde-stablecoin
+  * Grayscale 13.59% allocation, but BlackRock backs UStb NOT ENA token
+    @ Grayscale :: https://blockonomi.com/grayscale-integrates-ethena-into-defi-fund-following-q1-2026-quarterly-rebalance/
+=== idx 69 TIA | Celestia | price 0.4477 cur 0.4477 mc 428604137 ath 21.08 athd -97.87 circ 922024550.878258 total 1169053773.23602 max None fdv 448200000 / 543435945 slug celestia
+ ONE: Modular DA layer with strong VC backing and developer traction; only 22% circulating means severe multi-year open dilution ahead.
+ CAT: Modular blockchain thesis gaining ground; TIA staking and DA fee revenue from rollups growing
+ RISK: Only 22% supply circulating; enormous investor/team releases through 2027; DA revenue thin; competing with EigenDA and Avail for mindshare
+  * Celestia raised $55M from Bain Capital, Polychain, Placeholder; launched mainnet October 2023
+    @ Celestia Blog :: https://blog.celestia.org
+  * TIA has only 22% of supply circulating with large team and investor releases continuing through 2027
+    @ Messari :: https://messari.io/asset/celestia/profile
+  * TIA ATH $21.08 reached January 2024 on modular blockchain narrative peak
+    @ CoinGecko :: https://www.coingecko.com/en/coins/celestia
+=== idx 70 CHZ | Chiliz | price 0.0356 cur 0.0356 mc 370467802 ath 0.878633 athd -96 circ 10381257736 total 10381257736 max None fdv 370467802 / 370467802 slug chz
+ ONE: Sports fan token platform. Socios.com with 100+ sports teams.
+ CAT: Chiliz Chain 2.0 partnership with FIFA for 2026 World Cup fan tokens, minting 50+ new club tokens.
+ RISK: Socios.com losing top-5 football club partnerships (Barcelona, PSG) to rival platform like Sorare.
+=== idx 71 COMP | Compound | price 19.61 cur 19.61 mc 182914011 ath 911.2 athd -97.57 circ 9668189.278360886 total 10000000 max 10000000 fdv 221500000 / 189191590 slug compound-governance-token
+ ONE: OG DeFi lender with real protocol revenue but P/S ~112x makes valuation deeply stretched at current price.
+ CAT: Compound III multi-chain expansion and potential governance fee switch
+ RISK: Extremely high P/S ratio (~112x) with declining market share vs Aave; COMP token captures minimal protocol value
+  * Compound V3 TVL ~$1.9B across Ethereum, Base, Arbitrum as of May 2026
+    @ DeFiLlama :: https://defillama.com/protocol/compound-v3
+  * COMP protocol revenue vs token market cap implies ~112x P/S ratio
+    @ Token Terminal :: https://tokenterminal.com/terminal/projects/compound
+  * COMP ATH of $911 reached May 2021 during DeFi summer peak
+    @ CoinGecko :: https://www.coingecko.com/en/coins/compound
+=== idx 72 PRIME | Echelon Prime | price 0.3747 cur 0.3747 mc 307480443 ath 1.5 athd -30.8 circ 295533367.916284 total 295533367.916284 max None fdv 307480443 / 307480443 slug prime
+ ONE: Parallel TCG gaming token. Backed by model. Active player base.
+ CAT: Parallel TCG expansion & AI arena launch; staking rewards from game fees
+ RISK: Gaming token hype cycles; low liquidity vs. fully diluted valuation
+=== idx 73 MNDE | Marinade | price 0.04 cur 0.04 mc 10391507 ath 1.64 athd -98.8 circ 546399977 total 699997619.1943178 max 1000000000 fdv 13312647 / 13312647 slug mnde
+ ONE: Largest Solana liquid staking protocol. mSOL for staked SOL.
+ CAT: Solana staking growth & mSOL adoption; upcoming dual-governance upgrade
+ RISK: Competition from JitoSOL & liquid staking protocols; Solana network risk
+=== idx 74 KCS | KuCoin Token | price 10.5 cur 10.5 mc 1085189315 ath 28.83 athd -72.1 circ 134655021.7355671 total 142155021.7355671 max None fdv 1145632065 / 1145632065 slug kucoin-token
+ ONE: KuCoin exchange token. Fee discounts, profit sharing, KCC gas.
+ CAT: KuCoin trading volume recovery; 20% profit buyback & burn mechanism
+ RISK: Regulatory crackdowns (US/China); exchange hacks & delisting risks
+=== idx 75 STX | Stacks | price 0.2451 cur 0.2363 mc 449033859 ath 3.88 athd -78.9 circ 1846504919.92944 total 1846504919.92944 max None fdv 1490000000 / 449033859 slug blockstack
+ ONE: Bitcoin L2 enabling smart contracts on Bitcoin. Nakamoto upgrade improved finality but TVL tiny and developer adoption slow vs Ethereum L2s.
+ CAT: Nakamoto upgrade enabling Bitcoin finality; sBTC bringing Bitcoin liquidity to DeFi
+ RISK: Bitcoin L2 narrative crowded; TVL tiny; sBTC adoption limited by complexity
+  * Stacks Nakamoto upgrade activated bringing Bitcoin-speed finality to transactions
+    @ Stacks Foundation :: https://stacks.org
+  * sBTC enables decentralized Bitcoin pegging to Stacks DeFi network
+    @ Stacks Docs :: https://docs.stacks.co
+  * Stacks TVL approximately $42M as of May 2026
+    @ DeFiLlama :: https://defillama.com/chain/Stacks
+=== idx 76 WOO | WOO Network | price 0.0173 cur 0.0173 mc 32734016 ath 1.78 athd -99 circ 1888782088.294737 total 1888782088.294737 max 3000000000 fdv 32734016 / 32734016 slug woo-network
+ ONE: Deep liquidity network connecting exchanges, traders, and DeFi platforms.
+ CAT: WOO X exchange expansion & zero-fee model; staking yield from rebates
+ RISK: Low trading volume vs. Binance/Bybit; token release dilution from treasury
+=== idx 77 IMX | Immutable X | price 0.1708 cur 0.1708 mc 138576394 ath 9.52 athd -98.18 circ 842444578.3296283 total 2000000000 max 2000000000 fdv 346400000 / 328986375 slug immutable-x
+ ONE: Web3 gaming ZK-rollup with major game studio partnerships; gaming L2 narrative still alive but token vesting pressure is severe
+ CAT: Gods Unchained, Guild of Guardians, and 300+ game titles on IMX; Polygon zkEVM partnership and gaming bull cycle
+ RISK: 45% supply still opening (team/investor vesting through 2027), gaming crypto narrative fickle, competition from Ronin and Arbitrum Orbit
+  * Immutable X partners with 300+ Web3 game studios including major titles via Immutable zkEVM
+    @ Immutable X :: https://www.immutable.com/games
+  * IMX ATH $9.52 in Nov 2021; 45% of supply still locked with investor/team vesting through 2027
+    @ CoinGecko :: https://www.coingecko.com/en/coins/immutable-x
+  * Immutable partnered with Polygon for zkEVM technology, gaining ZK-proof security for gaming transactions
+    @ Immutable Blog :: https://www.immutable.com/blog/immutable-polygon-zkEVM
+=== idx 78 XMR | Monero | price 118.7 cur 118.7 mc 7003867233 ath 797.73 athd -52.4 circ 18446744.07370955 total 18446744.07370955 max None fdv 7003867233 / 7003867233 slug xmr
+ ONE: Privacy-focused L1. Ring signatures + stealth addresses. Not on Binance/Coinbase.
+ CAT: Privacy demand post-BTC ETF; mandatory ring signatures upgrade in 2025
+ RISK: Global regulatory bans (e.g., UAE, Japan); exchange delistings reduce liquidity
+=== idx 79 STG | Stargate Finance | price 0.1662 cur 0.1662 mc 19549229 ath 4.14 athd -96 circ 117822081.45956187 total 117822081.45956187 max 1000000000 fdv 19549229 / 19549229 slug stg
+ ONE: LayerZero-native bridge. Unified liquidity pools for cross-chain swaps.
+ CAT: Stargate V2 launch with unified liquidity; LayerZero airdrop boost to TVL
+ RISK: Bridge hacks (e.g., Multichain precedent); declining cross-chain activity
+=== idx 80 JOE | Trader Joe | price 0.0416 cur 0.0416 mc 16869058 ath 5.09 athd -99.2 circ 403574247.6492458 total 499707918.0306486 max 500000000 fdv 20887362 / 20887362 slug trader-joe
+ ONE: Dominant DEX on Avalanche. Liquidity Book AMM with concentrated liquidity.
+ CAT: Avalanche liquidity incentives & Boosted Pools; launch on Ethereum L2s
+ RISK: DEX competition (Trader Joe vs. Uniswap/Aave); Avalanche network slowdown
+=== idx 81 APT | Aptos | price 0.953 cur 0.928 mc 784642300 ath 20.4 athd -69.6 circ 819551036.294811 total 1203226019.020687 max 2100000000 fdv 8680000000 / 1151974666 slug aptos
+ ONE: Move-language L1 from ex-Meta team with solid tech but massive vesting schedule dragging price. TVL growing but token inflation brutal.
+ CAT: Microsoft partnership for AI on Aptos; strong Move network crossover with Sui
+ RISK: Only 27% of tokens in circulation; heavy VC and team allocations opening through 2028 create massive sell pressure
+  * Aptos TVL grew to nearly $900M in 2026 driven by DeFi expansion
+    @ DeFiLlama :: https://defillama.com/chain/Aptos
+  * Aptos circulating supply only 27% of total with releases continuing through 2028
+    @ Messari :: https://messari.io/asset/aptos
+  * Microsoft and Aptos Labs partnership for AI agent infrastructure announced
+    @ Aptos Foundation :: https://aptosfoundation.org
+=== idx 82 GNS | Gains Network | price 0.524 cur 0.46 mc 11544221 ath 10 athd -94.8 circ 24205386 total 24205390 max None fdv 52400000 / 11544221 slug gains-network
+ ONE: 1.16x P/S but losing DEX war. 14-15M tokens burned (38%+ of initial). 97% circ/total. $113K volume.
+ CAT: gTrade v10, RWA/forex expansion (270+ markets), DEGEN markets, staking v2
+ RISK: Hyperliquid 73% share vs GNS declining, Bitget delisted, $113K daily volume = liquidity risk
+  * P/S 1.16x on $10.8M annual revenue, $12.5M market cap
+    @ GNS 2026 Roadmap/Medium :: https://medium.com/gains-network/2026-roadmap-the-blueprint-for-gains-network-gtrade-and-gns-de08d050296a
+  * 10M+ GNS burned (38% of initial supply), 55% of fees to buyback-burn
+    @ Gains Network Docs :: https://medium.com/gains-network/evolving-gains-network-tokenomics-introducing-buyback-and-distribute-c15ce1fa8fdb
+  * Bitget delisted GNS/USDT April 17, 2026 citing poor volume/liquidity
+    @ Bitget Support :: https://www.bitget.com/support/articles/12560603881597
+  * Hyperliquid 73% perp DEX share vs GNS declining below top-5
+    @ Atomic Wallet Academy :: https://atomicwallet.io/academy/articles/perpetual-dexs-2025
+=== idx 83 QNT | Quant | price 79.68 cur 79.68 mc 1155157942 ath 427.42 athd -81.4 circ 14544176.164081175 total 14612493 max 14612493 fdv 1160583945 / 1160583945 slug quant
+ ONE: Overledger cross-chain OS. Enterprise blockchain interop. UK/EU partnerships.
+ CAT: Overledger enterprise partnerships (e.g., Oracle, SIA); ISO 20022 compliance
+ RISK: Centralized token supply; slow real-world adoption vs. Hyperledger/Corda

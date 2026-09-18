@@ -12,6 +12,7 @@
     "nasa": "eslint --no-config-lookup --config qa/eslint-nasa.mjs src/app/crypto-profit-calculator/page.tsx src/app/crypto-dca-calculator/page.tsx src/app/crypto-average-price-calculator/page.tsx src/app/crypto-fee-calculator/page.tsx src/app/crypto-apy-calculator/page.tsx src/app/crypto-position-size-calculator/page.tsx src/components/CryptoProfitCalculator.tsx src/components/CryptoCalculatorPage.tsx src/components/CryptoPlanningCalculator.tsx src/lib/bitcoin-snapshot.ts src/lib/crypto-calculator.ts src/lib/planning-calculators.ts"
   },
   "dependencies": {
+    "@coinbase/x402": "^2.1.0",
     "@solana/kit": "^7.0.0",
     "@x402/core": "^2.18.0",
     "@x402/evm": "^2.18.0",

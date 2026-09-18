@@ -1,0 +1,294 @@
+================================================================================
+COMPLETE EARLYTHUNDER TOKEN SCORECARD - ALL 250 TOKENS
+Old Prices from May 26, 2026 - Ready for Live Price Updates
+================================================================================
+
+
+================================================================================
+HOLD CORE (7 tokens)
+================================================================================
+
+Symbol       | Old Price            | Trading Pair   
+--------------------------------------------------------------------------------
+ETH          | 2128.56              | ETH/USDT       
+HYPE         | 62.82                | HYPE/USDT      
+WSTETH       | 2560.00              | WSTETH/USDT    
+BTC          | 75744.55             | BTC/USDT       
+AAVE         | 86.83                | AAVE/USDT      
+UNI          | 3.38                 | UNI/USDT       
+MKR          | 1813.70              | MKR/USDT       
+
+================================================================================
+HOLD (26 tokens)
+================================================================================
+
+Symbol       | Old Price            | Trading Pair   
+--------------------------------------------------------------------------------
+SOL          | 86.21                | SOL/USDT       
+SYRUP        | 0.216                | SYRUP/USDT     
+GEOD         | 0.1357               | GEOD/USDT      
+KMNO         | 0.0204               | KMNO/USDT      
+ETHFI        | 0.38                 | ETHFI/USDT     
+RETH         | 2316.50              | RETH/USDT      
+CBETH        | 2395.82              | CBETH/USDT     
+AERO         | 0.4342               | AERO/USDT      
+MORPHO       | 2.34                 | MORPHO/USDT    
+LINK         | 9.62                 | LINK/USDT      
+VIRTUAL      | 0.7356               | VIRTUAL/USDT   
+LQTY         | 0.254                | LQTY/USDT      
+COW          | 0.1646               | COW/USDT       
+FLUID        | 1.62                 | FLUID/USDT     
+JUP          | 0.2036               | JUP/USDT       
+RUNE         | 0.462                | RUNE/USDT      
+CETUS        | 0.0256               | CETUS/USDT     
+SUI          | 1.05                 | SUI/USDT       
+LDO          | 0.3509               | LDO/USDT       
+OKB          | 52.50                | OKB/USDT       
+BNB          | 670.10               | BNB/USDT       
+GMX          | 6.73                 | GMX/USDT       
+DRIFT        | 0.03409              | DRIFT/USDT     
+PAXG         | 4537.00              | PAXG/USDT      
+CRV          | 0.2277               | CRV/USDT       
+AR           | 14.50                | AR/USDT        
+
+================================================================================
+CAUTIOUS HOLD (38 tokens)
+================================================================================
+
+Symbol       | Old Price            | Trading Pair   
+--------------------------------------------------------------------------------
+INJ          | 5.70                 | INJ/USDT       
+SKY          | 0.07052              | SKY/USDT       
+ENS          | 6.40                 | ENS/USDT       
+ACX          | 0.0414               | ACX/USDT       
+AVAX         | 9.46                 | AVAX/USDT      
+NEAR         | 2.66                 | NEAR/USDT      
+BANANA       | 3.88                 | BANANA/USDT    
+BGB          | 5.20                 | BGB/USDT       
+ARB          | 0.1092               | ARB/USDT       
+JTO          | 0.503                | JTO/USDT       
+PENDLE       | 1.95                 | PENDLE/USDT    
+SAFE         | 0.1456               | SAFE/USDT      
+SNX          | 0.324                | SNX/USDT       
+RAY          | 0.764                | RAY/USDT       
+OLAS         | 0.78                 | OLAS/USDT      
+AKT          | 0.8803               | AKT/USDT       
+GNO          | 117.82               | GNO/USDT       
+TAO          | 270.50               | TAO/USDT       
+RENDER       | 2.21                 | RENDER/USDT    
+BERA         | 0.3821               | BERA/USDT      
+LEO          | 8.85                 | LEO/USDT       
+TRX          | 0.3726               | TRX/USDT       
+OP           | 0.1306               | OP/USDT        
+POL          | 0.195                | POL/USDT       
+CAKE         | 1.42                 | CAKE/USDT      
+LPT          | 2.30                 | LPT/USDT       
+GT           | 22.50                | GT/USDT        
+ORCA         | 1.39                 | ORCA/USDT      
+HNT          | 0.7775               | HNT/USDT       
+TON          | 1.90                 | TON/USDT       
+GRT          | 0.0269               | GRT/USDT       
+XRP          | 1.36                 | XRP/USDT       
+VELO         | 0.003958             | VELO/USDT      
+MAV          | 0.01343              | MAV/USDT       
+VRTX         | 0.015                | VRTX/USDT      
+ENA          | 0.101                | ENA/USDT       
+TIA          | 0.4477               | TIA/USDT       
+CHZ          | 0.0356               | CHZ/USDT       
+
+================================================================================
+WATCH (74 tokens)
+================================================================================
+
+Symbol       | Old Price            | Trading Pair   
+--------------------------------------------------------------------------------
+COMP         | 19.61                | COMP/USDT      
+PRIME        | 0.3747               | PRIME/USDT     
+MNDE         | 0.04                 | MNDE/USDT      
+KCS          | 10.50                | KCS/USDT       
+STX          | 0.2451               | STX/USDT       
+WOO          | 0.0173               | WOO/USDT       
+IMX          | 0.1708               | IMX/USDT       
+XMR          | 118.70               | XMR/USDT       
+STG          | 0.1662               | STG/USDT       
+JOE          | 0.0416               | JOE/USDT       
+APT          | 0.953                | APT/USDT       
+GNS          | 0.524                | GNS/USDT       
+QNT          | 79.68                | QNT/USDT       
+S            | 0.04779              | S/USDT         
+ONDO         | 0.4382               | ONDO/USDT      
+CFG          | 0.2835               | CFG/USDT       
+KAS          | 0.03389              | KAS/USDT       
+ADA          | 0.246                | ADA/USDT       
+HBAR         | 0.0871               | HBAR/USDT      
+TNSR         | 0.0382               | TNSR/USDT      
+GRASS        | 0.4042               | GRASS/USDT     
+YFI          | 2513.00              | YFI/USDT       
+FTM          | 0.6994               | FTM/USDT       
+MATIC        | 0.32                 | MATIC/USDT     
+KNC          | 0.146                | KNC/USDT       
+FET          | 0.2239               | FET/USDT       
+DYDX         | 0.15407              | DYDX/USDT      
+BICO         | 0.0265               | BICO/USDT      
+IO           | 0.1527               | IO/USDT        
+PERP         | 0.125                | PERP/USDT      
+STORJ        | 0.0993               | STORJ/USDT     
+ALCX         | 5.50                 | ALCX/USDT      
+OM           | 0.5                  | OM/USDT        
+XLM          | 0.1481               | XLM/USDT       
+EIGEN        | 0.2012               | EIGEN/USDT     
+PYTH         | 0.0402               | PYTH/USDT      
+VELA         | 0.015                | VELA/USDT      
+GEL          | 0.02                 | GEL/USDT       
+SSV          | 2.65                 | SSV/USDT       
+ZRO          | 1.30                 | ZRO/USDT       
+SLND         | 0.15                 | SLND/USDT      
+GTC          | 0.096                | GTC/USDT       
+THETA        | 1.02                 | THETA/USDT     
+FXS          | 0.812                | FXS/USDT       
+QUICK        | 0.00803              | QUICK/USDT     
+RPL          | 1.71                 | RPL/USDT       
+PENGU        | 0.008907             | PENGU/USDT     
+RDNT         | 0.00328              | RDNT/USDT      
+RON          | 0.85                 | RON/USDT       
+MLN          | 1.98                 | MLN/USDT       
+RSR          | 0.001648             | RSR/USDT       
+DOT          | 1.28                 | DOT/USDT       
+CVX          | 1.71                 | CVX/USDT       
+KLAY         | 0.1255               | KLAY/USDT      
+KSM          | 4.74                 | KSM/USDT       
+SHDW         | 0.1                  | SHDW/USDT      
+LTC          | 53.37                | LTC/USDT       
+SCROLL       | 0.32                 | SCROLL/USDT    
+ICP          | 2.67                 | ICP/USDT       
+CRO          | 0.06805              | CRO/USDT       
+TRU          | 0.0023               | TRU/USDT       
+APE          | 0.133                | APE/USDT       
+FIL          | 0.984                | FIL/USDT       
+ZEC          | 627.05               | ZEC/USDT       
+VET          | 0.006685             | VET/USDT       
+ATH          | 0.005995             | ATH/USDT       
+ILV          | 4.26                 | ILV/USDT       
+MC           | 0.12                 | MC/USDT        
+DASH         | 43.69                | DASH/USDT      
+GMT          | 0.01098              | GMT/USDT       
+AUDIO        | 0.01932              | AUDIO/USDT     
+SEI          | 0.06141              | SEI/USDT       
+CORE         | 0.03634              | CORE/USDT      
+BADGER       | 0.8                  | BADGER/USDT    
+
+================================================================================
+PASS (105 tokens)
+================================================================================
+
+Symbol       | Old Price            | Trading Pair   
+--------------------------------------------------------------------------------
+USUAL        | 0.065                | USUAL/USDT     
+API3         | 0.3361               | API3/USDT      
+FLR          | 0.008221             | FLR/USDT       
+CFX          | 0.05863              | CFX/USDT       
+MINA         | 0.05692              | MINA/USDT      
+NMR          | 8.16                 | NMR/USDT       
+HT           | 0.35                 | HT/USDT        
+IOTX         | 0.00415              | IOTX/USDT      
+ALGO         | 0.1131               | ALGO/USDT      
+COTI         | 0.01226              | COTI/USDT      
+SKL          | 0.00607              | SKL/USDT       
+ACH          | 0.00643              | ACH/USDT       
+REQ          | 0.0638               | REQ/USDT       
+RAD          | 0.4                  | RAD/USDT       
+ORDI         | 4.12                 | ORDI/USDT      
+ANKR         | 0.0047               | ANKR/USDT      
+POOL         | 0.15                 | POOL/USDT      
+FLUX         | 0.0795               | FLUX/USDT      
+CTSI         | 0.02927              | CTSI/USDT      
+ZK           | 0.01539              | ZK/USDT        
+BAL          | 0.967                | BAL/USDT       
+ALPACA       | 0.2244               | ALPACA/USDT    
+YGG          | 0.03785              | YGG/USDT       
+INV          | 15.00                | INV/USDT       
+POLYX        | 0.03                 | POLYX/USDT     
+CELO         | 0.08277              | CELO/USDT      
+GLMR         | 0.013                | GLMR/USDT      
+RLC          | 0.4324               | RLC/USDT       
+MX           | 2.80                 | MX/USDT        
+CKB          | 0.001429             | CKB/USDT       
+STRK         | 0.04272              | STRK/USDT      
+1INCH        | 0.0924               | 1INCH/USDT     
+BONK         | 0.000006042          | BONK/USDT      
+OSMO         | 0.062                | OSMO/USDT      
+PROP         | 0.35                 | PROP/USDT      
+FARM         | 6.58                 | FARM/USDT      
+MOBILE       | 0.0001106            | MOBILE/USDT    
+W            | 0.0122               | W/USDT         
+PEPE         | 0.000003658          | PEPE/USDT      
+MBOX         | 0.0111               | MBOX/USDT      
+HOPR         | 0.03                 | HOPR/USDT      
+SNT          | 0.0272               | SNT/USDT       
+ATOM         | 2.14                 | ATOM/USDT      
+ALPHA        | 0.0097               | ALPHA/USDT     
+POND         | 0.00257              | POND/USDT      
+TRB          | 17.39                | TRB/USDT       
+CELR         | 0.002459             | CELR/USDT      
+NANO         | 0.35                 | NANO/USDT      
+ETC          | 8.83                 | ETC/USDT       
+WLD          | 0.2815               | WLD/USDT       
+DOGE         | 0.10315              | DOGE/USDT      
+ALICE        | 0.1                  | ALICE/USDT     
+XTZ          | 0.348                | XTZ/USDT       
+FLOKI        | 0.00002929           | FLOKI/USDT     
+WIF          | 0.1939               | WIF/USDT       
+PEAQ         | 0.004                | PEAQ/USDT      
+HIGH         | 0.162                | HIGH/USDT      
+SXP          | 0.0022               | SXP/USDT       
+DENT         | 0.000038             | DENT/USDT      
+BLAST        | 0.0004682            | BLAST/USDT     
+LEVER        | 0.000175             | LEVER/USDT     
+NOS          | 0.08                 | NOS/USDT       
+GOG          | 0.02                 | GOG/USDT       
+AGLD         | 0.23                 | AGLD/USDT      
+CANTO        | 0.01                 | CANTO/USDT     
+EGLD         | 4.05                 | EGLD/USDT      
+ROSE         | 0.0102               | ROSE/USDT      
+BLUR         | 0.0221               | BLUR/USDT      
+FORTH        | 0.237                | FORTH/USDT     
+MASK         | 0.467                | MASK/USDT      
+BOND         | 2.15                 | BOND/USDT      
+WAXP         | 0.00618              | WAXP/USDT      
+KAVA         | 0.06                 | KAVA/USDT      
+PRCL         | 0.02                 | PRCL/USDT      
+FLOW         | 0.0351               | FLOW/USDT      
+LRC          | 0.01879              | LRC/USDT       
+IOTA         | 0.0581               | IOTA/USDT      
+IDEX         | 0.003                | IDEX/USDT      
+MANTA        | 0.08065              | MANTA/USDT     
+AXS          | 1.17                 | AXS/USDT       
+BTT          | 0.0000005            | BTT/USDT       
+MCB          | 0.1                  | MCB/USDT       
+SUSHI        | 0.2057               | SUSHI/USDT     
+RVN          | 0.00541              | RVN/USDT       
+NOT          | 0.00485              | NOT/USDT       
+BAND         | 0.212                | BAND/USDT      
+POPCAT       | 0.05706              | POPCAT/USDT    
+MODE         | 0.011                | MODE/USDT      
+SHIB         | 0.0000135            | SHIB/USDT      
+NEO          | 2.90                 | NEO/USDT       
+RBN          | 0.065                | RBN/USDT       
+SAND         | 0.07233              | SAND/USDT      
+SUPER        | 0.1151               | SUPER/USDT     
+MOVE         | 0.01604              | MOVE/USDT      
+JASMY        | 0.005534             | JASMY/USDT     
+MANA         | 0.0879               | MANA/USDT      
+ZIL          | 0.00401              | ZIL/USDT       
+SPELL        | 0.0001598            | SPELL/USDT     
+DOGS         | 0.000485             | DOGS/USDT      
+QTUM         | 0.926                | QTUM/USDT      
+MEME         | 0.0062               | MEME/USDT      
+NEIRO        | 0.00062              | NEIRO/USDT     
+GALA         | 0.003285             | GALA/USDT      
+KDA          | 0.006                | KDA/USDT       
+ONE          | 0.00203              | ONE/USDT       
+
+================================================================================
+TOTAL TOKENS: 250
+================================================================================

@@ -8,6 +8,7 @@ import { paymentMiddleware, x402ResourceServer } from "@x402/hono";
 import { ExactEvmScheme } from "@x402/evm/exact/server";
 import { ExactSvmScheme } from "@x402/svm/exact/server";
 import { HTTPFacilitatorClient } from "@x402/core/server";
+import { createFacilitatorConfig } from "@coinbase/x402";
 
 import scores from "./_scores.json";
 import theses from "./_theses.json";
@@ -19,6 +20,8 @@ interface Env {
   PAY_TO_EVM: string;
   PAY_TO_SVM: string;
   FACILITATOR_URL: string;
+  CDP_API_KEY_ID?: string;
+  CDP_API_KEY_SECRET?: string;
 }
 
 const EVM_NETWORK = "eip155:8453"; // Base mainnet
@@ -125,7 +128,13 @@ const DISCOVERY_EXT: Record<string, unknown> = {
 let cached: ReturnType<typeof handle> | null = null;
 
 function buildApp(env: Env) {
-  const facilitatorClient = new HTTPFacilitatorClient({ url: env.FACILITATOR_URL });
+  // Prefer the CDP facilitator when keys are present (CDP settlement is the only
+  // path into the Coinbase Bazaar and agentic.market); fall back to keyless PayAI.
+  const facilitatorConfig =
+    env.CDP_API_KEY_ID && env.CDP_API_KEY_SECRET
+      ? createFacilitatorConfig(env.CDP_API_KEY_ID, env.CDP_API_KEY_SECRET)
+      : { url: env.FACILITATOR_URL };
+  const facilitatorClient = new HTTPFacilitatorClient(facilitatorConfig);
   const resourceServer = new x402ResourceServer(facilitatorClient)
     .register(EVM_NETWORK, new ExactEvmScheme())
     .register(SVM_NETWORK, new ExactSvmScheme());
