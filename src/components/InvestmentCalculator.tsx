@@ -103,6 +103,9 @@ export default function InvestmentCalculator() {
     [initial, recurring, periods, startPrice, endPrice, fee, years],
   );
 
+  const safeStartPrice = bounded(startPrice, MAX_MONEY);
+  const safeEndPrice = bounded(endPrice, MAX_MONEY);
+
   return (
     <section className="mt-12 grid gap-6 rounded-2xl border border-border-subtle bg-bg-card p-5 shadow-sm md:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]" aria-label="Interactive calculator">
       <div className="min-w-0">
@@ -122,12 +125,13 @@ export default function InvestmentCalculator() {
         <h2 className="text-xl font-semibold text-text-primary">Calculated result</h2>
         <dl className="mt-6 grid gap-4 sm:grid-cols-2">
           <Metric label="Total invested" value={money(result.totalInvested)} />
-          <Metric label="Units accumulated" value={number(result.units, 8)} />
+          <Metric label="Units accumulated" value={number(result.units, 4)} />
           <Metric label="Average cost" value={result.units > 0 ? money(result.averageCost) : "Not available"} note="Cash invested divided by units received" />
           <Metric label="Ending value" value={money(result.endingValue)} />
           <Metric label="Return on investment" value={percent(result.roiPercent)} />
           <Metric label="Annualized return" value={result.cagrPercent === null ? "Not available" : percent(result.cagrPercent)} note="CAGR over the holding window you entered" />
           <Metric label="Fee cost vs no fee" value={money(result.feeCostDollars)} note="Foregone value from the fee you entered" />
+          <Metric label="Price change you entered" value={percent(safeStartPrice > 0 ? ((safeEndPrice - safeStartPrice) / safeStartPrice) * 100 : 0)} note="Start to end price over the holding window" />
         </dl>
         <div className="mt-8 border-t border-border-subtle pt-5">
           <h3 className="font-mono text-xs uppercase tracking-wider text-text-secondary">Ending price scenarios</h3>

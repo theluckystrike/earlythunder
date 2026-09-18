@@ -67,7 +67,6 @@ const SECTIONS = [
   {
     heading: "What the backtest adds",
     paragraphs: [
-      "The calculator above runs on a synthetic path from your starting price to your ending price. The backtest below replays the same rules on 364 dated daily Bitcoin prices from two exchanges. It is a historical record, not a promise of future dips.",
       "Dollar amounts in the backtest are fixed at $10,000 with four tranches and a 15% trigger at a 0.25% fee. Change the parameters to test a tighter trigger or more tranches against the same real prices.",
     ],
   },
@@ -149,7 +148,7 @@ export default function Page() {
         <div className="mt-6 grid gap-4 md:grid-cols-2">{FORMULAS.map((formula) => <div key={formula} className="rounded-2xl border border-border-subtle bg-bg-secondary p-6 font-mono text-sm leading-relaxed text-text-primary">{formula}</div>)}</div>
       </section>
       {SECTIONS.map((section) => <section key={section.heading} className="mt-20 border-t border-border-subtle pt-12"><h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">{section.heading}</h2><div className="mt-6 max-w-3xl space-y-4 text-[1.0625rem] leading-[1.75] text-text-secondary">{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></section>)}
-      <section className="mt-20 rounded-2xl border border-amber/30 bg-bg-secondary p-6 md:p-8"><span className="font-mono text-xs uppercase tracking-wider text-amber">Worked example</span><h2 className="mt-3 text-2xl font-semibold text-text-primary">{EXAMPLES[0].heading}</h2><p className="mt-4 max-w-3xl text-base leading-relaxed text-text-secondary">{dipWorkedExample(BACKTEST_THRESHOLD, BACKTEST_TRANCHES, BACKTEST_CASH)}</p></section>
+      <section className="mt-20 rounded-2xl border border-amber/30 bg-bg-secondary p-6 md:p-8"><span className="font-mono text-xs uppercase tracking-wider text-amber">Worked example</span><h2 className="mt-3 text-2xl font-semibold text-text-primary">How a dip plan spends its cash</h2><p className="mt-4 max-w-3xl text-base leading-relaxed text-text-secondary">{dipWorkedExample(BACKTEST_THRESHOLD, BACKTEST_TRANCHES, BACKTEST_CASH)}</p></section>
       <section className="mt-20 border-t border-border-subtle pt-12"><h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Questions and answers</h2><div className="mt-8 grid gap-4">{FAQS.map((faq) => <details key={faq.question} className="rounded-xl border border-border-subtle bg-bg-card p-5"><summary className="cursor-pointer font-semibold text-text-primary">{faq.question}</summary><p className="mt-3 max-w-3xl leading-relaxed text-text-secondary">{faq.answer}</p></details>)}</div></section>
       <section className="mt-20 border-t border-border-subtle pt-12">
         <span className="font-mono text-xs uppercase tracking-wider text-text-secondary">Primary references</span>
@@ -160,8 +159,8 @@ export default function Page() {
         </ol>
       </section>
       <section className="mt-20 border-t border-border-subtle pt-12"><h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">Related calculators</h2><div className="mt-6 flex flex-wrap gap-3">{RELATED.map((item) => <Link key={item.href} href={item.href} className="ghost-btn">{item.label}<span className="arr">&rarr;</span></Link>)}</div></section>
-      <section className="mt-20 rounded-2xl border border-border-subtle bg-bg-secondary p-6"><h2 className="text-xl font-semibold text-text-primary">Research and risk disclosure</h2><p className="mt-4 max-w-3xl text-sm leading-relaxed text-text-secondary">{dipDisclosureText()} Buy the dip plans can wait a long time for a trigger and can still lose money if the market falls further after each purchase.</p></section>
       <BacktestSection />
+      <section className="mt-20 rounded-2xl border border-border-subtle bg-bg-secondary p-6"><h2 className="text-xl font-semibold text-text-primary">Research and risk disclosure</h2><p className="mt-4 max-w-3xl text-sm leading-relaxed text-text-secondary">{dipDisclosureText()} Buy the dip plans can wait a long time for a trigger and can still lose money if the market falls further after each purchase.</p></section>
       <p className="mt-10 border-t border-border-subtle pt-6 text-sm text-text-secondary">Built and checked by Michael Lip</p>
     </div>
   );
