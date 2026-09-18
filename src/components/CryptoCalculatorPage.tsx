@@ -56,6 +56,9 @@ const RELATED = [
   { href: "/crypto-profit-calculator", label: "Profit calculator" },
   { href: "/crypto-investment-calculator", label: "Investment calculator" },
   { href: "/crypto-buy-the-dip-calculator", label: "Buy the dip calculator" },
+  { href: "/crypto-tax-calculator", label: "Tax calculator" },
+  { href: "/crypto-volatility-calculator", label: "Volatility calculator" },
+  { href: "/crypto-drawdown-calculator", label: "Drawdown calculator" },
 ] as const;
 
 export default function CryptoCalculatorPage({ spec }: { readonly spec: CalculatorPageSpec }) {
