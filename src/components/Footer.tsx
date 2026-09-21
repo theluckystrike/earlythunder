@@ -78,6 +78,12 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
     ],
   },
   {
+    title: "NETWORK",
+    links: [
+      { href: "https://tg.zovo.one", label: "Tiny Telegram Tools" },
+    ],
+  },
+  {
     title: "LEGAL",
     links: [
       { href: "/terms", label: "Terms" },
