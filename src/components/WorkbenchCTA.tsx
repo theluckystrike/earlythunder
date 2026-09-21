@@ -11,7 +11,7 @@ export default function WorkbenchCTA({ placement = "footer" }: { placement?: str
         <details className="workbench-offer__fit">
           <summary>Is the Workbench right for my research?</summary>
           <p>Use the free calculators for a quick calculation. Use the Workbench when you need to collect sources, compare your own token assumptions, and export a research memo.</p>
-          <p>Try the preview: add a source, record an assumption, and check the memo workflow before buying. This is a research workspace, not a trading signal or a promise of investment returns.</p>
+          <p>Try the preview: change a source date or revenue assumption in the fictional examples and inspect the comparison before buying. Your own projects, exports, and research memos are included in the paid download. This is a research workspace, not a trading signal or a promise of investment returns.</p>
         </details>
         <p className="workbench-offer__details">$29 USD once · Version 1 ZIP · No subscription</p>
       </div>
