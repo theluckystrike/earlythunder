@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-20T13:10:13.676Z",
+  "generated_at": "2026-09-21T10:42:42.640Z",
   "source_updated_at": "2026-09-18T14:30:00Z",
   "citation_links": {
-    "checked_at": "2026-09-14T10:37:38.770Z",
-    "dead_count": 47
+    "checked_at": "2026-09-21T10:42:42.513Z",
+    "dead_count": 52
   },
   "market_data": {
     "source": "CoinGecko",
@@ -966,7 +966,7 @@
           "claim": "JELLY exploit (Mar 2025): validators force-settled positions in 2 minutes, precedent for centralized intervention",
           "source": "The Block",
           "url": "https://www.theblock.co/post/349903/jelly-exploit-hyperliquid",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "FCA unauthorized warning (May 2026), US IP blocks perps access",
@@ -16294,7 +16294,7 @@
           "claim": "Avalanche Summit V: Sep 16-17, 2026 in New York",
           "source": "Avax.network",
           "url": "https://www.avax.network/community-hub/events",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "NHN KCP PAYCO stablecoin pilot: 2-second settlement, 1,000+ merchants",
@@ -56375,7 +56375,7 @@
           "claim": "Multiple exchanges including Binance delisted ZEC in various regions due to regulatory pressure on privacy coins",
           "source": "Coindesk",
           "url": "https://www.coindesk.com/policy/2023/09/zcash-delistings",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Zcash shielded supply growth",
@@ -73056,7 +73056,7 @@
           "claim": "StarkWare and Starknet Foundation hold 80%+ of STRK supply with releases through 2027",
           "source": "Starknet Tokenomics",
           "url": "https://starknet.io/content/starknet-token-provisions-paper/",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "Starknet TVL under $100M despite being EF-backed ZK rollup; developer activity in Cairo growing slowly",
@@ -80742,7 +80742,7 @@
           "claim": "Dogecoin has virtually no DeFi network or protocol revenue",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Dogecoin",
-          "link_ok": false
+          "link_ok": true
         }
       ],
       "neighbours": [
@@ -81953,7 +81953,7 @@
           "claim": "FLOKI filed for ETF products with regulators in multiple Asian jurisdictions in 2025",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2025/floki-etf-asia",
-          "link_ok": true
+          "link_ok": false
         }
       ],
       "neighbours": [
@@ -92103,7 +92103,7 @@
           "claim": "Manta Network TVL declined from $800M+ peak during new model farming to under $25M by 2026",
           "source": "DefiLlama",
           "url": "https://defillama.com/chain/Manta%20Pacific",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "MANTA down 97%+ from ATH as liquidity mining incentives dried up and genuine users didn't materialize",
@@ -98555,7 +98555,7 @@
           "claim": "Decentraland's peak concurrent user count in 2025 estimated at 300-800 users despite $165M market cap",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2022/10/07/decentralands-metaverse-reportedly-has-only-38-active-users-in-24-hours",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "MANA down 98.5% from ATH of $5.85 set November 2021; Decentraland DAO controls large MANA treasury",
@@ -99368,7 +99368,7 @@
           "claim": "Wonderland DAO (TIME/MEM) CFO exposed as 0xSifu (Michael Patryn, QuadrigaCX co-founder) in Jan 2022, triggering SPELL collapse",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2022/01/27/0xsifu-is-michael-patryn-co-founder-of-collapsed-crypto-exchange-quadrigacx",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "SPELL token is down 99.5% from ATH; Abracadabra TVL fell from $5B+ to ~$85M",
@@ -100206,7 +100206,7 @@
           "claim": "Qtum TVL under $1M, among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Qtum GitHub activity near zero; no major protocol updates since 2022",
@@ -101869,7 +101869,7 @@
           "claim": "Gala Games co-founder Eric Schiermeyer sued Wright Thurston for unauthorized minting of $130M worth of GALA tokens in 2023",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2023/05/05/gala-games-co-founder-sues-partner-over-130m-in-stolen-tokens",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "GALA is down 99.6% from ATH of $0.8367; only 32% of total supply is circulating with massive future dilution",

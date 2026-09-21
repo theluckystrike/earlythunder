@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-14T10:37:38.770Z",
-  "total": 743,
-  "ok": 487,
+  "checked_at": "2026-09-21T10:42:42.513Z",
+  "total": 746,
+  "ok": 559,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -15,14 +15,6 @@
       "url": "https://github.com/nicola/hyperliquid-decentralization",
       "status": 404,
       "source": "Electric Capital / Community Audits",
-      "cited_by": [
-        "HYPE"
-      ]
-    },
-    {
-      "url": "https://www.theblock.co/post/349903/jelly-exploit-hyperliquid",
-      "status": 404,
-      "source": "The Block",
       "cited_by": [
         "HYPE"
       ]
@@ -111,6 +103,14 @@
       "url": "https://www.kucoin.com/news/articles/hyperliquid-2025-annual-report-844m-revenue-anchors-growth-amidst-256m-token-open-challenge",
       "status": 404,
       "source": "KuCoin",
+      "cited_by": [
+        "AVAX"
+      ]
+    },
+    {
+      "url": "https://www.avax.network/community-hub/events",
+      "status": 404,
+      "source": "Avax.network",
       "cited_by": [
         "AVAX"
       ]
@@ -252,19 +252,19 @@
       ]
     },
     {
+      "url": "https://www.coindesk.com/policy/2023/09/zcash-delistings",
+      "status": 404,
+      "source": "Coindesk",
+      "cited_by": [
+        "ZEC"
+      ]
+    },
+    {
       "url": "https://algorand.com/technology",
       "status": 404,
       "source": "Algorand Whitepaper",
       "cited_by": [
         "ALGO"
-      ]
-    },
-    {
-      "url": "https://starknet.io/content/starknet-token-provisions-paper/",
-      "status": 404,
-      "source": "Starknet Tokenomics",
-      "cited_by": [
-        "STRK"
       ]
     },
     {
@@ -332,19 +332,27 @@
       ]
     },
     {
-      "url": "https://defillama.com/chain/Dogecoin",
-      "status": 404,
-      "source": "DeFiLlama",
-      "cited_by": [
-        "DOGE"
-      ]
-    },
-    {
       "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million",
       "status": 404,
       "source": "World Bank",
       "cited_by": [
         "XTZ"
+      ]
+    },
+    {
+      "url": "https://www.coindesk.com/markets/2025/floki-etf-asia",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "FLOKI"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Manta%20Pacific",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "MANTA"
       ]
     },
     {
@@ -372,15 +380,47 @@
       ]
     },
     {
+      "url": "https://www.coindesk.com/tech/2022/10/07/decentralands-metaverse-reportedly-has-only-38-active-users-in-24-hours",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "MANA"
+      ]
+    },
+    {
+      "url": "https://www.coindesk.com/business/2022/01/27/0xsifu-is-michael-patryn-co-founder-of-collapsed-crypto-exchange-quadrigacx",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "SPELL"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Qtum",
+      "status": 404,
+      "source": "DeFiLlama",
+      "cited_by": [
+        "QTUM"
+      ]
+    },
+    {
       "url": "https://coinmarketcap.com/currencies/memecoin-2",
       "status": 404,
       "source": "CoinMarketCap",
       "cited_by": [
         "MEME"
       ]
+    },
+    {
+      "url": "https://www.coindesk.com/business/2023/05/05/gala-games-co-founder-sues-partner-over-130m-in-stolen-tokens",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "GALA"
+      ]
     }
   ],
-  "blocked": 189,
+  "blocked": 113,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -420,6 +460,13 @@
       ]
     },
     {
+      "url": "https://defillama.com/protocol/curve-finance",
+      "error": "timeout",
+      "cited_by": [
+        "CRV"
+      ]
+    },
+    {
       "url": "https://ao.arweave.dev",
       "error": "fetch failed",
       "cited_by": [
@@ -455,6 +502,20 @@
       ]
     },
     {
+      "url": "https://defillama.com/protocol/balancer",
+      "error": "timeout",
+      "cited_by": [
+        "BAL"
+      ]
+    },
+    {
+      "url": "https://starknet.io/content/starknet-token-provisions-paper/",
+      "error": "timeout",
+      "cited_by": [
+        "STRK"
+      ]
+    },
+    {
       "url": "https://blog.helium.com/helium-mobile-subdao",
       "error": "timeout",
       "cited_by": [
@@ -463,7 +524,7 @@
     },
     {
       "url": "https://www.sec.gov/litigation/complaints",
-      "error": "fetch failed",
+      "error": "timeout",
       "cited_by": [
         "ATOM"
       ]
