@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -93,6 +94,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Script src="/roi-measurement.js" strategy="afterInteractive" />
       </body>
     </html>
   );

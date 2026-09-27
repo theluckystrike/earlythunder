@@ -35,7 +35,7 @@ function PageHeader() {
         Privacy Policy
       </h1>
       <p className="mt-4 text-sm text-text-tertiary">
-        Last updated April 14, 2026
+        Last updated September 27, 2026
       </p>
     </div>
   );
@@ -122,6 +122,10 @@ function ThirdPartyCollected() {
         <ListItem>
           Aggregated analytics data from Plausible Analytics
         </ListItem>
+        <ListItem>
+          With your consent, Google Analytics 4 measures page visits and paid
+          offer interest. We do not send calculator inputs or results.
+        </ListItem>
       </ul>
     </div>
   );
@@ -164,8 +168,10 @@ function CookiesSection() {
         </ListItem>
         <ListItem>
           <strong className="text-text-primary">Analytics cookies.</strong>{" "}
-          Plausible Analytics, a privacy-friendly analytics platform that does
-          not use personal identifiers
+          Google Analytics 4 uses analytics cookies only after you choose
+          &ldquo;Allow analytics.&rdquo; You can change your choice through
+          &ldquo;Analytics settings&rdquo; in the footer. Plausible Analytics also
+          measures aggregate visits without personal identifiers.
         </ListItem>
       </ul>
       <p className="mt-4 leading-relaxed text-text-secondary">
@@ -348,10 +354,9 @@ function DoNotTrackSection() {
     <section className="mt-12">
       <SectionHeading number="12" title="Do Not Track" />
       <p className="mt-4 leading-relaxed text-text-secondary">
-        The Service does not respond to Do Not Track (DNT) browser signals.
-        However, Early Thunder uses Plausible Analytics, which is
-        privacy-friendly by design and does not track individual users
-        across websites.
+        Google Analytics 4 remains off when your browser sends Do Not Track
+        or Global Privacy Control, even if you previously allowed it.
+        Plausible Analytics provides aggregate visit counts separately.
       </p>
     </section>
   );
