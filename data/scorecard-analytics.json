@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-27T14:12:11.517Z",
+  "generated_at": "2026-09-28T11:41:20.266Z",
   "source_updated_at": "2026-09-18T14:30:00Z",
   "citation_links": {
-    "checked_at": "2026-09-21T10:42:42.513Z",
+    "checked_at": "2026-09-28T11:41:20.150Z",
     "dead_count": 52
   },
   "market_data": {
@@ -1135,6 +1135,7 @@
       "one_liner": "Institutional settlement layer. Commodity classification. Burn collapsed but moat intact.",
       "key_catalyst": "Glamsterdam ePBS (Q3 2026), CLARITY Act (the 4 July 2026 signing target was missed, the bill stalled in the Senate), staking ETF expansion",
       "catalyst_expired_dates": [
+        "Q3 2026",
         "July 2026"
       ],
       "key_risk": "Burn collapsed (-71% post-Pectra), ETH/BTC 10mo low, 9 EF departures, identity crisis",
@@ -3192,6 +3193,7 @@
       "one_liner": "Revenue not declining: Q2 2026 $2.59M (+48% QoQ). ARR $7.3-9.5M. 80% burn Foundation-controlled (governance, not smart contract). ATH $0.3746 not $0.43. 20K+ stations, 150+ countries. P/S 9.9-14.4x (expensive vs Helium 3.1x). Deflationary crossover approaching post-Jun 2026 halving.",
       "key_catalyst": "The 30 June 2026 halving has already taken effect (12 to 6 GEOD/day), so the open question is whether burn now exceeds issuance, Japan/Iceland StableHex expansion (Jun 8), Binance listing 12-18mo (40-55% probability), humanoid robot positioning (Multicoin $8M thesis), GEODASH ag drone JV (Q3 2026 commercial)",
       "catalyst_expired_dates": [
+        "Q3 2026",
         "June 2026",
         "Jun 8"
       ],
@@ -10747,7 +10749,9 @@
       "token_standard": "ERC-20",
       "one_liner": "Dominant LST protocol at $21B TVL with real staking revenue; fee switch vote pending but token accrual still weak.",
       "key_catalyst": "LDO fee switch enabling token buybacks or staker rewards expected Q3 2026",
-      "catalyst_expired_dates": [],
+      "catalyst_expired_dates": [
+        "Q3 2026"
+      ],
       "key_risk": "Ethereum staking yield compression; regulatory risk on liquid staking; DVT transition diluting Lido moat",
       "variables": [
         {
@@ -11142,7 +11146,9 @@
       "token_standard": "ERC-20",
       "one_liner": "Unique Smart Collateral/Debt DeFi primitive (39x capital efficiency). $12.66M rev trailing but $5.6M current run rate (declining -63%). Buybacks halted post-Resolv ($21M bad debt). TVL -92% from peak. P/S 6.8x trailing / 15.4x current. Zero inflation, 78.7% circ. Top-tier VCs (Pantera, Naval, Coinbase). 55% stablecoin swap share.",
       "key_catalyst": "DEX v2 (volatile pairs + cross-margin). Solana DEX launch Q3 2026. Buyback restoration when treasury recovers. Venus Flux BNB growth. Jupiter Lend expansion on Solana.",
-      "catalyst_expired_dates": [],
+      "catalyst_expired_dates": [
+        "Q3 2026"
+      ],
       "key_risk": "Revenue declining -63% ($15M peak → $5.6M run rate). Buybacks halted. TVL -92% from peak ($9.2B → $726M). Two security incidents in 2026 (Resolv $21M bad debt + Merkle key compromise $215K). Treasury depleted (~$5M liquid). 4-day disclosure delay on May incident. not on Binance.",
       "variables": [
         {
@@ -15216,7 +15222,7 @@
           "claim": "INJ staking yields approximately 12-15% annually",
           "source": "Staking Rewards",
           "url": "https://stakingrewards.com/earn/injective",
-          "link_ok": false
+          "link_ok": true
         }
       ],
       "neighbours": [
@@ -23698,7 +23704,9 @@
       "token_standard": "ERC-20",
       "one_liner": "ZK perp DEX, up sharply this week to a $534M cap. But farming revenue fell ~70% to ~$26-30M annualized, so P/S re-rated to a rich ~18-20x. New Jul 2026 buyback-and-burn + 6% staking target vs a Dec 2026 cliff that vests 50% of supply at ~13.9M LIT/month.",
       "key_catalyst": "Lighter EVM Q2-Q3 2026, Telegram Wallet 150M users, CFTC license pursuit, potential Binance listing",
-      "catalyst_expired_dates": [],
+      "catalyst_expired_dates": [
+        "Q3 2026"
+      ],
       "key_risk": "Dec 2026 cliff releases 500M tokens (50% supply), 83% volume collapse from TGE peak, only 4,420 holders, L2BEAT Stage 0",
       "variables": [
         {
@@ -28075,7 +28083,7 @@
           "claim": "Velodrome TVL dropped from $500M+ peak to ~$180M as Aerodrome captured Base chain volume",
           "source": "DefiLlama",
           "url": "https://defillama.com/protocol/velodrome-finance",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "Velodrome V3 with concentrated liquidity announced for 2025-2026, key catalyst for TVL recovery",
@@ -73056,7 +73064,7 @@
           "claim": "StarkWare and Starknet Foundation hold 80%+ of STRK supply with releases through 2027",
           "source": "Starknet Tokenomics",
           "url": "https://starknet.io/content/starknet-token-provisions-paper/",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Starknet TVL under $100M despite being EF-backed ZK rollup; developer activity in Cairo growing slowly",
@@ -80742,7 +80750,7 @@
           "claim": "Dogecoin has virtually no DeFi network or protocol revenue",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Dogecoin",
-          "link_ok": true
+          "link_ok": false
         }
       ],
       "neighbours": [
@@ -100278,7 +100286,9 @@
       "token_standard": "ERC-20",
       "one_liner": "-99.4% ATH. 4,500 DAU. Founders ousted. 50% layoffs. Staking dead. $312K daily vol. Metaverse narrative buried.",
       "key_catalyst": "Sandbox NEXT mobile (UE5) full launch + SANDchain mainnet + Animoca Nasdaq Q3 2026",
-      "catalyst_expired_dates": [],
+      "catalyst_expired_dates": [
+        "Q3 2026"
+      ],
       "key_risk": "Animoca confirmed selling SAND pre-Nasdaq. Zero revenue. Zero burn. Zero staking. 333M SAND in insider wallets.",
       "variables": [
         {

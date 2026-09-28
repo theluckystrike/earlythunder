@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-21T10:42:42.513Z",
+  "checked_at": "2026-09-28T11:41:20.150Z",
   "total": 746,
-  "ok": 559,
+  "ok": 555,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -65,14 +65,6 @@
       "source": "SolanaFloor",
       "cited_by": [
         "JUP"
-      ]
-    },
-    {
-      "url": "https://stakingrewards.com/earn/injective",
-      "status": 404,
-      "source": "Staking Rewards",
-      "cited_by": [
-        "INJ"
       ]
     },
     {
@@ -196,14 +188,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/protocol/velodrome-finance",
-      "status": 404,
-      "source": "DefiLlama",
-      "cited_by": [
-        "VELO"
-      ]
-    },
-    {
       "url": "https://atomicwallet.io/academy/articles/perpetual-dexs-2025",
       "status": 404,
       "source": "Atomic Wallet Academy",
@@ -268,6 +252,14 @@
       ]
     },
     {
+      "url": "https://starknet.io/content/starknet-token-provisions-paper/",
+      "status": 404,
+      "source": "Starknet Tokenomics",
+      "cited_by": [
+        "STRK"
+      ]
+    },
+    {
       "url": "https://docs.osmosis.zone/osmosis-core/tokenomics",
       "status": 404,
       "source": "Osmosis Docs",
@@ -329,6 +321,14 @@
       "source": "CoinGecko",
       "cited_by": [
         "WLD"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Dogecoin",
+      "status": 404,
+      "source": "DeFiLlama",
+      "cited_by": [
+        "DOGE"
       ]
     },
     {
@@ -420,7 +420,7 @@
       ]
     }
   ],
-  "blocked": 113,
+  "blocked": 119,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -460,13 +460,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/protocol/curve-finance",
-      "error": "timeout",
-      "cited_by": [
-        "CRV"
-      ]
-    },
-    {
       "url": "https://ao.arweave.dev",
       "error": "fetch failed",
       "cited_by": [
@@ -502,20 +495,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/protocol/balancer",
-      "error": "timeout",
-      "cited_by": [
-        "BAL"
-      ]
-    },
-    {
-      "url": "https://starknet.io/content/starknet-token-provisions-paper/",
-      "error": "timeout",
-      "cited_by": [
-        "STRK"
-      ]
-    },
-    {
       "url": "https://blog.helium.com/helium-mobile-subdao",
       "error": "timeout",
       "cited_by": [
@@ -524,7 +503,7 @@
     },
     {
       "url": "https://www.sec.gov/litigation/complaints",
-      "error": "timeout",
+      "error": "fetch failed",
       "cited_by": [
         "ATOM"
       ]
