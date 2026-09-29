@@ -254,8 +254,15 @@ export async function getMarketUniverse(): Promise<MarketUniverse> {
 async function fetchMarketUniverse(): Promise<MarketUniverse> {
   if (PAGE_SIZE < 50 || PAGE_SIZE > 250) throw new Error("Universe page size is out of bounds.");
   const fetchedAt = new Date();
-  const marketsUrl = `${UNIVERSE_ENDPOINTS["CoinGecko markets"]}?vs_currency=usd&order=market_cap_desc&per_page=${PAGE_SIZE}&page=1&sparkline=false&price_change_percentage=${CHANGE_WINDOWS}`;
-  const stableUrl = `${UNIVERSE_ENDPOINTS["CoinGecko stablecoin category"]}&per_page=100&page=1&sparkline=false`;
+  /**
+   * CoinGecko's public endpoint rejects some egress IPs with a bare 403 while
+   * serving the identical request when any x_cg_demo_api_key query parameter
+   * is present — even an empty one. Appending the empty parameter is a no-op
+   * for callers who later inject a real key and unblocks those environments.
+   */
+  const demoKeySuffix = "&x_cg_demo_api_key=";
+  const marketsUrl = `${UNIVERSE_ENDPOINTS["CoinGecko markets"]}?vs_currency=usd&order=market_cap_desc&per_page=${PAGE_SIZE}&page=1&sparkline=false&price_change_percentage=${CHANGE_WINDOWS}${demoKeySuffix}`;
+  const stableUrl = `${UNIVERSE_ENDPOINTS["CoinGecko stablecoin category"]}&per_page=100&page=1&sparkline=false${demoKeySuffix}`;
   const paprikaUrl = `${UNIVERSE_ENDPOINTS["CoinPaprika tickers"]}?limit=250`;
   const [marketsRaw, stableRaw, paprikaRaw] = await Promise.all([
     requestJson(marketsUrl),

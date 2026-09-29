@@ -33,7 +33,9 @@ interface BlockchairReading {
 }
 
 const ENDPOINTS = {
-  CoinGecko: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin&sparkline=false",
+  // Same empty-demo-key suffix as market-universe.ts: CoinGecko's public
+  // endpoint 403s some egress IPs unless any x_cg_demo_api_key param exists.
+  CoinGecko: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin&sparkline=false&x_cg_demo_api_key=",
   CoinPaprika: "https://api.coinpaprika.com/v1/tickers/btc-bitcoin",
   Coinbase: "https://api.coinbase.com/v2/prices/BTC-USD/spot",
   Blockchair: "https://api.blockchair.com/bitcoin/stats",

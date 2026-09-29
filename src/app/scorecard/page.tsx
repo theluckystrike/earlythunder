@@ -267,8 +267,8 @@ export default function ScorecardPage() {
       </Section>
 
       <Section>
-        <SectionLabel number="05" title="Two other ways in" />
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        <SectionLabel number="05" title="Three other ways in" />
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link
             href="/scorecard/signal"
             className="block rounded-2xl border border-border bg-bg-card p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
@@ -292,6 +292,18 @@ export default function ScorecardPage() {
             <span className="mt-1.5 block text-xs leading-relaxed text-text-secondary">
               Curated head-to-head pages: all 25 variables side by side, the gap on each one called,
               with market cap, dilution and drawdown next to them.
+            </span>
+          </Link>
+          <Link
+            href="/rankings"
+            className="block rounded-2xl border border-border bg-bg-card p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-active"
+          >
+            <span className="block text-sm font-semibold text-text-primary">
+              Read it as a ranked list
+            </span>
+            <span className="mt-1.5 block text-xs leading-relaxed text-text-secondary">
+              Long-tail answers with one rule each: the most deflationary tokens, net supply direction
+              after inflation and burn, undervalued on price-to-sales, and every exchange token ranked.
             </span>
           </Link>
         </div>

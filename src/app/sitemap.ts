@@ -26,6 +26,7 @@ import { getAllSignals, signalSlug } from "@/lib/scorecard-signals";
 import { getAllPairs } from "@/lib/scorecard-pairs";
 import { getAllTiers } from "@/lib/scorecard-tiers";
 import { getAllScreens } from "@/lib/scorecard-screens";
+import { getAllRankings } from "@/lib/scorecard-rankings";
 
 export const dynamic = "force-static";
 
@@ -121,6 +122,13 @@ function scorecardEntries(passDate: Date): MetadataRoute.Sitemap {
     priority: SCORECARD_SCREEN_PRIORITY,
   }));
 
+  const rankings = getAllRankings().map((ranking) => ({
+    url: `${SITE_URL}/rankings/${ranking.slug}`,
+    lastModified: passDate,
+    changeFrequency: "monthly" as const,
+    priority: SCORECARD_SCREEN_PRIORITY,
+  }));
+
   const signals = getAllSignals().map((signal) => ({
     url: `${SITE_URL}/scorecard/signal/${signalSlug(signal.key)}`,
     lastModified: passDate,
@@ -142,7 +150,7 @@ function scorecardEntries(passDate: Date): MetadataRoute.Sitemap {
     priority: SCORECARD_COMPARE_PRIORITY,
   }));
 
-  return [...hubs, ...screens, ...signals, ...tokens, ...compares];
+  return [...hubs, ...screens, ...rankings, ...signals, ...tokens, ...compares];
 }
 
 /**
