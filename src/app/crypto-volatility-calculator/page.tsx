@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import VolatilityCalculator from "@/components/VolatilityCalculator";
 import { volatilityDisclosureText, volatilityIntroText } from "@/lib/volatility-calc";
@@ -78,7 +79,7 @@ export default function Page() {
         mainEntity: FAQS.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })),
       }} />
       <nav aria-label="Breadcrumb" className="mb-8 font-mono text-xs text-text-secondary">
-        <a href="/" className="hover:text-text-primary">Home</a>
+        <Link href="/" className="hover:text-text-primary">Home</Link>
         <span className="px-2" aria-hidden="true">/</span>
         <span>{title}</span>
       </nav>
