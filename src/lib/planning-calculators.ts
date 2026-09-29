@@ -82,3 +82,43 @@ export function calculatePositionSize(input: { account: number; riskPercent: num
   const cashRequired = notional + entryFee;
   return { riskBudget, riskPerUnit, units, notional, entryFee, cashRequired, allocation: balance > 0 ? notional / balance * 100 : 0, stopDistance: entryPrice > 0 ? Math.abs(entryPrice - stopPrice) / entryPrice * 100 : 0 };
 }
+
+export function calculateStopLoss(input: { entryPrice: number; stopPrice: number; units: number; feePercent: number }) {
+  const entry = bounded(input.entryPrice, MAX_MONEY);
+  const stop = bounded(input.stopPrice, MAX_MONEY);
+  const units = bounded(input.units, MAX_MONEY);
+  const feeRate = bounded(input.feePercent, MAX_FEE_PERCENT) / 100;
+  const positionValue = entry * units;
+  const stopValue = stop * units;
+  const entryFee = positionValue * feeRate;
+  const stopFee = stopValue * feeRate;
+  const plannedLoss = positionValue - stopValue + entryFee + stopFee;
+  return {
+    positionValue, stopValue, entryFee, stopFee, plannedLoss,
+    lossPercent: positionValue > 0 ? (plannedLoss / positionValue) * 100 : 0,
+    stopDistance: entry > 0 ? Math.abs(entry - stop) / entry * 100 : 0,
+  };
+}
+
+export function calculateRiskReward(input: { entryPrice: number; stopPrice: number; targetPrice: number; units: number; feePercent: number }) {
+  const entry = bounded(input.entryPrice, MAX_MONEY);
+  const stop = bounded(input.stopPrice, MAX_MONEY);
+  const target = bounded(input.targetPrice, MAX_MONEY);
+  const units = bounded(input.units, MAX_MONEY);
+  const feeRate = bounded(input.feePercent, MAX_FEE_PERCENT) / 100;
+  const positionValue = entry * units;
+  const entryFee = positionValue * feeRate;
+  const stopValue = stop * units;
+  const targetValue = target * units;
+  const stopFee = stopValue * feeRate;
+  const targetFee = targetValue * feeRate;
+  const plannedLoss = positionValue - stopValue + entryFee + stopFee;
+  const plannedGain = targetValue - positionValue - entryFee - targetFee;
+  return {
+    positionValue, entryFee, plannedLoss, plannedGain,
+    ratio: plannedLoss > 0 ? plannedGain / plannedLoss : null,
+    breakevenWinRate: plannedGain > 0 && plannedLoss > 0 ? (plannedLoss / (plannedLoss + plannedGain)) * 100 : null,
+    stopDistance: entry > 0 ? Math.abs(entry - stop) / entry * 100 : 0,
+    targetDistance: entry > 0 ? Math.abs(target - entry) / entry * 100 : 0,
+  };
+}

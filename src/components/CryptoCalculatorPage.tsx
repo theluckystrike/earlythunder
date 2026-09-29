@@ -53,6 +53,8 @@ const RELATED = [
   { href: "/crypto-fee-calculator", label: "Fee calculator" },
   { href: "/crypto-apy-calculator", label: "APY calculator" },
   { href: "/crypto-position-size-calculator", label: "Position size calculator" },
+  { href: "/crypto-stop-loss-calculator", label: "Stop loss calculator" },
+  { href: "/crypto-risk-reward-calculator", label: "Risk reward calculator" },
   { href: "/crypto-profit-calculator", label: "Profit calculator" },
   { href: "/crypto-investment-calculator", label: "Investment calculator" },
   { href: "/crypto-buy-the-dip-calculator", label: "Buy the dip calculator" },

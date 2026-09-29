@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { bounded, calculateApy, calculateAveragePrice, calculateDca, calculateFees, calculatePositionSize, MAX_MONEY } from "../src/lib/planning-calculators";
+import { bounded, calculateApy, calculateAveragePrice, calculateDca, calculateFees, calculatePositionSize, calculateRiskReward, calculateStopLoss, MAX_MONEY } from "../src/lib/planning-calculators";
 
 test("calculates DCA units along a bounded path", () => {
   const result = calculateDca({ contribution: 100, periods: 2, startPrice: 10, endPrice: 20, feePercent: 0 });
@@ -69,4 +69,24 @@ test("locks the five published worked examples", () => {
   assert.ok(Math.abs(apy.ending - 12711.990089089582) < 1e-8);
   const position = calculatePositionSize({ account: 25000, riskPercent: 1, entryPrice: 100, stopPrice: 92, feePercent: 0.2 });
   assert.ok(Math.abs(position.notional - 2981.870229007634) < 1e-9);
+});
+
+test("computes fee-aware planned loss at a stop", () => {
+  const result = calculateStopLoss({ entryPrice: 100, stopPrice: 92, units: 10, feePercent: 0.2 });
+  assert.equal(result.positionValue, 1000);
+  assert.equal(result.stopValue, 920);
+  assert.ok(Math.abs(result.entryFee - 2) < 1e-9);
+  assert.ok(Math.abs(result.stopFee - 1.84) < 1e-9);
+  assert.ok(Math.abs(result.plannedLoss - 83.84) < 1e-9);
+  assert.ok(Math.abs(result.lossPercent - 8.384) < 1e-9);
+  assert.equal(calculateStopLoss({ entryPrice: 0, stopPrice: 92, units: 10, feePercent: 0.2 }).lossPercent, 0);
+});
+
+test("computes risk-reward ratio and break-even win rate", () => {
+  const result = calculateRiskReward({ entryPrice: 100, stopPrice: 92, targetPrice: 120, units: 10, feePercent: 0.2 });
+  assert.ok(Math.abs(result.plannedLoss - 83.84) < 1e-9);
+  assert.ok(Math.abs(result.plannedGain - (1200 - 1000 - 2 - 2.4)) < 1e-9);
+  assert.ok(result.ratio !== null && Math.abs(result.ratio - (195.6 / 83.84)) < 1e-9);
+  assert.ok(result.breakevenWinRate !== null && result.breakevenWinRate > 29 && result.breakevenWinRate < 31);
+  assert.equal(calculateRiskReward({ entryPrice: 100, stopPrice: 100, targetPrice: 120, units: 10, feePercent: 0 }).ratio, null);
 });

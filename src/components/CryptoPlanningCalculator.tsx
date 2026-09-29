@@ -1,9 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { bounded, calculateApy, calculateAveragePrice, calculateDca, calculateFees, calculatePositionSize, MAX_APR_PERCENT, MAX_FEE_PERCENT, MAX_MONEY, MAX_PERIODS, MAX_YEARS } from "@/lib/planning-calculators";
+import { bounded, calculateApy, calculateAveragePrice, calculateDca, calculateFees, calculatePositionSize, calculateRiskReward, calculateStopLoss, MAX_APR_PERCENT, MAX_FEE_PERCENT, MAX_MONEY, MAX_PERIODS, MAX_YEARS } from "@/lib/planning-calculators";
 
-export type PlanningCalculatorKind = "dca" | "average-price" | "fees" | "apy" | "position-size";
+export type PlanningCalculatorKind = "dca" | "average-price" | "fees" | "apy" | "position-size" | "stop-loss" | "risk-reward";
 
 interface Props {
   readonly kind: PlanningCalculatorKind;
@@ -145,10 +145,31 @@ function PositionSizeCalculator() {
   return <CalculatorShell results={<><Metric label="Cash-capped position size" value={money(result.notional)} /><Metric label="Asset units" value={number(result.units, 8)} /><Metric label="Risk budget" value={money(result.riskBudget)} /><Metric label="Risk per unit" value={money(result.riskPerUnit)} /><Metric label="Entry fee" value={money(result.entryFee)} /><Metric label="Cash required" value={money(result.cashRequired)} /><Metric label="Portfolio allocation" value={percent(result.allocation)} /><Metric label="Stop distance" value={percent(result.stopDistance)} /></>}><Field label="Trading account value" value={account} onChange={setAccount} prefix="$" max={MAX_MONEY} /><Field label="Maximum account risk" value={risk} onChange={setRisk} suffix="%" max={100} /><Field label="Planned entry price" value={entry} onChange={setEntry} prefix="$" max={MAX_MONEY} /><Field label="Stop price" value={stop} onChange={setStop} prefix="$" max={MAX_MONEY} /><Field label="Fee each side" value={fee} onChange={setFee} suffix="%" max={MAX_FEE_PERCENT} /></CalculatorShell>;
 }
 
+function StopLossCalculator() {
+  const [entry, setEntry] = useState("100");
+  const [stop, setStop] = useState("92");
+  const [units, setUnits] = useState("10");
+  const [fee, setFee] = useState("0.2");
+  const result = useMemo(() => calculateStopLoss({ entryPrice: Number(entry), stopPrice: Number(stop), units: Number(units), feePercent: Number(fee) }), [entry, stop, units, fee]);
+  return <CalculatorShell results={<><Metric label="Position value at entry" value={money(result.positionValue)} /><Metric label="Value at stop" value={money(result.stopValue)} /><Metric label="Planned loss including fees" value={money(result.plannedLoss)} /><Metric label="Loss as share of position" value={percent(result.lossPercent)} /><Metric label="Entry fee" value={money(result.entryFee)} /><Metric label="Exit fee at stop" value={money(result.stopFee)} /><Metric label="Stop distance" value={percent(result.stopDistance)} /></>}><Field label="Planned entry price" value={entry} onChange={setEntry} prefix="$" max={MAX_MONEY} /><Field label="Stop price" value={stop} onChange={setStop} prefix="$" max={MAX_MONEY} /><Field label="Units held" value={units} onChange={setUnits} max={MAX_MONEY} /><Field label="Fee each side" value={fee} onChange={setFee} suffix="%" max={MAX_FEE_PERCENT} /></CalculatorShell>;
+}
+
+function RiskRewardCalculator() {
+  const [entry, setEntry] = useState("100");
+  const [stop, setStop] = useState("92");
+  const [target, setTarget] = useState("120");
+  const [units, setUnits] = useState("10");
+  const [fee, setFee] = useState("0.2");
+  const result = useMemo(() => calculateRiskReward({ entryPrice: Number(entry), stopPrice: Number(stop), targetPrice: Number(target), units: Number(units), feePercent: Number(fee) }), [entry, stop, target, units, fee]);
+  return <CalculatorShell results={<><Metric label="Planned gain at target" value={money(result.plannedGain)} /><Metric label="Planned loss at stop" value={money(result.plannedLoss)} /><Metric label="Reward-to-risk ratio" value={result.ratio === null ? "Not available" : `${number(result.ratio, 2)} : 1`} note="Fee-aware planned gain divided by fee-aware planned loss" /><Metric label="Break-even win rate" value={result.breakevenWinRate === null ? "Not available" : percent(result.breakevenWinRate)} note="Win rate needed for expected value of zero" /><Metric label="Entry fee" value={money(result.entryFee)} /><Metric label="Stop distance" value={percent(result.stopDistance)} /><Metric label="Target distance" value={percent(result.targetDistance)} /></>}><Field label="Planned entry price" value={entry} onChange={setEntry} prefix="$" max={MAX_MONEY} /><Field label="Stop price" value={stop} onChange={setStop} prefix="$" max={MAX_MONEY} /><Field label="Target price" value={target} onChange={setTarget} prefix="$" max={MAX_MONEY} /><Field label="Units held" value={units} onChange={setUnits} max={MAX_MONEY} /><Field label="Fee each side" value={fee} onChange={setFee} suffix="%" max={MAX_FEE_PERCENT} /></CalculatorShell>;
+}
+
 export default function CryptoPlanningCalculator({ kind }: Props) {
   if (kind === "dca") return <DcaCalculator />;
   if (kind === "average-price") return <AveragePriceCalculator />;
   if (kind === "fees") return <FeeCalculator />;
   if (kind === "apy") return <ApyCalculator />;
+  if (kind === "stop-loss") return <StopLossCalculator />;
+  if (kind === "risk-reward") return <RiskRewardCalculator />;
   return <PositionSizeCalculator />;
 }
