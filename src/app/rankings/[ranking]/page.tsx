@@ -14,7 +14,7 @@ interface PageParams {
 
 /**
  * Per-ranking copy: the question the SERP asks, the stated rule, and the
- * unique insight this dataset can defend. No invented facts — every claim
+ * unique insight this dataset can defend. No invented facts; every claim
  * is arithmetic over the same scored universe.
  */
 const COPY: Record<
@@ -30,49 +30,49 @@ const COPY: Record<
   "most-deflationary": {
     question: "Which cryptocurrencies are the most deflationary right now?",
     rule:
-      "A token qualifies when its Supply Inflation variable — scored 1 to 10 across the whole universe against issuance schedules, burns and hard caps — sits in the top quartile (75th percentile or above), and market capitalisation is at least $100M so the list stays usable.",
+      "A token qualifies when its Supply Inflation variable (scored 1 to 10 across the whole universe against issuance schedules, burns and hard caps) sits in the top quartile (75th percentile or above), and market capitalisation is at least $100M so the list stays usable.",
     why:
       "Supply direction is the one input a holder can verify without trusting a roadmap. Tokens with shrinking or fixed supply do not need demand to grow for the per-token claim on the network to rise; they only need demand to stay.",
     insight:
-      "The correlation work on the signal pages shows supply inflation co-moves 0.87 with the vesting-schedule variable, so most of what looks like deflation is really just finished vesting. That distinction matters: a token whose supply is flat because unlocks ended behaves differently from one where a live burn exceeds issuance. The ranking below does not separate the two — the variable column and each token page do.",
+      "The correlation work on the signal pages shows supply inflation co-moves 0.87 with the vesting-schedule variable, so most of what looks like deflation is really just finished vesting. That distinction matters: a token whose supply is flat because unlocks ended behaves differently from one where a live burn exceeds issuance. The ranking below does not separate the two. The variable column and each token page do.",
     columns: [
-      { key: "supply", label: "Supply var", of: (r) => (r.supply_value === null || r.supply_value === undefined ? "—" : `${r.supply_value}/10`) },
+      { key: "supply", label: "Supply var", of: (r) => (r.supply_value === null || r.supply_value === undefined ? "n/a" : `${r.supply_value}/10`) },
     ],
   },
   "net-supply-direction": {
     question: "Which tokens shrink supply fastest after both inflation and buybacks?",
     rule:
-      "Each token's Supply Inflation percentile and Buyback & Burn percentile are averaged into a single net figure, and tokens with at least $30M market cap are ranked on that average. Either variable alone can mislead — a 4% issuance schedule with a bigger burn still shrinks supply.",
+      "Each token's Supply Inflation percentile and Buyback & Burn percentile are averaged into a single net figure, and tokens with at least $30M market cap are ranked on that average. Either variable alone can mislead. A 4% issuance schedule with a bigger burn still shrinks supply.",
     why:
       "Buyback announcements and inflation schedules are usually reported separately, which is exactly how a large issuance schedule hides behind a louder burn programme. Averaging the two percentiles is the simplest honest net figure the dataset supports.",
     insight:
-      "The universe mean on buyback is 2.94 out of 10 against 4.8 on supply inflation, which is the arithmetic reason most 'deflationary' marketing fails: real, sustained burn programs are rarer than issuance schedules. The top of this list is where both variables are simultaneously strong — a set of roughly a couple dozen tokens, not the dozens each single-variable list implies.",
+      "The universe mean on buyback is 2.94 out of 10 against 4.8 on supply inflation, which is the arithmetic reason most 'deflationary' marketing fails: real, sustained burn programs are rarer than issuance schedules. The top of this list is where both variables are simultaneously strong. On the full universe, 77 tokens sit in the top quartile on both, before the $30M market-cap floor and composite-score ordering narrow it to the rows below.",
     columns: [
-      { key: "supply", label: "Supply pct", of: (r) => (r.supply_pct === undefined ? "—" : String(r.supply_pct)) },
-      { key: "buyback", label: "Buyback pct", of: (r) => (r.buyback_pct === undefined ? "—" : String(r.buyback_pct)) },
-      { key: "net", label: "Net", of: (r) => (r.net_pct === undefined ? "—" : String(r.net_pct)) },
+      { key: "supply", label: "Supply pct", of: (r) => (r.supply_pct === undefined ? "n/a" : String(r.supply_pct)) },
+      { key: "buyback", label: "Buyback pct", of: (r) => (r.buyback_pct === undefined ? "n/a" : String(r.buyback_pct)) },
+      { key: "net", label: "Net", of: (r) => (r.net_pct === undefined ? "n/a" : String(r.net_pct)) },
     ],
   },
   "undervalued-ps": {
     question: "Which altcoins look undervalued on price-to-sales in 2026?",
     rule:
-      "A token qualifies when its Price-to-Sales variable sits in the top quartile (75th percentile or above) of the universe, composite score is used as the ordering, and market capitalisation falls between $50M and $5B — large enough to have auditable revenue, small enough that mispricing is plausible.",
+      "A token qualifies when its Price-to-Sales variable sits in the top quartile (75th percentile or above) of the universe, composite score is used as the ordering, and market capitalisation falls between $50M and $5B. Large enough to have auditable revenue, small enough that mispricing is plausible.",
     why:
       "Every 'undervalued altcoins' list on the web is a momentum list in disguise. Price-to-sales against the same 251-token universe is a rule a reader can restate and check, and the size band keeps the comparison honest: a $300B network being 'cheap on P/S' and a $60M protocol being cheap are different claims.",
     insight:
-      "Across the universe, the price-to-sales variable correlates −0.11 with market capitalisation rank — the market pays slightly less for revenue the smaller the token, which is the precise sense in which small-cap revenue is systematically underpriced here. The catch is visible in the same data: low P/S clusters with tokens whose revenue trend is falling, so every row below needs its revenue-trend variable checked on the token page before the 'cheap' label means anything.",
+      "Across the universe, the price-to-sales variable correlates −0.12 with log market capitalisation. The market pays slightly less for revenue the smaller the token, which is the precise sense in which small-cap revenue is systematically underpriced here. The catch is visible in the same data: low P/S clusters with tokens whose revenue trend is falling, so every row below needs its revenue-trend variable checked on the token page before the 'cheap' label means anything.",
     columns: [
-      { key: "ps", label: "P/S pct", of: (r) => (r.ps_pct === undefined ? "—" : String(r.ps_pct)) },
+      { key: "ps", label: "P/S pct", of: (r) => (r.ps_pct === undefined ? "n/a" : String(r.ps_pct)) },
     ],
   },
   "exchange-tokens": {
     question: "Which crypto exchange tokens exist and which rank best on fundamentals?",
     rule:
-      "Every token in the scored universe that derives its value from operating an exchange — centralised (BNB, OKB, BGB, LEO) or decentralised (UNI, COW, AERO, GMX) — ranked on composite score. No size floor: the set is small enough to show in full.",
+      "Every token in the scored universe that derives its value from operating an exchange, centralised (BNB, OKB, BGB, LEO) or decentralised (UNI, COW, AERO, GMX), ranked on composite score. No size floor because the set is small enough to show in full.",
     why:
       "Exchange-token lists on the web are affiliate roundups ordered by market cap. Ranking on composite score instead surfaces the variable that actually differs across this set: regulatory safety and exchange depth, scored identically for every token.",
     insight:
-      "This set splits cleanly in the data: CEX tokens carry their exchange's regulatory risk with burn mechanics funded by trading revenue, while DEX tokens carry protocol revenue but compete on execution. The scorecard's regulatory-safety variable is where the two groups separate — check it per row rather than assuming either group is safer as a class.",
+      "This set splits cleanly in the data. CEX tokens carry their exchange's regulatory risk with burn mechanics funded by trading revenue, while DEX tokens carry protocol revenue but compete on execution. The scorecard's regulatory-safety variable is where the two groups separate. Check it per row rather than assuming either group is safer as a class.",
     columns: [],
   },
 };
@@ -230,10 +230,10 @@ export default async function RankingPage({ params }: PageParams) {
                   <td className="py-3 pr-3 font-mono text-text-primary">{m.score}/250</td>
                   <td className="py-3 pr-3 font-mono text-xs text-text-secondary">{m.verdict}</td>
                   <td className="py-3 pr-3 font-mono text-xs text-text-secondary">
-                    {m.market_cap === null ? "—" : formatUsd(m.market_cap)}
+                    {m.market_cap === null ? "n/a" : formatUsd(m.market_cap)}
                   </td>
                   <td className="py-3 pr-3 font-mono text-xs text-text-tertiary">
-                    {m.dilution_x === null ? "—" : `${m.dilution_x}x`}
+                    {m.dilution_x === null ? "n/a" : `${m.dilution_x}x`}
                   </td>
                 </tr>
               ))}
@@ -256,6 +256,41 @@ export default async function RankingPage({ params }: PageParams) {
             </div>
           ))}
         </dl>
+      </Section>
+
+      <Section divider>
+        <SectionLabel number={copy ? "05" : "03"} title="Sources" />
+        <ul className="mt-6 space-y-3 text-sm leading-relaxed text-text-secondary">
+          <li>
+            <a
+              href="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="font-mono text-xs text-info hover:underline"
+            >
+              [CoinGecko /coins/markets]
+            </a>{" "}
+            Market capitalisation snapshot, fetched {formatDate(meta.market_fetched_at)}. The 250-token
+            market universe plus stablecoin rows is the price-derived layer; it moves with every fetch and
+            is stamped rather than quoted live.
+          </li>
+          <li>
+            <Link
+              href="/scorecard"
+              className="font-mono text-xs text-info hover:underline"
+            >
+              [Early Thunder scoring pass]
+            </Link>{" "}
+            The 25-variable scores, the variable percentiles used as the ranking rule, and the dilution
+            column all come from the research pass dated {formatDate(meta.source_updated_at)}. Supply data
+            is from CoinGecko; revenue is cross-referenced with DeFiLlama and Token Terminal.
+          </li>
+          <li>
+            Every token row links to its scorecard page, which publishes the claim-level source list for
+            that token, including any source whose link has gone dead, marked as unverified rather than
+            silently dropped.
+          </li>
+        </ul>
       </Section>
 
       <Section divider>

@@ -189,7 +189,7 @@ if (exch.count < 3) { console.error(`rankings: exchange-tokens too thin (${exch.
 const out = {
   generated_at: new Date().toISOString(),
   source_updated_at: analytics.source_updated_at ?? null,
-  market_fetched_at: analytics.market_fetched_at ?? null,
+  market_fetched_at: analytics.market_data?.fetched_at ?? null,
   universe_size: tokens.length,
   max_score: analytics.max_score ?? null,
   rankings: [

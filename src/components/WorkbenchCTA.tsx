@@ -11,12 +11,12 @@ export default function WorkbenchCTA({ placement = "footer" }: { placement?: str
         <details className="workbench-offer__fit">
           <summary>Is the Workbench right for my research?</summary>
           <p>Use the free calculators for a quick calculation. Use the Workbench when you need to collect sources, compare your own token assumptions, and export a research memo.</p>
-          <p>Try the preview: change a source date or revenue assumption in the fictional examples and inspect the comparison before buying. Your own projects, exports, and research memos are included in the paid download. This is a research workspace, not a trading signal or a promise of investment returns.</p>
+          <p>Try the preview: change a source date or revenue assumption in the fictional examples and inspect the comparison before buying. Your own projects, exports, and research memos are included in the paid download. Every purchase buys a research workspace, not a trading signal or a promise of investment returns.</p>
         </details>
-        <p className="workbench-offer__details">$29 USD once · Version 1 ZIP · No subscription</p>
+        <p className="workbench-offer__details">$29 USD once, Version 1 ZIP, no subscription</p>
       </div>
       <div className="workbench-offer__actions">
-        <a className="workbench-offer__buy" href={PRODUCT_URL + tracking}>Get the Workbench — $29 <span aria-hidden="true">→</span></a>
+        <a className="workbench-offer__buy" href={PRODUCT_URL + tracking}>Get the Workbench, $29 <span aria-hidden="true">→</span></a>
         <a className="workbench-offer__preview" href={PRODUCT_URL + "preview/" + tracking}>Try the free preview <span aria-hidden="true">↗</span></a>
         <span className="workbench-offer__note">Your data stays in your browser.</span>
       </div>

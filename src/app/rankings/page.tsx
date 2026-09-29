@@ -11,13 +11,13 @@ const TITLE = "Crypto rankings built on 25 fundamental variables";
 
 const BLURBS: Record<string, string> = {
   "most-deflationary":
-    "Every rated token whose supply variable scores in the top quartile — issuance at or near zero, burns exceeding issuance, or a fixed cap already mined. Ranked by composite score.",
+    "Every rated token whose supply variable scores in the top quartile. Issuance at or near zero, burns exceeding issuance, or a fixed cap already mined. Ranked by composite score.",
   "net-supply-direction":
-    "The only page that puts supply inflation and buyback burn side by side and ranks on the average of the two. A token can inflate and still shrink supply if the burn is bigger — this is where that shows.",
+    "The only page that puts supply inflation and buyback burn side by side and ranks on the average of the two. A token can inflate and still shrink supply if the burn is bigger, and this is where that shows.",
   "undervalued-ps":
     "High composite score and a top-quartile price-to-sales percentile, inside $50M-$5B market caps. The undervalued-altcoin question answered with a stated rule instead of a momentum list.",
   "exchange-tokens":
-    "Every rated exchange token — CEX and DEX — ranked on composite score. Exchange tokens live or die on volume and regulatory exposure, so the ranking states which side of that trade each one sits on.",
+    "Every rated exchange token (CEX and DEX) ranked on composite score. Exchange tokens live or die on volume and regulatory exposure, so the ranking states which side of that trade each one sits on.",
 };
 
 export function generateMetadata(): Metadata {
@@ -146,10 +146,34 @@ export default function RankingsIndexPage() {
       </Section>
 
       <Section divider>
+        <SectionLabel number="03" title="Sources" />
+        <ul className="mt-6 space-y-3 text-sm leading-relaxed text-text-secondary">
+          <li>
+            <a
+              href="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="font-mono text-xs text-info hover:underline"
+            >
+              [CoinGecko /coins/markets]
+            </a>{" "}
+            Market capitalisation snapshot, fetched {formatDate(meta.market_fetched_at)}.
+          </li>
+          <li>
+            <Link href="/scorecard" className="font-mono text-xs text-info hover:underline">
+              [Early Thunder scoring pass]
+            </Link>{" "}
+            The research pass dated {formatDate(meta.source_updated_at)} supplies every score and variable
+            percentile the rules use. Each token page carries the claim-level source list.
+          </li>
+        </ul>
+      </Section>
+
+      <Section divider>
         <EyebrowLabel>Keep reading</EyebrowLabel>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link href="/scorecard/screen" className="text-sm text-text-secondary hover:text-text-primary">
-            Crypto screens — the pass/fail versions of these filters
+            Crypto screens (the pass/fail versions of these filters)
           </Link>
           <Link href="/scorecard" className="text-sm text-text-secondary hover:text-text-primary">
             The full scorecard dashboard
