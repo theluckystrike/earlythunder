@@ -12,6 +12,18 @@ interface PageParams {
   readonly params: Promise<{ readonly ranking: string }>;
 }
 
+/** Colour for a verdict badge, keyed off the verdict_color in the dataset. */
+function verdictTone(color: string): string {
+  const map: Record<string, string> = {
+    green: "border-positive/30 bg-positive-bg text-positive",
+    blue: "border-info/30 bg-[rgba(59,130,246,0.10)] text-info",
+    yellow: "border-warning/30 bg-warning-bg text-warning",
+    orange: "border-warning/40 bg-warning-bg text-warning",
+    red: "border-negative/30 bg-negative-bg text-negative",
+  };
+  return map[color] ?? map.yellow;
+}
+
 /**
  * Per-ranking copy: the question the SERP asks, the stated rule, and the
  * unique insight this dataset can defend. No invented facts; every claim
@@ -181,7 +193,10 @@ export default async function RankingPage({ params }: PageParams) {
       {copy && (
         <Section>
           <SectionLabel number="01" title="What this list asks" />
-          <Prose>{copy.rule}</Prose>
+          <div className="mt-6 rounded-2xl border border-border bg-bg-card p-6">
+            <p className="font-mono text-xs uppercase tracking-wider text-text-tertiary">The rule</p>
+            <p className="mt-2 max-w-3xl text-[1.0625rem] leading-[1.75] text-text-secondary">{copy.rule}</p>
+          </div>
           <Prose>{copy.why}</Prose>
         </Section>
       )}
@@ -189,7 +204,9 @@ export default async function RankingPage({ params }: PageParams) {
       {copy && (
         <Section>
           <SectionLabel number="02" title="The insight this dataset adds" />
-          <Prose>{copy.insight}</Prose>
+          <div className="mt-6 border-l-2 border-info/40 pl-5">
+            <Prose>{copy.insight}</Prose>
+          </div>
         </Section>
       )}
 
@@ -221,15 +238,22 @@ export default async function RankingPage({ params }: PageParams) {
                   <td className="py-3 pr-3 font-mono text-xs text-text-tertiary">{i + 1}</td>
                   <td className="py-3 pr-3">
                     <Link href={`/scorecard/${m.slug}`} className="font-medium text-text-primary hover:underline">
-                      {m.name} <span className="font-mono text-xs text-text-tertiary">{m.symbol}</span>
+                      {m.name}
+                      <span className="ml-1.5 font-mono text-xs text-text-tertiary">{m.symbol}</span>
                     </Link>
                   </td>
                   {copy?.columns.map((c) => (
                     <td key={c.key} className="py-3 pr-3 font-mono text-xs text-text-secondary">{c.of(m)}</td>
                   ))}
                   <td className="py-3 pr-3 font-mono text-text-primary">{m.score}/250</td>
-                  <td className="py-3 pr-3 font-mono text-xs text-text-secondary">{m.verdict}</td>
-                  <td className="py-3 pr-3 font-mono text-xs text-text-secondary">
+                  <td className="py-3 pr-3">
+                    <span
+                      className={`inline-block whitespace-nowrap rounded border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${verdictTone(m.verdict_color)}`}
+                    >
+                      {m.verdict}
+                    </span>
+                  </td>
+                  <td className={`py-3 pr-3 font-mono text-xs ${m.market_cap === null ? "text-text-tertiary" : "text-text-secondary"}`}>
                     {m.market_cap === null ? "n/a" : formatUsd(m.market_cap)}
                   </td>
                   <td className="py-3 pr-3 font-mono text-xs text-text-tertiary">
@@ -240,9 +264,9 @@ export default async function RankingPage({ params }: PageParams) {
             </tbody>
           </table>
         </div>
-        <p className="mt-3 max-w-3xl text-xs leading-relaxed text-text-tertiary">
-          Scores come from the research pass dated {formatDate(meta.source_updated_at)} and do not move
-          with price. Market capitalisation is from the snapshot fetched {formatDate(meta.market_fetched_at)}.
+        <p className="mt-3 text-xs leading-relaxed text-text-tertiary">
+          Scores are from the research pass dated {formatDate(meta.source_updated_at)} and do not move
+          with price. Market caps are from the snapshot fetched {formatDate(meta.market_fetched_at)}.
         </p>
       </Section>
 
@@ -260,7 +284,7 @@ export default async function RankingPage({ params }: PageParams) {
 
       <Section divider>
         <SectionLabel number={copy ? "05" : "03"} title="Sources" />
-        <ul className="mt-6 space-y-3 text-sm leading-relaxed text-text-secondary">
+        <ul className="mt-6 space-y-2 text-sm text-text-secondary">
           <li>
             <a
               href="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1"
@@ -270,42 +294,43 @@ export default async function RankingPage({ params }: PageParams) {
             >
               [CoinGecko /coins/markets]
             </a>{" "}
-            Market capitalisation snapshot, fetched {formatDate(meta.market_fetched_at)}. The 250-token
-            market universe plus stablecoin rows is the price-derived layer; it moves with every fetch and
-            is stamped rather than quoted live.
+            Market caps, snapshot fetched {formatDate(meta.market_fetched_at)}.
           </li>
           <li>
-            <Link
-              href="/scorecard"
-              className="font-mono text-xs text-info hover:underline"
-            >
+            <Link href="/scorecard" className="font-mono text-xs text-info hover:underline">
               [Early Thunder scoring pass]
             </Link>{" "}
-            The 25-variable scores, the variable percentiles used as the ranking rule, and the dilution
-            column all come from the research pass dated {formatDate(meta.source_updated_at)}. Supply data
-            is from CoinGecko; revenue is cross-referenced with DeFiLlama and Token Terminal.
+            All 25-variable scores and percentiles, pass dated {formatDate(meta.source_updated_at)}.
           </li>
-          <li>
-            Every token row links to its scorecard page, which publishes the claim-level source list for
-            that token, including any source whose link has gone dead, marked as unverified rather than
-            silently dropped.
+          <li className="text-text-tertiary">
+            Each token page carries its own claim-level source list, including sources whose links have
+            gone dead (marked unverified, not dropped).
           </li>
         </ul>
       </Section>
 
       <Section divider>
         <EyebrowLabel>Keep reading</EyebrowLabel>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {getAllRankings()
             .filter((r) => r.slug !== ranking.slug)
             .slice(0, 3)
             .map((r) => (
-              <Link key={r.slug} href={`/rankings/${r.slug}`} className="text-sm text-text-secondary hover:text-text-primary">
-                {r.name}
+              <Link
+                key={r.slug}
+                href={`/rankings/${r.slug}`}
+                className="rounded-2xl border border-border bg-bg-card p-5 transition-colors hover:border-info/40"
+              >
+                <p className="text-sm font-semibold text-text-primary">{r.name}</p>
+                <p className="mt-1 font-mono text-xs text-text-tertiary">{r.count} tokens</p>
               </Link>
             ))}
-          <Link href="/scorecard/screen" className="text-sm text-text-secondary hover:text-text-primary">
-            Crypto screens over the same universe
+          <Link
+            href="/scorecard/screen"
+            className="rounded-2xl border border-border bg-bg-card p-5 transition-colors hover:border-info/40"
+          >
+            <p className="text-sm font-semibold text-text-primary">Crypto screens</p>
+            <p className="mt-1 font-mono text-xs text-text-tertiary">Same universe, question-driven</p>
           </Link>
         </div>
       </Section>

@@ -118,7 +118,7 @@ export default function RankingsIndexPage() {
             <Link
               key={r.slug}
               href={`/rankings/${r.slug}`}
-              className="group block rounded-lg border border-border-subtle bg-bg-elevated p-6 transition-colors hover:border-border-strong"
+              className="group block rounded-lg border border-border-subtle bg-bg-elevated p-6 transition-colors hover:border-info/40"
             >
               <div className="flex items-baseline justify-between gap-4">
                 <h3 className="text-lg font-semibold text-text-primary group-hover:text-text-secondary">{r.name}</h3>
@@ -147,7 +147,7 @@ export default function RankingsIndexPage() {
 
       <Section divider>
         <SectionLabel number="03" title="Sources" />
-        <ul className="mt-6 space-y-3 text-sm leading-relaxed text-text-secondary">
+        <ul className="mt-6 space-y-2 text-sm text-text-secondary">
           <li>
             <a
               href="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1"
@@ -157,29 +157,40 @@ export default function RankingsIndexPage() {
             >
               [CoinGecko /coins/markets]
             </a>{" "}
-            Market capitalisation snapshot, fetched {formatDate(meta.market_fetched_at)}.
+            Market caps, snapshot fetched {formatDate(meta.market_fetched_at)}.
           </li>
           <li>
             <Link href="/scorecard" className="font-mono text-xs text-info hover:underline">
               [Early Thunder scoring pass]
             </Link>{" "}
-            The research pass dated {formatDate(meta.source_updated_at)} supplies every score and variable
-            percentile the rules use. Each token page carries the claim-level source list.
+            All scores and percentiles, pass dated {formatDate(meta.source_updated_at)}.
           </li>
         </ul>
       </Section>
 
       <Section divider>
         <EyebrowLabel>Keep reading</EyebrowLabel>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <Link href="/scorecard/screen" className="text-sm text-text-secondary hover:text-text-primary">
-            Crypto screens (the pass/fail versions of these filters)
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <Link
+            href="/scorecard/screen"
+            className="rounded-2xl border border-border bg-bg-card p-5 transition-colors hover:border-info/40"
+          >
+            <p className="text-sm font-semibold text-text-primary">Crypto screens</p>
+            <p className="mt-1 font-mono text-xs text-text-tertiary">The pass/fail versions of these filters</p>
           </Link>
-          <Link href="/scorecard" className="text-sm text-text-secondary hover:text-text-primary">
-            The full scorecard dashboard
+          <Link
+            href="/scorecard"
+            className="rounded-2xl border border-border bg-bg-card p-5 transition-colors hover:border-info/40"
+          >
+            <p className="text-sm font-semibold text-text-primary">Scorecard dashboard</p>
+            <p className="mt-1 font-mono text-xs text-text-tertiary">All {meta.universe_size} tokens</p>
           </Link>
-          <Link href="/scorecard/mispriced" className="text-sm text-text-secondary hover:text-text-primary">
-            Fundamentals-vs-market-cap mispricing
+          <Link
+            href="/scorecard/mispriced"
+            className="rounded-2xl border border-border bg-bg-card p-5 transition-colors hover:border-info/40"
+          >
+            <p className="text-sm font-semibold text-text-primary">Mispricing view</p>
+            <p className="mt-1 font-mono text-xs text-text-tertiary">Fundamentals vs market cap</p>
           </Link>
         </div>
       </Section>
