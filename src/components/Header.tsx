@@ -136,7 +136,7 @@ function CtaGroup() {
         Sign in
       </Link>
       <a href="https://workbench.earlythunder.com/workbench/?utm_source=earlythunder&amp;utm_medium=website&amp;utm_content=header" className="primary-btn">
-        Get Workbench · $29 {"\u2192"}
+        Get the Workbench, $29 {"\u2192"}
       </a>
     </div>
   );
@@ -174,7 +174,7 @@ function MobileNav({ onClose }: { readonly onClose: () => void }) {
           onClick={onClose}
           className="primary-btn nav__mobile-cta"
         >
-          Get Workbench · $29 {"\u2192"}
+          Get the Workbench, $29 {"\u2192"}
         </a>
       </nav>
     </div>

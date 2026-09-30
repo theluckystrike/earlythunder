@@ -239,7 +239,8 @@ export default async function RankingPage({ params }: PageParams) {
                   <td className="py-3 pr-3">
                     <Link href={`/scorecard/${m.slug}`} className="font-medium text-text-primary hover:underline">
                       {m.name}
-                      <span className="ml-1.5 font-mono text-xs text-text-tertiary">{m.symbol}</span>
+                      <span aria-hidden="true" className="ml-1.5 font-mono text-xs text-text-tertiary">{m.symbol}</span>
+                      <span className="sr-only">{" "}{m.symbol}</span>
                     </Link>
                   </td>
                   {copy?.columns.map((c) => (
