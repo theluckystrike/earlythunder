@@ -172,6 +172,25 @@ function exchangeTokens(tokens) {
   return { slug: "exchange-tokens", count: rows.length, members: rows };
 }
 
+// ---- Rankings 5-9: single-variable long-tail lists --------------------------
+// Each answers one SERP question by ranking on one variable's percentile
+// (threshold: top quartile) with a $100M usability floor, composite score as
+// the secondary order. Same arithmetic doctrine as rankings 1-4.
+
+function singleVarRanking(tokens, key, slug, name, minCap = 1e8) {
+  const rows = [];
+  for (const t of tokens) {
+    const v = varOf(t, key);
+    if (!v || v.percentile === null) continue;
+    if (v.percentile < PCT_THRESHOLD) continue;
+    const cap = t.market?.market_cap ?? null;
+    if (cap === null || cap < minCap) continue;
+    rows.push(toMember(t, { var_pct: v.percentile, var_value: v.value }));
+  }
+  rows.sort((a, b) => b.score - a.score || b.var_pct - a.var_pct);
+  return { slug, name, count: rows.length, members: rows.slice(0, 40) };
+}
+
 // ---- Main ------------------------------------------------------------------
 const analytics = loadAnalytics();
 const tokens = analytics.tokens;
@@ -180,11 +199,19 @@ const defl = mostDeflationary(tokens);
 const net = netSupply(tokens);
 const ps = undervaluedPs(tokens);
 const exch = exchangeTokens(tokens);
+const noUnlock = singleVarRanking(tokens, "unlock_schedule", "no-unlock-overhang", "Crypto with no unlock overhang");
+const staking = singleVarRanking(tokens, "staking_yield", "real-staking-yield", "Crypto with real staking yield");
+const devActivity = singleVarRanking(tokens, "developer_activity", "developer-activity", "Crypto with the most developer activity");
+const smartMoney = singleVarRanking(tokens, "smart_money", "smart-money-accumulation", "Smart money accumulation");
+const institutional = singleVarRanking(tokens, "institutional_adoption", "institutional-adoption", "Institutional adoption");
 
 if (defl.count === 0) { console.error("rankings: most-deflationary is empty"); process.exit(1); }
 if (net.count === 0) { console.error("rankings: net-supply-direction is empty"); process.exit(1); }
 if (ps.count === 0) { console.error("rankings: undervalued-ps is empty"); process.exit(1); }
 if (exch.count < 3) { console.error(`rankings: exchange-tokens too thin (${exch.count})`); process.exit(1); }
+for (const [label, r] of [["no-unlock-overhang", noUnlock], ["real-staking-yield", staking], ["developer-activity", devActivity], ["smart-money-accumulation", smartMoney], ["institutional-adoption", institutional]]) {
+  if (r.count === 0) { console.error(`rankings: ${label} is empty`); process.exit(1); }
+}
 
 const out = {
   generated_at: new Date().toISOString(),
@@ -197,6 +224,11 @@ const out = {
     { slug: net.slug, name: "Net supply direction", count: net.count, members: net.members },
     { slug: ps.slug, name: "Undervalued on price-to-sales", count: ps.count, members: ps.members },
     { slug: exch.slug, name: "Exchange tokens ranked", count: exch.count, members: exch.members },
+    { slug: noUnlock.slug, name: noUnlock.name, count: noUnlock.count, members: noUnlock.members },
+    { slug: staking.slug, name: staking.name, count: staking.count, members: staking.members },
+    { slug: devActivity.slug, name: devActivity.name, count: devActivity.count, members: devActivity.members },
+    { slug: smartMoney.slug, name: smartMoney.name, count: smartMoney.count, members: smartMoney.members },
+    { slug: institutional.slug, name: institutional.name, count: institutional.count, members: institutional.members },
   ],
 };
 

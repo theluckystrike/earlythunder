@@ -35,6 +35,10 @@ export interface RankingRow {
   readonly ps_pct?: number;
   readonly supply_value?: number | string | null;
   readonly ps_value?: number | string | null;
+  /** Raw 1-10 score on the headline variable for single-variable rankings. */
+  readonly var_value?: number | string | null;
+  /** Percentile on the headline variable for single-variable rankings. */
+  readonly var_pct?: number;
 }
 
 export interface Ranking {

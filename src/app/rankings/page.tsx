@@ -18,6 +18,16 @@ const BLURBS: Record<string, string> = {
     "High composite score and a top-quartile price-to-sales percentile, inside $50M-$5B market caps. The undervalued-altcoin question answered with a stated rule instead of a momentum list.",
   "exchange-tokens":
     "Every rated exchange token (CEX and DEX) ranked on composite score. Exchange tokens live or die on volume and regulatory exposure, so the ranking states which side of that trade each one sits on.",
+  "no-unlock-overhang":
+    "Tokens whose vesting schedule variable scores in the top quartile, with market caps of $100M or more. No cliff releases waiting, emissions already public, or supply fully distributed.",
+  "real-staking-yield":
+    "Tokens whose real staking yield variable scores in the top quartile, with market caps of $100M or more. Yield that survives the token's own inflation, not the headline APR.",
+  "developer-activity":
+    "Tokens whose developer activity variable scores in the top quartile, with market caps of $100M or more. Commit flow, release cadence, and shipped upgrades, not GitHub theatre.",
+  "smart-money-accumulation":
+    "Tokens whose smart-money variable scores in the top quartile, with market caps of $100M or more. Fund wallets, known accumulators, and insider behaviour on the buy side.",
+  "institutional-adoption":
+    "Tokens whose institutional adoption variable scores in the top quartile, with market caps of $100M or more. ETFs, treasuries, custody coverage, and regulated market access.",
 };
 
 export function generateMetadata(): Metadata {
@@ -25,7 +35,8 @@ export function generateMetadata(): Metadata {
   const meta = getRankingsMeta();
   const description =
     `${rankings.length} ranked lists over the same ${meta.universe_size}-token scored universe. ` +
-    `Most deflationary crypto, net supply direction, undervalued on price-to-sales, exchange tokens. ` +
+    `Most deflationary crypto, net supply direction, undervalued on price-to-sales, exchange tokens, ` +
+    `unlock overhang, real staking yield, developer activity, smart money, institutional adoption. ` +
     `Each ranking states its rule and lists every token with the numbers behind it.`;
   return {
     title: "Crypto Rankings From First-Party Research Data",
@@ -36,6 +47,11 @@ export function generateMetadata(): Metadata {
       "undervalued altcoins 2026",
       "crypto exchange token list",
       "altcoin inflation rates compared",
+      "crypto with no unlock overhang",
+      "crypto with real staking yield",
+      "crypto developer activity ranking",
+      "smart money crypto accumulation",
+      "institutional adoption crypto list",
     ],
     openGraph: { title: `${TITLE} | ${SITE_NAME}`, description, url: `${SITE_URL}/rankings`, type: "article" },
     twitter: { card: "summary_large_image", title: `${TITLE} | ${SITE_NAME}`, description },

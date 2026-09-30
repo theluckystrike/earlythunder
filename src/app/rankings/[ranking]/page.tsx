@@ -87,6 +87,66 @@ const COPY: Record<
       "This set splits cleanly in the data. CEX tokens carry their exchange's regulatory risk with burn mechanics funded by trading revenue, while DEX tokens carry protocol revenue but compete on execution. The scorecard's regulatory-safety variable is where the two groups separate. Check it per row rather than assuming either group is safer as a class.",
     columns: [],
   },
+  "no-unlock-overhang": {
+    question: "Which cryptocurrencies have no unlock overhang?",
+    rule:
+      "A token qualifies when its Vesting Schedule variable (scored 1 to 10 across the universe on cliff releases, emission transparency, and how much supply is still locked) sits in the top quartile, and market capitalisation is at least $100M.",
+    why:
+      "Unlock calendars are the most predictable sell-pressure in crypto, and most lists cover them token by token. Ranking the inverse, the tokens with nothing waiting to vest, gives the shortlist of assets where dilution surprises are structurally off the table.",
+    insight:
+      "The vesting-schedule variable co-moves 0.87 with supply inflation across the universe, so this list overlaps heavily with the most-deflationary ranking, but it is not the same list. Vesting measures the calendar; inflation measures the running issuance rate. A token can have finished vesting and still run high emissions, and the two columns on each row show which case applies. Universe median on the variable is 5 of 10; 58 tokens score 7 or above.",
+    columns: [
+      { key: "var", label: "Vesting var", of: (r) => (r.var_value === null || r.var_value === undefined ? "n/a" : `${r.var_value}/10`) },
+    ],
+  },
+  "real-staking-yield": {
+    question: "Which cryptocurrencies pay a real staking yield?",
+    rule:
+      "A token qualifies when its Real Staking Yield variable (yield after the token's own inflation, scored 1 to 10) sits in the top quartile, and market capitalisation is at least $100M. Rows are ordered by composite score.",
+    why:
+      "Headline APRs ignore the emissions that fund them. A 20% APR paid out of 25% inflation is a 5% haircut dressed as income. Ranking on the yield that survives the token's own dilution is the only version of this question worth answering.",
+    insight:
+      "Real staking yield correlates just 0.03 with the vesting-schedule variable and 0.06 with the circ/FDV ratio, so yield quality is essentially independent of unlock structure, which is why this list looks little like the no-unlock list despite shared big caps at the top. Only 36 of 251 tokens score 6 or above on the variable, which is the arithmetic statement of how rare a genuinely accretive yield is. Universe median is 4 of 10.",
+    columns: [
+      { key: "var", label: "Yield var", of: (r) => (r.var_value === null || r.var_value === undefined ? "n/a" : `${r.var_value}/10`) },
+    ],
+  },
+  "developer-activity": {
+    question: "Which crypto projects ship the most developer activity?",
+    rule:
+      "A token qualifies when its Developer Activity variable (commit flow, release cadence and shipped upgrades, scored 1 to 10 across the universe) sits in the top quartile, and market capitalisation is at least $100M.",
+    why:
+      "Github-commit counts are the most gamed metric in the space, which is why most developer-activity lists are noise. The scorecard variable weights shipped releases and upgrade delivery over raw commit volume, and the same definition is applied to all 251 tokens.",
+    insight:
+      "Developer activity correlates 0.72 with the TVL-trend variable, the strongest pairwise correlation in this set of five lists, and the expected one: chains whose builders ship tend to be chains where value stays. The other side of the number is that 0.72 leaves real room for divergence, so a high-commit/low-TVL row here is exactly the 'GitHub theatre' case the variable is built to catch. Universe median is 5 of 10.",
+    columns: [
+      { key: "var", label: "Dev var", of: (r) => (r.var_value === null || r.var_value === undefined ? "n/a" : `${r.var_value}/10`) },
+    ],
+  },
+  "smart-money-accumulation": {
+    question: "Which crypto tokens are smart money accumulating?",
+    rule:
+      "A token qualifies when its Smart Money variable (fund wallets, known accumulators and insider buy-side behaviour, scored 1 to 10) sits in the top quartile, and market capitalisation is at least $100M.",
+    why:
+      "On-chain smart-money dashboards show raw wallet flows with no context. Here the same signal is scored against the whole universe with the same rubric, then ordered by composite score so a wallet-flow headline cannot outrank a token with broken fundamentals.",
+    insight:
+      "Smart money correlates only 0.41 with the insider-selling variable, which is the honest caveat for this whole list: accumulation and insider distribution are related but distinct signals, and 0.41 means plenty of tokens score well on one and badly on the other. Read the insider-selling variable on each token page before treating an accumulation signal as a one-sided story. Universe median is 4 of 10; 25 tokens score 7 or above.",
+    columns: [
+      { key: "var", label: "Smart $ var", of: (r) => (r.var_value === null || r.var_value === undefined ? "n/a" : `${r.var_value}/10`) },
+    ],
+  },
+  "institutional-adoption": {
+    question: "Which crypto tokens have real institutional adoption?",
+    rule:
+      "A token qualifies when its Institutional Adoption variable (ETFs, corporate treasuries, custody coverage and regulated market access, scored 1 to 10) sits in the top quartile, and market capitalisation is at least $100M.",
+    why:
+      "Institutional adoption lists on the web are usually ETF-filing news recycled into a table. This ranking applies one scored definition of regulated access, custody and treasury holdings across all 251 tokens, so the small-cap rows have met the same bar as the ETF names.",
+    insight:
+      "Institutional adoption correlates 0.56 with exchange depth, which is mostly mechanical: regulated access products need deep markets to route into. The useful consequence runs the other way, because tokens with thin exchange depth are structurally excluded from institutional flows regardless of fundamentals, so check the exchange-depth variable on the token page before expecting an adoption signal to translate into liquidity. Universe median is 3 of 10, the lowest of the five single-variable lists here.",
+    columns: [
+      { key: "var", label: "Inst. var", of: (r) => (r.var_value === null || r.var_value === undefined ? "n/a" : `${r.var_value}/10`) },
+    ],
+  },
 };
 
 export function generateStaticParams(): { ranking: string }[] {
