@@ -53,6 +53,7 @@ export const STATIC_PAGES = [
   '/crypto-tax-calculator',
   '/crypto-volatility-calculator',
   '/crypto-drawdown-calculator',
+  '/cite-my-own-translation-mla',
   '/intelligence',
   '/deadlines',
   '/earnings',
