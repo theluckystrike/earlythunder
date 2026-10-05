@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-28T11:41:20.150Z",
+  "checked_at": "2026-10-05T12:16:24.660Z",
   "total": 746,
-  "ok": 555,
+  "ok": 550,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -92,6 +92,14 @@
       ]
     },
     {
+      "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html",
+      "status": 404,
+      "source": "CME Group",
+      "cited_by": [
+        "AVAX"
+      ]
+    },
+    {
       "url": "https://www.kucoin.com/news/articles/hyperliquid-2025-annual-report-844m-revenue-anchors-growth-amidst-256m-token-open-challenge",
       "status": 404,
       "source": "KuCoin",
@@ -108,8 +116,16 @@
       ]
     },
     {
-      "url": "https://bitcoinworld.co.in/pendle-team-deposits-pendle-binance/",
+      "url": "https://dune.com/beetle/banana-gun",
       "status": 404,
+      "source": "Dune Analytics",
+      "cited_by": [
+        "BANANA"
+      ]
+    },
+    {
+      "url": "https://bitcoinworld.co.in/pendle-team-deposits-pendle-binance/",
+      "status": 410,
       "source": "Blockchain News / BitcoinWorld",
       "cited_by": [
         "PENDLE"
@@ -185,6 +201,14 @@
       "source": "SEC",
       "cited_by": [
         "TON"
+      ]
+    },
+    {
+      "url": "https://defillama.com/protocol/velodrome-finance",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "VELO"
       ]
     },
     {
@@ -348,19 +372,19 @@
       ]
     },
     {
+      "url": "https://dune.com/hildobby/NFTs",
+      "status": 404,
+      "source": "Dune Analytics",
+      "cited_by": [
+        "BLUR"
+      ]
+    },
+    {
       "url": "https://defillama.com/chain/Manta%20Pacific",
       "status": 404,
       "source": "DefiLlama",
       "cited_by": [
         "MANTA"
-      ]
-    },
-    {
-      "url": "https://dune.com/ilemi/solana-memecoins",
-      "status": 404,
-      "source": "Dune Analytics",
-      "cited_by": [
-        "POPCAT"
       ]
     },
     {
@@ -420,7 +444,7 @@
       ]
     }
   ],
-  "blocked": 119,
+  "blocked": 120,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -506,6 +530,13 @@
       "error": "fetch failed",
       "cited_by": [
         "ATOM"
+      ]
+    },
+    {
+      "url": "https://www.geekmetaverse.com/the-ugc-metaverse-why-roblox-and-fortnite-are-winning-the-future/",
+      "error": "timeout",
+      "cited_by": [
+        "SAND"
       ]
     }
   ]

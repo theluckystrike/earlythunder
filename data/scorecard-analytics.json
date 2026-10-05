@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-04T14:15:30.959Z",
+  "generated_at": "2026-10-05T12:16:24.774Z",
   "source_updated_at": "2026-09-18T14:30:00Z",
   "citation_links": {
-    "checked_at": "2026-09-28T11:41:20.150Z",
-    "dead_count": 52
+    "checked_at": "2026-10-05T12:16:24.660Z",
+    "dead_count": 55
   },
   "market_data": {
     "source": "CoinGecko",
@@ -16192,7 +16192,7 @@
           "claim": "CME AVAX futures launched May 4-5, 2026; 24/7 trading from May 29",
           "source": "CME Group",
           "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "100% of tx fees (base+priority) burned; validators paid only from staking emissions",
@@ -17911,7 +17911,7 @@
           "claim": "Banana Gun generated ~$30M in protocol revenue in 2024 via 1% fee on all Telegram bot trades with buyback",
           "source": "Dune Analytics",
           "url": "https://dune.com/beetle/banana-gun",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "BANANA nearly fully circulating (92%+) reducing open risk, with daily buybacks from fee revenue",
@@ -28083,7 +28083,7 @@
           "claim": "Velodrome TVL dropped from $500M+ peak to ~$180M as Aerodrome captured Base chain volume",
           "source": "DefiLlama",
           "url": "https://defillama.com/protocol/velodrome-finance",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Velodrome V3 with concentrated liquidity announced for 2025-2026, key catalyst for TVL recovery",
@@ -87612,7 +87612,7 @@
           "claim": "Blur achieved 60%+ NFT marketplace market share in 2023 via aggressive airdrop incentives, but volume collapsed with NFT market",
           "source": "Dune Analytics",
           "url": "https://dune.com/hildobby/NFTs",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "BLUR only 38% circulating; Paradigm and other investors hold large locked positions with ongoing vesting schedule",
@@ -95339,7 +95339,7 @@
           "claim": "Solana memecoin trading volume collapsed 80%+ from Nov 2024 peak by Q2 2025",
           "source": "Dune Analytics",
           "url": "https://dune.com/ilemi/solana-memecoins",
-          "link_ok": false
+          "link_ok": true
         }
       ],
       "neighbours": [
