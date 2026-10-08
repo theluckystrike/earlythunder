@@ -127,14 +127,11 @@ function DesktopNav() {
   );
 }
 
-/* ─── CTA group (sign in + primary) ──────────────────────── */
+/* ─── CTA group (primary) ──────────────────────────────── */
 
 function CtaGroup() {
   return (
     <div className="nav__cta">
-      <Link href="/pricing" className="ghost-btn nav__signin">
-        Sign in
-      </Link>
       <a href="https://workbench.earlythunder.com/workbench/?utm_source=earlythunder&amp;utm_medium=website&amp;utm_content=header" className="primary-btn">
         Get the Workbench, $29 {"\u2192"}
       </a>

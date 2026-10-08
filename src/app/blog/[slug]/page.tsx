@@ -255,13 +255,13 @@ function PostFooter() {
   return (
     <div className="mt-16 border-t border-border pt-8 text-center">
       <p className="text-sm text-text-tertiary">
-        Want more Early Thunder research?
+        The research is free. The Workbench is $29 once.
       </p>
       <Link
         href="/pricing"
         className="mt-4 inline-block rounded-full bg-amber px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-amber-hover hover:-translate-y-0.5 hover:shadow-[0_4px_14px_rgba(245,166,35,0.28)]"
       >
-        Get Premium Access
+        See pricing
       </Link>
     </div>
   );

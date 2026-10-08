@@ -17,7 +17,6 @@ import SignalsSection from "@/components/landing/SignalsSection";
 import PipelineLog from "@/components/landing/PipelineLog";
 import CoverageMap from "@/components/landing/CoverageMap";
 import CategoryRow from "@/components/landing/CategoryRow";
-import NewsletterCTA from "@/components/landing/NewsletterCTA";
 
 const BUILD_NOW_MS = Date.now();
 
@@ -174,7 +173,6 @@ export default function HomePage() {
       <PipelineLog />
       <CoverageMap protocols={coverageProtocols} />
       <CategoryRow categories={categories} />
-      <NewsletterCTA />
     </>
   );
 }

@@ -9407,7 +9407,7 @@
       "verdict_color": "green",
       "chain": "Solana",
       "token_standard": "SPL",
-      "one_liner": "S39 validated: Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
+      "one_liner": "Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
       "key_catalyst": "Net-zero emissions (Feb 2026), Securitize onchain equities live, Jupiter Lend $2B+ TVL, Jupnet omnichain (testnet)",
       "catalyst_expired_dates": [
         "Feb 2026"
@@ -15286,7 +15286,7 @@
       "verdict_color": "yellow",
       "chain": "Solana",
       "token_standard": "SPL",
-      "one_liner": "S38 validated: #1 Solana lending, $3.2B TVL, $14.3M rev, but zero value accrual to KMNO. Excellent protocol, worthless token.",
+      "one_liner": "#1 Solana lending, $3.2B TVL, $14.3M rev, but zero value accrual to KMNO. Excellent protocol, worthless token.",
       "key_catalyst": "Lend V2 live, Anchorage tri-party custody, Bitwise $259M fund, Ethena $1B+ integration",
       "catalyst_expired_dates": [],
       "key_risk": "Zero fee sharing, zero buyback, -94% ATH, 229M tokens/month opening, revenue declining -67%",
@@ -105301,7 +105301,7 @@
             "rank_overall": 35,
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
-            "one_liner": "S38 validated: #1 Solana lending, $3.2B TVL, $14.3M rev, but zero value accrual to KMNO. Excellent protocol, worthless token.",
+            "one_liner": "#1 Solana lending, $3.2B TVL, $14.3M rev, but zero value accrual to KMNO. Excellent protocol, worthless token.",
             "market_cap": 214874669,
             "dilution_x": 1.75,
             "chain": "Solana"
@@ -105984,7 +105984,7 @@
             "rank_overall": 19,
             "verdict": "HOLD",
             "verdict_color": "green",
-            "one_liner": "S39 validated: Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
+            "one_liner": "Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
             "market_cap": 1044188389,
             "dilution_x": 3.01,
             "chain": "Solana"
@@ -107853,7 +107853,7 @@
             "rank_overall": 19,
             "verdict": "HOLD",
             "verdict_color": "green",
-            "one_liner": "S39 validated: Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
+            "one_liner": "Solana's DeFi superapp. 93.6% aggregator share, $2.9B TVL. Revenue declining -78% but net-zero emissions + vesting done.",
             "market_cap": 1044188389,
             "dilution_x": 3.01,
             "chain": "Solana"
@@ -107879,7 +107879,7 @@
             "rank_overall": 35,
             "verdict": "CAUTIOUS HOLD",
             "verdict_color": "yellow",
-            "one_liner": "S38 validated: #1 Solana lending, $3.2B TVL, $14.3M rev, but zero value accrual to KMNO. Excellent protocol, worthless token.",
+            "one_liner": "#1 Solana lending, $3.2B TVL, $14.3M rev, but zero value accrual to KMNO. Excellent protocol, worthless token.",
             "market_cap": 214874669,
             "dilution_x": 1.75,
             "chain": "Solana"
