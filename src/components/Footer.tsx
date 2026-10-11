@@ -56,6 +56,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
     title: "TOOLS",
     links: [
       { href: "/altcoin-season-index", label: "Altcoin season index" },
+      { href: "/bitcoin-halving-schedule", label: "Bitcoin halving schedule" },
       { href: "/crypto-profit-calculator", label: "Profit calculator" },
       { href: "/crypto-market-cap-calculator", label: "Market cap calculator" },
       { href: "/crypto-staking-calculator", label: "Staking calculator" },
