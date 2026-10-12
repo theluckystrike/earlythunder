@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T12:16:24.660Z",
+  "checked_at": "2026-10-12T13:09:24.746Z",
   "total": 746,
   "ok": 550,
   "dead": [
@@ -92,14 +92,6 @@
       ]
     },
     {
-      "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html",
-      "status": 404,
-      "source": "CME Group",
-      "cited_by": [
-        "AVAX"
-      ]
-    },
-    {
       "url": "https://www.kucoin.com/news/articles/hyperliquid-2025-annual-report-844m-revenue-anchors-growth-amidst-256m-token-open-challenge",
       "status": 404,
       "source": "KuCoin",
@@ -113,14 +105,6 @@
       "source": "Avax.network",
       "cited_by": [
         "AVAX"
-      ]
-    },
-    {
-      "url": "https://dune.com/beetle/banana-gun",
-      "status": 404,
-      "source": "Dune Analytics",
-      "cited_by": [
-        "BANANA"
       ]
     },
     {
@@ -348,14 +332,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/chain/Dogecoin",
-      "status": 404,
-      "source": "DeFiLlama",
-      "cited_by": [
-        "DOGE"
-      ]
-    },
-    {
       "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million",
       "status": 404,
       "source": "World Bank",
@@ -372,19 +348,11 @@
       ]
     },
     {
-      "url": "https://dune.com/hildobby/NFTs",
+      "url": "https://dune.com/ilemi/solana-memecoins",
       "status": 404,
       "source": "Dune Analytics",
       "cited_by": [
-        "BLUR"
-      ]
-    },
-    {
-      "url": "https://defillama.com/chain/Manta%20Pacific",
-      "status": 404,
-      "source": "DefiLlama",
-      "cited_by": [
-        "MANTA"
+        "POPCAT"
       ]
     },
     {
@@ -420,14 +388,6 @@
       ]
     },
     {
-      "url": "https://defillama.com/chain/Qtum",
-      "status": 404,
-      "source": "DeFiLlama",
-      "cited_by": [
-        "QTUM"
-      ]
-    },
-    {
       "url": "https://coinmarketcap.com/currencies/memecoin-2",
       "status": 404,
       "source": "CoinMarketCap",
@@ -444,7 +404,7 @@
       ]
     }
   ],
-  "blocked": 120,
+  "blocked": 127,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -530,13 +490,6 @@
       "error": "fetch failed",
       "cited_by": [
         "ATOM"
-      ]
-    },
-    {
-      "url": "https://www.geekmetaverse.com/the-ugc-metaverse-why-roblox-and-fortnite-are-winning-the-future/",
-      "error": "timeout",
-      "cited_by": [
-        "SAND"
       ]
     }
   ]

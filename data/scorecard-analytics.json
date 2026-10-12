@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-11T15:01:03.630Z",
+  "generated_at": "2026-10-12T13:09:24.892Z",
   "source_updated_at": "2026-09-18T14:30:00Z",
   "citation_links": {
-    "checked_at": "2026-10-05T12:16:24.660Z",
-    "dead_count": 55
+    "checked_at": "2026-10-12T13:09:24.746Z",
+    "dead_count": 50
   },
   "market_data": {
     "source": "CoinGecko",
@@ -16192,7 +16192,7 @@
           "claim": "CME AVAX futures launched May 4-5, 2026; 24/7 trading from May 29",
           "source": "CME Group",
           "url": "https://www.cmegroup.com/media-room/press-releases/2026/5/06/cme_group_announcesfirsttradesofnewavalancheandsuicryptocurrency.html",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "100% of tx fees (base+priority) burned; validators paid only from staking emissions",
@@ -17911,7 +17911,7 @@
           "claim": "Banana Gun generated ~$30M in protocol revenue in 2024 via 1% fee on all Telegram bot trades with buyback",
           "source": "Dune Analytics",
           "url": "https://dune.com/beetle/banana-gun",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "BANANA nearly fully circulating (92%+) reducing open risk, with daily buybacks from fee revenue",
@@ -80750,7 +80750,7 @@
           "claim": "Dogecoin has virtually no DeFi network or protocol revenue",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Dogecoin",
-          "link_ok": false
+          "link_ok": true
         }
       ],
       "neighbours": [
@@ -87612,7 +87612,7 @@
           "claim": "Blur achieved 60%+ NFT marketplace market share in 2023 via aggressive airdrop incentives, but volume collapsed with NFT market",
           "source": "Dune Analytics",
           "url": "https://dune.com/hildobby/NFTs",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "BLUR only 38% circulating; Paradigm and other investors hold large locked positions with ongoing vesting schedule",
@@ -92111,7 +92111,7 @@
           "claim": "Manta Network TVL declined from $800M+ peak during new model farming to under $25M by 2026",
           "source": "DefiLlama",
           "url": "https://defillama.com/chain/Manta%20Pacific",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "MANTA down 97%+ from ATH as liquidity mining incentives dried up and genuine users didn't materialize",
@@ -95339,7 +95339,7 @@
           "claim": "Solana memecoin trading volume collapsed 80%+ from Nov 2024 peak by Q2 2025",
           "source": "Dune Analytics",
           "url": "https://dune.com/ilemi/solana-memecoins",
-          "link_ok": true
+          "link_ok": false
         }
       ],
       "neighbours": [
@@ -100214,7 +100214,7 @@
           "claim": "Qtum TVL under $1M, among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "Qtum GitHub activity near zero; no major protocol updates since 2022",
