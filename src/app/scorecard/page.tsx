@@ -128,6 +128,16 @@ export default function ScorecardPage() {
         meta={`Scoring pass ${formatDate(meta.source_updated_at)}. Composite range ${meta.score_range.min} to ${meta.score_range.max} out of ${meta.max_score}.`}
       />
 
+      <aside className="mt-8 flex flex-col gap-4 rounded-2xl border border-border bg-bg-card p-5 sm:flex-row sm:items-center sm:justify-between" aria-label="Token Evidence Workbench">
+        <div>
+          <p className="font-mono text-xs font-semibold uppercase tracking-wide text-text-tertiary">Token Evidence Workbench · $29 once</p>
+          <p className="mt-2 text-sm text-text-secondary">Collect sources and export a research memo from your token work.</p>
+        </div>
+        <a className="primary-btn min-h-11 shrink-0 justify-center" href="https://workbench.earlythunder.com/workbench/?utm_source=earlythunder&amp;utm_medium=website&amp;utm_campaign=workbench-fit&amp;utm_content=scorecard-top">
+          Get the Workbench, $29 <span aria-hidden="true" className="ml-2">→</span>
+        </a>
+      </aside>
+
       <Section>
         <SectionLabel number="01" title="Read it by verdict" />
         <Prose>
