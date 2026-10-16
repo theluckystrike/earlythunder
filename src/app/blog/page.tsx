@@ -4,6 +4,7 @@ import { getAllBlogPosts } from "@/lib/data";
 import { formatDate } from "@/lib/format";
 import type { BlogPost } from "@/lib/types";
 import { getBlogListSchema } from "@/lib/structured-data";
+import { SupportResultCard } from "@/components/SupportCta";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -28,6 +29,12 @@ export default function BlogPage() {
         <PostGrid posts={posts} />
       ) : (
         <EmptyState />
+      )}
+      {posts.length > 0 && (
+        <SupportResultCard
+          heading={`Thanks for reading. All ${posts.length} posts here are free.`}
+          body="I run this research on my own. If a post saved you time, a $3 coffee pays for the next one. Research notes, not advice."
+        />
       )}
       <RelatedResourcesSection />
     </div>

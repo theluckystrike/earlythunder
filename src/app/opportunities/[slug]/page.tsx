@@ -17,6 +17,7 @@ import type { Opportunity, AssetClass, OnChainMetrics, InsiderActivity, TeamProf
 import { SIGNAL_KEYS, SIGNAL_LABELS } from "@/lib/types";
 import SignalRadar from "@/components/SignalRadar";
 import CitationSection from "@/components/CitationSection";
+import { SupportResultCard } from "@/components/SupportCta";
 import {
   getOpportunitySchema,
   getBreadcrumbListSchema,
@@ -210,6 +211,10 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
       {opportunity.thesis_changers && (
         <ThesisChangersSection changers={opportunity.thesis_changers} />
       )}
+      <SupportResultCard
+        heading={`Hope this saved you hours of ${opportunity.name} digging.`}
+        body="I run Early Thunder alone, and prices here refresh daily. If it helped, a $3 coffee pays for the next file. Research notes, not advice."
+      />
       {faqs.length > 0 && <FaqSection faqs={faqs} />}
       <RiskDisclosure
         name={opportunity.name}

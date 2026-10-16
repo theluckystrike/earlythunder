@@ -1,4 +1,4 @@
-import { getActiveOpportunities, getAllBlogPosts } from "@/lib/data";
+import { getActiveOpportunities, getAllBlogPosts, getAllOpportunities } from "@/lib/data";
 import deadlinesData from "../../data/deadlines.json";
 import earningsData from "../../data/earnings-top.json";
 
@@ -17,6 +17,7 @@ import SignalsSection from "@/components/landing/SignalsSection";
 import PipelineLog from "@/components/landing/PipelineLog";
 import CoverageMap from "@/components/landing/CoverageMap";
 import CategoryRow from "@/components/landing/CategoryRow";
+import { SupportResultCard } from "@/components/SupportCta";
 
 const BUILD_NOW_MS = Date.now();
 
@@ -168,6 +169,13 @@ export default function HomePage() {
       />
       <FeaturedOpportunity opportunity={featured} totalOpportunities={opportunities.length} />
       <TopYieldsPreview protocols={earningsData} />
+      <div className="section">
+        <SupportResultCard
+          flush
+          heading={`Thanks for reading. All ${getAllOpportunities().length} token research pages here are free.`}
+          body="I run Early Thunder alone. Prices refresh daily. If it saved you research time, a $3 coffee keeps it going. Research notes, not advice."
+        />
+      </div>
       <DeadlineStrip deadlines={deadlines} />
       <SignalsSection />
       <PipelineLog />

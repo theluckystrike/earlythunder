@@ -6,6 +6,7 @@ import { formatDate } from "@/lib/format";
 import { getBlogPostMetadata } from "@/lib/metadata";
 import { getArticleSchema, getBreadcrumbListSchema } from "@/lib/structured-data";
 import RelatedArticles from "@/components/RelatedArticles";
+import { SupportResultCard } from "@/components/SupportCta";
 
 interface PageProps {
   readonly params: Promise<{ slug: string }>;
@@ -57,6 +58,10 @@ export default async function BlogPostPage({ params }: PageProps) {
         tags={post.tags}
       />
       <PostContent content={post.content} />
+      <SupportResultCard
+        heading="Hope this post saved you some digging."
+        body="I run this research on my own. If it helped, a $3 coffee pays for the next post. Research notes, not advice."
+      />
       <RelatedArticles
         items={getRelatedArticles(post, getAllBlogPosts())}
         basePath="/blog"

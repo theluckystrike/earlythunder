@@ -1,5 +1,7 @@
 import Link from "next/link";
 import WorkbenchCTA from "./WorkbenchCTA";
+import SupportFooter from "./SupportFooter";
+import { getAllOpportunities, getAllBlogPosts } from "@/lib/data";
 
 /** Routes served as standalone HTML from public/, use <a> tags, not <Link>. */
 const STANDALONE_ROUTES = new Set([
@@ -77,6 +79,7 @@ const FOOTER_SECTIONS: readonly FooterSection[] = [
       { href: "/methodology", label: "Methodology" },
       { href: "/how-it-works", label: "How it works" },
       { href: "/pricing", label: "Pricing" },
+      { href: "/support", label: "Support" },
     ],
   },
   {
@@ -120,6 +123,7 @@ export default function Footer() {
     <>
     <WorkbenchCTA placement="footer" />
     <footer className="footer">
+      <SupportFooter tokenPages={getAllOpportunities().length} posts={getAllBlogPosts().length} />
       <div className="footer__top">
         <div className="footer__brand">
           <div className="logo">EarlyThunder</div>
