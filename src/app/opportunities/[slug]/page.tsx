@@ -212,8 +212,7 @@ export default async function OpportunityDetailPage({ params }: PageProps) {
         <ThesisChangersSection changers={opportunity.thesis_changers} />
       )}
       <SupportResultCard
-        heading={`Hope this saved you hours of ${opportunity.name} digging.`}
-        body="I run Early Thunder alone, and prices here refresh daily. If it helped, a $3 coffee pays for the next file. Research notes, not advice."
+        heading={`Now you have the full ${opportunity.name} file.`}
       />
       {faqs.length > 0 && <FaqSection faqs={faqs} />}
       <RiskDisclosure

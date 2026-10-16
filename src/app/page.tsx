@@ -172,8 +172,7 @@ export default function HomePage() {
       <div className="section">
         <SupportResultCard
           flush
-          heading={`Thanks for reading. All ${getAllOpportunities().length} token research pages here are free.`}
-          body="I run Early Thunder alone. Prices refresh daily. If it saved you research time, a $3 coffee keeps it going. Research notes, not advice."
+          heading={`All ${getAllOpportunities().length} token pages, free to read.`}
         />
       </div>
       <DeadlineStrip deadlines={deadlines} />

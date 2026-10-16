@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { BMC_URL, PAYPAL_URL, TIP_BTN, CupIcon, Portrait } from "./SupportCta";
+import { BMC_URL, PAYPAL_3_URL, TIP_BTN, TIP_PRIMARY_STYLE, CupIcon, Portrait } from "./SupportCta";
 
 /** No tip ask on pages that sell something, or on the support page itself. */
 const NO_TIP_PATHS = new Set(["/pricing", "/welcome", "/about", "/support"]);
@@ -21,6 +21,7 @@ function useSupportClickTracking() {
         w.gtag("event", "support_click", {
           cta_position: root?.dataset.supportCta ?? "unknown",
           rail: link.dataset.supportRail,
+          variant: root?.dataset.sctState ?? "na",
         });
       }
     }
@@ -51,21 +52,20 @@ export default function SupportFooter({
         <Portrait size={44} />
         <div>
           <p className="text-base font-semibold tracking-tight text-text-primary">
-            Early Thunder is a one-person project.
+            Early Thunder is one person&apos;s side project.
           </p>
           <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-            I started it in April 2026 and have built {tokenPages} token research pages and {posts} posts
-            since. Reading them is free. I cover the domain and my own hours. If a page saved you
-            time, a small tip helps. The research stays free either way. Michael
+            I&apos;m Michael. Since April 2026 I have built {tokenPages} token research pages and {posts} posts. The
+            domain costs about $11 a year, so a $3 tip covers three months of it, and the research stays free either way.
           </p>
         </div>
       </div>
       <div className="flex flex-wrap items-center gap-3 md:shrink-0">
+        <a href={PAYPAL_3_URL} target="_blank" rel="noopener" data-support-rail="paypal" className={TIP_BTN} style={TIP_PRIMARY_STYLE}>
+          Tip $3 with PayPal
+        </a>
         <a href={BMC_URL} target="_blank" rel="noopener" data-support-rail="bmc" className={TIP_BTN}>
           <CupIcon /> Buy me a coffee
-        </a>
-        <a href={PAYPAL_URL} target="_blank" rel="noopener" data-support-rail="paypal" className={TIP_BTN}>
-          Tip with PayPal
         </a>
         <Link
           href="/support"

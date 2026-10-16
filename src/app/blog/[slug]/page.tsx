@@ -59,8 +59,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
       <PostContent content={post.content} />
       <SupportResultCard
-        heading="Hope this post saved you some digging."
-        body="I run this research on my own. If it helped, a $3 coffee pays for the next post. Research notes, not advice."
+        heading="Now you have the numbers behind this post."
       />
       <RelatedArticles
         items={getRelatedArticles(post, getAllBlogPosts())}

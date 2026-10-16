@@ -32,8 +32,7 @@ export default function BlogPage() {
       )}
       {posts.length > 0 && (
         <SupportResultCard
-          heading={`Thanks for reading. All ${posts.length} posts here are free.`}
-          body="I run this research on my own. If a post saved you time, a $3 coffee pays for the next one. Research notes, not advice."
+          heading={`All ${posts.length} posts here are free to read.`}
         />
       )}
       <RelatedResourcesSection />
