@@ -8,7 +8,8 @@ import SctMount from "./SctMount";
 
 export const BMC_URL = "https://buymeacoffee.com/michaellip";
 export const PAYPAL_URL = "https://paypal.me/najzzz";
-export const PAYPAL_3_URL = "https://paypal.me/najzzz/3USD";
+export const PAYPAL_5_URL = "https://paypal.me/najzzz/5USD";
+export const GITHUB_SPONSORS_URL = "https://github.com/sponsors/theluckystrike";
 
 /** Shared look for tip buttons: site secondary button, 44px tall, visible focus ring. */
 export const TIP_BTN =
@@ -41,11 +42,43 @@ export function Portrait({ size = 44 }: { readonly size?: number }) {
   );
 }
 
-/** Inline style that lifts the $3 PayPal button above the BMC button without competing with the amber Workbench offer. */
+/** Inline style that lifts the $5 PayPal button above the BMC button without competing with the amber Workbench offer. */
 export const TIP_PRIMARY_STYLE = { borderColor: "var(--text-secondary)", fontWeight: 600 } as const;
 
+/** Quietest of the three tip options: a 44px text link. */
+export const TIP_QUIET =
+  "inline-flex min-h-[44px] items-center px-1 text-sm text-text-secondary underline underline-offset-4 hover:text-text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-primary";
+
+/** The three tip options, in order: PayPal $5 (primary), Buy Me a Coffee, GitHub Sponsors (quietest). */
+export function TipButtons() {
+  return (
+    <>
+      <a href={PAYPAL_5_URL} target="_blank" rel="noopener" data-support-rail="paypal" className={TIP_BTN} style={TIP_PRIMARY_STYLE}>
+        <CupIcon /> Buy me a coffee · $5
+      </a>
+      <span className="text-xs text-text-tertiary">via PayPal</span>
+      <a href={BMC_URL} target="_blank" rel="noopener" data-support-rail="bmc" className={TIP_BTN}>
+        Card, any amount or monthly
+      </a>
+      <GithubSponsorLink />
+    </>
+  );
+}
+
+/** data-rail feeds support-v3.js on pages that load it; data-support-rail feeds SupportFooter's listener elsewhere. */
+export function GithubSponsorLink() {
+  return (
+    <>
+      <a href={GITHUB_SPONSORS_URL} target="_blank" rel="noopener" data-rail="github" data-support-rail="github" className={TIP_QUIET}>
+        Sponsor on GitHub
+      </a>
+      <span className="text-xs text-text-tertiary">monthly or one-time</span>
+    </>
+  );
+}
+
 /**
- * CTA 1 (v3): result-first card after the research content.
+ * CTA 1 (v4): result-first card after the research content.
  * support-v3.js swaps the first/returning copy and handles "Not now" (30 days, this browser only).
  */
 export function SupportResultCard({
@@ -69,29 +102,21 @@ export function SupportResultCard({
           <div data-sct-variant="first">
             <h2 className="text-lg font-semibold tracking-tight text-text-primary">{heading}</h2>
             <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-              I&apos;m Michael, and I research these pages myself. The domain is about $11 a year, so $3 covers three
-              months of it. Tips unlock nothing, and the research stays free. Research notes, not advice.
+              That&apos;s hours of digging, done for you. I research these pages myself. If it saved you the work, buy me
+              a coffee. Research notes, not advice.
             </p>
           </div>
           <div data-sct-variant="returning" hidden>
-            <h2 className="text-lg font-semibold tracking-tight text-text-primary">
-              Back again? That&apos;s visit <span data-sct-uses="" />.
-            </h2>
+            <h2 className="text-lg font-semibold tracking-tight text-text-primary">You&apos;re officially a regular.</h2>
             <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-              Glad the research keeps earning a spot in your routine. If it has saved you some digging, $3 keeps the
-              domain paid for three months. Same free pages either way. Research notes, not advice.
+              This is visit <span data-sct-uses="" />. Regulars are the reason I keep Early Thunder running. If it&apos;s
+              part of your routine now, a coffee says thanks better than anything. Research notes, not advice.
             </p>
           </div>
         </div>
       </div>
       <div className="mt-4 flex flex-wrap items-center gap-3">
-        <a href={PAYPAL_3_URL} target="_blank" rel="noopener" data-support-rail="paypal" className={TIP_BTN} style={TIP_PRIMARY_STYLE}>
-          Tip $3 with PayPal
-        </a>
-        <a href={BMC_URL} target="_blank" rel="noopener" data-support-rail="bmc" className={TIP_BTN}>
-          <CupIcon /> Buy me a coffee
-        </a>
-        <span className="text-xs text-text-tertiary">card, no account</span>
+        <TipButtons />
         <button
           type="button"
           data-sct-dismiss=""

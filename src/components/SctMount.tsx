@@ -30,7 +30,7 @@ export default function SctMount() {
     }
     if (document.querySelector("script[data-sct-loader]")) return;
     const s = document.createElement("script");
-    s.src = "/support-v3.js?v=3";
+    s.src = "/support-v3.js?v=4";
     s.defer = true;
     s.setAttribute("data-sct-loader", "1");
     document.body.appendChild(s);

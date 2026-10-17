@@ -32,7 +32,7 @@ export default function BlogPage() {
       )}
       {posts.length > 0 && (
         <SupportResultCard
-          heading={`All ${posts.length} posts here are free to read.`}
+          heading={`Now you have ${posts.length} research posts in one place.`}
         />
       )}
       <RelatedResourcesSection />

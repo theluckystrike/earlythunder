@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { BMC_URL, PAYPAL_3_URL, TIP_BTN, TIP_PRIMARY_STYLE, CupIcon, Portrait } from "./SupportCta";
+import { TipButtons, Portrait } from "./SupportCta";
 
 /** No tip ask on pages that sell something, or on the support page itself. */
 const NO_TIP_PATHS = new Set(["/pricing", "/welcome", "/about", "/support"]);
@@ -15,6 +15,8 @@ function useSupportClickTracking() {
       const target = ev.target as Element | null;
       const link = target?.closest?.("a[data-support-rail]") as HTMLAnchorElement | null;
       if (!link) return;
+      // Links that also carry data-rail are reported by support-v3.js when it is loaded; skip them here to avoid a double count.
+      if (link.hasAttribute("data-rail") && typeof (window as unknown as { sctShown?: unknown }).sctShown === "function") return;
       const root = link.closest("[data-support-cta]") as HTMLElement | null;
       const w = window as unknown as { gtag?: (...args: unknown[]) => void };
       if (typeof w.gtag === "function") {
@@ -31,13 +33,7 @@ function useSupportClickTracking() {
 }
 
 /** CTA 2: footer support block, shown on every free page. */
-export default function SupportFooter({
-  tokenPages,
-  posts,
-}: {
-  readonly tokenPages: number;
-  readonly posts: number;
-}) {
+export default function SupportFooter() {
   useSupportClickTracking();
   const raw = usePathname() || "/";
   const path = raw.length > 1 ? raw.replace(/\/+$/, "") : raw;
@@ -52,21 +48,16 @@ export default function SupportFooter({
         <Portrait size={44} />
         <div>
           <p className="text-base font-semibold tracking-tight text-text-primary">
-            Early Thunder is one person&apos;s side project.
+            Made by Michael, one person and a lot of coffee.
           </p>
           <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-            I&apos;m Michael. Since April 2026 I have built {tokenPages} token research pages and {posts} posts. The
-            domain costs about $11 a year, so a $3 tip covers three months of it, and the research stays free either way.
+            If Early Thunder has helped you, you can buy me a coffee. It honestly makes my day, and I read every note
+            that comes with one.
           </p>
         </div>
       </div>
       <div className="flex flex-wrap items-center gap-3 md:shrink-0">
-        <a href={PAYPAL_3_URL} target="_blank" rel="noopener" data-support-rail="paypal" className={TIP_BTN} style={TIP_PRIMARY_STYLE}>
-          Tip $3 with PayPal
-        </a>
-        <a href={BMC_URL} target="_blank" rel="noopener" data-support-rail="bmc" className={TIP_BTN}>
-          <CupIcon /> Buy me a coffee
-        </a>
+        <TipButtons />
         <Link
           href="/support"
           prefetch={false}

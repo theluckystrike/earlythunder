@@ -172,7 +172,7 @@ export default function HomePage() {
       <div className="section">
         <SupportResultCard
           flush
-          heading={`All ${getAllOpportunities().length} token pages, free to read.`}
+          heading={`Now you have all ${getAllOpportunities().length} token files in one place.`}
         />
       </div>
       <DeadlineStrip deadlines={deadlines} />

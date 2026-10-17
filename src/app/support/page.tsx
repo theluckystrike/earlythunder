@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getAllOpportunities, getAllBlogPosts } from "@/lib/data";
-import { BMC_URL, PAYPAL_URL, TIP_BTN, CupIcon, Portrait } from "@/components/SupportCta";
+import { BMC_URL, PAYPAL_URL, TIP_BTN, TIP_PRIMARY_STYLE, CupIcon, Portrait, GithubSponsorLink } from "@/components/SupportCta";
 
 export const metadata: Metadata = {
   title: "Why there is a tip jar",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-const PRESETS = [3, 5, 10] as const;
+const PRESETS = [5, 10, 20] as const;
 
 export default function SupportPage() {
   const tokenPages = getAllOpportunities().length;
@@ -25,7 +25,7 @@ export default function SupportPage() {
         <h1 className="mt-6 text-4xl font-semibold tracking-tighter text-text-primary md:text-5xl">Why there is a tip jar</h1>
         <div className="mt-6 space-y-5 text-[1.0625rem] leading-[1.75] text-text-secondary">
           <p>
-            Hi, I&apos;m Michael. I build and run Early Thunder on my own. I started it in April 2026. Since then it has grown
+            Hi, I&apos;m Michael. Thank you for being here. I build and run Early Thunder on my own. I started it in April 2026. Since then it has grown
             to {tokenPages} token research pages, a token scorecard, free crypto calculators and {posts} posts.
           </p>
           <p>
@@ -60,7 +60,7 @@ export default function SupportPage() {
             Workbench and a pay-per-call data API. A tip is separate from both.
           </p>
           <ul className="list-disc space-y-1 pl-5">
-            <li>The domain renewal. It costs about $11 a year, so a $3 tip covers three months of it.</li>
+            <li>The domain renewal. It costs about $11 a year, so a $5 tip covers about five months of it.</li>
             <li>Time to check sources and fix numbers on the token research pages.</li>
             <li>Time to keep the daily data refresh running.</li>
           </ul>
@@ -77,13 +77,18 @@ export default function SupportPage() {
               rel="noopener"
               data-support-rail="paypal"
               className={`${TIP_BTN} min-w-[64px]`}
+              style={amount === 5 ? TIP_PRIMARY_STYLE : undefined}
             >
               ${amount}
             </a>
           ))}
-          <a href={BMC_URL} target="_blank" rel="noopener" data-support-rail="bmc" className={TIP_BTN}>
-            <CupIcon /> Buy me a coffee (card, any amount)
+          <a href={PAYPAL_URL} target="_blank" rel="noopener" data-support-rail="paypal" className={TIP_BTN}>
+            Other amount
           </a>
+          <a href={BMC_URL} target="_blank" rel="noopener" data-support-rail="bmc" className={TIP_BTN}>
+            <CupIcon /> Card, any amount or monthly
+          </a>
+          <GithubSponsorLink />
         </div>
 
         <div className="mt-8 space-y-3 text-sm leading-relaxed text-text-secondary">
