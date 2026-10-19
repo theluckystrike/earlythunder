@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-12T13:09:24.746Z",
+  "checked_at": "2026-10-19T10:44:59.430Z",
   "total": 746,
-  "ok": 550,
+  "ok": 536,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -324,14 +324,6 @@
       ]
     },
     {
-      "url": "https://www.coingecko.com/en/coins/worldcoin-org",
-      "status": 404,
-      "source": "CoinGecko",
-      "cited_by": [
-        "WLD"
-      ]
-    },
-    {
       "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million",
       "status": 404,
       "source": "World Bank",
@@ -404,7 +396,7 @@
       ]
     }
   ],
-  "blocked": 127,
+  "blocked": 142,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",

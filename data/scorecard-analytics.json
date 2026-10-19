@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-18T12:43:10.360Z",
+  "generated_at": "2026-10-19T10:44:59.557Z",
   "source_updated_at": "2026-09-18T14:30:00Z",
   "citation_links": {
-    "checked_at": "2026-10-12T13:09:24.746Z",
-    "dead_count": 50
+    "checked_at": "2026-10-19T10:44:59.430Z",
+    "dead_count": 49
   },
   "market_data": {
     "source": "CoinGecko",
@@ -80310,7 +80310,7 @@
           "claim": "WLD circulating supply is only ~17% of total with massive team/foundation releases through 2028",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/worldcoin-org",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "EU regulators and South Korea suspended Worldcoin data collection over GDPR biometric data concerns",
