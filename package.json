@@ -1,5 +1,6 @@
 {
   "name": "earlythunder",
+  "repository": {"type": "git", "url": "theluckystrike/earlythunder.git"},
   "version": "0.1.0",
   "private": true,
   "scripts": {
