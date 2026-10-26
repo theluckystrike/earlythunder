@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-25T13:18:19.530Z",
+  "generated_at": "2026-10-26T11:05:27.092Z",
   "source_updated_at": "2026-09-18T14:30:00Z",
   "citation_links": {
-    "checked_at": "2026-10-19T10:44:59.430Z",
-    "dead_count": 49
+    "checked_at": "2026-10-26T11:05:27.003Z",
+    "dead_count": 56
   },
   "market_data": {
     "source": "CoinGecko",
@@ -2304,7 +2304,7 @@
           "claim": "Bitcoin spot ETF AUM peaked at $169.5B in October 2025 and fell to about $77.6B by June 2026",
           "source": "Bloomberg",
           "url": "https://bloomberg.com/crypto/bitcoin-etf",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Mining reward halved to 3.125 BTC per block in April 2024",
@@ -27695,13 +27695,13 @@
           "claim": "SEC v. Ripple fully concluded on 7 August 2025 when both sides dropped their appeals, a partial win for Ripple",
           "source": "CoinDesk",
           "url": "https://coindesk.com/ripple-sec",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Spot XRP ETFs began trading in the US from 13 November 2025, with about seven funds now live",
           "source": "Bloomberg ETF",
           "url": "https://bloomberg.com/xrp-etf",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "The first US spot XRP ETF opened for trade in November 2025",
@@ -40859,7 +40859,7 @@
           "claim": "AI agent token narrative drove 300%+ gains in early 2024 before correction",
           "source": "CoinDesk",
           "url": "https://coindesk.com/ai-tokens",
-          "link_ok": true
+          "link_ok": false
         }
       ],
       "neighbours": [
@@ -80310,7 +80310,7 @@
           "claim": "WLD circulating supply is only ~17% of total with massive team/foundation releases through 2028",
           "source": "CoinGecko",
           "url": "https://www.coingecko.com/en/coins/worldcoin-org",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "EU regulators and South Korea suspended Worldcoin data collection over GDPR biometric data concerns",
@@ -80750,7 +80750,7 @@
           "claim": "Dogecoin has virtually no DeFi network or protocol revenue",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Dogecoin",
-          "link_ok": true
+          "link_ok": false
         }
       ],
       "neighbours": [
@@ -92111,7 +92111,7 @@
           "claim": "Manta Network TVL declined from $800M+ peak during new model farming to under $25M by 2026",
           "source": "DefiLlama",
           "url": "https://defillama.com/chain/Manta%20Pacific",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "MANTA down 97%+ from ATH as liquidity mining incentives dried up and genuine users didn't materialize",
@@ -98171,7 +98171,7 @@
           "claim": "Jasmy partnerships with Sony Network Communications announced but no product revenue has materialized",
           "source": "Jasmy Corp",
           "url": "https://www.jasmy.co.jp/en",
-          "link_ok": false
+          "link_ok": true
         },
         {
           "claim": "JASMY listed on Binance Japan in 2023, giving domestic retail access but volume remains speculative",
@@ -100214,7 +100214,7 @@
           "claim": "Qtum TVL under $1M, among the lowest of any named L1",
           "source": "DeFiLlama",
           "url": "https://defillama.com/chain/Qtum",
-          "link_ok": true
+          "link_ok": false
         },
         {
           "claim": "Qtum GitHub activity near zero; no major protocol updates since 2022",

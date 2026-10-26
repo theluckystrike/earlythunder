@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-19T10:44:59.430Z",
+  "checked_at": "2026-10-26T11:05:27.003Z",
   "total": 746,
-  "ok": 536,
+  "ok": 540,
   "dead": [
     {
       "url": "https://fortune.com/crypto/2026/05/20/ice-ceo-jeffrey-sprecher-hyperliquid/",
@@ -25,6 +25,14 @@
       "source": "Lido Integrations",
       "cited_by": [
         "WSTETH"
+      ]
+    },
+    {
+      "url": "https://bloomberg.com/crypto/bitcoin-etf",
+      "status": 404,
+      "source": "Bloomberg",
+      "cited_by": [
+        "BTC"
       ]
     },
     {
@@ -188,6 +196,22 @@
       ]
     },
     {
+      "url": "https://coindesk.com/ripple-sec",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "XRP"
+      ]
+    },
+    {
+      "url": "https://bloomberg.com/xrp-etf",
+      "status": 404,
+      "source": "Bloomberg ETF",
+      "cited_by": [
+        "XRP"
+      ]
+    },
+    {
       "url": "https://defillama.com/protocol/velodrome-finance",
       "status": 404,
       "source": "DefiLlama",
@@ -225,6 +249,14 @@
       "source": "Polygon Blog",
       "cited_by": [
         "MATIC"
+      ]
+    },
+    {
+      "url": "https://coindesk.com/ai-tokens",
+      "status": 404,
+      "source": "CoinDesk",
+      "cited_by": [
+        "FET"
       ]
     },
     {
@@ -324,6 +356,22 @@
       ]
     },
     {
+      "url": "https://www.coingecko.com/en/coins/worldcoin-org",
+      "status": 404,
+      "source": "CoinGecko",
+      "cited_by": [
+        "WLD"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Dogecoin",
+      "status": 404,
+      "source": "DeFiLlama",
+      "cited_by": [
+        "DOGE"
+      ]
+    },
+    {
       "url": "https://www.worldbank.org/en/news/press-release/2018/08/23/world-bank-prices-first-global-blockchain-bond-raising-a110-million",
       "status": 404,
       "source": "World Bank",
@@ -337,6 +385,14 @@
       "source": "CoinDesk",
       "cited_by": [
         "FLOKI"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Manta%20Pacific",
+      "status": 404,
+      "source": "DefiLlama",
+      "cited_by": [
+        "MANTA"
       ]
     },
     {
@@ -356,14 +412,6 @@
       ]
     },
     {
-      "url": "https://www.jasmy.co.jp/en",
-      "status": 404,
-      "source": "Jasmy Corp",
-      "cited_by": [
-        "JASMY"
-      ]
-    },
-    {
       "url": "https://www.coindesk.com/tech/2022/10/07/decentralands-metaverse-reportedly-has-only-38-active-users-in-24-hours",
       "status": 404,
       "source": "CoinDesk",
@@ -377,6 +425,14 @@
       "source": "CoinDesk",
       "cited_by": [
         "SPELL"
+      ]
+    },
+    {
+      "url": "https://defillama.com/chain/Qtum",
+      "status": 404,
+      "source": "DeFiLlama",
+      "cited_by": [
+        "QTUM"
       ]
     },
     {
@@ -396,7 +452,7 @@
       ]
     }
   ],
-  "blocked": 142,
+  "blocked": 126,
   "unreachable": [
     {
       "url": "https://felix.hyperliquid.xyz",
@@ -450,10 +506,10 @@
       ]
     },
     {
-      "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/",
+      "url": "https://gnosispay.com",
       "error": "fetch failed",
       "cited_by": [
-        "AVAX"
+        "GNO"
       ]
     },
     {
