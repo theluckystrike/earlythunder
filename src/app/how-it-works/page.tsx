@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
-import { getHowToSchema, getBreadcrumbListSchema } from "@/lib/structured-data";
+import { getHowToSchema, getBreadcrumbListSchema, getWebPageSchema } from "@/lib/structured-data";
+import { CONTENT_CHECKED } from "@/lib/constants";
+import AnswerBlock from "@/components/AnswerBlock";
+
+/** Direct answer to this page's main question, restated from the page's own facts. */
+const PAGE_ANSWER =
+  "An automated pipeline runs every week. It scans 50+ sources, including on-chain data, GitHub trending repos, arXiv preprints, SEC filings, VC funding rounds, Reddit and crypto-native platforms. Each match is scored against the 8-Signal Pattern Filter, then tracked. Scores update weekly, and projects that fail move to the Graveyard with a post-mortem.";
 
 export const metadata: Metadata = {
   title: "How It Works",
@@ -34,6 +40,8 @@ export default function HowItWorksPage() {
     <div className="mx-auto max-w-6xl px-6 py-20">
       <JsonLd data={getHowToSchema(HOW_IT_WORKS_STEPS)} />
       <JsonLd data={getBreadcrumbListSchema(HOW_IT_WORKS_BREADCRUMBS)} />
+      <JsonLd data={getWebPageSchema({ name: "How It Works", description: "From signal detection to scored opportunity in your dashboard.", path: "/how-it-works", dateModified: CONTENT_CHECKED })} />
+      <AnswerBlock answer={PAGE_ANSWER} updated={CONTENT_CHECKED} />
       <PageHeader />
       <PipelineSection />
       <AssetClassSection />

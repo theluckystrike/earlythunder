@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { SIGNAL_LABELS } from "@/lib/types";
 import { SIGNAL_DETAILS, type SignalDetailData } from "@/lib/signal-details";
+import JsonLd from "@/components/JsonLd";
+import AnswerBlock from "@/components/AnswerBlock";
+import { CONTENT_CHECKED } from "@/lib/constants";
+import { getWebPageSchema } from "@/lib/structured-data";
+
+/** Direct answer to this page's main question, restated from the page's own facts. */
+const PAGE_ANSWER =
+  "Early Thunder scores opportunities with an 8-Signal Pattern Filter. Six quality signals ask whether the project is real: working code, dev activity, smart money, community, catalyst and narrative. Two asymmetry signals ask whether it is still early: valuation gap and obscurity. Every signal is weighted, every opportunity is scored and tiered, and the scores are monitored continuously.";
 
 export const metadata: Metadata = {
   title: "Methodology",
@@ -11,6 +19,8 @@ export const metadata: Metadata = {
 export default function MethodologyPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
+      <JsonLd data={getWebPageSchema({ name: "Methodology", description: "Early Thunder uses a systematic 8-Signal Pattern Filter combining six quality signals with two asymmetry signals to identify opportunities before they reach mainstream awareness.", path: "/methodology", dateModified: CONTENT_CHECKED })} />
+      <AnswerBlock answer={PAGE_ANSWER} updated={CONTENT_CHECKED} />
       <PageHeader />
       <SignalList />
       <SeeItInActionSection />
