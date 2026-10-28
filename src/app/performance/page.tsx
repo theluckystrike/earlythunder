@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import AnswerBlock from "@/components/AnswerBlock";
+import { CONTENT_CHECKED } from "@/lib/constants";
+import { getWebPageSchema } from "@/lib/structured-data";
+
+/** Direct answer to this page's main question, restated from the page's own facts. */
+const PAGE_ANSWER =
+  "Performance is the track record of the 1000x Discovery System, an automated 4-scanner pipeline that watches contract deployments, VC wallet movements, developer migrations and DEX liquidity events. It shows the signal history, the pipeline statistics and every verdict rendered, including the noise and the failures, not only the winners.";
 
 export const metadata: Metadata = {
   title: "Performance",
@@ -19,6 +27,8 @@ export const metadata: Metadata = {
 export default function PerformancePage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
+      <JsonLd data={getWebPageSchema({ name: "Performance", description: "Track record of the 1000x Discovery System. Every signal investigated, every verdict rendered, every metric tracked.", path: "/performance", dateModified: CONTENT_CHECKED })} />
+      <AnswerBlock answer={PAGE_ANSWER} updated={CONTENT_CHECKED} />
       <PageHeader />
       <SystemOverview />
       <SignalHistory />

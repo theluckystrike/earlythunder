@@ -63,13 +63,27 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": "https://earlythunder.com/#website",
               name: "Early Thunder",
               url: "https://earlythunder.com",
               description: "Pre-mainstream opportunity intelligence. Tracks asymmetric opportunities across crypto, deep tech, and emerging markets.",
+              // One Organization node for the whole site. It carries the @id that
+              // every page-level WebPage node points at with `about`, and it holds
+              // the legal name (also the name printed in the footer and on
+              // /privacy) together with the brand name it trades under.
               publisher: {
                 "@type": "Organization",
+                "@id": "https://earlythunder.com/#organization",
                 name: "AUTOM8 LLC",
+                alternateName: "Early Thunder",
                 url: "https://earlythunder.com",
+                logo: "https://earlythunder.com/og-default.svg",
+                description: "Autonomous intelligence pipeline scanning 154+ protocols for convergence signals, earnings yield, and deadline catalysts. 58 convergence events detected across crypto and emerging markets.",
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  contactType: "customer service",
+                  url: "https://earlythunder.com/pricing",
+                },
                 knowsAbout: [
                   "cryptocurrency research",
                   "DeFi protocol analysis",

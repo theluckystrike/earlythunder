@@ -22,6 +22,7 @@ export default function robots(): MetadataRoute.Robots {
     "PerplexityBot",
     "Perplexity-User",
     "ClaudeBot",
+    "Claude-SearchBot",
     "Claude-User",
     "anthropic-ai",
     "Applebot-Extended",
@@ -34,10 +35,16 @@ export default function robots(): MetadataRoute.Robots {
     "CCBot",
   ];
 
+  // Classic search and on-demand user agents that had no group of their own.
+  // Applebot comes after Applebot-Extended: the extended (training) token is
+  // the more specific match, so it is listed first.
+  const searchCrawlers = ["Googlebot", "Bingbot", "Applebot"];
+
   return {
     rules: [
       { userAgent: "*", allow: "/" },
       ...aiCrawlers.map((userAgent) => ({ userAgent, allow: "/" })),
+      ...searchCrawlers.map((userAgent) => ({ userAgent, allow: "/" })),
     ],
     sitemap: [
       `${SITE_URL}/sitemap.xml`,

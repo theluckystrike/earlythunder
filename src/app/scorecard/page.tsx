@@ -145,6 +145,14 @@ export default function ScorecardPage() {
           full member list plus the variables that band is collectively strong and weak on, which
           is the part a single token page cannot show you.
         </Prose>
+        <Prose>
+          This composite is out of {meta.max_score}, and it is not the same number as the pattern
+          match out of 100 on an opportunity page.{" "}
+          <Link className="text-amber underline decoration-amber/40 hover:decoration-amber" href="/scorecard-vs-opportunity-score">
+            Read the two scales side by side
+          </Link>
+          .
+        </Prose>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {verdictGroups.map((group) => (
             <Link

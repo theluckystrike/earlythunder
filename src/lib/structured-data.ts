@@ -10,25 +10,45 @@ import type { Opportunity, BlogPost } from "./types";
 /** Maximum items rendered in any JSON-LD list to prevent unbounded output. */
 const MAX_LIST_ITEMS = 50;
 
-/** JSON-LD Organization schema for Early Thunder. */
-export function getOrganizationSchema(): Record<string, unknown> {
-  if (typeof SITE_URL !== "string" || SITE_URL.length === 0) {
-    throw new Error("SITE_URL is required for structured data.");
+/**
+ * JSON-LD WebPage schema for a top-level editorial page.
+ *
+ * The homepage and the four other key pages describe themselves here, and point
+ * at the site-wide graph by @id. dateModified is the date the facts on the page
+ * were last checked, and the same constant renders the visible "Updated" line,
+ * so the markup cannot drift from the text a reader sees.
+ */
+export function getWebPageSchema({
+  name,
+  description,
+  path,
+  dateModified,
+}: {
+  readonly name: string;
+  readonly description: string;
+  readonly path: string;
+  readonly dateModified: string;
+}): Record<string, unknown> {
+  if (typeof name !== "string" || name.length === 0) {
+    throw new Error("WebPage name is required for structured data.");
   }
+  if (typeof path !== "string" || (path !== "/" && !path.startsWith("/"))) {
+    throw new Error("WebPage path must be an absolute path.");
+  }
+
+  const url = path === "/" ? SITE_URL : `${SITE_URL}${path}`;
 
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: SITE_NAME,
-    url: SITE_URL,
-    logo: `${SITE_URL}${OG_IMAGE_PATH}`,
-    description: SITE_DESCRIPTION,
-    sameAs: [],
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "customer service",
-      url: `${SITE_URL}/pricing`,
-    },
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name,
+    description,
+    inLanguage: "en",
+    dateModified,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#organization` },
   };
 }
 

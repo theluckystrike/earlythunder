@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import scorecardData from "../../../data/altcoin-scorecard.json";
 import { PageHeader, SectionLabel, Prose, Section } from "@/components/PageChrome";
+import JsonLd from "@/components/JsonLd";
+import AnswerBlock from "@/components/AnswerBlock";
+import { CONTENT_CHECKED } from "@/lib/constants";
+import { getWebPageSchema } from "@/lib/structured-data";
 
 const TOKEN_COUNT = scorecardData.tokens.length;
+
+/** Direct answer to this page's main question, restated from the page's own facts. */
+const PAGE_ANSWER =
+  "Research on Early Thunder is free and needs no account. The Token Evidence Workbench is $29 once, with no subscription. The research API charges per call: each request answers with an HTTP 402 payment challenge, the agent pays in USDC on Base or Solana, and the live challenge is the authoritative price.";
 
 export const metadata: Metadata = {
   title: "Pricing: Free Research, $29 Workbench, Pay-per-call API",
@@ -67,7 +75,7 @@ const PLANS: readonly Plan[] = [
       "Full scorecard with methodology: $0.05 per call",
       "One full cited thesis: $0.25 per call",
     ],
-    cta: { label: "Read the API docs", href: "/SKILL.md", external: true },
+    cta: { label: "See the API prices", href: "/api-pricing", external: false },
   },
 ];
 
@@ -97,6 +105,8 @@ const FAQ_ITEMS = [
 export default function PricingPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 pt-28 pb-20">
+      <JsonLd data={getWebPageSchema({ name: "Pricing: Free Research, $29 Workbench, Pay-per-call API", description: "Research is free. Tools cost once. Agents pay per call.", path: "/pricing", dateModified: CONTENT_CHECKED })} />
+      <AnswerBlock answer={PAGE_ANSWER} updated={CONTENT_CHECKED} />
       <PageHeader
         title="Pricing"
         lead="Research is free. Tools cost once. Agents pay per call."

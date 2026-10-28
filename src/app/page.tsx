@@ -12,7 +12,9 @@ import TopYieldsPreview from "@/components/landing/TopYieldsPreview";
 import DeadlineStrip from "@/components/landing/DeadlineStrip";
 import ClarityActSection from "@/components/landing/ClarityActSection";
 import JsonLd from "@/components/JsonLd";
-import { getOrganizationSchema } from "@/lib/structured-data";
+import { getWebPageSchema } from "@/lib/structured-data";
+import { CONTENT_CHECKED } from "@/lib/constants";
+import AnswerBlock from "@/components/AnswerBlock";
 import SignalsSection from "@/components/landing/SignalsSection";
 import PipelineLog from "@/components/landing/PipelineLog";
 import CoverageMap from "@/components/landing/CoverageMap";
@@ -132,6 +134,10 @@ function buildPageData() {
   };
 }
 
+/** Direct answer to this page's main question, restated from the page's own facts. */
+const PAGE_ANSWER =
+  "Early Thunder is an intelligence terminal that scores pre-mainstream opportunities across DeFi, equities and private markets. Four autonomous tools scan 247 protocols and track convergence events, deadlines and yield. The site publishes 247 scored opportunities and 58 convergence events, and the pipeline is updated daily. The Workbench costs $29 once, with no subscription.";
+
 export const metadata = {
   alternates: { canonical: "/" },
 };
@@ -145,7 +151,8 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={getOrganizationSchema()} />
+      <JsonLd data={getWebPageSchema({ name: "Early Thunder", description: "Four autonomous tools score every pre-mainstream opportunity across DeFi, equities, and private markets.", path: "/", dateModified: CONTENT_CHECKED })} />
+      <AnswerBlock answer={PAGE_ANSWER} updated={CONTENT_CHECKED} />
       <HeroSection
         totalOpportunities={opportunities.length}
         topOpportunities={topOpportunities}

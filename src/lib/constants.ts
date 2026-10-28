@@ -10,6 +10,13 @@ export const SITE_TAGLINE = 'Follow the money that cannot lie' as const;
 export const SITE_DESCRIPTION =
   'Autonomous intelligence pipeline scanning 154+ protocols for convergence signals, earnings yield, and deadline catalysts. 58 convergence events detected across crypto and emerging markets.' as const;
 
+/**
+ * Date the facts on the key pages were last checked, written as an ISO date.
+ * It renders the visible "Updated" line and the JSON-LD `dateModified`, so the
+ * two can never disagree. Change it only in the same edit as the facts.
+ */
+export const CONTENT_CHECKED = '2026-10-28' as const;
+
 export const OG_IMAGE_PATH = '/og-default.svg' as const;
 export const OG_IMAGE_WIDTH = 1200 as const;
 export const OG_IMAGE_HEIGHT = 630 as const;
@@ -34,6 +41,8 @@ export const STATIC_PAGES = [
   '/portfolio',
   '/blog',
   '/guides',
+  '/api-pricing',
+  '/scorecard-vs-opportunity-score',
   '/crypto-profit-calculator',
   '/altcoin-season-index',
   '/crypto-market-cap-calculator',
@@ -94,6 +103,8 @@ export const PRIORITY_MAP: Readonly<Record<string, number>> = {
   '/graveyard': 0.5,
   '/pricing': 0.5,
   '/performance': 0.6,
+  '/api-pricing': 0.6,
+  '/scorecard-vs-opportunity-score': 0.6,
   '/discoveries': 0.7,
   '/scorecard': 0.9,
   '/scorecard/signal': 0.9,
