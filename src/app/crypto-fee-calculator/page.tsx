@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import CryptoCalculatorPage, { type CalculatorPageSpec } from "@/components/CryptoCalculatorPage";
 
 const title = "Crypto fee calculator for round-trip costs";
@@ -26,4 +27,4 @@ const spec: CalculatorPageSpec = {
   ],
 };
 
-export default function Page() { return <CryptoCalculatorPage spec={spec} />; }
+export default function Page() { return <><CryptoCalculatorPage spec={spec} /><p className="mx-auto max-w-5xl px-6 pb-16 text-base leading-relaxed text-text-secondary">For the Network and withdrawal cost input on a Bitcoin transfer, the <Link className="text-amber hover:text-accent-hover" href="/bitcoin-transaction-fee-calculator">Bitcoin transaction fee calculator</Link> turns a sat/vB rate and the transaction size into satoshis.</p></>; }
