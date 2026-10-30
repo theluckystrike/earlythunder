@@ -133,7 +133,7 @@ export default function BitcoinHalvingSchedulePage() {
         <h2 className="text-2xl font-semibold tracking-tight text-text-primary md:text-[2rem]">The next halving, with an estimated date</h2>
         <div className="mt-6 max-w-3xl space-y-4 text-[1.0625rem] leading-[1.75] text-text-secondary">
           <p>The next halving is at block {formatInt(nextHeight)}. The rule fixes that height. It does not fix a date.</p>
-          <p>Estimate: {utcText(estimateUtc(nextHeight))}. Assumption: 600 seconds per block (the nPowTargetSpacing value) from block {formatInt(ANCHOR_BLOCK.height)}, which has the timestamp {utcText(ANCHOR_BLOCK.timeUtc)}. That is {formatInt(blocksToNext)} blocks, or {daysToNext} days at 600 seconds per block. Real block times vary, and each past era was shorter than four years, so this date is an estimate only.</p>
+          <p>Estimate: {utcText(estimateUtc(nextHeight))}. Assumption: 600 seconds per block (the nPowTargetSpacing value) from block {formatInt(ANCHOR_BLOCK.height)}, which has the timestamp {utcText(ANCHOR_BLOCK.timeUtc)}. That is {formatInt(blocksToNext)} blocks, or {daysToNext} days at 600 seconds per block. Real block times vary, and each past era was shorter than four years, so this date is an estimate only. The <Link href="/bitcoin-difficulty-adjustment-calculator">Bitcoin difficulty adjustment calculator</Link> shows how the retarget every 2,016 blocks moves the block time back toward 600 seconds.</p>
         </div>
       </section>
 
